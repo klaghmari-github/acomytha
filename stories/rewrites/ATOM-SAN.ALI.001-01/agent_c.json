@@ -1,0 +1,52 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-01",
+  "fil_rouge": "Lina veut le petit soleil-tomate. Elle goûte une bouchée. Elle dit le goût à maman. Le reste reste dans l'assiette.",
+  "title": "Le petit soleil dans l'assiette",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lina pousse la porte. Elle entre dans la cuisine. Le soleil brille. Maman est là. Une assiette attend Lina. Lina s'assoit près de maman. Dans l'assiette, une tomate. Elle est ronde. Elle est rouge. Elle brille fort. C'est un petit soleil ! Lina se penche tout près. Ça sent le jardin. Lina ouvre grand les yeux. Lina a très envie. Je veux le petit soleil. Viens, Lina. Tu peux goûter. Une petite portion. Lina prend une petite bouchée. Elle goûte.",
+      "script": "narrateur|Lina pousse la porte.\nnarrateur|Elle entre dans la cuisine.\nnarrateur|Le soleil brille.\nnarrateur|Maman est là.\nnarrateur|Une assiette attend Lina.\nnarrateur|Lina s'assoit près de maman.\nnarrateur|Dans l'assiette, une tomate.\nnarrateur|Elle est ronde.\nnarrateur|Elle est rouge.\nnarrateur|Elle brille fort.\nenfant-f|C'est un petit soleil !\nnarrateur|Lina se penche tout près.\nnarrateur|Ça sent le jardin.\nnarrateur|Lina ouvre grand les yeux.\nnarrateur|Lina a très envie.\nenfant-f|Je veux le petit soleil.\nmaman|Viens, Lina.\nmaman|Tu peux goûter.\nmaman|Une petite portion.\nnarrateur|Lina prend une petite bouchée.\nnarrateur|Elle goûte.",
+      "sons": "porte",
+      "length_scale_piper": 1.32,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lina goûte. Que fait-elle ?",
+      "script": "narrateur|Lina goûte. Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lina a goûté. C'est doux, maman. Un peu sucré. Comme un soleil. Oui. Doux et sucré. Lina a nommé le goût.",
+      "script": "narrateur|Lina a goûté.\nenfant-f|C'est doux, maman.\nenfant-f|Un peu sucré.\nenfant-f|Comme un soleil.\nmaman|Oui.\nmaman|Doux et sucré.\nnarrateur|Lina a nommé le goût.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lina boit une gorgée d'eau. Le petit soleil reste dans l'assiette. Merci, maman. Merci, Lina. J'ai goûté. J'ai dit le goût.",
+      "script": "narrateur|Lina boit une gorgée d'eau.\nnarrateur|Le petit soleil reste dans l'assiette.\nenfant-f|Merci, maman.\nmaman|Merci, Lina.\nenfant-f|J'ai goûté.\nenfant-f|J'ai dit le goût.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Il était doux, le petit soleil. L'histoire est finie.",
+      "script": "enfant-f|Il était doux, le petit soleil.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow"
+    }
+  ]
+}

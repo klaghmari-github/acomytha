@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-02",
+  "fil_rouge": "Une carotte orange s'échappe du panier. Noé la rattrape. Papa en coupe une petite portion : Noé goûte, nomme le goût, et le reste attend.",
+  "title": "La carotte qui s'échappe",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Noé, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé rentre du marché avec papa. Ils portent le panier, à deux. Ils le posent sur la table. Le panier est plein. Il penche un peu. Alors une carotte orange roule. Elle glisse vers le bord. Elle part ! Elle tombe par terre. Elle roule sous la table. Elle tourne près d'une chaise. Noé ouvre les yeux. Il se baisse. Il avance les deux mains. La carotte roule encore. Elle va plus loin. Alors Noé la suit. Il avance encore. Il la rattrape. Elle est dans ses mains. Elle est lisse. Elle est froide. Elle sent le marché. Noé sourit. Bien attrapé. On la lave ensemble. Noé pose la carotte près de l'évier. Papa lave la carotte. Puis il coupe une petite portion. Juste une petite portion. Il la pose dans l'assiette de Noé. Noé s'assoit à table, près de papa. Papa s'assoit aussi. Tu peux goûter. Une petite bouchée, c'est assez. Noé prend une petite bouchée. Il mâche. Ça croque entre les dents. C'est un peu sucré. Noé va nommer le goût. C'est sucré. C'est croquant, papa.",
+      "script": "narrateur|Noé rentre du marché avec papa.\nnarrateur|Ils portent le panier, à deux.\nnarrateur|Ils le posent sur la table.\nnarrateur|Le panier est plein. Il penche un peu.\nnarrateur|Alors une carotte orange roule.\nnarrateur|Elle glisse vers le bord.\nenfant-m|Elle part !\nnarrateur|Elle tombe par terre. Elle roule sous la table.\nnarrateur|Elle tourne près d'une chaise.\nnarrateur|Noé ouvre les yeux. Il se baisse.\nnarrateur|Il avance les deux mains.\nnarrateur|La carotte roule encore. Elle va plus loin.\nnarrateur|Alors Noé la suit. Il avance encore. Il la rattrape.\nnarrateur|Elle est dans ses mains.\nnarrateur|Elle est lisse. Elle est froide. Elle sent le marché.\nnarrateur|Noé sourit.\npapa|Bien attrapé. On la lave ensemble.\nnarrateur|Noé pose la carotte près de l'évier.\nnarrateur|Papa lave la carotte.\nnarrateur|Puis il coupe une petite portion. Juste une petite portion.\nnarrateur|Il la pose dans l'assiette de Noé.\nnarrateur|Noé s'assoit à table, près de papa. Papa s'assoit aussi.\npapa|Tu peux goûter. Une petite bouchée, c'est assez.\nnarrateur|Noé prend une petite bouchée. Il mâche.\nnarrateur|Ça croque entre les dents. C'est un peu sucré.\nnarrateur|Noé va nommer le goût.\nenfant-m|C'est sucré. C'est croquant, papa.",
+      "sons": "panier,carotte_roule",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La carotte est calme, dans l'assiette. Noé goûte. Que fait-il ?",
+      "script": "narrateur|La carotte est calme, dans l'assiette.\nnarrateur|Noé goûte. Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé pose le morceau. Papa sourit. Merci d'avoir goûté. Tu as nommé le goût. Un bout orange reste dans l'assiette. Noé s'arrête. Son ventre est calme. Il boit une gorgée d'eau. Le reste peut attendre.",
+      "script": "narrateur|Noé pose le morceau. Papa sourit.\npapa|Merci d'avoir goûté. Tu as nommé le goût.\nnarrateur|Un bout orange reste dans l'assiette.\nnarrateur|Noé s'arrête. Son ventre est calme.\nnarrateur|Il boit une gorgée d'eau.\nnarrateur|Le reste peut attendre.",
+      "sons": "verre",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé range une pomme dans le panier. Papa range le gros bout de carotte. Noé pousse sa chaise. Le panier est plus léger. Merci, papa. La carotte ne s'échappe plus.",
+      "script": "narrateur|Noé range une pomme dans le panier.\nnarrateur|Papa range le gros bout de carotte.\nnarrateur|Noé pousse sa chaise.\nnarrateur|Le panier est plus léger.\nenfant-m|Merci, papa.\nnarrateur|La carotte ne s'échappe plus.",
+      "sons": "chaise",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Noé a encore le croquant dans la bouche. Un petit morceau a suffi. C'était sucré, papa. Le reste attend. Papa reste près de lui, dans la cuisine.",
+      "script": "narrateur|Noé a encore le croquant dans la bouche.\nnarrateur|Un petit morceau a suffi.\nenfant-m|C'était sucré, papa.\nnarrateur|Le reste attend.\nnarrateur|Papa reste près de lui, dans la cuisine.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

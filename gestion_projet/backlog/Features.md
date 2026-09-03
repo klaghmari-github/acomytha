@@ -98,7 +98,13 @@ Tables `lesson`, `story`, `story_lesson`, `chunk`, `chunk_link` (exceptions). Le
 
 **Cible :** un fil rouge (envie, petite aventure, fait concret) **dirige** le récit. Les leçons se **greffent**. L’enfant sent que quelque chose **commence** et **se termine**.
 
-Processus : agents en parallèle → fichiers `stories/rewrites/<id>/agent_*.json` (xlsx d’origine intact) → fusion → remplacement. Texte d’abord, chunks + `script` + `sons` + rythme. Détail : `stories/REWRITE.md`.
+Processus : agents en parallèle → fichiers `stories/rewrites/<id>/agent_*.json` (xlsx d’origine intact) → **fusion éditoriale** (pas le texte le plus long) → remplacement. Texte d’abord, chunks + `script` + `sons` + rythme. Détail : `stories/REWRITE.md`.
+
+Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histoire, un moment par chunk, leçon **vécue** en fin.
+
+- `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
+- `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
+- `ATOM-SAN.ALI.002-01` Tom — *Le bateau de Tom* (N1)
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
