@@ -1,6 +1,8 @@
 tu crée une branche pour chaque feature et tu développe la feature.
 si la feature est complexe tu la décompose en plusieurs stories (sous features).
 tu fais plusieurs commits en fonction des stories dans la même branche de la feature.
-traites les features selon l'ordre de priorité et la nécessité technique.
-il y a des features qui concerne la creation des bases de données d'histoires et d'autres qui concernent l'interface graphique. 
-d'abord génére les histoires
+traites les features selon l'ordre de priorité et la nécessité technique (voir backlog/Features.md).
+il y a des features qui concerne la creation des bases de données d'histoires et d'autres qui concernent l'interface graphique.
+d'abord génére les histoires (fait : corpus APPROVED_TEXT sur feat/F-GEN-001-corpus-histoires).
+ensuite : chunks + SQLite (F-NAR-007, F-DAT-001), bake Piper MP3 (F-AUD-005), chiffrement (F-AUD-004).
+0 centime hors abonnement Heavy : pas d'API TTS xAI. Spec unique : specification/Sentier_Specification.md.
