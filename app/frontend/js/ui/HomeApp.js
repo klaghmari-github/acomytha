@@ -56,22 +56,12 @@ export class HomeApp extends Component {
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
         </section>
-        <section class="c-ideas">
-          <h2>Proposez une histoire</h2>
-          <form id="idea" class="o-stack">
-            <input name="email" type="email" placeholder="Votre e-mail" />
-            <textarea name="text" rows="3" placeholder="Le monde, le personnage, ce que vous aimeriez…" required minlength="8"></textarea>
-            <button class="c-btn" type="submit">Envoyer</button>
-            <p class="c-hint" id="ideaok"></p>
-          </form>
-        </section>
       </div>`;
     this.on(this.querySelector("#q"), "input", () => this.scheduleRender());
     this.on(this.querySelector("#domain"), "change", () => this.render());
     this.on(this.querySelector("#age"), "change", () => this.render());
     this.on(this.querySelector("#kind"), "change", () => this.render());
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
-    this.on(this.querySelector("#idea"), "submit", (e) => this.sendIdea(e));
     await this.boot();
   }
 
@@ -179,19 +169,6 @@ export class HomeApp extends Component {
     } catch (e) {
       this.querySelector("#msg").textContent = e.message;
       btn.textContent = "Écouter";
-    }
-  }
-
-  async sendIdea(ev) {
-    ev.preventDefault();
-    const fd = new FormData(ev.target);
-    const ok = this.querySelector("#ideaok");
-    try {
-      await this.api.post("/public/ideas", { email: fd.get("email"), text: fd.get("text") });
-      ev.target.reset();
-      ok.textContent = "Merci.";
-    } catch (e) {
-      ok.textContent = e.message;
     }
   }
 }
