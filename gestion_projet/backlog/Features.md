@@ -30,6 +30,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PLY-001 | **développé** | Lecteur graphe jour/nuit, délai 3 s. |
 | F-AUD-006 | **développé** | Scripts 1445 xlsx ; échantillons re-bakés ; bake corpus lancé. |
 | F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
+| F-AUD-007 | **à faire** | Immersion : FX parc, voiture, ambulance, chien — mixés sous le récit. |
 
 ---
 
@@ -73,6 +74,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-AUD-004 | Audio | Chiffrement AES-GCM, lecture RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-AUD-001, F-SEC-001 |
 | F-AUD-005 | Audio | Bake Piper → MP3 64k, 0 €, plans via Heavy | P0 | 1 | STRAT-002 | F-AUD-001, F-GEN-001 |
 | F-AUD-006 | Audio | Cast multi-voix (narrateur / famille / école / enfants) | P0 | 1 | STRAT-002 §4 | F-AUD-005 |
+| F-AUD-007 | Audio | Immersion sonore (jeux d’enfants, voiture, ambulance, chien) | P0 | 1 | STRAT-002 §4b | F-AUD-006 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -87,6 +89,20 @@ Tables `lesson`, `story`, `story_lesson`, `chunk`, `chunk_link` (exceptions). Le
 ### F-AUD-004 — Protection
 
 `.chk` = AES-256-GCM(MP3). Clé au Keystore/Keychain. Jamais de MP3 en clair sur disque. Décryptage chunk par chunk en RAM. **STRAT-002** §5.
+
+### F-AUD-007 — Immersion sonore (importante)
+
+Quand le récit **montre** un monde, l’enfant **l’entend** — pas seulement la voix.
+
+Exemples fondateur :
+
+| Le narrateur dit | On entend |
+| --- | --- |
+| On arrive au parc, les enfants s’amusent et jouent | Cris / rires de jeu (joie, jamais peur) |
+| Une voiture / une ambulance passe | Passage du véhicule (loin, pas de panique) |
+| On voit un chien, il aboie comme pour dire bonjour | Un aboiement amical |
+
+Règles : FX **sous** la parole, jamais par-dessus ; positif only (pas de sirène d’alerte, pas de hurlement) ; nuit = plus bas ou skip ambulance. Lexique : `stories/outils/fx/lexique.json`. Mix **au bake** dans le même chunk (un fichier). **STRAT-002** §4b.
 
 ### F-AUD-006 — Voix de rôles
 

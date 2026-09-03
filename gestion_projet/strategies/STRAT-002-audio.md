@@ -1,6 +1,6 @@
 # STRAT-002 — Audio : format, rythme, synthèse, chiffrement
 
-**Référencé par :** `F-AUD-001` à `F-AUD-005`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`.  
+**Référencé par :** `F-AUD-001` à `F-AUD-007`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`.  
 **Graphe / IDs :** `STRAT-003`. **Lecture :** `STRAT-004`.
 
 ## 1. Décision format
@@ -69,6 +69,26 @@ Le narrateur **raconte et décrit**. Les personnages **parlent**. On n’annonce
 | copine / copain | jessica / pierre, pitch enfant différent du héros | pas la même voix que le héros |
 
 Un chunk = un fichier audio, **mix** de répliques (`script` : `role\|phrase` par ligne). Colonne `text` = enchaînement sans « X dit ».
+
+## 4b. Immersion : le monde s’entend (F-AUD-007)
+
+Le récit pose le décor ; un **bruit court** le confirme. Ce n’est pas une bande-son continue.
+
+| Déclencheur (texte / script) | FX | Ton |
+| --- | --- | --- |
+| parc, enfants qui jouent / s’amusent | `enfants_parc` | rires, appels joyeux |
+| voiture qui passe | `voiture_passe` | passage, pas de klaxon agressif |
+| ambulance qui passe | `ambulance_passe` | lointain, 1–2 s, **pas** une urgence |
+| chien qui aboie / dit bonjour | `chien_bonjour` | un ou deux aboiements amicaux |
+
+Décisions :
+
+1. Mix **dans le chunk** au bake (un WAV/MP3), pas un second lecteur runtime.
+2. Niveau FX ≈ −18 à −12 dB sous la voix. La parole reste lisible.
+3. Ligne de script `fx|enfants_parc` **ou** détection lexique (`stories/outils/fx/lexique.json`).
+4. Interdit : cri de peur, sirène collée à l’oreille, aboiement méchant, musique qui couvre.
+5. Nuit : atténuer ; skip `ambulance_passe`.
+6. Bibliothèque locale, licences libres, 0 € API.
 
 ## 5. Protection
 

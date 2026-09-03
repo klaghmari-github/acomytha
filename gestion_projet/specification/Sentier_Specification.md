@@ -85,6 +85,7 @@ Moteur : `STRAT-004`.
 - **Sur disque :** fichier chiffré `.chk`, **pas** un `.mp3` lisible.
 - Seule l’app détient la clé (Keystore / Keychain). Déchiffrement **chunk par chunk** en RAM, préchargement du suivant pendant la lecture.
 - Synthèse corpus : **Piper local, 0 €**. L’abonnement **Heavy** sert à écrire les plans de rythme et le code, **pas** à facturer l’API TTS xAI.
+- **Immersion (F-AUD-007) :** quand le récit montre un parc, une voiture, une ambulance, un chien, un bruit court le confirme, **sous** la voix, jamais par-dessus.
 
 Détail : `STRAT-002`.
 
