@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-SAN.ALI.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Céleste s'assoit au petit-déjeuner",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Céleste",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 155
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est le matin. Céleste sent le pain chaud. Maman pose les bols. Papa met le lait. Céleste a faim. Elle va à table. Elle pose les fesses sur la chaise. Elle est assise. Elle est assise à table. Papa s'assoit aussi. Maman s'assoit près d'elle. Ils mangent ensemble. Céleste tient sa cuillère. Elle mange assise. La chaise est stable. Papa dit : on mange ensemble. On mange à table. Céleste sourit. Elle reste assise. Maman coupe la pomme. Céleste attend, assise. Ils sont ensemble à table. Le lait est tiède. Le pain est croustillant.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Céleste va manger. Que fait-elle ?",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assise",
+        "s'asseoir",
+        "à table",
+        "elle s'assoit",
+        "table",
+        "sur la chaise"
+      ],
+      "retry_prompt": "Elle pose les fesses sur la chaise. Que fait Céleste ?",
+      "positive_feedback": "Oui. Céleste s'assoit à table. Elle mange avec papa et maman.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses sur la chaise.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Céleste est assise. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Céleste boit une gorgée. Elle reste assise jusqu'à la fin. Merci, dit papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

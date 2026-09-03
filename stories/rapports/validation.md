@@ -1,6 +1,6 @@
 # Rapport validation
 
-- total: 423
-- APPROVED_TEXT: 423
+- total: 479
+- APPROVED_TEXT: 479
 - REVISION_REQUIRED: 0
 - REJECTED: 0

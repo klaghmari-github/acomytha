@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.CON.003-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Jeanne dit pardon deux fois",
+  "lesson_id": "REL.CON.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis chambre",
+  "characters": [
+    "Jeanne",
+    "Noé",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Jeanne joue dans le salon. Papa plie le linge. Noé a posé un puzzle. Les pièces sont lisses. Jeanne passe trop près. Le puzzle glisse. Les pièces roulent. Noé a les yeux mouillés. Il est triste. Maman s'approche. Maman dit : tu peux dire pardon. Jeanne dit : pardon, Noé. Maman dit : tu peux proposer un geste. Jeanne ramasse une pièce. Elle la tend. C'est un geste simple. Noé prend la pièce. Il reste un peu triste. Maman dit : la peine reste un peu. Le pardon n'efface pas tout de suite. Plus tard, dans la chambre, Jeanne apporte un verre. Une goutte tombe sur le dessin de Noé. Noé fronce les sourcils. Jeanne dit encore : pardon. Elle propose un geste. Elle apporte une feuille sèche. Noé souffle. La peine reste un peu. Au salon, puis dans la chambre, c'est pareil. On dit pardon. On propose un geste. La peine reste un peu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le puzzle de Noé a glissé. Que fait Jeanne ?",
+      "expected_intents": [
+        "PARDON",
+        "GESTE"
+      ],
+      "accepted_examples": [
+        "pardon",
+        "un geste",
+        "dire pardon",
+        "tendre une pièce"
+      ],
+      "retry_prompt": "Elle dit pardon, et elle propose un geste. Que fait Jeanne ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine peut rester un peu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Jeanne a dit pardon. Elle a proposé un geste. La peine reste un peu. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le puzzle reprend forme. Noé pose une pièce. Jeanne attend. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

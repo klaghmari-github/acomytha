@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-SEC.ADU.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Hanna va vers maman, puis la maîtresse",
+  "lesson_id": "SEC.ADU.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.ADU",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "magasin puis école",
+  "characters": [
+    "Hanna",
+    "maman",
+    "papa",
+    "la maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hanna est au magasin. C'est après l'école. La maîtresse a dit au revoir près de la porte. Papa doit arriver plus tard. Maman pousse le panier. Hanna regarde les pots de yaourt. Ils sont frais. Elle lève les yeux. Elle cherche. Hanna se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Hanna marche vers les yaourts. Elle voit maman. Maman a le panier. Hanna va vers maman. Elle tient le manteau de maman. Ses pieds restent près de maman. Parce qu'elle a cherché maman, elle la trouve. Maman dit : me voici. Le lendemain, Hanna est dans la cour. Elle cherche. Elle va vers la maîtresse. La maîtresse est près du bac. Hanna reste près de la maîtresse. Papa arrive. Hanna va vers papa. Elle prend la main de papa. Au magasin, puis à l'école, c'est pareil. On va vers papa, vers maman, ou vers la maîtresse.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hanna cherche quelqu'un. Vers qui va-t-elle ?",
+      "expected_intents": [
+        "PAPA_MAMAN",
+        "MAITRESSE"
+      ],
+      "accepted_examples": [
+        "maman",
+        "papa",
+        "la maîtresse",
+        "papa maman",
+        "vers maman"
+      ],
+      "retry_prompt": "Elle va vers maman. Ou vers papa. Ou vers la maîtresse. Vers qui ?",
+      "positive_feedback": "Oui. On va vers papa, vers maman, ou vers la maîtresse.",
+      "wrong_feedback": "On va vers papa, vers maman, ou vers la maîtresse.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hanna a cherché maman. À l'école, elle va vers la maîtresse. Papa est aussi un adulte connu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hanna tient la main de papa. Ils rentrent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

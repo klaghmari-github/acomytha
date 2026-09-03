@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-DIF.COR.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Kamil joue avec Ava et Sami",
+  "lesson_id": "DIF.COR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis salon",
+  "characters": [
+    "Kamil",
+    "Ava",
+    "Sami",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Kamil arrive au parc. Papa s'assoit sur le banc. Ava arrive avec un cerceau. Ava est plus petite que Kamil. Kamil est plus grand qu'Ava. Ils ont des tailles différentes. Kamil l'invite. Il dit : viens jouer. Ava dit : oui. Ils jouent ensemble près du cerceau. Kamil tient un bout. Ava tient l'autre bout. Les tailles différentes restent là. Ils font rouler le cerceau. Papa dit : vous jouez ensemble. Plus tard, ils rentrent. Maman pose un tapis. Sami est là. Sami est plus petit que Kamil. Encore des tailles différentes. Kamil invite Sami. Ils jouent ensemble avec les cubes. Kamil pose un cube. Sami pose un cube. Au parc, puis au salon, c'est pareil. On invite. On joue ensemble. Petit ou grand, on joue ensemble. Maman dit : vous avez des tailles différentes. Et vous jouez ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Kamil invite Ava, puis Sami. Que font-ils ?",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble",
+        "ensemble",
+        "ils jouent",
+        "on joue",
+        "jouer"
+      ],
+      "retry_prompt": "Ils jouent. Que font Kamil, Ava et Sami ?",
+      "positive_feedback": "Oui. Ils jouent ensemble.",
+      "wrong_feedback": "On invite. On joue ensemble.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Kamil a invité. Ils ont des tailles différentes. Ils jouent ensemble.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Kamil range un cube. Ava range le cerceau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

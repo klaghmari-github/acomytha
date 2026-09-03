@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SEC.PAR.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Kamil joue où papa voit",
+  "lesson_id": "SEC.PAR.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour d'école",
+  "characters": [
+    "Kamil",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Kamil sort de l'école. Papa l'attend près du portail. Maman arrivera plus tard. Papa montre un espace. C'est le carré de marelle. Papa dit : tu joues ici. C'est l'espace montré. Ici, l'adulte voit. Kamil prend une craie. Il saute dans les cases. Parce que papa le voit, Kamil reste. Il reste dans l'espace montré. Papa s'assoit sur le muret. L'adulte voit. Kamil pose un caillou. Le caillou est lisse. Il saute encore. Papa dit : je te vois. Kamil sourit. Il reste là. Les pieds restent dans le carré. Maman arrive. Elle voit Kamil aussi. Parce qu'il est dans l'espace montré, maman le trouve tout de suite.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Kamil joue dans la cour. Où joue-t-il ?",
+      "expected_intents": [
+        "ESPACE_MONTRE",
+        "ADULTE_VOIT"
+      ],
+      "accepted_examples": [
+        "espace montré",
+        "ici",
+        "la marelle",
+        "où papa voit",
+        "l'espace"
+      ],
+      "retry_prompt": "Papa a montré un espace. L'adulte voit. Où joue Kamil ?",
+      "positive_feedback": "Oui. Kamil joue dans l'espace montré. L'adulte voit.",
+      "wrong_feedback": "On joue dans l'espace montré. L'adulte voit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Kamil est dans l'espace montré. Papa le voit. La marelle est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Kamil range la craie. Papa lui tend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

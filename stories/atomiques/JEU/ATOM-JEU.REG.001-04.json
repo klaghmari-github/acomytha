@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-JEU.REG.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Marceau dit bravo deux fois",
+  "lesson_id": "JEU.REG.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis jardin",
+  "characters": [
+    "Marceau",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Marceau et papa jouent au loto, à la table. Les cartons sont lisses. Marceau a envie de gagner. Papa pose sa dernière image. Papa a gagné. Marceau sent un nœud dans le ventre. Ses yeux piquent un peu. Papa dit : l'autre peut gagner. C'est le jeu. Marceau dit : je suis déçu. Papa dit : être déçu, c'est permis. Marceau souffle. Il dit : bravo papa. Papa sourit. Papa dit : on peut rejouer plus tard. Marceau hoche la tête. Plus tard, au jardin, maman joue aux quilles. Maman fait tomber les quilles. Maman a gagné. Marceau sent encore le nœud. Il dit : je suis déçu. Être déçu, c'est permis. L'autre peut gagner. Il dit : bravo maman. Maman dit : on rejoue plus tard. Au salon, puis au jardin, c'est pareil. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa a gagné. Que peut faire Marceau ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "rejouer",
+        "être déçu",
+        "bravo",
+        "plus tard"
+      ],
+      "retry_prompt": "Plus tard, on peut quoi ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Être déçu, c'est permis. On rejoue plus tard.",
+      "wrong_feedback": "L'autre peut gagner. Être déçu, c'est permis. On dit bravo. On rejoue plus tard.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Marceau a dit bravo. Il était déçu, et c'était permis. Ils rejoueront plus tard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Marceau range les quilles. Papa range le loto. Ils vont boire de l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

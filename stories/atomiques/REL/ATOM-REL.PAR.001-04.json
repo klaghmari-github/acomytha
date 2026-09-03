@@ -1,0 +1,77 @@
+{
+  "tree_id": "ATOM-REL.PAR.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Marceau prête l'arrosoir",
+  "lesson_id": "REL.PAR.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Marceau",
+    "Léa",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Marceau est dans le jardin. Papa arrose les tomates. Maman cueille une feuille. Léa arrive. Elle veut l'arrosoir vert. Marceau le tient. L'eau est fraîche. Papa dit : tu peux prêter. Marceau prête l'arrosoir. Léa arrose. Marceau attend son tour. Le tour arrive. Léa rend l'arrosoir. Marceau arrose une fleur. Puis Léa veut encore. Maman dit : tu peux proposer un autre jeu. Marceau dit : le bac à sable. Léa dit : oui. Ils vont au bac. Parce qu'il a prêté, le jeu continue. Parce qu'il a attendu son tour, c'est calme. Un autre jeu, c'est bien aussi. Marceau verse le sable. Léa fait un gâteau.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa veut l'arrosoir. Que peut faire Marceau ?",
+      "expected_intents": [
+        "PRETER",
+        "TOUR",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "prêter",
+        "son tour",
+        "attendre",
+        "autre jeu",
+        "le bac"
+      ],
+      "retry_prompt": "Il peut prêter, attendre son tour, ou proposer un autre jeu. Que fait-il ?",
+      "positive_feedback": "Oui. On prête. On attend son tour. Ou on propose un autre jeu.",
+      "wrong_feedback": "On prête. On attend son tour. Ou on propose un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Marceau a prêté. Il a attendu son tour. Puis il a proposé un autre jeu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Marceau range l'arrosoir. Papa range le tuyau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

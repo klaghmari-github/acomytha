@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.008-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Louna est gênée",
+  "lesson_id": "EMO.LEX.008",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Louna",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Louna aide maman dans la cuisine. Papa range les bols. Louna porte un sachet de farine. Le sachet penche. La farine tombe sur la table. Louna sent ses joues chaudes. Son ventre se serre. Elle dit : je suis gênée. C'est une erreur. Une erreur ne dit pas qui elle est. Être gêné, ce n'est pas honteux. Papa s'approche. Louna dit : j'ai versé. Elle prend un torchon. Elle répare. Elle essuie la table. La farine disparaît. Parce qu'elle a dit, elle a pu réparer. Maman dit : merci. Louna souffle. Ses joues se calment. On dit. On répare.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Louna a versé la farine. Que fait-elle ?",
+      "expected_intents": [
+        "GENE",
+        "REPARER"
+      ],
+      "accepted_examples": [
+        "gênée",
+        "je suis gênée",
+        "réparer",
+        "essuyer",
+        "dire"
+      ],
+      "retry_prompt": "Elle dit. Puis elle répare. Que fait Louna ?",
+      "positive_feedback": "Oui. Louna dit : je suis gênée. Puis elle répare.",
+      "wrong_feedback": "On dit. On répare. Une erreur, on peut la réparer.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Louna a dit : je suis gênée. C'était une erreur. Elle a réparé avec le torchon.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Louna pose le torchon. Papa verse un peu de farine, tout doux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
