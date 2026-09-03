@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SAN.ECR.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Lina éteint et choisit un jeu",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ECR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Lina",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Lina est dans sa chambre. Un petit écran est allumé. Des couleurs bougent. Papa entre. Il s'assoit près du lit. Papa dit : fini. L'adulte dit fini. Lina écoute. Parce que papa a dit fini, elle va éteindre. Lina éteint. L'écran devient noir. Elle pose la télécommande. Papa dit : on prend un autre jeu. Lina choisit son puzzle. Les pièces sentent le carton. Papa et Lina posent les pièces. Une tour apparaît. Lina dit : l'écran est éteint. Un autre jeu, c'est bien. Papa tape dans ses mains. Ils ajoutent un toit. Puis ils rangent. Lina a su éteindre. Elle a choisi un autre jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa dit fini. Que fait Lina ?",
+      "expected_intents": [
+        "ETEINDRE",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "éteindre",
+        "elle éteint",
+        "un autre jeu",
+        "le puzzle"
+      ],
+      "retry_prompt": "L'adulte dit fini. Que fait-on ensuite ?",
+      "positive_feedback": "Oui. On va éteindre. Puis on prend un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on va éteindre. Puis on choisit un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lina a éteint. Papa avait dit fini. Elle a pris un autre jeu. Le puzzle était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lina range une pièce. Papa range la boîte. Merci, dit Lina. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

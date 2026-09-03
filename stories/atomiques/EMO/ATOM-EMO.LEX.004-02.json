@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-EMO.LEX.004-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Adam est surpris deux fois",
+  "lesson_id": "EMO.LEX.004",
+  "secondary_lessons": [
+    "EMO.LEX.001"
+  ],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salle de bain puis parc",
+  "characters": [
+    "Adam",
+    "papa",
+    "Nino"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Adam est dans la salle de bain avec papa. L'eau coule. Soudain, une goutte saute. Elle touche le nez d'Adam. Adam sent son cœur battre vite. Ses yeux s'ouvrent. Adam dit : je suis surpris. Être surpris, ce n'est pas honteux. Papa dit : d'abord respirer. Ensuite comprendre, avant d'agir. Adam souffle une grande fois. Il regarde le robinet. Il dit : je veux comprendre. C'est l'eau. Rien n'est cassé. Adam est content. Il partage un sourire. La joie est là. Plus tard, ils vont au parc. Une balle arrive près d'Adam. Adam sent encore le cœur. Il dit : je suis surpris. Il souffle. Il veut respirer. Il regarde. C'est la balle de Nino. Adam comprend. Il rend la balle. Il est content. Il invite Nino. La joie se partage. Dans la salle de bain, puis au parc, c'est pareil. On nomme : surpris. On respire. On cherche à comprendre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Adam est surpris. Que fait-il d'abord ?",
+      "expected_intents": [
+        "SURPRIS",
+        "SOUFFLER"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "respirer",
+        "surpris",
+        "je suis surpris",
+        "comprendre"
+      ],
+      "retry_prompt": "Adam souffle. Que fait-on quand on est surpris ?",
+      "positive_feedback": "Oui. On nomme : surpris. On souffle. On cherche à comprendre.",
+      "wrong_feedback": "On dit : je suis surpris. On souffle. On cherche à comprendre avant d'agir.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Adam a nommé : surpris. Deux fois. Il a soufflé. Il a voulu comprendre avant d'agir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Adam et Nino se passent la balle. Papa reste près. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

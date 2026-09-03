@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.008-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Noé est gêné",
+  "lesson_id": "EMO.LEX.008",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Noé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Noé est à l'école. Maman aide pour un atelier. Noé porte un bol d'eau. Le bol penche. L'eau tombe sur la table. Noé sent ses joues chaudes. Il dit : je suis gêné. C'est une erreur. Une erreur ne dit pas qui il est. Être gêné, ce n'est pas honteux. Maman s'approche. Noé dit : j'ai versé. Il prend une éponge. Il répare. Il essuie la table. L'eau disparaît. Parce qu'il a dit, il a pu réparer. Maman dit : merci. Noé souffle. Ses joues se calment. On dit. On répare.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Noé a versé l'eau. Que fait-il ?",
+      "expected_intents": [
+        "GENE",
+        "REPARER"
+      ],
+      "accepted_examples": [
+        "gêné",
+        "je suis gêné",
+        "réparer",
+        "il répare",
+        "essuyer"
+      ],
+      "retry_prompt": "Noé est gêné. Que fait-il ensuite ?",
+      "positive_feedback": "Oui. On dit : je suis gêné. C'est une erreur. On répare.",
+      "wrong_feedback": "On dit : je suis gêné. Une erreur, on la dit. Puis on répare.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Noé a nommé : gêné. Il a dit l'erreur. Il a réparé avec l'éponge. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Noé pose le bol. Maman pose l'éponge. Ils sourient. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.MOQ.004-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Sami demande avant la photo",
+  "lesson_id": "REL.MOQ.004",
+  "secondary_lessons": [
+    "REL.MOQ.001"
+  ],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis parc",
+  "characters": [
+    "Sami",
+    "Tom",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sami est dans le salon avec papa. C'est un gâteau. Tom a un peu de crème. Sami voit le téléphone. Il a une idée de photo. Papa tient le téléphone. Sami dit : je peux demander une photo. Demander, c'est parler avant. Une photo se fait avec un adulte. Papa dit : le téléphone reste avec l'adulte. On ne prend pas une photo pour rire de l'autre. Ce n'est pas pour rire de l'autre. Ce n'est pas gentil. On ne va pas rire. On ne va pas répéter. Sami dit : d'accord. Tom essuie sa joue. Papa prend la photo. Ils sourient. Plus tard, ils vont au parc. Tom a du sable sur le nez. Sami demande encore à papa. Papa dit oui, pour un souvenir. Pas pour rire de l'autre. Le téléphone reste avec l'adulte. Au salon, puis au parc, c'est pareil. On demande. L'adulte garde le téléphone.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sami veut une photo. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "à papa",
+        "adulte",
+        "demander à l'adulte"
+      ],
+      "retry_prompt": "On demande à l'adulte. Ce n'est pas pour rire de l'autre. Que fait Sami ?",
+      "positive_feedback": "Oui. On demande à l'adulte. Une photo, ce n'est pas pour rire de l'autre.",
+      "wrong_feedback": "On demande à l'adulte. Le téléphone reste avec lui. Ce n'est pas pour rire de l'autre.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sami a su demander. Deux fois. Le téléphone reste avec l'adulte. Ce n'est pas pour rire de l'autre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sami et Tom rangent le seau. Papa glisse le téléphone dans sa poche. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
