@@ -106,6 +106,8 @@ Processus : agents en parallèle → fichiers `stories/rewrites/<id>/agent_*.jso
 
 Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histoire, un moment par chunk, leçon **vécue** en fin.
 
+**Troupe enfant (D16) :** Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Les réécritures suivantes remplacent Lina / Noé / Tom par cette liste. Peu de personnages par histoire.
+
 - `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
 - `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
 - `ATOM-SAN.ALI.002-01` Tom — *Le bateau de Tom* (N1)

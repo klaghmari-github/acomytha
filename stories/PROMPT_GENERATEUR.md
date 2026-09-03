@@ -22,7 +22,7 @@ Copie la structure de l’exemple. Un seul chemin. Nœuds : `audio` → `questio
 - Inclure tous les `required_messages` de la leçon dans le texte du chemin.
 - `safe_actions` montrées, pas seulement dites.
 - Question : réponse 1–3 mots, `expected_intents` = ceux de la fiche, `wrong_feedback` = conduite sûre seulement.
-- Nommer papa et/ou maman. Personnages originaux (Lina, Tom, Nora, Sami, Léa, Hugo, Inès, Jules, Maya, Noé, Adam, Sara, Lila, Kenzo, Zoé, Iris, Nino, Ava…). Pas de franchise.
+- Nommer papa et/ou maman. Enfants **uniquement** : Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Un héros, au plus un autre enfant. Pas de foule, pas d’autre prénom, pas de franchise.
 - Cadre concret : maison, cuisine, parc, école, marché, trajet avec adulte, jardin, ferme.
 
 ## JSON ramifié

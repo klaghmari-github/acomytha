@@ -19,3 +19,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D13 | Marque | Le produit s’appelle **AcoMytha**. « Sentier » est retiré de l’UI, du code, des docs et des comptes démo. |
 | D14 | UI parent | Pas de métaphore forêt/arbre. Vocabulaire parent : histoires, sélection, courte / avec des choix. Palette claire, accent bleu. |
 | D15 | Vitrine + A | Accueil public, inscription, aperçu 10 s. Monnaie A (paramètres admin). Stripe plus tard. |
+| D16 | Troupe enfant | Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Pas d’autre prénom d’enfant. Une histoire = 1 héros, au plus 1 autre enfant, papa/maman. |

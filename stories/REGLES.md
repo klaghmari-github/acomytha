@@ -26,6 +26,17 @@ Public : enfants 3–6 ans (N1 = 3–4, N2 = 4–5, N3 = 5–6). Audio seulement
 18. **Secret** : surprise gentille ≠ malaise. Ce qui fait peur se raconte à papa ou maman (FAM.SEC.002).
 19. **Respecter un adulte** n’efface pas le droit de dire non, de s’éloigner et de tout raconter à papa ou maman.
 20. **Le générateur ne s’auto-approuve pas** (VAL-001). Statut initial : `PENDING`.
+21. **Troupe enfant fermée.** Les enfants nommés sont seulement : **Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina**. Pas d’autre prénom d’enfant. Dans **une** histoire : un seul héros, au plus **un** autre enfant de la liste, plus papa et/ou maman. Pas de foule : l’enfant se perd.
+
+## Troupe (enfants)
+
+| Prénom | Rôle typique |
+| --- | --- |
+| Amir, Aniss, Nino, Raphaël, Victorino | héros / copain |
+| Sarah, Mila, Nina, Victorina | héroïne / copine |
+| Chouchou | enfant (surnom, un seul personnage) |
+
+Adultes : papa, maman (toujours nommés ainsi). Maîtresse, grand-père, grand-mère seulement si la leçon l’exige, un seul adulte extra max.
 
 ## Interdits CHILD_AUDIO (liste non exhaustive)
 
