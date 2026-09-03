@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.004-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Francine est surprise",
+  "lesson_id": "EMO.LEX.004",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Francine",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Francine est dans la cuisine. Maman ouvre un placard. Une casserole tombe. Clang. Francine sent son cœur vite. Ses épaules sautent. Elle dit : je suis surprise. La casserole a fait le bruit. Maman dit : d'abord respirer. Francine souffle. Elle va respirer encore. Puis comprendre. Elle regarde. C'est la casserole. Rien n'est cassé. Francine dit : je veux comprendre. Maman sourit. Être surpris, on peut respirer. Puis on cherche à comprendre. Francine pose la main sur son ventre. Elle souffle encore. Maman range la casserole.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Francine est surprise. Que fait-elle d'abord ?",
+      "expected_intents": [
+        "SURPRIS",
+        "SOUFFLER"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "respirer",
+        "surpris",
+        "je suis surprise"
+      ],
+      "retry_prompt": "Francine souffle. Que fait-on quand on est surpris ?",
+      "positive_feedback": "Oui. On nomme : surpris. On respire. On cherche à comprendre.",
+      "wrong_feedback": "On dit : je suis surpris. On respire. On cherche à comprendre.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.LEX.004"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Francine a nommé : surprise. Elle a respiré. Elle a voulu comprendre. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Francine range une cuillère. Maman ferme le placard. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

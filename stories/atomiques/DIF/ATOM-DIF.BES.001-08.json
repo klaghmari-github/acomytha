@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-DIF.BES.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Claire répète et laisse observer",
+  "lesson_id": "DIF.BES.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.BES",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe, cubes puis tapis",
+  "characters": [
+    "Claire",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Claire est en classe. Un camarade s'appelle Hugo. La maîtresse explique un jeu de cubes. Hugo reste près du mur. Il a besoin de calme. Claire va répéter la règle. Elle dit : on pose un cube. Puis un autre. Hugo va observer d'abord. Il regarde. Il ne joue pas encore. Observer d'abord, c'est possible. Plus tard, au tapis, même leçon, autre lieu. Claire répète encore. Hugo observe d'abord. Puis il pose un cube. Le soir, papa et maman écoutent. Claire dit : on peut répéter. On peut observer d'abord. Maman sourit. Papa dit : tu as laissé le temps.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hugo a besoin de calme. Que peut-on faire ?",
+      "expected_intents": [
+        "REPETTER",
+        "OBSERVER"
+      ],
+      "accepted_examples": [
+        "répéter",
+        "observer",
+        "observer d'abord",
+        "la règle"
+      ],
+      "retry_prompt": "On répète la règle. Hugo peut quoi d'abord ?",
+      "positive_feedback": "Oui. On répète. On peut observer d'abord.",
+      "wrong_feedback": "On répète la règle. On accepte d'observer d'abord.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.BES.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Claire a répété. Hugo a observé d'abord. Puis il a joué un peu. Papa et maman ont écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Claire range son cartable. Papa lui tend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

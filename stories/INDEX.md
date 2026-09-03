@@ -6,16 +6,16 @@ Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
 | Kind | Fichiers | Leçons couvertes | Graphe |
 | --- | --- | --- | --- |
-| Atomique | 657 | 85 / 85 | 1 chemin, `question_lesson` |
-| Ramifiée | 740 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
+| Atomique | 685 | 85 / 85 | 1 chemin, `question_lesson` |
+| Ramifiée | 760 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
 
-Total **1397** histoires. Validateur déterministe : `python3 stories/outils/validate.py` → **1397 APPROVED_TEXT**, 0 REJECTED, 0 REVISION.
+Total **1445** histoires. Validateur déterministe : `python3 stories/outils/validate.py` → **1445 APPROVED_TEXT**, 0 REJECTED, 0 REVISION.
 
 Le générateur **n’auto-approuve pas** un paquet audio. Statut maximal ici : `APPROVED_TEXT`. TTS/ASR et revue humaine restent en aval (VAL-AUD, HUM).
 
 ## Domaines (atomiques)
 
-SAN · SEC · EMO · REL · DIF · AUT · FAM · COL · VIV · TMP · SOC · JEU · LAN — tous représentés, plusieurs variantes N1/N2/N3 par leçon.
+SAN 73 · SEC 75 · EMO 88 · REL 81 · DIF 60 · AUT 40 · FAM 37 · COL 35 · VIV 38 · TMP 44 · SOC 49 · JEU 36 · LAN 29 (atomiques). N1 182 · N2 280 · N3 223.
 
 ## Identifiants
 
