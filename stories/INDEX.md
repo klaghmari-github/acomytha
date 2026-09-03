@@ -6,8 +6,8 @@ Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
 | Kind | Fichiers | Leçons couvertes | Graphe |
 | --- | --- | --- | --- |
-| Atomique | 130 | 85 / 85 | 1 chemin, `question_lesson` |
-| Ramifiée | 120 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
+| Atomique | 176 | 85 / 85 | 1 chemin, `question_lesson` |
+| Ramifiée | 154 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
 
 Validation déterministe : `python3 stories/outils/validate.py` → APPROVED_TEXT sur tout le corpus (aucune violation bloquante lexique/graphe/contrat).
 

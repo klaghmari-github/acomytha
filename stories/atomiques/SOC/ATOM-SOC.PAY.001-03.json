@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SOC.PAY.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Cléa nomme un pays et un paysage",
+  "lesson_id": "SOC.PAY.001",
+  "secondary_lessons": [
+    "SOC.TRA.001"
+  ],
+  "domain": "SOC",
+  "subdomain": "SOC.PAY",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe",
+  "characters": [
+    "Cléa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Cléa est en classe. Maman aide aujourd'hui. La maîtresse ouvre un livre. Les pages sentent le papier. Cléa entend un nom : l'Italie. Cléa répète le nom. Sur la page, il y a des sommets. C'est un paysage. C'est la montagne. Cléa dit : la montagne. Plus tard, elles tournent une page. Un autre nom : le Sénégal. Cléa répète le nom. Sur la page, il y a du sable chaud. C'est un paysage. C'est le désert. Un pays, un nom, un paysage. Dans le livre, un train siffle. Un avion passe. Un bateau glisse. On nomme le véhicule. On voyage avec un adulte. Maman est là. Cléa nomme le train. En classe, deux fois, c'est pareil. On dit le nom. On dit le paysage.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Cléa nomme l'Italie. Elle nomme aussi quoi ?",
+      "expected_intents": [
+        "PAYS",
+        "PAYSAGE"
+      ],
+      "accepted_examples": [
+        "la montagne",
+        "un paysage",
+        "un pays",
+        "le désert",
+        "un nom"
+      ],
+      "retry_prompt": "Il y a des sommets. C'est quel paysage ?",
+      "positive_feedback": "Oui. Un pays, un nom. Un paysage, la montagne ou le désert.",
+      "wrong_feedback": "On nomme un pays et un paysage. La mer, la montagne ou le désert.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Cléa a dit le nom. L'Italie. Le Sénégal. Elle a dit le paysage. La montagne. Le désert.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Cléa ferme le livre. Maman range les chaises. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

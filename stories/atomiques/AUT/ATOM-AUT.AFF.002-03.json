@@ -1,0 +1,70 @@
+{
+  "tree_id": "ATOM-AUT.AFF.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Sara prend son manteau",
+  "lesson_id": "AUT.AFF.002",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "hall puis rue",
+  "characters": [
+    "Sara",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sara veut sortir avec papa. Ils sont dans le hall. L'air de la porte est frais. Papa prend le manteau. Sara enfile le manteau. Le tissu est doux. Ils sortent. La rue sent le pain. Parce qu'elle a le manteau, Sara a chaud. Ils marchent près. Puis ils rentrent. Sara retire le manteau. Elle le pose à sa place. Elle le raccroche. Le crochet fait un petit bruit. Papa dit : manteau pour sortir. Manteau à sa place en rentrant. Sara hoche la tête. Elle a su prendre le manteau. Elle a su le raccrocher.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sara va dehors. Que prend-elle ?",
+      "expected_intents": [
+        "MANTEAU"
+      ],
+      "accepted_examples": [
+        "le manteau",
+        "manteau",
+        "elle l'enfile"
+      ],
+      "retry_prompt": "Avant de sortir, que prend Sara ?",
+      "positive_feedback": "Oui. On prend le manteau pour sortir. En rentrant, on le raccroche.",
+      "wrong_feedback": "Avant de sortir, on prend le manteau. En rentrant, on le pose à sa place.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sara a pris le manteau pour sortir. En rentrant, elle l'a raccroché. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sara pose ses chaussures. Papa ferme la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
