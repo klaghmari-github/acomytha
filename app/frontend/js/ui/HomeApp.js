@@ -49,7 +49,6 @@ export class HomeApp extends Component {
             </select>
             <select id="kind">
               <option value="">Toutes</option>
-              <option value="atomic">Courte</option>
               <option value="interaction">Avec interaction</option>
               <option value="ramifiee">Avec ramifications vers d’autres histoires</option>
             </select>
@@ -144,10 +143,11 @@ export class HomeApp extends Component {
     el.className = "c-card";
     const theme = this.domainNames.get(s.domain) || "";
     const where = [theme, s.setting].filter(Boolean).join(" · ");
+    const form = formLabel(s);
     el.innerHTML = `
       <div class="o-row">
         <span class="c-pill">${ageLabel(s.age_band)}</span>
-        <span class="c-pill ${s.kind === "ramifiee" || s.has_interaction ? "c-pill--ram" : ""}">${formLabel(s)}</span>
+        ${form ? `<span class="c-pill c-pill--ram">${form}</span>` : ""}
       </div>
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
@@ -215,7 +215,7 @@ function escapeHtml(s) {
 function formLabel(s) {
   if (s.kind === "ramifiee") return "Avec ramifications vers d’autres histoires";
   if (s.has_interaction) return "Avec interaction";
-  return "Courte";
+  return "";
 }
 
 function ageLabel(band) {
