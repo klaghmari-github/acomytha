@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.MOT.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Éloi classe au marché",
+  "lesson_id": "LAN.MOT.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.MOT",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Éloi",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Éloi tient la main de maman au marché. Une poire. Une fraise. Un bonnet. Une chaussette. Maman dit : on nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les habits. Éloi met la poire et la fraise dans le filet. Catégorie des fruits. Il met le bonnet et la chaussette dans le sac. Catégorie des habits.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Éloi range poire et bonnet. Que fait-il ?",
+      "expected_intents": [
+        "CLASSER"
+      ],
+      "accepted_examples": [
+        "classer",
+        "catégorie",
+        "ensemble"
+      ],
+      "retry_prompt": "Les fruits vont ensemble. Que fait Éloi ?",
+      "positive_feedback": "Oui. Il classe. C'est une catégorie.",
+      "wrong_feedback": "On nomme. On classe. C'est une catégorie.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "LAN.MOT.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Éloi a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman paie. Éloi tient le filet. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

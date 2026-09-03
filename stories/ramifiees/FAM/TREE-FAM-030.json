@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-FAM-030",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Faustine raconte une bêtise",
+  "lesson_id": "FAM.VER.001",
+  "secondary_lessons": [
+    "FAM.AID.001"
+  ],
+  "domain": "FAM",
+  "subdomain": "FAM.VER",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Faustine",
+    "papa",
+    "maman"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Faustine est à la maison. Un verre a glissé. Elle a un nœud au ventre. Papa dit : tu peux raconter. On le dit à papa ou maman.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Faustine va où ? Le salon, la cuisine, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le salon",
+          "intent": "LE_SALON",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Dans le salon, Faustine va raconter à papa ou maman.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Dans le salon, que fait Faustine ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "elle dit"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "On raconte. On le dit à papa ou maman.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "FAM.VER.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Faustine a raconté. Papa ou maman écoute.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Qu'est-ce qui s'est passé ? Le verre, le coussin, ou le crayon ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "le verre",
+          "intent": "LE_VERRE",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le coussin",
+          "intent": "LE_COUSSIN",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "le crayon",
+          "intent": "LE_CRAYON",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le verre, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le verre, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le verre, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le coussin, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le coussin, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le coussin, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le crayon, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le crayon, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le crayon, à le salon. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Dans la cuisine, Faustine raconte à papa ou maman.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Dans la cuisine, que fait Faustine ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "elle dit"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "On raconte. On le dit à papa ou maman.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "FAM.VER.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. On raconte à papa ou maman.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Qu'est-ce qui s'est passé ? Le verre, le coussin, ou le crayon ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "le verre",
+          "intent": "LE_VERRE",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le coussin",
+          "intent": "LE_COUSSIN",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "le crayon",
+          "intent": "LE_CRAYON",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le verre, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le verre, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le verre, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le coussin, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le coussin, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le coussin, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le crayon, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le crayon, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le crayon, à la cuisine. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Dans la chambre, Faustine raconte à papa ou maman.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Dans la chambre, que fait Faustine ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "elle dit"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "On raconte. On le dit à papa ou maman.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "FAM.VER.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Faustine a su raconter.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Qu'est-ce qui s'est passé ? Le verre, le coussin, ou le crayon ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "le verre",
+          "intent": "LE_VERRE",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le coussin",
+          "intent": "LE_COUSSIN",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "le crayon",
+          "intent": "LE_CRAYON",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le verre, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le verre, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le verre, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le coussin, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le coussin, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le coussin, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Faustine raconte à papa ou maman.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Faustine raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Faustine rejoint maman. Elle raconte le crayon, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Faustine rejoint papa. Elle raconte le crayon, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Faustine rejoint la sœur. Elle raconte le crayon, à la chambre. Papa ou maman écoute. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

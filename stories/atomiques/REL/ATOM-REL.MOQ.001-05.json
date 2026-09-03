@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.MOQ.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Nine ne rit pas du cartable",
+  "lesson_id": "REL.MOQ.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Nine",
+    "Blaise",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nine est à l'école. Blaise fait tomber son cartable. Un camarade commence à rire. Nine ne rit pas. Il ne faut pas rire. Nine ne répète pas. Il ne faut pas répéter. Nine dit : ce n'est pas gentil. Elle ramasse le cartable. Elle le tend. Le soir, maman vient. Nine raconte. Maman dit : tu as bien fait. Pas rire. Pas répéter. On dit : ce n'est pas gentil.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade rit. Que fait Nine ?",
+      "expected_intents": [
+        "PAS_RIRE",
+        "PAS_GENTIL"
+      ],
+      "accepted_examples": [
+        "pas rire",
+        "pas gentil",
+        "pas répéter"
+      ],
+      "retry_prompt": "Elle dit que ce n'est pas gentil. Que ne fait-elle pas ?",
+      "positive_feedback": "Oui. Elle ne rit pas. Elle ne répète pas. Ce n'est pas gentil.",
+      "wrong_feedback": "On ne rit pas. On ne répète pas. On dit : ce n'est pas gentil.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.MOQ.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nine n'a pas ri. Elle n'a pas répété. Elle a dit : ce n'est pas gentil.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman prend la main de Nine. Ils marchent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

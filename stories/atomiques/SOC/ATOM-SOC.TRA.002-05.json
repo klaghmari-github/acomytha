@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SOC.TRA.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Rosalie reste assise dans le train",
+  "lesson_id": "SOC.TRA.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "train",
+  "characters": [
+    "Rosalie",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Rosalie et papa montent dans le train. Papa montre la place. Rosalie pose ses fesses sur le siège. Elle est assise. Son dos est contre le dossier. Ses pieds sont sur le plancher. Papa s'assoit à côté. Papa, c'est l'adulte. Papa dit : on reste assis, avec l'adulte. Le train roule. Rosalie tient son doudou. Elle reste assise, avec papa. Le train s'arrête. Rosalie reste assise. Papa dit : maintenant on se lève. Ils descendent ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Rosalie est dans le train. Que fait-elle ?",
+      "expected_intents": [
+        "ASSIS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "assis",
+        "rester assis",
+        "avec papa",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Ses fesses sont sur le siège. Avec qui ?",
+      "positive_feedback": "Oui. Elle reste assise, avec l'adulte.",
+      "wrong_feedback": "Dans le train, on reste assis, avec l'adulte.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.TRA.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Rosalie est restée assise. Papa, l'adulte, était à côté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ils marchent sur le quai. Rosalie tient la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
