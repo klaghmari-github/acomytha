@@ -31,6 +31,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-006 | **développé** | Scripts 1445 xlsx ; échantillons re-bakés ; bake corpus lancé. |
 | F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
+| F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
 
 ---
 
@@ -75,6 +76,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-AUD-005 | Audio | Bake Piper → MP3 64k, 0 €, plans via Heavy | P0 | 1 | STRAT-002 | F-AUD-001, F-GEN-001 |
 | F-AUD-006 | Audio | Cast multi-voix (narrateur / famille / école / enfants) | P0 | 1 | STRAT-002 §4 | F-AUD-005 |
 | F-AUD-007 | Audio | Immersion sonore de **tout** le récit (monde entendu, pas une liste de cas) | P0 | 1 | STRAT-002 §4b | F-AUD-006 |
+| F-NAR-008 | Moteur | Récit captivant : fil rouge, début/fin, leçon greffée | P0 | 1 | stories/REWRITE.md | F-GEN-001, F-AUD-006, F-AUD-007 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -89,6 +91,14 @@ Tables `lesson`, `story`, `story_lesson`, `chunk`, `chunk_link` (exceptions). Le
 ### F-AUD-004 — Protection
 
 `.chk` = AES-256-GCM(MP3). Clé au Keystore/Keychain. Jamais de MP3 en clair sur disque. Décryptage chunk par chunk en RAM. **STRAT-002** §5.
+
+### F-NAR-008 — Récit captivant (fil rouge)
+
+**Problème :** les textes actuels sont des **scénarios de leçon branchés**, pas des histoires. Pas de début/fin vécus. Impression de **cours**, pas d’écoute.
+
+**Cible :** un fil rouge (envie, petite aventure, fait concret) **dirige** le récit. Les leçons se **greffent**. L’enfant sent que quelque chose **commence** et **se termine**.
+
+Processus : agents en parallèle → fichiers `stories/rewrites/<id>/agent_*.json` (xlsx d’origine intact) → fusion → remplacement. Texte d’abord, chunks + `script` + `sons` + rythme. Détail : `stories/REWRITE.md`.
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
