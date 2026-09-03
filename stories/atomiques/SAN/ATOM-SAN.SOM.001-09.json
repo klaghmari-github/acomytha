@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-SAN.SOM.001-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Ariane met le pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.SOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Ariane",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le soir, la maison est calme. La lampe est douce. Ariane bâille. Maman dit : c'est l'heure. Ariane prend le pyjama. Le pyjama a des lunes. Il est doux. Ariane met le pyjama. Un bras. Puis l'autre. Papa ouvre le lit. La couverture est chaude. Ariane se couche. Elle pose la tête. Papa raconte une petite histoire. Ariane écoute. Elle ferme les yeux. C'est le dodo. Maman dit : le corps a besoin de dormir. Ariane respire. Papa baisse la lampe. Ariane est au lit. Le soir, pyjama, dodo.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le soir, Ariane va dormir. Que met-elle ?",
+      "expected_intents": [
+        "PYJAMA",
+        "LIT"
+      ],
+      "accepted_examples": [
+        "pyjama",
+        "le pyjama",
+        "au lit",
+        "le lit",
+        "dodo"
+      ],
+      "retry_prompt": "Elle met le pyjama. Puis elle va au lit. Que met Ariane ?",
+      "positive_feedback": "Oui. Le soir, Ariane met le pyjama. Puis c'est le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SAN.SOM.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ariane a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa pose le livre. Ariane respire. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

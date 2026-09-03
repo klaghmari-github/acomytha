@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.PAR.002-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Ferdinand attend la balançoire",
+  "lesson_id": "REL.PAR.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc, balançoire",
+  "characters": [
+    "Ferdinand",
+    "Lila",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ferdinand est au parc. Papa est près. Lila est sur la balançoire. La chaîne cliquette. Ferdinand a envie. Il s'approche. Papa dit : on attend. Ferdinand attend. Il pose les pieds au sol. Il compte. Un. Deux. Trois. Lila se balance encore. Ferdinand attend. Le bois de la barre est lisse. Lila descend. Papa dit : puis mon tour. Ferdinand dit : puis mon tour. Il s'assoit. Il se balance. Ses mains tiennent la chaîne. Lila attend maintenant. Papa sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Lila est sur la balançoire. Que fait Ferdinand ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "son tour",
+        "puis mon tour",
+        "il attend"
+      ],
+      "retry_prompt": "Il attend. Puis c'est son tour. Que fait Ferdinand ?",
+      "positive_feedback": "Oui. On attend. Puis mon tour arrive.",
+      "wrong_feedback": "On attend. Puis mon tour arrive, et on joue.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.PAR.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ferdinand a su attendre. Puis mon tour est venu. Il s'est balancé. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ferdinand range son manteau. Il prend la main de papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

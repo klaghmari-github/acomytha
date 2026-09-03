@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-EMO.GES.002-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Ferdinand souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis cuisine",
+  "characters": [
+    "Ferdinand",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ferdinand construit un pont avec des cubes. Les cubes cliquent. Le pont tombe. Ferdinand sent son ventre serré. Papa arrive. Papa dit : on souffle. Ferdinand souffle. Un grand souffle. Papa dit : on fait une pause. Ferdinand s'assoit. Il pose les fesses au tapis. Il souffle encore. La pause est calme. Son ventre se desserre. Plus tard, dans la cuisine, une casserole glisse. Ça fait un bruit fort. Ferdinand sent encore son ventre. Même leçon, autre lieu. Il s'assoit près de maman. Il souffle. Il fait une pause. Puis il reprend. Maman dit : tu as soufflé. Tu as fait une pause. Ferdinand sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le pont tombe. Que fait Ferdinand ?",
+      "expected_intents": [
+        "SOUFFLER",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "il souffle",
+        "pause",
+        "une pause",
+        "s'asseoir"
+      ],
+      "retry_prompt": "Il souffle. Il s'assoit. Que fait-il ?",
+      "positive_feedback": "Oui. Ferdinand souffle. Il fait une pause.",
+      "wrong_feedback": "On souffle. On s'assoit. On fait une pause. Puis on reprend.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.GES.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ferdinand a soufflé. Il a fait une pause. Au salon, puis à la cuisine. Papa et maman étaient là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ferdinand pose un cube. Le pont est petit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

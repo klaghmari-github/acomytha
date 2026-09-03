@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-LAN.SON.001-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Gaston nomme les sons de la fenêtre",
+  "lesson_id": "LAN.SON.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.SON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon, fenêtre",
+  "characters": [
+    "Gaston",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaston est près de la fenêtre. Maman ouvre un peu. Un son : plic plic. Maman dit : c'est un son. Quel nom ? Gaston dit : la pluie. Un son : miaou. Gaston dit le nom : le chat. Papa arrive. Un son : tchou tchou. Papa dit : c'est un son. Quel nom ? Gaston dit : le train. Maman dit : on entend un son. On dit le nom. Gaston répète. Pluie. Chat. Train. C'est un son. On dit le nom.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gaston entend un bruit. C'est quoi ?",
+      "expected_intents": [
+        "SON"
+      ],
+      "accepted_examples": [
+        "un son",
+        "la pluie",
+        "le chat",
+        "le train",
+        "le nom"
+      ],
+      "retry_prompt": "Il nomme ce qu'il entend. C'est quoi ?",
+      "positive_feedback": "Oui. C'est un son. On dit le nom.",
+      "wrong_feedback": "On écoute le son. On dit le nom.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "LAN.SON.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaston a entendu un son. Il a dit le nom. Pluie. Chat. Train.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa ferme un peu la fenêtre. Gaston écoute encore. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

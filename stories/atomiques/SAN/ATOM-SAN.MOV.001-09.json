@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SAN.MOV.001-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Brice joue dehors à la marelle",
+  "lesson_id": "SAN.MOV.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.MOV",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square, marelle",
+  "characters": [
+    "Brice",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Après le déjeuner, Brice a les jambes qui démangent. Il a envie de bouger. Maman dit : on va dehors. Maman, c'est l'adulte. Ils marchent jusqu'au square. L'air sent la poussière chaude. Une marelle est dessinée au sol. Brice saute dans les cases. Un pied. Puis deux pieds. Maman reste près de lui. Ils jouent dehors, avec un adulte. Parce que Brice a bougé, ses joues sont roses. Il rit. Maman dit : encore un moment dehors. Brice saute encore. Il entend le craquement de la craie. Quand il souffle fort, maman dit : on rentre. Brice a joué dehors, avec un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Brice veut bouger. Où joue-t-il ?",
+      "expected_intents": [
+        "DEHORS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "dehors",
+        "au square",
+        "marelle",
+        "avec maman",
+        "avec un adulte"
+      ],
+      "retry_prompt": "Il saute à la marelle. Avec qui ?",
+      "positive_feedback": "Oui. Brice joue dehors, avec un adulte.",
+      "wrong_feedback": "On joue dehors un moment, avec un adulte. Papa ou maman est là.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SAN.MOV.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Brice a joué dehors. Maman, l'adulte, était avec lui. Les jambes ont bougé.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Brice boit de l'eau. La craie reste sur ses chaussures. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

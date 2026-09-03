@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.CON.003-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gaston dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon, puzzle",
+  "characters": [
+    "Gaston",
+    "Nina",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaston joue dans le salon avec maman. Nina a posé un puzzle. Les pièces font un chat. Gaston passe trop près. Le puzzle se défait. Nina a les yeux mouillés. Elle est triste. Parce que le chat est défait, Nina a de la peine. Maman s'approche. Maman dit : tu peux dire pardon. Gaston dit : pardon, Nina. Maman dit : tu peux proposer un geste. Gaston ramasse une pièce. Il pose le museau du chat. C'est un geste simple. Nina regarde. Elle reste un peu triste. Maman dit : la peine reste un peu. Le pardon n'efface pas tout de suite. Papa s'assoit près de Nina. Gaston attend. Plus tard, Nina pose une oreille. Gaston tend une pièce. Ils reconstruisent doucement. La peine reste un peu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le puzzle de Nina s'est défait. Que fait Gaston ?",
+      "expected_intents": [
+        "PARDON",
+        "GESTE"
+      ],
+      "accepted_examples": [
+        "pardon",
+        "un geste",
+        "dire pardon",
+        "ramasser"
+      ],
+      "retry_prompt": "Il dit pardon, et il propose un geste. Que fait Gaston ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine peut rester un peu.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.CON.003"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaston a dit pardon. Il a proposé un geste. La peine reste un peu. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le chat du puzzle redevient entier. Papa reste assis près d'eux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

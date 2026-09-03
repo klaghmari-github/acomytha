@@ -1,0 +1,77 @@
+{
+  "tree_id": "ATOM-EMO.LEX.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Émeline est contente de la fraise",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin, fraisiers",
+  "characters": [
+    "Émeline",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Émeline est dans le jardin avec maman. Les feuilles sentent le vert. Émeline trouve une fraise rouge. Elle est tiède. Parce qu'elle a trouvé la fraise, Émeline sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Émeline dit : je suis contente. Papa arrive près du potager. Papa dit : c'est de la joie. Émeline tend la fraise. Elle dit : on peut partager. Maman croque un bout. Papa croque un bout. Ils sourient ensemble. Émeline dit encore : je suis contente. La joie est là, près des fraisiers.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Émeline sourit. Que dit-elle ?",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "contente",
+        "je suis contente",
+        "joie",
+        "de la joie",
+        "partager"
+      ],
+      "retry_prompt": "Émeline sent de la joie. Que dit-elle ?",
+      "positive_feedback": "Oui. Émeline dit : je suis contente. C'est de la joie.",
+      "wrong_feedback": "On dit : je suis content. On partage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.LEX.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Émeline a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Émeline essuie ses doigts. La terre est tiède. Maman lui prend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

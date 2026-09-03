@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-COL.ECO.002-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Brice attend son tour de parole",
+  "lesson_id": "COL.ECO.002",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe, tapis puis coins livres",
+  "characters": [
+    "Brice",
+    "papa",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Brice arrive en classe avec papa. Papa dit au revoir. Brice s'assoit sur le tapis. La maîtresse pose une question. Brice a une idée. Il lève la main. Il faut attendre. Un camarade parle d'abord. Brice attend encore. Puis la maîtresse dit : Brice, c'est ton tour. Brice parle. Il dit : le nuage est blanc. La maîtresse sourit. Plus tard, au coin des livres, Brice a encore une idée. Même leçon, autre lieu. Il lève la main. Il attend. Puis parler, c'est son tour. Il dit : j'aime ce livre. Le soir, papa demande. Brice dit : j'ai levé la main. J'ai su attendre. Puis parler, c'était mon tour.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Brice veut parler. Que fait-il d'abord ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "PARLER"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "il attend",
+        "lever la main",
+        "la main"
+      ],
+      "retry_prompt": "Il lève la main et il attend. Que fait Brice ?",
+      "positive_feedback": "Oui. Il faut attendre, puis parler.",
+      "wrong_feedback": "On lève la main. Il faut attendre. Puis on peut parler.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "COL.ECO.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Brice a levé la main. Il a attendu. Puis parler, c'était son tour. Au tapis, puis aux livres.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Brice range son cartable. Papa l'attend à la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
