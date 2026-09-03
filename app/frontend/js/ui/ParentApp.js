@@ -209,6 +209,8 @@ export class ParentApp extends Component {
           <button class="c-btn c-btn--ghost" data-eur="10">10 €</button>
           <button class="c-btn c-btn--ghost" data-eur="20">20 €</button>
           <button class="c-btn c-btn--ghost" data-eur="30">30 €</button>
+          <button class="c-btn c-btn--ghost" data-eur="40">40 €</button>
+          <button class="c-btn c-btn--ghost" data-eur="50">50 €</button>
         </div>
         <p class="c-hint" id="recharge-msg">Le paiement arrivera bientôt.</p>
       </details>`;
