@@ -21,9 +21,10 @@ Date : 3 septembre 2026. Pas d’approbation demandée (consigne fondateur).
 
 ## Audio test
 
-- Dossier `stories/audio/<tree_id>/<chunk_id>.wav`
-- WAV  : sortie native Piper (ou eSpeak). Plus simple que MP3 pour le bake local (pas de ffmpeg obligatoire). Livraison téléphone plus tard = MP3 chiffré (`STRAT-002`).
-- Script : `stories/outils/xlsx_to_audio.py` (reprise si le fichier existe).
+- Dossier `stories/audio/<tree_id>/<chunk_id>.wav` **et** `.mp3`
+- **Bug muet (2026-09-03) :** Piper écrit du PCM 16-bit **22050 Hz mono**. Les échantillons n’étaient **pas** à zéro (crête 32767, RMS ~5000). `aplay` lisait le fichier. En revanche 22050 Hz mono WAV est souvent **inaudible / refusé** par lecteurs Windows, iPhone, Android, aperçu navigateur. Cause = format de livraison, pas un TTS vide.
+- **Correctif :** rééchantillonner à **44100 Hz**, normaliser à −1 dBFS, écrire WAV PCM propre **+ MP3 64 kbit/s**. Vérif automatique : `peak >= 500` et MP3 > 400 octets.
+- Script : `stories/outils/xlsx_to_audio.py` (`--fix-existing` pour les 22050 déjà là ; bake normal fait 44100+mp3).
 
 ## JSON
 
