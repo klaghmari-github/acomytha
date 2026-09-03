@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from acomytha.api import admin, auth, play, stories
+from acomytha.api import admin, auth, play, public, shop, stories
 from acomytha.crypto_audio import AudioVault
 from acomytha.db import Database
 from acomytha.devices import DeviceGuard
@@ -32,6 +32,8 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
     app.state.vault = AudioVault(settings)
 
     app.include_router(auth.router)
+    app.include_router(public.router)
+    app.include_router(shop.router)
     app.include_router(stories.router)
     app.include_router(play.router)
     app.include_router(admin.router)

@@ -26,6 +26,7 @@ export class LoginGate extends Component {
           </div>
           <p class="c-error" id="err"></p>
           <button class="c-btn c-btn--wide" type="submit">Connexion</button>
+          <p class="c-hint"><a href="#/inscription">Créer un compte</a> · <a href="#/">Accueil</a></p>
         </form>
       </section>`;
     this.on(this.querySelector("#login"), "submit", (ev) => this.submit(ev));
@@ -48,7 +49,7 @@ export class LoginGate extends Component {
     } catch (e) {
       if (e instanceof ApiError && e.status === 409) {
         const d = e.detail;
-        err.textContent = d?.message || "Cet accès est déjà lié à un autre appareil. L’admin a été alerté.";
+        err.textContent = d?.message || "Ce compte est déjà ouvert sur un autre appareil. Écrivez-nous si vous avez changé de téléphone.";
         return;
       }
       err.textContent = e.message || "Connexion impossible.";

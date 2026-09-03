@@ -8,7 +8,8 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
-from acomytha.models import DeviceAlert, DeviceBinding, User
+from acomytha.commerce import PARAM_SPECS, params, seed_params
+from acomytha.models import AppSetting, DeviceAlert, DeviceBinding, StoryOrder, User
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
@@ -18,6 +19,10 @@ class NewParent(BaseModel):
     password: str = Field(min_length=8)
     display_name: str
     child_pin: str = Field(min_length=4, max_length=8)
+
+
+class SettingsBody(BaseModel):
+    values: dict[str, str]
 
 
 @router.get("/alerts")
@@ -116,4 +121,26 @@ def stats(_auth: AuthContext = Depends(require_roles("admin")), db: Session = De
         "chunks": db.query(Chunk).count(),
         "alerts_open": db.query(DeviceAlert).filter(DeviceAlert.acknowledged.is_(False)).count(),
         "with_audio": db.query(Story).filter(Story.has_audio.is_(True)).count(),
+        "orders_pending": db.query(StoryOrder).filter(StoryOrder.status == "pending").count(),
     }
+
+
+@router.get("/settings")
+def get_settings(_auth: AuthContext = Depends(require_roles("admin")), db: Session = Depends(get_db)):
+    seed_params(db)
+    current = params(db)
+    return [{"key": k, "value": current.get(k, d), "label": lab} for k, d, lab in PARAM_SPECS]
+
+
+@router.put("/settings")
+def put_settings(body: SettingsBody, _auth: AuthContext = Depends(require_roles("admin")), db: Session = Depends(get_db)):
+    seed_params(db)
+    allowed = {k for k, _d, _l in PARAM_SPECS}
+    for key, value in body.values.items():
+        if key not in allowed:
+            continue
+        row = db.get(AppSetting, key)
+        if row:
+            row.value = str(value)[:400]
+    db.commit()
+    return get_settings(_auth, db)

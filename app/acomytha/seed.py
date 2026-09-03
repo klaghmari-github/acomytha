@@ -6,7 +6,8 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from acomytha.catalog import CatalogImporter
-from acomytha.models import ForestEntry, Story, User
+from acomytha.commerce import grant_welcome, seed_params
+from acomytha.models import ForestEntry, Purchase, Story, User
 from acomytha.security import PasswordHasher
 from acomytha.settings import Settings
 
@@ -18,11 +19,13 @@ class Bootstrap:
         self.importer = CatalogImporter(settings)
 
     def run(self, db: Session, import_limit: int | None = None) -> None:
+        seed_params(db)
         self.ensure_users(db)
         n = db.scalar(select(func.count()).select_from(Story)) or 0
         if n == 0:
             self.importer.import_all(db, limit=import_limit)
         self.ensure_demo_forest(db)
+        self.ensure_demo_wallet(db)
 
     def ensure_demo_forest(self, db: Session) -> None:
         parent = db.query(User).filter(User.email == self.settings.parent_email).one_or_none()
@@ -68,4 +71,21 @@ class Bootstrap:
                     pin_hash=self.hasher.hash(self.settings.child_pin),
                 )
             )
+        db.commit()
+
+    def ensure_demo_wallet(self, db: Session) -> None:
+        parent = db.query(User).filter(User.email == self.settings.parent_email).one_or_none()
+        if parent is None:
+            return
+        grant_welcome(db, parent.id)
+        for sid in ("ATOM-SAN.ALI.001-01", "TREE-SEC-001"):
+            if db.get(Story, sid) is None:
+                continue
+            exists = (
+                db.query(Purchase)
+                .filter(Purchase.parent_id == parent.id, Purchase.item_id == sid)
+                .one_or_none()
+            )
+            if exists is None:
+                db.add(Purchase(parent_id=parent.id, item_type="story", item_id=sid, price_a=0))
         db.commit()

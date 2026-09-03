@@ -18,3 +18,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D12 | F-NAR-008 | Reconstruire les textes autour d’un fil rouge. L’xlsx n’est touché qu’après fusion d’agents. Passe 2 : fusion **éditoriale** (un moment par chunk, 3–6 ans, leçon vécue en fin). Le merge « plus long gagne » recolle un cours : on ne s’en sert pas comme vérité. |
 | D13 | Marque | Le produit s’appelle **AcoMytha**. « Sentier » est retiré de l’UI, du code, des docs et des comptes démo. |
 | D14 | UI parent | Pas de métaphore forêt/arbre. Vocabulaire parent : histoires, sélection, courte / avec des choix. Palette claire, accent bleu. |
+| D15 | Vitrine + A | Accueil public, inscription, aperçu 10 s. Monnaie A (paramètres admin). Stripe plus tard. |

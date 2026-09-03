@@ -1,12 +1,14 @@
 /** Moteur jour / nuit : enchaîne les chunks, 3 s, prefetch N+1. */
 
 export class StoryEngine {
-  constructor({ api, player, onChoice, onStatus, onDone }) {
+  constructor({ api, player, onChoice, onStatus, onDone, maxSeconds = 0, preview = false }) {
     this.api = api;
     this.player = player;
     this.onChoice = onChoice;
     this.onStatus = onStatus;
     this.onDone = onDone;
+    this.maxSeconds = maxSeconds;
+    this.preview = preview;
     this.night = false;
     this._abort = false;
     this._prefetch = new Map();
@@ -20,7 +22,11 @@ export class StoryEngine {
   async run(storyId) {
     this._abort = false;
     this._prefetch.clear();
-    const graph = await this.api.get(`/play/${encodeURIComponent(storyId)}/graph`);
+    const graph = await this.api.get(
+      this.preview
+        ? `/public/preview/${encodeURIComponent(storyId)}/graph`
+        : `/play/${encodeURIComponent(storyId)}/graph`
+    );
     this.graph = graph;
     this.key = graph.key;
     let id = graph.root;
@@ -71,7 +77,10 @@ export class StoryEngine {
     const buf = await this._load(storyId, chunkId);
     if (this._abort) return;
     try {
-      await this.player.play(buf, this.key);
+      await this.player.play(buf, this.key, { maxSeconds: this.maxSeconds });
+      if (this.maxSeconds > 0) {
+        this._abort = true;
+      }
     } catch {
       /* silence : on enchaîne plutôt que de bloquer l'enfant */
     }
@@ -79,7 +88,7 @@ export class StoryEngine {
 
   async _load(storyId, chunkId) {
     if (this._prefetch.has(chunkId)) return this._prefetch.get(chunkId);
-    const p = this.api.blob(`/play/${encodeURIComponent(storyId)}/chunk/${encodeURIComponent(chunkId)}`);
+    const p = this.api.blob(this._chunkPath(storyId, chunkId));
     this._prefetch.set(chunkId, p);
     return p;
   }
@@ -88,9 +97,15 @@ export class StoryEngine {
     if (!this._prefetch.has(chunkId)) {
       this._prefetch.set(
         chunkId,
-        this.api.blob(`/play/${encodeURIComponent(storyId)}/chunk/${encodeURIComponent(chunkId)}`).catch(() => null)
+        this.api.blob(this._chunkPath(storyId, chunkId)).catch(() => null)
       );
     }
+  }
+
+  _chunkPath(storyId, chunkId) {
+    const id = encodeURIComponent(storyId);
+    const ck = encodeURIComponent(chunkId);
+    return this.preview ? `/public/preview/${id}/chunk/${ck}` : `/play/${id}/chunk/${ck}`;
   }
 
   _ask(node, waitMs) {

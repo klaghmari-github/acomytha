@@ -101,3 +101,69 @@ def test_encrypted_chunk_endpoint(client):
     blob = client.get("/api/play/ATOM-SAN.ALI.001-01/chunk/CHK_T0000_P0000")
     assert blob.status_code == 200
     assert blob.content[:5] == b"SNT01"
+
+
+def test_public_home_and_preview(client):
+    s = client.get("/api/public/stats").json()
+    assert s["stories"] >= 1
+    assert s["preview_seconds"] == 10
+    stories = client.get("/api/public/stories").json()
+    assert any(x["story_id"] == "ATOM-SAN.ALI.001-01" for x in stories)
+    graph = client.get("/api/public/preview/ATOM-SAN.ALI.001-01/graph")
+    assert graph.status_code == 200
+    assert graph.json()["preview_seconds"] == 10
+
+
+def test_signup_welcome_and_buy(client):
+    r = client.post(
+        "/api/auth/signup",
+        json={
+            "email": "nouveau@acomytha.local",
+            "password": "motdepasse",
+            "display_name": "Léa",
+            "device_id": "device-new-parent1",
+        },
+    )
+    assert r.status_code == 200
+    w = client.get("/api/shop/wallet").json()
+    assert w["balance_a"] == 10
+    buy = client.post("/api/shop/buy", json={"story_id": "ATOM-SAN.ALI.001-01"})
+    assert buy.status_code == 200
+    assert buy.json()["balance_a"] == 9
+    assert "ATOM-SAN.ALI.001-01" in buy.json()["owned"]
+
+
+def test_device_message_has_no_cle(client):
+    client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-alpha-1111"},
+    )
+    client.post("/api/auth/logout")
+    b = client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-beta-2222"},
+    )
+    assert b.status_code == 409
+    msg = b.json()["detail"]["message"]
+    assert "clé" not in msg.lower()
+    assert "appareil" in msg.lower()
+
+
+def test_fx_and_admin_settings(client):
+    from acomytha.commerce import eur_to_a
+
+    assert eur_to_a(10) == 10
+    assert eur_to_a(11) == round(11 * 1.25, 2)
+    assert eur_to_a(200) == 1000
+    admin = client.post(
+        "/api/auth/login",
+        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-set1"},
+    )
+    assert admin.status_code == 200
+    rows = client.get("/api/admin/settings").json()
+    keys = {r["key"] for r in rows}
+    assert "price_story_a" in keys
+    assert "welcome_credit_eur" in keys
+    put = client.put("/api/admin/settings", json={"values": {"preview_seconds": "8"}})
+    assert put.status_code == 200
+    assert any(r["key"] == "preview_seconds" and r["value"] == "8" for r in put.json())

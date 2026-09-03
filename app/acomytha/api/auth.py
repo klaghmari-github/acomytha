@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_auth, get_db
 from acomytha.devices import DeviceConflict, DeviceGuard
+from acomytha.commerce import grant_welcome, num
 from acomytha.models import User
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
@@ -23,6 +24,14 @@ class LoginBody(BaseModel):
 class ChildBody(BaseModel):
     pin: str
     device_id: str = Field(min_length=8, max_length=64)
+
+
+class SignupBody(BaseModel):
+    email: str
+    password: str = Field(min_length=8)
+    display_name: str = ""
+    device_id: str = Field(min_length=8, max_length=64)
+    device_label: str = ""
 
 
 def _set_cookie(response: Response, request: Request, token: str) -> None:
@@ -48,6 +57,27 @@ def _user_payload(user: User, role: str) -> dict:
     }
 
 
+@router.post("/signup")
+def signup(body: SignupBody, request: Request, response: Response, db: Session = Depends(get_db)):
+    email = body.email.strip().lower()
+    if db.query(User).filter(User.email == email).one_or_none():
+        raise HTTPException(409, "cette adresse a déjà un compte")
+    hasher = request.app.state.sessions.hasher
+    name = (body.display_name or "").strip() or email.split("@")[0]
+    parent = User(email=email, display_name=name, role="parent", password_hash=hasher.hash(body.password))
+    db.add(parent)
+    db.flush()
+    pin = str(int(num(db, "default_child_pin") or 2468))
+    db.add(User(email=None, display_name="Enfant", role="child", parent_id=parent.id, pin_hash=hasher.hash(pin)))
+    grant_welcome(db, parent.id)
+    db.commit()
+    ua = request.headers.get("user-agent", "")
+    request.app.state.devices.assert_or_bind(db, parent, body.device_id, ua, body.device_label)
+    token = request.app.state.sessions.issue(db, parent, body.device_id, "parent")
+    _set_cookie(response, request, token)
+    return _user_payload(parent, "parent")
+
+
 @router.post("/login")
 def login(body: LoginBody, request: Request, response: Response, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.email == body.email.strip().lower()).one_or_none()
@@ -64,7 +94,7 @@ def login(body: LoginBody, request: Request, response: Response, db: Session = D
             409,
             {
                 "code": "device_bound",
-                "message": "Cette clé est déjà liée à un autre appareil. L'admin a été alerté.",
+                "message": "Ce compte est déjà ouvert sur un autre appareil. Écrivez-nous si vous avez changé de téléphone.",
                 "alert_id": exc.alert.id,
             },
         ) from exc

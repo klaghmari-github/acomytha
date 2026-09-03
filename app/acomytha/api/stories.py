@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.catalog import list_stories, story_to_dict
+from acomytha.commerce import owned_ids
 from acomytha.graph import StoryGraph
 from acomytha.models import Chunk, ForestEntry, Lesson, Story
 
@@ -85,6 +86,8 @@ def put_forest(body: ForestBody, auth: AuthContext = Depends(require_roles("pare
 @router.get("/enfant/file")
 def child_queue(auth: AuthContext = Depends(require_roles("child")), db: Session = Depends(get_db)):
     ids = list(db.scalars(select(ForestEntry.story_id).where(ForestEntry.parent_id == auth.parent_id)))
+    allowed = owned_ids(db, auth.parent_id)
+    ids = [i for i in ids if i in allowed]
     if not ids:
         return []
     rows = list(db.scalars(select(Story).where(Story.story_id.in_(ids))))

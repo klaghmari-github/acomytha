@@ -32,6 +32,10 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
 | F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
+| F-ACC-003 | **en cours** | Inscription parent (email + mot de passe). Pas de « clé » dans l’UI. |
+| F-APP-002 | **en cours** | Page d’accueil vitrine, sans connexion. Catalogue + aperçu 10 s. |
+| F-PAY-001 | **prévu** | Stripe (recharge €). Non branché. L’UI affiche le change € → A. |
+| F-PAY-002 | **en cours** | Monnaie A, solde, achats histoires / séries, commandes, voix. Paramètres admin. |
 
 ---
 
@@ -238,3 +242,72 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 6. Compte / profil / forêt parentale (`F-ACC`, `F-PRF`, `F-TAX-003`, `F-FOR-001`).
 
 Graphe git : une branche par feature, rebase, fast-forward `main` (consigne 3 sept. 2026). `F-ACC-002` reporté au profit de `F-SEC-003`.
+
+---
+
+## Compte, vitrine, monnaie A (v3.2)
+
+Le parent ne connaît **que** l’e-mail et le mot de passe. Jamais de « clé », jamais d’arbre / forêt dans l’UI. Tous les montants ci-dessous sont des **paramètres admin** (valeurs par défaut indiquées).
+
+### F-ACC-003 — Inscription
+
+Formulaire public : e-mail, mot de passe, prénom. Crée le foyer (parent + profil enfant, PIN `2468` par défaut, paramètre). À l’activation : crédit offert `welcome_credit_eur` (défaut **10 €**) converti en A au taux de la tranche 1–10 €.
+
+Connexion : e-mail + mot de passe. Si le compte est déjà ouvert sur un autre appareil : *« Ce compte est déjà ouvert sur un autre appareil. Écrivez-nous si vous avez changé de téléphone. »* L’admin est alerté (F-SEC-003), le parent ne voit pas le mot « clé ».
+
+### F-APP-002 — Accueil vitrine
+
+Sans connexion. **Même catalogue** qu’après connexion (recherche, thème, âge, courte / avec des choix). L’écoute est un **aperçu de `preview_seconds` (défaut 10 s)** par histoire.
+
+L’accueil **séduit**, ce n’est pas un tutoriel. On parle de la **gratuité**, pas du paiement. Le paiement n’apparaît qu’après compte + aperçu.
+
+Contenu :
+
+- Créer un compte. Accéder à une multitude d’histoires. Gratuitement.
+- Choisir les histoires et les leçons à transmettre. Mode enfant : l’enfant s’immerge.
+- L’enfant ne fait pas qu’écouter.
+- Jour : plus d’interaction. Nuit : plus calme.
+- On apprend à mieux vivre.
+- Proposez vos idées d’histoires.
+- Statistiques du catalogue (nombre d’histoires, thèmes, âges).
+
+Une **série avec des choix** (un arbre et ses branches, côté atelier) est offerte : plusieurs chemins gratuits. Paramètre `free_story_ids` (défaut `TREE-SEC-001`).
+
+### F-PAY-001 — Stripe (prévu, pas branché)
+
+Recharge du solde en euros. L’écran parent montre les montants et les A obtenus. Le paiement carte n’est **pas** implémenté. Branchement Stripe plus tard.
+
+### F-PAY-002 — Monnaie A et boutique
+
+Symbole **A** (lettre A barrée, comme un dollar). Unité interne `A`.
+
+**Change € → A** (à la recharge, selon le montant versé) :
+
+| Tranche versée | Taux |
+| --- | --- |
+| 1–10 € | 1 € = 1 A |
+| 11–20 € | 1 € = 1,25 A |
+| 21–30 € | 1 € = 1,50 A |
+| … | +0,25 A / € tous les 10 € |
+| plafond | 1 € = 5 A |
+
+Paramètres : `fx_rate_start` 1 · `fx_rate_step` 0,25 · `fx_rate_every_eur` 10 · `fx_rate_max` 5.
+
+Crédit d’activation 10 € → **10 A**. Le parent achète avec ce solde. Quand il est à 0, il recharge (F-PAY-001).
+
+**Dépenses (défauts admin) :**
+
+| Action | Prix | Paramètre |
+| --- | --- | --- |
+| Histoire déjà au catalogue | 1 A | `price_story_a` |
+| Série complète (histoire avec des choix / arbre atelier) | 1 A | `price_tree_a` |
+| Commander une histoire (contexte → l’équipe la crée sous quelques jours) | 1,5 A | `price_order_a` |
+| Chaque branche demandée en plus (max 3) | +0,5 A | `price_ramification_a`, `max_ramifications` 3 |
+| Enregistrer une voix (puis l’attribuer : narrateur, papa, maman, copain…) | 5 A | `price_voice_record_a` |
+| Appliquer cette voix à toutes les histoires déjà achetées | 5 A | `price_voice_apply_all_a` |
+
+Les voix nouvelles s’appliquent aux **prochaines** histoires achetées. L’application à tout le déjà-acheté est l’option 5 A.
+
+Offre catalogue prévue : **10 nouvelles séries** pour **10 €** (`pack_trees_count` 10, `pack_trees_eur` 10) — affichage après compte, paiement via F-PAY-001.
+
+Le parent dépense son A : histoires, séries, commandes, voix. L’admin change tous les chiffres sans redéployer.

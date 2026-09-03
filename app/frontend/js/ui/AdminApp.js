@@ -35,6 +35,11 @@ export class AdminApp extends Component {
             <div style="overflow:auto"><table class="c-table" id="users"></table></div>
           </article>
           <article class="c-card">
+            <h3>Paramètres (prix, A, aperçu)</h3>
+            <form id="settings" class="o-stack"></form>
+            <p class="c-hint" id="setok"></p>
+          </article>
+          <article class="c-card">
             <h3>Nouveau foyer</h3>
             <form id="new" class="o-stack">
               <div class="c-filters">
@@ -51,14 +56,16 @@ export class AdminApp extends Component {
       </div>`;
     this.on(this.querySelector("#out"), "click", () => this.logout());
     this.on(this.querySelector("#new"), "submit", (e) => this.create(e));
+    this.on(this.querySelector("#settings"), "submit", (e) => this.saveSettings(e));
     await this.refresh();
   }
 
   async refresh() {
-    const [stats, alerts, users] = await Promise.all([
+    const [stats, alerts, users, settings] = await Promise.all([
       this.api.get("/admin/stats"),
       this.api.get("/admin/alerts"),
       this.api.get("/admin/users"),
+      this.api.get("/admin/settings"),
     ]);
     const statsEl = this.querySelector("#stats");
     statsEl.innerHTML = [
@@ -105,6 +112,13 @@ export class AdminApp extends Component {
         <td>${u.role !== "child" ? `<button class="c-btn c-btn--ghost" data-reset="${u.id}">Reset appareil</button>` : ""}</td>`;
       table.append(tr);
     }
+    const form = this.querySelector("#settings");
+    form.innerHTML = settings
+      .map(
+        (s) => `<label class="c-field"><span>${escapeHtml(s.label)}</span>
+          <input name="${escapeHtml(s.key)}" value="${escapeHtml(s.value)}" /></label>`
+      )
+      .join("") + `<button class="c-btn" type="submit">Enregistrer les paramètres</button>`;
     for (const b of table.querySelectorAll("[data-reset]")) {
       this.on(b, "click", async () => {
         await this.api.post(`/admin/users/${b.dataset.reset}/reset-device`, {});
@@ -125,6 +139,14 @@ export class AdminApp extends Component {
     } catch (e) {
       msg.textContent = e.message;
     }
+  }
+
+  async saveSettings(ev) {
+    ev.preventDefault();
+    const fd = new FormData(ev.target);
+    const values = Object.fromEntries(fd.entries());
+    await this.api.put("/admin/settings", { values });
+    this.querySelector("#setok").textContent = "Paramètres enregistrés.";
   }
 
   async logout() {

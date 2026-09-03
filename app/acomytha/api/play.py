@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.graph import StoryGraph
+from acomytha.commerce import owned_ids
 from acomytha.models import Chunk, ForestEntry, Story
 
 router = APIRouter(prefix="/api/play", tags=["play"])
@@ -28,7 +29,9 @@ def _can_play(db: Session, auth: AuthContext, story_id: str) -> Story:
         is not None
     )
     if auth.role == "child" and not in_forest:
-        raise HTTPException(403, "cette histoire n'est pas dans la forêt parentale")
+        raise HTTPException(403, "cette histoire n'est pas proposée à l'enfant")
+    if auth.role in {"parent", "child"} and story_id not in owned_ids(db, parent_id):
+        raise HTTPException(402, "aperçu seulement — débloquez l'histoire")
     return story
 
 

@@ -49,4 +49,12 @@ export class ApiClient {
   blob(path) {
     return this.request(path, { raw: true });
   }
+
+  async postForm(path, form) {
+    const res = await fetch(this.base + path, { method: "POST", body: form, credentials: "include" });
+    const text = await res.text();
+    const data = text ? JSON.parse(text) : null;
+    if (!res.ok) throw new ApiError(res.status, data?.detail ?? data);
+    return data;
+  }
 }

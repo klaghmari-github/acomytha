@@ -17,7 +17,7 @@ export class Router {
   }
 
   resolve() {
-    const hash = location.hash || "#/entrer";
+    const hash = location.hash || "#/";
     for (const { re, handler } of this.routes) {
       const m = hash.match(re);
       if (m) {
@@ -25,6 +25,6 @@ export class Router {
         return;
       }
     }
-    this.go("#/entrer");
+    this.go("#/");
   }
 }

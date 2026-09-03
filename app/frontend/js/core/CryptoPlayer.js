@@ -36,7 +36,7 @@ export class CryptoPlayer {
     return crypto.subtle.decrypt({ name: "AES-GCM", iv, additionalData: header, tagLength: 128 }, key, ct);
   }
 
-  async play(chk, keyB64) {
+  async play(chk, keyB64, { maxSeconds } = {}) {
     const plain = await this.decrypt(chk, keyB64);
     this.stop();
     const blob = new Blob([plain], { type: "audio/mpeg" });
@@ -44,6 +44,7 @@ export class CryptoPlayer {
     this.audio.src = this.url;
     await this.audio.play();
     await new Promise((resolve, reject) => {
+      let timer = 0;
       const ok = () => {
         cleanup();
         resolve();
@@ -53,11 +54,18 @@ export class CryptoPlayer {
         reject(new Error("lecture audio"));
       };
       const cleanup = () => {
+        if (timer) window.clearTimeout(timer);
         this.audio.removeEventListener("ended", ok);
         this.audio.removeEventListener("error", fail);
       };
       this.audio.addEventListener("ended", ok);
       this.audio.addEventListener("error", fail);
+      if (maxSeconds > 0) {
+        timer = window.setTimeout(() => {
+          this.audio.pause();
+          ok();
+        }, maxSeconds * 1000);
+      }
     });
     if (this.url) {
       URL.revokeObjectURL(this.url);

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from datetime import datetime, timezone
 
-from sqlalchemy import Boolean, DateTime, ForeignKey, Integer, String, Text, UniqueConstraint
+from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Integer, String, Text, UniqueConstraint
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -135,3 +135,76 @@ class ForestEntry(Base):
     parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
     story_id: Mapped[str] = mapped_column(ForeignKey("stories.story_id"), nullable=False)
     added_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class AppSetting(Base):
+    __tablename__ = "app_settings"
+
+    key: Mapped[str] = mapped_column(String(64), primary_key=True)
+    value: Mapped[str] = mapped_column(String(400), default="")
+    label: Mapped[str] = mapped_column(String(200), default="")
+
+
+class Wallet(Base):
+    __tablename__ = "wallets"
+
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), primary_key=True)
+    balance_a: Mapped[float] = mapped_column(Float, default=0.0)
+    lifetime_eur: Mapped[float] = mapped_column(Float, default=0.0)
+
+
+class LedgerEntry(Base):
+    __tablename__ = "ledger"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
+    kind: Mapped[str] = mapped_column(String(32))
+    amount_a: Mapped[float] = mapped_column(Float, default=0.0)
+    amount_eur: Mapped[float] = mapped_column(Float, default=0.0)
+    ref: Mapped[str] = mapped_column(String(80), default="")
+    note: Mapped[str] = mapped_column(String(240), default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class Purchase(Base):
+    __tablename__ = "purchases"
+    __table_args__ = (UniqueConstraint("parent_id", "item_type", "item_id", name="uq_purchase"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
+    item_type: Mapped[str] = mapped_column(String(16))  # story | tree
+    item_id: Mapped[str] = mapped_column(String(64))
+    price_a: Mapped[float] = mapped_column(Float, default=0.0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class StoryOrder(Base):
+    __tablename__ = "story_orders"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
+    context: Mapped[str] = mapped_column(Text, default="")
+    ramifications: Mapped[int] = mapped_column(Integer, default=0)
+    price_a: Mapped[float] = mapped_column(Float, default=0.0)
+    status: Mapped[str] = mapped_column(String(16), default="pending")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class VoiceProfile(Base):
+    __tablename__ = "voices"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
+    role: Mapped[str] = mapped_column(String(32), default="narrateur")
+    path: Mapped[str] = mapped_column(String(400), default="")
+    applied_all: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class StoryIdea(Base):
+    __tablename__ = "story_ideas"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    email: Mapped[str] = mapped_column(String(180), default="")
+    text: Mapped[str] = mapped_column(Text, default="")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

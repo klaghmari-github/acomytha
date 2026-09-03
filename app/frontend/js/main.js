@@ -1,6 +1,8 @@
 import { ApiClient } from "./core/ApiClient.js";
 import { Router } from "./core/Router.js";
+import "./ui/HomeApp.js";
 import "./ui/LoginGate.js";
+import "./ui/SignupGate.js";
 import "./ui/ParentApp.js";
 import "./ui/AdminApp.js";
 import "./ui/ChildApp.js";
@@ -11,7 +13,9 @@ class AcoMythaApp {
     this.api = new ApiClient("/api");
     this.router = new Router(root);
     this.router
+      .on(/^#\/?$/, () => this.show("acomytha-home"))
       .on(/^#\/entrer\/?$/, () => this.show("acomytha-login"))
+      .on(/^#\/inscription\/?$/, () => this.show("acomytha-signup"))
       .on(/^#\/parent\/?$/, () => this.guard(["parent", "admin"], "acomytha-parent"))
       .on(/^#\/admin\/?$/, () => this.guard(["admin"], "acomytha-admin"))
       .on(/^#\/enfant\/?$/, () => this.guard(["parent", "child"], "acomytha-child"));
@@ -34,7 +38,7 @@ class AcoMythaApp {
       }
       this.show(tag);
     } catch {
-      this.router.go("#/entrer");
+      this.router.go("#/");
     }
   }
 }

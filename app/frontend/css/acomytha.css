@@ -479,4 +479,172 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
   }
+  .c-hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Monnaie A : A barré, comme un dollar */
+.c-ako {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.12em;
+  font-weight: 580;
+}
+.c-ako::before {
+  content: "A";
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  position: relative;
+  padding: 0 0.18em;
+}
+.c-ako::before {
+  background: linear-gradient(currentColor, currentColor) 50% 18% / 2px 70% no-repeat;
+}
+.c-ako--lg {
+  font-size: 1.4rem;
+}
+
+.c-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.4rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.c-top strong {
+  font-size: 1.2rem;
+}
+.c-top nav {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+.c-top a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.s-home {
+  background: var(--bg);
+  min-height: 100dvh;
+}
+
+.c-hero {
+  padding: 3.2rem 1.4rem 2.2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.c-hero h1 {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+.c-hero p {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin: 0 0 1.4rem;
+}
+.c-btn--lg {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.05rem;
+}
+
+.c-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 0 1.4rem;
+}
+.c-stats div {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+.c-stats b {
+  display: block;
+  font-size: 1.5rem;
+}
+.c-stats span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.c-pitches {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 720px;
+  margin: 0 auto 2.4rem;
+  padding: 0 1.4rem;
+}
+.c-pitches blockquote {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  font-size: 1.15rem;
+}
+
+.c-catalog,
+.c-ideas {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.4rem 2.5rem;
+}
+.c-ideas {
+  max-width: 640px;
+}
+.c-ideas h2 {
+  margin-bottom: 0.8rem;
+}
+.c-ideas textarea,
+.c-ideas input,
+.c-panel textarea,
+.c-panel input,
+.c-panel select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  background: var(--surface);
+}
+.c-paper .c-hint {
+  margin-top: 0.9rem;
+  text-align: center;
+}
+.c-paper a {
+  color: var(--accent);
+}
+
+.c-wallet {
+  padding: 0.4rem 0;
+}
+.c-shop {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.c-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.6rem 0.9rem;
+}
+.c-panel summary {
+  cursor: pointer;
+  font-weight: 580;
+}
+
+@media (max-width: 700px) {
+  .c-stats {
+    grid-template-columns: 1fr 1fr;
+  }
 }
