@@ -1,0 +1,664 @@
+{
+  "tree_id": "TREE-SOC-047",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Aider à préparer — à l'école",
+  "lesson_id": "SOC.CUI.001",
+  "secondary_lessons": [
+    "SOC.TRA.001"
+  ],
+  "domain": "SOC",
+  "subdomain": "SOC.CUI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "à l'école",
+  "characters": [
+    "Hugo",
+    "papa",
+    "maman"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Aujourd'hui, Hugo est avec papa, à l'école. Hugo a envie de jouer. papa est là, tout près. On va apprendre : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo écoute papa. Hugo entend les mots : tâche sûre, avec un adulte.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Hugo choisit. la cuisine, le jardin, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Hugo va vers la cuisine. Il y a des miettes sur la table. papa sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Hugo se souvient : tâche sûre, avec un adulte. Voici le geste : laver ; apporter ; poser. On se tient la main. papa dit : je suis là. On reste ensemble.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Aider à préparer.",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "avec adulte"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : laver ; apporter ; poser.",
+      "wrong_feedback": "Voici le geste : laver ; apporter ; poser.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "SOC.CUI.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : laver ; apporter ; poser. Hugo respire. Hugo retient : tâche sûre, avec un adulte. On continue, avec papa.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Hugo a choisi les cubes. Les chaussures font toc toc. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de la cuisine, les cubes et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Le vent est doux. On range un objet. Cette fin-là est celle de la cuisine, les cubes et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. Le sol est un peu froid. On dit merci. Cette fin-là est celle de la cuisine, les cubes et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Hugo a choisi le livre. La couverture est douce. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On écoute jusqu'au bout. maman n'est pas loin.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Le vent est doux. On se tient la main. Cette fin-là est celle de la cuisine, le livre et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On range un objet. Cette fin-là est celle de la cuisine, le livre et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. Une feuille tombe. On dit merci. Cette fin-là est celle de la cuisine, le livre et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Hugo a choisi la dînette. On entend un oiseau. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On attend son tour. maman n'est pas loin.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de la cuisine, la dînette et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Une feuille tombe. On range un objet. Cette fin-là est celle de la cuisine, la dînette et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de la cuisine, la dînette et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Hugo va vers le jardin. Un chat miaule une fois. papa sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Hugo se souvient : tâche sûre, avec un adulte. Voici le geste : laver ; apporter ; poser. On range un objet. papa dit : je suis là. On reste ensemble.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Aider à préparer.",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "avec adulte"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : laver ; apporter ; poser.",
+      "wrong_feedback": "Voici le geste : laver ; apporter ; poser.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "SOC.CUI.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : laver ; apporter ; poser. Hugo respire. Hugo retient : tâche sûre, avec un adulte. On continue, avec papa.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Hugo a choisi les cubes. Ça sent le pain chaud. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Le vent est doux. On range un objet. Cette fin-là est celle de le jardin, les cubes et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le jardin, les cubes et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. Une feuille tombe. On souffle doucement. Cette fin-là est celle de le jardin, les cubes et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Hugo a choisi le livre. Le vent est doux. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On écoute jusqu'au bout. maman n'est pas loin.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le jardin, le livre et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Une feuille tombe. On dit merci. Cette fin-là est celle de le jardin, le livre et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de le jardin, le livre et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Hugo a choisi la dînette. Le sol est un peu froid. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On attend son tour. maman n'est pas loin.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Une feuille tombe. On range un objet. Cette fin-là est celle de le jardin, la dînette et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le jardin, la dînette et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de le jardin, la dînette et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Hugo va vers la chambre. Les chaussures font toc toc. papa sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Hugo se souvient : tâche sûre, avec un adulte. Voici le geste : laver ; apporter ; poser. On dit merci. papa dit : je suis là. On reste ensemble.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Aider à préparer.",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "avec adulte"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : laver ; apporter ; poser.",
+      "wrong_feedback": "Voici le geste : laver ; apporter ; poser.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "SOC.CUI.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : laver ; apporter ; poser. Hugo respire. Hugo retient : tâche sûre, avec un adulte. On continue, avec papa.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Hugo a choisi les cubes. Une feuille tombe. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Le sol est un peu froid. On dit merci. Cette fin-là est celle de la chambre, les cubes et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la chambre, les cubes et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, les cubes et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Hugo a choisi le livre. L'eau coule, tout petit bruit. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On écoute jusqu'au bout. maman n'est pas loin.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. Une feuille tombe. On dit merci. Cette fin-là est celle de la chambre, le livre et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la chambre, le livre et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. Un vélo passe au loin. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le livre et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Hugo a choisi la dînette. Un vélo passe au loin. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : laver ; apporter ; poser. Hugo répète tout bas : tâche sûre, avec un adulte. On attend son tour. maman n'est pas loin.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Hugo rejoint le matin. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de la chambre, la dînette et le matin. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Hugo rejoint après la sieste. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la chambre, la dînette et après la sieste. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Hugo rejoint le soir. La lumière est claire. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, la dînette et le soir. Hugo a appris : Aider à préparer. Voici le geste : laver ; apporter ; poser. Hugo a entendu : tâche sûre, avec un adulte. Hugo dit merci à papa. On rentre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}
