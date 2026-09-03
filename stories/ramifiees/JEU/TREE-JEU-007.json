@@ -1,0 +1,664 @@
+{
+  "tree_id": "TREE-JEU-007",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Se passer le ballon — au marché",
+  "lesson_id": "JEU.BAL.001",
+  "secondary_lessons": [
+    "JEU.FOOT.001"
+  ],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "au marché",
+  "characters": [
+    "Sami",
+    "papa",
+    "maman"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Aujourd'hui, Sami est avec papa, au marché. Sami a envie de jouer. papa est là, tout près. On va apprendre : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami écoute papa. Sami entend les mots : passer, tour, espace du jeu.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Sami choisit. une pomme, un yaourt, ou un morceau de pain ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "un yaourt",
+          "intent": "UN_YAOURT",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "un morceau de pain",
+          "intent": "UN_MORCEAU_DE_PAIN",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Sami va vers une pomme. Un vélo passe au loin. papa sourit. Ici, c'est une pomme. Ce n'est pas comme les autres endroits. Sami se souvient : passer, tour, espace du jeu. Voici le geste : passer le ballon ; attendre. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Se passer le ballon.",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "tour"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : passer le ballon ; attendre.",
+      "wrong_feedback": "Voici le geste : passer le ballon ; attendre.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "JEU.BAL.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : passer le ballon ; attendre. Sami respire. Sami retient : passer, tour, espace du jeu. On continue, avec papa.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sami choisit la cuisine, le jardin, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Sami a choisi la cuisine. Il y a des miettes sur la table. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On range un objet. maman n'est pas loin.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. La couverture est douce. On rit un peu. Cette fin-là est celle de une pomme, la cuisine et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de une pomme, la cuisine et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de une pomme, la cuisine et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Sami a choisi le jardin. Un chat miaule une fois. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On dit merci. maman n'est pas loin.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. On entend un oiseau. On rit un peu. Cette fin-là est celle de une pomme, le jardin et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de une pomme, le jardin et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Le vent est doux. On se tient la main. Cette fin-là est celle de une pomme, le jardin et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Sami a choisi la chambre. Les chaussures font toc toc. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de une pomme, la chambre et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Le vent est doux. On se tait une seconde. Cette fin-là est celle de une pomme, la chambre et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de une pomme, la chambre et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Sami va vers un yaourt. La lumière est claire. papa sourit. Ici, c'est un yaourt. Ce n'est pas comme les autres endroits. Sami se souvient : passer, tour, espace du jeu. Voici le geste : passer le ballon ; attendre. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Se passer le ballon.",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "tour"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : passer le ballon ; attendre.",
+      "wrong_feedback": "Voici le geste : passer le ballon ; attendre.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "JEU.BAL.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : passer le ballon ; attendre. Sami respire. Sami retient : passer, tour, espace du jeu. On continue, avec papa.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sami choisit la cuisine, le jardin, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Sami a choisi la cuisine. La couverture est douce. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On range un objet. maman n'est pas loin.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de un yaourt, la cuisine et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de un yaourt, la cuisine et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Le vent est doux. On range un objet. Cette fin-là est celle de un yaourt, la cuisine et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Sami a choisi le jardin. On entend un oiseau. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On dit merci. maman n'est pas loin.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de un yaourt, le jardin et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Le vent est doux. On se tient la main. Cette fin-là est celle de un yaourt, le jardin et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Le sol est un peu froid. On range un objet. Cette fin-là est celle de un yaourt, le jardin et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Sami a choisi la chambre. Ça sent le pain chaud. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Le vent est doux. On se tait une seconde. Cette fin-là est celle de un yaourt, la chambre et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de un yaourt, la chambre et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Une feuille tombe. On range un objet. Cette fin-là est celle de un yaourt, la chambre et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Sami va vers un morceau de pain. Il y a des miettes sur la table. papa sourit. Ici, c'est un morceau de pain. Ce n'est pas comme les autres endroits. Sami se souvient : passer, tour, espace du jeu. Voici le geste : passer le ballon ; attendre. On se tient la main. papa dit : je suis là. On reste ensemble.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Se passer le ballon.",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "tour"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : passer le ballon ; attendre.",
+      "wrong_feedback": "Voici le geste : passer le ballon ; attendre.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "JEU.BAL.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : passer le ballon ; attendre. Sami respire. Sami retient : passer, tour, espace du jeu. On continue, avec papa.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sami choisit la cuisine, le jardin, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Sami a choisi la cuisine. Le vent est doux. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On range un objet. maman n'est pas loin.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de un morceau de pain, la cuisine et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Le vent est doux. On range un objet. Cette fin-là est celle de un morceau de pain, la cuisine et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Le sol est un peu froid. On dit merci. Cette fin-là est celle de un morceau de pain, la cuisine et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Sami a choisi le jardin. Le sol est un peu froid. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On dit merci. maman n'est pas loin.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Le vent est doux. On se tient la main. Cette fin-là est celle de un morceau de pain, le jardin et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Le sol est un peu froid. On range un objet. Cette fin-là est celle de un morceau de pain, le jardin et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. Une feuille tombe. On dit merci. Cette fin-là est celle de un morceau de pain, le jardin et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Sami a choisi la chambre. Une feuille tombe. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : passer le ballon ; attendre. Sami répète tout bas : passer, tour, espace du jeu. On souffle doucement. maman n'est pas loin.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sami va vers les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Sami rejoint les cubes. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de un morceau de pain, la chambre et les cubes. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Sami rejoint le livre. Une feuille tombe. On range un objet. Cette fin-là est celle de un morceau de pain, la chambre et le livre. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Sami rejoint la dînette. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de un morceau de pain, la chambre et la dînette. Sami a appris : Se passer le ballon. Voici le geste : passer le ballon ; attendre. Sami a entendu : passer, tour, espace du jeu. Sami dit merci à papa. On rentre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

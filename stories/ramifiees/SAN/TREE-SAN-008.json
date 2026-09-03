@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Lila est avec papa, près de la fenêtre. Lila a envie de jouer. papa est là, tout près. On va apprendre : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila écoute papa. Lila entend les mots : dehors, avec un adulte.",
+      "text": "Lila est près de la fenêtre. Ses jambes ont envie de bouger. Papa dit : on va dehors. Maman prend les chaussures. On joue dehors, avec un adulte. Un moment. Puis on rentre.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Lila choisit. le train, le bus, ou la voiture ?",
+      "prompt": "Lila va dehors comment ? En train, en bus, ou en voiture ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,27 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Lila va vers le train. Il y a des miettes sur la table. papa sourit. Ici, c'est le train. Ce n'est pas comme les autres endroits. Lila se souvient : dehors, avec un adulte. Voici le geste : aller au parc avec papa ou maman. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Ils prennent le petit train, tout près. Papa tient la main. À la gare-jardin, ils descendent. Lila court sur l'herbe. Elle joue dehors, avec un adulte. Papa reste près d'elle. Maman arrive.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Jouer dehors un moment.",
+      "prompt": "Lila veut bouger. Où joue-t-elle ?",
       "expected_intents": [
         "DEHORS",
         "AVEC_ADULTE"
       ],
       "accepted_examples": [
         "dehors",
-        "avec adulte"
+        "avec papa",
+        "avec un adulte",
+        "au jardin",
+        "avec maman"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : aller au parc avec papa ou maman.",
-      "wrong_feedback": "Voici le geste : aller au parc avec papa ou maman.",
+      "retry_prompt": "Dehors. Avec un adulte. Où ?",
+      "positive_feedback": "Oui. Elle joue dehors, avec un adulte.",
+      "wrong_feedback": "On joue dehors, avec un adulte. Papa ou maman.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.MOV.001"
@@ -88,13 +91,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : aller au parc avec papa ou maman. Lila respire. Lila retient : dehors, avec un adulte. On continue, avec papa.",
+      "text": "Lila a bougé dehors. Un adulte était là. Le train attendra pour rentrer.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Lila choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui joue avec Lila dehors ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +123,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Lila a choisi Tom. Les chaussures font toc toc. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On se tient la main. maman n'est pas loin.",
+      "text": "Tom lance un ballon. Lila court. Ils jouent dehors. Papa, l'adulte, les voit. Maman dit : encore un moment.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +155,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le train, Tom et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, l'herbe est fraîche. Lila joue dehors, avec un adulte. Tom aussi. Puis le train. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Le vent est doux. On rit un peu. Cette fin-là est celle de le train, Tom et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila a de l'énergie. Elle joue dehors, avec un adulte. Tom lance. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le train, Tom et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, le ciel est rose. Lila joue dehors, avec un adulte. Tom dit : on rentre. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Lila a choisi Léa. La couverture est douce. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On range un objet. maman n'est pas loin.",
+      "text": "Léa ramasse des feuilles. Lila l'aide. Elles jouent dehors, avec un adulte. Papa marche à côté.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Elles jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +202,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le train, Léa et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, Léa et Lila jouent dehors, avec un adulte. Une feuille vole. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le train, Léa et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Léa chante. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le train, Léa et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, elles rangent. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Lila a choisi Sami. On entend un oiseau. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On dit merci. maman n'est pas loin.",
+      "text": "Sami suit un petit chemin. Lila aussi. Ils jouent dehors. Maman, l'adulte, est là. Le train sifflera plus tard.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +249,42 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le train, Sami et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, Sami et Lila jouent dehors, avec un adulte. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Une feuille tombe. On rit un peu. Cette fin-là est celle de le train, Sami et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Sami saute à cloche-pied. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le train, Sami et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, le train les reprend. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Lila va vers le bus. Un chat miaule une fois. papa sourit. Ici, c'est le bus. Ce n'est pas comme les autres endroits. Lila se souvient : dehors, avec un adulte. Voici le geste : aller au parc avec papa ou maman. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "text": "Ils prennent le bus. Maman est à côté. Un adulte. Ils descendent au parc. Lila respire l'air. Elle joue dehors, avec un adulte. Papa les rejoint.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Jouer dehors un moment.",
+      "prompt": "Après le bus, Lila joue où ?",
       "expected_intents": [
         "DEHORS",
         "AVEC_ADULTE"
       ],
       "accepted_examples": [
         "dehors",
-        "avec adulte"
+        "avec papa",
+        "avec un adulte",
+        "au jardin",
+        "avec maman"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : aller au parc avec papa ou maman.",
-      "wrong_feedback": "Voici le geste : aller au parc avec papa ou maman.",
+      "retry_prompt": "Dehors. Avec un adulte. Où ?",
+      "positive_feedback": "Oui. Elle joue dehors, avec un adulte.",
+      "wrong_feedback": "On joue dehors, avec un adulte. Papa ou maman.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.MOV.001"
@@ -286,13 +292,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : aller au parc avec papa ou maman. Lila respire. Lila retient : dehors, avec un adulte. On continue, avec papa.",
+      "text": "Le bus les a menées au parc. Lila joue dehors, avec un adulte.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Lila choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui court avec Lila ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +324,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Lila a choisi Tom. Ça sent le pain chaud. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On se tient la main. maman n'est pas loin.",
+      "text": "Tom a un cerceau. Lila le fait rouler. Ils jouent dehors. Maman, l'adulte, les voit.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +356,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Le vent est doux. On rit un peu. Cette fin-là est celle de le bus, Tom et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, le cerceau roule. Lila joue dehors, avec un adulte. Tom rit. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le bus, Tom et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Tom souffle. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. Une feuille tombe. On se tient la main. Cette fin-là est celle de le bus, Tom et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, le bus revient. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Lila a choisi Léa. Le vent est doux. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On range un objet. maman n'est pas loin.",
+      "text": "Léa grimpe sur la petite butte. Lila aussi. Elles jouent dehors, avec un adulte. Papa dit : je vous vois.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Elles jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +403,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le bus, Léa et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, la butte est douce. Lila joue dehors, avec un adulte. Léa aussi. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le bus, Léa et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Léa s'assoit. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le bus, Léa et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, elles redescendent. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Lila a choisi Sami. Le sol est un peu froid. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On dit merci. maman n'est pas loin.",
+      "text": "Sami a une corde à sauter. Lila essaie. Ils jouent dehors. Un adulte compte. C'est maman.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +450,42 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Une feuille tombe. On rit un peu. Cette fin-là est celle de le bus, Sami et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, la corde tape. Lila joue dehors, avec un adulte. Sami compte. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le bus, Sami et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Sami pose la corde. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le bus, Sami et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, le bus les attend. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Lila va vers la voiture. Les chaussures font toc toc. papa sourit. Ici, c'est la voiture. Ce n'est pas comme les autres endroits. Lila se souvient : dehors, avec un adulte. Voici le geste : aller au parc avec papa ou maman. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Papa prend la voiture. Lila s'assoit. Maman aussi. Ils arrivent à la cour de la ferme. Lila court. Elle joue dehors, avec un adulte. L'air sent le foin.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Jouer dehors un moment.",
+      "prompt": "À la ferme, Lila joue où ?",
       "expected_intents": [
         "DEHORS",
         "AVEC_ADULTE"
       ],
       "accepted_examples": [
         "dehors",
-        "avec adulte"
+        "avec papa",
+        "avec un adulte",
+        "au jardin",
+        "avec maman"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : aller au parc avec papa ou maman.",
-      "wrong_feedback": "Voici le geste : aller au parc avec papa ou maman.",
+      "retry_prompt": "Dehors. Avec un adulte. Où ?",
+      "positive_feedback": "Oui. Elle joue dehors, avec un adulte.",
+      "wrong_feedback": "On joue dehors, avec un adulte. Papa ou maman.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.MOV.001"
@@ -484,13 +493,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : aller au parc avec papa ou maman. Lila respire. Lila retient : dehors, avec un adulte. On continue, avec papa.",
+      "text": "La voiture est rangée. Lila a bougé. Dehors, avec un adulte.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Lila choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui court dans la cour ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +525,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Lila a choisi Tom. Une feuille tombe. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On se tient la main. maman n'est pas loin.",
+      "text": "Tom a un seau. Ils portent de l'herbe. Ils jouent dehors. Papa, l'adulte, marche avec eux.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +557,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de la voiture, Tom et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, la cour est calme. Lila joue dehors, avec un adulte. Tom aussi. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Une feuille tombe. On se tient la main. Cette fin-là est celle de la voiture, Tom et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Tom pose le seau. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de la voiture, Tom et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, la voiture rentre. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Lila a choisi Léa. L'eau coule, tout petit bruit. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On range un objet. maman n'est pas loin.",
+      "text": "Léa écoute une poule, loin. Lila aussi. Elles jouent dehors, avec un adulte. Maman reste près.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Elles jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +604,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Lila rejoint le matin. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de la voiture, Léa et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, Léa et Lila jouent dehors, avec un adulte. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de la voiture, Léa et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Léa bâille. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. Un vélo passe au loin. On range un objet. Cette fin-là est celle de la voiture, Léa et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, elles saluent la poule. Lila a joué dehors, avec un adulte. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Lila a choisi Sami. Un vélo passe au loin. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : aller au parc avec papa ou maman. Lila répète tout bas : dehors, avec un adulte. On dit merci. maman n'est pas loin.",
+      "text": "Sami marche sur une planche. Lila l'imite, tout doux. Ils jouent dehors. Un adulte les voit. C'est papa.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lila va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Ils jouent dehors quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,21 +651,21 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Lila rejoint le matin. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de la voiture, Sami et le matin. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le matin, la planche est sèche. Lila joue dehors, avec un adulte. Sami aussi. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Lila rejoint après la sieste. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de la voiture, Sami et après la sieste. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Après la sieste, Lila joue dehors, avec un adulte. Sami s'assoit. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Lila rejoint le soir. La lumière est claire. On range un objet. Cette fin-là est celle de la voiture, Sami et le soir. Lila a appris : Jouer dehors un moment. Voici le geste : aller au parc avec papa ou maman. Lila a entendu : dehors, avec un adulte. Lila dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le soir, la voiture part. Lila a joué dehors, avec un adulte. L'histoire est finie."
     }
   },
   "validation": {
-    "status": "APPROVED_TEXT",
+    "status": "PENDING",
     "blocking_findings": 0,
     "major_findings": 0,
     "paths_tested": 27

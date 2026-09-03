@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-DIF.PAR.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Ruben tend un jouet à Iris",
+  "lesson_id": "DIF.PAR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école puis parc",
+  "characters": [
+    "Ruben",
+    "Iris",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ruben arrive en classe avec maman. Maman dit au revoir. Iris est déjà là. Iris parle peu. Elle regarde ses chaussures. Ruben veut poser beaucoup de questions. Il ouvre la bouche. La maîtresse dit doucement : on peut attendre. On n'imite pas. On ne va pas forcer la parole. Ruben ferme la bouche. Il respire. Il prend un puzzle d'animaux. Il va tendre un jouet. Il tend une pièce vers Iris. Iris regarde. Elle ne dit rien. Ruben attend. La classe est calme. On entend un oiseau dehors. Iris prend la pièce. Elle la pose. Ruben sourit. Plus tard, au parc, maman est au banc. Iris est là aussi. Elle parle peu. Ruben prend un seau. Il va tendre un jouet. Il tend le seau. Iris le prend. Elle remplit le seau de sable. Ruben attend. Iris ne parle toujours pas. C'est possible. Maman dit : on peut attendre. On peut tendre un jouet. On ne va pas forcer la parole. Ruben hoche la tête. Ils font un tas de sable. Un silence. Puis Iris dit tout bas : sable. Ruben dit : sable. Ils jouent. Le jeu a eu lieu, même avec peu de mots.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris parle peu. Que fait Ruben ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TENDRE_JOUET"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "tendre un jouet",
+        "un jouet",
+        "il attend"
+      ],
+      "retry_prompt": "Il attend. Il tend un jouet. Que fait Ruben ?",
+      "positive_feedback": "Oui. On peut attendre. On peut tendre un jouet.",
+      "wrong_feedback": "On peut attendre. On peut tendre un jouet. On ne va pas forcer la parole.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ruben a su attendre. Il a tendu un jouet. Iris a pris le seau. On n'a pas forcé la parole.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman aide Iris à mettre son manteau. Iris fait un petit signe. Ruben dit : à demain. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

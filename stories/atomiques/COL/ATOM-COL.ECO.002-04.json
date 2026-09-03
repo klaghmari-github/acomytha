@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-COL.ECO.002-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Idris attend son tour de parole",
+  "lesson_id": "COL.ECO.002",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe",
+  "characters": [
+    "Idris",
+    "maman",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Idris arrive en classe avec maman. Maman dit au revoir. Idris s'assoit sur le tapis. La maîtresse pose une question. Idris a une idée. Il lève la main. Il faut attendre. Un camarade parle d'abord. Idris attend encore. Puis la maîtresse dit : Idris, c'est ton tour. Idris parle. Il dit : le hérisson a des piquants. La maîtresse sourit. Plus tard, c'est le goûter. Idris a envie de raconter son goûter. Il lève la main. Il faut attendre. Une camarade parle. Idris attend. Puis la maîtresse dit : Idris. Idris parle. Il dit : j'ai une pomme. Sur le tapis, puis au goûter, c'est pareil. On lève la main. Il faut attendre. Puis parler. Le soir, maman demande. Idris dit : j'ai levé la main. J'ai su attendre. Puis j'ai parlé. Maman dit merci. Idris range son cartable.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Idris veut parler. Que fait-il d'abord ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "PARLER"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "il attend",
+        "lever la main",
+        "la main"
+      ],
+      "retry_prompt": "Il lève la main et il attend. Que fait Idris ?",
+      "positive_feedback": "Oui. Il faut attendre, puis parler.",
+      "wrong_feedback": "On lève la main. Il faut attendre. Puis on peut parler.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Idris a levé la main. Il a attendu. Puis il a parlé. C'était son tour.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Idris met son manteau. Maman l'attend à la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Sara est avec maman, dans la chambre. Sara a envie de jouer. maman est là, tout près. On va apprendre : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara écoute maman. Sara entend les mots : soir, pyjama, dodo.",
+      "text": "Le soir, la maison devient calme. Sara bâille. Maman dit : c'est l'heure. Papa ouvre le lit. On met le pyjama. Puis c'est le dodo. Le corps a besoin de dormir.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Sara choisit. le chat, le chien, ou la poule ?",
+      "prompt": "Qui va au lit avec Sara ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,27 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Sara va vers le chat. La lumière est claire. maman sourit. Ici, c'est le chat. Ce n'est pas comme les autres endroits. Sara se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Le chat en peluche attend sur l'oreiller. Le soir, Sara met son pyjama. Il est doux. Maman dit : au lit. Sara se couche. C'est le dodo. Papa baisse la lumière.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Sara va dormir. Que met-elle ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le pyjama",
+        "dodo",
+        "au lit",
+        "soir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Le soir. Le pyjama. Puis le dodo. Que met Sara ?",
+      "positive_feedback": "Oui. Elle met le pyjama. Le soir, c'est le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.SOM.001"
@@ -88,13 +91,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Sara respire. Sara retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "Sara a le pyjama. Le soir, elle est au lit. C'est le dodo. Le chat peluche est là.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Avant le dodo, un souvenir ? Le bac, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +123,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Sara a choisi le bac à sable. Un chat miaule une fois. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Sara pense au bac à sable. Les mains sont lavées. Le soir, elle a le pyjama. Elle se couche. Dodo. Le chat peluche ronronne, tout doux.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +155,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Sara rejoint rouge. On entend un oiseau. On attend son tour. Cette fin-là est celle de le chat, le bac à sable et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Le pyjama rouge est chaud. Le soir, Sara est au dodo. Le chat peluche aussi. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le chat, le bac à sable et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Le pyjama bleu est doux. Sara a mis le pyjama. Le soir, dodo. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Le vent est doux. On rit un peu. Cette fin-là est celle de le chat, le bac à sable et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Le pyjama vert a des étoiles. Sara se couche. Le soir, dodo. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Sara a choisi le toboggan. Les chaussures font toc toc. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Sara se souvient du toboggan. Les jambes sont fatiguées. Le soir, pyjama. Au lit. Dodo. Maman pose le chat peluche.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +202,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le chat, le toboggan et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara est au dodo. Le soir. Le chat peluche veille. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le chat, le toboggan et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, dodo. Papa chuchote. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le chat, le toboggan et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Sara ferme les yeux. Le soir, dodo. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Sara a choisi les balançoires. La couverture est douce. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Sara pense aux balançoires. Ça va, ça vient. Maintenant, le soir. Pyjama. Dodo. Le chat peluche est sous le bras.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +249,42 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Le vent est doux. On attend son tour. Cette fin-là est celle de le chat, les balançoires et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara respire. Le soir, dodo. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le chat, les balançoires et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, au lit. Dodo. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Une feuille tombe. On rit un peu. Cette fin-là est celle de le chat, les balançoires et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Le chat peluche est là. Sara, dodo. Le soir. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Sara va vers le chien. Il y a des miettes sur la table. maman sourit. Ici, c'est le chien. Ce n'est pas comme les autres endroits. Sara se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Le chien en peluche a de grandes oreilles. Le soir, Sara met son pyjama. Papa l'aide. Elle se couche. C'est le dodo. Maman dit : le corps a besoin de dormir.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Sara met le pyjama. Puis elle va où ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le pyjama",
+        "dodo",
+        "au lit",
+        "soir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Le soir. Pyjama. Dodo. Où va Sara ?",
+      "positive_feedback": "Oui. Elle met le pyjama. Puis c'est le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.SOM.001"
@@ -286,13 +292,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Sara respire. Sara retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "Le chien peluche est au pied du lit. Sara a le pyjama. Le soir, dodo.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Sara a joué où, avant ? Le bac, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +324,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Sara a choisi le bac à sable. On entend un oiseau. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Au bac, Sara a creusé. Maintenant les mains sont propres. Le soir, pyjama. Dodo. Le chien peluche garde.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +356,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le chien, le bac à sable et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara est au dodo. Le soir. Le chien peluche aussi. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Le vent est doux. On rit un peu. Cette fin-là est celle de le chien, le bac à sable et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, dodo. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le chien, le bac à sable et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Sara se couche. Le soir, dodo. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Sara a choisi le toboggan. Ça sent le pain chaud. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Sara a glissé au toboggan. Les jambes sont lourdes. Le soir, elle a le pyjama. Au lit. Dodo.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +403,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le chien, le toboggan et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Dodo. Le soir. Le chien peluche est chaud. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le chien, le toboggan et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, dodo. Papa baisse le store. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le chien, le toboggan et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Sara ferme les yeux. Le soir, dodo. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Sara a choisi les balançoires. Le vent est doux. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Les balançoires sont loin, maintenant. Le soir, pyjama. Sara se couche. Dodo. Le chien peluche a une oreille sur l'oreiller.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +450,42 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le chien, les balançoires et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara, dodo. Le soir. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Une feuille tombe. On rit un peu. Cette fin-là est celle de le chien, les balançoires et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, au lit. Dodo. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Sara rejoint vert. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le chien, les balançoires et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Le chien peluche veille. Sara, dodo. Le soir. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Sara va vers la poule. Un chat miaule une fois. maman sourit. Ici, c'est la poule. Ce n'est pas comme les autres endroits. Sara se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "La poule en peluche est ronde et douce. Le soir, Sara met son pyjama. Maman boutonne. Sara se couche. C'est le dodo. Papa raconte deux phrases. Puis silence.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Sara a la poule peluche. Que met-elle pour dormir ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le pyjama",
+        "dodo",
+        "au lit",
+        "soir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Le soir. Le pyjama. Puis le dodo. Que met-elle ?",
+      "positive_feedback": "Oui. Elle met le pyjama. Le soir, c'est le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.SOM.001"
@@ -484,13 +493,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Sara respire. Sara retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "La poule peluche est sous le coude. Sara a le pyjama. Le soir, dodo.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Sara a joué où, avant ? Le bac, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +525,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Sara a choisi le bac à sable. Le sol est un peu froid. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Le bac à sable est fermé. Le soir, Sara a le pyjama. Elle se couche. Dodo. La poule peluche est là.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +557,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Le vent est doux. On rit un peu. Cette fin-là est celle de la poule, le bac à sable et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara, dodo. Le soir. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de la poule, le bac à sable et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, dodo. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Une feuille tombe. On se tient la main. Cette fin-là est celle de la poule, le bac à sable et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. La poule peluche est ronde. Sara, dodo. Le soir. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Sara a choisi le toboggan. Une feuille tombe. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Plus de toboggan. Les pieds sont au lit. Le soir, pyjama. Dodo. Maman pose un baiser.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +604,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de la poule, le toboggan et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Sara est au dodo. Le soir. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de la poule, le toboggan et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, dodo. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Sara rejoint vert. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de la poule, le toboggan et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. Sara ferme les yeux. Le soir, dodo. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Sara a choisi les balançoires. L'eau coule, tout petit bruit. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Sara répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Les balançoires se taisent dans sa tête. Le soir, Sara a le pyjama. Au lit. Dodo. La poule peluche reste.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "prompt": "Le pyjama est de quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,21 +651,21 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Sara rejoint rouge. Une feuille tombe. On rit un peu. Cette fin-là est celle de la poule, les balançoires et rouge. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama rouge. Dodo. Le soir. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Sara rejoint bleu. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de la poule, les balançoires et bleu. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama bleu. Sara a mis le pyjama. Le soir, au lit. Dodo. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Sara rejoint vert. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de la poule, les balançoires et vert. Sara a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Sara a entendu : soir, pyjama, dodo. Sara dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Pyjama vert. La poule peluche est là. Sara, dodo. Le soir. L'histoire est finie."
     }
   },
   "validation": {
-    "status": "APPROVED_TEXT",
+    "status": "PENDING",
     "blocking_findings": 0,
     "major_findings": 0,
     "paths_tested": 27

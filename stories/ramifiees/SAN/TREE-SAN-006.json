@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Zoé est avec papa, au marché. Zoé a envie de jouer. papa est là, tout près. On va apprendre : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé écoute papa. Zoé entend les mots : mouchoir, poubelle.",
+      "text": "Zoé va au marché avec papa. Maman les rejoint. Le nez de Zoé chatouille. Atchoum, tout doux. Papa dit : on prend un mouchoir. Puis on le met à la poubelle.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Zoé choisit. Tom, Léa, ou Sami ?",
+      "prompt": "Zoé se mouche près de qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Zoé va vers Tom. Un vélo passe au loin. papa sourit. Ici, c'est Tom. Ce n'est pas comme les autres endroits. Zoé se souvient : mouchoir, poubelle. Voici le geste : prendre un mouchoir ; jeter. On écoute jusqu'au bout. papa dit : je suis là. On reste ensemble.",
+      "text": "Tom est près de l'étal des fruits. Zoé a le nez plein. Papa tend un mouchoir. Zoé prend le mouchoir. Elle se mouche. Puis elle va à la poubelle. Elle jette le mouchoir. Tom dit : bien.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se moucher.",
+      "prompt": "Zoé se mouche. Que prend-elle ?",
       "expected_intents": [
         "MOUCHOIR"
       ],
       "accepted_examples": [
-        "mouchoir"
+        "mouchoir",
+        "un mouchoir",
+        "poubelle",
+        "elle se mouche"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre un mouchoir ; jeter.",
-      "wrong_feedback": "Voici le geste : prendre un mouchoir ; jeter.",
+      "retry_prompt": "Un mouchoir. Puis la poubelle. Que prend Zoé ?",
+      "positive_feedback": "Oui. Elle prend un mouchoir. Puis elle le jette à la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le met à la poubelle.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.HYG.003"
@@ -86,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre un mouchoir ; jeter. Zoé respire. Zoé retient : mouchoir, poubelle. On continue, avec papa.",
+      "text": "Zoé a le nez plus libre. Le mouchoir est à la poubelle. Tom est encore là.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Zoé attend où, nez propre ? Aux cubes, au livre, ou à la dînette ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Zoé a choisi les cubes. Il y a des miettes sur la table. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On rit un peu. maman n'est pas loin.",
+      "text": "Au stand des jouets, il y a des cubes. Zoé a déjà pris un mouchoir. Elle l'a jeté à la poubelle. Elle peut empiler. Tom l'aide.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On regarde quoi ensuite ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de Tom, les cubes et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Papa achète une pomme. Zoé a le mouchoir à la poubelle. Son nez respire. Tom tient le sac. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. On entend un oiseau. On attend son tour. Cette fin-là est celle de Tom, les cubes et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maman prend un yaourt. Zoé a jeté le mouchoir à la poubelle. Tom sourit. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de Tom, les cubes et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le pain est chaud. Zoé a pris un mouchoir. Puis la poubelle. Tom dit merci. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Zoé a choisi le livre. Un chat miaule une fois. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tait une seconde. maman n'est pas loin.",
+      "text": "Tom montre un petit livre d'images. Zoé a le nez propre. Mouchoir, puis poubelle. Elle tourne une page. Papa est là.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On regarde quoi ensuite ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de Tom, le livre et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Une pomme rouge. Zoé a mis le mouchoir à la poubelle. Tom ferme le livre. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de Tom, le livre et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un yaourt frais. Zoé a pris un mouchoir. Poubelle. Tom range. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de Tom, le livre et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un morceau de pain. Zoé a le nez libre. Mouchoir à la poubelle. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Zoé a choisi la dînette. Les chaussures font toc toc. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tient la main. maman n'est pas loin.",
+      "text": "Il y a une petite dînette en bois. Tom s'assoit. Zoé a déjà jeté le mouchoir à la poubelle. Elle joue un peu. Maman dit : nez propre.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On regarde quoi ensuite ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de Tom, la dînette et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Papa montre une pomme. Zoé a le mouchoir à la poubelle. Tom pose une assiette. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Le vent est doux. On attend son tour. Cette fin-là est celle de Tom, la dînette et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maman a un yaourt. Zoé a pris un mouchoir. Puis la poubelle. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de Tom, la dînette et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le pain craque. Zoé a jeté le mouchoir. Poubelle. Tom dit : on rentre. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Zoé va vers Léa. La lumière est claire. papa sourit. Ici, c'est Léa. Ce n'est pas comme les autres endroits. Zoé se souvient : mouchoir, poubelle. Voici le geste : prendre un mouchoir ; jeter. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "Léa est près des fleurs. Zoé sent un chatouillement. Maman sort un mouchoir. Zoé prend le mouchoir. Elle se mouche. Elle trouve la poubelle. Elle jette. Léa dit : ton nez respire.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se moucher.",
+      "prompt": "Zoé a pris quoi, près des fleurs ?",
       "expected_intents": [
         "MOUCHOIR"
       ],
       "accepted_examples": [
-        "mouchoir"
+        "mouchoir",
+        "un mouchoir",
+        "poubelle",
+        "elle se mouche"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre un mouchoir ; jeter.",
-      "wrong_feedback": "Voici le geste : prendre un mouchoir ; jeter.",
+      "retry_prompt": "Un mouchoir. Puis la poubelle. Quoi ?",
+      "positive_feedback": "Oui. Un mouchoir. Puis la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le met à la poubelle.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.HYG.003"
@@ -282,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre un mouchoir ; jeter. Zoé respire. Zoé retient : mouchoir, poubelle. On continue, avec papa.",
+      "text": "Les fleurs sentent bon. Zoé aussi respire. Le mouchoir est à la poubelle.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Zoé s'assoit où ? Aux cubes, au livre, ou à la dînette ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Zoé a choisi les cubes. La couverture est douce. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On rit un peu. maman n'est pas loin.",
+      "text": "Léa empile des cubes. Zoé a le nez propre. Mouchoir, poubelle. Elle pose un cube bleu.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On achète quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. On entend un oiseau. On attend son tour. Cette fin-là est celle de Léa, les cubes et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Une pomme dans le sac. Zoé a jeté le mouchoir à la poubelle. Léa applaudit. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de Léa, les cubes et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un yaourt. Zoé a pris un mouchoir. Poubelle. Léa tient la main. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Le vent est doux. On rit un peu. Cette fin-là est celle de Léa, les cubes et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Du pain chaud. Zoé a le mouchoir à la poubelle. Léa dit : on y va. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Zoé a choisi le livre. On entend un oiseau. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tait une seconde. maman n'est pas loin.",
+      "text": "Léa ouvre un livre d'images. Zoé a déjà mis le mouchoir à la poubelle. Elle écoute. Papa tourne la page.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On achète quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de Léa, le livre et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Papa prend une pomme. Zoé a le mouchoir à la poubelle. Léa ferme le livre. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de Léa, le livre et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maman prend un yaourt. Zoé a pris un mouchoir. Puis la poubelle. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de Léa, le livre et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le pain est dans le filet. Zoé a jeté le mouchoir. Poubelle. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Zoé a choisi la dînette. Ça sent le pain chaud. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tient la main. maman n'est pas loin.",
+      "text": "Une dînette miniature. Léa sert du thé imaginaire. Zoé a le nez libre. Mouchoir à la poubelle. Elle dit : à table.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On achète quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Le vent est doux. On attend son tour. Cette fin-là est celle de Léa, la dînette et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Une vraie pomme. Zoé a mis le mouchoir à la poubelle. Léa range. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de Léa, la dînette et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un vrai yaourt. Zoé a pris un mouchoir. Poubelle. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Une feuille tombe. On rit un peu. Cette fin-là est celle de Léa, la dînette et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un vrai morceau de pain. Zoé a le mouchoir à la poubelle. Léa dit merci. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Zoé va vers Sami. Il y a des miettes sur la table. papa sourit. Ici, c'est Sami. Ce n'est pas comme les autres endroits. Zoé se souvient : mouchoir, poubelle. Voici le geste : prendre un mouchoir ; jeter. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami est près du stand de pain. Zoé a le nez qui coule. Papa dit : mouchoir. Zoé prend un mouchoir. Elle se mouche. Sami montre la poubelle. Zoé jette. Son nez est plus libre.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se moucher.",
+      "prompt": "Sami montre la poubelle. Zoé a pris quoi avant ?",
       "expected_intents": [
         "MOUCHOIR"
       ],
       "accepted_examples": [
-        "mouchoir"
+        "mouchoir",
+        "un mouchoir",
+        "poubelle",
+        "elle se mouche"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre un mouchoir ; jeter.",
-      "wrong_feedback": "Voici le geste : prendre un mouchoir ; jeter.",
+      "retry_prompt": "Un mouchoir. Puis la poubelle. Quoi ?",
+      "positive_feedback": "Oui. Un mouchoir. Puis la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le met à la poubelle.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.HYG.003"
@@ -478,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre un mouchoir ; jeter. Zoé respire. Zoé retient : mouchoir, poubelle. On continue, avec papa.",
+      "text": "Le pain sent bon. Zoé respire mieux. Le mouchoir est à la poubelle.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Sami et Zoé jouent à quoi ? Cubes, livre, ou dînette ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Zoé a choisi les cubes. Le vent est doux. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On rit un peu. maman n'est pas loin.",
+      "text": "Sami construit. Zoé a déjà jeté le mouchoir à la poubelle. Elle pose un cube. Papa surveille.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On prend quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de Sami, les cubes et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Une pomme pour plus tard. Zoé a le mouchoir à la poubelle. Sami range les cubes. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Le vent est doux. On rit un peu. Cette fin-là est celle de Sami, les cubes et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un yaourt. Zoé a pris un mouchoir. Poubelle. Sami dit : on rentre. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de Sami, les cubes et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Le pain de Sami. Zoé a jeté le mouchoir à la poubelle. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Zoé a choisi le livre. Le sol est un peu froid. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sami a un petit livre. Zoé écoute, nez propre. Mouchoir, puis poubelle. Maman dit : bien.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On prend quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de Sami, le livre et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Papa choisit une pomme. Zoé a le mouchoir à la poubelle. Sami ferme le livre. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de Sami, le livre et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maman choisit un yaourt. Zoé a pris un mouchoir. Poubelle. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de Sami, le livre et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami sent le pain. Zoé a jeté le mouchoir. Poubelle. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Zoé a choisi la dînette. Une feuille tombe. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : prendre un mouchoir ; jeter. Zoé répète tout bas : mouchoir, poubelle. On se tient la main. maman n'est pas loin.",
+      "text": "Sami fait la dînette. Zoé a le nez libre. Le mouchoir est déjà à la poubelle. Elle sert une tasse imaginaire.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On prend quoi ? Une pomme, un yaourt, ou du pain ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,21 +645,21 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Zoé rejoint une pomme. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de Sami, la dînette et une pomme. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Une pomme vraie. Zoé a mis le mouchoir à la poubelle. Sami range. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Zoé rejoint un yaourt. Une feuille tombe. On rit un peu. Cette fin-là est celle de Sami, la dînette et un yaourt. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un yaourt vrai. Zoé a pris un mouchoir. Puis la poubelle. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Zoé rejoint un morceau de pain. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de Sami, la dînette et un morceau de pain. Zoé a appris : Se moucher. Voici le geste : prendre un mouchoir ; jeter. Zoé a entendu : mouchoir, poubelle. Zoé dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Un morceau de pain vrai. Zoé a le mouchoir à la poubelle. Sami dit : au revoir marché. L'histoire est finie."
     }
   },
   "validation": {
-    "status": "APPROVED_TEXT",
+    "status": "PENDING",
     "blocking_findings": 0,
     "major_findings": 0,
     "paths_tested": 27

@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.003-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Cléa est déçue deux fois",
+  "lesson_id": "EMO.LEX.003",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché puis jardin",
+  "characters": [
+    "Cléa",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Cléa marche au marché. Sa main est dans la main de papa. Elle sent l'odeur du miel. Elle veut un cerf-volant bleu. Le marchand dit : il n'y en a plus. Cléa sent ses épaules tomber. Sa gorge se serre. Cléa dit : je suis déçue. Être déçu, ce n'est pas honteux. Papa s'accroupit. Papa dit : un souhait peut attendre. On peut chercher une autre idée. Cléa souffle une fois. Elle regarde un moulinet jaune. Elle dit : celui-là, alors. Papa sourit. Ils achètent le moulinet. Cléa le fait tourner. Plus tard, ils rentrent au jardin. Cléa veut faire un gâteau au miel. Papa ouvre le placard. Il n'y a plus de farine. Cléa sent encore les épaules tomber. Elle dit : je suis déçue. Papa dit : une autre idée. Cléa propose des tartines au miel. Papa dit : oui. Elles tartinent ensemble. Le miel est collant. Au marché, puis au jardin, c'est pareil. On nomme : déçu. Puis on cherche une autre idée.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le cerf-volant n'est plus là. Que dit Cléa ?",
+      "expected_intents": [
+        "DECU",
+        "AUTRE_IDEE"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "déçue",
+        "je suis déçue",
+        "autre idée",
+        "un moulinet",
+        "une autre idée"
+      ],
+      "retry_prompt": "Cléa cherche une autre idée. Que dit-elle d'abord ?",
+      "positive_feedback": "Oui. Cléa dit : je suis déçu. Puis elle cherche une autre idée.",
+      "wrong_feedback": "On dit : je suis déçu. Ensuite on cherche une autre idée.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Cléa a nommé : déçu. Le souhait peut attendre. Une autre idée est arrivée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Cléa croque la tartine. Le moulinet tourne sur la table. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

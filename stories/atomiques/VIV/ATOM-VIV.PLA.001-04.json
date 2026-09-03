@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Aurore arrose le basilic",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine puis rebord de fenêtre",
+  "characters": [
+    "Aurore",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Aurore est dans la cuisine avec papa. Un petit pot de basilic est sur la table. Les feuilles sont un peu molles. Papa dit : elle a besoin d'eau. Elle a besoin de lumière. Aurore prend l'arrosoir avec papa. Un adulte est avec elle. Ils versent un peu d'eau. La terre devient sombre. Ça sent le basilic. Aurore touche une feuille. C'est doux. Papa pose le pot près de la fenêtre. La lumière arrive. Parce qu'il y a de l'eau et de la lumière, la plante tient mieux. Plus tard, Aurore revient. Les feuilles sont plus droites. Papa dit : on arrose avec un adulte. Aurore verse encore un tout petit peu. L'eau tombe tout doux. Papa range l'arrosoir. Aurore regarde la lumière sur les feuilles. Elle dit : eau, lumière, adulte. Papa sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La plante a soif. Que fait Aurore avec papa ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "arroser",
+        "elle arrose",
+        "de l'eau",
+        "eau"
+      ],
+      "retry_prompt": "Ils versent de l'eau. Que fait Aurore ?",
+      "positive_feedback": "Oui. Elle arrose avec un adulte. Eau et lumière.",
+      "wrong_feedback": "On arrose avec un adulte. La plante a besoin d'eau et de lumière.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Aurore a versé l'eau. La lumière est là. Papa, l'adulte, était avec elle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Aurore range l'arrosoir. La plante tient droit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

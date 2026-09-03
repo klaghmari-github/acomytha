@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.ARG.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Lyam comprend l'argent de maman",
+  "lesson_id": "SOC.ARG.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.ARG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "boulangerie puis marché",
+  "characters": [
+    "Lyam",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ce matin, maman a fini son travail. Elle rentre avec son sac. Lyam l'attend près de la porte. Maman dit : j'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Lyam et maman vont à la boulangerie. Ça sent le pain chaud. Maman donne l'argent. Elle peut acheter du pain. Lyam porte la baguette tiède. Ensuite, ils vont au marché. Des carottes. Des poireaux. Maman dit : l'argent sert aussi aux légumes. Lyam pose une carotte dans le cabas. Plus loin, il y a des chaussures. Maman montre une paire. Elle dit : l'argent sert aux chaussures, quand on en a besoin. Lyam touche le cuir souple. Maman range le reste. Lyam dit : le travail de maman sert. L'argent sert à acheter pain légumes chaussures. À la boulangerie, puis au marché, c'est pareil. Le travail donne l'argent. L'argent n'arrive pas tout seul. Maman dit : oui. Pain. Légumes. Chaussures.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maman a travaillé. L'argent sert à quoi ?",
+      "expected_intents": [
+        "ACHETER",
+        "TRAVAIL"
+      ],
+      "accepted_examples": [
+        "acheter",
+        "le pain",
+        "acheter du pain",
+        "le travail"
+      ],
+      "retry_prompt": "On achète du pain. L'argent sert à quoi ?",
+      "positive_feedback": "Oui. Le travail donne l'argent. L'argent sert à acheter pain, légumes, chaussures.",
+      "wrong_feedback": "Papa ou maman travaille. L'argent sert à acheter le pain, les légumes, les chaussures.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lyam a compris. Le travail de maman sert. L'argent sert à acheter pain légumes chaussures.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "À la maison, Lyam pose le pain. Maman range les légumes. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

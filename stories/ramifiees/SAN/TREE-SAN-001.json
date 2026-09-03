@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Lina est avec maman, à la maison. Lina a envie de jouer. maman est là, tout près. On va apprendre : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina écoute maman. Lina entend les mots : goûter, petite portion, nommer le goût.",
+      "text": "C'est l'heure de manger. Lina a faim. Maman est dans la cuisine. Papa est là aussi. Dans l'assiette, il y a un légume. Maman dit : tu peux goûter. Une petite portion. Puis tu nommes le goût. Lina écoute.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Lina choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Lina goûte où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,27 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Lina va vers la cuisine. Ça sent le pain chaud. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Lina se souvient : goûter, petite portion, nommer le goût. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Lina entre dans la cuisine. Ça sent la soupe. Elle s'assoit à table, près de maman. Une carotte orange est dans l'assiette. Maman dit : goûte une petite portion. Lina prend une petite bouchée. C'est un peu sucré. Lina nomme le goût : c'est sucré, maman.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Goûter un légume.",
+      "prompt": "Lina prend une petite bouchée. Que fait-elle ?",
       "expected_intents": [
         "GOUTER",
         "PETITE_BOUCHEE"
       ],
       "accepted_examples": [
-        "gouter",
-        "petite bouchee"
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "le goût",
+        "elle goûte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
-      "wrong_feedback": "Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
+      "retry_prompt": "Elle goûte. Une petite portion. Que fait Lina ?",
+      "positive_feedback": "Oui. Elle goûte une petite portion. Elle nomme le goût.",
+      "wrong_feedback": "On goûte une petite portion. On nomme le goût à papa ou maman.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.ALI.001"
@@ -88,29 +91,29 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina respire. Lina retient : goûter, petite portion, nommer le goût. On continue, avec maman.",
+      "text": "Lina a goûté. Elle a nommé le goût. Une petite portion, c'est bien. Maman sourit.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Lina choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Quel légume maintenant ? La carotte, le petit pois, ou la courgette ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "le ballon rouge",
+          "label": "la carotte",
           "intent": "LE_BALLON_ROUGE",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "le seau bleu",
+          "label": "le petit pois",
           "intent": "LE_SEAU_BLEU",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "le doudou",
+          "label": "la courgette",
           "intent": "LE_DOUDOU",
           "next": "brA3"
         }
@@ -120,13 +123,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Lina a choisi le ballon rouge. Le sol est un peu froid. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On dit merci. papa n'est pas loin.",
+      "text": "Maman coupe un tout petit bout de carotte. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : sucré. Papa dit : merci d'avoir goûté.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +155,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de la cuisine, le ballon rouge et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'assoit près de Lina. Lina dit : la carotte est sucrée. Elle a goûté une petite portion. Elle a nommé le goût. Tom tapote la table. Ils rient. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. La lumière est claire. On se tient la main. Cette fin-là est celle de la cuisine, le ballon rouge et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa écoute. Lina dit : c'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Léa sourit. Maman verse de l'eau. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Il y a des miettes sur la table. On range un objet. Cette fin-là est celle de la cuisine, le ballon rouge et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami regarde la carotte orange. Lina dit : j'ai goûté. C'est sucré. Une petite portion. Elle nomme le goût. Sami dit merci à maman. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Lina a choisi le seau bleu. Une feuille tombe. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On souffle doucement. papa n'est pas loin.",
+      "text": "Papa pose un petit pois vert. Il est tout rond. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux. Maman dit : une petite bouchée, c'est assez.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +202,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Lina rejoint Tom. La lumière est claire. On se tait une seconde. Cette fin-là est celle de la cuisine, le seau bleu et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom compte : un petit pois. Lina goûte. Elle nomme le goût : doux. Une petite portion. Tom applaudit tout doux. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Il y a des miettes sur la table. On se tient la main. Cette fin-là est celle de la cuisine, le seau bleu et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa chuchote : c'est petit. Lina goûte une petite portion. Elle nomme le goût. Léa goûte aussi, si elle veut. Maman est là. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Un chat miaule une fois. On range un objet. Cette fin-là est celle de la cuisine, le seau bleu et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami rit : c'est rond. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami range sa cuillère. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Lina a choisi le doudou. L'eau coule, tout petit bruit. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Maman donne un cube de courgette. Il est tendre. Lina goûte une petite portion. C'est doux, un peu tiède. Elle nomme le goût à maman. Papa hoche la tête.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +249,42 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de la cuisine, le doudou et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom dit : c'est vert. Lina dit : c'est doux. Elle a goûté une petite portion. Elle a nommé le goût. Ils restent à table. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Un chat miaule une fois. On se tient la main. Cette fin-là est celle de la cuisine, le doudou et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa touche l'assiette, tout doux. Lina goûte. Elle nomme le goût. Une petite portion. Léa dit : merci maman. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Les chaussures font toc toc. On range un objet. Cette fin-là est celle de la cuisine, le doudou et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami souffle sur le cube. Lina goûte une petite portion. Elle nomme le goût : doux. Sami pose sa serviette. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Lina va vers le jardin. Le vent est doux. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Lina se souvient : goûter, petite portion, nommer le goût. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. On se tient la main. maman dit : je suis là. On reste ensemble.",
+      "text": "Lina va au jardin avec maman. Le soleil est chaud. Une petite tomate rouge brille. Maman la lave. Maman dit : goûte une petite portion. Lina croque un tout petit bout. C'est juteux. Elle nomme le goût : c'est juteux, maman.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Goûter un légume.",
+      "prompt": "Lina goûte la tomate. Que fait-elle ?",
       "expected_intents": [
         "GOUTER",
         "PETITE_BOUCHEE"
       ],
       "accepted_examples": [
-        "gouter",
-        "petite bouchee"
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "le goût",
+        "elle goûte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
-      "wrong_feedback": "Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
+      "retry_prompt": "Une petite portion. Puis elle nomme le goût. Que fait Lina ?",
+      "positive_feedback": "Oui. Elle goûte une petite portion. Elle nomme le goût.",
+      "wrong_feedback": "On goûte une petite portion. On nomme le goût à papa ou maman.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.ALI.001"
@@ -286,29 +292,29 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina respire. Lina retient : goûter, petite portion, nommer le goût. On continue, avec maman.",
+      "text": "Lina a goûté au jardin. Elle a nommé le goût. Une petite portion, c'est déjà bien.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Lina choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Que cueille Lina ? La tomate, le radis, ou la salade ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "le ballon rouge",
+          "label": "la tomate",
           "intent": "LE_BALLON_ROUGE",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "le seau bleu",
+          "label": "le radis",
           "intent": "LE_SEAU_BLEU",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "le doudou",
+          "label": "la salade",
           "intent": "LE_DOUDOU",
           "next": "brB3"
         }
@@ -318,13 +324,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Lina a choisi le ballon rouge. Un vélo passe au loin. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On dit merci. papa n'est pas loin.",
+      "text": "Lina cueille une tomate cerise. Papa est près du bac. Elle goûte une petite portion. C'est chaud du soleil. Elle nomme le goût : sucré et juteux.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +356,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Lina rejoint Tom. La lumière est claire. On se tient la main. Cette fin-là est celle de le jardin, le ballon rouge et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom sent la tomate. Lina dit : c'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Une abeille passe loin. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Il y a des miettes sur la table. On range un objet. Cette fin-là est celle de le jardin, le ballon rouge et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa s'assoit dans l'herbe. Lina goûte. Elle nomme le goût. Une petite portion. Léa dit : c'est rouge. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Un chat miaule une fois. On dit merci. Cette fin-là est celle de le jardin, le ballon rouge et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami tient l'arrosoir. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rentrent avec maman. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Lina a choisi le seau bleu. La lumière est claire. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On souffle doucement. papa n'est pas loin.",
+      "text": "Maman tire un petit radis. Il pique un peu le nez. Lina goûte une petite portion. C'est vif. Elle nomme le goût : un peu piquant. Papa rit doucement.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +403,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Il y a des miettes sur la table. On se tient la main. Cette fin-là est celle de le jardin, le seau bleu et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom ouvre les yeux grand. Lina dit : ça pique un peu. Elle a goûté une petite portion. Elle nomme le goût. Tom dit : merci. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Un chat miaule une fois. On range un objet. Cette fin-là est celle de le jardin, le seau bleu et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa boit une gorgée d'eau. Lina a goûté. Elle a nommé le goût. Une petite portion. Léa s'essuie la bouche. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Les chaussures font toc toc. On dit merci. Cette fin-là est celle de le jardin, le seau bleu et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami sent le radis. Lina goûte une petite portion. Elle nomme le goût. Sami range le panier. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Lina a choisi le doudou. Il y a des miettes sur la table. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Papa cueille une feuille de salade. Elle est fraîche. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : frais. Maman dit : bien dit.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +450,42 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Un chat miaule une fois. On se tient la main. Cette fin-là est celle de le jardin, le doudou et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom touche la feuille. Lina dit : c'est frais. Elle a goûté une petite portion. Elle nomme le goût. Le vent est doux. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Les chaussures font toc toc. On range un objet. Cette fin-là est celle de le jardin, le doudou et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa met la feuille dans le panier. Lina a goûté. Elle a nommé le goût. Une petite portion. Elles marchent vers la maison. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. La couverture est douce. On dit merci. Cette fin-là est celle de le jardin, le doudou et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami écoute. Lina goûte une petite portion. Elle nomme le goût : croquant. Sami dit : moi aussi, une petite bouchée. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Lina va vers la chambre. Le sol est un peu froid. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Lina se souvient : goûter, petite portion, nommer le goût. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Lina est dans sa chambre. Maman apporte un petit plateau. Il y a un bâtonnet de concombre. Maman dit : tu peux goûter une petite portion. Lina croque. C'est froid et frais. Elle nomme le goût : c'est frais, maman.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Goûter un légume.",
+      "prompt": "Lina nomme le goût. Que fait-elle ?",
       "expected_intents": [
         "GOUTER",
         "PETITE_BOUCHEE"
       ],
       "accepted_examples": [
-        "gouter",
-        "petite bouchee"
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "le goût",
+        "elle goûte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
-      "wrong_feedback": "Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman.",
+      "retry_prompt": "Elle goûte une petite portion. Que fait Lina ?",
+      "positive_feedback": "Oui. Elle goûte une petite portion. Elle nomme le goût.",
+      "wrong_feedback": "On goûte une petite portion. On nomme le goût à papa ou maman.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.ALI.001"
@@ -484,29 +493,29 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina respire. Lina retient : goûter, petite portion, nommer le goût. On continue, avec maman.",
+      "text": "Même dans la chambre, Lina a goûté. Elle a nommé le goût. Une petite portion suffit.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Lina choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Que goûte Lina ? Le concombre, le poivron, ou le maïs ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "le ballon rouge",
+          "label": "le concombre",
           "intent": "LE_BALLON_ROUGE",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "le seau bleu",
+          "label": "le poivron",
           "intent": "LE_SEAU_BLEU",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "le doudou",
+          "label": "le maïs",
           "intent": "LE_DOUDOU",
           "next": "brC3"
         }
@@ -516,13 +525,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Lina a choisi le ballon rouge. Un chat miaule une fois. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On dit merci. papa n'est pas loin.",
+      "text": "Le concombre est froid. Lina goûte une petite portion. Ça croque. Elle nomme le goût : frais. Papa pose le doudou à côté, tout sage.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +557,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Il y a des miettes sur la table. On range un objet. Cette fin-là est celle de la chambre, le ballon rouge et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'assoit sur le tapis. Lina dit : c'est frais. Elle a goûté une petite portion. Elle nomme le goût. Tom pose le plateau. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Un chat miaule une fois. On dit merci. Cette fin-là est celle de la chambre, le ballon rouge et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa tient le doudou. Lina goûte. Elle nomme le goût. Une petite portion. Léa dit : c'est vert. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. Les chaussures font toc toc. On souffle doucement. Cette fin-là est celle de la chambre, le ballon rouge et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami écoute près de la fenêtre. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rangent le plateau. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Lina a choisi le seau bleu. Les chaussures font toc toc. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On souffle doucement. papa n'est pas loin.",
+      "text": "Maman offre un tout petit morceau de poivron. Il est rouge. Lina goûte une petite portion. C'est un peu sucré. Elle nomme le goût. Papa dit : tu as dit le goût. Merci.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +604,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Un chat miaule une fois. On range un objet. Cette fin-là est celle de la chambre, le seau bleu et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom dit : c'est rouge. Lina dit : c'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Ils sourient. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. Les chaussures font toc toc. On dit merci. Cette fin-là est celle de la chambre, le seau bleu et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa sent le poivron. Lina goûte une petite portion. Elle nomme le goût. Léa tapote le doudou. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. La couverture est douce. On souffle doucement. Cette fin-là est celle de la chambre, le seau bleu et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami chuchote. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami dit merci à papa. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Lina a choisi le doudou. La couverture est douce. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina répète tout bas : goûter, petite portion, nommer le goût. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Papa montre un grain de maïs. Il est jaune. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux. Maman dit : une petite bouchée, c'est bien.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Lina va vers Tom, Léa, ou Sami ?",
+      "prompt": "Lina dit le goût à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +651,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Lina rejoint Tom. Les chaussures font toc toc. On range un objet. Cette fin-là est celle de la chambre, le doudou et Tom. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rit : c'est jaune. Lina goûte. Elle nomme le goût. Une petite portion. Tom range le grain. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Lina rejoint Léa. La couverture est douce. On dit merci. Cette fin-là est celle de la chambre, le doudou et Léa. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa s'allonge un peu. Lina a goûté une petite portion. Elle a nommé le goût. Léa dit : c'est doux. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Lina rejoint Sami. On entend un oiseau. On souffle doucement. Cette fin-là est celle de la chambre, le doudou et Sami. Lina a appris : Goûter un légume. Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman. Lina a entendu : goûter, petite portion, nommer le goût. Lina dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami pose le plateau. Lina a goûté. Elle nomme le goût. Une petite portion. Maman baisse le store. L'histoire est finie."
     }
   },
   "validation": {
