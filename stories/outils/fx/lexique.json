@@ -1,39 +1,40 @@
 {
   "feature": "F-AUD-007",
+  "scope": "toutes les histoires, tous les chunks : tout événement raconté s'entend",
+  "note": "Les cues ci-dessous sont des AMORCES / exemples, pas une spec fermée. Étendre dès qu'un geste du récit n'a pas de son.",
   "mix": "under_voice",
   "target_db_under_voice": -15,
   "night": { "gain_db": -8, "skip": ["ambulance_passe"] },
   "cues": [
     {
       "id": "enfants_parc",
-      "match": [
-        "parc",
-        "aire de jeux",
-        "s'amusent",
-        "s'amuse",
-        "les enfants jouent",
-        "cris de joie"
-      ],
+      "match": ["parc", "aire de jeux", "s'amusent", "s'amuse", "les enfants jouent"],
       "file": "enfants_parc.wav",
-      "tone": "rires et appels de jeu, jamais peur"
+      "tone": "exemple : rires de jeu, jamais peur"
     },
     {
       "id": "voiture_passe",
       "match": ["voiture passe", "une voiture", "la voiture passe"],
       "file": "voiture_passe.wav",
-      "tone": "passage, pas de klaxon agressif"
+      "tone": "exemple : passage, pas de klaxon agressif"
     },
     {
       "id": "ambulance_passe",
       "match": ["ambulance"],
       "file": "ambulance_passe.wav",
-      "tone": "lointain, 1-2 s, pas une urgence"
+      "tone": "exemple : lointain, pas une urgence"
     },
     {
       "id": "chien_bonjour",
       "match": ["chien", "aboie", "aboiement", "wouaf"],
       "file": "chien_bonjour.wav",
-      "tone": "un ou deux aboiements amicaux"
+      "tone": "exemple : aboiement amical"
+    },
+    {
+      "id": "assiette_tombe",
+      "match": ["assiette", "fait tomber", "tombe par terre", "casse"],
+      "file": "assiette_tombe.wav",
+      "tone": "exemple : un objet qui tombe — le même principe pour tout geste"
     }
   ]
 }

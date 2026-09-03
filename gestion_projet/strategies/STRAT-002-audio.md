@@ -72,23 +72,20 @@ Un chunk = un fichier audio, **mix** de répliques (`script` : `role\|phrase` pa
 
 ## 4b. Immersion : le monde s’entend (F-AUD-007)
 
-Le récit pose le décor ; un **bruit court** le confirme. Ce n’est pas une bande-son continue.
+**Règle générale, tout le corpus.** Dès qu’une action ou un décor est **raconté**, il est **entendu**. Parc, ambulance, chien, assiette qui tombe : ce sont des **exemples**, pas une liste fermée. Objectif : plonger l’enfant dans le monde de **chaque** histoire.
 
-| Déclencheur (texte / script) | FX | Ton |
-| --- | --- | --- |
-| parc, enfants qui jouent / s’amusent | `enfants_parc` | rires, appels joyeux |
-| voiture qui passe | `voiture_passe` | passage, pas de klaxon agressif |
-| ambulance qui passe | `ambulance_passe` | lointain, 1–2 s, **pas** une urgence |
-| chien qui aboie / dit bonjour | `chien_bonjour` | un ou deux aboiements amicaux |
+Ce n’est pas une bande-son continue : un **bruit court**, calé sur l’événement, **sous** la voix.
+
+Le lexique (`stories/outils/fx/lexique.json`) **grandit** avec le corpus (porte, robinet, pas, oiseaux, pluie, pages, etc.). Une ligne de script `fx|<id>` ou une détection sur le texte du chunk.
 
 Décisions :
 
-1. Mix **dans le chunk** au bake (un WAV/MP3), pas un second lecteur runtime.
-2. Niveau FX ≈ −18 à −12 dB sous la voix. La parole reste lisible.
-3. Ligne de script `fx|enfants_parc` **ou** détection lexique (`stories/outils/fx/lexique.json`).
-4. Interdit : cri de peur, sirène collée à l’oreille, aboiement méchant, musique qui couvre.
-5. Nuit : atténuer ; skip `ambulance_passe`.
-6. Bibliothèque locale, licences libres, 0 € API.
+1. S’applique à **toutes** les histoires, pas à une scène type.
+2. Mix **dans le chunk** au bake (un WAV/MP3), pas un second lecteur runtime.
+3. Niveau FX ≈ −18 à −12 dB sous la voix. La parole reste lisible.
+4. Interdit : cri de peur, sirène collée à l’oreille, bruit méchant, musique qui couvre.
+5. Nuit : atténuer ; skip ce qui réveille (ex. passage d’ambulance).
+6. Bibliothèque locale, licences libres, 0 € API. Ajouter un FX dès qu’un geste du récit n’a pas encore de son.
 
 ## 5. Protection
 
