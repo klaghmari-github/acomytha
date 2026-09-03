@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.ROU.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Boris, une étape après l'autre",
+  "lesson_id": "AUT.ROU.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.ROU",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison, le matin",
+  "characters": [
+    "Boris",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le soleil entre. Boris ouvre les yeux. Le drap est chaud. Papa dit : c'est le matin. Une étape après l'autre. D'abord, Boris se lève. Ses pieds touchent le tapis. Le tapis est doux. Ensuite, Boris s'habille. Il met le pull vert. Il met le pantalon. Maman dit : maintenant, le déjeuner. Boris s'assoit à table. Il mange du pain. Il boit du lait tiède. Papa dit : ensuite, le sac. Boris met la gourde dans le sac. Boris met le doudou dans le sac. Chaque étape est finie. Boris est prêt. Papa dit : une étape après l'autre. C'est plus calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Boris se prépare. Comment avance-t-il ?",
+      "expected_intents": [
+        "ETAPE"
+      ],
+      "accepted_examples": [
+        "une étape",
+        "après l'autre",
+        "étape",
+        "les étapes"
+      ],
+      "retry_prompt": "Il fait une étape après l'autre. Comment avance Boris ?",
+      "positive_feedback": "Oui. Une étape après l'autre. Se lever, s'habiller, déjeuner, sac.",
+      "wrong_feedback": "On fait une étape après l'autre. On fait l'étape dite.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Boris a fait l'étape dite. Se lever. S'habiller. Déjeuner. Le sac. Une étape après l'autre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Boris met les chaussures. Maman ouvre la porte. L'air sent le matin. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

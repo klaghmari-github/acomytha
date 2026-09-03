@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.PAR.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gwenaëlle attend le robinet en bois",
+  "lesson_id": "REL.PAR.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre, cuisine en bois",
+  "characters": [
+    "Gwenaëlle",
+    "Hervé",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gwenaëlle est dans la chambre avec maman. Il y a une cuisine en bois. Hervé joue déjà au robinet. L'eau factice coule. Gwenaëlle a envie. Elle s'approche. Maman dit : on peut attendre. Attendre, c'est rester près. Gwenaëlle pose les pieds au sol. Elle compte. Un. Deux. Trois. Hervé joue encore. Gwenaëlle attend. Maman tient sa main. Le bois est lisse. Hervé s'écarte. Maman dit : puis mon tour. Gwenaëlle dit : puis mon tour. Elle tourne le robinet. Ses mains sont calmes. Hervé attend maintenant. Papa passe la tête. Il dit : on attend. Puis mon tour arrive. Gwenaëlle sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hervé joue au robinet. Que fait Gwenaëlle ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "son tour",
+        "puis mon tour",
+        "elle attend"
+      ],
+      "retry_prompt": "Elle attend. Puis c'est son tour. Que fait Gwenaëlle ?",
+      "positive_feedback": "Oui. On attend. Puis mon tour arrive.",
+      "wrong_feedback": "On attend. Puis mon tour arrive, et on joue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gwenaëlle a su attendre. Puis mon tour est venu. Elle a tourné le robinet. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gwenaëlle range la casserole. Elle prend la main de maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

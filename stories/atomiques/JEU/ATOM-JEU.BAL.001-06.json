@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-JEU.BAL.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Hervé passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour",
+  "characters": [
+    "Hervé",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hervé et papa sont dans la cour. L'herbe est courte. Maman pose deux sacs. Elle dit : voici l'espace du jeu. Hervé reste dans l'espace du jeu. Papa donne le ballon. Hervé le sent. Il est un peu mou. Papa dit : on va passer le ballon. Chacun a son tour. Hervé passe le ballon à papa. Papa l'attrape. C'est le tour de papa. Papa passe le ballon. Hervé attend. Puis c'est son tour. Hervé passe encore. Un oiseau chante. Hervé reste dans l'espace. Il attend. Il passe. Papa dit : bien joué.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hervé a le ballon. Que fait-il ?",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "il passe",
+        "son tour",
+        "le tour"
+      ],
+      "retry_prompt": "Chacun a un tour. Que fait Hervé ?",
+      "positive_feedback": "Oui. Il passe le ballon. Chacun a son tour.",
+      "wrong_feedback": "On va passer le ballon. On attend son tour. On reste dans l'espace du jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hervé a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range le ballon. Hervé boit de l'eau. Ils rentrent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

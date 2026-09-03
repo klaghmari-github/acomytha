@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.ECR.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Aline éteint et joue à la dinette",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ECR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Aline",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Aline est dans le salon. Papa plie une couverture. Aline est devant l'écran. Les couleurs bougent. Maman s'assoit près d'elle. Maman dit : fini. L'adulte dit fini. Aline écoute. Elle va éteindre. Aline éteint l'écran. L'écran devient noir. Elle pose la télécommande. Maman dit : on prend un autre jeu. Aline choisit la dinette en bois. Elle pose une tasse. Papa pose une cuillère. Ça sent le bois. Aline verse de l'eau factice. Maman dit merci. Aline sourit. L'écran est éteint. Un autre jeu, c'est bien. Elles rangent les tasses. Aline a éteint. Elle a choisi un autre jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maman dit fini. Que fait Aline ?",
+      "expected_intents": [
+        "ETEINDRE",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "éteindre",
+        "elle éteint",
+        "autre jeu",
+        "un autre jeu",
+        "la dinette"
+      ],
+      "retry_prompt": "L'adulte dit fini. Aline éteint. Puis elle prend un autre jeu. Que fait-elle ?",
+      "positive_feedback": "Oui. Aline éteint. Puis elle choisit un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maman a dit fini. Aline a éteint. Elle a pris un autre jeu. La dinette, c'était bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Les tasses sont rangées. Aline dit merci à maman. Le salon est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

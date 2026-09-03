@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.CON.003-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Hervé dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin, sillon de graines",
+  "characters": [
+    "Hervé",
+    "Eva",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hervé joue dans le jardin avec maman. Eva a planté des graines. Un petit sillon est droit. Hervé passe trop près. Le sillon s'efface. Eva a les yeux mouillés. Elle est triste. Maman s'approche. Maman dit : tu peux dire pardon. Hervé dit : pardon, Eva. Maman dit : tu peux proposer un geste. Hervé prend la petite pelle. Il redessine le sillon. C'est un geste simple. Eva regarde. Elle reste un peu triste. Maman dit : la peine reste un peu. Le pardon n'efface pas tout de suite. Papa arrive. Il s'assoit près d'Eva. Hervé attend. Plus tard, Eva pose une graine. Hervé tend l'arrosoir. Ils plantent doucement. La peine reste un peu. Maman laisse du temps à Eva.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le sillon d'Eva s'est effacé. Que fait Hervé ?",
+      "expected_intents": [
+        "PARDON",
+        "GESTE"
+      ],
+      "accepted_examples": [
+        "pardon",
+        "un geste",
+        "dire pardon",
+        "redessiner"
+      ],
+      "retry_prompt": "Il dit pardon, et il propose un geste. Que fait Hervé ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine peut rester un peu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hervé a dit pardon. Il a proposé un geste. La peine reste un peu. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le sillon redevient droit. Maman reste assise près d'eux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

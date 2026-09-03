@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-DIF.PAR.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Aline tend un puzzle et attend",
+  "lesson_id": "DIF.PAR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre, jour de pluie",
+  "characters": [
+    "Aline",
+    "Denis",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Aline est dans la chambre. Le tapis est doux. Il pleut dehors. Maman ouvre la porte. Denis arrive avec son sac. Denis parle peu. Il regarde le sol. Aline veut poser beaucoup de questions. Elle ouvre la bouche. Maman dit doucement : on peut attendre. On n'imite pas. On ne va pas forcer la parole. Aline ferme la bouche. Elle respire. Elle prend un puzzle d'animaux. Elle va tendre un jouet. Elle tend le puzzle vers Denis. Denis regarde. Il ne dit rien. Aline attend. On entend la pluie. Denis prend une pièce. Il la pose. Aline pose une pièce aussi. Papa entre. Il dit : on peut attendre. On peut tendre un jouet. On ne va pas forcer la parole. Denis dit tout bas : le chat. Aline dit : le chat. Ils jouent. Même avec peu de mots.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Denis parle peu. Que fait Aline ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TENDRE_JOUET"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "tendre un jouet",
+        "un jouet",
+        "elle attend"
+      ],
+      "retry_prompt": "Elle attend. Elle tend un jouet. Que fait Aline ?",
+      "positive_feedback": "Oui. On peut attendre. On peut tendre un jouet.",
+      "wrong_feedback": "On peut attendre. On peut tendre un jouet. On ne va pas forcer la parole.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Aline a su attendre. Elle a tendu un jouet. Denis a pris une pièce. On n'a pas forcé la parole.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman aide Denis à mettre son manteau. Denis fait un petit signe. Aline range le puzzle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
