@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-VIV.ANI.002-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Kenza dit les trois noms au jardin",
+  "lesson_id": "VIV.ANI.002",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin de la voisine",
+  "characters": [
+    "Kenza",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Kenza va au jardin de la voisine avec maman. Un chat dort au soleil. Une chatte marche près du bac. Un chaton joue avec une feuille. Maman dit : chat, chatte, chaton. Ce sont trois noms de la famille. Kenza répète : chat, chatte, chaton. Le chaton miaule tout petit. Plus loin, un chien aboie doucement. Une chienne le suit. Un chiot dort dans un panier. Maman dit : chien, chienne, chiot. Trois noms de la famille. Kenza touche l'herbe. Elle est fraîche. Elle dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot. Maman sourit. Parce qu'on nomme, on comprend la famille. Kenza répète encore les trois noms de la famille.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le chat, la chatte, et le petit. Quel est le petit ?",
+      "expected_intents": [
+        "MALE",
+        "FEMELLE",
+        "PETIT"
+      ],
+      "accepted_examples": [
+        "chaton",
+        "le chaton",
+        "petit",
+        "le petit"
+      ],
+      "retry_prompt": "Le petit du chat et de la chatte. Qui est-ce ?",
+      "positive_feedback": "Oui. Chat, chatte, chaton. Trois noms de la famille.",
+      "wrong_feedback": "On dit les trois noms : chat, chatte, chaton.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Kenza a dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Kenza dit au revoir au chaton. Maman lui donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

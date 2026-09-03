@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Justine va vers maman",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Justine",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Justine veut ouvrir la boîte de perles. Le couvercle est dur. C'est trop difficile. Justine va vers maman. Aller vers eux, c'est possible. Elle dit le besoin. Justine dit : maman, j'ai besoin d'aide. Maman l'écoute. Maman tient le couvercle. Justine tire. La boîte s'ouvre. Les perles sont lisses. Plus tard, papa est près de la table. Le pot de confiture est collé. Justine se souvient. Elle va vers papa. Elle dit le besoin. Justine dit : papa, le pot est collé. Papa tient le pot avec elle. Le pot s'ouvre. Justine sent la fraise. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop difficile. Que fait Justine ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "aller vers eux",
+        "dire le besoin",
+        "demander",
+        "papa ou maman"
+      ],
+      "retry_prompt": "Elle va vers papa ou maman. Elle dit le besoin. Que fait Justine ?",
+      "positive_feedback": "Oui. Justine va vers eux. Elle dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers papa ou maman. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Justine est allée vers maman. Puis vers papa. Elle a dit le besoin.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Justine enfile une perle. Maman pose le pot. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

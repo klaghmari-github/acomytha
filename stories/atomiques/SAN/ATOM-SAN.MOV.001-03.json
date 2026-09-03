@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.MOV.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Océane joue dehors au square",
+  "lesson_id": "SAN.MOV.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.MOV",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square près de la maison",
+  "characters": [
+    "Océane",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Océane a regardé un livre dans le salon. Ses jambes gigotent. Elle a envie de bouger. Maman dit : on va dehors. Elles mettent les chaussures. Elles prennent le ballon rouge. Elles vont au square avec maman. Dehors, le vent est doux. Un merle chante. Océane court jusqu'au banc. Maman reste près d'elle. C'est un adulte. Océane tape le ballon. Maman le renvoie. Parce qu'elle joue dehors, son corps est content. Océane dit : je joue dehors, avec un adulte. Maman sourit. Elles jouent un moment. Océane sent ses joues chaudes. L'herbe sent le thym. Puis elles rentrent ensemble. Parce que maman était là, Océane a pu bouger. Océane a joué dehors. Un adulte était avec elle.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Océane veut bouger. Où joue-t-elle ?",
+      "expected_intents": [
+        "DEHORS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "dehors",
+        "au square",
+        "avec maman",
+        "avec un adulte",
+        "dehors avec maman"
+      ],
+      "retry_prompt": "Elle va au square avec maman. Où joue Océane ?",
+      "positive_feedback": "Oui. Océane joue dehors, avec un adulte. Maman est avec elle.",
+      "wrong_feedback": "On joue dehors un moment, avec un adulte. On y va avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Océane a joué dehors. Maman, un adulte, était avec elle. Le corps a bougé. C'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Océane range le ballon. Elle boit une gorgée. Merci, dit-elle à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

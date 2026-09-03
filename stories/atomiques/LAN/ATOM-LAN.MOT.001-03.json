@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.MOT.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Nassim classe fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.MOT",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Nassim",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nassim est dans la cuisine. Papa pose un panier. Dedans, il y a une poire. Un raisin. Une chaussette. Un gant. Nassim touche la poire. Elle est lisse. Papa dit : on nomme. On classe. Les fruits ensemble. Les habits ensemble. La poire, c'est un fruit. Le raisin, c'est un fruit. Nassim les met ensemble. La chaussette, c'est un habit. Le gant, c'est un habit. Nassim les met ensemble. Papa dit : fruits, c'est une catégorie. Habits, c'est une catégorie. Nassim répète : catégorie. Il pose les fruits dans le panier. Il pose les habits sur la chaise.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nassim range poire et chaussette. Que fait-il ?",
+      "expected_intents": [
+        "CLASSER"
+      ],
+      "accepted_examples": [
+        "classer",
+        "ensemble",
+        "ranger",
+        "catégorie"
+      ],
+      "retry_prompt": "Les fruits vont ensemble. Que fait Nassim ?",
+      "positive_feedback": "Oui. Il classe. Fruits ensemble. Habits ensemble.",
+      "wrong_feedback": "On nomme. On classe. Fruits ensemble. Habits ensemble. C'est une catégorie.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nassim a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nassim croque la poire. Papa plie le gant. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
