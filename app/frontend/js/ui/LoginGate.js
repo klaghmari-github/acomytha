@@ -15,18 +15,18 @@ export class LoginGate extends Component {
         <form class="c-paper" id="login">
           <div class="c-mark">
             <strong>AcoMytha</strong>
-            <span>Des histoires audio pour grandir sans se faire peur.</span>
+            <span>Histoires audio pour les 3–6 ans.</span>
           </div>
           <div class="c-field">
             <label for="email">Adresse</label>
             <input id="email" name="email" type="email" autocomplete="username" required value="parent@acomytha.local" />
           </div>
           <div class="c-field">
-            <label for="password">Clé d’accès</label>
+            <label for="password">Mot de passe</label>
             <input id="password" name="password" type="password" autocomplete="current-password" required value="acomytha-parent" />
           </div>
           <p class="c-error" id="err"></p>
-          <button class="c-btn c-btn--wide" type="submit">Entrer dans la forêt</button>
+          <button class="c-btn c-btn--wide" type="submit">Connexion</button>
         </form>
       </section>`;
     this.on(this.querySelector("#login"), "submit", (ev) => this.submit(ev));

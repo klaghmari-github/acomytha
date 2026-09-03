@@ -9,9 +9,10 @@ export class ParentApp extends Component {
     this.api = null;
     this.router = null;
     this.me = null;
-    this.forest = new Set();
+    this.selected = new Set();
     this.engine = null;
     this.allStories = [];
+    this.domainNames = new Map();
     this._filterTimer = 0;
   }
 
@@ -29,24 +30,24 @@ export class ParentApp extends Component {
         <main class="s-main">
           <div class="c-title">
             <div>
-              <h1>La forêt</h1>
-              <p>Choisis les histoires que l’enfant pourra écouter. Filtre, coche, c’est tout.</p>
+              <h1>Histoires</h1>
+              <p>Cochez celles que votre enfant pourra écouter, puis enregistrez.</p>
             </div>
-            <button class="c-btn" id="save">Enregistrer la forêt</button>
+            <button class="c-btn" id="save">Enregistrer</button>
           </div>
           <div class="c-filters">
-            <input id="q" placeholder="Rechercher un titre, une leçon…" />
-            <select id="domain"><option value="">Domaine</option></select>
+            <input id="q" placeholder="Rechercher une histoire…" />
+            <select id="domain"><option value="">Thème</option></select>
             <select id="age">
               <option value="">Âge</option>
-              <option value="N1">N1 · 3–4 ans</option>
-              <option value="N2">N2 · 4–5 ans</option>
-              <option value="N3">N3 · 5–6 ans</option>
+              <option value="N1">3–4 ans</option>
+              <option value="N2">4–5 ans</option>
+              <option value="N3">5–6 ans</option>
             </select>
             <select id="kind">
-              <option value="">Forme</option>
-              <option value="atomic">Clairière</option>
-              <option value="ramifiee">Histoire ramifiée</option>
+              <option value="">Toutes</option>
+              <option value="atomic">Courte</option>
+              <option value="ramifiee">Avec des choix</option>
             </select>
           </div>
           <p class="c-hint" id="count"></p>
@@ -73,14 +74,15 @@ export class ParentApp extends Component {
   async boot() {
     const msg = this.querySelector("#msg");
     try {
-      const [lessons, forest, stories] = await Promise.all([
+      const [lessons, picked, stories] = await Promise.all([
         this.api.get("/lessons"),
         this.api.get("/parent/forest"),
         this.api.get("/stories"),
       ]);
-      this.forest = new Set(forest.map((s) => s.story_id));
+      this.selected = new Set(picked.map((s) => s.story_id));
       this.allStories = stories;
-      const domains = [...new Map(lessons.map((l) => [l.domain_id, l.domain])).entries()];
+      this.domainNames = new Map(lessons.map((l) => [l.domain_id, l.domain]));
+      const domains = [...this.domainNames.entries()];
       const sel = this.querySelector("#domain");
       for (const [id, name] of domains) {
         const o = document.createElement("option");
@@ -128,25 +130,27 @@ export class ParentApp extends Component {
   card(s) {
     const el = document.createElement("article");
     el.className = "c-card";
-    const checked = this.forest.has(s.story_id) ? "checked" : "";
+    const checked = this.selected.has(s.story_id) ? "checked" : "";
+    const theme = this.domainNames.get(s.domain) || "";
+    const where = [theme, s.setting].filter(Boolean).join(" · ");
     el.innerHTML = `
       <div class="o-row">
-        <span class="c-pill c-pill--${s.age_band.toLowerCase()}">${s.age_band}</span>
-        <span class="c-pill ${s.kind === "ramifiee" ? "c-pill--ram" : ""}">${s.kind === "ramifiee" ? "ramifié" : "clairière"}</span>
-        ${s.has_audio ? '<span class="c-pill c-pill--audio">audio</span>' : ""}
+        <span class="c-pill c-pill--${s.age_band.toLowerCase()}">${ageLabel(s.age_band)}</span>
+        <span class="c-pill ${s.kind === "ramifiee" ? "c-pill--ram" : ""}">${s.kind === "ramifiee" ? "Avec des choix" : "Courte"}</span>
+        ${s.has_audio ? '<span class="c-pill c-pill--audio">À écouter</span>' : ""}
       </div>
       <h3>${escapeHtml(s.title)}</h3>
-      <p>${escapeHtml(s.lesson_id)} · ${escapeHtml(s.setting || "")}</p>
-      <label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Dans la forêt enfant</label>
-      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Préécouter</button>` : ""}`;
+      <p>${escapeHtml(where)}</p>
+      <label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Pour l’enfant</label>
+      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Écouter</button>` : ""}`;
     return el;
   }
 
   onGridChange(e) {
     const box = e.target.closest("input[data-id]");
     if (!box) return;
-    if (box.checked) this.forest.add(box.dataset.id);
-    else this.forest.delete(box.dataset.id);
+    if (box.checked) this.selected.add(box.dataset.id);
+    else this.selected.delete(box.dataset.id);
   }
 
   onGridClick(e) {
@@ -157,8 +161,8 @@ export class ParentApp extends Component {
 
   async save() {
     const msg = this.querySelector("#msg");
-    await this.api.put("/parent/forest", { story_ids: [...this.forest] });
-    msg.textContent = "Forêt enregistrée.";
+    await this.api.put("/parent/forest", { story_ids: [...this.selected] });
+    msg.textContent = "Sélection enregistrée.";
   }
 
   async preview(storyId, btn) {
@@ -171,14 +175,14 @@ export class ParentApp extends Component {
         btn.textContent = n.kind === "passage_fin" ? "Fin" : "Lecture…";
       },
       onDone: () => {
-        btn.textContent = "Préécouter";
+        btn.textContent = "Écouter";
       },
     });
     try {
       await this.engine.run(storyId);
     } catch (e) {
       this.querySelector("#msg").textContent = e.message;
-      btn.textContent = "Préécouter";
+      btn.textContent = "Écouter";
     }
   }
 
@@ -194,6 +198,10 @@ function escapeHtml(s) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
+}
+
+function ageLabel(band) {
+  return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[band] || band;
 }
 
 function fold(s) {

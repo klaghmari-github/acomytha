@@ -25,7 +25,7 @@ L’application web est le **premier client livrable** : catalogue, comptes, for
 4. **Déchiffrement en RAM seulement.** Web Crypto AES-GCM → `ArrayBuffer` → `Blob` révoqué après lecture. Jamais de MP3 en `localStorage` / IndexedDB.
 5. **Catalogue SQL = source runtime.** Les xlsx restent l’atelier. Import au premier démarrage (`F-DAT-001`).
 6. **Comptes de démo locaux** (changeables par env) : `admin@acomytha.local` / `acomytha-admin`, `parent@acomytha.local` / `acomytha-parent`, PIN enfant `2468`.
-7. **Design « sous-bois doré ».** Parent : papier crème, mousse, miel. Admin : encre et or. Enfant : crépuscule, très peu de chrome, cibles ≥ 64 px.
+7. **Design parent, pas un décor.** Fond clair, accent bleu, pas de palette « arbre ». L’UI parent dit *histoires* / *sélection*, jamais forêt, arbre, clairière. Enfant : écran calme, cibles ≥ 64 px.
 8. **Graphe joué côté client.** Le serveur envoie le graphe (sans texte enfant) + les blobs chiffrés. Le moteur JS applique jour / nuit / 3 s.
 
 ## 4. Anti-redistribution APK

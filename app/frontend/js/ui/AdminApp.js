@@ -63,7 +63,7 @@ export class AdminApp extends Component {
     const statsEl = this.querySelector("#stats");
     statsEl.innerHTML = [
       ["Histoires", stats.stories],
-      ["Chunks", stats.chunks],
+      ["Passages", stats.chunks],
       ["Audio prêt", stats.with_audio],
       ["Alertes ouvertes", stats.alerts_open],
     ]
