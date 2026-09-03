@@ -1,0 +1,192 @@
+"""Import des xlsx atelier vers SQLite."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from openpyxl import load_workbook
+from sqlalchemy import delete, select
+from sqlalchemy.orm import Session
+
+from sentier.models import Chunk, Lesson, Story
+from sentier.settings import Settings
+
+
+class CatalogImporter:
+    """Lit le référentiel leçons + chaque arbre Excel."""
+
+    CHUNK_FIELDS = (
+        "chunk_id",
+        "kind",
+        "lesson_id",
+        "text",
+        "option_1_label",
+        "option_1_next_chunk",
+        "option_2_label",
+        "option_2_next_chunk",
+        "option_3_label",
+        "option_3_next_chunk",
+        "default_next_chunk",
+        "wait_ms",
+        "night_policy",
+    )
+
+    def __init__(self, settings: Settings) -> None:
+        self.settings = settings
+
+    def import_all(self, db: Session, limit: int | None = None) -> dict[str, int]:
+        n_lessons = self.import_lessons(db)
+        n_stories, n_chunks = self.import_stories(db, limit=limit)
+        db.commit()
+        return {"lessons": n_lessons, "stories": n_stories, "chunks": n_chunks}
+
+    def import_lessons(self, db: Session) -> int:
+        path = self.settings.lecons_xlsx
+        if not path.exists():
+            return 0
+        wb = load_workbook(path, read_only=True, data_only=True)
+        ws = wb["lecons"]
+        rows = ws.iter_rows(values_only=True)
+        header = [str(c) if c else "" for c in next(rows)]
+        idx = {name: i for i, name in enumerate(header)}
+        count = 0
+        for row in rows:
+            lid = _cell(row, idx, "lesson_id")
+            if not lid:
+                continue
+            lesson = db.get(Lesson, lid) or Lesson(lesson_id=lid)
+            lesson.title = _cell(row, idx, "title")
+            lesson.domain_id = _cell(row, idx, "domain_id")
+            lesson.domain = _cell(row, idx, "domain")
+            lesson.subdomain_id = _cell(row, idx, "subdomain_id")
+            lesson.subdomain = _cell(row, idx, "subdomain")
+            lesson.framing = _cell(row, idx, "framing") or "standard"
+            lesson.objective = _cell(row, idx, "objective")
+            db.merge(lesson)
+            count += 1
+        wb.close()
+        db.flush()
+        return count
+
+    def import_stories(self, db: Session, limit: int | None = None) -> tuple[int, int]:
+        files = sorted(self.settings.arbres_dir.glob("*.xlsx"))
+        if limit is not None:
+            files = files[:limit]
+        n_stories = 0
+        n_chunks = 0
+        for path in files:
+            n_stories += 1
+            n_chunks += self._import_one_story(db, path)
+        return n_stories, n_chunks
+
+    def _import_one_story(self, db: Session, path: Path) -> int:
+        wb = load_workbook(path, read_only=True, data_only=True)
+        meta = _meta_map(wb["meta"])
+        story_id = meta.get("story_id") or path.stem
+        audio_dir = self.settings.audio_dir / story_id
+        story = db.get(Story, story_id) or Story(story_id=story_id)
+        story.editorial_id = meta.get("editorial_id") or story_id
+        story.title = meta.get("title") or story_id
+        story.kind = meta.get("kind") or "atomic"
+        story.age_band = meta.get("age_band") or "N1"
+        story.age_range = meta.get("age_range") or ""
+        story.lesson_id = meta.get("lesson_id") or ""
+        story.secondary_lessons = meta.get("secondary_lessons") or ""
+        story.domain = meta.get("domain") or ""
+        story.subdomain = meta.get("subdomain") or ""
+        story.framing = meta.get("framing") or "standard"
+        story.setting = meta.get("setting") or ""
+        story.characters = meta.get("characters") or ""
+        story.wait_default_ms = int(meta.get("wait_default_ms") or 3000)
+        story.has_audio = (audio_dir / "CHK_T0000_P0000.mp3").exists()
+        story.status = "APPROVED_AUDIO" if story.has_audio else "APPROVED_TEXT"
+        db.merge(story)
+        db.flush()
+
+        db.execute(delete(Chunk).where(Chunk.story_id == story_id))
+        ws = wb["chunks"]
+        rows = ws.iter_rows(values_only=True)
+        header = [str(c) if c else "" for c in next(rows)]
+        idx = {name: i for i, name in enumerate(header)}
+        n = 0
+        for row in rows:
+            cid = _cell(row, idx, "chunk_id")
+            if not cid:
+                continue
+            db.add(
+                Chunk(
+                    chunk_id=cid,
+                    story_id=story_id,
+                    kind=_cell(row, idx, "kind") or "passage",
+                    lesson_id=_cell(row, idx, "lesson_id"),
+                    text=_cell(row, idx, "text"),
+                    option_1_label=_cell(row, idx, "option_1_label"),
+                    option_1_next=_cell(row, idx, "option_1_next_chunk"),
+                    option_2_label=_cell(row, idx, "option_2_label"),
+                    option_2_next=_cell(row, idx, "option_2_next_chunk"),
+                    option_3_label=_cell(row, idx, "option_3_label"),
+                    option_3_next=_cell(row, idx, "option_3_next_chunk"),
+                    default_next=_cell(row, idx, "default_next_chunk"),
+                    wait_ms=int(row[idx["wait_ms"]] or 0) if "wait_ms" in idx else 0,
+                    night_policy=_cell(row, idx, "night_policy") or "play",
+                )
+            )
+            n += 1
+        story.chunk_count = n
+        db.merge(story)
+        wb.close()
+        return n
+
+
+def story_to_dict(story: Story) -> dict:
+    return {
+        "story_id": story.story_id,
+        "title": story.title,
+        "kind": story.kind,
+        "age_band": story.age_band,
+        "age_range": story.age_range,
+        "lesson_id": story.lesson_id,
+        "secondary_lessons": [s for s in (story.secondary_lessons or "").split("|") if s.strip()],
+        "domain": story.domain,
+        "subdomain": story.subdomain,
+        "framing": story.framing,
+        "setting": story.setting,
+        "characters": story.characters,
+        "chunk_count": story.chunk_count,
+        "has_audio": story.has_audio,
+        "status": story.status,
+        "wait_default_ms": story.wait_default_ms,
+    }
+
+
+def list_stories(db: Session, q: str = "", domain: str = "", age_band: str = "", kind: str = "") -> list[Story]:
+    stmt = select(Story)
+    if q:
+        like = f"%{q.strip()}%"
+        stmt = stmt.where(Story.title.ilike(like) | Story.story_id.ilike(like) | Story.lesson_id.ilike(like))
+    if domain:
+        stmt = stmt.where(Story.domain == domain.upper())
+    if age_band:
+        stmt = stmt.where(Story.age_band == age_band.upper())
+    if kind:
+        stmt = stmt.where(Story.kind == kind)
+    stmt = stmt.order_by(Story.domain, Story.age_band, Story.title)
+    return list(db.scalars(stmt))
+
+
+def _meta_map(ws) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for row in ws.iter_rows(values_only=True):
+        if not row or row[0] in (None, "clé"):
+            continue
+        out[str(row[0])] = "" if row[1] is None else str(row[1])
+    return out
+
+
+def _cell(row, idx: dict[str, int], name: str) -> str:
+    if name not in idx:
+        return ""
+    val = row[idx[name]]
+    if val is None:
+        return ""
+    return str(val).strip()

@@ -1,0 +1,71 @@
+"""Usine FastAPI : câble services, API, fichiers statiques."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+
+from sentier.api import admin, auth, play, stories
+from sentier.crypto_audio import AudioVault
+from sentier.db import Database
+from sentier.devices import DeviceGuard
+from sentier.security import SessionService
+from sentier.seed import Bootstrap
+from sentier.settings import Settings, get_settings
+
+
+def create_app(settings: Settings | None = None, import_limit: int | None = None) -> FastAPI:
+    settings = settings or get_settings()
+    database = Database(settings)
+    database.create_all()
+    with next(database.session()) as db:
+        Bootstrap(settings).run(db, import_limit=import_limit)
+
+    app = FastAPI(title="Sentier", version="0.1.0")
+    app.state.settings = settings
+    app.state.database = database
+    app.state.sessions = SessionService(hours=settings.session_hours)
+    app.state.devices = DeviceGuard()
+    app.state.vault = AudioVault(settings)
+
+    app.include_router(auth.router)
+    app.include_router(stories.router)
+    app.include_router(play.router)
+    app.include_router(admin.router)
+
+    @app.get("/api/health")
+    def health():
+        return {"ok": True, "name": "sentier"}
+
+    frontend = settings.frontend_dir
+    if frontend.exists():
+        assets = frontend / "css"
+        if assets.exists():
+            app.mount("/css", StaticFiles(directory=frontend / "css"), name="css")
+        app.mount("/js", StaticFiles(directory=frontend / "js"), name="js")
+        if (frontend / "assets").exists():
+            app.mount("/assets", StaticFiles(directory=frontend / "assets"), name="assets")
+
+        @app.get("/")
+        def index():
+            return FileResponse(frontend / "index.html")
+
+        @app.get("/manifest.webmanifest")
+        def manifest():
+            return FileResponse(frontend / "manifest.webmanifest", media_type="application/manifest+json")
+
+    return app
+
+
+def app() -> FastAPI:
+    """Point d'entrée uvicorn `sentier.main:app` — factory wrapping."""
+    return create_app()
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("sentier.main:create_app", factory=True, host="127.0.0.1", port=8787, reload=True)

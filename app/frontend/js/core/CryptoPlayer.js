@@ -1,0 +1,67 @@
+/** Déchiffre un .chk en RAM et le joue. Révoque le Blob ensuite. */
+
+export class CryptoPlayer {
+  constructor() {
+    this.audio = new Audio();
+    this.url = null;
+    this._keyCache = new Map();
+  }
+
+  stop() {
+    this.audio.pause();
+    this.audio.removeAttribute("src");
+    if (this.url) {
+      URL.revokeObjectURL(this.url);
+      this.url = null;
+    }
+  }
+
+  async importKey(b64) {
+    if (this._keyCache.has(b64)) return this._keyCache.get(b64);
+    const raw = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+    const key = await crypto.subtle.importKey("raw", raw, "AES-GCM", false, ["decrypt"]);
+    this._keyCache.set(b64, key);
+    return key;
+  }
+
+  async decrypt(chk, keyB64) {
+    const u8 = new Uint8Array(chk);
+    const magic = String.fromCharCode(...u8.slice(0, 5));
+    if (magic !== "SNT01") throw new Error("fichier audio inattendu");
+    const hlen = (u8[5] << 8) | u8[6];
+    const header = u8.slice(7, 7 + hlen);
+    const iv = u8.slice(7 + hlen, 19 + hlen);
+    const ct = u8.slice(19 + hlen);
+    const key = await this.importKey(keyB64);
+    return crypto.subtle.decrypt({ name: "AES-GCM", iv, additionalData: header, tagLength: 128 }, key, ct);
+  }
+
+  async play(chk, keyB64) {
+    const plain = await this.decrypt(chk, keyB64);
+    this.stop();
+    const blob = new Blob([plain], { type: "audio/mpeg" });
+    this.url = URL.createObjectURL(blob);
+    this.audio.src = this.url;
+    await this.audio.play();
+    await new Promise((resolve, reject) => {
+      const ok = () => {
+        cleanup();
+        resolve();
+      };
+      const fail = () => {
+        cleanup();
+        reject(new Error("lecture audio"));
+      };
+      const cleanup = () => {
+        this.audio.removeEventListener("ended", ok);
+        this.audio.removeEventListener("error", fail);
+      };
+      this.audio.addEventListener("ended", ok);
+      this.audio.addEventListener("error", fail);
+    });
+    if (this.url) {
+      URL.revokeObjectURL(this.url);
+      this.url = null;
+    }
+  }
+}
