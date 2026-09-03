@@ -1,12 +1,64 @@
 # Sentier — backlog features
 
-**Version :** 3.0 — 3 septembre 2026. Remplace `Sentier_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.1 — 3 septembre 2026. Remplace `Sentier_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
-**Spec :** `specification/Sentier_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.
+**Spec :** `specification/Sentier_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
+**Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
 
 Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** juste après · **P3** v2 (ne pas démarrer).
 
-Phases : 0 cadrage · 1 contenu · 2 MVP mobile · 3 interaction fermée · 4 renouvellement · 5 leçons parentales · 6–7 hors MVP.
+Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction fermée · 4 renouvellement · 5 leçons parentales · 6–7 hors MVP.
+
+### Statut (3 sept. 2026)
+
+| ID | Statut | Note |
+| --- | --- | --- |
+| F-GEN-001 | **développé** | Corpus 1445 xlsx + audio témoin stéréo 44100. `main` = `837d436`. |
+| F-NAR-007 | **développé** | IDs chunks dans les xlsx. |
+| F-TAX-001 / F-TAX-002 | **développé** | `lecons.xlsx` + `lecon_histoires.xlsx`. |
+| F-AUD-005 | partiel | Piper local, échantillons git + bake disque (317 histoires audio vues au runtime). |
+| F-ACC-002 | **reporté** | Contredit F-SEC-003 (une clé = un appareil). |
+| F-APP-001 | **développé** | Socle FastAPI + PWA, POO HTML/CSS/JS. |
+| F-DAT-001 | **développé** | SQLite 1445 histoires / 68787 chunks, API liste+filtres. |
+| F-ACC-001 | **développé** | Login parent/admin, PIN enfant. |
+| F-SEC-003 | **développé** | 1 appareil / clé, alerte admin, reset. |
+| F-SEC-002 | **développé** | Mode enfant sans catalogue. |
+| F-ADM-004 | **développé** | Console stats, alertes, comptes. |
+| F-PAR-001 | **développé** | Liste, filtres, forêt. |
+| F-ENF-001 | **développé** | File parentale + lecteur. |
+| F-AUD-004 | **développé** | AES-GCM `.chk`, déchiffre RAM, prefetch N+1. |
+| F-PLY-001 | **développé** | Lecteur graphe jour/nuit, délai 3 s. |
+
+---
+
+## Application web (v3.1 — après les textes)
+
+Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail : **STRAT-005**.
+
+| ID | Epic | Titre | Prio | Phase | Strat | Dépendances |
+| --- | --- | --- | --- | --- | --- | --- |
+| F-APP-001 | App | Socle web PWA, POO HTML/CSS/JS, FastAPI, 3 shells | P0 | 2 | STRAT-005 | F-GEN-001 |
+| F-DAT-001 | Référentiel | SQLite histoire ↔ leçon ↔ chunk (import xlsx) | P0 | 2 | STRAT-003 | F-NAR-007, F-APP-001 |
+| F-ACC-001 | Compte | Création / connexion parent + admin | P0 | 2 | STRAT-005 | F-APP-001 |
+| F-SEC-003 | Sécurité | Une clé d’accès = un appareil, alerte admin sinon | P0 | 2 | STRAT-005 | F-ACC-001 |
+| F-SEC-002 | Sécurité | Cloisonnement mode enfant (PIN, pas de catalogue) | P0 | 2 | STRAT-005 | F-ACC-001 |
+| F-ADM-004 | Admin | Console : comptes, alertes appareil, reset liaison | P0 | 2 | STRAT-005 | F-SEC-003 |
+| F-PAR-001 | Parent | Liste, filtres, forêt (histoires choisies) | P0 | 2 | STRAT-005 | F-DAT-001 |
+| F-ENF-001 | Enfant | Déroule uniquement la forêt parentale | P0 | 2 | STRAT-005 | F-SEC-002, F-PAR-001 |
+| F-AUD-004 | Audio | AES-GCM, déchiffre en RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-DAT-001, F-SEC-003 |
+| F-PLY-001 | Lecture | Lecteur écran pauvre, graphe jour/nuit, délai 3 s | P0 | 2 | STRAT-004 | F-AUD-004, F-ENF-001 |
+
+### F-APP-001 — Socle
+
+`app/` : FastAPI factory, fichiers statiques, custom elements, jetons CSS, hash-router. Comptes démo locaux. Responsive téléphone / tablette / bureau.
+
+### F-SEC-003 — Un appareil
+
+`device_id` persisté sur le client. Premier login lie. Deuxième empreinte → HTTP 409 + `DeviceAlert`. L’admin peut reset. L’enfant n’ouvre pas une 2ᵉ liaison.
+
+### F-ENF-001 — Enfant
+
+Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le parent. Grandes cibles, mode jour/nuit.
 
 ---
 
@@ -138,4 +190,4 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 5. `F-LOC-002` paquets.  
 6. Compte / profil / forêt parentale (`F-ACC`, `F-PRF`, `F-TAX-003`, `F-FOR-001`).
 
-Pas de merge `main` tant que les textes n’ont pas été relus.
+Graphe git : une branche par feature, rebase, fast-forward `main` (consigne 3 sept. 2026). `F-ACC-002` reporté au profit de `F-SEC-003`.
