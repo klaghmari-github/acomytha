@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.HYG.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Agathe lave ses mains",
+  "lesson_id": "SAN.HYG.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Agathe",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Agathe sort des toilettes. Maman est près du lavabo. Maman dit : après les toilettes, on lave. Agathe ouvre l'eau. L'eau est tiède. Elle prend le savon. Le savon sent la fleur. Elle frotte ses mains. Elle rince. Elle essuie. Les mains sont propres. C'est l'heure de manger. Avant de manger, Agathe va au lavabo. Elle ouvre l'eau. Elle prend le savon. Elle frotte. Elle rince. Elle essuie. Maman dit : savon et eau. Après les toilettes. Avant de manger aussi. Agathe sourit. Ses mains sentent le savon.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Agathe se lave les mains. Avec quoi ?",
+      "expected_intents": [
+        "SAVON",
+        "MAINS"
+      ],
+      "accepted_examples": [
+        "savon",
+        "du savon",
+        "les mains",
+        "eau et savon",
+        "elle se lave"
+      ],
+      "retry_prompt": "Elle ouvre l'eau. Puis elle prend le savon. Avec quoi ?",
+      "positive_feedback": "Oui. Agathe lave ses mains avec de l'eau et du savon.",
+      "wrong_feedback": "On ouvre l'eau. On prend le savon. On rince. On essuie.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Après les toilettes, Agathe a lavé. Avant de manger, Agathe a lavé. Savon et eau.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Agathe s'assoit près de maman. Ses mains sont propres. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

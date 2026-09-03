@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-EMO.GES.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "François dit stop",
+  "lesson_id": "EMO.GES.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "François",
+    "Nina",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "François joue dans le salon. Maman est sur le canapé. Nina met un coussin trop près. C'est trop. François dit : stop. Il fait un pas. Il peut s'éloigner. Il s'éloigne vers maman. Maman est l'adulte. François dit : maman, c'est trop. Maman écoute. François reste près d'elle. Maman dit : stop, puis on s'éloigne. Puis on va vers un adulte. François souffle. Le coussin reste loin. François se sent plus calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop pour François. Que fait-il ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "vers maman",
+        "adulte",
+        "il dit stop"
+      ],
+      "retry_prompt": "Il dit stop. Puis il va vers maman. Que fait François ?",
+      "positive_feedback": "Oui. François dit stop. Il peut s'éloigner. Il va vers un adulte.",
+      "wrong_feedback": "On dit stop. On peut s'éloigner. On va vers un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "François a dit stop. Il a pu s'éloigner. Il est allé vers maman, l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "François s'assoit près de maman. Le canapé est doux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

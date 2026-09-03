@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.AMI.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gabrielle invite et accepte un non",
+  "lesson_id": "REL.AMI.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.AMI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Gabrielle",
+    "Noé",
+    "Iris",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gabrielle est dans le jardin. Maman est près des pots. Gabrielle a une corde à sauter. Noé est près du cerisier. Gabrielle va vers lui. Elle dit : tu veux jouer avec nous ? Inviter, c'est demander. Noé dit : non. Gabrielle s'arrête. Elle accepte le non. Un non est possible. Maman dit : tu as su inviter. Tu as su accepter un non. Parce qu'elle accepte, Noé reste tranquille. Gabrielle saute seule. La corde claque doucement. Plus tard, Iris passe. Gabrielle invite encore. Iris dit : oui. Elles sautent. Le non de Noé est entendu. Papa les rejoindra pour le goûter.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Noé dit non. Que fait Gabrielle ?",
+      "expected_intents": [
+        "INVITER",
+        "ACCEPTER_NON"
+      ],
+      "accepted_examples": [
+        "inviter",
+        "elle invite",
+        "accepte le non",
+        "un non",
+        "elle accepte"
+      ],
+      "retry_prompt": "Elle a invité. Noé dit non. Que fait Gabrielle ?",
+      "positive_feedback": "Oui. Elle invite. Puis elle accepte le non.",
+      "wrong_feedback": "On peut inviter. Un non est possible. On accepte le non.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gabrielle a su inviter. Elle a accepté le non. Maman a vu. Un non est possible.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gabrielle range la corde. Maman lui tend le sac. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-DIF.COR.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Agathe joue, le corps n'est pas une blague",
+  "lesson_id": "DIF.COR.002",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Agathe",
+    "Inès",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Agathe est dans la cuisine avec papa. Inès arrive. Elles n'ont pas la même forme. Les corps sont différents. Un petit rire commence. Papa parle tout de suite. Papa dit : le corps n'est pas une blague. On joue. Agathe ferme la bouche. Elle tend un emporte-pièce. La pâte est froide. Elles jouent. Elles font des formes. Parce que le corps n'est pas une blague, l'amitié reste. On ne commente pas le corps pour rabaisser. Agathe et Inès pressent la pâte. Ça sent la farine. Papa sourit. Elles jouent ensemble. Le corps n'est pas une blague.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le corps n'est pas une blague. Que fait-on ?",
+      "expected_intents": [
+        "JOUER",
+        "PAS_BLAGUE"
+      ],
+      "accepted_examples": [
+        "jouer",
+        "on joue",
+        "pas une blague",
+        "pas blague"
+      ],
+      "retry_prompt": "On joue. Le corps n'est pas une blague. Que fait-on ?",
+      "positive_feedback": "Oui. Le corps n'est pas une blague. On joue.",
+      "wrong_feedback": "Le corps n'est pas une blague. On joue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Agathe a entendu papa. Le corps n'est pas une blague. Agathe et Inès ont joué.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Agathe range un morceau de pâte. Inès range un emporte-pièce. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

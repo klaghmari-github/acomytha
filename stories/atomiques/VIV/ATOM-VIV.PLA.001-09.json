@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Élodie arrose la menthe",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine près de la fenêtre",
+  "characters": [
+    "Élodie",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Élodie est dans la cuisine. Papa est là. Une petite menthe a soif. Ses feuilles sont molles. Papa dit : elle a besoin d'eau. Elle a besoin de lumière. Élodie prend l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pose le pot près de la fenêtre. La lumière arrive. Élodie touche une feuille. C'est doux. Ça sent la menthe. Papa dit : on arrose avec un adulte. Élodie répète : eau, lumière, adulte. La menthe tient plus droit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La plante a soif. Que fait Élodie avec papa ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "arroser",
+        "elle arrose",
+        "de l'eau",
+        "eau"
+      ],
+      "retry_prompt": "Ils versent de l'eau. Que fait Élodie ?",
+      "positive_feedback": "Oui. Elle arrose avec un adulte. Eau et lumière.",
+      "wrong_feedback": "On arrose avec un adulte. La plante a besoin d'eau et de lumière.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Élodie a versé l'eau. La lumière est là. Papa, l'adulte, était avec elle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Élodie range l'arrosoir. La menthe tient droit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

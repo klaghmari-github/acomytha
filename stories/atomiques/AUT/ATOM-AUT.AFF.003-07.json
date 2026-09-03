@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.AFF.003-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Benoît reprend ses affaires deux fois",
+  "lesson_id": "AUT.AFF.003",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis jardin",
+  "characters": [
+    "Benoît",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Benoît a joué longtemps au parc. Maman est sur le banc. Benoît a un seau rouge. Il a un manteau vert. Il a son doudou lapin. Le vent fraîchit. Maman dit : on rentre. Maman dit : on va reprendre ses affaires, avant de partir. Benoît s'arrête. Il cherche le seau près du bac. Il le prend. Il cherche le manteau sur le banc. Il le prend. Il cherche le doudou dans l'herbe. L'herbe chatouille. Il le prend. Maintenant Benoît a tout. Maman dit : merci. Plus tard, ils jouent au jardin. Benoît a une gourde. Il a une casquette. Il a encore le doudou. Maman dit : on rentre. Benoît se souvient. Avant de partir, on reprend ses affaires. Il cherche la gourde. Il la prend. Il cherche la casquette. Il la prend. Il cherche le doudou. Il le prend. Maman dit : tu as repris le geste. Même leçon, autre lieu. Benoît a tout. Ils marchent vers la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de partir, que fait Benoît ?",
+      "expected_intents": [
+        "REPRENDRE",
+        "AVANT_DE_PARTIR"
+      ],
+      "accepted_examples": [
+        "reprendre",
+        "ses affaires",
+        "il reprend",
+        "avant de partir"
+      ],
+      "retry_prompt": "Il reprend seau, manteau, doudou. Que fait Benoît ?",
+      "positive_feedback": "Oui. Benoît reprend ses affaires avant de partir.",
+      "wrong_feedback": "Avant de partir, on reprend ses affaires. On les prend avec soi.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Benoît a cherché. Il a repris ses affaires. C'était avant de partir. Au parc, puis au jardin.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Benoît marche près de maman. Le doudou est dans son bras. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

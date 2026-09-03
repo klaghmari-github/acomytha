@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SOC.CUI.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Gabrielle aide à préparer, deux repas",
+  "lesson_id": "SOC.CUI.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.CUI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine, déjeuner puis goûter",
+  "characters": [
+    "Gabrielle",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gabrielle est dans la cuisine avec papa. La tomate est rouge et lisse. Papa dit : tu peux aider. Une tâche sûre, avec un adulte. Gabrielle lave une tomate. L'eau est froide. Elle pose la tomate dans le saladier. Papa est à côté. Il sourit. Plus tard, maman prépare le goûter. Le pain sent le four. Gabrielle se souvient. Une tâche sûre, avec un adulte. Elle apporte le pain. Elle pose une cuillère près du bol. Maman dit : merci. Gabrielle a lavé. Elle a apporté. Elle a posé. Même leçon, autre repas. Aider, c'est une tâche sûre, avec un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gabrielle aide en cuisine. Comment ?",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "avec papa",
+        "avec maman",
+        "avec un adulte",
+        "laver"
+      ],
+      "retry_prompt": "Elle fait une tâche sûre, avec un adulte. Comment aide Gabrielle ?",
+      "positive_feedback": "Oui. Gabrielle aide. Une tâche sûre, avec un adulte.",
+      "wrong_feedback": "On aide avec une tâche sûre. On le fait avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gabrielle a lavé la tomate. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gabrielle s'assoit. Le goûter est prêt. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
