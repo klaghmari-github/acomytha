@@ -145,10 +145,7 @@ export class HomeApp extends Component {
     const where = [theme, s.setting].filter(Boolean).join(" · ");
     const form = formLabel(s);
     el.innerHTML = `
-      <div class="o-row">
-        <span class="c-pill">${ageLabel(s.age_band)}</span>
-        ${form ? `<span class="c-pill c-pill--ram">${form}</span>` : ""}
-      </div>
+      ${form ? `<div class="o-row"><span class="c-pill c-pill--ram">${form}</span></div>` : ""}
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
       ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}`;
@@ -216,10 +213,6 @@ function formLabel(s) {
   if (s.kind === "ramifiee") return "Avec ramifications vers d’autres histoires";
   if (s.has_interaction) return "Avec interaction";
   return "";
-}
-
-function ageLabel(band) {
-  return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[band] || band;
 }
 
 function fmtDur(sec) {

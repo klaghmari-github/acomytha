@@ -157,7 +157,6 @@ export class ParentApp extends Component {
     const where = [theme, s.setting].filter(Boolean).join(" · ");
     el.innerHTML = `
       <div class="o-row">
-        <span class="c-pill c-pill--${s.age_band.toLowerCase()}">${ageLabel(s.age_band)}</span>
         <span class="c-pill ${s.kind === "ramifiee" || s.has_interaction ? "c-pill--ram" : ""}">${formLabel(s)}</span>
         ${owned ? '<span class="c-pill c-pill--audio">À vous</span>' : ""}
       </div>
@@ -362,10 +361,6 @@ function formLabel(s) {
   if (s.kind === "ramifiee") return "Avec ramifications vers d’autres histoires";
   if (s.has_interaction) return "Avec interaction";
   return "Courte";
-}
-
-function ageLabel(band) {
-  return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[band] || band;
 }
 
 function fold(s) {
