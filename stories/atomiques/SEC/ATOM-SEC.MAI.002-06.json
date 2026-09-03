@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SEC.MAI.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Didier demande avant l'inconnu",
+  "lesson_id": "SEC.MAI.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Didier",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Didier aide papa dans la cuisine. Papa coupe le pain. Didier pose les serviettes. Sur la table, il y a un petit pot. Didier ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Didier va vers papa. Papa, c'est l'adulte. Didier dit : je ne connais pas. Je demande. Papa prend le pot. Papa dit : merci d'avoir demandé. L'inconnu, on le montre à un adulte. Didier pose les mains sur les serviettes. Plus tard, dans le jardin, Didier voit une baie brillante. Il ne la connaît pas. C'est inconnu. Il va vers papa. Il demande. Papa le rejoint. Papa dit : on demande avant. Didier a les pieds au sol, près de l'adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Didier voit quelque chose d'inconnu. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "je demande",
+        "papa",
+        "un adulte",
+        "l'adulte"
+      ],
+      "retry_prompt": "Il va vers papa. Que dit Didier ?",
+      "positive_feedback": "Oui. Didier demande à l'adulte. Papa est là.",
+      "wrong_feedback": "Devant l'inconnu, on demande à papa ou maman. L'adulte décide.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SEC.MAI.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Didier a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Didier pose une serviette à sa place. Papa sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

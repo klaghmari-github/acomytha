@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.GES.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Géraldine souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Géraldine",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Géraldine construit une tour. Les cubes sont rouges. La tour tombe. Géraldine sent son ventre serré. Papa arrive. Papa dit : on souffle. Géraldine souffle. Un grand souffle. Papa dit : on fait une pause. Géraldine s'assoit. Elle pose les fesses au sol. Elle souffle encore. La pause est calme. Son ventre se desserre. Papa reste près d'elle. Géraldine reprend un cube. Elle souffle. Elle fait une pause. Puis elle pose un cube. Papa dit : tu as soufflé. Tu as fait une pause. Géraldine sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La tour tombe. Que fait Géraldine ?",
+      "expected_intents": [
+        "SOUFFLER",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "elle souffle",
+        "pause",
+        "une pause",
+        "s'asseoir"
+      ],
+      "retry_prompt": "Elle souffle. Elle s'assoit. Que fait-elle ?",
+      "positive_feedback": "Oui. Géraldine souffle. Elle fait une pause.",
+      "wrong_feedback": "On souffle. On s'assoit. On fait une pause. Puis on reprend.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.GES.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Géraldine a soufflé. Elle a fait une pause. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Géraldine pose un cube. La tour est petite. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

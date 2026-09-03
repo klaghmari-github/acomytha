@@ -1,0 +1,78 @@
+{
+  "tree_id": "ATOM-REL.MOQ.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hubert rejoint Lila à l'écart",
+  "lesson_id": "REL.MOQ.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc, bac à sable",
+  "characters": [
+    "Hubert",
+    "Lila",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hubert joue au bac à sable. Maman est sur le banc. Lila est à l'écart. Elle tient un seau. Elle ne parle pas. Hubert va la rejoindre. Il s'assoit près d'elle. Hubert dit : tu veux jouer ? Il invite Lila. Lila hoche la tête. Ils remplissent le seau. Le sable est froid. Maman sourit. Un peu plus tard, Lila reste encore à l'écart. Hubert la rejoint. Il l'invite encore. Si ça continue, on prévient un adulte. Hubert va vers maman. Il dit : Lila est encore à l'écart. Maman, l'adulte, vient. Elle s'assoit près d'elles. Hubert invite Lila au seau. Ils jouent. On rejoint. On invite. Un adulte si ça continue.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Lila est à l'écart. Que fait Hubert ?",
+      "expected_intents": [
+        "REJOINDRE",
+        "INVITER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "rejoindre",
+        "il rejoint",
+        "inviter",
+        "il invite",
+        "maman",
+        "un adulte"
+      ],
+      "retry_prompt": "On va vers elle. On invite. Que fait Hubert ?",
+      "positive_feedback": "Oui. Hubert rejoint Lila. Il l'invite. Il prévient un adulte si ça continue.",
+      "wrong_feedback": "On rejoint celui qui est à l'écart. On l'invite. On prévient un adulte si ça continue.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.MOQ.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hubert a rejoint Lila. Il l'a invitée. Maman, l'adulte, a été prévenue.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lila verse le sable. Hubert tient le seau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

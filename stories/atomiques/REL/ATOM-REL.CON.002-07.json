@@ -1,0 +1,78 @@
+{
+  "tree_id": "ATOM-REL.CON.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Alice dit stop et rejoint la maîtresse",
+  "lesson_id": "REL.CON.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école, couloir",
+  "characters": [
+    "Alice",
+    "maîtresse",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, papa emmène Alice à l'école. Alice range son manteau. Dans le couloir, un camarade la bouscule. Alice sent son épaule. Elle dit : stop. Sa voix est claire. Puis Alice s'éloigne. Elle fait trois pas vers le mur. Elle va vers la maîtresse. La maîtresse écoute. Alice dit : j'ai dit stop. Je me suis éloignée. La maîtresse reste près d'elle. Plus tard, à la récréation, le camarade arrive trop près. Alice dit encore : stop. Elle s'éloigne. Elle rejoint la maîtresse. Le soir, papa arrive. Alice raconte. Papa dit : tu as dit stop. Tu t'es éloignée. Tu as rejoint la maîtresse. Même leçon, autre moment.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Alice. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "MAITRESSE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "elle dit stop",
+        "s'éloigner",
+        "elle s'éloigne",
+        "maîtresse",
+        "la maîtresse"
+      ],
+      "retry_prompt": "Elle dit stop. Elle s'éloigne. Vers qui va-t-elle ?",
+      "positive_feedback": "Oui. Alice dit stop. Elle s'éloigne. Elle va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse ou le maître.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.CON.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Alice a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse. Papa a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Alice prend la main de papa. Ils marchent vers la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

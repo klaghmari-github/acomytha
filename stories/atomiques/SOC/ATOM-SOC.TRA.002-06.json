@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SOC.TRA.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Félix reste assis dans la voiture",
+  "lesson_id": "SOC.TRA.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "voiture",
+  "characters": [
+    "Félix",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Félix va au marché avec papa. Papa montre le siège. Félix pose ses fesses. Il est assis. Papa attache la ceinture. Les pieds de Félix sont sur le repose-pieds. Papa, c'est l'adulte. Papa s'assoit aussi. Papa dit : on reste assis, avec l'adulte. La voiture avance. Félix tient son livre. Il reste assis. Il entend le clignotant. Tic, tic. Félix chante tout bas. Il reste assis, avec papa. La voiture s'arrête. Félix reste assis. Papa dit : maintenant on sort. Ils sortent ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Félix est dans la voiture. Que fait-il ?",
+      "expected_intents": [
+        "ASSIS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "assis",
+        "rester assis",
+        "avec papa",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Ses fesses sont sur le siège. Avec qui ?",
+      "positive_feedback": "Oui. Il reste assis, avec l'adulte.",
+      "wrong_feedback": "Dans la voiture, on reste assis, avec l'adulte.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.TRA.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Félix est resté assis. Papa, l'adulte, était là. La ceinture aussi.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Félix tient la main de papa. Ils sentent les fruits du marché. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
