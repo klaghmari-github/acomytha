@@ -34,7 +34,7 @@ export class HomeApp extends Component {
         <section class="c-pitches">
           <blockquote>Votre enfant ne fait pas qu’écouter.</blockquote>
           <blockquote>Jour : plus d’interaction. Nuit : plus calme.</blockquote>
-          <blockquote>On apprend à mieux vivre.</blockquote>
+          <blockquote>Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</blockquote>
         </section>
         <section class="c-catalog">
           <div class="c-filters">
