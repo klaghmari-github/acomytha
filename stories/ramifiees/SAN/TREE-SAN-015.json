@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Hugo est avec maman, dans la chambre. Hugo a envie de jouer. maman est là, tout près. On va apprendre : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo écoute maman. Hugo entend les mots : éteindre, autre jeu, adulte dit fini.",
+      "text": "Hugo est dans la chambre. Un petit écran brille. Maman s'assoit sur le lit. Papa passe la tête. L'adulte dit fini. Hugo va éteindre. Puis il prend un autre jeu.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Hugo choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Hugo a l'écran où ? À la cuisine, au jardin, ou à la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Hugo va vers la cuisine. La lumière est claire. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Hugo se souvient : éteindre, autre jeu, adulte dit fini. Voici le geste : éteindre ; choisir un jeu. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo a regardé une recette à la cuisine, sur l'écran. Maman dit : fini. L'adulte dit fini. Hugo éteint. Il pose l'écran. Maman dit : un autre jeu. Hugo ouvre un tiroir.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Éteindre l'écran et choisir un autre jeu.",
+      "prompt": "Maman dit fini. Que fait Hugo ?",
       "expected_intents": [
         "ETEINDRE",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "eteindre",
-        "autre jeu"
+        "éteindre",
+        "il éteint",
+        "autre jeu",
+        "fini"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : éteindre ; choisir un jeu.",
-      "wrong_feedback": "Voici le geste : éteindre ; choisir un jeu.",
+      "retry_prompt": "L'adulte dit fini. Il éteint. Puis un autre jeu. Que fait-il ?",
+      "positive_feedback": "Oui. Il éteint. Puis il prend un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.ECR.001"
@@ -88,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : éteindre ; choisir un jeu. Hugo respire. Hugo retient : éteindre, autre jeu, adulte dit fini. On continue, avec maman.",
+      "text": "Hugo a éteint. L'adulte a dit fini. Un autre jeu commence, loin de l'écran.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Quel autre jeu ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Hugo a choisi le ballon rouge. Un chat miaule une fois. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On dit merci. papa n'est pas loin.",
+      "text": "Hugo prend le ballon rouge. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Il roule le ballon vers papa.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de la cuisine, le ballon rouge et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom attrape le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de la cuisine, le ballon rouge et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa tape doucement. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Le vent est doux. On range un objet. Cette fin-là est celle de la cuisine, le ballon rouge et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami fait rebondir. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Hugo a choisi le seau bleu. Les chaussures font toc toc. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On souffle doucement. papa n'est pas loin.",
+      "text": "Hugo sort le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu : remplir le seau de cuillères.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de la cuisine, le seau bleu et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom pose une cuillère. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Le vent est doux. On se tient la main. Cette fin-là est celle de la cuisine, le seau bleu et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa compte les cuillères. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Le sol est un peu froid. On range un objet. Cette fin-là est celle de la cuisine, le seau bleu et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Hugo a choisi le doudou. La couverture est douce. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Hugo prend le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : habiller le doudou.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Le vent est doux. On se tait une seconde. Cette fin-là est celle de la cuisine, le doudou et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom tient le chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de la cuisine, le doudou et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa boutonne. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Une feuille tombe. On range un objet. Cette fin-là est celle de la cuisine, le doudou et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami fait une voix douce. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Hugo va vers le jardin. Il y a des miettes sur la table. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Hugo se souvient : éteindre, autre jeu, adulte dit fini. Voici le geste : éteindre ; choisir un jeu. On se tient la main. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo avait l'écran sur le banc du jardin. Papa dit : fini. L'adulte dit fini. Hugo éteint. Il rentre. Papa dit : un autre jeu, maintenant.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Éteindre l'écran et choisir un autre jeu.",
+      "prompt": "Papa dit fini. Que fait Hugo ?",
       "expected_intents": [
         "ETEINDRE",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "eteindre",
-        "autre jeu"
+        "éteindre",
+        "il éteint",
+        "autre jeu",
+        "fini"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : éteindre ; choisir un jeu.",
-      "wrong_feedback": "Voici le geste : éteindre ; choisir un jeu.",
+      "retry_prompt": "L'adulte dit fini. Éteindre. Puis un autre jeu. Que fait-il ?",
+      "positive_feedback": "Oui. Il éteint. Puis il prend un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.ECR.001"
@@ -286,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : éteindre ; choisir un jeu. Hugo respire. Hugo retient : éteindre, autre jeu, adulte dit fini. On continue, avec maman.",
+      "text": "Hugo a éteint dehors. L'adulte a dit fini. Un autre jeu l'attend.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Quel autre jeu ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Hugo a choisi le ballon rouge. On entend un oiseau. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On dit merci. papa n'est pas loin.",
+      "text": "Hugo lance le ballon rouge dans l'herbe. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de le jardin, le ballon rouge et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom court après le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Le vent est doux. On range un objet. Cette fin-là est celle de le jardin, le ballon rouge et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa arrête le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le jardin, le ballon rouge et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami le relance. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Hugo a choisi le seau bleu. Ça sent le pain chaud. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On souffle doucement. papa n'est pas loin.",
+      "text": "Hugo remplit le seau bleu de feuilles. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Le vent est doux. On se tient la main. Cette fin-là est celle de le jardin, le seau bleu et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom ajoute une feuille. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le jardin, le seau bleu et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa secoue le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Une feuille tombe. On dit merci. Cette fin-là est celle de le jardin, le seau bleu et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. Papa sourit. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Hugo a choisi le doudou. Le vent est doux. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Hugo assied le doudou sur le banc. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de le jardin, le doudou et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom parle au doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Une feuille tombe. On range un objet. Cette fin-là est celle de le jardin, le doudou et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa lui met une feuille-chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le jardin, le doudou et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami chante. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Hugo va vers la chambre. Un chat miaule une fois. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Hugo se souvient : éteindre, autre jeu, adulte dit fini. Voici le geste : éteindre ; choisir un jeu. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo est dans la chambre. Le dessin tourne. Maman dit : fini. L'adulte dit fini. Hugo éteint. L'écran devient noir. Maman dit : un autre jeu. Hugo cherche sous le lit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Éteindre l'écran et choisir un autre jeu.",
+      "prompt": "L'adulte dit fini. Que fait Hugo ?",
       "expected_intents": [
         "ETEINDRE",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "eteindre",
-        "autre jeu"
+        "éteindre",
+        "il éteint",
+        "autre jeu",
+        "fini"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : éteindre ; choisir un jeu.",
-      "wrong_feedback": "Voici le geste : éteindre ; choisir un jeu.",
+      "retry_prompt": "Il éteint. Puis un autre jeu. Que fait-il ?",
+      "positive_feedback": "Oui. Il éteint. Puis il prend un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.ECR.001"
@@ -484,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : éteindre ; choisir un jeu. Hugo respire. Hugo retient : éteindre, autre jeu, adulte dit fini. On continue, avec maman.",
+      "text": "Hugo a éteint dans la chambre. L'adulte a dit fini. Un autre jeu, sur le tapis.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Quel autre jeu ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Hugo a choisi le ballon rouge. Le sol est un peu froid. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On dit merci. papa n'est pas loin.",
+      "text": "Hugo fait rouler le ballon rouge sous la table. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Le vent est doux. On range un objet. Cette fin-là est celle de la chambre, le ballon rouge et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'assoit en face. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Le sol est un peu froid. On dit merci. Cette fin-là est celle de la chambre, le ballon rouge et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa arrête le ballon avec le pied. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la chambre, le ballon rouge et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami rit. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Hugo a choisi le seau bleu. Une feuille tombe. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On souffle doucement. papa n'est pas loin.",
+      "text": "Hugo range des cubes dans le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Le sol est un peu froid. On range un objet. Cette fin-là est celle de la chambre, le seau bleu et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom pose un cube. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. Une feuille tombe. On dit merci. Cette fin-là est celle de la chambre, le seau bleu et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa trie les couleurs. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la chambre, le seau bleu et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami ferme le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Hugo a choisi le doudou. L'eau coule, tout petit bruit. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : éteindre ; choisir un jeu. Hugo répète tout bas : éteindre, autre jeu, adulte dit fini. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Hugo câline le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : une histoire parlée.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Hugo rejoint Tom. Une feuille tombe. On range un objet. Cette fin-là est celle de la chambre, le doudou et Tom. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom écoute. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Hugo rejoint Léa. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de la chambre, le doudou et Léa. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa invente une voix. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Hugo rejoint Sami. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la chambre, le doudou et Sami. Hugo a appris : Éteindre l'écran et choisir un autre jeu. Voici le geste : éteindre ; choisir un jeu. Hugo a entendu : éteindre, autre jeu, adulte dit fini. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami tapote le doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu. L'histoire est finie."
     }
   },
   "validation": {

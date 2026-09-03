@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-REL.MOQ.003-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Léa raconte à maman",
+  "lesson_id": "REL.MOQ.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa rentre. Maman est dans la cuisine. Ça sent le pain. Léa a les joues chaudes. Elle a ri un peu. Son ventre est serré. Maman s'assoit près. Maman dit : tu peux raconter. Léa raconte. Elle a ri. Même si on a ri. On raconte à maman. Maman écoute. Maman dit : merci d'avoir raconté. Léa boit de l'eau. Elle se sent plus légère.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa a ri un peu. Que fait-elle ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "à maman",
+        "à papa",
+        "elle raconte"
+      ],
+      "retry_prompt": "Même si on a ri, on raconte. Que fait Léa ?",
+      "positive_feedback": "Oui. On raconte à papa ou maman, même si on a ri.",
+      "wrong_feedback": "On raconte à papa ou maman, même si on a ri.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a su raconter. Même si on a ri, elle a parlé à maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa aide à poser les assiettes. Maman lui tient la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

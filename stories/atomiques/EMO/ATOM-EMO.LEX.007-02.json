@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-EMO.LEX.007-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Nino est nerveux",
+  "lesson_id": "EMO.LEX.007",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Nino",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino est dans le salon. Papa lit. Nino veut un jeu. Ses jambes bougent. Son corps ne tient pas. Nino dit : je suis nerveux. Être nerveux, ce n'est pas honteux. Nino dit : je demande une pause. Papa dit : oui. Nino s'assoit. Il pose les pieds. Il souffle. Ses jambes se calment. Papa sourit. Papa dit : une pause, c'est bien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nino ne tient plus. Que demande-t-il ?",
+      "expected_intents": [
+        "NERVEUX",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "une pause",
+        "pause",
+        "nerveux",
+        "je suis nerveux"
+      ],
+      "retry_prompt": "Nino est nerveux. Que demande-t-il ?",
+      "positive_feedback": "Oui. Nino dit : je suis nerveux. Il demande une pause.",
+      "wrong_feedback": "On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino a nommé : nerveux. Il a demandé une pause. Il s'est assis. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nino boit un peu d'eau. Papa lui tend un livre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

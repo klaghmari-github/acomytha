@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-TMP-008",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Adam choisit manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "secondary_lessons": [
+    "TMP.JOU.001"
+  ],
+  "domain": "TMP",
+  "subdomain": "TMP.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée de la maison",
+  "characters": [
+    "Adam",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Il fait froid. Il pleut. Adam est dans l'entrée avec maman. Maman tend le manteau. Adam le met. Maman tend les bottes. Adam les met. Maman dit : froid, le manteau. Pluie, les bottes. Adam donne la main.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Adam se prépare où ? L'entrée, le jardin, ou le balcon ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "l'entrée",
+          "intent": "LENTREE",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "le balcon",
+          "intent": "LE_BALCON",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Dans l'entrée, Adam enfile le manteau. Il met les bottes. Il fait froid. Il pleut. Maman dit : on est prêts.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Dans l'entrée, que met Adam ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "bottes",
+        "le manteau",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid et pluie. Manteau ou bottes ?",
+      "positive_feedback": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "wrong_feedback": "Quand il fait froid, on prend le manteau. Quand il pleut, on met les bottes.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "TMP.MET.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "On regarde quoi ? Le ciel gris, le vent froid, ou les flaques ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "le ciel gris",
+          "intent": "LE_CIEL_GRIS",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le vent froid",
+          "intent": "LE_VENT_FROID",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "les flaques",
+          "intent": "LES_FLAQUES",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Le ciel est gris. Adam serre le manteau. Ses bottes sont au sec. Froid. Pluie. Maman ouvre le parapluie.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Le vent froid arrive. Adam a le manteau. Il a les bottes. Maman dit : on marche doucement.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Les flaques brillent. Adam marche avec les bottes. Le manteau est chaud. Pluie. Froid.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Au jardin, l'herbe est mouillée. Adam a le manteau. Il a les bottes. Froid et pluie. Maman est là.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Au jardin, que met Adam ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "bottes",
+        "le manteau",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid et pluie. Manteau ou bottes ?",
+      "positive_feedback": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "wrong_feedback": "Quand il fait froid, on prend le manteau. Quand il pleut, on met les bottes.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "TMP.MET.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Dehors, on voit ? Ciel gris, vent froid, ou flaques ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "le ciel gris",
+          "intent": "LE_CIEL_GRIS",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le vent froid",
+          "intent": "LE_VENT_FROID",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "les flaques",
+          "intent": "LES_FLAQUES",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Au jardin, le ciel gris. Manteau. Bottes. Adam touche une feuille mouillée.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Le vent froid au jardin. Adam garde le manteau. Les bottes tapent l'herbe. Pluie fine.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Une flaque au jardin. Adam la contourne avec les bottes. Le manteau reste fermé. Froid.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Sur le balcon, l'eau tombe. Adam garde le manteau. Ses bottes tapent le sol. Froid. Pluie. Maman tient sa main.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Sur le balcon, que met Adam ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "bottes",
+        "le manteau",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid et pluie. Manteau ou bottes ?",
+      "positive_feedback": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "wrong_feedback": "Quand il fait froid, on prend le manteau. Quand il pleut, on met les bottes.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "TMP.MET.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Adam est habillé pour le froid et la pluie. Manteau. Bottes.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Du balcon, on voit ? Ciel gris, vent froid, ou flaques ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "le ciel gris",
+          "intent": "LE_CIEL_GRIS",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le vent froid",
+          "intent": "LE_VENT_FROID",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "les flaques",
+          "intent": "LES_FLAQUES",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Du balcon, le ciel gris. Adam a le manteau. Les bottes sont prêtes. Pluie. Froid.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Le vent froid sur le balcon. Adam serre le manteau. Bottes aux pieds. Maman est près.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Les flaques se voient du balcon. Adam a les bottes. Le manteau. Pluie. Froid.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Adam dit ça à qui ? le marché, l'école, ou le parc ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "le marché",
+          "intent": "LE_MARCHE",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "l'école",
+          "intent": "LECOLE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "le parc",
+          "intent": "LE_PARC",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

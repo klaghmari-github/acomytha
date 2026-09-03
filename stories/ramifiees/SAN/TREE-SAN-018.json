@@ -5,19 +5,19 @@
   "language": "fr",
   "age_band": "N3",
   "age_range": "5-6",
-  "title": "Se laver les mains — près de la fenêtre",
+  "title": "Kenzo se lave les mains",
   "lesson_id": "SAN.HYG.001",
   "secondary_lessons": [
-    "SAN.ALI.001"
+    "SAN.HYG.003"
   ],
   "domain": "SAN",
   "subdomain": "SAN.HYG",
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "près de la fenêtre",
+  "setting": "salle d'eau",
   "characters": [
-    "Adam",
+    "Kenzo",
     "papa",
     "maman"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Adam est avec papa, près de la fenêtre. Adam a envie de jouer. papa est là, tout près. On va apprendre : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam écoute papa. Adam entend les mots : savon, avant de manger, après les toilettes.",
+      "text": "Kenzo rentre. Papa dit : on se lave les mains. Avant de manger. Après les toilettes. Savon et eau. Kenzo ouvre l'eau. Il frotte le savon. Il rince. Il essuie.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Adam choisit. les cubes, le livre, ou la dînette ?",
+      "prompt": "C'est quel moment ? Avant le repas, après les toilettes, ou après le jardin ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "avant le repas",
+          "intent": "AVANT_LE_REPAS",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "après les toilettes",
+          "intent": "APRES_LES_TOILETTES",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "après le jardin",
+          "intent": "APRES_LE_JARDIN",
           "next": "brC"
         }
       ],
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Adam va vers les cubes. Un vélo passe au loin. papa sourit. Ici, c'est les cubes. Ce n'est pas comme les autres endroits. Adam se souvient : savon, avant de manger, après les toilettes. Voici le geste : ouvrir l'eau ; savon ; rincer. On écoute jusqu'au bout. papa dit : je suis là. On reste ensemble.",
+      "text": "Kenzo va vers avant le repas. L'eau est tiède. papa est tout près. Kenzo prend le savon. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se laver les mains.",
+      "prompt": "Kenzo se lave les mains. Avec quoi ?",
       "expected_intents": [
         "SAVON",
         "MAINS"
       ],
       "accepted_examples": [
         "savon",
-        "mains"
+        "les mains",
+        "eau et savon"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer.",
-      "wrong_feedback": "Voici le geste : ouvrir l'eau ; savon ; rincer.",
+      "retry_prompt": "Avant de manger. Après les toilettes. Avec quoi ?",
+      "positive_feedback": "Oui. Savon et eau. Avant de manger. Après les toilettes.",
+      "wrong_feedback": "On se lave les mains avec du savon. Avant de manger. Après les toilettes.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.HYG.001"
@@ -88,30 +89,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam respire. Adam retient : savon, avant de manger, après les toilettes. On continue, avec papa.",
+      "text": "Oui. Kenzo a retenu. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. On continue avec papa.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Kenzo prend quoi ? Le savon, l'eau, ou la serviette ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "le savon",
+          "intent": "LE_SAVON",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "l'eau",
+          "intent": "LEAU",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "la serviette",
+          "intent": "LA_SERVIETTE",
           "next": "brA3"
         }
       ],
@@ -120,30 +121,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Adam a choisi une pomme. Il y a des miettes sur la table. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On rit un peu. maman n'est pas loin.",
+      "text": "Kenzo a choisi le savon. Ça mousse. papa montre lentement. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endA1Z"
         }
       ],
@@ -152,45 +153,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Adam rejoint le chat. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, une pomme et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Papa est près. Kenzo prend le savon. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis le savon. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. On entend un oiseau. On attend son tour. Cette fin-là est celle de les cubes, une pomme et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Un oiseau chante. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis le savon. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, une pomme et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. La lumière est claire. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis le savon. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Adam a choisi un yaourt. Un chat miaule une fois. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tait une seconde. maman n'est pas loin.",
+      "text": "Kenzo a choisi l'eau. Les gouttes tombent. papa montre lentement. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endA2Z"
         }
       ],
@@ -199,45 +200,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Adam rejoint le chat. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, un yaourt et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Un oiseau chante. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis l'eau. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de les cubes, un yaourt et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. La lumière est claire. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis l'eau. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un yaourt et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. Les mains brillent. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis l'eau. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Adam a choisi un morceau de pain. Les chaussures font toc toc. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tient la main. maman n'est pas loin.",
+      "text": "Kenzo a choisi la serviette. Le carrelage est frais. papa montre lentement. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endA3Z"
         }
       ],
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, un morceau de pain et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. La lumière est claire. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis la serviette. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Le vent est doux. On attend son tour. Cette fin-là est celle de les cubes, un morceau de pain et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Les mains brillent. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis la serviette. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un morceau de pain et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. Le savon glisse. Kenzo frotte les mains. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. avant le repas, puis la serviette. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Adam va vers le livre. La lumière est claire. papa sourit. Ici, c'est le livre. Ce n'est pas comme les autres endroits. Adam se souvient : savon, avant de manger, après les toilettes. Voici le geste : ouvrir l'eau ; savon ; rincer. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "Kenzo va vers après les toilettes. Le savon sent la menthe. papa est tout près. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se laver les mains.",
+      "prompt": "Kenzo se lave les mains. Avec quoi ?",
       "expected_intents": [
         "SAVON",
         "MAINS"
       ],
       "accepted_examples": [
         "savon",
-        "mains"
+        "les mains",
+        "eau et savon"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer.",
-      "wrong_feedback": "Voici le geste : ouvrir l'eau ; savon ; rincer.",
+      "retry_prompt": "Avant de manger. Après les toilettes. Avec quoi ?",
+      "positive_feedback": "Oui. Savon et eau. Avant de manger. Après les toilettes.",
+      "wrong_feedback": "On se lave les mains avec du savon. Avant de manger. Après les toilettes.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.HYG.001"
@@ -286,30 +288,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam respire. Adam retient : savon, avant de manger, après les toilettes. On continue, avec papa.",
+      "text": "Kenzo respire. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Kenzo prend quoi ? Le savon, l'eau, ou la serviette ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "le savon",
+          "intent": "LE_SAVON",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "l'eau",
+          "intent": "LEAU",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "la serviette",
+          "intent": "LA_SERVIETTE",
           "next": "brB3"
         }
       ],
@@ -318,30 +320,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Adam a choisi une pomme. La couverture est douce. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On rit un peu. maman n'est pas loin.",
+      "text": "Kenzo a choisi le savon. Papa est près. papa montre lentement. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endB1Z"
         }
       ],
@@ -350,45 +352,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Adam rejoint le chat. On entend un oiseau. On attend son tour. Cette fin-là est celle de le livre, une pomme et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Un oiseau chante. Kenzo prend le savon. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis le savon. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le livre, une pomme et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. La lumière est claire. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis le savon. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Le vent est doux. On rit un peu. Cette fin-là est celle de le livre, une pomme et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. Les mains brillent. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis le savon. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Adam a choisi un yaourt. On entend un oiseau. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tait une seconde. maman n'est pas loin.",
+      "text": "Kenzo a choisi l'eau. Un oiseau chante. papa montre lentement. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endB2Z"
         }
       ],
@@ -397,45 +399,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le livre, un yaourt et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. La lumière est claire. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis l'eau. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un yaourt et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Les mains brillent. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis l'eau. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le livre, un yaourt et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. Le savon glisse. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis l'eau. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Adam a choisi un morceau de pain. Ça sent le pain chaud. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tient la main. maman n'est pas loin.",
+      "text": "Kenzo a choisi la serviette. La lumière est claire. papa montre lentement. Kenzo frotte les mains. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endB3Z"
         }
       ],
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Le vent est doux. On attend son tour. Cette fin-là est celle de le livre, un morceau de pain et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Les mains brillent. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis la serviette. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un morceau de pain et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Le savon glisse. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis la serviette. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Une feuille tombe. On rit un peu. Cette fin-là est celle de le livre, un morceau de pain et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. L'eau coule. Kenzo frotte les mains. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après les toilettes, puis la serviette. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Adam va vers la dînette. Il y a des miettes sur la table. papa sourit. Ici, c'est la dînette. Ce n'est pas comme les autres endroits. Adam se souvient : savon, avant de manger, après les toilettes. Voici le geste : ouvrir l'eau ; savon ; rincer. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Kenzo va vers après le jardin. La serviette est douce. papa est tout près. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Se laver les mains.",
+      "prompt": "Kenzo se lave les mains. Avec quoi ?",
       "expected_intents": [
         "SAVON",
         "MAINS"
       ],
       "accepted_examples": [
         "savon",
-        "mains"
+        "les mains",
+        "eau et savon"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer.",
-      "wrong_feedback": "Voici le geste : ouvrir l'eau ; savon ; rincer.",
+      "retry_prompt": "Avant de manger. Après les toilettes. Avec quoi ?",
+      "positive_feedback": "Oui. Savon et eau. Avant de manger. Après les toilettes.",
+      "wrong_feedback": "On se lave les mains avec du savon. Avant de manger. Après les toilettes.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.HYG.001"
@@ -484,30 +487,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam respire. Adam retient : savon, avant de manger, après les toilettes. On continue, avec papa.",
+      "text": "C'est juste. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. Kenzo donne la main à papa.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Kenzo prend quoi ? Le savon, l'eau, ou la serviette ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "le savon",
+          "intent": "LE_SAVON",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "l'eau",
+          "intent": "LEAU",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "la serviette",
+          "intent": "LA_SERVIETTE",
           "next": "brC3"
         }
       ],
@@ -516,30 +519,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Adam a choisi une pomme. Le vent est doux. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On rit un peu. maman n'est pas loin.",
+      "text": "Kenzo a choisi le savon. Les mains brillent. papa montre lentement. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endC1Z"
         }
       ],
@@ -548,45 +551,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, une pomme et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. La lumière est claire. Kenzo prend le savon. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis le savon. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Le vent est doux. On rit un peu. Cette fin-là est celle de la dînette, une pomme et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Les mains brillent. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis le savon. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de la dînette, une pomme et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. Le savon glisse. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis le savon. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Adam a choisi un yaourt. Le sol est un peu froid. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tait une seconde. maman n'est pas loin.",
+      "text": "Kenzo a choisi l'eau. Le savon glisse. papa montre lentement. Kenzo frotte les mains. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endC2Z"
         }
       ],
@@ -595,45 +598,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, un yaourt et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Les mains brillent. Kenzo ouvre l'eau. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis l'eau. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de la dînette, un yaourt et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. Le savon glisse. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis l'eau. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de la dînette, un yaourt et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. L'eau coule. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis l'eau. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Adam a choisi un morceau de pain. Une feuille tombe. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam répète tout bas : savon, avant de manger, après les toilettes. On se tient la main. maman n'est pas loin.",
+      "text": "Kenzo a choisi la serviette. L'eau coule. papa montre lentement. Kenzo prend le savon. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. maman n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers le chat, le chien, ou la poule ?",
+      "prompt": "Ensuite on va où ? La cuisine, la table, ou le jardin ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "la table",
+          "intent": "LA_TABLE",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
           "next": "endC3Z"
         }
       ],
@@ -642,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Adam rejoint le chat. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, un morceau de pain et le chat. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la cuisine. Le savon glisse. Kenzo rince. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis la serviette. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Adam rejoint le chien. Une feuille tombe. On rit un peu. Cette fin-là est celle de la dînette, un morceau de pain et le chien. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint la table. L'eau coule. Kenzo essuie. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis la serviette. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Adam rejoint la poule. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de la dînette, un morceau de pain et la poule. Adam a appris : Se laver les mains. Voici le geste : ouvrir l'eau ; savon ; rincer. Adam a entendu : savon, avant de manger, après les toilettes. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Kenzo rejoint le jardin. L'eau est tiède. Kenzo frotte les mains. Kenzo ouvre l'eau. Il prend le savon. Avant de manger. Après les toilettes. papa dit merci. après le jardin, puis la serviette. L'histoire est finie."
     }
   },
   "validation": {

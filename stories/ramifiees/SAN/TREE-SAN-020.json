@@ -1,23 +1,23 @@
 {
-  "tree_id": "TREE-SAN-014",
+  "tree_id": "TREE-SAN-020",
   "kind": "ramifiee",
   "version": 1,
   "language": "fr",
-  "age_band": "N2",
-  "age_range": "4-5",
-  "title": "Aller se coucher — au marché",
-  "lesson_id": "SAN.SOM.001",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "S'asseoir pour manger — au parc",
+  "lesson_id": "SAN.ALI.002",
   "secondary_lessons": [
     "SAN.ALI.001"
   ],
   "domain": "SAN",
-  "subdomain": "SAN.SOM",
+  "subdomain": "SAN.ALI",
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "au marché",
+  "setting": "au parc",
   "characters": [
-    "Sami",
+    "Noé",
     "papa",
     "maman"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Sami a passé l'après-midi au marché avec papa. Maman les attend. Les sacs sont posés. Il fait nuit. Le soir, on met le pyjama. Puis c'est le dodo. Le corps a besoin de dormir.",
+      "text": "Noé va au parc avec papa. Maman porte le panier. C'est l'heure de manger. On s'assoit. Assis à table, ensemble. Ici, la table est une nappe. Noé pose les fesses.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Le sac du marché est de quelle couleur ? Rouge, bleu, ou vert ?",
+      "prompt": "Noé s'assoit quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "rouge",
-          "intent": "ROUGE",
+          "label": "le matin",
+          "intent": "LE_MATIN",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "bleu",
-          "intent": "BLEU",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "vert",
-          "intent": "VERT",
+          "label": "le soir",
+          "intent": "LE_SOIR",
           "next": "brC"
         }
       ],
@@ -63,41 +63,41 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Le sac rouge est près de la porte. Le soir, Sami met son pyjama. Papa l'aide. Maman ouvre le lit. Sami se couche. C'est le dodo.",
+      "text": "Le matin, l'herbe est fraîche. Papa étend la nappe. Noé s'assoit. Les fesses sur la nappe. Maman s'assoit. Ils mangent ensemble, à table. Noé reste assis.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Sami rentre du marché. Que met-il ?",
+      "prompt": "Noé va manger. Que fait-il ?",
       "expected_intents": [
-        "PYJAMA",
-        "LIT"
+        "ASSISE",
+        "TABLE"
       ],
       "accepted_examples": [
-        "pyjama",
-        "le pyjama",
-        "dodo",
-        "au lit",
-        "soir"
+        "assis",
+        "s'asseoir",
+        "à table",
+        "ensemble",
+        "sur la nappe"
       ],
-      "retry_prompt": "Le soir. Le pyjama. Puis le dodo. Que met Sami ?",
-      "positive_feedback": "Oui. Il met le pyjama. Le soir, c'est le dodo.",
-      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
+      "retry_prompt": "Il s'assoit. À table. Ensemble. Que fait Noé ?",
+      "positive_feedback": "Oui. Il s'assoit à table. Ils mangent ensemble.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses. On mange ensemble.",
       "default_next": "fbA",
       "next": "fbA",
-      "lesson_id": "SAN.SOM.001"
+      "lesson_id": "SAN.ALI.002"
     },
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Le sac rouge attend. Sami a le pyjama. Le soir, dodo.",
+      "text": "Noé est assis. Le matin, à table, ensemble. La nappe est leur table.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Sami emmène quoi au lit ? Le ballon, le seau, ou le doudou ?",
+      "prompt": "Noé pose quoi pour s'asseoir ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -123,30 +123,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Le ballon rouge reste au salon. Sami a le pyjama. Le soir, il se couche. Dodo. Papa baisse la lumière.",
+      "text": "Noé pose le ballon rouge. Il s'assoit. À table, ensemble. Papa coupe le pain.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endA1Z"
         }
       ],
@@ -155,45 +155,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Le chat peluche est sur l'oreiller. Sami a le pyjama. Le soir, dodo. Papa baisse la lumière. L'histoire est finie."
+      "text": "Tom s'assoit près de Noé. Ils mangent assis à table, ensemble. Le matin. Le ballon rouge attend. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Le chien peluche est au pied. Sami a mis le pyjama. Le soir, dodo. Maman chuchote. L'histoire est finie."
+      "text": "Léa s'assoit. Noé est assis à table, ensemble. Le matin. Une miette tombe. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "La poule peluche est ronde. Sami se couche. Le soir, dodo. Le sac rouge attend. L'histoire est finie."
+      "text": "Sami s'assoit. Noé reste assis. À table, ensemble. Le matin. Papa coupe le pain. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Le seau bleu reste à la cuisine. Le soir, Sami a le pyjama. Au lit. Dodo.",
+      "text": "Noé pose le seau bleu. Il s'assoit. À table, ensemble. Maman verse de l'eau.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endA2Z"
         }
       ],
@@ -202,45 +202,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Le chat peluche ronronne. Sami a le pyjama. Le soir, dodo. Le seau bleu reste à la cuisine. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Le matin. Maman verse de l'eau. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Le chien peluche garde. Sami a mis le pyjama. Le soir, dodo. Une pomme sent encore. L'histoire est finie."
+      "text": "Léa s'assoit tout doux. Noé reste assis. À table, ensemble. Le seau bleu est posé. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "La poule peluche est sous le bras. Sami, dodo. Le soir. Il respire. L'histoire est finie."
+      "text": "Sami pose le seau. Noé est assis à table, ensemble. Le matin, l'herbe est fraîche. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Le doudou va au lit. Sami aussi. Le soir, pyjama. Dodo. Maman chuchote.",
+      "text": "Noé pose le doudou. Il s'assoit. À table, ensemble. Papa dit : bien.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endA3Z"
         }
       ],
@@ -249,56 +249,56 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. Maman pose un baiser. L'histoire est finie."
+      "text": "Tom s'assoit. Le doudou aussi, à sa place. Noé est assis à table, ensemble. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Le chien peluche près du doudou. Sami a mis le pyjama. Le soir, dodo. Le salon s'éteint. L'histoire est finie."
+      "text": "Léa sourit. Noé est assis à table, ensemble. Le matin. Papa dit : bien. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Silence. L'histoire est finie."
+      "text": "Sami tapote le doudou. Noé reste assis. À table, ensemble. Une abeille passe loin. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Le sac bleu sent le pain. Le soir, Sami met son pyjama. Il est doux. Il se couche. C'est le dodo. Papa dit : le corps a besoin de dormir.",
+      "text": "Après la sieste, Noé a faim. Papa ouvre le panier. Noé s'assoit sur la nappe. Les fesses posées. Maman s'assoit. Ils mangent ensemble, à table. Noé reste assis.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Le sac bleu est posé. Sami met quoi ?",
+      "prompt": "Après la sieste, Noé que fait-il pour manger ?",
       "expected_intents": [
-        "PYJAMA",
-        "LIT"
+        "ASSISE",
+        "TABLE"
       ],
       "accepted_examples": [
-        "pyjama",
-        "le pyjama",
-        "dodo",
-        "au lit",
-        "soir"
+        "assis",
+        "s'asseoir",
+        "à table",
+        "ensemble",
+        "sur la nappe"
       ],
-      "retry_prompt": "Le soir. Pyjama. Dodo. Que met-il ?",
-      "positive_feedback": "Oui. Il met le pyjama. Le soir, c'est le dodo.",
-      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
+      "retry_prompt": "Il s'assoit. À table. Ensemble. Que fait Noé ?",
+      "positive_feedback": "Oui. Il s'assoit à table. Ils mangent ensemble.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses. On mange ensemble.",
       "default_next": "fbB",
       "next": "fbB",
-      "lesson_id": "SAN.SOM.001"
+      "lesson_id": "SAN.ALI.002"
     },
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Le pain attendra demain. Sami a le pyjama. Le soir, dodo.",
+      "text": "Noé est assis. Après la sieste, à table, ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Sami emmène quoi au lit ? Le ballon, le seau, ou le doudou ?",
+      "prompt": "Noé pose quoi ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -324,30 +324,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Le ballon rouge reste. Sami a le pyjama. Le soir, au lit. Dodo.",
+      "text": "Noé pose le ballon rouge. Il s'assoit. À table, ensemble. Il mange un bout de pain.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endB1Z"
         }
       ],
@@ -356,45 +356,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Le chat peluche veille. Sami a le pyjama. Le soir, dodo. Le sac bleu sent le pain. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Après la sieste. Le ballon est posé. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Le chien peluche veille. Sami a mis le pyjama. Le soir, dodo. Papa raconte deux phrases. L'histoire est finie."
+      "text": "Léa s'assoit. Noé reste assis. À table, ensemble. Après la sieste. Il mange du pain. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "La poule peluche veille. Sami se couche. Le soir, dodo. Le pain attendra demain. L'histoire est finie."
+      "text": "Sami s'assoit. Noé est assis à table, ensemble. Après la sieste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Le seau bleu est rangé. Le soir, pyjama. Sami se couche. Dodo.",
+      "text": "Noé pose le seau bleu. Il s'assoit. À table, ensemble. Maman tend une serviette.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endB2Z"
         }
       ],
@@ -403,45 +403,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Le chat peluche ferme un œil. Sami a le pyjama. Le soir, dodo. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Maman tend une serviette. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Le chien peluche a une oreille sur l'oreiller. Sami a mis le pyjama. Le soir, dodo. L'histoire est finie."
+      "text": "Léa s'assoit. Noé reste assis. À table, ensemble. Le seau bleu est rangé. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "La poule peluche est ronde et chaude. Sami, dodo. Le soir. L'histoire est finie."
+      "text": "Sami range le seau. Noé est assis à table, ensemble. Après la sieste. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Le doudou sent le savon. Sami a le pyjama. Le soir, dodo. Maman pose un baiser.",
+      "text": "Noé pose le doudou. Il s'assoit. À table, ensemble. Papa dit : on est assis.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endB3Z"
         }
       ],
@@ -450,56 +450,56 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Le chat peluche et le doudou sentent le savon. Sami a le pyjama. Le soir, dodo. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Papa dit : on est assis. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. Maman baisse le store. L'histoire est finie."
+      "text": "Léa câline le doudou. Noé reste assis. À table, ensemble. Après la sieste. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Papa dit : demain. L'histoire est finie."
+      "text": "Sami s'assoit près du doudou. Noé est assis à table, ensemble. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Le sac vert a des pommes. Le soir, Sami met son pyjama. Maman boutonne. Il se couche. C'est le dodo. Papa raconte deux phrases.",
+      "text": "Le soir, le parc est calme. Papa étend la nappe. Noé s'assoit. Les fesses bien posées. Maman s'assoit. Ils mangent ensemble, à table. Noé reste assis.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Le sac vert est posé. Sami met quoi pour dormir ?",
+      "prompt": "Le soir, Noé que fait-il pour manger ?",
       "expected_intents": [
-        "PYJAMA",
-        "LIT"
+        "ASSISE",
+        "TABLE"
       ],
       "accepted_examples": [
-        "pyjama",
-        "le pyjama",
-        "dodo",
-        "au lit",
-        "soir"
+        "assis",
+        "s'asseoir",
+        "à table",
+        "ensemble",
+        "sur la nappe"
       ],
-      "retry_prompt": "Le soir. Le pyjama. Puis le dodo. Que met-il ?",
-      "positive_feedback": "Oui. Il met le pyjama. Le soir, c'est le dodo.",
-      "wrong_feedback": "Le soir, on met le pyjama. Puis on va au dodo.",
+      "retry_prompt": "Il s'assoit. À table. Ensemble. Que fait Noé ?",
+      "positive_feedback": "Oui. Il s'assoit à table. Ils mangent ensemble.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses. On mange ensemble.",
       "default_next": "fbC",
       "next": "fbC",
-      "lesson_id": "SAN.SOM.001"
+      "lesson_id": "SAN.ALI.002"
     },
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Les pommes dormiront dans le plat. Sami a le pyjama. Le soir, dodo.",
+      "text": "Noé est assis. Le soir, à table, ensemble. C'est calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Sami emmène quoi au lit ? Le ballon, le seau, ou le doudou ?",
+      "prompt": "Noé pose quoi ? Le ballon, le seau, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -525,30 +525,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Le ballon rouge reste au couloir. Sami a le pyjama. Le soir, dodo.",
+      "text": "Noé pose le ballon rouge. Il s'assoit. À table, ensemble. Le ciel est rose.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endC1Z"
         }
       ],
@@ -557,45 +557,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Le chat peluche. Sami a le pyjama. Le soir, dodo. Le sac vert a des pommes. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Le soir. Le ciel est rose. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Les pommes dormiront dans le plat. L'histoire est finie."
+      "text": "Léa s'assoit. Noé reste assis. À table, ensemble. Le soir. La nappe est calme. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "La poule peluche. Sami se couche. Le soir, dodo. Le ballon reste au couloir. L'histoire est finie."
+      "text": "Sami s'assoit. Noé est assis à table, ensemble. Le soir. Le ballon reste. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Le seau bleu reste près des pommes. Le soir, pyjama. Sami au lit. Dodo.",
+      "text": "Noé pose le seau bleu. Il s'assoit. À table, ensemble. Maman plie un coin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endC2Z"
         }
       ],
@@ -604,45 +604,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Le chat peluche. Sami a le pyjama. Le soir, dodo. Le seau bleu reste près des pommes. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Maman plie un coin. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Une pomme roule, tout doux. L'histoire est finie."
+      "text": "Léa s'assoit. Noé reste assis. À table, ensemble. Le soir. Le seau est posé. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "La poule peluche. Sami, dodo. Le soir. Il ferme les yeux. L'histoire est finie."
+      "text": "Sami pose le seau. Noé est assis à table, ensemble. Le soir. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Le doudou retrouve l'oreiller. Sami a le pyjama. Le soir, dodo. La maison est calme.",
+      "text": "Noé pose le doudou. Il s'assoit. À table, ensemble. Papa dit : merci d'être assis.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Qui veille près du lit ? Le chat, le chien, ou la poule ?",
+      "prompt": "Qui s'assoit avec Noé ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "le chat",
-          "intent": "LE_CHAT",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "le chien",
-          "intent": "LE_CHIEN",
+          "label": "Léa",
+          "intent": "LÉA",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "la poule",
-          "intent": "LA_POULE",
+          "label": "Sami",
+          "intent": "SAMI",
           "next": "endC3Z"
         }
       ],
@@ -651,17 +651,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. La maison est calme. L'histoire est finie."
+      "text": "Tom s'assoit. Noé est assis à table, ensemble. Le soir. Papa dit : merci d'être assis. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. On entend la rue, loin. L'histoire est finie."
+      "text": "Léa tient le doudou. Noé reste assis. À table, ensemble. Le soir. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Maman ferme la porte. L'histoire est finie."
+      "text": "Sami s'assoit. Noé est assis à table, ensemble. Le soir. Ils rangent. L'histoire est finie."
     }
   },
   "validation": {

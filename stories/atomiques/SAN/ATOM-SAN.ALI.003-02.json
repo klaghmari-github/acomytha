@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.ALI.003-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le verre d'eau de Hugo",
+  "lesson_id": "SAN.ALI.003",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hugo entre dans la cuisine. Maman coupe des pommes. Ça sent le sucré. Hugo a soif. Sa bouche est sèche. Sa langue colle. Hugo dit : j'ai soif, maman. Maman sourit. Maman prend un verre. Le verre est bleu. Elle verse de l'eau. L'eau est claire. Hugo prend le verre. Il boit une gorgée. C'est frais. Il boit encore. Maman dit : quand on a soif, on boit de l'eau. Dans un verre. Hugo pose le verre. Il se sent mieux.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hugo a soif. Que prend-il ?",
+      "expected_intents": [
+        "EAU",
+        "VERRE"
+      ],
+      "accepted_examples": [
+        "eau",
+        "le verre",
+        "verre d'eau",
+        "de l'eau",
+        "un verre"
+      ],
+      "retry_prompt": "Il prend le verre. Que boit Hugo ?",
+      "positive_feedback": "Oui. Hugo prend le verre d'eau. Il boit quand il a soif.",
+      "wrong_feedback": "Quand on a soif, on prend le verre d'eau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hugo avait soif. Il a pris le verre. Il a bu de l'eau. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hugo croque un morceau de pomme. Le verre reste sur la table. Merci, dit Hugo. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N3",
   "age_range": "5-6",
-  "title": "Enchaîner le matin — sous le pommier",
+  "title": "Maya enchaîne le matin",
   "lesson_id": "AUT.ROU.001",
   "secondary_lessons": [
     "AUT.AFF.001"
@@ -15,11 +15,11 @@
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "sous le pommier",
+  "setting": "maison le matin",
   "characters": [
-    "Inès",
-    "papa",
-    "maman"
+    "Maya",
+    "maman",
+    "papa"
   ],
   "root_id": "root",
   "duration_estimate_seconds": {
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Inès est avec papa, sous le pommier. Inès a envie de jouer. papa est là, tout près. On va apprendre : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès écoute papa. Inès entend les mots : une étape après l'autre.",
+      "text": "Le soleil entre. Maya ouvre les yeux. Maman dit : une étape après l'autre. D'abord se lever. Puis s'habiller. Puis déjeuner. Puis le sac. Maya écoute. Elle se lève.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Inès choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Maya commence où ? La chambre, la salle d'eau, ou la cuisine ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "la salle d'eau",
+          "intent": "LA_SALLE_DEAU",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
           "next": "brC"
         }
       ],
@@ -63,22 +63,24 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Inès va vers la cuisine. On entend un oiseau. papa sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Inès se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On range un objet. papa dit : je suis là. On reste ensemble.",
+      "text": "Maya va vers la chambre. Le lit est encore chaud. maman est tout près. Maya fait l'étape dite. Une étape après l'autre. Maya fait l'étape dite. maman sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "Maya se prépare. Que fait-elle ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "l'étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Une étape, puis la suivante. Que fait Maya ?",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre. Celle que papa ou maman a dite.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "AUT.ROU.001"
@@ -86,30 +88,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Inès respire. Inès retient : une étape après l'autre. On continue, avec papa.",
+      "text": "Oui. Maya a retenu. Une étape après l'autre. Maya fait l'étape dite. On continue avec maman.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Quel habit ? T-shirt, chaussettes, ou gilet ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "le t-shirt",
+          "intent": "LE_T_SHIRT",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "le gilet",
+          "intent": "LE_GILET",
           "next": "brA3"
         }
       ],
@@ -118,30 +120,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Inès a choisi les cubes. Le vent est doux. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Maya a choisi le t-shirt. Une chaussette est au sol. maman montre lentement. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endA1Z"
         }
       ],
@@ -150,45 +152,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de la cuisine, les cubes et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. La couverture glisse. Maya fait l'étape dite. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le t-shirt. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Un vélo passe au loin. On dit merci. Cette fin-là est celle de la cuisine, les cubes et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Le carrelage est frais. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le t-shirt. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. La lumière est claire. On souffle doucement. Cette fin-là est celle de la cuisine, les cubes et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Le bol est tiède. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le t-shirt. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Inès a choisi le livre. Le sol est un peu froid. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On attend son tour. maman n'est pas loin.",
+      "text": "Maya a choisi les chaussettes. Le savon sent la menthe. maman montre lentement. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endA2Z"
         }
       ],
@@ -197,45 +199,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Un vélo passe au loin. On range un objet. Cette fin-là est celle de la cuisine, le livre et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Le carrelage est frais. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis les chaussettes. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. La lumière est claire. On dit merci. Cette fin-là est celle de la cuisine, le livre et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Le bol est tiède. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis les chaussettes. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de la cuisine, le livre et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Un oiseau chante. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis les chaussettes. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Inès a choisi la dînette. Une feuille tombe. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Maya a choisi le gilet. Il y a des miettes. maman montre lentement. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endA3Z"
         }
       ],
@@ -244,37 +246,39 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. La lumière est claire. On range un objet. Cette fin-là est celle de la cuisine, la dînette et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Le bol est tiède. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le gilet. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de la cuisine, la dînette et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Un oiseau chante. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le gilet. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de la cuisine, la dînette et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. La lumière est claire. Maya dit : j'ai fini cette étape. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la chambre, puis le gilet. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Inès va vers le jardin. Ça sent le pain chaud. papa sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Inès se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On dit merci. papa dit : je suis là. On reste ensemble.",
+      "text": "Maya va vers la salle d'eau. L'eau coule tout doux. maman est tout près. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "Maya se prépare. Que fait-elle ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "l'étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Une étape, puis la suivante. Que fait Maya ?",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre. Celle que papa ou maman a dite.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "AUT.ROU.001"
@@ -282,30 +286,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Inès respire. Inès retient : une étape après l'autre. On continue, avec papa.",
+      "text": "Maya respire. Une étape après l'autre. Maya fait l'étape dite. maman dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Quel habit ? T-shirt, chaussettes, ou gilet ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "le t-shirt",
+          "intent": "LE_T_SHIRT",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "le gilet",
+          "intent": "LE_GILET",
           "next": "brB3"
         }
       ],
@@ -314,30 +318,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Inès a choisi les cubes. L'eau coule, tout petit bruit. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Maya a choisi le t-shirt. La couverture glisse. maman montre lentement. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endB1Z"
         }
       ],
@@ -346,45 +350,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Un vélo passe au loin. On dit merci. Cette fin-là est celle de le jardin, les cubes et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Le carrelage est frais. Maya fait l'étape dite. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le t-shirt. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. La lumière est claire. On souffle doucement. Cette fin-là est celle de le jardin, les cubes et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Le bol est tiède. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le t-shirt. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, les cubes et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Un oiseau chante. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le t-shirt. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Inès a choisi le livre. Un vélo passe au loin. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On attend son tour. maman n'est pas loin.",
+      "text": "Maya a choisi les chaussettes. Le carrelage est frais. maman montre lentement. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endB2Z"
         }
       ],
@@ -393,45 +397,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. La lumière est claire. On dit merci. Cette fin-là est celle de le jardin, le livre et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Le bol est tiède. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis les chaussettes. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de le jardin, le livre et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Un oiseau chante. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis les chaussettes. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le livre et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. La lumière est claire. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis les chaussettes. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Inès a choisi la dînette. La lumière est claire. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Maya a choisi le gilet. Le bol est tiède. maman montre lentement. Maya dit : j'ai fini cette étape. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endB3Z"
         }
       ],
@@ -440,37 +444,39 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de le jardin, la dînette et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Un oiseau chante. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le gilet. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de le jardin, la dînette et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. La lumière est claire. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le gilet. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, la dînette et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Le lait est blanc. Maya dit : j'ai fini cette étape. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la salle d'eau, puis le gilet. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Inès va vers la chambre. Le vent est doux. papa sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Inès se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On souffle doucement. papa dit : je suis là. On reste ensemble.",
+      "text": "Maya va vers la cuisine. Ça sent le pain. maman est tout près. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "Maya se prépare. Que fait-elle ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "l'étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Une étape, puis la suivante. Que fait Maya ?",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre. Celle que papa ou maman a dite.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "AUT.ROU.001"
@@ -478,30 +484,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Inès respire. Inès retient : une étape après l'autre. On continue, avec papa.",
+      "text": "C'est juste. Une étape après l'autre. Maya fait l'étape dite. Maya donne la main à maman.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Quel habit ? T-shirt, chaussettes, ou gilet ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "le t-shirt",
+          "intent": "LE_T_SHIRT",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "le gilet",
+          "intent": "LE_GILET",
           "next": "brC3"
         }
       ],
@@ -510,30 +516,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Inès a choisi les cubes. Il y a des miettes sur la table. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Maya a choisi le t-shirt. Un oiseau chante. maman montre lentement. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endC1Z"
         }
       ],
@@ -542,45 +548,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. La lumière est claire. On souffle doucement. Cette fin-là est celle de la chambre, les cubes et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Le bol est tiède. Maya fait l'étape dite. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le t-shirt. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, les cubes et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Un oiseau chante. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le t-shirt. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de la chambre, les cubes et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. La lumière est claire. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le t-shirt. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Inès a choisi le livre. Un chat miaule une fois. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On attend son tour. maman n'est pas loin.",
+      "text": "Maya a choisi les chaussettes. La lumière est claire. maman montre lentement. Maya dit : j'ai fini cette étape. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endC2Z"
         }
       ],
@@ -589,45 +595,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de la chambre, le livre et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. Un oiseau chante. Maya écoute maman. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis les chaussettes. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le livre et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. La lumière est claire. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis les chaussettes. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de la chambre, le livre et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Le lait est blanc. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis les chaussettes. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Inès a choisi la dînette. Les chaussures font toc toc. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : faire l'étape dite. Inès répète tout bas : une étape après l'autre. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Maya a choisi le gilet. Le lait est blanc. maman montre lentement. Maya fait l'étape dite. Une étape après l'autre. Maya fait l'étape dite. papa n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Maya prend quoi pour partir ? Le sac, le manteau, ou le doudou ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le sac",
+          "intent": "LE_SAC",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "le manteau",
+          "intent": "LE_MANTEAU",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "endC3Z"
         }
       ],
@@ -636,17 +642,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de la chambre, la dînette et le matin. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le sac. La lumière est claire. Maya passe à l'étape suivante. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le gilet. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, la dînette et après la sieste. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le manteau. Le lait est blanc. Maya range un objet. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le gilet. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. La couverture est douce. On attend son tour. Cette fin-là est celle de la chambre, la dînette et le soir. Inès a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Inès a entendu : une étape après l'autre. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou. Le lit est encore chaud. Maya dit : j'ai fini cette étape. Une étape après l'autre. Maya fait l'étape dite. maman dit merci. la cuisine, puis le gilet. L'histoire est finie."
     }
   },
   "validation": {

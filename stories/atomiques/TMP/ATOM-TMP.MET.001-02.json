@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-TMP.MET.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Adam met manteau et bottes sous la pluie",
+  "lesson_id": "TMP.MET.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée et marché",
+  "characters": [
+    "Adam",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Il pleut. Il fait froid. Adam est dans l'entrée avec maman. Maman dit : froid, on prend le manteau. Pluie, on prend les bottes. Adam prend le manteau. Il passe les bras. Il met les bottes. Elles sont jaunes. Ils vont au marché. L'eau fait plic sur les bottes. Adam a chaud dans le manteau. Ils achètent du pain. Ils rentrent. Adam pose le manteau. Il range les bottes près de la porte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Il fait froid et il pleut. Que met Adam ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "bottes",
+        "le manteau",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid et pluie. Manteau ou bottes ?",
+      "positive_feedback": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "wrong_feedback": "Quand il fait froid, on prend le manteau. Quand il pleut, on met les bottes.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "TMP.MET.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman pose le pain. Adam touche ses bottes sèches. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-JEU.REG.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "La règle de Tom",
+  "lesson_id": "JEU.REG.002",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour",
+  "characters": [
+    "Tom",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Tom joue dans la cour. Maman est là. Il y a un ballon. Maman dit une règle. La règle : on attend. Puis on passe. Tom écoute. Il prend le ballon trop vite. Maman va rappeler la règle une fois. Elle dit : on attend. C'est la règle. Tom s'arrête. Il attend. Puis il passe le ballon. Le ballon glisse. Tom sourit. Maman dit : tu as suivi la règle. Tom répète : on attend. Une règle simple. Maman la rappelle. Tom la suit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tom joue. Que suit-il ?",
+      "expected_intents": [
+        "REGLE"
+      ],
+      "accepted_examples": [
+        "la règle",
+        "une règle",
+        "attendre",
+        "on attend"
+      ],
+      "retry_prompt": "Maman la dit encore. C'est quoi ?",
+      "positive_feedback": "Oui. Une règle. On l'écoute. On la rappelle.",
+      "wrong_feedback": "On suit une règle. Papa ou maman la rappelle une fois.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tom a suivi la règle. Il a attendu. Maman a rappelé une fois.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Tom pose le ballon. Maman lui verse de l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

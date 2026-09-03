@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Le basilic de Lila à la fenêtre",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Lila",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Lila est à la cuisine avec maman. Un petit pot de basilic est près de la fenêtre. Les feuilles sont un peu molles. Maman dit : la plante a besoin d'eau. Elle a besoin de lumière. Lila prend le petit arrosoir. Maman, l'adulte, tient aussi l'anse. Elles versent un peu d'eau. La terre devient sombre. La lumière de la fenêtre arrive. Lila touche une feuille, tout doux. Maman dit : on arrose avec un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le basilic a soif. Que fait Lila avec maman ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "arroser",
+        "elle arrose",
+        "de l'eau",
+        "eau"
+      ],
+      "retry_prompt": "Elles versent de l'eau. Que fait Lila ?",
+      "positive_feedback": "Oui. Elle arrose avec un adulte. Eau et lumière.",
+      "wrong_feedback": "On arrose avec un adulte. La plante a besoin d'eau et de lumière.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "VIV.PLA.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lila a versé l'eau. La lumière est là. Maman, l'adulte, était avec elle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lila range l'arrosoir. Le basilic sent bon. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

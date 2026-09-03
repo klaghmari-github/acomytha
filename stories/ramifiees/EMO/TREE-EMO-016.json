@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N2",
   "age_range": "4-5",
-  "title": "Être content — sur le chemin de l'école",
+  "title": "Sami est content",
   "lesson_id": "EMO.LEX.001",
   "secondary_lessons": [
     "EMO.LEX.002"
@@ -15,9 +15,9 @@
   "framing": "emotional",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "sur le chemin de l'école",
+  "setting": "chemin de l'école",
   "characters": [
-    "Kenzo",
+    "Sami",
     "papa",
     "maman"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Kenzo est avec papa, sur le chemin de l'école. Kenzo a envie de jouer. papa est là, tout près. On va apprendre : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo écoute papa. Kenzo entend les mots : content, joie, partager.",
+      "text": "Sami marche vers l'école avec papa. Ses joues sont chaudes. Il sourit. Papa dit : tu es content. C'est de la joie. On peut partager. On invite. On ne bouscule pas.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Kenzo choisit. Tom, Léa, ou Sami ?",
+      "prompt": "Sami s'arrête où ? Le portail, le banc, ou la cour ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "Tom",
-          "intent": "TOM",
+          "label": "le portail",
+          "intent": "LE_PORTAIL",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "Léa",
-          "intent": "LÉA",
+          "label": "le banc",
+          "intent": "LE_BANC",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "Sami",
-          "intent": "SAMI",
+          "label": "la cour",
+          "intent": "LA_COUR",
           "next": "brC"
         }
       ],
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Kenzo va vers Tom. Il y a des miettes sur la table. papa sourit. Ici, c'est Tom. Ce n'est pas comme les autres endroits. Kenzo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers le portail. Les chaussures font toc toc. papa est tout près. Sami dit : je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Sami sourit fort. Quelle émotion ?",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "il est content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Il est heureux. Quel mot ?",
+      "positive_feedback": "Oui. Il est content. C'est de la joie. Il partage.",
+      "wrong_feedback": "On dit : je suis content. C'est la joie. On partage.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "EMO.LEX.001"
@@ -88,30 +89,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo respire. Kenzo retient : content, joie, partager. On continue, avec papa.",
+      "text": "Oui. Sami a retenu. Sami est content. Il sent la joie. Il la partage sans bousculer. On continue avec papa.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Kenzo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Sami partage avec qui ? Léa, Tom, ou Iris ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "Iris",
+          "intent": "IRIS",
           "next": "brA3"
         }
       ],
@@ -120,30 +121,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Kenzo a choisi les cubes. Les chaussures font toc toc. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On se tient la main. maman n'est pas loin.",
+      "text": "Sami a choisi Léa. Un oiseau chante. papa montre lentement. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endA1Z"
         }
       ],
@@ -152,45 +153,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de Tom, les cubes et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Le portail grince doux. Sami dit : je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Le vent est doux. On rit un peu. Cette fin-là est celle de Tom, les cubes et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de Tom, les cubes et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Kenzo a choisi le livre. La couverture est douce. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On range un objet. maman n'est pas loin.",
+      "text": "Sami a choisi Tom. La lumière est claire. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endA2Z"
         }
       ],
@@ -199,45 +200,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de Tom, le livre et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de Tom, le livre et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de Tom, le livre et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Kenzo a choisi la dînette. On entend un oiseau. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On dit merci. maman n'est pas loin.",
+      "text": "Sami a choisi Iris. Un ballon rebondit. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endA3Z"
         }
       ],
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de Tom, la dînette et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Une feuille tombe. On rit un peu. Cette fin-là est celle de Tom, la dînette et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de Tom, la dînette et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Kenzo va vers Léa. Un chat miaule une fois. papa sourit. Ici, c'est Léa. Ce n'est pas comme les autres endroits. Kenzo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers le banc. Le banc est froid. papa est tout près. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Sami sourit fort. Quelle émotion ?",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "il est content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Il est heureux. Quel mot ?",
+      "positive_feedback": "Oui. Il est content. C'est de la joie. Il partage.",
+      "wrong_feedback": "On dit : je suis content. C'est la joie. On partage.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "EMO.LEX.001"
@@ -286,30 +288,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo respire. Kenzo retient : content, joie, partager. On continue, avec papa.",
+      "text": "Sami respire. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Kenzo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Sami partage avec qui ? Léa, Tom, ou Iris ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "Iris",
+          "intent": "IRIS",
           "next": "brB3"
         }
       ],
@@ -318,30 +320,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Kenzo a choisi les cubes. Ça sent le pain chaud. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On se tient la main. maman n'est pas loin.",
+      "text": "Sami a choisi Léa. Le portail grince doux. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endB1Z"
         }
       ],
@@ -350,45 +352,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Le vent est doux. On rit un peu. Cette fin-là est celle de Léa, les cubes et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Papa tient la main. Sami dit : je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de Léa, les cubes et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. Une feuille tombe. On se tient la main. Cette fin-là est celle de Léa, les cubes et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Kenzo a choisi le livre. Le vent est doux. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On range un objet. maman n'est pas loin.",
+      "text": "Sami a choisi Tom. Papa tient la main. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endB2Z"
         }
       ],
@@ -397,45 +399,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de Léa, le livre et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de Léa, le livre et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de Léa, le livre et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Kenzo a choisi la dînette. Le sol est un peu froid. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On dit merci. maman n'est pas loin.",
+      "text": "Sami a choisi Iris. Un rire passe. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endB3Z"
         }
       ],
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Une feuille tombe. On rit un peu. Cette fin-là est celle de Léa, la dînette et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de Léa, la dînette et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de Léa, la dînette et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Le ciel est bleu. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Kenzo va vers Sami. Les chaussures font toc toc. papa sourit. Ici, c'est Sami. Ce n'est pas comme les autres endroits. Kenzo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers la cour. La cour sent l'herbe. papa est tout près. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Sami sourit fort. Quelle émotion ?",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "il est content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Il est heureux. Quel mot ?",
+      "positive_feedback": "Oui. Il est content. C'est de la joie. Il partage.",
+      "wrong_feedback": "On dit : je suis content. C'est la joie. On partage.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "EMO.LEX.001"
@@ -484,30 +487,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo respire. Kenzo retient : content, joie, partager. On continue, avec papa.",
+      "text": "C'est juste. Sami est content. Il sent la joie. Il la partage sans bousculer. Sami donne la main à papa.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Kenzo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Sami partage avec qui ? Léa, Tom, ou Iris ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "Iris",
+          "intent": "IRIS",
           "next": "brC3"
         }
       ],
@@ -516,30 +519,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Kenzo a choisi les cubes. Une feuille tombe. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On se tient la main. maman n'est pas loin.",
+      "text": "Sami a choisi Léa. Les feuilles bougent. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endC1Z"
         }
       ],
@@ -548,45 +551,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de Sami, les cubes et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Un rire passe. Sami dit : je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Une feuille tombe. On se tient la main. Cette fin-là est celle de Sami, les cubes et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de Sami, les cubes et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Kenzo a choisi le livre. L'eau coule, tout petit bruit. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On range un objet. maman n'est pas loin.",
+      "text": "Sami a choisi Tom. Le cartable est léger. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endC2Z"
         }
       ],
@@ -595,45 +598,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de Sami, le livre et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de Sami, le livre et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. Un vélo passe au loin. On range un objet. Cette fin-là est celle de Sami, le livre et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Kenzo a choisi la dînette. Un vélo passe au loin. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo répète tout bas : content, joie, partager. On dit merci. maman n'est pas loin.",
+      "text": "Sami a choisi Iris. Le ciel est bleu. papa montre lentement. Sami dit : je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Kenzo va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Comment partager ? Un sourire, une chanson, ou un jeu ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "un sourire",
+          "intent": "UN_SOURIRE",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "une chanson",
+          "intent": "UNE_CHANSON",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "un jeu",
+          "intent": "UN_JEU",
           "next": "endC3Z"
         }
       ],
@@ -642,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Kenzo rejoint une pomme. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de Sami, la dînette et une pomme. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un sourire. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Kenzo rejoint un yaourt. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de Sami, la dînette et un yaourt. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint une chanson. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Kenzo rejoint un morceau de pain. La lumière est claire. On range un objet. Cette fin-là est celle de Sami, la dînette et un morceau de pain. Kenzo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Kenzo a entendu : content, joie, partager. Kenzo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint un jeu. Les chaussures font toc toc. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris. L'histoire est finie."
     }
   },
   "validation": {

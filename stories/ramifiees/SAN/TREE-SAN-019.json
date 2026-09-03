@@ -5,19 +5,19 @@
   "language": "fr",
   "age_band": "N1",
   "age_range": "3-4",
-  "title": "Aller se coucher — dans le salon",
+  "title": "Zoé va se coucher",
   "lesson_id": "SAN.SOM.001",
   "secondary_lessons": [
-    "SAN.ALI.001"
+    "SAN.HYG.002"
   ],
   "domain": "SAN",
   "subdomain": "SAN.SOM",
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "dans le salon",
+  "setting": "salon puis chambre",
   "characters": [
-    "Nino",
+    "Zoé",
     "maman",
     "papa"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Nino est avec maman, dans le salon. Nino a envie de jouer. maman est là, tout près. On va apprendre : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino écoute maman. Nino entend les mots : soir, pyjama, dodo.",
+      "text": "Le soir arrive. Le salon est calme. Maman dit : c'est l'heure. Zoé prend le pyjama. Elle le met. Maman ouvre le livre. Puis Zoé se couche. C'est le dodo. Le corps a besoin de dormir.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Nino choisit. le matin, après la sieste, ou le soir ?",
+      "prompt": "On commence où ? Le salon, la salle d'eau, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "le salon",
+          "intent": "LE_SALON",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "la salle d'eau",
+          "intent": "LA_SALLE_DEAU",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
           "next": "brC"
         }
       ],
@@ -63,24 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Nino va vers le matin. La lumière est claire. maman sourit. Ici, c'est le matin. Ce n'est pas comme les autres endroits. Nino se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé va vers le salon. La lumière est douce. maman est tout près. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Le soir, que met Zoé ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le lit",
+        "dodo",
+        "se coucher"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Elle met le pyjama. Puis ?",
+      "positive_feedback": "Oui. Le soir, le pyjama. Puis le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SAN.SOM.001"
@@ -88,30 +90,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Nino respire. Nino retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "Oui. Zoé a retenu. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. On continue avec maman.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite ? Le pyjama, l'histoire, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "le pyjama",
+          "intent": "LE_PYJAMA",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "brA3"
         }
       ],
@@ -120,30 +122,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Nino a choisi la cuisine. Un chat miaule une fois. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé a choisi le pyjama. Le livre sent le papier. maman montre lentement. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endA1Z"
         }
       ],
@@ -152,45 +154,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. On entend un oiseau. On attend son tour. Cette fin-là est celle de le matin, la cuisine et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Le salon est calme. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la cuisine et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Le vent est doux. On rit un peu. Cette fin-là est celle de le matin, la cuisine et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Nino a choisi le jardin. Les chaussures font toc toc. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Zoé a choisi l'histoire. La couverture est lourde. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endA2Z"
         }
       ],
@@ -199,45 +201,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le matin, le jardin et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le jardin et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le matin, le jardin et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Nino a choisi la chambre. La couverture est douce. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Zoé a choisi le doudou. Maman chante tout bas. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endA3Z"
         }
       ],
@@ -246,39 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Le vent est doux. On attend son tour. Cette fin-là est celle de le matin, la chambre et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la chambre et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Une feuille tombe. On rit un peu. Cette fin-là est celle de le matin, la chambre et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Nino va vers après la sieste. Il y a des miettes sur la table. maman sourit. Ici, c'est après la sieste. Ce n'est pas comme les autres endroits. Nino se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé va vers la salle d'eau. Le pyjama est chaud. maman est tout près. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Le soir, que met Zoé ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le lit",
+        "dodo",
+        "se coucher"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Elle met le pyjama. Puis ?",
+      "positive_feedback": "Oui. Le soir, le pyjama. Puis le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SAN.SOM.001"
@@ -286,30 +290,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Nino respire. Nino retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "Zoé respire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite ? Le pyjama, l'histoire, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "le pyjama",
+          "intent": "LE_PYJAMA",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "brB3"
         }
       ],
@@ -318,30 +322,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Nino a choisi la cuisine. On entend un oiseau. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé a choisi le pyjama. Le salon est calme. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endB1Z"
         }
       ],
@@ -350,45 +354,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, la cuisine et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. L'eau a coulé. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Le vent est doux. On rit un peu. Cette fin-là est celle de après la sieste, la cuisine et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de après la sieste, la cuisine et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Nino a choisi le jardin. Ça sent le pain chaud. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Zoé a choisi l'histoire. L'eau a coulé. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endB2Z"
         }
       ],
@@ -397,45 +401,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, le jardin et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de après la sieste, le jardin et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de après la sieste, le jardin et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Nino a choisi la chambre. Le vent est doux. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Zoé a choisi le doudou. Le lit est frais. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endB3Z"
         }
       ],
@@ -444,39 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, la chambre et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Une feuille tombe. On rit un peu. Cette fin-là est celle de après la sieste, la chambre et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de après la sieste, la chambre et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. Le soir est là. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Nino va vers le soir. Un chat miaule une fois. maman sourit. Ici, c'est le soir. Ce n'est pas comme les autres endroits. Nino se souvient : soir, pyjama, dodo. Voici le geste : mettre le pyjama ; se coucher. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé va vers la chambre. Le doudou sent bon. maman est tout près. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Aller se coucher.",
+      "prompt": "Le soir, que met Zoé ?",
       "expected_intents": [
         "PYJAMA",
         "LIT"
       ],
       "accepted_examples": [
         "pyjama",
-        "lit"
+        "le lit",
+        "dodo",
+        "se coucher"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : mettre le pyjama ; se coucher.",
-      "wrong_feedback": "Voici le geste : mettre le pyjama ; se coucher.",
+      "retry_prompt": "Elle met le pyjama. Puis ?",
+      "positive_feedback": "Oui. Le soir, le pyjama. Puis le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SAN.SOM.001"
@@ -484,30 +490,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : mettre le pyjama ; se coucher. Nino respire. Nino retient : soir, pyjama, dodo. On continue, avec maman.",
+      "text": "C'est juste. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. Zoé donne la main à maman.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite ? Le pyjama, l'histoire, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "le pyjama",
+          "intent": "LE_PYJAMA",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
           "next": "brC3"
         }
       ],
@@ -516,30 +522,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Nino a choisi la cuisine. Le sol est un peu froid. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé a choisi le pyjama. Un oiseau s'est tu. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endC1Z"
         }
       ],
@@ -548,45 +554,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Le vent est doux. On rit un peu. Cette fin-là est celle de le soir, la cuisine et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le soir, la cuisine et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Une feuille tombe. On se tient la main. Cette fin-là est celle de le soir, la cuisine et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Nino a choisi le jardin. Une feuille tombe. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On se tient la main. papa n'est pas loin.",
+      "text": "Zoé a choisi l'histoire. La veilleuse est petite. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endC2Z"
         }
       ],
@@ -595,45 +601,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le soir, le jardin et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le soir, le jardin et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le soir, le jardin et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Nino a choisi la chambre. L'eau coule, tout petit bruit. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : mettre le pyjama ; se coucher. Nino répète tout bas : soir, pyjama, dodo. On range un objet. papa n'est pas loin.",
+      "text": "Zoé a choisi le doudou. Le soir est là. maman montre lentement. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour le dodo ? La veilleuse, la couverture, ou la chanson ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "le ballon rouge",
-          "intent": "LE_BALLON_ROUGE",
+          "label": "la veilleuse",
+          "intent": "LA_VEILLEUSE",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "le seau bleu",
-          "intent": "LE_SEAU_BLEU",
+          "label": "la couverture",
+          "intent": "LA_COUVERTURE",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "le doudou",
-          "intent": "LE_DOUDOU",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
           "next": "endC3Z"
         }
       ],
@@ -642,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Nino rejoint le ballon rouge. Une feuille tombe. On rit un peu. Cette fin-là est celle de le soir, la chambre et le ballon rouge. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la veilleuse. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Nino rejoint le seau bleu. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le soir, la chambre et le seau bleu. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la couverture. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Nino rejoint le doudou. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le soir, la chambre et le doudou. Nino a appris : Aller se coucher. Voici le geste : mettre le pyjama ; se coucher. Nino a entendu : soir, pyjama, dodo. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la chanson. La lumière est douce. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou. L'histoire est finie."
     }
   },
   "validation": {

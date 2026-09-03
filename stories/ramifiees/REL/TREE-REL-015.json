@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N1",
   "age_range": "3-4",
-  "title": "Inviter à jouer — dans le train avec papa",
+  "title": "Nino invite à jouer",
   "lesson_id": "REL.AMI.001",
   "secondary_lessons": [
     "REL.PAR.001"
@@ -15,9 +15,9 @@
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "dans le train avec papa",
+  "setting": "train",
   "characters": [
-    "Nora",
+    "Nino",
     "papa",
     "maman"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Nora est avec papa, dans le train avec papa. Nora a envie de jouer. papa est là, tout près. On va apprendre : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora écoute papa. Nora entend les mots : inviter, accepter un non.",
+      "text": "Nino est dans le train avec papa. Le train fait tchou. Un camarade est en face. Nino a un petit livre. Papa dit : tu peux inviter. Tu veux jouer avec nous. Un non est possible.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Nora choisit. une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Nino joue où ? Le siège, le couloir, ou la tablette ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "une pomme",
-          "intent": "UNE_POMME",
+          "label": "le siège",
+          "intent": "LE_SIEGE",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "un yaourt",
-          "intent": "UN_YAOURT",
+          "label": "le couloir",
+          "intent": "LE_COULOIR",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "un morceau de pain",
-          "intent": "UN_MORCEAU_DE_PAIN",
+          "label": "la tablette",
+          "intent": "LA_TABLETTE",
           "next": "brC"
         }
       ],
@@ -63,24 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Nora va vers une pomme. Les chaussures font toc toc. papa sourit. Ici, c'est une pomme. Ce n'est pas comme les autres endroits. Nora se souvient : inviter, accepter un non. Voici le geste : demander ; accepter le non. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Nino va vers le siège. Le siège est souple. papa est tout près. Nino invite. Nino invite. Il accepte un non. papa sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Inviter à jouer.",
+      "prompt": "Nino veut un camarade. Que dit-il ?",
       "expected_intents": [
         "INVITER",
         "ACCEPTER_NON"
       ],
       "accepted_examples": [
         "inviter",
-        "accepter non"
+        "jouer",
+        "un non",
+        "tu veux"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander ; accepter le non.",
-      "wrong_feedback": "Voici le geste : demander ; accepter le non.",
+      "retry_prompt": "Il demande. L'autre peut dire non. Que fait Nino ?",
+      "positive_feedback": "Oui. Il invite. Il accepte un non.",
+      "wrong_feedback": "On invite. On accepte un non.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "REL.AMI.001"
@@ -88,30 +90,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander ; accepter le non. Nora respire. Nora retient : inviter, accepter un non. On continue, avec papa.",
+      "text": "Oui. Nino a retenu. Nino invite. Il accepte un non. On continue avec papa.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Nino invite qui ? Léa, Tom, ou Sara ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "Sara",
+          "intent": "SARA",
           "next": "brA3"
         }
       ],
@@ -120,30 +122,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Nora a choisi la cuisine. On entend un oiseau. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On dit merci. maman n'est pas loin.",
+      "text": "Nino a choisi Léa. Un paysage file. papa montre lentement. Nino demande : tu veux jouer. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endA1Z"
         }
       ],
@@ -152,45 +154,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de une pomme, la cuisine et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Les roues chantent. Nino invite. Nino invite. Il accepte un non. papa dit merci. le siège, puis Léa. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. Une feuille tombe. On se tient la main. Cette fin-là est celle de une pomme, la cuisine et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. La lumière passe. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. le siège, puis Léa. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de une pomme, la cuisine et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Un goûter est dans le sac. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le siège, puis Léa. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Nora a choisi le jardin. Ça sent le pain chaud. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On souffle doucement. maman n'est pas loin.",
+      "text": "Nino a choisi Tom. Papa est près. papa montre lentement. Nino accepte le non. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endA2Z"
         }
       ],
@@ -199,45 +201,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de une pomme, le jardin et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. La lumière passe. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. le siège, puis Tom. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de une pomme, le jardin et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Un goûter est dans le sac. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le siège, puis Tom. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. Un vélo passe au loin. On range un objet. Cette fin-là est celle de une pomme, le jardin et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Le couloir est calme. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. le siège, puis Tom. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Nora a choisi la chambre. Le vent est doux. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Nino a choisi Sara. Un livre sent le papier. papa montre lentement. Nino reste avec papa. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endA3Z"
         }
       ],
@@ -246,39 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de une pomme, la chambre et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Un goûter est dans le sac. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le siège, puis Sara. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de une pomme, la chambre et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Le couloir est calme. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. le siège, puis Sara. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. La lumière est claire. On range un objet. Cette fin-là est celle de une pomme, la chambre et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Un sourire arrive. Nino propose le livre. Nino invite. Il accepte un non. papa dit merci. le siège, puis Sara. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Nora va vers un yaourt. La couverture est douce. papa sourit. Ici, c'est un yaourt. Ce n'est pas comme les autres endroits. Nora se souvient : inviter, accepter un non. Voici le geste : demander ; accepter le non. On se tient la main. papa dit : je suis là. On reste ensemble.",
+      "text": "Nino va vers le couloir. Le train vibre. papa est tout près. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Inviter à jouer.",
+      "prompt": "Nino veut un camarade. Que dit-il ?",
       "expected_intents": [
         "INVITER",
         "ACCEPTER_NON"
       ],
       "accepted_examples": [
         "inviter",
-        "accepter non"
+        "jouer",
+        "un non",
+        "tu veux"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander ; accepter le non.",
-      "wrong_feedback": "Voici le geste : demander ; accepter le non.",
+      "retry_prompt": "Il demande. L'autre peut dire non. Que fait Nino ?",
+      "positive_feedback": "Oui. Il invite. Il accepte un non.",
+      "wrong_feedback": "On invite. On accepte un non.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "REL.AMI.001"
@@ -286,30 +290,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander ; accepter le non. Nora respire. Nora retient : inviter, accepter un non. On continue, avec papa.",
+      "text": "Nino respire. Nino invite. Il accepte un non. papa dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Nino invite qui ? Léa, Tom, ou Sara ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "Sara",
+          "intent": "SARA",
           "next": "brB3"
         }
       ],
@@ -318,30 +322,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Nora a choisi la cuisine. Le sol est un peu froid. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On dit merci. maman n'est pas loin.",
+      "text": "Nino a choisi Léa. Les roues chantent. papa montre lentement. Nino accepte le non. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endB1Z"
         }
       ],
@@ -350,45 +354,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. Une feuille tombe. On se tient la main. Cette fin-là est celle de un yaourt, la cuisine et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. La lumière passe. Nino invite. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Léa. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de un yaourt, la cuisine et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Un goûter est dans le sac. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Léa. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. Un vélo passe au loin. On dit merci. Cette fin-là est celle de un yaourt, la cuisine et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Le couloir est calme. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Léa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Nora a choisi le jardin. Une feuille tombe. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On souffle doucement. maman n'est pas loin.",
+      "text": "Nino a choisi Tom. La lumière passe. papa montre lentement. Nino reste avec papa. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endB2Z"
         }
       ],
@@ -397,45 +401,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de un yaourt, le jardin et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Un goûter est dans le sac. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Tom. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. Un vélo passe au loin. On range un objet. Cette fin-là est celle de un yaourt, le jardin et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Le couloir est calme. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Tom. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. La lumière est claire. On dit merci. Cette fin-là est celle de un yaourt, le jardin et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Un sourire arrive. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Tom. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Nora a choisi la chambre. L'eau coule, tout petit bruit. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Nino a choisi Sara. Un goûter est dans le sac. papa montre lentement. Nino propose le livre. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endB3Z"
         }
       ],
@@ -444,39 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de un yaourt, la chambre et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Le couloir est calme. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Sara. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. La lumière est claire. On range un objet. Cette fin-là est celle de un yaourt, la chambre et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Un sourire arrive. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Sara. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de un yaourt, la chambre et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Le ciel est gris. Nino propose le livre. Nino invite. Il accepte un non. papa dit merci. le couloir, puis Sara. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Nora va vers un morceau de pain. On entend un oiseau. papa sourit. Ici, c'est un morceau de pain. Ce n'est pas comme les autres endroits. Nora se souvient : inviter, accepter un non. Voici le geste : demander ; accepter le non. On range un objet. papa dit : je suis là. On reste ensemble.",
+      "text": "Nino va vers la tablette. La tablette est lisse. papa est tout près. Nino accepte le non. Nino invite. Il accepte un non. papa sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Inviter à jouer.",
+      "prompt": "Nino veut un camarade. Que dit-il ?",
       "expected_intents": [
         "INVITER",
         "ACCEPTER_NON"
       ],
       "accepted_examples": [
         "inviter",
-        "accepter non"
+        "jouer",
+        "un non",
+        "tu veux"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander ; accepter le non.",
-      "wrong_feedback": "Voici le geste : demander ; accepter le non.",
+      "retry_prompt": "Il demande. L'autre peut dire non. Que fait Nino ?",
+      "positive_feedback": "Oui. Il invite. Il accepte un non.",
+      "wrong_feedback": "On invite. On accepte un non.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "REL.AMI.001"
@@ -484,30 +490,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander ; accepter le non. Nora respire. Nora retient : inviter, accepter un non. On continue, avec papa.",
+      "text": "C'est juste. Nino invite. Il accepte un non. Nino donne la main à papa.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Nino invite qui ? Léa, Tom, ou Sara ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "la cuisine",
-          "intent": "LA_CUISINE",
+          "label": "Léa",
+          "intent": "LEA",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "le jardin",
-          "intent": "LE_JARDIN",
+          "label": "Tom",
+          "intent": "TOM",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "la chambre",
-          "intent": "LA_CHAMBRE",
+          "label": "Sara",
+          "intent": "SARA",
           "next": "brC3"
         }
       ],
@@ -516,30 +522,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Nora a choisi la cuisine. Un vélo passe au loin. La cuisine reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On dit merci. maman n'est pas loin.",
+      "text": "Nino a choisi Léa. Le couloir est calme. papa montre lentement. Nino reste avec papa. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endC1Z"
         }
       ],
@@ -548,45 +554,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de un morceau de pain, la cuisine et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Un goûter est dans le sac. Nino invite. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Léa. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. Un vélo passe au loin. On dit merci. Cette fin-là est celle de un morceau de pain, la cuisine et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Le couloir est calme. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Léa. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. La lumière est claire. On souffle doucement. Cette fin-là est celle de un morceau de pain, la cuisine et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Un sourire arrive. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Léa. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Nora a choisi le jardin. La lumière est claire. Le jardin reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On souffle doucement. maman n'est pas loin.",
+      "text": "Nino a choisi Tom. Un sourire arrive. papa montre lentement. Nino propose le livre. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endC2Z"
         }
       ],
@@ -595,45 +601,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. Un vélo passe au loin. On range un objet. Cette fin-là est celle de un morceau de pain, le jardin et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Le couloir est calme. Nino demande : tu veux jouer. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Tom. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. La lumière est claire. On dit merci. Cette fin-là est celle de un morceau de pain, le jardin et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Un sourire arrive. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Tom. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de un morceau de pain, le jardin et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Le ciel est gris. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Tom. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Nora a choisi la chambre. Il y a des miettes sur la table. La chambre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : demander ; accepter le non. Nora répète tout bas : inviter, accepter un non. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Nino a choisi Sara. Le ciel est gris. papa montre lentement. Nino invite. Nino invite. Il accepte un non. maman n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "L'autre dit quoi ? Un oui, un non, ou plus tard ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "les cubes",
-          "intent": "LES_CUBES",
+          "label": "un oui",
+          "intent": "UN_OUI",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "le livre",
-          "intent": "LE_LIVRE",
+          "label": "un non",
+          "intent": "UN_NON",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "la dînette",
-          "intent": "LA_DÎNETTE",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
           "next": "endC3Z"
         }
       ],
@@ -642,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Nora rejoint les cubes. La lumière est claire. On range un objet. Cette fin-là est celle de un morceau de pain, la chambre et les cubes. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un oui. Un sourire arrive. Nino accepte le non. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Sara. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Nora rejoint le livre. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de un morceau de pain, la chambre et le livre. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint un non. Le ciel est gris. Nino reste avec papa. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Sara. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Nora rejoint la dînette. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de un morceau de pain, la chambre et la dînette. Nora a appris : Inviter à jouer. Voici le geste : demander ; accepter le non. Nora a entendu : inviter, accepter un non. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nino rejoint plus tard. Le siège est souple. Nino propose le livre. Nino invite. Il accepte un non. papa dit merci. la tablette, puis Sara. L'histoire est finie."
     }
   },
   "validation": {

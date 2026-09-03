@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N1",
   "age_range": "3-4",
-  "title": "Compter jusqu'à cinq ou dix — dans la chambre",
+  "title": "Inès compte jusqu'à cinq",
   "lesson_id": "LAN.NOM.001",
   "secondary_lessons": [
     "LAN.MOT.001"
@@ -15,9 +15,9 @@
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "dans la chambre",
+  "setting": "chambre",
   "characters": [
-    "Hugo",
+    "Inès",
     "maman",
     "papa"
   ],
@@ -31,30 +31,30 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Hugo est avec maman, dans la chambre. Hugo a envie de jouer. maman est là, tout près. On va apprendre : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo écoute maman. Hugo entend les mots : compter des objets.",
+      "text": "Inès est dans la chambre avec maman. Des cubes sont au sol. Maman dit : on compte des objets. Un. Deux. Trois. Quatre. Cinq. Inès touche chaque cube.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Hugo choisit. le train, le bus, ou la voiture ?",
+      "prompt": "On compte où ? Le tapis, le lit, ou la fenêtre ?",
       "options": [
         {
           "id": "ch1_o1",
-          "label": "le train",
-          "intent": "LE_TRAIN",
+          "label": "le tapis",
+          "intent": "LE_TAPIS",
           "next": "brA"
         },
         {
           "id": "ch1_o2",
-          "label": "le bus",
-          "intent": "LE_BUS",
+          "label": "le lit",
+          "intent": "LE_LIT",
           "next": "brB"
         },
         {
           "id": "ch1_o3",
-          "label": "la voiture",
-          "intent": "LA_VOITURE",
+          "label": "la fenêtre",
+          "intent": "LA_FENÊTRE",
           "next": "brC"
         }
       ],
@@ -63,22 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Hugo va vers le train. La lumière est claire. maman sourit. Ici, c'est le train. Ce n'est pas comme les autres endroits. Hugo se souvient : compter des objets. Voici le geste : dire le nombre. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Inès va vers le tapis. Le tapis est doux. maman est tout près. Inès compte des objets. Inès compte des objets. Un, deux, trois, quatre, cinq. maman sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Compter jusqu'à cinq ou dix.",
+      "prompt": "Inès touche les cubes. Que fait-elle ?",
       "expected_intents": [
         "NOMBRE"
       ],
       "accepted_examples": [
-        "nombre"
+        "compter",
+        "cinq",
+        "un deux trois",
+        "le nombre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire le nombre.",
-      "wrong_feedback": "Voici le geste : dire le nombre.",
+      "retry_prompt": "Un, deux, trois. Que fait Inès ?",
+      "positive_feedback": "Oui. Elle compte des objets.",
+      "wrong_feedback": "On compte des objets. On dit le nombre.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "LAN.NOM.001"
@@ -86,30 +89,30 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire le nombre. Hugo respire. Hugo retient : compter des objets. On continue, avec maman.",
+      "text": "Oui. Inès a retenu. Inès compte des objets. Un, deux, trois, quatre, cinq. On continue avec maman.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "On compte quoi ? Les cubes, les chaussettes, ou les livres ?",
       "options": [
         {
           "id": "ch2A_o1",
-          "label": "Tom",
-          "intent": "TOM",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
           "next": "brA1"
         },
         {
           "id": "ch2A_o2",
-          "label": "Léa",
-          "intent": "LÉA",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brA2"
         },
         {
           "id": "ch2A_o3",
-          "label": "Sami",
-          "intent": "SAMI",
+          "label": "les livres",
+          "intent": "LES_LIVRES",
           "next": "brA3"
         }
       ],
@@ -118,30 +121,30 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. Un chat miaule une fois. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On dit merci. papa n'est pas loin.",
+      "text": "Inès a choisi les cubes. Un cube est rouge. maman montre lentement. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3A1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endA1X"
         },
         {
           "id": "ch3A1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endA1Y"
         },
         {
           "id": "ch3A1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endA1Z"
         }
       ],
@@ -150,45 +153,45 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de le train, Tom et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Maman est près. Inès compte des objets. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les cubes. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de le train, Tom et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Un oiseau chante. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les cubes. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le vent est doux. On range un objet. Cette fin-là est celle de le train, Tom et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. La couverture glisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les cubes. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Les chaussures font toc toc. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On souffle doucement. papa n'est pas loin.",
+      "text": "Inès a choisi les chaussettes. Une chaussette est molle. maman montre lentement. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3A2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endA2X"
         },
         {
           "id": "ch3A2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endA2Y"
         },
         {
           "id": "ch3A2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endA2Z"
         }
       ],
@@ -197,45 +200,45 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de le train, Léa et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Un oiseau chante. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les chaussettes. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On se tient la main. Cette fin-là est celle de le train, Léa et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. La couverture glisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les chaussettes. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le train, Léa et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Le bois est lisse. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les chaussettes. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. La couverture est douce. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Inès a choisi les livres. Un livre sent le papier. maman montre lentement. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3A3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endA3X"
         },
         {
           "id": "ch3A3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endA3Y"
         },
         {
           "id": "ch3A3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endA3Z"
         }
       ],
@@ -244,37 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On se tait une seconde. Cette fin-là est celle de le train, Sami et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. La couverture glisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les livres. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de le train, Sami et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Le bois est lisse. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les livres. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On range un objet. Cette fin-là est celle de le train, Sami et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Il y a de la poussière. Inès dit : cinq. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le tapis, puis les livres. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Hugo va vers le bus. Il y a des miettes sur la table. maman sourit. Ici, c'est le bus. Ce n'est pas comme les autres endroits. Hugo se souvient : compter des objets. Voici le geste : dire le nombre. On se tient la main. maman dit : je suis là. On reste ensemble.",
+      "text": "Inès va vers le lit. Le lit est chaud. maman est tout près. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Compter jusqu'à cinq ou dix.",
+      "prompt": "Inès touche les cubes. Que fait-elle ?",
       "expected_intents": [
         "NOMBRE"
       ],
       "accepted_examples": [
-        "nombre"
+        "compter",
+        "cinq",
+        "un deux trois",
+        "le nombre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire le nombre.",
-      "wrong_feedback": "Voici le geste : dire le nombre.",
+      "retry_prompt": "Un, deux, trois. Que fait Inès ?",
+      "positive_feedback": "Oui. Elle compte des objets.",
+      "wrong_feedback": "On compte des objets. On dit le nombre.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "LAN.NOM.001"
@@ -282,30 +288,30 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire le nombre. Hugo respire. Hugo retient : compter des objets. On continue, avec maman.",
+      "text": "Inès respire. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit : je suis là.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "On compte quoi ? Les cubes, les chaussettes, ou les livres ?",
       "options": [
         {
           "id": "ch2B_o1",
-          "label": "Tom",
-          "intent": "TOM",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
           "next": "brB1"
         },
         {
           "id": "ch2B_o2",
-          "label": "Léa",
-          "intent": "LÉA",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brB2"
         },
         {
           "id": "ch2B_o3",
-          "label": "Sami",
-          "intent": "SAMI",
+          "label": "les livres",
+          "intent": "LES_LIVRES",
           "next": "brB3"
         }
       ],
@@ -314,30 +320,30 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. On entend un oiseau. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On dit merci. papa n'est pas loin.",
+      "text": "Inès a choisi les cubes. Maman est près. maman montre lentement. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3B1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endB1X"
         },
         {
           "id": "ch3B1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endB1Y"
         },
         {
           "id": "ch3B1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endB1Z"
         }
       ],
@@ -346,45 +352,45 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de le bus, Tom et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Un oiseau chante. Inès compte des objets. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les cubes. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On range un objet. Cette fin-là est celle de le bus, Tom et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. La couverture glisse. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les cubes. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le bus, Tom et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Le bois est lisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les cubes. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Ça sent le pain chaud. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On souffle doucement. papa n'est pas loin.",
+      "text": "Inès a choisi les chaussettes. Un oiseau chante. maman montre lentement. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3B2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endB2X"
         },
         {
           "id": "ch3B2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endB2Y"
         },
         {
           "id": "ch3B2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endB2Z"
         }
       ],
@@ -393,45 +399,45 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On se tient la main. Cette fin-là est celle de le bus, Léa et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. La couverture glisse. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les chaussettes. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le bus, Léa et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Le bois est lisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les chaussettes. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On dit merci. Cette fin-là est celle de le bus, Léa et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Il y a de la poussière. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les chaussettes. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. Le vent est doux. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Inès a choisi les livres. La couverture glisse. maman montre lentement. Inès dit : cinq. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3B3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endB3X"
         },
         {
           "id": "ch3B3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endB3Y"
         },
         {
           "id": "ch3B3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endB3Z"
         }
       ],
@@ -440,37 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de le bus, Sami et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Le bois est lisse. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les livres. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Une feuille tombe. On range un objet. Cette fin-là est celle de le bus, Sami et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Il y a de la poussière. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les livres. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le bus, Sami et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Un doudou est là. Inès dit : cinq. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. le lit, puis les livres. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Hugo va vers la voiture. Un chat miaule une fois. maman sourit. Ici, c'est la voiture. Ce n'est pas comme les autres endroits. Hugo se souvient : compter des objets. Voici le geste : dire le nombre. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Inès va vers la fenêtre. La lumière est claire. maman est tout près. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Compter jusqu'à cinq ou dix.",
+      "prompt": "Inès touche les cubes. Que fait-elle ?",
       "expected_intents": [
         "NOMBRE"
       ],
       "accepted_examples": [
-        "nombre"
+        "compter",
+        "cinq",
+        "un deux trois",
+        "le nombre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire le nombre.",
-      "wrong_feedback": "Voici le geste : dire le nombre.",
+      "retry_prompt": "Un, deux, trois. Que fait Inès ?",
+      "positive_feedback": "Oui. Elle compte des objets.",
+      "wrong_feedback": "On compte des objets. On dit le nombre.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "LAN.NOM.001"
@@ -478,30 +487,30 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire le nombre. Hugo respire. Hugo retient : compter des objets. On continue, avec maman.",
+      "text": "C'est juste. Inès compte des objets. Un, deux, trois, quatre, cinq. Inès donne la main à maman.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "On compte quoi ? Les cubes, les chaussettes, ou les livres ?",
       "options": [
         {
           "id": "ch2C_o1",
-          "label": "Tom",
-          "intent": "TOM",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
           "next": "brC1"
         },
         {
           "id": "ch2C_o2",
-          "label": "Léa",
-          "intent": "LÉA",
+          "label": "les chaussettes",
+          "intent": "LES_CHAUSSETTES",
           "next": "brC2"
         },
         {
           "id": "ch2C_o3",
-          "label": "Sami",
-          "intent": "SAMI",
+          "label": "les livres",
+          "intent": "LES_LIVRES",
           "next": "brC3"
         }
       ],
@@ -510,30 +519,30 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. Le sol est un peu froid. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On dit merci. papa n'est pas loin.",
+      "text": "Inès a choisi les cubes. Le bois est lisse. maman montre lentement. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3C1_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endC1X"
         },
         {
           "id": "ch3C1_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endC1Y"
         },
         {
           "id": "ch3C1_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endC1Z"
         }
       ],
@@ -542,45 +551,45 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On range un objet. Cette fin-là est celle de la voiture, Tom et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. La couverture glisse. Inès compte des objets. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les cubes. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On dit merci. Cette fin-là est celle de la voiture, Tom et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Le bois est lisse. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les cubes. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la voiture, Tom et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Il y a de la poussière. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les cubes. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Une feuille tombe. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On souffle doucement. papa n'est pas loin.",
+      "text": "Inès a choisi les chaussettes. Il y a de la poussière. maman montre lentement. Inès dit : cinq. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3C2_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endC2X"
         },
         {
           "id": "ch3C2_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endC2Y"
         },
         {
           "id": "ch3C2_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endC2Z"
         }
       ],
@@ -589,45 +598,45 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le sol est un peu froid. On range un objet. Cette fin-là est celle de la voiture, Léa et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Le bois est lisse. Inès dit un nombre. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les chaussettes. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Une feuille tombe. On dit merci. Cette fin-là est celle de la voiture, Léa et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Il y a de la poussière. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les chaussettes. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la voiture, Léa et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Un doudou est là. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les chaussettes. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. L'eau coule, tout petit bruit. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire le nombre. Hugo répète tout bas : compter des objets. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Inès a choisi les livres. Un doudou est là. maman montre lentement. Inès compte des objets. Inès compte des objets. Un, deux, trois, quatre, cinq. papa n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On s'arrête à quel nombre ? Un, trois, ou cinq ?",
       "options": [
         {
           "id": "ch3C3_o1",
-          "label": "le matin",
-          "intent": "LE_MATIN",
+          "label": "un",
+          "intent": "UN",
           "next": "endC3X"
         },
         {
           "id": "ch3C3_o2",
-          "label": "après la sieste",
-          "intent": "APRÈS_LA_SIESTE",
+          "label": "trois",
+          "intent": "TROIS",
           "next": "endC3Y"
         },
         {
           "id": "ch3C3_o3",
-          "label": "le soir",
-          "intent": "LE_SOIR",
+          "label": "cinq",
+          "intent": "CINQ",
           "next": "endC3Z"
         }
       ],
@@ -636,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Une feuille tombe. On range un objet. Cette fin-là est celle de la voiture, Sami et le matin. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint un. Il y a de la poussière. Inès touche chaque chose. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les livres. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de la voiture, Sami et après la sieste. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint trois. Un doudou est là. Inès recommence. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les livres. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la voiture, Sami et le soir. Hugo a appris : Compter jusqu'à cinq ou dix. Voici le geste : dire le nombre. Hugo a entendu : compter des objets. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Inès rejoint cinq. Le tapis est doux. Inès dit : cinq. Inès compte des objets. Un, deux, trois, quatre, cinq. maman dit merci. la fenêtre, puis les livres. L'histoire est finie."
     }
   },
   "validation": {
