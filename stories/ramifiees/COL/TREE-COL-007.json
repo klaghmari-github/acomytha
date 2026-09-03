@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-COL-007",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Nino écoute, puis raconte à la maison",
+  "lesson_id": "COL.ECO.001",
+  "secondary_lessons": [
+    "COL.POL.001"
+  ],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Nino",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Nino arrive à l'école avec maman. La maîtresse parle. Nino aime écouter. Maman dit : tu écoutes. Si tu as un malaise, tu viens raconter à la maison. Nino range son manteau. Il s'assoit.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Nino s'assoit où ? Le tapis, la table, ou le préau ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le tapis",
+          "intent": "LE_TAPIS",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "la table",
+          "intent": "LA_TABLE",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "le préau",
+          "intent": "LE_PREAU",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Nino s'assoit sur le tapis. Il écoute la maîtresse. Un camarade chuchote. Nino sent un malaise. Le soir, il va raconter à la maison.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Sur le tapis, Nino a un malaise. Que fait-il ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "à la maison",
+        "écouter",
+        "maman"
+      ],
+      "retry_prompt": "Il écoute. S'il a un malaise ?",
+      "positive_feedback": "Oui. Il écoute. Si malaise, il raconte à la maison.",
+      "wrong_feedback": "On écoute. Si on a un malaise, on raconte à la maison.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Nino a écouté. S'il a un malaise, il raconte à la maison.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "On fait quoi ? L'histoire, le dessin, ou la chanson ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le dessin",
+          "intent": "LE_DESSIN",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "L'histoire commence. Nino écoute. Un mot le gêne. Malaise. Il racontera à la maison.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le tapis, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le tapis, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le tapis, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Nino dessine. Il écoute la consigne. Un chuchotement. Malaise. Raconter à la maison.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le tapis, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le tapis, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le tapis, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "La chanson commence. Nino écoute. Son ventre se serre. Malaise. Il raconte à la maison le soir.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le tapis, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le tapis, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le tapis, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Nino s'assoit à la table. Il écoute. Un mot le gêne. C'est un malaise. Le soir, il raconte à la maison.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "À la table, Nino a un malaise. Que fait-il ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "à la maison",
+        "écouter",
+        "maman"
+      ],
+      "retry_prompt": "Il écoute. S'il a un malaise ?",
+      "positive_feedback": "Oui. Il écoute. Si malaise, il raconte à la maison.",
+      "wrong_feedback": "On écoute. Si on a un malaise, on raconte à la maison.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Écouter. Si malaise, raconter à la maison.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "À la table, ensuite ? Histoire, dessin, ou chanson ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le dessin",
+          "intent": "LE_DESSIN",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "À la table, l'histoire. Nino écoute. Malaise. Il va raconter à la maison.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à la table, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à la table, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à la table, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Le dessin est posé. Nino écoute. Un malaise. Raconter à la maison.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à la table, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à la table, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à la table, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "On chante à la table. Nino écoute. Malaise. Il raconte à la maison.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à la table, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à la table, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à la table, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Nino est au préau. Il écoute la maîtresse. Son ventre se serre. Un malaise. Il racontera à la maison.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Au préau, Nino a un malaise. Que fait-il ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "à la maison",
+        "écouter",
+        "maman"
+      ],
+      "retry_prompt": "Il écoute. S'il a un malaise ?",
+      "positive_feedback": "Oui. Il écoute. Si malaise, il raconte à la maison.",
+      "wrong_feedback": "On écoute. Si on a un malaise, on raconte à la maison.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Nino a su écouter. Il saura raconter à la maison.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Au préau, ensuite ? Histoire, dessin, ou chanson ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "l'histoire",
+          "intent": "LHISTOIRE",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le dessin",
+          "intent": "LE_DESSIN",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "la chanson",
+          "intent": "LA_CHANSON",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Au préau, l'histoire. Nino écoute. Malaise. Raconter à la maison.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le préau, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le préau, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le préau, pendant l'histoire. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Nino dessine au préau. Il écoute. Un malaise. Il racontera à la maison.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le préau, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le préau, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le préau, pendant le dessin. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "La chanson au préau. Nino écoute. Malaise. Raconter à la maison.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Nino raconte à qui ? Maman, papa, ou la sœur ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "la sœur",
+          "intent": "LA_SŒUR",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint maman. Il a écouté à le préau, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint papa. Il a écouté à le préau, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Le soir, Nino rejoint la sœur. Il a écouté à le préau, pendant la chanson. Il a eu un malaise. Il vient raconter à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

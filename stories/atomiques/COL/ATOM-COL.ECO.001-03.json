@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-COL.ECO.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Nino écoute, puis il raconte à la maison",
+  "lesson_id": "COL.ECO.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "école puis maison",
+  "characters": [
+    "Nino",
+    "maman",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino est à l'école. La maîtresse parle. Nino aime écouter. La maîtresse dit : on range les ciseaux. Nino range. Il écoute bien. Plus tard, un camarade chuchote. Il dit : garde ça. Nino sent un malaise. Son ventre est serré. Le soir, maman l'attend. Nino vient raconter à la maison. Il dit : j'ai eu un malaise. Maman écoute. Maman dit : tu as bien fait. On aime écouter. Si tu as un malaise, tu viens raconter à la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nino a un malaise. Que fait-il ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "à la maison",
+        "maman",
+        "écouter"
+      ],
+      "retry_prompt": "Il écoute la maîtresse. S'il a un malaise ?",
+      "positive_feedback": "Oui. Il écoute. Si malaise, il raconte à la maison.",
+      "wrong_feedback": "On écoute la maîtresse. Si on a un malaise, on raconte à papa ou maman, à la maison.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "COL.ECO.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino a écouté. Il a su raconter à la maison. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman prépare le goûter. Nino s'assoit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
