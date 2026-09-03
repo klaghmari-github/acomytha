@@ -183,7 +183,7 @@ def fill_durations(db: Session, settings: Settings, force: bool = False) -> int:
             sec = sum(max(1, p.stat().st_size * 8 // 64000) for p in mp3s)
         else:
             sec = int(w / 2.0 + c * 0.8)
-        story.duration_s = max(45, min(int(sec), 480))
+        story.duration_s = max(45, min(int(sec), 720))
         n += 1
     db.commit()
     return n
