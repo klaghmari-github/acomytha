@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Hugo est avec papa, à la maison. Hugo a envie de jouer. papa est là, tout près. On va apprendre : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo écoute papa. Hugo entend les mots : reprendre ses affaires, avant de partir.",
+      "text": "Hugo est à la maison avec papa. Bientôt on part. Hugo reprend ses affaires. Le seau. Le manteau. Le doudou. Il les reprend avant de partir. Maman appelle près de la porte.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Hugo choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Hugo cherche où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,27 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Hugo va vers la cuisine. Un vélo passe au loin. papa sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Hugo se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On range un objet. papa dit : je suis là. On reste ensemble.",
+      "text": "Hugo va vers la cuisine. Une feuille tombe. Il cherche. Hugo reprend ses affaires. Le seau. Le manteau. Avant de partir. Papa dit : bravo.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "Bientôt on part. Hugo fait quoi ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "affaires",
+        "avant de partir",
+        "seau",
+        "manteau"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Reprendre. Avant de partir. Un petit mot.",
+      "positive_feedback": "Oui. Reprendre ses affaires. Avant de partir.",
+      "wrong_feedback": "On reprend ses affaires. Le seau, le manteau. Avant de partir.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "AUT.AFF.003"
@@ -88,13 +91,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Hugo respire. Hugo retient : reprendre ses affaires, avant de partir. On continue, avec papa.",
+      "text": "Oui. Hugo reprend ses affaires. Avant de partir. On continue avec papa.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Une affaire était près de quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +123,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Hugo a choisi les cubes. Il y a des miettes sur la table. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Près des cubes, Hugo trouve encore une affaire. On entend un oiseau. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +155,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. La couverture est douce. On range un objet. Cette fin-là est celle de la cuisine, les cubes et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un petit bruit d'eau. Dans la cuisine, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. On entend un oiseau. On dit merci. Cette fin-là est celle de la cuisine, les cubes et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Les chaussures font toc toc. Dans la cuisine, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de la cuisine, les cubes et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Un vélo passe au loin. Dans la cuisine, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Hugo a choisi le livre. Un chat miaule une fois. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On attend son tour. maman n'est pas loin.",
+      "text": "Près du livre, Hugo trouve encore une affaire. Ça sent l'herbe coupée. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +202,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. On entend un oiseau. On range un objet. Cette fin-là est celle de la cuisine, le livre et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Les chaussures font toc toc. Dans la cuisine, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Ça sent le pain chaud. On dit merci. Cette fin-là est celle de la cuisine, le livre et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Un vélo passe au loin. Dans la cuisine, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le vent est doux. On souffle doucement. Cette fin-là est celle de la cuisine, le livre et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. La lumière est claire. Dans la cuisine, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Hugo a choisi la dînette. Les chaussures font toc toc. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Près de la dînette, Hugo trouve encore une affaire. Le soleil chauffe un peu. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +249,42 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On range un objet. Cette fin-là est celle de la cuisine, la dînette et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un vélo passe au loin. Dans la cuisine, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On dit merci. Cette fin-là est celle de la cuisine, la dînette et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. La lumière est claire. Dans la cuisine, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de la cuisine, la dînette et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Ça sent le pain. Dans la cuisine, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Hugo va vers le jardin. La lumière est claire. papa sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Hugo se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On dit merci. papa dit : je suis là. On reste ensemble.",
+      "text": "Hugo va vers le jardin. Le vent est doux. Il cherche. Hugo reprend ses affaires. Le seau. Le manteau. Avant de partir. Papa dit : bravo.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "Bientôt on part. Hugo fait quoi ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "affaires",
+        "avant de partir",
+        "seau",
+        "manteau"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Reprendre. Avant de partir. Un petit mot.",
+      "positive_feedback": "Oui. Reprendre ses affaires. Avant de partir.",
+      "wrong_feedback": "On reprend ses affaires. Le seau, le manteau. Avant de partir.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "AUT.AFF.003"
@@ -286,13 +292,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Hugo respire. Hugo retient : reprendre ses affaires, avant de partir. On continue, avec papa.",
+      "text": "Oui. Hugo reprend ses affaires. Avant de partir. On continue avec papa.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Une affaire était près de quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +324,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Hugo a choisi les cubes. La couverture est douce. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Près des cubes, Hugo trouve encore une affaire. On entend un oiseau. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +356,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. On entend un oiseau. On dit merci. Cette fin-là est celle de le jardin, les cubes et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Les chaussures font toc toc. Dans le jardin, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de le jardin, les cubes et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Un vélo passe au loin. Dans le jardin, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, les cubes et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. La lumière est claire. Dans le jardin, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Hugo a choisi le livre. On entend un oiseau. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On attend son tour. maman n'est pas loin.",
+      "text": "Près du livre, Hugo trouve encore une affaire. Ça sent l'herbe coupée. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +403,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On dit merci. Cette fin-là est celle de le jardin, le livre et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un vélo passe au loin. Dans le jardin, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On souffle doucement. Cette fin-là est celle de le jardin, le livre et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. La lumière est claire. Dans le jardin, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le livre et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Ça sent le pain. Dans le jardin, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Hugo a choisi la dînette. Ça sent le pain chaud. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Près de la dînette, Hugo trouve encore une affaire. Le soleil chauffe un peu. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +450,42 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On dit merci. Cette fin-là est celle de le jardin, la dînette et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. La lumière est claire. Dans le jardin, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de le jardin, la dînette et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Ça sent le pain. Dans le jardin, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, la dînette et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Un chat miaule une fois. Dans le jardin, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Hugo va vers la chambre. Il y a des miettes sur la table. papa sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Hugo se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On souffle doucement. papa dit : je suis là. On reste ensemble.",
+      "text": "Hugo va vers la chambre. On entend un oiseau. Il cherche. Hugo reprend ses affaires. Le seau. Le manteau. Avant de partir. Papa dit : bravo.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "Bientôt on part. Hugo fait quoi ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "affaires",
+        "avant de partir",
+        "seau",
+        "manteau"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Reprendre. Avant de partir. Un petit mot.",
+      "positive_feedback": "Oui. Reprendre ses affaires. Avant de partir.",
+      "wrong_feedback": "On reprend ses affaires. Le seau, le manteau. Avant de partir.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "AUT.AFF.003"
@@ -484,13 +493,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Hugo respire. Hugo retient : reprendre ses affaires, avant de partir. On continue, avec papa.",
+      "text": "Oui. Hugo reprend ses affaires. Avant de partir. On continue avec papa.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Une affaire était près de quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +525,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Hugo a choisi les cubes. Le vent est doux. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Près des cubes, Hugo trouve encore une affaire. On entend un oiseau. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +557,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de la chambre, les cubes et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un vélo passe au loin. Dans la chambre, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, les cubes et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. La lumière est claire. Dans la chambre, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de la chambre, les cubes et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Ça sent le pain. Dans la chambre, près des cubes, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Hugo a choisi le livre. Le sol est un peu froid. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On attend son tour. maman n'est pas loin.",
+      "text": "Près du livre, Hugo trouve encore une affaire. Ça sent l'herbe coupée. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +604,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On souffle doucement. Cette fin-là est celle de la chambre, le livre et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. La lumière est claire. Dans la chambre, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le livre et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Ça sent le pain. Dans la chambre, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On attend son tour. Cette fin-là est celle de la chambre, le livre et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Un chat miaule une fois. Dans la chambre, près du livre, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Hugo a choisi la dînette. Une feuille tombe. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Hugo répète tout bas : reprendre ses affaires, avant de partir. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Près de la dînette, Hugo trouve encore une affaire. Le soleil chauffe un peu. Hugo reprend ses affaires. Avant de partir. maman n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On part à quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +651,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de la chambre, la dînette et le matin. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Ça sent le pain. Dans la chambre, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, la dînette et après la sieste. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Un chat miaule une fois. Dans la chambre, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de la chambre, la dînette et le soir. Hugo a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Hugo a entendu : reprendre ses affaires, avant de partir. Hugo dit merci à papa. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Une feuille tombe. Dans la chambre, près de la dînette, Hugo a tout. Il reprend ses affaires. Avant de partir. Merci papa. L'histoire est finie."
     }
   },
   "validation": {

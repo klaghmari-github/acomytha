@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Sara est avec papa, au bord de la mer. Sara a envie de jouer. papa est là, tout près. On va apprendre : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara écoute papa. Sara entend les mots : tailles différentes, jouer ensemble.",
+      "text": "Sara est au bord de la mer avec papa. Sur le sable, il y a des tailles différentes. Plus petit. Ou plus grand. On joue ensemble. Maman est sur la serviette.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Sara choisit. le matin, après la sieste, ou le soir ?",
+      "prompt": "On joue ensemble quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Sara va vers le matin. Un vélo passe au loin. papa sourit. Ici, c'est le matin. Ce n'est pas comme les autres endroits. Sara se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On écoute jusqu'au bout. papa dit : je suis là. On reste ensemble.",
+      "text": "C'est le matin. Une feuille tombe. Un camarade est plus petit. Un autre plus grand. Tailles différentes. Sara dit : on joue ensemble. Papa sourit.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "prompt": "Plus petit ou plus grand. Sara fait quoi ?",
       "expected_intents": [
         "JOUER_ENSEMBLE"
       ],
       "accepted_examples": [
-        "jouer ensemble"
+        "jouer ensemble",
+        "ensemble",
+        "jouer",
+        "tailles"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
-      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "retry_prompt": "Jouer ensemble. Un petit mot.",
+      "positive_feedback": "Oui. Tailles différentes. On joue ensemble.",
+      "wrong_feedback": "On a des tailles différentes. On joue ensemble. On n'invente pas de blague sur le corps.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.COR.001"
@@ -86,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : inviter ; jouer. Sara respire. Sara retient : tailles différentes, jouer ensemble. On continue, avec papa.",
+      "text": "Oui. Tailles différentes. On joue ensemble. On continue avec papa.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Sara propose quoi, pour jouer ensemble ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Sara a choisi le ballon rouge. Il y a des miettes sur la table. Le ballon rouge reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On rit un peu. maman n'est pas loin.",
+      "text": "Sara prend le ballon rouge. Le soleil chauffe un peu. Elle tend le ballon rouge. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Sara rejoint Tom. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de le matin, le ballon rouge et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Une feuille tombe. Avec le ballon rouge, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. On entend un oiseau. On attend son tour. Cette fin-là est celle de le matin, le ballon rouge et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Le vent est doux. Avec le ballon rouge, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le ballon rouge et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. On entend un oiseau. Avec le ballon rouge, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Sara a choisi le seau bleu. Un chat miaule une fois. Le seau bleu reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sara prend le seau bleu. Le sol est frais. Elle tend le seau bleu. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Sara rejoint Tom. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de le matin, le seau bleu et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Le vent est doux. Avec le seau bleu, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le matin, le seau bleu et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. On entend un oiseau. Avec le seau bleu, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le seau bleu et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Ça sent l'herbe coupée. Avec le seau bleu, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Sara a choisi le doudou. Les chaussures font toc toc. Le doudou reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tient la main. maman n'est pas loin.",
+      "text": "Sara prend le doudou. Un petit bruit d'eau. Elle tend le doudou. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de le matin, le doudou et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. On entend un oiseau. Avec le doudou, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Le vent est doux. On attend son tour. Cette fin-là est celle de le matin, le doudou et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Ça sent l'herbe coupée. Avec le doudou, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le doudou et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Le soleil chauffe un peu. Avec le doudou, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Sara va vers après la sieste. La lumière est claire. papa sourit. Ici, c'est après la sieste. Ce n'est pas comme les autres endroits. Sara se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "C'est après la sieste. Le vent est doux. Un camarade est plus petit. Un autre plus grand. Tailles différentes. Sara dit : on joue ensemble. Papa sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "prompt": "Plus petit ou plus grand. Sara fait quoi ?",
       "expected_intents": [
         "JOUER_ENSEMBLE"
       ],
       "accepted_examples": [
-        "jouer ensemble"
+        "jouer ensemble",
+        "ensemble",
+        "jouer",
+        "tailles"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
-      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "retry_prompt": "Jouer ensemble. Un petit mot.",
+      "positive_feedback": "Oui. Tailles différentes. On joue ensemble.",
+      "wrong_feedback": "On a des tailles différentes. On joue ensemble. On n'invente pas de blague sur le corps.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.COR.001"
@@ -282,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : inviter ; jouer. Sara respire. Sara retient : tailles différentes, jouer ensemble. On continue, avec papa.",
+      "text": "Oui. Tailles différentes. On joue ensemble. On continue avec papa.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Sara propose quoi, pour jouer ensemble ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Sara a choisi le ballon rouge. La couverture est douce. Le ballon rouge reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On rit un peu. maman n'est pas loin.",
+      "text": "Sara prend le ballon rouge. Le soleil chauffe un peu. Elle tend le ballon rouge. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Sara rejoint Tom. On entend un oiseau. On attend son tour. Cette fin-là est celle de après la sieste, le ballon rouge et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Le vent est doux. Avec le ballon rouge, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, le ballon rouge et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. On entend un oiseau. Avec le ballon rouge, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Le vent est doux. On rit un peu. Cette fin-là est celle de après la sieste, le ballon rouge et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Ça sent l'herbe coupée. Avec le ballon rouge, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Sara a choisi le seau bleu. On entend un oiseau. Le seau bleu reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sara prend le seau bleu. Le sol est frais. Elle tend le seau bleu. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de après la sieste, le seau bleu et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. On entend un oiseau. Avec le seau bleu, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, le seau bleu et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Ça sent l'herbe coupée. Avec le seau bleu, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de après la sieste, le seau bleu et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Le soleil chauffe un peu. Avec le seau bleu, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Sara a choisi le doudou. Ça sent le pain chaud. Le doudou reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tient la main. maman n'est pas loin.",
+      "text": "Sara prend le doudou. Un petit bruit d'eau. Elle tend le doudou. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Le vent est doux. On attend son tour. Cette fin-là est celle de après la sieste, le doudou et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Ça sent l'herbe coupée. Avec le doudou, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, le doudou et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Le soleil chauffe un peu. Avec le doudou, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Une feuille tombe. On rit un peu. Cette fin-là est celle de après la sieste, le doudou et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Le sol est frais. Avec le doudou, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Sara va vers le soir. Il y a des miettes sur la table. papa sourit. Ici, c'est le soir. Ce n'est pas comme les autres endroits. Sara se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "C'est le soir. On entend un oiseau. Un camarade est plus petit. Un autre plus grand. Tailles différentes. Sara dit : on joue ensemble. Papa sourit.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "prompt": "Plus petit ou plus grand. Sara fait quoi ?",
       "expected_intents": [
         "JOUER_ENSEMBLE"
       ],
       "accepted_examples": [
-        "jouer ensemble"
+        "jouer ensemble",
+        "ensemble",
+        "jouer",
+        "tailles"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
-      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "retry_prompt": "Jouer ensemble. Un petit mot.",
+      "positive_feedback": "Oui. Tailles différentes. On joue ensemble.",
+      "wrong_feedback": "On a des tailles différentes. On joue ensemble. On n'invente pas de blague sur le corps.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.COR.001"
@@ -478,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : inviter ; jouer. Sara respire. Sara retient : tailles différentes, jouer ensemble. On continue, avec papa.",
+      "text": "Oui. Tailles différentes. On joue ensemble. On continue avec papa.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Sara choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Sara propose quoi, pour jouer ensemble ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Sara a choisi le ballon rouge. Le vent est doux. Le ballon rouge reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On rit un peu. maman n'est pas loin.",
+      "text": "Sara prend le ballon rouge. Le soleil chauffe un peu. Elle tend le ballon rouge. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le soir, le ballon rouge et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. On entend un oiseau. Avec le ballon rouge, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Le vent est doux. On rit un peu. Cette fin-là est celle de le soir, le ballon rouge et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Ça sent l'herbe coupée. Avec le ballon rouge, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le soir, le ballon rouge et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Le soleil chauffe un peu. Avec le ballon rouge, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Sara a choisi le seau bleu. Le sol est un peu froid. Le seau bleu reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sara prend le seau bleu. Le sol est frais. Elle tend le seau bleu. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le soir, le seau bleu et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Ça sent l'herbe coupée. Avec le seau bleu, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le soir, le seau bleu et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Le soleil chauffe un peu. Avec le seau bleu, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le soir, le seau bleu et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Le sol est frais. Avec le seau bleu, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Sara a choisi le doudou. Une feuille tombe. Le doudou reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : inviter ; jouer. Sara répète tout bas : tailles différentes, jouer ensemble. On se tient la main. maman n'est pas loin.",
+      "text": "Sara prend le doudou. Un petit bruit d'eau. Elle tend le doudou. Tailles différentes. On joue ensemble. maman n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sara va vers Tom, Léa, ou Sami ?",
+      "prompt": "Sara invite qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Sara rejoint Tom. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le soir, le doudou et Tom. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Tom. Le soleil chauffe un peu. Avec le doudou, Tom et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Sara rejoint Léa. Une feuille tombe. On rit un peu. Cette fin-là est celle de le soir, le doudou et Léa. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Léa. Le sol est frais. Avec le doudou, Léa et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Sara rejoint Sami. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le soir, le doudou et Sami. Sara a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Sara a entendu : tailles différentes, jouer ensemble. Sara dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sara rejoint Sami. Un petit bruit d'eau. Avec le doudou, Sami et Sara jouent ensemble. Tailles différentes. Personne ne commente le corps. Merci papa. L'histoire est finie."
     }
   },
   "validation": {

@@ -14,7 +14,7 @@ BY_ID = {l["lesson_id"]: l for l in LECONS["lessons"]}
 CHOICE_SETS = {
     "lieux_maison": ("la cuisine", "le jardin", "la chambre"),
     "lieux_parc": ("le bac à sable", "le toboggan", "les balançoires"),
-    "objets": ("le ballon rouge", "le seau bleu", "le doudou"),
+    "objets": ("le ballon", "le seau", "le doudou"),
     "jeux": ("les cubes", "le livre", "la dînette"),
     "goûter": ("une pomme", "un yaourt", "un morceau de pain"),
     "camarades": ("Tom", "Léa", "Sami"),

@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Zoé est avec maman, dans le train avec papa. Zoé a envie de jouer. maman est là, tout près. On va apprendre : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé écoute maman. Zoé entend les mots : demander, inconnu, adulte.",
+      "text": "Zoé est dans le train avec maman. Papa est là aussi. Il y a un goûter inconnu sur la tablette. Zoé ne goûte pas toute seule. Zoé demande. Elle demande à maman, l'adulte.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Zoé choisit. les cubes, le livre, ou la dînette ?",
+      "prompt": "Zoé sort quoi du sac ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Zoé va vers les cubes. L'eau coule, tout petit bruit. maman sourit. Ici, c'est les cubes. Ce n'est pas comme les autres endroits. Zoé se souvient : demander, inconnu, adulte. Voici le geste : demander à papa ou maman. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé sort les cubes. Une feuille tombe. Sur la tablette, il y a un goûter inconnu. Zoé demande à maman, l'adulte. Maman sourit. On demande avant.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Demander avant de goûter l'inconnu.",
+      "prompt": "Zoé voit un goûter inconnu. Que fait-elle ?",
       "expected_intents": [
         "DEMANDER",
         "ADULTE"
       ],
       "accepted_examples": [
         "demander",
-        "adulte"
+        "maman",
+        "adulte",
+        "inconnu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander à papa ou maman.",
-      "wrong_feedback": "Voici le geste : demander à papa ou maman.",
+      "retry_prompt": "Demander. À maman. Un petit mot.",
+      "positive_feedback": "Oui. Elle demande. À l'adulte. Avant l'inconnu.",
+      "wrong_feedback": "On demande à l'adulte. Avant de goûter l'inconnu.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SEC.MAI.002"
@@ -88,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander à papa ou maman. Zoé respire. Zoé retient : demander, inconnu, adulte. On continue, avec maman.",
+      "text": "Oui. Zoé a demandé. À l'adulte. Avant l'inconnu. On continue avec maman.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter est inconnu ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Zoé a choisi une pomme. La lumière est claire. Une pomme reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Zoé voit une pomme. Le soleil chauffe un peu. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. Les chaussures font toc toc. On souffle doucement. Cette fin-là est celle de les cubes, une pomme et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. On entend un oiseau. Zoé a les cubes. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, une pomme et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Ça sent l'herbe coupée. Zoé a les cubes. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. On entend un oiseau. On attend son tour. Cette fin-là est celle de les cubes, une pomme et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Le soleil chauffe un peu. Zoé a les cubes. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Zoé a choisi un yaourt. Il y a des miettes sur la table. Un yaourt reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On rit un peu. papa n'est pas loin.",
+      "text": "Zoé voit un yaourt. Le sol est frais. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. La couverture est douce. On souffle doucement. Cette fin-là est celle de les cubes, un yaourt et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Ça sent l'herbe coupée. Zoé a les cubes. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, un yaourt et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Le soleil chauffe un peu. Zoé a les cubes. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de les cubes, un yaourt et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Le sol est frais. Zoé a les cubes. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Zoé a choisi un morceau de pain. Un chat miaule une fois. Un morceau de pain reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé voit un morceau de pain. Un petit bruit d'eau. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. On entend un oiseau. On souffle doucement. Cette fin-là est celle de les cubes, un morceau de pain et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Le soleil chauffe un peu. Zoé a les cubes. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de les cubes, un morceau de pain et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Le sol est frais. Zoé a les cubes. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Le vent est doux. On attend son tour. Cette fin-là est celle de les cubes, un morceau de pain et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Un petit bruit d'eau. Zoé a les cubes. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Zoé va vers le livre. Un vélo passe au loin. maman sourit. Ici, c'est le livre. Ce n'est pas comme les autres endroits. Zoé se souvient : demander, inconnu, adulte. Voici le geste : demander à papa ou maman. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé sort le livre. Le vent est doux. Sur la tablette, il y a un goûter inconnu. Zoé demande à maman, l'adulte. Maman sourit. On demande avant.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Demander avant de goûter l'inconnu.",
+      "prompt": "Zoé voit un goûter inconnu. Que fait-elle ?",
       "expected_intents": [
         "DEMANDER",
         "ADULTE"
       ],
       "accepted_examples": [
         "demander",
-        "adulte"
+        "maman",
+        "adulte",
+        "inconnu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander à papa ou maman.",
-      "wrong_feedback": "Voici le geste : demander à papa ou maman.",
+      "retry_prompt": "Demander. À maman. Un petit mot.",
+      "positive_feedback": "Oui. Elle demande. À l'adulte. Avant l'inconnu.",
+      "wrong_feedback": "On demande à l'adulte. Avant de goûter l'inconnu.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SEC.MAI.002"
@@ -286,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander à papa ou maman. Zoé respire. Zoé retient : demander, inconnu, adulte. On continue, avec maman.",
+      "text": "Oui. Zoé a demandé. À l'adulte. Avant l'inconnu. On continue avec maman.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter est inconnu ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Zoé a choisi une pomme. Les chaussures font toc toc. Une pomme reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Zoé voit une pomme. Le soleil chauffe un peu. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de le livre, une pomme et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Ça sent l'herbe coupée. Zoé a le livre. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. On entend un oiseau. On attend son tour. Cette fin-là est celle de le livre, une pomme et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Le soleil chauffe un peu. Zoé a le livre. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le livre, une pomme et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Le sol est frais. Zoé a le livre. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Zoé a choisi un yaourt. La couverture est douce. Un yaourt reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On rit un peu. papa n'est pas loin.",
+      "text": "Zoé voit un yaourt. Le sol est frais. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de le livre, un yaourt et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Le soleil chauffe un peu. Zoé a le livre. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le livre, un yaourt et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Le sol est frais. Zoé a le livre. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un yaourt et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Un petit bruit d'eau. Zoé a le livre. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Zoé a choisi un morceau de pain. On entend un oiseau. Un morceau de pain reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé voit un morceau de pain. Un petit bruit d'eau. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de le livre, un morceau de pain et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Le sol est frais. Zoé a le livre. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Le vent est doux. On attend son tour. Cette fin-là est celle de le livre, un morceau de pain et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Un petit bruit d'eau. Zoé a le livre. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un morceau de pain et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Les chaussures font toc toc. Zoé a le livre. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Zoé va vers la dînette. La lumière est claire. maman sourit. Ici, c'est la dînette. Ce n'est pas comme les autres endroits. Zoé se souvient : demander, inconnu, adulte. Voici le geste : demander à papa ou maman. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Zoé sort la dînette. On entend un oiseau. Sur la tablette, il y a un goûter inconnu. Zoé demande à maman, l'adulte. Maman sourit. On demande avant.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Demander avant de goûter l'inconnu.",
+      "prompt": "Zoé voit un goûter inconnu. Que fait-elle ?",
       "expected_intents": [
         "DEMANDER",
         "ADULTE"
       ],
       "accepted_examples": [
         "demander",
-        "adulte"
+        "maman",
+        "adulte",
+        "inconnu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander à papa ou maman.",
-      "wrong_feedback": "Voici le geste : demander à papa ou maman.",
+      "retry_prompt": "Demander. À maman. Un petit mot.",
+      "positive_feedback": "Oui. Elle demande. À l'adulte. Avant l'inconnu.",
+      "wrong_feedback": "On demande à l'adulte. Avant de goûter l'inconnu.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SEC.MAI.002"
@@ -484,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander à papa ou maman. Zoé respire. Zoé retient : demander, inconnu, adulte. On continue, avec maman.",
+      "text": "Oui. Zoé a demandé. À l'adulte. Avant l'inconnu. On continue avec maman.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Zoé choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter est inconnu ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Zoé a choisi une pomme. Ça sent le pain chaud. Une pomme reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Zoé voit une pomme. Le soleil chauffe un peu. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. On entend un oiseau. On attend son tour. Cette fin-là est celle de la dînette, une pomme et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Le soleil chauffe un peu. Zoé a la dînette. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, une pomme et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Le sol est frais. Zoé a la dînette. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Le vent est doux. On rit un peu. Cette fin-là est celle de la dînette, une pomme et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Un petit bruit d'eau. Zoé a la dînette. Une pomme reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Zoé a choisi un yaourt. Le vent est doux. Un yaourt reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On rit un peu. papa n'est pas loin.",
+      "text": "Zoé voit un yaourt. Le sol est frais. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de la dînette, un yaourt et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Le sol est frais. Zoé a la dînette. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, un yaourt et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Un petit bruit d'eau. Zoé a la dînette. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de la dînette, un yaourt et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Les chaussures font toc toc. Zoé a la dînette. Un yaourt reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Zoé a choisi un morceau de pain. Le sol est un peu froid. Un morceau de pain reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander à papa ou maman. Zoé répète tout bas : demander, inconnu, adulte. On se tait une seconde. papa n'est pas loin.",
+      "text": "Zoé voit un morceau de pain. Un petit bruit d'eau. C'est encore un goûter inconnu. Zoé demande à maman, l'adulte. papa n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Zoé va vers le chat, le chien, ou la poule ?",
+      "prompt": "À la gare, Zoé voit qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Zoé rejoint le chat. Le vent est doux. On attend son tour. Cette fin-là est celle de la dînette, un morceau de pain et le chat. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chat. Un petit bruit d'eau. Zoé a la dînette. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Zoé rejoint le chien. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de la dînette, un morceau de pain et le chien. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint le chien. Les chaussures font toc toc. Zoé a la dînette. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Zoé rejoint la poule. Une feuille tombe. On rit un peu. Cette fin-là est celle de la dînette, un morceau de pain et la poule. Zoé a appris : Demander avant de goûter l'inconnu. Voici le geste : demander à papa ou maman. Zoé a entendu : demander, inconnu, adulte. Zoé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Zoé rejoint la poule. Un vélo passe au loin. Zoé a la dînette. Un morceau de pain reste un goûter inconnu. Zoé a demandé à maman, l'adulte. Zoé dit merci à maman. L'histoire est finie."
     }
   },
   "validation": {

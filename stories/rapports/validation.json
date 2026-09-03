@@ -1,10 +1,10 @@
 {
-  "total": 353,
-  "approved_text": 353,
+  "total": 373,
+  "approved_text": 373,
   "revision": 0,
   "rejected": 0,
   "atomic": 199,
-  "ramifiee": 154,
+  "ramifiee": 174,
   "results": [
     {
       "file": "atomiques/AUT/ATOM-AUT.AFF.001-01.json",
@@ -3192,6 +3192,32 @@
       "findings": []
     },
     {
+      "file": "ramifiees/EMO/TREE-EMO-020.json",
+      "tree_id": "TREE-EMO-020",
+      "kind": "ramifiee",
+      "lesson_id": "EMO.LEX.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/EMO/TREE-EMO-021.json",
+      "tree_id": "TREE-EMO-021",
+      "kind": "ramifiee",
+      "lesson_id": "EMO.LEX.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
       "file": "ramifiees/FAM/TREE-FAM-001.json",
       "tree_id": "TREE-FAM-001",
       "kind": "ramifiee",
@@ -3946,6 +3972,142 @@
       "findings": []
     },
     {
+      "file": "ramifiees/SAN/TREE-SAN-021.json",
+      "tree_id": "TREE-SAN-021",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-022.json",
+      "tree_id": "TREE-SAN-022",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-023.json",
+      "tree_id": "TREE-SAN-023",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.003",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-024.json",
+      "tree_id": "TREE-SAN-024",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-025.json",
+      "tree_id": "TREE-SAN-025",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-026.json",
+      "tree_id": "TREE-SAN-026",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.003",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-027.json",
+      "tree_id": "TREE-SAN-027",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.SOM.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-028.json",
+      "tree_id": "TREE-SAN-028",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.MOV.001",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-029.json",
+      "tree_id": "TREE-SAN-029",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ECR.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 3,
+      "paths": 27,
+      "findings": [
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Cette fin-là est celle de le bac à sable, les cubes et après la sieste",
+          "node": "endA1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Cette fin-là est celle de le bac à sable, le livre et après la sieste",
+          "node": "endA2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Cette fin-là est celle de le bac à sable, la dînette et après la sieste",
+          "node": "endA3Y"
+        }
+      ]
+    },
+    {
       "file": "ramifiees/SEC/TREE-SEC-001.json",
       "tree_id": "TREE-SEC-001",
       "kind": "ramifiee",
@@ -4275,6 +4437,364 @@
       "tree_id": "TREE-SEC-026",
       "kind": "ramifiee",
       "lesson_id": "SEC.MAI.002",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-027.json",
+      "tree_id": "TREE-SEC-027",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-028.json",
+      "tree_id": "TREE-SEC-028",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-029.json",
+      "tree_id": "TREE-SEC-029",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.003",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-030.json",
+      "tree_id": "TREE-SEC-030",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-031.json",
+      "tree_id": "TREE-SEC-031",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-032.json",
+      "tree_id": "TREE-SEC-032",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.003",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 43,
+      "paths": 27,
+      "findings": [
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "root"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "fbA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brA1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brA2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brA3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endA3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "fbB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brB1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brB2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brB3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endB3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "fbC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brC1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brC2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "endC2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : rester derrière la protection ; pieds au sol ; avec un adulte",
+          "node": "brC3"
+        }
+      ]
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-033.json",
+      "tree_id": "TREE-SEC-033",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.PAR.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-034.json",
+      "tree_id": "TREE-SEC-034",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.ADU.001",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-035.json",
+      "tree_id": "TREE-SEC-035",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.ADU.002",
       "age_band": "N1",
       "decision": "APPROVED_TEXT",
       "blocking": 0,
