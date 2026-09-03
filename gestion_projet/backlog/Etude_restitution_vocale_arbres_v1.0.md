@@ -1,7 +1,7 @@
 # Étude — Restitution vocale des arbres d’histoires Sentier
 
 **Document :** ETU-AUD-001  
-**Version :** 1.2  
+**Version :** 1.3  
 **Date :** 3 septembre 2026  
 **Statut :** étude de cadrage, pas une spécification figée  
 **Public :** fondateurs, éditorial, production audio, technique  
@@ -12,6 +12,8 @@
 **Changelog 1.0 → 1.1.** L’API xAI TTS existe (`POST /v1/tts`, 15 USD / million de caractères, français, balises expressives). Le rythme n’est plus collé au JSON enfant : un `narration_plan.json` porte l’intention, des adaptateurs compilent vers xAI / SSML / Piper. Le paquet publié adresse les fichiers par `node_id` ; l’arborescence forêt/arbre/branches reste une **vue d’écoute** générée. Licences, loudness, cache, QA ASR et coût réel du corpus sont ajoutés. On n’adopte pas la limite « deux options » de l’analyse externe : le corpus ramifié Sentier est 3 × 3 × 3.
 
 **Changelog 1.1 → 1.2.** Texte ChatGPT relu en entier (le collage précédent était tronqué). Ajouts opérationnels : type `DIALOGUE`, durées locales **par heure** d’audio, table RTF xAI, délais de développement (PoC / MVP / prod), pipeline de bake, clone voix ~2 min, annexes prompt compilateur (adapté : **3 options**, pas 2). Rien de contradictoire avec la v1.1.
+
+**Changelog 1.2 → 1.3.** Revue ChatGPT **de l’analyse Grok** (pas de l’étude ChatGPT précédente). Neuf points : 7 déjà dans v1.1/v1.2 (la revue cite encore la v1.0). Corrections réelles : **interdire le mélange de moteurs dans un même arbre** ; budget xAI élargi **300–600 USD** ; empreintes **séparées** (texte / plan / moteur) ; licences **voix+moteur** dans le manifeste ; `APPROVED_AUDIO` avant `APPROVED_PACKAGE` ; prompt TTS **sans** règles éditoriales (elles restent dans `REGLES.md`) ; WPM = hypothèses, pas normes ; pilote **1 ramifié + 12 atomiques**. Voir §14.
 
 ---
 
@@ -27,33 +29,32 @@
 4. On ne promet **pas** la même waveform d’un moteur à l’autre. On promet la même **intention** (où on ralentit, où on pose, quel mot est porté).
 5. L’audio publié est adressé par `node_id`, versionné, checksummé. Une vue récursive forêt → arbre → branches est générée pour écouter / déboguer, ce n’est pas le format canonique.
 
-**Recommandation MVP.**
+**Recommandation MVP (provisoire, après pilote — pas avant).**
 
 | Couche | Choix | Pourquoi |
 | --- | --- | --- |
-| Intention de dire | **`narration_plan.json`** (neutre) | Survité un moteur. Le texte enfant ne contient jamais `[pause]` ni `<slow>`. |
-| Export riche | SSML 1.1 + profil `sentier-prosody-v1` | Format d’échange le plus répandu (Azure, Google, Amazon). Piper l’ignore : on compile. |
-| Qualité finale | **API xAI TTS** (`language=fr`, voix unique par arbre, WAV master) | Expressivité, français, 15 k caractères / requête, 50 req/s. Coût corpus ~**170–280 USD** une fois, pas un abonnement. |
-| Préécoute / secours local | **Piper** CPU, puis **Kokoro-82M** si le FR passe le test | 0 GPU. Une nuit pour 260 h. Qualité « lisible », pas encore « conteur ». |
-| Clone de voix | API xAI Custom Voices (**~2 min** de référence selon xAI) **ou** rien | Stabilité narrative FR et droits à tester. XTTS-v2 : VRAM juste **et** licence CPML non commerciale → **hors produit**. |
-| Entraînement local | **Non** | Piper documente 24–48 Go VRAM habituels, plancher communautaire ~8 Go. 3,8 Go = inférence seulement. |
+| Intention de dire | **`narration_plan.json` uniquement** | **0 % SSML comme source.** SSML / balises xAI / silences Piper = exports. |
+| Qualité finale | **API xAI TTS**, **un** moteur + **une** voix **par arbre entier** | Expressivité FR. Idéal : **une voix pour toute la forêt**. Jamais Piper+xAI dans le même arbre (changement de timbre = faux personnage). |
+| Préécoute / secours | **Piper** (arbre entier) ; Kokoro si le FR passe | Dry-run, hors-ligne, 0 €. Qualité « lisible », pas « conteur ». |
+| Clone | API xAI Custom Voices (~2 min) **ou** rien | XTTS-v2 **exclu** (CPML non commercial **et** VRAM). |
+| Entraînement local | **Non, avant les résultats du pilote** | 3,8 Go = inférence seulement. |
 
-**Temps d’ordre de grandeur pour tout le corpus actuel** (~260 h d’audio unique, ~57 000 fichiers) :
+**Temps et argent, corpus actuel** (~57 000 fichiers, ~260 h uniques). Les durées Piper **ne sont pas un planning** tant qu’un bench n’a pas tourné sur **cette** machine.
 
-| Voie | Temps machine | Coût indicatif | Commentaire |
+| Voie | Temps machine | Coût | Commentaire |
 | --- | --- | --- | --- |
-| API xAI TTS, cache + reprise, ~10 requêtes parallèles | **quelques heures à 1–2 jours** | **~170–280 USD** + régénérations | Le goulot est l’écoute humaine, pas la synthèse. |
-| Piper, 8 cœurs, parallèle | **4 à 12 heures** | 0 € | Prévisible. Qualité moyenne. |
-| Kokoro CPU 8 cœurs | **15 à 40 heures** | 0 € | Plus naturel. Français à valider (`ff_siwis`, &lt; 11 h de data). |
-| XTTS-v2 sur 3,8 Go | **4 à 15 jours** | 0 € mais CPML | Hors produit commercial. |
+| API xAI TTS + cache | quelques heures à 1–2 j | **~160–200 USD** 1re passe ; **300–600 USD** avec essais / régénérations | Goulot = **validation**, pas la synthèse. 260 h d’écoute = &gt; 32 journées de 8 h. |
+| Piper 8 cœurs | ordre 4–12 h **si** le RTF se confirme | 0 € | GPL moteur + licence **par voix** à tracer. |
+| Kokoro CPU | 15–40 h | 0 € | FR B−, à tester. |
+| XTTS-v2 | — | — | **Hors produit.** |
 
-**Décision proposée (inchangée dans l’esprit, précisée dans les moyens).**
+**Décision proposée.**
 
-1. Figer le schéma `narration_plan` + le profil `sentier-prosody-v1`. Les JSON histoires restent valides sans ça.
-2. Maquette : **1 ramifié + 1 atomique**, quatre moteurs (xAI, Piper, Kokoro, MeloTTS) sur **les mêmes nœuds**.
-3. Si xAI + plan suffit pour N1 (mots compris du premier coup, pas de cri, leçon claire) : on industrialise l’API avec cache. Piper reste le dry-run et le plan B hors-ligne.
-4. On **n’entraîne pas** un TTS sur cette machine.
-5. Les textes restent publiables en `APPROVED_TEXT` sans audio. L’audio est `APPROVED_PACKAGE`.
+1. Figer `narration_plan` (les JSON histoires restent valides sans ça).
+2. **Pilote comparatif automatisé** : 1 ramifié complet + **12 atomiques**, N1 et N3, xAI / Piper / Kokoro, **même** nœuds, **un** moteur par rendu d’arbre. Pas de fine-tune.
+3. Si xAI N1 : mots compris du premier coup, leçon claire, pas de cri → industrialiser l’API. Piper = prévisualisation et plan B **par arbres entiers**.
+4. Pas de TTS entraîné ici.
+5. Statuts : `APPROVED_TEXT` → `APPROVED_AUDIO` (tous nœuds QA) → `APPROVED_PACKAGE`. Les textes se publient **sans** audio.
 
 ---
 
@@ -63,7 +64,7 @@ L’expérience n’a **pas d’image** (NAR-004, AUD-001). Tout passe par la vo
 
 ### 1.1 Trois régimes de parole (contrat pédagogique)
 
-Les valeurs sont des **réglages initiaux** à mesurer sur de vrais enfants, pas des normes.
+Les valeurs sont des **hypothèses de départ**. Elles ne deviennent des normes **qu’après** test avec des enfants de 3, 4, 5 et 6 ans (pas un adulte qui « entend bien »).
 
 | Régime | Quand (JSON Sentier) | Vitesse cible | Intonation | Pauses **dans** l’audio |
 | --- | --- | --- | --- | --- |
@@ -156,7 +157,7 @@ Proposition runtime (à mesurer en test utilisateur, pas à figer dans l’audio
 ### 1.7 Profil sonore de livraison
 
 - Master : **WAV mono 24 kHz 16-bit** (ou 48 kHz si le moteur le sort natif). Une fréquence par arbre, pas de mélange.
-- Paquet mobile : **Opus 24 kbit/s** (cible taille) **ou** MP3 24 kHz 64–96 kbit/s (compatibilité maximale). Décision à la maquette.
+- Paquet mobile : **Opus 24 kbit/s** (cible taille) **ou** MP3 24 kHz 64–96 kbit/s (compatibilité). L’API xAI documentée sort MP3 / WAV / PCM / μ-law / A-law ; **on transcode** vers Opus. Ne pas supposer un Opus natif xAI tant que ce n’est pas dans la doc lue.
 - Loudness initiale : **−19 LUFS** (mono). Crête vraie max **−1,5 dBTP**.
 - Pas de musique continue. Bruitages rares, plus faibles que la voix, jamais une récompense d’un choix dangereux.
 
@@ -190,25 +191,36 @@ foret/
         audio/
           fr-FR/
             <voice_id>/
-              <node_id>.<role>.wav
-              <node_id>.<role>.wav.sha256
+              <node_id>.<role>.wav          # master
+              <node_id>.<role>.opus         # paquet mobile
+              <node_id>.<role>.opus.sha256
         synthesis/
           <node_id>.<role>.request.json   # requête exacte (reproductibilité)
         qa/
           <node_id>.<role>.qa.json
+        licenses.json                   # moteur, voix, URL, date, usage commercial
         listen/                     # vue d’écoute générée, non publiée dans l’app
           racine.wav -> ../../audio/...
           choix_ch1/transition.wav -> ...
           ...
 ```
 
-Un fichier par combinaison :
+Un fichier par combinaison. Empreintes **séparées** dans le manifeste (on voit *quoi* a changé) :
 
 ```
-(node_id, rôle, texte approuvé, plan, locale, voix, moteur, version moteur)
+text_hash            # texte approuvé du nœud / rôle
+narration_hash       # segments du plan (pauses, wpm, emphases)
+engine_config_hash   # moteur + version + voix + speed + locale
+audio_hash           # fichier produit
 ```
 
-L’empreinte SHA-256 de cette combinaison est la **clé de cache**. Si rien n’a changé, on ne régénère pas et on ne refacture pas. Si un mot change, l’ancien fichier ne peut plus être publié sous la nouvelle `tree_version`. On n’écrase jamais une version publiée.
+On régénère **ce segment seulement** si `text_hash` ou `narration_hash` ou `engine_config_hash` change. L’arbre prend une nouvelle `tree_version` de manifeste **sans** reconstruire les nœuds intacts. On n’écrase jamais une version déjà publiée.
+
+Cohérence vocale :
+
+- **minimum** : un moteur + une voix pour **tout l’arbre** ;
+- **idéal** : une voix pour **toute la forêt** (identité du conteur Sentier) ;
+- changement de timbre **uniquement** si un personnage est nommé et que le JSON le dit. Pas de « Piper au récit / xAI à la question » dans le même arbre : l’enfant croit qu’un autre adulte parle, pile au moment où il doit écouter.
 
 ### 2.3 Vue d’écoute (ce que tu as demandé : forêt / arbres / branches)
 
@@ -311,7 +323,8 @@ Donc : le texte enfant reste du français quotidien. **À côté**, un plan neut
           },
           "pause_after_ms": 500
         }
-      ]
+      ],
+      "child_response": { "enabled": true, "wait_in_audio": false }
     }
   ]
 }
@@ -385,7 +398,7 @@ VOIX
 - Français quotidien, articulation nette, un peu plus lente qu’un adulte.
 - Chaude, calme, jamais moqueuse, jamais effrayée, jamais « dessin animé criard ».
 - N1 : très posé. N3 : un peu plus de vie, jamais précipité.
-- Même locuteur que les autres nœuds de {tree_id}, voix {voice_id}.
+- Même locuteur que TOUS les nœuds de {tree_id}, voix {voice_id}, même moteur.
 
 RÉGIME : {recit | choix | question | correction | conclusion}
 FRAMING : {standard | positive_only_critical}
@@ -396,8 +409,10 @@ RÈGLES
 - Correction : seulement la conduite sûre. Ne pas décrire un geste dangereux.
 - Conclusion : leçon affirmative + « L’histoire est finie. » Descente.
 - positive_only_critical : ralentir sur pieds / mains / trottoir / adulte. Pas de jeu rythmique.
-- Interdit : musique dominante, cri, rire, [laugh], volume loud, bruitage qui couvre les mots,
-  religion, politique, deux papas/mamans. Aucune balise interne ne doit être lue à voix haute.
+- Interdit vocal : musique dominante, cri, rire, [laugh], volume loud, bruitage qui couvre les mots.
+- Aucune balise interne ne doit être lue à voix haute.
+- Les règles éditoriales (famille racontée, religion, politique) sont dans REGLES.md / le validateur
+  de texte, PAS dans ce prompt. Le texte à dire est déjà APPROVED_TEXT.
 
 TEXTE (déjà compilé, respecte les balises) :
 {compiled_text}
@@ -469,7 +484,7 @@ Tarif public (docs xAI, 2026) : **15,00 USD / million de caractères**. Limite 1
 | 10 min | ~7 000 | ~0,11 USD |
 | 1 h unique | ~43 000 | ~0,65 USD |
 | **Corpus 260 h** | **~11,2 M** | **~170 USD** |
-| + 40 % régénérations / essais | ~15,7 M | **~235 USD** |
+| + essais / régénérations (budget réaliste) | — | **300–600 USD** |
 | ASR xAI pour QA (260 h) | — | ~26 USD à 0,10 USD/h REST |
 
 Ce n’est **pas** un argument pour tout écouter à la main : 260 h d’écoute = 260 h humaines. La revue est **échantillonnée** + ASR bloquant (VAL-AUD).
@@ -544,9 +559,9 @@ Fourchettes **par heure d’audio final** (planification, à confirmer par un be
 
 « Laisser Grok faire » **ne supprime pas** les tests, la revue du code ni l’écoute de validation. Pas 57 000 écoutes humaines : échantillon + ASR bloquant.
 
-### Scénario B — Local Piper d’abord, xAI sur choix + conclusions
+### Scénario B — Piper **arbre entier** (secours / hors-ligne)
 
-Si l’API n’est pas dispo au moment du bake, ou pour zéro coût. Même plan, autre adaptateur. Calage des pauses sur un master xAI de 1 arbre.
+Même `narration_plan`, autre adaptateur. **Tout** l’arbre en Piper, jamais un mélange Piper+xAI dans le même `tree_id`. Si l’API manque ou pour 0 €. Calage des pauses : on écoute un master xAI **de référence** (pilote), on ajuste le plan, on re-bake l’arbre entier dans **un** moteur.
 
 ### Scénario C — Tout local Kokoro/Melo
 
@@ -577,31 +592,43 @@ synthèse par (nœud, rôle) + cache SHA-256 + reprise
         ↓
 normalisation −19 LUFS / −1,5 dBTP + encode mobile
         ↓
-QA acoustique + ASR vs texte approuvé
+contrôles fichier (lisible, durée, clipping, silences, loudness)
         ↓
-écoute humaine selon matrice de risque (sécurité = toujours ; récit = échantillon)
+ASR vs texte approuvé + drapeaux de prononciation (prénoms, trottoir, stop, papa, maman)
         ↓
-manifest signé + paquet téléchargeable → APPROVED_PACKAGE
+écoute humaine : TOUTES les histoires critiques (SEC framing enhanced) ;
+                échantillon des histoires ordinaires
+        ↓
+APPROVED_AUDIO (tous nœuds accessibles OK)
+        ↓
+manifest signé + paquet → APPROVED_PACKAGE
 ```
 
-Le paquet n’est `APPROVED_PACKAGE` que si **tous** les nœuds accessibles sont validés. Une erreur bloquante sur une branche invalide l’arbre complet.
+`APPROVED_PACKAGE` exige `APPROVED_AUDIO` complet. Une erreur bloquante sur une branche invalide l’arbre. 260 h d’écoute intégrale = &gt; 32 jours : **interdit comme plan**. L’automatisation (ASR + acoustique) est le filtre ; l’oreille humaine est le filet sur le risque.
 
 | ID | Prio | Livrable | Sortie |
 | --- | --- | --- | --- |
 | AUD-TREE-001 | P0 | Schéma `narration_plan` | JSON Schema + fixtures valides/invalides. JSON histoires encore valides sans plan. |
-| AUD-TREE-002 | P0 | Schéma `manifest` audio | Graphe, assets, hashes, durées, versions |
-| AUD-TREE-003 | P0 | Compilateur graphe → 1 fichier / (nœud, rôle) | Pas de duplication par chemin |
+| AUD-TREE-002 | P0 | Schéma `manifest` audio | Graphe, `text_hash` / `narration_hash` / `engine_config_hash` / `audio_hash`, durées, versions |
+| AUD-TREE-003 | P0 | Compilateur graphe → 1 fichier / (nœud, rôle) | Pas de duplication par chemin. **Un moteur par arbre.** |
 | AUD-TREE-004 | P0 | Adaptateur xAI TTS | `language=fr`, balises autorisées, `XAI_API_KEY` jamais loggée |
-| AUD-TREE-005 | P0 | Cache, reprise, écriture atomique | Relance sans refacturer un nœud identique |
-| AUD-TREE-006 | P0 | Normalisation −19 LUFS / −1,5 dBTP + encode mobile | Master + paquet |
-| AUD-TREE-007 | P0 | QA : fichier lisible, durée, clipping, silences, ASR vs texte | Une erreur bloquante invalide l’arbre (politique actuelle) |
+| AUD-TREE-005 | P0 | Cache, reprise, écriture atomique | Relance sans refacturer un nœud dont les 3 hashes amont sont identiques |
+| AUD-TREE-006 | P0 | Normalisation −19 LUFS / −1,5 dBTP + encode mobile | Master WAV + Opus paquet |
+| AUD-TREE-007 | P0 | QA fichier + ASR + prononciations sensibles | Divergence bloquante ; rapport explicable |
 | AUD-TREE-008 | P0 | Dry-run coût / durée / taille | Zéro appel API |
-| AUD-TREE-009 | P0 | Vue `listen/` générée (liens) | `tree` Unix = contrat §2.3 sur TREE-SEC-001 + 1 atomique |
-| AUD-TREE-010 | P1 | Adaptateur Piper + benchmark Kokoro/Melo | Même corpus de 12–20 nœuds, RTF / RAM / note humaine |
-| AUD-TREE-011 | P1 | Écoute A/B enfants 3–4 et 5–6 + parents | Intelligibilité, question du premier coup, 5 puis 10 min d’attention, noms propres |
-| AUD-TREE-012 | P2 | Voix propriétaire (clone xAI, droits, contrat) | Seulement si les built-in ne suffisent pas |
+| AUD-TREE-009 | P0 | Vue `listen/` générée (liens) | Débogage seulement, pas le paquet app |
+| AUD-TREE-010 | P0 | `licenses.json` | Moteur, version, licence moteur, id voix, licence voix, URL, date, usage commercial |
+| AUD-TREE-011 | P0 | Statut `APPROVED_AUDIO` | Tous nœuds accessibles QA-OK avant paquet |
+| AUD-TREE-012 | P0 | Pilote comparatif | 1 ramifié + 12 atomiques, N1 et N3, xAI / Piper / Kokoro, **arbres entiers** |
+| AUD-TREE-013 | P1 | Écoute A/B enfants 3, 4, 5, 6 ans + parents | Intelligibilité, question du 1er coup, 5 puis 10 min, noms |
+| AUD-TREE-014 | P2 | Voix propriétaire (clone xAI, droits, contrat) | Si les built-in ne suffisent pas |
 
-Prototype de décision **avant** industrialisation : mini-arbre 12–20 nœuds (récit, action, question, choix 3 options, relance, correction, 2 conclusions) × 4 moteurs.
+**Pilote (bloquant avant tout bake de forêt).** Même nœuds, trois rendus complets (pas un moteur par type de nœud) :
+
+- 1 arbre ramifié complet (3×3×3) ;
+- 12 atomiques : au moins une leçon de sécurité, une émotion, une interaction, une correction, une conclusion ;
+- âges 3–4 et 5–6 ;
+- mesures : naturel FR, intelligibilité, question du premier coup, stabilité de timbre, prénoms, RTF, RAM/VRAM, taille, coût, taux de régénération.
 
 ---
 
@@ -610,7 +637,8 @@ Prototype de décision **avant** industrialisation : mini-arbre 12–20 nœuds (
 | Risque | Gravité | Mitigation |
 | --- | --- | --- |
 | xAI FR enfant trop « adulte » / trop vif | Majeure | A/B voix + `speed` + interdiction `[laugh]` ; fallback Piper |
-| Piper trop plat, enfant décroche | Majeure | xAI sur choix+conclusions, ou Kokoro si FR ok |
+| Piper trop plat, enfant décroche | Majeure | **Changer d’arbre entier** vers xAI (ou Kokoro si FR ok). Jamais un mix dans l’arbre. |
+| Mix Piper+xAI dans un arbre | Bloquante | Un moteur / une voix par `tree_id`. Contrôle compilateur. |
 | Kokoro FR illisible (`un`, liaisons) | Majeure | Test 20 phrases avant tout corpus |
 | Quota / 429 API | Majeure | Concurrence bornée, backoff, cache |
 | Grok non bit-identique à la régénération | Bloquante VAL-AUD si on régénère sans bump | Cache par hash ; régénérer = nouvelle `tree_version` |
@@ -639,7 +667,7 @@ Un fichier par champ parlé, adressé par `node_id`. Vue forêt/arbre/branches p
 Oui comme **vue d’écoute**. Non comme paquet publié (duplication, chemins, cache). §2.
 
 **Temps Grok vs open-source low-resource.**  
-xAI API : ~10 h–2 j machine, ~170–280 USD, goulot = QA humaine. Piper : une nuit, 0 €. Kokoro : 1–2 jours. XTTS : 1–2 semaines et hors licence. §5–6.
+xAI API : ~10 h–2 j machine, ~160–200 USD 1re passe, **300–600 USD** budget essais. Goulot = QA humaine (&gt; 32 jours si on écoute tout). Piper : ordre d’une nuit **si** bench OK, 0 €. Kokoro : 1–2 jours. XTTS : hors produit. §5–6.
 
 **Ressources synthétiseur.**  
 Piper : CPU, &lt; 0,5 Go RAM. Kokoro : &lt; 1 Go VRAM. xAI : 0 local. XTTS : 2–4 Go, juste, exclu. Bark/F5 : non.
@@ -655,13 +683,13 @@ Excellent pour **calibrer** 1 arbre. Mauvais comme usine. L’usine, c’est l�
 
 ---
 
-## 11. Décision à trancher après la maquette (pas maintenant)
+## 11. Décision à trancher après le pilote (pas maintenant)
 
-1. xAI TTS seul pour le MVP audio ?
-2. Hybride Piper (récit) + xAI (choix + conclusion) ?
-3. Piper seul (zéro API, qualité moyenne) ?
+1. xAI TTS pour tout le MVP commercial (candidat principal) ?
+2. Piper seul pour le MVP (zéro API, qualité moyenne, arbres entiers) ?
+3. ~~Hybride Piper récit + xAI choix dans le même arbre~~ — **retiré.** Interdit.
 
-Tant que ce n’est pas tranché : **les JSON restent publiables en texte** (`APPROVED_TEXT`). L’audio est un paquet à part (`APPROVED_PACKAGE`). Une seule erreur bloquante sur une branche invalide l’arbre complet.
+Tant que ce n’est pas tranché : **les JSON restent publiables en texte** (`APPROVED_TEXT`). L’audio suit `APPROVED_AUDIO` puis `APPROVED_PACKAGE`. Une erreur bloquante sur une branche invalide l’arbre complet.
 
 ---
 
@@ -681,7 +709,7 @@ Fichier source : collage intégral du 3 sept. 2026 (le premier envoi était tron
 | `*.request.json` + QA ASR par nœud | Reproductibilité et VAL-AUD. |
 | Version `tree_id/tree_version` | On n’écrase pas un paquet publié. |
 | Licences (Piper GPL-3.0 moteur, XTTS CPML, voix ≠ code) | Trous juridiques de la v1.0. |
-| Coût xAI 15 USD / M car. + dry-run | L’usine Grok devient **chiffrable** (~170–280 USD le corpus). |
+| Coût xAI 15 USD / M car. + dry-run | L’usine Grok devient **chiffrable** (~160–200 USD 1re passe, 300–600 USD budget). |
 | L’écoute humaine est plus longue que la synthèse | Corrige l’illusion « une nuit et c’est fini ». |
 | Types de nœuds production (REPROMPT, SAFE_CORRECTION…) | Mapping, pas un nouveau JSON histoire. |
 | Distinction choix narratif / question de sécurité | Déjà dans Sentier ; l’analyse le formule clairement. |
@@ -720,8 +748,39 @@ Fichier source : collage intégral du 3 sept. 2026 (le premier envoi était tron
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) — MIT
 - [Parler-TTS](https://github.com/huggingface/parler-tts)
 - Analyse ChatGPT `ETUDE_RESTITUTION_VOCALE_ARBRES.md` (3 sept. 2026) — non normative, filtrée en §12
+- Revue ChatGPT de l’analyse Grok (3 sept. 2026) — croisée en §14 ; cite souvent la v1.0 déjà corrigée
 
 ---
+
+---
+
+## 14. Revue ChatGPT de l’analyse Grok — point par point
+
+ChatGPT a relu **surtout la v1.0** (« SSML source de vérité », « pas d’API TTS », « régénérer l’arbre entier », arborescence récursive canonique). La v1.1/v1.2 avait déjà bougé. Ci-dessous : ce qui restait vraiment à corriger en v1.3.
+
+| # | Avis ChatGPT | État Sentier |
+| --- | --- | --- |
+| 1 | L’API xAI TTS existe (15 USD/M car., FR, balises) | **Déjà v1.1.** Budget v1.3 : 160–200 USD 1re passe, **300–600 USD** avec essais (plus prudent que 170–280). Formats natifs documentés : MP3/WAV/PCM/μ-law/A-law ; Opus = transcode. |
+| 2 | SSML ≠ source de vérité ; `narration_plan` + adaptateurs | **Déjà v1.1.** Verdict v1.3 le dit en gras : **0 % SSML comme source.** |
+| 3 | Stockage plat par `node_id`, récursion = debug | **Déjà v1.1** (`listen/`). Conservé. |
+| 4 | Ne pas régénérer l’arbre entier ; hashes séparés | Cache combiné dès v1.1. v1.3 **sépare** `text_hash` / `narration_hash` / `engine_config_hash` / `audio_hash`. |
+| 5 | XTTS-v2 CPML, hors commercial | **Déjà v1.1.** Rappel : ce n’est pas « seulement la VRAM ». |
+| 6 | Piper GPL-3.0 + licence **par voix** + bench avant planning | Moteur GPL dès v1.1. v1.3 : `licenses.json` obligatoire (voix, URL, date, commercial). Durées Piper = ordre de grandeur, **pas un jalon**. |
+| 7 | **Ne pas mélanger Piper et Grok dans une histoire** | **Nouveau, adopté.** Scénario B v1.2 était fragile. v1.3 : un moteur + une voix **par arbre** ; idéal une voix **forêt**. Mix = interdit. |
+| 8 | Silence de réponse hors fichier | **Déjà v1.1 §1.5.** `child_response.wait_in_audio: false` ajouté au plan. |
+| 9 | Retirer du prompt TTS « religion, politique, deux papas/mamans » | **Couche.** Adopté pour le **prompt TTS** (mauvaise couche). **Pas adopté** comme changement de `REGLES.md` / corpus : le modèle `father_mother_children` et l’absence de religion/politique dans l’audio enfant sont des règles **produit** déjà validées (Source Unique, 1445 histoires). Les rouvrir n’est pas `F-AUD-001`. ChatGPT a raison de ne pas les coller dans un prompt de voix. |
+
+**Ce que ChatGPT conserve (70 % conception vocale) — on est d’accord :** régimes, `choice_story` vs `question_lesson`, voix constante, options isolées, correction = conduite sûre, 1 fichier / nœud, manifeste, WAV→Opus, volume 57k / 260 h / ~3 Go, commencer par un ramifié + atomiques, WPM comme hypothèses.
+
+**Estimations (50 % à benchmarker) — on est d’accord :** aucun chiffre Piper/xAI n’entre dans un planning de sprint sans bench de 20 segments **sur cette machine**.
+
+**Architecture de stockage (ChatGPT : 30 %) :** si on jugeait la v1.0 récursive, d’accord. La v1.3 est déjà le modèle plat + manifeste + vue générée. On ne revient pas à la récursion canonique.
+
+**« Piper + SSML usine principale » :** c’était la v1.0. **Abandonnée.** Candidat MVP commercial = xAI TTS ; Piper = prévisualisation et secours, arbres entiers.
+
+**Goulot :** validation, pas génération. 260 h × 1 écoute = &gt; 32 jours. D’où ASR + acoustique + écoute **systématique du critique** + **échantillon du reste**.
+
+**Règle éditoriale (point 9), pour le fondateur — pas pour le TTS.** ChatGPT demande des formulations familiales inclusives. Sentier a choisi `father_mother_children` et l’absence de religion/politique/guerre/crime dans l’audio 3–6 ans (`REGLES.md` § Non négociable). Ce n’est pas une « règle vocale ». La changer = décision produit + éventuelle réécriture du corpus, hors de cette étude. Le compilateur audio **lit** des textes déjà `APPROVED_TEXT` ; il ne re-juge pas la famille.
 
 ---
 
@@ -762,8 +821,9 @@ Pas de duplication par chemin. La vue listen/ est générée (liens), pas publi�
 9. Master WAV puis Opus ou MP3 mobile normalisé (−19 LUFS, −1,5 dBTP).
    Ne jamais écraser une tree_version publiée.
 10. manifest.json : tree_id, version, root_node_id, edges, node_id, role, kind,
-    asset_path, duration_ms, sha256, locale, voice_id, provider, model_version,
-    source_hash, narration_plan_hash, qa_status.
+    asset_path, duration_ms, text_hash, narration_hash, engine_config_hash,
+    audio_hash, locale, voice_id, provider, model_version, qa_status.
+    licenses.json : moteur, voix, URL, date, usage commercial.
 11. QA : fichier lisible, durée plausible, clipping, silences, loudness,
     ASR vs texte. Une erreur bloquante invalide l’arbre.
 12. Dry-run : nœuds, caractères, durée, taille, coût xAI — zéro appel API.
@@ -784,4 +844,4 @@ Après code : exécuter les tests, donner les résultats exacts. Ne merge pas.
 
 ---
 
-*Fin de l’étude v1.2. Prochaine itération : maquette `listen/TREE-SEC-001/` + 1 atomique, quatre moteurs, compte-rendu d’écoute. Pas de merge `main`.*
+*Fin de l’étude v1.3. Prochaine itération : pilote 1 ramifié + 12 atomiques, trois moteurs, un moteur par rendu d’arbre, compte-rendu d’écoute. Pas de merge `main`. Pas de fine-tune.*
