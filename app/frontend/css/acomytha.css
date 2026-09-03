@@ -555,9 +555,9 @@ h3 {
 
 .c-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 0.8rem;
-  max-width: 800px;
+  max-width: 480px;
   margin: 0 auto 2rem;
   padding: 0 1.4rem;
 }

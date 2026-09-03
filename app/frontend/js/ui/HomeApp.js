@@ -26,7 +26,7 @@ export class HomeApp extends Component {
           </nav>
         </header>
         <section class="c-hero">
-          <h1>Une multitude d’histoires.<br/>Gratuitement.</h1>
+          <h1>Une multitude d’histoires.</h1>
           <p>Créer un compte. Les transmettre à votre enfant. Le laisser s’immerger.</p>
           <a class="c-btn c-btn--lg" href="#/inscription">Créer un compte</a>
         </section>
@@ -100,9 +100,7 @@ export class HomeApp extends Component {
       }
       this.querySelector("#stats").innerHTML = `
         <div><b>${stats.stories}</b><span>histoires</span></div>
-        <div><b>${stats.themes}</b><span>thèmes</span></div>
-        <div><b>3–6</b><span>ans</span></div>
-        <div><b>${this.previewSeconds} s</b><span>d’aperçu</span></div>`;
+        <div><b>${stats.themes}</b><span>thèmes</span></div>`;
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");
@@ -154,7 +152,7 @@ export class HomeApp extends Component {
       </div>
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}</p>
-      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Écouter ${this.previewSeconds} s</button>` : ""}`;
+      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Écouter</button>` : ""}`;
     return el;
   }
 
@@ -173,14 +171,14 @@ export class HomeApp extends Component {
       preview: true,
       maxSeconds: this.previewSeconds,
       onDone: () => {
-        btn.textContent = `Écouter ${this.previewSeconds} s`;
+        btn.textContent = "Écouter";
       },
     });
     try {
       await this.engine.run(storyId);
     } catch (e) {
       this.querySelector("#msg").textContent = e.message;
-      btn.textContent = `Écouter ${this.previewSeconds} s`;
+      btn.textContent = "Écouter";
     }
   }
 
