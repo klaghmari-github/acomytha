@@ -449,6 +449,59 @@ h3 {
   min-height: 2.5rem;
 }
 
+.c-links {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  max-height: 8.5rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.c-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.88rem;
+}
+.c-links a:hover {
+  text-decoration: underline;
+}
+
+.c-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(27, 36, 48, 0.45);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.c-modal[hidden] {
+  display: none;
+}
+.c-modal__box {
+  width: min(420px, 100%);
+  max-height: 90dvh;
+  overflow: auto;
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+.c-modal__close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 0.6rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.c-modal .c-card {
+  box-shadow: none;
+}
+
 .c-nowbar {
   position: sticky;
   bottom: 0;

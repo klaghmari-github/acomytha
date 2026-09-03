@@ -61,6 +61,9 @@ export class HomeApp extends Component {
           <span id="nowtitle"></span>
           <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
         </div>
+        <div class="c-modal" id="modal" hidden>
+          <div class="c-modal__box" id="modalbox"></div>
+        </div>
       </div>`;
     this.on(this.querySelector("#q"), "input", () => this.scheduleRender());
     this.on(this.querySelector("#domain"), "change", () => this.render());
@@ -68,6 +71,10 @@ export class HomeApp extends Component {
     this.on(this.querySelector("#kind"), "change", () => this.render());
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
+    this.on(this.querySelector("#modal"), "click", (e) => this.onModalClick(e));
+    this.on(window, "keydown", (e) => {
+      if (e.key === "Escape") this.closeModal();
+    });
     await this.boot();
   }
 
@@ -138,21 +145,42 @@ export class HomeApp extends Component {
     for (const s of list) grid.append(this.card(s));
   }
 
+  related(s) {
+    if (s.kind !== "ramifiee" || !s.lesson_id) return [];
+    return this.allStories.filter((x) => x.lesson_id === s.lesson_id && x.story_id !== s.story_id);
+  }
+
   card(s) {
     const el = document.createElement("article");
     el.className = "c-card";
     const theme = this.domainNames.get(s.domain) || "";
     const where = [theme, s.setting].filter(Boolean).join(" · ");
     const form = formLabel(s);
+    const rel = this.related(s);
+    const links = rel.length
+      ? `<ul class="c-links">${rel
+          .map(
+            (r) =>
+              `<li><a href="#/" data-open="${r.story_id}">${escapeHtml(r.title)}</a></li>`
+          )
+          .join("")}</ul>`
+      : "";
     el.innerHTML = `
       ${form ? `<div class="o-row"><span class="c-pill c-pill--ram">${form}</span></div>` : ""}
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
-      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}`;
+      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}
+      ${links}`;
     return el;
   }
 
   onGridClick(e) {
+    const open = e.target.closest("[data-open]");
+    if (open) {
+      e.preventDefault();
+      this.openModal(open.dataset.open);
+      return;
+    }
     const play = e.target.closest("[data-play]");
     if (!play) return;
     const id = play.dataset.play;
@@ -161,6 +189,45 @@ export class HomeApp extends Component {
       return;
     }
     this.preview(id);
+  }
+
+  onModalClick(e) {
+    if (e.target.id === "modal" || e.target.closest("[data-close]")) {
+      this.closeModal();
+      return;
+    }
+    const open = e.target.closest("[data-open]");
+    if (open) {
+      e.preventDefault();
+      this.openModal(open.dataset.open);
+      return;
+    }
+    const play = e.target.closest("[data-play]");
+    if (!play) return;
+    const id = play.dataset.play;
+    if (this.playingId === id) this.stopPlay();
+    else this.preview(id);
+  }
+
+  openModal(storyId) {
+    const s = this.allStories.find((x) => x.story_id === storyId);
+    if (!s) return;
+    const modal = this.querySelector("#modal");
+    const box = this.querySelector("#modalbox");
+    box.replaceChildren();
+    const close = document.createElement("button");
+    close.className = "c-modal__close";
+    close.type = "button";
+    close.dataset.close = "1";
+    close.textContent = "Fermer";
+    box.append(close);
+    box.append(this.card(s));
+    modal.hidden = false;
+  }
+
+  closeModal() {
+    const modal = this.querySelector("#modal");
+    if (modal) modal.hidden = true;
   }
 
   showBar(id, title) {
