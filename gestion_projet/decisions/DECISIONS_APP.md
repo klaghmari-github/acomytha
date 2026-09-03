@@ -17,7 +17,9 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D11 | F-AUD-007 | Immersion **générale**. Colonne `sons` (vide = silence). Ordre : bruit seul, puis récit au calme. Jamais parler dans le bruit, jamais nappe sur tout le passage. |
 | D12 | F-NAR-008 | Reconstruire les textes autour d’un fil rouge. L’xlsx n’est touché qu’après fusion d’agents. Passe 2 : fusion **éditoriale** (un moment par chunk, 3–6 ans, leçon vécue en fin). Le merge « plus long gagne » recolle un cours : on ne s’en sert pas comme vérité. |
 | D13 | Marque | Le produit s’appelle **AcoMytha**. « Sentier » est retiré de l’UI, du code, des docs et des comptes démo. |
-| D14 | UI parent | Pas de métaphore forêt/arbre. Vocabulaire parent : histoires, sélection, courte / avec des choix. Palette claire, accent bleu. |
-| D15 | Vitrine + A | Accueil public, inscription, aperçu 10 s. Monnaie A (paramètres admin). Stripe plus tard. |
+| D14 | UI parent | Pas de métaphore forêt/arbre dans l’UI. Histoires, sélection, interaction, ramifications. Palette claire, accent bleu. |
+| D15 | Vitrine + A | Accueil public, inscription e-mail/mdp, aperçu 10 s (non affiché). Pas « gratuitement », pas pastille Courte, pas âge sur les cartes. |
 | D16 | Troupe enfant | Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Pas d’autre prénom d’enfant. Une histoire = 1 héros, au plus 1 autre enfant, papa/maman. |
 | D17 | Durée | Histoire ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande. |
+| D18 | PIN | 4 chiffres, modifiable par le parent. Même code pour entrer en mode enfant et en sortir. |
+| D19 | Libellés | Interaction = questions. Ramifications = lance d’autres histoires (liens + pop-up vitrine). |

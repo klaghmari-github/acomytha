@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.1 — 3 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.3 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -9,7 +9,7 @@ Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** j
 
 Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction fermée · 4 renouvellement · 5 leçons parentales · 6–7 hors MVP.
 
-### Statut (3 sept. 2026)
+### Statut (4 sept. 2026)
 
 | ID | Statut | Note |
 | --- | --- | --- |
@@ -24,7 +24,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-SEC-003 | **développé** | 1 appareil / clé, alerte admin, reset. |
 | F-SEC-002 | **développé** | Mode enfant sans catalogue. |
 | F-ADM-004 | **développé** | Console stats, alertes, comptes. |
-| F-PAR-001 | **développé** | Liste, filtres, forêt. |
+| F-PAR-001 | **développé** | Liste, filtres, sélection enfant. |
 | F-ENF-001 | **développé** | File parentale + lecteur. |
 | F-AUD-004 | **développé** | AES-GCM `.chk`, déchiffre RAM, prefetch N+1. |
 | F-PLY-001 | **développé** | Lecteur graphe jour/nuit, délai 3 s. |
@@ -32,10 +32,13 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
 | F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
-| F-ACC-003 | **en cours** | Inscription parent (email + mot de passe). Pas de « clé » dans l’UI. |
-| F-APP-002 | **en cours** | Page d’accueil vitrine, sans connexion. Catalogue + aperçu 10 s. |
-| F-PAY-001 | **prévu** | Stripe (recharge €). Non branché. L’UI affiche le change € → A. |
-| F-PAY-002 | **en cours** | Monnaie A, solde, achats histoires / séries, commandes, voix. Paramètres admin. |
+| F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
+| F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
+| F-APP-002 | **développé** | Vitrine publique, catalogue, aperçu 10 s, pop-ups de ramifications. |
+| F-PAY-001 | **prévu** | Stripe (recharge €). Non branché. Montants 10–50 € affichés. |
+| F-PAY-002 | **développé** | Monnaie A, solde, achats, commandes, voix. Paramètres admin. |
+| F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
+| F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
 ---
 
@@ -51,10 +54,16 @@ Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail 
 | F-SEC-003 | Sécurité | Une clé d’accès = un appareil, alerte admin sinon | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-SEC-002 | Sécurité | Cloisonnement mode enfant (PIN, pas de catalogue) | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ADM-004 | Admin | Console : comptes, alertes appareil, reset liaison | P0 | 2 | STRAT-005 | F-SEC-003 |
-| F-PAR-001 | Parent | Liste, filtres, forêt (histoires choisies) | P0 | 2 | STRAT-005 | F-DAT-001 |
+| F-PAR-001 | Parent | Liste, filtres, sélection des histoires enfant | P0 | 2 | STRAT-005 | F-DAT-001 |
 | F-ENF-001 | Enfant | Déroule uniquement la forêt parentale | P0 | 2 | STRAT-005 | F-SEC-002, F-PAR-001 |
 | F-AUD-004 | Audio | AES-GCM, déchiffre en RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-DAT-001, F-SEC-003 |
 | F-PLY-001 | Lecture | Lecteur écran pauvre, graphe jour/nuit, délai 3 s | P0 | 2 | STRAT-004 | F-AUD-004, F-ENF-001 |
+| F-APP-002 | App | Vitrine publique, aperçu, pop-ups ramifications | P0 | 2 | STRAT-005 | F-DAT-001 |
+| F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
+| F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
+| F-PAY-002 | Boutique | Monnaie A, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
+| F-PLY-002 | Lecture | Arrêt visible + durée sur les cartes | P0 | 2 | STRAT-004 | F-PLY-001 |
+| F-PAR-002 | Parent | Libellés interaction / ramifications | P0 | 2 | STRAT-005 | F-PAR-001 |
 
 ### F-APP-001 — Socle
 
@@ -249,37 +258,56 @@ Graphe git : une branche par feature, rebase, fast-forward `main` (consigne 3 se
 
 ---
 
-## Compte, vitrine, monnaie A (v3.2)
+## Compte, vitrine, monnaie A (v3.3)
 
-Le parent ne connaît **que** l’e-mail et le mot de passe. Jamais de « clé », jamais d’arbre / forêt dans l’UI. Tous les montants ci-dessous sont des **paramètres admin** (valeurs par défaut indiquées).
+Le parent ne connaît **que** l’e-mail et le mot de passe. Jamais de « clé », jamais de vocabulaire atelier (arbre / forêt) dans l’UI. Tous les montants sont des **paramètres admin**.
 
 ### F-ACC-003 — Inscription
 
-Formulaire public : e-mail, mot de passe, prénom. Crée le foyer (parent + profil enfant, PIN `2468` par défaut, paramètre). À l’activation : crédit offert `welcome_credit_eur` (défaut **10 €**) converti en A au taux de la tranche 1–10 €.
+Formulaire public : **E-mail** + mot de passe seulement (pas de prénom / nom). Crée le foyer (parent + profil enfant, PIN `2468` par défaut, paramètre `default_child_pin`). À l’activation : crédit `welcome_credit_eur` (défaut **10 €**) → A au taux 1–10 €.
 
-Connexion : e-mail + mot de passe. Si le compte est déjà ouvert sur un autre appareil : *« Ce compte est déjà ouvert sur un autre appareil. Écrivez-nous si vous avez changé de téléphone. »* L’admin est alerté (F-SEC-003), le parent ne voit pas le mot « clé ».
+Connexion : e-mail + mot de passe. Compte déjà ouvert ailleurs : *« Ce compte est déjà ouvert sur un autre appareil. Écrivez-nous si vous avez changé de téléphone. »* Pas le mot « clé ».
+
+### F-ACC-004 — Code à 4 chiffres
+
+Le parent modifie le PIN (actuel + nouveau + confirmation). Exactement **4 chiffres**. Le **même** code sert à passer en mode enfant **et** à revenir au parent.
 
 ### F-APP-002 — Accueil vitrine
 
-Sans connexion. **Même catalogue** qu’après connexion (recherche, thème, âge, courte / avec des choix). L’écoute est un **aperçu de `preview_seconds` (défaut 10 s)** par histoire.
+Sans connexion. Catalogue filtrable (recherche, thème, âge en **filtre seulement**, forme). Aperçu audio `preview_seconds` (défaut 10 s), **sans l’afficher** comme argument de vente.
 
-L’accueil **séduit**, ce n’est pas un tutoriel. On parle de la **gratuité**, pas du paiement. Le paiement n’apparaît qu’après compte + aperçu.
+L’accueil **séduit**, ce n’est pas un tutoriel. **Pas** le mot « gratuitement ». **Pas** de formulaire « Proposez une histoire ». **Pas** de pastille « Courte ». **Pas** d’âge sur les cartes (l’âge reste en donnée + filtre).
 
-Contenu :
+Contenu affiché :
 
-- Créer un compte. Accéder à une multitude d’histoires. Gratuitement.
-- Choisir les histoires et les leçons à transmettre. Mode enfant : l’enfant s’immerge.
-- L’enfant ne fait pas qu’écouter.
-- Jour : plus d’interaction. Nuit : plus calme.
-- On apprend à mieux vivre.
-- Proposez vos idées d’histoires.
-- Statistiques du catalogue (nombre d’histoires, thèmes, âges).
+- Titre : *Une multitude d’histoires.*
+- *Créer un compte. Les transmettre à votre enfant. Le laisser s’immerger.*
+- Stats : nombre d’histoires, nombre de thèmes (pas 3–6 ans, pas 10 s d’aperçu).
+- *Votre enfant ne fait pas qu’écouter.*
+- *Jour : plus d’interaction. Nuit : plus calme.*
+- *Offrez à votre enfant l’opportunité d’apprendre par l’histoire.*
 
-Une **série avec des choix** (un arbre et ses branches, côté atelier) est offerte : plusieurs chemins gratuits. Paramètre `free_story_ids` (défaut `TREE-SEC-001`).
+Histoires ramifiées : liste de **liens** vers les autres histoires de la même leçon ; clic → **pop-up** avec le panneau de cette histoire (écoute, liens).
+
+Libellés cartes (F-PAR-002) : **Avec interaction** si passages-questions ; **Avec ramifications vers d’autres histoires** si l’histoire en lance d’autres. Rien d’autre.
+
+Histoire offerte (atelier) : paramètre `free_story_ids` (défaut `TREE-SEC-001`).
+
+### F-PAR-002 — Libellés catalogue
+
+| Condition | Libellé UI |
+| --- | --- |
+| Passages avec questions | Avec interaction |
+| Peut lancer d’autres histoires (`kind=ramifiee`) | Avec ramifications vers d’autres histoires |
+| Sinon | pas de pastille sur la vitrine |
+
+### F-PLY-002 — Arrêt et durée
+
+Pendant l’écoute : barre collée **Arrêt** (et bouton carte). Stop coupe l’audio. Chaque carte affiche la **durée** (minutes). L’âge n’est pas affiché sur la carte.
 
 ### F-PAY-001 — Stripe (prévu, pas branché)
 
-Recharge du solde en euros. L’écran parent montre les montants et les A obtenus. Le paiement carte n’est **pas** implémenté. Branchement Stripe plus tard.
+Recharge : boutons **10, 20, 30, 40, 50 €** + A obtenus. Paiement carte **non** implémenté.
 
 ### F-PAY-002 — Monnaie A et boutique
 
