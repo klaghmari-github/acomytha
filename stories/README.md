@@ -1,4 +1,4 @@
-# Corpus d’histoires Sentier
+# Corpus d’histoires AcoMytha
 
 Un **Excel par arbre** (`arbres/<tree_id>.xlsx`). Une histoire = un chemin racine→feuille. Un arbre = toutes les branches.
 

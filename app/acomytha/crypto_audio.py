@@ -10,7 +10,7 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.hashes import SHA256
 from cryptography.hazmat.primitives.kdf.hkdf import HKDF
 
-from sentier.settings import Settings
+from acomytha.settings import Settings
 
 MAGIC = b"SNT01"
 
@@ -32,7 +32,7 @@ class AudioVault:
         return key
 
     def story_key(self, story_id: str) -> bytes:
-        hkdf = HKDF(algorithm=SHA256(), length=32, salt=b"sentier-story", info=story_id.encode("utf-8"))
+        hkdf = HKDF(algorithm=SHA256(), length=32, salt=b"acomytha-story", info=story_id.encode("utf-8"))
         return hkdf.derive(self.master)
 
     def story_key_b64(self, story_id: str) -> str:

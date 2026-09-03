@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 
 from sqlalchemy.orm import Session
 
-from sentier.models import DeviceAlert, DeviceBinding, User
+from acomytha.models import DeviceAlert, DeviceBinding, User
 
 
 class DeviceGuard:

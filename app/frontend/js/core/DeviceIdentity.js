@@ -1,7 +1,7 @@
 /** UUID d'appareil persisté. Une clé serveur ne peut lier qu'un id. */
 
 export class DeviceIdentity {
-  static KEY = "sentier.device_id";
+  static KEY = "acomytha.device_id";
 
   static get() {
     let id = localStorage.getItem(this.KEY);

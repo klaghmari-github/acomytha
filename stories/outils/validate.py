@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validateur déterministe Sentier — CHILD_AUDIO, graphe, contrat pédagogique."""
+"""Validateur déterministe AcoMytha — CHILD_AUDIO, graphe, contrat pédagogique."""
 from __future__ import annotations
 
 import json

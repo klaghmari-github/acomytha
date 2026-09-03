@@ -7,8 +7,8 @@ from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from sentier.api.deps import AuthContext, get_db, require_roles
-from sentier.models import DeviceAlert, DeviceBinding, User
+from acomytha.api.deps import AuthContext, get_db, require_roles
+from acomytha.models import DeviceAlert, DeviceBinding, User
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
@@ -108,7 +108,7 @@ def reset_device(user_id: int, request: Request, _auth: AuthContext = Depends(re
 
 @router.get("/stats")
 def stats(_auth: AuthContext = Depends(require_roles("admin")), db: Session = Depends(get_db)):
-    from sentier.models import Chunk, Story
+    from acomytha.models import Chunk, Story
 
     return {
         "users": db.query(User).count(),

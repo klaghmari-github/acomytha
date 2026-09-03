@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from sentier.models import Chunk
+from acomytha.models import Chunk
 
 
 class StoryGraph:

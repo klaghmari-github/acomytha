@@ -171,7 +171,7 @@ def write_lecons_xlsx(lessons: list[dict], dest: Path):
     info["A1"].font = info["B1"].font = HFONT
     for i, (k, v) in enumerate(
         [
-            ("document", "referentiel leçons Sentier"),
+            ("document", "referentiel leçons AcoMytha"),
             ("n_lecons", len(lessons)),
             ("n_domaines", len(doms)),
             ("n_sous_domaines", len(subs)),

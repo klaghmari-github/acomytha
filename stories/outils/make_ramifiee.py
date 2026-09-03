@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Construit un arbre ramifié 3×3×3 (27 feuilles) autour d'une leçon Sentier."""
+"""Construit un arbre ramifié 3×3×3 (27 feuilles) autour d'une leçon AcoMytha."""
 from __future__ import annotations
 
 import argparse

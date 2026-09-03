@@ -17,7 +17,7 @@ export class ParentApp extends Component {
     this.innerHTML = `
       <div class="s-shell">
         <aside class="s-rail">
-          <div class="c-mark"><strong>Sentier</strong><span>espace parent</span></div>
+          <div class="c-mark"><strong>AcoMytha</strong><span>espace parent</span></div>
           <nav>
             <a href="#/parent" class="is-on">Histoires</a>
             <a href="#/enfant">Mode enfant</a>
@@ -44,7 +44,7 @@ export class ParentApp extends Component {
             <select id="kind">
               <option value="">Forme</option>
               <option value="atomic">Clairière</option>
-              <option value="ramifiee">Sentier ramifié</option>
+              <option value="ramifiee">Histoire ramifiée</option>
             </select>
             <button class="c-btn c-btn--ghost" id="refresh">Filtrer</button>
           </div>
@@ -158,4 +158,4 @@ function escapeHtml(s) {
     .replaceAll(">", "&gt;");
 }
 
-customElements.define("sentier-parent", ParentApp);
+customElements.define("acomytha-parent", ParentApp);

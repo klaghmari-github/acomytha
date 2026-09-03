@@ -11,7 +11,7 @@ export class AdminApp extends Component {
     this.innerHTML = `
       <div class="s-shell s-shell--admin">
         <aside class="s-rail">
-          <div class="c-mark"><strong>Sentier</strong><span>console</span></div>
+          <div class="c-mark"><strong>AcoMytha</strong><span>console</span></div>
           <nav>
             <a href="#/admin" class="is-on">Veille</a>
             <a href="#/parent">Vue parent</a>
@@ -140,4 +140,4 @@ function escapeHtml(s) {
     .replaceAll(">", "&gt;");
 }
 
-customElements.define("sentier-admin", AdminApp);
+customElements.define("acomytha-admin", AdminApp);

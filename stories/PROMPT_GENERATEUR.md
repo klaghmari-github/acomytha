@@ -1,4 +1,4 @@
-# Brief générateur d’histoires Sentier
+# Brief générateur d’histoires AcoMytha
 
 Lis `stories/REGLES.md`, `stories/referentiel/lecons.xlsx`, `stories/referentiel/lecon_histoires.xlsx` et un exemple `stories/arbres/ATOM-SAN.ALI.001-01.xlsx`.
 

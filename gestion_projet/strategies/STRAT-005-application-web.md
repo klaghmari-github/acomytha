@@ -1,4 +1,4 @@
-# STRAT-005 — Application web Sentier
+# STRAT-005 — Application web AcoMytha
 
 **Référencé par :** `F-APP-001`, `F-ACC-001`, `F-SEC-002`, `F-SEC-003`, `F-ADM-004`, `F-PAR-001`, `F-ENF-001`, `F-AUD-004`, `F-PLY-001`.  
 **Décisions datées :** 3 septembre 2026 (fondateur absent — prises et notées, pas de questionnaire).
@@ -24,7 +24,7 @@ L’application web est le **premier client livrable** : catalogue, comptes, for
 3. **Ping licence à chaque session.** Même si les `.chk` sont en cache, une session de lecture commence par `GET /api/me`. Pas de lecture anonyme.
 4. **Déchiffrement en RAM seulement.** Web Crypto AES-GCM → `ArrayBuffer` → `Blob` révoqué après lecture. Jamais de MP3 en `localStorage` / IndexedDB.
 5. **Catalogue SQL = source runtime.** Les xlsx restent l’atelier. Import au premier démarrage (`F-DAT-001`).
-6. **Comptes de démo locaux** (changeables par env) : `admin@sentier.local` / `sentier-admin`, `parent@sentier.local` / `sentier-parent`, PIN enfant `2468`.
+6. **Comptes de démo locaux** (changeables par env) : `admin@acomytha.local` / `acomytha-admin`, `parent@acomytha.local` / `acomytha-parent`, PIN enfant `2468`.
 7. **Design « sous-bois doré ».** Parent : papier crème, mousse, miel. Admin : encre et or. Enfant : crépuscule, très peu de chrome, cibles ≥ 64 px.
 8. **Graphe joué côté client.** Le serveur envoie le graphe (sans texte enfant) + les blobs chiffrés. Le moteur JS applique jour / nuit / 3 s.
 

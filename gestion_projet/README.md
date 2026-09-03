@@ -1,10 +1,10 @@
-# Sentier — gestion de projet
+# AcoMytha — gestion de projet
 
 Un produit, peu de documents. Chaque fichier a un rôle unique. Les features **pointent** vers les stratégies ; elles ne les recopient pas.
 
 | Fichier | Rôle |
 | --- | --- |
-| [`specification/Sentier_Specification.md`](specification/Sentier_Specification.md) | **Spec unique** : produit, public, règles, leçons, runtime. Fusionne les anciens docx/xlsx de cadrage. |
+| [`specification/AcoMytha_Specification.md`](specification/AcoMytha_Specification.md) | **Spec unique** : produit, public, règles, leçons, runtime. Fusionne les anciens docx/xlsx de cadrage. |
 | [`backlog/Features.md`](backlog/Features.md) | Backlog développable (`F-…`). Une ligne = une branche Git. |
 | [`strategies/STRAT-001-validation.md`](strategies/STRAT-001-validation.md) | Comment un texte / un audio est accepté ou refusé. |
 | [`strategies/STRAT-002-audio.md`](strategies/STRAT-002-audio.md) | MP3, rythme, Piper (0 € hors Heavy), chiffrement, lecture RAM. |

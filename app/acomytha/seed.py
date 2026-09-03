@@ -5,10 +5,10 @@ from __future__ import annotations
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from sentier.catalog import CatalogImporter
-from sentier.models import ForestEntry, Story, User
-from sentier.security import PasswordHasher
-from sentier.settings import Settings
+from acomytha.catalog import CatalogImporter
+from acomytha.models import ForestEntry, Story, User
+from acomytha.security import PasswordHasher
+from acomytha.settings import Settings
 
 
 class Bootstrap:

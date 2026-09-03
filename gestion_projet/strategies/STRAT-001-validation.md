@@ -1,7 +1,7 @@
 # STRAT-001 — Validation
 
 **Référencé par :** `F-VAL-001`, `F-VAL-002`, `F-NEU-005`, `F-GEN-002`, `F-AUD-002`.  
-**Règles métier :** `specification/Sentier_Specification.md` §3, `stories/REGLES.md`.
+**Règles métier :** `specification/AcoMytha_Specification.md` §3, `stories/REGLES.md`.
 
 ## 1. Principe
 

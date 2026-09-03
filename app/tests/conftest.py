@@ -6,8 +6,8 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from sentier.main import create_app
-from sentier.settings import Settings
+from acomytha.main import create_app
+from acomytha.settings import Settings
 
 REPO = Path(__file__).resolve().parents[2]
 
@@ -31,7 +31,7 @@ def settings(tmp_path: Path) -> Settings:
     s.data_dir.mkdir()
     s.chk_dir = s.data_dir / "chk"
     s.chk_dir.mkdir()
-    s.db_path = s.data_dir / "sentier.sqlite"
+    s.db_path = s.data_dir / "acomytha.sqlite"
     s.master_key_path = s.data_dir / "master.key"
     s.arbres_dir = arbres
     s.audio_dir = tmp_path / "audio"

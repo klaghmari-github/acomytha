@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""JSON Sentier → un .xlsx par arbre. Décisions : stories/DECISIONS_EXCEL.md"""
+"""JSON AcoMytha → un .xlsx par arbre. Décisions : stories/DECISIONS_EXCEL.md"""
 from __future__ import annotations
 
 import json

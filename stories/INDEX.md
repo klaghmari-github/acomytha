@@ -1,4 +1,4 @@
-# Index du corpus Sentier
+# Index du corpus AcoMytha
 
 Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 

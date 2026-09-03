@@ -16,7 +16,7 @@ export class ChildApp extends Component {
     this.innerHTML = `
       <section class="s-child">
         <header>
-          <h1>Sentier</h1>
+          <h1>AcoMytha</h1>
           <div class="o-row">
             <button class="c-btn c-btn--ghost" id="mode">Jour</button>
             <button class="c-btn c-btn--ghost" id="back">Parent</button>
@@ -153,4 +153,4 @@ export class ChildApp extends Component {
   }
 }
 
-customElements.define("sentier-child", ChildApp);
+customElements.define("acomytha-child", ChildApp);

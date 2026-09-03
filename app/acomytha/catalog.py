@@ -8,8 +8,8 @@ from openpyxl import load_workbook
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
-from sentier.models import Chunk, Lesson, Story
-from sentier.settings import Settings
+from acomytha.models import Chunk, Lesson, Story
+from acomytha.settings import Settings
 
 
 class CatalogImporter:

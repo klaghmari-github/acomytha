@@ -5,16 +5,16 @@ import "./ui/ParentApp.js";
 import "./ui/AdminApp.js";
 import "./ui/ChildApp.js";
 
-class SentierApp {
+class AcoMythaApp {
   constructor(root) {
     this.root = root;
     this.api = new ApiClient("/api");
     this.router = new Router(root);
     this.router
-      .on(/^#\/entrer\/?$/, () => this.show("sentier-login"))
-      .on(/^#\/parent\/?$/, () => this.guard(["parent", "admin"], "sentier-parent"))
-      .on(/^#\/admin\/?$/, () => this.guard(["admin"], "sentier-admin"))
-      .on(/^#\/enfant\/?$/, () => this.guard(["parent", "child"], "sentier-child"));
+      .on(/^#\/entrer\/?$/, () => this.show("acomytha-login"))
+      .on(/^#\/parent\/?$/, () => this.guard(["parent", "admin"], "acomytha-parent"))
+      .on(/^#\/admin\/?$/, () => this.guard(["admin"], "acomytha-admin"))
+      .on(/^#\/enfant\/?$/, () => this.guard(["parent", "child"], "acomytha-child"));
     this.router.resolve();
   }
 
@@ -39,4 +39,4 @@ class SentierApp {
   }
 }
 
-window.sentier = new SentierApp(document.getElementById("app"));
+window.acomytha = new AcoMythaApp(document.getElementById("app"));

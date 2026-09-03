@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from fastapi import Depends, HTTPException, Request
 from sqlalchemy.orm import Session
 
-from sentier.models import SessionToken, User
+from acomytha.models import SessionToken, User
 
 
 @dataclass

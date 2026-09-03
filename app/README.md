@@ -1,4 +1,4 @@
-# Application web Sentier
+# Application web AcoMytha
 
 Forêt narrative audio : parent, enfant, admin. STRAT-005.
 
@@ -7,15 +7,15 @@ Forêt narrative audio : parent, enfant, admin. STRAT-005.
 Depuis la racine du dépôt :
 
 ```bash
-PYTHONPATH=app python -m uvicorn sentier.main:create_app --factory --host 127.0.0.1 --port 8787
+PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787
 ```
 
 Ouvrir http://127.0.0.1:8787
 
 | Rôle | Adresse | Clé |
 | --- | --- | --- |
-| Parent | `parent@sentier.local` | `sentier-parent` |
-| Admin | `admin@sentier.local` | `sentier-admin` |
+| Parent | `parent@acomytha.local` | `acomytha-parent` |
+| Admin | `admin@acomytha.local` | `acomytha-admin` |
 | Enfant | depuis l’espace parent → Mode enfant | PIN `2468` |
 
 Premier démarrage : import des xlsx `stories/arbres/` vers SQLite (`app/data/`, gitignoré).

@@ -6,9 +6,9 @@ from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from sentier.api.deps import AuthContext, get_auth, get_db
-from sentier.devices import DeviceConflict, DeviceGuard
-from sentier.models import User
+from acomytha.api.deps import AuthContext, get_auth, get_db
+from acomytha.devices import DeviceConflict, DeviceGuard
+from acomytha.models import User
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 

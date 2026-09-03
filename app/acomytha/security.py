@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 
 from sqlalchemy.orm import Session
 
-from sentier.models import SessionToken, User
+from acomytha.models import SessionToken, User
 
 
 class PasswordHasher:

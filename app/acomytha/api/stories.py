@@ -7,10 +7,10 @@ from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from sentier.api.deps import AuthContext, get_db, require_roles
-from sentier.catalog import list_stories, story_to_dict
-from sentier.graph import StoryGraph
-from sentier.models import Chunk, ForestEntry, Lesson, Story
+from acomytha.api.deps import AuthContext, get_db, require_roles
+from acomytha.catalog import list_stories, story_to_dict
+from acomytha.graph import StoryGraph
+from acomytha.models import Chunk, ForestEntry, Lesson, Story
 
 router = APIRouter(prefix="/api", tags=["stories"])
 

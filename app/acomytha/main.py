@@ -8,13 +8,13 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from sentier.api import admin, auth, play, stories
-from sentier.crypto_audio import AudioVault
-from sentier.db import Database
-from sentier.devices import DeviceGuard
-from sentier.security import SessionService
-from sentier.seed import Bootstrap
-from sentier.settings import Settings, get_settings
+from acomytha.api import admin, auth, play, stories
+from acomytha.crypto_audio import AudioVault
+from acomytha.db import Database
+from acomytha.devices import DeviceGuard
+from acomytha.security import SessionService
+from acomytha.seed import Bootstrap
+from acomytha.settings import Settings, get_settings
 
 
 def create_app(settings: Settings | None = None, import_limit: int | None = None) -> FastAPI:
@@ -24,7 +24,7 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
     with next(database.session()) as db:
         Bootstrap(settings).run(db, import_limit=import_limit)
 
-    app = FastAPI(title="Sentier", version="0.1.0")
+    app = FastAPI(title="AcoMytha", version="0.1.0")
     app.state.settings = settings
     app.state.database = database
     app.state.sessions = SessionService(hours=settings.session_hours)
@@ -38,7 +38,7 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
 
     @app.get("/api/health")
     def health():
-        return {"ok": True, "name": "sentier"}
+        return {"ok": True, "name": "acomytha"}
 
     frontend = settings.frontend_dir
     if frontend.exists():
@@ -61,11 +61,11 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
 
 
 def app() -> FastAPI:
-    """Point d'entrée uvicorn `sentier.main:app` — factory wrapping."""
+    """Point d'entrée uvicorn `acomytha.main:app` — factory wrapping."""
     return create_app()
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("sentier.main:create_app", factory=True, host="127.0.0.1", port=8787, reload=True)
+    uvicorn.run("acomytha.main:create_app", factory=True, host="127.0.0.1", port=8787, reload=True)

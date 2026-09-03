@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from sentier.crypto_audio import AudioVault
-from sentier.graph import StoryGraph
-from sentier.models import Chunk
+from acomytha.crypto_audio import AudioVault
+from acomytha.graph import StoryGraph
+from acomytha.models import Chunk
 
 
 def test_health(client):
@@ -14,13 +14,13 @@ def test_health(client):
 def test_index(client):
     r = client.get("/")
     assert r.status_code == 200
-    assert "Sentier" in r.text
+    assert "AcoMytha" in r.text
 
 
 def test_login_and_catalog(client):
     r = client.post(
         "/api/auth/login",
-        json={"email": "parent@sentier.local", "password": "sentier-parent", "device_id": "device-parent-aaaa"},
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-aaaa"},
     )
     assert r.status_code == 200
     assert r.json()["role"] == "parent"
@@ -33,19 +33,19 @@ def test_login_and_catalog(client):
 def test_device_conflict_alerts_admin(client):
     a = client.post(
         "/api/auth/login",
-        json={"email": "parent@sentier.local", "password": "sentier-parent", "device_id": "device-one-xxxx"},
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-one-xxxx"},
     )
     assert a.status_code == 200
     client.post("/api/auth/logout")
     b = client.post(
         "/api/auth/login",
-        json={"email": "parent@sentier.local", "password": "sentier-parent", "device_id": "device-two-yyyy"},
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-two-yyyy"},
     )
     assert b.status_code == 409
     assert b.json()["detail"]["code"] == "device_bound"
     admin = client.post(
         "/api/auth/login",
-        json={"email": "admin@sentier.local", "password": "sentier-admin", "device_id": "device-admin-zzzz"},
+        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-zzzz"},
     )
     assert admin.status_code == 200
     alerts = client.get("/api/admin/alerts").json()
@@ -56,7 +56,7 @@ def test_device_conflict_alerts_admin(client):
 def test_child_only_forest(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@sentier.local", "password": "sentier-parent", "device_id": "device-parent-bbbb"},
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-bbbb"},
     )
     client.put("/api/parent/forest", json={"story_ids": ["ATOM-SAN.ALI.001-01"]})
     child = client.post("/api/auth/enfant", json={"pin": "2468", "device_id": "device-parent-bbbb"})
@@ -93,7 +93,7 @@ def test_graph_root_and_fin():
 def test_encrypted_chunk_endpoint(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@sentier.local", "password": "sentier-parent", "device_id": "device-parent-cccc"},
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-cccc"},
     )
     graph = client.get("/api/play/ATOM-SAN.ALI.001-01/graph").json()
     assert graph["key"]

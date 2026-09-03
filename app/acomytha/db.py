@@ -7,8 +7,8 @@ from collections.abc import Generator
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import Session, sessionmaker
 
-from sentier.models import Base
-from sentier.settings import Settings
+from acomytha.models import Base
+from acomytha.settings import Settings
 
 
 class Database:

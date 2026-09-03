@@ -1,4 +1,4 @@
-# Règles éditoriales Sentier — génération d’histoires
+# Règles éditoriales AcoMytha — génération d’histoires
 
 Source : spécification fonctionnelle v2.0, validation VAL-HIST-001, taxonomie v1, Source Unique v3.0, Corrections v3.1.
 

@@ -14,16 +14,16 @@ export class LoginGate extends Component {
       <section class="s-gate">
         <form class="c-paper" id="login">
           <div class="c-mark">
-            <strong>Sentier</strong>
+            <strong>AcoMytha</strong>
             <span>Des histoires audio pour grandir sans se faire peur.</span>
           </div>
           <div class="c-field">
             <label for="email">Adresse</label>
-            <input id="email" name="email" type="email" autocomplete="username" required value="parent@sentier.local" />
+            <input id="email" name="email" type="email" autocomplete="username" required value="parent@acomytha.local" />
           </div>
           <div class="c-field">
             <label for="password">Clé d’accès</label>
-            <input id="password" name="password" type="password" autocomplete="current-password" required value="sentier-parent" />
+            <input id="password" name="password" type="password" autocomplete="current-password" required value="acomytha-parent" />
           </div>
           <p class="c-error" id="err"></p>
           <button class="c-btn c-btn--wide" type="submit">Entrer dans la forêt</button>
@@ -57,4 +57,4 @@ export class LoginGate extends Component {
   }
 }
 
-customElements.define("sentier-login", LoginGate);
+customElements.define("acomytha-login", LoginGate);

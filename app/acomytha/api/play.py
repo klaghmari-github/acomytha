@@ -7,9 +7,9 @@ from fastapi.responses import Response
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from sentier.api.deps import AuthContext, get_db, require_roles
-from sentier.graph import StoryGraph
-from sentier.models import Chunk, ForestEntry, Story
+from acomytha.api.deps import AuthContext, get_db, require_roles
+from acomytha.graph import StoryGraph
+from acomytha.models import Chunk, ForestEntry, Story
 
 router = APIRouter(prefix="/api/play", tags=["play"])
 

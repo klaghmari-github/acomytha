@@ -1,8 +1,8 @@
-# Sentier — backlog features
+# AcoMytha — backlog features
 
-**Version :** 3.1 — 3 septembre 2026. Remplace `Sentier_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.1 — 3 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
-**Spec :** `specification/Sentier_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
+**Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
 
 Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** juste après · **P3** v2 (ne pas démarrer).
