@@ -2,26 +2,19 @@
 
 Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
-## Volumes (validés)
+**Source actuelle : Excel, un fichier par arbre.**  
+`stories/arbres/<tree_id>.xlsx` — 1445 fichiers, 68787 chunks.
 
-| Kind | Fichiers | Leçons couvertes | Graphe |
+Les JSON `atomiques/` et `ramifiees/` ont été convertis puis **supprimés**. Voir `DECISIONS_EXCEL.md`.
+
+| Kind | Fichiers xlsx | Leçons | Graphe |
 | --- | --- | --- | --- |
-| Atomique | 685 | 85 / 85 | 1 chemin, `question_lesson` |
+| Atomique | 685 | 85 / 85 | 1 chemin, `passage_question` |
 | Ramifiée | 760 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
 
-Total **1445** histoires. Validateur déterministe : `python3 stories/outils/validate.py` → **1445 APPROVED_TEXT**, 0 REJECTED, 0 REVISION.
+Audio test (Piper, WAV) : `stories/audio/TREE-SEC-001/` (86) et `stories/audio/ATOM-SAN.ALI.001-01/` (5).  
+Bake : `python3 stories/outils/xlsx_to_audio.py` (option `--only`, `--limit`).
 
-Le générateur **n’auto-approuve pas** un paquet audio. Statut maximal ici : `APPROVED_TEXT`. TTS/ASR et revue humaine restent en aval (VAL-AUD, HUM).
-
-## Domaines (atomiques)
-
-SAN 73 · SEC 75 · EMO 88 · REL 81 · DIF 60 · AUT 40 · FAM 37 · COL 35 · VIV 38 · TMP 44 · SOC 49 · JEU 36 · LAN 29 (atomiques). N1 182 · N2 280 · N3 223.
-
-## Identifiants
-
-- `ATOM-<LECON>-<NN>.json`
-- `TREE-<DOMAINE>-<NNN>.json`
-
-## Règles rappel
-
-Voir `REGLES.md`. Famille racontée papa-maman-enfants. Formulation positive des dangers. Pas de religion, politique, guerre, crime, discours de genre.
+Outils : `json_to_xlsx.py` (historique), `xlsx_to_audio.py`.  
+Leçons : `referentiel/lecons.json`.  
+Règles : `REGLES.md`.

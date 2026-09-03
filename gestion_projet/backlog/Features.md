@@ -19,6 +19,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP mobile · 3 interaction fermée · 4 re
 | F-AUD-004 | Audio | Chiffrement AES-GCM, lecture RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-AUD-001, F-SEC-001 |
 | F-AUD-005 | Audio | Bake Piper → MP3 64k, 0 €, plans via Heavy | P0 | 1 | STRAT-002 | F-AUD-001, F-GEN-001 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
+| F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
 ### F-NAR-007 — Identifiants chunks
 
@@ -35,6 +36,21 @@ Tables `lesson`, `story`, `story_lesson`, `chunk`, `chunk_link` (exceptions). Le
 ### F-AUD-005 — Synthèse sans API payante
 
 Heavy = `narration_plan` seulement. Fichiers = Piper local + ffmpeg MP3. Pas de `POST /v1/tts`. **STRAT-002** §2.
+
+### F-INT-005 — Question d’écoute (ne branche pas)
+
+Chunk `passage_question` : une question, **une** fois, `wait_ms` (défaut 3000). Le cours de l’histoire **ne change pas**. Ensuite le moteur enchaîne le passage de confirmation (conduite sûre).
+
+Aujourd’hui : timeout → on continue.  
+Plus tard : capter la réponse enfant, similarité avec `expected_answer` / `accepted_examples`.
+
+Phrases moteur (colonnes Excel + audio court réutilisable) :
+
+- similarité haute → `engine_ok_text` : « Oui, c’est la bonne réponse. »
+- moyenne → `engine_near_text` : « Tu étais presque. »
+- silence → `engine_timeout_text` : « On continue. »
+
+Puis lecture du chunk confirmation. Nuit : skip (`night_policy=skip`). Source : feuille `chunks` des `.xlsx`.
 
 ### F-PLY-005 — Tempo et nuit
 

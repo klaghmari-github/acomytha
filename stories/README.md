@@ -1,28 +1,30 @@
 # Corpus d’histoires Sentier
 
-Histoires éducatives audio pour enfants de 3 à 6 ans. Chaque fichier JSON est un arbre exécutable (un chemin unique pour les atomiques, un graphe à 3 niveaux pour les ramifiées).
+Un **Excel par arbre** (`arbres/<tree_id>.xlsx`). Une histoire = un chemin racine→feuille. Un arbre = toutes les branches.
 
 ## Dossiers
 
 | Chemin | Contenu |
 | --- | --- |
-| `referentiel/lecons.json` | Catalogue des leçons (Source Unique v3.0 + titres CHILD_AUDIO v3.1) |
-| `atomiques/` | Histoires linéaires, une leçon, sans bifurcation |
-| `ramifiees/` | Arbres à 3 niveaux de choix, ≥ 3 branches à chaque niveau |
-| `outils/validate.py` | Validateur déterministe (lexique, graphe, contrat pédagogique) |
-| `REGLES.md` | Contraintes éditoriales non négociables |
-| `schema.json` | Schéma JSON v1 |
-| `rapports/` | Sorties du validateur |
+| `arbres/` | 1445 xlsx (source actuelle) |
+| `audio/` | WAV de test Piper (`<tree_id>/<chunk_id>.wav`) |
+| `referentiel/lecons.json` | Catalogue des 85 leçons |
+| `outils/xlsx_to_audio.py` | Bake WAV |
+| `outils/json_to_xlsx.py` | Convertisseur historique JSON→xlsx |
+| `REGLES.md` | Contraintes éditoriales |
+| `DECISIONS_EXCEL.md` | Choix de ce passage |
+| `schema.json` | Ancien schéma JSON (archive) |
 
 ## Identifiants
 
-- Atomique : `ATOM-<LECON>-<NN>` exemple `ATOM-SAN.ALI.001-01`
-- Ramifiée : `TREE-<DOMAINE>-<NNN>` exemple `TREE-SAN-001`
+Nom de fichier = `story_id` : `ATOM-SAN.ALI.001-01`, `TREE-SEC-001`.  
+Chunks : `CHK_T0000_P0000`, `CHK_T0001_P0000`, `…_Q0001`, `…_F0001`.
 
-## Génération
-
-Le générateur n’auto-approuve pas. Statut initial `PENDING`. Le validateur pose `APPROVED_TEXT` seulement s’il n’y a aucun finding bloquant.
+## Audio
 
 ```bash
-python3 stories/outils/validate.py
+# voix Piper (une fois)
+# voir outils/voices/README.md
+python3 stories/outils/xlsx_to_audio.py --only TREE-SEC-001 ATOM-SAN.ALI.001-01
+python3 stories/outils/xlsx_to_audio.py --limit 10
 ```

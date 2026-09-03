@@ -1,4 +1,9 @@
 __pycache__/
 *.pyc
+stories/outils/voices/*.onnx
+stories/audio/**
+!stories/audio/TREE-SEC-001/
+!stories/audio/TREE-SEC-001/**
+!stories/audio/ATOM-SAN.ALI.001-01/
+!stories/audio/ATOM-SAN.ALI.001-01/**
 .DS_Store
-stories/rapports/validation.json
