@@ -1,7 +1,7 @@
 # Étude — Restitution vocale des arbres d’histoires Sentier
 
 **Document :** ETU-AUD-001  
-**Version :** 1.1  
+**Version :** 1.2  
 **Date :** 3 septembre 2026  
 **Statut :** étude de cadrage, pas une spécification figée  
 **Public :** fondateurs, éditorial, production audio, technique  
@@ -10,6 +10,8 @@
 **Contrainte machine :** ~3,8 Go VRAM GPU, ~30 Go RAM, 8 cœurs CPU. Pas de gros LLM local.
 
 **Changelog 1.0 → 1.1.** L’API xAI TTS existe (`POST /v1/tts`, 15 USD / million de caractères, français, balises expressives). Le rythme n’est plus collé au JSON enfant : un `narration_plan.json` porte l’intention, des adaptateurs compilent vers xAI / SSML / Piper. Le paquet publié adresse les fichiers par `node_id` ; l’arborescence forêt/arbre/branches reste une **vue d’écoute** générée. Licences, loudness, cache, QA ASR et coût réel du corpus sont ajoutés. On n’adopte pas la limite « deux options » de l’analyse externe : le corpus ramifié Sentier est 3 × 3 × 3.
+
+**Changelog 1.1 → 1.2.** Texte ChatGPT relu en entier (le collage précédent était tronqué). Ajouts opérationnels : type `DIALOGUE`, durées locales **par heure** d’audio, table RTF xAI, délais de développement (PoC / MVP / prod), pipeline de bake, clone voix ~2 min, annexes prompt compilateur (adapté : **3 options**, pas 2). Rien de contradictoire avec la v1.1.
 
 ---
 
@@ -33,7 +35,7 @@
 | Export riche | SSML 1.1 + profil `sentier-prosody-v1` | Format d’échange le plus répandu (Azure, Google, Amazon). Piper l’ignore : on compile. |
 | Qualité finale | **API xAI TTS** (`language=fr`, voix unique par arbre, WAV master) | Expressivité, français, 15 k caractères / requête, 50 req/s. Coût corpus ~**170–280 USD** une fois, pas un abonnement. |
 | Préécoute / secours local | **Piper** CPU, puis **Kokoro-82M** si le FR passe le test | 0 GPU. Une nuit pour 260 h. Qualité « lisible », pas encore « conteur ». |
-| Clone de voix | API xAI Custom Voices (quelques minutes de référence) **ou** rien | XTTS-v2 : VRAM juste **et** licence CPML non commerciale → **hors produit**. |
+| Clone de voix | API xAI Custom Voices (**~2 min** de référence selon xAI) **ou** rien | Stabilité narrative FR et droits à tester. XTTS-v2 : VRAM juste **et** licence CPML non commerciale → **hors produit**. |
 | Entraînement local | **Non** | Piper documente 24–48 Go VRAM habituels, plancher communautaire ~8 Go. 3,8 Go = inférence seulement. |
 
 **Temps d’ordre de grandeur pour tout le corpus actuel** (~260 h d’audio unique, ~57 000 fichiers) :
@@ -78,6 +80,7 @@ Les trois régimes suffisent à l’enfant. Le compilateur audio, lui, gagne à 
 | Étiquette production | JSON Sentier | Restitution |
 | --- | --- | --- |
 | `NARRATION` | `audio` | Vivante, variations modérées |
+| `DIALOGUE` | réplique d’un personnage dans un `audio` | Couleur légère, intelligibilité prioritaire, pas une voix « cartoon » |
 | `ATTENTION_CUE` | amorce courte dans un `audio` | Bref, un peu plus énergique, jamais un cri |
 | `STORY_CHOICE` | `choice_story` | 3 options, rythme **symétrique**, aucun favori |
 | `COMPREHENSION_QUESTION` | `question_lesson` / `question_comprehension` | Une idée, réponse 1–3 mots |
@@ -416,7 +419,7 @@ Paramètres API utiles pour Sentier :
 
 ### 4.3 Prompt compilateur (implémentation, pas la voix)
 
-Quand on passera à `F-AUD-001` : compilateur déterministe, interface `TtsProvider`, `XaiTtsProvider` d’abord, Piper/Kokoro ensuite, cache SHA-256, écriture atomique, dry-run coût, QA, tests d’un nœud partagé par deux branches. Ne pas merger `main`. Le détail d’implémentation n’est pas cette étude.
+Quand on passera à `F-AUD-001` : compilateur déterministe, interface `TtsProvider`, `XaiTtsProvider` d’abord, Piper/Kokoro ensuite, cache SHA-256, écriture atomique (fichier temp + rename), backoff, dry-run coût, QA, tests d’un nœud partagé par deux branches. Ne pas merger `main`. Prompt d’implémentation en **annexe A** (adapté Sentier : 3 options, mapping `choice_story` / `question_lesson`).
 
 ---
 
@@ -479,9 +482,19 @@ temps ≈ ceil(nœuds / concurrence)
         + reprises + QA
 ```
 
-57 000 nœuds, 10 en parallèle, ~6 s/requête si RTF 0,3 sur 20 s d’audio → **ordre 10 heures**. Budget calendaire avec erreurs et disque : **1–2 jours**. La revue humaine d’un échantillon (1 arbre complet + 20 nœuds tirés par domaine) est le vrai délai.
+xAI ne publie pas un RTF de lot garanti. Il serait trompeur de promettre un temps exact avant benchmark. Illustration sur **120 nœuds de 30 s** (60 min uniques), 4 requêtes parallèles, 1 s de latence :
+
+| RTF observé | Génération théorique | Budget avec reprises et contrôles |
+| ---: | ---: | ---: |
+| 0,2 | ≈ 3,5 min | 10–20 min |
+| 0,5 | ≈ 8 min | 15–30 min |
+| 1,0 | ≈ 15,5 min | 25–45 min |
+
+À l’échelle forêt : 57 000 nœuds, 10 en parallèle, ~6 s/requête si RTF 0,3 sur 20 s d’audio → **ordre 10 heures**. Budget calendaire avec erreurs et disque : **1–2 jours**. Écouter 60 min prend au moins 60 min, même si la synthèse en prend 10. La revue d’un échantillon (1 arbre complet + 20 nœuds tirés par domaine) est le vrai délai.
 
 Dry-run obligatoire avant tout appel : nombre de nœuds, caractères, durée, taille, **coût**, sans toucher l’API.
+
+Le coût se calcule sur la somme des caractères de tous les **nœuds uniques**, jamais sur la durée d’un seul chemin enfant.
 
 ### 6.3 Piper (secours / préécoute)
 
@@ -490,6 +503,15 @@ Dry-run obligatoire avant tout appel : nombre de nœuds, caractères, durée, ta
 - Build : plan → phrases + silences ffmpeg.
 - 260 h, RTF 0,08, 8 workers ~50–70 % → **une nuit (5–12 h)**.
 - GPL-3.0 : OK pour générer des fichiers et les embarquer. Pas OK (sans politique licence) pour lier le moteur dans un binaire app distribué.
+
+Fourchettes **par heure d’audio final** (planification, à confirmer par un bench de 20 segments : chargement, pic RAM/VRAM, RTF, débit par lot, taux d’échec, qualité FR) :
+
+| Moteur | Mémoire | Temps pour 1 h d’audio | Risque |
+| --- | --- | --- | --- |
+| Piper | Faible, CPU | ≈ 3–20 min | Prosodie longue trop régulière |
+| Kokoro-82M | Faible à modérée | ≈ 10–60 min | FR et contrôle d’intonation |
+| MeloTTS | Modérée, CPU possible | ≈ 15–90 min | Expressivité, maintenance |
+| Parler-TTS Mini | ~1,8 Go FP16 + exécution | ≈ 1–5 h CPU ; GPU possiblement OOM | Lenteur, mémoire |
 
 ### 6.4 Kokoro
 
@@ -512,7 +534,15 @@ Dry-run obligatoire avant tout appel : nombre de nœuds, caractères, durée, ta
 1. Schéma `narration_plan` + compilateur + cache SHA-256.
 2. Dry-run coût sur 1 arbre, puis forêt.
 3. Bake xAI, masters WAV, Opus/MP3, manifeste, QA ASR.
-4. **Durée projet :** 3–6 jours de compilateur robuste (cache, reprise, concurrence) + 1–2 jours de bake corpus + échantillonnage d’écoute. Pas 57 000 écoutes.
+4. **Durée projet** (schéma JSON déjà stable, exécution supervisée) :
+
+| Niveau | Contenu | Estimation |
+| --- | --- | ---: |
+| Preuve de concept | Parse un arbre, génère quelques nœuds, écrit le manifeste | 0,5–1,5 jour |
+| MVP robuste | Cache, reprise, concurrence, graphe, normalisation, logs | 3–6 jours |
+| Production | QA ASR/acoustique, retrait de version, métriques, secrets | 7–12 jours |
+
+« Laisser Grok faire » **ne supprime pas** les tests, la revue du code ni l’écoute de validation. Pas 57 000 écoutes humaines : échantillon + ASR bloquant.
 
 ### Scénario B — Local Piper d’abord, xAI sur choix + conclusions
 
@@ -531,6 +561,30 @@ Seulement si le test FR enfant passe. 1–2 jours machine.
 ## 8. Plan de travail (sans bloquer le MR histoires)
 
 Le MR `F-GEN-001` (textes) part **sans** audio. L’audio est `F-AUD-001`.
+
+Pipeline de bake :
+
+```
+story.json APPROVED_TEXT
+        ↓
+validation graphe (root unique, ids, arêtes, feuilles, pas de cycle, chemins terminables)
+        ↓
+narration_plan.json neutre
+        ↓
+adaptateur + dry-run (nœuds, caractères, durée, taille, coût) — zéro appel TTS
+        ↓
+synthèse par (nœud, rôle) + cache SHA-256 + reprise
+        ↓
+normalisation −19 LUFS / −1,5 dBTP + encode mobile
+        ↓
+QA acoustique + ASR vs texte approuvé
+        ↓
+écoute humaine selon matrice de risque (sécurité = toujours ; récit = échantillon)
+        ↓
+manifest signé + paquet téléchargeable → APPROVED_PACKAGE
+```
+
+Le paquet n’est `APPROVED_PACKAGE` que si **tous** les nœuds accessibles sont validés. Une erreur bloquante sur une branche invalide l’arbre complet.
 
 | ID | Prio | Livrable | Sortie |
 | --- | --- | --- | --- |
@@ -613,7 +667,7 @@ Tant que ce n’est pas tranché : **les JSON restent publiables en texte** (`AP
 
 ## 12. Ce que l’analyse ChatGPT apporte — retenu / écarté / corrigé
 
-Fichier source : `Téléchargements/ETUDE_RESTITUTION_VOCALE_ARBRES.md` (3 sept. 2026).
+Fichier source : collage intégral du 3 sept. 2026 (le premier envoi était tronqué au milieu ; la v1.2 reprend §§10–16 : coûts, RTF, délais de dev, prompt compilateur, pipeline, backlog).
 
 ### Retenu (améliore v1.0)
 
@@ -669,4 +723,65 @@ Fichier source : `Téléchargements/ETUDE_RESTITUTION_VOCALE_ARBRES.md` (3 sept.
 
 ---
 
-*Fin de l’étude v1.1. Prochaine itération : maquette `listen/TREE-SEC-001/` + 1 atomique, quatre moteurs, compte-rendu d’écoute. Pas de merge `main`.*
+---
+
+## Annexe A — Prompt compilateur (F-AUD-001, pas maintenant)
+
+À adapter aux noms **réels** du schéma avant exécution. Écarts à lister avant de coder. **Trois options** de choix, pas deux. Ne pas merger `main`.
+
+```
+Tu conçois puis implémentes un compilateur audio déterministe pour les arbres
+narratifs de ce dépôt. Lis stories/schema.json, stories/outils/validate.py,
+stories/REGLES.md et gestion_projet/backlog/Etude_restitution_vocale_arbres_v1.0.md.
+Ne modifie pas main. Ne fusionne rien.
+
+OBJECTIF
+À partir d’un JSON APPROVED_TEXT, produire un paquet versionné :
+1 fichier par (node_id, rôle), narration_plan.json, manifest.json,
+*.request.json, checksums, rapports QA. Le graphe JSON est la source.
+Pas de duplication par chemin. La vue listen/ est générée (liens), pas publiée.
+
+ÉTAPES
+1. Mapping explicite des types JSON → étiquettes production (NARRATION, DIALOGUE,
+   STORY_CHOICE, COMPREHENSION_QUESTION, REPROMPT, SAFE_CORRECTION, CONCLUSION…).
+   Ne pas inventer de champs.
+2. Valider avant synthèse : root unique, ids uniques, destinations existantes,
+   feuilles, nœuds accessibles, pas de cycle, réponses attendues, chemins terminables.
+3. Générer ou lire narration_plan.json (segments : texte approuvé, rôle, wpm,
+   énergie, pitch, emphases, pause_after_ms). Le texte du plan = texte du JSON.
+4. Interface TtsProvider. Implémenter XaiTtsProvider d’abord. Préparer Piper
+   et Kokoro sans les imposer au cœur.
+5. Compiler vers balises xAI autorisées : [pause], [long-pause], <soft>, <slow>,
+   <emphasis>, <lower-pitch>. Interdit Sentier : [laugh], volume loud, <whisper>
+   hors FAM.SEC.001.
+6. POST /v1/tts language=fr, voix configurable, WAV master, speed configurable.
+   Clé uniquement XAI_API_KEY. Ne jamais journaliser le secret.
+7. Cache SHA-256 (texte + plan + locale + voix + fournisseur + version moteur
+   + paramètres). Identique = pas de refacturation.
+8. Écriture atomique, reprise, backoff, concurrence bornée, erreurs partielles.
+9. Master WAV puis Opus ou MP3 mobile normalisé (−19 LUFS, −1,5 dBTP).
+   Ne jamais écraser une tree_version publiée.
+10. manifest.json : tree_id, version, root_node_id, edges, node_id, role, kind,
+    asset_path, duration_ms, sha256, locale, voice_id, provider, model_version,
+    source_hash, narration_plan_hash, qa_status.
+11. QA : fichier lisible, durée plausible, clipping, silences, loudness,
+    ASR vs texte. Une erreur bloquante invalide l’arbre.
+12. Dry-run : nœuds, caractères, durée, taille, coût xAI — zéro appel API.
+13. Tests : embranchements 3×3, reprise après panne, nœud partagé par deux branches.
+14. Documenter generate / validate / resume / publish.
+
+RESTITUTION
+- 3–6 ans, clair, chaud. Question plus lente, une idée.
+- Choix narratif : TROIS options, toutes sûres, rythme symétrique.
+- question_lesson : jamais une branche dangereuse attrayante.
+- Correction positive. Conclusion : conduite concrète + « L’histoire est finie. »
+- Aucune balise interne lue à l’enfant.
+
+LIVRABLES : schéma narration_plan + manifest, code, tests, fixture TREE-SEC-001
++ 1 atomique, rapport bench (temps, coût, RAM/VRAM, RTF, taille).
+Après code : exécuter les tests, donner les résultats exacts. Ne merge pas.
+```
+
+---
+
+*Fin de l’étude v1.2. Prochaine itération : maquette `listen/TREE-SEC-001/` + 1 atomique, quatre moteurs, compte-rendu d’écoute. Pas de merge `main`.*
