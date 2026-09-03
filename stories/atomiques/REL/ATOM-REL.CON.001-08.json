@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.CON.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Yvonne dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc, bac à sable puis plots",
+  "characters": [
+    "Yvonne",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Yvonne joue au parc. Le bac à sable est frais. Un camarade la bouscule. Yvonne sent son épaule. Elle dit : stop. Elle recule. Elle peut s'éloigner. Elle s'éloigne vers le banc. Maman est le parent au parc. Yvonne va vers maman. Elle dit : j'ai dit stop. Maman l'écoute. Yvonne souffle. Plus tard, près des plots, un camarade la bouscule encore. Même leçon. Yvonne dit : stop. Elle peut s'éloigner. Elle rejoint le parent au parc. Maman est sur le banc. Yvonne prend sa main. Maman dit : tu as bien fait. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Yvonne. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "PARENT"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "maman",
+        "vers maman",
+        "le banc"
+      ],
+      "retry_prompt": "Yvonne dit stop. Puis elle va vers le parent au parc. Que fait-elle ?",
+      "positive_feedback": "Oui. Elle dit stop. Elle peut s'éloigner. Elle va vers le parent au parc.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Yvonne a dit stop. Au bac, puis aux plots. Elle a pu s'éloigner. Elle a rejoint le parent au parc.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Yvonne reste près du banc. Maman lui tient la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

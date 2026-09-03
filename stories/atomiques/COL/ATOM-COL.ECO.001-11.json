@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-COL.ECO.001-11",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Sylvain écoute, puis il raconte",
+  "lesson_id": "COL.ECO.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "école, coin tapis, puis maison",
+  "characters": [
+    "Sylvain",
+    "papa",
+    "maman",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 135,
+    "max": 175
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sylvain est à l'école. C'est le coin tapis. La maîtresse parle. Sylvain aime écouter. Il écoute bien. La maîtresse dit : on range. Sylvain range un crayon. Plus tard, un camarade chuchote. Il dit : c'est un secret. Ne le dis pas à la maison. Sylvain sent un malaise. Son ventre est serré. Le soir, papa coupe du pain. Sylvain vient raconter à la maison. Il dit : papa, j'ai un malaise. Maman l'écoute aussi. Papa dit : tu as bien fait. On aime écouter la maîtresse. Si tu as un malaise, tu viens raconter.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sylvain a un malaise. Que fait-il ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "il raconte",
+        "à papa",
+        "à la maison",
+        "écouter"
+      ],
+      "retry_prompt": "Il raconte à papa. Que fait Sylvain ?",
+      "positive_feedback": "Oui. Il écoute la maîtresse. Il vient raconter à la maison.",
+      "wrong_feedback": "On aime écouter la maîtresse. Si on a un malaise, on vient raconter à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sylvain a écouté la maîtresse. Il a raconté son malaise à la maison. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sylvain boit un verre d'eau. Papa lui tient la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

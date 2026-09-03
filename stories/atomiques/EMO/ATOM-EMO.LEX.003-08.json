@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.003-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Geneviève est déçue au marché",
+  "lesson_id": "EMO.LEX.003",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Geneviève",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Geneviève est au marché avec maman. Elle voit des fraises rouges. Elle a envie. Maman dit : les fraises, c'est pour plus tard. Geneviève sent sa gorge serrée. Ses épaules descendent. Elle dit : je suis déçue. Maman écoute. Maman dit : on peut chercher une autre idée. Geneviève respire. Elle propose : on sent le basilic. Elles froissent une feuille. Ça sent le vert. Geneviève dit encore : je suis déçue. Et j'ai une autre idée. Elle choisit un citron. Le citron est lisse et frais. Maman sourit. Geneviève pose le citron dans le panier. Le souhait peut attendre. Une autre idée, c'est possible.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Geneviève n'a pas les fraises. Que dit-elle ?",
+      "expected_intents": [
+        "DECU",
+        "AUTRE_IDEE"
+      ],
+      "accepted_examples": [
+        "déçue",
+        "je suis déçue",
+        "autre idée",
+        "le citron",
+        "le basilic"
+      ],
+      "retry_prompt": "Elle dit je suis déçue. Puis elle cherche une autre idée. Que dit-elle ?",
+      "positive_feedback": "Oui. Elle dit je suis déçue. Puis elle cherche une autre idée.",
+      "wrong_feedback": "On peut dire je suis déçu. Puis on cherche une autre idée.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Geneviève a nommé. Elle était déçue. Elle a trouvé une autre idée. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Geneviève tient le citron. Maman porte le panier. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

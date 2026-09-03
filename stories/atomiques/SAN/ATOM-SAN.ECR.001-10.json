@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SAN.ECR.001-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Aurore éteint la tablette",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ECR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Aurore",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Aurore est dans la cuisine. Elle tient la tablette. Des sons sortent. Maman s'approche. Maman dit : fini. L'adulte dit fini. Aurore écoute. Elle va éteindre. Aurore éteint la tablette. L'écran devient noir. Elle pose la tablette. Maman dit : un autre jeu. Aurore prend les cuillères en bois. Toc toc sur la table. Papa arrive. Il sourit. Aurore a éteint. Elle a un autre jeu. Elles tapent un rythme. Ça sent le pain chaud.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maman dit fini. Que fait Aurore ?",
+      "expected_intents": [
+        "ETEINDRE",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "éteindre",
+        "elle éteint",
+        "autre jeu",
+        "un autre jeu",
+        "les cuillères"
+      ],
+      "retry_prompt": "L'adulte dit fini. Aurore éteint. Puis elle prend un autre jeu. Que fait-elle ?",
+      "positive_feedback": "Oui. Aurore éteint. Puis elle choisit un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SAN.ECR.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "L'adulte a dit fini. Aurore a éteint. Elle a pris un autre jeu. Les cuillères, c'était bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Aurore range les cuillères. Papa dit merci. La cuisine est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

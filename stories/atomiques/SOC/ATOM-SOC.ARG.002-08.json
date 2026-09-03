@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SOC.ARG.002-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Victor demande pour un biscuit",
+  "lesson_id": "SOC.ARG.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.ARG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "boulangerie",
+  "characters": [
+    "Victor",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Victor est à la boulangerie. Papa est avec lui. Victor voit un biscuit. Il a envie. L'argent se range. Victor ne le prend pas. Il va demander. Il demande à papa. Papa, c'est l'adulte. Victor dit : s'il te plaît ? Papa écoute. Papa dit oui. Il paie. Victor dit merci. On demande à l'adulte. Le biscuit est croustillant. Ça sent le beurre. Ils sortent ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Victor veut un biscuit. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER"
+      ],
+      "accepted_examples": [
+        "demander",
+        "papa",
+        "l'adulte"
+      ],
+      "retry_prompt": "L'argent se range. Il le dit à qui ?",
+      "positive_feedback": "Oui. Il demande à papa, l'adulte.",
+      "wrong_feedback": "On demande à papa ou maman. L'adulte décide.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.ARG.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Victor a demandé à l'adulte. Papa a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ils sortent. Victor tient le biscuit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

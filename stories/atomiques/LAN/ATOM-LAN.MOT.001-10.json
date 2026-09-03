@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-LAN.MOT.001-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Albane classe jouets et livres",
+  "lesson_id": "LAN.MOT.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.MOT",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Albane",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Papa pose deux paniers sur le tapis. Il y a une peluche, une voiture, un livre, un cahier. Albane écoute. Papa dit : on range par catégorie. Les jouets ensemble. Les livres ensemble. Albane prend la peluche. Elle la met avec la voiture. C'est la catégorie des jouets. Elle prend le livre. Elle le met avec le cahier. C'est la catégorie des livres. Papa dit : tu as classé. Albane nomme : peluche, voiture. Jouets. Livre, cahier. Livres. Deux catégories. Papa sourit. Albane range encore un cube avec les jouets.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Albane range peluche et livre. Que fait-elle ?",
+      "expected_intents": [
+        "CLASSER"
+      ],
+      "accepted_examples": [
+        "classer",
+        "catégorie",
+        "ensemble",
+        "jouets",
+        "livres"
+      ],
+      "retry_prompt": "Les jouets ensemble. Les livres ensemble. Que fait-elle ?",
+      "positive_feedback": "Oui. Elle classe par catégorie. Jouets ensemble. Livres ensemble.",
+      "wrong_feedback": "On nomme. On met ensemble. On classe par catégorie.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "LAN.MOT.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Albane a classé. Une catégorie pour les jouets. Une catégorie pour les livres. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Albane pose le cube. Les deux paniers sont rangés. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

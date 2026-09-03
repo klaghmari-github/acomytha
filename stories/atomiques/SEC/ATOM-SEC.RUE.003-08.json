@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.003-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Colette près de maman",
+  "lesson_id": "SEC.RUE.003",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "rue du marché",
+  "characters": [
+    "Colette",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Colette sort avec maman. Elles marchent dans la rue. Colette reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Le manteau est doux. La main de maman est chaude. Elles passent le marché. Colette sent les oranges. Elle reste près de l'adulte. Elle marche à côté. Maman dit : près de moi. Colette serre la main. Elles avancent ensemble. Les paniers froissent. Colette sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Colette marche dans la rue. Où est-elle ?",
+      "expected_intents": [
+        "PRES_ADULTE",
+        "MAIN"
+      ],
+      "accepted_examples": [
+        "près de maman",
+        "près",
+        "la main",
+        "manteau",
+        "à côté"
+      ],
+      "retry_prompt": "Elle reste près. Elle tient la main. Où est Colette ?",
+      "positive_feedback": "Oui. Colette reste près de l'adulte. Main ou manteau.",
+      "wrong_feedback": "On reste près de l'adulte. On tient la main ou le manteau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Colette est près de maman. La main tient le manteau. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Colette garde la main de maman. Elles rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
