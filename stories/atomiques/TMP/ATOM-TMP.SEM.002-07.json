@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-TMP.SEM.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Eugénie nomme mercredi et le week-end",
+  "lesson_id": "TMP.SEM.002",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SEM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Eugénie",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Eugénie est dans le salon. Maman accroche un calendrier. Maman dit : lundi, mardi, jeudi, vendredi, c'est l'école. Mercredi, Eugénie reste à la maison. Elle joue avec maman. Samedi, Eugénie reste aussi. Dimanche encore. Maman dit : samedi et dimanche, c'est le week-end. Eugénie touche mercredi. Elle touche samedi. Elle touche dimanche.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Eugénie est à la maison le mercredi. Quels autres jours aussi ?",
+      "expected_intents": [
+        "MERCREDI",
+        "WEEKEND"
+      ],
+      "accepted_examples": [
+        "samedi",
+        "dimanche",
+        "week-end",
+        "mercredi"
+      ],
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?",
+      "positive_feedback": "Oui. Mercredi à la maison. Samedi et dimanche, le week-end.",
+      "wrong_feedback": "Mercredi, on est à la maison. Samedi et dimanche, c'est le week-end.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "TMP.SEM.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Eugénie a nommé mercredi. Elle a nommé samedi et dimanche. C'est le week-end.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le crayon. Eugénie dessine. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SOC.ARG.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Fleur demande pour un crayon",
+  "lesson_id": "SOC.ARG.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.ARG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "papeterie",
+  "characters": [
+    "Fleur",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Fleur est à la papeterie avec maman. Elle voit un crayon bleu. Elle a envie. L'argent se range. Fleur ne le prend pas. Elle va demander à maman. Maman, c'est l'adulte. Fleur dit : s'il te plaît, ce crayon ? Maman écoute. Elle dit oui. Elle paie. Fleur dit merci. On demande à l'adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Fleur veut un crayon. Que fait-elle ?",
+      "expected_intents": [
+        "DEMANDER"
+      ],
+      "accepted_examples": [
+        "demander",
+        "maman",
+        "l'adulte"
+      ],
+      "retry_prompt": "L'argent se range. Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle demande à maman, l'adulte.",
+      "wrong_feedback": "On demande à papa ou maman. L'adulte décide.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.ARG.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Fleur a demandé à l'adulte. Maman a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Elles sortent. Fleur tient le crayon. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
