@@ -154,6 +154,7 @@ def story_to_dict(story: Story) -> dict:
         "characters": story.characters,
         "chunk_count": story.chunk_count,
         "duration_s": story.duration_s or 0,
+        "has_interaction": bool(story.has_interaction),
         "has_audio": story.has_audio,
         "status": story.status,
         "wait_default_ms": story.wait_default_ms,
@@ -185,6 +186,24 @@ def fill_durations(db: Session, settings: Settings, force: bool = False) -> int:
             sec = int(w / 2.0 + c * 0.8)
         story.duration_s = max(45, min(int(sec), 720))
         n += 1
+    db.commit()
+    return n
+
+
+def fill_interaction(db: Session) -> int:
+    """Marque les histoires qui ont un passage-question ou un choix."""
+    ids = {
+        sid
+        for (sid,) in db.query(Chunk.story_id)
+        .filter(Chunk.kind.ilike("%question%") | Chunk.kind.ilike("%choice%"))
+        .distinct()
+    }
+    n = 0
+    for story in db.scalars(select(Story)).all():
+        flag = story.story_id in ids or story.kind == "ramifiee"
+        if story.has_interaction != flag:
+            story.has_interaction = flag
+            n += 1
     db.commit()
     return n
 

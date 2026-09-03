@@ -41,6 +41,9 @@ class Database:
         if "duration_s" not in cols:
             with self.engine.begin() as conn:
                 conn.execute(text("ALTER TABLE stories ADD COLUMN duration_s INTEGER DEFAULT 0"))
+        if "has_interaction" not in cols:
+            with self.engine.begin() as conn:
+                conn.execute(text("ALTER TABLE stories ADD COLUMN has_interaction BOOLEAN DEFAULT 0"))
 
     def session(self) -> Generator[Session, None, None]:
         db = self.SessionLocal()

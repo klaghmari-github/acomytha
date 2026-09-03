@@ -52,7 +52,7 @@ export class ParentApp extends Component {
             <select id="kind">
               <option value="">Toutes</option>
               <option value="atomic">Courte</option>
-              <option value="ramifiee">Avec des choix</option>
+              <option value="interaction">Avec interaction</option>
             </select>
           </div>
           <p class="c-hint" id="count"></p>
@@ -126,7 +126,8 @@ export class ParentApp extends Component {
     const list = this.allStories.filter((s) => {
       if (domain && s.domain !== domain) return false;
       if (age && s.age_band !== age) return false;
-      if (kind && s.kind !== kind) return false;
+      if (kind === "atomic" && s.kind !== "atomic") return false;
+      if (kind === "interaction" && !s.has_interaction) return false;
       if (q) {
         const blob = fold([s.title, s.story_id, s.lesson_id, s.setting, s.characters, s.subdomain].join(" "));
         if (!blob.includes(q)) return false;
@@ -155,7 +156,7 @@ export class ParentApp extends Component {
     el.innerHTML = `
       <div class="o-row">
         <span class="c-pill c-pill--${s.age_band.toLowerCase()}">${ageLabel(s.age_band)}</span>
-        <span class="c-pill ${s.kind === "ramifiee" ? "c-pill--ram" : ""}">${s.kind === "ramifiee" ? "Avec des choix" : "Courte"}</span>
+        <span class="c-pill ${s.has_interaction ? "c-pill--ram" : ""}">${s.has_interaction ? "Avec interaction" : "Courte"}</span>
         ${owned ? '<span class="c-pill c-pill--audio">À vous</span>' : ""}
       </div>
       <h3>${escapeHtml(s.title)}</h3>

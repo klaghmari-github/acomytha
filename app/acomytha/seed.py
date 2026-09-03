@@ -5,7 +5,7 @@ from __future__ import annotations
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
-from acomytha.catalog import CatalogImporter, fill_durations
+from acomytha.catalog import CatalogImporter, fill_durations, fill_interaction
 from acomytha.commerce import grant_welcome, seed_params
 from acomytha.models import ForestEntry, Purchase, Story, User
 from acomytha.security import PasswordHasher
@@ -27,6 +27,7 @@ class Bootstrap:
         self.ensure_demo_forest(db)
         self.ensure_demo_wallet(db)
         fill_durations(db, self.settings)
+        fill_interaction(db)
 
     def ensure_demo_forest(self, db: Session) -> None:
         parent = db.query(User).filter(User.email == self.settings.parent_email).one_or_none()
