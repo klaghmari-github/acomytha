@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-DIF.ENE.001-07",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Béatrice et l'énergie d'Ewen",
+  "lesson_id": "DIF.ENE.001",
+  "domain": "DIF",
+  "subdomain": "DIF.ENE",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "setting": "salle de jeux",
+  "characters": [
+    "Béatrice",
+    "Ewen",
+    "maman"
+  ],
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Maman laisse Béatrice dans la salle de jeux. Les chaussures tapent le sol. Ewen arrive en sautant. Il a beaucoup d'énergie. Il tourne. Il s'arrête. Il recommence. Béatrice le regarde. Maman est encore près de la porte. Elle dit : beaucoup d'énergie, ce n'est pas une faute. On peut jouer. On peut attendre. On peut demander à un adulte. Béatrice hoche la tête. Ils font une file pour le tunnel. Ewen a envie d'aller vite. Béatrice dit : on peut attendre. Ewen souffle. Il reste dans la file. Ils jouent. Plus tard, Ewen a encore de l'énergie. Ce n'est pas une faute. Béatrice va vers maman. Elle demande à un adulte. Maman marche avec eux jusqu'aux coussins. On peut jouer ou attendre. Béatrice dit : Ewen a de l'énergie. Maman dit : ce n'est pas une faute.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "Ewen a de l'énergie. Que peut-on faire ?",
+      "expected_intents": [
+        "JOUER",
+        "ATTENDRE",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "jouer",
+        "attendre",
+        "un adulte",
+        "demander"
+      ],
+      "retry_prompt": "On peut jouer, attendre, ou demander à un adulte. Que fait-on ?",
+      "positive_feedback": "Oui. L'énergie n'est pas une faute. On peut jouer ou attendre.",
+      "wrong_feedback": "Beaucoup d'énergie, ce n'est pas une faute. On peut jouer ou attendre. On peut demander à un adulte.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.ENE.001",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Ewen a de l'énergie. Ce n'est pas une faute. Béatrice a joué. Elle a su attendre. Elle a demandé à un adulte.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Maman prend la main de Béatrice. Ewen range un coussin. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

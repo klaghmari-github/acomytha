@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-EMO.GES.002-06",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Flore souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "setting": "chambre",
+  "characters": [
+    "Flore",
+    "maman"
+  ],
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Flore construit une tour dans sa chambre. Les cubes glissent. La tour tombe. Les épaules de Flore se serrent. Maman est près de la porte. Elle dit : on peut souffler. On peut faire une pause. Flore s'assoit sur le tapis. Elle souffle une fois. Elle souffle encore. La pause dure un moment. Les mains se posent sur les genoux. Flore dit : je souffle. Je fais une pause. Maman hoche la tête. Puis Flore reprend les cubes. Elle pose un cube, puis un autre. La tour tient. Plus tard, un puzzle résiste. Flore se souvient. Elle s'assoit. Elle souffle. Elle fait une pause. Ensuite elle reprend. Maman sourit.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "La tour de Flore tombe. Que fait-elle ?",
+      "expected_intents": [
+        "SOUFFLER",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "une pause",
+        "s'asseoir",
+        "pause"
+      ],
+      "retry_prompt": "Elle s'assoit. Elle souffle. Elle fait une pause. Que fait Flore ?",
+      "positive_feedback": "Oui. Flore souffle. Elle fait une pause. Puis elle reprend.",
+      "wrong_feedback": "On souffle. On s'assoit. On fait une pause. Puis on reprend.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.GES.002",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Flore a soufflé. Elle a fait une pause. Elle s'est assise. Puis elle a repris.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Flore range un cube. Maman lui tend la main. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

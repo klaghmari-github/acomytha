@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-TMP.MET.001-06",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hermine prend manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "domain": "TMP",
+  "subdomain": "TMP.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "setting": "entrée",
+  "characters": [
+    "Hermine",
+    "papa"
+  ],
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Hermine est dans l'entrée. Papa ouvre la porte. L'air est froid. Papa dit : froid, manteau. Hermine prend le manteau. Elle enfile les manches. Le manteau est chaud. Dehors, la pluie commence. Papa dit : pluie, bottes. Hermine met les bottes. Les bottes sont jaunes. Elle entend la pluie sur le toit. Papa ferme le zip. Hermine dit : froid, manteau. Pluie, bottes. Papa hoche la tête. Ils sortent ensemble. Les gouttes tombent sur le manteau. Les pieds restent au sec. Hermine sourit. Papa tient la main.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "Il fait froid. Il pleut. Que prend Hermine ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "bottes",
+        "le manteau",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid, manteau. Pluie, bottes. Que prend-elle ?",
+      "positive_feedback": "Oui. Froid, manteau. Pluie, bottes.",
+      "wrong_feedback": "S'il fait froid, on prend le manteau. S'il pleut, on prend les bottes.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "TMP.MET.001",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Hermine a pris le manteau. Elle a mis les bottes. Papa était là.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Hermine et papa marchent sous la pluie. Les bottes font splish. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

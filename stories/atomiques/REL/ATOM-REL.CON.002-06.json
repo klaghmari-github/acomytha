@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-REL.CON.002-06",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hermine dit stop à l'école",
+  "lesson_id": "REL.CON.002",
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "setting": "école",
+  "characters": [
+    "Hermine",
+    "maîtresse",
+    "maman"
+  ],
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Hermine est sous le préau. La maîtresse est près de la porte. Un camarade bouscule la file des manteaux. Hermine dit : stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Hermine marche vers la maîtresse. Elle dit : on m'a bousculée. La maîtresse l'écoute. Hermine reste près d'elle. Le soir, maman vient. Hermine raconte. Maman dit : tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse. Hermine hoche la tête. Elle sent la main de maman. La main est chaude.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Hermine. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "MAITRESSE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "la maîtresse"
+      ],
+      "retry_prompt": "Elle dit stop. Ensuite ?",
+      "positive_feedback": "Oui. Elle dit stop. Elle s'éloigne. Elle va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.CON.002",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Hermine a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Maman prend la main d'Hermine. Elles marchent. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

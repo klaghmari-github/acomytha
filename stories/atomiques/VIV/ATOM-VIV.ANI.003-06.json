@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-VIV.ANI.003-06",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Flore donne l'eau au chat",
+  "lesson_id": "VIV.ANI.003",
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "setting": "cuisine",
+  "characters": [
+    "Flore",
+    "maman"
+  ],
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Flore est dans la cuisine. Le chat miaule. Maman dit : on prend soin, avec un adulte. On est doux. Maman prend le bol. Flore reste près de maman. Elles remplissent l'eau avec l'adulte. L'eau est fraîche. Flore pose le bol. Tout doux. Le chat vient. Flore est douce. Elle caresse le dos. Doux, tout doux. Maman dit : avec un adulte, et doux. Flore hoche la tête. Le chat lape. Flore sourit. Maman sourit aussi.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "Flore donne l'eau au chat. Comment fait-elle ?",
+      "expected_intents": [
+        "AVEC_ADULTE",
+        "DOUX"
+      ],
+      "accepted_examples": [
+        "doux",
+        "avec maman",
+        "avec un adulte",
+        "tout doux"
+      ],
+      "retry_prompt": "Elle est avec maman. Elle est douce. Comment fait-elle ?",
+      "positive_feedback": "Oui. Avec un adulte. On est doux.",
+      "wrong_feedback": "On prend soin avec un adulte. On est doux.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "VIV.ANI.003",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Flore a rempli l'eau avec un adulte. Elle a été douce. Maman était là.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Flore s'assoit près de maman. Le chat ronronne. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

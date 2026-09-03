@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "language": "fr",
+  "kind": "atomic",
+  "secondary_lessons": [],
+  "family_model": "father_mother_children",
+  "root_id": "n1",
+  "tree_id": "ATOM-LAN.NOM.001-07",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Béatrice compte les pommes",
+  "lesson_id": "LAN.NOM.001",
+  "domain": "LAN",
+  "subdomain": "LAN.NOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "setting": "cuisine",
+  "characters": [
+    "Béatrice",
+    "maman"
+  ],
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "type": "audio",
+      "text": "Béatrice est à la cuisine avec maman. Des pommes sont dans le panier. Maman dit : on compte des objets. Béatrice touche. Un. Deux. Trois. Quatre. Cinq. Elle dit : cinq pommes. Maman en pose encore. Six. Sept. Huit. Neuf. Dix. Béatrice répète : dix. Elle a compté des objets. Elle a dit le nombre. Plus tard, maman sort des noix. Béatrice recommence. Un, deux, trois, quatre, cinq. Elle dit le nombre. Maman sourit. Compter des objets, c'est toucher et dire.",
+      "next": "n2",
+      "id": "n1"
+    },
+    "n2": {
+      "type": "question_lesson",
+      "prompt": "Béatrice touche les pommes. Que fait-elle ?",
+      "expected_intents": [
+        "NOMBRE"
+      ],
+      "accepted_examples": [
+        "compter",
+        "cinq",
+        "dix",
+        "le nombre"
+      ],
+      "retry_prompt": "Un, deux, trois. Que fait Béatrice ?",
+      "positive_feedback": "Oui. Elle compte des objets. Elle dit le nombre.",
+      "wrong_feedback": "On compte des objets. On dit le nombre.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "LAN.NOM.001",
+      "id": "n2"
+    },
+    "n3": {
+      "type": "feedback",
+      "text": "Béatrice a compté des objets. Elle a dit le nombre.",
+      "next": "n4",
+      "id": "n3"
+    },
+    "n4": {
+      "type": "ending",
+      "text": "Maman range les pommes. Béatrice essuie la table. L'histoire est finie.",
+      "id": "n4"
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
