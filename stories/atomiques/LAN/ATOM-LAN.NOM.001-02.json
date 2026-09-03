@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.NOM.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Noé compte jusqu'à dix",
+  "lesson_id": "LAN.NOM.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.NOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Noé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Noé et maman sont dans la cuisine. Il y a un bol. Dedans, des fraises. Maman dit : on va compter des objets. Noé touche une fraise. Une. Deux. Trois. Quatre. Cinq. Six. Sept. Huit. Neuf. Dix. Noé dit : dix fraises. Maman sourit. Il dit le nombre. Dix. Noé pose les fraises. Une, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. Les objets sont là. Noé les compte jusqu'à dix. Le bol est rouge. Parce qu'il compte, il dit le nombre. Maman dit : tu as compté des objets. Noé sent une fraise. Elle sent le sucre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Noé compte les fraises. Combien y en a-t-il ?",
+      "expected_intents": [
+        "NOMBRE"
+      ],
+      "accepted_examples": [
+        "dix",
+        "dix fraises",
+        "le nombre",
+        "dix objets"
+      ],
+      "retry_prompt": "Il dit le nombre. Combien ?",
+      "positive_feedback": "Oui. Dix. Il a compté des objets jusqu'à dix.",
+      "wrong_feedback": "On compte des objets. On dit le nombre. Jusqu'à dix.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Noé a compté des objets. Dix fraises. Il a dit le nombre. Jusqu'à dix.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le bol. Noé garde une fraise. Il croque. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

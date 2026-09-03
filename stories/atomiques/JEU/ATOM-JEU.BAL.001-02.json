@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-JEU.BAL.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Tom passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Tom",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Tom et maman sont dans le jardin. L'herbe est douce. Maman pose deux sacs. Elle dit : voici l'espace du jeu. Tom reste dans l'espace du jeu. Maman donne le ballon. Tom le sent. Il est un peu lourd. Maman dit : on va passer le ballon. Chacun a son tour. Tom passe le ballon à maman. Maman l'attrape. C'est le tour de maman. Maman passe le ballon. Tom attend. Puis c'est son tour. Tom passe encore. Une abeille passe. Tom reste dans l'espace. Il attend. Il passe. Parce qu'il attend son tour, le jeu reste doux. Maman dit : bien joué.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tom a le ballon. Que fait-il ?",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "il passe",
+        "son tour",
+        "le tour"
+      ],
+      "retry_prompt": "Chacun a un tour. Que fait Tom ?",
+      "positive_feedback": "Oui. Il passe le ballon. Chacun a son tour.",
+      "wrong_feedback": "On va passer le ballon. On attend son tour. On reste dans l'espace du jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tom a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le ballon. Tom boit de l'eau. Ils rentrent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

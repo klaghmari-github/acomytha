@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Adam est avec papa, dans le jardin. Adam a envie de jouer. papa est là, tout près. On va apprendre : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam écoute papa. Adam entend les mots : énergie, pas une faute, jouer ou attendre.",
+      "text": "Adam est dans le jardin, avec papa. Maman arrose une fleur. Un camarade court, saute, tourne. Il a beaucoup d'énergie. Papa dit : cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Adam choisit. Tom, Léa, ou Sami ?",
+      "prompt": "Adam rejoint qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,13 +63,13 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Adam va vers Tom. Les chaussures font toc toc. papa sourit. Ici, c'est Tom. Ce n'est pas comme les autres endroits. Adam se souvient : énergie, pas une faute, jouer ou attendre. Voici le geste : jouer ; attendre son tour ; demander à un adulte. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam rejoint Tom. Tom court autour du bac. Il a beaucoup d'énergie. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa est là. Tom s'arrête, puis reprend. On peut jouer ensemble.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui bouge beaucoup.",
+      "prompt": "Beaucoup d'énergie, c'est une faute ?",
       "expected_intents": [
         "JOUER",
         "ATTENDRE",
@@ -80,9 +80,9 @@
         "attendre",
         "adulte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
-      "wrong_feedback": "Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
+      "retry_prompt": "Dis : jouer, ou attendre.",
+      "positive_feedback": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre.",
+      "wrong_feedback": "Cette énergie n'est pas une faute. On joue, ou on attend.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.ENE.001"
@@ -90,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam respire. Adam retient : énergie, pas une faute, jouer ou attendre. On continue, avec papa.",
+      "text": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre. Adam respire. Papa est là. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Avec Tom, on prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -122,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. On entend un oiseau. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On dit merci. maman n'est pas loin.",
+      "text": "Tom veut les cubes. Il bouge beaucoup. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa montre le geste, lentement. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -154,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de Tom, les cubes et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam a choisi Tom. Puis les cubes. Puis une pomme. Une pomme brille un peu. Adam dit merci à papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. Une feuille tombe. On se tient la main. Cette fin-là est celle de Tom, les cubes et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam s'arrête près de un yaourt. les cubes est rangé. Les chaussures font toc toc. Adam enfile ses chaussons. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de Tom, les cubes et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam se souvient de Tom. Et de les cubes. Et de un morceau de pain. Une cloche tinte, tout loin. Adam montre un morceau de pain à papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Adam a choisi le livre. Ça sent le pain chaud. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On souffle doucement. maman n'est pas loin.",
+      "text": "Tom veut le livre. Il tourne les pages vite. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa dit : je suis là. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Encore un choix. Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -201,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de Tom, le livre et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec une pomme. Après le livre. Près de Tom. Adam s'arrête. On rit un peu. Adam s'assoit près de papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de Tom, le livre et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam range le livre. un yaourt reste près de Tom. Il y a des miettes sur la table. Adam range Tom dans sa tête, comme un souvenir. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. Un vélo passe au loin. On range un objet. Cette fin-là est celle de Tom, le livre et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "un morceau de pain est là. le livre aussi. Tom reste dans le souvenir. La couverture est douce. Adam pose le livre à sa place. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. Le vent est doux. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Tom veut la dînette. Il range et dérange. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa reste tout près. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Dernière étape. Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -248,28 +248,28 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de Tom, la dînette et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam rejoint une pomme. la dînette est rangé. Tom est fini. On se tient la main. Adam chuchote : c'est fini. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de Tom, la dînette et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de un yaourt. Adam pose la dînette. Tom est derrière. Un chat miaule une fois. Adam souffle, puis sourit à papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. La lumière est claire. On range un objet. Cette fin-là est celle de Tom, la dînette et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam montre un morceau de pain. Papa a vu Tom. Et la dînette. Un linge sèche à l'air. Adam caresse le doudou. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Adam va vers Léa. La couverture est douce. papa sourit. Ici, c'est Léa. Ce n'est pas comme les autres endroits. Adam se souvient : énergie, pas une faute, jouer ou attendre. Voici le geste : jouer ; attendre son tour ; demander à un adulte. On se tient la main. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam rejoint Léa. Léa saute sur place. Elle a beaucoup d'énergie. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Maman dit : on peut demander à un adulte. On peut jouer ensemble.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui bouge beaucoup.",
+      "prompt": "On joue, ou on attend ?",
       "expected_intents": [
         "JOUER",
         "ATTENDRE",
@@ -280,9 +280,9 @@
         "attendre",
         "adulte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
-      "wrong_feedback": "Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
+      "retry_prompt": "Dis : jouer, ou attendre.",
+      "positive_feedback": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre.",
+      "wrong_feedback": "Cette énergie n'est pas une faute. On joue, ou on attend.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.ENE.001"
@@ -290,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam respire. Adam retient : énergie, pas une faute, jouer ou attendre. On continue, avec papa.",
+      "text": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre. Adam retient le geste. Papa sourit. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Avec Léa, on prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -322,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. Le sol est un peu froid. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On dit merci. maman n'est pas loin.",
+      "text": "Léa veut les cubes. Elle saute. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa dit : je suis là. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -354,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. Une feuille tombe. On se tient la main. Cette fin-là est celle de Léa, les cubes et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam a choisi Léa. Puis les cubes. Puis une pomme. Un ruban reste dans la poche. Adam plie un pull. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de Léa, les cubes et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam s'arrête près de un yaourt. les cubes est rangé. Un ballon s'immobilise. Adam répète tout bas le geste. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. Un vélo passe au loin. On dit merci. Cette fin-là est celle de Léa, les cubes et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam se souvient de Léa. Et de les cubes. Et de un morceau de pain. Le vent est doux. Adam serre la main de papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Adam a choisi le livre. Une feuille tombe. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On souffle doucement. maman n'est pas loin.",
+      "text": "Léa veut le livre. Elle pointe partout. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa reste tout près. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "On continue. Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -401,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de Léa, le livre et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec une pomme. Après le livre. Près de Léa. Adam s'arrête. On range un objet. Adam pose sa tête un moment. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. Un vélo passe au loin. On range un objet. Cette fin-là est celle de Léa, le livre et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam range le livre. un yaourt reste près de Léa. On souffle doucement. Adam tend un yaourt à maman. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. La lumière est claire. On dit merci. Cette fin-là est celle de Léa, le livre et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "un morceau de pain est là. le livre aussi. Léa reste dans le souvenir. Une feuille tombe. Adam sourit. Papa sourit aussi. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. L'eau coule, tout petit bruit. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Léa veut la dînette. Elle fait cliqueter. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa montre le geste, lentement. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -448,28 +448,28 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de Léa, la dînette et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam rejoint une pomme. la dînette est rangé. Léa est fini. Le sol est un peu froid. Maman n'est pas loin. Adam les rejoint. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. La lumière est claire. On range un objet. Cette fin-là est celle de Léa, la dînette et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de un yaourt. Adam pose la dînette. Léa est derrière. Ça sent le pain chaud. Adam range la tasse. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de Léa, la dînette et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam montre un morceau de pain. Papa a vu Léa. Et la dînette. On dit merci. Adam essuie ses mains. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Adam va vers Sami. On entend un oiseau. papa sourit. Ici, c'est Sami. Ce n'est pas comme les autres endroits. Adam se souvient : énergie, pas une faute, jouer ou attendre. Voici le geste : jouer ; attendre son tour ; demander à un adulte. On range un objet. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam rejoint Sami. Sami tourne, puis s'assoit. Il a beaucoup d'énergie. Cette énergie n'est pas une faute. Adam joue un moment, puis attend. Papa reste tout près. On peut jouer ensemble.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui bouge beaucoup.",
+      "prompt": "On demande à un adulte ?",
       "expected_intents": [
         "JOUER",
         "ATTENDRE",
@@ -480,9 +480,9 @@
         "attendre",
         "adulte"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
-      "wrong_feedback": "Voici le geste : jouer ; attendre son tour ; demander à un adulte.",
+      "retry_prompt": "Dis : jouer, ou attendre.",
+      "positive_feedback": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre.",
+      "wrong_feedback": "Cette énergie n'est pas une faute. On joue, ou on attend.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.ENE.001"
@@ -490,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam respire. Adam retient : énergie, pas une faute, jouer ou attendre. On continue, avec papa.",
+      "text": "Oui. Cette énergie n'est pas une faute. On peut jouer ou attendre. Adam hoche la tête. On continue, avec papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Avec Sami, on prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -522,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. Un vélo passe au loin. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On dit merci. maman n'est pas loin.",
+      "text": "Sami veut les cubes. Il court les chercher. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa reste tout près. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Un dernier choix. Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -554,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de Sami, les cubes et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam a choisi Sami. Puis les cubes. Puis une pomme. Un crochet tient bien le manteau. Adam dit : j'ai appris. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. Un vélo passe au loin. On dit merci. Cette fin-là est celle de Sami, les cubes et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam s'arrête près de un yaourt. les cubes est rangé. L'eau coule, tout petit bruit. Adam ferme la porte, tout doux. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. La lumière est claire. On souffle doucement. Cette fin-là est celle de Sami, les cubes et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam se souvient de Sami. Et de les cubes. Et de un morceau de pain. La lumière est claire. Adam marche près de papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Adam a choisi le livre. La lumière est claire. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On souffle doucement. maman n'est pas loin.",
+      "text": "Sami veut le livre. Il s'assoit, puis se lève. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa montre le geste, lentement. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -601,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. Un vélo passe au loin. On range un objet. Cette fin-là est celle de Sami, le livre et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec une pomme. Après le livre. Près de Sami. Adam s'arrête. Un vélo passe au loin. Adam écoute papa encore une fois. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. La lumière est claire. On dit merci. Cette fin-là est celle de Sami, le livre et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam range le livre. un yaourt reste près de Sami. Une chaussette est encore sablée. Adam ferme le sac. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de Sami, le livre et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "un morceau de pain est là. le livre aussi. Sami reste dans le souvenir. Une tasse cliquette. Adam raccroche un linge. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. Il y a des miettes sur la table. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam répète tout bas : énergie, pas une faute, jouer ou attendre. On écoute jusqu'au bout. maman n'est pas loin.",
+      "text": "Sami veut la dînette. Il sert très vite. Cette énergie n'est pas une faute. Adam peut jouer ou attendre. Papa dit : je suis là. Cette énergie n'est pas une faute. On peut jouer ou attendre. On peut jouer ensemble.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Pour clore. Pour finir, un goûter ? Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -648,22 +648,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Adam rejoint une pomme. La lumière est claire. On range un objet. Cette fin-là est celle de Sami, la dînette et une pomme. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam rejoint une pomme. la dînette est rangé. Sami est fini. Un panier est posé sur le banc. Adam boit une gorgée d'eau. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Adam rejoint un yaourt. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de Sami, la dînette et un yaourt. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de un yaourt. Adam pose la dînette. Sami est derrière. On attend son tour. Adam prend la main de papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Adam rejoint un morceau de pain. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de Sami, la dînette et un morceau de pain. Adam a appris : Un camarade qui bouge beaucoup. Voici le geste : jouer ; attendre son tour ; demander à un adulte. Adam a entendu : énergie, pas une faute, jouer ou attendre. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam montre un morceau de pain. Papa a vu Sami. Et la dînette. Un galet est encore chaud. Adam range encore un peu, près de papa. Cette énergie n'est pas une faute. On peut jouer ou attendre. On joue, ou on attend. On peut demander à un adulte. Adam dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

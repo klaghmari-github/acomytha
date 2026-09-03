@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-FAM.SEC.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Lina raconte sa peur deux fois",
+  "lesson_id": "FAM.SEC.002",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.SEC",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "parc puis magasin",
+  "characters": [
+    "Lina",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Lina joue au parc avec papa. Elle est près du bac à sable. Le sable est tiède. Un adulte parle tout bas. Il dit : c'est notre secret. Lina sent son ventre. C'est serré. C'est un malaise. Lina a peur. Lina marche vers papa. Elle prend sa main. Lina dit : papa, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Papa l'écoute. Papa dit : merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. Même si un adulte parle d'un secret. On va raconter à papa ou maman. Papa reste tout près. Plus tard, ils vont au magasin. Maman est là aussi. Lina sent encore son ventre. Un bruit fort la surprend. Elle a peur. Elle se souvient. Elle marche vers maman. Elle dit : maman, j'ai peur. Maman écoute. Maman dit : tu as repris le geste. Ce qui fait peur se raconte à papa ou maman. Lina se sent plus légère.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Lina a peur. Que fait-elle ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "le dire",
+        "à papa",
+        "à maman"
+      ],
+      "retry_prompt": "Elle va le dire à papa ou maman. Que fait Lina ?",
+      "positive_feedback": "Oui. Lina raconte à papa ou maman. Ce qui fait peur se dit.",
+      "wrong_feedback": "Quand on a peur, on va raconter à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lina a senti le malaise. Elle a marché vers papa, puis vers maman. Elle a raconté. Ce qui fait peur se raconte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lina s'assoit près de maman. Papa est là aussi. Sa main est chaude. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

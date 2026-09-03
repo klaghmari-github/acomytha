@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Inès est avec papa, dans le train avec papa. Inès a envie de jouer. papa est là, tout près. On va apprendre : Les douze mois. Voici le geste : nommer un mois. Inès écoute papa. Inès entend les mots : douze mois, anniversaire.",
+      "text": "Inès est dans le train, avec papa. Les roues chantent. Papa dit : il y a douze mois. Un anniversaire a un mois. Inès écoute les douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa dit : ton anniversaire a un mois. Inès pose la main sur le siège. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Inès choisit. le train, le bus, ou la voiture ?",
+      "prompt": "On nomme quoi ? le train, le bus, ou la voiture ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,24 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Inès va vers le train. Il y a des miettes sur la table. papa sourit. Ici, c'est le train. Ce n'est pas comme les autres endroits. Inès se souvient : douze mois, anniversaire. Voici le geste : nommer un mois. On souffle doucement. papa dit : je suis là. On reste ensemble.",
+      "text": "Inès montre le train. Papa reprend les douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Un anniversaire a un mois. Inès dit : janvier. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les douze mois.",
+      "prompt": "Combien de mois ?",
       "expected_intents": [
         "MOIS"
       ],
       "accepted_examples": [
+        "douze",
+        "douze mois",
         "mois"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : nommer un mois.",
-      "wrong_feedback": "Voici le geste : nommer un mois.",
+      "retry_prompt": "Douze mois. Combien ?",
+      "positive_feedback": "Oui. Douze mois. Un anniversaire a un mois.",
+      "wrong_feedback": "On entend les douze mois. Un anniversaire a un mois.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "TMP.MOI.001"
@@ -86,13 +88,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : nommer un mois. Inès respire. Inès retient : douze mois, anniversaire. On continue, avec papa.",
+      "text": "Inès a entendu les douze mois. Un anniversaire a un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui est là ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +120,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Inès a choisi Tom. Les chaussures font toc toc. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Inès va vers Tom. Le savon mousse entre les doigts. Tom écoute les douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Un anniversaire a un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +152,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de le train, Tom et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. La lumière est claire. On referme le livre. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès dit merci à papa. On rentre. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de le train, Tom et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Des miettes dorment sur la table. On pose le ballon. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa serre Inès tout doux. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de le train, Tom et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Un chat miaule une fois. On secoue le sable. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Inès a choisi Léa. La couverture est douce. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On rit un peu. maman n'est pas loin.",
+      "text": "Inès va vers Léa. La fenêtre vibre un peu. Léa dit : mon anniversaire. Papa ajoute : un mois, parmi les douze mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +199,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Le vent est doux. On souffle doucement. Cette fin-là est celle de le train, Léa et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Les chaussures font toc toc. On caresse le tissu. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de le train, Léa et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. La couverture est douce. On tend la main. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On souffle. Inès sourit. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Une feuille tombe. On attend son tour. Cette fin-là est celle de le train, Léa et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Une cloche tinte au loin. On chante un petit air. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès prend la main de papa. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Inès a choisi Sami. On entend un oiseau. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On se tait une seconde. maman n'est pas loin.",
+      "text": "Inès va vers Sami. Le sol est un peu frais. Sami compte. Douze. Les douze mois. Un anniversaire a un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +246,39 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de le train, Sami et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Le bois sent le chaud. On compte jusqu'à trois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès dit merci à papa. On rentre. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de le train, Sami et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Une goutte tombe, ploc. On montre du doigt. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa serre Inès tout doux. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de le train, Sami et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Le savon sent la fleur. On range la chaise. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Inès va vers le bus. Un chat miaule une fois. papa sourit. Ici, c'est le bus. Ce n'est pas comme les autres endroits. Inès se souvient : douze mois, anniversaire. Voici le geste : nommer un mois. On écoute jusqu'au bout. papa dit : je suis là. On reste ensemble.",
+      "text": "Inès montre le bus, en image. Douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa dit : un anniversaire a un mois. Inès dit : juin. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les douze mois.",
+      "prompt": "L'anniversaire a quoi ?",
       "expected_intents": [
         "MOIS"
       ],
       "accepted_examples": [
-        "mois"
+        "un mois",
+        "mois",
+        "anniversaire"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : nommer un mois.",
-      "wrong_feedback": "Voici le geste : nommer un mois.",
+      "retry_prompt": "Un anniversaire a un mois. Quoi ?",
+      "positive_feedback": "Oui. Un anniversaire a un mois. Il y a douze mois.",
+      "wrong_feedback": "Un anniversaire a un mois. Il y a douze mois.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "TMP.MOI.001"
@@ -282,13 +286,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : nommer un mois. Inès respire. Inès retient : douze mois, anniversaire. On continue, avec papa.",
+      "text": "Douze mois. Inès a nommé un mois. L'anniversaire a un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui est là ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +318,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Inès a choisi Tom. Ça sent le pain chaud. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Inès va vers Tom. L'eau fait un petit bruit. Inès et Tom tapent doucement. Douze mois. Anniversaire. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +350,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de le bus, Tom et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Le tissu est tout doux. On range un objet. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de le bus, Tom et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Une cuillère tinte. On se tient la main. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On souffle. Inès sourit. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de le bus, Tom et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Le sable est tiède. On dit merci. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès prend la main de papa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Inès a choisi Léa. Le vent est doux. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On rit un peu. maman n'est pas loin.",
+      "text": "Inès va vers Léa. Le papier froisse, chut. Léa sourit. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Douze mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +397,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de le bus, Léa et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Un rire court, tout petit. On souffle doucement. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès dit merci à papa. On rentre. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Une feuille tombe. On attend son tour. Cette fin-là est celle de le bus, Léa et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Le papier froisse, chut. On écoute jusqu'au bout. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa serre Inès tout doux. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de le bus, Léa et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. L'herbe chatouille le mollet. On attend son tour. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Inès a choisi Sami. Le sol est un peu froid. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On se tait une seconde. maman n'est pas loin.",
+      "text": "Inès va vers Sami. La lumière est claire. Sami chuchote mai. Un mois. Douze mois. Anniversaire. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +444,39 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de le bus, Sami et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Un pigeon roucoule. On sourit ensemble. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de le bus, Sami et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. La fenêtre vibre un peu. On pose les pieds par terre. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On souffle. Inès sourit. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de le bus, Sami et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Le lait est froid dans le verre. On parle tout bas. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès prend la main de papa. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Inès va vers la voiture. Les chaussures font toc toc. papa sourit. Ici, c'est la voiture. Ce n'est pas comme les autres endroits. Inès se souvient : douze mois, anniversaire. Voici le geste : nommer un mois. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "Inès montre la voiture, en jouet. Les douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a un mois. Inès sourit. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les douze mois.",
+      "prompt": "Janvier, c'est un quoi ?",
       "expected_intents": [
         "MOIS"
       ],
       "accepted_examples": [
-        "mois"
+        "mois",
+        "un mois",
+        "janvier"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : nommer un mois.",
-      "wrong_feedback": "Voici le geste : nommer un mois.",
+      "retry_prompt": "Janvier est un mois. Des douze mois.",
+      "positive_feedback": "Oui. Un mois. Il y a douze mois. Anniversaire.",
+      "wrong_feedback": "On nomme un mois. Il y a douze mois.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "TMP.MOI.001"
@@ -478,13 +484,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : nommer un mois. Inès respire. Inès retient : douze mois, anniversaire. On continue, avec papa.",
+      "text": "Papa confirme. Douze mois. Anniversaire. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Inès choisit Tom, Léa, ou Sami ?",
+      "prompt": "Qui est là ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +516,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Inès a choisi Tom. Une feuille tombe. Tom reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On montre du doigt, sans courir. maman n'est pas loin.",
+      "text": "Inès va vers Tom. Une goutte tombe, ploc. Tom s'assoit. Papa dit encore : douze mois. Un anniversaire a un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +548,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de la voiture, Tom et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. La corde du sac est rêche. On range les jouets. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès dit merci à papa. On rentre. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de la voiture, Tom et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Le savon mousse entre les doigts. On s'assoit un moment. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa serre Inès tout doux. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de la voiture, Tom et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Un ruisseau chante. On respire, un, deux. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Inès a choisi Léa. L'eau coule, tout petit bruit. Léa reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On rit un peu. maman n'est pas loin.",
+      "text": "Inès va vers Léa. Un rire court, tout petit. Léa range un crayon. Les douze mois. Anniversaire. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +595,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Inès rejoint le matin. Une feuille tombe. On attend son tour. Cette fin-là est celle de la voiture, Léa et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. La laine gratte un peu. On referme le sac. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de la voiture, Léa et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Un pain croustille. On essuie une miette. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On souffle. Inès sourit. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de la voiture, Léa et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Le savon glisse. On met le doudou près. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Les douze mois sont dits. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès prend la main de papa. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Inès a choisi Sami. Un vélo passe au loin. Sami reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : nommer un mois. Inès répète tout bas : douze mois, anniversaire. On se tait une seconde. maman n'est pas loin.",
+      "text": "Inès va vers Sami. La couverture est douce. Sami écoute jusqu'au bout. Douze mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Inès va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,17 +642,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Inès rejoint le matin. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de la voiture, Sami et le matin. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le matin. Une plume vole. On lace les chaussures. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. On a nommé un mois. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Inès dit merci à papa. On rentre. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Inès rejoint après la sieste. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de la voiture, Sami et après la sieste. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà après la sieste. Le banc est lisse. On met le manteau. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. L'anniversaire a sa place. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Papa serre Inès tout doux. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Inès rejoint le soir. La lumière est claire. On rit un peu. Cette fin-là est celle de la voiture, Sami et le soir. Inès a appris : Les douze mois. Voici le geste : nommer un mois. Inès a entendu : douze mois, anniversaire. Inès dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Voilà le soir. Un grelot sonne. On boit une gorgée. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Le train continue. Il y a douze mois. Un anniversaire a un mois. Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. Maman n'est pas loin. On rentre. L'histoire est finie."
     }
   },
   "validation": {

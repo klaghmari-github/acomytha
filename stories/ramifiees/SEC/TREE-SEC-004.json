@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Noé est avec maman, au bord de la mer. Noé a envie de jouer. maman est là, tout près. On va apprendre : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé écoute maman. Noé entend les mots : appeler un adulte, mains avec les jouets.",
+      "text": "Aujourd'hui, Noé est avec Maman. Ils sont au bord de la mer. C'est la petite maison. Noé a des jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. On appelle Maman. Papa est sur la terrasse.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Noé choisit. le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Noé va vers le ballon rouge. Ça sent le pain chaud. maman sourit. Ici, c'est le ballon rouge. Ce n'est pas comme les autres endroits. Noé se souvient : appeler un adulte, mains avec les jouets. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. On dit merci. maman dit : je suis là. On reste ensemble.",
+      "text": "Noé prend le ballon rouge. C'est un jouet. Les mains restent avec les jouets. Noé appelle un adulte. Il appelle Maman. Maman dit : je suis là.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les prises sont pour les adultes.",
+      "prompt": "Les mains sont où ? Avec les jouets.",
       "expected_intents": [
         "APPELER_ADULTE",
         "MAINS_JOUETS"
       ],
       "accepted_examples": [
-        "appeler adulte",
-        "mains jouets"
+        "appeler",
+        "maman",
+        "jouets"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
-      "wrong_feedback": "Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
+      "retry_prompt": "Dis un petit mot. Tout doucement.",
+      "positive_feedback": "Oui. Les mains restent avec les jouets. On appelle un adulte.",
+      "wrong_feedback": "Les mains restent avec les jouets. On appelle un adulte. On appelle Papa ou Maman.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "SEC.MAI.001"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé respire. Noé retient : appeler un adulte, mains avec les jouets. On continue, avec maman.",
+      "text": "Oui. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé retient : appeler un adulte, mains avec les jouets. Les mains restent avec les jouets. On continue, avec Maman.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit Tom, Léa, ou Sami ?",
+      "prompt": "Ensuite, Noé joue avec Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Noé a choisi Tom. Le sol est un peu froid. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On attend son tour. papa n'est pas loin.",
+      "text": "Noé a choisi Tom. On entend la mer. Noé joue avec Tom. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Un vélo passe au loin. On dit merci. Cette fin-là est celle de le ballon rouge, Tom et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Le seau cliquette. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. La lumière est claire. On souffle doucement. Cette fin-là est celle de le ballon rouge, Tom et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Un oiseau chante. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de le ballon rouge, Tom et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Le sable est chaud. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Noé a choisi Léa. Une feuille tombe. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Noé a choisi Léa. Le vent est doux. Noé joue avec Léa. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Noé rejoint le matin. La lumière est claire. On dit merci. Cette fin-là est celle de le ballon rouge, Léa et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un oiseau chante. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de le ballon rouge, Léa et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Le sable est chaud. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de le ballon rouge, Léa et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. L'eau chuchote. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Noé a choisi Sami. L'eau coule, tout petit bruit. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On rit un peu. papa n'est pas loin.",
+      "text": "Noé a choisi Sami. Le seau cliquette. Noé joue avec Sami. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de le ballon rouge, Sami et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Le sable est chaud. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de le ballon rouge, Sami et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. L'eau chuchote. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de le ballon rouge, Sami et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. On entend la mer. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Noé va vers le seau bleu. Le vent est doux. maman sourit. Ici, c'est le seau bleu. Ce n'est pas comme les autres endroits. Noé se souvient : appeler un adulte, mains avec les jouets. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "text": "Noé prend le seau bleu. C'est un jouet. Les mains restent avec les jouets. Noé appelle un adulte. Il appelle Maman. Maman sourit.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les prises sont pour les adultes.",
+      "prompt": "Les mains sont où ? Avec les jouets.",
       "expected_intents": [
         "APPELER_ADULTE",
         "MAINS_JOUETS"
       ],
       "accepted_examples": [
-        "appeler adulte",
-        "mains jouets"
+        "appeler",
+        "maman",
+        "jouets"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
-      "wrong_feedback": "Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
+      "retry_prompt": "Dis un petit mot. Tout doucement.",
+      "positive_feedback": "Oui. Les mains restent avec les jouets. On appelle un adulte.",
+      "wrong_feedback": "Les mains restent avec les jouets. On appelle un adulte. On appelle Papa ou Maman.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "SEC.MAI.001"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé respire. Noé retient : appeler un adulte, mains avec les jouets. On continue, avec maman.",
+      "text": "Oui. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé retient : appeler un adulte, mains avec les jouets. Les mains restent avec les jouets. On continue, avec Maman.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit Tom, Léa, ou Sami ?",
+      "prompt": "Ensuite, Noé joue avec Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Noé a choisi Tom. Un vélo passe au loin. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On attend son tour. papa n'est pas loin.",
+      "text": "Noé a choisi Tom. Un oiseau chante. Noé joue avec Tom. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Noé rejoint le matin. La lumière est claire. On souffle doucement. Cette fin-là est celle de le seau bleu, Tom et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Un oiseau chante. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de le seau bleu, Tom et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Le sable est chaud. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de le seau bleu, Tom et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. L'eau chuchote. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Noé a choisi Léa. La lumière est claire. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Noé a choisi Léa. Le sable est chaud. Noé joue avec Léa. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Il y a des miettes sur la table. On souffle doucement. Cette fin-là est celle de le seau bleu, Léa et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Le sable est chaud. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de le seau bleu, Léa et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. L'eau chuchote. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de le seau bleu, Léa et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. On entend la mer. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Noé a choisi Sami. Il y a des miettes sur la table. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On rit un peu. papa n'est pas loin.",
+      "text": "Noé a choisi Sami. L'eau chuchote. Noé joue avec Sami. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Un chat miaule une fois. On souffle doucement. Cette fin-là est celle de le seau bleu, Sami et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. L'eau chuchote. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de le seau bleu, Sami et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. On entend la mer. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. La couverture est douce. On attend son tour. Cette fin-là est celle de le seau bleu, Sami et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Le vent est doux. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Noé va vers le doudou. Le sol est un peu froid. maman sourit. Ici, c'est le doudou. Ce n'est pas comme les autres endroits. Noé se souvient : appeler un adulte, mains avec les jouets. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "text": "Noé prend le doudou. C'est un jouet. Les mains restent avec les jouets. Noé appelle un adulte. Il appelle Maman. Papa écoute aussi.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Les prises sont pour les adultes.",
+      "prompt": "Les mains sont où ? Avec les jouets.",
       "expected_intents": [
         "APPELER_ADULTE",
         "MAINS_JOUETS"
       ],
       "accepted_examples": [
-        "appeler adulte",
-        "mains jouets"
+        "appeler",
+        "maman",
+        "jouets"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
-      "wrong_feedback": "Voici le geste : appeler papa ou maman ; garder les mains avec les jouets.",
+      "retry_prompt": "Dis un petit mot. Tout doucement.",
+      "positive_feedback": "Oui. Les mains restent avec les jouets. On appelle un adulte.",
+      "wrong_feedback": "Les mains restent avec les jouets. On appelle un adulte. On appelle Papa ou Maman.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "SEC.MAI.001"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé respire. Noé retient : appeler un adulte, mains avec les jouets. On continue, avec maman.",
+      "text": "Oui. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé retient : appeler un adulte, mains avec les jouets. Les mains restent avec les jouets. On continue, avec Maman.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit Tom, Léa, ou Sami ?",
+      "prompt": "Ensuite, Noé joue avec Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Noé a choisi Tom. Un chat miaule une fois. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On attend son tour. papa n'est pas loin.",
+      "text": "Noé a choisi Tom. On entend la mer. Noé joue avec Tom. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de le doudou, Tom et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. Le sable est chaud. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de le doudou, Tom et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. L'eau chuchote. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de le doudou, Tom et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. On entend la mer. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Noé a choisi Léa. Les chaussures font toc toc. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Noé a choisi Léa. Le vent est doux. Noé joue avec Léa. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de le doudou, Léa et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. L'eau chuchote. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de le doudou, Léa et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. On entend la mer. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de le doudou, Léa et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Le vent est doux. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Noé a choisi Sami. La couverture est douce. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé répète tout bas : appeler un adulte, mains avec les jouets. On rit un peu. papa n'est pas loin.",
+      "text": "Noé a choisi Sami. Le seau cliquette. Noé joue avec Sami. Les mains restent avec les jouets. On appelle un adulte. On appelle Maman. Les mains restent avec les jouets. Papa n'est pas loin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quand ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,22 +645,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Noé rejoint le matin. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de le doudou, Sami et le matin. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le matin. On entend la mer. C'est le matin. La lumière est claire. Noé appelle Maman. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Noé rejoint après la sieste. La couverture est douce. On attend son tour. Cette fin-là est celle de le doudou, Sami et après la sieste. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est après la sieste. Le vent est doux. C'est après la sieste. Noé a les jouets. Il appelle un adulte. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Noé rejoint le soir. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de le doudou, Sami et le soir. Noé a appris : Les prises sont pour les adultes. Voici le geste : appeler papa ou maman ; garder les mains avec les jouets. Noé a entendu : appeler un adulte, mains avec les jouets. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "C'est le soir. Le seau cliquette. C'est le soir. Noé range. Les mains restent avec les jouets. Les mains restent avec les jouets. Pour la lumière, on appelle un adulte. Noé dit merci à Maman. Papa sourit. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Réécriture CHILD_AUDIO. Graphe inchangé.",
     "major_findings": 0,
     "paths_tested": 27
   }

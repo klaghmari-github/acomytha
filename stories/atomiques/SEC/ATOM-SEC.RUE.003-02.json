@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.003-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Iris près de maman",
+  "lesson_id": "SEC.RUE.003",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "rue du marché",
+  "characters": [
+    "Iris",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Iris sort avec maman. Elles vont au marché. La rue sent le pain chaud. Iris reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Les pieds d'Iris marchent à côté. Maman dit : près de moi. Iris sent le manteau. Le manteau est chaud. La main de maman est douce. Elles passent les étals. Iris sent les fraises. Elle reste près de l'adulte. Les pieds restent près. La main tient le manteau. Parce qu'elle reste près, maman la guide. Iris marche à côté. Main ou manteau. Maman achète une poire. Iris garde la main. Elles rentrent près l'une de l'autre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris marche dans la rue. Où est-elle ?",
+      "expected_intents": [
+        "PRES_ADULTE",
+        "MAIN"
+      ],
+      "accepted_examples": [
+        "près de maman",
+        "près",
+        "la main",
+        "manteau",
+        "à côté"
+      ],
+      "retry_prompt": "Elle reste près. Elle tient la main. Où est Iris ?",
+      "positive_feedback": "Oui. Iris reste près de l'adulte. Main ou manteau.",
+      "wrong_feedback": "On reste près de l'adulte. On tient la main ou le manteau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Iris est près de maman. La main tient le manteau. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Iris garde la main de maman. Elles rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

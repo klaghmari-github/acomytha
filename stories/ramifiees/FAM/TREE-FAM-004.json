@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Tom est avec maman, à la maison. Tom a envie de jouer. maman est là, tout près. On va apprendre : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom écoute maman. Tom entend les mots : aller vers eux, dire le besoin.",
+      "text": "Tom est à la maison, avec maman. Papa est dans le jardin. Un bocal est trop lourd. Tom n'y arrive pas. Maman dit : on peut aller vers eux. On va dire le besoin. On appelle papa ou maman.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Tom choisit. le chat, le chien, ou la poule ?",
+      "prompt": "Tom s'occupe de qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Tom va vers le chat. Un chat miaule une fois. maman sourit. Ici, c'est le chat. Ce n'est pas comme les autres endroits. Tom se souvient : aller vers eux, dire le besoin. Voici le geste : appeler ; dire. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Le chat de la maison miaule. Tom veut le panier. C'est trop difficile. Il va vers maman. Il dit le besoin : j'ai besoin d'aide. On va vers eux. On dit le besoin.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Appeler papa ou maman.",
+      "prompt": "On appelle papa ou maman ?",
       "expected_intents": [
         "APPELER",
         "DIRE"
       ],
       "accepted_examples": [
         "appeler",
-        "dire"
+        "dire",
+        "papa"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler ; dire.",
-      "wrong_feedback": "Voici le geste : appeler ; dire.",
+      "retry_prompt": "Dis : appeler.",
+      "positive_feedback": "Oui. On peut aller vers eux. On va dire le besoin.",
+      "wrong_feedback": "On peut aller vers papa ou maman. On va dire le besoin.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "FAM.AID.001"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler ; dire. Tom respire. Tom retient : aller vers eux, dire le besoin. On continue, avec maman.",
+      "text": "Oui. On peut aller vers eux. On va dire le besoin. Tom respire. Maman est là. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Tom va où ensuite ? Le bac à sable, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Tom a choisi le bac à sable. La couverture est douce. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Plus tard, Tom va vers le bac à sable. C'est trop loin tout seul. Il va vers maman. Il dit le besoin. Maman montre le geste, lentement. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Le vent est doux. On range un objet. Cette fin-là est celle de le chat, le bac à sable et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom a choisi le chat. Puis le bac à sable. Puis rouge. Un ballon s'immobilise. Tom raccroche un linge. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le chat, le bac à sable et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'arrête près de bleu. le bac à sable est rangé. Une pomme brille un peu. Tom répète tout bas le geste. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Tom rejoint vert. Une feuille tombe. On souffle doucement. Cette fin-là est celle de le chat, le bac à sable et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom se souvient de le chat. Et de le bac à sable. Et de vert. Un vélo passe au loin. Tom marche près de maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Tom a choisi le toboggan. On entend un oiseau. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On attend son tour. papa n'est pas loin.",
+      "text": "Plus tard, Tom va vers le toboggan. La marche est haute. Il va vers maman. Il dit le besoin. Maman dit : je suis là. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Encore un choix. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le chat, le toboggan et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le toboggan. Près de le chat. Tom s'arrête. Un linge sèche à l'air. Tom plie un pull. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. Une feuille tombe. On dit merci. Cette fin-là est celle de le chat, le toboggan et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom range le toboggan. bleu reste près de le chat. Le savon sent bon. Tom dit : j'ai appris. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Tom rejoint vert. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de le chat, le toboggan et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "vert est là. le toboggan aussi. le chat reste dans le souvenir. Un ruban reste dans la poche. Tom chuchote : c'est fini. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Tom a choisi les balançoires. Ça sent le pain chaud. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Plus tard, Tom va vers les balançoires. Il n'arrive pas. Il va vers maman. Il dit le besoin. Maman reste tout près. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Dernière étape. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Une feuille tombe. On range un objet. Cette fin-là est celle de le chat, les balançoires et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint rouge. les balançoires est rangé. le chat est fini. Il y a des miettes sur la table. Tom prend la main de maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le chat, les balançoires et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Tom pose les balançoires. le chat est derrière. On attend son tour. Tom dit merci à maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Tom rejoint vert. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de le chat, les balançoires et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom montre vert. Maman a vu le chat. Et les balançoires. Une cloche tinte, tout loin. Tom ferme le sac. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Tom va vers le chien. Les chaussures font toc toc. maman sourit. Ici, c'est le chien. Ce n'est pas comme les autres endroits. Tom se souvient : aller vers eux, dire le besoin. Voici le geste : appeler ; dire. On dit merci. maman dit : je suis là. On reste ensemble.",
+      "text": "Le chien des voisins aboie, tout loin. Tom veut fermer la porte. C'est trop difficile. Il appelle papa. Il va vers eux. Il dit le besoin.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Appeler papa ou maman.",
+      "prompt": "On va vers eux, et on dit le besoin ?",
       "expected_intents": [
         "APPELER",
         "DIRE"
       ],
       "accepted_examples": [
         "appeler",
-        "dire"
+        "dire",
+        "papa"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler ; dire.",
-      "wrong_feedback": "Voici le geste : appeler ; dire.",
+      "retry_prompt": "Dis : appeler.",
+      "positive_feedback": "Oui. On peut aller vers eux. On va dire le besoin.",
+      "wrong_feedback": "On peut aller vers papa ou maman. On va dire le besoin.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "FAM.AID.001"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler ; dire. Tom respire. Tom retient : aller vers eux, dire le besoin. On continue, avec maman.",
+      "text": "Oui. On peut aller vers eux. On va dire le besoin. Tom retient le geste. Maman sourit. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Tom va où ensuite ? Le bac à sable, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Tom a choisi le bac à sable. Le vent est doux. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Papa l'emmène au bac à sable. Tom veut le seau. C'est trop difficile. Il va vers eux. Il dit le besoin. Maman dit : je suis là. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le chien, le bac à sable et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom a choisi le chien. Puis le bac à sable. Puis rouge. Un crochet tient bien le manteau. Tom range la tasse. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. Une feuille tombe. On souffle doucement. Cette fin-là est celle de le chien, le bac à sable et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'arrête près de bleu. le bac à sable est rangé. On dit merci. Tom range encore un peu, près de maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Tom rejoint vert. L'eau coule, tout petit bruit. On écoute jusqu'au bout. Cette fin-là est celle de le chien, le bac à sable et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom se souvient de le chien. Et de le bac à sable. Et de vert. Ça sent le pain chaud. Tom boit une gorgée d'eau. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Tom a choisi le toboggan. Le sol est un peu froid. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On attend son tour. papa n'est pas loin.",
+      "text": "Papa l'emmène au toboggan. Tom veut monter. C'est trop difficile. Il va vers eux. Il dit le besoin. Maman reste tout près. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "On continue. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Une feuille tombe. On dit merci. Cette fin-là est celle de le chien, le toboggan et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le toboggan. Près de le chien. Tom s'arrête. Une feuille tombe. Papa n'est pas loin. Tom les rejoint. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de le chien, le toboggan et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom range le toboggan. bleu reste près de le chien. On souffle doucement. Tom tend bleu à papa. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Tom rejoint vert. Un vélo passe au loin. On écoute jusqu'au bout. Cette fin-là est celle de le chien, le toboggan et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "vert est là. le toboggan aussi. le chien reste dans le souvenir. On écoute jusqu'au bout. Tom s'assoit près de maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Tom a choisi les balançoires. Une feuille tombe. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Papa l'emmène aux balançoires. Tom veut s'asseoir. C'est trop difficile. Il va vers eux. Il dit le besoin. Maman montre le geste, lentement. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Tom rejoint rouge. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le chien, les balançoires et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint rouge. les balançoires est rangé. le chien est fini. Le sol est un peu froid. Tom montre rouge à maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de le chien, les balançoires et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Tom pose les balançoires. le chien est derrière. L'eau coule, tout petit bruit. Tom pose sa tête un moment. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Tom rejoint vert. La lumière est claire. On écoute jusqu'au bout. Cette fin-là est celle de le chien, les balançoires et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom montre vert. Maman a vu le chien. Et les balançoires. Un chat miaule une fois. Tom pose les balançoires à sa place. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Tom va vers la poule. La couverture est douce. maman sourit. Ici, c'est la poule. Ce n'est pas comme les autres endroits. Tom se souvient : aller vers eux, dire le besoin. Voici le geste : appeler ; dire. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "text": "Une poule en peluche est coincée. Tom n'y arrive pas. Il va vers maman. Il dit le besoin. Maman vient. On appelle papa ou maman. On dit le besoin.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Appeler papa ou maman.",
+      "prompt": "C'est trop difficile. On fait quoi ?",
       "expected_intents": [
         "APPELER",
         "DIRE"
       ],
       "accepted_examples": [
         "appeler",
-        "dire"
+        "dire",
+        "papa"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : appeler ; dire.",
-      "wrong_feedback": "Voici le geste : appeler ; dire.",
+      "retry_prompt": "Dis : appeler.",
+      "positive_feedback": "Oui. On peut aller vers eux. On va dire le besoin.",
+      "wrong_feedback": "On peut aller vers papa ou maman. On va dire le besoin.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "FAM.AID.001"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : appeler ; dire. Tom respire. Tom retient : aller vers eux, dire le besoin. On continue, avec maman.",
+      "text": "Oui. On peut aller vers eux. On va dire le besoin. Tom hoche la tête. On continue, avec maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Tom va où ensuite ? Le bac à sable, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Tom a choisi le bac à sable. L'eau coule, tout petit bruit. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Maman l'emmène au bac. Tom veut un moule. C'est trop difficile. Il va vers eux. Il dit le besoin. Maman reste tout près. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Un dernier choix. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la poule, le bac à sable et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom a choisi la poule. Puis le bac à sable. Puis rouge. On rit un peu. Tom serre la main de maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. L'eau coule, tout petit bruit. On écoute jusqu'au bout. Cette fin-là est celle de la poule, le bac à sable et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom s'arrête près de bleu. le bac à sable est rangé. On range un objet. Tom sourit. Maman sourit aussi. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Tom rejoint vert. Un vélo passe au loin. On attend son tour. Cette fin-là est celle de la poule, le bac à sable et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom se souvient de la poule. Et de le bac à sable. Et de vert. Le vent est doux. Tom ferme la porte, tout doux. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Tom a choisi le toboggan. Un vélo passe au loin. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On attend son tour. papa n'est pas loin.",
+      "text": "Maman l'emmène au toboggan. Tom veut de l'aide. Il va vers eux. Il dit le besoin. Maman montre le geste, lentement. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Tom rejoint rouge. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la poule, le toboggan et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le toboggan. Près de la poule. Tom s'arrête. Un galet est encore chaud. Tom caresse le doudou. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. Un vélo passe au loin. On écoute jusqu'au bout. Cette fin-là est celle de la poule, le toboggan et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom range le toboggan. bleu reste près de la poule. La couverture est douce. Tom écoute maman encore une fois. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Tom rejoint vert. La lumière est claire. On attend son tour. Cette fin-là est celle de la poule, le toboggan et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "vert est là. le toboggan aussi. la poule reste dans le souvenir. Une chaussette est encore sablée. Tom essuie ses mains. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Tom a choisi les balançoires. La lumière est claire. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : appeler ; dire. Tom répète tout bas : aller vers eux, dire le besoin. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Maman l'emmène aux balançoires. Tom veut de l'aide. Il va vers eux. Il dit le besoin. Maman dit : je suis là. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour clore. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,22 +645,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Tom rejoint rouge. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la poule, les balançoires et rouge. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint rouge. les balançoires est rangé. la poule est fini. Une tasse cliquette. Tom enfile ses chaussons. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Tom rejoint bleu. La lumière est claire. On écoute jusqu'au bout. Cette fin-là est celle de la poule, les balançoires et bleu. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Tom pose les balançoires. la poule est derrière. Un panier est posé sur le banc. Tom range la poule dans sa tête, comme un souvenir. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Tom rejoint vert. Il y a des miettes sur la table. On attend son tour. Cette fin-là est celle de la poule, les balançoires et vert. Tom a appris : Appeler papa ou maman. Voici le geste : appeler ; dire. Tom a entendu : aller vers eux, dire le besoin. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom montre vert. Maman a vu la poule. Et les balançoires. On entend un oiseau. Tom souffle, puis sourit à maman. Quand c'est trop difficile, on peut aller vers eux. On va dire le besoin. On appelle papa ou maman. On peut aller vers eux. On va dire le besoin. Tom dit merci à maman. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

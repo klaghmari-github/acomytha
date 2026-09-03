@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Léa s'arrête deux fois",
+  "lesson_id": "SEC.RUE.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "trajet vers la boulangerie puis le jardin",
+  "characters": [
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa marche avec maman. Elles vont à la boulangerie. Le pain sent le beurre chaud. Elles arrivent au bord. Léa s'arrête. S'arrêter, c'est le geste. Les pieds restent au bord. Les pieds sont sur le trottoir. Maman s'arrête aussi. Maman dit : on s'arrête. Pieds au bord. Sur le trottoir. Léa sent le vent sur les joues. Elle attend avec maman. Les pieds restent calmes. Plus tard, elles ont le pain. Le sac est tiède. Elles vont au jardin public. Un autre bord arrive. Léa se souvient. Elle s'arrête encore. Les pieds restent au bord. Les pieds sont sur le trottoir. Maman dit : tu as repris le geste. Même règle, autre chemin. Léa donne la main. Elles attendent. Les pieds restent au bord du trottoir.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa arrive au bord. Que fait-elle ?",
+      "expected_intents": [
+        "TROTTOIR",
+        "ARRETER"
+      ],
+      "accepted_examples": [
+        "s'arrêter",
+        "trottoir",
+        "elle s'arrête",
+        "pieds au bord",
+        "au bord"
+      ],
+      "retry_prompt": "Elle s'arrête. Les pieds sont au bord. Que fait Léa ?",
+      "positive_feedback": "Oui. Léa s'arrête. Les pieds restent au bord du trottoir.",
+      "wrong_feedback": "On s'arrête. Les pieds restent au bord, sur le trottoir, avec maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa s'arrête au bord. Les pieds sont sur le trottoir. Elle a repris le geste. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa tient le sac de pain. Maman serre sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

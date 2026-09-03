@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Nora est avec papa, au marché. Nora a envie de jouer. papa est là, tout près. On va apprendre : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora écoute papa. Nora entend les mots : stop, s'éloigner, maîtresse.",
+      "text": "La classe est au marché avec la maîtresse. Un camarade a bousculé Nora près des caisses. Nora recule. Papa tient le filet. Maman est à la maison. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Nora choisit. les cubes, le livre, ou la dînette ?",
+      "prompt": "Près de quoi ? les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,13 +63,13 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Nora va vers les cubes. Les chaussures font toc toc. papa sourit. Ici, c'est les cubes. Ce n'est pas comme les autres endroits. Nora se souvient : stop, s'éloigner, maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "Près des cubes du stand, un camarade a bousculé. Voici les cubes. Ça sent le thym du jardin. Nora s'approche, sans courir. Maman n'est pas loin. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire stop et rejoindre la maîtresse.",
+      "prompt": "Un camarade a bousculé. Que fait-on ? Avec les cubes.",
       "expected_intents": [
         "STOP",
         "ELOIGNER",
@@ -77,12 +77,12 @@
       ],
       "accepted_examples": [
         "stop",
-        "eloigner",
-        "maitresse"
+        "s'éloigner",
+        "maîtresse"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
-      "wrong_feedback": "Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
+      "retry_prompt": "Stop ? S'éloigner ? La maîtresse ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "REL.CON.002"
@@ -90,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora respire. Nora retient : stop, s'éloigner, maîtresse. On continue, avec papa.",
+      "text": "Oui. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora retient le geste. Elle respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter ? une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -122,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Nora a choisi une pomme. On entend un oiseau. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tait une seconde. maman n'est pas loin.",
+      "text": "Nora a choisi une pomme, après les cubes. La fenêtre tremble un tout petit peu. Nora choisit une pomme. Maman n'est pas loin. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "On finit par ici. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -154,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Nora rejoint le chat. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de les cubes, une pomme et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après les cubes et une pomme. La tasse est encore tiède. On dit merci. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chat un instant. Puis elle reprend, calme. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, une pomme et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après les cubes et une pomme. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora boit une gorgée. Elle se sent plus légère. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de les cubes, une pomme et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après les cubes et une pomme. Une abeille bourdonne loin. On attend un petit moment. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora dit merci à papa. Maman sourit. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Nora a choisi un yaourt. Ça sent le pain chaud. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tient la main. maman n'est pas loin.",
+      "text": "Nora a choisi un yaourt, après les cubes. La pomme est croquante. Nora touche un yaourt tout doucement. Papa dit : je suis là. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "On finit un peu plus loin. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -201,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Nora rejoint le chat. Une feuille tombe. On attend son tour. Cette fin-là est celle de les cubes, un yaourt et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après les cubes et un yaourt. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chat un instant. Puis elle reprend, calme. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un yaourt et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après les cubes et un yaourt. La fenêtre tremble un tout petit peu. On sourit un peu. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora boit une gorgée. Elle se sent plus légère. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de les cubes, un yaourt et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après les cubes et un yaourt. Ça sent le savon de maman. On boit une gorgée d'eau. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora dit merci à papa. Maman sourit. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Nora a choisi un morceau de pain. Le vent est doux. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On range un objet. maman n'est pas loin.",
+      "text": "Nora a choisi un morceau de pain, après les cubes. Le vent sent la mer. Nora montre un morceau de pain à papa. Elle nomme ce qu'elle sent. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "On finit dans ce coin. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -248,28 +248,28 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Nora rejoint le chat. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de les cubes, un morceau de pain et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après les cubes et un morceau de pain. Un pigeon roucoule. On essuie une miette. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. On écoute le silence une seconde. Nora est assise. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un morceau de pain et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après les cubes et un morceau de pain. La cuillère tinte. On referme un livre. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Papa dit : je t'ai entendu. Maman aussi. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. La lumière est claire. On rit un peu. Cette fin-là est celle de les cubes, un morceau de pain et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après les cubes et un morceau de pain. Le ballon est un peu poudreux. On pose un jouet à sa place. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. On laisse la poule à sa place. Nora est près de papa. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Nora va vers le livre. La couverture est douce. papa sourit. Ici, c'est le livre. Ce n'est pas comme les autres endroits. Nora se souvient : stop, s'éloigner, maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Près du livre d'images, un camarade a bousculé. Nora s'occupe du livre. Le train souffle au loin. Papa sourit. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire stop et rejoindre la maîtresse.",
+      "prompt": "Un camarade a bousculé. Que fait-on ? Avec le livre.",
       "expected_intents": [
         "STOP",
         "ELOIGNER",
@@ -277,12 +277,12 @@
       ],
       "accepted_examples": [
         "stop",
-        "eloigner",
-        "maitresse"
+        "s'éloigner",
+        "maîtresse"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
-      "wrong_feedback": "Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
+      "retry_prompt": "Stop ? S'éloigner ? La maîtresse ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "REL.CON.002"
@@ -290,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora respire. Nora retient : stop, s'éloigner, maîtresse. On continue, avec papa.",
+      "text": "Oui. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora répète le mot. Papa hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter ? une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -322,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Nora a choisi une pomme. Le sol est un peu froid. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tait une seconde. maman n'est pas loin.",
+      "text": "Nora a choisi une pomme, après le livre. Une plume vole. Nora s'installe avec une pomme. Papa reste à portée de voix. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Dernier choix, tout doux. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -354,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Nora rejoint le chat. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de le livre, une pomme et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après le livre et une pomme. Une goutte de pluie sèche déjà. On marche tout doucement. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora pose le chat et va vers papa. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de le livre, une pomme et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après le livre et une pomme. Le banc est tiède. On se tait une seconde. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora dit merci à papa. Maman sourit. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de le livre, une pomme et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après le livre et une pomme. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora boit une gorgée. Elle se sent plus légère. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Nora a choisi un yaourt. Une feuille tombe. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tient la main. maman n'est pas loin.",
+      "text": "Nora a choisi un yaourt, après le livre. Un ruisseau chante tout bas. Nora s'installe avec un yaourt. Papa reste à portée de voix. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Dernier choix, tout calme. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -401,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Nora rejoint le chat. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un yaourt et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après le livre et un yaourt. Une feuille tourne et tombe. On s'assoit près de l'adulte. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora serre la main de papa, tout doux. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de le livre, un yaourt et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après le livre et un yaourt. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chien un instant. Puis elle reprend, calme. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. La lumière est claire. On se tait une seconde. Cette fin-là est celle de le livre, un yaourt et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après le livre et un yaourt. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora dit merci à papa. Maman sourit. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Nora a choisi un morceau de pain. L'eau coule, tout petit bruit. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On range un objet. maman n'est pas loin.",
+      "text": "Nora a choisi un morceau de pain, après le livre. Une goutte tombe dans l'évier. Nora attend près de un morceau de pain. Elle ne prend pas de force. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Dernier choix, tout près. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -448,28 +448,28 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Nora rejoint le chat. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de le livre, un morceau de pain et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après le livre et un morceau de pain. Une plume vole. On range les chaussures. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora nomme encore le mot, tout bas. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. La lumière est claire. On rit un peu. Cette fin-là est celle de le livre, un morceau de pain et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après le livre et un morceau de pain. Le pain croustille. On met le doudou près de soi. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora boit une gorgée. Elle se sent plus légère. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de le livre, un morceau de pain et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après le livre et un morceau de pain. La laine du doudou est douce. On écoute le cœur, tout doux. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue la poule un instant. Puis elle reprend, calme. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Nora va vers la dînette. On entend un oiseau. papa sourit. Ici, c'est la dînette. Ce n'est pas comme les autres endroits. Nora se souvient : stop, s'éloigner, maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "text": "Près de la dînette en bois, un camarade a bousculé. Voilà la dînette. Le seau sonne, tout léger. Nora pose les pieds par terre, près de papa. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire stop et rejoindre la maîtresse.",
+      "prompt": "Un camarade a bousculé. Que fait-on ? Avec la dînette.",
       "expected_intents": [
         "STOP",
         "ELOIGNER",
@@ -477,12 +477,12 @@
       ],
       "accepted_examples": [
         "stop",
-        "eloigner",
-        "maitresse"
+        "s'éloigner",
+        "maîtresse"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
-      "wrong_feedback": "Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse.",
+      "retry_prompt": "Stop ? S'éloigner ? La maîtresse ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "REL.CON.002"
@@ -490,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora respire. Nora retient : stop, s'éloigner, maîtresse. On continue, avec papa.",
+      "text": "Oui. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Nora choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Quel goûter ? une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -522,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Nora a choisi une pomme. Un vélo passe au loin. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tait une seconde. maman n'est pas loin.",
+      "text": "Nora a choisi une pomme, après la dînette. Une cloche sonne au loin. Nora montre une pomme à papa. Elle nomme ce qu'elle sent. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour conclure, tout bas. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -554,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Nora rejoint le chat. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de la dînette, une pomme et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après la dînette et une pomme. Un galet est lisse dans la main. On secoue les mains, loin. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chat un instant. Puis elle reprend, calme. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de la dînette, une pomme et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après la dînette et une pomme. Le train souffle au loin. On pose le sac. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. On écoute le silence une seconde. Nora est assise. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. La lumière est claire. On se tient la main. Cette fin-là est celle de la dînette, une pomme et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après la dînette et une pomme. Une vache meugle, loin. On dit le mot de l'émotion. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. On écoute le silence une seconde. Nora est assise. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Nora a choisi un yaourt. La lumière est claire. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On se tient la main. maman n'est pas loin.",
+      "text": "Nora a choisi un yaourt, après la dînette. Une goutte tombe dans l'évier. Nora range un peu autour de un yaourt. Elle respire. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour conclure, tout simple. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -601,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Nora rejoint le chat. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de la dînette, un yaourt et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après la dînette et un yaourt. Un grillon chante, tout petit. On invite d'une petite voix. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chat un instant. Puis elle reprend, calme. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. La lumière est claire. On se tait une seconde. Cette fin-là est celle de la dînette, un yaourt et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après la dînette et un yaourt. Le bois de la table est lisse. On attend la réponse. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue le chien un instant. Puis elle reprend, calme. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. Il y a des miettes sur la table. On se tient la main. Cette fin-là est celle de la dînette, un yaourt et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après la dînette et un yaourt. Une goutte tombe dans l'évier. On propose une autre idée. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. On écoute le silence une seconde. Nora est assise. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Nora a choisi un morceau de pain. Il y a des miettes sur la table. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora répète tout bas : stop, s'éloigner, maîtresse. On range un objet. maman n'est pas loin.",
+      "text": "Nora a choisi un morceau de pain, après la dînette. La fenêtre tremble un tout petit peu. Nora montre un morceau de pain à papa. Elle nomme ce qu'elle sent. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nora va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour conclure, tout clair. Quel animal du marché ? le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -648,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Nora rejoint le chat. La lumière est claire. On rit un peu. Cette fin-là est celle de la dînette, un morceau de pain et le chat. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chat, après la dînette et un morceau de pain. Le toboggan est un peu froid. On va vers papa ou maman. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora pose le chat et va vers papa. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Nora rejoint le chien. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de la dînette, un morceau de pain et le chien. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint le chien, après la dînette et un morceau de pain. La clochette de la porte tinte. On dit stop, tout clair. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora pose le chien et va vers papa. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Nora rejoint la poule. Un chat miaule une fois. On se tient la main. Cette fin-là est celle de la dînette, un morceau de pain et la poule. Nora a appris : Dire stop et rejoindre la maîtresse. Voici le geste : dire stop ; s'éloigner ; aller vers la maîtresse. Nora a entendu : stop, s'éloigner, maîtresse. Nora dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Nora rejoint la poule, après la dînette et un morceau de pain. Ça sent le thym du jardin. On s'éloigne d'un pas. Nora dit stop. Elle s'éloigne. Elle va vers la maîtresse. Papa saura, plus tard. Nora salue la poule un instant. Puis elle reprend, calme. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

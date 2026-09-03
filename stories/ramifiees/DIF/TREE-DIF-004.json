@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Jules est avec papa, dans la cuisine. Jules a envie de jouer. papa est là, tout près. On va apprendre : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules écoute papa. Jules entend les mots : attendre, tendre un jouet, pas forcer la parole.",
+      "text": "Jules est dans la cuisine, avec maman. Papa coupe le pain. Un camarade est là. Il parle peu. Jules le regarde. Maman dit : on peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Jules choisit. les cubes, le livre, ou la dînette ?",
+      "prompt": "Jules prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Jules va vers les cubes. Il y a des miettes sur la table. papa sourit. Ici, c'est les cubes. Ce n'est pas comme les autres endroits. Jules se souvient : attendre, tendre un jouet, pas forcer la parole. Voici le geste : attendre ; tendre le jouet. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Jules pose les cubes sur la table. Le camarade qui parle peu les regarde. Jules attend. Il tend un cube. Pas forcer la parole. Le camarade prend le cube. Maman dit : bien. On peut jouer ensemble.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui parle peu.",
+      "prompt": "Le camarade parle peu. On fait quoi ?",
       "expected_intents": [
         "ATTENDRE",
         "TENDRE_JOUET"
       ],
       "accepted_examples": [
         "attendre",
-        "tendre jouet"
+        "tendre un jouet",
+        "tendre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre ; tendre le jouet.",
-      "wrong_feedback": "Voici le geste : attendre ; tendre le jouet.",
+      "retry_prompt": "Dis : attendre.",
+      "positive_feedback": "Oui. On attend. On tend un jouet.",
+      "wrong_feedback": "On attend. On tend un jouet. Pas forcer la parole.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.PAR.001"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre ; tendre le jouet. Jules respire. Jules retient : attendre, tendre un jouet, pas forcer la parole. On continue, avec papa.",
+      "text": "Oui. On attend. On tend un jouet. Jules respire. Papa est là. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Jules choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Jules tend aussi un goûter. Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Jules a choisi une pomme. Les chaussures font toc toc. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On se tient la main. maman n'est pas loin.",
+      "text": "Jules tend un cube, puis une pomme. Le camarade qui parle peu choisit. Jules attend. Pas forcer la parole. Papa montre le geste, lentement. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, une pomme et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules a choisi les cubes. Puis une pomme. Puis le chat. On dit merci. Jules ferme le sac. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Le vent est doux. On rit un peu. Cette fin-là est celle de les cubes, une pomme et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules s'arrête près de le chien. une pomme est rangé. Un ballon s'immobilise. Jules essuie ses mains. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de les cubes, une pomme et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules se souvient de les cubes. Et de une pomme. Et de la poule. Le savon sent bon. Jules range encore un peu, près de papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Jules a choisi un yaourt. La couverture est douce. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On range un objet. maman n'est pas loin.",
+      "text": "Jules tend un cube, puis un yaourt. Le camarade touche le pot. Jules attend. Il tend un jouet. Papa dit : je suis là. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Encore un choix. Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un yaourt et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec le chat. Après un yaourt. Près de les cubes. Jules s'arrête. Le sol est un peu froid. Jules marche près de papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de les cubes, un yaourt et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules range un yaourt. le chien reste près de les cubes. Un vélo passe au loin. Jules ferme la porte, tout doux. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de les cubes, un yaourt et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "la poule est là. un yaourt aussi. les cubes reste dans le souvenir. On souffle doucement. Jules s'assoit près de papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Jules a choisi un morceau de pain. On entend un oiseau. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On dit merci. maman n'est pas loin.",
+      "text": "Jules tend un cube, puis un morceau de pain. Le camarade le sent. Jules attend. Pas forcer la parole. Papa reste tout près. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Dernière étape. Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de les cubes, un morceau de pain et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules rejoint le chat. un morceau de pain est rangé. les cubes est fini. Une cloche tinte, tout loin. Jules répète tout bas le geste. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Une feuille tombe. On rit un peu. Cette fin-là est celle de les cubes, un morceau de pain et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de le chien. Jules pose un morceau de pain. les cubes est derrière. Une feuille tombe. Jules raccroche un linge. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de les cubes, un morceau de pain et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules montre la poule. Papa a vu les cubes. Et un morceau de pain. Un ruban reste dans la poche. Jules dit : j'ai appris. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Jules va vers le livre. Un chat miaule une fois. papa sourit. Ici, c'est le livre. Ce n'est pas comme les autres endroits. Jules se souvient : attendre, tendre un jouet, pas forcer la parole. Voici le geste : attendre ; tendre le jouet. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "text": "Jules ouvre le livre. Le camarade qui parle peu touche une page. Jules attend. Il tend le livre. Pas forcer la parole. Le camarade sourit, sans parler. Papa coupe encore le pain. On peut jouer ensemble.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui parle peu.",
+      "prompt": "On attend, ou on tend un jouet ?",
       "expected_intents": [
         "ATTENDRE",
         "TENDRE_JOUET"
       ],
       "accepted_examples": [
         "attendre",
-        "tendre jouet"
+        "tendre un jouet",
+        "tendre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre ; tendre le jouet.",
-      "wrong_feedback": "Voici le geste : attendre ; tendre le jouet.",
+      "retry_prompt": "Dis : attendre.",
+      "positive_feedback": "Oui. On attend. On tend un jouet.",
+      "wrong_feedback": "On attend. On tend un jouet. Pas forcer la parole.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.PAR.001"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre ; tendre le jouet. Jules respire. Jules retient : attendre, tendre un jouet, pas forcer la parole. On continue, avec papa.",
+      "text": "Oui. On attend. On tend un jouet. Jules retient le geste. Papa sourit. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Jules choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Jules tend aussi un goûter. Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Jules a choisi une pomme. Ça sent le pain chaud. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On se tient la main. maman n'est pas loin.",
+      "text": "Jules montre le livre, puis la pomme. Le camarade pointe. Jules attend. Il tend un jouet. Papa dit : je suis là. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Le vent est doux. On rit un peu. Cette fin-là est celle de le livre, une pomme et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules a choisi le livre. Puis une pomme. Puis le chat. Un galet est encore chaud. Maman n'est pas loin. Jules les rejoint. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le livre, une pomme et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules s'arrête près de le chien. une pomme est rangé. Il y a des miettes sur la table. Jules range le livre dans sa tête, comme un souvenir. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. Une feuille tombe. On se tient la main. Cette fin-là est celle de le livre, une pomme et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules se souvient de le livre. Et de une pomme. Et de la poule. Les chaussures font toc toc. Jules caresse le doudou. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Jules a choisi un yaourt. Le vent est doux. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On range un objet. maman n'est pas loin.",
+      "text": "Jules montre le livre, puis le yaourt. Le camarade reste silencieux. Jules attend. Pas forcer la parole. Papa reste tout près. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "On continue. Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le livre, un yaourt et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec le chat. Après un yaourt. Près de le livre. Jules s'arrête. On rit un peu. Jules boit une gorgée d'eau. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le livre, un yaourt et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules range un yaourt. le chien reste près de le livre. Une chaussette est encore sablée. Jules prend la main de papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le livre, un yaourt et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "la poule est là. un yaourt aussi. le livre reste dans le souvenir. La couverture est douce. Jules chuchote : c'est fini. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Jules a choisi un morceau de pain. Le sol est un peu froid. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On dit merci. maman n'est pas loin.",
+      "text": "Jules montre le livre, puis le pain. Le camarade sourit. Jules attend. Il tend un jouet. Papa montre le geste, lentement. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Une feuille tombe. On rit un peu. Cette fin-là est celle de le livre, un morceau de pain et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules rejoint le chat. un morceau de pain est rangé. le livre est fini. Un panier est posé sur le banc. Jules dit merci à papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le livre, un morceau de pain et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de le chien. Jules pose un morceau de pain. le livre est derrière. L'eau coule, tout petit bruit. Jules souffle, puis sourit à papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le livre, un morceau de pain et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules montre la poule. Papa a vu le livre. Et un morceau de pain. Un crochet tient bien le manteau. Jules range la tasse. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Jules va vers la dînette. Les chaussures font toc toc. papa sourit. Ici, c'est la dînette. Ce n'est pas comme les autres endroits. Jules se souvient : attendre, tendre un jouet, pas forcer la parole. Voici le geste : attendre ; tendre le jouet. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Jules sort la dînette. Le camarade qui parle peu s'assoit. Jules attend. Il tend une tasse. Pas forcer la parole. Une tasse cliquette. Maman reste près d'eux. On peut jouer ensemble.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Un camarade qui parle peu.",
+      "prompt": "On force la parole ?",
       "expected_intents": [
         "ATTENDRE",
         "TENDRE_JOUET"
       ],
       "accepted_examples": [
         "attendre",
-        "tendre jouet"
+        "tendre un jouet",
+        "tendre"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre ; tendre le jouet.",
-      "wrong_feedback": "Voici le geste : attendre ; tendre le jouet.",
+      "retry_prompt": "Dis : attendre.",
+      "positive_feedback": "Oui. On attend. On tend un jouet.",
+      "wrong_feedback": "On attend. On tend un jouet. Pas forcer la parole.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.PAR.001"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre ; tendre le jouet. Jules respire. Jules retient : attendre, tendre un jouet, pas forcer la parole. On continue, avec papa.",
+      "text": "Oui. On attend. On tend un jouet. Jules hoche la tête. On continue, avec papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Jules choisit une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Jules tend aussi un goûter. Une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Jules a choisi une pomme. Une feuille tombe. Une pomme reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On se tient la main. maman n'est pas loin.",
+      "text": "Jules tend une tasse, puis une pomme. Le camarade prend la tasse. Jules attend. Pas forcer la parole. Papa reste tout près. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Un dernier choix. Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de la dînette, une pomme et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules a choisi la dînette. Puis une pomme. Puis le chat. Le vent est doux. Jules plie un pull. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Une feuille tombe. On se tient la main. Cette fin-là est celle de la dînette, une pomme et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules s'arrête près de le chien. une pomme est rangé. On écoute jusqu'au bout. Jules sourit. Papa sourit aussi. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de la dînette, une pomme et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules se souvient de la dînette. Et de une pomme. Et de la poule. Un linge sèche à l'air. Jules enfile ses chaussons. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Jules a choisi un yaourt. L'eau coule, tout petit bruit. Un yaourt reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On range un objet. maman n'est pas loin.",
+      "text": "Jules tend une tasse, puis un yaourt. Le camarade tapote. Jules attend. Il tend un jouet. Papa montre le geste, lentement. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Jules rejoint le chat. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de la dînette, un yaourt et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec le chat. Après un yaourt. Près de la dînette. Jules s'arrête. On se tient la main. Jules montre le chat à papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de la dînette, un yaourt et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules range un yaourt. le chien reste près de la dînette. On entend un oiseau. Jules pose un yaourt à sa place. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. Un vélo passe au loin. On range un objet. Cette fin-là est celle de la dînette, un yaourt et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "la poule est là. un yaourt aussi. la dînette reste dans le souvenir. La lumière est claire. Jules serre la main de papa. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Jules a choisi un morceau de pain. Un vélo passe au loin. Un morceau de pain reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : attendre ; tendre le jouet. Jules répète tout bas : attendre, tendre un jouet, pas forcer la parole. On dit merci. maman n'est pas loin.",
+      "text": "Jules tend une tasse, puis le pain. Le camarade s'assoit. Jules attend. Pas forcer la parole. Papa dit : je suis là. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut jouer ensemble.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Jules va vers le chat, le chien, ou la poule ?",
+      "prompt": "Pour clore. Pour finir, on nomme qui ? Le chat, le chien, ou la poule ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,22 +645,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Jules rejoint le chat. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de la dînette, un morceau de pain et le chat. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules rejoint le chat. un morceau de pain est rangé. la dînette est fini. Une tasse cliquette. Jules écoute papa encore une fois. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Jules rejoint le chien. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de la dînette, un morceau de pain et le chien. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de le chien. Jules pose un morceau de pain. la dînette est derrière. Un chat miaule une fois. Jules tend le chien à maman. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Jules rejoint la poule. La lumière est claire. On range un objet. Cette fin-là est celle de la dînette, un morceau de pain et la poule. Jules a appris : Un camarade qui parle peu. Voici le geste : attendre ; tendre le jouet. Jules a entendu : attendre, tendre un jouet, pas forcer la parole. Jules dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Jules montre la poule. Papa a vu la dînette. Et un morceau de pain. Ça sent le pain chaud. Jules pose sa tête un moment. On peut attendre. On peut tendre un jouet. Pas forcer la parole. On peut attendre. On peut tendre un jouet. Jules dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

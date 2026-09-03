@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.AFF.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Zoé reprend ses affaires deux fois",
+  "lesson_id": "AUT.AFF.003",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis pique-nique",
+  "characters": [
+    "Zoé",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Zoé a joué longtemps au parc. Papa est sur le banc. Zoé a un seau jaune. Elle a un manteau bleu. Elle a son doudou ours. Le soleil baisse. Papa dit : on rentre. Papa dit : on va reprendre ses affaires, avant de partir. Zoé s'arrête. Elle cherche le seau près du bac. Elle le prend. Elle cherche le manteau sur le banc. Elle le prend. Elle cherche le doudou dans l'herbe. L'herbe chatouille. Elle le prend. Maintenant Zoé a tout. Papa dit : merci. Plus tard, ils font un pique-nique au jardin. Zoé a une gourde. Elle a une casquette. Elle a encore le doudou. Papa dit : on rentre. Zoé se souvient. Avant de partir, on reprend ses affaires. Elle cherche la gourde. Elle la prend. Elle cherche la casquette. Elle la prend. Elle cherche le doudou. Elle le prend. Papa dit : tu as repris le geste. Même leçon, autre lieu. Zoé a tout. Ils marchent vers la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de partir, que fait Zoé ?",
+      "expected_intents": [
+        "REPRENDRE",
+        "AVANT_DE_PARTIR"
+      ],
+      "accepted_examples": [
+        "reprendre",
+        "ses affaires",
+        "elle reprend",
+        "avant de partir"
+      ],
+      "retry_prompt": "Elle reprend seau, manteau, doudou. Que fait Zoé ?",
+      "positive_feedback": "Oui. Zoé reprend ses affaires avant de partir.",
+      "wrong_feedback": "Avant de partir, on reprend ses affaires. On les prend avec soi.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zoé a cherché. Elle a repris ses affaires. C'était avant de partir. Au parc, puis au pique-nique.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Zoé marche près de papa. Le doudou est dans son bras. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

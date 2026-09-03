@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SAN.ALI.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Kenzo s'assoit au jardin",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin, table de pique-nique",
+  "characters": [
+    "Kenzo",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Kenzo joue dans le jardin. Les abeilles bourdonnent. Papa pose une nappe sur la table. Maman apporte le panier. Ça sent le pain. C'est l'heure de manger. Kenzo a faim. Parce qu'on mange ensemble, Kenzo va s'asseoir. Il pose les fesses sur la chaise. Il est assis à table. Papa s'assoit aussi. Maman s'assoit près de Kenzo. Ils sont ensemble. Kenzo tient sa fourchette. Il mange assis. La chaise est stable. Papa dit : on mange ensemble, à table. Kenzo sourit. Il reste assis. Il croque une tomate. Elle est juteuse. Maman coupe le pain. Kenzo attend, assis. Parce qu'il est assis, le repas est calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Kenzo va manger. Que fait-il ?",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assis",
+        "s'asseoir",
+        "à table",
+        "il s'assoit",
+        "table",
+        "sur la chaise"
+      ],
+      "retry_prompt": "Il pose les fesses sur la chaise. Que fait Kenzo ?",
+      "positive_feedback": "Oui. Kenzo s'assoit à table. Il mange avec papa et maman.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses sur la chaise.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Kenzo est assis. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Kenzo boit une gorgée. Il reste assis jusqu'à la fin. Merci, dit papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

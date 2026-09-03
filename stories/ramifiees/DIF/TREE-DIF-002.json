@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Sami est avec papa, sous le pommier. Sami a envie de jouer. papa est là, tout près. On va apprendre : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami écoute papa. Sami entend les mots : corps pas une blague, jouer.",
+      "text": "Sami est sous le pommier, avec papa. Maman arrive bientôt. Une feuille tombe. Des copains jouent. Les corps sont différents. Papa dit : le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Sami choisit. le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Sami va où ? Le bac à sable, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Sami va vers le bac à sable. Un vélo passe au loin. papa sourit. Ici, c'est le bac à sable. Ce n'est pas comme les autres endroits. Sami se souvient : corps pas une blague, jouer. Voici le geste : jouer ; pas commenter le corps. On écoute jusqu'au bout. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers le bac à sable. Le sable est frais. Un copain a un corps plus rond. Sami dit : on joue. Le corps n'est pas une blague. Ils remplissent un moule. Papa reste tout près. On peut jouer ensemble.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus rond ou plus mince.",
+      "prompt": "Le corps est une blague ?",
       "expected_intents": [
         "JOUER",
         "PAS_BLAGUE"
       ],
       "accepted_examples": [
         "jouer",
-        "pas blague"
+        "pas blague",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas commenter le corps.",
-      "wrong_feedback": "Voici le geste : jouer ; pas commenter le corps.",
+      "retry_prompt": "Dis : jouer.",
+      "positive_feedback": "Oui. On joue. Le corps n'est pas une blague.",
+      "wrong_feedback": "On joue. Le corps n'est pas une blague.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.COR.002"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas commenter le corps. Sami respire. Sami retient : corps pas une blague, jouer. On continue, avec papa.",
+      "text": "Oui. On joue. Le corps n'est pas une blague. Sami respire. Papa est là. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Sami choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Au bac à sable, Sami prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Sami a choisi les cubes. Il y a des miettes sur la table. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On rit un peu. maman n'est pas loin.",
+      "text": "Sami pose les cubes dans le sable. Un copain plus rond en ajoute un. On joue. Papa montre le geste, lentement. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Sami rejoint rouge. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, les cubes et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami a choisi le bac à sable. Puis les cubes. Puis rouge. La lumière est claire. Sami range encore un peu, près de papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. On entend un oiseau. On attend son tour. Cette fin-là est celle de le bac à sable, les cubes et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami s'arrête près de bleu. les cubes est rangé. Une feuille tombe. Sami dit merci à papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, les cubes et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami se souvient de le bac à sable. Et de les cubes. Et de vert. Un linge sèche à l'air. Sami ferme le sac. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Sami a choisi le livre. Un chat miaule une fois. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sami ouvre le livre près du bac. Un copain plus mince montre une pomme dessinée. On joue. Papa dit : je suis là. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Encore un choix. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Sami rejoint rouge. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, le livre et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le livre. Près de le bac à sable. Sami s'arrête. On souffle doucement. Sami montre rouge à papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le bac à sable, le livre et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami range le livre. bleu reste près de le bac à sable. Ça sent le pain chaud. Maman n'est pas loin. Sami les rejoint. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, le livre et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "vert est là. le livre aussi. le bac à sable reste dans le souvenir. Un crochet tient bien le manteau. Sami caresse le doudou. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Sami a choisi la dînette. Les chaussures font toc toc. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tient la main. maman n'est pas loin.",
+      "text": "Sami sort la dînette. Un copain d'une autre forme sert le sable, tout doux. On joue. Papa reste tout près. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Dernière étape. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, la dînette et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint rouge. la dînette est rangé. le bac à sable est fini. Une cloche tinte, tout loin. Sami marche près de papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Le vent est doux. On attend son tour. Cette fin-là est celle de le bac à sable, la dînette et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Sami pose la dînette. le bac à sable est derrière. On dit merci. Sami prend la main de papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, la dînette et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami montre vert. Papa a vu le bac à sable. Et la dînette. Un ballon s'immobilise. Sami enfile ses chaussons. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Sami va vers le toboggan. La lumière est claire. papa sourit. Ici, c'est le toboggan. Ce n'est pas comme les autres endroits. Sami se souvient : corps pas une blague, jouer. Voici le geste : jouer ; pas commenter le corps. On attend son tour. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers le toboggan. Un copain plus mince attend. Sami s'assoit à côté. Le corps n'est pas une blague. On joue ensemble. Ils glissent, chacun son tour. Papa dit : je suis là. On peut jouer ensemble.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus rond ou plus mince.",
+      "prompt": "On joue, sans blague sur le corps ?",
       "expected_intents": [
         "JOUER",
         "PAS_BLAGUE"
       ],
       "accepted_examples": [
         "jouer",
-        "pas blague"
+        "pas blague",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas commenter le corps.",
-      "wrong_feedback": "Voici le geste : jouer ; pas commenter le corps.",
+      "retry_prompt": "Dis : jouer.",
+      "positive_feedback": "Oui. On joue. Le corps n'est pas une blague.",
+      "wrong_feedback": "On joue. Le corps n'est pas une blague.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.COR.002"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas commenter le corps. Sami respire. Sami retient : corps pas une blague, jouer. On continue, avec papa.",
+      "text": "Oui. On joue. Le corps n'est pas une blague. Sami retient le geste. Papa sourit. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Sami choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Au toboggan, Sami prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Sami a choisi les cubes. La couverture est douce. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On rit un peu. maman n'est pas loin.",
+      "text": "Sami construit une tour de cubes au pied du toboggan. On joue. Personne ne commente le corps. Papa dit : je suis là. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Sami rejoint rouge. On entend un oiseau. On attend son tour. Cette fin-là est celle de le toboggan, les cubes et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami a choisi le toboggan. Puis les cubes. Puis rouge. Un vélo passe au loin. Sami plie un pull. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, les cubes et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami s'arrête près de bleu. les cubes est rangé. On range un objet. Sami boit une gorgée d'eau. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Le vent est doux. On rit un peu. Cette fin-là est celle de le toboggan, les cubes et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami se souvient de le toboggan. Et de les cubes. Et de vert. Un panier est posé sur le banc. Sami range la tasse. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Sami a choisi le livre. On entend un oiseau. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sami lit une page avant de glisser. Un copain attend. On joue. Le corps n'est pas une blague. Papa reste tout près. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "On continue. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le toboggan, le livre et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le livre. Près de le toboggan. Sami s'arrête. Il y a des miettes sur la table. Sami range le toboggan dans sa tête, comme un souvenir. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, le livre et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami range le livre. bleu reste près de le toboggan. Une pomme brille un peu. Sami serre la main de papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le toboggan, le livre et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "vert est là. le livre aussi. le toboggan reste dans le souvenir. On entend un oiseau. Sami raccroche un linge. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Sami a choisi la dînette. Ça sent le pain chaud. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tient la main. maman n'est pas loin.",
+      "text": "Sami pose une tasse de dînette sur la marche. On joue. Le corps n'est pas une blague. Papa montre le geste, lentement. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Le vent est doux. On attend son tour. Cette fin-là est celle de le toboggan, la dînette et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint rouge. la dînette est rangé. le toboggan est fini. On rit un peu. Sami écoute papa encore une fois. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, la dînette et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Sami pose la dînette. le toboggan est derrière. La couverture est douce. Sami sourit. Papa sourit aussi. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Une feuille tombe. On rit un peu. Cette fin-là est celle de le toboggan, la dînette et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami montre vert. Papa a vu le toboggan. Et la dînette. On écoute jusqu'au bout. Sami pose la dînette à sa place. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Sami va vers les balançoires. Il y a des miettes sur la table. papa sourit. Ici, c'est les balançoires. Ce n'est pas comme les autres endroits. Sami se souvient : corps pas une blague, jouer. Voici le geste : jouer ; pas commenter le corps. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Sami va vers les balançoires. Une feuille tombe du pommier. Un copain d'une autre forme pousse tout doux. Sami joue avec lui. Le corps n'est pas une blague. Papa sourit. On peut jouer ensemble.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Plus rond ou plus mince.",
+      "prompt": "On fait quoi ? On joue.",
       "expected_intents": [
         "JOUER",
         "PAS_BLAGUE"
       ],
       "accepted_examples": [
         "jouer",
-        "pas blague"
+        "pas blague",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas commenter le corps.",
-      "wrong_feedback": "Voici le geste : jouer ; pas commenter le corps.",
+      "retry_prompt": "Dis : jouer.",
+      "positive_feedback": "Oui. On joue. Le corps n'est pas une blague.",
+      "wrong_feedback": "On joue. Le corps n'est pas une blague.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.COR.002"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas commenter le corps. Sami respire. Sami retient : corps pas une blague, jouer. On continue, avec papa.",
+      "text": "Oui. On joue. Le corps n'est pas une blague. Sami hoche la tête. On continue, avec papa. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Sami choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Aux balançoires, Sami prend quoi ? Les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Sami a choisi les cubes. Le vent est doux. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On rit un peu. maman n'est pas loin.",
+      "text": "Sami empile des cubes près des balançoires. Un copain plus rond tient la base. On joue. Papa reste tout près. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Un dernier choix. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, les cubes et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami a choisi les balançoires. Puis les cubes. Puis rouge. Une tasse cliquette. Sami essuie ses mains. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Le vent est doux. On rit un peu. Cette fin-là est celle de les balançoires, les cubes et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami s'arrête près de bleu. les cubes est rangé. Le sol est un peu froid. Sami dit : j'ai appris. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de les balançoires, les cubes et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami se souvient de les balançoires. Et de les cubes. Et de vert. L'eau coule, tout petit bruit. Sami s'assoit près de papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Sami a choisi le livre. Le sol est un peu froid. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tait une seconde. maman n'est pas loin.",
+      "text": "Sami montre le livre à un copain plus mince. On joue. Le corps n'est pas une blague. Papa montre le geste, lentement. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, le livre et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Avec rouge. Après le livre. Près de les balançoires. Sami s'arrête. Un galet est encore chaud. Sami répète tout bas le geste. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de les balançoires, le livre et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami range le livre. bleu reste près de les balançoires. Le savon sent bon. Sami pose sa tête un moment. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Sami rejoint vert. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de les balançoires, le livre et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "vert est là. le livre aussi. les balançoires reste dans le souvenir. Une chaussette est encore sablée. Sami ferme la porte, tout doux. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Sami a choisi la dînette. Une feuille tombe. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : jouer ; pas commenter le corps. Sami répète tout bas : corps pas une blague, jouer. On se tient la main. maman n'est pas loin.",
+      "text": "Sami sert un galet dans la dînette. On joue. Le corps n'est pas une blague. Papa dit : je suis là. Le corps n'est pas une blague. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Sami va vers rouge, bleu, ou vert ?",
+      "prompt": "Pour clore. Pour finir, quelle couleur ? Rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,22 +645,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Sami rejoint rouge. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, la dînette et rouge. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami rejoint rouge. la dînette est rangé. les balançoires est fini. On attend son tour. Sami souffle, puis sourit à papa. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Sami rejoint bleu. Une feuille tombe. On rit un peu. Cette fin-là est celle de les balançoires, la dînette et bleu. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Près de bleu. Sami pose la dînette. les balançoires est derrière. Le vent est doux. Sami tend bleu à maman. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Sami rejoint vert. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de les balançoires, la dînette et vert. Sami a appris : Plus rond ou plus mince. Voici le geste : jouer ; pas commenter le corps. Sami a entendu : corps pas une blague, jouer. Sami dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Sami montre vert. Papa a vu les balançoires. Et la dînette. Les chaussures font toc toc. Sami chuchote : c'est fini. Le corps n'est pas une blague. On joue ensemble. On joue. On ne commente pas le corps. Sami dit merci à papa. L'histoire est finie. On peut jouer ensemble."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

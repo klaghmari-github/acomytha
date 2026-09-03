@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Hugo est avec maman, à la maison. Hugo a envie de jouer. maman est là, tout près. On va apprendre : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo écoute maman. Hugo entend les mots : pas rire de l'apparence.",
+      "text": "Hugo est à la maison, avec papa. Maman prépare le goûter. Un copain a des lunettes. Une copine a les cheveux courts. Un habit est neuf. Papa dit : pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Hugo choisit. le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Hugo prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,24 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Hugo va vers le ballon rouge. La lumière est claire. maman sourit. Ici, c'est le ballon rouge. Ce n'est pas comme les autres endroits. Hugo se souvient : pas rire de l'apparence. Voici le geste : jouer ; pas rire. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo prend le ballon rouge. Un copain a des lunettes. Hugo passe le ballon. Pas rire de l'apparence. Ils jouent ensemble. Papa dit : les lunettes aident à voir. On joue. On peut jouer ensemble.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Lunettes, cheveux, habit.",
+      "prompt": "On rit des lunettes ?",
       "expected_intents": [
         "PAS_RIRE"
       ],
       "accepted_examples": [
-        "pas rire"
+        "pas rire",
+        "jouer",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas rire.",
-      "wrong_feedback": "Voici le geste : jouer ; pas rire.",
+      "retry_prompt": "Dis : pas rire.",
+      "positive_feedback": "Oui. Pas rire de l'apparence. On joue.",
+      "wrong_feedback": "Pas rire de l'apparence. On joue ensemble.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.COR.003"
@@ -86,13 +88,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas rire. Hugo respire. Hugo retient : pas rire de l'apparence. On continue, avec maman.",
+      "text": "Oui. Pas rire de l'apparence. On joue. Hugo respire. Maman est là. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec le ballon. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +120,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. Un chat miaule une fois. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tait une seconde. papa n'est pas loin.",
+      "text": "Hugo passe le ballon à Tom. Tom a des lunettes. Pas rire de l'apparence. Ils jouent ensemble. Maman montre le geste, lentement. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +152,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. On entend un oiseau. On attend son tour. Cette fin-là est celle de le ballon rouge, Tom et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo a choisi le ballon rouge. Puis Tom. Puis le matin. Une tasse cliquette. Hugo écoute maman encore une fois. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Tom et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo s'arrête près de après la sieste. Tom est rangé. Un crochet tient bien le manteau. Hugo range la tasse. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le vent est doux. On rit un peu. Cette fin-là est celle de le ballon rouge, Tom et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo se souvient de le ballon rouge. Et de Tom. Et de le soir. Une cloche tinte, tout loin. Hugo répète tout bas le geste. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Les chaussures font toc toc. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tient la main. papa n'est pas loin.",
+      "text": "Hugo passe le ballon à Léa. Léa a un habit à pois. Pas rire de l'apparence. Ils jouent ensemble. Maman dit : je suis là. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Encore un choix. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +199,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le ballon rouge, Léa et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le ballon rouge. Hugo s'arrête. Les chaussures font toc toc. Hugo pose sa tête un moment. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Léa et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo range Léa. après la sieste reste près de le ballon rouge. On se tient la main. Hugo chuchote : c'est fini. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le ballon rouge, Léa et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le ballon rouge reste dans le souvenir. Une pomme brille un peu. Hugo souffle, puis sourit à maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. La couverture est douce. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On range un objet. papa n'est pas loin.",
+      "text": "Hugo passe le ballon à Sami. Sami a les cheveux collés. Pas rire de l'apparence. Ils jouent ensemble. Maman reste tout près. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Dernière étape. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +246,39 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On attend son tour. Cette fin-là est celle de le ballon rouge, Sami et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo rejoint le matin. Sami est rangé. le ballon rouge est fini. Une feuille tombe. Hugo plie un pull. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Sami et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Hugo pose Sami. le ballon rouge est derrière. Un linge sèche à l'air. Papa n'est pas loin. Hugo les rejoint. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On rit un peu. Cette fin-là est celle de le ballon rouge, Sami et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo montre le soir. Maman a vu le ballon rouge. Et Sami. La lumière est claire. Hugo prend la main de maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Hugo va vers le seau bleu. Il y a des miettes sur la table. maman sourit. Ici, c'est le seau bleu. Ce n'est pas comme les autres endroits. Hugo se souvient : pas rire de l'apparence. Voici le geste : jouer ; pas rire. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo prend le seau bleu. Une copine a les cheveux très courts. Hugo lui tend le seau. Pas rire de l'apparence. Ils mettent des pinces dedans. Maman apporte l'eau. On peut jouer ensemble.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Lunettes, cheveux, habit.",
+      "prompt": "Pas rire de l'apparence. On fait quoi ?",
       "expected_intents": [
         "PAS_RIRE"
       ],
       "accepted_examples": [
-        "pas rire"
+        "pas rire",
+        "jouer",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas rire.",
-      "wrong_feedback": "Voici le geste : jouer ; pas rire.",
+      "retry_prompt": "Dis : pas rire.",
+      "positive_feedback": "Oui. Pas rire de l'apparence. On joue.",
+      "wrong_feedback": "Pas rire de l'apparence. On joue ensemble.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.COR.003"
@@ -282,13 +286,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas rire. Hugo respire. Hugo retient : pas rire de l'apparence. On continue, avec maman.",
+      "text": "Oui. Pas rire de l'apparence. On joue. Hugo retient le geste. Maman sourit. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec le seau. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +318,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. On entend un oiseau. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tait une seconde. papa n'est pas loin.",
+      "text": "Hugo tend le seau à Tom. Tom a des lunettes. Pas rire de l'apparence. Ils remplissent le seau. Maman dit : je suis là. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +350,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le seau bleu, Tom et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo a choisi le seau bleu. Puis Tom. Puis le matin. Un panier est posé sur le banc. Hugo essuie ses mains. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le vent est doux. On rit un peu. Cette fin-là est celle de le seau bleu, Tom et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo s'arrête près de après la sieste. Tom est rangé. On attend son tour. Hugo range encore un peu, près de maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le seau bleu, Tom et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo se souvient de le seau bleu. Et de Tom. Et de le soir. Un chat miaule une fois. Hugo ferme la porte, tout doux. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Ça sent le pain chaud. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tient la main. papa n'est pas loin.",
+      "text": "Hugo tend le seau à Léa. Léa a un habit à pois. Pas rire de l'apparence. Ils portent le seau. Maman reste tout près. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On continue. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +397,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le seau bleu, Léa et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le seau bleu. Hugo s'arrête. L'eau coule, tout petit bruit. Hugo montre le matin à maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le seau bleu, Léa et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo range Léa. après la sieste reste près de le seau bleu. Le vent est doux. Hugo pose Léa à sa place. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le seau bleu, Léa et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le seau bleu reste dans le souvenir. Un vélo passe au loin. Hugo boit une gorgée d'eau. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. Le vent est doux. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On range un objet. papa n'est pas loin.",
+      "text": "Hugo tend le seau à Sami. Sami a les cheveux collés. Pas rire de l'apparence. Ils vident le seau. Maman montre le geste, lentement. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +444,39 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le seau bleu, Sami et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo rejoint le matin. Sami est rangé. le seau bleu est fini. Un ruban reste dans la poche. Hugo ferme le sac. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Une feuille tombe. On rit un peu. Cette fin-là est celle de le seau bleu, Sami et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Hugo pose Sami. le seau bleu est derrière. Une chaussette est encore sablée. Hugo caresse le doudou. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le seau bleu, Sami et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo montre le soir. Maman a vu le seau bleu. Et Sami. Le savon sent bon. Hugo marche près de maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Hugo va vers le doudou. Un chat miaule une fois. maman sourit. Ici, c'est le doudou. Ce n'est pas comme les autres endroits. Hugo se souvient : pas rire de l'apparence. Voici le geste : jouer ; pas rire. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "Hugo prend le doudou. Un copain porte un habit trop grand. Hugo dit : on joue. Pas rire de l'apparence. Ils asseyent le doudou. Papa plie une manche, tout doux. On peut jouer ensemble.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Lunettes, cheveux, habit.",
+      "prompt": "On joue, sans rire de l'habit ?",
       "expected_intents": [
         "PAS_RIRE"
       ],
       "accepted_examples": [
-        "pas rire"
+        "pas rire",
+        "jouer",
+        "on joue"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : jouer ; pas rire.",
-      "wrong_feedback": "Voici le geste : jouer ; pas rire.",
+      "retry_prompt": "Dis : pas rire.",
+      "positive_feedback": "Oui. Pas rire de l'apparence. On joue.",
+      "wrong_feedback": "Pas rire de l'apparence. On joue ensemble.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.COR.003"
@@ -478,13 +484,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : jouer ; pas rire. Hugo respire. Hugo retient : pas rire de l'apparence. On continue, avec maman.",
+      "text": "Oui. Pas rire de l'apparence. On joue. Hugo hoche la tête. On continue, avec maman. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Hugo choisit Tom, Léa, ou Sami ?",
+      "prompt": "Hugo joue avec le doudou. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +516,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Hugo a choisi Tom. Le sol est un peu froid. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tait une seconde. papa n'est pas loin.",
+      "text": "Hugo confie le doudou à Tom. Tom a des lunettes. Pas rire de l'apparence. Ils asseyent le doudou. Maman reste tout près. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Un dernier choix. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +548,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le vent est doux. On rit un peu. Cette fin-là est celle de le doudou, Tom et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo a choisi le doudou. Puis Tom. Puis le matin. On dit merci. Hugo raccroche un linge. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le doudou, Tom et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo s'arrête près de après la sieste. Tom est rangé. Un galet est encore chaud. Hugo s'assoit près de maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Une feuille tombe. On se tient la main. Cette fin-là est celle de le doudou, Tom et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo se souvient de le doudou. Et de Tom. Et de le soir. La couverture est douce. Hugo dit merci à maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Hugo a choisi Léa. Une feuille tombe. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On se tient la main. papa n'est pas loin.",
+      "text": "Hugo confie le doudou à Léa. Léa a un habit à pois. Pas rire de l'apparence. Ils le bercent. Maman montre le geste, lentement. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +595,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le doudou, Léa et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le doudou. Hugo s'arrête. Le sol est un peu froid. Hugo sourit. Maman sourit aussi. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le doudou, Léa et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo range Léa. après la sieste reste près de le doudou. On range un objet. Hugo range le doudou dans sa tête, comme un souvenir. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le doudou, Léa et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le doudou reste dans le souvenir. On entend un oiseau. Hugo enfile ses chaussons. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Hugo a choisi Sami. L'eau coule, tout petit bruit. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : jouer ; pas rire. Hugo répète tout bas : pas rire de l'apparence. On range un objet. papa n'est pas loin.",
+      "text": "Hugo confie le doudou à Sami. Sami a les cheveux collés. Pas rire de l'apparence. Ils le couvrent. Maman dit : je suis là. Pas rire de l'apparence. On joue ensemble. On peut jouer ensemble.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Hugo va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour clore. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,22 +642,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Hugo rejoint le matin. Une feuille tombe. On rit un peu. Cette fin-là est celle de le doudou, Sami et le matin. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo rejoint le matin. Sami est rangé. le doudou est fini. On écoute jusqu'au bout. Hugo tend le matin à papa. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Hugo rejoint après la sieste. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le doudou, Sami et après la sieste. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Hugo pose Sami. le doudou est derrière. On rit un peu. Hugo dit : j'ai appris. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Hugo rejoint le soir. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le doudou, Sami et le soir. Hugo a appris : Lunettes, cheveux, habit. Voici le geste : jouer ; pas rire. Hugo a entendu : pas rire de l'apparence. Hugo dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Hugo montre le soir. Maman a vu le doudou. Et Sami. Un ballon s'immobilise. Hugo serre la main de maman. Pas rire de l'apparence. On joue ensemble. On joue. Pas rire. Hugo dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

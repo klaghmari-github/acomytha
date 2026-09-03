@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-TMP.SAI.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Les saisons de Nora",
+  "lesson_id": "TMP.SAI.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SAI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Nora",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nora est dans le jardin avec papa. Maman ouvre la porte. Un grand cerisier est là. Papa dit : il y a quatre saisons. Au printemps, Nora voit des fleurs. Les fleurs sentent bon. En été, il fait chaud. Nora boit de l'eau. En automne, les feuilles tombent. Elles sont rouges. En hiver, Nora met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Nora répète : quatre saisons. Un signe chacune. Parce qu'elle nomme, elle comprend le temps. Maman dit : merci Nora. Nora touche une feuille sèche.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nora met son manteau. Quelle saison est-ce ?",
+      "expected_intents": [
+        "SAISON"
+      ],
+      "accepted_examples": [
+        "hiver",
+        "l'hiver",
+        "en hiver"
+      ],
+      "retry_prompt": "En hiver, on met le manteau. Quelle saison ?",
+      "positive_feedback": "Oui. Quatre saisons. Un signe chacune.",
+      "wrong_feedback": "Il y a quatre saisons. Printemps, été, automne, hiver. Un signe chacune.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nora a nommé les quatre saisons. Un signe chacune. Papa et maman l'ont aidée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nora ramasse une feuille. Papa tient sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

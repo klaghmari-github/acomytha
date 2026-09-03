@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Noé est avec maman, au parc. Noé a envie de jouer. maman est là, tout près. On va apprendre : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé écoute maman. Noé entend les mots : laisser le temps.",
+      "text": "Noé est au parc, avec papa. Maman s'assoit sur le banc. Un copain parle doucement. Il cherche ses mots. Papa dit : on laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Noé choisit. le matin, après la sieste, ou le soir ?",
+      "prompt": "C'est quel moment ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,24 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Noé va vers le matin. Un chat miaule une fois. maman sourit. Ici, c'est le matin. Ce n'est pas comme les autres endroits. Noé se souvient : laisser le temps. Voici le geste : attendre la fin de la phrase. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "C'est le matin. Noé est encore au parc. Un copain dit : je veux le. Il cherche. Noé laisse le temps. Il attend la fin de la phrase. Papa dit : on écoute jusqu'au bout. On peut jouer ensemble.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Laisser le temps à l'autre de finir sa phrase.",
+      "prompt": "On laisse le temps ?",
       "expected_intents": [
         "ATTENDRE_PHRASE"
       ],
       "accepted_examples": [
+        "laisser le temps",
+        "attendre",
         "attendre phrase"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre la fin de la phrase.",
-      "wrong_feedback": "Voici le geste : attendre la fin de la phrase.",
+      "retry_prompt": "Dis : laisser le temps.",
+      "positive_feedback": "Oui. On laisse le temps.",
+      "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "DIF.PAR.002"
@@ -86,13 +88,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre la fin de la phrase. Noé respire. Noé retient : laisser le temps. On continue, avec maman.",
+      "text": "Oui. On laisse le temps. Noé respire. Maman est là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite Noé va où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +120,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Noé a choisi la cuisine. La couverture est douce. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On range un objet. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la cuisine. Un copain dit : le ballon est. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +152,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Le vent est doux. On rit un peu. Cette fin-là est celle de le matin, la cuisine et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé a choisi le matin. Puis la cuisine. Puis le ballon rouge. Le sol est un peu froid. Noé souffle, puis sourit à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de le matin, la cuisine et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. La couverture est douce. Noé montre le seau bleu à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. Une feuille tombe. On se tient la main. Cette fin-là est celle de le matin, la cuisine et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé se souvient de le matin. Et de la cuisine. Et de le doudou. On range un objet. Noé chuchote : c'est fini. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Noé a choisi le jardin. On entend un oiseau. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On dit merci. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la cuisine. Un copain dit : le seau est. Noé laisse le temps. Maman dit : je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Encore un choix. Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +199,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de le matin, le jardin et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le ballon rouge. Après le jardin. Près de le matin. Noé s'arrête. Les chaussures font toc toc. Noé caresse le doudou. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de le matin, le jardin et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé range le jardin. le seau bleu reste près de le matin. Une tasse cliquette. Noé boit une gorgée d'eau. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le matin, le jardin et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le doudou est là. le jardin aussi. le matin reste dans le souvenir. Ça sent le pain chaud. Noé dit : j'ai appris. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Noé a choisi la chambre. Ça sent le pain chaud. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On souffle doucement. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la cuisine. Un copain dit : le doudou est. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernière étape. Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +246,39 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Une feuille tombe. On rit un peu. Cette fin-là est celle de le matin, la chambre et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. le matin est fini. Une pomme brille un peu. Noé range la tasse. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de le matin, la chambre et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de le seau bleu. Noé pose la chambre. le matin est derrière. Un ruban reste dans la poche. Noé dit merci à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le matin, la chambre et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé montre le doudou. Maman a vu le matin. Et la chambre. Il y a des miettes sur la table. Noé raccroche un linge. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Noé va vers après la sieste. Les chaussures font toc toc. maman sourit. Ici, c'est après la sieste. Ce n'est pas comme les autres endroits. Noé se souvient : laisser le temps. Voici le geste : attendre la fin de la phrase. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "C'est après la sieste. Noé retrouve le parc. Un copain dit : le bac est. Il s'arrête. Noé laisse le temps. Il attend la fin de la phrase. Maman lui tient la main. On peut jouer ensemble.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Laisser le temps à l'autre de finir sa phrase.",
+      "prompt": "On finit la phrase à sa place ?",
       "expected_intents": [
         "ATTENDRE_PHRASE"
       ],
       "accepted_examples": [
+        "laisser le temps",
+        "attendre",
         "attendre phrase"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre la fin de la phrase.",
-      "wrong_feedback": "Voici le geste : attendre la fin de la phrase.",
+      "retry_prompt": "Dis : laisser le temps.",
+      "positive_feedback": "Oui. On laisse le temps.",
+      "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "DIF.PAR.002"
@@ -282,13 +286,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre la fin de la phrase. Noé respire. Noé retient : laisser le temps. On continue, avec maman.",
+      "text": "Oui. On laisse le temps. Noé retient le geste. Maman sourit. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite Noé va où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +318,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Noé a choisi la cuisine. Le vent est doux. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On range un objet. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans le jardin. Un copain dit : le ballon a. Noé laisse le temps. Maman dit : je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +350,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Le sol est un peu froid. On se tait une seconde. Cette fin-là est celle de après la sieste, la cuisine et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé a choisi après la sieste. Puis la cuisine. Puis le ballon rouge. Un ballon s'immobilise. Noé range encore un peu, près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. Une feuille tombe. On se tient la main. Cette fin-là est celle de après la sieste, la cuisine et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. Un linge sèche à l'air. Noé range après la sieste dans sa tête, comme un souvenir. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de après la sieste, la cuisine et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé se souvient de après la sieste. Et de la cuisine. Et de le doudou. Une feuille tombe. Noé écoute maman encore une fois. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Noé a choisi le jardin. Le sol est un peu froid. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On dit merci. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans le jardin. Un copain dit : le seau a. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On continue. Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +397,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Une feuille tombe. On se tait une seconde. Cette fin-là est celle de après la sieste, le jardin et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le ballon rouge. Après le jardin. Près de après la sieste. Noé s'arrête. Un chat miaule une fois. Noé tend le ballon rouge à papa. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de après la sieste, le jardin et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé range le jardin. le seau bleu reste près de après la sieste. On souffle doucement. Noé plie un pull. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. Un vélo passe au loin. On range un objet. Cette fin-là est celle de après la sieste, le jardin et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le doudou est là. le jardin aussi. après la sieste reste dans le souvenir. Un panier est posé sur le banc. Noé répète tout bas le geste. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Noé a choisi la chambre. Une feuille tombe. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On souffle doucement. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans le jardin. Un copain dit : le doudou a. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +444,39 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. L'eau coule, tout petit bruit. On se tait une seconde. Cette fin-là est celle de après la sieste, la chambre et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. après la sieste est fini. La lumière est claire. Papa n'est pas loin. Noé les rejoint. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de après la sieste, la chambre et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de le seau bleu. Noé pose la chambre. après la sieste est derrière. On se tient la main. Noé prend la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. La lumière est claire. On range un objet. Cette fin-là est celle de après la sieste, la chambre et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé montre le doudou. Maman a vu après la sieste. Et la chambre. On écoute jusqu'au bout. Noé pose sa tête un moment. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Noé va vers le soir. La couverture est douce. maman sourit. Ici, c'est le soir. Ce n'est pas comme les autres endroits. Noé se souvient : laisser le temps. Voici le geste : attendre la fin de la phrase. On se tient la main. maman dit : je suis là. On reste ensemble.",
+      "text": "C'est le soir. Le parc devient calme. Un copain dit : je rentre avec. Il cherche le mot. Noé laisse le temps. Il attend la fin de la phrase. Papa sourit. On peut jouer ensemble.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Laisser le temps à l'autre de finir sa phrase.",
+      "prompt": "On attend la fin de la phrase ?",
       "expected_intents": [
         "ATTENDRE_PHRASE"
       ],
       "accepted_examples": [
+        "laisser le temps",
+        "attendre",
         "attendre phrase"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : attendre la fin de la phrase.",
-      "wrong_feedback": "Voici le geste : attendre la fin de la phrase.",
+      "retry_prompt": "Dis : laisser le temps.",
+      "positive_feedback": "Oui. On laisse le temps.",
+      "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "DIF.PAR.002"
@@ -478,13 +484,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : attendre la fin de la phrase. Noé respire. Noé retient : laisser le temps. On continue, avec maman.",
+      "text": "Oui. On laisse le temps. Noé hoche la tête. On continue, avec maman. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Noé choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite Noé va où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +516,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Noé a choisi la cuisine. L'eau coule, tout petit bruit. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On range un objet. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la chambre. Un copain dit : le ballon va. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Un dernier choix. Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +548,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Une feuille tombe. On se tient la main. Cette fin-là est celle de le soir, la cuisine et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé a choisi le soir. Puis la cuisine. Puis le ballon rouge. Une chaussette est encore sablée. Noé essuie ses mains. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. L'eau coule, tout petit bruit. On range un objet. Cette fin-là est celle de le soir, la cuisine et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. On dit merci. Noé sourit. Maman sourit aussi. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. Un vélo passe au loin. On dit merci. Cette fin-là est celle de le soir, la cuisine et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé se souvient de le soir. Et de la cuisine. Et de le doudou. Le savon sent bon. Noé serre la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Noé a choisi le jardin. Un vélo passe au loin. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On dit merci. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la chambre. Un copain dit : le seau va. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +595,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. L'eau coule, tout petit bruit. On se tient la main. Cette fin-là est celle de le soir, le jardin et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le ballon rouge. Après le jardin. Près de le soir. Noé s'arrête. On rit un peu. Noé marche près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. Un vélo passe au loin. On range un objet. Cette fin-là est celle de le soir, le jardin et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé range le jardin. le seau bleu reste près de le soir. Un vélo passe au loin. Noé pose le jardin à sa place. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. La lumière est claire. On dit merci. Cette fin-là est celle de le soir, le jardin et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le doudou est là. le jardin aussi. le soir reste dans le souvenir. Un crochet tient bien le manteau. Noé ferme le sac. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Noé a choisi la chambre. La lumière est claire. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : attendre la fin de la phrase. Noé répète tout bas : laisser le temps. On souffle doucement. papa n'est pas loin.",
+      "text": "Plus tard, Noé va dans la chambre. Un copain dit : le doudou va. Noé laisse le temps. Maman dit : je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Noé va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour clore. Pour finir, Noé prend quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,22 +642,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Noé rejoint le ballon rouge. Un vélo passe au loin. On se tient la main. Cette fin-là est celle de le soir, la chambre et le ballon rouge. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. le soir est fini. Le vent est doux. Noé enfile ses chaussons. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Noé rejoint le seau bleu. La lumière est claire. On range un objet. Cette fin-là est celle de le soir, la chambre et le seau bleu. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de le seau bleu. Noé pose la chambre. le soir est derrière. L'eau coule, tout petit bruit. Noé s'assoit près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Noé rejoint le doudou. Il y a des miettes sur la table. On dit merci. Cette fin-là est celle de le soir, la chambre et le doudou. Noé a appris : Laisser le temps à l'autre de finir sa phrase. Voici le geste : attendre la fin de la phrase. Noé a entendu : laisser le temps. Noé dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Noé montre le doudou. Maman a vu le soir. Et la chambre. Une cloche tinte, tout loin. Noé ferme la porte, tout doux. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman. L'histoire est finie. On peut jouer ensemble."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

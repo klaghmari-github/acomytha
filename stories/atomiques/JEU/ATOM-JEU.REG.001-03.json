@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-JEU.REG.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Adam dit bravo, puis rejoue",
+  "lesson_id": "JEU.REG.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis jardin",
+  "characters": [
+    "Adam",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Adam et papa jouent au jeu de l'oie. Les pions sont lisses. Papa arrive le premier. Papa a gagné. Adam sent un nœud dans le ventre. Papa dit : l'autre peut gagner. C'est le jeu. Adam dit : je suis déçu. Papa dit : être déçu, c'est permis. Adam souffle. Il dit : bravo papa. Papa sourit. Papa dit : on peut rejouer plus tard. Adam hoche la tête. Il va boire de l'eau. Plus tard, au jardin, Adam joue aux quilles avec maman. Maman fait tomber plus de quilles. Maman a gagné. Adam sent encore le nœud. Il se souvient. L'autre peut gagner. Il dit : je suis déçu. Être déçu, c'est permis. Il dit : bravo maman. Maman dit : on rejoue plus tard. D'abord, on range. Adam empile les quilles. Après le goûter, ils rejouent. Adam sourit. Même leçon, autre jeu. Perdre un tour, ce n'est pas grave. On dit bravo. On rejoue plus tard.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa a gagné. Que peut faire Adam ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "rejouer",
+        "être déçu",
+        "bravo",
+        "plus tard"
+      ],
+      "retry_prompt": "Après le goûter, ils font quoi ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Être déçu, c'est permis. On rejoue plus tard.",
+      "wrong_feedback": "L'autre peut gagner. Être déçu, c'est permis. On dit bravo. On rejoue plus tard.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Adam a nommé sa déception. C'était permis. Il a dit bravo. Ils ont rejoué plus tard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Adam pose la dernière quille. Maman verse le goûter. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

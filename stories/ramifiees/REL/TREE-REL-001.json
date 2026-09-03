@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Nino est avec maman, au parc. Nino a envie de jouer. maman est là, tout près. On va apprendre : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino écoute maman. Nino entend les mots : prêter, tour, autre jeu.",
+      "text": "Au parc, Nino a un ballon. Tom arrive et tend les mains. Nino aime son ballon. Maman est au banc. Papa pousse une balançoire. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Nino choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "On joue où ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,26 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Nino va vers la cuisine. La lumière est claire. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Nino se souvient : prêter, tour, autre jeu. Voici le geste : prêter ; attendre ; proposer un autre jeu. On dit merci. maman dit : je suis là. On reste ensemble.",
+      "text": "Dans un coin cuisine du parc, on joue. Tom veut le même ustensile. C'est la cuisine. Le savon sent la fleur. Nino s'approche, sans courir. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Partager un jouet.",
+      "prompt": "Un camarade veut le jouet. Que peut-on faire ? Avec la cuisine.",
       "expected_intents": [
         "PRETER",
         "TOUR",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "preter",
+        "prêter",
         "tour",
         "autre jeu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu.",
-      "wrong_feedback": "Voici le geste : prêter ; attendre ; proposer un autre jeu.",
+      "retry_prompt": "Prêter ? Un tour ? Un autre jeu ?",
+      "positive_feedback": "Oui. On peut prêter. On attend son tour. On peut proposer un autre jeu.",
+      "wrong_feedback": "On prête, ou on attend son tour, ou on propose un autre jeu.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "REL.PAR.001"
@@ -90,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino respire. Nino retient : prêter, tour, autre jeu. On continue, avec maman.",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino retient le geste. Il respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -122,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Nino a choisi le ballon rouge. Un chat miaule une fois. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On attend son tour. papa n'est pas loin.",
+      "text": "Nino a choisi le ballon rouge, après la cuisine. La pomme est croquante. Nino montre le ballon rouge à maman. Il nomme ce qu'il sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit par ici. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -154,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Nino rejoint Tom. On entend un oiseau. On dit merci. Cette fin-là est celle de la cuisine, le ballon rouge et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le ballon rouge. La tasse est encore tiède. On dit merci. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Maman dit : je t'ai entendu. Papa aussi. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de la cuisine, le ballon rouge et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le ballon rouge. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Léa et va vers maman. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le ballon rouge et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le ballon rouge. Une abeille bourdonne loin. On attend un petit moment. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Nino a choisi le seau bleu. Les chaussures font toc toc. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Nino a choisi le seau bleu, après la cuisine. Le vent sent la mer. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit un peu plus loin. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -201,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Ça sent le pain chaud. On dit merci. Cette fin-là est celle de la cuisine, le seau bleu et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le seau bleu. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Le vent est doux. On souffle doucement. Cette fin-là est celle de la cuisine, le seau bleu et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le seau bleu. La fenêtre tremble un tout petit peu. On sourit un peu. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Maman dit : je t'ai entendu. Papa aussi. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le seau bleu et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le seau bleu. Ça sent le savon de maman. On boit une gorgée d'eau. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Nino a choisi le doudou. La couverture est douce. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On rit un peu. papa n'est pas loin.",
+      "text": "Nino a choisi le doudou, après la cuisine. La clochette de la porte tinte. Avec le doudou, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit dans ce coin. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -248,41 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Le vent est doux. On dit merci. Cette fin-là est celle de la cuisine, le doudou et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le doudou. Un pigeon roucoule. On essuie une miette. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de la cuisine, le doudou et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le doudou. La cuillère tinte. On referme un livre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le doudou et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le doudou. Le ballon est un peu poudreux. On pose un jouet à sa place. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Maman dit : je t'ai entendu. Papa aussi. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Nino va vers le jardin. Il y a des miettes sur la table. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Nino se souvient : prêter, tour, autre jeu. Voici le geste : prêter ; attendre ; proposer un autre jeu. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "text": "Vers le jardin du parc, on court moins. Léa veut le ballon. Nino s'occupe du jardin. Le sable est un peu frais. Maman sourit. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Partager un jouet.",
+      "prompt": "Un camarade veut le jouet. Que peut-on faire ? Avec le jardin.",
       "expected_intents": [
         "PRETER",
         "TOUR",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "preter",
+        "prêter",
         "tour",
         "autre jeu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu.",
-      "wrong_feedback": "Voici le geste : prêter ; attendre ; proposer un autre jeu.",
+      "retry_prompt": "Prêter ? Un tour ? Un autre jeu ?",
+      "positive_feedback": "Oui. On peut prêter. On attend son tour. On peut proposer un autre jeu.",
+      "wrong_feedback": "On prête, ou on attend son tour, ou on propose un autre jeu.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "REL.PAR.001"
@@ -290,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino respire. Nino retient : prêter, tour, autre jeu. On continue, avec maman.",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino répète le mot. Maman hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -322,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Nino a choisi le ballon rouge. On entend un oiseau. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On attend son tour. papa n'est pas loin.",
+      "text": "Nino a choisi le ballon rouge, après le jardin. Un ruisseau chante tout bas. Le ballon rouge reste à sa place. Nino aussi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout doux. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -354,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Ça sent le pain chaud. On souffle doucement. Cette fin-là est celle de le jardin, le ballon rouge et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le ballon rouge. Une goutte de pluie sèche déjà. On marche tout doucement. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le ballon rouge et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le ballon rouge. Le banc est tiède. On se tait une seconde. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Léa un instant. Puis il reprend, calme. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de le jardin, le ballon rouge et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le ballon rouge. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Nino a choisi le seau bleu. Ça sent le pain chaud. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Nino a choisi le seau bleu, après le jardin. Une goutte de pluie sèche déjà. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout calme. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -401,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Le vent est doux. On souffle doucement. Cette fin-là est celle de le jardin, le seau bleu et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le seau bleu. Une feuille tourne et tombe. On s'assoit près de l'adulte. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le seau bleu et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le seau bleu. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Une feuille tombe. On attend son tour. Cette fin-là est celle de le jardin, le seau bleu et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le seau bleu. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Maman dit : je t'ai entendu. Papa aussi. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Nino a choisi le doudou. Le vent est doux. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On rit un peu. papa n'est pas loin.",
+      "text": "Nino a choisi le doudou, après le jardin. Il y a des miettes sur la table. Près du doudou, Nino prend le temps. Pas de course. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout près. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -448,41 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Le sol est un peu froid. On souffle doucement. Cette fin-là est celle de le jardin, le doudou et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le doudou. Une plume vole. On range les chaussures. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le doudou et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le doudou. Le pain croustille. On met le doudou près de soi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de le jardin, le doudou et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le doudou. La laine du doudou est douce. On écoute le cœur, tout doux. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Nino va vers la chambre. Un chat miaule une fois. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Nino se souvient : prêter, tour, autre jeu. Voici le geste : prêter ; attendre ; proposer un autre jeu. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "text": "Près d'un coin comme une chambre à doudous, Sami tend la main. Voilà la chambre. Le banc est tiède. Nino pose les pieds par terre, près de maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Partager un jouet.",
+      "prompt": "Un camarade veut le jouet. Que peut-on faire ? Avec la chambre.",
       "expected_intents": [
         "PRETER",
         "TOUR",
         "AUTRE_JEU"
       ],
       "accepted_examples": [
-        "preter",
+        "prêter",
         "tour",
         "autre jeu"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu.",
-      "wrong_feedback": "Voici le geste : prêter ; attendre ; proposer un autre jeu.",
+      "retry_prompt": "Prêter ? Un tour ? Un autre jeu ?",
+      "positive_feedback": "Oui. On peut prêter. On attend son tour. On peut proposer un autre jeu.",
+      "wrong_feedback": "On prête, ou on attend son tour, ou on propose un autre jeu.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "REL.PAR.001"
@@ -490,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino respire. Nino retient : prêter, tour, autre jeu. On continue, avec maman.",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Nino choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -522,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Nino a choisi le ballon rouge. Le sol est un peu froid. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On attend son tour. papa n'est pas loin.",
+      "text": "Nino a choisi le ballon rouge, après la chambre. Une goutte tombe dans l'évier. Nino touche le ballon rouge tout doucement. Maman dit : je suis là. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout bas. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -554,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le ballon rouge et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le ballon rouge. Un galet est lisse dans la main. On secoue les mains, loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de la chambre, le ballon rouge et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le ballon rouge. Le train souffle au loin. On pose le sac. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le ballon rouge et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le ballon rouge. Une vache meugle, loin. On dit le mot de l'émotion. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Nino a choisi le seau bleu. Une feuille tombe. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Nino a choisi le seau bleu, après la chambre. Il y a des miettes sur la table. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout simple. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -601,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le seau bleu et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le seau bleu. Un grillon chante, tout petit. On invite d'une petite voix. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. Une feuille tombe. On attend son tour. Cette fin-là est celle de la chambre, le seau bleu et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le seau bleu. Le bois de la table est lisse. On attend la réponse. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le seau bleu et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le seau bleu. Une goutte tombe dans l'évier. On propose une autre idée. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Nino a choisi le doudou. L'eau coule, tout petit bruit. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino répète tout bas : prêter, tour, autre jeu. On rit un peu. papa n'est pas loin.",
+      "text": "Nino a choisi le doudou, après la chambre. La pomme est croquante. Nino choisit le doudou. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Nino va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout clair. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -648,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Nino rejoint Tom. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le doudou et Tom. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le doudou. Le toboggan est un peu froid. On va vers papa ou maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Tom un instant. Puis il reprend, calme. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Nino rejoint Léa. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de la chambre, le doudou et Léa. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le doudou. La clochette de la porte tinte. On dit stop, tout clair. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Nino rejoint Sami. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le doudou et Sami. Nino a appris : Partager un jouet. Voici le geste : prêter ; attendre ; proposer un autre jeu. Nino a entendu : prêter, tour, autre jeu. Nino dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le doudou. Ça sent le thym du jardin. On s'éloigne d'un pas. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

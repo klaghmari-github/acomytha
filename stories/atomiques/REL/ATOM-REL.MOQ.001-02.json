@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.MOQ.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Nino ne rit pas, deux fois",
+  "lesson_id": "REL.MOQ.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école puis parc",
+  "characters": [
+    "Nino",
+    "Zoé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino est à l'école. La classe range les crayons. Le couloir sent le savon. Zoé laisse tomber un crayon. Un camarade commence à rire. Le rire est court. Nino ne rit pas. Il ne faut pas rire. Nino ne répète pas. Il ne faut pas répéter. Nino dit : ce n'est pas gentil. Il va vers Zoé. Il ramasse le crayon. Il le tend. Zoé le reprend. La maîtresse s'approche. Le camarade dit : pardon. Plus tard, Nino est au parc avec maman. Un enfant laisse tomber son gant. Un autre commence à rire. Le rire est court. Nino se souvient. Il ne rit pas. Il ne répète pas. Il dit : ce n'est pas gentil. Il tend le gant. Maman dit : tu as repris le geste. Même leçon, autre lieu. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil. Nino serre la main de maman.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade rit. Que fait Nino ?",
+      "expected_intents": [
+        "PAS_RIRE",
+        "PAS_GENTIL"
+      ],
+      "accepted_examples": [
+        "pas rire",
+        "pas gentil",
+        "ne pas rire",
+        "pas répéter"
+      ],
+      "retry_prompt": "Il ne rit pas. Il dit que ce n'est pas gentil. Que fait Nino ?",
+      "positive_feedback": "Oui. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
+      "wrong_feedback": "Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino n'a pas ri. Il n'a pas répété. Il a dit : ce n'est pas gentil. À l'école, puis au parc.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nino range son cartable. Maman marche à côté. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

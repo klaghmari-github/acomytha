@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Nino est triste",
+  "lesson_id": "EMO.LEX.002",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Nino",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino est au parc avec maman. Il a un bateau en papier. Il le pose dans une flaque. L'eau emporte le bateau. Le papier se déchire. Parce que le bateau est parti, Nino sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe. Nino dit : je suis triste. Maman arrive près de lui. Maman dit : pleurer est permis. Nino pleure un peu. Les larmes coulent. Puis Nino dit : je veux un câlin. Maman ouvre les bras. Nino se blottit. Le câlin est chaud. Papa arrive aussi. Il s'assoit sur le banc. Être triste, c'est permis. Le câlin aide. Nino respire. Maman reste près de lui.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nino a les yeux chauds. Que dit-il ?",
+      "expected_intents": [
+        "TRISTE",
+        "CALIN"
+      ],
+      "accepted_examples": [
+        "triste",
+        "je suis triste",
+        "câlin",
+        "un câlin",
+        "pleurer"
+      ],
+      "retry_prompt": "Nino peut demander un câlin. Que dit-il ?",
+      "positive_feedback": "Oui. Nino dit : je suis triste. Il demande un câlin.",
+      "wrong_feedback": "On dit : je suis triste. On demande un câlin à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino a nommé : triste. Pleurer est permis. Un câlin de maman aide.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nino sèche ses joues. Papa reste au banc. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

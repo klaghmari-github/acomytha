@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Ava est contente",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Ava",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ava est dans la cuisine. Maman sort le gâteau. Ça sent la vanille. Papa s'assoit près de la table. Ava voit les fraises rouges. Parce que le gâteau est là, Ava sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Ava dit : je suis contente. Maman dit : c'est de la joie. Être content, c'est bien. Parce qu'elle a de la joie, Ava veut partager. Elle tend une fraise. Elle dit : on peut partager. Papa prend un petit bout. Ava prend un petit bout. Ils sourient ensemble. Ava dit encore : je suis contente. La joie est là, dans la cuisine. Maman sourit aussi.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ava sourit. Que dit-elle ?",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "contente",
+        "je suis contente",
+        "joie",
+        "de la joie"
+      ],
+      "retry_prompt": "Ava sent de la joie. Que dit-elle ?",
+      "positive_feedback": "Oui. Ava dit : je suis contente. C'est de la joie.",
+      "wrong_feedback": "On dit : je suis content. On partage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ava a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ava essuie ses mains. La cuisine sent encore bon. Maman lui prend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

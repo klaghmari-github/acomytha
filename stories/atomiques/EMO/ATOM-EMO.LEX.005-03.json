@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.005-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Hugo nomme sa colère deux fois",
+  "lesson_id": "EMO.LEX.005",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine puis jardin",
+  "characters": [
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 150,
+    "avg": 200,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hugo est dans la cuisine avec maman. Il empile des cubes. La tour est haute. Un cube glisse. La tour s'affaisse. Hugo sent son visage brûler. Ses mains deviennent chaudes et dures. Hugo dit : je suis en colère. Il ouvre les doigts. Il garde les mains loin. Hugo peut s'éloigner. Il s'éloigne de la table. Il va près de maman. Il souffle quatre fois, lentement. Hugo dit : maman, je suis en colère. La tour est tombée. Maman écoute. Hugo reste près d'elle. Plus tard, ils vont au jardin. Hugo arrose les fleurs. Un camarade renverse l'arrosoir. L'eau part. Hugo sent encore la chaleur. Il se souvient. Il dit : je suis en colère. Les mains restent loin. Il s'éloigne. Il va vers maman, l'adulte. Il souffle. Maman dit : tu as nommé. Tu as repris le geste. Même leçon, autre lieu. La colère a un nom. Les mains restent loin. On s'éloigne. On va vers un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La tour de Hugo s'affaisse. Que fait-il de sa colère ?",
+      "expected_intents": [
+        "COLERE",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "s'éloigner",
+        "vers maman",
+        "adulte",
+        "mains loin",
+        "souffler"
+      ],
+      "retry_prompt": "Hugo nomme sa colère. Puis il va où ?",
+      "positive_feedback": "Oui. Hugo nomme sa colère. Mains loin. Il peut s'éloigner. Il va vers un adulte.",
+      "wrong_feedback": "On dit : je suis en colère. Les mains restent loin. On peut s'éloigner. On va vers un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hugo a nommé sa colère. Mains loin. Il peut s'éloigner. Il rejoint maman, l'adulte. Deux fois.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hugo repose un cube. Maman reste près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

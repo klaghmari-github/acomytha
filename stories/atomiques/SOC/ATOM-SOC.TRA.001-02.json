@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SOC.TRA.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Le bateau de Léa",
+  "lesson_id": "SOC.TRA.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "port",
+  "characters": [
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa tient la main de maman. Elles vont au port. Elles restent avec un adulte. Maman, c'est l'adulte. Un bateau arrive. Le bateau fait une sirène douce. L'eau clapote. Maman dit : c'est un bateau. C'est le nom du véhicule. Léa répète : un bateau. Elles montent avec maman. Léa s'assoit près de maman. Le bateau glisse. Dans le ciel, un avion passe. L'avion fait un trait blanc. Maman dit : c'est un avion. Léa dit : un avion. Sur l'autre rive, un train roule. Le train fait tchou tchou. Maman dit : c'est un train. Léa dit : un train. Train, avion, bateau. Léa nomme. Elle reste avec maman. Parce qu'elle reste avec un adulte, le voyage est calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa nomme un véhicule. Lequel ?",
+      "expected_intents": [
+        "TRAIN",
+        "AVION",
+        "BATEAU"
+      ],
+      "accepted_examples": [
+        "bateau",
+        "avion",
+        "train",
+        "un bateau",
+        "le bateau"
+      ],
+      "retry_prompt": "Elle a vu un bateau. Quel véhicule ?",
+      "positive_feedback": "Oui. Train, avion ou bateau. On voyage avec un adulte.",
+      "wrong_feedback": "On nomme le train, l'avion ou le bateau. On voyage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a dit le nom du véhicule. Bateau. Avion. Train. Elle est restée avec maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le bateau s'arrête. Léa donne la main à maman. Elles descendent ensemble. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

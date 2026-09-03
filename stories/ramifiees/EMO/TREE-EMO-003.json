@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Léa est avec maman, dans la chambre. Léa a envie de jouer. maman est là, tout près. On va apprendre : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa écoute maman. Léa entend les mots : déçu, autre idée.",
+      "text": "Dans la chambre, Léa voulait le grand puzzle. Maman dit : pas maintenant. Les épaules de Léa descendent. Le ventre est lourd. Papa range des chaussettes. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Léa choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Léa va où ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Léa va vers la cuisine. Un chat miaule une fois. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Léa se souvient : déçu, autre idée. Voici le geste : dire je suis déçu ; proposer autre chose. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa voulait un jeu dans la cuisine. Pas maintenant. Elle est déçue. C'est la cuisine. Le savon sent la fleur. Léa s'approche, sans courir. Papa n'est pas loin. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être déçu.",
+      "prompt": "Léa voulait autre chose. Quel mot dit-on ? Avec la cuisine.",
       "expected_intents": [
         "DECU",
         "AUTRE_IDEE"
       ],
       "accepted_examples": [
-        "decu",
-        "autre idee"
+        "déçu",
+        "autre idée",
+        "idée"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose.",
-      "wrong_feedback": "Voici le geste : dire je suis déçu ; proposer autre chose.",
+      "retry_prompt": "Déçu ? Une autre idée ?",
+      "positive_feedback": "Oui. On dit : je suis déçue. On cherche une autre idée.",
+      "wrong_feedback": "On nomme : déçu. On cherche une autre idée.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "EMO.LEX.003"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose. Léa respire. Léa retient : déçu, autre idée. On continue, avec maman.",
+      "text": "Oui. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa retient le geste. Elle respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Léa a choisi le ballon rouge. La couverture est douce. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Léa a choisi le ballon rouge, après la cuisine. La cuillère tinte. Léa montre le ballon rouge à maman. Elle nomme ce qu'elle sent. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit par ici. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Le vent est doux. On range un objet. Cette fin-là est celle de la cuisine, le ballon rouge et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la cuisine et le ballon rouge. La tasse est encore tiède. On dit merci. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Maman dit : je t'ai entendu. Papa aussi. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. Le sol est un peu froid. On dit merci. Cette fin-là est celle de la cuisine, le ballon rouge et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la cuisine et le ballon rouge. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit au revoir à Léa et va vers maman. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la cuisine, le ballon rouge et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la cuisine et le ballon rouge. Une abeille bourdonne loin. On attend un petit moment. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit au revoir à Sami et va vers maman. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Léa a choisi le seau bleu. On entend un oiseau. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On attend son tour. papa n'est pas loin.",
+      "text": "Léa a choisi le seau bleu, après la cuisine. Ça sent la pomme. Avec le seau bleu, Léa ralentit. Elle écoute maman. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit un peu plus loin. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Le sol est un peu froid. On range un objet. Cette fin-là est celle de la cuisine, le seau bleu et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la cuisine et le seau bleu. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa boit une gorgée. Elle se sent plus légère. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. Une feuille tombe. On dit merci. Cette fin-là est celle de la cuisine, le seau bleu et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la cuisine et le seau bleu. La fenêtre tremble un tout petit peu. On sourit un peu. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Maman dit : je t'ai entendu. Papa aussi. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la cuisine, le seau bleu et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la cuisine et le seau bleu. Ça sent le savon de maman. On boit une gorgée d'eau. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit au revoir à Sami et va vers maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Léa a choisi le doudou. Ça sent le pain chaud. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Léa a choisi le doudou, après la cuisine. Le parquet craque un tout petit peu. Léa range un peu autour du doudou. Elle respire. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "On finit dans ce coin. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Une feuille tombe. On range un objet. Cette fin-là est celle de la cuisine, le doudou et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la cuisine et le doudou. Un pigeon roucoule. On essuie une miette. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa boit une gorgée. Elle se sent plus légère. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de la cuisine, le doudou et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la cuisine et le doudou. La cuillère tinte. On referme un livre. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa boit une gorgée. Elle se sent plus légère. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la cuisine, le doudou et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la cuisine et le doudou. Le ballon est un peu poudreux. On pose un jouet à sa place. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Maman dit : je t'ai entendu. Papa aussi. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Léa va vers le jardin. Les chaussures font toc toc. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Léa se souvient : déçu, autre idée. Voici le geste : dire je suis déçu ; proposer autre chose. On dit merci. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa voulait courir au jardin. Pas maintenant. Elle est déçue. Léa s'occupe du jardin. Le sable est un peu frais. Maman sourit. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être déçu.",
+      "prompt": "Léa voulait autre chose. Quel mot dit-on ? Avec le jardin.",
       "expected_intents": [
         "DECU",
         "AUTRE_IDEE"
       ],
       "accepted_examples": [
-        "decu",
-        "autre idee"
+        "déçu",
+        "autre idée",
+        "idée"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose.",
-      "wrong_feedback": "Voici le geste : dire je suis déçu ; proposer autre chose.",
+      "retry_prompt": "Déçu ? Une autre idée ?",
+      "positive_feedback": "Oui. On dit : je suis déçue. On cherche une autre idée.",
+      "wrong_feedback": "On nomme : déçu. On cherche une autre idée.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "EMO.LEX.003"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose. Léa respire. Léa retient : déçu, autre idée. On continue, avec maman.",
+      "text": "Oui. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa répète le mot. Maman hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Léa a choisi le ballon rouge. Le vent est doux. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Léa a choisi le ballon rouge, après le jardin. Les chaussures font un bruit léger. On continue avec le ballon rouge. Léa gardu geste sûr. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout doux. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Le sol est un peu froid. On dit merci. Cette fin-là est celle de le jardin, le ballon rouge et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après le jardin et le ballon rouge. Une goutte de pluie sèche déjà. On marche tout doucement. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit merci à maman. Papa sourit. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. Une feuille tombe. On souffle doucement. Cette fin-là est celle de le jardin, le ballon rouge et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après le jardin et le ballon rouge. Le banc est tiède. On se tait une seconde. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa range Léa un instant. Puis elle reprend, calme. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. L'eau coule, tout petit bruit. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le ballon rouge et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après le jardin et le ballon rouge. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa boit une gorgée. Elle se sent plus légère. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Léa a choisi le seau bleu. Le sol est un peu froid. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On attend son tour. papa n'est pas loin.",
+      "text": "Léa a choisi le seau bleu, après le jardin. Un vélo passe, toc toc toc. Avec le seau bleu, Léa ralentit. Elle écoute maman. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout calme. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Une feuille tombe. On dit merci. Cette fin-là est celle de le jardin, le seau bleu et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après le jardin et le seau bleu. Une feuille tourne et tombe. On s'assoit près de l'adulte. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On laisse Tom à sa place. Léa est près de maman. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de le jardin, le seau bleu et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après le jardin et le seau bleu. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On écoute le silence une seconde. Léa est assise. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. Un vélo passe au loin. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le seau bleu et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après le jardin et le seau bleu. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Maman dit : je t'ai entendu. Papa aussi. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Léa a choisi le doudou. Une feuille tombe. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Léa a choisi le doudou, après le jardin. Ça sent le thym du jardin. Le doudou est là. Léa pose les mains à vue, loin de l'autre. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernier choix, tout près. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Léa rejoint Tom. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de le jardin, le doudou et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après le jardin et le doudou. Une plume vole. On range les chaussures. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On laisse Tom à sa place. Léa est près de maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de le jardin, le doudou et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après le jardin et le doudou. Le pain croustille. On met le doudou près de soi. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On écoute le silence une seconde. Léa est assise. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. La lumière est claire. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le doudou et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après le jardin et le doudou. La laine du doudou est douce. On écoute le cœur, tout doux. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit au revoir à Sami et va vers maman. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Léa va vers la chambre. La couverture est douce. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Léa se souvient : déçu, autre idée. Voici le geste : dire je suis déçu ; proposer autre chose. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa voulait encore la chambre pour elle. Pas maintenant. Elle est déçue. Voilà la chambre. Le banc est tiède. Léa pose les pieds par terre, près de maman. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être déçu.",
+      "prompt": "Léa voulait autre chose. Quel mot dit-on ? Avec la chambre.",
       "expected_intents": [
         "DECU",
         "AUTRE_IDEE"
       ],
       "accepted_examples": [
-        "decu",
-        "autre idee"
+        "déçu",
+        "autre idée",
+        "idée"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose.",
-      "wrong_feedback": "Voici le geste : dire je suis déçu ; proposer autre chose.",
+      "retry_prompt": "Déçu ? Une autre idée ?",
+      "positive_feedback": "Oui. On dit : je suis déçue. On cherche une autre idée.",
+      "wrong_feedback": "On nomme : déçu. On cherche une autre idée.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "EMO.LEX.003"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis déçu ; proposer autre chose. Léa respire. Léa retient : déçu, autre idée. On continue, avec maman.",
+      "text": "Oui. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Léa a choisi le ballon rouge. L'eau coule, tout petit bruit. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Léa a choisi le ballon rouge, après la chambre. Le sable colle un peu aux doigts. Léa choisit le ballon rouge. Papa n'est pas loin. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout bas. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Une feuille tombe. On souffle doucement. Cette fin-là est celle de la chambre, le ballon rouge et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la chambre et le ballon rouge. Un galet est lisse dans la main. On secoue les mains, loin. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa nomme encore le mot, tout bas. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. L'eau coule, tout petit bruit. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le ballon rouge et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la chambre et le ballon rouge. Le train souffle au loin. On pose le sac. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa nomme encore le mot, tout bas. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. Un vélo passe au loin. On attend son tour. Cette fin-là est celle de la chambre, le ballon rouge et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la chambre et le ballon rouge. Une vache meugle, loin. On dit le mot de l'émotion. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa dit merci à maman. Papa sourit. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Léa a choisi le seau bleu. Un vélo passe au loin. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On attend son tour. papa n'est pas loin.",
+      "text": "Léa a choisi le seau bleu, après la chambre. Le banc est tiède. Avec le seau bleu, Léa ralentit. Elle écoute maman. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout simple. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Léa rejoint Tom. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de la chambre, le seau bleu et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la chambre et le seau bleu. Un grillon chante, tout petit. On invite d'une petite voix. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On écoute le silence une seconde. Léa est assise. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. Un vélo passe au loin. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le seau bleu et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la chambre et le seau bleu. Le bois de la table est lisse. On attend la réponse. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa nomme encore le mot, tout bas. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. La lumière est claire. On attend son tour. Cette fin-là est celle de la chambre, le seau bleu et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la chambre et le seau bleu. Une goutte tombe dans l'évier. On propose une autre idée. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa nomme encore le mot, tout bas. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Léa a choisi le doudou. La lumière est claire. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis déçu ; proposer autre chose. Léa répète tout bas : déçu, autre idée. On montre du doigt, sans courir. papa n'est pas loin.",
+      "text": "Léa a choisi le doudou, après la chambre. La cuillère tinte. Léa attend près du doudou. Elle ne prend pas de force. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour conclure, tout clair. Avec qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Léa rejoint Tom. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de la chambre, le doudou et Tom. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Tom pour jouer, après la chambre et le doudou. Le toboggan est un peu froid. On va vers papa ou maman. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. Léa range Tom un instant. Puis elle reprend, calme. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Léa rejoint Léa. La lumière est claire. On écoute jusqu'au bout. Cette fin-là est celle de la chambre, le doudou et Léa. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Léa pour jouer, après la chambre et le doudou. La clochette de la porte tinte. On dit stop, tout clair. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On écoute le silence une seconde. Léa est assise. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Léa rejoint Sami. Il y a des miettes sur la table. On attend son tour. Cette fin-là est celle de la chambre, le doudou et Sami. Léa a appris : Être déçu. Voici le geste : dire je suis déçu ; proposer autre chose. Léa a entendu : déçu, autre idée. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint Sami pour jouer, après la chambre et le doudou. Ça sent le thym du jardin. On s'éloigne d'un pas. Léa se sent déçue. Les épaules descendent. Le ventre est lourd. Léa dit : je suis déçue. Elle cherche une autre idée. On écoute le silence une seconde. Léa est assise. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

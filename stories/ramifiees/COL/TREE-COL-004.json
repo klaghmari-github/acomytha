@@ -1,0 +1,668 @@
+{
+  "tree_id": "TREE-COL-004",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Écouter la maîtresse, en parler à la maison — à l'école",
+  "lesson_id": "COL.ECO.001",
+  "secondary_lessons": [
+    "COL.POL.001"
+  ],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "à l'école",
+  "characters": [
+    "Sara",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Sara est à l'école, avec maman. Papa viendra le soir. Sara écoute la maîtresse. Un camarade chuchote. Sara sent un malaise. Maman dit : on écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "On parle de quoi ? Le train, le bus, ou la voiture ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le train",
+          "intent": "LE_TRAIN",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le bus",
+          "intent": "LE_BUS",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la voiture",
+          "intent": "LA_VOITURE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "À l'école, on parle du train. Sara a écouté la maîtresse. Un camarade chuchote. Sara a un malaise. Ce soir, raconter à la maison. Maman dit : je t'écoute.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "On écoute, et si malaise on raconte à la maison ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "écouter",
+        "raconter",
+        "à la maison"
+      ],
+      "retry_prompt": "Dis : raconter.",
+      "positive_feedback": "Oui. On écoute. Si malaise, raconter à la maison.",
+      "wrong_feedback": "On écoute la maîtresse. Si malaise, on raconte à la maison.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. On écoute. Si malaise, raconter à la maison. Sara respire. Maman est là. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Sara parle à qui ? Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Sara parle à Tom. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le matin. Maman montre le geste, lentement. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Sara a choisi le train. Puis Tom. Puis le matin. On se tient la main. Sara tend le matin à papa. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Sara s'arrête près de après la sieste. Tom est rangé. Les chaussures font toc toc. Sara essuie ses mains. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Sara se souvient de le train. Et de Tom. Et de le soir. On souffle doucement. Sara pose sa tête un moment. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Sara parle à Tom. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est après la sieste. Maman dit : je suis là. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Encore un choix. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Avec le matin. Après Léa. Près de le train. Sara s'arrête. Un ruban reste dans la poche. Sara caresse le doudou. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Sara range Léa. après la sieste reste près de le train. Une cloche tinte, tout loin. Sara dit merci à maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "le soir est là. Léa aussi. le train reste dans le souvenir. Une chaussette est encore sablée. Sara marche près de maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Sara parle à Tom. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le soir. Maman reste tout près. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Dernière étape. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Sara rejoint le matin. Sami est rangé. le train est fini. Un linge sèche à l'air. Sara serre la main de maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Près de après la sieste. Sara pose Sami. le train est derrière. Le vent est doux. Sara raccroche un linge. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Sara montre le soir. Maman a vu le train. Et Sami. Le sol est un peu froid. Sara chuchote : c'est fini. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "À l'école, on parle du bus. Sara a écouté la maîtresse. Son ventre est serré. C'est un malaise. Si malaise, raconter à la maison. Sara le dira à papa ou maman.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Un malaise : on raconte à la maison ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "écouter",
+        "raconter",
+        "à la maison"
+      ],
+      "retry_prompt": "Dis : raconter.",
+      "positive_feedback": "Oui. On écoute. Si malaise, raconter à la maison.",
+      "wrong_feedback": "On écoute la maîtresse. Si malaise, on raconte à la maison.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. On écoute. Si malaise, raconter à la maison. Sara retient le geste. Maman sourit. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Sara parle à qui ? Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Sara parle à Léa. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le matin. Maman dit : je suis là. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Sara a choisi le bus. Puis Tom. Puis le matin. On entend un oiseau. Sara boit une gorgée d'eau. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Sara s'arrête près de après la sieste. Tom est rangé. Un panier est posé sur le banc. Sara répète tout bas le geste. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Sara se souvient de le bus. Et de Tom. Et de le soir. Une tasse cliquette. Sara sourit. Maman sourit aussi. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Sara parle à Léa. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est après la sieste. Maman reste tout près. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "On continue. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Avec le matin. Après Léa. Près de le bus. Sara s'arrête. On attend son tour. Sara ferme le sac. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Sara range Léa. après la sieste reste près de le bus. Ça sent le pain chaud. Sara s'assoit près de maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "le soir est là. Léa aussi. le bus reste dans le souvenir. La couverture est douce. Sara montre le soir à maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Sara parle à Léa. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le soir. Maman montre le geste, lentement. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Sara rejoint le matin. Sami est rangé. le bus est fini. On rit un peu. Sara dit : j'ai appris. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Près de après la sieste. Sara pose Sami. le bus est derrière. Une feuille tombe. Sara pose Sami à sa place. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Sara montre le soir. Maman a vu le bus. Et Sami. L'eau coule, tout petit bruit. Sara enfile ses chaussons. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "À l'école, on parle de la voiture. Sara a écouté la maîtresse. Le malaise est là. Sara dit : ce soir je raconte. Si malaise, raconter à la maison.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "On écoute la maîtresse ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "écouter",
+        "raconter",
+        "à la maison"
+      ],
+      "retry_prompt": "Dis : raconter.",
+      "positive_feedback": "Oui. On écoute. Si malaise, raconter à la maison.",
+      "wrong_feedback": "On écoute la maîtresse. Si malaise, on raconte à la maison.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "COL.ECO.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. On écoute. Si malaise, raconter à la maison. Sara hoche la tête. On continue, avec maman. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Sara parle à qui ? Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Sara parle à Sami. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le matin. Maman reste tout près. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Un dernier choix. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Sara a choisi la voiture. Puis Tom. Puis le matin. Un galet est encore chaud. Papa n'est pas loin. Sara les rejoint. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Sara s'arrête près de après la sieste. Tom est rangé. Le savon sent bon. Sara range la voiture dans sa tête, comme un souvenir. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Sara se souvient de la voiture. Et de Tom. Et de le soir. Un vélo passe au loin. Sara plie un pull. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Sara parle à Sami. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est après la sieste. Maman montre le geste, lentement. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Avec le matin. Après Léa. Près de la voiture. Sara s'arrête. La lumière est claire. Sara ferme la porte, tout doux. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Sara range Léa. après la sieste reste près de la voiture. Un ballon s'immobilise. Sara range encore un peu, près de maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "le soir est là. Léa aussi. la voiture reste dans le souvenir. Un chat miaule une fois. Sara écoute maman encore une fois. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Sara parle à Sami. Elle a écouté la maîtresse. Elle a un malaise. Si malaise, raconter à la maison. C'est le soir. Maman dit : je suis là. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour clore. Pour finir, quel moment ? Le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Sara rejoint le matin. Sami est rangé. la voiture est fini. Il y a des miettes sur la table. Sara range la tasse. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Près de après la sieste. Sara pose Sami. la voiture est derrière. On range un objet. Sara prend la main de maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Sara montre le soir. Maman a vu la voiture. Et Sami. On dit merci. Sara souffle, puis sourit à maman. On écoute la maîtresse. Si malaise, raconter à la maison. On écoute. Si malaise, on raconte à papa ou maman, à la maison. Sara dit merci à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

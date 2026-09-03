@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Maya est avec maman, dans le salon. Maya a envie de jouer. maman est là, tout près. On va apprendre : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya écoute maman. Maya entend les mots : reprendre ses affaires, avant de partir.",
+      "text": "Maya est dans le salon, avec maman. Papa cherche les chaussures. Bientôt on part. Il y a un seau, un manteau, un doudou. Maman dit : on va reprendre ses affaires avant de partir.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Maya choisit. la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Maya cherche où ? La cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Maya va vers la cuisine. Le sol est un peu froid. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Maya se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "text": "Maya va dans la cuisine. Elle cherche. Elle reprend ses affaires avant de partir. Un gant est sur la table. Maman dit : prends-le. Maya le met avec le reste.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "Avant de partir, on reprend ses affaires ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "avant de partir",
+        "ses affaires"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Dis : reprendre.",
+      "positive_feedback": "Oui. On va reprendre ses affaires avant de partir.",
+      "wrong_feedback": "On va reprendre ses affaires avant de partir.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "AUT.AFF.003"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Maya respire. Maya retient : reprendre ses affaires, avant de partir. On continue, avec maman.",
+      "text": "Oui. On va reprendre ses affaires avant de partir. Maya respire. Maman est là. On va reprendre ses affaires avant de partir.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Maya trouve quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Maya a choisi le ballon rouge. L'eau coule, tout petit bruit. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On rit un peu. papa n'est pas loin.",
+      "text": "Maya trouve le ballon rouge. Elle reprend ses affaires avant de partir. Elle le met près de la porte. Maman dit : encore le manteau. Maman montre le geste, lentement. On va reprendre ses affaires avant de partir.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le ballon rouge et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya a choisi la cuisine. Puis le ballon rouge. Puis Tom. Une feuille tombe. Maya serre la main de maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de la cuisine, le ballon rouge et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya s'arrête près de Léa. le ballon rouge est rangé. La lumière est claire. Maya souffle, puis sourit à maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de la cuisine, le ballon rouge et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya se souvient de la cuisine. Et de le ballon rouge. Et de Sami. Une cloche tinte, tout loin. Maya range la tasse. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Maya a choisi le seau bleu. Un vélo passe au loin. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tait une seconde. papa n'est pas loin.",
+      "text": "Maya trouve le seau bleu. Elle reprend ses affaires avant de partir. Elle le vide un peu. Papa dit : encore le doudou. Maman dit : je suis là. On va reprendre ses affaires avant de partir.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Encore un choix. Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le seau bleu et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec Tom. Après le seau bleu. Près de la cuisine. Maya s'arrête. On attend son tour. Maya prend la main de maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de la cuisine, le seau bleu et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya range le seau bleu. Léa reste près de la cuisine. Une pomme brille un peu. Maya écoute maman encore une fois. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de la cuisine, le seau bleu et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami est là. le seau bleu aussi. la cuisine reste dans le souvenir. Un panier est posé sur le banc. Papa n'est pas loin. Maya les rejoint. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Maya a choisi le doudou. La lumière est claire. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tient la main. papa n'est pas loin.",
+      "text": "Maya trouve le doudou. Elle reprend ses affaires avant de partir. Elle le serre. Maman dit : encore le manteau. Maman reste tout près. On va reprendre ses affaires avant de partir.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Dernière étape. Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le doudou et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint Tom. le doudou est rangé. la cuisine est fini. Ça sent le pain chaud. Maya raccroche un linge. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. La couverture est douce. On attend son tour. Cette fin-là est celle de la cuisine, le doudou et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de Léa. Maya pose le doudou. la cuisine est derrière. On se tient la main. Maya enfile ses chaussons. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de la cuisine, le doudou et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya montre Sami. Maman a vu la cuisine. Et le doudou. On entend un oiseau. Maya caresse le doudou. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Maya va vers le jardin. Une feuille tombe. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Maya se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Maya va dans le jardin. Elle cherche. Elle reprend ses affaires avant de partir. Un chapeau est sur le banc. Papa l'appelle. Maya le prend.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "On reprend quoi, avant de partir ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "avant de partir",
+        "ses affaires"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Dis : reprendre.",
+      "positive_feedback": "Oui. On va reprendre ses affaires avant de partir.",
+      "wrong_feedback": "On va reprendre ses affaires avant de partir.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "AUT.AFF.003"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Maya respire. Maya retient : reprendre ses affaires, avant de partir. On continue, avec maman.",
+      "text": "Oui. On va reprendre ses affaires avant de partir. Maya retient le geste. Maman sourit. On va reprendre ses affaires avant de partir.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Maya trouve quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Maya a choisi le ballon rouge. Il y a des miettes sur la table. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On rit un peu. papa n'est pas loin.",
+      "text": "Maya retrouve Tom. Tom tient le ballon. Maya reprend ses affaires avant de partir. Elle dit : j'ai le ballon. Maman dit : je suis là. On va reprendre ses affaires avant de partir.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de le jardin, le ballon rouge et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya a choisi le jardin. Puis le ballon rouge. Puis Tom. Un ruban reste dans la poche. Maya répète tout bas le geste. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, le ballon rouge et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya s'arrête près de Léa. le ballon rouge est rangé. Il y a des miettes sur la table. Maya chuchote : c'est fini. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. La couverture est douce. On rit un peu. Cette fin-là est celle de le jardin, le ballon rouge et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya se souvient de le jardin. Et de le ballon rouge. Et de Sami. On écoute jusqu'au bout. Maya ferme le sac. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Maya a choisi le seau bleu. Un chat miaule une fois. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tait une seconde. papa n'est pas loin.",
+      "text": "Maya retrouve Léa. Léa tient le seau. Maya reprend ses affaires avant de partir. Elle dit : j'ai le seau. Maman reste tout près. On va reprendre ses affaires avant de partir.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "On continue. Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de le jardin, le seau bleu et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec Tom. Après le seau bleu. Près de le jardin. Maya s'arrête. On dit merci. Maya dit : j'ai appris. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, le seau bleu et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya range le seau bleu. Léa reste près de le jardin. On souffle doucement. Maya montre Léa à maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. On entend un oiseau. On rit un peu. Cette fin-là est celle de le jardin, le seau bleu et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami est là. le seau bleu aussi. le jardin reste dans le souvenir. On range un objet. Maya essuie ses mains. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Maya a choisi le doudou. Les chaussures font toc toc. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tient la main. papa n'est pas loin.",
+      "text": "Maya retrouve Sami. Sami tient le doudou. Maya reprend ses affaires avant de partir. Elle dit : j'ai le doudou. Maman montre le geste, lentement. On va reprendre ses affaires avant de partir.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Maya rejoint Tom. La couverture est douce. On attend son tour. Cette fin-là est celle de le jardin, le doudou et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint Tom. le doudou est rangé. le jardin est fini. Un chat miaule une fois. Maya dit merci à maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, le doudou et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de Léa. Maya pose le doudou. le jardin est derrière. La couverture est douce. Maya tend Léa à papa. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de le jardin, le doudou et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya montre Sami. Maman a vu le jardin. Et le doudou. Un crochet tient bien le manteau. Maya plie un pull. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Maya va vers la chambre. L'eau coule, tout petit bruit. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Maya se souvient : reprendre ses affaires, avant de partir. Voici le geste : chercher seau et manteau ; les prendre. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Maya va dans la chambre. Elle cherche. Elle reprend ses affaires avant de partir. Un chausson est sous le lit. Maman dit : on les reprend. Maya le glisse dans le sac.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Retrouver ses affaires avant de partir.",
+      "prompt": "On part, et les affaires ?",
       "expected_intents": [
         "REPRENDRE",
         "AVANT_DE_PARTIR"
       ],
       "accepted_examples": [
         "reprendre",
-        "avant de partir"
+        "avant de partir",
+        "ses affaires"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : chercher seau et manteau ; les prendre.",
-      "wrong_feedback": "Voici le geste : chercher seau et manteau ; les prendre.",
+      "retry_prompt": "Dis : reprendre.",
+      "positive_feedback": "Oui. On va reprendre ses affaires avant de partir.",
+      "wrong_feedback": "On va reprendre ses affaires avant de partir.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "AUT.AFF.003"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : chercher seau et manteau ; les prendre. Maya respire. Maya retient : reprendre ses affaires, avant de partir. On continue, avec maman.",
+      "text": "Oui. On va reprendre ses affaires avant de partir. Maya hoche la tête. On continue, avec maman. On va reprendre ses affaires avant de partir.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Maya trouve quoi ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Maya a choisi le ballon rouge. La couverture est douce. Le ballon rouge reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On rit un peu. papa n'est pas loin.",
+      "text": "Maya range le ballon, puis cherche encore. Elle reprend ses affaires avant de partir. Un gant manque. Elle le trouve. Maman reste tout près. On va reprendre ses affaires avant de partir.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Un dernier choix. Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Maya rejoint Tom. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le ballon rouge et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya a choisi la chambre. Puis le ballon rouge. Puis Tom. Le sol est un peu froid. Maya s'assoit près de maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. La couverture est douce. On rit un peu. Cette fin-là est celle de la chambre, le ballon rouge et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya s'arrête près de Léa. le ballon rouge est rangé. Une tasse cliquette. Maya boit une gorgée d'eau. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de la chambre, le ballon rouge et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya se souvient de la chambre. Et de le ballon rouge. Et de Sami. Une chaussette est encore sablée. Maya pose sa tête un moment. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Maya a choisi le seau bleu. On entend un oiseau. Le seau bleu reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tait une seconde. papa n'est pas loin.",
+      "text": "Maya range le seau, puis cherche encore. Elle reprend ses affaires avant de partir. Un chapeau manque. Elle le trouve. Maman montre le geste, lentement. On va reprendre ses affaires avant de partir.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Maya rejoint Tom. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le seau bleu et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec Tom. Après le seau bleu. Près de la chambre. Maya s'arrête. Un vélo passe au loin. Maya pose le seau bleu à sa place. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. On entend un oiseau. On rit un peu. Cette fin-là est celle de la chambre, le seau bleu et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya range le seau bleu. Léa reste près de la chambre. Le savon sent bon. Maya sourit. Maman sourit aussi. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de la chambre, le seau bleu et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Sami est là. le seau bleu aussi. la chambre reste dans le souvenir. Un ballon s'immobilise. Maya ferme la porte, tout doux. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Maya a choisi le doudou. Ça sent le pain chaud. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : chercher seau et manteau ; les prendre. Maya répète tout bas : reprendre ses affaires, avant de partir. On se tient la main. papa n'est pas loin.",
+      "text": "Maya range le doudou, puis cherche encore. Elle reprend ses affaires avant de partir. Un gant manque. Elle le trouve. Maman dit : je suis là. On va reprendre ses affaires avant de partir.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers Tom, Léa, ou Sami ?",
+      "prompt": "Pour clore. Pour finir, Maya dit au revoir à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,22 +645,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Maya rejoint Tom. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le doudou et Tom. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint Tom. le doudou est rangé. la chambre est fini. On rit un peu. Maya marche près de maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Maya rejoint Léa. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de la chambre, le doudou et Léa. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de Léa. Maya pose le doudou. la chambre est derrière. L'eau coule, tout petit bruit. Maya range la chambre dans sa tête, comme un souvenir. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Maya rejoint Sami. Le vent est doux. On se tait une seconde. Cette fin-là est celle de la chambre, le doudou et Sami. Maya a appris : Retrouver ses affaires avant de partir. Voici le geste : chercher seau et manteau ; les prendre. Maya a entendu : reprendre ses affaires, avant de partir. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya montre Sami. Maman a vu la chambre. Et le doudou. Un linge sèche à l'air. Maya range encore un peu, près de maman. On va reprendre ses affaires avant de partir. On cherche seau et manteau. On les prend. On va reprendre ses affaires. Maya dit merci à maman. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

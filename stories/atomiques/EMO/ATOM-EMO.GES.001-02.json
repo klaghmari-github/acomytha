@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.GES.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Sara dit stop, puis encore",
+  "lesson_id": "EMO.GES.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison puis jardin",
+  "characters": [
+    "Sara",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sara joue dans le salon avec papa. Un camarade la tourne trop vite. Sara sent sa poitrine coincée. Elle dit : je n'aime pas. C'est trop. Sara dit : stop. Elle recule d'un pas. Elle peut s'éloigner. Elle s'éloigne vers le canapé. Papa est l'adulte près du canapé. Sara va vers papa. Elle dit : c'était trop. Papa l'écoute. Sara pose sa main dans la main de papa. Elle souffle. Plus tard, ils vont au jardin. Les enfants font une ronde. On la serre trop près. Sara sent encore la poitrine coincée. Elle se souvient. Elle dit : stop. Elle s'éloigne. Elle va vers papa, l'adulte. Papa dit : tu as repris le geste. Dire stop, c'est permis. On s'éloigne. On va vers un adulte. Même leçon, autre lieu. Sara reste près de papa. Ses épaules descendent.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop pour Sara. Que dit-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "papa",
+        "adulte",
+        "vers papa"
+      ],
+      "retry_prompt": "Sara dit stop. Puis elle va où ?",
+      "positive_feedback": "Oui. Sara dit stop. Elle peut s'éloigner. Elle va vers un adulte.",
+      "wrong_feedback": "On dit stop. On peut s'éloigner. On va vers papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sara a dit stop. Elle a pu s'éloigner. Elle rejoint papa, l'adulte. Au salon, puis au jardin.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sara reste près du banc. Papa lui parle tout bas. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

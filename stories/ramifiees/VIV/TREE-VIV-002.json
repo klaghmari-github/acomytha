@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N2",
   "age_range": "4-5",
-  "title": "Mâle, femelle et petit — au marché",
+  "title": "Trois noms d'animaux — au marché",
   "lesson_id": "VIV.ANI.002",
   "secondary_lessons": [
     "VIV.ANI.001"
@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Adam est avec papa, au marché. Adam a envie de jouer. papa est là, tout près. On va apprendre : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam écoute papa. Adam entend les mots : trois noms de la famille.",
+      "text": "Adam se promène au marché, avec papa. Une caisse de paille. Un coq chante. Une poule picore. Un poussin suit. Papa dit : coq, poule, poussin. Ce sont trois noms de la famille. Adam répète les trois noms. Coq. Poule. Poussin. Ce sont des animaux. On dit les trois noms de la famille. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Adam choisit. le bac à sable, le toboggan, ou les balançoires ?",
+      "prompt": "Adam va où ? le bac à sable, le toboggan, ou les balançoires ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,26 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Adam va vers le bac à sable. Le vent est doux. papa sourit. Ici, c'est le bac à sable. Ce n'est pas comme les autres endroits. Adam se souvient : trois noms de la famille. Voici le geste : dire les trois noms. On montre du doigt, sans courir. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam imagine le bac à sable. Dans le sable, des figurines. Un coq. Une poule. Un poussin. Papa dit les trois noms de la famille. Adam les dit aussi. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Mâle, femelle et petit.",
+      "prompt": "Coq, poule, et le petit. Qui est le petit ?",
       "expected_intents": [
         "MALE",
         "FEMELLE",
         "PETIT"
       ],
       "accepted_examples": [
-        "male",
-        "femelle",
+        "poussin",
+        "le poussin",
         "petit"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire les trois noms.",
-      "wrong_feedback": "Voici le geste : dire les trois noms.",
+      "retry_prompt": "Le petit de la poule. Qui est-ce ?",
+      "positive_feedback": "Oui. Poussin. Trois noms de la famille.",
+      "wrong_feedback": "On dit les trois noms : coq, poule, poussin.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "VIV.ANI.002"
@@ -90,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire les trois noms. Adam respire. Adam retient : trois noms de la famille. On continue, avec papa.",
+      "text": "Adam a dit les trois noms de la famille. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Ensuite, Adam prend les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -122,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. Une feuille tombe. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On se tient la main. maman n'est pas loin.",
+      "text": "Adam prend les cubes. La couverture est douce. Avec les cubes, Adam fait une petite ferme. Coq, poule, poussin. Trois noms de la famille. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -154,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Adam rejoint rouge. La lumière est claire. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, les cubes et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. La lumière est claire. On pose les pieds par terre. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. Adam dit merci à papa. On rentre. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Il y a des miettes sur la table. On rit un peu. Cette fin-là est celle de le bac à sable, les cubes et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Des miettes dorment sur la table. On parle tout bas. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Papa serre Adam tout doux. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Adam rejoint vert. Un chat miaule une fois. On se tait une seconde. Cette fin-là est celle de le bac à sable, les cubes et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Un chat miaule une fois. On range les jouets. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Adam a choisi le livre. L'eau coule, tout petit bruit. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On range un objet. maman n'est pas loin.",
+      "text": "Adam prend le livre. Une pomme sent le sucré. Le livre montre un cheval, une jument, un poulain. Trois noms de la famille. Des animaux. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -201,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Il y a des miettes sur la table. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, le livre et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Les chaussures font toc toc. On s'assoit un moment. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Adam range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Un chat miaule une fois. On rit un peu. Cette fin-là est celle de le bac à sable, le livre et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. La couverture est douce. On respire, un, deux. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. On souffle. Adam sourit. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Adam rejoint vert. Les chaussures font toc toc. On se tait une seconde. Cette fin-là est celle de le bac à sable, le livre et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Une cloche tinte au loin. On referme le sac. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Adam prend la main de papa. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. Un vélo passe au loin. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On dit merci. maman n'est pas loin.",
+      "text": "Adam prend la dînette. La couverture est douce. À la dînette, Adam pose trois bols. Papa dit : trois noms. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -248,41 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Un chat miaule une fois. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, la dînette et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Le bois sent le chaud. On essuie une miette. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. Adam dit merci à papa. On rentre. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Les chaussures font toc toc. On rit un peu. Cette fin-là est celle de le bac à sable, la dînette et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Une goutte tombe, ploc. On met le doudou près. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Papa serre Adam tout doux. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Adam rejoint vert. La couverture est douce. On se tait une seconde. Cette fin-là est celle de le bac à sable, la dînette et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Le savon sent la fleur. On lace les chaussures. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Adam va vers le toboggan. Le sol est un peu froid. papa sourit. Ici, c'est le toboggan. Ce n'est pas comme les autres endroits. Adam se souvient : trois noms de la famille. Voici le geste : dire les trois noms. On rit un peu. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam pense au toboggan. Sur un livre, un chat, une chatte, un chaton. Papa dit : trois noms de la famille. Chat, chatte, chaton. Ce sont des animaux. Adam répète les trois noms. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Mâle, femelle et petit.",
+      "prompt": "Chat, chatte, chaton. On dit combien de noms ?",
       "expected_intents": [
         "MALE",
         "FEMELLE",
         "PETIT"
       ],
       "accepted_examples": [
-        "male",
-        "femelle",
+        "trois",
+        "trois noms",
         "petit"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire les trois noms.",
-      "wrong_feedback": "Voici le geste : dire les trois noms.",
+      "retry_prompt": "Les trois noms. Combien ?",
+      "positive_feedback": "Oui. Trois noms de la famille. Chat, chatte, chaton.",
+      "wrong_feedback": "On dit les trois noms de la famille d'animaux.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "VIV.ANI.002"
@@ -290,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire les trois noms. Adam respire. Adam retient : trois noms de la famille. On continue, avec papa.",
+      "text": "Chat, chatte, chaton. Trois noms de la famille. Papa sourit. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Ensuite, Adam prend les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -322,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. La lumière est claire. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On se tient la main. maman n'est pas loin.",
+      "text": "Adam prend les cubes. Le coussin est moelleux. Les cubes tombent, toc. Adam dit encore : coq, poule, poussin. Les trois noms. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -354,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Il y a des miettes sur la table. On rit un peu. Cette fin-là est celle de le toboggan, les cubes et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Le tissu est tout doux. On met le manteau. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Adam range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Un chat miaule une fois. On se tait une seconde. Cette fin-là est celle de le toboggan, les cubes et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Une cuillère tinte. On boit une gorgée. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. On souffle. Adam sourit. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Adam rejoint vert. Les chaussures font toc toc. On se tient la main. Cette fin-là est celle de le toboggan, les cubes et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Le sable est tiède. On feuillette le livre. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Adam prend la main de papa. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Adam a choisi le livre. Il y a des miettes sur la table. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On range un objet. maman n'est pas loin.",
+      "text": "Adam prend le livre. Le lait est froid dans le verre. Adam tourne la page. Un chien, une chienne, un chiot. Trois noms de la famille. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -401,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Un chat miaule une fois. On rit un peu. Cette fin-là est celle de le toboggan, le livre et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Un rire court, tout petit. On referme le livre. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. Adam dit merci à papa. On rentre. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Les chaussures font toc toc. On se tait une seconde. Cette fin-là est celle de le toboggan, le livre et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Le papier froisse, chut. On pose le ballon. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Papa serre Adam tout doux. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Adam rejoint vert. La couverture est douce. On se tient la main. Cette fin-là est celle de le toboggan, le livre et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. L'herbe chatouille le mollet. On secoue le sable. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. Un chat miaule une fois. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On dit merci. maman n'est pas loin.",
+      "text": "Adam prend la dînette. La laine gratte un peu. Une petite tasse. Adam dit : poussin. Papa ajoute : trois noms de la famille. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -448,41 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Les chaussures font toc toc. On rit un peu. Cette fin-là est celle de le toboggan, la dînette et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Un pigeon roucoule. On caresse le tissu. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Adam range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. La couverture est douce. On se tait une seconde. Cette fin-là est celle de le toboggan, la dînette et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. La fenêtre vibre un peu. On tend la main. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. On souffle. Adam sourit. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Adam rejoint vert. On entend un oiseau. On se tient la main. Cette fin-là est celle de le toboggan, la dînette et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Le lait est froid dans le verre. On chante un petit air. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Adam prend la main de papa. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Adam va vers les balançoires. Une feuille tombe. papa sourit. Ici, c'est les balançoires. Ce n'est pas comme les autres endroits. Adam se souvient : trois noms de la famille. Voici le geste : dire les trois noms. On se tait une seconde. papa dit : je suis là. On reste ensemble.",
+      "text": "Adam pense aux balançoires. Papa montre une image. Un chien, une chienne, un chiot. Trois noms de la famille. Adam dit : chien, chienne, chiot. Des animaux. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Mâle, femelle et petit.",
+      "prompt": "Chien, chienne, et le petit. Qui est le petit ?",
       "expected_intents": [
         "MALE",
         "FEMELLE",
         "PETIT"
       ],
       "accepted_examples": [
-        "male",
-        "femelle",
+        "chiot",
+        "le chiot",
         "petit"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire les trois noms.",
-      "wrong_feedback": "Voici le geste : dire les trois noms.",
+      "retry_prompt": "Le petit du chien. Dis son nom.",
+      "positive_feedback": "Oui. Chiot. Trois noms de la famille.",
+      "wrong_feedback": "On dit les trois noms : chien, chienne, chiot.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "VIV.ANI.002"
@@ -490,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire les trois noms. Adam respire. Adam retient : trois noms de la famille. On continue, avec papa.",
+      "text": "Chien, chienne, chiot. Adam a dit les trois noms. Des animaux. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Adam choisit les cubes, le livre, ou la dînette ?",
+      "prompt": "Ensuite, Adam prend les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -522,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Adam a choisi les cubes. Les chaussures font toc toc. Les cubes reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On se tient la main. maman n'est pas loin.",
+      "text": "Adam prend les cubes. Un grelot sonne. Adam empile un cube. Papa dit : encore les trois noms. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -554,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Un chat miaule une fois. On se tait une seconde. Cette fin-là est celle de les balançoires, les cubes et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. La corde du sac est rêche. On compte jusqu'à trois. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. Adam dit merci à papa. On rentre. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. Les chaussures font toc toc. On se tient la main. Cette fin-là est celle de les balançoires, les cubes et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Le savon mousse entre les doigts. On montre du doigt. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Papa serre Adam tout doux. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Adam rejoint vert. La couverture est douce. On range un objet. Cette fin-là est celle de les balançoires, les cubes et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Un ruisseau chante. On range la chaise. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. Maman n'est pas loin. On rentre. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Adam a choisi le livre. La couverture est douce. Le livre reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On range un objet. maman n'est pas loin.",
+      "text": "Adam prend le livre. La terre est un peu humide. Le livre sent le papier. Cheval, jument, poulain. Trois noms de la famille. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -601,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Adam rejoint rouge. Les chaussures font toc toc. On se tait une seconde. Cette fin-là est celle de les balançoires, le livre et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. La laine gratte un peu. On range un objet. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Adam range. Papa dit : c'est bien. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. La couverture est douce. On se tient la main. Cette fin-là est celle de les balançoires, le livre et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Un pain croustille. On se tient la main. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. On souffle. Adam sourit. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Adam rejoint vert. On entend un oiseau. On range un objet. Cette fin-là est celle de les balançoires, le livre et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Le savon glisse. On dit merci. On a dit les trois noms de la famille. Des animaux. Cheval, jument, poulain. On dit les trois noms de la famille. Coq, poule, poussin. Adam prend la main de papa. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Adam a choisi la dînette. On entend un oiseau. La dînette reste à sa place, près de papa. papa montre le geste, lentement. Voici le geste : dire les trois noms. Adam répète tout bas : trois noms de la famille. On dit merci. maman n'est pas loin.",
+      "text": "Adam prend la dînette. Un grelot sonne. Adam range la dînette. Papa répète : trois noms de la famille d'animaux. On dit les trois noms de la famille. Coq, poule, poussin.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Adam va vers rouge, bleu, ou vert ?",
+      "prompt": "Quelle couleur ? rouge, bleu, ou vert ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -648,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Adam rejoint rouge. La couverture est douce. On se tait une seconde. Cette fin-là est celle de les balançoires, la dînette et rouge. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton rouge. Une plume vole. On souffle doucement. On a dit les trois noms de la famille. Des animaux. Coq, poule, poussin. On dit les trois noms de la famille. Coq, poule, poussin. Adam dit merci à papa. On rentre. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Adam rejoint bleu. On entend un oiseau. On se tient la main. Cette fin-là est celle de les balançoires, la dînette et bleu. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton bleu. Le banc est lisse. On écoute jusqu'au bout. On a dit les trois noms de la famille. Des animaux. Chat, chatte, chaton. On dit les trois noms de la famille. Coq, poule, poussin. Papa serre Adam tout doux. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Adam rejoint vert. Ça sent le pain chaud. On range un objet. Cette fin-là est celle de les balançoires, la dînette et vert. Adam a appris : Mâle, femelle et petit. Voici le geste : dire les trois noms. Adam a entendu : trois noms de la famille. Adam dit merci à papa. On rentre. L'histoire est finie."
+      "text": "Adam pose un jeton vert. Un grelot sonne. On attend son tour. On a dit les trois noms de la famille. Des animaux. Chien, chienne, chiot. On dit les trois noms de la famille. Coq, poule, poussin. Maman n'est pas loin. On rentre. L'histoire est finie."
     }
   },
   "validation": {

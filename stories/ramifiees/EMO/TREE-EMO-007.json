@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Tom est avec maman, à la ferme. Tom a envie de jouer. maman est là, tout près. On va apprendre : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom écoute maman. Tom entend les mots : nerveux, pause.",
+      "text": "À la ferme, Tom entend trop de bruits. Une poule. Un seau. Un tracteur loin. Les jambes de Tom bougent. Les mains ne savent plus où aller. Maman est près du portail. Papa parle au fermier. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Tom choisit. le matin, après la sieste, ou le soir ?",
+      "prompt": "Quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,25 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Tom va vers le matin. Ça sent le pain chaud. maman sourit. Ici, c'est le matin. Ce n'est pas comme les autres endroits. Tom se souvient : nerveux, pause. Voici le geste : demander une pause ; s'asseoir. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "text": "Le matin, la ferme est déjà bruyante. Tom est nerveux. C'est le matin. La couverture est toute douce. Tom s'approche, sans courir. Papa n'est pas loin. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être nerveux.",
+      "prompt": "Le corps de Tom n'arrive pas à tenir. Que dit-on ? Avec le matin.",
       "expected_intents": [
         "NERVEUX",
         "PAUSE"
       ],
       "accepted_examples": [
         "nerveux",
-        "pause"
+        "pause",
+        "s'asseoir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander une pause ; s'asseoir.",
-      "wrong_feedback": "Voici le geste : demander une pause ; s'asseoir.",
+      "retry_prompt": "Nerveux ? Une pause ?",
+      "positive_feedback": "Oui. On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "wrong_feedback": "On est nerveux. On demande une pause. On s'assoit.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "EMO.LEX.007"
@@ -88,13 +89,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander une pause ; s'asseoir. Tom respire. Tom retient : nerveux, pause. On continue, avec maman.",
+      "text": "Oui. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom retient le geste. Il respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où va-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +121,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Tom a choisi la cuisine. Le sol est un peu froid. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tait une seconde. papa n'est pas loin.",
+      "text": "Tom a choisi la cuisine, après le matin. Ça sent le savon des mains. Tom attend près de la cuisine. Il ne prend pas de force. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit par ici. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +153,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Un vélo passe au loin. On attend son tour. Cette fin-là est celle de le matin, la cuisine et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le matin et la cuisine. La tasse est encore tiède. On dit merci. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom pose le ballon rouge et va vers maman. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. La lumière est claire. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la cuisine et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le matin et la cuisine. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom nomme encore le mot, tout bas. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Il y a des miettes sur la table. On rit un peu. Cette fin-là est celle de le matin, la cuisine et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le matin et la cuisine. Une abeille bourdonne loin. On attend un petit moment. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom boit une gorgée. Il se sent plus léger. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Tom a choisi le jardin. Une feuille tombe. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tient la main. papa n'est pas loin.",
+      "text": "Tom a choisi le jardin, après le matin. Le ballon est un peu poudreux. Le jardin est là. Tom pose les mains à vue, loin de l'autre. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit un peu plus loin. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +200,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. La lumière est claire. On attend son tour. Cette fin-là est celle de le matin, le jardin et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le matin et le jardin. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom serre la main de maman, tout doux. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Il y a des miettes sur la table. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le jardin et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le matin et le jardin. La fenêtre tremble un tout petit peu. On sourit un peu. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom pose le seau bleu et va vers maman. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Un chat miaule une fois. On rit un peu. Cette fin-là est celle de le matin, le jardin et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le matin et le jardin. Ça sent le savon de maman. On boit une gorgée d'eau. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom dit merci à maman. Papa sourit. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Tom a choisi la chambre. L'eau coule, tout petit bruit. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On range un objet. papa n'est pas loin.",
+      "text": "Tom a choisi la chambre, après le matin. La terre est un peu humide. Avec la chambre, Tom ralentit. Il écoute maman. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit dans ce coin. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +247,40 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Il y a des miettes sur la table. On attend son tour. Cette fin-là est celle de le matin, la chambre et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le matin et la chambre. Un pigeon roucoule. On essuie une miette. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom nomme encore le mot, tout bas. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Un chat miaule une fois. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la chambre et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le matin et la chambre. La cuillère tinte. On referme un livre. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom serre la main de maman, tout doux. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Les chaussures font toc toc. On rit un peu. Cette fin-là est celle de le matin, la chambre et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le matin et la chambre. Le ballon est un peu poudreux. On pose un jouet à sa place. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom range le doudou un instant. Puis il reprend, calme. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Tom va vers après la sieste. Le vent est doux. maman sourit. Ici, c'est après la sieste. Ce n'est pas comme les autres endroits. Tom se souvient : nerveux, pause. Voici le geste : demander une pause ; s'asseoir. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Après la sieste, tout redémarre. Tom est nerveux. Tom s'occupe de après la sieste. La cuillère tinte. Maman sourit. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être nerveux.",
+      "prompt": "Le corps de Tom n'arrive pas à tenir. Que dit-on ? Avec après la sieste.",
       "expected_intents": [
         "NERVEUX",
         "PAUSE"
       ],
       "accepted_examples": [
         "nerveux",
-        "pause"
+        "pause",
+        "s'asseoir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander une pause ; s'asseoir.",
-      "wrong_feedback": "Voici le geste : demander une pause ; s'asseoir.",
+      "retry_prompt": "Nerveux ? Une pause ?",
+      "positive_feedback": "Oui. On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "wrong_feedback": "On est nerveux. On demande une pause. On s'assoit.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "EMO.LEX.007"
@@ -286,13 +288,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander une pause ; s'asseoir. Tom respire. Tom retient : nerveux, pause. On continue, avec maman.",
+      "text": "Oui. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom répète le mot. Maman hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où va-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +320,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Tom a choisi la cuisine. Un vélo passe au loin. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tait une seconde. papa n'est pas loin.",
+      "text": "Tom a choisi la cuisine, après la sieste. Le bois de la table est lisse. Tom range un peu autour de la cuisine. Il respire. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout doux. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +352,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. La lumière est claire. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, la cuisine et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après la sieste et la cuisine. Une goutte de pluie sèche déjà. On marche tout doucement. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom dit merci à maman. Papa sourit. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Il y a des miettes sur la table. On rit un peu. Cette fin-là est celle de après la sieste, la cuisine et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après la sieste et la cuisine. Le banc est tiède. On se tait une seconde. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom dit merci à maman. Papa sourit. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Un chat miaule une fois. On se tait une seconde. Cette fin-là est celle de après la sieste, la cuisine et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après la sieste et la cuisine. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom dit merci à maman. Papa sourit. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Tom a choisi le jardin. La lumière est claire. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tient la main. papa n'est pas loin.",
+      "text": "Tom a choisi le jardin, après la sieste. La couverture est toute douce. Tom attend près du jardin. Il ne prend pas de force. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout calme. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +399,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Il y a des miettes sur la table. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, le jardin et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après la sieste et le jardin. Une feuille tourne et tombe. On s'assoit près de l'adulte. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. On laisse le ballon rouge à sa place. Tom est près de maman. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Un chat miaule une fois. On rit un peu. Cette fin-là est celle de après la sieste, le jardin et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après la sieste et le jardin. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. On laisse le seau bleu à sa place. Tom est près de maman. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Les chaussures font toc toc. On se tait une seconde. Cette fin-là est celle de après la sieste, le jardin et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après la sieste et le jardin. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. On laisse le doudou à sa place. Tom est près de maman. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Tom a choisi la chambre. Il y a des miettes sur la table. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On range un objet. papa n'est pas loin.",
+      "text": "Tom a choisi la chambre, après la sieste. Une vague chuchote. Tom attend près de la chambre. Il ne prend pas de force. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout près. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +446,40 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Un chat miaule une fois. On montre du doigt, sans courir. Cette fin-là est celle de après la sieste, la chambre et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après la sieste et la chambre. Une plume vole. On range les chaussures. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom boit une gorgée. Il se sent plus léger. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Les chaussures font toc toc. On rit un peu. Cette fin-là est celle de après la sieste, la chambre et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après la sieste et la chambre. Le pain croustille. On met le doudou près de soi. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom boit une gorgée. Il se sent plus léger. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. La couverture est douce. On se tait une seconde. Cette fin-là est celle de après la sieste, la chambre et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après la sieste et la chambre. La laine du doudou est douce. On écoute le cœur, tout doux. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom boit une gorgée. Il se sent plus léger. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Tom va vers le soir. Le sol est un peu froid. maman sourit. Ici, c'est le soir. Ce n'est pas comme les autres endroits. Tom se souvient : nerveux, pause. Voici le geste : demander une pause ; s'asseoir. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "Le soir, les animaux bougent encore. Tom est nerveux. Voilà le soir. La fenêtre tremble un tout petit peu. Tom pose les pieds par terre, près de maman. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être nerveux.",
+      "prompt": "Le corps de Tom n'arrive pas à tenir. Que dit-on ? Avec le soir.",
       "expected_intents": [
         "NERVEUX",
         "PAUSE"
       ],
       "accepted_examples": [
         "nerveux",
-        "pause"
+        "pause",
+        "s'asseoir"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : demander une pause ; s'asseoir.",
-      "wrong_feedback": "Voici le geste : demander une pause ; s'asseoir.",
+      "retry_prompt": "Nerveux ? Une pause ?",
+      "positive_feedback": "Oui. On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "wrong_feedback": "On est nerveux. On demande une pause. On s'assoit.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "EMO.LEX.007"
@@ -484,13 +487,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : demander une pause ; s'asseoir. Tom respire. Tom retient : nerveux, pause. On continue, avec maman.",
+      "text": "Oui. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Tom choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où va-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +519,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Tom a choisi la cuisine. Un chat miaule une fois. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tait une seconde. papa n'est pas loin.",
+      "text": "Tom a choisi la cuisine, après le soir. Un gravier roule sous une semelle. Tom attend près de la cuisine. Il ne prend pas de force. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout bas. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +551,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Il y a des miettes sur la table. On rit un peu. Cette fin-là est celle de le soir, la cuisine et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le soir et la cuisine. Un galet est lisse dans la main. On secoue les mains, loin. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom serre la main de maman, tout doux. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Un chat miaule une fois. On se tait une seconde. Cette fin-là est celle de le soir, la cuisine et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le soir et la cuisine. Le train souffle au loin. On pose le sac. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom boit une gorgée. Il se sent plus léger. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. Les chaussures font toc toc. On se tient la main. Cette fin-là est celle de le soir, la cuisine et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le soir et la cuisine. Une vache meugle, loin. On dit le mot de l'émotion. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Maman dit : je t'ai entendu. Papa aussi. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Tom a choisi le jardin. Les chaussures font toc toc. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On se tient la main. papa n'est pas loin.",
+      "text": "Tom a choisi le jardin, après le soir. Le seau sonne, tout léger. On continue avec le jardin. Tom gardu geste sûr. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout simple. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +598,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Un chat miaule une fois. On rit un peu. Cette fin-là est celle de le soir, le jardin et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le soir et le jardin. Un grillon chante, tout petit. On invite d'une petite voix. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom pose le ballon rouge et va vers maman. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. Les chaussures font toc toc. On se tait une seconde. Cette fin-là est celle de le soir, le jardin et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le soir et le jardin. Le bois de la table est lisse. On attend la réponse. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom range le seau bleu un instant. Puis il reprend, calme. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. La couverture est douce. On se tient la main. Cette fin-là est celle de le soir, le jardin et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le soir et le jardin. Une goutte tombe dans l'évier. On propose une autre idée. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. On écoute le silence une seconde. Tom est assis. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Tom a choisi la chambre. La couverture est douce. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : demander une pause ; s'asseoir. Tom répète tout bas : nerveux, pause. On range un objet. papa n'est pas loin.",
+      "text": "Tom a choisi la chambre, après le soir. Ça sent le savon des mains. Avec la chambre, Tom ralentit. Il écoute maman. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Tom va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout clair. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +645,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Tom rejoint le ballon rouge. Les chaussures font toc toc. On rit un peu. Cette fin-là est celle de le soir, la chambre et le ballon rouge. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le ballon rouge, après le soir et la chambre. Le toboggan est un peu froid. On va vers papa ou maman. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom dit merci à maman. Papa sourit. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Tom rejoint le seau bleu. La couverture est douce. On se tait une seconde. Cette fin-là est celle de le soir, la chambre et le seau bleu. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le seau bleu, après le soir et la chambre. La clochette de la porte tinte. On dit stop, tout clair. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. On laisse le seau bleu à sa place. Tom est près de maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Tom rejoint le doudou. On entend un oiseau. On se tient la main. Cette fin-là est celle de le soir, la chambre et le doudou. Tom a appris : Être nerveux. Voici le geste : demander une pause ; s'asseoir. Tom a entendu : nerveux, pause. Tom dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Tom rejoint le doudou, après le soir et la chambre. Ça sent le thym du jardin. On s'éloigne d'un pas. Tom se sent nerveux. Les jambes bougent. Le corps n'arrive pas à tenir. Tom demande une pause. Il s'assoit près de maman. Tom serre la main de maman, tout doux. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

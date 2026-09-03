@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.MOQ.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Nora rejoint Adam, puis Inès",
+  "lesson_id": "REL.MOQ.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école puis atelier",
+  "characters": [
+    "Nora",
+    "Adam",
+    "Inès",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nora est à l'école. Papa l'a déposée. La récréation sent l'herbe. Adam est à l'écart. Il est près du muret. Ses épaules sont basses. Nora se souvient. Elle peut le rejoindre. Rejoindre, c'est aller vers lui. Nora marche vers Adam. Elle dit : tu veux jouer ? Inviter, c'est demander. Adam hésite. Nora attend. Adam dit : d'accord. Ils marchent vers les plots. Un enfant les écarte encore. Ça continue un peu. Nora va vers la maîtresse. La maîtresse est l'adulte. Nora dit : ça continue. On prévient un adulte si ça continue. La maîtresse s'approche. Plus tard, c'est l'atelier peinture. Inès est à l'écart près des pots. Nora se souvient. Elle va rejoindre Inès. Elle l'invite. Inès dit oui. Un camarade les écarte encore. Ça continue. Nora prévient papa, à la sortie. Papa est l'adulte. Papa dit : tu as repris le geste. Rejoindre. Inviter. Un adulte si ça continue. Nora et Inès se disent à demain.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Adam est à l'écart. Que fait Nora ?",
+      "expected_intents": [
+        "REJOINDRE",
+        "INVITER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "rejoindre",
+        "inviter",
+        "adulte",
+        "prévenir",
+        "aller vers lui"
+      ],
+      "retry_prompt": "Elle le rejoint, elle l'invite. Si ça continue, un adulte. Que fait Nora ?",
+      "positive_feedback": "Oui. On va rejoindre. On peut inviter. Si ça continue, on prévient un adulte.",
+      "wrong_feedback": "On va rejoindre la personne. On peut inviter. Si ça continue, on prévient un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nora a su rejoindre. Elle a pu inviter. Elle a prévenu un adulte, car ça continue. Deux fois.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nora range son tablier. Papa l'attend près du portail. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

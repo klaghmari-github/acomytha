@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Maya est avec maman, dans la chambre. Maya a envie de jouer. maman est là, tout près. On va apprendre : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya écoute maman. Maya entend les mots : pardon, geste, peine reste un peu.",
+      "text": "Dans la chambre, Maya a fait tomber la tour de Sami. Sami a les yeux mouillés. Maya a les joues chaudes. Maman est sur le lit. Papa passe dans le couloir. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Maya choisit. le matin, après la sieste, ou le soir ?",
+      "prompt": "Quel moment ? le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,13 +63,13 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Maya va vers le matin. La couverture est douce. maman sourit. Ici, c'est le matin. Ce n'est pas comme les autres endroits. Maya se souvient : pardon, geste, peine reste un peu. Voici le geste : dire pardon ; proposer un geste. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Le matin, la tour de cubes tombe. C'est le matin. La couverture est toute douce. Maya s'approche, sans courir. Papa n'est pas loin. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire pardon et proposer un geste.",
+      "prompt": "Après une bêtise, que dit-on ? Avec le matin.",
       "expected_intents": [
         "PARDON",
         "GESTE"
@@ -78,9 +78,9 @@
         "pardon",
         "geste"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire pardon ; proposer un geste.",
-      "wrong_feedback": "Voici le geste : dire pardon ; proposer un geste.",
+      "retry_prompt": "Pardon ? Un geste ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine reste un peu.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "REL.CON.003"
@@ -88,13 +88,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire pardon ; proposer un geste. Maya respire. Maya retient : pardon, geste, peine reste un peu. On continue, avec maman.",
+      "text": "Oui. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya retient le geste. Elle respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où répare-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +120,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. Ça sent le pain chaud. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On se tient la main. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après le matin. Ça sent le savon de maman. Maya touche la cuisine tout doucement. Maman dit : je suis là. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit par ici. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +152,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la cuisine et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le matin et la cuisine. La tasse est encore tiède. On dit merci. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya pose le ballon rouge et va vers maman. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de le matin, la cuisine et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le matin et la cuisine. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya nomme encore le mot, tout bas. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de le matin, la cuisine et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le matin et la cuisine. Une abeille bourdonne loin. On attend un petit moment. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya boit une gorgée. Elle se sent plus légère. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. Le vent est doux. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On range un objet. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après le matin. Le lait est tiède. Près du jardin, Maya prend le temps. Pas de course. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit un peu plus loin. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +199,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de le matin, le jardin et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le matin et le jardin. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya serre la main de maman, tout doux. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de le matin, le jardin et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le matin et le jardin. La fenêtre tremble un tout petit peu. On sourit un peu. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya pose le seau bleu et va vers maman. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. La lumière est claire. On se tait une seconde. Cette fin-là est celle de le matin, le jardin et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le matin et le jardin. Ça sent le savon de maman. On boit une gorgée d'eau. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya dit merci à maman. Papa sourit. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. Le sol est un peu froid. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après le matin. Le sable colle un peu aux doigts. Maya range un peu autour de la chambre. Elle respire. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "On finit dans ce coin. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,28 +246,28 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de le matin, la chambre et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le matin et la chambre. Un pigeon roucoule. On essuie une miette. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya nomme encore le mot, tout bas. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. La lumière est claire. On rit un peu. Cette fin-là est celle de le matin, la chambre et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le matin et la chambre. La cuillère tinte. On referme un livre. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya serre la main de maman, tout doux. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de le matin, la chambre et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le matin et la chambre. Le ballon est un peu poudreux. On pose un jouet à sa place. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya range le doudou un instant. Puis elle reprend, calme. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Maya va vers après la sieste. On entend un oiseau. maman sourit. Ici, c'est après la sieste. Ce n'est pas comme les autres endroits. Maya se souvient : pardon, geste, peine reste un peu. Voici le geste : dire pardon ; proposer un geste. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "Après la sieste, un dessin se froisse. Maya s'occupe de après la sieste. La cuillère tinte. Maman sourit. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire pardon et proposer un geste.",
+      "prompt": "Après une bêtise, que dit-on ? Avec après la sieste.",
       "expected_intents": [
         "PARDON",
         "GESTE"
@@ -276,9 +276,9 @@
         "pardon",
         "geste"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire pardon ; proposer un geste.",
-      "wrong_feedback": "Voici le geste : dire pardon ; proposer un geste.",
+      "retry_prompt": "Pardon ? Un geste ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine reste un peu.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "REL.CON.003"
@@ -286,13 +286,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire pardon ; proposer un geste. Maya respire. Maya retient : pardon, geste, peine reste un peu. On continue, avec maman.",
+      "text": "Oui. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya répète le mot. Maman hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où répare-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +318,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. Une feuille tombe. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On se tient la main. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après la sieste. Le pain croustille. Maya montre la cuisine à maman. Elle nomme ce qu'elle sent. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout doux. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +350,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de après la sieste, la cuisine et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après la sieste et la cuisine. Une goutte de pluie sèche déjà. On marche tout doucement. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya dit merci à maman. Papa sourit. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de après la sieste, la cuisine et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après la sieste et la cuisine. Le banc est tiède. On se tait une seconde. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya dit merci à maman. Papa sourit. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. La lumière est claire. On se tient la main. Cette fin-là est celle de après la sieste, la cuisine et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après la sieste et la cuisine. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya dit merci à maman. Papa sourit. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. L'eau coule, tout petit bruit. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On range un objet. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après la sieste. La corde de la balançoire bouge. Maya choisit le jardin. Papa n'est pas loin. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout calme. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +397,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de après la sieste, le jardin et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après la sieste et le jardin. Une feuille tourne et tombe. On s'assoit près de l'adulte. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. On laisse le ballon rouge à sa place. Maya est près de maman. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. La lumière est claire. On se tait une seconde. Cette fin-là est celle de après la sieste, le jardin et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après la sieste et le jardin. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. On laisse le seau bleu à sa place. Maya est près de maman. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Il y a des miettes sur la table. On se tient la main. Cette fin-là est celle de après la sieste, le jardin et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après la sieste et le jardin. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. On laisse le doudou à sa place. Maya est près de maman. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. Un vélo passe au loin. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après la sieste. Le sable est un peu frais. Maya touche la chambre tout doucement. Maman dit : je suis là. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Dernier choix, tout près. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,28 +444,28 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. La lumière est claire. On rit un peu. Cette fin-là est celle de après la sieste, la chambre et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après la sieste et la chambre. Une plume vole. On range les chaussures. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya boit une gorgée. Elle se sent plus légère. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de après la sieste, la chambre et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après la sieste et la chambre. Le pain croustille. On met le doudou près de soi. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya boit une gorgée. Elle se sent plus légère. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Un chat miaule une fois. On se tient la main. Cette fin-là est celle de après la sieste, la chambre et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après la sieste et la chambre. La laine du doudou est douce. On écoute le cœur, tout doux. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya boit une gorgée. Elle se sent plus légère. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Maya va vers le soir. Ça sent le pain chaud. maman sourit. Ici, c'est le soir. Ce n'est pas comme les autres endroits. Maya se souvient : pardon, geste, peine reste un peu. Voici le geste : dire pardon ; proposer un geste. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Le soir, un doudou glisse du lit. Voilà le soir. La fenêtre tremble un tout petit peu. Maya pose les pieds par terre, près de maman. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Dire pardon et proposer un geste.",
+      "prompt": "Après une bêtise, que dit-on ? Avec le soir.",
       "expected_intents": [
         "PARDON",
         "GESTE"
@@ -474,9 +474,9 @@
         "pardon",
         "geste"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire pardon ; proposer un geste.",
-      "wrong_feedback": "Voici le geste : dire pardon ; proposer un geste.",
+      "retry_prompt": "Pardon ? Un geste ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine reste un peu.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "REL.CON.003"
@@ -484,13 +484,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire pardon ; proposer un geste. Maya respire. Maya retient : pardon, geste, peine reste un peu. On continue, avec maman.",
+      "text": "Oui. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Où répare-t-on ? la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +516,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. La lumière est claire. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On se tient la main. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après le soir. Le coussin est moelleux. Maya touche la cuisine tout doucement. Maman dit : je suis là. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout bas. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +548,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de le soir, la cuisine et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le soir et la cuisine. Un galet est lisse dans la main. On secoue les mains, loin. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya serre la main de maman, tout doux. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. La lumière est claire. On se tient la main. Cette fin-là est celle de le soir, la cuisine et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le soir et la cuisine. Le train souffle au loin. On pose le sac. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya boit une gorgée. Elle se sent plus légère. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Il y a des miettes sur la table. On range un objet. Cette fin-là est celle de le soir, la cuisine et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le soir et la cuisine. Une vache meugle, loin. On dit le mot de l'émotion. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maman dit : je t'ai entendu. Papa aussi. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. Il y a des miettes sur la table. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On range un objet. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après le soir. Le sable est un peu frais. Le jardin reste à sa place. Maya aussi. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout simple. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +595,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. La lumière est claire. On se tait une seconde. Cette fin-là est celle de le soir, le jardin et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le soir et le jardin. Un grillon chante, tout petit. On invite d'une petite voix. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya pose le ballon rouge et va vers maman. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. Il y a des miettes sur la table. On se tient la main. Cette fin-là est celle de le soir, le jardin et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le soir et le jardin. Le bois de la table est lisse. On attend la réponse. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya range le seau bleu un instant. Puis elle reprend, calme. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Un chat miaule une fois. On range un objet. Cette fin-là est celle de le soir, le jardin et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le soir et le jardin. Une goutte tombe dans l'évier. On propose une autre idée. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. On écoute le silence une seconde. Maya est assise. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. Un chat miaule une fois. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire pardon ; proposer un geste. Maya répète tout bas : pardon, geste, peine reste un peu. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après le soir. Ça sent le savon de maman. Maya range un peu autour de la chambre. Elle respire. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Pour conclure, tout clair. Avec quoi ? le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +642,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Maya rejoint le ballon rouge. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de le soir, la chambre et le ballon rouge. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le ballon rouge, après le soir et la chambre. Le toboggan est un peu froid. On va vers papa ou maman. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya dit merci à maman. Papa sourit. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Maya rejoint le seau bleu. Un chat miaule une fois. On se tient la main. Cette fin-là est celle de le soir, la chambre et le seau bleu. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le seau bleu, après le soir et la chambre. La clochette de la porte tinte. On dit stop, tout clair. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. On laisse le seau bleu à sa place. Maya est près de maman. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Maya rejoint le doudou. Les chaussures font toc toc. On range un objet. Cette fin-là est celle de le soir, la chambre et le doudou. Maya a appris : Dire pardon et proposer un geste. Voici le geste : dire pardon ; proposer un geste. Maya a entendu : pardon, geste, peine reste un peu. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le doudou, après le soir et la chambre. Ça sent le thym du jardin. On s'éloigne d'un pas. Maya dit pardon. Elle propose un geste. La peine reste un peu. On n'oblige pas l'amitié. Maman reste près. Maya serre la main de maman, tout doux. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

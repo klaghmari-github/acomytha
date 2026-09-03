@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-COL.ECO.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Maya écoute deux fois, puis raconte",
+  "lesson_id": "COL.ECO.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "école puis maison",
+  "characters": [
+    "Maya",
+    "maman",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Maya est à l'école. La maîtresse parle. Maya aime écouter. La maîtresse dit : on range les crayons. Maya range son crayon. Elle écoute bien. Plus tard, un camarade chuchote. Il dit : c'est un secret. Garde ça pour toi. Maya sent un malaise. Son ventre est serré. L'après-midi, la maîtresse parle encore. Elle dit : on chante tout doux. Maya écoute encore. Elle chante. Le soir, maman l'attend. Maya vient raconter à la maison. Elle dit : maman, j'ai eu un malaise. Un camarade a parlé d'un secret. Maman l'écoute. Maman dit : tu as bien fait. On aime écouter la maîtresse. Si tu as un malaise, tu viens raconter à papa ou maman. Maya dit : j'ai écouté le matin. J'ai écouté l'après-midi. Puis j'ai raconté. Maman serre sa main. Maya se sent plus légère.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maya a un malaise. Que fait-elle ?",
+      "expected_intents": [
+        "ECOUTER",
+        "RACONTER_MAISON"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "elle raconte",
+        "à maman",
+        "à la maison",
+        "écouter"
+      ],
+      "retry_prompt": "Elle raconte à maman. Que fait Maya ?",
+      "positive_feedback": "Oui. Elle aime écouter la maîtresse, et elle vient raconter à la maison.",
+      "wrong_feedback": "On aime écouter la maîtresse. Si on a un malaise, on vient raconter à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maya a écouté la maîtresse. Le matin, puis l'après-midi. Elle a raconté son malaise à la maison.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maya boit un verre d'eau. Maman lui tient la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

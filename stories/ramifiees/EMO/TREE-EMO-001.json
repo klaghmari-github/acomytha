@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Maya est avec maman, à l'école. Maya a envie de jouer. maman est là, tout près. On va apprendre : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya écoute maman. Maya entend les mots : content, joie, partager.",
+      "text": "À l'école, Maya range son manteau. Maman l'a accompagnée jusqu'à la porte. Dans la cour, Léa lui montre un dessin. Maya sent les joues chaudes. La poitrine est légère. Maya a envie de sourire. Papa viendra ce soir. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Maya choisit. une pomme, un yaourt, ou un morceau de pain ?",
+      "prompt": "Maya a le goûter. une pomme, un yaourt, ou un morceau de pain ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,24 +63,26 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Maya va vers une pomme. La lumière est claire. maman sourit. Ici, c'est une pomme. Ce n'est pas comme les autres endroits. Maya se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa partage une pomme au goûter. Maya sent la joie monter. C'est une pomme. Le sable est un peu frais. Maya s'approche, sans courir. Papa n'est pas loin. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Maya a les joues chaudes. Quel mot dit-on ? Avec une pomme.",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "partager",
+        "je suis content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Un petit mot. Content ? Joie ?",
+      "positive_feedback": "Oui. On dit : je suis contente. On sourit. On invite à partager.",
+      "wrong_feedback": "On nomme la joie. On dit je suis contente. On invite à partager.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "EMO.LEX.001"
@@ -88,13 +90,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Maya respire. Maya retient : content, joie, partager. On continue, avec maman.",
+      "text": "Oui. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya retient le geste. Elle respire.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite, on joue à l'école. la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -120,13 +122,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. Un chat miaule une fois. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après une pomme. La terre est un peu humide. Maya range un peu autour de la cuisine. Elle respire. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "On finit par ici. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -152,28 +154,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de une pomme, la cuisine et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après une pomme et la cuisine. La tasse est encore tiède. On dit merci. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On laisse les cubes à sa place. Maya est près de maman. Le soleil est encore là. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de une pomme, la cuisine et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après une pomme et la cuisine. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. On gardu geste. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Le vent est doux. On range un objet. Cette fin-là est celle de une pomme, la cuisine et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après une pomme et la cuisine. Une abeille bourdonne loin. On attend un petit moment. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maman dit : je t'ai entendu. Papa aussi. Papa et maman sont là. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. Les chaussures font toc toc. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On souffle doucement. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après une pomme. Une abeille bourdonne loin. Maya s'installe avec le jardin. Maman reste à portée de voix. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "On finit un peu plus loin. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -199,28 +201,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de une pomme, le jardin et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après une pomme et le jardin. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On laisse les cubes à sa place. Maya est près de maman. On respire. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Le vent est doux. On se tient la main. Cette fin-là est celle de une pomme, le jardin et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après une pomme et le jardin. La fenêtre tremble un tout petit peu. On sourit un peu. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Le sol est un peu froid. On range un objet. Cette fin-là est celle de une pomme, le jardin et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après une pomme et le jardin. Ça sent le savon de maman. On boit une gorgée d'eau. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maman dit : je t'ai entendu. Papa aussi. Le jeu peut recommencer. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. La couverture est douce. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après une pomme. Un papillon passe sans bruit. Maya attend près de la chambre. Elle ne prend pas de force. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "On finit dans ce coin. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -246,39 +248,41 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Le vent est doux. On se tait une seconde. Cette fin-là est celle de une pomme, la chambre et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après une pomme et la chambre. Un pigeon roucoule. On essuie une miette. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya serre la main de maman, tout doux. On se serre un peu. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de une pomme, la chambre et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après une pomme et la chambre. La cuillère tinte. On referme un livre. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya nomme encore le mot, tout bas. On rentre. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Une feuille tombe. On range un objet. Cette fin-là est celle de une pomme, la chambre et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après une pomme et la chambre. Le ballon est un peu poudreux. On pose un jouet à sa place. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya pose la dînette et va vers maman. La journée continue, tout doux. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Maya va vers un yaourt. Il y a des miettes sur la table. maman sourit. Ici, c'est un yaourt. Ce n'est pas comme les autres endroits. Maya se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On se tient la main. maman dit : je suis là. On reste ensemble.",
+      "text": "Un yaourt arrive, frais. Maya a envie d'inviter une copine. Maya s'occupe de un yaourt. Le soleil chauffe un peu le nez. Maman sourit. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Maya a les joues chaudes. Quel mot dit-on ? Avec un yaourt.",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "partager",
+        "je suis content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Un petit mot. Content ? Joie ?",
+      "positive_feedback": "Oui. On dit : je suis contente. On sourit. On invite à partager.",
+      "wrong_feedback": "On nomme la joie. On dit je suis contente. On invite à partager.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "EMO.LEX.001"
@@ -286,13 +290,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Maya respire. Maya retient : content, joie, partager. On continue, avec maman.",
+      "text": "Oui. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya répète le mot. Maman hoche la tête.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite, on joue à l'école. la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -318,13 +322,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. On entend un oiseau. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après un yaourt. La lumière est douce et claire. Maya touche la cuisine tout doucement. Maman dit : je suis là. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Dernier choix, tout doux. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -350,28 +354,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de un yaourt, la cuisine et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un yaourt et la cuisine. Une goutte de pluie sèche déjà. On marche tout doucement. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. On se dit à plus tard. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Le vent est doux. On range un objet. Cette fin-là est celle de un yaourt, la cuisine et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un yaourt et la cuisine. Le banc est tiède. On se tait une seconde. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maman dit : je t'ai entendu. Papa aussi. Le soleil est encore là. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Le sol est un peu froid. On dit merci. Cette fin-là est celle de un yaourt, la cuisine et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un yaourt et la cuisine. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On laisse la dînette à sa place. Maya est près de maman. On gardu geste. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. Ça sent le pain chaud. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On souffle doucement. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après un yaourt. L'eau fait un tout petit bruit. Maya montre le jardin à maman. Elle nomme ce qu'elle sent. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Dernier choix, tout calme. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -397,28 +401,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Le vent est doux. On se tient la main. Cette fin-là est celle de un yaourt, le jardin et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un yaourt et le jardin. Une feuille tourne et tombe. On s'assoit près de l'adulte. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. Papa et maman sont là. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Le sol est un peu froid. On range un objet. Cette fin-là est celle de un yaourt, le jardin et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un yaourt et le jardin. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya pose le livre et va vers maman. On respire. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Une feuille tombe. On dit merci. Cette fin-là est celle de un yaourt, le jardin et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un yaourt et le jardin. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya serre la main de maman, tout doux. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. Le vent est doux. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après un yaourt. Le toboggan est un peu froid. Maya range un peu autour de la chambre. Elle respire. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Dernier choix, tout près. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -444,39 +448,41 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de un yaourt, la chambre et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un yaourt et la chambre. Une plume vole. On range les chaussures. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya nomme encore le mot, tout bas. Le jeu peut recommencer. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Une feuille tombe. On range un objet. Cette fin-là est celle de un yaourt, la chambre et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un yaourt et la chambre. Le pain croustille. On met le doudou près de soi. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya pose le livre et va vers maman. On se serre un peu. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de un yaourt, la chambre et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un yaourt et la chambre. La laine du doudou est douce. On écoute le cœur, tout doux. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya serre la main de maman, tout doux. On rentre. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Maya va vers un morceau de pain. Un chat miaule une fois. maman sourit. Ici, c'est un morceau de pain. Ce n'est pas comme les autres endroits. Maya se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On range un objet. maman dit : je suis là. On reste ensemble.",
+      "text": "Un morceau de pain croustille. Maya veut partager le bruit drôle. Voilà un morceau de pain. Un coq chante une fois. Maya pose les pieds par terre, près de maman. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Être content.",
+      "prompt": "Maya a les joues chaudes. Quel mot dit-on ? Avec un morceau de pain.",
       "expected_intents": [
         "CONTENT",
         "JOIE"
       ],
       "accepted_examples": [
         "content",
-        "joie"
+        "joie",
+        "partager",
+        "je suis content"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
-      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "retry_prompt": "Un petit mot. Content ? Joie ?",
+      "positive_feedback": "Oui. On dit : je suis contente. On sourit. On invite à partager.",
+      "wrong_feedback": "On nomme la joie. On dit je suis contente. On invite à partager.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "EMO.LEX.001"
@@ -484,13 +490,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Maya respire. Maya retient : content, joie, partager. On continue, avec maman.",
+      "text": "Oui. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya pose les pieds par terre. On continue, tout calme.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Maya choisit la cuisine, le jardin, ou la chambre ?",
+      "prompt": "Ensuite, on joue à l'école. la cuisine, le jardin, ou la chambre ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -516,13 +522,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Maya a choisi la cuisine. Le sol est un peu froid. La cuisine reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On dit merci. papa n'est pas loin.",
+      "text": "Maya a choisi la cuisine, après un morceau de pain. Un coq chante une fois. Maya range un peu autour de la cuisine. Elle respire. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Pour conclure, tout bas. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -548,28 +554,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Le vent est doux. On range un objet. Cette fin-là est celle de un morceau de pain, la cuisine et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un morceau de pain et la cuisine. Un galet est lisse dans la main. On secoue les mains, loin. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya nomme encore le mot, tout bas. La journée continue, tout doux. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Le sol est un peu froid. On dit merci. Cette fin-là est celle de un morceau de pain, la cuisine et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un morceau de pain et la cuisine. Le train souffle au loin. On pose le sac. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya serre la main de maman, tout doux. On se dit à plus tard. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Une feuille tombe. On souffle doucement. Cette fin-là est celle de un morceau de pain, la cuisine et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un morceau de pain et la cuisine. Une vache meugle, loin. On dit le mot de l'émotion. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya range la dînette un instant. Puis elle reprend, calme. Le soleil est encore là. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Maya a choisi le jardin. Une feuille tombe. Le jardin reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On souffle doucement. papa n'est pas loin.",
+      "text": "Maya a choisi le jardin, après un morceau de pain. Le ballon est un peu poudreux. On parle du jardin. Maya écoute jusqu'au bout. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Pour conclure, tout simple. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -595,28 +601,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Le sol est un peu froid. On range un objet. Cette fin-là est celle de un morceau de pain, le jardin et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un morceau de pain et le jardin. Un grillon chante, tout petit. On invite d'une petite voix. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maman dit : je t'ai entendu. Papa aussi. On gardu geste. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. Une feuille tombe. On dit merci. Cette fin-là est celle de un morceau de pain, le jardin et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un morceau de pain et le jardin. Le bois de la table est lisse. On attend la réponse. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. Papa et maman sont là. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. L'eau coule, tout petit bruit. On souffle doucement. Cette fin-là est celle de un morceau de pain, le jardin et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un morceau de pain et le jardin. Une goutte tombe dans l'évier. On propose une autre idée. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya serre la main de maman, tout doux. On respire. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Maya a choisi la chambre. L'eau coule, tout petit bruit. La chambre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Maya répète tout bas : content, joie, partager. On écoute jusqu'au bout. papa n'est pas loin.",
+      "text": "Maya a choisi la chambre, après un morceau de pain. La terre est un peu humide. Maya attend près de la chambre. Elle ne prend pas de force. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Maya va vers les cubes, le livre, ou la dînette ?",
+      "prompt": "Pour conclure, tout clair. Pour finir, un jeu. les cubes, le livre, ou la dînette ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -642,17 +648,17 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Maya rejoint les cubes. Une feuille tombe. On range un objet. Cette fin-là est celle de un morceau de pain, la chambre et les cubes. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint les cubes, après un morceau de pain et la chambre. Le toboggan est un peu froid. On va vers papa ou maman. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya nomme encore le mot, tout bas. Merci, et au dodo bientôt. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Maya rejoint le livre. L'eau coule, tout petit bruit. On dit merci. Cette fin-là est celle de un morceau de pain, la chambre et le livre. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint le livre, après un morceau de pain et la chambre. La clochette de la porte tinte. On dit stop, tout clair. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. Maya boit une gorgée. Elle se sent plus légère. Le jeu peut recommencer. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Maya rejoint la dînette. Un vélo passe au loin. On souffle doucement. Cette fin-là est celle de un morceau de pain, la chambre et la dînette. Maya a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Maya a entendu : content, joie, partager. Maya dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Maya rejoint la dînette, après un morceau de pain et la chambre. Ça sent le thym du jardin. On s'éloigne d'un pas. Maya se sent contente. C'est de la joie. Les joues sont chaudes. La poitrine est légère. Maya dit : je suis contente. Elle sourit. Elle invite à partager. On écoute le silence une seconde. Maya est assise. On se serre un peu. L'histoire est finie."
     }
   },
   "validation": {

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.RAN.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Sami range les peluches",
+  "lesson_id": "AUT.RAN.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.RAN",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Sami",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sami joue dans sa chambre. Maman plie des chaussettes. Sami a des peluches. Les peluches sont douces. Sami fait un pique-nique. Les tasses en bois font clic. Puis le jeu est fini. Maman dit : c'est l'heure de ranger. Ranger, c'est mettre dans la caisse. Sami prend une peluche. Il la met dans la caisse. Il prend un livre. Il le met dans la caisse. Encore une peluche. Dans la caisse. La caisse est pleine. Le tapis est vide. Parce qu'il range, la chambre est calme. Maman dit : merci Sami. Sami ferme le couvercle. Ça fait toc.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Après le jeu, que fait Sami ?",
+      "expected_intents": [
+        "RANGER",
+        "CAISSE"
+      ],
+      "accepted_examples": [
+        "ranger",
+        "la caisse",
+        "dans la caisse",
+        "il range"
+      ],
+      "retry_prompt": "Il met les peluches dans la caisse. Que fait Sami ?",
+      "positive_feedback": "Oui. Sami range. Il met les peluches dans la caisse.",
+      "wrong_feedback": "Après le jeu, on range. On met les jouets dans la caisse.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sami a rangé. Les peluches sont dans la caisse. Le tapis est libre. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sami ferme la caisse. Maman lui tend l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

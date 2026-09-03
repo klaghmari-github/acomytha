@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Jules appelle maman",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Jules",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Jules est dans la cuisine. Il veut de la confiture. Le pot est fermé. Jules tourne un peu. C'est trop difficile. Jules va vers la porte. Il va vers maman. Maman est près de l'évier. Jules dit : maman. J'ai besoin du pot. Il dit le besoin. Maman écoute. Maman ouvre le pot. Papa arrive. Jules dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Parce qu'il a dit le besoin, le pot s'ouvre. Jules tartine le pain. Ça sent la fraise. Papa s'assoit près de lui.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Jules n'arrive pas. Que fait-il ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "papa",
+        "maman",
+        "dire"
+      ],
+      "retry_prompt": "Il va vers maman. Il dit le besoin. Que fait Jules ?",
+      "positive_feedback": "Oui. Jules va vers maman. Il dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers eux. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Jules a appelé. Il a dit le besoin. Maman a entendu. Le pot est ouvert.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Jules croque le pain. Papa s'assoit près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -31,13 +31,13 @@
     "root": {
       "id": "root",
       "type": "audio",
-      "text": "Aujourd'hui, Léa est avec maman, à la ferme. Léa a envie de jouer. maman est là, tout près. On va apprendre : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa écoute maman. Léa entend les mots : une étape après l'autre.",
+      "text": "Léa est à la ferme, avec maman. Papa ouvre la porte. C'est le matin. Il y a plusieurs étapes. Maman dit : on fait une étape après l'autre.",
       "next": "ch1"
     },
     "ch1": {
       "id": "ch1",
       "type": "choice_story",
-      "prompt": "Léa choisit. le ballon rouge, le seau bleu, ou le doudou ?",
+      "prompt": "Léa touche quoi d'abord ? Le ballon rouge, le seau bleu, ou le doudou ?",
       "options": [
         {
           "id": "ch1_o1",
@@ -63,22 +63,24 @@
     "brA": {
       "id": "brA",
       "type": "audio",
-      "text": "Léa va vers le ballon rouge. L'eau coule, tout petit bruit. maman sourit. Ici, c'est le ballon rouge. Ce n'est pas comme les autres endroits. Léa se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa prend le ballon rouge. Maman dit : d'abord on s'habille. Léa pose le ballon. Elle met le pull. Une étape après l'autre. Papa ouvre les volets.",
       "next": "qA"
     },
     "qA": {
       "id": "qA",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "On fait une étape après l'autre ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Dis : une étape.",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre.",
       "default_next": "fbA",
       "next": "fbA",
       "lesson_id": "AUT.ROU.001"
@@ -86,13 +88,13 @@
     "fbA": {
       "id": "fbA",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Léa respire. Léa retient : une étape après l'autre. On continue, avec maman.",
+      "text": "Oui. Une étape après l'autre. Léa respire. Maman est là. On fait une étape après l'autre.",
       "next": "ch2A"
     },
     "ch2A": {
       "id": "ch2A",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit Tom, Léa, ou Sami ?",
+      "prompt": "Léa dit bonjour à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2A_o1",
@@ -118,13 +120,13 @@
     "brA1": {
       "id": "brA1",
       "type": "audio",
-      "text": "Léa a choisi Tom. La lumière est claire. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On se tient la main. papa n'est pas loin.",
+      "text": "Léa a posé le ballon. Elle dit bonjour à Tom. Puis elle se lave les mains. Une étape après l'autre. Maman dit : ensuite, le goûter. Maman montre le geste, lentement. On fait une étape après l'autre.",
       "next": "ch3A1"
     },
     "ch3A1": {
       "id": "ch3A1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A1_o1",
@@ -150,28 +152,28 @@
     "endA1X": {
       "id": "endA1X",
       "type": "ending",
-      "text": "Léa rejoint le matin. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Tom et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa a choisi le ballon rouge. Puis Tom. Puis le matin. On rit un peu. Léa range le ballon rouge dans sa tête, comme un souvenir. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA1Y": {
       "id": "endA1Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. La couverture est douce. On rit un peu. Cette fin-là est celle de le ballon rouge, Tom et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa s'arrête près de après la sieste. Tom est rangé. On écoute jusqu'au bout. Léa caresse le doudou. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA1Z": {
       "id": "endA1Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de le ballon rouge, Tom et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa se souvient de le ballon rouge. Et de Tom. Et de le soir. Un ballon s'immobilise. Léa enfile ses chaussons. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brA2": {
       "id": "brA2",
       "type": "audio",
-      "text": "Léa a choisi Léa. Il y a des miettes sur la table. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On range un objet. papa n'est pas loin.",
+      "text": "Léa a posé le ballon. Elle dit bonjour à une amie Léa. Puis elle se lave les mains. Une étape après l'autre. Maman dit : ensuite, le goûter. Maman dit : je suis là. On fait une étape après l'autre.",
       "next": "ch3A2"
     },
     "ch3A2": {
       "id": "ch3A2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Encore un choix. Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A2_o1",
@@ -197,28 +199,28 @@
     "endA2X": {
       "id": "endA2X",
       "type": "ending",
-      "text": "Léa rejoint le matin. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Léa et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le ballon rouge. Léa s'arrête. On range un objet. Léa pose sa tête un moment. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA2Y": {
       "id": "endA2Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. On entend un oiseau. On rit un peu. Cette fin-là est celle de le ballon rouge, Léa et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa range Léa. après la sieste reste près de le ballon rouge. La couverture est douce. Léa boit une gorgée d'eau. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA2Z": {
       "id": "endA2Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de le ballon rouge, Léa et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le ballon rouge reste dans le souvenir. Une pomme brille un peu. Léa essuie ses mains. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brA3": {
       "id": "brA3",
       "type": "audio",
-      "text": "Léa a choisi Sami. Un chat miaule une fois. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On dit merci. papa n'est pas loin.",
+      "text": "Léa a posé le ballon. Elle dit bonjour à Sami. Puis elle se lave les mains. Une étape après l'autre. Maman dit : ensuite, le goûter. Maman reste tout près. On fait une étape après l'autre.",
       "next": "ch3A3"
     },
     "ch3A3": {
       "id": "ch3A3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Dernière étape. Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3A3_o1",
@@ -244,37 +246,39 @@
     "endA3X": {
       "id": "endA3X",
       "type": "ending",
-      "text": "Léa rejoint le matin. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de le ballon rouge, Sami et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint le matin. Sami est rangé. le ballon rouge est fini. On se tient la main. Léa s'assoit près de maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA3Y": {
       "id": "endA3Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de le ballon rouge, Sami et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Léa pose Sami. le ballon rouge est derrière. La lumière est claire. Léa plie un pull. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endA3Z": {
       "id": "endA3Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Le vent est doux. On se tait une seconde. Cette fin-là est celle de le ballon rouge, Sami et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa montre le soir. Maman a vu le ballon rouge. Et Sami. Un vélo passe au loin. Léa prend la main de maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brB": {
       "id": "brB",
       "type": "audio",
-      "text": "Léa va vers le seau bleu. Un vélo passe au loin. maman sourit. Ici, c'est le seau bleu. Ce n'est pas comme les autres endroits. Léa se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On rit un peu. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa prend le seau bleu. Maman dit : d'abord on déjeune. Léa pose le seau. Elle mange une bouchée. Une étape après l'autre. On entend une poule.",
       "next": "qB"
     },
     "qB": {
       "id": "qB",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "On fait tout en même temps ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Dis : une étape.",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre.",
       "default_next": "fbB",
       "next": "fbB",
       "lesson_id": "AUT.ROU.001"
@@ -282,13 +286,13 @@
     "fbB": {
       "id": "fbB",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Léa respire. Léa retient : une étape après l'autre. On continue, avec maman.",
+      "text": "Oui. Une étape après l'autre. Léa retient le geste. Maman sourit. On fait une étape après l'autre.",
       "next": "ch2B"
     },
     "ch2B": {
       "id": "ch2B",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit Tom, Léa, ou Sami ?",
+      "prompt": "Léa dit bonjour à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2B_o1",
@@ -314,13 +318,13 @@
     "brB1": {
       "id": "brB1",
       "type": "audio",
-      "text": "Léa a choisi Tom. Les chaussures font toc toc. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On se tient la main. papa n'est pas loin.",
+      "text": "Léa a posé le seau. Elle suit Tom vers l'étable. Une étape après l'autre : d'abord les bottes. Papa aide. Maman dit : je suis là. On fait une étape après l'autre.",
       "next": "ch3B1"
     },
     "ch3B1": {
       "id": "ch3B1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B1_o1",
@@ -346,28 +350,28 @@
     "endB1X": {
       "id": "endB1X",
       "type": "ending",
-      "text": "Léa rejoint le matin. La couverture est douce. On rit un peu. Cette fin-là est celle de le seau bleu, Tom et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa a choisi le seau bleu. Puis Tom. Puis le matin. Un linge sèche à l'air. Léa souffle, puis sourit à maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB1Y": {
       "id": "endB1Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de le seau bleu, Tom et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa s'arrête près de après la sieste. Tom est rangé. Le sol est un peu froid. Léa pose Tom à sa place. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB1Z": {
       "id": "endB1Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de le seau bleu, Tom et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa se souvient de le seau bleu. Et de Tom. Et de le soir. Ça sent le pain chaud. Léa dit : j'ai appris. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brB2": {
       "id": "brB2",
       "type": "audio",
-      "text": "Léa a choisi Léa. La couverture est douce. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On range un objet. papa n'est pas loin.",
+      "text": "Léa a posé le seau. Elle suit son amie Léa vers l'étable. Une étape après l'autre : d'abord les bottes. Papa aide. Maman reste tout près. On fait une étape après l'autre.",
       "next": "ch3B2"
     },
     "ch3B2": {
       "id": "ch3B2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "On continue. Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B2_o1",
@@ -393,28 +397,28 @@
     "endB2X": {
       "id": "endB2X",
       "type": "ending",
-      "text": "Léa rejoint le matin. On entend un oiseau. On rit un peu. Cette fin-là est celle de le seau bleu, Léa et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le seau bleu. Léa s'arrête. On attend son tour. Léa dit merci à maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB2Y": {
       "id": "endB2Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de le seau bleu, Léa et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa range Léa. après la sieste reste près de le seau bleu. Une chaussette est encore sablée. Léa sourit. Maman sourit aussi. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB2Z": {
       "id": "endB2Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Le vent est doux. On se tient la main. Cette fin-là est celle de le seau bleu, Léa et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le seau bleu reste dans le souvenir. Un ruban reste dans la poche. Léa ferme le sac. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brB3": {
       "id": "brB3",
       "type": "audio",
-      "text": "Léa a choisi Sami. On entend un oiseau. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On dit merci. papa n'est pas loin.",
+      "text": "Léa a posé le seau. Elle suit Sami vers l'étable. Une étape après l'autre : d'abord les bottes. Papa aide. Maman montre le geste, lentement. On fait une étape après l'autre.",
       "next": "ch3B3"
     },
     "ch3B3": {
       "id": "ch3B3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3B3_o1",
@@ -440,37 +444,39 @@
     "endB3X": {
       "id": "endB3X",
       "type": "ending",
-      "text": "Léa rejoint le matin. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de le seau bleu, Sami et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint le matin. Sami est rangé. le seau bleu est fini. L'eau coule, tout petit bruit. Léa raccroche un linge. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB3Y": {
       "id": "endB3Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Le vent est doux. On se tait une seconde. Cette fin-là est celle de le seau bleu, Sami et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Léa pose Sami. le seau bleu est derrière. Le vent est doux. Léa montre après la sieste à maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endB3Z": {
       "id": "endB3Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de le seau bleu, Sami et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa montre le soir. Maman a vu le seau bleu. Et Sami. Les chaussures font toc toc. Léa ferme la porte, tout doux. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brC": {
       "id": "brC",
       "type": "audio",
-      "text": "Léa va vers le doudou. La lumière est claire. maman sourit. Ici, c'est le doudou. Ce n'est pas comme les autres endroits. Léa se souvient : une étape après l'autre. Voici le geste : faire l'étape dite. On se tait une seconde. maman dit : je suis là. On reste ensemble.",
+      "text": "Léa prend le doudou. Maman dit : d'abord on prépare le sac. Léa pose le doudou. Elle met le gobelet. Une étape après l'autre. Papa dit : ensuite, le doudou.",
       "next": "qC"
     },
     "qC": {
       "id": "qC",
       "type": "question_lesson",
-      "prompt": "Que fait-on ? Enchaîner le matin.",
+      "prompt": "Quelle étape maintenant ?",
       "expected_intents": [
         "ETAPE"
       ],
       "accepted_examples": [
-        "etape"
+        "une étape",
+        "après l'autre",
+        "étape"
       ],
-      "retry_prompt": "Dis-le avec un petit mot.",
-      "positive_feedback": "Oui. Voici le geste : faire l'étape dite.",
-      "wrong_feedback": "Voici le geste : faire l'étape dite.",
+      "retry_prompt": "Dis : une étape.",
+      "positive_feedback": "Oui. Une étape après l'autre.",
+      "wrong_feedback": "On fait une étape après l'autre.",
       "default_next": "fbC",
       "next": "fbC",
       "lesson_id": "AUT.ROU.001"
@@ -478,13 +484,13 @@
     "fbC": {
       "id": "fbC",
       "type": "feedback",
-      "text": "Oui. Voici le geste : faire l'étape dite. Léa respire. Léa retient : une étape après l'autre. On continue, avec maman.",
+      "text": "Oui. Une étape après l'autre. Léa hoche la tête. On continue, avec maman. On fait une étape après l'autre.",
       "next": "ch2C"
     },
     "ch2C": {
       "id": "ch2C",
       "type": "choice_story",
-      "prompt": "Ensuite, Léa choisit Tom, Léa, ou Sami ?",
+      "prompt": "Léa dit bonjour à qui ? Tom, Léa, ou Sami ?",
       "options": [
         {
           "id": "ch2C_o1",
@@ -510,13 +516,13 @@
     "brC1": {
       "id": "brC1",
       "type": "audio",
-      "text": "Léa a choisi Tom. Ça sent le pain chaud. Tom reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On se tient la main. papa n'est pas loin.",
+      "text": "Léa a posé le doudou. Avec Tom, elle attend. Une étape après l'autre : d'abord le manteau, ensuite le doudou. Maman reste tout près. On fait une étape après l'autre.",
       "next": "ch3C1"
     },
     "ch3C1": {
       "id": "ch3C1",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Un dernier choix. Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C1_o1",
@@ -542,28 +548,28 @@
     "endC1X": {
       "id": "endC1X",
       "type": "ending",
-      "text": "Léa rejoint le matin. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de le doudou, Tom et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa a choisi le doudou. Puis Tom. Puis le matin. On entend un oiseau. Léa range encore un peu, près de maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC1Y": {
       "id": "endC1Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Ça sent le pain chaud. On se tient la main. Cette fin-là est celle de le doudou, Tom et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa s'arrête près de après la sieste. Tom est rangé. Le savon sent bon. Papa n'est pas loin. Léa les rejoint. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC1Z": {
       "id": "endC1Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Le vent est doux. On range un objet. Cette fin-là est celle de le doudou, Tom et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa se souvient de le doudou. Et de Tom. Et de le soir. On dit merci. Léa répète tout bas le geste. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brC2": {
       "id": "brC2",
       "type": "audio",
-      "text": "Léa a choisi Léa. Le vent est doux. Léa reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On range un objet. papa n'est pas loin.",
+      "text": "Léa a posé le doudou. Avec son amie Léa, elle attend. Une étape après l'autre : d'abord le manteau, ensuite le doudou. Maman montre le geste, lentement. On fait une étape après l'autre.",
       "next": "ch3C2"
     },
     "ch3C2": {
       "id": "ch3C2",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C2_o1",
@@ -589,28 +595,28 @@
     "endC2X": {
       "id": "endC2X",
       "type": "ending",
-      "text": "Léa rejoint le matin. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de le doudou, Léa et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Avec le matin. Après Léa. Près de le doudou. Léa s'arrête. Un chat miaule une fois. Léa tend le matin à papa. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC2Y": {
       "id": "endC2Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Le vent est doux. On se tient la main. Cette fin-là est celle de le doudou, Léa et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa range Léa. après la sieste reste près de le doudou. Il y a des miettes sur la table. Léa marche près de maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC2Z": {
       "id": "endC2Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Le sol est un peu froid. On range un objet. Cette fin-là est celle de le doudou, Léa et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "le soir est là. Léa aussi. le doudou reste dans le souvenir. On souffle doucement. Léa serre la main de maman. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "brC3": {
       "id": "brC3",
       "type": "audio",
-      "text": "Léa a choisi Sami. Le sol est un peu froid. Sami reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : faire l'étape dite. Léa répète tout bas : une étape après l'autre. On dit merci. papa n'est pas loin.",
+      "text": "Léa a posé le doudou. Avec Sami, elle attend. Une étape après l'autre : d'abord le manteau, ensuite le doudou. Maman dit : je suis là. On fait une étape après l'autre.",
       "next": "ch3C3"
     },
     "ch3C3": {
       "id": "ch3C3",
       "type": "choice_story",
-      "prompt": "Pour finir, Léa va vers le matin, après la sieste, ou le soir ?",
+      "prompt": "Pour clore. Pour finir, quelle étape ? Le matin, après la sieste, ou le soir ?",
       "options": [
         {
           "id": "ch3C3_o1",
@@ -636,22 +642,23 @@
     "endC3X": {
       "id": "endC3X",
       "type": "ending",
-      "text": "Léa rejoint le matin. Le vent est doux. On se tait une seconde. Cette fin-là est celle de le doudou, Sami et le matin. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa rejoint le matin. Sami est rangé. le doudou est fini. Une feuille tombe. Léa chuchote : c'est fini. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC3Y": {
       "id": "endC3Y",
       "type": "ending",
-      "text": "Léa rejoint après la sieste. Le sol est un peu froid. On se tient la main. Cette fin-là est celle de le doudou, Sami et après la sieste. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Près de après la sieste. Léa pose Sami. le doudou est derrière. Un galet est encore chaud. Léa écoute maman encore une fois. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     },
     "endC3Z": {
       "id": "endC3Z",
       "type": "ending",
-      "text": "Léa rejoint le soir. Une feuille tombe. On range un objet. Cette fin-là est celle de le doudou, Sami et le soir. Léa a appris : Enchaîner le matin. Voici le geste : faire l'étape dite. Léa a entendu : une étape après l'autre. Léa dit merci à maman. On rentre. L'histoire est finie."
+      "text": "Léa montre le soir. Maman a vu le doudou. Et Sami. Une tasse cliquette. Léa range la tasse. On fait une étape après l'autre. On fait l'étape dite. Une étape après l'autre. Léa dit merci à maman. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "Textes réécrits, graphe inchangé. Générateur non auto-approuvé.",
     "major_findings": 0,
     "paths_tested": 27
   }

@@ -276,6 +276,11 @@ def validate_story(path: Path, lessons: dict) -> dict:
                 add("BLOCKING", "INT", f"{v.get('id')}: choice sans options", v.get("id"))
             if not v.get("default_next"):
                 add("MAJOR", "INT-004", f"{v.get('id')}: default_next manquant", v.get("id"))
+            # Feu piéton : ne pas proposer rouge/vert comme choix narratif
+            if (data.get("lesson_id") or "").startswith("SEC.RUE"):
+                labs = " ".join(norm(o.get("label") or "") for o in opts)
+                if "rouge" in labs or "vert" in labs:
+                    add("MAJOR", "PED-011", f"{v.get('id')}: choix rouge/vert ambigu avec le feu piéton", v.get("id"))
             continue
         if not v.get("expected_intents"):
             add("MAJOR", "INT-002", f"{v.get('id')}: expected_intents manquant", v.get("id"))
