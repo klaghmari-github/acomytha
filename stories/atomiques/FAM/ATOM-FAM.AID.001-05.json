@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Karim appelle papa pour le bocal",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Karim",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Karim est dans la cuisine. Il veut le bocal de farine. Le bocal est en haut. Trop haut. Karim lève les bras. Il n'arrive pas. Ses épaules se tendent. Karim va vers la porte. Il va vers papa. Papa est dans le salon. Karim dit : papa. J'ai besoin du bocal. Papa écoute. Papa vient. Papa donne le bocal. Le bocal est lourd. Karim dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman arrive aussi. Elle pose un saladier. Karim verse un peu de farine. Un nuage blanc monte. Papa sourit. Parce que Karim a dit le besoin, le bocal est là. Ce n'est pas être petit. C'est demander.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Karim n'arrive pas. Que fait-il ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "papa",
+        "maman",
+        "dire"
+      ],
+      "retry_prompt": "Il va vers papa. Il dit le besoin. Que fait Karim ?",
+      "positive_feedback": "Oui. Karim va vers papa. Il dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers eux. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Karim a appelé. Il a dit le besoin. Papa a entendu. Le bocal est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Karim mélange la farine. Papa s'assoit près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SOC.CUI.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Olivier aide papa à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.CUI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Olivier",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est le soir. Olivier entre dans la cuisine. Papa est là. Olivier dit : je veux aider. Papa sourit. Papa dit : tu fais une tâche sûre, avec un adulte. Olivier ouvre l'eau. Il lave une tomate. L'eau est froide. La tomate est lisse. Olivier pose la tomate. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Olivier va au pain. Il apporte le pain à table. Papa dit : merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Plus tard, maman arrive. Olivier se souvient. Il lave une feuille de salade. C'est encore une tâche sûre, avec un adulte. Maman dit : tu as transféré le geste. Olivier reste avec papa. Ils préparent ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Olivier aide papa. Que fait-il ?",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "laver",
+        "apporter",
+        "avec papa"
+      ],
+      "retry_prompt": "Il lave la tomate. Que fait Olivier ?",
+      "positive_feedback": "Oui. Il aide, avec papa. Une tâche sûre.",
+      "wrong_feedback": "On aide avec une tâche sûre, avec papa ou maman. Laver, poser, apporter.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Olivier a lavé la tomate. Il a posé la cuillère. Il a apporté le pain. Avec un adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Olivier s'assoit. Il croque un morceau de pain. Papa est près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

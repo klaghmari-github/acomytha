@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.006-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Noémie raconte qu'elle est inquiète",
+  "lesson_id": "EMO.LEX.006",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison puis jardin",
+  "characters": [
+    "Noémie",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Noémie est dans le salon. Dehors, le vent pousse un volet. Le volet claque. Noémie sent son ventre se serrer. Elle dit : je suis inquiète. Elle va vers maman. Maman est l'adulte près de la table. Noémie raconte : le volet a fait un grand bruit. Maman écoute. Maman dit : tu as su raconter. Papa ferme le volet. Le salon redevient calme. Plus tard, Noémie va au jardin avec papa. Un oiseau s'envole tout près. Le ventre de Noémie se serre encore. Noémie se souvient. Elle va vers papa. Papa est l'adulte. Elle dit : je suis inquiète. Elle raconte l'oiseau. Papa écoute. Noémie souffle. Son ventre se desserre un peu. Être inquiet, on peut le dire. On va vers un adulte. On peut raconter. Noémie a transféré le geste : ventre serré, adulte, raconter.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Noémie a le ventre serré. Que fait-elle ?",
+      "expected_intents": [
+        "INQUIET",
+        "RACONTER"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "inquiet",
+        "inquiète",
+        "vers maman",
+        "adulte",
+        "je suis inquiète"
+      ],
+      "retry_prompt": "Noémie va vers un adulte. Que peut-elle faire ?",
+      "positive_feedback": "Oui. Noémie dit : inquiet. Elle va vers un adulte. Elle raconte.",
+      "wrong_feedback": "On dit : je suis inquiet. On va vers un adulte. On raconte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Noémie a nommé : inquiet. Elle a rejoint un adulte. Elle a pu raconter. Au salon, puis au jardin.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Noémie cueille une feuille. Papa tient sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

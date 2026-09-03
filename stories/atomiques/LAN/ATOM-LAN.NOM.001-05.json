@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.NOM.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Pauline compte les cailloux",
+  "lesson_id": "LAN.NOM.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.NOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Pauline",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Pauline et maman sont au jardin. Il y a un seau. Dedans, des cailloux. Maman dit : on va compter des objets. Pauline touche un caillou. Un. Elle en touche un autre. Deux. Encore un. Trois. Encore un. Quatre. Encore un. Cinq. Pauline dit : cinq cailloux. Maman sourit. Elle dit le nombre. Cinq. Pauline pose les cailloux. Un. Deux. Trois. Quatre. Cinq. Les objets sont là. Pauline les compte. Le soleil chauffe le seau.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Pauline compte les cailloux. Combien y en a-t-il ?",
+      "expected_intents": [
+        "NOMBRE"
+      ],
+      "accepted_examples": [
+        "cinq",
+        "cinq cailloux",
+        "le nombre",
+        "cinq objets"
+      ],
+      "retry_prompt": "Elle dit le nombre. Combien ?",
+      "positive_feedback": "Oui. Cinq. Elle a compté des objets.",
+      "wrong_feedback": "On compte des objets. On dit le nombre. Une, deux, trois, quatre, cinq.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Pauline a compté des objets. Cinq cailloux. Elle a dit le nombre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le seau. Pauline garde un caillou lisse. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
