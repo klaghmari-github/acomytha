@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.CON.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Dire stop et rejoindre un adulte au parc",
+  "lesson_id": "REL.CON.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Nora",
+    "Sami",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nora est au parc avec papa. Papa s'assoit sur le banc. Nora joue près du bac à sable. Le sable est frais sous les doigts. Sami court vers le bac. Sami bouscule Nora. Nora sent un choc. Son cœur bat vite. Nora dit : stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers papa. Nora marche vers le banc. Papa est son parent au parc. Nora rejoint son parent au parc. Elle dit : Sami m'a bousculée. Papa l'écoute. Papa dit : tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Papa lui tient la main. Nora souffle doucement. Le banc est calme. Les oiseaux chantent. Papa reste avec elle. Nora reste près de son parent au parc.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Nora. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "PARENT"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "papa",
+        "vers papa",
+        "parent"
+      ],
+      "retry_prompt": "Elle dit stop, puis elle va vers papa. Que fait Nora ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On rejoint papa ou maman au parc.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On rejoint papa ou maman, le parent au parc.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nora a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nora boit une gorgée d'eau. Papa garde sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

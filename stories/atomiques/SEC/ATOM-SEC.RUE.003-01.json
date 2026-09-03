@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.003-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Sami près de papa",
+  "lesson_id": "SEC.RUE.003",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "rue près de la maison",
+  "characters": [
+    "Sami",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sami sort avec papa. Ils marchent dans la rue. Sami reste près de l'adulte. Il prend la main de papa. Il tient aussi le manteau. Main ou manteau. Papa dit : près de moi. Sami sent le manteau. Le manteau est doux. La main de papa est chaude. Sami marche à côté. Ils passent la boulangerie. Sami sent le pain chaud. Il reste près de l'adulte. La main tient le manteau. Papa sourit. Sami sourit aussi.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sami marche dans la rue. Où est-il ?",
+      "expected_intents": [
+        "PRES_ADULTE",
+        "MAIN"
+      ],
+      "accepted_examples": [
+        "près de papa",
+        "près",
+        "la main",
+        "manteau",
+        "à côté"
+      ],
+      "retry_prompt": "Il reste près. Il tient la main. Où est Sami ?",
+      "positive_feedback": "Oui. Sami reste près de l'adulte. Main ou manteau.",
+      "wrong_feedback": "On reste près de l'adulte. On tient la main ou le manteau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sami est près de papa. La main tient le manteau. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sami garde la main de papa. Ils rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.MOT.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Noé range fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.MOT",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Noé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Noé est dans le salon. Maman pose un panier. Dedans, il y a une pomme. Une banane. Une chaussette. Un bonnet. Noé touche la pomme. Elle est lisse. Maman dit : on nomme. On classe. Les fruits ensemble. Les habits ensemble. La pomme, c'est un fruit. La banane, c'est un fruit. Noé les met ensemble. La chaussette, c'est un habit. Le bonnet, c'est un habit. Noé les met ensemble. Maman dit : fruits, c'est une catégorie. Habits, c'est une catégorie. Noé répète : catégorie. Il pose les fruits dans le panier. Il pose les habits sur la chaise.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Noé range pomme et chaussette. Que fait-il ?",
+      "expected_intents": [
+        "CLASSER"
+      ],
+      "accepted_examples": [
+        "classer",
+        "ensemble",
+        "ranger",
+        "catégorie"
+      ],
+      "retry_prompt": "Les fruits vont ensemble. Que fait Noé ?",
+      "positive_feedback": "Oui. Il classe. Fruits ensemble. Habits ensemble.",
+      "wrong_feedback": "On nomme. On classe. Fruits ensemble. Habits ensemble. C'est une catégorie.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Noé a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Noé croque la pomme. Maman plie le bonnet. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

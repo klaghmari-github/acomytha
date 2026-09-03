@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.007-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Être nerveux",
+  "lesson_id": "EMO.LEX.007",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Jules",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Jules est à l'école. Il attend son tour pour parler. La maîtresse parle encore. Jules sent ses jambes bouger. Son corps ne tient pas en place. Jules dit : je suis nerveux. Il lève la main. Il dit : je demande une pause. La maîtresse dit : oui, Jules. Jules s'assoit sur le banc près de la fenêtre. Il pose les pieds au sol. Il souffle. Ses jambes se calment. Plus tard, maman vient le chercher. Jules dit : j'étais nerveux. J'ai demandé une pause. Maman dit : ton corps a parlé. On peut faire une pause.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Jules ne tient plus. Que demande-t-il ?",
+      "expected_intents": [
+        "NERVEUX",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "une pause",
+        "pause",
+        "nerveux",
+        "s'asseoir",
+        "je suis nerveux"
+      ],
+      "retry_prompt": "Jules est nerveux. Que peut-il demander ?",
+      "positive_feedback": "Oui. Jules dit : je suis nerveux. Il demande une pause.",
+      "wrong_feedback": "On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Jules a nommé : nerveux. Il a demandé une pause. Il s'est assis. Ce n'est pas une faute.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Jules prend la main de maman. Le chemin de l'école est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.006-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Être inquiet",
+  "lesson_id": "EMO.LEX.006",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Inès",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Dehors, le vent souffle fort. Inès est dans le salon. Elle entend la pluie. Son ventre se serre. Inès dit : je suis inquiet. Elle va vers maman. Maman est l'adulte près du canapé. Inès dit : j'ai le ventre serré. Maman dit : tu peux raconter. Inès raconte le bruit du vent. Maman écoute. Papa arrive aussi. Ils restent tous les trois. Inès souffle. Son ventre se desserre un peu. Être inquiet, on peut le dire. On va vers un adulte. On peut raconter.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Inès a le ventre serré. Que fait-elle ?",
+      "expected_intents": [
+        "INQUIET",
+        "RACONTER"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "inquiet",
+        "vers maman",
+        "adulte",
+        "je suis inquiet"
+      ],
+      "retry_prompt": "Inès va vers un adulte. Que peut-elle faire ?",
+      "positive_feedback": "Oui. Inès dit : inquiet. Elle va vers maman. Elle raconte.",
+      "wrong_feedback": "On dit : je suis inquiet. On va vers un adulte. On raconte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Inès a nommé : inquiet. Elle a rejoint un adulte. Elle a pu raconter.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "La pluie continue dehors. Inès reste près de maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

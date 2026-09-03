@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Être content",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Tom",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Tom marche dans le jardin. Papa est là, près des fraisiers. Le soleil est doux. Tom voit une fraise rouge. Il la cueille tout doucement. La fraise sent le sucre. Tom sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Tom dit : je suis content. Papa dit : c'est de la joie. Tom tend la fraise. Il dit : on peut partager. Papa prend un tout petit bout. Tom prend un tout petit bout. Ils sourient ensemble. Tom dit encore : je suis content. La joie est là, dans le jardin.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tom sourit. Que dit-il ?",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "je suis content",
+        "joie",
+        "de la joie",
+        "partager"
+      ],
+      "retry_prompt": "Tom sent de la joie. Que dit-il ?",
+      "positive_feedback": "Oui. Tom dit : je suis content. C'est de la joie.",
+      "wrong_feedback": "On dit : je suis content. On partage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tom a nommé sa joie. Il a partagé avec papa. Être content, c'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Tom essuie ses mains. Le jardin est calme. Papa lui prend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

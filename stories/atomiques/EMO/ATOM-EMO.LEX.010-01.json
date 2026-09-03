@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.010-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Être fier",
+  "lesson_id": "EMO.LEX.010",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Sara",
+    "Kenzo",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sara a planté des graines avec maman. C'est dans le jardin. Chaque matin, Sara arrose un peu. C'est un effort, chaque jour. Aujourd'hui, une petite pousse sort. Sara sent sa poitrine chaude. Elle se tient droite. Maman dit : tu peux être fier de ton effort. Sara dit : je suis fier de mon effort. Le frère Kenzo a aussi une pousse. Sara dit : la tienne est belle aussi. Papa vient voir les deux plants. Ils regardent ensemble. Être fier, c'est l'effort. On le dit. On laisse de la place à l'autre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La pousse de Sara est sortie. Que dit-elle ?",
+      "expected_intents": [
+        "FIER",
+        "EFFORT"
+      ],
+      "accepted_examples": [
+        "fier",
+        "effort",
+        "je suis fier",
+        "mon effort",
+        "fier de l'effort"
+      ],
+      "retry_prompt": "Sara est fière. De quoi parle-t-elle ?",
+      "positive_feedback": "Oui. Sara dit : je suis fier de mon effort.",
+      "wrong_feedback": "On dit : je suis fier de mon effort. On laisse de la place à l'autre.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sara a nommé : fier. Elle parle de son effort. La pousse de Kenzo a sa place aussi.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sara pose l'arrosoir. Maman ferme le portillon. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-VIV.ANI.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Les cris de la ferme",
+  "lesson_id": "VIV.ANI.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "ferme",
+  "characters": [
+    "Léa",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa marche avec papa. Ils visitent la ferme. Un chien arrive. Le chien aboie. Ouaf ouaf. Papa dit : le chien aboie. Un chat saute. Le chat miaule. Miaou. Une vache mange. La vache meugle. Meuh. Un coq est sur le mur. Le coq chante. Cocorico. Un canard nage. Le canard cancane. Papa dit : chaque animal a un cri. Léa nomme l'animal. Elle dit le cri.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le chien fait ouaf. Quel est son cri ?",
+      "expected_intents": [
+        "CRI",
+        "ANIMAL"
+      ],
+      "accepted_examples": [
+        "aboie",
+        "il aboie",
+        "ouaf",
+        "le cri"
+      ],
+      "retry_prompt": "Le chien aboie. Quel est le cri ?",
+      "positive_feedback": "Oui. Le chien aboie. Chaque animal a un cri.",
+      "wrong_feedback": "On nomme l'animal, et on dit son cri.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a nommé l'animal. Elle a dit le cri. Chien, chat, vache, coq, canard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa tient la main de papa. La ferme sent le foin. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

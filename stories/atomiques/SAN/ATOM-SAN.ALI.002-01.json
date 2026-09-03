@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SAN.ALI.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Tom s'assoit à table",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Tom",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'heure du dîner. Tom est dans la cuisine. Papa pose les assiettes. Maman apporte le pain. Tom va s'asseoir. Il pose les fesses sur la chaise. Il est assis à table. Papa s'assoit aussi. Maman s'assoit près de Tom. Ils mangent ensemble. Tom tient sa cuillère. Il mange assis. La chaise est stable. Papa dit : on mange ensemble, à table. Tom sourit. Il reste assis. Maman coupe le pain. Tom attend, assis. Ils sont ensemble à table.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tom va manger. Que fait-il ?",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assis",
+        "s'asseoir",
+        "à table",
+        "il s'assoit",
+        "table",
+        "sur la chaise"
+      ],
+      "retry_prompt": "Il pose les fesses sur la chaise. Que fait Tom ?",
+      "positive_feedback": "Oui. Tom s'assoit à table. Il mange avec papa et maman.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses sur la chaise.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tom est assis. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Tom boit une gorgée. Il reste assis jusqu'à la fin. Merci, dit maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

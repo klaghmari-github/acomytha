@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.RAN.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Léa range les cubes",
+  "lesson_id": "AUT.RAN.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.RAN",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa joue dans le salon. Maman est sur le canapé. Léa a des cubes. Les cubes sont verts et jaunes. Léa fait une tour. La tour est haute. Les cubes font clic. Puis le jeu est fini. Maman dit : c'est l'heure de ranger. Léa prend un cube. Elle le met dans la caisse. Elle prend un autre cube. Elle le met dans la caisse. Encore un cube. Dans la caisse. La caisse est pleine. Le tapis est vide. Ranger, c'est mettre dans la caisse. Maman dit : merci Léa.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Après le jeu, que fait Léa ?",
+      "expected_intents": [
+        "RANGER",
+        "CAISSE"
+      ],
+      "accepted_examples": [
+        "ranger",
+        "la caisse",
+        "dans la caisse",
+        "elle range"
+      ],
+      "retry_prompt": "Elle met les cubes dans la caisse. Que fait Léa ?",
+      "positive_feedback": "Oui. Léa range. Elle met les cubes dans la caisse.",
+      "wrong_feedback": "Après le jeu, on range. On met les jouets dans la caisse.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a rangé. Les cubes sont dans la caisse. Le tapis est libre. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa ferme la caisse. Ça fait toc. Maman lui tend l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

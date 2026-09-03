@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.HYG.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "La brosse de Léa",
+  "lesson_id": "SAN.HYG.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salle de bain",
+  "characters": [
+    "Léa",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, Léa se lève. Papa est dans la salle de bain. Léa prend sa brosse. Papa prend la sienne. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. Léa rit un peu. Le soir, c'est pareil. Léa prend sa brosse. Un adulte est avec elle. C'est papa. Ils brossent ensemble. Léa dit : matin et soir. Papa dit : oui, avec moi. Les dents sont propres. Léa range la brosse.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa se brosse les dents. Avec quoi ?",
+      "expected_intents": [
+        "BROSSE",
+        "MATIN_SOIR"
+      ],
+      "accepted_examples": [
+        "brosse",
+        "la brosse",
+        "matin et soir",
+        "matin",
+        "soir",
+        "avec papa"
+      ],
+      "retry_prompt": "Elle prend la brosse. Matin et soir. Que fait Léa ?",
+      "positive_feedback": "Oui. Léa prend la brosse. Matin et soir, avec papa.",
+      "wrong_feedback": "On prend la brosse. On se brosse matin et soir, avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a pris la brosse. Elle brosse avec l'adulte. C'est papa. Matin et soir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa se rince la bouche. Elle dit merci à papa. Les dents brillent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

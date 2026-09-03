@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SAN.HYG.003-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le mouchoir de Hugo",
+  "lesson_id": "SAN.HYG.003",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hugo est dans le salon. Son nez chatouille. Maman est près du canapé. Maman tend un mouchoir. Hugo prend un mouchoir. Il se mouche. Atchoum, tout doux. Le nez est plus libre. Hugo va jeter le mouchoir. Il le met dans la poubelle. Maman dit : mouchoir, puis poubelle. Hugo va au lavabo. Il se lave les mains. Il revient. Maman sourit. Hugo respire mieux.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hugo se mouche. Que prend-il ?",
+      "expected_intents": [
+        "MOUCHOIR"
+      ],
+      "accepted_examples": [
+        "mouchoir",
+        "un mouchoir",
+        "le mouchoir",
+        "il se mouche"
+      ],
+      "retry_prompt": "Maman tend un mouchoir. Que prend Hugo ?",
+      "positive_feedback": "Oui. Hugo prend un mouchoir. Puis il le jette à la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le jette à la poubelle.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hugo a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hugo s'assoit près de maman. Son nez est calme. Il dit merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

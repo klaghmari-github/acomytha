@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.PAR.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Léa attend la balançoire",
+  "lesson_id": "REL.PAR.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Léa",
+    "Maya",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa est au parc avec maman. Les oiseaux chantent. Léa aime la balançoire. Maya est déjà dessus. La balançoire va et vient. Léa a envie. Elle s'approche. Maman dit : on peut attendre. Attendre, c'est rester près. Léa pose les pieds au sol. Elle compte. Un. Deux. Trois. Maya se balance encore. Léa attend. Maman tient sa main. Le vent est doux. Maya descend. Maman dit : puis mon tour. Léa dit : puis mon tour. Léa s'assoit. Elle se balance. Ses cheveux bougent. Maya attend maintenant. Puis c'est encore le tour. Maman dit : on attend. Puis mon tour arrive. Léa sourit. Le bois de la balançoire est lisse. Une feuille tombe. Maman reste tout près.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maya se balance. Que fait Léa ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "son tour",
+        "puis mon tour",
+        "elle attend"
+      ],
+      "retry_prompt": "Elle attend. Puis c'est son tour. Que fait Léa ?",
+      "positive_feedback": "Oui. On attend. Puis mon tour arrive.",
+      "wrong_feedback": "On attend. Puis mon tour arrive, et on joue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a su attendre. Puis mon tour est venu. Elle s'est balancée. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léa descend. Elle prend la main de maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

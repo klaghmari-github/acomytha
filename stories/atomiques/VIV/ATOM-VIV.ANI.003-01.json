@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-VIV.ANI.003-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "L'eau de Minou avec papa",
+  "lesson_id": "VIV.ANI.003",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Inès",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 160,
+    "max": 200
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Inès rentre à la maison avec papa. Minou le chat miaule. Sa gamelle est vide. Inès veut aider. Papa dit : on le fait ensemble. On est doux. Papa verse l'eau. Inès tient le bol avec papa. L'eau arrive tout doucement. Papa met des croquettes. Inès pose la gamelle. Elle est douce. Sa main va lentement. Minou vient. Il boit. Il mange. Papa dit : on prend soin avec un adulte. On reste doux.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Inès donne l'eau au chat. Comment fait-elle ?",
+      "expected_intents": [
+        "AVEC_ADULTE",
+        "DOUX"
+      ],
+      "accepted_examples": [
+        "douce",
+        "doux",
+        "avec papa",
+        "avec un adulte"
+      ],
+      "retry_prompt": "Elle est douce, avec papa. Comment fait Inès ?",
+      "positive_feedback": "Oui. Elle est douce, avec un adulte.",
+      "wrong_feedback": "On donne l'eau ou la nourriture avec papa ou maman. On est doux.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Inès a été douce. Elle a versé l'eau avec un adulte. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Minou ronronne. Inès s'assoit près de papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

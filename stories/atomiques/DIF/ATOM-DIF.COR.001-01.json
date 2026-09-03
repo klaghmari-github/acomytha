@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-DIF.COR.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Nora invite Hugo dans le jardin",
+  "lesson_id": "DIF.COR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Nora",
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'après-midi. Le soleil est doux. Nora est dans le jardin. Maman est là, près des fleurs. Hugo arrive avec un seau. Hugo est plus grand que Nora. Nora est plus petite que Hugo. Ils ont des tailles différentes. Maman sourit. Nora veut du sable. Elle prend une petite pelle. Elle va vers Hugo. Elle l'invite. Nora dit : viens jouer. Hugo dit : oui. Ils jouent ensemble près du bac. Hugo porte un gros seau. Nora porte un petit seau. Les tailles différentes restent là. Les deux enfants remplissent le bac. Maman dit : vous jouez ensemble. Nora donne une pelle à Hugo. Hugo donne un moule à Nora. Ils font un gâteau de sable. Nora met un caillou dessus. Hugo met une feuille verte. Ils tapent des mains. Hugo veut la corde à sauter. La corde est un peu haute. Hugo baisse la corde. Nora tient un bout. Hugo tient l'autre bout. Ils sautent un peu. Puis ils sautent ensemble. Maman dit : encore. On invite. On joue ensemble. Petit ou grand, on joue ensemble. Nora verse de l'eau. Hugo lisse le sable. Le gâteau tient debout. Maman dit : bravo. Vous avez des tailles différentes. Et vous jouez ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nora invite Hugo. Que font-ils ?",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble",
+        "ensemble",
+        "ils jouent",
+        "on joue",
+        "jouer"
+      ],
+      "retry_prompt": "Ils jouent. Que font Nora et Hugo ?",
+      "positive_feedback": "Oui. Ils jouent ensemble.",
+      "wrong_feedback": "On invite. On joue ensemble.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nora a invité. Hugo a dit oui. Ils ont des tailles différentes. Ils jouent ensemble.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le soleil baisse un peu. Maman dit : on range. Nora range un seau. Hugo range une pelle. Ils se disent à demain. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

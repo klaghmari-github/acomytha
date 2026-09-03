@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-COL.POL.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Le gâteau de Zoé chez la voisine",
+  "lesson_id": "COL.POL.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.POL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "visite chez la voisine",
+  "characters": [
+    "Zoé",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Zoé va chez la voisine avec papa. Papa sonne à la porte. La voisine ouvre. Zoé dit : bonjour. Papa dit : bonjour. Ils apportent un gâteau au citron. Zoé tend le plat. Elle dit : s'il te plaît, c'est pour vous. La voisine sourit. Elle offre un verre d'eau. Zoé dit : merci. Papa dit : merci. Ils restent un moment. Zoé parle du parc. Au revoir, dit Zoé. La voisine dit : merci pour le gâteau. Papa serre la main de Zoé. Les mots sont là : bonjour, s'il te plaît, merci.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Zoé donne le gâteau. Que dit-elle ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "s'il te plaît",
+        "merci",
+        "bonjour",
+        "s'il te plait"
+      ],
+      "retry_prompt": "Elle dit s'il te plaît et merci. Que dit Zoé ?",
+      "positive_feedback": "Oui. Bonjour, s'il te plaît, merci.",
+      "wrong_feedback": "On dit bonjour, s'il te plaît, et merci.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zoé a dit bonjour. Elle a dit s'il te plaît. Elle a dit merci. Papa était avec elle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Zoé redescend l'escalier avec papa. Le citron sent encore. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

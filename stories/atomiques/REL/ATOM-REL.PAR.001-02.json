@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.PAR.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Le goûter d'anniversaire de Nino",
+  "lesson_id": "REL.PAR.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Nino",
+    "Maya",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino a un goûter d'anniversaire à la maison. Papa a posé un gâteau au citron. Maman coupe des parts égales. Maya est invitée. Il y a aussi un petit jouet. C'est une toupie en bois. Nino veut garder la toupie. Papa dit : tu peux prêter le jouet. Prêter, c'est laisser Maya essayer. Nino tend la toupie. Maya la fait tourner. C'est le tour de Maya. La toupie vibre sur la table. Puis c'est le tour de Nino. Le gâteau attend dans l'assiette. Maman dit : chacun a une part. Nino veut encore la toupie. Papa dit : tu peux proposer un autre jeu. Un autre jeu, c'est possible. Nino sort un puzzle de fruits. Maya sourit. Ils goûtent le gâteau. C'est acidulé et doux. Puis ils font le puzzle. Papa et maman restent à table. Nino a su prêter. Chacun a eu son tour. Ils ont un autre jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maya veut la toupie. Que peut faire Nino ?",
+      "expected_intents": [
+        "PRETER",
+        "TOUR",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "prêter",
+        "son tour",
+        "autre jeu",
+        "attendre",
+        "prêter le jouet"
+      ],
+      "retry_prompt": "Il peut prêter, attendre son tour, ou proposer un autre jeu. Que fait Nino ?",
+      "positive_feedback": "Oui. On peut prêter, attendre son tour, ou proposer un autre jeu.",
+      "wrong_feedback": "On peut prêter le jouet, attendre son tour, ou proposer un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino a prêté la toupie. Maya a eu son tour. Puis ils ont un autre jeu. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nino dit merci. Maya range une pièce du puzzle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

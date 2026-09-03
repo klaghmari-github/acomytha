@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-FAM.SEC.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "La surprise gentille de Jules",
+  "lesson_id": "FAM.SEC.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.SEC",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Jules",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 160,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est bientôt l'anniversaire de papa. Jules est dans la cuisine avec maman. Ils font un gâteau au citron. La pâte est jaune. Ça sent bon. Maman dit : c'est une surprise gentille. On la garde un peu. Jules sourit. Il range le moule. Ses mains sont un peu collantes. Papa entre. Papa dit : ça sent bon ici. Jules a envie de dire. Maman chuchote : encore un tout petit peu. Le soir, la table est prête. Le gâteau est là. Les bougies sont petites. Jules dit : papa, surprise. C'est pour toi. Papa ouvre les yeux grands. Papa dit : merci Jules. Maman dit : une surprise gentille, on la garde un peu, puis on dit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le gâteau pour papa, c'est quoi ?",
+      "expected_intents": [
+        "SURPRISE_GENTILLE"
+      ],
+      "accepted_examples": [
+        "surprise",
+        "une surprise",
+        "surprise gentille",
+        "un gâteau"
+      ],
+      "retry_prompt": "C'est une surprise gentille. C'est quoi ?",
+      "positive_feedback": "Oui. Une surprise gentille. On la garde un peu, puis on dit.",
+      "wrong_feedback": "Une surprise gentille se garde un peu, puis on dit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Jules a gardé un peu. Puis il a dit. Papa a vu le gâteau. C'était une surprise gentille, courte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa goûte une part. Jules goûte aussi. C'est acide et doux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-TMP.SEM.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Le mercredi d'Adam",
+  "lesson_id": "TMP.SEM.002",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SEM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Adam",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 155,
+    "max": 200
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Adam prépare son cartable avec papa. Papa dit : demain c'est lundi. Lundi, mardi, jeudi, vendredi : Adam va à l'école. Mercredi, Adam reste à la maison. Il joue avec papa. Samedi, Adam reste aussi à la maison. Dimanche encore. Papa dit : samedi et dimanche, c'est le week-end. Adam range le cartable mercredi. Pas d'école ce jour-là. Il dessine. Papa dit : mercredi, samedi, dimanche, on est à la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Adam est à la maison le mercredi. Quels autres jours aussi ?",
+      "expected_intents": [
+        "MERCREDI",
+        "WEEKEND"
+      ],
+      "accepted_examples": [
+        "week-end",
+        "weekend",
+        "samedi",
+        "dimanche",
+        "le week-end"
+      ],
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?",
+      "positive_feedback": "Oui. Mercredi, et le week-end : samedi et dimanche.",
+      "wrong_feedback": "Mercredi, on est à la maison. Samedi et dimanche aussi, c'est le week-end.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Adam a nommé mercredi. Il a nommé samedi et dimanche. C'est le week-end.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Adam range ses crayons. Papa prépare le goûter. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

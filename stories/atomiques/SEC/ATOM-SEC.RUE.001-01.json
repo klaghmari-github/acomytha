@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Tom s'arrête au trottoir",
+  "lesson_id": "SEC.RUE.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "trajet vers le marché",
+  "characters": [
+    "Tom",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Tom marche avec papa. Ils vont au marché. Tom sent le pain chaud. Ils arrivent au bord. Le bord du trottoir est là. Papa s'arrête. Tom s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Tom sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir. Papa dit : on s'arrête. Pieds au bord. Sur le trottoir. Tom regarde papa. Il pose les pieds au bord. Les pieds sont calmes. Papa sourit. Papa dit : bravo Tom. On s'arrête au trottoir. On attend avec papa. Les pieds restent au bord du trottoir.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tom arrive au bord. Que fait-il ?",
+      "expected_intents": [
+        "TROTTOIR",
+        "ARRETER"
+      ],
+      "accepted_examples": [
+        "s'arrêter",
+        "trottoir",
+        "il s'arrête",
+        "pieds au bord",
+        "au bord"
+      ],
+      "retry_prompt": "Il s'arrête. Les pieds sont au bord. Que fait Tom ?",
+      "positive_feedback": "Oui. Tom s'arrête. Les pieds restent au bord du trottoir.",
+      "wrong_feedback": "On s'arrête. Les pieds restent au bord, sur le trottoir, avec papa.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tom s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Tom donne la main à papa. Ils attendent un moment. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

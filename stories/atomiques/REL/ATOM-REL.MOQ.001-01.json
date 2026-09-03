@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.MOQ.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Soutenir un camarade avec respect",
+  "lesson_id": "REL.MOQ.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Lila",
+    "Kenzo",
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Lila est à l'école. La classe range les manteaux. Le couloir sent le savon. Hugo fait tomber son bonnet. Kenzo commence à rire. Le rire est court. Lila ne rit pas. Il ne faut pas rire. Lila ne répète pas. Il ne faut pas répéter. Lila dit : ce n'est pas gentil. Elle va vers Hugo. Elle ramasse le bonnet. Elle le tend. Hugo le remet. La maîtresse s'approche. Kenzo dit : pardon. Le soir, maman vient. Lila raconte. Maman dit : tu as bien fait. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil. Lila serre la main de maman. Le chemin est calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Kenzo rit. Que fait Lila ?",
+      "expected_intents": [
+        "PAS_RIRE",
+        "PAS_GENTIL"
+      ],
+      "accepted_examples": [
+        "pas rire",
+        "pas gentil",
+        "ne pas rire",
+        "pas répéter"
+      ],
+      "retry_prompt": "Elle ne rit pas. Elle dit que ce n'est pas gentil. Que fait Lila ?",
+      "positive_feedback": "Oui. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
+      "wrong_feedback": "Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lila n'a pas ri. Elle n'a pas répété. Elle a dit : ce n'est pas gentil. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lila range son cartable. Maman marche à côté. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

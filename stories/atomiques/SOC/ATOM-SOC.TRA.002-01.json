@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.TRA.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Nora reste assise dans la voiture",
+  "lesson_id": "SOC.TRA.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "voiture",
+  "characters": [
+    "Nora",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Maman et Nora vont au marché en voiture. Nora pose ses fesses sur son siège. Maman attache la ceinture. Nora est assise. Son dos est contre le dossier. Ses pieds sont sur le tapis. Ses mains tiennent son doudou. Maman s'assoit devant. Maman dit : on reste assis, avec l'adulte. Maman, c'est l'adulte. La voiture roule. Les arbres défilent. Nora a envie de bouger. Ses jambes gigotent un peu. Maman dit : tes fesses restent sur le siège. Nora replace ses fesses. Elle reste assise, avec maman. Elle chante un petit air. La ceinture est là. Sa place est là. La voiture s'arrête près du marché. Nora reste assise. Maman défait la ceinture. Nora donne la main à maman. Elles vont ensemble vers les étals.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nora est dans la voiture. Que fait-elle ?",
+      "expected_intents": [
+        "ASSIS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "assise",
+        "rester assise",
+        "avec maman",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Ses fesses sont sur le siège. Que fait Nora ?",
+      "positive_feedback": "Oui. Elle reste assise, à sa place, avec maman.",
+      "wrong_feedback": "On reste assis, fesses sur le siège, avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nora est restée assise. Ses fesses étaient sur le siège. Maman était là. Dans le transport, on reste assis, avec l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Au marché, Nora tient encore la main de maman. Elle sent les fruits. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

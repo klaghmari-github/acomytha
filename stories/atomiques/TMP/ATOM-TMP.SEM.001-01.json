@@ -1,0 +1,70 @@
+{
+  "tree_id": "ATOM-TMP.SEM.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Les sept jours de Noé",
+  "lesson_id": "TMP.SEM.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SEM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Noé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Noé s'assoit avec maman. Maman a un calendrier. Elle montre sept cases. Maman dit : il y a sept jours. Noé écoute. Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au parc. Dimanche, on mange le gâteau. Maman dit : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Noé répète les sept jours dans l'ordre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Après lundi, quel jour vient ?",
+      "expected_intents": [
+        "JOUR"
+      ],
+      "accepted_examples": [
+        "mardi",
+        "c'est mardi",
+        "le mardi"
+      ],
+      "retry_prompt": "Lundi, puis mardi. Quel jour après lundi ?",
+      "positive_feedback": "Oui. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+      "wrong_feedback": "Les sept jours dans l'ordre : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Noé a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Noé pose un jeton sur lundi. Maman sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-JEU.BAS.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Le petit panier de Zoé",
+  "lesson_id": "JEU.BAS.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour",
+  "characters": [
+    "Zoé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Zoé et maman sont dans la cour. Un petit panier est accroché bas. Le soleil chauffe le sol. Maman donne le ballon orange. Il rebondit. Maman dit : on va passer le ballon. Ensuite, chacun a un lancer. Zoé passe le ballon à maman. Maman le passe. Zoé attend. C'est son lancer. Zoé tient le ballon. Elle le lance vers le panier. Le ballon touche le bord. Il rentre. Zoé sourit. Maman a son lancer. Elle lance aussi. Le ballon va dans le panier. Zoé dit : encore. Elles se passent le ballon. Chacun a un lancer. Les pieds restent près du panier, là où maman a dit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Zoé joue au basket. Que fait-elle ?",
+      "expected_intents": [
+        "PANIER",
+        "PASSER"
+      ],
+      "accepted_examples": [
+        "le panier",
+        "passer",
+        "lancer",
+        "au panier"
+      ],
+      "retry_prompt": "Elle lance le ballon. Vers quoi ?",
+      "positive_feedback": "Oui. Elle passe. Elle lance au panier. Chacun a un lancer.",
+      "wrong_feedback": "On va passer le ballon. On lance au panier. Chacun a un lancer.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zoé a passé le ballon. Elle a visé le panier. Chacun a eu un lancer.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le ballon. Zoé essuie ses mains. Elles rentrent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

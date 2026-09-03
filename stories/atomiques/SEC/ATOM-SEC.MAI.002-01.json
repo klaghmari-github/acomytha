@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.MAI.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hugo demande avant de goûter",
+  "lesson_id": "SEC.MAI.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Hugo",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 160,
+    "max": 200
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hugo est dans la cuisine. Papa coupe des poires. Un petit pot fermé est sur la table. Hugo ne le connaît pas. C'est de l'inconnu. Hugo a envie de goûter. Il va vers papa. Hugo dit : papa, je peux. Avant de goûter l'inconnu, il faut demander. Hugo va demander à l'adulte. Papa prend le pot. Papa dit : c'est de la compote. Tu peux goûter. Hugo goûte une petite cuillère. C'est doux. Papa dit : on demande à un adulte. Parce que Hugo a demandé, papa a dit oui. Hugo range la cuillère. Il sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hugo voit un pot inconnu. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "à papa",
+        "un adulte",
+        "il demande",
+        "à l'adulte"
+      ],
+      "retry_prompt": "Il va demander. Il parle à papa. Que fait Hugo ?",
+      "positive_feedback": "Oui. Il demande à l'adulte avant de goûter l'inconnu.",
+      "wrong_feedback": "On demande à papa ou maman. On parle à un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hugo a demandé. L'adulte a répondu. Le petit pot est de la compote.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hugo boit une gorgée d'eau. Papa range le pot. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

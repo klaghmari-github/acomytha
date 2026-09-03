@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SOC.ARG.002-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Demander à papa ou maman pour un achat",
+  "lesson_id": "SOC.ARG.002",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.ARG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "magasin",
+  "characters": [
+    "Hugo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hugo et maman entrent dans le magasin. Ça sent le papier et le bois. Hugo voit un petit camion rouge. Il a très envie de le prendre. L'argent est dans le sac de maman. Maman range l'argent. Elle le ferme. Hugo s'arrête. Il dit : maman, je peux l'avoir ? Il demande à l'adulte. Maman, c'est l'adulte. Maman écoute. Elle regarde le camion. Elle dit : aujourd'hui, on achète le pain. Le camion attendra. Hugo sent un petit pincement. Puis il respire. Il a demandé. Maman prend sa main. Ils vont au rayon pain. Hugo porte le pain. L'argent reste dans le sac. Pour un achat, on va demander à papa ou maman.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hugo veut un camion. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER"
+      ],
+      "accepted_examples": [
+        "demander",
+        "il demande",
+        "à maman",
+        "demander à maman"
+      ],
+      "retry_prompt": "Il parle à maman. Que fait Hugo ?",
+      "positive_feedback": "Oui. Il demande à maman. L'argent se range.",
+      "wrong_feedback": "Pour un achat, on va demander à papa ou maman. L'argent se range.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hugo a demandé à l'adulte. Maman a répondu. L'argent est resté dans le sac.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sur le chemin, Hugo sent le pain chaud. Il tient la main de maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

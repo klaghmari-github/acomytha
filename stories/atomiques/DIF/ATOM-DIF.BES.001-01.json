@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-DIF.BES.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Iris observe d'abord",
+  "lesson_id": "DIF.BES.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.BES",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école",
+  "characters": [
+    "Zoé",
+    "Iris",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Papa accompagne Zoé en classe. Sur le tapis, il y a un nouveau jeu. Des cartes d'animaux. Des petits sacs. La maîtresse explique. On pioche une carte. On imite l'animal, tout doux. Iris reste près du mur. Elle a besoin de plus de temps. Elle a besoin de calme. Zoé l'appelle. Iris ne vient pas. Papa est encore à la porte. Il dit : on peut répéter la règle. On peut observer d'abord. Zoé va vers Iris. Elle parle doucement. Zoé dit : on pioche une carte. On imite l'animal. Puis on repose la carte. C'est répéter la règle. Iris écoute. Elle reste près du mur. Elle va observer d'abord. Zoé retourne au tapis. Elle pioche un chat. Elle marche sur la pointe des pieds. Iris regarde. Elle ne joue pas encore. C'est possible. La maîtresse dit : Iris peut observer d'abord. Le groupe continue. Un enfant pioche un oiseau. Il ouvre les bras, lentement. Iris sourit un peu. Zoé vient encore. Elle va répéter, une fois. Zoé dit : une carte, un animal, tout doux. Iris hoche la tête. Elle s'assoit au bord du tapis. Elle observe d'abord. Plus tard, elle tend la main. Elle pioche une carte. C'est une tortue. Iris avance très lentement. Zoé laisse l'espace. Papa, au fond, fait un petit signe. À la fin, Iris n'a fait qu'une carte. C'est assez. Zoé range les sacs. Papa dit : tu as su répéter. Iris a pu observer d'abord. Le calme a aidé.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris a besoin de calme. Que peut-on faire ?",
+      "expected_intents": [
+        "REPETTER",
+        "OBSERVER"
+      ],
+      "accepted_examples": [
+        "répéter",
+        "observer d'abord",
+        "observer",
+        "attendre"
+      ],
+      "retry_prompt": "On peut répéter. On peut observer d'abord. Que fait-on ?",
+      "positive_feedback": "Oui. On peut répéter la règle. On peut observer d'abord.",
+      "wrong_feedback": "On peut répéter la règle. On peut observer d'abord.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zoé a su répéter. Iris a pu observer d'abord. Le jeu a continué, sans forcer.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa reprend Zoé à la porte. Iris range une carte. Elle fait un petit signe. Zoé dit : à demain. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

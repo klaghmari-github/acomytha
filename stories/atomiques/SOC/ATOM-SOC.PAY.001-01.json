@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.PAY.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "La mer de France d'Inès",
+  "lesson_id": "SOC.PAY.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.PAY",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Inès",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Inès s'assoit sur le tapis, près de papa. Papa ouvre un grand livre. Les pages sentent le papier. Papa dit : on va nommer un pays. Inès pose le doigt. Papa lit le nom : la France. Inès répète : la France. Sur la page, il y a de l'eau bleue. Des vagues. Du sable. Papa dit : ça, c'est un paysage. C'est la mer. Inès dit : la mer. Elle entend presque le bruit des vagues. Papa tourne encore. Des sommets blancs. Papa dit : ça aussi, c'est un paysage. C'est la montagne. Inès dit : la montagne. Un pays. Un nom. Un paysage. La France, et la mer. Papa ferme le livre. Inès le range sur la table basse.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Inès nomme la France. Elle nomme aussi quoi ?",
+      "expected_intents": [
+        "PAYS",
+        "PAYSAGE"
+      ],
+      "accepted_examples": [
+        "la mer",
+        "un paysage",
+        "un pays",
+        "la France"
+      ],
+      "retry_prompt": "Il y a de l'eau bleue. C'est quel paysage ?",
+      "positive_feedback": "Oui. Un pays, la France. Un paysage, la mer.",
+      "wrong_feedback": "On nomme un pays et un paysage. La mer ou la montagne.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Inès a dit le nom. La France. Elle a dit le paysage. La mer. La montagne aussi.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Inès s'allonge près de papa. Elle ferme les yeux. Elle pense à l'eau salée. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

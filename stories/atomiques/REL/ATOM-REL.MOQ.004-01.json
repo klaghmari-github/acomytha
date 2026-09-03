@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.MOQ.004-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "La photo d'Iris avec maman",
+  "lesson_id": "REL.MOQ.004",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Iris",
+    "Ava",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Iris est dans le jardin avec maman. C'est un après-midi ensoleillé. Ava est là aussi. Ava a un peu de gâteau sur la joue. Iris voit le téléphone de maman. Iris a une idée de photo. Maman tient le téléphone. Iris dit : je peux prendre une photo ? Maman dit : on doit demander. Demander, c'est parler avant. Une photo se fait avec un adulte. Maman dit : le téléphone reste avec l'adulte. On ne prend pas une photo pour rire de l'autre. Ce n'est pas pour rire de l'autre. Iris dit : d'accord. Elle demande encore. Maman dit oui, pour un souvenir. Ava essuie sa joue. Maman prend la photo. Iris et Ava sourient. Le téléphone reste dans la main de maman. Iris dit merci. Les abeilles butinent près des fleurs. Papa arrive plus tard. Maman montre la photo. Iris a demandé.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris veut une photo. Que fait-elle ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "à maman",
+        "adulte",
+        "demander à l'adulte"
+      ],
+      "retry_prompt": "On demande à l'adulte. Ce n'est pas pour rire de l'autre. Que fait Iris ?",
+      "positive_feedback": "Oui. On demande à l'adulte. Une photo, ce n'est pas pour rire de l'autre.",
+      "wrong_feedback": "On demande à l'adulte. Le téléphone reste avec lui. Ce n'est pas pour rire de l'autre.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Iris a su demander. Le téléphone reste avec l'adulte. Ce n'est pas pour rire de l'autre. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Iris et Ava rangent les assiettes. Maman glisse le téléphone dans sa poche. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

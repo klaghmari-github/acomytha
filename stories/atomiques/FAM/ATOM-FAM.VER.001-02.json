@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-FAM.VER.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Sara raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.VER",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin puis cuisine",
+  "characters": [
+    "Sara",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sara est dans le jardin avec papa. Elle arrose les fleurs. L'arrosoir est lourd. L'eau fait un bruit doux. Le pot de basilic bascule. La terre s'étale. Sara sent son visage chaud. Elle va vers papa. Sara dit : papa, le pot est tombé. C'est moi. Papa l'écoute. Papa dit : merci de raconter. On ramasse la terre. Les mains sont un peu sales. Plus tard, dans la cuisine, Sara touche un verre. Le verre tremble. Sara pense : je peux raconter à papa ou maman. Elle dit : maman, j'ai touché le verre. Il a bougé. Maman dit : merci Sara. Raconter aide, au jardin et à la maison. Papa et maman sont là.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Quelque chose est tombé. Que fait Sara ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "elle raconte",
+        "à papa",
+        "à maman"
+      ],
+      "retry_prompt": "Elle le dit à papa ou maman. Que fait Sara ?",
+      "positive_feedback": "Oui. Sara raconte à papa ou maman ce qui s'est passé.",
+      "wrong_feedback": "On raconte à papa ou maman ce qui s'est passé.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sara a raconté au jardin. Puis elle a raconté dans la cuisine. Papa et maman écoutent. Raconter, c'est possible à chaque fois.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le basilic est remis. Le verre est stable. Sara se lave les mains. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
