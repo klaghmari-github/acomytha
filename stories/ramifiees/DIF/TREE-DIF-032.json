@@ -1,0 +1,658 @@
+{
+  "tree_id": "TREE-DIF-032",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Plus petit ou plus grand — dans la chambre",
+  "lesson_id": "DIF.COR.001",
+  "secondary_lessons": [
+    "DIF.COR.002"
+  ],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "dans la chambre",
+  "characters": [
+    "Zoé",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Aujourd'hui, Zoé est avec maman, dans la chambre. Zoé a envie de jouer. maman est là, tout près. On va apprendre : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé écoute maman. Zoé entend les mots : tailles différentes, jouer ensemble.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Zoé choisit. la cuisine, le jardin, ou la chambre ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "la cuisine",
+          "intent": "LA_CUISINE",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le jardin",
+          "intent": "LE_JARDIN",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Zoé va vers la cuisine. L'eau coule, tout petit bruit. maman sourit. Ici, c'est la cuisine. Ce n'est pas comme les autres endroits. Zoé se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On souffle doucement. maman dit : je suis là. On reste ensemble.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
+      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "DIF.COR.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : inviter ; jouer. Zoé respire. Zoé retient : tailles différentes, jouer ensemble. On continue, avec maman.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Zoé a choisi les cubes. La lumière est claire. Les cubes reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On montre du doigt, sans courir. papa n'est pas loin.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. Les chaussures font toc toc. On souffle doucement. Cette fin-là est celle de la cuisine, les cubes et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, les cubes et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. On entend un oiseau. On attend son tour. Cette fin-là est celle de la cuisine, les cubes et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Zoé a choisi le livre. Il y a des miettes sur la table. Le livre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. La couverture est douce. On souffle doucement. Cette fin-là est celle de la cuisine, le livre et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, le livre et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de la cuisine, le livre et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Zoé a choisi la dînette. Un chat miaule une fois. La dînette reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. On entend un oiseau. On souffle doucement. Cette fin-là est celle de la cuisine, la dînette et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de la cuisine, la dînette et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Le vent est doux. On attend son tour. Cette fin-là est celle de la cuisine, la dînette et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Zoé va vers le jardin. Un vélo passe au loin. maman sourit. Ici, c'est le jardin. Ce n'est pas comme les autres endroits. Zoé se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
+      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "DIF.COR.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : inviter ; jouer. Zoé respire. Zoé retient : tailles différentes, jouer ensemble. On continue, avec maman.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Zoé a choisi les cubes. Les chaussures font toc toc. Les cubes reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On montre du doigt, sans courir. papa n'est pas loin.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. La couverture est douce. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, les cubes et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. On entend un oiseau. On attend son tour. Cette fin-là est celle de le jardin, les cubes et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, les cubes et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Zoé a choisi le livre. La couverture est douce. Le livre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. On entend un oiseau. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, le livre et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de le jardin, le livre et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, le livre et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Zoé a choisi la dînette. On entend un oiseau. La dînette reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. Ça sent le pain chaud. On écoute jusqu'au bout. Cette fin-là est celle de le jardin, la dînette et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Le vent est doux. On attend son tour. Cette fin-là est celle de le jardin, la dînette et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de le jardin, la dînette et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Zoé va vers la chambre. La lumière est claire. maman sourit. Ici, c'est la chambre. Ce n'est pas comme les autres endroits. Zoé se souvient : tailles différentes, jouer ensemble. Voici le geste : inviter ; jouer. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Plus petit ou plus grand.",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : inviter ; jouer.",
+      "wrong_feedback": "Voici le geste : inviter ; jouer.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "DIF.COR.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : inviter ; jouer. Zoé respire. Zoé retient : tailles différentes, jouer ensemble. On continue, avec maman.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Ensuite, Zoé choisit les cubes, le livre, ou la dînette ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le livre",
+          "intent": "LE_LIVRE",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "la dînette",
+          "intent": "LA_DÎNETTE",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Zoé a choisi les cubes. Ça sent le pain chaud. Les cubes reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On montre du doigt, sans courir. papa n'est pas loin.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. On entend un oiseau. On attend son tour. Cette fin-là est celle de la chambre, les cubes et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Ça sent le pain chaud. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, les cubes et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Le vent est doux. On rit un peu. Cette fin-là est celle de la chambre, les cubes et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Zoé a choisi le livre. Le vent est doux. Le livre reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. Ça sent le pain chaud. On attend son tour. Cette fin-là est celle de la chambre, le livre et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Le vent est doux. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, le livre et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Le sol est un peu froid. On rit un peu. Cette fin-là est celle de la chambre, le livre et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Zoé a choisi la dînette. Le sol est un peu froid. La dînette reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : inviter ; jouer. Zoé répète tout bas : tailles différentes, jouer ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Zoé va vers le matin, après la sieste, ou le soir ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "le matin",
+          "intent": "LE_MATIN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "après la sieste",
+          "intent": "APRÈS_LA_SIESTE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "le soir",
+          "intent": "LE_SOIR",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Zoé rejoint le matin. Le vent est doux. On attend son tour. Cette fin-là est celle de la chambre, la dînette et le matin. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Zoé rejoint après la sieste. Le sol est un peu froid. On montre du doigt, sans courir. Cette fin-là est celle de la chambre, la dînette et après la sieste. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Zoé rejoint le soir. Une feuille tombe. On rit un peu. Cette fin-là est celle de la chambre, la dînette et le soir. Zoé a appris : Plus petit ou plus grand. Voici le geste : inviter ; jouer. Zoé a entendu : tailles différentes, jouer ensemble. Zoé dit merci à maman. On rentre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}
