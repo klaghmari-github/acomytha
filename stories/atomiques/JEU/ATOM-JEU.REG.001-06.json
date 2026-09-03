@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-JEU.REG.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Antonin accepte de perdre",
+  "lesson_id": "JEU.REG.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Antonin",
+    "Alix",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Antonin joue aux cubes avec Alix. Alix finit sa tour. L'autre peut gagner. Antonin sent une boule. Il dit : je suis déçu. C'est permis. Maman dit : on peut rejouer plus tard. Antonin dit bravo. Il souffle. Ils rangeront. Plus tard, ils rejoueront. L'autre peut gagner. Déçu permis. Rejouer plus tard.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Alix gagne. Que peut faire Antonin ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "rejouer",
+        "plus tard",
+        "bravo"
+      ],
+      "retry_prompt": "Il est déçu. Ensuite ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Déçu permis. On rejoue plus tard.",
+      "wrong_feedback": "Parfois l'autre gagne. On peut être déçu. On rejoue plus tard.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "JEU.REG.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Antonin a dit bravo. Il était déçu. C'est permis. Ils rejoueront plus tard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range un cube. Antonin donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

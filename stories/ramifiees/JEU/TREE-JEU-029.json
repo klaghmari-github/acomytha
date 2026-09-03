@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-JEU-029",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Titouan accepte de perdre",
+  "lesson_id": "JEU.REG.001",
+  "secondary_lessons": [
+    "JEU.REG.002"
+  ],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Titouan",
+    "papa",
+    "maman"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Titouan joue dans le jardin avec papa. Parfois l'autre gagne. Papa dit : on peut être déçu. C'est permis. On peut rejouer plus tard. L'autre peut gagner.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "On joue à quoi ? Les cubes, la course, ou le ballon ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "les cubes",
+          "intent": "LES_CUBES",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "la course",
+          "intent": "LA_COURSE",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "le ballon",
+          "intent": "LE_BALLON",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Aux cubes, l'autre peut gagner. Titouan est déçu. C'est permis. On rejoue plus tard.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Aux cubes, l'autre gagne. Que fait Titouan ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "rejouer",
+        "plus tard",
+        "bravo"
+      ],
+      "retry_prompt": "Il est déçu. Ensuite ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Déçu permis. On rejoue plus tard.",
+      "wrong_feedback": "Parfois l'autre gagne. On peut être déçu. On rejoue plus tard.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "JEU.REG.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "L'autre peut gagner. Déçu permis. On rejoue plus tard.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Qui gagne cette fois ? Léa, Tom, ou Sara ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "Léa",
+          "intent": "LEA",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "Sara",
+          "intent": "SARA",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Léa a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Léa a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Léa a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Tom a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Tom a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Tom a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Sara a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Sara a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Sara a gagné à les cubes. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "À la course, l'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "À la course, l'autre gagne. Que fait Titouan ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "rejouer",
+        "plus tard",
+        "bravo"
+      ],
+      "retry_prompt": "Il est déçu. Ensuite ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Déçu permis. On rejoue plus tard.",
+      "wrong_feedback": "Parfois l'autre gagne. On peut être déçu. On rejoue plus tard.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "JEU.REG.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Déçu permis. Rejouer plus tard.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Qui gagne cette fois ? Léa, Tom, ou Sara ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "Léa",
+          "intent": "LEA",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "Sara",
+          "intent": "SARA",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Léa a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Léa a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Léa a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Tom a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Tom a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Tom a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Sara a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Sara a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Sara a gagné à la course. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Au ballon, l'autre peut gagner. Titouan est déçu. Permis. On peut rejouer plus tard.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Au ballon, l'autre gagne. Que fait Titouan ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "rejouer",
+        "plus tard",
+        "bravo"
+      ],
+      "retry_prompt": "Il est déçu. Ensuite ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Déçu permis. On rejoue plus tard.",
+      "wrong_feedback": "Parfois l'autre gagne. On peut être déçu. On rejoue plus tard.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "JEU.REG.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Titouan a dit bravo. Il pourra rejouer plus tard.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Qui gagne cette fois ? Léa, Tom, ou Sara ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "Léa",
+          "intent": "LEA",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "Sara",
+          "intent": "SARA",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Léa a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Léa a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Léa a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Tom a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Tom a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Tom a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "L'autre peut gagner. Titouan est déçu. Permis. Rejouer plus tard.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Titouan fait quoi ? Bravo, une pause, ou plus tard ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "bravo",
+          "intent": "BRAVO",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "une pause",
+          "intent": "UNE_PAUSE",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "plus tard",
+          "intent": "PLUS_TARD",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Titouan choisit bravo. Sara a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Titouan choisit une pause. Sara a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Titouan choisit plus tard. Sara a gagné à le ballon. L'autre peut gagner. Déçu permis. On rejoue plus tard. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

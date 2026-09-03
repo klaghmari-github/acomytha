@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-COL-027",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Maëlys dit bonjour, s'il te plaît, merci",
+  "lesson_id": "COL.POL.001",
+  "secondary_lessons": [
+    "COL.ECO.002"
+  ],
+  "domain": "COL",
+  "subdomain": "COL.POL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Maëlys",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Maëlys tient la main de maman au marché. Maman dit : on salue. On dit bonjour. On dit s'il te plaît. On dit merci. Maëlys répète les trois mots.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Maëlys va où ? La boulangerie, l'étal, ou la fromagerie ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "la boulangerie",
+          "intent": "LA_BOULANGERIE",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "l'étal",
+          "intent": "LETAL",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la fromagerie",
+          "intent": "LA_FROMAGERIE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "À la boulangerie, Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "À la boulangerie, quels mots ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "bonjour",
+        "s'il te plaît",
+        "merci"
+      ],
+      "retry_prompt": "Trois mots. Bonjour, et ensuite ?",
+      "positive_feedback": "Oui. Bonjour, s'il te plaît, merci.",
+      "wrong_feedback": "On dit bonjour. On dit s'il te plaît. On dit merci.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "COL.POL.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Maëlys a dit bonjour, s'il te plaît, merci.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Maëlys parle à qui ? La boulangère, le voisin, ou la maîtresse ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "la boulangère",
+          "intent": "LA_BOULANGERE",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le voisin",
+          "intent": "LE_VOISIN",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "la maîtresse",
+          "intent": "LA_MAÎTRESSE",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la boulangerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la boulangerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la boulangerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la boulangerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la boulangerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la boulangerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la boulangerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la boulangerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la boulangerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "À l'étal, Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "À l'étal, quels mots ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "bonjour",
+        "s'il te plaît",
+        "merci"
+      ],
+      "retry_prompt": "Trois mots. Bonjour, et ensuite ?",
+      "positive_feedback": "Oui. Bonjour, s'il te plaît, merci.",
+      "wrong_feedback": "On dit bonjour. On dit s'il te plaît. On dit merci.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "COL.POL.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Les trois mots.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Maëlys parle à qui ? La boulangère, le voisin, ou la maîtresse ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "la boulangère",
+          "intent": "LA_BOULANGERE",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le voisin",
+          "intent": "LE_VOISIN",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "la maîtresse",
+          "intent": "LA_MAÎTRESSE",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à l'étal. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à l'étal. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à l'étal. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à l'étal. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à l'étal. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à l'étal. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à l'étal. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à l'étal. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à l'étal. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "À la fromagerie, Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "À la fromagerie, quels mots ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "bonjour",
+        "s'il te plaît",
+        "merci"
+      ],
+      "retry_prompt": "Trois mots. Bonjour, et ensuite ?",
+      "positive_feedback": "Oui. Bonjour, s'il te plaît, merci.",
+      "wrong_feedback": "On dit bonjour. On dit s'il te plaît. On dit merci.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "COL.POL.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Maëlys a salué.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Maëlys parle à qui ? La boulangère, le voisin, ou la maîtresse ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "la boulangère",
+          "intent": "LA_BOULANGERE",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le voisin",
+          "intent": "LE_VOISIN",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "la maîtresse",
+          "intent": "LA_MAÎTRESSE",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la fromagerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la fromagerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la boulangère à la fromagerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la fromagerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la fromagerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Maëlys rejoint le voisin à la fromagerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Maëlys dit bonjour. S'il te plaît. Merci.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Maëlys reçoit quoi ? Le pain, une pomme, ou un fromage ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "le pain",
+          "intent": "LE_PAIN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "une pomme",
+          "intent": "UNE_POMME",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "un fromage",
+          "intent": "UN_FROMAGE",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la fromagerie. Elle a le pain. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la fromagerie. Elle a une pomme. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Maëlys rejoint la maîtresse à la fromagerie. Elle a un fromage. Bonjour, s'il te plaît, merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

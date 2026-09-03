@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-TMP.MOI.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Eliott entend les douze mois",
+  "lesson_id": "TMP.MOI.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.MOI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Eliott",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Eliott est à la cuisine. Maman accroche un calendrier. Maman dit : il y a douze mois. Janvier, février, mars. Avril, mai, juin. Juillet, août, septembre. Octobre, novembre, décembre. Eliott pose le doigt. Maman dit : mars. L'anniversaire d'Eliott est en mars. Eliott répète : douze mois. Un anniversaire a un mois.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Eliott a un mois sur le calendrier. Pourquoi ?",
+      "expected_intents": [
+        "MOIS"
+      ],
+      "accepted_examples": [
+        "mars",
+        "un mois",
+        "anniversaire",
+        "douze mois"
+      ],
+      "retry_prompt": "Il y a douze mois. Lequel est celui d'Eliott ?",
+      "positive_feedback": "Oui. Il y a douze mois. Un anniversaire a un mois.",
+      "wrong_feedback": "On entend les douze mois. Un anniversaire a un mois.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "TMP.MOI.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Eliott a entendu les douze mois. Son anniversaire est en mars.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le crayon. Eliott touche une étoile. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
