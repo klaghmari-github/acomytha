@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.MAI.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Ulysse demande à papa",
+  "lesson_id": "SEC.MAI.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Ulysse",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ulysse est dans la cuisine. Papa coupe des pommes. Un petit pot fermé est là. Ulysse ne le connaît pas. C'est de l'inconnu. Ulysse a envie de goûter. Il va vers papa. Il dit : papa, je peux. Avant de goûter l'inconnu, on demande. On demande à l'adulte. Papa prend le pot. Papa dit : c'est du miel. Tu peux goûter. Ulysse goûte une petite cuillère. C'est sucré. Papa dit : on demande à un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ulysse voit un pot inconnu. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "à papa",
+        "un adulte",
+        "il demande",
+        "à l'adulte"
+      ],
+      "retry_prompt": "Il va demander. Il parle à papa. Que fait Ulysse ?",
+      "positive_feedback": "Oui. Il demande à l'adulte avant de goûter l'inconnu.",
+      "wrong_feedback": "On demande à papa ou maman. On parle à un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ulysse a demandé. L'adulte a répondu. Le petit pot est du miel.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ulysse boit une gorgée d'eau. Papa range le pot. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

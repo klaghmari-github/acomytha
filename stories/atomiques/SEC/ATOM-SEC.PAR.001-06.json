@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.PAR.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Tania joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis square",
+  "characters": [
+    "Tania",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Tania arrive au parc avec maman. Maman montre un espace. C'est le bac à sable. Maman dit : tu joues ici. C'est l'espace montré. Ici, l'adulte voit. Tania verse le sable. Il est frais. Elle reste dans l'espace montré. Maman s'assoit sur le banc. L'adulte voit. Tania fait un gâteau. Maman dit : je te vois. Plus tard, elles vont au square. Maman montre un autre espace. C'est le tapis de marelle. Maman dit : tu joues ici. C'est l'espace montré. Tania se souvient. Elle saute dans les cases. Parce que maman la voit, Tania reste. Même leçon, autre lieu. L'adulte voit. Les pieds restent dans l'espace montré.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tania joue dehors. Où joue-t-elle ?",
+      "expected_intents": [
+        "ESPACE_MONTRE",
+        "ADULTE_VOIT"
+      ],
+      "accepted_examples": [
+        "espace montré",
+        "ici",
+        "le bac",
+        "où maman voit",
+        "l'espace"
+      ],
+      "retry_prompt": "Maman a montré un espace. L'adulte voit. Où joue Tania ?",
+      "positive_feedback": "Oui. Tania joue dans l'espace montré. L'adulte voit.",
+      "wrong_feedback": "On joue dans l'espace montré. L'adulte voit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Tania est dans l'espace montré. Maman la voit. Au parc, puis au square.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Tania range le seau. Maman lui tend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

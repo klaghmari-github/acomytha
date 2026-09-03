@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.GES.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "William souffle au jardin",
+  "lesson_id": "EMO.GES.002",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "William",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "William construit un château de terre au jardin. Le château s'effondre. William sent sa poitrine aller vite. Papa est là, près des pots. Papa dit : tu peux souffler. Tu peux faire une pause. William s'assoit sur la planche. Il souffle comme le vent. Une fois. Deux fois. Il fait une pause. Ses mains se posent sur ses genoux. Le jardin redevient calme. William reprend une poignée de terre. Il construit tout doucement. Papa reste près de lui. Souffler, puis une pause. Puis on reprend.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le corps de William va vite. Que fait-il ?",
+      "expected_intents": [
+        "SOUFFLER",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "pause",
+        "une pause",
+        "s'asseoir",
+        "respirer"
+      ],
+      "retry_prompt": "Papa dit de souffler. Que fait William ensuite ?",
+      "positive_feedback": "Oui. William souffle. Il fait une pause. Il s'assoit.",
+      "wrong_feedback": "On souffle. On s'assoit. On fait une pause. Puis on reprend.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "William a soufflé. Il a fait une pause. Son corps a ralenti.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "William pose une feuille sur le château. Papa sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

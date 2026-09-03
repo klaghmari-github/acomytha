@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.PAY.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "William nomme un pays",
+  "lesson_id": "SOC.PAY.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.PAY",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "William",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "William s'assoit près de maman. Maman ouvre un grand livre. Les pages sentent le papier. Maman dit : on va nommer un pays. William pose le doigt. Maman lit le nom : l'Italie. William répète : l'Italie. Sur la page, il y a de l'eau bleue. Maman dit : ça, c'est un paysage. C'est la mer. William dit : la mer. Un pays. Un nom. Un paysage. L'Italie, et la mer. Maman ferme le livre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "William nomme l'Italie. Il nomme aussi quoi ?",
+      "expected_intents": [
+        "PAYS",
+        "PAYSAGE"
+      ],
+      "accepted_examples": [
+        "la mer",
+        "un paysage",
+        "un pays",
+        "l'Italie"
+      ],
+      "retry_prompt": "Il y a de l'eau bleue. C'est quel paysage ?",
+      "positive_feedback": "Oui. Un pays, l'Italie. Un paysage, la mer.",
+      "wrong_feedback": "On nomme un pays et un paysage. La mer ou la montagne.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "William a dit le nom. L'Italie. Il a dit le paysage. La mer.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "William s'allonge près de maman. Il pense à l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

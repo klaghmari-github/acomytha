@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.007-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Violette est nerveuse",
+  "lesson_id": "EMO.LEX.007",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Violette",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Violette attend dans le salon. Des cousins vont arriver. Ses jambes bougent. Ses mains froissent le coussin. Violette dit : je suis nerveuse. Maman l'écoute. Maman dit : on peut demander une pause. Violette dit : je veux une pause. Elle s'assoit près de maman. Elle souffle. Les jambes se calment. Maman dit : nerveux, ce n'est pas vilain. Une pause, c'est bien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Violette n'arrive pas à tenir. Que fait-elle ?",
+      "expected_intents": [
+        "NERVEUX",
+        "PAUSE"
+      ],
+      "accepted_examples": [
+        "nerveuse",
+        "nerveux",
+        "pause",
+        "une pause",
+        "s'asseoir"
+      ],
+      "retry_prompt": "Elle est nerveuse. Que peut-elle demander ?",
+      "positive_feedback": "Oui. Elle dit : je suis nerveuse. Elle demande une pause.",
+      "wrong_feedback": "On dit : je suis nerveux. On demande une pause. On s'assoit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Violette a nommé : nerveuse. Elle a demandé une pause. Elle s'est assise.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Violette pose les mains. Maman reste près d'elle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
