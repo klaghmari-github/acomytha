@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-JEU.REG.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Léandre suit la règle des cubes",
+  "lesson_id": "JEU.REG.002",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Léandre",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léandre est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Léandre tend la main. Papa va rappeler la règle une fois. Il dit : on attend. C'est la règle. Léandre attend. Puis il pose un cube. Papa dit : tu as suivi la règle. Léandre répète : une règle. Papa la rappelle. Léandre la suit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léandre joue. Que suit-il ?",
+      "expected_intents": [
+        "REGLE"
+      ],
+      "accepted_examples": [
+        "la règle",
+        "une règle",
+        "attendre"
+      ],
+      "retry_prompt": "Papa rappelle. Quelle chose Léandre suit ?",
+      "positive_feedback": "Oui. Une règle. Papa la rappelle. Léandre attend puis pose.",
+      "wrong_feedback": "On suit une règle. L'adulte la rappelle. On attend, puis on joue.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "JEU.REG.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léandre a suivi la règle. Papa l'a rappelée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range les cubes. Léandre donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

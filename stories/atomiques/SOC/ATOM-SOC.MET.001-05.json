@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.MET.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Swann nomme les métiers du village",
+  "lesson_id": "SOC.MET.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "village",
+  "characters": [
+    "Swann",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Swann marche au village avec papa. Ils passent à la boulangerie. Papa dit : c'est un métier. Le boulanger. Le geste utile : le pain. Ils passent près de l'école. Papa dit : la maîtresse. Un métier. Le geste utile : raconter une histoire. Un médecin passe. Papa dit : le médecin. Un métier. Le geste utile : soigner tout doux. Swann répète : métier. Geste utile.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Swann voit le boulanger. C'est quoi ?",
+      "expected_intents": [
+        "METIER"
+      ],
+      "accepted_examples": [
+        "un métier",
+        "boulanger",
+        "maîtresse",
+        "médecin"
+      ],
+      "retry_prompt": "Cette personne a un geste utile. Quel mot ?",
+      "positive_feedback": "Oui. Un métier. Un geste utile.",
+      "wrong_feedback": "On nomme le métier. On dit le geste utile.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.MET.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Swann a nommé le métier. Il a dit le geste utile.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa achète du pain. Swann dit merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

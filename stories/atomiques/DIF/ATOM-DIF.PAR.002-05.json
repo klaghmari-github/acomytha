@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-DIF.PAR.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Héloïse laisse le temps à Clément",
+  "lesson_id": "DIF.PAR.002",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Héloïse",
+    "Clément",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Héloïse est à la cuisine avec maman. Clément veut raconter. Il dit : j'ai fait... Puis il cherche le mot. Héloïse connaît le mot. Elle ouvre la bouche. Maman dit : on peut laisser le temps. On n'achève pas à sa place. Héloïse attend la fin de la phrase. Clément dit : j'ai fait un bateau. Héloïse sourit. Elle a su laisser le temps.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Clément cherche un mot. Que fait Héloïse ?",
+      "expected_intents": [
+        "ATTENDRE_PHRASE"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "laisser le temps",
+        "la phrase"
+      ],
+      "retry_prompt": "On n'achève pas à sa place. Que fait Héloïse ?",
+      "positive_feedback": "Oui. Elle laisse le temps. Elle attend la fin de la phrase.",
+      "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.PAR.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Héloïse a su laisser le temps. Clément a fini sa phrase.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman pose deux bols. Ils s'assoient. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

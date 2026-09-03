@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SOC.PAY.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Olympe nomme l'Italie et la montagne",
+  "lesson_id": "SOC.PAY.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.PAY",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Olympe",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Olympe s'assoit près de maman. Elles ouvrent une boîte de cartes. Maman dit : on nomme un pays. Olympe lit le nom : l'Italie. Elle répète : l'Italie. Sur la carte, des sommets. Maman dit : ça, c'est un paysage. C'est la montagne. Olympe dit : la montagne. Autre carte : de l'eau bleue. Un paysage. La mer. Un pays. Un nom. Un paysage.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Olympe nomme l'Italie. Elle nomme aussi quoi ?",
+      "expected_intents": [
+        "PAYS",
+        "PAYSAGE"
+      ],
+      "accepted_examples": [
+        "la montagne",
+        "un paysage",
+        "un pays",
+        "l'Italie"
+      ],
+      "retry_prompt": "Il y a des sommets. C'est quel paysage ?",
+      "positive_feedback": "Oui. Un pays, l'Italie. Un paysage, la montagne.",
+      "wrong_feedback": "On nomme un pays et un paysage. La mer ou la montagne.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SOC.PAY.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Olympe a dit le nom. L'Italie. Elle a dit le paysage. La montagne. La mer aussi.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Olympe range les cartes. Maman ferme la boîte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

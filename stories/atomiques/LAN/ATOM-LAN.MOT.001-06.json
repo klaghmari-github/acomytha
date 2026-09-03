@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-LAN.MOT.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gabin classe au salon",
+  "lesson_id": "LAN.MOT.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.MOT",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Gabin",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gabin est dans le salon avec papa. Sur le tapis : une pomme, une banane, une chaussette, un bonnet. Papa dit : on nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les habits. Gabin met la pomme et la banane dans le panier. Catégorie des fruits. Il met la chaussette et le bonnet sur la chaise. Catégorie des habits.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gabin range pomme et chaussette. Que fait-il ?",
+      "expected_intents": [
+        "CLASSER"
+      ],
+      "accepted_examples": [
+        "classer",
+        "catégorie",
+        "ensemble"
+      ],
+      "retry_prompt": "Les fruits vont ensemble. Que fait Gabin ?",
+      "positive_feedback": "Oui. Il classe. C'est une catégorie.",
+      "wrong_feedback": "On nomme. On classe. C'est une catégorie.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "LAN.MOT.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gabin a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gabin croque la pomme. Papa plie le bonnet. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

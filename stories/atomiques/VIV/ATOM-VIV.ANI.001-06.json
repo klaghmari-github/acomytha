@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-VIV.ANI.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Armand nomme les cris de la basse-cour",
+  "lesson_id": "VIV.ANI.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "ferme",
+  "characters": [
+    "Armand",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Armand marche à la ferme avec maman. Un chien. Armand dit le nom : le chien. Le cri : ouah. Une vache. Le nom : la vache. Le cri : meuh. Un coq. Le nom : le coq. Le cri : cocorico. Maman dit : on nomme l'animal. On nomme le cri. Armand répète : chien, ouah. Vache, meuh. Coq, cocorico.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Armand entend un bruit. C'est quoi ?",
+      "expected_intents": [
+        "CRI",
+        "ANIMAL"
+      ],
+      "accepted_examples": [
+        "le cri",
+        "le chien",
+        "meuh",
+        "le coq"
+      ],
+      "retry_prompt": "On nomme l'animal et le cri. C'est quoi ?",
+      "positive_feedback": "Oui. Le nom de l'animal. Le cri.",
+      "wrong_feedback": "On dit le nom de l'animal. On dit le cri.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "VIV.ANI.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Armand a dit le nom de l'animal. Il a dit le cri.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le seau. Armand salue le chien. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

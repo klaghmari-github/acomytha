@@ -6,10 +6,10 @@ Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
 | Kind | Fichiers | Leçons couvertes | Graphe |
 | --- | --- | --- | --- |
-| Atomique | 376 | 85 / 85 | 1 chemin, `question_lesson` |
-| Ramifiée | 410 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
+| Atomique | 436 | 85 / 85 | 1 chemin, `question_lesson` |
+| Ramifiée | 474 | 85 / 85 | 3 niveaux × 3 options = 27 feuilles |
 
-Total **786** histoires. Validateur déterministe : `python3 stories/outils/validate.py` → **786 APPROVED_TEXT**, 0 REJECTED, 0 REVISION.
+Total **910** histoires. Validateur déterministe : `python3 stories/outils/validate.py` → **910 APPROVED_TEXT**, 0 REJECTED, 0 REVISION.
 
 Le générateur **n’auto-approuve pas** un paquet audio. Statut maximal ici : `APPROVED_TEXT`. TTS/ASR et revue humaine restent en aval (VAL-AUD, HUM).
 
