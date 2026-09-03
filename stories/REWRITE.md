@@ -33,6 +33,7 @@ La fusion n’est **pas** « le texte le plus long gagne ». C’est une **fusio
 | `P0000` = début + action, s’arrête avant la leçon | Dump goût + leçon + bilan dès le premier chunk |
 | Question simple (1–3 mots de réponse) | Question qui recopie le slogan |
 | Fin = ce qu’on a **vécu**, puis « L’histoire est finie. » | « L’histoire est finie. » seul, ou consigne de cours |
+| Papa/maman parlent (bravo, question, discussion, adaptés à la scène) | « Papa sourit. » « Maman est là. » à la place de leur voix |
 
 N1 : ~8 mots par phrase. N2 : < 16. Leçon **greffée**, jamais collée en recap.
 

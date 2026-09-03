@@ -55,6 +55,8 @@ Passe 1 (Heavy) : générer les plans pour le pilote, pas coller `[pause]` dans 
 
 Le narrateur **raconte et décrit**. Les personnages **parlent**. On n’annonce plus « maman dit / papa dit » : le timbre suffit.
 
+Papa et maman ont des **répliques** (D20) : féliciter, discuter, demander, selon la scène. Interdit de les remplacer par un sourire ou « est là ». Après une bêtise : conduite à suivre, pas le geste interdit.
+
 | Rôle | Timbre Piper (0 €) | Trait |
 | --- | --- | --- |
 | narrateur | `fr_FR-tom-medium` | adulte masculin, pose |

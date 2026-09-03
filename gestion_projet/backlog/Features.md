@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.3 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.4 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -89,7 +89,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-AUD-005 | Audio | Bake Piper → MP3 64k, 0 €, plans via Heavy | P0 | 1 | STRAT-002 | F-AUD-001, F-GEN-001 |
 | F-AUD-006 | Audio | Cast multi-voix (narrateur / famille / école / enfants) | P0 | 1 | STRAT-002 §4 | F-AUD-005 |
 | F-AUD-007 | Audio | Immersion sonore de **tout** le récit (monde entendu, pas une liste de cas) | P0 | 1 | STRAT-002 §4b | F-AUD-006 |
-| F-NAR-008 | Moteur | Fil rouge, ≥ 3 min, plusieurs passages/leçons, troupe fermée | P0 | 1 | stories/REWRITE.md | F-GEN-001, F-AUD-006, F-AUD-007 |
+| F-NAR-008 | Moteur | Fil rouge, ≥ 3 min, plusieurs passages/leçons, troupe fermée, adultes parlent | P0 | 1 | stories/REWRITE.md | F-GEN-001, F-AUD-006, F-AUD-007 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -118,6 +118,8 @@ Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histo
 **Troupe enfant (D16) :** Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Les réécritures suivantes remplacent Lina / Noé / Tom par cette liste. Peu de personnages par histoire.
 
 **Durée (D17) :** ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande.
+
+**Adultes parlent (D20) :** papa et maman ont des répliques (félicitations, questions, discussion) adaptées à la scène. Interdit : « papa sourit », « maman est là » à la place de leur voix. Bêtise : discuter / demander la conduite, POS-001.
 
 - `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
 - `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
@@ -148,6 +150,8 @@ S’applique à **tout le corpus**. Positif only. Nuit = plus bas, skip ce qui r
 ### F-AUD-006 — Voix de rôles
 
 Le narrateur décrit la scène. Maman, papa, maîtresse, grands-parents, héros et copain/copine ont **des timbres distincts**. Interdit dans l’audio enfant : « maman dit », « papa dit ». Colonne `script` dans les xlsx. Outil : `stories/outils/voice_cast.py`. Bake : `xlsx_to_audio.py`.
+
+**D20 :** l’adulte **parle**. Féliciter le bon geste, discuter, poser une question de la scène. Ne pas remplir avec « papa sourit » / « maman est là ». Après une bêtise : dire quoi faire, sans décrire le geste interdit.
 
 ### F-AUD-005 — Synthèse sans API payante
 

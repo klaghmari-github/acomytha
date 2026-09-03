@@ -186,7 +186,8 @@ def build_tree(
     audio(
         "root",
         f"Aujourd'hui, {the} est avec {adult}, {setting}. "
-        f"{the} a envie de jouer. {adult} est là, tout près. "
+        f"{the} a envie de jouer. "
+        f"{adult} dit : Je suis là, tout près. On joue ensemble. "
         f"On va apprendre : {title}. {safe} "
         f"{the} écoute {adult}. {the} entend les mots : {req}.",
         "ch1",
@@ -205,10 +206,11 @@ def build_tree(
         beat = BEATS[(index + i) % len(BEATS)]
         audio(
             f"br{L}",
-            f"{the} va vers {c1[i]}. {sens} {adult} sourit. "
+            f"{the} va vers {c1[i]}. {sens} "
+            f"{adult} dit : Bravo. Tu es arrivé. Tu as fait du bon travail. "
             f"Ici, c'est {c1[i]}. Ce n'est pas comme les autres endroits. "
             f"{the} se souvient : {req}. {safe} "
-            f"{beat} {adult} dit : je suis là. On reste ensemble.",
+            f"{beat} {adult} dit : Je suis là. On reste ensemble.",
             f"q{L}",
         )
         qn(f"q{L}", f"fb{L}")
@@ -232,7 +234,8 @@ def build_tree(
                 f"br{nid}",
                 f"{the} a choisi {c2[j]}. {sens2} "
                 f"{c2[j][0].upper() + c2[j][1:]} reste à sa place, près de {adult}. "
-                f"{adult} montre le geste, lentement. {safe} "
+                f"{adult} dit : Tu as fini ? On le fait ensemble. "
+                f"{safe} "
                 f"{the} répète tout bas : {req}. {beat2} "
                 f"{other} n'est pas loin.",
                 f"ch3{nid}",

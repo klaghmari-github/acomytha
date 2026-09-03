@@ -27,6 +27,7 @@ Public : enfants 3–6 ans (N1 = 3–4, N2 = 4–5, N3 = 5–6). Audio seulement
 19. **Respecter un adulte** n’efface pas le droit de dire non, de s’éloigner et de tout raconter à papa ou maman.
 20. **Le générateur ne s’auto-approuve pas** (VAL-001). Statut initial : `PENDING`.
 21. **Troupe enfant fermée.** Les enfants nommés sont seulement : **Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina**. Pas d’autre prénom d’enfant. Dans **une** histoire : un seul héros, au plus **un** autre enfant de la liste, plus papa et/ou maman. Pas de foule : l’enfant se perd.
+22. **Adultes parlent** (D20). Papa et maman ont des répliques, adaptées à la scène. Interdit de remplacer leur voix par un remplissage (« papa sourit », « maman est là »). Bon geste : féliciter (« Bravo, tu as fait du bon travail. »). Bêtise : discuter, demander la conduite (« Tu as fini de ranger tes jouets ? »), sans décrire le geste interdit, sans humilier (POS-001).
 
 ## Troupe (enfants)
 
@@ -76,3 +77,5 @@ Types de nœuds : `audio`, `question_comprehension`, `question_lesson`, `choice_
 ## Ton
 
 Vivant, concret, sensoriel (bruits, goûts, textures) sans spectacle du danger. Répéter les mots-clés de la leçon. Nommer papa ou maman, pas « un parent ».
+
+Papa et maman **parlent**. Le narrateur décrit le décor et les gestes ; il ne mime pas l’adulte par un sourire ou une présence muette. L’adulte félicite, discute, pose une question **de la scène** (pas un slogan collé). Les exemples (« Bravo », « Tu as fini de ranger tes jouets ? ») s’adaptent : repas, jeu, rangement, attente… jamais une phrase unique recopiée.

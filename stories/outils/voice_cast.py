@@ -1,6 +1,7 @@
 """F-AUD-006 — scripts multi-voix et roster de rôles.
 
 Le narrateur décrit. Les personnages parlent sans « maman dit ».
+Papa et maman ont des répliques (bravo, questions, discussion), pas un sourire du narrateur.
 """
 
 from __future__ import annotations

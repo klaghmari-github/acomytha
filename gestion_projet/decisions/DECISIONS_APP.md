@@ -23,3 +23,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D17 | Durée | Histoire ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande. |
 | D18 | PIN | 4 chiffres, modifiable par le parent. Même code pour entrer en mode enfant et en sortir. |
 | D19 | Libellés | Interaction = questions. Ramifications = lance d’autres histoires (liens + pop-up vitrine). |
+| D20 | Adultes parlent | Papa et maman ont des répliques adaptées à la scène (félicitations, questions, discussion). Interdit de remplacer leur voix par « papa sourit » / « maman est là ». Après une bêtise : dire quoi faire, demander, sans décrire le geste interdit (POS-001). |
