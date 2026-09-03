@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SEC.MAI.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Loïc appelle pour la lampe",
+  "lesson_id": "SEC.MAI.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Loïc",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Loïc joue dans sa chambre. Son train en bois est par terre. Maman plie le linge près de la porte. Loïc veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Loïc appelle maman. Il dit : maman, la lumière. Maman vient. Maman allume la lampe. La pièce devient claire. Papa entre. Papa dit : on appelle papa ou maman pour la lumière. On va appeler un adulte. Les prises sont pour les adultes. Les mains restent avec les jouets. Loïc reprend un wagon rouge. Il fait un petit chemin. Parce qu'il a appelé, la lumière est là. Les mains tiennent les jouets. Parce que les mains restent avec les jouets, Loïc peut jouer. Loïc est content.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Loïc veut la lumière. Que fait-il ?",
+      "expected_intents": [
+        "APPELER_ADULTE",
+        "MAINS_JOUETS"
+      ],
+      "accepted_examples": [
+        "appeler maman",
+        "appeler",
+        "mains jouets",
+        "les jouets",
+        "papa maman"
+      ],
+      "retry_prompt": "Il appelle. Les mains restent avec les jouets. Que fait Loïc ?",
+      "positive_feedback": "Oui. Il appelle papa ou maman. Les mains restent avec les jouets.",
+      "wrong_feedback": "On appelle papa ou maman pour la lumière. Les mains restent avec les jouets.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Loïc a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Loïc pose un wagon sur le chemin. La lampe reste allumée. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

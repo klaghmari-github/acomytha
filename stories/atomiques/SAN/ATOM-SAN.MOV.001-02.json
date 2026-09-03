@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.MOV.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Théo joue dehors au jardin",
+  "lesson_id": "SAN.MOV.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.MOV",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Théo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Théo a dessiné dans le salon. Ses jambes ont encore envie de bouger. Maman dit : on va dehors. Ils mettent les chaussures près de la porte. Ils prennent le cerceau bleu. Ils vont au jardin avec maman. Dehors, l'herbe est fraîche. Un oiseau chante. Théo court jusqu'au pommier. Maman reste près de lui. C'est un adulte. Théo lance le cerceau. Maman le renvoie. Parce qu'il joue dehors, son corps est content. Théo dit : je joue dehors, avec un adulte. Maman sourit. Ils jouent un moment. Théo sent ses joues chaudes. Puis ils rentrent ensemble. Parce que maman était là, Théo a pu bouger. Théo a joué dehors. Un adulte était avec lui.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Théo veut bouger. Où joue-t-il ?",
+      "expected_intents": [
+        "DEHORS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "dehors",
+        "au jardin",
+        "avec maman",
+        "avec un adulte",
+        "dehors avec maman"
+      ],
+      "retry_prompt": "Il va au jardin avec maman. Où joue Théo ?",
+      "positive_feedback": "Oui. Théo joue dehors, avec un adulte. Maman est avec lui.",
+      "wrong_feedback": "On joue dehors un moment, avec un adulte. On y va avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Théo a joué dehors. Maman, un adulte, était avec lui. Le corps a bougé. C'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Théo boit de l'eau. Il range le cerceau. Merci, dit-il à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

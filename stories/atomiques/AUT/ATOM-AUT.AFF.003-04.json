@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.AFF.003-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Théo reprend ses affaires au square",
+  "lesson_id": "AUT.AFF.003",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square",
+  "characters": [
+    "Théo",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Théo joue au square, près de papa. Le sable est frais. Théo a un seau jaune. Il a un manteau bleu. Il a son doudou gris. Théo verse le sable. Ça fait chh. Papa dit : c'est l'heure. On va reprendre ses affaires avant de partir. Théo cherche le seau. Il le prend. Théo cherche le manteau. Il le prend. Théo cherche le doudou. Il le prend. Ses affaires sont dans ses mains. Parce qu'il reprend ses affaires, ils peuvent partir. Papa dit : merci Théo. Tu as repris tes affaires avant de partir. Ils marchent vers la maison. Parce que le seau, le manteau et le doudou sont là, Théo est prêt. Papa tient le sac. Théo tient le doudou.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de partir, que fait Théo ?",
+      "expected_intents": [
+        "REPRENDRE",
+        "AVANT_DE_PARTIR"
+      ],
+      "accepted_examples": [
+        "reprendre",
+        "ses affaires",
+        "avant de partir",
+        "le seau",
+        "le manteau"
+      ],
+      "retry_prompt": "Il reprend le seau, le manteau, le doudou. Que fait Théo ?",
+      "positive_feedback": "Oui. Théo reprend ses affaires avant de partir.",
+      "wrong_feedback": "On reprend ses affaires avant de partir. On cherche seau, manteau, doudou.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Théo a repris ses affaires. C'était avant de partir. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Théo pose le seau près de la porte. Merci, dit papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

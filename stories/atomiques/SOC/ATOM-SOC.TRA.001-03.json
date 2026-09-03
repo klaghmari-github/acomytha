@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SOC.TRA.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "L'avion d'Inaya",
+  "lesson_id": "SOC.TRA.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "aéroport",
+  "characters": [
+    "Inaya",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Papa et Inaya vont à l'aéroport. Inaya tient la main de papa. Ils restent avec un adulte. Papa, c'est l'adulte. Un avion roule. L'avion fait un grand souffle. Le sol vibre un peu. Papa dit : c'est un avion. C'est le nom du véhicule. Inaya répète : un avion. Ils regardent par la grande vitre. L'avion s'envole. Inaya entend le bruit. Plus tard, ils prennent le train de la ville. Le train fait tchou tchou. Papa dit : c'est un train. C'est un autre nom de véhicule. Inaya dit : un train. Elle reste avec papa. Sur le quai, une affiche montre l'eau. Un bateau glisse. Papa dit : c'est un bateau. Inaya dit : un bateau. Train, avion, bateau. Inaya nomme. Parce qu'elle est avec un adulte, elle voyage. Parce qu'elle a le nom du véhicule, elle peut le dire.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Inaya nomme un véhicule. Lequel ?",
+      "expected_intents": [
+        "TRAIN",
+        "AVION",
+        "BATEAU"
+      ],
+      "accepted_examples": [
+        "avion",
+        "train",
+        "bateau",
+        "un avion",
+        "le train"
+      ],
+      "retry_prompt": "Elle dit le nom du véhicule. Avion, train ou bateau ?",
+      "positive_feedback": "Oui. Inaya nomme l'avion, le train ou le bateau. Elle est avec un adulte.",
+      "wrong_feedback": "On nomme le véhicule. On voyage avec un adulte. Train, avion, bateau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Inaya a dit le nom du véhicule. Elle est restée avec un adulte. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Inaya s'assoit près de papa. Le train roule doucement. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

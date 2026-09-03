@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-LAN.NOM.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gabin compte les oranges",
+  "lesson_id": "LAN.NOM.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.NOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Gabin",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gabin et maman sont au marché. Il y a un panier. Dedans, des oranges. Maman dit : on va compter des objets. Gabin touche une orange. Une. Il en touche une autre. Deux. Encore une. Trois. Encore une. Quatre. Encore une. Cinq. Gabin dit : cinq oranges. Maman sourit. Elle en pose encore. Six. Sept. Huit. Neuf. Dix. Gabin répète : dix. Il a compté des objets. Les oranges sentent le jus. Parce qu'il compte, Gabin sait le nombre. Maman dit le nombre. Dix. Gabin pose les oranges. Une. Deux. Trois. Quatre. Cinq. Six. Sept. Huit. Neuf. Dix. Les objets sont là. Gabin les compte. Parce que les objets sont dans le panier, on peut les toucher.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gabin compte les oranges. Combien y en a-t-il ?",
+      "expected_intents": [
+        "NOMBRE"
+      ],
+      "accepted_examples": [
+        "dix",
+        "cinq",
+        "dix oranges",
+        "le nombre",
+        "compter"
+      ],
+      "retry_prompt": "Il compte des objets. Quel nombre dit Gabin ?",
+      "positive_feedback": "Oui. Gabin compte des objets. Il dit le nombre.",
+      "wrong_feedback": "On compte des objets. On dit le nombre. Une, deux, trois, quatre, cinq.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gabin a compté des objets. Il a dit le nombre. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gabin pose le panier. Maman dit merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

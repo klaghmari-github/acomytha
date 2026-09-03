@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.006-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Rayan est inquiet dans le salon",
+  "lesson_id": "EMO.LEX.006",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Rayan",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Dehors, un camion passe. Le bruit est fort. Les vitres vibrent un peu. Rayan est dans le salon. Il entend le vrombissement. Son ventre se serre. Ses mains deviennent chaudes. Parce que le bruit est fort, Rayan se sent petit. Rayan dit : je suis inquiet. Il va vers maman. Maman est l'adulte près du canapé. Rayan dit : j'ai le ventre serré. Maman dit : tu peux raconter. Rayan raconte le bruit du camion. Maman écoute. Papa arrive aussi. Ils restent tous les trois. Rayan souffle. Son ventre se desserre un peu. Parce qu'il a raconté, il se sent moins seul. Être inquiet, on peut le dire. On va vers un adulte. On peut raconter. Maman lui tient la main. Le salon redevient calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Rayan a le ventre serré. Que fait-il ?",
+      "expected_intents": [
+        "INQUIET",
+        "RACONTER"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "inquiet",
+        "vers maman",
+        "adulte",
+        "je suis inquiet"
+      ],
+      "retry_prompt": "Rayan va vers un adulte. Que peut-il faire ?",
+      "positive_feedback": "Oui. Rayan dit : inquiet. Il va vers maman. Il raconte.",
+      "wrong_feedback": "On dit : je suis inquiet. On va vers un adulte. On raconte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Rayan a nommé : inquiet. Il a rejoint un adulte. Il a pu raconter.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le camion s'éloigne. Rayan reste près de maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

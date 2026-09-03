@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.ALI.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "La petite courgette de Mila",
+  "lesson_id": "SAN.ALI.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Mila",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Mila rentre du jardin avec papa. Dans le panier, il y a des courgettes vertes. Papa les lave. L'eau est froide. Papa coupe une petite courgette. Mila s'assoit à table. La chaise est stable. Papa dit : tu peux goûter. Une petite portion, c'est assez. Mila prend une petite bouchée. Elle mâche. C'est doux. C'est un peu fondant. Parce qu'elle a goûté, elle peut nommer le goût. Mila dit à papa : c'est doux. Papa sourit. Merci d'avoir goûté, dit papa. La petite portion reste dans l'assiette. Mila n'a pas besoin de tout finir. Elle boit une gorgée d'eau. L'eau est fraîche. Papa range le reste. Parce qu'elle a nommé le goût, papa est content. Mila a goûté. Une petite portion, c'est déjà bien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Mila goûte la courgette. Que fait-elle ?",
+      "expected_intents": [
+        "GOUTER",
+        "PETITE_BOUCHEE"
+      ],
+      "accepted_examples": [
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "elle goûte",
+        "petite portion"
+      ],
+      "retry_prompt": "Elle prend une petite bouchée. Que fait Mila ?",
+      "positive_feedback": "Oui. Elle goûte une petite bouchée, et elle dit le goût à papa.",
+      "wrong_feedback": "On goûte une petite bouchée, et on dit le goût à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Mila a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Mila range sa chaise. La courgette reste à sa place. Merci, dit Mila. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

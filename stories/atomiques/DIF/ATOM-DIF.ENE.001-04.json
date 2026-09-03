@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-DIF.ENE.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Rayan a de l'énergie au square",
+  "lesson_id": "DIF.ENE.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.ENE",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square",
+  "characters": [
+    "Mila",
+    "Rayan",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Maman laisse Mila au square. Les chaussures tapent le sol. Rayan arrive en sautant. Il a beaucoup d'énergie. Il tourne, il s'arrête, il recommence. Mila le regarde. Maman est encore près du banc. Elle dit : beaucoup d'énergie, ce n'est pas une faute. On peut jouer. On peut attendre. On peut demander à un adulte. Mila hoche la tête. Un cerceau est là. Rayan prend le cerceau. Il le fait tourner. Mila veut le même jeu. Elle dit : à tour de rôle. Rayan pose le cerceau. Il attend son tour. Puis Mila tourne le cerceau. Rayan saute sur place, un peu. L'énergie est encore là. Ce n'est pas une faute. Mila dit : maintenant c'est toi. Rayan joue. Après, ils font une file pour les balles. Rayan a envie d'aller vite. Mila dit : on peut attendre. Rayan souffle. Il reste dans la file. Parce qu'ils attendent, chacun a une balle. Ils jouent. Plus tard, Rayan a encore trop d'énergie pour le banc. Mila va vers maman. Elle demande à un adulte. Maman dit : Rayan, viens marcher avec moi jusqu'au bac. Rayan marche. Il pose les mains sur le bac. L'eau est froide. Il se calme un peu. Mila l'attend. Puis ils versent l'eau ensemble. Maman dit : ce n'est pas une faute. Vous avez pu jouer ou attendre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Rayan a de l'énergie. Que peut-on faire ?",
+      "expected_intents": [
+        "JOUER",
+        "ATTENDRE",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "jouer",
+        "attendre",
+        "un adulte",
+        "jouer ou attendre",
+        "demander"
+      ],
+      "retry_prompt": "On peut jouer. On peut attendre. Que peut-on faire ?",
+      "positive_feedback": "Oui. On peut jouer ou attendre. On peut demander à un adulte.",
+      "wrong_feedback": "Beaucoup d'énergie n'est pas une faute. On joue, on attend, on demande à un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Rayan a de l'énergie. Ce n'est pas une faute. Mila a pu jouer ou attendre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Mila et Rayan rangent le cerceau. Maman les attend. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
