@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.008-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Georges est gêné, puis il répare",
+  "lesson_id": "EMO.LEX.008",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine et salon",
+  "characters": [
+    "Georges",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Georges verse l'eau. Le verre penche. L'eau mouille la table. Georges sent ses joues chaudes. Il dit : je suis gêné. Papa dit : c'est une erreur. Une erreur, ce n'est pas toi. Georges dit : j'ai versé. Il prend un chiffon. Il répare. La table redevient sèche. Plus tard, au salon, Georges bouscule un puzzle. Une pièce tombe. Il est gêné. Il dit l'erreur. Il pose la pièce. Il répare. Maman sourit. Même leçon, autre pièce. On dit. On répare.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Georges a les joues chaudes. Que fait-il ?",
+      "expected_intents": [
+        "GENE",
+        "REPARER"
+      ],
+      "accepted_examples": [
+        "gêné",
+        "je suis gêné",
+        "réparer",
+        "il répare",
+        "une erreur"
+      ],
+      "retry_prompt": "Il dit qu'il est gêné. Puis il répare. Que fait Georges ?",
+      "positive_feedback": "Oui. Georges dit : je suis gêné. C'est une erreur. Il répare.",
+      "wrong_feedback": "On dit qu'on est gêné. Une erreur, on la dit. On répare.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Georges était gêné. Il a dit l'erreur. Il a réparé. Papa et maman ont écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Georges plie le chiffon. Le puzzle est de nouveau entier. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

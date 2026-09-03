@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-DIF.ENE.001-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Amélie joue avec l'énergie de Loïc",
+  "lesson_id": "DIF.ENE.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.ENE",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour",
+  "characters": [
+    "Amélie",
+    "Loïc",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Amélie est dans la cour. Loïc saute beaucoup. Loïc a de l'énergie. Maman est près du portail. Maman dit : ce n'est pas une faute. Beaucoup d'énergie, ce n'est pas une faute. On peut jouer. On peut attendre. Amélie joue avec Loïc. Loïc attend son tour. Ils tapent le ballon. Le ballon est doux. Amélie dit : on joue ou on attend. On peut demander à un adulte. Maman sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Loïc a de l'énergie. Que peut faire Amélie ?",
+      "expected_intents": [
+        "JOUER",
+        "ATTENDRE",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "jouer",
+        "attendre",
+        "maman",
+        "un adulte"
+      ],
+      "retry_prompt": "On peut jouer. On peut attendre. Que fait Amélie ?",
+      "positive_feedback": "Oui. On peut jouer. On peut attendre. Ce n'est pas une faute.",
+      "wrong_feedback": "Beaucoup d'énergie, ce n'est pas une faute. On joue. On attend. On demande à un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Loïc a de l'énergie. Ce n'est pas une faute. Amélie a joué. Elle a su attendre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman prend la main d'Amélie. Loïc range le ballon. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

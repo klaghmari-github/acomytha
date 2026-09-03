@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-SAN.HYG.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Amélie se brosse matin et soir",
+  "lesson_id": "SAN.HYG.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salle de bain",
+  "characters": [
+    "Amélie",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, Amélie entre dans la salle de bain. L'eau coule, tiède. Maman, l'adulte, tend la brosse. Amélie prend la brosse. Elle brosse en haut. Elle brosse en bas. La menthe pique un peu. Parce que c'est le matin, on se brosse avec un adulte. Le soir, Amélie revient. Papa est l'adulte. Amélie prend encore la brosse. Ils brossent ensemble. Même leçon, autre moment. Matin et soir, avec un adulte. Amélie range la brosse. Les dents sont propres.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Amélie se brosse les dents. Avec quoi, et quand ?",
+      "expected_intents": [
+        "BROSSE",
+        "MATIN_SOIR"
+      ],
+      "accepted_examples": [
+        "brosse",
+        "la brosse",
+        "matin et soir",
+        "matin",
+        "soir",
+        "avec maman"
+      ],
+      "retry_prompt": "Elle prend la brosse. Matin et soir. Que fait Amélie ?",
+      "positive_feedback": "Oui. Amélie prend la brosse. Matin et soir, avec un adulte.",
+      "wrong_feedback": "On prend la brosse. On se brosse matin et soir, avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Amélie a pris la brosse. Elle brosse avec l'adulte. Matin et soir. Maman le matin. Papa le soir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Amélie se rince la bouche. Elle dit merci à papa. Les dents brillent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

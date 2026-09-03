@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SEC.MAI.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Damien demande avant l'inconnu",
+  "lesson_id": "SEC.MAI.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "cuisine et jardin",
+  "characters": [
+    "Damien",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Damien aide papa dans la cuisine. Papa range le pain. Sur la table, il y a un petit pot. Damien ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Damien va vers papa. Papa, c'est l'adulte. Damien dit : je demande. Papa prend le pot. Papa dit : merci d'avoir demandé. L'inconnu, on le montre à un adulte. Plus tard, au jardin, Damien voit une baie. Il ne la connaît pas. C'est inconnu. Il demande à l'adulte. Papa vient. Damien a les pieds au sol, près de papa.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Damien voit quelque chose d'inconnu. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "je demande",
+        "papa",
+        "un adulte",
+        "l'adulte"
+      ],
+      "retry_prompt": "Il va vers papa. Que dit Damien ?",
+      "positive_feedback": "Oui. Damien demande à l'adulte. Papa est là.",
+      "wrong_feedback": "Devant l'inconnu, on demande à papa ou maman. L'adulte décide.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Damien a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Damien pose une serviette. Papa sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

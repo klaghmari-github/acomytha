@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-TMP.MET.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Céline prend manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée",
+  "characters": [
+    "Céline",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Céline ouvre la porte. L'air est froid. Maman dit : froid, manteau. Céline prend le manteau. Le tissu est chaud. Plus tard, il pleut. Les gouttes tapent. Papa dit : pluie, bottes. Céline met les bottes. Les bottes sont en caoutchouc. Même leçon, autre temps. Froid, manteau. Pluie, bottes. Céline donne la main. Ils sortent. Le manteau sent la laine.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Il fait froid, puis il pleut. Que prend Céline ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "le manteau",
+        "bottes",
+        "les bottes"
+      ],
+      "retry_prompt": "Froid, manteau. Pluie, bottes. Que prend-elle ?",
+      "positive_feedback": "Oui. Froid, manteau. Pluie, bottes.",
+      "wrong_feedback": "Quand il fait froid, on prend le manteau. Quand il pleut, on met les bottes.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Céline a pris le manteau parce qu'il faisait froid. Elle a mis les bottes parce qu'il pleuvait.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Céline marche dans une flaque. Papa tient sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

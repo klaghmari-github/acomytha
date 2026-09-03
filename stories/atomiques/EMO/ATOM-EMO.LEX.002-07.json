@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Céline est triste et demande un câlin",
+  "lesson_id": "EMO.LEX.002",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Céline",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Céline cherche son doudou. Le doudou n'est pas sous le lit. Céline a la gorge serrée. Ses yeux sont chauds. Une larme tombe. Céline dit : je suis triste. Maman arrive près d'elle. Maman dit : pleurer est permis. Céline pleure un peu. Les larmes coulent. Céline dit : je veux un câlin. Maman ouvre les bras. Le câlin est chaud. Papa dit : triste, c'est permis. On peut demander un câlin.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Céline a les yeux chauds. Que dit-elle ?",
+      "expected_intents": [
+        "TRISTE",
+        "CALIN"
+      ],
+      "accepted_examples": [
+        "triste",
+        "je suis triste",
+        "câlin",
+        "un câlin"
+      ],
+      "retry_prompt": "Céline peut demander un câlin. Que dit-elle ?",
+      "positive_feedback": "Oui. Céline dit : je suis triste. Elle demande un câlin.",
+      "wrong_feedback": "On dit : je suis triste. Pleurer est permis. On demande un câlin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Céline a nommé : triste. Pleurer est permis. Un câlin de maman aide.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa retrouve le doudou. Céline le serre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

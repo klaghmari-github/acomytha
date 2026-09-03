@@ -1,0 +1,77 @@
+{
+  "tree_id": "ATOM-REL.MOQ.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hélène rejoint Nina à l'écart",
+  "lesson_id": "REL.MOQ.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.MOQ",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour d'école",
+  "characters": [
+    "Hélène",
+    "Nina",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hélène joue dans la cour. Maman est près du portail. Nina est à l'écart. Elle tient un cerceau. Hélène va la rejoindre. Hélène dit : tu veux jouer ? Elle invite. Nina hoche la tête. Elles font rouler le cerceau. Le cerceau est lisse. Un peu plus tard, Nina reste à l'écart. Hélène la rejoint. Elle l'invite encore. Si ça continue, on prévient un adulte. Hélène va vers maman. Maman, l'adulte, vient. Elles jouent ensemble. On rejoint. On invite. Un adulte si ça continue.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nina est à l'écart. Que fait Hélène ?",
+      "expected_intents": [
+        "REJOINDRE",
+        "INVITER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "rejoindre",
+        "elle rejoint",
+        "inviter",
+        "elle invite",
+        "maman",
+        "un adulte"
+      ],
+      "retry_prompt": "On va vers elle. On invite. Que fait Hélène ?",
+      "positive_feedback": "Oui. Hélène rejoint Nina. Elle l'invite. Elle prévient un adulte si ça continue.",
+      "wrong_feedback": "On rejoint celui qui est à l'écart. On l'invite. On prévient un adulte si ça continue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hélène a rejoint Nina. Elle l'a invitée. Maman, l'adulte, a été prévenue.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nina fait rouler le cerceau. Hélène court à côté. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

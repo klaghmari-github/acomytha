@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-COL.POL.001-13",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Georges dit bonjour s'il te plaît merci",
+  "lesson_id": "COL.POL.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.POL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "boulangerie",
+  "characters": [
+    "Georges",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Georges va à la boulangerie. Papa tient sa main. Ça sent le pain chaud. Georges dit : bonjour. La dame sourit. Georges dit : un pain, s'il te plaît. La dame tend le pain. Georges dit : merci. Papa dit : bonjour. S'il te plaît. Merci. Georges répète. Le pain est chaud. Papa dit merci aussi.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Georges parle à la dame. Quels mots dit-il ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "bonjour",
+        "s'il te plaît",
+        "merci",
+        "bonjour merci"
+      ],
+      "retry_prompt": "On salue. On demande. On remercie. Quels mots ?",
+      "positive_feedback": "Oui. Georges dit bonjour, s'il te plaît, et merci.",
+      "wrong_feedback": "On dit bonjour. On dit s'il te plaît. On dit merci.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Georges a dit bonjour. Il a dit s'il te plaît. Il a dit merci. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Georges tient le pain. Papa ouvre la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Damien va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine et salon",
+  "characters": [
+    "Damien",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Damien veut ouvrir le bocal. Le couvercle est dur. Damien sent ses mains fatiguées. Il va vers eux. Papa et maman sont dans la cuisine. Damien dit le besoin : j'ai besoin d'aide. Papa tient le bocal. Plus tard, le puzzle est trop dur. Damien va vers eux. Il dit le besoin. Maman écoute. Même leçon, autre objet. Aller vers eux. Dire le besoin. Papa sourit. Maman tend une pièce.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop difficile. Que fait Damien ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "il appelle",
+        "dire",
+        "le besoin",
+        "papa",
+        "maman"
+      ],
+      "retry_prompt": "Il va vers eux. Il dit le besoin. Que fait Damien ?",
+      "positive_feedback": "Oui. Damien va vers eux. Il dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers papa ou maman. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Damien est allé vers eux. Il a dit le besoin. Papa et maman ont écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le bocal est ouvert. Damien pose une pièce du puzzle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
