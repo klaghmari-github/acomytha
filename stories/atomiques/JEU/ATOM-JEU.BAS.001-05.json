@@ -5,36 +5,37 @@
   "language": "fr",
   "age_band": "N3",
   "age_range": "5-6",
-  "title": "Victoire vise le panier à la cour",
+  "title": "Barbara vise le panier dans la cour",
   "lesson_id": "JEU.BAS.001",
   "secondary_lessons": [],
   "domain": "JEU",
-  "subdomain": "JEU.BAL",
+  "subdomain": "JEU.BAS",
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "cour",
+  "setting": "cour de la maison",
   "characters": [
-    "Victoire",
+    "Barbara",
+    "papa",
     "maman"
   ],
   "root_id": "n1",
   "duration_estimate_seconds": {
-    "min": 130,
-    "avg": 190,
-    "max": 240
+    "min": 120,
+    "avg": 185,
+    "max": 230
   },
   "nodes": {
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Victoire et maman sont dans la cour. Un petit panier est accroché bas. Maman donne le ballon. Maman dit : on va passer le ballon. Ensuite, chacun a un lancer. Victoire passe. Maman rend. C'est le lancer de Victoire. Elle lance vers le panier. Le ballon rentre. Maman a son lancer. Victoire dit : chacun un lancer. Elles se passent encore le ballon.",
+      "text": "Barbara et papa sont dans la cour. Un petit panier est accroché bas. Papa donne le ballon. Papa dit : on va passer le ballon. Ensuite, chacun a un lancer. Barbara passe le ballon. Papa le rend. C'est le lancer de Barbara. Elle lance vers le panier. Le ballon rentre. Papa a son lancer. Barbara dit : chacun un lancer. Ils se passent encore le ballon. Plus tard, maman arrive. Maman a un lancer aussi. Chacun un lancer. Barbara passe à maman. Maman vise le panier. Ils rangent le ballon.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "Victoire joue au basket. Que fait-elle ?",
+      "prompt": "Barbara joue au basket. Que fait-elle ?",
       "expected_intents": [
         "PANIER",
         "PASSER"
@@ -49,24 +50,24 @@
       "positive_feedback": "Oui. Elle passe. Elle lance au panier. Chacun a un lancer.",
       "wrong_feedback": "On se passe le ballon. On lance au panier. Chacun a un lancer.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "JEU.BAS.001"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Victoire a passé le ballon. Elle a visé le panier. Chacun a eu un lancer.",
+      "text": "Barbara a passé le ballon. Elle a visé le panier. Chacun a eu un lancer. Papa et maman ont joué.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Maman range le ballon. Victoire boit une gorgée. L'histoire est finie."
+      "text": "Papa range le ballon. Barbara essuie ses mains. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
     "major_findings": 0,
     "paths_tested": 1
   }

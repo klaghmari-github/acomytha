@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-SAN.ALI.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Aurélien s'assoit pour le petit-déjeuner",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine, petit-déjeuner",
+  "characters": [
+    "Aurélien",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est le matin. Aurélien sent le pain chaud. Papa appelle. C'est l'heure de manger. Aurélien va à la table. Il pose les fesses sur la chaise. Il est assis. Maman s'assoit près de lui. Papa s'assoit aussi. Ils sont ensemble. Le yaourt est frais. Aurélien mange assis. La cuillère cliquette. Maman dit : on mange ensemble, à table. Aurélien reste assis. Il croque le pain. Papa verse l'eau. Aurélien attend, assis. Ils mangent ensemble à table.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Aurélien va manger. Que fait-il ?",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assis",
+        "assise",
+        "s'asseoir",
+        "à table",
+        "table",
+        "sur la chaise"
+      ],
+      "retry_prompt": "Il pose les fesses sur la chaise. Que fait Aurélien ?",
+      "positive_feedback": "Oui. Aurélien s'assoit à table. Il mange avec papa et maman.",
+      "wrong_feedback": "On s'assoit à table. On pose les fesses sur la chaise. On mange ensemble.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Aurélien est assis. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Aurélien boit une gorgée. Il reste assis jusqu'à la fin. Merci, dit papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

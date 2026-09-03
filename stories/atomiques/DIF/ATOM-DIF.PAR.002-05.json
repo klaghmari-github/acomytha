@@ -3,9 +3,9 @@
   "kind": "atomic",
   "version": 1,
   "language": "fr",
-  "age_band": "N2",
-  "age_range": "4-5",
-  "title": "Héloïse laisse le temps à Clément",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Barbara laisse le temps à Nina",
   "lesson_id": "DIF.PAR.002",
   "secondary_lessons": [],
   "domain": "DIF",
@@ -13,59 +13,61 @@
   "framing": "respect",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "cuisine",
+  "setting": "cuisine, goûter",
   "characters": [
-    "Héloïse",
-    "Clément",
-    "maman"
+    "Barbara",
+    "Nina",
+    "maman",
+    "papa"
   ],
   "root_id": "n1",
   "duration_estimate_seconds": {
-    "min": 120,
-    "avg": 170,
-    "max": 220
+    "min": 90,
+    "avg": 125,
+    "max": 165
   },
   "nodes": {
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Héloïse est à la cuisine avec maman. Clément veut raconter. Il dit : j'ai fait... Puis il cherche le mot. Héloïse connaît le mot. Elle ouvre la bouche. Maman dit : on peut laisser le temps. On n'achève pas à sa place. Héloïse attend la fin de la phrase. Clément dit : j'ai fait un bateau. Héloïse sourit. Elle a su laisser le temps.",
+      "text": "Barbara est à table. C'est le goûter. Maman coupe la pomme. Nina veut parler. Nina cherche ses mots. Barbara attend. Elle laisse le temps. Nina dit : pomme. Puis elle dit : rouge. Barbara sourit. Barbara écoute jusqu'à la fin. Maman dit : tu as laissé le temps. Papa écoute aussi. Nina finit sa phrase. Barbara attend encore. Le temps est doux. Elles croquent la pomme.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "Clément cherche un mot. Que fait Héloïse ?",
+      "prompt": "Nina cherche ses mots. Que fait Barbara ?",
       "expected_intents": [
         "ATTENDRE_PHRASE"
       ],
       "accepted_examples": [
         "attendre",
         "laisser le temps",
-        "la phrase"
+        "elle attend",
+        "écouter"
       ],
-      "retry_prompt": "On n'achève pas à sa place. Que fait Héloïse ?",
-      "positive_feedback": "Oui. Elle laisse le temps. Elle attend la fin de la phrase.",
+      "retry_prompt": "Elle laisse le temps. Que fait Barbara ?",
+      "positive_feedback": "Oui. Barbara laisse le temps. Elle attend la fin de la phrase.",
       "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "DIF.PAR.002"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Héloïse a su laisser le temps. Clément a fini sa phrase.",
+      "text": "Barbara a laissé le temps. Nina a fini sa phrase. Papa et maman ont vu.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Maman pose deux bols. Ils s'assoient. L'histoire est finie."
+      "text": "Barbara range les peaux. Maman essuie la table. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
     "major_findings": 0,
     "paths_tested": 1
   }

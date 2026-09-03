@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gaston arrose le basilic",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "fenêtre de la cuisine",
+  "characters": [
+    "Gaston",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 215
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaston est à la fenêtre. Le basilic est dans un pot. Les feuilles sentent fort. Maman, l'adulte, prend l'arrosoir. Maman dit : la plante a besoin d'eau. Elle a besoin de lumière. Gaston tient l'arrosoir avec maman. Ils arrosent. L'eau tombe sur la terre. La terre devient foncée. Parce qu'il y a de l'eau et de la lumière, la plante grandit. Papa ouvre le store. La lumière arrive. Gaston pose l'arrosoir. L'adulte est là.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gaston s'occupe du basilic. Que fait-il ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "arroser",
+        "il arrose",
+        "de l'eau",
+        "avec maman"
+      ],
+      "retry_prompt": "Il arrose avec l'adulte. Que fait Gaston ?",
+      "positive_feedback": "Oui. Gaston arrose avec l'adulte. Eau et lumière.",
+      "wrong_feedback": "On arrose avec un adulte. La plante a besoin d'eau et de lumière.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaston a arrosé. Il y a de l'eau et de la lumière. Maman, l'adulte, était là. Papa a ouvert le store.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gaston essuie ses mains. Le basilic brille. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

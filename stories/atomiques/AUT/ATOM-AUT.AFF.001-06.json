@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-AUT.AFF.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Clovis prépare son sac pour le parc",
+  "lesson_id": "AUT.AFF.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée de la maison",
+  "characters": [
+    "Clovis",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 215
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Clovis est dans l'entrée. Papa sort le sac bleu. Papa, l'adulte, dit : on met la gourde. On met le chapeau. On met le doudou. Clovis écoute. Il met dans le sac ce que l'adulte a dit. La gourde est froide. Le chapeau est jaune. Le doudou sent le coton. Clovis ferme le sac. Parce qu'il a mis ce que papa a dit, le sac est prêt. Maman arrive. Elle dit : bravo. Ils sortent. Le sac est sur le dos de Clovis.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa a parlé. Que met Clovis dans le sac ?",
+      "expected_intents": [
+        "SAC",
+        "METTRE"
+      ],
+      "accepted_examples": [
+        "le sac",
+        "mettre",
+        "gourde",
+        "chapeau",
+        "ce que papa a dit"
+      ],
+      "retry_prompt": "Il met dans le sac ce que l'adulte a dit. Que fait Clovis ?",
+      "positive_feedback": "Oui. Clovis met dans le sac ce que l'adulte a dit.",
+      "wrong_feedback": "On met dans le sac ce que papa ou maman a dit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Clovis a préparé le sac. Il a mis ce que l'adulte a dit. Papa et maman étaient là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Clovis enfile le sac. Papa ouvre la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

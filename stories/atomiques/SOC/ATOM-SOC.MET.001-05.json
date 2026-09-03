@@ -3,9 +3,9 @@
   "kind": "atomic",
   "version": 1,
   "language": "fr",
-  "age_band": "N2",
-  "age_range": "4-5",
-  "title": "Swann nomme les métiers du village",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Héloïse nomme les métiers",
   "lesson_id": "SOC.MET.001",
   "secondary_lessons": [],
   "domain": "SOC",
@@ -13,59 +13,60 @@
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "village",
+  "setting": "quartier",
   "characters": [
-    "Swann",
-    "papa"
+    "Héloïse",
+    "papa",
+    "maman"
   ],
   "root_id": "n1",
   "duration_estimate_seconds": {
-    "min": 120,
-    "avg": 170,
-    "max": 220
+    "min": 90,
+    "avg": 130,
+    "max": 170
   },
   "nodes": {
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Swann marche au village avec papa. Ils passent à la boulangerie. Papa dit : c'est un métier. Le boulanger. Le geste utile : le pain. Ils passent près de l'école. Papa dit : la maîtresse. Un métier. Le geste utile : raconter une histoire. Un médecin passe. Papa dit : le médecin. Un métier. Le geste utile : soigner tout doux. Swann répète : métier. Geste utile.",
+      "text": "Héloïse marche avec papa. Ils voient la boulangerie. Le boulanger a un métier. Son geste utile, c'est le pain. Ils voient le cabinet. Le médecin a un métier. Son geste utile, c'est soigner. Ils voient l'école. La maîtresse a un métier. Son geste utile, c'est raconter. Un bus passe. Le chauffeur a un métier. Son geste utile, c'est conduire. Héloïse dit : métier. Papa dit : un geste utile. Maman les rejoint. Héloïse répète les métiers.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "Swann voit le boulanger. C'est quoi ?",
+      "prompt": "Le boulanger, le médecin, la maîtresse. Qu'est-ce que c'est ?",
       "expected_intents": [
         "METIER"
       ],
       "accepted_examples": [
+        "métier",
         "un métier",
-        "boulanger",
-        "maîtresse",
-        "médecin"
+        "geste utile",
+        "le pain"
       ],
-      "retry_prompt": "Cette personne a un geste utile. Quel mot ?",
-      "positive_feedback": "Oui. Un métier. Un geste utile.",
-      "wrong_feedback": "On nomme le métier. On dit le geste utile.",
+      "retry_prompt": "Chacun a un métier. Un geste utile. Que dit Héloïse ?",
+      "positive_feedback": "Oui. C'est un métier. Chacun a un geste utile.",
+      "wrong_feedback": "On nomme le métier. Chaque métier a un geste utile.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "SOC.MET.001"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Swann a nommé le métier. Il a dit le geste utile.",
+      "text": "Héloïse a nommé les métiers. Chaque métier a un geste utile. Papa et maman étaient là.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Papa achète du pain. Swann dit merci. L'histoire est finie."
+      "text": "Héloïse prend la main de maman. Ils rentrent. L'histoire est finie."
     }
   },
   "validation": {
     "status": "APPROVED_TEXT",
     "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
     "major_findings": 0,
     "paths_tested": 1
   }
