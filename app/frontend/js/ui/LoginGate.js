@@ -15,7 +15,6 @@ export class LoginGate extends Component {
         <form class="c-paper" id="login">
           <div class="c-mark">
             <strong>AcoMytha</strong>
-            <span>Histoires audio pour les 3–6 ans.</span>
           </div>
           <div class="c-field">
             <label for="email">Adresse</label>
