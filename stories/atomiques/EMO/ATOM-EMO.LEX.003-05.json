@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.003-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Ugo est déçu, une autre idée",
+  "lesson_id": "EMO.LEX.003",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "bibliothèque puis maison",
+  "characters": [
+    "Ugo",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ugo veut aller à la bibliothèque avec papa. La porte est fermée. Ugo sent ses épaules tomber. Sa gorge se serre. Ugo dit : je suis déçu. Papa s'accroupit. Papa dit : un souhait peut attendre. On peut chercher une autre idée. Ugo souffle. Il dit : on peut lire à la maison. Papa sourit. Ils rentrent. Ugo choisit un livre de trains. Plus tard, Ugo veut des fraises. Il n'y en a plus. Ugo sent encore sa gorge. Il dit : je suis déçu. Puis il cherche une autre idée. Il dit : une pomme, alors. Papa coupe la pomme. Être déçu n'est pas honteux. Une autre idée peut venir.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La bibliothèque est fermée. Que dit Ugo ?",
+      "expected_intents": [
+        "DECU",
+        "AUTRE_IDEE"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "je suis déçu",
+        "autre idée",
+        "une pomme",
+        "une autre idée"
+      ],
+      "retry_prompt": "Ugo cherche une autre idée. Que dit-il d'abord ?",
+      "positive_feedback": "Oui. Ugo dit : je suis déçu. Puis il cherche une autre idée.",
+      "wrong_feedback": "On dit : je suis déçu. Ensuite on cherche une autre idée.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ugo a nommé : déçu. Le souhait peut attendre. Une autre idée est arrivée. Papa était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ugo croque la pomme. Papa range le livre. Ils s'assoient. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

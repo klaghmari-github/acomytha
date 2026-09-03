@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-EMO.GES.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Zélie dit stop au salon",
+  "lesson_id": "EMO.GES.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Zélie",
+    "Lila",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Zélie joue au salon avec Lila. Lila la serre trop fort. Zélie sent sa poitrine coincée. Elle dit : je n'aime pas. C'est trop. Zélie dit : stop. Elle recule d'un pas. Elle peut s'éloigner. Elle s'éloigne vers le canapé. Maman est l'adulte sur le canapé. Zélie va vers maman. Elle dit : c'était trop. Maman l'écoute. Zélie pose sa main dans la main de maman. Elle souffle. Ses épaules descendent. Dire stop, c'est permis. On s'éloigne. On va vers un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop pour Zélie. Que dit-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "maman",
+        "adulte",
+        "vers maman"
+      ],
+      "retry_prompt": "Zélie dit stop. Puis elle va où ?",
+      "positive_feedback": "Oui. Zélie dit stop. Elle peut s'éloigner. Elle va vers un adulte.",
+      "wrong_feedback": "On dit stop. On peut s'éloigner. On va vers papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zélie a dit stop. Elle a pu s'éloigner. Elle rejoint maman, l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Zélie reste près du canapé. Maman lui parle tout bas. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.CON.003-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Rania dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Rania",
+    "Nino",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Rania peint à table avec Nino. Papa est près d'eux. Rania passe trop vite. L'eau tombe sur le dessin de Nino. Le papier est mouillé. Nino a les yeux mouillés. Papa s'approche. Papa dit : tu peux dire pardon. Rania dit : pardon, Nino. Papa dit : tu peux proposer un geste. Rania tend une feuille neuve. C'est un geste simple. Nino prend la feuille. Il reste un peu triste. Papa dit : la peine reste un peu. Le pardon n'efface pas tout de suite. Plus tard, Rania bouscule une tour de cubes. Les cubes roulent. Rania dit encore : pardon. Elle tend un cube. C'est un geste. La peine reste un peu. Papa laisse du temps. Ils reconstruisent doucement.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le dessin de Nino est mouillé. Que fait Rania ?",
+      "expected_intents": [
+        "PARDON",
+        "GESTE"
+      ],
+      "accepted_examples": [
+        "pardon",
+        "un geste",
+        "dire pardon",
+        "tendre une feuille"
+      ],
+      "retry_prompt": "Elle dit pardon, et elle propose un geste. Que fait Rania ?",
+      "positive_feedback": "Oui. On dit pardon. On propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine peut rester un peu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Rania a dit pardon. Elle a proposé un geste. La peine reste un peu. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "La tour grandit tout doucement. Papa reste assis près d'eux. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

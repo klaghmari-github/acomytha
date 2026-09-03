@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.MET.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Zélie nomme les métiers",
+  "lesson_id": "SOC.MET.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "quartier",
+  "characters": [
+    "Zélie",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Zélie marche avec papa. Ils sentent le pain chaud. Le boulanger pose les baguettes. Papa dit : c'est un métier. Zélie dit : boulanger. Le boulanger fait un geste utile. Il prépare le pain. Ensuite, ils passent chez le médecin. Le médecin écoute le cœur. Papa dit : c'est un métier. Zélie dit : médecin. Le médecin fait un geste utile. Il soigne. Après, la maîtresse lit une histoire. Papa dit : c'est un métier. Zélie dit : maîtresse. La maîtresse fait un geste utile. Elle aide les enfants. Plus tard, un chauffeur arrête le bus. Zélie dit : chauffeur. C'est un métier. Le chauffeur fait un geste utile. Il emmène les gens. Chaque métier a un geste utile.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le boulanger fait du pain. C'est quoi ?",
+      "expected_intents": [
+        "METIER"
+      ],
+      "accepted_examples": [
+        "un métier",
+        "métier",
+        "boulanger",
+        "le boulanger"
+      ],
+      "retry_prompt": "Il fait un geste utile. C'est quoi ?",
+      "positive_feedback": "Oui. C'est un métier. Un geste utile.",
+      "wrong_feedback": "On nomme le métier. Boulanger, médecin, maîtresse ou chauffeur.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Zélie a nommé les métiers. Boulanger. Médecin. Maîtresse. Chauffeur. Chaque geste est utile.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Zélie serre la main de papa. Ils rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

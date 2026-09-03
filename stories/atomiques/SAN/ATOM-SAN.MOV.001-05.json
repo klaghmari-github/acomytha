@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.MOV.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Rania joue dehors au jardin",
+  "lesson_id": "SAN.MOV.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.MOV",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Rania",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Rania a joué dans le salon. Ses jambes ont encore envie de bouger. Maman dit : on va dehors. Elles mettent les chaussures. Elles ouvrent la porte. L'air sent l'herbe coupée. Elles vont au jardin. Maman est l'adulte. Rania court sur l'herbe. Elle saute près du cerisier. Maman reste près d'elle. Rania pousse la petite brouette. Les roues font un bruit doux. Maman dit : tu joues dehors, avec un adulte. Rania lance une balle. Maman la renvoie. Rania sent son corps content. Elles jouent un moment. Puis elles rentrent ensemble. Rania a bougé dehors. Maman était là.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Rania veut bouger. Où joue-t-elle ?",
+      "expected_intents": [
+        "DEHORS",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "dehors",
+        "au jardin",
+        "avec maman",
+        "avec un adulte"
+      ],
+      "retry_prompt": "Elle va au jardin avec maman. Où joue Rania ?",
+      "positive_feedback": "Oui. Rania joue dehors, avec un adulte. Maman est avec elle.",
+      "wrong_feedback": "On joue dehors un moment, avec un adulte. On va au jardin avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Rania a joué dehors. Maman, un adulte, était avec elle. Le corps a bougé. C'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Rania boit de l'eau. Elle range la balle. Merci, dit-elle à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

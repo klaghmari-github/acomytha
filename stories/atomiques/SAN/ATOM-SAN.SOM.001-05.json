@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.SOM.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Simon met le pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.SOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Simon",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le soir arrive. La maison est calme. Maman dit : Simon, c'est l'heure. Simon va dans sa chambre. Il prend son pyjama. Le pyjama est doux. Simon met le pyjama. Les manches sont chaudes. Papa ouvre le lit. Simon se couche. Il pose la tête. Papa raconte une petite histoire. Simon écoute. Maman dit : c'est le dodo. Le corps a besoin de dormir. Simon ferme les yeux. Il respire doucement. C'est le soir. C'est le dodo. Simon est au lit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Simon va dormir. Que met-il ?",
+      "expected_intents": [
+        "PYJAMA",
+        "LIT"
+      ],
+      "accepted_examples": [
+        "pyjama",
+        "le pyjama",
+        "au lit",
+        "le lit"
+      ],
+      "retry_prompt": "Il met le pyjama. Puis il va au lit. Que fait Simon ?",
+      "positive_feedback": "Oui. Simon met son pyjama. Il se couche dans le lit.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche dans le lit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Simon a mis le pyjama. Il s'est couché. Le soir, c'est le dodo. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Simon dort. Le pyjama est chaud. La chambre est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.AFF.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Xavier prépare son sac",
+  "lesson_id": "AUT.AFF.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée de la maison",
+  "characters": [
+    "Xavier",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est le matin. Xavier est dans l'entrée. Le sac est par terre. Le sac est vert. Papa est là. Papa est l'adulte. Papa dit : la gourde, le bonnet, le livre. Xavier écoute. Il prend la gourde. Il la met dans le sac. Il prend le bonnet. Il le met dans le sac. Il prend le livre. Il le met dans le sac. Xavier ferme le sac. Ça fait zzz. Xavier a mis ce que l'adulte a dit. Papa dit : merci Xavier. Le sac est prêt.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Xavier prépare le sac. Que fait-il ?",
+      "expected_intents": [
+        "SAC",
+        "METTRE"
+      ],
+      "accepted_examples": [
+        "le sac",
+        "il met",
+        "dans le sac",
+        "mettre"
+      ],
+      "retry_prompt": "Il met les affaires dans le sac. Que fait Xavier ?",
+      "positive_feedback": "Oui. Xavier met dans le sac ce que papa a dit.",
+      "wrong_feedback": "On met dans le sac ce que papa a dit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Xavier a écouté. Il a mis la gourde. Il a mis le bonnet. Il a mis le livre. Le sac est prêt. C'est ce que l'adulte a dit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Xavier prend le sac. Papa ouvre la porte. Ils partent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
