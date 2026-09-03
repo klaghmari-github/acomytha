@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-TMP.SAI.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Clémence nomme les quatre saisons",
+  "lesson_id": "TMP.SAI.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SAI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin puis fenêtre",
+  "characters": [
+    "Clémence",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Clémence marche dans le jardin avec papa. Ils passent sous un grand arbre. Papa dit : il y a quatre saisons. Au printemps, Clémence voit des fleurs. En été, il fait chaud. Clémence boit de l'eau. En automne, les feuilles tombent. Elles sont jaunes. En hiver, Clémence met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Plus tard, à la fenêtre, Clémence revoit l'arbre. Elle se souvient. Elle dit : quatre saisons. Un signe chacune. Papa sourit. Même leçon, autre lieu. Printemps, été, automne, hiver.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Il fait chaud. Quelle saison est-ce ?",
+      "expected_intents": [
+        "SAISON"
+      ],
+      "accepted_examples": [
+        "été",
+        "l'été",
+        "en été"
+      ],
+      "retry_prompt": "En été, il fait chaud. Quelle saison ?",
+      "positive_feedback": "Oui. Quatre saisons. Un signe chacune.",
+      "wrong_feedback": "Il y a quatre saisons. Printemps, été, automne, hiver. Un signe chacune.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Clémence a nommé les quatre saisons. Un signe chacune. Papa l'a aidée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Clémence ramasse une feuille. Papa tient sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

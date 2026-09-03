@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-COL.POL.001-12",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Honoré dit bonjour s'il te plaît merci",
+  "lesson_id": "COL.POL.001",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.POL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Honoré",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Honoré arrive au marché avec maman. Il sent les fromages. Honoré dit : bonjour. La dame sourit. Honoré dit : un morceau, s'il te plaît. La dame tend le sachet. Honoré dit : merci. Maman dit : bonjour, s'il te plaît, merci. Plus tard, ils passent au stand des pommes. Honoré se souvient. Il dit : bonjour. Puis : une pomme, s'il te plaît. Puis : merci. Maman dit : tu as repris les trois mots. Bonjour. S'il te plaît. Merci. Même leçon, autre stand. Honoré tient le sachet. La pomme sent le sucré.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Honoré parle à la dame. Quels mots dit-il ?",
+      "expected_intents": [
+        "BONJOUR",
+        "SILTEPLAIT",
+        "MERCI"
+      ],
+      "accepted_examples": [
+        "bonjour",
+        "s'il te plaît",
+        "merci",
+        "bonjour merci"
+      ],
+      "retry_prompt": "On salue. On demande. On remercie. Quels mots ?",
+      "positive_feedback": "Oui. Honoré dit bonjour, s'il te plaît, et merci.",
+      "wrong_feedback": "On dit bonjour. On dit s'il te plaît. On dit merci.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Honoré a dit bonjour. Il a dit s'il te plaît. Il a dit merci. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Honoré croque la pomme. Maman dit merci aussi. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

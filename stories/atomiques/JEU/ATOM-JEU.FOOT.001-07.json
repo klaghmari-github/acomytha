@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-JEU.FOOT.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Fabrice vise le but au parc",
+  "lesson_id": "JEU.FOOT.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Fabrice",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Fabrice est au parc. L'herbe est tiède. Papa est là. Papa pose deux gourdes. C'est le but. Papa montre un rectangle. Voici l'espace montré. On reste dans l'espace montré. Fabrice touche le ballon. Le ballon est souple. Papa dit : on va passer. Fabrice passe le ballon. Papa rend le ballon. Fabrice vise le but. Le ballon roule au fond. Les pieds restent dans l'espace montré. Papa dit : bien. Dans l'espace montré. Fabrice sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Fabrice joue au foot. Que fait-il ?",
+      "expected_intents": [
+        "BUT",
+        "PASSER"
+      ],
+      "accepted_examples": [
+        "le but",
+        "passer",
+        "au but"
+      ],
+      "retry_prompt": "Il envoie le ballon au fond. Vers quoi ?",
+      "positive_feedback": "Oui. Il passe. Il vise le but. Dans l'espace montré.",
+      "wrong_feedback": "On se passe le ballon. On vise le but. On reste dans l'espace montré.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Fabrice a passé le ballon. Il a visé le but. Dans l'espace montré.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range les gourdes. Fabrice boit une gorgée. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

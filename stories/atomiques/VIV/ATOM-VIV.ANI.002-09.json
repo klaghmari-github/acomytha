@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-VIV.ANI.002-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Honoré dit les trois noms",
+  "lesson_id": "VIV.ANI.002",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "basse-cour",
+  "characters": [
+    "Honoré",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Honoré est à la basse-cour. Maman tient sa main. Un coq chante. Une poule picore. Un poussin suit. Maman dit : coq, poule, poussin. Ce sont trois noms. Trois noms de la famille. Honoré répète. Coq. Poule. Poussin. Papa montre le chien. Chien, chienne, chiot. Encore trois noms de la famille. Honoré sourit. Il dit : chiot. Le chiot est petit. Ça sent la paille.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "expected_intents": [
+        "MALE",
+        "FEMELLE",
+        "PETIT"
+      ],
+      "accepted_examples": [
+        "poussin",
+        "le poussin",
+        "petit",
+        "le petit"
+      ],
+      "retry_prompt": "Le petit du coq et de la poule. Qui est-ce ?",
+      "positive_feedback": "Oui. Coq, poule, poussin. Trois noms de la famille.",
+      "wrong_feedback": "On dit les trois noms : coq, poule, poussin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Honoré a dit les trois noms. Coq, poule, poussin. Chien, chienne, chiot.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Honoré sent la paille. Maman sourit. Ils rentrent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

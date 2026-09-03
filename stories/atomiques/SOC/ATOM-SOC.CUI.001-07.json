@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SOC.CUI.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Éléonore aide à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.CUI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Éléonore",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Éléonore est dans la cuisine avec papa. La carotte est orange et lisse. Papa dit : tu peux aider. Une tâche sûre, avec un adulte. Éléonore lave une carotte. L'eau est froide. Elle pose la carotte dans le saladier. Papa est à côté. Il sourit. Maman arrive. Le pain sent le four. Éléonore apporte le pain. Elle pose une cuillère près du bol. Maman dit : merci. Éléonore a lavé. Elle a apporté. Elle a posé. Aider, c'est une tâche sûre, avec un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Éléonore aide en cuisine. Comment ?",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "avec papa",
+        "avec maman",
+        "avec un adulte",
+        "laver"
+      ],
+      "retry_prompt": "Elle fait une tâche sûre, avec un adulte. Comment aide Éléonore ?",
+      "positive_feedback": "Oui. Éléonore aide. Une tâche sûre, avec un adulte.",
+      "wrong_feedback": "On aide avec une tâche sûre. On le fait avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Éléonore a lavé la carotte. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Éléonore s'assoit. Le goûter est prêt. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

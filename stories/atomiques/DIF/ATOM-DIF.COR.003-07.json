@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-DIF.COR.003-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Éléonore ne rit pas de l'apparence",
+  "lesson_id": "DIF.COR.003",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square",
+  "characters": [
+    "Éléonore",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, maman accompagne Éléonore au square. Un camarade arrive. Il a des lunettes. Il a les cheveux bouclés. Il porte un gilet bleu. Éléonore regarde. Un autre enfant laisse sortir un petit rire. Maman s'approche tout de suite. Maman dit : on ne va pas rire de l'apparence. Les lunettes aident à voir. Les cheveux sont les cheveux. L'habit tient chaud. On joue. Éléonore hoche la tête. Elle va vers le camarade. Éléonore dit : tu viens aux cerceaux. Ils font rouler un cerceau. Plus tard, près du bac, un enfant regarde encore les lunettes. Éléonore dit : on ne va pas rire. On joue. On ne rit pas des lunettes, des cheveux ou d'un habit. On ne va pas rire de l'apparence. On joue ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le camarade a des lunettes. Que fait-on ?",
+      "expected_intents": [
+        "PAS_RIRE"
+      ],
+      "accepted_examples": [
+        "pas rire",
+        "on joue",
+        "jouer",
+        "pas rire apparence"
+      ],
+      "retry_prompt": "On joue. On ne va pas rire. Que fait-on ?",
+      "positive_feedback": "Oui. On ne va pas rire de l'apparence. On joue.",
+      "wrong_feedback": "On joue. On ne va pas rire de l'apparence.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Éléonore a entendu maman. On ne va pas rire de l'apparence. Elle a joué avec le camarade.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman revient près du portail. Éléonore et le camarade se disent à demain. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
