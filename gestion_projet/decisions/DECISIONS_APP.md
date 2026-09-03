@@ -13,3 +13,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D7 | Chiffrement | AES-256-GCM, clé d’histoire dérivée (HKDF) du master local, lazy `.chk`. |
 | D8 | Comptes démo | `admin@sentier.local` / `sentier-admin` · `parent@sentier.local` / `sentier-parent` · PIN `2468`. |
 | D9 | F-APP-001 | Feature complexe : stories (socle, catalogue, auth, appareil, 3 UI, lecteur) sur **une** branche, commits par story. |
+| D10 | F-AUD-006 | Plusieurs voix Piper par chunk (mix). Narrateur = Tom. Papa = Pierre. Maman = Siwis. Maîtresse = Jessica. Enfants = pitch ↑. Pas d’API TTS payante. F-AUD-003 (voix unique) abandonné. |

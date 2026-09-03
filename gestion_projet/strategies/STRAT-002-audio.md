@@ -51,9 +51,24 @@ Interdit dans l’audio enfant : cri, rire moqueur, musique qui couvre, volume b
 
 Passe 1 (Heavy) : générer les plans pour le pilote, pas coller `[pause]` dans `text` (l’ASR et l’enfant verraient des scories).
 
-## 4. Un moteur, une voix
+## 4. Voix : narrateur ≠ personnages (F-AUD-006)
 
-**Un** timbre Piper pour toute une histoire. Idéal : **une** voix pour la forêt. On ne mélange pas deux synthèses dans le même `story_id`.
+Le narrateur **raconte et décrit**. Les personnages **parlent**. On n’annonce plus « maman dit / papa dit » : le timbre suffit.
+
+| Rôle | Timbre Piper (0 €) | Trait |
+| --- | --- | --- |
+| narrateur | `fr_FR-tom-medium` | adulte masculin, pose |
+| maman | `fr_FR-siwis-medium` | adulte féminin |
+| papa | `fr_FR-upmc-medium` speaker Pierre | adulte masculin ≠ narrateur |
+| maîtresse / directrice | `fr_FR-upmc-medium` speaker Jessica | adulte féminin ≠ maman |
+| directeur | `fr_FR-gilles-low` | adulte masculin posé |
+| grand-mère | siwis, plus lent, pitch −3 | voix âgée |
+| grand-père | gilles, plus lent, pitch −2 | voix âgée |
+| héros fille | siwis, pitch +4 | enfant |
+| héros garçon | tom, pitch +5 | enfant |
+| copine / copain | jessica / pierre, pitch enfant différent du héros | pas la même voix que le héros |
+
+Un chunk = un fichier audio, **mix** de répliques (`script` : `role\|phrase` par ligne). Colonne `text` = enchaînement sans « X dit ».
 
 ## 5. Protection
 

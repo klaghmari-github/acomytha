@@ -28,6 +28,8 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-ENF-001 | **développé** | File parentale + lecteur. |
 | F-AUD-004 | **développé** | AES-GCM `.chk`, déchiffre RAM, prefetch N+1. |
 | F-PLY-001 | **développé** | Lecteur graphe jour/nuit, délai 3 s. |
+| F-AUD-006 | **développé** | Scripts 1445 xlsx ; échantillons re-bakés ; bake corpus lancé. |
+| F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
 
 ---
 
@@ -70,6 +72,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-DAT-001 | Référentiel | SQLite histoire ↔ leçon ↔ chunk, dossier `chunks/` plat | P0 | 0 | STRAT-003 | F-NAR-007, F-TAX-002 |
 | F-AUD-004 | Audio | Chiffrement AES-GCM, lecture RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-AUD-001, F-SEC-001 |
 | F-AUD-005 | Audio | Bake Piper → MP3 64k, 0 €, plans via Heavy | P0 | 1 | STRAT-002 | F-AUD-001, F-GEN-001 |
+| F-AUD-006 | Audio | Cast multi-voix (narrateur / famille / école / enfants) | P0 | 1 | STRAT-002 §4 | F-AUD-005 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -84,6 +87,10 @@ Tables `lesson`, `story`, `story_lesson`, `chunk`, `chunk_link` (exceptions). Le
 ### F-AUD-004 — Protection
 
 `.chk` = AES-256-GCM(MP3). Clé au Keystore/Keychain. Jamais de MP3 en clair sur disque. Décryptage chunk par chunk en RAM. **STRAT-002** §5.
+
+### F-AUD-006 — Voix de rôles
+
+Le narrateur décrit la scène. Maman, papa, maîtresse, grands-parents, héros et copain/copine ont **des timbres distincts**. Interdit dans l’audio enfant : « maman dit », « papa dit ». Colonne `script` dans les xlsx. Outil : `stories/outils/voice_cast.py`. Bake : `xlsx_to_audio.py`.
 
 ### F-AUD-005 — Synthèse sans API payante
 

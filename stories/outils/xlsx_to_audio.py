@@ -13,11 +13,15 @@ import subprocess
 import sys
 import tempfile
 import wave
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
 from openpyxl import load_workbook
-from scipy.signal import resample_poly
+from scipy.signal import resample, resample_poly
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from voice_cast import parse_roster, script_load, split_script
 
 ROOT = Path(__file__).resolve().parents[1]
 ARBRES = ROOT / "arbres"
@@ -28,6 +32,34 @@ PEAK_TARGET = 0.89  # ~ -1 dBFS
 MIN_PEAK = 500  # en dessous = considéré muet
 # Mono = durée qui défile, silence sur iPhone / Windows / BT / HDMI.
 CHANNELS = 2
+GAP_S = 0.28
+
+
+@dataclass
+class Voice:
+    model: str
+    speaker: int | None = None
+    length: float = 1.18
+    pitch: float = 0.0
+    silence: float = 0.28
+
+
+# Narrateur ≠ papa ≠ enfant. Maîtresse ≠ maman. Copain ≠ héros.
+CAST = {
+    "narrateur": Voice("fr_FR-tom-medium", length=1.18, pitch=0.0, silence=0.32),
+    "maman": Voice("fr_FR-siwis-medium", length=1.14, pitch=0.0),
+    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.12, pitch=0.0),  # pierre
+    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.08, pitch=-0.4),  # jessica
+    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.12, pitch=-1.2),
+    "directeur": Voice("fr_FR-gilles-low", length=1.12, pitch=0.0),
+    "grand-mere": Voice("fr_FR-siwis-medium", length=1.38, pitch=-3.2),
+    "grand-pere": Voice("fr_FR-gilles-low", length=1.40, pitch=-2.4),
+    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.10, pitch=0.6),
+    "enfant-f": Voice("fr_FR-siwis-medium", length=1.04, pitch=4.2),
+    "enfant-m": Voice("fr_FR-tom-medium", length=1.04, pitch=4.6),
+    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.02, pitch=3.4),
+    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.02, pitch=5.2),
+}
 
 
 def find_engine():
@@ -41,6 +73,14 @@ def find_engine():
     if espeak:
         return "espeak", espeak, None
     return None, None, None
+
+
+def pitch_shift(samples: np.ndarray, semitones: float) -> np.ndarray:
+    if abs(semitones) < 0.05 or len(samples) < 32:
+        return samples
+    factor = 2.0 ** (semitones / 12.0)
+    n = max(32, int(round(len(samples) / factor)))
+    return resample(samples, n).astype(np.float32)
 
 
 def read_pcm16(path: Path) -> tuple[np.ndarray, int]:
@@ -127,7 +167,14 @@ def stats_file(path: Path) -> dict:
     }
 
 
-def synth_piper(piper: str, model: Path, text: str, out: Path, length_scale: float):
+def synth_piper(
+    piper: str,
+    model: Path,
+    text: str,
+    out: Path,
+    length_scale: float,
+    speaker: int | None = None,
+):
     out.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
         piper,
@@ -138,8 +185,10 @@ def synth_piper(piper: str, model: Path, text: str, out: Path, length_scale: flo
         "--length_scale",
         str(length_scale or 1.2),
         "--sentence_silence",
-        "0.35",
+        "0.22",
     ]
+    if speaker is not None:
+        cmd.extend(["--speaker", str(speaker)])
     subprocess.run(
         cmd,
         input=text.encode("utf-8"),
@@ -147,6 +196,29 @@ def synth_piper(piper: str, model: Path, text: str, out: Path, length_scale: flo
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
+
+
+def model_file(name: str) -> Path:
+    p = VOICES / f"{name}.onnx"
+    if p.exists():
+        return p
+    return VOICES / "fr_FR-siwis-medium.onnx"
+
+
+def synth_beats(piper: str, beats: list[tuple[str, str]], td: Path) -> tuple[np.ndarray, int]:
+    parts: list[np.ndarray] = []
+    sr = 22050
+    for i, (role, phrase) in enumerate(beats):
+        v = CAST.get(role, CAST["narrateur"])
+        raw = td / f"{i}.wav"
+        synth_piper(piper, model_file(v.model), phrase, raw, v.length, v.speaker)
+        samples, sr = read_pcm16(raw)
+        samples = pitch_shift(samples, v.pitch)
+        parts.append(samples)
+        parts.append(np.zeros(int(sr * (v.silence or GAP_S)), dtype=np.float32))
+    if not parts:
+        raise ValueError("aucune réplique")
+    return np.concatenate(parts), sr
 
 
 def synth_espeak(bin: str, text: str, out: Path, row: dict):
@@ -166,18 +238,29 @@ def synth_espeak(bin: str, text: str, out: Path, row: dict):
     )
 
 
-def load_chunks(xlsx: Path) -> list[dict]:
+def load_tree(xlsx: Path) -> tuple[dict, list[dict]]:
     wb = load_workbook(xlsx, read_only=True, data_only=True)
+    meta: dict[str, str] = {}
+    if "meta" in wb.sheetnames:
+        for row in wb["meta"].iter_rows(values_only=True):
+            if row and row[0] not in (None, "clé"):
+                meta[str(row[0])] = "" if row[1] is None else str(row[1])
     ch = wb["chunks"]
     rows = list(ch.iter_rows(values_only=True))
     headers = [str(h) if h else "" for h in rows[0]]
     out = []
+    roster = parse_roster(meta.get("characters", ""))
     for r in rows[1:]:
         d = {headers[i]: r[i] if i < len(r) else None for i in range(len(headers))}
-        if d.get("chunk_id") and d.get("text"):
-            out.append(d)
+        if not d.get("chunk_id") or not d.get("text"):
+            continue
+        if d.get("script"):
+            d["beats"] = script_load(str(d["script"]))
+        else:
+            d["beats"] = split_script(str(d["text"]), roster)
+        out.append(d)
     wb.close()
-    return out
+    return meta, out
 
 
 def emit_playable(src_wav: Path, dest_wav: Path, dest_mp3: Path) -> dict:
@@ -197,7 +280,7 @@ def emit_playable(src_wav: Path, dest_wav: Path, dest_mp3: Path) -> dict:
 def bake_tree(xlsx: Path, engine, bin_path, model, force=False) -> tuple[int, int, int]:
     story_id = xlsx.stem
     dest = AUDIO / story_id
-    chunks = load_chunks(xlsx)
+    _meta, chunks = load_tree(xlsx)
     ok = skip = fail = 0
     for d in chunks:
         cid = str(d["chunk_id"]).replace("/", "_")
@@ -210,21 +293,32 @@ def bake_tree(xlsx: Path, engine, bin_path, model, force=False) -> tuple[int, in
                     continue
             except Exception:
                 pass
-        text = str(d["text"]).strip()
+        beats = d.get("beats") or [("narrateur", str(d["text"]).strip())]
         try:
             with tempfile.TemporaryDirectory() as td:
-                raw = Path(td) / "raw.wav"
+                tdir = Path(td)
+                raw = tdir / "mix.wav"
                 if engine == "piper":
-                    ls = float(d.get("length_scale_piper") or 1.2)
-                    synth_piper(bin_path, model, text, raw, ls)
+                    samples, sr = synth_beats(bin_path, beats, tdir)
+                    write_raw_pcm(raw, samples, sr)
+                    emit_playable(raw, wav, mp3)
                 else:
-                    synth_espeak(bin_path, text, raw, d)
-                emit_playable(raw, wav, mp3)
+                    synth_espeak(bin_path, " ".join(p for _, p in beats), raw, d)
+                    emit_playable(raw, wav, mp3)
             ok += 1
         except Exception as e:
             fail += 1
             print(f"FAIL {story_id}/{cid}: {e}", file=sys.stderr)
     return ok, skip, fail
+
+
+def write_raw_pcm(path: Path, samples: np.ndarray, sr: int) -> None:
+    mono = np.clip(samples, -32768, 32767).astype("<i2")
+    with wave.open(str(path), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(mono.tobytes())
 
 
 def fix_existing(force=False) -> tuple[int, int]:
