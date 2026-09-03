@@ -1,0 +1,664 @@
+{
+  "tree_id": "TREE-SAN-011",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "S'asseoir pour manger — au parc",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": [
+    "SAN.ALI.001"
+  ],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "au parc",
+  "characters": [
+    "Sara",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Aujourd'hui, Sara est avec maman, au parc. Sara a envie de jouer. maman est là, tout près. On va apprendre : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara écoute maman. Sara entend les mots : assis, table, ensemble.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Sara choisit. le chat, le chien, ou la poule ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le chat",
+          "intent": "LE_CHAT",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le chien",
+          "intent": "LE_CHIEN",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "la poule",
+          "intent": "LA_POULE",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Sara va vers le chat. Le sol est un peu froid. maman sourit. Ici, c'est le chat. Ce n'est pas comme les autres endroits. Sara se souvient : assis, table, ensemble. Voici le geste : s'asseoir ; poser les fesses sur la chaise. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? S'asseoir pour manger.",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assise",
+        "table"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "wrong_feedback": "Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "SAN.ALI.002"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara respire. Sara retient : assis, table, ensemble. On continue, avec maman.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "le bac à sable",
+          "intent": "LE_BAC_À_SABLE",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le toboggan",
+          "intent": "LE_TOBOGGAN",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "les balançoires",
+          "intent": "LES_BALANÇOIRES",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Sara a choisi le bac à sable. L'eau coule, tout petit bruit. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Il y a des miettes sur la table. On écoute jusqu'au bout. Cette fin-là est celle de le chat, le bac à sable et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de le chat, le bac à sable et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de le chat, le bac à sable et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Sara a choisi le toboggan. Un vélo passe au loin. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Un chat miaule une fois. On écoute jusqu'au bout. Cette fin-là est celle de le chat, le toboggan et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de le chat, le toboggan et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de le chat, le toboggan et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Sara a choisi les balançoires. La lumière est claire. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tient la main. papa n'est pas loin.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Les chaussures font toc toc. On écoute jusqu'au bout. Cette fin-là est celle de le chat, les balançoires et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. La couverture est douce. On attend son tour. Cette fin-là est celle de le chat, les balançoires et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de le chat, les balançoires et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Sara va vers le chien. Une feuille tombe. maman sourit. Ici, c'est le chien. Ce n'est pas comme les autres endroits. Sara se souvient : assis, table, ensemble. Voici le geste : s'asseoir ; poser les fesses sur la chaise. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? S'asseoir pour manger.",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assise",
+        "table"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "wrong_feedback": "Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "SAN.ALI.002"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara respire. Sara retient : assis, table, ensemble. On continue, avec maman.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "le bac à sable",
+          "intent": "LE_BAC_À_SABLE",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le toboggan",
+          "intent": "LE_TOBOGGAN",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "les balançoires",
+          "intent": "LES_BALANÇOIRES",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Sara a choisi le bac à sable. Il y a des miettes sur la table. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Un chat miaule une fois. On attend son tour. Cette fin-là est celle de le chien, le bac à sable et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de le chien, le bac à sable et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. La couverture est douce. On rit un peu. Cette fin-là est celle de le chien, le bac à sable et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Sara a choisi le toboggan. Un chat miaule une fois. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Les chaussures font toc toc. On attend son tour. Cette fin-là est celle de le chien, le toboggan et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de le chien, le toboggan et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. On entend un oiseau. On rit un peu. Cette fin-là est celle de le chien, le toboggan et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Sara a choisi les balançoires. Les chaussures font toc toc. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tient la main. papa n'est pas loin.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. La couverture est douce. On attend son tour. Cette fin-là est celle de le chien, les balançoires et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de le chien, les balançoires et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de le chien, les balançoires et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Sara va vers la poule. L'eau coule, tout petit bruit. maman sourit. Ici, c'est la poule. Ce n'est pas comme les autres endroits. Sara se souvient : assis, table, ensemble. Voici le geste : s'asseoir ; poser les fesses sur la chaise. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? S'asseoir pour manger.",
+      "expected_intents": [
+        "ASSISE",
+        "TABLE"
+      ],
+      "accepted_examples": [
+        "assise",
+        "table"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "wrong_feedback": "Voici le geste : s'asseoir ; poser les fesses sur la chaise.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "SAN.ALI.002"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara respire. Sara retient : assis, table, ensemble. On continue, avec maman.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Ensuite, Sara choisit le bac à sable, le toboggan, ou les balançoires ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "le bac à sable",
+          "intent": "LE_BAC_À_SABLE",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le toboggan",
+          "intent": "LE_TOBOGGAN",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "les balançoires",
+          "intent": "LES_BALANÇOIRES",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Sara a choisi le bac à sable. La couverture est douce. Le bac à sable reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On rit un peu. papa n'est pas loin.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. Les chaussures font toc toc. On montre du doigt, sans courir. Cette fin-là est celle de la poule, le bac à sable et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. La couverture est douce. On rit un peu. Cette fin-là est celle de la poule, le bac à sable et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. On entend un oiseau. On se tait une seconde. Cette fin-là est celle de la poule, le bac à sable et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Sara a choisi le toboggan. On entend un oiseau. Le toboggan reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. La couverture est douce. On montre du doigt, sans courir. Cette fin-là est celle de la poule, le toboggan et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. On entend un oiseau. On rit un peu. Cette fin-là est celle de la poule, le toboggan et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. Ça sent le pain chaud. On se tait une seconde. Cette fin-là est celle de la poule, le toboggan et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Sara a choisi les balançoires. Ça sent le pain chaud. Les balançoires reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara répète tout bas : assis, table, ensemble. On se tient la main. papa n'est pas loin.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Sara va vers rouge, bleu, ou vert ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "rouge",
+          "intent": "ROUGE",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "bleu",
+          "intent": "BLEU",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "vert",
+          "intent": "VERT",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Sara rejoint rouge. On entend un oiseau. On montre du doigt, sans courir. Cette fin-là est celle de la poule, les balançoires et rouge. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Sara rejoint bleu. Ça sent le pain chaud. On rit un peu. Cette fin-là est celle de la poule, les balançoires et bleu. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Sara rejoint vert. Le vent est doux. On se tait une seconde. Cette fin-là est celle de la poule, les balançoires et vert. Sara a appris : S'asseoir pour manger. Voici le geste : s'asseoir ; poser les fesses sur la chaise. Sara a entendu : assis, table, ensemble. Sara dit merci à maman. On rentre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

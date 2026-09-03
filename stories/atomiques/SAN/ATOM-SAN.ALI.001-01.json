@@ -14,22 +14,37 @@
   "sensitivity": "standard",
   "family_model": "father_mother_children",
   "setting": "cuisine",
-  "characters": ["Lina", "maman"],
+  "characters": [
+    "Lina",
+    "maman"
+  ],
   "root_id": "n1",
-  "duration_estimate_seconds": { "min": 90, "avg": 120, "max": 150 },
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
   "nodes": {
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "C'est l'heure du déjeuner. Lina s'assoit à table, près de maman. Dans l'assiette, il y a du riz, et une petite tomate rouge. Lina regarde la tomate. Elle est ronde. Elle sent le jardin. Maman sourit. Maman dit : tu peux goûter une petite bouchée. Juste une petite bouchée. Lina prend un tout petit morceau. Elle le met dans sa bouche. C'est doux. C'est un peu juteux. Lina dit : c'est doux, maman. Maman dit : merci d'avoir goûté. Une petite portion, c'est déjà bien.",
+      "text": "C'est l'heure du déjeuner. Lina s'assoit à table, près de maman. Dans l'assiette, il y a du riz, et une petite tomate rouge. Lina regarde la tomate. Elle est ronde. Elle sent le jardin. Maman sourit. Maman dit : tu peux goûter une petite bouchée. Juste une petite bouchée. Lina prend un tout petit morceau. Elle le met dans sa bouche. C'est doux. C'est un peu juteux. Lina dit : c'est doux, maman. Maman dit : merci d'avoir goûté. Tu as su nommer le goût. Une petite portion, c'est déjà bien.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
       "prompt": "Lina goûte la tomate. Que fait-elle ?",
-      "expected_intents": ["GOUTER", "PETITE_BOUCHEE"],
-      "accepted_examples": ["goûter", "une bouchée", "petite bouchée", "elle goûte"],
+      "expected_intents": [
+        "GOUTER",
+        "PETITE_BOUCHEE"
+      ],
+      "accepted_examples": [
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "elle goûte"
+      ],
       "retry_prompt": "Elle prend une petite bouchée. Que fait Lina ?",
       "positive_feedback": "Oui. Elle goûte une petite bouchée, et elle dit le goût à maman.",
       "wrong_feedback": "On goûte une petite bouchée, et on dit le goût à papa ou maman.",
@@ -48,5 +63,10 @@
       "text": "Lina boit une gorgée d'eau. La tomate reste dans l'assiette, à sa place. Lina dit merci. L'histoire est finie."
     }
   },
-  "validation": { "status": "PENDING", "blocking_findings": 0 }
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
 }

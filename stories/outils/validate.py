@@ -326,7 +326,12 @@ def validate_story(path: Path, lessons: dict) -> dict:
                         continue
                     # flexible: all significant words
                     words = [w for w in re.findall(r"[a-zàâäéèêëïîôùûüçœ-]{3,}", t) if w not in ("une", "des", "les", "est", "avec", "pour", "dans")]
-                    if words and all(w in ptxt for w in words[:2]):
+                    def stem(w):
+                        for suf in ("er", "ir", "ez", "ent", "ons", "ait", "é", "ée", "és", "ées"):
+                            if w.endswith(suf) and len(w) > len(suf) + 2:
+                                return w[: -len(suf)]
+                        return w
+                    if words and all(stem(w) in ptxt or w in ptxt for w in words[:2]):
                         ok = True
                         break
                     if t in ptxt:
