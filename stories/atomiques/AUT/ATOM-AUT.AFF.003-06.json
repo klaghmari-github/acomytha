@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.AFF.003-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Léonie reprend ses affaires au jardin",
+  "lesson_id": "AUT.AFF.003",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Léonie",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léonie joue au jardin, près de maman. La terre est fraîche. Léonie a un seau vert. Elle a un manteau rouge. Elle a son doudou beige. Léonie verse l'eau. Ça fait ploc. Maman dit : c'est l'heure. On va reprendre ses affaires avant de partir. Léonie cherche le seau. Elle le prend. Léonie cherche le manteau. Elle le prend. Léonie cherche le doudou. Elle le prend. Ses affaires sont dans ses mains. Maman dit : merci Léonie. Elles marchent vers la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de partir, que fait Léonie ?",
+      "expected_intents": [
+        "REPRENDRE",
+        "AVANT_DE_PARTIR"
+      ],
+      "accepted_examples": [
+        "reprendre",
+        "ses affaires",
+        "elle reprend",
+        "avant de partir"
+      ],
+      "retry_prompt": "Elle reprend ses affaires. Que fait Léonie ?",
+      "positive_feedback": "Oui. Léonie reprend ses affaires avant de partir.",
+      "wrong_feedback": "Avant de partir, on reprend ses affaires. On les prend avec soi.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léonie a cherché. Elle a repris le seau. Elle a repris le manteau. Elle a repris le doudou. C'était avant de partir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Léonie tient le seau. Le doudou est contre elle. Maman est à côté. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}

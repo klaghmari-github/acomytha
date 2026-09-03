@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Ninon est contente du dessin",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Ninon",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ninon est dans le salon avec papa. Elle a fini un dessin. Un soleil jaune. Une petite maison. Ninon sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Ninon dit : je suis contente. Papa dit : c'est de la joie. Ninon tend le dessin. Elle dit : on peut partager. Papa le regarde. Il sourit. Plus tard, maman rentre. Ninon montre le dessin à maman aussi. Elle partage sa joie sans bousculer. Maman dit : merci Ninon. Ninon dit encore : je suis contente. La joie est là, dans le salon. Papa et maman sont près d'elle.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ninon sourit. Que dit-elle ?",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "contente",
+        "je suis contente",
+        "joie",
+        "de la joie",
+        "partager"
+      ],
+      "retry_prompt": "Ninon sent de la joie. Que dit-elle ?",
+      "positive_feedback": "Oui. Ninon dit : je suis contente. C'est de la joie.",
+      "wrong_feedback": "On dit : je suis content. On partage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ninon a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ninon range ses crayons. Le salon est calme. Papa lui prend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}

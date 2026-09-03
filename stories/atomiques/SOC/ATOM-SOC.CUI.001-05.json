@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SOC.CUI.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Idriss aide papa à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.CUI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Idriss",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est le soir. Idriss entre dans la cuisine. Papa est là. Idriss dit : je veux aider. Papa sourit. Papa dit : tu fais une tâche sûre, avec un adulte. Idriss ouvre l'eau. Il lave une feuille de salade. L'eau est froide. La feuille est lisse. Idriss pose la salade. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Idriss va au pain. Il apporte le pain à table. Papa dit : merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Idriss reste avec papa.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Idriss aide papa. Que fait-il ?",
+      "expected_intents": [
+        "AIDER",
+        "AVEC_ADULTE"
+      ],
+      "accepted_examples": [
+        "aider",
+        "laver",
+        "apporter",
+        "avec papa"
+      ],
+      "retry_prompt": "Il lave la salade. Que fait Idriss ?",
+      "positive_feedback": "Oui. Il aide, avec papa. Une tâche sûre.",
+      "wrong_feedback": "On aide avec une tâche sûre, avec papa ou maman. Laver, poser, apporter.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Idriss a lavé la salade. Il a posé la cuillère. Il a apporté le pain. Avec papa.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Idriss s'assoit. Il croque un morceau de pain. Papa est près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}

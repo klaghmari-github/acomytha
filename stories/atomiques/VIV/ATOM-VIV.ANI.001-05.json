@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-VIV.ANI.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Octave nomme les cris à la ferme",
+  "lesson_id": "VIV.ANI.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "ferme",
+  "characters": [
+    "Octave",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Octave marche avec maman. Ils visitent la ferme. Un mouton arrive. Le mouton bêle. Bêê. Maman dit : le mouton bêle. Un chien aboie. Ouaf ouaf. Un chat miaule. Miaou. Une vache meugle. Meuh. Un coq chante. Cocorico. Un canard cancane. Maman dit : chaque animal a un cri. Octave dit le nom de l'animal. Il dit le cri.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le mouton fait bêê. Quel est son cri ?",
+      "expected_intents": [
+        "CRI",
+        "ANIMAL"
+      ],
+      "accepted_examples": [
+        "bêle",
+        "il bêle",
+        "bêê",
+        "le cri"
+      ],
+      "retry_prompt": "Le mouton bêle. Quel est le cri ?",
+      "positive_feedback": "Oui. Le mouton bêle. Chaque animal a un cri.",
+      "wrong_feedback": "On nomme l'animal, et on dit son cri.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Octave a nommé l'animal. Il a dit le cri. Mouton, chien, chat, vache, coq, canard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Octave tient la main de maman. La ferme sent le foin. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}

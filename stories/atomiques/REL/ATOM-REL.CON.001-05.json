@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.CON.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Prune dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Prune",
+    "Idriss",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Prune est au parc avec papa. Papa s'assoit sur le banc. Prune joue près de la marelle. La craie est douce sous les doigts. Idriss court vers la marelle. Idriss bouscule Prune. Prune sent un choc. Son cœur bat vite. Prune dit : stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers papa. Prune marche vers le banc. Papa est son parent au parc. Prune rejoint son parent au parc. Elle dit : Idriss m'a bousculée. Papa l'écoute. Papa dit : tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Papa lui tient la main. Prune souffle doucement. Le banc est calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Prune. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "PARENT"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "papa",
+        "vers papa",
+        "parent"
+      ],
+      "retry_prompt": "Elle dit stop, puis elle va vers papa. Que fait Prune ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On rejoint papa ou maman au parc.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On rejoint papa ou maman, le parent au parc.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Prune a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Prune boit une gorgée d'eau. Papa garde sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}

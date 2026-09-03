@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.ALI.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le poivron jaune d'Idriss",
+  "lesson_id": "SAN.ALI.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Idriss",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'heure du déjeuner. Idriss s'assoit près de maman. Dans l'assiette, il y a du riz. Il y a un morceau de poivron jaune. Idriss le regarde. Le poivron est lisse. Il sent le jardin. Maman sourit. Maman dit : tu peux goûter. Juste une petite portion. Idriss prend une petite bouchée. Il la met dans sa bouche. C'est un peu sucré. Idriss dit : c'est sucré, maman. Il a su nommer le goût. Maman dit : merci d'avoir goûté. Une petite portion, c'est déjà bien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Idriss goûte le poivron. Que fait-il ?",
+      "expected_intents": [
+        "GOUTER",
+        "PETITE_BOUCHEE"
+      ],
+      "accepted_examples": [
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "il goûte"
+      ],
+      "retry_prompt": "Il prend une petite bouchée. Que fait Idriss ?",
+      "positive_feedback": "Oui. Il goûte une petite bouchée. Il dit le goût à maman.",
+      "wrong_feedback": "On goûte une petite bouchée. On dit le goût à maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Idriss a goûté. Il a nommé le goût. Maman est là. Une petite portion, c'est assez.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Idriss boit une gorgée d'eau. Le poivron reste dans l'assiette. Idriss dit merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1,
+    "notes": "générateur, revue humaine requise"
+  }
+}
