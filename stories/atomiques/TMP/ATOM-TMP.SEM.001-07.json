@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-TMP.SEM.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Ulric dit les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SEM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Ulric",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ulric est à la cuisine. Papa accroche un calendrier. Papa dit : il y a sept jours dans l'ordre. Lundi. Mardi. Mercredi. Jeudi. Vendredi. Samedi. Dimanche. Ulric pose le doigt. Il répète un jour : vendredi. Papa recommence. Ulric dit : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Sept jours dans l'ordre.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ulric touche le calendrier. Que dit-il ?",
+      "expected_intents": [
+        "JOUR"
+      ],
+      "accepted_examples": [
+        "lundi",
+        "vendredi",
+        "sept jours",
+        "un jour"
+      ],
+      "retry_prompt": "Il y a sept jours. Dans quel ordre ?",
+      "positive_feedback": "Oui. Les sept jours dans l'ordre.",
+      "wrong_feedback": "On répète les sept jours dans l'ordre.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "TMP.SEM.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ulric a dit les sept jours dans l'ordre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range le crayon. Ulric sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

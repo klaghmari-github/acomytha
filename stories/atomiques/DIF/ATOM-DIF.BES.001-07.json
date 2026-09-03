@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-DIF.BES.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Anaïs observe d'abord les cartes",
+  "lesson_id": "DIF.BES.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.BES",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe",
+  "characters": [
+    "Anaïs",
+    "Corentin",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Anaïs est en classe. Corentin explique un jeu de cartes. Anaïs reste près du mur. Elle a besoin de calme. Corentin va répéter la règle. Il dit : on pioche. On montre. Anaïs écoute. Elle va observer d'abord. Elle regarde. Elle ne joue pas encore. La maîtresse dit : observer d'abord, c'est possible. Plus tard, Anaïs pioche une carte. Le soir, maman dit : tu as su répéter. Anaïs a pu observer d'abord.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Anaïs a besoin de calme. Que peut-on faire ?",
+      "expected_intents": [
+        "REPETTER",
+        "OBSERVER"
+      ],
+      "accepted_examples": [
+        "répéter",
+        "observer",
+        "observer d'abord",
+        "la règle"
+      ],
+      "retry_prompt": "On répète la règle. Anaïs peut quoi d'abord ?",
+      "positive_feedback": "Oui. On répète. On peut observer d'abord.",
+      "wrong_feedback": "On répète la règle. On accepte d'observer d'abord.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.BES.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Corentin a répété. Anaïs a observé d'abord. Puis elle a joué un peu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le cartable. Anaïs donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

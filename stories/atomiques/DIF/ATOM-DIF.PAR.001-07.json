@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-DIF.PAR.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gwenaëlle tend un jouet et attend",
+  "lesson_id": "DIF.PAR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Gwenaëlle",
+    "Hervé",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gwenaëlle est au jardin avec maman. Hervé est près du bac. Il parle peu. Gwenaëlle veut jouer. Maman dit : on peut attendre. On n'imite pas. On peut tendre un jouet. On ne force pas la parole. Gwenaëlle tend le seau. Elle sait attendre. Hervé touche le seau. Il ne dit rien. Gwenaëlle sourit. Elle ne force pas la parole. Plus tard, Hervé dit : sable.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hervé parle peu. Que fait Gwenaëlle ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TENDRE_JOUET"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "tendre",
+        "le seau",
+        "un jouet"
+      ],
+      "retry_prompt": "Elle tend un jouet. Elle fait quoi encore ?",
+      "positive_feedback": "Oui. Elle sait attendre. Elle tend un jouet. Elle ne force pas la parole.",
+      "wrong_feedback": "On peut attendre. On tend un jouet. On ne force pas la parole.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.PAR.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gwenaëlle a su attendre. Elle a tendu un jouet. Elle n'a pas forcé la parole.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le seau. Gwenaëlle donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
