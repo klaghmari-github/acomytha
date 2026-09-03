@@ -1,0 +1,52 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-01",
+  "fil_rouge": "La soupe fume. La chaise de Tom est son bateau pour rejoindre la table en famille.",
+  "title": "Le bateau de Tom",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom est dans le couloir. Il sent quelque chose. Ça sent la soupe. Une petite fumée danse dans la cuisine. Tom ! Viens, Tom ! La soupe fume. Elle est prête. Tom arrive. Il voit les assiettes. La soupe fume encore. Sa chaise l'attend, près de la table. C'est mon bateau. Oui. Ton bateau va à table. Tom pousse un peu la chaise. Il pose les fesses sur la chaise. Le bateau glisse tout près. Tom s'assoit. Il est assis. Papa s'assoit aussi. Maman s'assoit près de Tom. Ils sont ensemble, à table. La soupe fume tout près. Mon bateau est arrivé. Oui. On est ensemble.",
+      "script": "narrateur|Tom est dans le couloir.\nnarrateur|Il sent quelque chose.\nnarrateur|Ça sent la soupe.\nnarrateur|Une petite fumée danse dans la cuisine.\npapa|Tom ! Viens, Tom !\nmaman|La soupe fume. Elle est prête.\nnarrateur|Tom arrive.\nnarrateur|Il voit les assiettes.\nnarrateur|La soupe fume encore.\nnarrateur|Sa chaise l'attend, près de la table.\nenfant-m|C'est mon bateau.\npapa|Oui. Ton bateau va à table.\nnarrateur|Tom pousse un peu la chaise.\nnarrateur|Il pose les fesses sur la chaise.\nnarrateur|Le bateau glisse tout près.\nnarrateur|Tom s'assoit.\nnarrateur|Il est assis.\nnarrateur|Papa s'assoit aussi.\nnarrateur|Maman s'assoit près de Tom.\nnarrateur|Ils sont ensemble, à table.\nnarrateur|La soupe fume tout près.\nenfant-m|Mon bateau est arrivé.\nmaman|Oui. On est ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le bateau de Tom s'arrête. Tom est où ?",
+      "script": "narrateur|Le bateau de Tom s'arrête. Tom est où ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom est assis. Les fesses sont sur la chaise. Papa et maman sont avec lui. Ils sont ensemble, à table.",
+      "script": "narrateur|Tom est assis.\nnarrateur|Les fesses sont sur la chaise.\nnarrateur|Papa et maman sont avec lui.\nnarrateur|Ils sont ensemble, à table.",
+      "sons": "chaise",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La soupe n'attend plus. Tom prend sa cuillère. On commence. Tom goûte. C'est chaud. C'est bon. Bon appétit, Tom. Ils mangent ensemble. Tom reste assis, à table. Merci, maman. Merci, papa.",
+      "script": "narrateur|La soupe n'attend plus.\nnarrateur|Tom prend sa cuillère.\npapa|On commence.\nnarrateur|Tom goûte.\nenfant-m|C'est chaud. C'est bon.\nmaman|Bon appétit, Tom.\nnarrateur|Ils mangent ensemble.\nnarrateur|Tom reste assis, à table.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La fumée de la soupe s'en va. Mon bateau est resté à table. On a mangé ensemble. L'histoire est finie.",
+      "script": "narrateur|La fumée de la soupe s'en va.\nenfant-m|Mon bateau est resté à table.\nmaman|On a mangé ensemble.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-01",
+  "fil_rouge": "Lina a joué, elle a faim, elle découvre la tomate rouge comme un trésor.",
+  "title": "Le trésor rouge de Lina",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Lina, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lina joue dans le jardin. Elle court. Elle saute. Maintenant, Lina a faim. Son ventre fait un petit bruit. Lina entre dans la cuisine. Maman est là. Sur la table, il y a une tomate. Elle est rouge. Elle est ronde. Elle brille. Lina ouvre grand les yeux. Un petit trésor rouge. Lina a faim. Elle s'assoit près de maman. Elle regarde la tomate. Elle sent le jardin. Tu peux goûter. Une petite bouchée. Juste une petite bouchée. Lina prend une petite portion. Elle goûte. C'est doux. C'est un peu juteux. C'est doux, maman. Merci d'avoir goûté. Tu as nommé le goût. Une petite portion, c'est déjà bien.",
+      "script": "narrateur|Lina joue dans le jardin. Elle court. Elle saute. Maintenant, Lina a faim. Son ventre fait un petit bruit. Lina entre dans la cuisine. Maman est là. Sur la table, il y a une tomate. Elle est rouge. Elle est ronde. Elle brille. Lina ouvre grand les yeux. Un petit trésor rouge. Lina a faim. Elle s'assoit près de maman. Elle regarde la tomate. Elle sent le jardin.\nmaman|Tu peux goûter. Une petite bouchée. Juste une petite bouchée.\nnarrateur|Lina prend une petite portion. Elle goûte. C'est doux. C'est un peu juteux.\nenfant-f|C'est doux, maman.\nmaman|Merci d'avoir goûté. Tu as nommé le goût.\nnarrateur|Une petite portion, c'est déjà bien.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Que fait Lina ?",
+      "script": "narrateur|Que fait Lina ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lina a goûté. Elle a nommé le goût. Maman est là. Une petite portion, c'est assez.",
+      "script": "narrateur|Lina a goûté. Elle a nommé le goût. Maman est là.\nmaman|Une petite portion, c'est assez.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lina est calme. Son ventre est content. Elle boit une gorgée d'eau. La tomate rouge reste dans l'assiette. Merci, maman.",
+      "script": "narrateur|Lina est calme. Son ventre est content. Elle boit une gorgée d'eau. La tomate rouge reste dans l'assiette.\nenfant-f|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Lina a joué. Elle a trouvé son trésor rouge. Elle a goûté. L'histoire est finie.",
+      "script": "narrateur|Lina a joué. Elle a trouvé son trésor rouge. Elle a goûté. L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

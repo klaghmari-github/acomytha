@@ -1,0 +1,66 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-02",
+  "fil_rouge": "Noé rentre du marché et aide papa à poser le panier. Une carotte roule ; il la rattrape. Papa propose alors une petite bouchée : Noé goûte, nomme le goût, sans tout finir.",
+  "title": "La petite carotte de Noé",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Noé, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé rentre du marché avec papa. Il aide à poser le panier sur la table. Le panier est plein. Alors une carotte orange roule. Elle part vers le bord. Noé ouvre les yeux. Il est surpris. Il avance les deux mains. Alors il rattrape la carotte. Noé sourit. La carotte est dans ses mains. Elle est lisse. Elle est froide. Elle sent le marché. Bien attrapé. On range ensemble. Noé pose la carotte près de l'évier. Papa lave la carotte. Il coupe une petite portion. Juste une petite portion. Il la pose dans l'assiette de Noé. Noé s'assoit à table, près de papa. Papa s'assoit aussi. Tu peux goûter. Une petite bouchée, c'est assez. Noé prend une petite bouchée. Il mâche. C'est croquant. C'est un peu sucré. Noé va nommer le goût. C'est sucré. C'est croquant, papa. Merci d'avoir goûté. Tu as nommé le goût. La petite portion reste dans l'assiette. Noé n'a pas besoin de tout finir. Il boit une gorgée d'eau. Puis il aide encore. Il range une pomme. Papa range le reste. Le panier est plus léger. La carotte a roulé. Noé l'a rattrapée. Il a goûté. Il a nommé le goût.",
+      "script": "narrateur|Noé rentre du marché avec papa. Il aide à poser le panier sur la table.\nnarrateur|Le panier est plein. Alors une carotte orange roule. Elle part vers le bord.\nnarrateur|Noé ouvre les yeux. Il est surpris. Il avance les deux mains. Alors il rattrape la carotte.\nnarrateur|Noé sourit. La carotte est dans ses mains. Elle est lisse. Elle est froide. Elle sent le marché.\npapa|Bien attrapé. On range ensemble.\nnarrateur|Noé pose la carotte près de l'évier. Papa lave la carotte. Il coupe une petite portion. Juste une petite portion. Il la pose dans l'assiette de Noé.\nnarrateur|Noé s'assoit à table, près de papa. Papa s'assoit aussi.\npapa|Tu peux goûter. Une petite bouchée, c'est assez.\nnarrateur|Noé prend une petite bouchée. Il mâche. C'est croquant. C'est un peu sucré. Noé va nommer le goût.\nenfant-m|C'est sucré. C'est croquant, papa.\npapa|Merci d'avoir goûté. Tu as nommé le goût.\nnarrateur|La petite portion reste dans l'assiette. Noé n'a pas besoin de tout finir. Il boit une gorgée d'eau.\nnarrateur|Puis il aide encore. Il range une pomme. Papa range le reste. Le panier est plus léger.\nnarrateur|La carotte a roulé. Noé l'a rattrapée. Il a goûté. Il a nommé le goût.",
+      "sons": "panier,carotte_roule",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé goûte la carotte. Que fait-il ?",
+      "script": "narrateur|Noé goûte la carotte. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé a goûté. Il a nommé le goût. Une petite portion, c'est assez. Papa est là. Le panier est rangé.",
+      "script": "narrateur|Noé a goûté. Il a nommé le goût.\npapa|Une petite portion, c'est assez.\nnarrateur|Papa est là. Le panier est rangé.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé range sa chaise. Le panier est à sa place. La carotte reste dans l'assiette. Merci, papa.",
+      "script": "narrateur|Noé range sa chaise. Le panier est à sa place. La carotte reste dans l'assiette.\nenfant-m|Merci, papa.",
+      "sons": "chaise",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ],
+  "merged_from": [
+    "agent_a.json",
+    "agent_b.json"
+  ]
+}

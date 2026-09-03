@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-01",
+  "fil_rouge": "Tom veut voir par la fenêtre. Maman a mis son bol à sa place à table. Il traverse la pièce et s'assoit avec papa et maman.",
+  "title": "Tom quitte la fenêtre",
+  "lesson_id": "SAN.ALI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Tom, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom est à la fenêtre. Il veut voir l'oiseau. Il quitte la fenêtre. Il traverse la pièce. Ton bol est à ta place, Tom. Dans la cuisine, ça sent le lait chaud. Le bol de Tom est à table. Tom arrive près de sa chaise. Il pose les fesses sur la chaise. Il est assis. Il est assis à table. On mange ensemble. Papa s'assoit aussi. Maman s'assoit près de Tom. Ils sont ensemble à table. Tom prend son bol. Il reste assis. Mon bol est là. Tom sourit. Il mange assis. La fenêtre est calme.",
+      "script": "narrateur|Tom est à la fenêtre. Il veut voir l'oiseau. Il quitte la fenêtre. Il traverse la pièce.\nmaman|Ton bol est à ta place, Tom.\nnarrateur|Dans la cuisine, ça sent le lait chaud. Le bol de Tom est à table. Tom arrive près de sa chaise. Il pose les fesses sur la chaise. Il est assis. Il est assis à table.\npapa|On mange ensemble.\nnarrateur|Papa s'assoit aussi. Maman s'assoit près de Tom. Ils sont ensemble à table. Tom prend son bol. Il reste assis.\nenfant-m|Mon bol est là.\nnarrateur|Tom sourit. Il mange assis. La fenêtre est calme.",
+      "sons": "pas,chaise",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tom va à table. Que fait-il ?",
+      "script": "narrateur|Tom va à table. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a quitté la fenêtre. Il est assis. Les fesses sont sur la chaise. On est ensemble, à table.",
+      "script": "narrateur|Tom a quitté la fenêtre. Il est assis. Les fesses sont sur la chaise.\npapa|On est ensemble, à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tom boit une gorgée. Il reste assis jusqu'à la fin. La fenêtre est calme. Merci, Tom.",
+      "script": "narrateur|Tom boit une gorgée. Il reste assis jusqu'à la fin. La fenêtre est calme.\nmaman|Merci, Tom.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
