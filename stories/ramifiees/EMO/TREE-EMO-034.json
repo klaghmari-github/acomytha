@@ -1,0 +1,664 @@
+{
+  "tree_id": "TREE-EMO-034",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Être content — sur le chemin de l'école",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [
+    "EMO.LEX.002"
+  ],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "sur le chemin de l'école",
+  "characters": [
+    "Hugo",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Aujourd'hui, Hugo est avec maman, sur le chemin de l'école. Hugo a envie de jouer. maman est là, tout près. On va apprendre : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo écoute maman. Hugo entend les mots : content, joie, partager.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Hugo choisit. le bac à sable, le toboggan, ou les balançoires ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le bac à sable",
+          "intent": "LE_BAC_À_SABLE",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "le toboggan",
+          "intent": "LE_TOBOGGAN",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "les balançoires",
+          "intent": "LES_BALANÇOIRES",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Hugo va vers le bac à sable. Un chat miaule une fois. maman sourit. Ici, c'est le bac à sable. Ce n'est pas comme les autres endroits. Hugo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On écoute jusqu'au bout. maman dit : je suis là. On reste ensemble.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Être content.",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "joie"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
+      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "EMO.LEX.001"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Hugo respire. Hugo retient : content, joie, partager. On continue, avec maman.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit le ballon, le seau, ou le doudou ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "le ballon",
+          "intent": "LE_BALLON",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "le seau",
+          "intent": "LE_SEAU",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Hugo a choisi le ballon. La couverture est douce. Le ballon reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On rit un peu. papa n'est pas loin.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Le vent est doux. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, le ballon et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de le bac à sable, le ballon et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, le ballon et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Hugo a choisi le seau. On entend un oiseau. Le seau reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Le sol est un peu froid. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, le seau et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. Une feuille tombe. On attend son tour. Cette fin-là est celle de le bac à sable, le seau et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, le seau et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Hugo a choisi le doudou. Ça sent le pain chaud. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tient la main. papa n'est pas loin.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Une feuille tombe. On écoute jusqu'au bout. Cette fin-là est celle de le bac à sable, le doudou et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de le bac à sable, le doudou et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de le bac à sable, le doudou et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Hugo va vers le toboggan. Les chaussures font toc toc. maman sourit. Ici, c'est le toboggan. Ce n'est pas comme les autres endroits. Hugo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On attend son tour. maman dit : je suis là. On reste ensemble.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Être content.",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "joie"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
+      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "EMO.LEX.001"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Hugo respire. Hugo retient : content, joie, partager. On continue, avec maman.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit le ballon, le seau, ou le doudou ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "le ballon",
+          "intent": "LE_BALLON",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "le seau",
+          "intent": "LE_SEAU",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Hugo a choisi le ballon. Le vent est doux. Le ballon reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On rit un peu. papa n'est pas loin.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Le sol est un peu froid. On attend son tour. Cette fin-là est celle de le toboggan, le ballon et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, le ballon et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de le toboggan, le ballon et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Hugo a choisi le seau. Le sol est un peu froid. Le seau reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Une feuille tombe. On attend son tour. Cette fin-là est celle de le toboggan, le seau et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, le seau et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de le toboggan, le seau et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Hugo a choisi le doudou. Une feuille tombe. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tient la main. papa n'est pas loin.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. L'eau coule, tout petit bruit. On attend son tour. Cette fin-là est celle de le toboggan, le doudou et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de le toboggan, le doudou et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. La lumière est claire. On rit un peu. Cette fin-là est celle de le toboggan, le doudou et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Hugo va vers les balançoires. La couverture est douce. maman sourit. Ici, c'est les balançoires. Ce n'est pas comme les autres endroits. Hugo se souvient : content, joie, partager. Voici le geste : dire je suis content ; sourire ; inviter. On montre du doigt, sans courir. maman dit : je suis là. On reste ensemble.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Que fait-on ? Être content.",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "joie"
+      ],
+      "retry_prompt": "Dis-le avec un petit mot.",
+      "positive_feedback": "Oui. Voici le geste : dire je suis content ; sourire ; inviter.",
+      "wrong_feedback": "Voici le geste : dire je suis content ; sourire ; inviter.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "EMO.LEX.001"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Oui. Voici le geste : dire je suis content ; sourire ; inviter. Hugo respire. Hugo retient : content, joie, partager. On continue, avec maman.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Ensuite, Hugo choisit le ballon, le seau, ou le doudou ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "le ballon",
+          "intent": "LE_BALLON",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "le seau",
+          "intent": "LE_SEAU",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "le doudou",
+          "intent": "LE_DOUDOU",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Hugo a choisi le ballon. L'eau coule, tout petit bruit. Le ballon reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On rit un peu. papa n'est pas loin.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Une feuille tombe. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, le ballon et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. L'eau coule, tout petit bruit. On rit un peu. Cette fin-là est celle de les balançoires, le ballon et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. Un vélo passe au loin. On se tait une seconde. Cette fin-là est celle de les balançoires, le ballon et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Hugo a choisi le seau. Un vélo passe au loin. Le seau reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tait une seconde. papa n'est pas loin.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. L'eau coule, tout petit bruit. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, le seau et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. Un vélo passe au loin. On rit un peu. Cette fin-là est celle de les balançoires, le seau et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. La lumière est claire. On se tait une seconde. Cette fin-là est celle de les balançoires, le seau et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Hugo a choisi le doudou. La lumière est claire. Le doudou reste à sa place, près de maman. maman montre le geste, lentement. Voici le geste : dire je suis content ; sourire ; inviter. Hugo répète tout bas : content, joie, partager. On se tient la main. papa n'est pas loin.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Pour finir, Hugo va vers Tom, Léa, ou Sami ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "Tom",
+          "intent": "TOM",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "Léa",
+          "intent": "LÉA",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "Sami",
+          "intent": "SAMI",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Hugo rejoint Tom. Un vélo passe au loin. On montre du doigt, sans courir. Cette fin-là est celle de les balançoires, le doudou et Tom. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Hugo rejoint Léa. La lumière est claire. On rit un peu. Cette fin-là est celle de les balançoires, le doudou et Léa. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Hugo rejoint Sami. Il y a des miettes sur la table. On se tait une seconde. Cette fin-là est celle de les balançoires, le doudou et Sami. Hugo a appris : Être content. Voici le geste : dire je suis content ; sourire ; inviter. Hugo a entendu : content, joie, partager. Hugo dit merci à maman. On rentre. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}
