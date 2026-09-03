@@ -1,10 +1,10 @@
 {
-  "total": 1289,
-  "approved_text": 1289,
+  "total": 1309,
+  "approved_text": 1309,
   "revision": 0,
   "rejected": 0,
   "atomic": 613,
-  "ramifiee": 676,
+  "ramifiee": 696,
   "results": [
     {
       "file": "atomiques/AUT/ATOM-AUT.AFF.001-01.json",
@@ -10992,6 +10992,32 @@
       "findings": []
     },
     {
+      "file": "ramifiees/EMO/TREE-EMO-102.json",
+      "tree_id": "TREE-EMO-102",
+      "kind": "ramifiee",
+      "lesson_id": "EMO.LEX.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/EMO/TREE-EMO-103.json",
+      "tree_id": "TREE-EMO-103",
+      "kind": "ramifiee",
+      "lesson_id": "EMO.LEX.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
       "file": "ramifiees/FAM/TREE-FAM-001.json",
       "tree_id": "TREE-FAM-001",
       "kind": "ramifiee",
@@ -14606,6 +14632,364 @@
       "findings": []
     },
     {
+      "file": "ramifiees/SAN/TREE-SAN-071.json",
+      "tree_id": "TREE-SAN-071",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 43,
+      "paths": 27,
+      "findings": [
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "root"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "fbA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brA1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brA2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brA3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endA3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "fbB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brB1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brB2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brB3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endB3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "fbC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brC1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brC2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "endC2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (16 mots): Voici le geste : prendre une petite bouchée ; dire le goût à papa ou maman",
+          "node": "brC3"
+        }
+      ]
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-072.json",
+      "tree_id": "TREE-SAN-072",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-073.json",
+      "tree_id": "TREE-SAN-073",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ALI.003",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-074.json",
+      "tree_id": "TREE-SAN-074",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-075.json",
+      "tree_id": "TREE-SAN-075",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-076.json",
+      "tree_id": "TREE-SAN-076",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.HYG.003",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-077.json",
+      "tree_id": "TREE-SAN-077",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.SOM.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-078.json",
+      "tree_id": "TREE-SAN-078",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.MOV.001",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SAN/TREE-SAN-079.json",
+      "tree_id": "TREE-SAN-079",
+      "kind": "ramifiee",
+      "lesson_id": "SAN.ECR.001",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
       "file": "ramifiees/SEC/TREE-SEC-001.json",
       "tree_id": "TREE-SEC-001",
       "kind": "ramifiee",
@@ -17377,6 +17761,364 @@
       "kind": "ramifiee",
       "lesson_id": "SEC.ADU.002",
       "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-085.json",
+      "tree_id": "TREE-SEC-085",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-086.json",
+      "tree_id": "TREE-SEC-086",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-087.json",
+      "tree_id": "TREE-SEC-087",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.RUE.003",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-088.json",
+      "tree_id": "TREE-SEC-088",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 43,
+      "paths": 27,
+      "findings": [
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "root"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "fbA"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brA1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brA2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brA3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endA3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "fbB"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brB1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brB2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brB3"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB3X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB3Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endB3Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "fbC"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brC1"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC1X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC1Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC1Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brC2"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC2X"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC2Y"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "endC2Z"
+        },
+        {
+          "severity": "MINOR",
+          "rule": "N1",
+          "msg": "phrase longue (15 mots): Voici le geste : appeler papa ou maman ; garder les mains avec les jouets",
+          "node": "brC3"
+        }
+      ]
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-089.json",
+      "tree_id": "TREE-SEC-089",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.002",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-090.json",
+      "tree_id": "TREE-SEC-090",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.MAI.003",
+      "age_band": "N2",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-091.json",
+      "tree_id": "TREE-SEC-091",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.PAR.001",
+      "age_band": "N1",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-092.json",
+      "tree_id": "TREE-SEC-092",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.ADU.001",
+      "age_band": "N3",
+      "decision": "APPROVED_TEXT",
+      "blocking": 0,
+      "major": 0,
+      "minor": 0,
+      "paths": 27,
+      "findings": []
+    },
+    {
+      "file": "ramifiees/SEC/TREE-SEC-093.json",
+      "tree_id": "TREE-SEC-093",
+      "kind": "ramifiee",
+      "lesson_id": "SEC.ADU.002",
+      "age_band": "N2",
       "decision": "APPROVED_TEXT",
       "blocking": 0,
       "major": 0,
