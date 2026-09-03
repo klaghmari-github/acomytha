@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SOC.MET.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Apolline nomme les métiers",
+  "lesson_id": "SOC.MET.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "quartier puis arrêt de bus",
+  "characters": [
+    "Apolline",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Apolline marche avec papa. Ils vont dans le quartier. D'abord, la boulangerie. Ça sent le pain chaud. Le boulanger pose les baguettes. Papa dit : c'est un métier. Apolline dit : boulanger. Le boulanger fait un geste utile. Il prépare le pain. Ensuite, ils passent chez le médecin. Le médecin écoute le cœur. Papa dit : c'est un métier. Apolline dit : médecin. Le médecin fait un geste utile. Il soigne. Après, ils arrivent à l'école. La maîtresse lit une histoire. Papa dit : c'est un métier. Apolline dit : maîtresse. La maîtresse fait un geste utile. Elle aide les enfants. Plus tard, à l'arrêt, un bus arrive. Apolline se souvient. Elle dit : chauffeur. C'est un métier. Le chauffeur fait un geste utile. Il conduit le bus. Papa dit : oui. Boulanger. Médecin. Maîtresse. Chauffeur. Chaque métier a un geste utile.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le boulanger fait du pain. C'est quoi ?",
+      "expected_intents": [
+        "METIER"
+      ],
+      "accepted_examples": [
+        "un métier",
+        "métier",
+        "boulanger",
+        "le boulanger"
+      ],
+      "retry_prompt": "Il fait un geste utile. C'est quoi ?",
+      "positive_feedback": "Oui. C'est un métier. Un geste utile.",
+      "wrong_feedback": "On nomme le métier. Boulanger, médecin, maîtresse ou chauffeur.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Apolline a nommé les métiers. Boulanger. Médecin. Maîtresse. Chauffeur. Chaque geste est utile. Elle a repris le mot à l'arrêt.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Apolline serre la main de papa. Ils rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

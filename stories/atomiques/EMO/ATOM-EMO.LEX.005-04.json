@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.005-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Gaspard nomme sa colère",
+  "lesson_id": "EMO.LEX.005",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "école puis maison",
+  "characters": [
+    "Gaspard",
+    "Hélène",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 200,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaspard construit un puzzle à l'école. Hélène prend la pièce du milieu. Le puzzle se défait. Gaspard sent son visage chaud. Son ventre est dur. Être en colère, ce n'est pas honteux. Gaspard dit : je suis en colère. Il ouvre les doigts. Ses mains restent loin de Hélène. Gaspard fait un pas en arrière. Il peut s'éloigner. Il s'éloigne vers la maîtresse. Il souffle trois fois. Puis il va vers un adulte. Il dit : je suis en colère. La maîtresse écoute. Le soir, à la maison, papa range des cartes. Une carte glisse. Gaspard sent encore le ventre dur. Il se souvient. Il dit : je suis en colère. Les mains restent loin. Il s'éloigne vers le canapé. Il souffle. Il va vers papa. Papa est l'adulte. Papa écoute. La colère a un nom. Les mains restent loin.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Gaspard est en colère. Que fait-il ?",
+      "expected_intents": [
+        "COLERE",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "s'éloigner",
+        "vers papa",
+        "adulte",
+        "mains loin",
+        "colère"
+      ],
+      "retry_prompt": "Gaspard garde les mains loin. Puis il va où ?",
+      "positive_feedback": "Oui. Gaspard nomme sa colère. Il peut s'éloigner. Il va vers un adulte.",
+      "wrong_feedback": "On dit : je suis en colère. Les mains restent loin. On peut s'éloigner. On va vers un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaspard a nommé sa colère. Mains loin. Il peut s'éloigner. Il va vers un adulte. Il a repris le geste à la maison.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gaspard s'assoit près de papa. Les cartes restent sur la table. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

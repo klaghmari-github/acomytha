@@ -3,9 +3,9 @@
   "kind": "atomic",
   "version": 1,
   "language": "fr",
-  "age_band": "N2",
-  "age_range": "4-5",
-  "title": "Ava prépare le sac du marché",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Dounia prépare son sac",
   "lesson_id": "AUT.AFF.001",
   "secondary_lessons": [],
   "domain": "AUT",
@@ -13,61 +13,54 @@
   "framing": "standard",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "cuisine",
+  "setting": "entrée de la maison",
   "characters": [
-    "Ava",
-    "papa"
+    "Dounia",
+    "maman"
   ],
-  "root_id": "n0",
+  "root_id": "n1",
   "duration_estimate_seconds": {
-    "min": 120,
-    "avg": 170,
-    "max": 220
+    "min": 90,
+    "avg": 125,
+    "max": 160
   },
   "nodes": {
-    "n0": {
-      "id": "n0",
-      "type": "audio",
-      "text": "Ça sent le pain. Ava a envie d'aider.",
-      "next": "n1"
-    },
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Ava est dans la cuisine. Papa pose un sac en toile sur la chaise. Papa dit : on met dans le sac ce que l'adulte a dit. L'adulte, c'est papa. Papa a dit : le filet, la gourde, le petit carnet. Ava prend le filet. Elle le met dans le sac. Elle met la gourde. Elle glisse le carnet. Ava ferme le sac. Papa dit : c'est ce que l'adulte a dit. Ava répète : le sac est prêt.",
+      "text": "C'est le matin. Dounia est dans l'entrée. Le sac est par terre. Il est rouge. Maman est là, près de Dounia. Maman est l'adulte. Maman dit : la gourde, le chapeau, le goûter. Dounia écoute. Dounia voit la gourde verte. Elle la prend. Elle la met dans le sac. Dounia voit le chapeau souple. Elle le prend. Elle le met dans le sac. Dounia voit le petit goûter. Elle le prend. Elle le met dans le sac. Dounia appuie sur la fermeture. Ça fait zzz. Le sac est fermé. Dounia a mis ce que l'adulte a dit. Maman pose la main sur le sac. Maman dit : merci Dounia. Le sac est prêt.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "Ava prépare le sac. Que fait-elle ?",
+      "prompt": "Dounia prépare le sac. Que fait-elle ?",
       "expected_intents": [
         "SAC",
         "METTRE"
       ],
       "accepted_examples": [
         "le sac",
-        "mettre",
         "elle met",
-        "dans le sac"
+        "dans le sac",
+        "mettre"
       ],
-      "retry_prompt": "Elle met ce que papa a dit. Où ?",
-      "positive_feedback": "Oui. Elle met dans le sac ce que l'adulte a dit.",
+      "retry_prompt": "Elle met les affaires dans le sac. Que fait Dounia ?",
+      "positive_feedback": "Oui. Dounia met dans le sac ce que maman a dit.",
       "wrong_feedback": "On met dans le sac ce que papa ou maman a dit.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "AUT.AFF.001"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Ava a mis le filet, la gourde et le carnet. C'est ce que papa a dit.",
+      "text": "Dounia a écouté. Elle a mis la gourde. Elle a mis le chapeau. Elle a mis le goûter. Le sac est prêt. C'est ce que l'adulte a dit.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Papa prend le sac. Ils vont au marché. L'histoire est finie."
+      "text": "Dounia prend le sac. La sangle est lisse. Maman ouvre la porte. Elles partent. L'histoire est finie."
     }
   },
   "validation": {

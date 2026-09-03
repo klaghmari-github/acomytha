@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-COL.ECO.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Fatou attend puis parle",
+  "lesson_id": "COL.ECO.002",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe puis maison",
+  "characters": [
+    "Fatou",
+    "maman",
+    "papa",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Fatou arrive en classe avec maman. Maman dit au revoir. Fatou s'assoit sur le tapis. La maîtresse pose une question. Fatou a une idée. Elle lève la main. Il faut attendre. Un camarade parle d'abord. Fatou attend encore. Puis la maîtresse dit : Fatou, c'est ton tour. Fatou parle. Elle dit : le chat est gris. La maîtresse sourit. Le soir, à table, papa pose une question. Fatou se souvient. Elle lève la main. Papa sourit. Il faut attendre. Papa écoute maman d'abord. Fatou attend. Puis papa dit : Fatou, c'est toi. Fatou parle. Elle raconte le chat gris. Maman demande. Fatou dit : j'ai levé la main. J'ai su attendre. Puis parler. Papa dit : merci. Le tour de parole, c'est à l'école et à la maison.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Fatou veut parler. Que fait-elle d'abord ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "PARLER"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "elle attend",
+        "lever la main",
+        "la main"
+      ],
+      "retry_prompt": "Elle lève la main et elle attend. Que fait Fatou ?",
+      "positive_feedback": "Oui. Il faut attendre, puis parler.",
+      "wrong_feedback": "On lève la main. Il faut attendre. Puis on peut parler.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Fatou a levé la main. Elle a attendu. Puis parler, c'était son tour. À l'école et à table.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Fatou range son cartable. Maman l'attend à la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

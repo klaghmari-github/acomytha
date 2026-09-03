@@ -1,0 +1,70 @@
+{
+  "tree_id": "ATOM-TMP.SAI.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hélène nomme les quatre saisons",
+  "lesson_id": "TMP.SAI.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SAI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Hélène",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hélène marche dans le jardin avec maman. Des feuilles craquent sous les pieds. Maman dit : il y a quatre saisons. Au printemps, Hélène se souvient des fleurs. Les fleurs sentent doux. En été, il fait chaud. Hélène boit de l'eau. En automne, les feuilles tombent. Elles sont rouges et jaunes. En hiver, Hélène met son manteau. Le manteau est chaud. Maman dit un signe chacune. Fleurs, chaud, feuilles, manteau. Hélène répète : quatre saisons. Un signe chacune. Parce que c'est l'automne, elles ramassent une feuille. Hélène la pose dans sa poche. Maman dit : demain, on dira encore les quatre saisons.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Il fait chaud. Quelle saison est-ce ?",
+      "expected_intents": [
+        "SAISON"
+      ],
+      "accepted_examples": [
+        "été",
+        "l'été",
+        "en été"
+      ],
+      "retry_prompt": "En été, il fait chaud. Quelle saison ?",
+      "positive_feedback": "Oui. Quatre saisons. Un signe chacune.",
+      "wrong_feedback": "Il y a quatre saisons. Printemps, été, automne, hiver. Un signe chacune.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hélène a nommé les quatre saisons. Un signe chacune. Maman l'a aidée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hélène touche la feuille dans sa poche. Maman tient sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

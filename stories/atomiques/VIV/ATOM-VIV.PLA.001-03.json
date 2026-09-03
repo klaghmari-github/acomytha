@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Gaspard arrose le basilic",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine près de la fenêtre",
+  "characters": [
+    "Gaspard",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaspard est dans la cuisine. Papa est là. Un petit basilic a soif. Ses feuilles sont molles. Papa dit : elle a besoin d'eau. Elle a besoin de lumière. Gaspard prend l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pose le pot près de la fenêtre. La lumière arrive. Gaspard touche une feuille. C'est doux. Ça sent le basilic. Papa dit : on arrose avec un adulte. Gaspard répète : eau, lumière, adulte. Le basilic tient plus droit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La plante a soif. Que fait Gaspard avec papa ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "arroser",
+        "il arrose",
+        "de l'eau",
+        "eau"
+      ],
+      "retry_prompt": "Ils versent de l'eau. Que fait Gaspard ?",
+      "positive_feedback": "Oui. Il arrose avec un adulte. Eau et lumière.",
+      "wrong_feedback": "On arrose avec un adulte. La plante a besoin d'eau et de lumière.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaspard a versé l'eau. La lumière est là. Papa, l'adulte, était avec lui.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gaspard range l'arrosoir. Le basilic tient droit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

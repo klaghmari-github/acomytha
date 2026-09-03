@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SAN.ECR.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Apolline éteint et pétrit",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ECR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Apolline",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Apolline est dans la cuisine. Maman est là. Un petit écran est allumé. Des couleurs bougent. Apolline entend une chanson. Maman dit : fini. L'adulte dit fini. Apolline écoute. Elle va éteindre. Apolline éteint. L'écran devient noir. Elle pose la tablette. Maman dit : on prend un autre jeu. Apolline choisit la pâte. La pâte est molle. Elles pétrissent. La farine sent bon. Apolline dit : l'écran est éteint. Un autre jeu, c'est bien. Maman sourit. Elles font un petit pain. Puis elles rangent. Apolline a éteint. Elle a choisi un autre jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maman dit fini. Que fait Apolline ?",
+      "expected_intents": [
+        "ETEINDRE",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "éteindre",
+        "elle éteint",
+        "autre jeu",
+        "la pâte"
+      ],
+      "retry_prompt": "L'adulte dit fini. Apolline éteint. Puis elle prend un autre jeu. Que fait-elle ?",
+      "positive_feedback": "Oui. Apolline éteint. Puis elle choisit un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maman a dit fini. Apolline a éteint. Elle a pris un autre jeu. La pâte, c'était bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le petit pain repose. Apolline dit merci à maman. La cuisine est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

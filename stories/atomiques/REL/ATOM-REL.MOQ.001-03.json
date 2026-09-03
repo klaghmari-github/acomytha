@@ -3,9 +3,9 @@
   "kind": "atomic",
   "version": 1,
   "language": "fr",
-  "age_band": "N2",
-  "age_range": "4-5",
-  "title": "Sara ne rit pas du bonnet",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Hélène soutient un camarade",
   "lesson_id": "REL.MOQ.001",
   "secondary_lessons": [],
   "domain": "REL",
@@ -13,29 +13,30 @@
   "framing": "respect",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "cantine",
+  "setting": "école",
   "characters": [
-    "Sara",
-    "Jules",
+    "Hélène",
+    "Gaspard",
+    "Côme",
     "maman"
   ],
   "root_id": "n1",
   "duration_estimate_seconds": {
-    "min": 120,
-    "avg": 170,
-    "max": 220
+    "min": 90,
+    "avg": 135,
+    "max": 175
   },
   "nodes": {
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Sara est à la cantine. Jules fait tomber son bonnet. Un camarade commence à rire. Sara ne rit pas. Il ne faut pas rire. Sara ne répète pas. Il ne faut pas répéter. Sara dit : ce n'est pas gentil. Elle ramasse le bonnet. Elle le tend à Jules. Jules le remet. Le soir, maman vient. Sara raconte. Maman dit : tu as bien fait. Pas rire. Pas répéter. On dit : ce n'est pas gentil.",
+      "text": "Hélène est à l'école. La classe range les dessins. Le couloir sent le savon. Gaspard fait tomber son dessin. Côme commence à rire. Le rire est court. Hélène ne rit pas. Il ne faut pas rire. Hélène ne répète pas. Il ne faut pas répéter. Hélène dit : ce n'est pas gentil. Elle va vers Gaspard. Elle ramasse le dessin. Elle le tend. Gaspard le reprend. La maîtresse s'approche. Côme dit : pardon. Le soir, maman vient. Hélène raconte. Maman dit : tu as bien fait. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil. Hélène serre la main de maman.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "Un camarade rit. Que fait Sara ?",
+      "prompt": "Côme rit. Que fait Hélène ?",
       "expected_intents": [
         "PAS_RIRE",
         "PAS_GENTIL"
@@ -43,25 +44,25 @@
       "accepted_examples": [
         "pas rire",
         "pas gentil",
+        "ne pas rire",
         "pas répéter"
       ],
-      "retry_prompt": "Elle dit que ce n'est pas gentil. Que ne fait-elle pas ?",
-      "positive_feedback": "Oui. Elle ne rit pas. Elle ne répète pas. Ce n'est pas gentil.",
-      "wrong_feedback": "On ne rit pas. On ne répète pas. On dit : ce n'est pas gentil.",
+      "retry_prompt": "Elle ne rit pas. Elle dit que ce n'est pas gentil. Que fait Hélène ?",
+      "positive_feedback": "Oui. Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
+      "wrong_feedback": "Il ne faut pas rire. Il ne faut pas répéter. On dit : ce n'est pas gentil.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "REL.MOQ.001"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Sara n'a pas ri. Elle n'a pas répété. Elle a dit : ce n'est pas gentil.",
+      "text": "Hélène n'a pas ri. Elle n'a pas répété. Elle a dit : ce n'est pas gentil. Maman est là.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Maman prend la main de Sara. Ils marchent. L'histoire est finie."
+      "text": "Hélène range son cartable. Maman marche à côté. L'histoire est finie."
     }
   },
   "validation": {

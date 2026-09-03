@@ -5,7 +5,7 @@
   "language": "fr",
   "age_band": "N2",
   "age_range": "4-5",
-  "title": "Zoé dit stop et s'éloigne",
+  "title": "Fatou dit stop au parc",
   "lesson_id": "EMO.GES.001",
   "secondary_lessons": [],
   "domain": "EMO",
@@ -13,11 +13,11 @@
   "framing": "emotional",
   "sensitivity": "standard",
   "family_model": "father_mother_children",
-  "setting": "école",
+  "setting": "parc",
   "characters": [
-    "Zoé",
-    "maman",
-    "maîtresse"
+    "Fatou",
+    "Côme",
+    "maman"
   ],
   "root_id": "n1",
   "duration_estimate_seconds": {
@@ -29,13 +29,13 @@
     "n1": {
       "id": "n1",
       "type": "audio",
-      "text": "Zoé est dans la cour. Un camarade s'approche trop près. Zoé sent que c'est trop. Elle dit : stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers un adulte. Zoé marche vers la maîtresse. La maîtresse est l'adulte. Zoé dit : c'était trop. La maîtresse l'écoute. Le soir, maman vient. Zoé raconte. Maman dit : tu as dit stop. Tu t'es éloignée. Tu es allée vers un adulte.",
+      "text": "Fatou joue au parc. L'herbe sent l'été. Côme la serre trop fort dans un câlin. Fatou sent sa poitrine coincée. Ses épaules montent. Elle dit : je n'aime pas. C'est trop. Fatou dit : stop. Elle recule d'un pas. Elle peut s'éloigner. Elle s'éloigne vers le banc. Maman est l'adulte sur le banc. Fatou va vers maman. Elle dit : c'était trop. Maman l'écoute. Fatou pose sa main dans la main de maman. Elle souffle. Ses épaules descendent. Dire stop, c'est permis. On s'éloigne. On va vers un adulte. Plus tard, Côme joue au bac à sable. Fatou reste près de maman. Puis elle reprend un seau. Le sable est tiède.",
       "next": "n2"
     },
     "n2": {
       "id": "n2",
       "type": "question_lesson",
-      "prompt": "C'est trop pour Zoé. Que fait-elle ?",
+      "prompt": "C'est trop pour Fatou. Que dit-elle ?",
       "expected_intents": [
         "STOP",
         "ELOIGNER",
@@ -44,26 +44,26 @@
       "accepted_examples": [
         "stop",
         "s'éloigner",
+        "maman",
         "adulte",
-        "la maîtresse"
+        "vers maman"
       ],
-      "retry_prompt": "Elle dit stop. Ensuite ?",
-      "positive_feedback": "Oui. Elle dit stop. Elle s'éloigne. Elle va vers un adulte.",
-      "wrong_feedback": "On dit stop. On s'éloigne. On va vers un adulte.",
+      "retry_prompt": "Fatou dit stop. Puis elle va où ?",
+      "positive_feedback": "Oui. Fatou dit stop. Elle peut s'éloigner. Elle va vers un adulte.",
+      "wrong_feedback": "On dit stop. On peut s'éloigner. On va vers papa ou maman.",
       "default_next": "n3",
-      "next": "n3",
-      "lesson_id": "EMO.GES.001"
+      "next": "n3"
     },
     "n3": {
       "id": "n3",
       "type": "feedback",
-      "text": "Zoé a dit stop. Elle s'est éloignée. Elle a rejoint un adulte.",
+      "text": "Fatou a dit stop. Elle a pu s'éloigner. Elle rejoint maman, l'adulte.",
       "next": "n4"
     },
     "n4": {
       "id": "n4",
       "type": "ending",
-      "text": "Maman prend la main de Zoé. Ils rentrent. L'histoire est finie."
+      "text": "Fatou reste près du banc. Maman lui parle tout bas. L'histoire est finie."
     }
   },
   "validation": {
