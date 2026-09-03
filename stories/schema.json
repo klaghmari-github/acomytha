@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sentier.local/schema/story-tree-v1.json",
+  "title": "Sentier story tree v1",
+  "type": "object",
+  "required": [
+    "tree_id", "kind", "version", "language", "age_band", "title",
+    "lesson_id", "domain", "subdomain", "framing", "sensitivity",
+    "family_model", "nodes", "root_id"
+  ],
+  "properties": {
+    "tree_id": { "type": "string", "pattern": "^(ATOM|TREE)-[A-Z0-9.-]+$" },
+    "kind": { "enum": ["atomic", "ramifiee"] },
+    "version": { "type": "integer", "minimum": 1 },
+    "language": { "const": "fr" },
+    "age_band": { "enum": ["N1", "N2", "N3"] },
+    "age_range": { "type": "string" },
+    "title": { "type": "string", "minLength": 4, "maxLength": 80 },
+    "lesson_id": { "type": "string" },
+    "secondary_lessons": { "type": "array", "items": { "type": "string" } },
+    "domain": { "type": "string", "minLength": 3, "maxLength": 3 },
+    "subdomain": { "type": "string" },
+    "framing": { "enum": ["standard", "positive_only_critical", "emotional", "respect"] },
+    "sensitivity": { "enum": ["standard", "enhanced"] },
+    "family_model": { "const": "father_mother_children" },
+    "setting": { "type": "string" },
+    "characters": { "type": "array", "items": { "type": "string" } },
+    "root_id": { "type": "string" },
+    "duration_estimate_seconds": {
+      "type": "object",
+      "properties": {
+        "min": { "type": "integer" },
+        "avg": { "type": "integer" },
+        "max": { "type": "integer" }
+      }
+    },
+    "nodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "type"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "enum": [
+              "audio", "question_comprehension", "question_lesson",
+              "choice_story", "feedback", "transition", "silence_check", "ending"
+            ]
+          },
+          "text": { "type": "string" },
+          "next": { "type": "string" },
+          "prompt": { "type": "string" },
+          "expected_intents": { "type": "array", "items": { "type": "string" } },
+          "accepted_examples": { "type": "array", "items": { "type": "string" } },
+          "retry_prompt": { "type": "string" },
+          "positive_feedback": { "type": "string" },
+          "wrong_feedback": { "type": "string" },
+          "default_next": { "type": "string" },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "label", "intent", "next"],
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "type": "string" },
+                "intent": { "type": "string" },
+                "next": { "type": "string" }
+              }
+            }
+          },
+          "lesson_id": { "type": "string" }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": ["PENDING", "REJECTED", "REVISION_REQUIRED", "HUMAN_REVIEW_REQUIRED", "APPROVED_TEXT"]
+        },
+        "blocking_findings": { "type": "integer" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

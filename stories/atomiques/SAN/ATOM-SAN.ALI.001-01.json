@@ -1,0 +1,52 @@
+{
+  "tree_id": "ATOM-SAN.ALI.001-01",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "La petite tomate de Lina",
+  "lesson_id": "SAN.ALI.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": ["Lina", "maman"],
+  "root_id": "n1",
+  "duration_estimate_seconds": { "min": 90, "avg": 120, "max": 150 },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'heure du déjeuner. Lina s'assoit à table, près de maman. Dans l'assiette, il y a du riz, et une petite tomate rouge. Lina regarde la tomate. Elle est ronde. Elle sent le jardin. Maman sourit. Maman dit : tu peux goûter une petite bouchée. Juste une petite bouchée. Lina prend un tout petit morceau. Elle le met dans sa bouche. C'est doux. C'est un peu juteux. Lina dit : c'est doux, maman. Maman dit : merci d'avoir goûté. Une petite portion, c'est déjà bien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Lina goûte la tomate. Que fait-elle ?",
+      "expected_intents": ["GOUTER", "PETITE_BOUCHEE"],
+      "accepted_examples": ["goûter", "une bouchée", "petite bouchée", "elle goûte"],
+      "retry_prompt": "Elle prend une petite bouchée. Que fait Lina ?",
+      "positive_feedback": "Oui. Elle goûte une petite bouchée, et elle dit le goût à maman.",
+      "wrong_feedback": "On goûte une petite bouchée, et on dit le goût à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Lina a goûté. Elle a nommé le goût. Maman est là. Une petite portion, c'est assez.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Lina boit une gorgée d'eau. La tomate reste dans l'assiette, à sa place. Lina dit merci. L'histoire est finie."
+    }
+  },
+  "validation": { "status": "PENDING", "blocking_findings": 0 }
+}
