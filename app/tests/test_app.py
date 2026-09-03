@@ -66,6 +66,17 @@ def test_child_only_forest(client):
     assert [s["story_id"] for s in file] == ["ATOM-SAN.ALI.001-01"]
     denied = client.get("/api/stories")
     assert denied.status_code == 403
+    back_bad = client.post("/api/auth/parent", json={"pin": "0000"})
+    assert back_bad.status_code == 401
+    back = client.post("/api/auth/parent", json={"pin": "2468"})
+    assert back.status_code == 200
+    assert back.json()["role"] == "parent"
+    pin = client.put("/api/auth/pin", json={"current_pin": "2468", "new_pin": "1357"})
+    assert pin.status_code == 200
+    child2 = client.post("/api/auth/enfant", json={"pin": "2468", "device_id": "device-parent-bbbb"})
+    assert child2.status_code == 401
+    child3 = client.post("/api/auth/enfant", json={"pin": "1357", "device_id": "device-parent-bbbb"})
+    assert child3.status_code == 200
 
 
 def test_crypto_roundtrip(settings):

@@ -204,6 +204,15 @@ export class ParentApp extends Component {
         </form>
       </details>
       <details class="c-panel">
+        <summary>Code à 4 chiffres</summary>
+        <form id="pinform" class="o-stack">
+          <input name="current_pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="Code actuel" required />
+          <input name="new_pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="Nouveau code" required />
+          <input name="new_pin2" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="Confirmer" required />
+          <button class="c-btn" type="submit">Enregistrer le code</button>
+        </form>
+      </details>
+      <details class="c-panel">
         <summary>Recharger</summary>
         <div class="o-row" id="recharge">
           <button class="c-btn c-btn--ghost" data-eur="10">10 €</button>
@@ -283,6 +292,18 @@ export class ParentApp extends Component {
         f.set("role", fd.get("role"));
         this.wallet = await this.api.postForm("/shop/voice", f);
         msg.textContent = "Voix enregistrée pour les prochaines histoires.";
+      }
+      if (form.id === "pinform") {
+        const fd = new FormData(form);
+        const a = String(fd.get("new_pin") || "");
+        const b = String(fd.get("new_pin2") || "");
+        if (!/^\d{4}$/.test(a) || a !== b) {
+          msg.textContent = "Le nouveau code doit avoir 4 chiffres, deux fois les mêmes.";
+          return;
+        }
+        await this.api.put("/auth/pin", { current_pin: fd.get("current_pin"), new_pin: a });
+        form.reset();
+        msg.textContent = "Code enregistré.";
       }
       this.drawWallet();
       this.drawShop();

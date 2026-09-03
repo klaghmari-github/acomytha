@@ -59,7 +59,7 @@ export class ChildApp extends Component {
     gate.innerHTML = `
       <p>Code pour écouter.</p>
       <form class="o-stack" id="pinform">
-        <input id="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="8" />
+        <input id="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="4" pattern="[0-9]{4}" required />
         <button class="c-btn c-btn--gold" type="submit">C’est parti</button>
         <p class="c-error" id="perr"></p>
       </form>`;
@@ -144,13 +144,30 @@ export class ChildApp extends Component {
 
   async leave() {
     this.stopPlay();
-    try {
-      const me = await this.api.get("/auth/me");
-      if (me.role === "child") await this.api.post("/auth/parent", {});
-    } catch {
-      /* ignore */
+    const me = await this.api.get("/auth/me").catch(() => null);
+    if (!me || me.role !== "child") {
+      this.router.go("#/parent");
+      return;
     }
-    this.router.go("#/parent");
+    const gate = this.querySelector("#gate");
+    gate.innerHTML = `
+      <p>Code pour revenir.</p>
+      <form class="o-stack" id="backpin">
+        <input id="pinback" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required />
+        <button class="c-btn" type="submit">OK</button>
+        <p class="c-error" id="perr"></p>
+      </form>`;
+    this.querySelector("#file").hidden = true;
+    this.querySelector("#player").hidden = true;
+    this.on(gate.querySelector("#backpin"), "submit", async (ev) => {
+      ev.preventDefault();
+      try {
+        await this.api.post("/auth/parent", { pin: gate.querySelector("#pinback").value });
+        this.router.go("#/parent");
+      } catch {
+        gate.querySelector("#perr").textContent = "Ce n’est pas le bon code.";
+      }
+    });
   }
 }
 
