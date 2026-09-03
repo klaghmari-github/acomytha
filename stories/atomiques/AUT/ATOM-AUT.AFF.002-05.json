@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-AUT.AFF.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Damien prend son manteau",
+  "lesson_id": "AUT.AFF.002",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée puis square",
+  "characters": [
+    "Damien",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Damien veut aller au square. Papa ouvre la porte de l'entrée. L'air est frais. Papa dit : avant de sortir, on prend le manteau. Damien prend son manteau bleu. Il passe les manches. Le tissu est doux. Ils sortent. Au square, Damien pousse la trottinette. Les roues font un bruit léger. Puis ils rentrent. Papa dit : en rentrant, le manteau va à sa place. Damien raccroche le manteau au crochet. Le crochet est bas. Damien dit : manteau pour sortir. Manteau à sa place en rentrant. Papa sourit. Les chaussures restent près de la porte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de sortir, que prend Damien ?",
+      "expected_intents": [
+        "MANTEAU"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "son manteau",
+        "le manteau",
+        "il le prend"
+      ],
+      "retry_prompt": "Avant de sortir, on prend le manteau. Que prend-il ?",
+      "positive_feedback": "Oui. Damien prend son manteau. En rentrant, il le raccroche.",
+      "wrong_feedback": "Avant de sortir, on prend le manteau. En rentrant, on le pose à sa place.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Damien a pris le manteau pour sortir. En rentrant, il l'a raccroché.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Damien pose ses chaussures. Papa ferme la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

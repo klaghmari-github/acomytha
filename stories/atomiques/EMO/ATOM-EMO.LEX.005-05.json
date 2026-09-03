@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.LEX.005-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Ferdinand nomme sa colère",
+  "lesson_id": "EMO.LEX.005",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Ferdinand",
+    "Clara",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ferdinand dessine un bateau à la table. Maman coupe des carottes. Le crayon bleu glisse. Sa sœur Clara prend le crayon. Ferdinand sent son visage chaud. Son ventre est dur. Ferdinand dit : je suis en colère. Il ouvre les doigts. Ses mains restent loin. Ferdinand fait un pas en arrière. Il peut s'éloigner. Il s'éloigne vers le canapé. Il souffle trois fois. Puis il va vers maman. Maman est l'adulte dans la cuisine. Ferdinand dit : maman, je suis en colère. Maman écoute. La colère a un nom. Les mains restent loin. Plus tard, ils dessineront ensemble. Clara rend le crayon. Ferdinand reprend un trait bleu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ferdinand est en colère. Que fait-il ?",
+      "expected_intents": [
+        "COLERE",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "s'éloigner",
+        "vers maman",
+        "adulte",
+        "mains loin",
+        "colère"
+      ],
+      "retry_prompt": "Ferdinand garde les mains loin. Puis il va où ?",
+      "positive_feedback": "Oui. Ferdinand nomme sa colère. Il peut s'éloigner. Il va vers un adulte.",
+      "wrong_feedback": "On dit : je suis en colère. Les mains restent loin. On peut s'éloigner. On va vers un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ferdinand a nommé sa colère. Mains loin. Il peut s'éloigner. Il va vers maman, l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Ferdinand s'assoit près de maman. Les carottes restent dans le saladier. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

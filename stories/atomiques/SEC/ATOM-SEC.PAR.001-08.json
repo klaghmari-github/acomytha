@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.PAR.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Élisa reste où papa voit",
+  "lesson_id": "SEC.PAR.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis aire de jeux",
+  "characters": [
+    "Élisa",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Élisa arrive au parc avec papa. Les canards font coin-coin. Papa montre le bac à sable. Il dit : voici l'espace montré. Tu joues ici. Papa s'assoit sur le banc. L'adulte voit. Élisa creuse. Le sable est frais. Elle reste dans l'espace montré. Papa la voit. Un seau rouge. Une pelle. Élisa verse le sable. Plus tard, ils vont à l'aire de jeux. Le bois du pont est lisse. Papa montre le petit pont. Il dit : ici, c'est l'espace montré. Je reste là. L'adulte voit. Élisa marche sur le pont. Elle reste où papa a dit. Même leçon, autre lieu. On joue là où l'adulte a dit. L'adulte voit. Élisa dit : papa me voit. Papa hoche la tête. Ils rentrent la main dans la main.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa montre un espace. Où joue Élisa ?",
+      "expected_intents": [
+        "ESPACE_MONTRE",
+        "ADULTE_VOIT"
+      ],
+      "accepted_examples": [
+        "espace montré",
+        "ici",
+        "où papa voit",
+        "l'adulte voit",
+        "le bac"
+      ],
+      "retry_prompt": "Elle reste dans l'espace montré. L'adulte voit. Où joue-t-elle ?",
+      "positive_feedback": "Oui. Élisa joue dans l'espace montré. L'adulte voit.",
+      "wrong_feedback": "On joue dans l'espace montré par papa ou maman. L'adulte voit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Élisa est restée dans l'espace montré. Au parc, puis à l'aire. L'adulte voit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Élisa range le seau. Papa ferme le portail. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

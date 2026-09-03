@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-VIV.PLA.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Gaëlle arrose la menthe",
+  "lesson_id": "VIV.PLA.001",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.PLA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Gaëlle",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaëlle est dans le jardin avec maman. Le pot de menthe est sur la table. Les feuilles sentent fort. Maman dit : la plante a besoin d'eau. Elle a besoin de lumière. On arrose avec un adulte. Gaëlle tient l'arrosoir. L'eau est froide. Maman guide. Ils versent un peu. Le terreau devient sombre. Maman pose le pot au soleil. La lumière touche les feuilles. Gaëlle dit : eau et lumière. Avec un adulte. La menthe brille. Une goutte tombe. Gaëlle essuie la table. Maman sourit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La menthe a besoin de quoi ?",
+      "expected_intents": [
+        "ARROSER"
+      ],
+      "accepted_examples": [
+        "eau",
+        "lumière",
+        "arroser",
+        "un adulte",
+        "de l'eau"
+      ],
+      "retry_prompt": "On arrose avec un adulte. Eau et lumière. De quoi a-t-elle besoin ?",
+      "positive_feedback": "Oui. Eau et lumière. On arrose avec un adulte.",
+      "wrong_feedback": "La plante a besoin d'eau et de lumière. On arrose avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaëlle a arrosé avec maman. Eau. Lumière. Un adulte était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gaëlle pose l'arrosoir. La menthe reste au soleil. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

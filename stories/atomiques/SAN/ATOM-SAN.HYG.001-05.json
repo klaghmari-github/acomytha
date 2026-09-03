@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.HYG.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Baptiste lave ses mains",
+  "lesson_id": "SAN.HYG.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison après le jardin",
+  "characters": [
+    "Baptiste",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Baptiste rentre du jardin. Ses mains sentent la terre. Il va aux toilettes. Papa l'attend dans le couloir. Papa dit : après les toilettes, on lave les mains. Baptiste ouvre l'eau. L'eau est tiède. Il prend le savon. Le savon sent la pomme. Il frotte ses mains. Il rince. Il essuie sur la serviette. Les mains sont propres. C'est l'heure de manger. Avant de manger, Baptiste retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie. Papa dit : savon et eau. Baptiste sourit. Il s'assoit à table. La soupe est chaude. Papa pose une cuillère. Baptiste dit : savon avant de manger. Savon après les toilettes.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Baptiste se lave les mains. Avec quoi ?",
+      "expected_intents": [
+        "SAVON",
+        "MAINS"
+      ],
+      "accepted_examples": [
+        "savon",
+        "du savon",
+        "les mains",
+        "eau et savon",
+        "il se lave"
+      ],
+      "retry_prompt": "Il ouvre l'eau. Puis il prend le savon. Avec quoi ?",
+      "positive_feedback": "Oui. Baptiste lave ses mains avec de l'eau et du savon.",
+      "wrong_feedback": "On ouvre l'eau. On prend le savon. On rince. On essuie.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Après les toilettes, Baptiste a lavé. Avant de manger, Baptiste a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Baptiste s'assoit près de papa. Ses mains sont propres. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

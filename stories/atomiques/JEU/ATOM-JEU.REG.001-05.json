@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-JEU.REG.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Baptiste dit bravo aux dominos",
+  "lesson_id": "JEU.REG.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "table de la cuisine",
+  "characters": [
+    "Baptiste",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Baptiste et papa jouent aux dominos, à la table. Les pièces sont lisses. Baptiste a envie de gagner. Papa pose le dernier domino. Papa a gagné. Baptiste sent un nœud dans le ventre. Ses yeux piquent un peu. Papa dit : l'autre peut gagner. C'est le jeu. Baptiste dit : je suis déçu. Papa dit : être déçu, c'est permis. Baptiste souffle. Il dit : bravo papa. Papa sourit. Baptiste range une pièce. Papa dit : on peut rejouer plus tard. Baptiste hoche la tête. Il va boire de l'eau. Le nœud se desserre. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa a gagné. Que peut faire Baptiste ?",
+      "expected_intents": [
+        "PERDRE",
+        "REJOUER"
+      ],
+      "accepted_examples": [
+        "rejouer",
+        "être déçu",
+        "bravo",
+        "plus tard"
+      ],
+      "retry_prompt": "Plus tard, on peut quoi ?",
+      "positive_feedback": "Oui. L'autre peut gagner. Être déçu, c'est permis. On rejoue plus tard.",
+      "wrong_feedback": "L'autre peut gagner. Être déçu, c'est permis. On dit bravo. On rejoue plus tard.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Baptiste a dit bravo. Il était déçu, et c'était permis. Ils rejoueront plus tard.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Baptiste range la boîte. Papa essuie la table. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

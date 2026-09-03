@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.ECR.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Anouk éteint et prend un livre",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ECR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "coin lecture",
+  "characters": [
+    "Anouk",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Anouk est dans le coin lecture. Elle regarde un dessin sur la tablette. Un oiseau chante dans l'histoire. Le coussin est doux. Maman s'assoit près d'elle. Maman dit : fini. L'adulte dit fini. Anouk écoute. Elle va éteindre. Anouk éteint l'écran. L'écran devient noir. Elle pose la tablette sur le coussin. Maman dit : on prend un autre jeu. Anouk choisit un livre en tissu. Le livre sent le coton. Anouk tourne une page. Maman nomme le lapin. Anouk dit : l'écran est éteint. Un autre jeu, c'est bien. L'adulte a dit fini. Elle a éteint. Puis elle a un autre jeu. Maman tape doucement dans ses mains. Anouk rit. Le coin lecture est calme.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Maman dit fini. Que fait Anouk ?",
+      "expected_intents": [
+        "ETEINDRE",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "éteindre",
+        "elle éteint",
+        "autre jeu",
+        "un autre jeu",
+        "le livre"
+      ],
+      "retry_prompt": "L'adulte dit fini. Elle éteint. Puis elle prend un autre jeu. Que fait-elle ?",
+      "positive_feedback": "Oui. Anouk éteint. Puis elle choisit un autre jeu.",
+      "wrong_feedback": "Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maman a dit fini. Anouk a éteint. Elle a pris un autre jeu. Le livre, c'était bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le lapin est sur la page. Anouk dit merci à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-FAM.SEC.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "La surprise gentille d'Élisa",
+  "lesson_id": "FAM.SEC.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.SEC",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Élisa",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est bientôt l'anniversaire de maman. Élisa plie un papier. Papa aide. Papa dit : c'est une surprise gentille. On la garde un peu. Élisa cache le papier dans une boîte. La boîte est sous le canapé. Maman passe. Élisa sourit. Elle garde un peu. Puis on dit. Papa dit : maintenant, on révèle. Élisa ouvre la boîte. Elle tend le papier. Élisa dit : c'est pour toi, maman. Maman rit. Elle ouvre le papier. C'est une fleur. C'était une surprise gentille. On l'a gardée un peu. Puis on dit. Élisa tape des mains. Maman dit merci.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Élisa cache un papier. C'est quoi ?",
+      "expected_intents": [
+        "SURPRISE_GENTILLE"
+      ],
+      "accepted_examples": [
+        "surprise",
+        "surprise gentille",
+        "un papier",
+        "pour maman"
+      ],
+      "retry_prompt": "C'est une surprise gentille. Puis on dit. C'est quoi ?",
+      "positive_feedback": "Oui. C'est une surprise gentille. On la garde un peu. Puis on dit.",
+      "wrong_feedback": "C'est une surprise gentille. On la garde un peu. Puis on dit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Élisa a gardé un peu. Puis on dit. C'était une surprise gentille pour maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman accroche la fleur. Élisa boit un verre d'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
