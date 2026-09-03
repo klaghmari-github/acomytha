@@ -118,9 +118,13 @@ def apply_story(story_id: str) -> Path:
                 row[1].value = merged["title"]
             if row[0].value == "fil_rouge":
                 row[1].value = merged.get("fil_rouge") or ""
+            if row[0].value == "secondary_lessons" and merged.get("secondary_lessons") is not None:
+                row[1].value = merged.get("secondary_lessons") or ""
         keys = {str(c.value) for c in ms["A"] if c.value}
         if "fil_rouge" not in keys:
             ms.append(["fil_rouge", merged.get("fil_rouge") or ""])
+        if "secondary_lessons" not in keys and merged.get("secondary_lessons"):
+            ms.append(["secondary_lessons", merged.get("secondary_lessons")])
     ws = wb["chunks"]
     headers = [c.value for c in ws[1]]
     for name in ("script", "sons", "length_scale_piper", "rate_label"):

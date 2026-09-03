@@ -108,6 +108,8 @@ Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histo
 
 **Troupe enfant (D16) :** Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Les réécritures suivantes remplacent Lina / Noé / Tom par cette liste. Peu de personnages par histoire.
 
+**Durée (D17) :** ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande.
+
 - `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
 - `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
 - `ATOM-SAN.ALI.002-01` Tom — *Le bateau de Tom* (N1)

@@ -34,7 +34,9 @@ La fusion n’est **pas** « le texte le plus long gagne ». C’est une **fusio
 | Question simple (1–3 mots de réponse) | Question qui recopie le slogan |
 | Fin = ce qu’on a **vécu**, puis « L’histoire est finie. » | « L’histoire est finie. » seul, ou consigne de cours |
 
-N1 : ~8 mots par phrase. N2 : < 16. Leçon **greffée** (petite bouchée, nommer le goût, assis à table ensemble), jamais collée en recap.
+N1 : ~8 mots par phrase. N2 : < 16. Leçon **greffée**, jamais collée en recap.
+
+**Durée ≥ 3 min.** Plusieurs passages. Certains portent une leçon, d’autres racontent. Une atomique peut greffer plusieurs leçons pour tenir 3 min. Allonger si le récit le demande.
 
 Enfants nommés : Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina seulement. Un héros, au plus un copain/copine de la liste, papa et/ou maman.
 

@@ -19,6 +19,7 @@ Copie la structure de l’exemple. Un seul chemin. Nœuds : `audio` → `questio
 - `language`: `"fr"`
 - `validation.status`: `"PENDING"`
 - Texte oral, phrases courtes. N1 : < 12 mots par phrase. N2/N3 : < 16.
+- **Durée ≥ 3 min.** Plusieurs passages. Certains portent une leçon, d’autres seulement le récit. Atomique : plusieurs leçons possibles (non critiques) pour tenir 3 min. Allonger si le fil le demande.
 - Inclure tous les `required_messages` de la leçon dans le texte du chemin.
 - `safe_actions` montrées, pas seulement dites.
 - Question : réponse 1–3 mots, `expected_intents` = ceux de la fiche, `wrong_feedback` = conduite sûre seulement.

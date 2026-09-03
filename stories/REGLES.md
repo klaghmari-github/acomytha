@@ -48,12 +48,19 @@ Accroche orale → héros, lieu, objectif concret → petit problème lié à la
 
 Types de nœuds : `audio`, `question_comprehension`, `question_lesson`, `choice_story`, `feedback`, `transition`, `silence_check`, `ending`.
 
+## Durée
+
+- **Minimum 3 minutes** d’écoute (180 s), atomique ou ramifiée. Jamais plus court.
+- On **allonge** si le récit le demande. Pas de plafond pédagogique : le fil rouge décide.
+- Pour tenir 3 min : **plusieurs passages**. Certains passages portent une leçon, d’autres avancent seulement l’histoire.
+- Même **sans ramification**, plusieurs leçons peuvent se greffer (pour compléter les 3 min), sauf si le framing est `positive_only_critical` (alors une seule leçon critique, d’autres leçons non critiques possibles).
+
 ## Atomique (sans bifurcation)
 
 - Un seul chemin racine → feuille.
-- Une leçon principale. Secondaires interdites si framing critique.
-- Une `question_lesson` (ou compréhension) + feedback positif + ending.
-- Durée cible 90–180 s (N1) / 120–240 s (N2/N3). Texte parlé, phrases courtes.
+- Une leçon principale. D’autres leçons **autorisées** si elles se vivent dans le récit (pas un cours collé). Secondaire critique interdite.
+- Plusieurs passages. Une `question_lesson` (ou compréhension) + confirmation + ending.
+- Durée **≥ 3 min**. Plus long si la narration l’exige. Texte parlé, phrases courtes.
 
 ## Ramifiée (bifurcation)
 
