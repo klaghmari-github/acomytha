@@ -317,9 +317,15 @@ h3 {
 
 .c-filters {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 0.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.c-hint {
+  margin: 0 0 0.8rem;
+  color: var(--ink-mute, #6b5e52);
+  font-size: 0.92rem;
 }
 
 .c-filters input,

@@ -11,6 +11,8 @@ export class ParentApp extends Component {
     this.me = null;
     this.forest = new Set();
     this.engine = null;
+    this.allStories = [];
+    this._filterTimer = 0;
   }
 
   async connectedCallback() {
@@ -46,49 +48,79 @@ export class ParentApp extends Component {
               <option value="atomic">Clairière</option>
               <option value="ramifiee">Histoire ramifiée</option>
             </select>
-            <button class="c-btn c-btn--ghost" id="refresh">Filtrer</button>
           </div>
+          <p class="c-hint" id="count"></p>
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
         </main>
       </div>`;
     this.on(this.querySelector("#out"), "click", () => this.logout());
     this.on(this.querySelector("#save"), "click", () => this.save());
-    this.on(this.querySelector("#refresh"), "click", () => this.loadStories());
-    this.on(this.querySelector("#q"), "keydown", (e) => {
-      if (e.key === "Enter") this.loadStories();
-    });
+    this.on(this.querySelector("#q"), "input", () => this.scheduleRender());
+    this.on(this.querySelector("#domain"), "change", () => this.render());
+    this.on(this.querySelector("#age"), "change", () => this.render());
+    this.on(this.querySelector("#kind"), "change", () => this.render());
+    this.on(this.querySelector("#grid"), "change", (e) => this.onGridChange(e));
+    this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
     await this.boot();
   }
 
-  async boot() {
-    const [lessons, forest] = await Promise.all([this.api.get("/lessons"), this.api.get("/parent/forest")]);
-    this.forest = new Set(forest.map((s) => s.story_id));
-    const domains = [...new Map(lessons.map((l) => [l.domain_id, l.domain])).entries()];
-    const sel = this.querySelector("#domain");
-    for (const [id, name] of domains) {
-      const o = document.createElement("option");
-      o.value = id;
-      o.textContent = name;
-      sel.append(o);
-    }
-    await this.loadStories();
+  disconnectedCallback() {
+    clearTimeout(this._filterTimer);
+    super.disconnectedCallback();
   }
 
-  async loadStories() {
-    const q = this.querySelector("#q").value;
+  async boot() {
+    const msg = this.querySelector("#msg");
+    try {
+      const [lessons, forest, stories] = await Promise.all([
+        this.api.get("/lessons"),
+        this.api.get("/parent/forest"),
+        this.api.get("/stories"),
+      ]);
+      this.forest = new Set(forest.map((s) => s.story_id));
+      this.allStories = stories;
+      const domains = [...new Map(lessons.map((l) => [l.domain_id, l.domain])).entries()];
+      const sel = this.querySelector("#domain");
+      for (const [id, name] of domains) {
+        const o = document.createElement("option");
+        o.value = id;
+        o.textContent = name;
+        sel.append(o);
+      }
+      this.render();
+    } catch (e) {
+      msg.textContent = e.message || "Impossible de charger le catalogue.";
+    }
+  }
+
+  scheduleRender() {
+    clearTimeout(this._filterTimer);
+    this._filterTimer = setTimeout(() => this.render(), 80);
+  }
+
+  render() {
+    const q = fold(this.querySelector("#q").value);
     const domain = this.querySelector("#domain").value;
-    const age_band = this.querySelector("#age").value;
+    const age = this.querySelector("#age").value;
     const kind = this.querySelector("#kind").value;
-    const params = new URLSearchParams();
-    if (q) params.set("q", q);
-    if (domain) params.set("domain", domain);
-    if (age_band) params.set("age_band", age_band);
-    if (kind) params.set("kind", kind);
-    const stories = await this.api.get("/stories?" + params.toString());
+    const list = this.allStories.filter((s) => {
+      if (domain && s.domain !== domain) return false;
+      if (age && s.age_band !== age) return false;
+      if (kind && s.kind !== kind) return false;
+      if (q) {
+        const blob = fold([s.title, s.story_id, s.lesson_id, s.setting, s.characters, s.subdomain].join(" "));
+        if (!blob.includes(q)) return false;
+      }
+      return true;
+    });
+    const count = this.querySelector("#count");
+    count.textContent = list.length === this.allStories.length
+      ? `${list.length} histoires`
+      : `${list.length} histoire${list.length > 1 ? "s" : ""} · ${this.allStories.length} au catalogue`;
     const grid = this.querySelector("#grid");
     grid.replaceChildren();
-    for (const s of stories) {
+    for (const s of list) {
       grid.append(this.card(s));
     }
   }
@@ -107,14 +139,20 @@ export class ParentApp extends Component {
       <p>${escapeHtml(s.lesson_id)} · ${escapeHtml(s.setting || "")}</p>
       <label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Dans la forêt enfant</label>
       ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Préécouter</button>` : ""}`;
-    const box = el.querySelector("input[type=checkbox]");
-    this.on(box, "change", () => {
-      if (box.checked) this.forest.add(s.story_id);
-      else this.forest.delete(s.story_id);
-    });
-    const play = el.querySelector("[data-play]");
-    if (play) this.on(play, "click", () => this.preview(s.story_id, play));
     return el;
+  }
+
+  onGridChange(e) {
+    const box = e.target.closest("input[data-id]");
+    if (!box) return;
+    if (box.checked) this.forest.add(box.dataset.id);
+    else this.forest.delete(box.dataset.id);
+  }
+
+  onGridClick(e) {
+    const play = e.target.closest("[data-play]");
+    if (!play) return;
+    this.preview(play.dataset.play, play);
   }
 
   async save() {
@@ -156,6 +194,13 @@ function escapeHtml(s) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
+}
+
+function fold(s) {
+  return String(s || "")
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .toLowerCase();
 }
 
 customElements.define("acomytha-parent", ParentApp);
