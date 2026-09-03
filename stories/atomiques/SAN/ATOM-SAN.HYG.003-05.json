@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SAN.HYG.003-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Luce se mouche au parc",
+  "lesson_id": "SAN.HYG.003",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Luce",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Luce est au parc avec papa. Son nez coule. Papa tend un mouchoir. Luce prend le mouchoir. Elle se mouche. Puis elle va à la poubelle du parc. Elle jette le mouchoir. Papa dit : mouchoir, puis poubelle. Luce répète : mouchoir. Poubelle.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le nez de Luce coule. Que fait-elle ?",
+      "expected_intents": [
+        "MOUCHOIR"
+      ],
+      "accepted_examples": [
+        "mouchoir",
+        "poubelle",
+        "jeter"
+      ],
+      "retry_prompt": "Elle se mouche. Ensuite ?",
+      "positive_feedback": "Oui. Un mouchoir. Puis la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on jette à la poubelle.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SAN.HYG.003"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Luce a pris un mouchoir. Elle l'a jeté à la poubelle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range un mouchoir propre. Luce donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
