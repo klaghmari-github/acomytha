@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.CON.002-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Maya dit stop dans la cour",
+  "lesson_id": "REL.CON.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour d'école",
+  "characters": [
+    "Maya",
+    "maîtresse",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Maya est dans la cour. La maîtresse est près du banc. Maya construit une tour. Un camarade arrive vite. Il bouscule la tour. Maya dit : stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Maya marche vers la maîtresse. Elle dit : on m'a bousculée. La maîtresse l'écoute. Le soir, papa vient. Maya raconte. Papa dit : tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Maya. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "MAITRESSE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "la maîtresse",
+        "éloigner"
+      ],
+      "retry_prompt": "Elle dit stop. Ensuite ?",
+      "positive_feedback": "Oui. Elle dit stop. Elle s'éloigne. Elle va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.CON.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maya a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa prend la main de Maya. Ils marchent vers la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

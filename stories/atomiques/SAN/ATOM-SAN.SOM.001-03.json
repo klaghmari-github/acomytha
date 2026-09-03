@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.SOM.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Nina met le pyjama, deux soirs",
+  "lesson_id": "SAN.SOM.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.SOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis chambre, deux soirs",
+  "characters": [
+    "Nina",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le soir, Nina joue dans le salon. Papa dit : c'est l'heure du dodo. Le corps a besoin de dormir. Nina prend son pyjama bleu. Elle le met. Le pyjama est doux. Papa lit une petite histoire. Nina se couche. Elle dit : dodo. La chambre est calme. Le lendemain, Nina a passé la journée au parc. Le soir revient. Nina a les yeux lourds. Maman dit : c'est le soir. On met le pyjama. Puis c'est le dodo. Nina se souvient. Elle prend le pyjama. Elle le met. Maman raconte une histoire. Nina se couche. Le corps a besoin de dormir. Même leçon, autre soir. Nina dit : dodo, maman.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le soir, Nina va dormir. Que met-elle ?",
+      "expected_intents": [
+        "PYJAMA",
+        "LIT"
+      ],
+      "accepted_examples": [
+        "pyjama",
+        "le pyjama",
+        "son pyjama",
+        "elle se couche",
+        "dodo"
+      ],
+      "retry_prompt": "Elle met le pyjama. Puis elle se couche. Que met Nina ?",
+      "positive_feedback": "Oui. Nina met le pyjama. Puis c'est le dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nina a mis le pyjama. Un soir avec papa. Un soir avec maman. Puis dodo.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Nina ferme les yeux. La chambre est douce. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

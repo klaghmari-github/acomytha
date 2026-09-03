@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-VIV.ANI.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Jade prend soin, chat puis poules",
+  "lesson_id": "VIV.ANI.003",
+  "secondary_lessons": [],
+  "domain": "VIV",
+  "subdomain": "VIV.ANI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison puis jardin",
+  "characters": [
+    "Jade",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Jade est à la maison avec papa. Le chat Minou a soif. Il miaule tout bas. Papa dit : on prend soin avec un adulte. On est doux. Jade va vers papa. Ils remplissent l'eau ensemble. L'eau fait un bruit doux. Jade pose le bol, tout doux. Minou lape. Plus tard, au jardin, les poules picorent. Papa dit : on donne le grain avec un adulte. On est doux. Jade se souvient. Elle reste près de papa. Elle verse le grain, tout doux. Les poules viennent. Papa dit : merci d'être douce. Même leçon, autre animal. Eau ou nourriture, avec un adulte. On est doux.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Jade donne à boire ou à manger. Comment ?",
+      "expected_intents": [
+        "AVEC_ADULTE",
+        "DOUX"
+      ],
+      "accepted_examples": [
+        "avec papa",
+        "avec un adulte",
+        "doux",
+        "tout doux",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Elle le fait avec un adulte. Elle est douce. Comment fait Jade ?",
+      "positive_feedback": "Oui. On prend soin avec un adulte. On est doux.",
+      "wrong_feedback": "On donne l'eau ou la nourriture avec un adulte. On est doux.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Jade a été douce. Avec papa. Pour le chat, puis pour les poules.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Minou se lèche. Les poules picorent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

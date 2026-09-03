@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-TMP.JOU.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Oscar voit le soleil, puis la lune",
+  "lesson_id": "TMP.JOU.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.JOU",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin le jour puis chambre la nuit",
+  "characters": [
+    "Oscar",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Oscar est dans le jardin avec maman. C'est le jour. Le soleil brille. Maman dit : le jour, le soleil. Soleil jour. Oscar sent la chaleur sur ses mains. Les oiseaux chantent. L'herbe chatouille. Plus tard, le soir arrive. Oscar est dans sa chambre. La fenêtre est ouverte un peu. Il voit la lune. Il voit les étoiles. Maman dit : la nuit, la lune et les étoiles. Lune nuit. Oscar met son pyjama. Le pyjama est doux. Maman dit : on se couche. Dodo la nuit. Oscar se couche. Le corps a besoin de dormir. Même leçon, deux moments. Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le jour on voit le soleil. La nuit, que voit-on ?",
+      "expected_intents": [
+        "SOLEIL",
+        "LUNE",
+        "NUIT"
+      ],
+      "accepted_examples": [
+        "la lune",
+        "lune",
+        "étoiles",
+        "la nuit",
+        "soleil"
+      ],
+      "retry_prompt": "Le jour, le soleil. La nuit, la lune. Que voit-on la nuit ?",
+      "positive_feedback": "Oui. Le jour le soleil. La nuit la lune et les étoiles. Dodo la nuit.",
+      "wrong_feedback": "Le jour, on voit le soleil. La nuit, la lune et les étoiles. On se couche. Dodo la nuit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Oscar a vu le soleil le jour. Puis la lune la nuit. Dodo la nuit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Oscar ferme les yeux. La lune est là. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SEC.ADU.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Pablo reste avec maman, deux lieux",
+  "lesson_id": "SEC.ADU.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.ADU",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "magasin puis gare",
+  "characters": [
+    "Pablo",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Pablo va au magasin avec maman. Maman est l'accompagnant. Pablo aime rester avec l'accompagnant. Il marche à côté de maman. Maman tient la main. Les pieds de Pablo restent près. Ils voient des poires. Pablo reste avec l'accompagnant. L'adulte connu est là. Maman dit : tu restes avec moi. Pablo hoche la tête. Il sent la main. La main est douce. Plus tard, ils vont à la gare. Le train fait un bruit doux. Pablo se souvient. Il reste avec l'accompagnant. Il reste à côté de maman. Les pieds restent près. La main de maman est là. Maman dit : tu restes avec l'adulte connu. Pablo sourit. Même leçon, autre lieu. L'accompagnant de la famille est là.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Pablo est au magasin, puis à la gare. Que fait-il ?",
+      "expected_intents": [
+        "RESTER_AVEC"
+      ],
+      "accepted_examples": [
+        "rester",
+        "avec maman",
+        "à côté",
+        "rester avec",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Il reste avec maman. Maman est l'accompagnant. Que fait Pablo ?",
+      "positive_feedback": "Oui. Pablo reste avec l'accompagnant. Il reste à côté de maman.",
+      "wrong_feedback": "On reste avec l'accompagnant. On reste à côté de l'adulte connu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Pablo reste avec maman. Au magasin, puis à la gare. L'adulte connu est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Pablo et maman prennent le train. Ils restent ensemble. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

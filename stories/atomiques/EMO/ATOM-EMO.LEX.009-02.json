@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-EMO.LEX.009-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Iris est jalouse du puzzle",
+  "lesson_id": "EMO.LEX.009",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Iris",
+    "Tom",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Iris est dans le salon avec maman. Tom tient le grand puzzle. Iris le regarde. Son ventre se serre. Elle dit : je suis jalouse. Jaloux, c'est cette envie. Maman écoute. Iris va près de Tom. Elle dit : je voudrais demander un tour. Tom dit : encore deux pièces. Iris attend. Les mains restent sur ses genoux. Puis Tom passe une pièce. Iris a son tour. Maman dit : tu as demandé un tour. Tu as attendu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris veut le puzzle. Que fait-elle ?",
+      "expected_intents": [
+        "JALOUX",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "jaloux",
+        "jalouse",
+        "un tour",
+        "demander"
+      ],
+      "retry_prompt": "Elle nomme l'envie. Puis ?",
+      "positive_feedback": "Oui. Elle est jalouse. Elle demande un tour.",
+      "wrong_feedback": "On dit : je suis jaloux. On demande un tour. On attend.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.LEX.009"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Iris a dit : je suis jalouse. Elle a demandé un tour.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range la boîte. Iris pose une dernière pièce. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

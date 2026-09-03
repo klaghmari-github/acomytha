@@ -15,11 +15,11 @@ Le générateur **n’auto-approuve pas** un paquet audio. Statut maximal ici : 
 
 ## Domaines (atomiques)
 
-SAN 11 · SEC 11 · EMO 13 · REL 11 · DIF 10 · AUT 6 · FAM 5 · COL 4 · VIV 4 · TMP 6 · SOC 8 · JEU 6 · LAN 3
+SAN 19 · SEC 21 · EMO 24 · REL 20 · DIF 15 · AUT 12 · FAM 8 · COL 7 · VIV 9 · TMP 11 · SOC 14 · JEU 9 · LAN 7
 
 ## Âges atomiques
 
-N1 (3–4) 46 · N2 (4–5) 60 · N3 (5–6) 24
+N1 (3–4) 52 · N2 (4–5) 78 · N3 (5–6) 46
 
 ## Identifiants
 

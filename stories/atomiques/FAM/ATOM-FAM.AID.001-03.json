@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Solène va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée puis jardin",
+  "characters": [
+    "Solène",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Solène veut mettre son manteau. La fermeture est difficile. C'est trop difficile. Solène va vers papa. Aller vers eux, c'est possible. Elle dit le besoin. Solène dit : papa, j'ai besoin d'aide. Papa l'écoute. Il tient le bas du manteau. Solène tire. Le manteau est fermé. Plus tard, dans le jardin, l'arrosoir est lourd. Solène se souvient. Elle va vers maman. Elle dit le besoin. Solène dit : maman, l'arrosoir est lourd. Maman tient l'anse avec elle. L'eau coule doucement. Même leçon, autre lieu. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop difficile. Que fait Solène ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "aller vers eux",
+        "dire le besoin",
+        "demander",
+        "papa ou maman"
+      ],
+      "retry_prompt": "Elle va vers papa ou maman. Elle dit le besoin. Que fait Solène ?",
+      "positive_feedback": "Oui. Solène va vers eux. Elle dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers papa ou maman. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Solène est allée vers papa. Puis vers maman. Elle a dit le besoin.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Les fleurs ont de l'eau. Solène range l'arrosoir. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

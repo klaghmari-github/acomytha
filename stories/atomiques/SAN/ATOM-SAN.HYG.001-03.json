@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SAN.HYG.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Mehdi se lave les mains, deux lieux",
+  "lesson_id": "SAN.HYG.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison puis pique-nique au parc",
+  "characters": [
+    "Mehdi",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 195,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Mehdi est à la maison avec papa. Il va aux toilettes. Après les toilettes, il va au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte les mains. Il rince. Il essuie. Plus tard, c'est l'heure de manger. Avant de manger, Mehdi retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il rince. Il essuie. Papa dit : merci. L'après-midi, ils font un pique-nique au parc. Mehdi va aux toilettes du parc. Après les toilettes, papa l'emmène au point d'eau. Mehdi ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie. Puis ils sortent le panier. Avant de manger, Mehdi lave encore. Eau et savon. Papa dit : comme à la maison. Même leçon, autre lieu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Mehdi se lave les mains. Avec quoi ?",
+      "expected_intents": [
+        "SAVON",
+        "MAINS"
+      ],
+      "accepted_examples": [
+        "savon",
+        "du savon",
+        "les mains",
+        "eau et savon",
+        "il se lave"
+      ],
+      "retry_prompt": "Après les toilettes et avant de manger, il prend le savon. Avec quoi ?",
+      "positive_feedback": "Oui. Mehdi lave ses mains avec de l'eau et du savon.",
+      "wrong_feedback": "On ouvre l'eau. On prend le savon. On rince. On essuie.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Après les toilettes, Mehdi a lavé. Avant de manger, Mehdi a lavé. À la maison, puis au parc.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Mehdi mange une pomme. Les mains sont propres. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

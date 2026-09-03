@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-JEU.BAL.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Sacha passe le ballon, deux espaces",
+  "lesson_id": "JEU.BAL.001",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.BAL",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc puis jardin",
+  "characters": [
+    "Sacha",
+    "Lina",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sacha est au parc avec papa. Papa montre un cercle d'herbe. Papa dit : c'est l'espace du jeu. On reste dans l'espace du jeu. Sacha a un ballon rouge. Papa dit : chacun a un tour. On se passe le ballon. Sacha passe le ballon à Lina. Lina le passe à papa. C'est le tour de Sacha. Il reste dans l'espace du jeu. Plus tard, au jardin, papa pose deux sacs. C'est l'espace du jeu. Sacha se souvient. Il passe le ballon. Il attend son tour. Puis il joue. Les pieds restent dans l'espace du jeu. Même leçon, autre lieu. Passer. Un tour. L'espace du jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sacha a le ballon. Que fait-il ?",
+      "expected_intents": [
+        "PASSER",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "passer",
+        "il passe",
+        "son tour",
+        "le tour",
+        "passer le ballon"
+      ],
+      "retry_prompt": "Il passe le ballon. Chacun a un tour. Que fait Sacha ?",
+      "positive_feedback": "Oui. On se passe le ballon. Chacun a un tour. On reste dans l'espace du jeu.",
+      "wrong_feedback": "On passe le ballon. On attend son tour. On reste dans l'espace du jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sacha a passé le ballon. Au parc, puis au jardin. Dans l'espace du jeu. Chacun a eu un tour.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Sacha pose le ballon. Papa range les sacs. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
