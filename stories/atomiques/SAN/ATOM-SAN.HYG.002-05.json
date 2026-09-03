@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-SAN.HYG.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Bénédicte prend la brosse",
+  "lesson_id": "SAN.HYG.002",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salle de bain",
+  "characters": [
+    "Bénédicte",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, le soleil entre dans la salle de bain. Bénédicte sent l'eau tiède. Papa l'appelle. Papa tend la brosse jaune. Bénédicte prend la brosse. Un adulte est avec elle. C'est papa. Ils se brossent ensemble. La brosse va en haut. La brosse va en bas. Bénédicte sent la mousse. Ça goûte un peu la menthe. Parce qu'elle brosse le matin, ses dents sont propres. Elle rince sa bouche. Elle range la brosse. Plus tard, le soir arrive. La lumière est douce. Papa dit : c'est l'heure. Bénédicte revient. Elle prend encore la brosse. Papa, l'adulte, se brosse aussi. Matin et soir, c'est pareil. La brosse chatouille un peu. Papa dit : matin et soir, avec un adulte. Bénédicte répète : matin, soir, brosse. Elle pose la brosse dans le gobelet.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Bénédicte se brosse les dents. Quand et avec quoi ?",
+      "expected_intents": [
+        "BROSSE",
+        "MATIN_SOIR"
+      ],
+      "accepted_examples": [
+        "brosse",
+        "la brosse",
+        "matin et soir",
+        "matin",
+        "soir",
+        "avec papa"
+      ],
+      "retry_prompt": "Elle prend la brosse. Matin et soir. Que fait Bénédicte ?",
+      "positive_feedback": "Oui. Bénédicte prend la brosse. Matin et soir, avec papa.",
+      "wrong_feedback": "On prend la brosse. On se brosse matin et soir, avec un adulte.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Bénédicte a pris la brosse. Elle brosse avec l'adulte. C'est papa. Matin et soir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Bénédicte met son pyjama. Papa baisse la petite lumière. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

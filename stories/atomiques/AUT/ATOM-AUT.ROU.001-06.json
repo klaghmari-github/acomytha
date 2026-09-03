@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.ROU.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Bénédicte, une étape après l'autre",
+  "lesson_id": "AUT.ROU.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.ROU",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison, le matin",
+  "characters": [
+    "Bénédicte",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le matin, Bénédicte ouvre les yeux. Maman dit : une étape après l'autre. D'abord, Bénédicte se lève. Ses pieds touchent le tapis. Ensuite, elle s'habille. Elle met le pull. Elle met le pantalon. Papa dit : maintenant, le déjeuner. Bénédicte s'assoit. Elle mange du pain. Elle boit du lait. Maman dit : ensuite, le sac. Bénédicte met la gourde. Elle met le cahier. Une étape après l'autre. Bénédicte est prête.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Bénédicte se prépare. Comment avance-t-elle ?",
+      "expected_intents": [
+        "ETAPE"
+      ],
+      "accepted_examples": [
+        "une étape",
+        "après l'autre",
+        "étape",
+        "les étapes"
+      ],
+      "retry_prompt": "Elle fait une étape après l'autre. Comment avance Bénédicte ?",
+      "positive_feedback": "Oui. Une étape après l'autre. Se lever, s'habiller, déjeuner, sac.",
+      "wrong_feedback": "On fait une étape après l'autre. On fait l'étape dite.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Bénédicte a fait l'étape dite. Se lever. S'habiller. Déjeuner. Le sac. Une étape après l'autre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Bénédicte met les chaussures. Maman ouvre la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

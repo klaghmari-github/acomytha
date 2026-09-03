@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.PAR.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Guillaume attend son tour",
+  "lesson_id": "REL.PAR.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "bac à sable",
+  "characters": [
+    "Guillaume",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Guillaume est au parc avec papa. Un camarade a la pelle rouge. Il creuse dans le bac à sable. Guillaume a envie. Il s'approche. Papa dit : on peut attendre. Guillaume pose les pieds au sol. Il sent le sable chaud. Le camarade creuse encore. Guillaume attend. Papa tient sa main. Le camarade pose la pelle. Papa dit : puis mon tour. Guillaume dit : puis mon tour. Guillaume prend la pelle. Le sable est fin. Il creuse un trou. Le camarade attend maintenant. Papa dit : on attend. Puis mon tour arrive.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le camarade a la pelle. Que fait Guillaume ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TOUR"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "son tour",
+        "puis mon tour",
+        "il attend"
+      ],
+      "retry_prompt": "Il attend. Puis c'est son tour. Que fait Guillaume ?",
+      "positive_feedback": "Oui. On attend. Puis mon tour arrive.",
+      "wrong_feedback": "On attend. Puis mon tour arrive, et on joue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Guillaume a su attendre. Puis mon tour est venu. Il a creusé. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Guillaume pose la pelle. Il prend la main de papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

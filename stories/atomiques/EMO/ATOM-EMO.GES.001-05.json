@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-EMO.GES.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Fleur dit stop",
+  "lesson_id": "EMO.GES.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.GES",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Fleur",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 165
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Fleur joue au salon. Un camarade la serre. Fleur sent sa poitrine. C'est trop. Fleur dit : stop. Elle recule d'un pas. Elle peut s'éloigner. Elle s'éloigne vers le canapé. Maman est l'adulte. Fleur va vers maman. Elle dit : c'était trop. Maman l'écoute. Fleur pose sa main. Elle souffle. Dire stop, c'est permis. On s'éloigne. On va vers un adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "C'est trop pour Fleur. Que dit-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "maman",
+        "adulte",
+        "vers maman"
+      ],
+      "retry_prompt": "Fleur dit stop. Puis elle va où ?",
+      "positive_feedback": "Oui. Fleur dit stop. Elle peut s'éloigner. Elle va vers un adulte.",
+      "wrong_feedback": "On dit stop. On peut s'éloigner. On va vers papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Fleur a dit stop. Elle a pu s'éloigner. Elle rejoint maman, l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Fleur reste près du canapé. Maman lui parle tout bas. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
