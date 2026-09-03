@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SAN.ALI.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le concombre d'Amandine",
+  "lesson_id": "SAN.ALI.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Amandine",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'heure du dîner. Amandine s'assoit près de maman. Dans l'assiette, il y a du riz. Il y a aussi un concombre vert. Le concombre est froid. Il sent l'eau du jardin. Maman sourit. Maman dit : tu peux goûter. Juste une petite portion. Une petite bouchée. Amandine prend un tout petit morceau. Elle le met dans sa bouche. C'est frais. C'est un peu croquant. Amandine dit : c'est frais, maman. Elle a su nommer le goût. Maman dit : merci d'avoir goûté. Une petite portion, c'est déjà bien. Amandine n'a pas besoin de tout finir. Le concombre reste dans l'assiette.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Amandine goûte le concombre. Que fait-elle ?",
+      "expected_intents": [
+        "GOUTER",
+        "PETITE_BOUCHEE"
+      ],
+      "accepted_examples": [
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "elle goûte",
+        "petite portion"
+      ],
+      "retry_prompt": "Elle prend une petite bouchée. Que fait Amandine ?",
+      "positive_feedback": "Oui. Elle goûte une petite bouchée, et elle dit le goût à maman.",
+      "wrong_feedback": "On goûte une petite bouchée, et on dit le goût à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Amandine a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Amandine boit une gorgée d'eau. Le concombre reste à sa place. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

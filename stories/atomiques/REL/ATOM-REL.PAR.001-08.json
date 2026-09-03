@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.PAR.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Cécile prête l'arrosoir",
+  "lesson_id": "REL.PAR.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin de la maison",
+  "characters": [
+    "Cécile",
+    "Lila",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Cécile est au jardin avec maman. Elle tient un petit arrosoir bleu. L'eau est tiède. Lila arrive. Lila aimerait l'arrosoir. Cécile peut prêter. Cécile dit : tu peux. C'est ton tour. Elle tend l'arrosoir. Lila arrose le basilic. Ça sent le vert. Cécile attend son tour. Elle s'assoit près de maman. Maman dit : on peut prêter. On peut attendre son tour. On peut aussi proposer un autre jeu. Cécile prend un seau. Elle dit : un autre jeu, le seau. Lila finit. Elle rend l'arrosoir. Cécile arrose la menthe. Parce qu'elle a su prêter, le jeu continue. Maman sourit. Cécile dit : c'est ton tour, puis le mien.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Lila veut l'arrosoir. Que peut faire Cécile ?",
+      "expected_intents": [
+        "PRETER",
+        "TOUR",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "prêter",
+        "son tour",
+        "autre jeu",
+        "attendre",
+        "le seau"
+      ],
+      "retry_prompt": "On peut prêter. On peut attendre son tour. Que fait Cécile ?",
+      "positive_feedback": "Oui. On peut prêter, attendre son tour, ou proposer un autre jeu.",
+      "wrong_feedback": "On peut prêter. On peut attendre son tour. On peut proposer un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Cécile a su prêter. Elle a attendu son tour. Elle a proposé un autre jeu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Cécile et Lila rangent l'arrosoir. Maman ferme le robinet. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

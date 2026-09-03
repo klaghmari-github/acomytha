@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.ADU.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hadrien reste avec maman au marché",
+  "lesson_id": "SEC.ADU.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.ADU",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "marché aux fleurs",
+  "characters": [
+    "Hadrien",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 225
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hadrien va au marché aux fleurs. Maman vient avec lui. Maman est l'accompagnant. Hadrien aime rester avec l'accompagnant. Il marche à côté de maman. Ses pieds restent près des pieds de maman. Maman tient sa main. Les mains restent dans la main de maman. Ils voient des tulipes. Hadrien reste près. Maman dit : tu restes avec moi. Hadrien hoche la tête. Il sent la main de maman. La main est chaude. Ils sentent les roses. Hadrien reste avec maman. L'adulte connu est là. Hadrien est calme. Il sourit. Maman prend un bouquet. Hadrien reste à côté. Rester avec l'accompagnant, c'est rester près de maman. Les pieds restent près. Les mains restent tenues.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hadrien est au marché. Que fait-il ?",
+      "expected_intents": [
+        "RESTER_AVEC"
+      ],
+      "accepted_examples": [
+        "rester",
+        "avec maman",
+        "à côté",
+        "rester avec",
+        "avec l'adulte"
+      ],
+      "retry_prompt": "Il reste avec maman. Maman est l'accompagnant. Que fait Hadrien ?",
+      "positive_feedback": "Oui. Hadrien reste avec l'accompagnant. Il reste à côté de maman.",
+      "wrong_feedback": "On reste avec l'accompagnant. On reste à côté de l'adulte connu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hadrien reste avec maman. L'accompagnant est là. La main est tenue. Les pieds restent près.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hadrien et maman rentrent avec les fleurs. Ils marchent ensemble. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

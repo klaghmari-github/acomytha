@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.AFF.002-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Florian prend son manteau pour le pain",
+  "lesson_id": "AUT.AFF.002",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée puis boulangerie",
+  "characters": [
+    "Florian",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Florian veut aller chercher le pain. Papa ouvre la porte de l'entrée. L'air est frais. Papa dit : avant de sortir, on prend le manteau. Florian prend son manteau vert. Il passe les manches. Le tissu est doux. Ils sortent. À la boulangerie, ça sent le pain chaud. Florian tient la main de papa. Puis ils rentrent. Papa dit : en rentrant, le manteau va à sa place. Florian raccroche le manteau au crochet. Le crochet est bas. Florian dit : manteau pour sortir. Manteau à sa place en rentrant. Papa sourit. Les chaussures restent près de la porte. Parce qu'il a pris le manteau, Florian a eu chaud dehors. En rentrant, le manteau a sa place.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de sortir, que prend Florian ?",
+      "expected_intents": [
+        "MANTEAU"
+      ],
+      "accepted_examples": [
+        "manteau",
+        "le manteau",
+        "son manteau",
+        "il prend le manteau"
+      ],
+      "retry_prompt": "Il prend le manteau. Puis en rentrant, il le raccroche. Que prend Florian ?",
+      "positive_feedback": "Oui. Florian prend son manteau. En rentrant, il le raccroche.",
+      "wrong_feedback": "Avant de sortir, on prend le manteau. En rentrant, on le pose à sa place.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Florian a pris le manteau pour sortir. En rentrant, il l'a raccroché.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Florian pose le pain sur la table. Papa ferme la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "générateur, revue humaine requise",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
