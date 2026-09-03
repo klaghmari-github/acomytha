@@ -15,10 +15,6 @@ export class SignupGate extends Component {
         <form class="c-paper" id="signup">
           <div class="c-mark"><strong>AcoMytha</strong></div>
           <div class="c-field">
-            <label for="name">Prénom</label>
-            <input id="name" name="display_name" autocomplete="name" />
-          </div>
-          <div class="c-field">
             <label for="email">Adresse</label>
             <input id="email" name="email" type="email" autocomplete="username" required />
           </div>
@@ -42,7 +38,6 @@ export class SignupGate extends Component {
       await this.api.post("/auth/signup", {
         email: this.querySelector("#email").value.trim().toLowerCase(),
         password: this.querySelector("#password").value,
-        display_name: this.querySelector("#name").value.trim(),
         device_id: DeviceIdentity.get(),
         device_label: DeviceIdentity.label(),
       });
