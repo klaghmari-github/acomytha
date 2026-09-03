@@ -14,7 +14,8 @@ from openpyxl.worksheet.datavalidation import DataValidation
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "arbres"
-LECONS_PATH = ROOT / "referentiel" / "lecons.json"
+LECONS_XLSX = ROOT / "referentiel" / "lecons.xlsx"
+LECONS_PATH = ROOT / "referentiel" / "lecons.json"  # archive, si xlsx absent
 
 KINDS = (
     "passage_debut",
@@ -77,6 +78,31 @@ CHUNK_COLS = [
 
 
 def load_lecons():
+    if LECONS_XLSX.exists():
+        from openpyxl import load_workbook
+
+        wb = load_workbook(LECONS_XLSX, read_only=True, data_only=True)
+        rows = list(wb["lecons"].iter_rows(values_only=True))
+        headers = [str(h) for h in rows[0]]
+        out = {}
+        for r in rows[1:]:
+            d = {headers[i]: r[i] for i in range(len(headers))}
+            lid = d.get("lesson_id")
+            if not lid:
+                continue
+            for k in (
+                "required_messages",
+                "safe_actions",
+                "misconceptions",
+                "forbidden_in_audio",
+                "answer_intents",
+                "compatible_lessons",
+            ):
+                v = d.get(k) or ""
+                d[k] = [x.strip() for x in str(v).split("|") if x.strip()]
+            out[str(lid)] = d
+        wb.close()
+        return out
     if not LECONS_PATH.exists():
         return {}
     data = json.loads(LECONS_PATH.read_text(encoding="utf-8"))

@@ -7,8 +7,40 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LECONS = json.loads((ROOT / "referentiel" / "lecons.json").read_text(encoding="utf-8"))
-BY_ID = {l["lesson_id"]: l for l in LECONS["lessons"]}
+
+
+def _load_lessons():
+    xlsx = ROOT / "referentiel" / "lecons.xlsx"
+    if xlsx.exists():
+        from openpyxl import load_workbook
+
+        wb = load_workbook(xlsx, read_only=True, data_only=True)
+        rows = list(wb["lecons"].iter_rows(values_only=True))
+        headers = [str(h) for h in rows[0]]
+        out = {}
+        for r in rows[1:]:
+            d = {headers[i]: r[i] for i in range(len(headers))}
+            lid = d.get("lesson_id")
+            if not lid:
+                continue
+            for k in (
+                "required_messages",
+                "safe_actions",
+                "misconceptions",
+                "forbidden_in_audio",
+                "answer_intents",
+                "compatible_lessons",
+            ):
+                v = d.get(k) or ""
+                d[k] = [x.strip() for x in str(v).split("|") if x.strip()]
+            out[str(lid)] = d
+        wb.close()
+        return out
+    data = json.loads((ROOT / "referentiel" / "lecons.json").read_text(encoding="utf-8"))
+    return {l["lesson_id"]: l for l in data["lessons"]}
+
+
+BY_ID = _load_lessons()
 
 # Choix narratifs neutres (jamais un test de sécurité)
 CHOICE_SETS = {

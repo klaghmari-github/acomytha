@@ -1,6 +1,7 @@
 # STRAT-003 — Modèle de données (histoires, leçons, chunks)
 
 **Référencé par :** `F-NAR-001`, `F-NAR-007`, `F-DAT-001`, `F-TAX-001`, `F-TAX-002`, `F-FOR-001`.  
+**Fichiers :** `stories/referentiel/lecons.xlsx` (catalogue) · `stories/referentiel/lecon_histoires.xlsx` (leçon → story_id → chunk_id pédagogiques).  
 **Exécution :** `STRAT-004`.
 
 ## 1. Pourquoi relationnel + IDs path-encodés

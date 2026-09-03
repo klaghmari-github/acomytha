@@ -9,6 +9,7 @@ from collections import defaultdict, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+LECONS_XLSX = ROOT / "referentiel" / "lecons.xlsx"
 LECONS_PATH = ROOT / "referentiel" / "lecons.json"
 ATOM = ROOT / "atomiques"
 RAMI = ROOT / "ramifiees"
@@ -69,6 +70,31 @@ def norm(s: str) -> str:
 
 
 def load_lessons() -> dict:
+    if LECONS_XLSX.exists():
+        from openpyxl import load_workbook
+
+        wb = load_workbook(LECONS_XLSX, read_only=True, data_only=True)
+        rows = list(wb["lecons"].iter_rows(values_only=True))
+        headers = [str(h) for h in rows[0]]
+        out = {}
+        for r in rows[1:]:
+            d = {headers[i]: r[i] for i in range(len(headers))}
+            lid = d.get("lesson_id")
+            if not lid:
+                continue
+            for k in (
+                "required_messages",
+                "safe_actions",
+                "misconceptions",
+                "forbidden_in_audio",
+                "answer_intents",
+                "compatible_lessons",
+            ):
+                v = d.get(k) or ""
+                d[k] = [x.strip() for x in str(v).split("|") if x.strip()]
+            out[str(lid)] = d
+        wb.close()
+        return out
     data = json.loads(LECONS_PATH.read_text(encoding="utf-8"))
     return {l["lesson_id"]: l for l in data["lessons"]}
 

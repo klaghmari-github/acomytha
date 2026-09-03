@@ -8,7 +8,8 @@ Un **Excel par arbre** (`arbres/<tree_id>.xlsx`). Une histoire = un chemin racin
 | --- | --- |
 | `arbres/` | 1445 xlsx (source actuelle) |
 | `audio/` | WAV de test Piper (`<tree_id>/<chunk_id>.wav`) |
-| `referentiel/lecons.json` | Catalogue des 85 leçons |
+| `referentiel/lecons.xlsx` | Catalogue des 85 leçons (domaines, attributs) |
+| `referentiel/lecon_histoires.xlsx` | Leçon → histoires → chunks pédagogiques |
 | `outils/xlsx_to_audio.py` | Bake WAV |
 | `outils/json_to_xlsx.py` | Convertisseur historique JSON→xlsx |
 | `REGLES.md` | Contraintes éditoriales |

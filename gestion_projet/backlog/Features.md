@@ -71,7 +71,7 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 | F-SEC-002 | Sécurité app | Cloisonnement mode enfant | P0 | 2 | spec §2 |
 | F-PRF-001 | Profils | Profils enfants isolés | P0 | 2 | spec §2 |
 | F-PRF-002 | Profils | Niveaux N1 N2 N3 | P0 | 1 | spec §2 |
-| F-TAX-001 | Référentiel | Taxonomie 3 niveaux | P0 | 0 | STRAT-003, `lecons.json` |
+| F-TAX-001 | Référentiel | Taxonomie 3 niveaux | P0 | 0 | STRAT-003, `lecons.xlsx` |
 | F-TAX-002 | Référentiel | Fiche leçon versionnée | P0 | 0 | STRAT-003 |
 | F-TAX-003 | Référentiel | Priorités / exclusions parent | P0 | 2 | STRAT-003 §3 téléchargement |
 | F-TAX-004 | Référentiel | Versions et couverture | P2 | 4 | STRAT-001 |

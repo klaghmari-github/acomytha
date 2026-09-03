@@ -12,6 +12,6 @@ Un produit, peu de documents. Chaque fichier a un rôle unique. Les features **p
 | [`strategies/STRAT-004-moteur-lecture.md`](strategies/STRAT-004-moteur-lecture.md) | Jour / nuit, enchaînement des chunks, préchargement. |
 | [`consignes.txt`](consignes.txt) | Git : une branche par feature, textes d’abord. |
 
-**Données, pas de spec :** le catalogue des 85 leçons vit dans `stories/referentiel/lecons.json`. Les 1445 histoires `APPROVED_TEXT` vivent dans `stories/`.
+**Données, pas de spec :** leçons dans `stories/referentiel/lecons.xlsx`, liaisons dans `lecon_histoires.xlsx`. Arbres dans `stories/arbres/*.xlsx`.
 
 **Interdit.** Dupliquer une règle dans trois fichiers. Si ça change, on change **un** endroit (spec ou stratégie) et le backlog ne fait que référencer.

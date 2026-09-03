@@ -16,5 +16,5 @@ Audio test (Piper, WAV) : `stories/audio/TREE-SEC-001/` (86) et `stories/audio/A
 Bake : `python3 stories/outils/xlsx_to_audio.py` (option `--only`, `--limit`).
 
 Outils : `json_to_xlsx.py` (historique), `xlsx_to_audio.py`.  
-Leçons : `referentiel/lecons.json`.  
+Leçons : `referentiel/lecons.xlsx`. Liaisons : `referentiel/lecon_histoires.xlsx`.  
 Règles : `REGLES.md`.

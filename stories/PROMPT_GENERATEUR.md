@@ -1,6 +1,6 @@
 # Brief générateur d’histoires Sentier
 
-Lis `stories/REGLES.md`, `stories/schema.json`, `stories/referentiel/lecons.json` et l’exemple `stories/atomiques/SAN/ATOM-SAN.ALI.001-01.json`.
+Lis `stories/REGLES.md`, `stories/referentiel/lecons.xlsx`, `stories/referentiel/lecon_histoires.xlsx` et un exemple `stories/arbres/ATOM-SAN.ALI.001-01.xlsx`.
 
 Tu écris des fichiers JSON **valides**, un fichier par histoire, sans demander d’avis.
 

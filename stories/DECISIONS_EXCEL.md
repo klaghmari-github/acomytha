@@ -27,7 +27,8 @@ Date : 3 septembre 2026. Pas d’approbation demandée (consigne fondateur).
 
 ## JSON
 
-Après 1445 xlsx OK (0 erreur), les JSON `atomiques/` et `ramifiees/` sont **supprimés**. Restent : `referentiel/lecons.json`, `schema.json` (historique), `REGLES.md`, outils.
+Après 1445 xlsx OK (0 erreur), les JSON `atomiques/` et `ramifiees/` sont **supprimés**.  
+Référentiel : `lecons.xlsx` (catalogue) + `lecon_histoires.xlsx` (liaisons). `lecons.json` retiré. Restent : `schema.json` (archive), `REGLES.md`, outils.
 
 ## Compteurs
 
