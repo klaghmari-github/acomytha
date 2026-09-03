@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SOC.TRA.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le train d'Hortense",
+  "lesson_id": "SOC.TRA.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.TRA",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "gare et train",
+  "characters": [
+    "Hortense",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Papa et Hortense vont à la gare. Hortense tient la main de papa. Ils restent avec un adulte. Papa, c'est l'adulte. Un train arrive. Le train fait tchou tchou. Papa dit : c'est un train. C'est le nom du véhicule. Hortense répète : un train. Ils montent avec papa. Hortense s'assoit près de papa. Le train roule. Par la fenêtre, Hortense voit le ciel. Un avion passe. Papa dit : c'est un avion. C'est un autre nom de véhicule. Hortense dit : un avion. Plus loin, il y a une rivière. Un bateau glisse. Papa dit : c'est un bateau. Hortense dit : un bateau. Train, avion, bateau. Hortense nomme. Elle reste avec papa.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hortense nomme un véhicule. Lequel ?",
+      "expected_intents": [
+        "TRAIN",
+        "AVION",
+        "BATEAU"
+      ],
+      "accepted_examples": [
+        "train",
+        "avion",
+        "bateau",
+        "un train"
+      ],
+      "retry_prompt": "Elle a vu un train. Quel véhicule ?",
+      "positive_feedback": "Oui. Train, avion ou bateau. On voyage avec un adulte.",
+      "wrong_feedback": "On nomme le train, l'avion ou le bateau. On voyage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hortense a dit le nom du véhicule. Train. Avion. Bateau. Elle est restée avec papa.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le train s'arrête. Hortense donne la main à papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

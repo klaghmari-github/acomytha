@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SEC.RUE.003-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "César près de maman",
+  "lesson_id": "SEC.RUE.003",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "rue vers la boulangerie",
+  "characters": [
+    "César",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "César sort avec maman. Ils marchent dans la rue. César reste près de l'adulte. Il prend la main de maman. Il tient aussi le manteau. Main ou manteau. Ses pieds marchent à côté. Maman dit : près de moi. César sent le manteau. Le manteau est doux. La main de maman est chaude. César marche à côté. Ils passent la boulangerie. César sent le pain chaud. Il reste près de l'adulte. La main tient le manteau. Maman sourit. César sourit aussi. Ils rentrent ensemble. César garde la main. Il reste près de l'adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "César marche dans la rue. Où est-il ?",
+      "expected_intents": [
+        "PRES_ADULTE",
+        "MAIN"
+      ],
+      "accepted_examples": [
+        "près de maman",
+        "près",
+        "la main",
+        "manteau",
+        "à côté"
+      ],
+      "retry_prompt": "Il reste près. Il tient la main. Où est César ?",
+      "positive_feedback": "Oui. César reste près de l'adulte. Main ou manteau.",
+      "wrong_feedback": "On reste près de l'adulte. On tient la main ou le manteau.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "César est près de maman. La main tient le manteau. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "César garde la main de maman. Ils rentrent à la maison. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

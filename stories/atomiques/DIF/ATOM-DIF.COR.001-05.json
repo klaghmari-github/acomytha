@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-DIF.COR.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Achille invite Diane au bac",
+  "lesson_id": "DIF.COR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Achille",
+    "Diane",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "C'est l'après-midi. Achille est dans le jardin. Maman est près des fleurs. Diane arrive avec un seau. Diane est plus grande. Achille est plus petit. Ils ont des tailles différentes. Achille veut du sable. Il prend une petite pelle. Il va vers Diane. Il l'invite. Achille dit : viens jouer. Diane dit : oui. Ils jouent ensemble près du bac. Diane porte un gros seau. Achille porte un petit seau. Les tailles différentes restent là. Ils remplissent le bac. Maman dit : vous jouez ensemble. Achille donne une pelle. Diane donne un moule. Ils font un gâteau de sable. Petit ou grand, on joue ensemble. Maman dit : vous avez des tailles différentes. Et vous jouez ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Achille invite Diane. Que font-ils ?",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble",
+        "ensemble",
+        "ils jouent",
+        "jouer"
+      ],
+      "retry_prompt": "Ils jouent. Que font Achille et Diane ?",
+      "positive_feedback": "Oui. Ils jouent ensemble.",
+      "wrong_feedback": "On invite. On joue ensemble.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Achille a invité. Diane a dit oui. Ils ont des tailles différentes. Ils jouent ensemble.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman dit : on range. Achille range un seau. Diane range une pelle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

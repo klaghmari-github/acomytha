@@ -1,0 +1,76 @@
+{
+  "tree_id": "ATOM-REL.CON.002-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Hortense dit stop à la cour",
+  "lesson_id": "REL.CON.002",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cour de l'école",
+  "characters": [
+    "Hortense",
+    "Achille",
+    "maîtresse",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hortense est dans la cour. La maîtresse est près du préau. Hortense joue avec le cerceau. Achille arrive vite. Achille bouscule Hortense. Hortense sent ses pieds bouger. Hortense dit : stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Hortense marche vers la maîtresse. Elle dit : Achille m'a bousculée. La maîtresse l'écoute. Plus tard, près des plots, Achille bouscule encore. Hortense dit encore : stop. Elle s'éloigne. Elle va vers la maîtresse. La maîtresse dit : tu as dit stop. Tu t'es éloignée. Tu es venue me voir. Le soir, papa vient. Hortense raconte à papa. Papa dit : tu as bien fait. On dit stop. On s'éloigne. On va vers la maîtresse. Hortense serre la main de papa.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Hortense. Que fait-elle ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "MAITRESSE"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "maîtresse",
+        "vers la maîtresse"
+      ],
+      "retry_prompt": "Elle dit stop, puis elle va vers la maîtresse. Que fait Hortense ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On va vers la maîtresse.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hortense a dit stop. Elle a su s'éloigner. Elle a rejoint la maîtresse. Papa a écouté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hortense range son manteau. Papa marche à côté. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

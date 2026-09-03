@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-DIF.PAR.002-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Octave laisse le temps à Tess",
+  "lesson_id": "DIF.PAR.002",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Octave",
+    "Tess",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Octave est au marché avec papa. Tess veut raconter. Elle dit : j'ai vu... Puis elle cherche le mot. Octave connaît le mot. Il ouvre la bouche. Papa dit : on peut laisser le temps. On n'achève pas à sa place. Octave attend la fin de la phrase. Tess respire. Elle dit : j'ai vu un canard. Octave sourit. Il a su laisser le temps.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Tess cherche un mot. Que fait Octave ?",
+      "expected_intents": [
+        "ATTENDRE_PHRASE"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "laisser le temps",
+        "la phrase"
+      ],
+      "retry_prompt": "On n'achève pas à sa place. Que fait Octave ?",
+      "positive_feedback": "Oui. Il laisse le temps. Il attend la fin de la phrase.",
+      "wrong_feedback": "On laisse le temps. On attend la fin de la phrase.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.PAR.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Octave a su laisser le temps. Tess a fini sa phrase.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa achète une poire. Octave donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

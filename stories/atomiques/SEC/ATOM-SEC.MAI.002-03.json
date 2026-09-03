@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SEC.MAI.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Marin demande avant de goûter",
+  "lesson_id": "SEC.MAI.002",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Marin",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Marin est au jardin avec maman. Il voit une baie brillante. Il ne la connaît pas. C'est inconnu. Marin ne goûte pas tout seul. Il va demander. Il dit : maman, je peux ? Maman, c'est l'adulte. Maman regarde. Elle dit : on laisse. Merci d'avoir demandé. Marin pose ses mains avec les feuilles. Inconnu : on demande à l'adulte.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Marin voit une baie inconnue. Que fait-il ?",
+      "expected_intents": [
+        "DEMANDER",
+        "ADULTE"
+      ],
+      "accepted_examples": [
+        "demander",
+        "maman",
+        "l'adulte"
+      ],
+      "retry_prompt": "C'est inconnu. Il le dit à qui ?",
+      "positive_feedback": "Oui. Il demande à l'adulte. Avant de goûter l'inconnu.",
+      "wrong_feedback": "Avant de goûter l'inconnu, on demande à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "SEC.MAI.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Marin a demandé. L'inconnu, on le dit à l'adulte.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman donne une fraise du panier. Marin dit merci. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

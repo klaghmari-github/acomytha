@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-TMP.MET.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Gauthier choisit manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.MET",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée de la maison",
+  "characters": [
+    "Gauthier",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gauthier veut sortir avec maman. Il fait froid. Maman prend le manteau. Gauthier enfile le manteau. Le tissu est chaud. Maman dit : froid, le manteau. Ils vont jusqu'au portail. Plus tard, le ciel devient gris. Dehors, il y a de la pluie. Maman prend les bottes. Gauthier met les bottes. Ses pieds sont au sec. Maman dit : pluie, les bottes. Ils marchent. Gauthier entend la pluie. Plic ploc. Le manteau le tient au chaud. Les bottes gardent les pieds secs. Le soir, Gauthier range le manteau. Il range aussi les bottes. Maman dit : demain, on regardera encore. Froid, le manteau. Pluie, les bottes. Gauthier hoche la tête. Il a compris.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Il pleut. Que met Gauthier ?",
+      "expected_intents": [
+        "MANTEAU",
+        "BOTTES"
+      ],
+      "accepted_examples": [
+        "bottes",
+        "les bottes",
+        "manteau",
+        "le manteau"
+      ],
+      "retry_prompt": "Il met les bottes. Que met Gauthier s'il pleut ?",
+      "positive_feedback": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "wrong_feedback": "S'il fait froid, on prend le manteau. S'il pleut, on met les bottes.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gauthier a mis le manteau. Il a mis les bottes. Maman était là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gauthier entend encore la pluie. Ses pieds restent au sec. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

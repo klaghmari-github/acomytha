@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.008-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Élie est gêné, puis il répare",
+  "lesson_id": "EMO.LEX.008",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine puis salon",
+  "characters": [
+    "Élie",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Élie aide maman dans la cuisine. Il porte un bol de farine. Le bol penche. La farine glisse sur la table. Élie sent ses joues brûlantes. Il baisse les yeux. Élie dit : je suis gêné. Maman dit : une erreur, ce n'est pas toi. L'erreur, on peut la dire. Élie dit : j'ai versé la farine. Maman tend un torchon. Élie dit : je veux réparer. Il essuie la table. Maman aide un peu. Plus tard, au salon, Élie range des livres. Un livre tombe. Encore une erreur. Les joues d'Élie chauffent. Il dit : je suis gêné. Puis il ramasse le livre. Il le pose. Il a su réparer. Maman dit : merci d'avoir dit. Être gêné, on le dit. Puis on peut réparer. L'erreur n'est pas Élie.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Élie a fait une erreur. Que fait-il ?",
+      "expected_intents": [
+        "GENE",
+        "REPARER"
+      ],
+      "accepted_examples": [
+        "réparer",
+        "gêné",
+        "je suis gêné",
+        "dire"
+      ],
+      "retry_prompt": "Élie est gêné. Que peut-il faire après l'erreur ?",
+      "positive_feedback": "Oui. Élie dit : je suis gêné. Puis il répare.",
+      "wrong_feedback": "On dit : je suis gêné. Une erreur, on peut la dire. On répare.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Élie a nommé : gêné. L'erreur n'est pas Élie. Il a pu réparer.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "La table est propre. Le livre est rangé. Maman sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

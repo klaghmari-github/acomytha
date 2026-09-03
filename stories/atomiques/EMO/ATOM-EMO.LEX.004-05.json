@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.004-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Faustine est surprise",
+  "lesson_id": "EMO.LEX.004",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Faustine",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Faustine est dans le salon. Papa ouvre une boîte. Un ballon sort. Pop. Faustine sent son cœur vite. Ses yeux s'ouvrent. Faustine dit : je suis surprise. Papa dit : d'abord respirer. Ensuite comprendre. Faustine souffle une grande fois. Elle regarde le ballon. Elle dit : je veux comprendre. Elle voit le ballon. Rien n'est cassé. Papa sourit. Faustine souffle encore. Être surpris, on peut respirer. Puis on cherche à comprendre. Faustine touche le ballon. Il est doux. Papa dit : tu as soufflé. Faustine hoche la tête.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Faustine est surprise. Que fait-elle d'abord ?",
+      "expected_intents": [
+        "SURPRIS",
+        "SOUFFLER"
+      ],
+      "accepted_examples": [
+        "souffler",
+        "respirer",
+        "surpris",
+        "je suis surprise"
+      ],
+      "retry_prompt": "Faustine souffle. Que fait-on quand on est surpris ?",
+      "positive_feedback": "Oui. On nomme : surpris. On souffle. On cherche à comprendre.",
+      "wrong_feedback": "On dit : je suis surpris. On souffle. On cherche à comprendre.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Faustine a nommé : surpris. Elle a soufflé. Elle a voulu comprendre.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le ballon reste dans le salon. Faustine s'assoit près de papa. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

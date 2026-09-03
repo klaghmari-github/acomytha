@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-LAN.SON.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Blanche nomme les sons",
+  "lesson_id": "LAN.SON.001",
+  "secondary_lessons": [],
+  "domain": "LAN",
+  "subdomain": "LAN.SON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Blanche",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 160,
+    "max": 205
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Blanche s'assoit près de la fenêtre. Maman est là. Il pleut. Ça fait plic ploc. Maman dit : c'est un son. Quel nom ? Blanche dit : la pluie. Maman dit : oui. Le nom du son, c'est la pluie. Plus loin, un bruit long. Tchou tchou. Maman dit : encore un son. Quel nom ? Blanche dit : le train. Maman dit : oui. Le nom du son, c'est le train. Puis, dans la pièce, un miaulement. Miaou. Maman dit : un son. Quel nom ? Blanche dit : le chat. Le chat vient. Blanche le caresse. Pluie. Train. Chat. On entend. On nomme le son.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Blanche entend un bruit. C'est quoi ?",
+      "expected_intents": [
+        "SON"
+      ],
+      "accepted_examples": [
+        "un son",
+        "la pluie",
+        "le train",
+        "le chat"
+      ],
+      "retry_prompt": "Elle nomme ce qu'elle entend. C'est quoi ?",
+      "positive_feedback": "Oui. C'est un son. On dit le nom. Pluie, train ou chat.",
+      "wrong_feedback": "On écoute le son. On dit le nom. La pluie, le train, le chat.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Blanche a entendu un son. Elle a dit le nom. Pluie. Train. Chat.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Le chat ronronne. Blanche pose la tête sur maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SAN.HYG.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Le mouchoir d'Achille",
+  "lesson_id": "SAN.HYG.003",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Achille",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Achille est dans sa chambre. Son nez chatouille. Maman est près du lit. Maman tend un mouchoir. Achille prend le mouchoir. Il se mouche tout doux. Atchoum. Le nez est plus libre. Achille va à la poubelle. Il jette le mouchoir. Maman dit : mouchoir, puis poubelle. Achille se lave les mains. L'eau est tiède. Il essuie ses doigts. Il revient près de maman. Maman sourit. Achille respire mieux. Il s'assoit sur le tapis. Le tapis est doux. Maman dit encore : mouchoir, puis poubelle.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Achille se mouche. Que prend-il ?",
+      "expected_intents": [
+        "MOUCHOIR"
+      ],
+      "accepted_examples": [
+        "mouchoir",
+        "un mouchoir",
+        "le mouchoir"
+      ],
+      "retry_prompt": "Maman tend un mouchoir. Que prend Achille ?",
+      "positive_feedback": "Oui. Achille prend un mouchoir. Puis il le jette à la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le jette à la poubelle.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Achille a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Achille s'assoit près de maman. Son nez est calme. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "notes": "",
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
