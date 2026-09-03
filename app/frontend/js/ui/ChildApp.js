@@ -26,7 +26,7 @@ export class ChildApp extends Component {
         <div id="file" class="o-stack"></div>
         <div id="player" hidden>
           <p class="c-now" id="now"></p>
-          <button class="c-orb" id="stop" type="button">Stop</button>
+          <button class="c-btn c-btn--stop c-btn--wide" id="stop" type="button">Arrêt</button>
           <div class="o-stack" id="choices"></div>
         </div>
       </section>`;
@@ -89,7 +89,8 @@ export class ChildApp extends Component {
     for (const s of stories) {
       const b = document.createElement("button");
       b.className = "c-play-card";
-      b.textContent = s.title;
+      const min = s.duration_s ? Math.max(1, Math.round(s.duration_s / 60)) : 0;
+      b.textContent = min ? `${s.title} · ${min} min` : s.title;
       this.on(b, "click", () => this.play(s));
       file.append(b);
     }

@@ -153,10 +153,40 @@ def story_to_dict(story: Story) -> dict:
         "setting": story.setting,
         "characters": story.characters,
         "chunk_count": story.chunk_count,
+        "duration_s": story.duration_s or 0,
         "has_audio": story.has_audio,
         "status": story.status,
         "wait_default_ms": story.wait_default_ms,
     }
+
+
+def fill_durations(db: Session, settings: Settings, force: bool = False) -> int:
+    """Estime la durée d’écoute (chemin typique) à partir du texte, une fois."""
+    from collections import defaultdict
+
+    need = [s for s in db.scalars(select(Story)).all() if force or not s.duration_s]
+    if not need:
+        return 0
+    words: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+    for sid, text in db.query(Chunk.story_id, Chunk.text):
+        words[sid][0] += len((text or "").split())
+        words[sid][1] += 1
+    n = 0
+    for story in need:
+        w, c = words.get(story.story_id, [40, 5])
+        if story.kind == "ramifiee":
+            w = max(40, w // 9)
+            c = max(8, c // 9)
+        audio_dir = settings.audio_dir / story.story_id
+        mp3s = list(audio_dir.glob("*.mp3")) if audio_dir.exists() else []
+        if mp3s and story.kind != "ramifiee":
+            sec = sum(max(1, p.stat().st_size * 8 // 64000) for p in mp3s)
+        else:
+            sec = int(w / 2.0 + c * 0.8)
+        story.duration_s = max(45, min(int(sec), 480))
+        n += 1
+    db.commit()
+    return n
 
 
 def list_stories(db: Session, q: str = "", domain: str = "", age_band: str = "", kind: str = "") -> list[Story]:

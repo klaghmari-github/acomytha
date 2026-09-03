@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Generator
 
-from sqlalchemy import create_engine, event
+from sqlalchemy import create_engine, event, inspect, text
 from sqlalchemy.orm import Session, sessionmaker
 
 from acomytha.models import Base
@@ -31,6 +31,16 @@ class Database:
 
     def create_all(self) -> None:
         Base.metadata.create_all(self.engine)
+        self._migrate()
+
+    def _migrate(self) -> None:
+        insp = inspect(self.engine)
+        if "stories" not in insp.get_table_names():
+            return
+        cols = {c["name"] for c in insp.get_columns("stories")}
+        if "duration_s" not in cols:
+            with self.engine.begin() as conn:
+                conn.execute(text("ALTER TABLE stories ADD COLUMN duration_s INTEGER DEFAULT 0"))
 
     def session(self) -> Generator[Session, None, None]:
         db = self.SessionLocal()

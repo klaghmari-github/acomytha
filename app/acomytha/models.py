@@ -101,6 +101,7 @@ class Story(Base):
     characters: Mapped[str] = mapped_column(String(200), default="")
     wait_default_ms: Mapped[int] = mapped_column(Integer, default=3000)
     chunk_count: Mapped[int] = mapped_column(Integer, default=0)
+    duration_s: Mapped[int] = mapped_column(Integer, default=0)
     has_audio: Mapped[bool] = mapped_column(Boolean, default=False)
     status: Mapped[str] = mapped_column(String(32), default="APPROVED_TEXT")
 

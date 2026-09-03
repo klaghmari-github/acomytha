@@ -5,15 +5,19 @@ export class CryptoPlayer {
     this.audio = new Audio();
     this.url = null;
     this._keyCache = new Map();
+    this._endPlay = null;
   }
 
   stop() {
+    const end = this._endPlay;
+    this._endPlay = null;
     this.audio.pause();
     this.audio.removeAttribute("src");
     if (this.url) {
       URL.revokeObjectURL(this.url);
       this.url = null;
     }
+    if (end) end();
   }
 
   async importKey(b64) {
@@ -55,9 +59,11 @@ export class CryptoPlayer {
       };
       const cleanup = () => {
         if (timer) window.clearTimeout(timer);
+        this._endPlay = null;
         this.audio.removeEventListener("ended", ok);
         this.audio.removeEventListener("error", fail);
       };
+      this._endPlay = ok;
       this.audio.addEventListener("ended", ok);
       this.audio.addEventListener("error", fail);
       if (maxSeconds > 0) {

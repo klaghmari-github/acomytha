@@ -11,6 +11,7 @@ export class ParentApp extends Component {
     this.me = null;
     this.selected = new Set();
     this.engine = null;
+    this.playingId = null;
     this.allStories = [];
     this.domainNames = new Map();
     this.wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 10 };
@@ -57,6 +58,10 @@ export class ParentApp extends Component {
           <p class="c-hint" id="count"></p>
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
+          <div class="c-nowbar" id="nowbar" hidden>
+            <span id="nowtitle"></span>
+            <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
+          </div>
         </main>
       </div>`;
     this.on(this.querySelector("#out"), "click", () => this.logout());
@@ -67,6 +72,7 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#kind"), "change", () => this.render());
     this.on(this.querySelector("#grid"), "change", (e) => this.onGridChange(e));
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
+    this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#shop"), "click", (e) => this.onShopClick(e));
     this.on(this.querySelector("#shop"), "submit", (e) => this.onShopSubmit(e));
     await this.boot();
@@ -74,6 +80,7 @@ export class ParentApp extends Component {
 
   disconnectedCallback() {
     clearTimeout(this._filterTimer);
+    this.stopPlay();
     super.disconnectedCallback();
   }
 
@@ -145,7 +152,6 @@ export class ParentApp extends Component {
     const price = s.kind === "ramifiee" ? this.wallet.prices?.tree : this.wallet.prices?.story;
     const theme = this.domainNames.get(s.domain) || "";
     const where = [theme, s.setting].filter(Boolean).join(" · ");
-    const sec = this.wallet.preview_seconds || 10;
     el.innerHTML = `
       <div class="o-row">
         <span class="c-pill c-pill--${s.age_band.toLowerCase()}">${ageLabel(s.age_band)}</span>
@@ -153,10 +159,10 @@ export class ParentApp extends Component {
         ${owned ? '<span class="c-pill c-pill--audio">À vous</span>' : ""}
       </div>
       <h3>${escapeHtml(s.title)}</h3>
-      <p>${escapeHtml(where)}</p>
+      <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
       ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Pour l’enfant</label>` : ""}
       <div class="o-row">
-        ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${owned ? "Écouter" : `Écouter ${sec} s`}</button>` : ""}
+        ${s.has_audio ? `<button class="c-btn ${this.playingId === s.story_id ? "c-btn--stop" : "c-btn--ghost"}" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : owned ? "Écouter" : "Écouter"}</button>` : ""}
         ${owned ? "" : `<button class="c-btn" data-buy="${s.story_id}">Débloquer <span class="c-ako">${price ?? 1}</span></button>`}
       </div>`;
     return el;
@@ -221,7 +227,11 @@ export class ParentApp extends Component {
     }
     const play = e.target.closest("[data-play]");
     if (!play) return;
-    this.preview(play.dataset.play, play);
+    if (this.playingId === play.dataset.play) {
+      this.stopPlay();
+      return;
+    }
+    this.preview(play.dataset.play);
   }
 
   async buy(storyId) {
@@ -283,33 +293,51 @@ export class ParentApp extends Component {
     msg.textContent = "Sélection enregistrée.";
   }
 
-  async preview(storyId, btn) {
+  showBar(id, title) {
+    this.playingId = id;
+    const bar = this.querySelector("#nowbar");
+    if (bar) bar.hidden = !id;
+    const t = this.querySelector("#nowtitle");
+    if (t) t.textContent = title || "";
+    this.querySelectorAll("[data-play]").forEach((b) => {
+      const on = b.dataset.play === id;
+      b.textContent = on ? "Arrêt" : "Écouter";
+      b.classList.toggle("c-btn--stop", on);
+      b.classList.toggle("c-btn--ghost", !on);
+    });
+  }
+
+  stopPlay() {
+    if (this.engine) {
+      this.engine.stop();
+      this.engine = null;
+    }
+    this.showBar(null, "");
+  }
+
+  async preview(storyId) {
     if (this.engine) this.engine.stop();
-    btn.textContent = "Lecture…";
+    const story = this.allStories.find((s) => s.story_id === storyId);
     const owned = (this.wallet.owned || []).includes(storyId);
     const sec = this.wallet.preview_seconds || 10;
+    this.showBar(storyId, story ? story.title : "");
     this.engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
       preview: !owned,
       maxSeconds: owned ? 0 : sec,
-      onStatus: (n) => {
-        btn.textContent = n.kind === "passage_fin" ? "Fin" : "Lecture…";
-      },
-      onDone: () => {
-        btn.textContent = owned ? "Écouter" : `Écouter ${sec} s`;
-      },
+      onDone: () => this.showBar(null, ""),
     });
     try {
       await this.engine.run(storyId);
     } catch (e) {
       this.querySelector("#msg").textContent = e.message;
-      btn.textContent = "Écouter";
+      this.showBar(null, "");
     }
   }
 
   async logout() {
-    if (this.engine) this.engine.stop();
+    this.stopPlay();
     await this.api.post("/auth/logout", {});
     this.router.go("#/");
   }
@@ -320,6 +348,11 @@ function escapeHtml(s) {
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
+}
+
+function fmtDur(sec) {
+  const m = Math.max(1, Math.round(Number(sec) / 60));
+  return `${m} min`;
 }
 
 function ageLabel(band) {

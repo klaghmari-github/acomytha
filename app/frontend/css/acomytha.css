@@ -446,6 +446,36 @@ h3 {
   min-height: 2.5rem;
 }
 
+.c-nowbar {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+.c-nowbar[hidden] {
+  display: none;
+}
+.c-nowbar span {
+  font-weight: 580;
+}
+.c-btn--stop {
+  background: #c23b3b;
+  color: #fff;
+  min-width: 7rem;
+}
+.c-btn--stop:hover {
+  background: #a32f2f;
+}
+
 @media (max-width: 860px) {
   .s-shell {
     grid-template-columns: 1fr;

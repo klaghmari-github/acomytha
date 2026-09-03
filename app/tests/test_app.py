@@ -108,7 +108,8 @@ def test_public_home_and_preview(client):
     assert s["stories"] >= 1
     assert s["preview_seconds"] == 10
     stories = client.get("/api/public/stories").json()
-    assert any(x["story_id"] == "ATOM-SAN.ALI.001-01" for x in stories)
+    one = next(x for x in stories if x["story_id"] == "ATOM-SAN.ALI.001-01")
+    assert one["duration_s"] >= 45
     graph = client.get("/api/public/preview/ATOM-SAN.ALI.001-01/graph")
     assert graph.status_code == 200
     assert graph.json()["preview_seconds"] == 10

@@ -10,6 +10,7 @@ export class HomeApp extends Component {
     this.allStories = [];
     this.domainNames = new Map();
     this.engine = null;
+    this.playingId = null;
     this.previewSeconds = 10;
     this._filterTimer = 0;
     this.me = null;
@@ -56,12 +57,17 @@ export class HomeApp extends Component {
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
         </section>
+        <div class="c-nowbar" id="nowbar" hidden>
+          <span id="nowtitle"></span>
+          <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
+        </div>
       </div>`;
     this.on(this.querySelector("#q"), "input", () => this.scheduleRender());
     this.on(this.querySelector("#domain"), "change", () => this.render());
     this.on(this.querySelector("#age"), "change", () => this.render());
     this.on(this.querySelector("#kind"), "change", () => this.render());
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
+    this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     await this.boot();
   }
 
@@ -141,34 +147,57 @@ export class HomeApp extends Component {
         <span class="c-pill ${s.kind === "ramifiee" ? "c-pill--ram" : ""}">${s.kind === "ramifiee" ? "Avec des choix" : "Courte"}</span>
       </div>
       <h3>${escapeHtml(s.title)}</h3>
-      <p>${escapeHtml(where)}</p>
-      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">Écouter</button>` : ""}`;
+      <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
+      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}`;
     return el;
   }
 
   onGridClick(e) {
     const play = e.target.closest("[data-play]");
     if (!play) return;
-    this.preview(play.dataset.play, play);
+    const id = play.dataset.play;
+    if (this.playingId === id) {
+      this.stopPlay();
+      return;
+    }
+    this.preview(id);
   }
 
-  async preview(storyId, btn) {
+  showBar(id, title) {
+    this.playingId = id;
+    const bar = this.querySelector("#nowbar");
+    bar.hidden = !id;
+    this.querySelector("#nowtitle").textContent = title || "";
+    this.querySelectorAll("[data-play]").forEach((b) => {
+      b.textContent = b.dataset.play === id ? "Arrêt" : "Écouter";
+      b.classList.toggle("c-btn--stop", b.dataset.play === id);
+    });
+  }
+
+  stopPlay() {
+    if (this.engine) {
+      this.engine.stop();
+      this.engine = null;
+    }
+    this.showBar(null, "");
+  }
+
+  async preview(storyId) {
     if (this.engine) this.engine.stop();
-    btn.textContent = "…";
+    const story = this.allStories.find((s) => s.story_id === storyId);
+    this.showBar(storyId, story ? story.title : "");
     this.engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
       preview: true,
       maxSeconds: this.previewSeconds,
-      onDone: () => {
-        btn.textContent = "Écouter";
-      },
+      onDone: () => this.showBar(null, ""),
     });
     try {
       await this.engine.run(storyId);
     } catch (e) {
       this.querySelector("#msg").textContent = e.message;
-      btn.textContent = "Écouter";
+      this.showBar(null, "");
     }
   }
 }
@@ -182,6 +211,11 @@ function escapeHtml(s) {
 
 function ageLabel(band) {
   return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[band] || band;
+}
+
+function fmtDur(sec) {
+  const m = Math.max(1, Math.round(Number(sec) / 60));
+  return `${m} min`;
 }
 
 function fold(s) {
