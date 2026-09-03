@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SAN.ALI.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Les petits pois d'Amine",
+  "lesson_id": "SAN.ALI.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.ALI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Amine",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 150
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Amine s'assoit à table. Maman est près de lui. Dans l'assiette, il y a des petits pois. Ils sont verts. Ils sont ronds. Ça sent le jardin. Amine les regarde. Maman sourit. Maman dit : tu peux goûter. Une petite portion, c'est assez. Amine prend une petite bouchée. Il mâche tout doucement. C'est doux. C'est un peu sucré. Amine dit : c'est doux, maman. Nommer le goût, c'est dire le goût. Maman dit : merci d'avoir goûté. Une petite portion, c'est déjà bien. Amine boit une gorgée d'eau. L'eau est fraîche. Les petits pois restent dans l'assiette.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Amine goûte les petits pois. Que fait-il ?",
+      "expected_intents": [
+        "GOUTER",
+        "PETITE_BOUCHEE"
+      ],
+      "accepted_examples": [
+        "goûter",
+        "une bouchée",
+        "petite bouchée",
+        "il goûte"
+      ],
+      "retry_prompt": "Il prend une petite bouchée. Que fait Amine ?",
+      "positive_feedback": "Oui. Il goûte une petite bouchée, et il dit le goût à maman.",
+      "wrong_feedback": "On goûte une petite bouchée, et on dit le goût à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Amine a goûté. Il a su nommer le goût. Une petite portion, c'est assez. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Amine range sa cuillère. Il dit merci à maman. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

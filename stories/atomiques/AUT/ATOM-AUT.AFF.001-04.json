@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-AUT.AFF.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Léa prépare le sac de l'école",
+  "lesson_id": "AUT.AFF.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "entrée",
+  "characters": [
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa est dans l'entrée. Maman pose le sac bleu. Maman dit : on met dans le sac ce que l'adulte a dit. L'adulte, c'est maman. Maman a dit : la gourde, le goûter, le doudou. Léa met la gourde. Elle met le goûter. Elle glisse le doudou. Elle ferme le zip. Maman dit : c'est ce que l'adulte a dit. Léa répète : le sac est prêt.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa prépare le sac. Que fait-elle ?",
+      "expected_intents": [
+        "SAC",
+        "METTRE"
+      ],
+      "accepted_examples": [
+        "le sac",
+        "mettre",
+        "elle met",
+        "dans le sac"
+      ],
+      "retry_prompt": "Elle met ce que maman a dit. Où ?",
+      "positive_feedback": "Oui. Elle met dans le sac ce que l'adulte a dit.",
+      "wrong_feedback": "On met dans le sac ce que papa ou maman a dit.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "AUT.AFF.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a mis la gourde, le goûter, le doudou. C'est ce que maman a dit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman prend le sac. Elles vont à l'école. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

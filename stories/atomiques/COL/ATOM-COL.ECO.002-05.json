@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-COL.ECO.002-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Flora attend, puis elle parle",
+  "lesson_id": "COL.ECO.002",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe",
+  "characters": [
+    "Flora",
+    "papa",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Flora arrive en classe avec papa. Papa dit au revoir. Flora s'assoit sur le tapis. La maîtresse pose une question. Flora a une idée. Elle lève la main. Il faut attendre. Un camarade parle d'abord. Flora attend encore. Puis la maîtresse dit : Flora, c'est toi. Flora parle. Elle dit : le chat est gris. La maîtresse sourit. Le soir, papa demande. Flora dit : j'ai levé la main. J'ai su attendre. Puis parler, c'est après. Papa dit : tu as attendu. Puis tu as parlé.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Flora veut parler. Que fait-elle d'abord ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "PARLER"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "elle attend",
+        "lever la main",
+        "la main"
+      ],
+      "retry_prompt": "Elle lève la main et elle attend. Que fait Flora ?",
+      "positive_feedback": "Oui. Il faut attendre, puis parler.",
+      "wrong_feedback": "On lève la main. Il faut attendre. Puis on peut parler.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Flora a levé la main. Elle a attendu. Puis parler, c'était son tour.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Flora range son cartable. Papa l'attend à la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "tree_id": "ATOM-DIF.PAR.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Léa tend un jouet et attend",
+  "lesson_id": "DIF.PAR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.PAR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Léa",
+    "Adam",
+    "maman"
+  ],
+  "root_id": "n0",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "type": "audio",
+      "text": "Le sable est chaud. Un oiseau chante.",
+      "next": "n1"
+    },
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Léa est au parc avec maman. Adam est près du bac. Il parle peu. Léa veut jouer. Maman dit : on attend. On n'imite pas. On peut tendre un jouet. On ne force pas la parole. Léa tend le seau. Elle attend. Adam touche le seau. Il ne dit rien. Léa sourit. Elle ne force pas la parole. Plus tard, Adam dit : sable. Léa a su attendre. Elle a tendu un jouet.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Adam parle peu. Que fait Léa ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "TENDRE_JOUET"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "tendre",
+        "le seau",
+        "un jouet"
+      ],
+      "retry_prompt": "Elle tend un jouet. Elle fait quoi encore ?",
+      "positive_feedback": "Oui. Elle attend. Elle tend un jouet. Elle ne force pas la parole.",
+      "wrong_feedback": "On attend. On tend un jouet. On ne force pas la parole.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.PAR.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Léa a attendu. Elle a tendu un jouet. Elle n'a pas forcé la parole.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range le seau. Léa donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

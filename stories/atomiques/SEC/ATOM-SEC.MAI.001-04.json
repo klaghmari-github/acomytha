@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-SEC.MAI.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Dahlia appelle pour la lumière",
+  "lesson_id": "SEC.MAI.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.MAI",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "salle de jeux",
+  "characters": [
+    "Dahlia",
+    "papa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Dahlia joue dans la salle de jeux. Ses voitures en bois sont par terre. Papa range des livres près de la porte. La pièce est un peu sombre. Dahlia veut plus de lumière. Elle regarde ses mains. Les mains restent avec les jouets. Dahlia appelle un adulte. Elle dit : papa, la lumière. Papa vient. Papa allume. La pièce devient claire. Maman entre. Maman dit : on va appeler un adulte. Les prises sont pour les adultes. Les mains restent avec les jouets. Dahlia reprend une voiture rouge. Elle la fait rouler tout doux. Parce qu'elle a appelé, la lumière est là. Les mains tiennent les jouets. Dahlia est calme. Papa s'assoit près d'elle. Ils font un petit garage. Les mains restent avec les jouets.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Dahlia veut la lumière. Que fait-elle ?",
+      "expected_intents": [
+        "APPELER_ADULTE",
+        "MAINS_JOUETS"
+      ],
+      "accepted_examples": [
+        "appeler papa",
+        "appeler",
+        "mains jouets",
+        "les jouets",
+        "papa maman"
+      ],
+      "retry_prompt": "Elle appelle. Les mains restent avec les jouets. Que fait Dahlia ?",
+      "positive_feedback": "Oui. Elle appelle papa ou maman. Les mains restent avec les jouets.",
+      "wrong_feedback": "On appelle papa ou maman pour la lumière. Les mains restent avec les jouets.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Dahlia a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Dahlia pose la voiture dans le garage. La lumière reste allumée. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

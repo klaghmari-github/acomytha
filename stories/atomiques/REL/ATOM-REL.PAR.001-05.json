@@ -1,0 +1,75 @@
+{
+  "tree_id": "ATOM-REL.PAR.001-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Hanaé prête le train en bois",
+  "lesson_id": "REL.PAR.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Hanaé",
+    "Flora",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hanaé joue dans sa chambre. Maman plie des chaussettes près de la fenêtre. Hanaé a un train en bois. Les roues font un petit bruit. Flora arrive. Flora regarde le train. Hanaé serre le train un moment. Maman s'approche. Maman dit : tu peux prêter le train. Prêter, c'est laisser jouer Flora. Hanaé tend le train. Flora le prend. Flora fait rouler le train. Hanaé reste près de maman. Hanaé attend. C'est le tour de Flora. Puis c'est le tour d'Hanaé. Flora rend le train. Hanaé le fait rouler aussi. Maman dit : tu peux proposer un autre jeu. Hanaé prend les cubes. Hanaé dit : un autre jeu ? Flora sourit. Elles bâtissent une petite gare. Le bois sent le sapin. Maman reste tout près. Hanaé a su prêter. Chacune a eu son tour. Elles ont un autre jeu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hanaé a un train. Que peut-elle faire ?",
+      "expected_intents": [
+        "PRETER",
+        "TOUR",
+        "AUTRE_JEU"
+      ],
+      "accepted_examples": [
+        "prêter",
+        "son tour",
+        "autre jeu",
+        "attendre",
+        "prêter le train"
+      ],
+      "retry_prompt": "Elle peut prêter, ou attendre son tour. Que fait Hanaé ?",
+      "positive_feedback": "Oui. On peut prêter, attendre son tour, ou proposer un autre jeu.",
+      "wrong_feedback": "On peut prêter, attendre son tour, ou proposer un autre jeu.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hanaé a prêté le train. Flora a eu son tour. Puis elles ont un autre jeu. Maman est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hanaé range un cube. Le train reste au calme. Maman sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

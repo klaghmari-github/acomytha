@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-JEU.REG.002-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Bérénice suit une règle, deux jeux",
+  "lesson_id": "JEU.REG.002",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Bérénice",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 235
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Bérénice joue dans le jardin. Papa est là. Il y a des quilles en bois. Papa dit une règle. Une règle : on attend. Puis on fait rouler la balle. Bérénice écoute. Elle prend la balle trop vite. Papa va la rappeler une fois. Il dit : on attend. C'est la règle. Bérénice s'arrête. Elle attend. Puis elle fait rouler la balle. Une quille tombe. Bérénice sourit. Papa dit : tu as suivi la règle. Bérénice répète : on attend. Une règle simple. Papa la rappelle. Bérénice la suit. Plus tard, ils jouent au ballon souple. Papa dit une règle. Une règle : on se passe le ballon. Bérénice se souvient. Papa va la rappeler une fois. Bérénice attend. Puis elle passe le ballon. Même leçon, autre jeu. Une règle. On la rappelle. On la suit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Bérénice joue. Que suit-elle ?",
+      "expected_intents": [
+        "REGLE"
+      ],
+      "accepted_examples": [
+        "la règle",
+        "une règle",
+        "attendre",
+        "on attend"
+      ],
+      "retry_prompt": "Papa la dit encore. C'est quoi ?",
+      "positive_feedback": "Oui. Une règle. On l'écoute. On la rappelle.",
+      "wrong_feedback": "On suit une règle. Papa ou maman la rappelle une fois.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Bérénice a suivi la règle. Papa a su la rappeler. Plus tard, au ballon, pareil.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Bérénice pose la balle. Papa lui verse de l'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

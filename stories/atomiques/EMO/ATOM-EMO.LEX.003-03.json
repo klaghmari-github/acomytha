@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Ava est déçue, une autre idée",
+  "lesson_id": "EMO.LEX.003",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Ava",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ava arrive au parc avec papa. Les balançoires sont prises. Ava sent une boule. Elle dit : je suis déçue. Papa écoute. Papa dit : un souhait peut attendre. On nomme. On cherche une autre idée. Ava souffle. Elle dit : le bac à sable. C'est une autre idée. Ils vont au bac. Ava creuse. La déception diminue.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Les balançoires sont prises. Quelle émotion ?",
+      "expected_intents": [
+        "DECU",
+        "AUTRE_IDEE"
+      ],
+      "accepted_examples": [
+        "déçu",
+        "déçue",
+        "autre idée",
+        "le bac"
+      ],
+      "retry_prompt": "Elle nomme. Puis elle cherche quoi ?",
+      "positive_feedback": "Oui. Elle est déçue. Elle cherche une autre idée.",
+      "wrong_feedback": "On dit : je suis déçu. On cherche une autre idée.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.LEX.003"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ava a dit : je suis déçue. Elle a trouvé une autre idée.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa essuie le seau. Ava donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

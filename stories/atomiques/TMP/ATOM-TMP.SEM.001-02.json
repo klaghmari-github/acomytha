@@ -1,0 +1,70 @@
+{
+  "tree_id": "ATOM-TMP.SEM.001-02",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Hanaé dit les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.SEM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre puis cuisine",
+  "characters": [
+    "Hanaé",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 180,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hanaé s'assoit sur son lit avec papa. Papa a un calendrier. Il montre sept cases. Papa dit : il y a sept jours dans l'ordre. Hanaé écoute. Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au parc. Dimanche, on mange le gâteau. Papa dit : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Hanaé répète les sept jours dans l'ordre. Le lendemain, à la cuisine, papa prépare le pain. Hanaé se souvient. Elle dit encore : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Même leçon, autre pièce. Les sept jours dans l'ordre commencent lundi. Ils finissent dimanche.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Après lundi, quel jour vient ?",
+      "expected_intents": [
+        "JOUR"
+      ],
+      "accepted_examples": [
+        "mardi",
+        "c'est mardi",
+        "le mardi"
+      ],
+      "retry_prompt": "Lundi, puis mardi. Quel jour après lundi ?",
+      "positive_feedback": "Oui. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+      "wrong_feedback": "Les sept jours dans l'ordre : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hanaé a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine. Plus tard, pareil.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hanaé pose un jeton sur mardi. Papa sourit. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

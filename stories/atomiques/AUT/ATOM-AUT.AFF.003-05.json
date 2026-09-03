@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.AFF.003-05",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Clément reprend ses affaires à l'aire de jeux",
+  "lesson_id": "AUT.AFF.003",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "aire de jeux",
+  "characters": [
+    "Clément",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Clément joue à l'aire de jeux, près de maman. Le sable est un peu chaud. Clément a un seau vert. Il a un manteau bleu posé au bord. Il a son doudou ours. Clément verse le sable. Ça fait chh. Une feuille passe. Maman dit : c'est l'heure. On va reprendre ses affaires avant de partir. Clément cherche le seau. Il le prend. Clément cherche le manteau. Il le prend. Clément cherche le doudou. Il le prend. Ses affaires sont dans ses bras. Parce qu'il a repris ses affaires, on peut rentrer. Maman dit : merci Clément. C'était avant de partir. Ils marchent vers la maison. Le seau cogne un peu. Le doudou est contre lui. Maman reste à côté.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Avant de partir, que fait Clément ?",
+      "expected_intents": [
+        "REPRENDRE",
+        "AVANT_DE_PARTIR"
+      ],
+      "accepted_examples": [
+        "reprendre",
+        "ses affaires",
+        "il reprend",
+        "avant de partir"
+      ],
+      "retry_prompt": "Il reprend ses affaires. Que fait Clément ?",
+      "positive_feedback": "Oui. Clément reprend ses affaires avant de partir.",
+      "wrong_feedback": "Avant de partir, on reprend ses affaires. On les prend avec soi.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Clément a cherché. Il a repris le seau. Il a repris le manteau. Il a repris le doudou. C'était avant de partir.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Clément tient le seau. Maman ouvre la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

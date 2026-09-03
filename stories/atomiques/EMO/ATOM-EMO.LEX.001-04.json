@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-EMO.LEX.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Flora est contente du gâteau",
+  "lesson_id": "EMO.LEX.001",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Flora",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 120,
+    "max": 155
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Flora entre dans la cuisine. Maman est là. Ça sent le gâteau. Le gâteau est encore chaud. Flora sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Flora dit : je suis content. Maman dit : c'est de la joie. Flora prend une petite assiette. Elle dit : on peut partager. Maman coupe deux petits bouts. Flora prend un bout. Maman prend un bout. Ils goûtent ensemble. C'est doux. C'est un peu vanillé. Flora dit encore : je suis content. La joie est là, dans la cuisine. Maman sourit. Partager, c'est bien. Flora essuie ses doigts. Le gâteau sent encore bon.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Flora sourit. Que dit-elle ?",
+      "expected_intents": [
+        "CONTENT",
+        "JOIE"
+      ],
+      "accepted_examples": [
+        "content",
+        "je suis content",
+        "joie",
+        "de la joie",
+        "partager"
+      ],
+      "retry_prompt": "Flora sent de la joie. Que dit-elle ?",
+      "positive_feedback": "Oui. Flora dit : je suis content. C'est de la joie.",
+      "wrong_feedback": "On dit : je suis content. On partage avec papa ou maman.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Flora a nommé sa joie. Elle a partagé avec maman. Être content, c'est bien.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Flora range l'assiette. Maman lui prend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

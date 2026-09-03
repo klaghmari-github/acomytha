@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.CON.001-04",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Amine dit stop au parc, deux fois",
+  "lesson_id": "REL.CON.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Amine",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Amine est au parc avec papa. Papa s'assoit sur le banc. Amine joue près du toboggan. Un camarade arrive vite. Le camarade bouscule Amine. Amine sent un choc. Son cœur bat vite. Amine dit : stop. Il fait un pas de côté. Il doit s'éloigner. S'éloigner, c'est marcher vers papa. Amine marche vers le banc. Papa est son parent au parc. Amine rejoint son parent au parc. Il dit : on m'a bousculé. Papa l'écoute. Papa dit : tu as dit stop. Tu t'es éloigné. Tu es venu vers moi. Amine souffle. Plus tard, près du bac à sable, un autre camarade bouscule encore. Amine se souvient. Il dit : stop. Il s'éloigne. Il rejoint son parent au parc. Même leçon, autre coin du parc. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Un camarade bouscule Amine. Que fait-il ?",
+      "expected_intents": [
+        "STOP",
+        "ELOIGNER",
+        "PARENT"
+      ],
+      "accepted_examples": [
+        "stop",
+        "s'éloigner",
+        "papa",
+        "vers papa",
+        "parent"
+      ],
+      "retry_prompt": "Il dit stop, puis il va vers papa. Que fait Amine ?",
+      "positive_feedback": "Oui. On dit stop. On s'éloigne. On rejoint papa ou maman au parc.",
+      "wrong_feedback": "On dit stop. On s'éloigne. On rejoint papa ou maman, le parent au parc.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Amine a dit stop. Il a su s'éloigner. Il a rejoint son parent au parc. Plus tard, pareil.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Amine boit une gorgée d'eau. Papa garde sa main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

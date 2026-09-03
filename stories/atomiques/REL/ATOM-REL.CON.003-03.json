@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-REL.CON.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Sami dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.CON",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon",
+  "characters": [
+    "Sami",
+    "Lila",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sami est dans le salon. Sa tour de cubes tombe sur le dessin de Lila. Lila a de la peine. Sami va vers elle. Il dit pardon. Il propose un geste : je t'aide à poser les cubes. Lila écoute. La peine reste un peu. Maman dit : le pardon et un geste, c'est bien. Ça n'efface pas tout de suite la peine. Sami attend. Lila hoche la tête, un peu.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Sami a fait une bêtise. Que fait-il ?",
+      "expected_intents": [
+        "PARDON",
+        "GESTE"
+      ],
+      "accepted_examples": [
+        "pardon",
+        "un geste",
+        "il dit pardon"
+      ],
+      "retry_prompt": "Il dit pardon. Ensuite ?",
+      "positive_feedback": "Oui. Il dit pardon. Il propose un geste. La peine reste un peu.",
+      "wrong_feedback": "On dit pardon. On propose un geste. La peine reste un peu.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "REL.CON.003"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sami a dit pardon. Il a proposé un geste. La peine de Lila reste un peu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman pose un coussin. Sami s'assoit près de Lila. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
