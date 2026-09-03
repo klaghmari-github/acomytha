@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-FAM.AID.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Hippolyte appelle maman",
+  "lesson_id": "FAM.AID.001",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.AID",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Hippolyte",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Hippolyte est dans la cuisine. Il veut le bocal. Le bocal est en haut. Trop haut. Hippolyte lève les bras. Il n'arrive pas. Hippolyte va vers la porte. Il va vers eux. Il va vers maman. Maman est dans le salon. Hippolyte dit : maman. J'ai besoin du bocal. Il dit le besoin. Maman écoute. Maman vient. Maman donne le bocal. Les noix sentent bon. Hippolyte dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman sourit. Hippolyte ouvre le bocal.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Hippolyte n'arrive pas. Que fait-il ?",
+      "expected_intents": [
+        "APPELER",
+        "DIRE"
+      ],
+      "accepted_examples": [
+        "appeler",
+        "maman",
+        "papa",
+        "dire"
+      ],
+      "retry_prompt": "Il va vers maman. Il dit le besoin. Que fait Hippolyte ?",
+      "positive_feedback": "Oui. Hippolyte va vers maman. Il dit le besoin.",
+      "wrong_feedback": "Quand c'est trop difficile, on va vers eux. On dit le besoin.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Hippolyte a appelé. Il a dit le besoin. Maman a entendu. Le bocal est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Hippolyte pose une noix. Maman s'assoit près de lui. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SOC.ARG.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Coralie et l'argent du marché",
+  "lesson_id": "SOC.ARG.001",
+  "secondary_lessons": [],
+  "domain": "SOC",
+  "subdomain": "SOC.ARG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Coralie",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ce matin, papa a fini son travail. Il rentre avec son sac. Coralie l'attend près de la porte. Papa dit : j'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Coralie et papa vont au marché. D'abord, le stand du pain. Papa donne l'argent. Il peut acheter du pain. Coralie porte la baguette tiède. Ensuite, les légumes. Des poireaux. Des tomates. Papa dit : l'argent sert aussi aux légumes. Coralie pose une tomate dans le cabas. Plus loin, il y a des chaussures. Papa montre une paire. Il dit : l'argent sert aux chaussures, quand on en a besoin. Coralie touche le cuir souple. Papa range le reste. Coralie dit : le travail de papa sert à acheter pain légumes chaussures. L'argent ne pousse pas tout seul.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Papa a travaillé. L'argent sert à quoi ?",
+      "expected_intents": [
+        "ACHETER",
+        "TRAVAIL"
+      ],
+      "accepted_examples": [
+        "acheter",
+        "le pain",
+        "acheter du pain",
+        "le travail"
+      ],
+      "retry_prompt": "On achète du pain. L'argent sert à quoi ?",
+      "positive_feedback": "Oui. Le travail donne l'argent. L'argent sert à acheter pain, légumes, chaussures.",
+      "wrong_feedback": "Papa ou maman travaille. L'argent sert à acheter le pain, les légumes, les chaussures.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Coralie a compris. Le travail de papa sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "À la maison, Coralie pose le pain. Papa range les légumes. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

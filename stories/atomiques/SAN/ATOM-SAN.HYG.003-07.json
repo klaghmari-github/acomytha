@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-SAN.HYG.003-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Anaïs se mouche à table",
+  "lesson_id": "SAN.HYG.003",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.HYG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Anaïs",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 125,
+    "max": 160
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Anaïs est à table. La soupe est chaude. Son nez chatouille. Ça coule un peu. Maman est près d'elle. Maman tend un mouchoir. Anaïs prend le mouchoir. Elle se mouche. Atchoum, tout doux. Le nez est plus libre. Anaïs va à la poubelle. Elle jette le mouchoir. Maman dit : mouchoir, puis poubelle. Anaïs se lave les mains. L'eau est tiède. Elle revient. La soupe sent bon. Maman sourit. Anaïs reprend sa cuillère.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le nez d'Anaïs coule. Que prend-elle ?",
+      "expected_intents": [
+        "MOUCHOIR"
+      ],
+      "accepted_examples": [
+        "mouchoir",
+        "un mouchoir",
+        "le mouchoir",
+        "elle se mouche"
+      ],
+      "retry_prompt": "Maman tend un mouchoir. Que prend Anaïs ?",
+      "positive_feedback": "Oui. Anaïs prend un mouchoir. Puis elle le jette à la poubelle.",
+      "wrong_feedback": "On prend un mouchoir. Puis on le jette à la poubelle.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Anaïs a pris un mouchoir. Elle s'est mouchée. Elle a jeté le mouchoir à la poubelle.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Anaïs finit sa soupe. Maman range le bol. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

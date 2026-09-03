@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-DIF.COR.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Coralie et Hippolyte jouent ensemble",
+  "lesson_id": "DIF.COR.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Coralie",
+    "Hippolyte",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 175,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Coralie est au parc avec maman. Hippolyte arrive avec un cerceau. Hippolyte est plus grand. Coralie est plus petite. Ils ont des tailles différentes. Maman sourit. Coralie va vers Hippolyte. Elle l'invite. Coralie dit : tu veux jouer ? Hippolyte dit : oui. Ils jouent ensemble près du bac à sable. Hippolyte porte un gros seau. Coralie porte un petit seau. Les tailles différentes restent là. On ne commente pas le corps. On joue. Hippolyte baisse un peu la corde. Coralie tient un bout. Ils sautent un peu. Puis ils sautent ensemble. Maman dit : petit ou grand, on peut jouer ensemble. Coralie verse du sable. Hippolyte lisse le tas. Maman dit : vous avez des tailles différentes. Et vous jouez ensemble.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Coralie invite Hippolyte. Que font-ils ?",
+      "expected_intents": [
+        "JOUER_ENSEMBLE"
+      ],
+      "accepted_examples": [
+        "jouer ensemble",
+        "ensemble",
+        "ils jouent",
+        "on joue",
+        "jouer"
+      ],
+      "retry_prompt": "Ils jouent. Que font Coralie et Hippolyte ?",
+      "positive_feedback": "Oui. Ils peuvent jouer ensemble.",
+      "wrong_feedback": "On invite. On peut jouer ensemble.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Coralie a invité. Hippolyte a dit oui. Ils ont des tailles différentes. Ils jouent ensemble.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman dit : on range. Coralie range un seau. Hippolyte range une pelle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

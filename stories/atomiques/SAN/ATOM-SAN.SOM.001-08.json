@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-SAN.SOM.001-08",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Bertrand met son pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "secondary_lessons": [],
+  "domain": "SAN",
+  "subdomain": "SAN.SOM",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Bertrand",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le soir arrive. La lampe de la chambre est douce. Bertrand bâille. Ses yeux piquent un peu. Papa dit : le corps a besoin de dormir. Ce n'est pas une punition. C'est le dodo. Papa tend le pyjama. Le tissu est chaud. Bertrand met le pyjama. Il boutonne. Il glisse sous la couverture. Le lit est moelleux. Papa ouvre un livre. Il raconte une histoire courte. Bertrand écoute. Parce que le pyjama est mis, le corps se calme. Papa dit : soir, pyjama, dodo. Bertrand pose sa tête. Il ferme les yeux. Papa reste un moment. Le dodo commence.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Le soir, Bertrand va au lit. Que met-il ?",
+      "expected_intents": [
+        "PYJAMA",
+        "LIT"
+      ],
+      "accepted_examples": [
+        "pyjama",
+        "le pyjama",
+        "au lit",
+        "dodo"
+      ],
+      "retry_prompt": "Il met le pyjama. Puis il va au lit. Que met Bertrand ?",
+      "positive_feedback": "Oui. Le soir, on met le pyjama. Puis on va au dodo.",
+      "wrong_feedback": "Le soir, on met le pyjama. On se couche. C'est le dodo.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Bertrand a mis le pyjama. Il s'est couché. Le soir, c'est le dodo.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa baisse la lampe. Bertrand respire. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

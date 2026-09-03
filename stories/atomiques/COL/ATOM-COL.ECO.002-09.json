@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-COL.ECO.002-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Anaïs attend son tour de parole",
+  "lesson_id": "COL.ECO.002",
+  "secondary_lessons": [],
+  "domain": "COL",
+  "subdomain": "COL.ECO",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "classe",
+  "characters": [
+    "Anaïs",
+    "maman",
+    "maîtresse"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 165,
+    "max": 210
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Anaïs arrive en classe avec maman. Maman dit au revoir. Anaïs s'assoit sur le tapis. La maîtresse pose une question. Anaïs a une idée. Elle lève la main. Il faut attendre. Un camarade parle d'abord. Anaïs attend encore. Puis la maîtresse dit : Anaïs, c'est ton tour. Anaïs parle. Elle dit : le chat est gris. La maîtresse sourit. Plus tard, Anaïs a encore une idée. Elle lève la main. Elle attend. Puis elle peut parler. Le soir, maman demande. Anaïs dit : j'ai levé la main. J'ai su attendre. Puis parler, c'était mon tour.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Anaïs veut parler. Que fait-elle d'abord ?",
+      "expected_intents": [
+        "ATTENDRE",
+        "PARLER"
+      ],
+      "accepted_examples": [
+        "attendre",
+        "elle attend",
+        "lever la main",
+        "la main"
+      ],
+      "retry_prompt": "Elle lève la main et elle attend. Que fait Anaïs ?",
+      "positive_feedback": "Oui. Il faut attendre, puis parler.",
+      "wrong_feedback": "On lève la main. Il faut attendre. Puis on peut parler.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Anaïs a levé la main. Elle a attendu. Puis parler, c'était son tour.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Anaïs range son cartable. Maman l'attend à la porte. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

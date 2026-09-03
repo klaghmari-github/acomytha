@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-TMP.JOU.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Gaëtane nomme le soleil et la lune",
+  "lesson_id": "TMP.JOU.001",
+  "secondary_lessons": [],
+  "domain": "TMP",
+  "subdomain": "TMP.JOU",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin puis chambre",
+  "characters": [
+    "Gaëtane",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Le jour, Gaëtane joue au jardin avec maman. Le soleil brille. Il fait chaud sur les mains. Maman dit : le jour, c'est le soleil. Gaëtane touche une pierre tiède. Parce que le soleil a chauffé. Elles rangent le seau. Le soir arrive. Le ciel devient bleu foncé. Gaëtane voit la lune. Elle voit les étoiles. Maman dit : la nuit, c'est la lune. Elles rentrent. Gaëtane met son pyjama. Maman dit : la nuit, on fait dodo. Gaëtane se couche. Elle ferme les yeux. Dodo la nuit. Soleil jour. Lune nuit. Plus tard, Gaëtane se réveille un peu. Elle se souvient. Le jour, le soleil. La nuit, la lune. Dodo la nuit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La lune est là. Quel moment est-ce ?",
+      "expected_intents": [
+        "SOLEIL",
+        "LUNE",
+        "NUIT"
+      ],
+      "accepted_examples": [
+        "nuit",
+        "la nuit",
+        "lune",
+        "le soir"
+      ],
+      "retry_prompt": "La lune vient la nuit. Quel moment ?",
+      "positive_feedback": "Oui. Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "wrong_feedback": "Le jour, on voit le soleil. La nuit, la lune. On fait dodo la nuit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaëtane a vu le soleil le jour. Elle a vu la lune la nuit. Elle fait dodo la nuit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman baisse la lumière. Gaëtane respire. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

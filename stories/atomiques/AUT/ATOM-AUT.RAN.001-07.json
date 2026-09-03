@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-AUT.RAN.001-07",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Éva range après le jeu",
+  "lesson_id": "AUT.RAN.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.RAN",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Éva",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 185,
+    "max": 230
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Éva joue dans sa chambre. Papa plie le linge près de la fenêtre. Éva a des animaux en bois. Elle fait une ferme. Les bêtes tapent doucement. Puis le jeu est fini. Papa dit : c'est l'heure de ranger. Ranger, c'est remettre. Éva prend une vache. Elle la met dans la caisse. Elle prend un cheval. Elle le met dans la caisse. La caisse sent le bois. Plus tard, Éva sort des perles. Elle enfile un collier. Le jeu se termine encore. Éva se souvient. Elle range. Les perles vont dans la caisse. Le tapis redevient libre. Papa dit : après le jeu, on range. Les jouets retournent dans la caisse. Éva ferme le couvercle. Ça fait toc. Papa dit : merci Éva.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Après le jeu, que fait Éva ?",
+      "expected_intents": [
+        "RANGER",
+        "CAISSE"
+      ],
+      "accepted_examples": [
+        "ranger",
+        "la caisse",
+        "dans la caisse",
+        "elle range"
+      ],
+      "retry_prompt": "Elle met les jouets dans la caisse. Que fait Éva ?",
+      "positive_feedback": "Oui. Éva range. Elle met les jouets dans la caisse.",
+      "wrong_feedback": "Après le jeu, on range. On met les jouets dans la caisse.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Éva a rangé. Les jouets sont dans la caisse. Le tapis est libre. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Éva pousse la caisse sous le lit. Papa tend un verre d'eau. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

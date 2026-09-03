@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-REL.AMI.001-09",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Gaëtane invite Bertrand",
+  "lesson_id": "REL.AMI.001",
+  "secondary_lessons": [],
+  "domain": "REL",
+  "subdomain": "REL.AMI",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "square",
+  "characters": [
+    "Gaëtane",
+    "Bertrand",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Gaëtane est au square. Papa est au banc. Gaëtane a un cerceau. Le cerceau est bleu. Bertrand est là aussi. Gaëtane veut jouer. Papa dit : tu peux inviter. Inviter, c'est demander. Gaëtane dit : tu veux jouer ? Bertrand secoue la tête. Bertrand dit : non. Gaëtane a le ventre serré. Papa s'approche. Papa dit : on peut accepter un non. Accepter un non, c'est possible. Gaëtane dit : d'accord. Elle joue avec papa. Le cerceau roule. Bertrand joue avec un seau. Gaëtane n'insiste pas. Papa dit : merci. Tu as su inviter. Tu as su accepter un non.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Bertrand dit non. Que fait Gaëtane ?",
+      "expected_intents": [
+        "INVITER",
+        "ACCEPTER_NON"
+      ],
+      "accepted_examples": [
+        "inviter",
+        "accepter",
+        "un non",
+        "d'accord",
+        "accepter un non"
+      ],
+      "retry_prompt": "Elle a invité. Puis elle accepte un non. Que fait Gaëtane ?",
+      "positive_feedback": "Oui. On peut inviter. On peut aussi accepter un non.",
+      "wrong_feedback": "On peut inviter. Si l'autre dit non, on peut accepter un non.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Gaëtane a su inviter. Bertrand a dit non. Gaëtane a pu accepter un non. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Gaëtane range le cerceau. Papa lui tend la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
