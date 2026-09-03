@@ -23,7 +23,10 @@ Date : 3 septembre 2026. Pas d’approbation demandée (consigne fondateur).
 
 - Dossier `stories/audio/<tree_id>/<chunk_id>.wav` **et** `.mp3`
 - **Bug muet (2026-09-03) :** Piper écrit du PCM 16-bit **22050 Hz mono**. Les échantillons n’étaient **pas** à zéro (crête 32767, RMS ~5000). `aplay` lisait le fichier. En revanche 22050 Hz mono WAV est souvent **inaudible / refusé** par lecteurs Windows, iPhone, Android, aperçu navigateur. Cause = format de livraison, pas un TTS vide.
-- **Correctif :** rééchantillonner à **44100 Hz**, normaliser à −1 dBFS, écrire WAV PCM propre **+ MP3 64 kbit/s**. Vérif automatique : `peak >= 500` et MP3 > 400 octets.
+- **Correctif 1 (insuffisant seul) :** 44100 Hz. Les fichiers avaient déjà un vrai signal (98 % bande 200–4000 Hz, crête 0,85).
+- **Correctif 2 (le muet « partout ») :** Piper/livraison en **mono**. iPhone, Windows, Bluetooth, HDMI : la barre avance, **aucun haut-parleur**. Désormais **stéréo** (même signal L+R), WAV 44100 + **MP3 128 kbit/s**.
+- Fichier témoin : `stories/TEST_SON.mp3` (la 440 Hz, 1,2 s). Si ça aussi est muet, c’est le lecteur/casque, pas le corpus.
+- Vérif : `peak >= 500`, 2 canaux, MP3 décodé crête > 0,2.
 - Script : `stories/outils/xlsx_to_audio.py` (`--fix-existing` pour les 22050 déjà là ; bake normal fait 44100+mp3).
 
 ## JSON

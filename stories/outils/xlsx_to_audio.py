@@ -26,6 +26,8 @@ VOICES = ROOT / "outils" / "voices"
 TARGET_SR = 44100
 PEAK_TARGET = 0.89  # ~ -1 dBFS
 MIN_PEAK = 500  # en dessous = considéré muet
+# Mono = durée qui défile, silence sur iPhone / Windows / BT / HDMI.
+CHANNELS = 2
 
 
 def find_engine():
@@ -56,25 +58,33 @@ def read_pcm16(path: Path) -> tuple[np.ndarray, int]:
     return samples, sr
 
 
+def to_stereo_i16(samples: np.ndarray) -> np.ndarray:
+    mono = np.clip(samples, -32768, 32767).astype("<i2")
+    stereo = np.empty((mono.shape[0], 2), dtype="<i2")
+    stereo[:, 0] = mono
+    stereo[:, 1] = mono
+    return stereo
+
+
 def write_wav44100(path: Path, samples: np.ndarray):
     path.parent.mkdir(parents=True, exist_ok=True)
-    clipped = np.clip(samples, -32768, 32767).astype("<i2")
+    stereo = to_stereo_i16(samples)
     with wave.open(str(path), "wb") as w:
-        w.setnchannels(1)
+        w.setnchannels(CHANNELS)
         w.setsampwidth(2)
         w.setframerate(TARGET_SR)
-        w.writeframes(clipped.tobytes())
+        w.writeframes(stereo.tobytes())
 
 
 def write_mp3(path: Path, samples: np.ndarray):
     import lameenc
 
     enc = lameenc.Encoder()
-    enc.set_bit_rate(64)
+    enc.set_bit_rate(128)
     enc.set_in_sample_rate(TARGET_SR)
-    enc.set_channels(1)
+    enc.set_channels(CHANNELS)
     enc.set_quality(2)
-    pcm = np.clip(samples, -32768, 32767).astype("<i2").tobytes()
+    pcm = to_stereo_i16(samples).tobytes()
     mp3 = enc.encode(pcm) + enc.flush()
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(mp3)
@@ -99,15 +109,21 @@ def finalize(samples: np.ndarray, sr: int) -> tuple[np.ndarray, dict]:
 
 
 def stats_file(path: Path) -> dict:
-    samples, sr = read_pcm16(path)
+    with wave.open(str(path), "rb") as w:
+        sr = w.getframerate()
+        nch = w.getnchannels()
+        n = w.getnframes()
+        raw = w.readframes(n)
+    samples = np.frombuffer(raw, dtype="<i2").astype(np.float32)
     peak = int(np.max(np.abs(samples))) if len(samples) else 0
     rms = float(np.sqrt(np.mean(samples**2))) if len(samples) else 0
     return {
         "sr": sr,
+        "ch": nch,
         "peak": peak,
         "rms": round(rms, 1),
-        "dur": round(len(samples) / sr, 2),
-        "ok": sr == TARGET_SR and peak >= MIN_PEAK,
+        "dur": round(n / sr, 2) if sr else 0,
+        "ok": sr == TARGET_SR and nch == CHANNELS and peak >= MIN_PEAK,
     }
 
 
@@ -170,7 +186,7 @@ def emit_playable(src_wav: Path, dest_wav: Path, dest_mp3: Path) -> dict:
     write_wav44100(dest_wav, samples)
     write_mp3(dest_mp3, samples)
     check = stats_file(dest_wav)
-    if not check["ok"]:
+    if not check["ok"] or check.get("ch", 1) != CHANNELS:
         raise RuntimeError(f"post-verif fail {dest_wav} {check}")
     if dest_mp3.stat().st_size < 400:
         raise RuntimeError(f"mp3 trop petit {dest_mp3}")
@@ -264,7 +280,7 @@ def main():
     if not engine:
         print("Aucun TTS : installer piper ou espeak-ng", file=sys.stderr)
         sys.exit(1)
-    print(f"engine={engine} bin={bin_path} model={model} out=wav44100+mp3")
+    print(f"engine={engine} bin={bin_path} model={model} out=wav44100-stereo+mp3-128k")
     files = sorted(ARBRES.glob("*.xlsx"))
     if args.only:
         want = set(args.only)
