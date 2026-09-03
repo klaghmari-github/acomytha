@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.RUE.001-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N1",
+  "age_range": "3-4",
+  "title": "Clarisse s'arrête au trottoir",
+  "lesson_id": "SEC.RUE.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.RUE",
+  "framing": "positive_only_critical",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "trajet vers le square",
+  "characters": [
+    "Clarisse",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 90,
+    "avg": 130,
+    "max": 170
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Clarisse marche avec papa. Ils vont au square. Clarisse tient la main de papa. Ils arrivent au bord. Le trottoir est là. Papa s'arrête. Clarisse s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Clarisse sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir. Papa dit : on s'arrête. Pieds au bord. Sur le trottoir. Clarisse pose les pieds au bord. Les pieds sont calmes. Papa sourit. On s'arrête au trottoir. On attend avec papa. Les pieds restent au bord du trottoir.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Clarisse arrive au bord. Que fait-elle ?",
+      "expected_intents": [
+        "TROTTOIR",
+        "ARRETER"
+      ],
+      "accepted_examples": [
+        "s'arrêter",
+        "trottoir",
+        "elle s'arrête",
+        "pieds au bord",
+        "au bord"
+      ],
+      "retry_prompt": "Elle s'arrête. Les pieds sont au bord. Que fait Clarisse ?",
+      "positive_feedback": "Oui. Clarisse s'arrête. Les pieds restent au bord du trottoir.",
+      "wrong_feedback": "On s'arrête. Les pieds restent au bord, sur le trottoir, avec papa.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Clarisse s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Clarisse donne la main à papa. Ils attendent un moment. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

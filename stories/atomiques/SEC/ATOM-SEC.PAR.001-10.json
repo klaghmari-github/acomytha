@@ -1,0 +1,73 @@
+{
+  "tree_id": "ATOM-SEC.PAR.001-10",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Dorian joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "secondary_lessons": [],
+  "domain": "SEC",
+  "subdomain": "SEC.PAR",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc, bac à sable puis toboggan",
+  "characters": [
+    "Dorian",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Dorian arrive au parc avec maman. Maman montre le bac à sable. C'est l'espace montré. Dorian s'assoit. Il sent le sable frais. Maman s'assoit sur le banc. L'adulte voit Dorian. Dorian verse le seau. Il reste dans l'espace montré. Maman dit : je te vois. L'adulte voit. Plus tard, maman montre le toboggan. Autre espace montré. Dorian grimpe l'échelle. Il glisse. Il revient au pied. Maman le voit encore. L'adulte voit. Même leçon, autre jeu. On reste dans l'espace montré. Papa arrivera après. Dorian range le seau. Il reste là où maman a dit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Dorian joue au parc. Où reste-t-il ?",
+      "expected_intents": [
+        "ESPACE_MONTRE",
+        "ADULTE_VOIT"
+      ],
+      "accepted_examples": [
+        "espace montré",
+        "où maman voit",
+        "le bac",
+        "près de maman",
+        "l'adulte voit"
+      ],
+      "retry_prompt": "Maman a montré l'espace. L'adulte voit. Où joue Dorian ?",
+      "positive_feedback": "Oui. Il joue dans l'espace montré. L'adulte voit.",
+      "wrong_feedback": "On joue dans l'espace montré par papa ou maman. L'adulte voit.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Dorian est resté dans l'espace montré. Au bac, puis au toboggan. L'adulte voit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Dorian prend la main de maman. Ils quittent le parc. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

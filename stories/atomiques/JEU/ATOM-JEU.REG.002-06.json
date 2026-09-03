@@ -1,0 +1,71 @@
+{
+  "tree_id": "ATOM-JEU.REG.002-06",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Henri suit une règle, deux jeux",
+  "lesson_id": "JEU.REG.002",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "salon puis jardin",
+  "characters": [
+    "Henri",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 185,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Henri est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Henri tend la main. Papa va rappeler la règle une fois. Il dit : on attend. C'est une règle. Henri attend. Puis il pose un cube. Papa dit : tu as suivi la règle. Plus tard, au jardin, papa dit une règle. La règle : on passe le ballon. Puis on s'arrête. Henri veut le ballon. Papa va rappeler la règle une fois. Il dit : on passe, puis on s'arrête. Henri passe le ballon. Il s'arrête. Même leçon, autre jeu. Une règle. La rappeler. Henri la suit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Henri joue. Que suit-il ?",
+      "expected_intents": [
+        "REGLE"
+      ],
+      "accepted_examples": [
+        "la règle",
+        "une règle",
+        "attendre",
+        "passer"
+      ],
+      "retry_prompt": "Papa rappelle. Quelle chose Henri suit ?",
+      "positive_feedback": "Oui. Une règle. Papa la rappelle. Henri attend, puis il joue.",
+      "wrong_feedback": "On suit une règle. L'adulte la rappelle. On attend, puis on joue.",
+      "default_next": "n3",
+      "next": "n3"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Henri a suivi une règle. Papa l'a rappelée. Cubes, puis ballon.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range le ballon. Henri donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
