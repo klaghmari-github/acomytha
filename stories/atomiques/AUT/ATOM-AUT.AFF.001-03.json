@@ -1,0 +1,79 @@
+{
+  "tree_id": "ATOM-AUT.AFF.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Ava prépare le sac du marché",
+  "lesson_id": "AUT.AFF.001",
+  "secondary_lessons": [],
+  "domain": "AUT",
+  "subdomain": "AUT.AFF",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "cuisine",
+  "characters": [
+    "Ava",
+    "papa"
+  ],
+  "root_id": "n0",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "type": "audio",
+      "text": "Ça sent le pain. Ava a envie d'aider.",
+      "next": "n1"
+    },
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Ava est dans la cuisine. Papa pose un sac en toile sur la chaise. Papa dit : on met dans le sac ce que l'adulte a dit. L'adulte, c'est papa. Papa a dit : le filet, la gourde, le petit carnet. Ava prend le filet. Elle le met dans le sac. Elle met la gourde. Elle glisse le carnet. Ava ferme le sac. Papa dit : c'est ce que l'adulte a dit. Ava répète : le sac est prêt.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Ava prépare le sac. Que fait-elle ?",
+      "expected_intents": [
+        "SAC",
+        "METTRE"
+      ],
+      "accepted_examples": [
+        "le sac",
+        "mettre",
+        "elle met",
+        "dans le sac"
+      ],
+      "retry_prompt": "Elle met ce que papa a dit. Où ?",
+      "positive_feedback": "Oui. Elle met dans le sac ce que l'adulte a dit.",
+      "wrong_feedback": "On met dans le sac ce que papa ou maman a dit.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "AUT.AFF.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Ava a mis le filet, la gourde et le carnet. C'est ce que papa a dit.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa prend le sac. Ils vont au marché. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

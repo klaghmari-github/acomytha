@@ -1,0 +1,670 @@
+{
+  "tree_id": "TREE-FAM-015",
+  "kind": "ramifiee",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Maya raconte ce qui fait peur",
+  "lesson_id": "FAM.SEC.002",
+  "secondary_lessons": [
+    "FAM.AID.001"
+  ],
+  "domain": "FAM",
+  "subdomain": "FAM.SEC",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Maya",
+    "maman",
+    "papa"
+  ],
+  "root_id": "root",
+  "duration_estimate_seconds": {
+    "min": 180,
+    "avg": 300,
+    "max": 480
+  },
+  "nodes": {
+    "root": {
+      "id": "root",
+      "type": "audio",
+      "text": "Le soir, Maya est à la maison. Un petit bruit arrive. Maya a peur. Son ventre se serre. Maman dit : ce qui fait peur se raconte. On va raconter à papa ou maman. Maya hoche la tête.",
+      "next": "ch1"
+    },
+    "ch1": {
+      "id": "ch1",
+      "type": "choice_story",
+      "prompt": "Maya a peur où ? Le couloir, la chambre, ou le jardin la nuit ?",
+      "options": [
+        {
+          "id": "ch1_o1",
+          "label": "le couloir",
+          "intent": "LE_COULOIR",
+          "next": "brA"
+        },
+        {
+          "id": "ch1_o2",
+          "label": "la chambre",
+          "intent": "LA_CHAMBRE",
+          "next": "brB"
+        },
+        {
+          "id": "ch1_o3",
+          "label": "le jardin la nuit",
+          "intent": "LE_JARDIN_LA_NUIT",
+          "next": "brC"
+        }
+      ],
+      "default_next": "brA"
+    },
+    "brA": {
+      "id": "brA",
+      "type": "audio",
+      "text": "Dans le couloir, Maya a peur. Elle va raconter à papa ou maman. Elle dit : j'ai peur.",
+      "next": "qA"
+    },
+    "qA": {
+      "id": "qA",
+      "type": "question_lesson",
+      "prompt": "Dans le couloir, Maya a peur. Que fait-elle ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "j'ai peur"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "Quand on a peur, on raconte à papa ou maman.",
+      "default_next": "fbA",
+      "next": "fbA",
+      "lesson_id": "FAM.SEC.002"
+    },
+    "fbA": {
+      "id": "fbA",
+      "type": "feedback",
+      "text": "Maya a eu peur. Elle a raconté à papa ou maman.",
+      "next": "ch2A"
+    },
+    "ch2A": {
+      "id": "ch2A",
+      "type": "choice_story",
+      "prompt": "Qu'est-ce qui fait peur ? Un bruit, un manteau, ou une ombre ?",
+      "options": [
+        {
+          "id": "ch2A_o1",
+          "label": "un bruit",
+          "intent": "UN_BRUIT",
+          "next": "brA1"
+        },
+        {
+          "id": "ch2A_o2",
+          "label": "un manteau",
+          "intent": "UN_MANTEAU",
+          "next": "brA2"
+        },
+        {
+          "id": "ch2A_o3",
+          "label": "une ombre",
+          "intent": "UNE_OMBRE",
+          "next": "brA3"
+        }
+      ],
+      "default_next": "brA1"
+    },
+    "brA1": {
+      "id": "brA1",
+      "type": "audio",
+      "text": "Un bruit dans le couloir. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3A1"
+    },
+    "ch3A1": {
+      "id": "ch3A1",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3A1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA1X"
+        },
+        {
+          "id": "ch3A1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA1Y"
+        },
+        {
+          "id": "ch3A1_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endA1Z"
+        }
+      ],
+      "default_next": "endA1X"
+    },
+    "endA1X": {
+      "id": "endA1X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un bruit, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA1Y": {
+      "id": "endA1Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un bruit, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA1Z": {
+      "id": "endA1Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un bruit, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brA2": {
+      "id": "brA2",
+      "type": "audio",
+      "text": "Le manteau bouge. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3A2"
+    },
+    "ch3A2": {
+      "id": "ch3A2",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3A2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA2X"
+        },
+        {
+          "id": "ch3A2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA2Y"
+        },
+        {
+          "id": "ch3A2_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endA2Z"
+        }
+      ],
+      "default_next": "endA2X"
+    },
+    "endA2X": {
+      "id": "endA2X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un manteau, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA2Y": {
+      "id": "endA2Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un manteau, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA2Z": {
+      "id": "endA2Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un manteau, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brA3": {
+      "id": "brA3",
+      "type": "audio",
+      "text": "Une ombre sur le mur. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3A3"
+    },
+    "ch3A3": {
+      "id": "ch3A3",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3A3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endA3X"
+        },
+        {
+          "id": "ch3A3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endA3Y"
+        },
+        {
+          "id": "ch3A3_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endA3Z"
+        }
+      ],
+      "default_next": "endA3X"
+    },
+    "endA3X": {
+      "id": "endA3X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de une ombre, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA3Y": {
+      "id": "endA3Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de une ombre, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endA3Z": {
+      "id": "endA3Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de une ombre, à le couloir. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brB": {
+      "id": "brB",
+      "type": "audio",
+      "text": "Dans la chambre, Maya a peur. Elle raconte à papa ou maman. Le ventre est serré.",
+      "next": "qB"
+    },
+    "qB": {
+      "id": "qB",
+      "type": "question_lesson",
+      "prompt": "Dans la chambre, Maya a peur. Que fait-elle ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "j'ai peur"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "Quand on a peur, on raconte à papa ou maman.",
+      "default_next": "fbB",
+      "next": "fbB",
+      "lesson_id": "FAM.SEC.002"
+    },
+    "fbB": {
+      "id": "fbB",
+      "type": "feedback",
+      "text": "Oui. La peur se raconte à papa ou maman.",
+      "next": "ch2B"
+    },
+    "ch2B": {
+      "id": "ch2B",
+      "type": "choice_story",
+      "prompt": "Dans la chambre, quoi ? Bruit, manteau, ou ombre ?",
+      "options": [
+        {
+          "id": "ch2B_o1",
+          "label": "un bruit",
+          "intent": "UN_BRUIT",
+          "next": "brB1"
+        },
+        {
+          "id": "ch2B_o2",
+          "label": "un manteau",
+          "intent": "UN_MANTEAU",
+          "next": "brB2"
+        },
+        {
+          "id": "ch2B_o3",
+          "label": "une ombre",
+          "intent": "UNE_OMBRE",
+          "next": "brB3"
+        }
+      ],
+      "default_next": "brB1"
+    },
+    "brB1": {
+      "id": "brB1",
+      "type": "audio",
+      "text": "Un bruit dans la chambre. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3B1"
+    },
+    "ch3B1": {
+      "id": "ch3B1",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3B1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB1X"
+        },
+        {
+          "id": "ch3B1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB1Y"
+        },
+        {
+          "id": "ch3B1_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endB1Z"
+        }
+      ],
+      "default_next": "endB1X"
+    },
+    "endB1X": {
+      "id": "endB1X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un bruit, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB1Y": {
+      "id": "endB1Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un bruit, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB1Z": {
+      "id": "endB1Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un bruit, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brB2": {
+      "id": "brB2",
+      "type": "audio",
+      "text": "Le manteau sur la chaise. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3B2"
+    },
+    "ch3B2": {
+      "id": "ch3B2",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3B2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB2X"
+        },
+        {
+          "id": "ch3B2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB2Y"
+        },
+        {
+          "id": "ch3B2_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endB2Z"
+        }
+      ],
+      "default_next": "endB2X"
+    },
+    "endB2X": {
+      "id": "endB2X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un manteau, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB2Y": {
+      "id": "endB2Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un manteau, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB2Z": {
+      "id": "endB2Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un manteau, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brB3": {
+      "id": "brB3",
+      "type": "audio",
+      "text": "Une ombre près du lit. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3B3"
+    },
+    "ch3B3": {
+      "id": "ch3B3",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3B3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endB3X"
+        },
+        {
+          "id": "ch3B3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endB3Y"
+        },
+        {
+          "id": "ch3B3_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endB3Z"
+        }
+      ],
+      "default_next": "endB3X"
+    },
+    "endB3X": {
+      "id": "endB3X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de une ombre, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB3Y": {
+      "id": "endB3Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de une ombre, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endB3Z": {
+      "id": "endB3Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de une ombre, à la chambre. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brC": {
+      "id": "brC",
+      "type": "audio",
+      "text": "Au jardin la nuit, Maya a peur. Elle rentre. Elle raconte à papa ou maman.",
+      "next": "qC"
+    },
+    "qC": {
+      "id": "qC",
+      "type": "question_lesson",
+      "prompt": "Au jardin, Maya a peur. Que fait-elle ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "j'ai peur"
+      ],
+      "retry_prompt": "Elle le dit à qui ?",
+      "positive_feedback": "Oui. Elle raconte à papa ou maman.",
+      "wrong_feedback": "Quand on a peur, on raconte à papa ou maman.",
+      "default_next": "fbC",
+      "next": "fbC",
+      "lesson_id": "FAM.SEC.002"
+    },
+    "fbC": {
+      "id": "fbC",
+      "type": "feedback",
+      "text": "Maya a su raconter. Papa et maman écoutent.",
+      "next": "ch2C"
+    },
+    "ch2C": {
+      "id": "ch2C",
+      "type": "choice_story",
+      "prompt": "Au jardin, quoi ? Bruit, manteau, ou ombre ?",
+      "options": [
+        {
+          "id": "ch2C_o1",
+          "label": "un bruit",
+          "intent": "UN_BRUIT",
+          "next": "brC1"
+        },
+        {
+          "id": "ch2C_o2",
+          "label": "un manteau",
+          "intent": "UN_MANTEAU",
+          "next": "brC2"
+        },
+        {
+          "id": "ch2C_o3",
+          "label": "une ombre",
+          "intent": "UNE_OMBRE",
+          "next": "brC3"
+        }
+      ],
+      "default_next": "brC1"
+    },
+    "brC1": {
+      "id": "brC1",
+      "type": "audio",
+      "text": "Un bruit au jardin. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3C1"
+    },
+    "ch3C1": {
+      "id": "ch3C1",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3C1_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC1X"
+        },
+        {
+          "id": "ch3C1_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC1Y"
+        },
+        {
+          "id": "ch3C1_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endC1Z"
+        }
+      ],
+      "default_next": "endC1X"
+    },
+    "endC1X": {
+      "id": "endC1X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un bruit, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC1Y": {
+      "id": "endC1Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un bruit, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC1Z": {
+      "id": "endC1Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un bruit, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brC2": {
+      "id": "brC2",
+      "type": "audio",
+      "text": "Le manteau sur le banc. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3C2"
+    },
+    "ch3C2": {
+      "id": "ch3C2",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3C2_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC2X"
+        },
+        {
+          "id": "ch3C2_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC2Y"
+        },
+        {
+          "id": "ch3C2_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endC2Z"
+        }
+      ],
+      "default_next": "endC2X"
+    },
+    "endC2X": {
+      "id": "endC2X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de un manteau, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC2Y": {
+      "id": "endC2Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de un manteau, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC2Z": {
+      "id": "endC2Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de un manteau, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "brC3": {
+      "id": "brC3",
+      "type": "audio",
+      "text": "Une ombre sous le pommier. Maya a peur. Elle raconte à papa ou maman.",
+      "next": "ch3C3"
+    },
+    "ch3C3": {
+      "id": "ch3C3",
+      "type": "choice_story",
+      "prompt": "Maya raconte à qui ? Maman, papa, ou les deux ?",
+      "options": [
+        {
+          "id": "ch3C3_o1",
+          "label": "maman",
+          "intent": "MAMAN",
+          "next": "endC3X"
+        },
+        {
+          "id": "ch3C3_o2",
+          "label": "papa",
+          "intent": "PAPA",
+          "next": "endC3Y"
+        },
+        {
+          "id": "ch3C3_o3",
+          "label": "les deux",
+          "intent": "LES_DEUX",
+          "next": "endC3Z"
+        }
+      ],
+      "default_next": "endC3X"
+    },
+    "endC3X": {
+      "id": "endC3X",
+      "type": "ending",
+      "text": "Maya rejoint maman. Elle a eu peur de une ombre, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC3Y": {
+      "id": "endC3Y",
+      "type": "ending",
+      "text": "Maya rejoint papa. Elle a eu peur de une ombre, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    },
+    "endC3Z": {
+      "id": "endC3Z",
+      "type": "ending",
+      "text": "Maya rejoint les deux. Elle a eu peur de une ombre, à le jardin la nuit. Elle a raconté à papa ou maman. Ils écoutent. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 27
+  }
+}

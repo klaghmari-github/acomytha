@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-EMO.LEX.010-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Adam est fier de son effort",
+  "lesson_id": "EMO.LEX.010",
+  "secondary_lessons": [],
+  "domain": "EMO",
+  "subdomain": "EMO.LEX",
+  "framing": "emotional",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "chambre",
+  "characters": [
+    "Adam",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Adam range ses cubes avec maman. La tour tombe. Adam recommence. Il pose un cube. Encore un. La tour tient. Adam sourit. Il dit : je suis fier. Maman dit : fier de ton effort. Pas meilleur que l'autre. Adam dit : mon effort. Il a recommencé. Maman applaudit tout doux. Adam est fier de son effort. Il range le dernier cube.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "La tour tient. Quelle émotion ?",
+      "expected_intents": [
+        "FIER",
+        "EFFORT"
+      ],
+      "accepted_examples": [
+        "fier",
+        "effort",
+        "je suis fier"
+      ],
+      "retry_prompt": "Il a recommencé. Il est fier de quoi ?",
+      "positive_feedback": "Oui. Il est fier de son effort.",
+      "wrong_feedback": "On dit : je suis fier de mon effort. Sans rabaisser l'autre.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "EMO.LEX.010"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Adam a dit : je suis fier. C'était son effort.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman baisse la lumière. Adam souffle. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-DIF.BES.001-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Sami répète, Léa observe d'abord",
+  "lesson_id": "DIF.BES.001",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.BES",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "jardin",
+  "characters": [
+    "Sami",
+    "Léa",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Sami et Léa sont au jardin avec maman. Maman dit un jeu : on pose un galet. On dit une couleur. Léa reste près du banc. Elle a besoin de calme. Sami va répéter la règle. Il dit : un galet, une couleur. Léa écoute. Elle va observer d'abord. Elle regarde. Elle ne joue pas encore. Maman dit : observer d'abord, c'est possible. Sami pose un galet gris. Il dit : gris. Léa sourit. Plus tard, Léa pose un galet aussi. Maman dit : tu as su répéter. Léa a pu observer d'abord.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Léa a besoin de calme. Que peut-on faire ?",
+      "expected_intents": [
+        "REPETTER",
+        "OBSERVER"
+      ],
+      "accepted_examples": [
+        "répéter",
+        "observer",
+        "observer d'abord",
+        "la règle"
+      ],
+      "retry_prompt": "On répète la règle. Léa peut quoi d'abord ?",
+      "positive_feedback": "Oui. On répète. On peut observer d'abord.",
+      "wrong_feedback": "On répète la règle. On accepte d'observer d'abord.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.BES.001"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Sami a répété. Léa a observé d'abord. Puis elle a joué un peu.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman range les galets. Sami donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

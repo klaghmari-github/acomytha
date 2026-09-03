@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-JEU.REG.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Iris suit la règle de la marelle",
+  "lesson_id": "JEU.REG.002",
+  "secondary_lessons": [],
+  "domain": "JEU",
+  "subdomain": "JEU.REG",
+  "framing": "standard",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "parc",
+  "characters": [
+    "Iris",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Iris est au parc avec papa. Une marelle est dessinée. Papa dit une règle. La règle : on attend. Puis on saute une case. Iris veut sauter tout de suite. Papa va rappeler la règle une fois. Il dit : on attend. C'est la règle. Iris attend. Puis elle saute une case. Papa dit : tu as suivi la règle. Iris répète : une règle. Papa la rappelle. Iris la suit.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Iris joue. Que suit-elle ?",
+      "expected_intents": [
+        "REGLE"
+      ],
+      "accepted_examples": [
+        "la règle",
+        "une règle",
+        "attendre",
+        "la rappeler"
+      ],
+      "retry_prompt": "Papa rappelle. Quelle chose Iris suit ?",
+      "positive_feedback": "Oui. Une règle. Papa la rappelle. Iris attend puis saute.",
+      "wrong_feedback": "On suit une règle. L'adulte la rappelle. On attend, puis on joue.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "JEU.REG.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Iris a suivi la règle. Papa l'a rappelée. Iris a attendu, puis elle a sauté.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Papa range la craie. Iris donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

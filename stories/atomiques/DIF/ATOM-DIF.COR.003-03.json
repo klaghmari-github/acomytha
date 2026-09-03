@@ -1,0 +1,72 @@
+{
+  "tree_id": "ATOM-DIF.COR.003-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N2",
+  "age_range": "4-5",
+  "title": "Maya ne rit pas des lunettes",
+  "lesson_id": "DIF.COR.003",
+  "secondary_lessons": [],
+  "domain": "DIF",
+  "subdomain": "DIF.COR",
+  "framing": "respect",
+  "sensitivity": "standard",
+  "family_model": "father_mother_children",
+  "setting": "marché",
+  "characters": [
+    "Maya",
+    "Inès",
+    "maman"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 120,
+    "avg": 170,
+    "max": 220
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Maya est au marché avec maman. Inès arrive avec des lunettes neuves. Elles brillent un peu. Un camarade ouvre la bouche. Maya ne rit pas. Il ne faut pas rire de l'apparence. Maman dit : on joue. On ne rit pas des lunettes, des cheveux ou d'un habit. Maya tend une prune à Inès. Elles marchent ensemble. Maya dit : tes lunettes sont là. C'est tout. Pas rire de l'apparence.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Inès a des lunettes. Que fait Maya ?",
+      "expected_intents": [
+        "PAS_RIRE"
+      ],
+      "accepted_examples": [
+        "pas rire",
+        "jouer",
+        "ensemble"
+      ],
+      "retry_prompt": "On ne rit pas de l'apparence. Que fait Maya ?",
+      "positive_feedback": "Oui. Elle ne rit pas de l'apparence. Elle joue.",
+      "wrong_feedback": "On ne rit pas de l'apparence. On joue ensemble.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "DIF.COR.003"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Maya n'a pas ri. Elle a joué avec Inès. Pas rire de l'apparence.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman achète du pain. Maya donne la main. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}

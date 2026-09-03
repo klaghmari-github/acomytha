@@ -1,0 +1,74 @@
+{
+  "tree_id": "ATOM-FAM.SEC.002-03",
+  "kind": "atomic",
+  "version": 1,
+  "language": "fr",
+  "age_band": "N3",
+  "age_range": "5-6",
+  "title": "Nino raconte sa peur dans le couloir",
+  "lesson_id": "FAM.SEC.002",
+  "secondary_lessons": [],
+  "domain": "FAM",
+  "subdomain": "FAM.SEC",
+  "framing": "standard",
+  "sensitivity": "enhanced",
+  "family_model": "father_mother_children",
+  "setting": "maison",
+  "characters": [
+    "Nino",
+    "maman",
+    "papa"
+  ],
+  "root_id": "n1",
+  "duration_estimate_seconds": {
+    "min": 130,
+    "avg": 190,
+    "max": 240
+  },
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "type": "audio",
+      "text": "Nino va vers sa chambre. Le couloir est sombre. Un manteau bouge un peu. Nino a peur. Son ventre se serre. Il ne reste pas seul avec la peur. Il va vers maman. Il va raconter à papa ou maman. Il dit : maman, j'ai peur. Le manteau a bougé. Maman l'écoute. Papa arrive. Nino raconte aussi à papa. Papa dit : merci de raconter. Ce qui fait peur se raconte à papa ou maman. Ils allument la petite lumière. Le manteau est un manteau. Nino respire.",
+      "next": "n2"
+    },
+    "n2": {
+      "id": "n2",
+      "type": "question_lesson",
+      "prompt": "Nino a peur. Que fait-il ?",
+      "expected_intents": [
+        "RACONTER",
+        "PAPA_MAMAN"
+      ],
+      "accepted_examples": [
+        "raconter",
+        "papa",
+        "maman",
+        "j'ai peur"
+      ],
+      "retry_prompt": "Il le dit à qui ?",
+      "positive_feedback": "Oui. Il raconte à papa ou maman.",
+      "wrong_feedback": "Quand on a peur, on raconte à papa ou maman.",
+      "default_next": "n3",
+      "next": "n3",
+      "lesson_id": "FAM.SEC.002"
+    },
+    "n3": {
+      "id": "n3",
+      "type": "feedback",
+      "text": "Nino a eu peur. Il a raconté à papa et maman.",
+      "next": "n4"
+    },
+    "n4": {
+      "id": "n4",
+      "type": "ending",
+      "text": "Maman pose le manteau au crochet. Nino prend son doudou. L'histoire est finie."
+    }
+  },
+  "validation": {
+    "status": "APPROVED_TEXT",
+    "blocking_findings": 0,
+    "major_findings": 0,
+    "paths_tested": 1
+  }
+}
