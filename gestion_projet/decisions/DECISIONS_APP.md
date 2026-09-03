@@ -14,4 +14,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D8 | Comptes démo | `admin@sentier.local` / `sentier-admin` · `parent@sentier.local` / `sentier-parent` · PIN `2468`. |
 | D9 | F-APP-001 | Feature complexe : stories (socle, catalogue, auth, appareil, 3 UI, lecteur) sur **une** branche, commits par story. |
 | D10 | F-AUD-006 | Plusieurs voix Piper par chunk (mix). Narrateur = Tom. Papa = Pierre. Maman = Siwis. Maîtresse = Jessica. Enfants = pitch ↑. Pas d’API TTS payante. F-AUD-003 (voix unique) abandonné. |
-| D11 | F-AUD-007 | Immersion **générale** sur tout le corpus : chaque événement du récit a son bruit (assiette, parc, véhicule, chien… = exemples). Mix sous la voix au bake. Lexique extensible. |
+| D11 | F-AUD-007 | Immersion **générale**. Colonne `sons` (vide = silence). Ordre : bruit seul, puis récit au calme. Jamais parler dans le bruit, jamais nappe sur tout le passage. |

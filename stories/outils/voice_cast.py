@@ -6,15 +6,18 @@ Le narrateur décrit. Les personnages parlent sans « maman dit ».
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import unicodedata
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 
 from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 ARBRES = ROOT / "arbres"
+LEXIQUE = ROOT / "outils" / "fx" / "lexique.json"
 
 FEMALE = {
     "adéle", "adèle", "agathe", "aline", "amandine", "anaïs", "aurore", "ava",
@@ -226,6 +229,60 @@ def spoken_text(beats: list[tuple[str, str]]) -> str:
     return " ".join(p for _, p in beats)
 
 
+@lru_cache(maxsize=1)
+def load_lexique() -> list[dict]:
+    if not LEXIQUE.exists():
+        return []
+    data = json.loads(LEXIQUE.read_text(encoding="utf-8"))
+    return list(data.get("cues") or [])
+
+
+def detect_sons(text: str) -> str:
+    """Ids de sons pour un passage. Chaîne vide = silence (cas normal)."""
+    if not text:
+        return ""
+    blob = _fold(str(text))
+    found: list[str] = []
+    for cue in load_lexique():
+        cid = cue.get("id") or ""
+        for pat in cue.get("match") or []:
+            if _fold(pat) and _fold(pat) in blob:
+                found.append(cid)
+                break
+    return ",".join(dict.fromkeys(found))
+
+
+def fill_sons_xlsx(path: Path) -> tuple[int, int]:
+    """Ajoute / remplit la colonne sons. Vide = passage silencieux."""
+    wb = load_workbook(path)
+    ws = wb["chunks"]
+    headers = [c.value for c in ws[1]]
+    if "sons" not in headers:
+        ws.cell(1, len(headers) + 1, "sons")
+        headers.append("sons")
+    ti = headers.index("text") + 1 if "text" in headers else None
+    si = headers.index("sons") + 1
+    n_fx = n_quiet = 0
+    for r in range(2, ws.max_row + 1):
+        text = ws.cell(r, ti).value if ti else ""
+        sons = detect_sons(str(text) if text else "")
+        ws.cell(r, si, sons)
+        if sons:
+            n_fx += 1
+        else:
+            n_quiet += 1
+    if "legend" in wb.sheetnames:
+        lg = wb["legend"]
+        already = any((c.value or "") == "sons" for c in lg["A"])
+        if not already:
+            lg.append(["sons", "ids de bruits (vide = silence). Le bruit se joue, puis l'histoire reprend au calme."])
+    if "journal" in wb.sheetnames:
+        wb["journal"].append(["F-AUD-007 colonne sons ; vide = silence ; jamais parler dans le bruit"])
+    wb.save(path)
+    wb.close()
+    return n_fx, n_quiet
+
+
 def rewrite_xlsx(path: Path) -> int:
     wb = load_workbook(path)
     meta = {}
@@ -273,6 +330,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--sons-only", action="store_true", help="colonne sons seulement")
     args = ap.parse_args()
     files = sorted(ARBRES.glob("*.xlsx"))
     if args.only:
@@ -280,13 +338,20 @@ def main() -> None:
         files = [f for f in files if f.stem in want]
     if args.limit:
         files = files[: args.limit]
-    total = 0
+    total = fx = quiet = 0
     for i, f in enumerate(files, 1):
-        n = rewrite_xlsx(f)
-        total += n
+        if args.sons_only:
+            a, b = fill_sons_xlsx(f)
+            fx += a
+            quiet += b
+        else:
+            total += rewrite_xlsx(f)
         if i % 50 == 0 or i == len(files):
-            print(f"[{i}/{len(files)}] {f.stem} chunks={n}", flush=True)
-    print(f"DONE files={len(files)} chunks={total}")
+            print(f"[{i}/{len(files)}] {f.stem}", flush=True)
+    if args.sons_only:
+        print(f"DONE files={len(files)} avec_sons={fx} silence={quiet}")
+    else:
+        print(f"DONE files={len(files)} chunks={total}")
 
 
 if __name__ == "__main__":

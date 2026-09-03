@@ -106,7 +106,11 @@ Exemples (non exhaustifs) :
 | Un enfant fait tomber une assiette | L’assiette qui tombe |
 | On ouvre un robinet, on ferme une porte, on verse de l’eau… | Le geste correspondant |
 
-Règles : s’applique à **tout le corpus** ; FX **sous** la parole, jamais par-dessus ; positif only (pas de peur, pas de bruit qui couvre) ; nuit = plus bas, skip ce qui réveille. Catalogue extensible : `stories/outils/fx/lexique.json` (les 4 premiers ids sont des amorces, pas la spec). Mix **au bake** dans le même chunk. **STRAT-002** §4b.
+Colonne Excel **`sons`** sur chaque chunk : ids de bruits, ou **vide = silence** (cas fréquent et voulu).
+
+Règle d’écoute : **ne pas parler dans le bruit.** D’abord le son des choses / de l’environnement, **puis** l’histoire reprend **au calme**. Pas de fond bruyant sur tout le passage.
+
+S’applique à **tout le corpus**. Positif only. Nuit = plus bas, skip ce qui réveille. Lexique extensible : `stories/outils/fx/lexique.json`. **STRAT-002** §4b.
 
 ### F-AUD-006 — Voix de rôles
 

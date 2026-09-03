@@ -2,8 +2,9 @@
   "feature": "F-AUD-007",
   "scope": "toutes les histoires, tous les chunks : tout événement raconté s'entend",
   "note": "Les cues ci-dessous sont des AMORCES / exemples, pas une spec fermée. Étendre dès qu'un geste du récit n'a pas de son.",
-  "mix": "under_voice",
-  "target_db_under_voice": -15,
+  "mix": "after_event_then_quiet",
+  "speak_over_fx": false,
+  "empty_sons": "silence",
   "night": { "gain_db": -8, "skip": ["ambulance_passe"] },
   "cues": [
     {
@@ -32,7 +33,7 @@
     },
     {
       "id": "assiette_tombe",
-      "match": ["assiette", "fait tomber", "tombe par terre", "casse"],
+      "match": ["fait tomber l'assiette", "fait tomber une assiette", "l'assiette tombe", "casse l'assiette"],
       "file": "assiette_tombe.wav",
       "tone": "exemple : un objet qui tombe — le même principe pour tout geste"
     }

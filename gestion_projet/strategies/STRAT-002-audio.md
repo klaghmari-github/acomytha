@@ -74,18 +74,22 @@ Un chunk = un fichier audio, **mix** de répliques (`script` : `role\|phrase` pa
 
 **Règle générale, tout le corpus.** Dès qu’une action ou un décor est **raconté**, il est **entendu**. Parc, ambulance, chien, assiette qui tombe : ce sont des **exemples**, pas une liste fermée. Objectif : plonger l’enfant dans le monde de **chaque** histoire.
 
-Ce n’est pas une bande-son continue : un **bruit court**, calé sur l’événement, **sous** la voix.
+Colonne **`sons`** (feuille `chunks`) : liste d’ids, ou **vide = ce passage est silencieux**.
 
-Le lexique (`stories/outils/fx/lexique.json`) **grandit** avec le corpus (porte, robinet, pas, oiseaux, pluie, pages, etc.). Une ligne de script `fx|<id>` ou une détection sur le texte du chunk.
+Ce n’est **pas** un fond sonore. On **n’écoute pas** et on **ne parle pas** en même temps.
+
+Ordre dans le chunk : un peu de récit si besoin → **le bruit tout seul** → **reprise au calme**. Interdit : coller une nappe de parc / rue sous tout le texte.
+
+Le lexique (`stories/outils/fx/lexique.json`) **grandit** avec le corpus. Le bake insère un beat `fx` après le premier récit, puis les répliques.
 
 Décisions :
 
-1. S’applique à **toutes** les histoires, pas à une scène type.
-2. Mix **dans le chunk** au bake (un WAV/MP3), pas un second lecteur runtime.
-3. Niveau FX ≈ −18 à −12 dB sous la voix. La parole reste lisible.
+1. S’applique à **toutes** les histoires. `sons` vide = silence, c’est un cas normal.
+2. Jamais de parole **dans** le bruit ; jamais d’histoire entière sur un background bruyant.
+3. Mix **dans le chunk** au bake (un WAV/MP3).
 4. Interdit : cri de peur, sirène collée à l’oreille, bruit méchant, musique qui couvre.
-5. Nuit : atténuer ; skip ce qui réveille (ex. passage d’ambulance).
-6. Bibliothèque locale, licences libres, 0 € API. Ajouter un FX dès qu’un geste du récit n’a pas encore de son.
+5. Nuit : atténuer ; skip ce qui réveille.
+6. Bibliothèque locale, 0 € API. Ajouter un FX dès qu’un geste du récit n’a pas encore de son.
 
 ## 5. Protection
 

@@ -1,4 +1,4 @@
-from voice_cast import parse_roster, split_script, spoken_text
+from voice_cast import detect_sons, parse_roster, split_script, spoken_text
 
 
 def test_lina_sans_dit():
@@ -53,3 +53,17 @@ def test_copine():
     r = parse_roster("Lina, Nora, maman")
     assert r.resolve("Lina") == "enfant-f"
     assert r.resolve("Nora") == "copine"
+
+
+def test_sons_silence_par_defaut():
+    assert detect_sons("Lina s'assoit à table, près de maman.") == ""
+
+
+def test_sons_assiette():
+    s = detect_sons("Lina fait tomber l'assiette. Ça fait du bruit.")
+    assert "assiette_tombe" in s.split(",")
+
+
+def test_sons_parc_exemple():
+    s = detect_sons("On arrive au parc. Les enfants s'amusent.")
+    assert "enfants_parc" in s.split(",")

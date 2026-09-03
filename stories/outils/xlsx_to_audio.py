@@ -205,10 +205,54 @@ def model_file(name: str) -> Path:
     return VOICES / "fr_FR-siwis-medium.onnx"
 
 
+FX_DIR = ROOT / "outils" / "fx"
+
+
+def parse_sons(value) -> list[str]:
+    if not value:
+        return []
+    return [s.strip() for s in str(value).split(",") if s.strip()]
+
+
+def interleave_fx(beats: list[tuple[str, str]], sons: list[str]) -> list[tuple[str, str]]:
+    """Après le premier récit : le bruit, puis la suite au calme. Jamais sous la voix."""
+    if not sons:
+        return beats
+    fx = [("fx", s) for s in sons]
+    if not beats:
+        return fx
+    out: list[tuple[str, str]] = []
+    placed = False
+    for i, beat in enumerate(beats):
+        out.append(beat)
+        if not placed and (beat[0] == "narrateur" or i == 0):
+            out.extend(fx)
+            placed = True
+    if not placed:
+        out = fx + beats
+    return out
+
+
+def load_fx_samples(son_id: str, sr: int) -> np.ndarray:
+    path = FX_DIR / f"{son_id}.wav"
+    if path.exists():
+        samples, fsr = read_pcm16(path)
+        if fsr != sr and len(samples):
+            g = np.gcd(fsr, sr)
+            samples = resample_poly(samples, sr // g, fsr // g)
+        return samples.astype(np.float32)
+    return np.zeros(int(sr * 1.15), dtype=np.float32)
+
+
 def synth_beats(piper: str, beats: list[tuple[str, str]], td: Path) -> tuple[np.ndarray, int]:
     parts: list[np.ndarray] = []
     sr = 22050
     for i, (role, phrase) in enumerate(beats):
+        if role == "fx":
+            samples = load_fx_samples(phrase, sr)
+            parts.append(samples)
+            parts.append(np.zeros(int(sr * 0.35), dtype=np.float32))
+            continue
         v = CAST.get(role, CAST["narrateur"])
         raw = td / f"{i}.wav"
         synth_piper(piper, model_file(v.model), phrase, raw, v.length, v.speaker)
@@ -294,6 +338,7 @@ def bake_tree(xlsx: Path, engine, bin_path, model, force=False) -> tuple[int, in
             except Exception:
                 pass
         beats = d.get("beats") or [("narrateur", str(d["text"]).strip())]
+        beats = interleave_fx(beats, parse_sons(d.get("sons")))
         try:
             with tempfile.TemporaryDirectory() as td:
                 tdir = Path(td)

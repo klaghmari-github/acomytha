@@ -85,7 +85,7 @@ Moteur : `STRAT-004`.
 - **Sur disque :** fichier chiffré `.chk`, **pas** un `.mp3` lisible.
 - Seule l’app détient la clé (Keystore / Keychain). Déchiffrement **chunk par chunk** en RAM, préchargement du suivant pendant la lecture.
 - Synthèse corpus : **Piper local, 0 €**. L’abonnement **Heavy** sert à écrire les plans de rythme et le code, **pas** à facturer l’API TTS xAI.
-- **Immersion (F-AUD-007) :** dans **toutes** les histoires, tout événement raconté s’entend (assiette qui tombe, parc, véhicule, chien, porte…). Bruit court **sous** la voix. Les scènes citées sont des exemples, pas une liste fermée.
+- **Immersion (F-AUD-007) :** colonne `sons` par passage (vide = silence). On entend le monde, **puis** l’histoire continue au calme. On ne parle pas dans le bruit ; pas de fond bruyant sur tout le récit.
 
 Détail : `STRAT-002`.
 
