@@ -15,7 +15,7 @@ export class SignupGate extends Component {
         <form class="c-paper" id="signup">
           <div class="c-mark"><strong>AcoMytha</strong></div>
           <div class="c-field">
-            <label for="email">Adresse</label>
+            <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="username" required />
           </div>
           <div class="c-field">

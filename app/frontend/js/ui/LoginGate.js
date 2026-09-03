@@ -17,7 +17,7 @@ export class LoginGate extends Component {
             <strong>AcoMytha</strong>
           </div>
           <div class="c-field">
-            <label for="email">Adresse</label>
+            <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="username" required value="parent@acomytha.local" />
           </div>
           <div class="c-field">
