@@ -6,6 +6,13 @@ Ce n’est **pas** une spec. C’est une lecture externe. On retient ce qui aide
 
 **Veille (F-NAR-017, D32, D35).** Watchdog **inotify** worktree + SSD. Fichier nouveau → `ACTION_REQUIRED` seulement. Le traitement est fait par l’agent principal, jamais par le scheduler en parallèle.
 
+Passe `avis1.txt` (4 sept. soir, SSD) :
+
+- **Déjà couvert** en règles : monde d’abord (F-NAR-009), désir ≠ leçon (F-NAR-010), vraie fin (F-NAR-011), chemins à conséquences (F-NAR-014), pas de gabarit « il était une fois ».
+- **Nouveau et appliqué** sur TREE-AUT-001 seulement : T3 n’est plus le même geste (milieu / bord / sac). Chaque lieu a son obstacle et ses trois issues. Titre : *Le bateau d’Amir et la rivière du jardin*.
+- TREE-COL-001 : pas le même gabarit (T3 = qui pousse). Pas réécrit ce tour.
+- Commerce « acheter / réécouter » : critère éditorial, pas une feature boutique.
+
 Passe `exemple2.txt` + `Acomytha_Avis_Paquet_Prioritaire_88534be.md` (4 sept. soir) :
 
 - AUT : projet **bateau / flaque** ; le sac sert ; les fins montrent le bateau qui flotte.

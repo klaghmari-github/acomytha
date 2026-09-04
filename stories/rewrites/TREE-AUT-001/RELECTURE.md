@@ -1,16 +1,17 @@
-# F-NAR-015 — TREE-AUT-001 (exemple2 + avis 88534be)
+# F-NAR-015 — TREE-AUT-001 (avis1.txt)
 
-Relu : ouverture, 3 branches T1, 9 T2, 27 fins, 3 questions, libellés, SSML, `characters`.
+Relu : ouverture, T1 (3), T2 (3 lieux), T3 (3 issues par lieu), 27 fins, 3 questions, libellés, `script`.
 
-## Vu et corrigé
+## Vu et corrigé (avis1)
 
-- Projet concret : **bateau en papier → flaque**. Le sac sert à y aller.
-- T1 : manteau / bottes / linge (utiles : chaud, pieds mouillés, mains). Les bottes restent **à côté** du sac, pas dedans.
-- T2 : trois flaques (gouttière, potager, bac).
-- T3 : milieu / bord avec papa / d’abord sur le sac — le bateau **flotte**, puis rentre.
-- Questions : bateau → sac ; bottes → maman ; linge → sac. Relance sans « Dis : ».
-- SSML / tags = texte (plus de Lina). AUT.AFF.002 justifié par le manteau.
+- Désir : **faire voyager le bateau** (plus « poser dans une flaque »).
+- Ouverture monde (volet, soupe, papa, papier plié) **sans** recopier « il était une fois ».
+- T2 = trois aventures : rivière de la gouttière / port des choux / île du bac.
+- T3 **distinct** par lieu (gouttes / feuilles / sable). Plus le gabarit milieu / bord / sac.
+- Fins : trois gouttes ; quais ; changer de chemin. La maison répond au début.
+- Troupe D16 : Amir, papa, maman. POS-001. Adultes parlent (D20). 3 options (D33).
+- Graphe / `chunk_id` inchangés.
 
 ## Non vérifié
 
-- Audio. Durée réelle. Playtest moteur. Les 27 chemins n’ont pas été écoutés à voix haute.
+- Audio (pas cuit). Durée réelle. Écoute à voix haute des 27 chemins. Playtest moteur.
