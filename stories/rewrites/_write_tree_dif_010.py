@@ -256,7 +256,7 @@ def t2_q(i: int) -> list[str]:
     return vet(
         [
             f"narrateur|{c['objet'].capitalize()} est sur sa tête, encore.",
-            "narrateur|Le chemin, le bac, ou la rampe.",
+            "narrateur|Le chemin de sable, le bac chaud, ou la rampe.",
             "papa|Où tu sautes, Raphaël ?",
         ]
     )
@@ -642,7 +642,7 @@ def main() -> None:
     s["CHK_T0001_P0000"] = vet(
         [
             "narrateur|Trois couleurs attendent le saut.",
-            "narrateur|Le chapeau jaune, le ruban rouge, ou la dune verte.",
+            "narrateur|Le jaune du chapeau, le rouge du ruban, le vert de la dune.",
             "papa|Lequel colore ton saut, Raphaël ?",
         ]
     )

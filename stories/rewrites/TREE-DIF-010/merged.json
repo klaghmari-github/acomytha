@@ -28,8 +28,8 @@
     {
       "chunk_id": "CHK_T0001_P0000",
       "kind": "transition_question",
-      "text": "Trois couleurs attendent le saut. Le chapeau jaune, le ruban rouge, ou la dune verte. Lequel colore ton saut, Raphaël ?",
-      "script": "narrateur|Trois couleurs attendent le saut.\nnarrateur|Le chapeau jaune, le ruban rouge, ou la dune verte.\npapa|Lequel colore ton saut, Raphaël ?",
+      "text": "Trois couleurs attendent le saut. Le jaune du chapeau, le rouge du ruban, le vert de la dune. Lequel colore ton saut, Raphaël ?",
+      "script": "narrateur|Trois couleurs attendent le saut.\nnarrateur|Le jaune du chapeau, le rouge du ruban, le vert de la dune.\npapa|Lequel colore ton saut, Raphaël ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -40,7 +40,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Trois couleurs attendent le saut. Le chapeau jaune, le ruban rouge, ou la dune verte. Lequel colore ton saut, Raphaël ?"
+      "text_ssml": "Trois couleurs attendent le saut. Le jaune du chapeau, le rouge du ruban, le vert de la dune. Lequel colore ton saut, Raphaël ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001",
@@ -96,8 +96,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0000",
       "kind": "transition_question",
-      "text": "Le chapeau jaune est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?",
-      "script": "narrateur|Le chapeau jaune est sur sa tête, encore.\nnarrateur|Le chemin, le bac, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
+      "text": "Le chapeau jaune est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?",
+      "script": "narrateur|Le chapeau jaune est sur sa tête, encore.\nnarrateur|Le chemin de sable, le bac chaud, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -108,7 +108,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Le chapeau jaune est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?"
+      "text_ssml": "Le chapeau jaune est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001",
@@ -249,8 +249,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002",
       "kind": "passage",
-      "text": "Raphaël arrive au bac, le chapeau trop grand. Le sable du bac est chaud, un peu rêche. Je saute dedans ! Il saute, et l'aile jaune se remplit de grains. On dirait un seau, ton chapeau. Il est lourd, maintenant. Vide-le tout doux, pas en courant. Il penche l'aile, et l'or retombe. Un grain reste coincé dans la paille. Encore un saut ? Le bac t'attend, le chapeau aussi. Le jaune brille au fond du bac, tout petit.",
-      "script": "narrateur|Raphaël arrive au bac, le chapeau trop grand.\nnarrateur|Le sable du bac est chaud, un peu rêche.\nenfant-m|Je saute dedans !\nnarrateur|Il saute, et l'aile jaune se remplit de grains.\nmaman|On dirait un seau, ton chapeau.\nenfant-m|Il est lourd, maintenant.\npapa|Vide-le tout doux, pas en courant.\nnarrateur|Il penche l'aile, et l'or retombe.\nnarrateur|Un grain reste coincé dans la paille.\nenfant-m|Encore un saut ?\nmaman|Le bac t'attend, le chapeau aussi.\nnarrateur|Le jaune brille au fond du bac, tout petit.",
+      "text": "Raphaël arrive au bac, le chapeau trop grand. Le sable du bac est chaud, un peu rêche. Je saute dedans ! Il saute, et l'aile jaune se remplit de grains. On dirait un seau, ton chapeau. Il est lourd, maintenant. Vide-le tout doux, en marchant. Il penche l'aile, et l'or retombe. Un grain reste coincé dans la paille. Encore un saut ? Le bac t'attend, le chapeau aussi. Le jaune brille au fond du bac, tout petit.",
+      "script": "narrateur|Raphaël arrive au bac, le chapeau trop grand.\nnarrateur|Le sable du bac est chaud, un peu rêche.\nenfant-m|Je saute dedans !\nnarrateur|Il saute, et l'aile jaune se remplit de grains.\nmaman|On dirait un seau, ton chapeau.\nenfant-m|Il est lourd, maintenant.\npapa|Vide-le tout doux, en marchant.\nnarrateur|Il penche l'aile, et l'or retombe.\nnarrateur|Un grain reste coincé dans la paille.\nenfant-m|Encore un saut ?\nmaman|Le bac t'attend, le chapeau aussi.\nnarrateur|Le jaune brille au fond du bac, tout petit.",
       "sons": "sable",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -261,7 +261,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Raphaël arrive au bac, le chapeau trop grand. Le sable du bac est chaud, un peu rêche. Je saute dedans ! Il saute, et l'aile jaune se remplit de grains. On dirait un seau, ton chapeau. Il est lourd, maintenant. Vide-le tout doux, pas en courant. Il penche l'aile, et l'or retombe. Un grain reste coincé dans la paille. Encore un saut ? Le bac t'attend, le chapeau aussi. Le jaune brille au fond du bac, tout petit."
+      "text_ssml": "Raphaël arrive au bac, le chapeau trop grand. Le sable du bac est chaud, un peu rêche. Je saute dedans ! Il saute, et l'aile jaune se remplit de grains. On dirait un seau, ton chapeau. Il est lourd, maintenant. Vide-le tout doux, en marchant. Il penche l'aile, et l'or retombe. Un grain reste coincé dans la paille. Encore un saut ? Le bac t'attend, le chapeau aussi. Le jaune brille au fond du bac, tout petit."
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
@@ -317,8 +317,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
       "kind": "passage",
-      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord.",
-      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il saute, et le chapeau reste sur les genoux d'abord.",
+      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut.",
+      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il remet l'aile, puis saute un tout petit saut.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -329,7 +329,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord."
+      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut."
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
@@ -523,7 +523,7 @@
       "kind": "passage",
       "text": "Raphaël tire le ruban rouge, tout mince. Il claque. Il est cousu au chapeau, tu vois. Le ruban bat sa joue, puis s'envole un peu. Une ombre rose glisse sur le bois. La serviette rayée claque, elle aussi. Je veux sauter, pour qu'il vole. Comme un drapeau ? Oui, un drapeau ! Il s'élance, trop content. Le ruban tire le chapeau vers le vent. Il m'échappe ! Le rouge est encore dans ta main. Le fil chaud reste collé à ses doigts.",
       "script": "narrateur|Raphaël tire le ruban rouge, tout mince.\nenfant-m|Il claque.\npapa|Il est cousu au chapeau, tu vois.\nnarrateur|Le ruban bat sa joue, puis s'envole un peu.\nnarrateur|Une ombre rose glisse sur le bois.\nmaman|La serviette rayée claque, elle aussi.\nenfant-m|Je veux sauter, pour qu'il vole.\npapa|Comme un drapeau ?\nenfant-m|Oui, un drapeau !\nnarrateur|Il s'élance, trop content.\nnarrateur|Le ruban tire le chapeau vers le vent.\nenfant-m|Il m'échappe !\nmaman|Le rouge est encore dans ta main.\nnarrateur|Le fil chaud reste collé à ses doigts.",
-      "sons": "tissu",
+      "sons": "vent",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
       "pause_after_ms": 450,
@@ -572,8 +572,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0000",
       "kind": "transition_question",
-      "text": "Le ruban rouge est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?",
-      "script": "narrateur|Le ruban rouge est sur sa tête, encore.\nnarrateur|Le chemin, le bac, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
+      "text": "Le ruban rouge est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?",
+      "script": "narrateur|Le ruban rouge est sur sa tête, encore.\nnarrateur|Le chemin de sable, le bac chaud, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -584,7 +584,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Le ruban rouge est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?"
+      "text_ssml": "Le ruban rouge est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001",
@@ -725,8 +725,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002",
       "kind": "passage",
-      "text": "Raphaël penche le ruban au-dessus du bac. Le sable rose de l'ombre colle déjà. Il ne faut pas qu'il mange le sable. Alors on saute sans le laisser tomber. Il saute au bord, et le ruban plonge. Une virgule rouge dans le bac. Je le sors ! Il tire, trop fort, et le chapeau penche. Du sable tombe de l'aile, tout fin. Tout doux, le fil est mince. Je recommence le saut. Le ruban garde un grain, tout rouge de poussière.",
-      "script": "narrateur|Raphaël penche le ruban au-dessus du bac.\nnarrateur|Le sable rose de l'ombre colle déjà.\nenfant-m|Il ne faut pas qu'il mange le sable.\npapa|Alors on saute sans le laisser tomber.\nnarrateur|Il saute au bord, et le ruban plonge.\nmaman|Une virgule rouge dans le bac.\nenfant-m|Je le sors !\nnarrateur|Il tire, trop fort, et le chapeau penche.\nnarrateur|Du sable tombe de l'aile, tout fin.\npapa|Tout doux, le fil est mince.\nenfant-m|Je recommence le saut.\nnarrateur|Le ruban garde un grain, tout rouge de poussière.",
+      "text": "Raphaël penche le ruban au-dessus du bac. Le sable rose de l'ombre colle déjà. Je le garde hors du sable. On saute, le ruban en l'air. Il saute au bord, et le ruban plonge. Une virgule rouge dans le bac. Je le sors ! Il tire, trop fort, et le chapeau penche. Du sable tombe de l'aile, tout fin. Tout doux, le fil est mince. Je recommence le saut. Le ruban garde un grain, tout rouge de poussière.",
+      "script": "narrateur|Raphaël penche le ruban au-dessus du bac.\nnarrateur|Le sable rose de l'ombre colle déjà.\nenfant-m|Je le garde hors du sable.\npapa|On saute, le ruban en l'air.\nnarrateur|Il saute au bord, et le ruban plonge.\nmaman|Une virgule rouge dans le bac.\nenfant-m|Je le sors !\nnarrateur|Il tire, trop fort, et le chapeau penche.\nnarrateur|Du sable tombe de l'aile, tout fin.\npapa|Tout doux, le fil est mince.\nenfant-m|Je recommence le saut.\nnarrateur|Le ruban garde un grain, tout rouge de poussière.",
       "sons": "sable",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -737,7 +737,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Raphaël penche le ruban au-dessus du bac. Le sable rose de l'ombre colle déjà. Il ne faut pas qu'il mange le sable. Alors on saute sans le laisser tomber. Il saute au bord, et le ruban plonge. Une virgule rouge dans le bac. Je le sors ! Il tire, trop fort, et le chapeau penche. Du sable tombe de l'aile, tout fin. Tout doux, le fil est mince. Je recommence le saut. Le ruban garde un grain, tout rouge de poussière."
+      "text_ssml": "Raphaël penche le ruban au-dessus du bac. Le sable rose de l'ombre colle déjà. Je le garde hors du sable. On saute, le ruban en l'air. Il saute au bord, et le ruban plonge. Une virgule rouge dans le bac. Je le sors ! Il tire, trop fort, et le chapeau penche. Du sable tombe de l'aile, tout fin. Tout doux, le fil est mince. Je recommence le saut. Le ruban garde un grain, tout rouge de poussière."
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
@@ -793,8 +793,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
       "kind": "passage",
-      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord.",
-      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il saute, et le chapeau reste sur les genoux d'abord.",
+      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut.",
+      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il remet l'aile, puis saute un tout petit saut.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -805,7 +805,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord."
+      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut."
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
@@ -1048,8 +1048,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0000",
       "kind": "transition_question",
-      "text": "La dune verte est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?",
-      "script": "narrateur|La dune verte est sur sa tête, encore.\nnarrateur|Le chemin, le bac, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
+      "text": "La dune verte est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?",
+      "script": "narrateur|La dune verte est sur sa tête, encore.\nnarrateur|Le chemin de sable, le bac chaud, ou la rampe.\npapa|Où tu sautes, Raphaël ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1060,7 +1060,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "La dune verte est sur sa tête, encore. Le chemin, le bac, ou la rampe. Où tu sautes, Raphaël ?"
+      "text_ssml": "La dune verte est sur sa tête, encore. Le chemin de sable, le bac chaud, ou la rampe. Où tu sautes, Raphaël ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001",
@@ -1269,8 +1269,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
       "kind": "passage",
-      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord.",
-      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il saute, et le chapeau reste sur les genoux d'abord.",
+      "text": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut.",
+      "script": "enfant-m|J'attends.\nnarrateur|Raphaël s'arrête dans le bac, le souffle encore haut.\nnarrateur|Il s'assoit au bord du bac, l'aile à plat.\nnarrateur|Un grain roule, puis plus rien.\nenfant-m|Le bac s'est tu.\nmaman|Tu peux sauter, tout petit.\nnarrateur|Il remet l'aile, puis saute un tout petit saut.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1281,7 +1281,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il saute, et le chapeau reste sur les genoux d'abord."
+      "text_ssml": "J'attends. Raphaël s'arrête dans le bac, le souffle encore haut. Il s'assoit au bord du bac, l'aile à plat. Un grain roule, puis plus rien. Le bac s'est tu. Tu peux sauter, tout petit. Il remet l'aile, puis saute un tout petit saut."
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
