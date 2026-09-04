@@ -4,8 +4,8 @@ Avant d’appliquer F-NAR-010…015 à tout le corpus ramifié : **deux** arbres
 
 | Rang | ID | Titre | Leçon | Où |
 | --- | --- | --- | --- | --- |
-| 1 | **TREE-AUT-001** | *Le sac d’Amir sur le tapis rayé* | AUT.AFF.001 (préparer son affaire) | `stories/arbres/` — **seul** ramifié actif |
-| 2 | **TREE-COL-001** | *La casserole et les pommes de Raphaël* | COL.POL.001 (vie collective / politesse) | `stories/archive/arbres/` |
+| 1 | **TREE-AUT-001** | *Le bateau d’Amir et la flaque* | AUT.AFF.001 (+ AUT.AFF.002 manteau) | `stories/arbres/` — **seul** ramifié actif |
+| 2 | **TREE-COL-001** | *Le voyage des pommes de Raphaël* | COL.POL.001 | `stories/archive/arbres/` |
 
 **Pourquoi ceux-là.** Ouvertures déjà retravaillées (monde d’abord). Audio présent. Deux domaines différents (autonomie vs vie collective). Autonomie colle à l’exemple Chouchou / boîte trop haute (`feedback_chatgpt/exemple.txt`).
 

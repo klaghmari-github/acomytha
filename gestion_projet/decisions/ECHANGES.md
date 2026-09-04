@@ -269,6 +269,7 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Consignes récit `f_04.txt` (Chouchou, bateau, chaîne question, gabarit) | F-NAR-010…015, D30 |
 | Deux ramifiés priorité, un seul actif, archive | F-NAR-016, D31 |
 | Veille dossier feedback_chatgpt, appliquer aux histoires gardées | F-NAR-017, D32 |
+| N1 ramifié : 3 options (atomiques : 2 max) | D33 |
 
 ---
 

@@ -35,4 +35,5 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D29 | Git | Uniquement `main`. Plus de branche `feat/…`. Message `feat(F-XXX):` / `fix(F-XXX):`. |
 | D30 | Récit f_04 | Désir ≠ leçon ; arc et vraie fin ; question en chaîne ; chemins cohérents. Source `feedback_chatgpt/f_04.txt`. F-NAR-010…015. |
 | D31 | Pilote ramifié | Priorité : TREE-AUT-001 (actif) et TREE-COL-001 (archive). Un seul ramifié dans `stories/arbres/` ; 763 autres en `stories/archive/arbres/`. |
-| D32 | Veille ChatGPT | Nouveau fichier dans `feedback_chatgpt/` → lire, consignes éditoriales → améliorer TREE-AUT-001 et TREE-COL-001 (texte). Commerce reporté dans NOTES. F-NAR-017. |
+| D32 | Veille ChatGPT | Nouveau fichier dans `feedback_chatgpt/` → lire, consignes éditoriales → améliorer TREE-AUT-001 et TREE-COL-001 (texte). Commerce reporté dans NOTES. F-NAR-017. Watchdog inotify worktree **et** clone SSD. |
+| D33 | N1 ramifié | Un arbre ramifié garde **3 options** par nœud (contrainte d’arbre). La règle N1 « 2 options max » vaut pour les atomiques. |

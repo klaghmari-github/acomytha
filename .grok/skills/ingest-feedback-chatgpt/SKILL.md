@@ -10,7 +10,9 @@ description: >
 
 # Ingest feedback ChatGPT (F-NAR-017)
 
-Dossier : `gestion_projet/feedback_chatgpt/`.
+Dossier worktree : `gestion_projet/feedback_chatgpt/`.
+Dossier **SSD** (là où les fichiers sont souvent déposés) : `/media/laghmari/ssd-data/dev/akomytha/gestion_projet/feedback_chatgpt/`.
+`scan` / `watch` regardent **les deux**. `claim` copie vers le worktree.
 Ledger : `gestion_projet/feedback_chatgpt/processed.json`.
 Outil : `python3 stories/outils/watch_feedback_chatgpt.py`.
 

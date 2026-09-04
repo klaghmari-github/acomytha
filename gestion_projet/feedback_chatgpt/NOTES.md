@@ -4,7 +4,14 @@ Sources (4 sept. 2026, commit `5e403fd`) : `Acomytha_Audit_2026-09-04.md`, `Acom
 
 Ce n’est **pas** une spec. C’est une lecture externe. On retient ce qui aide à mieux écrire et à ne pas vendre trop tôt.
 
-**Veille (F-NAR-017, D32).** Un agent surveille ce dossier. Fichier nouveau ou changé → lecture → consignes éditoriales → TREE-AUT-001 et TREE-COL-001 (texte, pas d’audio). Les fichiers déjà dans `processed.json` ne sont pas relus tant que le contenu ne change pas. `NOTES.md` n’est pas un input ChatGPT.
+**Veille (F-NAR-017, D32).** Watchdog **inotify** sur le worktree **et** le clone SSD. Fichier nouveau → `ACTION_REQUIRED` immédiat. `scan` union des deux dossiers.
+
+Passe `exemple2.txt` + `Acomytha_Avis_Paquet_Prioritaire_88534be.md` (4 sept. soir) :
+
+- AUT : projet **bateau / flaque** ; le sac sert ; les fins montrent le bateau qui flotte.
+- COL : **voyage des pommes** mené par les enfants ; T3 = qui pousse (plus l’heure) ; politesse rare.
+- Relances sans « Dis : ». Leçons secondaires : garder seulement si le récit les vit. SSML aligné sur le texte.
+- N1 ramifié : **3 options conservées** (structure d’arbre, D33). HTML 24 Mo = déjà l’audit md.
 
 ## Déjà appliqué
 
