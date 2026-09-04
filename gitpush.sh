@@ -44,10 +44,6 @@ echo "→ fetch GitLab + GitHub"
 git fetch origin
 git fetch github || true
 
-tip() {
-  git rev-parse -q --verify "$1" 2>/dev/null || true
-}
-
 ff_to() {
   local ref="$1"
   [[ -z "$ref" ]] && return 0
