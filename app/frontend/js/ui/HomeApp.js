@@ -130,11 +130,17 @@ export class HomeApp extends Component {
               <h2>AcoMytha, deux modes</h2>
               <div class="c-modes">
                 <div class="c-mode c-mode--day">
-                  <b>Jour</b>
+                  <b>
+                    <svg class="c-mode__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="#icon-sun"/></svg>
+                    Jour
+                  </b>
                   <p>Interactif — questions / réponses et options d’histoires.</p>
                 </div>
                 <div class="c-mode c-mode--night">
-                  <b>Nuit</b>
+                  <b>
+                    <svg class="c-mode__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="#icon-moon"/></svg>
+                    Nuit
+                  </b>
                   <p>Moins d’interaction. L’objectif est d’écouter jusqu’à dormir.</p>
                 </div>
               </div>

@@ -516,11 +516,27 @@
 }
 
 .s-home .c-mode b {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--serif);
   font-size: 1.35rem;
   font-weight: 360;
   margin-bottom: 0.3rem;
+}
+
+.s-home .c-mode__icon {
+  width: 1.45rem;
+  height: 1.45rem;
+  flex-shrink: 0;
+}
+
+.s-home .c-mode--day .c-mode__icon {
+  color: #c4842a;
+}
+
+.s-home .c-mode--night .c-mode__icon {
+  color: var(--gold, #e8a54b);
 }
 
 .s-home .c-mode p {

@@ -347,6 +347,18 @@
   font-size: 1.35rem;
 }
 
+.s-child .c-mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.s-child .c-mode-btn .c-mode__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--gold, #e8a54b);
+}
+
 .s-child .c-btn--ghost {
   color: #f4f6f8;
   border-color: rgba(255, 255, 255, 0.18);

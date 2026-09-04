@@ -27,7 +27,7 @@ export class ChildApp extends Component {
         <header>
           ${acmLogo({ size: "sm", href: "#/enfant" })}
           <div class="o-row">
-            <button class="c-btn c-btn--ghost" id="mode">Jour</button>
+            <button class="c-btn c-btn--ghost c-mode-btn" id="mode" type="button"></button>
             <button class="c-btn c-btn--ghost" id="back">Parent</button>
           </div>
         </header>
@@ -39,6 +39,7 @@ export class ChildApp extends Component {
           <div class="o-stack" id="choices"></div>
         </div>
       </section>`;
+    this.#paintMode();
     this.on(this.querySelector("#back"), "click", () => this.leave());
     this.on(this.querySelector("#mode"), "click", () => this.toggleNight());
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
@@ -105,9 +106,19 @@ export class ChildApp extends Component {
     }
   }
 
+  #paintMode() {
+    const btn = this.querySelector("#mode");
+    if (!btn) return;
+    const night = this.night;
+    const href = night ? "#icon-moon" : "#icon-sun";
+    const label = night ? "Nuit" : "Jour";
+    btn.innerHTML = `<svg class="c-mode__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="${href}"/></svg><span>${label}</span>`;
+    btn.setAttribute("aria-label", label);
+  }
+
   toggleNight() {
     this.night = !this.night;
-    this.querySelector("#mode").textContent = this.night ? "Nuit" : "Jour";
+    this.#paintMode();
     this.querySelector(".s-child")?.classList.toggle("is-night", this.night);
     if (this.engine) this.engine.night = this.night;
   }
