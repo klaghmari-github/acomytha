@@ -34,3 +34,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D28 | Accueil titre | Hero : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |
 | D29 | Git | Uniquement `main`. Plus de branche `feat/…`. Message `feat(F-XXX):` / `fix(F-XXX):`. |
 | D30 | Récit f_04 | Désir ≠ leçon ; arc et vraie fin ; question en chaîne ; chemins cohérents. Source `feedback_chatgpt/f_04.txt`. F-NAR-010…015. |
+| D31 | Pilote ramifié | Priorité : TREE-AUT-001 (actif) et TREE-COL-001 (archive). Un seul ramifié dans `stories/arbres/` ; 763 autres en `stories/archive/arbres/`. |

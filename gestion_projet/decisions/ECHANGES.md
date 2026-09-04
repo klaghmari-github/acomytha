@@ -267,6 +267,7 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Symbole acm = logo | F-PAY-003, D26 |
 | Git `main` + gitpush.sh | D29 |
 | Consignes récit `f_04.txt` (Chouchou, bateau, chaîne question, gabarit) | F-NAR-010…015, D30 |
+| Deux ramifiés priorité, un seul actif, archive | F-NAR-016, D31 |
 
 ---
 

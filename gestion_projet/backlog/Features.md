@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.1 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.2 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -41,6 +41,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-013 | **à faire** | Question + chaîne de réponses complète ; préférence ≠ connaissance. |
 | F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
 | F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
+| F-NAR-016 | **en cours** | Pilote : 2 ramifiés (AUT-001, COL-001). Un seul actif ; le reste en archive. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -114,6 +115,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-013 | Moteur | Chaîne question complète ; préférence ≠ connaissance | P0 | 1 | stories/REWRITE.md | F-NAR-008 |
 | F-NAR-014 | Moteur | Conséquences des choix ; chemin cohérent ; pas de gabarit | P0 | 1 | stories/REWRITE.md | F-NAR-010 |
 | F-NAR-015 | Production | Preuves de relecture, pas d’auto-validation IA | P0 | 1 | STRAT-001 | F-VAL-001 |
+| F-NAR-016 | Production | Pilote 2 ramifiés, 1 actif, archive des autres | P0 | 1 | stories/PRIORITE.md | F-NAR-010 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -220,6 +222,17 @@ Empêcher l’apparition d’un **nouveau gabarit** répétitif. Même une bonne
 ### F-NAR-015 — Preuves de contrôle
 
 L’IA indique les passages **réellement relus**, les vérifications faites, et ce qui **reste non vérifié**. Une auto-évaluation enthousiaste ne vaut pas validation. (VAL-001 : le générateur ne s’auto-approuve pas.)
+
+### F-NAR-016 — Pilote ramifié
+
+Avant d’appliquer F-NAR-010…015 à **tous** les ramifiés : deux arbres, à fond. Puis le reste.
+
+| ID | Rôle |
+| --- | --- |
+| `TREE-AUT-001` | Actif dans `stories/arbres/` |
+| `TREE-COL-001` | Second chantier, dans `stories/archive/arbres/` |
+
+763 autres `TREE-*` → `stories/archive/arbres/`. Atomiques inchangés. Détail : `stories/PRIORITE.md`. D31.
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
