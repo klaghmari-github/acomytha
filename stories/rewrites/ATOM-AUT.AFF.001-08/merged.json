@@ -1,18 +1,18 @@
 {
   "story_id": "ATOM-AUT.AFF.001-08",
-  "fil_rouge": "L'herbe brille encore. Un seau rouge attend près des bottes. Victorina met la gourde et le seau. Maman vérifie. Papa ouvre la porte.",
-  "title": "Le seau rouge",
+  "fil_rouge": "Victorina veut un château de sable. Papa dit gourde et seau. Le seau goutte sur le tapis. Elle l'essuie, l'hésite, puis le met dans le sac. Ils marchent vers le bac.",
+  "title": "Le château de Victorina",
   "lesson_id": "AUT.AFF.001",
   "age_band": "N2",
   "kind": "atomic",
   "characters": "Victorina, papa, maman",
-  "setting": "entrée",
+  "setting": "jardin, entrée, chemin du parc",
   "chunks": [
     {
       "chunk_id": "CHK_T0000_P0000",
       "kind": "passage_debut",
-      "text": "Dans le jardin, l'herbe brille encore. Un seau rouge attend près des bottes. Une goutte glisse sur le bord. Les bottes sont un peu mouillées. On entend un oiseau. L'entrée sent l'herbe coupée. Victorina, on va au parc. En ce moment, Victorina touche le seau. Le plastique est un peu froid. Papa pose le sac près de la porte. La gourde, le seau. On met dans le sac ce que l'adulte a dit. La gourde, le seau. Victorina met la gourde dans le sac. La gourde est fraîche. Bravo. La gourde est dedans. Tu mets le seau aussi ? Victorina prend le seau rouge. La goutte tombe sur le tapis. Elle met le seau. Parce que l'adulte a dit ces choses, elle les met. Victorina ferme le sac. Ça fait zzz. Le sac est prêt. Je vérifie avec toi. La gourde est dedans ? Oui. C'est ce que l'adulte a dit. Et le seau ? Le seau est dedans. Bravo. Tu as fait du bon travail. Dans le sac, la gourde est fraîche. Le seau est rouge. Le sac est prêt ? Oui, papa. Bravo, Victorina. Papa ouvre la porte. L'herbe du jardin brille encore.",
-      "script": "narrateur|Dans le jardin, l'herbe brille encore.\nnarrateur|Un seau rouge attend près des bottes.\nnarrateur|Une goutte glisse sur le bord.\nnarrateur|Les bottes sont un peu mouillées.\nnarrateur|On entend un oiseau.\nnarrateur|L'entrée sent l'herbe coupée.\nmaman|Victorina, on va au parc.\nnarrateur|En ce moment, Victorina touche le seau.\nnarrateur|Le plastique est un peu froid.\nnarrateur|Papa pose le sac près de la porte.\npapa|La gourde, le seau.\npapa|On met dans le sac ce que l'adulte a dit.\nenfant-f|La gourde, le seau.\nnarrateur|Victorina met la gourde dans le sac.\nnarrateur|La gourde est fraîche.\npapa|Bravo. La gourde est dedans.\npapa|Tu mets le seau aussi ?\nnarrateur|Victorina prend le seau rouge.\nnarrateur|La goutte tombe sur le tapis.\nnarrateur|Elle met le seau.\nnarrateur|Parce que l'adulte a dit ces choses, elle les met.\nnarrateur|Victorina ferme le sac.\nnarrateur|Ça fait zzz.\nnarrateur|Le sac est prêt.\nmaman|Je vérifie avec toi.\nmaman|La gourde est dedans ?\nenfant-f|Oui. C'est ce que l'adulte a dit.\nmaman|Et le seau ?\nenfant-f|Le seau est dedans.\nmaman|Bravo. Tu as fait du bon travail.\nnarrateur|Dans le sac, la gourde est fraîche.\nnarrateur|Le seau est rouge.\npapa|Le sac est prêt ?\nenfant-f|Oui, papa.\npapa|Bravo, Victorina.\nnarrateur|Papa ouvre la porte.\nnarrateur|L'herbe du jardin brille encore.",
+      "text": "Le robinet du jardin goutte encore. Une goutte tombe dans le seau rouge. Le plastique fait un petit toc. L'herbe est encore mouillée. Les bottes brillent un peu. L'entrée sent l'herbe coupée. Un arrosoir attend près des bottes. Le métal est un peu froid. Une abeille passe tout bas. Elle ne s'arrête pas. Victorina, on va au parc. Je veux un château de sable. Avec le seau, alors. En ce moment, Victorina touche le seau. Le plastique est un peu froid. Papa pose le sac près de la porte. La gourde, le seau. On met dans le sac ce que l'adulte a dit. La gourde, le seau. Victorina met la gourde dans le sac. La gourde est fraîche. Une goutte glisse du seau. Elle tombe sur le tapis. Le seau est mouillé. On l'essuie. Puis dans le sac. Victorina essuie le bord. Elle hésite. Le seau reste un moment dehors.",
+      "script": "narrateur|Le robinet du jardin goutte encore.\nnarrateur|Une goutte tombe dans le seau rouge.\nnarrateur|Le plastique fait un petit toc.\nnarrateur|L'herbe est encore mouillée.\nnarrateur|Les bottes brillent un peu.\nnarrateur|L'entrée sent l'herbe coupée.\nnarrateur|Un arrosoir attend près des bottes.\nnarrateur|Le métal est un peu froid.\nnarrateur|Une abeille passe tout bas.\nnarrateur|Elle ne s'arrête pas.\nmaman|Victorina, on va au parc.\nenfant-f|Je veux un château de sable.\nmaman|Avec le seau, alors.\nnarrateur|En ce moment, Victorina touche le seau.\nnarrateur|Le plastique est un peu froid.\nnarrateur|Papa pose le sac près de la porte.\npapa|La gourde, le seau.\npapa|On met dans le sac ce que l'adulte a dit.\nenfant-f|La gourde, le seau.\nnarrateur|Victorina met la gourde dans le sac.\nnarrateur|La gourde est fraîche.\nnarrateur|Une goutte glisse du seau.\nnarrateur|Elle tombe sur le tapis.\nenfant-f|Le seau est mouillé.\npapa|On l'essuie. Puis dans le sac.\nnarrateur|Victorina essuie le bord.\nnarrateur|Elle hésite.\nnarrateur|Le seau reste un moment dehors.",
       "sons": "enfants_parc",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
@@ -21,19 +21,22 @@
     {
       "chunk_id": "CHK_T0000_P0000_Q0001",
       "kind": "passage_question",
-      "text": "Victorina prépare le sac. Que met-elle ?",
-      "script": "narrateur|Victorina prépare le sac.\nnarrateur|Que met-elle ?",
-      "sons": null,
-      "length_scale_piper": 1.3,
+      "text": "Victorina prépare le sac. Où met-elle les affaires ?",
+      "script": "narrateur|Victorina prépare le sac.\nnarrateur|Où met-elle les affaires ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
       "rate_label": "slow",
-      "pause_after_ms": 250
+      "pause_after_ms": 250,
+      "expected_answer": "le sac",
+      "accepted_examples": "le sac | dans le sac | elle met | mettre | la gourde | le seau",
+      "retry_prompt": "Elle met les affaires dans le sac. Où les met-elle ?"
     },
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Victorina a préparé le sac. Elle a mis ce que l'adulte a dit. La gourde et le seau. Tu as fini de préparer le sac ? Oui. Bravo. Le sac est prêt. On va au bac à sable ? Oui, maman. Tu as la gourde et le seau ? Oui. C'est dans le sac. On y va ensemble. Le seau rouge ne brille plus dehors.",
-      "script": "narrateur|Victorina a préparé le sac.\nnarrateur|Elle a mis ce que l'adulte a dit.\nnarrateur|La gourde et le seau.\npapa|Tu as fini de préparer le sac ?\nenfant-f|Oui.\npapa|Bravo. Le sac est prêt.\nmaman|On va au bac à sable ?\nenfant-f|Oui, maman.\nmaman|Tu as la gourde et le seau ?\nenfant-f|Oui. C'est dans le sac.\npapa|On y va ensemble.\nnarrateur|Le seau rouge ne brille plus dehors.",
-      "sons": null,
+      "text": "Le seau vient avec nous. C'est ce que l'adulte a dit. Victorina prend le seau rouge. Elle le met dans le sac. Tu as mis ce que l'adulte a dit. Victorina ferme le sac. Ça fait zzz. Le sac est prêt. La gourde est dedans ? Oui. Et le seau aussi. Le sac est prêt ? Oui, papa. Dans le sac, la gourde est fraîche. Le seau aussi. Pour le château. Oui. On l'emporte.",
+      "script": "maman|Le seau vient avec nous.\nmaman|C'est ce que l'adulte a dit.\nnarrateur|Victorina prend le seau rouge.\nnarrateur|Elle le met dans le sac.\npapa|Tu as mis ce que l'adulte a dit.\nnarrateur|Victorina ferme le sac.\nnarrateur|Ça fait zzz.\nnarrateur|Le sac est prêt.\nmaman|La gourde est dedans ?\nenfant-f|Oui. Et le seau aussi.\npapa|Le sac est prêt ?\nenfant-f|Oui, papa.\nnarrateur|Dans le sac, la gourde est fraîche.\nmaman|Le seau aussi.\nenfant-f|Pour le château.\npapa|Oui. On l'emporte.",
+      "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
       "pause_after_ms": 450
@@ -41,9 +44,9 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Victorina porte le sac. Le seau tape un peu, tout doux. On met tes bottes ? Victorina enfile ses bottes. Tu as fini tes bottes ? Oui, papa. Bravo. On ferme la porte ? Papa ferme la porte. Tu as ton sac, Victorina ? Oui, maman. Bravo. Le chemin sent l'herbe mouillée. Ils vont au parc.",
-      "script": "narrateur|Victorina porte le sac.\nnarrateur|Le seau tape un peu, tout doux.\npapa|On met tes bottes ?\nnarrateur|Victorina enfile ses bottes.\npapa|Tu as fini tes bottes ?\nenfant-f|Oui, papa.\npapa|Bravo.\npapa|On ferme la porte ?\nnarrateur|Papa ferme la porte.\nmaman|Tu as ton sac, Victorina ?\nenfant-f|Oui, maman.\nmaman|Bravo.\nnarrateur|Le chemin sent l'herbe mouillée.\nnarrateur|Ils vont au parc.",
-      "sons": null,
+      "text": "On met tes bottes. Victorina enfile ses bottes. Tu as fini tes bottes ? Oui, papa. On ferme la porte. Papa ferme la porte. Tu as ton sac, Victorina ? Oui, maman. Le chemin sent l'herbe mouillée. Le seau tape un peu, tout doux. Mon château va être grand. Oui. Le sable t'attend. Ils vont au parc. Le bac à sable est encore un peu frais. Victorina pose le sac. Elle sort le seau. Le plastique n'est plus mouillé. Je fais le mur. Doucement. Une poignée, puis une autre. Le sable fait un petit bruit. Un mur tout bas apparaît. Il tient, ce mur. Encore une poignée. Victorina appuie tout doucement. Le château a un petit coin rond.",
+      "script": "papa|On met tes bottes.\nnarrateur|Victorina enfile ses bottes.\npapa|Tu as fini tes bottes ?\nenfant-f|Oui, papa.\npapa|On ferme la porte.\nnarrateur|Papa ferme la porte.\nmaman|Tu as ton sac, Victorina ?\nenfant-f|Oui, maman.\nnarrateur|Le chemin sent l'herbe mouillée.\nnarrateur|Le seau tape un peu, tout doux.\nenfant-f|Mon château va être grand.\nmaman|Oui. Le sable t'attend.\nnarrateur|Ils vont au parc.\nnarrateur|Le bac à sable est encore un peu frais.\nnarrateur|Victorina pose le sac.\nnarrateur|Elle sort le seau.\nnarrateur|Le plastique n'est plus mouillé.\nenfant-f|Je fais le mur.\npapa|Doucement. Une poignée, puis une autre.\nnarrateur|Le sable fait un petit bruit.\nnarrateur|Un mur tout bas apparaît.\nmaman|Il tient, ce mur.\nenfant-f|Encore une poignée.\nnarrateur|Victorina appuie tout doucement.\nnarrateur|Le château a un petit coin rond.",
+      "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
       "pause_after_ms": 450
@@ -51,10 +54,10 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "Le seau rouge voyage dans le sac. La gourde aussi. Le sac est prêt. Oui. Tu as mis ce que l'adulte a dit. Bravo, Victorina. L'histoire est finie.",
-      "script": "narrateur|Le seau rouge voyage dans le sac.\nnarrateur|La gourde aussi.\nenfant-f|Le sac est prêt.\npapa|Oui. Tu as mis ce que l'adulte a dit.\nmaman|Bravo, Victorina.\nnarrateur|L'histoire est finie.",
-      "sons": null,
-      "length_scale_piper": 1.26,
+      "text": "Le seau rouge voyage dans le sac. La gourde aussi. Le sac est prêt. Oui. Tu as mis ce que l'adulte a dit. Le petit mur tient encore. Le robinet du jardin est loin, maintenant. L'histoire est finie.",
+      "script": "narrateur|Le seau rouge voyage dans le sac.\nnarrateur|La gourde aussi.\nenfant-f|Le sac est prêt.\npapa|Oui. Tu as mis ce que l'adulte a dit.\nnarrateur|Le petit mur tient encore.\nnarrateur|Le robinet du jardin est loin, maintenant.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.18,
       "rate_label": "slow",
       "pause_after_ms": 600
     }

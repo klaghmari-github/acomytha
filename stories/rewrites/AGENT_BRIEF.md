@@ -6,6 +6,8 @@ Produit **AcoMytha**. Audio-only, 3–6 ans. Décider, ne pas demander d’avis.
 
 Liste de gestes : « Alice range le triangle. Alice range le rectangle. » Ce n’est **pas** une histoire.
 « Bravo. Tu as fait du bon travail. L’histoire est finie. » en refrain.
+« Tu as mis ce que l’adulte a dit. » / recap d’objets en liste.
+La même phrase-refrain d’une histoire à l’autre (« un chuchotement serre son ventre », « une étape après l’autre »).
 Recopier la même amorce que l’histoire d’à côté.
 Prénom hors troupe. Adulte nommé autrement que papa/maman.
 Décrire un geste dangereux (POS-001).

@@ -1,18 +1,18 @@
 {
   "story_id": "ATOM-AUT.AFF.001-06",
-  "fil_rouge": "La fenêtre est embuée. Nina voit le parc tout flou. Elle met la gourde, le chapeau et le doudou. Papa et maman disent bravo. Le sac est sur son dos.",
-  "title": "La fenêtre embuée",
+  "fil_rouge": "Nina veut le bac à sable du parc. Papa dit gourde, chapeau, doudou. Elle pose une cuillère en bois. Elle la retire, met ce que l'adulte a dit. Le bac n'est plus flou.",
+  "title": "Le bac à sable de Nina",
   "lesson_id": "AUT.AFF.001",
   "age_band": "N2",
   "kind": "atomic",
   "characters": "Nina, papa, maman",
-  "setting": "entrée de la maison",
+  "setting": "cuisine, entrée, parc",
   "chunks": [
     {
       "chunk_id": "CHK_T0000_P0000",
       "kind": "passage_debut",
-      "text": "La fenêtre de l'entrée est toute embuée. On voit le parc au loin, tout flou. Un oiseau passe comme une ombre. Papa essuie un petit rond. Tu vois le bac à sable, Nina ? Oui. Il est tout pâle. En ce moment, Nina cherche le sac. Papa sort le sac bleu. Le tissu sent le coton. On met dans le sac ce que l'adulte a dit. On met la gourde. On met le chapeau. On met le doudou. La gourde, le chapeau, le doudou. Nina écoute. Elle met dans le sac ce que l'adulte a dit. La gourde est froide. Tu la mets dans le sac ? Nina met la gourde. Bravo. La gourde est dedans. Le chapeau est jaune. Il est un peu souple. Voici le chapeau, Nina. Tu le mets dans le sac ? Nina met le chapeau. Bravo. Le chapeau est dedans. Le doudou sent le coton. Il est tout doux. Tu le mets dans le sac ? Nina met le doudou. Tu as mis ce que l'adulte a dit. Nina ferme le sac. Ça fait zzz. Le sac est prêt. Bravo. Tu as fait du bon travail. Le sac est prêt ? Oui, maman. Le petit rond sur la vitre reste clair.",
-      "script": "narrateur|La fenêtre de l'entrée est toute embuée.\nnarrateur|On voit le parc au loin, tout flou.\nnarrateur|Un oiseau passe comme une ombre.\nnarrateur|Papa essuie un petit rond.\npapa|Tu vois le bac à sable, Nina ?\nenfant-f|Oui. Il est tout pâle.\nnarrateur|En ce moment, Nina cherche le sac.\nnarrateur|Papa sort le sac bleu.\nnarrateur|Le tissu sent le coton.\npapa|On met dans le sac ce que l'adulte a dit.\npapa|On met la gourde.\npapa|On met le chapeau.\npapa|On met le doudou.\nenfant-f|La gourde, le chapeau, le doudou.\nnarrateur|Nina écoute.\nnarrateur|Elle met dans le sac ce que l'adulte a dit.\nnarrateur|La gourde est froide.\npapa|Tu la mets dans le sac ?\nnarrateur|Nina met la gourde.\npapa|Bravo. La gourde est dedans.\nnarrateur|Le chapeau est jaune.\nnarrateur|Il est un peu souple.\nmaman|Voici le chapeau, Nina.\nmaman|Tu le mets dans le sac ?\nnarrateur|Nina met le chapeau.\nmaman|Bravo. Le chapeau est dedans.\nnarrateur|Le doudou sent le coton.\nenfant-f|Il est tout doux.\npapa|Tu le mets dans le sac ?\nnarrateur|Nina met le doudou.\npapa|Tu as mis ce que l'adulte a dit.\nnarrateur|Nina ferme le sac.\nnarrateur|Ça fait zzz.\nnarrateur|Le sac est prêt.\nmaman|Bravo. Tu as fait du bon travail.\nmaman|Le sac est prêt ?\nenfant-f|Oui, maman.\nnarrateur|Le petit rond sur la vitre reste clair.",
+      "text": "La bouilloire chante dans la cuisine. La vapeur fait un petit nuage. Papa essuie la table. Ça sent le thé. Une tasse fume encore. Maman plie le torchon. Le tiroir fait un petit clic. Près de la porte, la vitre est un peu floue. On voit le parc au loin. Un oiseau passe comme une ombre. Tu vois le bac à sable, Nina ? Oui. Je veux y aller. On y va. D'abord le sac. En ce moment, Nina cherche le sac. Papa sort le sac bleu. Le tissu sent le coton. On met dans le sac ce que l'adulte a dit. La gourde, le chapeau, le doudou. La gourde, le chapeau, le doudou. Nina écoute. Elle voit une cuillère en bois. Elle la pose dans le sac. La cuillère fait un bruit dur. La cuillère reste à la cuisine. On met ce que l'adulte a dit. Nina retire la cuillère. Elle met la gourde. La gourde est froide. Où est le chapeau ? Le chapeau jaune n'est pas là.",
+      "script": "narrateur|La bouilloire chante dans la cuisine.\nnarrateur|La vapeur fait un petit nuage.\nnarrateur|Papa essuie la table.\nnarrateur|Ça sent le thé.\nnarrateur|Une tasse fume encore.\nnarrateur|Maman plie le torchon.\nnarrateur|Le tiroir fait un petit clic.\nnarrateur|Près de la porte, la vitre est un peu floue.\nnarrateur|On voit le parc au loin.\nnarrateur|Un oiseau passe comme une ombre.\npapa|Tu vois le bac à sable, Nina ?\nenfant-f|Oui. Je veux y aller.\nmaman|On y va. D'abord le sac.\nnarrateur|En ce moment, Nina cherche le sac.\nnarrateur|Papa sort le sac bleu.\nnarrateur|Le tissu sent le coton.\npapa|On met dans le sac ce que l'adulte a dit.\npapa|La gourde, le chapeau, le doudou.\nenfant-f|La gourde, le chapeau, le doudou.\nnarrateur|Nina écoute.\nnarrateur|Elle voit une cuillère en bois.\nnarrateur|Elle la pose dans le sac.\nnarrateur|La cuillère fait un bruit dur.\npapa|La cuillère reste à la cuisine.\npapa|On met ce que l'adulte a dit.\nnarrateur|Nina retire la cuillère.\nnarrateur|Elle met la gourde.\nnarrateur|La gourde est froide.\nenfant-f|Où est le chapeau ?\nnarrateur|Le chapeau jaune n'est pas là.",
       "sons": "enfants_parc",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
@@ -21,19 +21,22 @@
     {
       "chunk_id": "CHK_T0000_P0000_Q0001",
       "kind": "passage_question",
-      "text": "Papa a parlé. Que met Nina dans le sac ?",
-      "script": "narrateur|Papa a parlé.\nnarrateur|Que met Nina dans le sac ?",
-      "sons": null,
-      "length_scale_piper": 1.3,
+      "text": "Papa a parlé. Où Nina met-elle les affaires ?",
+      "script": "narrateur|Papa a parlé.\nnarrateur|Où Nina met-elle les affaires ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
       "rate_label": "slow",
-      "pause_after_ms": 250
+      "pause_after_ms": 250,
+      "expected_answer": "le sac",
+      "accepted_examples": "le sac | dans le sac | elle met | mettre | gourde | chapeau | doudou | ce que papa a dit",
+      "retry_prompt": "Elle met les affaires dans le sac. Où les met-elle ?"
     },
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Nina a préparé le sac. Elle a mis ce que l'adulte a dit. La gourde, le chapeau, le doudou. Tu as fini de préparer le sac ? Oui, papa. Bravo. Le sac est prêt. On va au parc, maintenant ? Oui. Tu as la gourde, le chapeau, le doudou ? Oui. C'est dans le sac. On y va ensemble. Le parc n'est plus tout flou.",
-      "script": "narrateur|Nina a préparé le sac.\nnarrateur|Elle a mis ce que l'adulte a dit.\nnarrateur|La gourde, le chapeau, le doudou.\npapa|Tu as fini de préparer le sac ?\nenfant-f|Oui, papa.\npapa|Bravo. Le sac est prêt.\nmaman|On va au parc, maintenant ?\nenfant-f|Oui.\nmaman|Tu as la gourde, le chapeau, le doudou ?\nenfant-f|Oui. C'est dans le sac.\npapa|On y va ensemble.\nnarrateur|Le parc n'est plus tout flou.",
-      "sons": null,
+      "text": "Voici le chapeau, Nina. Le chapeau est jaune. Il est un peu souple. Nina le met dans le sac. Le doudou sent le coton. Il est tout doux. Nina le met dans le sac. Tu as mis ce que l'adulte a dit. Nina ferme le sac. Ça fait zzz. Le sac est prêt. Le sac est prêt ? Oui, maman. Le petit nuage de la bouilloire s'en va. Tu as la gourde, le chapeau, le doudou ? Oui. C'est dans le sac. On peut sortir, maintenant.",
+      "script": "maman|Voici le chapeau, Nina.\nnarrateur|Le chapeau est jaune.\nnarrateur|Il est un peu souple.\nnarrateur|Nina le met dans le sac.\nnarrateur|Le doudou sent le coton.\nenfant-f|Il est tout doux.\nnarrateur|Nina le met dans le sac.\npapa|Tu as mis ce que l'adulte a dit.\nnarrateur|Nina ferme le sac.\nnarrateur|Ça fait zzz.\nnarrateur|Le sac est prêt.\nmaman|Le sac est prêt ?\nenfant-f|Oui, maman.\nnarrateur|Le petit nuage de la bouilloire s'en va.\nmaman|Tu as la gourde, le chapeau, le doudou ?\nenfant-f|Oui. C'est dans le sac.\npapa|On peut sortir, maintenant.",
+      "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
       "pause_after_ms": 450
@@ -41,9 +44,9 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Nina enfile le sac. Le sac est sur le dos de Nina. On ouvre la porte ? Papa ouvre la porte. Tu as ton sac, Nina ? Oui, maman. Bravo. Ils sortent. L'air sent l'herbe du parc.",
-      "script": "narrateur|Nina enfile le sac.\nnarrateur|Le sac est sur le dos de Nina.\npapa|On ouvre la porte ?\nnarrateur|Papa ouvre la porte.\nmaman|Tu as ton sac, Nina ?\nenfant-f|Oui, maman.\nmaman|Bravo.\nnarrateur|Ils sortent.\nnarrateur|L'air sent l'herbe du parc.",
-      "sons": null,
+      "text": "Nina enfile le sac. Le sac est sur le dos de Nina. On ouvre la porte. Papa ouvre la porte. Tu as ton sac, Nina ? Oui, maman. Ils sortent. L'air sent l'herbe du parc. Le bac à sable n'est plus flou. Il est vrai, maintenant. Oui. On y va ensemble. Le sable est un peu pâle. Nina s'accroupit. Elle touche le sable. Il est un peu frais. Il coule, maman. Oui. Tu peux en prendre un peu. Nina ferme la main. Le sable reste un moment.",
+      "script": "narrateur|Nina enfile le sac.\nnarrateur|Le sac est sur le dos de Nina.\npapa|On ouvre la porte.\nnarrateur|Papa ouvre la porte.\nmaman|Tu as ton sac, Nina ?\nenfant-f|Oui, maman.\nnarrateur|Ils sortent.\nnarrateur|L'air sent l'herbe du parc.\nnarrateur|Le bac à sable n'est plus flou.\nenfant-f|Il est vrai, maintenant.\npapa|Oui. On y va ensemble.\nnarrateur|Le sable est un peu pâle.\nnarrateur|Nina s'accroupit.\nnarrateur|Elle touche le sable.\nnarrateur|Il est un peu frais.\nenfant-f|Il coule, maman.\nmaman|Oui. Tu peux en prendre un peu.\nnarrateur|Nina ferme la main.\nnarrateur|Le sable reste un moment.",
+      "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
       "pause_after_ms": 450
@@ -51,10 +54,10 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "Le sac bleu tape le dos de Nina. Le parc n'est plus derrière la vitre. Le sac est prêt. Oui. Tu as mis ce que l'adulte a dit. Bravo, Nina. L'histoire est finie.",
-      "script": "narrateur|Le sac bleu tape le dos de Nina.\nnarrateur|Le parc n'est plus derrière la vitre.\nenfant-f|Le sac est prêt.\npapa|Oui. Tu as mis ce que l'adulte a dit.\nmaman|Bravo, Nina.\nnarrateur|L'histoire est finie.",
-      "sons": null,
-      "length_scale_piper": 1.26,
+      "text": "Le sac bleu tape le dos de Nina. Le parc n'est plus derrière la vitre. Le sac est prêt. Oui. Tu as mis ce que l'adulte a dit. Le bac à sable t'attend. Nina ouvre encore la main. Le sable retombe, tout fin. L'histoire est finie.",
+      "script": "narrateur|Le sac bleu tape le dos de Nina.\nnarrateur|Le parc n'est plus derrière la vitre.\nenfant-f|Le sac est prêt.\npapa|Oui. Tu as mis ce que l'adulte a dit.\nmaman|Le bac à sable t'attend.\nnarrateur|Nina ouvre encore la main.\nnarrateur|Le sable retombe, tout fin.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.18,
       "rate_label": "slow",
       "pause_after_ms": 600
     }

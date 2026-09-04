@@ -49,19 +49,19 @@ class Voice:
 # Narrateur ≠ papa ≠ enfant. Maîtresse ≠ maman. Copain ≠ héros.
 # Tom était trop bas dans le mix (peak des autres voix) : volume + RMS + présence.
 CAST = {
-    "narrateur": Voice("fr_FR-tom-medium", length=1.06, pitch=0.6, silence=0.28, volume=1.55, rms=0.13),
-    "maman": Voice("fr_FR-siwis-medium", length=1.12, pitch=0.0, volume=1.05, rms=0.10),
-    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.10, pitch=0.0, volume=1.12, rms=0.11),
-    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.08, pitch=-0.2, volume=1.08, rms=0.10),
-    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.12, pitch=-0.8, volume=1.08, rms=0.10),
-    "directeur": Voice("fr_FR-gilles-low", length=1.08, pitch=1.2, volume=1.25, rms=0.11),
-    "grand-mere": Voice("fr_FR-siwis-medium", length=1.30, pitch=-2.4, volume=1.10, rms=0.10),
-    "grand-pere": Voice("fr_FR-gilles-low", length=1.28, pitch=-0.8, volume=1.25, rms=0.11),
-    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.10, pitch=0.6, volume=1.08, rms=0.10),
-    "enfant-f": Voice("fr_FR-siwis-medium", length=1.04, pitch=4.2, volume=1.08, rms=0.10),
-    "enfant-m": Voice("fr_FR-tom-medium", length=1.04, pitch=4.6, volume=1.20, rms=0.11),
-    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.02, pitch=3.4, volume=1.08, rms=0.10),
-    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.02, pitch=5.2, volume=1.12, rms=0.10),
+    "narrateur": Voice("fr_FR-tom-medium", length=1.22, pitch=0.2, silence=0.42, volume=1.55, rms=0.13),
+    "maman": Voice("fr_FR-siwis-medium", length=1.20, pitch=0.0, silence=0.36, volume=1.05, rms=0.10),
+    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.18, pitch=0.0, silence=0.36, volume=1.12, rms=0.11),
+    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.16, pitch=-0.2, silence=0.34, volume=1.08, rms=0.10),
+    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.18, pitch=-0.6, silence=0.36, volume=1.08, rms=0.10),
+    "directeur": Voice("fr_FR-gilles-low", length=1.16, pitch=0.8, silence=0.36, volume=1.25, rms=0.11),
+    "grand-mere": Voice("fr_FR-siwis-medium", length=1.32, pitch=-1.8, silence=0.40, volume=1.10, rms=0.10),
+    "grand-pere": Voice("fr_FR-gilles-low", length=1.30, pitch=-0.6, silence=0.40, volume=1.25, rms=0.11),
+    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.18, pitch=0.4, silence=0.36, volume=1.08, rms=0.10),
+    "enfant-f": Voice("fr_FR-siwis-medium", length=1.28, pitch=2.4, silence=0.40, volume=1.08, rms=0.10),
+    "enfant-m": Voice("fr_FR-tom-medium", length=1.28, pitch=2.6, silence=0.40, volume=1.20, rms=0.11),
+    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.24, pitch=2.2, silence=0.38, volume=1.08, rms=0.10),
+    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.24, pitch=2.8, silence=0.38, volume=1.12, rms=0.10),
 }
 
 
