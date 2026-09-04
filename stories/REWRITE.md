@@ -46,7 +46,7 @@ Enfants nommés : Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Vict
 
 L’entrée n’est plus un constat. Le premier passage **raconte un monde**, puis seulement l’action présente.
 
-Les amorces « Il était une fois… » et « Ceci est l’histoire d’un enfant… » sont des **exemples de manières**. Ce n’est **pas** un moule. Il faut être créatif. Deux histoires ne commencent pas pareil. Détails sensoriels (pluie, lumière, odeur, tapis, jouets, fenêtre). Puis : en ce moment.
+Les amorces « Il était une fois… » et « Ceci est l’histoire d’un enfant… » (textes complets Constantin / Luca / Céline dans `gestion_projet/decisions/ECHANGES.md` §7) sont des **exemples de manières**. Ce n’est **pas** un moule. Il faut être créatif. Deux histoires ne commencent pas pareil. Détails sensoriels (pluie, lumière, odeur, tapis, jouets, fenêtre). Puis : en ce moment.
 
 Ramifiées : interdiction de « On va apprendre : {titre}. Voici le geste ». Le fil rouge porte la leçon.
 

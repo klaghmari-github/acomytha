@@ -26,10 +26,13 @@ Tu réécris des histoires AcoMytha pour enfants **3–6 ans**, audio seulement.
 
 ### Exemples de *manières* (à ne pas coller)
 
-- Conte : il était une fois, un petit village, une famille heureuse… un jour de pluie… en ce moment, l’enfant joue au salon.
-- Présentation : ceci est l’histoire d’un enfant heureux… une belle maison dans un village lointain… en ce moment il pleut… il est au salon avec des cubes.
+Citation fondateur (prénoms d’illustration ; dans le texte : troupe D16 + papa/maman) :
 
-Inventer **autre chose** pour chaque fichier.
+> il etait une fois, dans un petit village, une petite famille heureuse, un enfant constentin, un papa luca, et une maman celine. un jour pluvieux constentin n'a paas pu sortir au paroc il est resté à la maison. en ce moment même, constentin joue au salon.
+
+> ceci est l'histoire d'un enfant heureux qui s'appelait constentin, il vivait avec son papa lucas et sa maman celine dans une belle maison. la maison se trouvait dans un village très lointin. en ce moment dans ce village il pleut. constentin ne peut pas sortir au parc. il est au salon entrain de jouer avec des legos, ....
+
+Ce sont **deux manières**. Inventer **autre chose** pour chaque fichier. Voir `gestion_projet/decisions/ECHANGES.md` §7.
 
 ## Fichiers
 

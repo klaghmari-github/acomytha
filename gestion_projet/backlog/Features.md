@@ -1,7 +1,8 @@
 # AcoMytha — backlog features
 
-**Version :** 3.9 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.0 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
+**Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = sur `main`.
 
@@ -144,15 +145,17 @@ Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histo
 
 **Créativité obligatoire.** Chaque histoire a sa manière. On ne recopie pas une amorce. On n’enchaîne pas deux histoires qui commencent pareil.
 
-Les textes ci-dessous sont des **exemples de manières**, pas des modèles à coller, pas une liste fermée. Il **faut inventer** d’autres ouvertures.
+Les textes ci-dessous sont des **exemples de manières**, pas des modèles à coller, pas une liste fermée. Il **faut inventer** d’autres ouvertures. Traçabilité : `decisions/ECHANGES.md` §7 (citation intégrale).
 
-*Manière conte (exemple, à ne pas recopier) :*
+Les prénoms Constantin / Luca / Céline sont **dans l’exemple fondateur**. Le corpus, lui, utilise la troupe D16 et **papa / maman**.
 
-> Il était une fois, dans un petit village, une petite famille heureuse, un enfant, un papa et une maman. Un jour pluvieux, l’enfant n’a pas pu sortir au parc. Il est resté à la maison. En ce moment même, il joue au salon.
+*Manière conte (exemple fondateur, à ne pas recopier) :*
 
-*Manière présentation (exemple, à ne pas recopier) :*
+> il etait une fois, dans un petit village, une petite famille heureuse, un enfant constentin, un papa luca, et une maman celine. un jour pluvieux constentin n'a paas pu sortir au paroc il est resté à la maison. en ce moment même, constentin joue au salon.
 
-> Ceci est l’histoire d’un enfant heureux. Il vivait avec son papa et sa maman dans une belle maison. La maison se trouvait dans un village très lointain. En ce moment, dans ce village, il pleut. L’enfant ne peut pas sortir au parc. Il est au salon, il joue…
+*Manière présentation (exemple fondateur, à ne pas recopier) :*
+
+> ceci est l'histoire d'un enfant heureux qui s'appelait constentin, il vivait avec son papa lucas et sa maman celine dans une belle maison. la maison se trouvait dans un village très lointin. en ce moment dans ce village il pleut. constentin ne peut pas sortir au parc. il est au salon entrain de jouer avec des legos, ....
 
 *D’autres manières (toujours des exemples) :* une gouttière qui chante, une odeur de soupe qui monte l’escalier, un rayon sur le tapis, des chaussures qui sèchent près de la porte, le doudou qui attend dans le canapé, la fenêtre embuée, le marché qu’on entend d’en bas… **Inventer.**
 

@@ -23,12 +23,12 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D17 | Durée | Histoire ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande. |
 | D18 | PIN | 4 chiffres, modifiable par le parent. Même code pour entrer en mode enfant et en sortir. |
 | D19 | Libellés | Interaction = questions. Ramifications = lance d’autres histoires (liens + pop-up vitrine). |
-| D20 | Adultes parlent | Papa et maman ont des répliques adaptées à la scène (félicitations, questions, discussion). Interdit de remplacer leur voix par « papa sourit » / « maman est là ». Après une bêtise : dire quoi faire, demander, sans décrire le geste interdit (POS-001). |
+| D20 | Adultes parlent | Papa et maman ont des répliques. Exemples fondateur (pas un moule) : « bravo t'as fais du bon travail » ; bêtise → discuter, « as tu fini de ranger tes jouer? ». Interdit « papa sourit » / « maman est là » à la place d’une réplique. POS-001. Détail : `ECHANGES.md` §6. |
 | D21 | Ordre des passages | Le moteur enchaîne **tous** les fichiers audio d’une histoire, quel que soit leur nombre. Atomique = ordre des IDs. Ramifiée = défaut / option, sans sauter vers une branche sœur. |
 | D22 | Narrateur | Voix Tom trop basse dans le mix. RMS aligné par réplique, volume et présence relevés, cuisson relancée. |
 | D23 | Aperçus | Visiteur : 10 s du chemin (tous passages). Parent non acheté : 30 s. Parent acheté / enfant : histoire entière. Clip serveur, pas seulement le 1er fichier. |
 | D24 | Stripe | Recharge 10–50 € via Checkout si clés admin. Sans clé : paiement démo (carte 4242) qui crédite le solde, pour valider l’UI. |
-| D25 | Ouverture | Pas d’entrée brutale. Monde d’abord (lieu, famille, temps, détails), puis l’action. Chaque histoire raconte autrement. Les amorces « il était une fois / ceci est l’histoire de » sont des **exemples**, pas un moule. Audio plus tard. |
+| D25 | Ouverture | Pas d’entrée brutale (« constentin joue au salon »). Monde d’abord, puis « en ce moment ». Deux **exemples** fondateur (conte / présentation, Constantin) : `ECHANGES.md` §7 — **pas un moule**, inventer. Audio plus tard. |
 | D26 | acm | Monnaie affichée **acm** (glyphe organique = logo). Code interne inchangé (`A`, `balance_a`). Plus de A barré. |
 | D27 | Accueil lots | Vitrine : lots de `home_catalog_page_size` (défaut 6), chargement au scroll. Pas les 1445 d’un coup. |
 | D28 | Accueil titre | Hero : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |

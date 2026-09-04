@@ -3,9 +3,10 @@
 **Produit :** AcoMytha.  
 **Version de ce document :** 4.0 — 3 septembre 2026.  
 **Remplace :** Source Unique v3.0, Spec fonctionnelle v2.0, Spec forêt narrative, Corrections v3.1 (les règles encore vraies sont ici).  
-**Détail opératoire :** stratégies `STRAT-001` à `STRAT-004`.  
+**Détail opératoire :** stratégies `STRAT-001` à `STRAT-005`.  
+**Demandes et exemples fondateur :** `decisions/ECHANGES.md`.  
 **Catalogue leçons :** `stories/referentiel/lecons.xlsx`. Liaisons leçon↔histoires↔chunks : `stories/referentiel/lecon_histoires.xlsx`.  
-**Corpus texte :** branche `feat/F-GEN-001-corpus-histoires` (1445 JSON `APPROVED_TEXT`).
+**Corpus texte :** `main` — 1445 xlsx `stories/arbres/` (ex-JSON `APPROVED_TEXT`).
 
 ---
 
