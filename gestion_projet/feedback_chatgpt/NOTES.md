@@ -53,3 +53,12 @@ Passe `avis2.txt` (4 sept. 23:58, SSD, commit GitHub `ae4eb67` alors) :
 Commerce démo vs Stripe, vente sans audio, voix facturée sans enregistrement, commandes sans livraison, ASR, hors-ligne, FX WAV manquants, durées < 3 min sur les 2 audios témoins, `validate.py` encore collé aux JSON disparus, collection pilote 12+3 avant vente.
 
 La vitrine peut rester chaleureuse ; ne pas compter comme « produit disponible » un fichier sans audio validé.
+
+Passe `examples/example1/` (5 sept., SSD puis worktree) — **intégré** dans `TREE-AUT-001` :
+
+- **Déjà couvert** : désir bateau/jardin, 9 aventures = destination × résolution, pas de morale dite, graphe 86 chunks.
+- **Nouveau et gardé.** T1 ne prive plus d’un objet : on choisit **lequel on prépare d’abord**, puis manteau + bottes + linge partent tous. Les trois réapparaissent à l’arrivée et au retour.
+- **Nouveau et gardé.** Urgence douce (le soleil sèche l’eau). Promesse (rapporter une histoire / un trésor) tenue par un souvenir distinct à chaque fin.
+- **Nouveau et gardé.** T3 bac : canal ou piste de sable, plus « un autre bateau » (ça cassait le projet promis).
+- **Modifié à l’intégration (N1).** Titre catalogue inchangé. « en ce moment » ajouté. « aujourd’hui, » / possède / expédition / proue / immobilise / scintille adoucis. Papa : « Merci, on t’attendra. »
+- **Pas copié tel quel.** « Capitaine / navire / volet jaune » restent **dans cette histoire** (c’est l’étalon bateau). Toujours interdit de les recoller ailleurs (avis2).

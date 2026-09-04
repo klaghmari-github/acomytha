@@ -1,12 +1,22 @@
 # TREE-AUT-001 — Le bateau d'Amir et la rivière du jardin
 
+Source : `gestion_projet/feedback_chatgpt/examples/example1/` (proposition ChatGPT, graphe inchangé).  
+Titre catalogue conservé (F-NAR-018). ChatGPT proposait *Amir et le bateau qui cherchait la mer*.
+
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-morale retirée, oral un peu plus lié, T1 dans le lieu
 
-## Vu et corrigé
-avis2. Audio non cuit. Les 27 chemins non écoutés à voix haute.
+Après la pluie, Amir veut un vrai voyage pour son bateau et une histoire à rapporter. Urgence : le soleil sèche les chemins d'eau. T1 = **quel objet il prépare d'abord** ; manteau, bottes et linge partent **tous**. T2 = gouttière / choux / bac. T3 = neuf résolutions distinctes (attendre, aider, autre départ ; compter, courant, maman ; autre flaque, canal, piste). Chaque fin a un souvenir + coda de l'objet préparé.
+
+## Vu et corrigé (N1, `_lib.check`)
+
+- « en ce moment » dans l'ouverture.
+- « aujourd'hui, » retiré (`Mon bateau roule aussi !`).
+- Vocabulaire : possède → a ; expédition → voyage / prépare-toi ; proue / navire narrateur → bateau / devant ; immobilise → s'arrête ; scintille → brille. Papa peut encore dire « navire » (jeu).
+- Un « Merci, on t'attendra. » de papa (check : merci/bravo adulte).
+- Titre étalon inchangé.
 
 ## Non vérifié
-Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.
