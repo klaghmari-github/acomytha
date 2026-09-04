@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from openpyxl import load_workbook
-from sqlalchemy import delete, select
+from sqlalchemy import delete, func, or_, select
 from sqlalchemy.orm import Session
 
 from acomytha.models import Chunk, Lesson, Story
@@ -209,18 +209,63 @@ def fill_interaction(db: Session) -> int:
 
 
 def list_stories(db: Session, q: str = "", domain: str = "", age_band: str = "", kind: str = "") -> list[Story]:
+    stmt = _story_filter(q=q, domain=domain, age_band=age_band, kind=kind)
+    stmt = stmt.order_by(Story.domain, Story.age_band, Story.title)
+    return list(db.scalars(stmt))
+
+
+def page_stories(
+    db: Session,
+    q: str = "",
+    domain: str = "",
+    age_band: str = "",
+    kind: str = "",
+    limit: int = 6,
+    offset: int = 0,
+) -> tuple[list[Story], int]:
+    limit = max(1, min(int(limit), 48))
+    offset = max(0, int(offset))
+    filtered = _story_filter(q=q, domain=domain, age_band=age_band, kind=kind)
+    total = int(db.scalar(select(func.count()).select_from(filtered.subquery())) or 0)
+    stmt = filtered.order_by(Story.domain, Story.age_band, Story.title).offset(offset).limit(limit)
+    return list(db.scalars(stmt)), total
+
+
+def related_for(db: Session, stories: list[Story]) -> dict[str, list[dict]]:
+    lids = {s.lesson_id for s in stories if s.kind == "ramifiee" and s.lesson_id}
+    if not lids:
+        return {}
+    rows = list(db.scalars(select(Story).where(Story.lesson_id.in_(lids))))
+    by: dict[str, list[dict]] = {}
+    for r in rows:
+        by.setdefault(r.lesson_id, []).append({"story_id": r.story_id, "title": r.title})
+    return by
+
+
+def _story_filter(q: str = "", domain: str = "", age_band: str = "", kind: str = ""):
     stmt = select(Story)
     if q:
         like = f"%{q.strip()}%"
-        stmt = stmt.where(Story.title.ilike(like) | Story.story_id.ilike(like) | Story.lesson_id.ilike(like))
+        stmt = stmt.where(
+            or_(
+                Story.title.ilike(like),
+                Story.story_id.ilike(like),
+                Story.lesson_id.ilike(like),
+                Story.setting.ilike(like),
+                Story.characters.ilike(like),
+            )
+        )
     if domain:
         stmt = stmt.where(Story.domain == domain.upper())
     if age_band:
         stmt = stmt.where(Story.age_band == age_band.upper())
-    if kind:
+    if kind == "interaction":
+        stmt = stmt.where(Story.has_interaction.is_(True), Story.kind != "ramifiee")
+    elif kind == "ramifiee":
+        stmt = stmt.where(Story.kind == "ramifiee")
+    elif kind:
         stmt = stmt.where(Story.kind == kind)
-    stmt = stmt.order_by(Story.domain, Story.age_band, Story.title)
-    return list(db.scalars(stmt))
+    return stmt
 
 
 def _meta_map(ws) -> dict[str, str]:

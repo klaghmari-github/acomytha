@@ -9,7 +9,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from acomytha.api.deps import get_db
-from acomytha.catalog import list_stories, story_to_dict
+from acomytha.catalog import page_stories, related_for, story_to_dict
 from acomytha.commerce import num
 from acomytha.models import Chunk, Lesson, Story, StoryIdea
 from acomytha.preview import client_graph, ensure_preview_chk, preview_id
@@ -32,6 +32,7 @@ def stats(db: Session = Depends(get_db)):
         "preview_seconds": int(num(db, "preview_seconds") or 10),
         "price_story_acm": float(num(db, "price_story_a") or 1),
         "price_tree_acm": float(num(db, "price_tree_a") or 1),
+        "home_catalog_page_size": max(1, min(int(num(db, "home_catalog_page_size") or 6), 48)),
     }
 
 
@@ -50,9 +51,34 @@ def stories(
     domain: str = "",
     age_band: str = "",
     kind: str = "",
+    limit: int | None = None,
+    offset: int = 0,
     db: Session = Depends(get_db),
 ):
-    return [story_to_dict(s) for s in list_stories(db, q=q, domain=domain, age_band=age_band, kind=kind)]
+    page = int(num(db, "home_catalog_page_size") or 6) if limit is None else limit
+    rows, total = page_stories(
+        db, q=q, domain=domain, age_band=age_band, kind=kind, limit=page, offset=offset
+    )
+    related = related_for(db, rows)
+    items = []
+    for s in rows:
+        d = story_to_dict(s)
+        if s.kind == "ramifiee" and s.lesson_id:
+            d["related"] = [r for r in related.get(s.lesson_id, []) if r["story_id"] != s.story_id]
+        items.append(d)
+    return {"items": items, "total": total, "limit": max(1, min(int(page), 48)), "offset": max(0, offset)}
+
+
+@router.get("/stories/{story_id}")
+def story_one(story_id: str, db: Session = Depends(get_db)):
+    story = db.get(Story, story_id)
+    if story is None:
+        raise HTTPException(404, "histoire inconnue")
+    d = story_to_dict(story)
+    if story.kind == "ramifiee" and story.lesson_id:
+        rel = related_for(db, [story])
+        d["related"] = [r for r in rel.get(story.lesson_id, []) if r["story_id"] != story.story_id]
+    return d
 
 
 @router.get("/preview/{story_id}/graph")

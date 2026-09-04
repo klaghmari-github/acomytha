@@ -24,6 +24,29 @@ def test_public_stats_include_acm_prices(client):
     body = r.json()
     assert "price_story_acm" in body
     assert body["price_story_acm"] > 0
+    assert body["home_catalog_page_size"] == 6
+
+
+def test_public_stories_paginated(client):
+    first = client.get("/api/public/stories", params={"limit": 1, "offset": 0}).json()
+    assert first["limit"] == 1
+    assert first["offset"] == 0
+    assert len(first["items"]) == 1
+    assert first["total"] >= 1
+    nxt = client.get("/api/public/stories", params={"limit": 1, "offset": 1}).json()
+    assert nxt["items"] == []
+    assert nxt["total"] == first["total"]
+    admin = client.post(
+        "/api/auth/login",
+        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-page1"},
+    )
+    assert admin.status_code == 200
+    client.put("/api/admin/settings", json={"values": {"home_catalog_page_size": "2"}})
+    defaulted = client.get("/api/public/stories").json()
+    assert defaulted["limit"] == 2
+    one = client.get(f"/api/public/stories/{first['items'][0]['story_id']}")
+    assert one.status_code == 200
+    assert one.json()["story_id"] == first["items"][0]["story_id"]
 
 
 def test_acm_mark_asset(client):
@@ -186,7 +209,10 @@ def test_public_home_and_preview(client):
     s = client.get("/api/public/stats").json()
     assert s["stories"] >= 1
     assert s["preview_seconds"] == 10
-    stories = client.get("/api/public/stories").json()
+    page = client.get("/api/public/stories").json()
+    assert "items" in page
+    assert page["limit"] >= 1
+    stories = page["items"]
     one = next(x for x in stories if x["story_id"] == "ATOM-SAN.ALI.001-01")
     assert one["duration_s"] >= 45
     assert one["has_interaction"] is True

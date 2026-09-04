@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.6 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.7 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -42,6 +42,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAR-003 | **développé** | Visiteur 10 s, parent 30 s, acheté = entier. |
 | F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
+| F-APP-003 | **développé** | Accueil : catalogue par lots (défaut 6), chargement au scroll. Paramètre admin. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -64,6 +65,7 @@ Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail 
 | F-AUD-004 | Audio | AES-GCM, déchiffre en RAM, prefetch N+1 | P0 | 2 | STRAT-002 | F-DAT-001, F-SEC-003 |
 | F-PLY-001 | Lecture | Lecteur écran pauvre, graphe jour/nuit, délai 3 s | P0 | 2 | STRAT-004 | F-AUD-004, F-ENF-001 |
 | F-APP-002 | App | Vitrine publique, aperçu, pop-ups ramifications | P0 | 2 | STRAT-005 | F-DAT-001 |
+| F-APP-003 | App | Accueil : lots + scroll infini (taille admin) | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -327,6 +329,22 @@ Histoires ramifiées : liste de **liens** vers les autres histoires de la même 
 Libellés cartes (F-PAR-002) : **Avec interaction** si passages-questions ; **Avec ramifications vers d’autres histoires** si l’histoire en lance d’autres. Rien d’autre.
 
 Histoire offerte (atelier) : paramètre `free_story_ids` (défaut `TREE-SEC-001`).
+
+Le catalogue de l’accueil **ne charge pas** les 1445 cartes d’un coup (F-APP-003).
+
+### F-APP-003 — Accueil par lots (scroll infini)
+
+**Problème :** la vitrine demandait tout le catalogue d’un coup. 1445 cartes, c’est lourd, ça fige, ça n’a pas l’air d’un rayon.
+
+**Cible :** on affiche un **premier lot**. En descendant, on charge le lot suivant. Impression de scroll infini. Le parent ne voit pas « page 1 / 241 ».
+
+Paramètre admin `home_catalog_page_size` (défaut **6**, entre 1 et 48). Même taille pour le premier lot et les suivants.
+
+Filtres (recherche, thème, âge, forme) : on recommence au premier lot, le total reste le nombre d’histoires qui matchent.
+
+API publique : `GET /api/public/stories?limit=&offset=` → `{ items, total, limit, offset }`. Pas tout le corpus dans la première réponse.
+
+L’espace parent n’est pas concerné (sélection, pas vitrine).
 
 ### F-PAR-002 — Libellés catalogue
 
