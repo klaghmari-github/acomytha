@@ -81,6 +81,7 @@ export class ParentApp extends Component {
             <a href="#/">Accueil</a>
           </nav>
           <div class="c-wallet" id="wallet"></div>
+          <div class="c-shop" id="shop"></div>
           <button class="c-btn c-btn--ghost" id="out">Quitter</button>
         </aside>
         <main class="s-main">
@@ -91,7 +92,6 @@ export class ParentApp extends Component {
             </div>
             <button class="c-btn" id="save">Enregistrer</button>
           </div>
-          <div class="c-shop" id="shop"></div>
           <div class="c-filters">
             <input id="q" placeholder="Rechercher une histoire…" />
             <select id="domain"><option value="">Thème</option></select>
@@ -265,7 +265,7 @@ export class ParentApp extends Component {
           <button class="c-btn" type="submit">Enregistrer le code</button>
         </form>
       </details>
-      <details class="c-panel" open>
+      <details class="c-panel">
         <summary>Obtenir des pièces AcoMytha</summary>
         <p class="c-hint c-pack__legend">Vous versez des euros. Vous recevez des pièces acm.</p>
         <div class="c-packs" id="recharge">

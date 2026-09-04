@@ -131,7 +131,7 @@
 .s-shell {
   min-height: 100dvh;
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: minmax(16.5rem, 18.5rem) 1fr;
   background: var(--bg);
 }
 
@@ -145,7 +145,12 @@
   border-right: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .s-rail .c-mark {
@@ -174,8 +179,30 @@
   color: var(--accent-hover);
 }
 
+.s-rail .c-shop {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  margin-bottom: 0;
+  gap: 0.4rem;
+}
+
+.s-rail .c-panel {
+  padding: 0.5rem 0.7rem;
+}
+
+.s-rail .c-panel summary {
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.s-rail .c-packs {
+  grid-template-columns: 1fr 1fr;
+}
+
 .s-rail .c-btn--ghost {
   margin-top: auto;
+  flex: 0 0 auto;
 }
 
 .s-main {
@@ -465,20 +492,24 @@
     grid-template-columns: 1fr;
   }
   .s-rail {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.4rem;
+    max-height: none;
+    min-height: 0;
+    position: static;
     padding: 0.75rem;
-  }
-  .s-rail .c-btn--ghost {
-    margin-top: 0;
-    margin-left: auto;
+    gap: 0.55rem;
   }
   .s-rail nav {
     display: flex;
     gap: 0.2rem;
     flex-wrap: wrap;
+  }
+  .s-rail .c-shop {
+    max-height: 18rem;
+    width: 100%;
+  }
+  .s-rail .c-btn--ghost {
+    margin: 0;
+    width: 100%;
   }
   .c-filters {
     grid-template-columns: 1fr 1fr;
