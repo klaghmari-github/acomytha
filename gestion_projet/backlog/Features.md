@@ -324,7 +324,7 @@ Contenu affiché :
 
 - Titre : *Apprendre par l’histoire.*
 - *AcoMytha l’univers d’histoires ludiques et captivantes.*
-- Stats : nombre d’histoires, nombre de thèmes (pas 3–6 ans, pas 10 s d’aperçu).
+- Stats : *Plus d’un millier d’histoires* · *Une dizaine de thèmes* (pas le compteur exact, pas 3–6 ans, pas 10 s d’aperçu).
 - *Votre enfant ne fait pas qu’écouter.*
 - *Jour : plus d’interaction. Nuit : plus calme.*
 - *Offrez à votre enfant l’opportunité d’apprendre par l’histoire.*
@@ -357,6 +357,8 @@ Titre : *Apprendre par l’histoire.*
 Sous-titre : *AcoMytha l’univers d’histoires ludiques et captivantes.*
 
 **Créer un compte** uniquement en haut à droite. Pas de second bouton dans le hero.
+
+Stats vitrine : *Plus d’un millier d’histoires*, *Une dizaine de thèmes* (pas 1445 / 13).
 
 ### F-PAR-002 — Libellés catalogue
 

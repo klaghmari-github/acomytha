@@ -114,8 +114,8 @@ export class HomeApp extends Component {
         sel.append(o);
       }
       this.querySelector("#stats").innerHTML = `
-        <div><b>${stats.stories}</b><span>histoires</span></div>
-        <div><b>${stats.themes}</b><span>thèmes</span></div>`;
+        <div><b>Plus d’un millier</b><span>d’histoires</span></div>
+        <div><b>Une dizaine</b><span>de thèmes</span></div>`;
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");
