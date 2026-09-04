@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-01",
+  "fil_rouge": "La boîte du puzzle est trop haute. Chouchou va vers papa. Il dit le besoin. Papa donne la boîte.",
+  "title": "La boîte trop haute",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Chouchou, papa, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le doudou attend sur l'oreiller. Il a une oreille un peu pliée. Un rayon de soleil traverse la chambre. Des poussières brillent dans le rayon. Sur l'étagère, une boîte colorée. La boîte a des pièces, dedans. Je suis dans la cuisine, Chouchou. Ça sent la soupe, déjà. Moi, je suis dans le salon. Le doudou est là. Il attend. En ce moment, Chouchou veut le puzzle. Il lève les yeux. La boîte est en haut. Trop haut. Je n'arrive pas. Chouchou baisse les bras. Il va vers la porte. Il va vers papa. Papa est dans le salon. Papa. J'ai besoin de la boîte. Je t'écoute, Chouchou. La boîte du puzzle, c'est ça ? Oui. Elle est trop haute. On va ensemble. Tu m'as appelé. Papa vient. Papa prend la boîte. Il la donne. La boîte est lourde. Merci, papa. On peut aller vers nous. On peut dire le besoin. On peut appeler papa ou maman. J'ai dit : j'ai besoin. Bravo, Chouchou. C'est du bon travail. Je t'entends, depuis la cuisine. Tu as appelé papa. Bravo. Tu ouvres la boîte, tout doux ? Oui. Les pièces sont colorées. Chouchou ouvre la boîte. Une pièce rouge. Une pièce bleue. Tu t'assieds près du tapis ? Oui. Le doudou peut regarder. Le doudou reste sur l'oreiller. La soupe est bientôt prête. On commence le puzzle, d'abord. J'ai appelé. Papa a entendu. Oui. Tu as dit le besoin. Le rayon de soleil a bougé. La boîte est là, sur le tapis.",
+      "script": "narrateur|Le doudou attend sur l'oreiller.\nnarrateur|Il a une oreille un peu pliée.\nnarrateur|Un rayon de soleil traverse la chambre.\nnarrateur|Des poussières brillent dans le rayon.\nnarrateur|Sur l'étagère, une boîte colorée.\nnarrateur|La boîte a des pièces, dedans.\nmaman|Je suis dans la cuisine, Chouchou.\nmaman|Ça sent la soupe, déjà.\npapa|Moi, je suis dans le salon.\nenfant-m|Le doudou est là. Il attend.\nnarrateur|En ce moment, Chouchou veut le puzzle.\nnarrateur|Il lève les yeux.\nnarrateur|La boîte est en haut.\nnarrateur|Trop haut.\nenfant-m|Je n'arrive pas.\nnarrateur|Chouchou baisse les bras.\nnarrateur|Il va vers la porte.\nnarrateur|Il va vers papa.\nnarrateur|Papa est dans le salon.\nenfant-m|Papa.\nenfant-m|J'ai besoin de la boîte.\npapa|Je t'écoute, Chouchou.\npapa|La boîte du puzzle, c'est ça ?\nenfant-m|Oui. Elle est trop haute.\npapa|On va ensemble. Tu m'as appelé.\nnarrateur|Papa vient.\nnarrateur|Papa prend la boîte. Il la donne.\nnarrateur|La boîte est lourde.\nenfant-m|Merci, papa.\npapa|On peut aller vers nous.\npapa|On peut dire le besoin.\npapa|On peut appeler papa ou maman.\nenfant-m|J'ai dit : j'ai besoin.\npapa|Bravo, Chouchou. C'est du bon travail.\nmaman|Je t'entends, depuis la cuisine.\nmaman|Tu as appelé papa. Bravo.\npapa|Tu ouvres la boîte, tout doux ?\nenfant-m|Oui. Les pièces sont colorées.\nnarrateur|Chouchou ouvre la boîte.\nnarrateur|Une pièce rouge. Une pièce bleue.\npapa|Tu t'assieds près du tapis ?\nenfant-m|Oui. Le doudou peut regarder.\npapa|Le doudou reste sur l'oreiller.\nmaman|La soupe est bientôt prête.\npapa|On commence le puzzle, d'abord.\nenfant-m|J'ai appelé. Papa a entendu.\npapa|Oui. Tu as dit le besoin.\nnarrateur|Le rayon de soleil a bougé.\nnarrateur|La boîte est là, sur le tapis.",
+      "sons": "chambre,boite",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chouchou n'arrive pas. Que fait-il ?",
+      "script": "narrateur|Chouchou n'arrive pas.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou a appelé. Il a dit le besoin. Papa a entendu. La boîte est là. Papa. J'ai besoin de la boîte. Oui. Tu es venu vers moi. Bravo. C'est du bon travail. On peut appeler papa ou maman. J'ai dit le besoin. Tu veux commencer une pièce ? Oui. La rouge. La boîte reste sur le tapis.",
+      "script": "narrateur|Chouchou a appelé.\nnarrateur|Il a dit le besoin.\nnarrateur|Papa a entendu. La boîte est là.\nenfant-m|Papa. J'ai besoin de la boîte.\npapa|Oui. Tu es venu vers moi.\npapa|Bravo. C'est du bon travail.\nmaman|On peut appeler papa ou maman.\nenfant-m|J'ai dit le besoin.\npapa|Tu veux commencer une pièce ?\nenfant-m|Oui. La rouge.\nnarrateur|La boîte reste sur le tapis.",
+      "sons": "puzzle",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Chouchou pose une pièce. Papa s'assoit près de lui. Le puzzle commence. Tu es prêt ? Oui. Merci, papa. Bravo, Chouchou. Tu as appelé. J'ai dit le besoin. C'est du bon travail. Le doudou attend encore sur l'oreiller. Une pièce rouge est déjà posée.",
+      "script": "narrateur|Chouchou pose une pièce.\nnarrateur|Papa s'assoit près de lui.\npapa|Le puzzle commence. Tu es prêt ?\nenfant-m|Oui. Merci, papa.\nmaman|Bravo, Chouchou. Tu as appelé.\nenfant-m|J'ai dit le besoin.\npapa|C'est du bon travail.\nnarrateur|Le doudou attend encore sur l'oreiller.\nnarrateur|Une pièce rouge est déjà posée.",
+      "sons": "puzzle",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai appelé papa. J'ai dit le besoin. Bravo. Tu as fait du bon travail. La boîte est là, maintenant. L'histoire est finie.",
+      "script": "enfant-m|J'ai appelé papa.\nenfant-m|J'ai dit le besoin.\npapa|Bravo. Tu as fait du bon travail.\nmaman|La boîte est là, maintenant.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

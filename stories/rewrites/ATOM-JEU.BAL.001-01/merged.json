@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAL.001-01",
+  "fil_rouge": "Un pigeon marche sur le banc mouillé. Amir et papa se passent le ballon dans l'espace du jeu. Maman arrive. Chacun a son tour.",
+  "title": "Amir passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, papa, maman",
+  "setting": "parc, banc mouillé, herbe, deux sacs",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un pigeon marche sur le banc mouillé. Ses pattes font des petits bruits. L'herbe brille encore. Elle est douce et froide. Deux sacs reposent près du chemin. Un sac vert. Un sac gris. Maman s'assoit sur le banc sec. Amir, tu vois le pigeon ? Oui, papa. Il marche. Il est sur le banc. Tout doux, le pigeon. En ce moment, papa pose les deux sacs. Voici l'espace du jeu. Amir reste dans l'espace du jeu. Papa donne le ballon. Le ballon est un peu lourd. Il est orange et grainé. Il est lourd. On va passer le ballon. Chacun a son tour. Amir passe le ballon à papa. Papa l'attrape. C'est mon tour. Papa passe le ballon. Amir attend. C'est ton tour. Amir passe encore. Un oiseau chante. Amir reste dans l'espace. Il attend. Il passe. Tu restes dans l'espace. Bien joué. Chacun a son tour. Chacun a son tour. Bravo, Amir. Tu as fait du bon travail. Encore un passage ? Oui, maman. Amir passe le ballon. Papa le rend. Le pigeon s'envole. L'herbe reste douce.",
+      "script": "narrateur|Un pigeon marche sur le banc mouillé.\nnarrateur|Ses pattes font des petits bruits.\nnarrateur|L'herbe brille encore.\nnarrateur|Elle est douce et froide.\nnarrateur|Deux sacs reposent près du chemin.\nnarrateur|Un sac vert.\nnarrateur|Un sac gris.\nnarrateur|Maman s'assoit sur le banc sec.\npapa|Amir, tu vois le pigeon ?\nenfant-m|Oui, papa.\nenfant-m|Il marche.\npapa|Il est sur le banc.\nmaman|Tout doux, le pigeon.\nnarrateur|En ce moment, papa pose les deux sacs.\npapa|Voici l'espace du jeu.\nnarrateur|Amir reste dans l'espace du jeu.\nnarrateur|Papa donne le ballon.\nnarrateur|Le ballon est un peu lourd.\nnarrateur|Il est orange et grainé.\nenfant-m|Il est lourd.\npapa|On va passer le ballon.\npapa|Chacun a son tour.\nnarrateur|Amir passe le ballon à papa.\nnarrateur|Papa l'attrape.\npapa|C'est mon tour.\nnarrateur|Papa passe le ballon.\nnarrateur|Amir attend.\npapa|C'est ton tour.\nnarrateur|Amir passe encore.\nnarrateur|Un oiseau chante.\nnarrateur|Amir reste dans l'espace.\nnarrateur|Il attend.\nnarrateur|Il passe.\nmaman|Tu restes dans l'espace.\npapa|Bien joué.\npapa|Chacun a son tour.\nenfant-m|Chacun a son tour.\npapa|Bravo, Amir.\npapa|Tu as fait du bon travail.\nmaman|Encore un passage ?\nenfant-m|Oui, maman.\nnarrateur|Amir passe le ballon.\nnarrateur|Papa le rend.\nnarrateur|Le pigeon s'envole.\nnarrateur|L'herbe reste douce.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir a le ballon. Que fait-il ?",
+      "script": "narrateur|Amir a le ballon.\nnarrateur|Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amir a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu. Tu as attendu ton tour ? Oui, papa. Bravo. Chacun a son tour. Tu es resté dans l'espace ? Oui, maman. Bravo. Le ballon orange est un peu froid. L'herbe colle aux chaussures.",
+      "script": "narrateur|Amir a passé le ballon.\nnarrateur|Il a attendu son tour.\nnarrateur|Il est resté dans l'espace du jeu.\npapa|Tu as attendu ton tour ?\nenfant-m|Oui, papa.\npapa|Bravo.\npapa|Chacun a son tour.\nmaman|Tu es resté dans l'espace ?\nenfant-m|Oui, maman.\nmaman|Bravo.\nnarrateur|Le ballon orange est un peu froid.\nnarrateur|L'herbe colle aux chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Tu bois de l'eau ? Oui, maman. Amir boit de l'eau. La gourde est froide. On rentre ? Oui. Bravo. Ils rentrent. Les sacs tapent tout doux. Le banc est vide, maintenant.",
+      "script": "narrateur|Papa range le ballon.\nmaman|Tu bois de l'eau ?\nenfant-m|Oui, maman.\nnarrateur|Amir boit de l'eau.\nnarrateur|La gourde est froide.\npapa|On rentre ?\nenfant-m|Oui.\npapa|Bravo.\nnarrateur|Ils rentrent.\nnarrateur|Les sacs tapent tout doux.\nmaman|Le banc est vide, maintenant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le banc est vide. Tu as passé le ballon. Chacun a son tour. Dans l'espace du jeu. Oui, papa. L'histoire est finie.",
+      "script": "narrateur|Le banc est vide.\npapa|Tu as passé le ballon.\npapa|Chacun a son tour.\nmaman|Dans l'espace du jeu.\nenfant-m|Oui, papa.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-04",
+  "fil_rouge": "Nino veut déplacer un petit pot. La terre tombe sur le tapis. Il raconte à papa, puis à maman. Ils ramassent ensemble.",
+  "title": "Nino raconte le pot de terre",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nino, papa, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une veilleuse brille encore un peu. Elle fait un rond orange au mur. Un cheval de bois attend près du lit. Sa crinière est lisse. Un rayon de lumière traverse la chambre. De la poussière danse dedans. Le tapis est épais et doux. La fenêtre est un peu ouverte. Un oiseau chante, loin. Une chaussette traîne sous le lit. Un petit pot de terre est sur la table. Tu as vu la poussière, Nino ? Oui, papa. Elle danse. Le cheval de bois attend. Tu lui as dit bonjour ? Oui. Tout bas. En ce moment, Nino approche le petit pot. Il veut déplacer le petit pot. Le pot glisse. La terre tombe. Ça fait un tas brun. Le tapis est sale. Nino a le ventre serré. Il va vers papa. Papa, le pot a glissé. J'ai fait tomber la terre. Je t'écoute, Nino. Merci de raconter. On ramasse ensemble. Tu as fait du bon travail. Tu veux la petite pelle ? Oui, papa. Nino prend la petite pelle. Papa tient le seau. La terre revient dans le pot. Ça fait un bruit de grains. Maman entre. Elle apporte une chaussette pliée. Maman, j'ai raconté. Le pot est tombé. Je t'écoute. Merci Nino. On raconte à papa ou maman. Bravo. Parce que tu as raconté, on peut aider. Le tapis redevient propre. Nino souffle. Tu veux poser le pot plus loin ? Oui. Sur la table, au milieu. On brosse encore un peu le tapis ? Oui. Tout doux. Le tapis redevient beige. Le cheval de bois a vu, lui aussi. Il a vu. Je lui ai raconté tout bas. Tu as raconté à papa. Puis à maman. C'est le bon geste.",
+      "script": "narrateur|Une veilleuse brille encore un peu.\nnarrateur|Elle fait un rond orange au mur.\nnarrateur|Un cheval de bois attend près du lit.\nnarrateur|Sa crinière est lisse.\nnarrateur|Un rayon de lumière traverse la chambre.\nnarrateur|De la poussière danse dedans.\nnarrateur|Le tapis est épais et doux.\nnarrateur|La fenêtre est un peu ouverte.\nnarrateur|Un oiseau chante, loin.\nnarrateur|Une chaussette traîne sous le lit.\nnarrateur|Un petit pot de terre est sur la table.\npapa|Tu as vu la poussière, Nino ?\nenfant-m|Oui, papa.\nenfant-m|Elle danse.\npapa|Le cheval de bois attend.\npapa|Tu lui as dit bonjour ?\nenfant-m|Oui.\nenfant-m|Tout bas.\nnarrateur|En ce moment, Nino approche le petit pot.\nnarrateur|Il veut déplacer le petit pot.\nnarrateur|Le pot glisse.\nnarrateur|La terre tombe.\nnarrateur|Ça fait un tas brun.\nnarrateur|Le tapis est sale.\nnarrateur|Nino a le ventre serré.\nnarrateur|Il va vers papa.\nenfant-m|Papa, le pot a glissé.\nenfant-m|J'ai fait tomber la terre.\npapa|Je t'écoute, Nino.\npapa|Merci de raconter.\npapa|On ramasse ensemble.\npapa|Tu as fait du bon travail.\npapa|Tu veux la petite pelle ?\nenfant-m|Oui, papa.\nnarrateur|Nino prend la petite pelle.\nnarrateur|Papa tient le seau.\nnarrateur|La terre revient dans le pot.\nnarrateur|Ça fait un bruit de grains.\nnarrateur|Maman entre.\nnarrateur|Elle apporte une chaussette pliée.\nenfant-m|Maman, j'ai raconté.\nenfant-m|Le pot est tombé.\nmaman|Je t'écoute.\nmaman|Merci Nino.\nmaman|On raconte à papa ou maman.\nmaman|Bravo.\nmaman|Parce que tu as raconté, on peut aider.\nmaman|Le tapis redevient propre.\nnarrateur|Nino souffle.\npapa|Tu veux poser le pot plus loin ?\nenfant-m|Oui.\nenfant-m|Sur la table, au milieu.\nmaman|On brosse encore un peu le tapis ?\nenfant-m|Oui.\nenfant-m|Tout doux.\nnarrateur|Le tapis redevient beige.\npapa|Le cheval de bois a vu, lui aussi.\nenfant-m|Il a vu.\nenfant-m|Je lui ai raconté tout bas.\nmaman|Tu as raconté à papa.\nmaman|Puis à maman.\nmaman|C'est le bon geste.",
+      "sons": "veilleuse,terre_pot",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La terre est tombée. Que fait Nino ?",
+      "script": "narrateur|La terre est tombée.\nnarrateur|Que fait Nino ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a raconté. Papa et maman ont écouté. Merci d'avoir raconté. On raconte à papa ou maman. Bravo, Nino. J'ai raconté. On a ramassé. Oui. C'est du bon travail.",
+      "script": "narrateur|Nino a raconté.\nnarrateur|Papa et maman ont écouté.\npapa|Merci d'avoir raconté.\nmaman|On raconte à papa ou maman.\npapa|Bravo, Nino.\nenfant-m|J'ai raconté.\nenfant-m|On a ramassé.\nmaman|Oui.\nmaman|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino pose le pot. Le tapis est propre. Tu veux éteindre la veilleuse ? Oui. Le rond orange part. Le cheval de bois est encore là. Il attend. Le rayon de lumière est plus court. L'oiseau chante encore, plus loin. On reste un peu sur le tapis ? Oui. Il est doux. Tu ramasses la chaussette, avec moi ? Oui. Celle sous le lit.",
+      "script": "narrateur|Nino pose le pot.\nnarrateur|Le tapis est propre.\nmaman|Tu veux éteindre la veilleuse ?\nenfant-m|Oui.\nenfant-m|Le rond orange part.\npapa|Le cheval de bois est encore là.\nenfant-m|Il attend.\nnarrateur|Le rayon de lumière est plus court.\nnarrateur|L'oiseau chante encore, plus loin.\nmaman|On reste un peu sur le tapis ?\nenfant-m|Oui.\nenfant-m|Il est doux.\npapa|Tu ramasses la chaussette, avec moi ?\nenfant-m|Oui.\nenfant-m|Celle sous le lit.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai raconté. Papa a écouté. Bravo. Tu as fait du bon travail. Le petit pot tient bien, au milieu. L'histoire est finie.",
+      "script": "enfant-m|J'ai raconté.\nenfant-m|Papa a écouté.\npapa|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|Le petit pot tient bien, au milieu.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

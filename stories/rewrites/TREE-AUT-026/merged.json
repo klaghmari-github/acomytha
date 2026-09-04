@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-AUT-026",
+  "fil_rouge": "Sarah prépare son cartable jaune. Papa et maman disent ce qu'elle met. Goûter, cahier ou gourde, puis palier, portemanteau ou banc, puis crayon, mouchoir ou livre.",
+  "title": "Le cartable jaune de Sarah",
+  "lesson_id": "AUT.AFF.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Sarah, maman, papa",
+  "setting": "escalier de la maison, entrée vers l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La dernière marche de l'escalier craque. Un cartable jaune est posé dessus. La boucle du cartable brille. Une peau d'orange sent fort. Elle est dans la cuisine. Loin, la cloche de l'école fait ding. Les crochets du portemanteau sont vides. Ils attendent les manteaux. Une craie blanche a glissé. Elle est sous le banc de l'entrée. Le soleil fait un rectangle. Le rectangle est sur le carrelage. Le cartable est là, Sarah. On met dans le sac ce que maman a dit. Ou ce que papa a dit. Sarah pose la main sur le cartable. Le tissu est un peu rêche. En ce moment, le sac est encore vide. Je veux l'école ! D'accord. On prépare le sac d'abord. On met ce que l'adulte a dit. Sarah ouvre un peu la boucle. Ça fait tchac. Tu as entendu la cloche ? Oui, maman. Bravo. On commence.",
+      "script": "narrateur|La dernière marche de l'escalier craque.\nnarrateur|Un cartable jaune est posé dessus.\nnarrateur|La boucle du cartable brille.\nnarrateur|Une peau d'orange sent fort.\nnarrateur|Elle est dans la cuisine.\nnarrateur|Loin, la cloche de l'école fait ding.\nnarrateur|Les crochets du portemanteau sont vides.\nnarrateur|Ils attendent les manteaux.\nnarrateur|Une craie blanche a glissé.\nnarrateur|Elle est sous le banc de l'entrée.\nnarrateur|Le soleil fait un rectangle.\nnarrateur|Le rectangle est sur le carrelage.\nmaman|Le cartable est là, Sarah.\npapa|On met dans le sac ce que maman a dit.\npapa|Ou ce que papa a dit.\nnarrateur|Sarah pose la main sur le cartable.\nnarrateur|Le tissu est un peu rêche.\nnarrateur|En ce moment, le sac est encore vide.\nenfant-f|Je veux l'école !\nmaman|D'accord.\nmaman|On prépare le sac d'abord.\npapa|On met ce que l'adulte a dit.\nnarrateur|Sarah ouvre un peu la boucle.\nnarrateur|Ça fait tchac.\nmaman|Tu as entendu la cloche ?\nenfant-f|Oui, maman.\npapa|Bravo.\npapa|On commence.",
+      "sons": "escalier,sac,cloche",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut mettre le goûter, le cahier, ou la gourde.",
+      "script": "narrateur|On peut mettre le goûter, le cahier, ou la gourde.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Le goûter est dans un papier. Le papier craque un peu. Ça sent l'orange et le biscuit. Le goûter dans le sac, Sarah. Le goûter. Sarah le prend à deux mains. Elle le glisse dans le sac. Le fond du sac fait un bruit doux. Bravo. Tu as mis ce que maman a dit. Tu as fini de mettre le goûter ? Oui. Le papier reste un peu froissé. Le sac a ce que l'adulte a dit.",
+      "script": "narrateur|Le goûter est dans un papier.\nnarrateur|Le papier craque un peu.\nnarrateur|Ça sent l'orange et le biscuit.\nmaman|Le goûter dans le sac, Sarah.\nenfant-f|Le goûter.\nnarrateur|Sarah le prend à deux mains.\nnarrateur|Elle le glisse dans le sac.\nnarrateur|Le fond du sac fait un bruit doux.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Tu as fini de mettre le goûter ?\nenfant-f|Oui.\nnarrateur|Le papier reste un peu froissé.\npapa|Le sac a ce que l'adulte a dit.",
+      "sons": "papier",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "On met quoi dans le sac ?",
+      "script": "narrateur|On met quoi dans le sac ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On met dans le sac ce que maman a dit. Ou ce que papa a dit. Bravo, Sarah. Tu as écouté. C'est du bon travail. Le sac a ce que l'adulte a dit. Le goûter est dedans. On continue ensemble ? Oui.",
+      "script": "narrateur|Oui.\nnarrateur|On met dans le sac ce que maman a dit.\nnarrateur|Ou ce que papa a dit.\nmaman|Bravo, Sarah.\nmaman|Tu as écouté.\npapa|C'est du bon travail.\npapa|Le sac a ce que l'adulte a dit.\nenfant-f|Le goûter est dedans.\nmaman|On continue ensemble ?\nenfant-f|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut aller au palier, au portemanteau, ou au banc.",
+      "script": "narrateur|On peut aller au palier, au portemanteau, ou au banc.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah monte le sac au palier. La marche craque encore. Le bois est un peu froid. Le palier, Sarah. On pose le sac un moment. Sarah pose le cartable jaune. Le goûter est déjà dedans. Bravo. Tu as mis ce que maman a dit. Le sac reste près de toi ? Oui. La cloche de l'école est plus loin.",
+      "script": "narrateur|Sarah monte le sac au palier.\nnarrateur|La marche craque encore.\nnarrateur|Le bois est un peu froid.\nmaman|Le palier, Sarah.\nmaman|On pose le sac un moment.\nnarrateur|Sarah pose le cartable jaune.\nnarrateur|Le goûter est déjà dedans.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Le sac reste près de toi ?\nenfant-f|Oui.\nnarrateur|La cloche de l'école est plus loin.",
+      "sons": "escalier",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Au palier, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. La marche craque un tout petit peu.",
+      "script": "narrateur|Au palier, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|La marche craque un tout petit peu.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. La marche de l'escalier ne craque plus. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|La marche de l'escalier ne craque plus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Au palier, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Le palier sent encore l'orange.",
+      "script": "narrateur|Au palier, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le goûter est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Le palier sent encore l'orange.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Le palier sent encore l'orange. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Le palier sent encore l'orange.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Au palier, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Le cartable jaune est un peu plus lourd.",
+      "script": "narrateur|Au palier, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Le cartable jaune est un peu plus lourd.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Le cartable jaune est lourd, juste ce qu'il faut. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Le cartable jaune est lourd, juste ce qu'il faut.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah va vers le portemanteau. Un crochet est vide, tout bas. Le bois du crochet est lisse. Le sac au crochet, Sarah. On le met comme l'adulte a dit. Sarah accroche le cartable. Le goûter reste au fond. Bravo. Tu as mis ce que papa a dit. Il tient bien ? Oui, papa. Le crochet ne bouge plus.",
+      "script": "narrateur|Sarah va vers le portemanteau.\nnarrateur|Un crochet est vide, tout bas.\nnarrateur|Le bois du crochet est lisse.\npapa|Le sac au crochet, Sarah.\npapa|On le met comme l'adulte a dit.\nnarrateur|Sarah accroche le cartable.\nnarrateur|Le goûter reste au fond.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\npapa|Il tient bien ?\nenfant-f|Oui, papa.\nnarrateur|Le crochet ne bouge plus.",
+      "sons": "crochet",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Au portemanteau, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le crochet ne bouge plus.",
+      "script": "narrateur|Au portemanteau, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le crochet ne bouge plus.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le crochet du portemanteau reste calme. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le crochet du portemanteau reste calme.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Au portemanteau, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Un manteau frôle le sac.",
+      "script": "narrateur|Au portemanteau, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le goûter est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Un manteau frôle le sac.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Un manteau frôle encore le sac. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Un manteau frôle encore le sac.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Au portemanteau, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. La boucle brille encore.",
+      "script": "narrateur|Au portemanteau, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|La boucle brille encore.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. La boucle du cartable est fermée. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|La boucle du cartable est fermée.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah pose le sac sur le banc. Le banc est près de la porte. La craie blanche est encore dessous. Le sac sur le banc, Sarah. Comme l'adulte a dit. Sarah pousse le cartable au milieu. Le goûter ne tombe pas. Bravo. Tu as mis ce que maman a dit. Le sac est stable ? Oui. Le soleil touche le banc.",
+      "script": "narrateur|Sarah pose le sac sur le banc.\nnarrateur|Le banc est près de la porte.\nnarrateur|La craie blanche est encore dessous.\nmaman|Le sac sur le banc, Sarah.\nmaman|Comme l'adulte a dit.\nnarrateur|Sarah pousse le cartable au milieu.\nnarrateur|Le goûter ne tombe pas.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Le sac est stable ?\nenfant-f|Oui.\nnarrateur|Le soleil touche le banc.",
+      "sons": "banc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sur le banc, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le soleil touche le crayon.",
+      "script": "narrateur|Sur le banc, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le soleil touche le crayon.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le soleil a quitté le banc. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le soleil a quitté le banc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sur le banc, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. La craie blanche reste sous le banc.",
+      "script": "narrateur|Sur le banc, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le goûter est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|La craie blanche reste sous le banc.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. La craie blanche reste sous le banc. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|La craie blanche reste sous le banc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sur le banc, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le goûter est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Le banc est tiède sous le sac.",
+      "script": "narrateur|Sur le banc, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le goûter est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Le banc est tiède sous le sac.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le goûter. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le banc est vide, sauf le sac. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le goûter.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le banc est vide, sauf le sac.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Le cahier bleu est sur la marche. Les pages sentent le papier. Un coin est un peu plié. Le cahier dans le sac, Sarah. Le cahier. Sarah le glisse à plat. Le cahier rentre tout seul. Bravo. Tu as mis ce que papa a dit. Tu as fini de mettre le cahier ? Oui, papa. La boucle brille encore. Le sac a ce que l'adulte a dit.",
+      "script": "narrateur|Le cahier bleu est sur la marche.\nnarrateur|Les pages sentent le papier.\nnarrateur|Un coin est un peu plié.\npapa|Le cahier dans le sac, Sarah.\nenfant-f|Le cahier.\nnarrateur|Sarah le glisse à plat.\nnarrateur|Le cahier rentre tout seul.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\npapa|Tu as fini de mettre le cahier ?\nenfant-f|Oui, papa.\nnarrateur|La boucle brille encore.\nmaman|Le sac a ce que l'adulte a dit.",
+      "sons": "cahier",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On met ce que l'adulte a dit ?",
+      "script": "narrateur|On met ce que l'adulte a dit ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On met dans le sac ce que maman a dit. Ou ce que papa a dit. Bravo, Sarah. Tu as écouté. C'est du bon travail. Le sac a ce que l'adulte a dit. Le cahier est dedans. On continue ensemble ? Oui.",
+      "script": "narrateur|Oui.\nnarrateur|On met dans le sac ce que maman a dit.\nnarrateur|Ou ce que papa a dit.\nmaman|Bravo, Sarah.\nmaman|Tu as écouté.\npapa|C'est du bon travail.\npapa|Le sac a ce que l'adulte a dit.\nenfant-f|Le cahier est dedans.\nmaman|On continue ensemble ?\nenfant-f|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut aller au palier, au portemanteau, ou au banc.",
+      "script": "narrateur|On peut aller au palier, au portemanteau, ou au banc.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah porte le cahier au palier. Le sac est déjà sur la marche. La boucle est un peu ouverte. Le cahier reste dans le sac. C'est ce que l'adulte a dit. Sarah appuie un peu. Le cahier est à plat. Bravo. Tu as mis ce que papa a dit. Tu as fini au palier ? Oui, papa. L'escalier sent le bois.",
+      "script": "narrateur|Sarah porte le cahier au palier.\nnarrateur|Le sac est déjà sur la marche.\nnarrateur|La boucle est un peu ouverte.\npapa|Le cahier reste dans le sac.\npapa|C'est ce que l'adulte a dit.\nnarrateur|Sarah appuie un peu.\nnarrateur|Le cahier est à plat.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\npapa|Tu as fini au palier ?\nenfant-f|Oui, papa.\nnarrateur|L'escalier sent le bois.",
+      "sons": "escalier",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Au palier, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le cahier bleu ne glisse pas.",
+      "script": "narrateur|Au palier, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le cahier bleu ne glisse pas.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Le cahier bleu ne bouge plus. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Le cahier bleu ne bouge plus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Au palier, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. L'escalier sent le bois.",
+      "script": "narrateur|Au palier, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le cahier est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|L'escalier sent le bois.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. L'escalier sent le bois et le papier. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|L'escalier sent le bois et le papier.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Au palier, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Sarah appuie un peu le rabat.",
+      "script": "narrateur|Au palier, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Sarah appuie un peu le rabat.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Sarah appuie une dernière fois sur le rabat. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Sarah appuie une dernière fois sur le rabat.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah accroche le sac au portemanteau. Le cahier pèse un peu. Le crochet fait un petit clic. Le cahier dans le sac. Comme l'adulte a dit. Sarah vérifie la boucle. Le cahier ne glisse pas. Bravo. Tu as mis ce que maman a dit. Le crochet est bon ? Oui, maman. Un manteau voisin frôle le sac.",
+      "script": "narrateur|Sarah accroche le sac au portemanteau.\nnarrateur|Le cahier pèse un peu.\nnarrateur|Le crochet fait un petit clic.\nmaman|Le cahier dans le sac.\nmaman|Comme l'adulte a dit.\nnarrateur|Sarah vérifie la boucle.\nnarrateur|Le cahier ne glisse pas.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Le crochet est bon ?\nenfant-f|Oui, maman.\nnarrateur|Un manteau voisin frôle le sac.",
+      "sons": "crochet",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Au portemanteau, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le portemanteau fait clic.",
+      "script": "narrateur|Au portemanteau, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le portemanteau fait clic.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le portemanteau fait un tout petit clic. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le portemanteau fait un tout petit clic.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Au portemanteau, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Le crochet tient bien.",
+      "script": "narrateur|Au portemanteau, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le cahier est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Le crochet tient bien.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le crochet tient le cahier et le mouchoir. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le crochet tient le cahier et le mouchoir.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Au portemanteau, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Le sac pend tout droit.",
+      "script": "narrateur|Au portemanteau, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Le sac pend tout droit.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le sac pend droit, tout sage. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le sac pend droit, tout sage.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah pose le sac sur le banc. Le cahier bleu se voit un peu. Le bois du banc est lisse. Le cahier reste dans le sac. C'est ce que l'adulte a dit. Sarah appuie le rabat. Le cahier est bien. Bravo. Tu as mis ce que papa a dit. Le banc est calme ? Oui. La craie reste sous le banc.",
+      "script": "narrateur|Sarah pose le sac sur le banc.\nnarrateur|Le cahier bleu se voit un peu.\nnarrateur|Le bois du banc est lisse.\npapa|Le cahier reste dans le sac.\npapa|C'est ce que l'adulte a dit.\nnarrateur|Sarah appuie le rabat.\nnarrateur|Le cahier est bien.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\npapa|Le banc est calme ?\nenfant-f|Oui.\nnarrateur|La craie reste sous le banc.",
+      "sons": "banc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sur le banc, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le banc est lisse.",
+      "script": "narrateur|Sur le banc, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le banc est lisse.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le banc est lisse sous le cartable. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le banc est lisse sous le cartable.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sur le banc, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Une poussière de craie brille.",
+      "script": "narrateur|Sur le banc, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|Le cahier est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Une poussière de craie brille.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Une poussière de craie brille. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Une poussière de craie brille.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sur le banc, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. Le cahier est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Le livre est tout au fond.",
+      "script": "narrateur|Sur le banc, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|Le cahier est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Le livre est tout au fond.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis le cahier. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le livre est à plat, tout au fond. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis le cahier.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le livre est à plat, tout au fond.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "La gourde est près de la peau d'orange. Elle est froide et lisse. Le bouchon fait clic. La gourde dans le sac, Sarah. La gourde. Sarah la pose tout doux. La gourde touche le fond. Bravo. Tu as mis ce que maman a dit. Tu as fini de mettre la gourde ? Oui. Une goutte perle sur le bouchon. Le sac a ce que l'adulte a dit.",
+      "script": "narrateur|La gourde est près de la peau d'orange.\nnarrateur|Elle est froide et lisse.\nnarrateur|Le bouchon fait clic.\nmaman|La gourde dans le sac, Sarah.\nenfant-f|La gourde.\nnarrateur|Sarah la pose tout doux.\nnarrateur|La gourde touche le fond.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Tu as fini de mettre la gourde ?\nenfant-f|Oui.\nnarrateur|Une goutte perle sur le bouchon.\npapa|Le sac a ce que l'adulte a dit.",
+      "sons": "gourde",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Qui dit ce qu'on met ?",
+      "script": "narrateur|Qui dit ce qu'on met ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On met dans le sac ce que maman a dit. Ou ce que papa a dit. Bravo, Sarah. Tu as écouté. C'est du bon travail. Le sac a ce que l'adulte a dit. La gourde est dedans. On continue ensemble ? Oui.",
+      "script": "narrateur|Oui.\nnarrateur|On met dans le sac ce que maman a dit.\nnarrateur|Ou ce que papa a dit.\nmaman|Bravo, Sarah.\nmaman|Tu as écouté.\npapa|C'est du bon travail.\npapa|Le sac a ce que l'adulte a dit.\nenfant-f|La gourde est dedans.\nmaman|On continue ensemble ?\nenfant-f|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut aller au palier, au portemanteau, ou au banc.",
+      "script": "narrateur|On peut aller au palier, au portemanteau, ou au banc.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah monte la gourde au palier. La gourde cliquette dans le sac. La marche craque, tout doux. La gourde dans le sac, Sarah. Comme l'adulte a dit. Sarah pose le cartable. La gourde reste droite. Bravo. Tu as mis ce que maman a dit. Elle ne tombe pas ? Non. L'orange sent encore en bas.",
+      "script": "narrateur|Sarah monte la gourde au palier.\nnarrateur|La gourde cliquette dans le sac.\nnarrateur|La marche craque, tout doux.\nmaman|La gourde dans le sac, Sarah.\nmaman|Comme l'adulte a dit.\nnarrateur|Sarah pose le cartable.\nnarrateur|La gourde reste droite.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Elle ne tombe pas ?\nenfant-f|Non.\nnarrateur|L'orange sent encore en bas.",
+      "sons": "escalier",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Au palier, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. La gourde ne cliquette plus.",
+      "script": "narrateur|Au palier, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|La gourde ne cliquette plus.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. La gourde ne cliquette plus. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|La gourde ne cliquette plus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Au palier, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Une goutte a séché.",
+      "script": "narrateur|Au palier, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|La gourde est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Une goutte a séché.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Une goutte a séché sur le palier. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Une goutte a séché sur le palier.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Au palier, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Le cartable est presque prêt.",
+      "script": "narrateur|Au palier, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Le cartable est presque prêt.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le palier. Le cartable est prêt pour l'école. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le palier.\nnarrateur|Le cartable est prêt pour l'école.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah accroche le sac au portemanteau. La gourde pèse d'un côté. Le crochet tient bon. La gourde dans le sac. C'est ce que l'adulte a dit. Sarah redresse le cartable. La gourde ne cliquette plus. Bravo. Tu as mis ce que papa a dit. Le sac est droit ? Oui, papa. Le portemanteau ne bouge plus.",
+      "script": "narrateur|Sarah accroche le sac au portemanteau.\nnarrateur|La gourde pèse d'un côté.\nnarrateur|Le crochet tient bon.\npapa|La gourde dans le sac.\npapa|C'est ce que l'adulte a dit.\nnarrateur|Sarah redresse le cartable.\nnarrateur|La gourde ne cliquette plus.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\npapa|Le sac est droit ?\nenfant-f|Oui, papa.\nnarrateur|Le portemanteau ne bouge plus.",
+      "sons": "crochet",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Au portemanteau, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le bouchon tient bien.",
+      "script": "narrateur|Au portemanteau, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le bouchon tient bien.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le bouchon de la gourde tient bien. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le bouchon de la gourde tient bien.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Au portemanteau, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Le portemanteau reste calme.",
+      "script": "narrateur|Au portemanteau, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|La gourde est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Le portemanteau reste calme.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Le portemanteau ne bouge plus. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Le portemanteau ne bouge plus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Au portemanteau, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Sarah touche la boucle.",
+      "script": "narrateur|Au portemanteau, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Sarah touche la boucle.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le portemanteau. Sarah touche encore la boucle. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le portemanteau.\nnarrateur|Sarah touche encore la boucle.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah pose le sac sur le banc. La gourde fait un petit clic. Le soleil touche le bouchon. La gourde dans le sac, Sarah. Comme l'adulte a dit. Sarah pousse le sac au milieu. La gourde reste au fond. Bravo. Tu as mis ce que maman a dit. Tu as fini sur le banc ? Oui. Le rectangle de soleil a bougé.",
+      "script": "narrateur|Sarah pose le sac sur le banc.\nnarrateur|La gourde fait un petit clic.\nnarrateur|Le soleil touche le bouchon.\nmaman|La gourde dans le sac, Sarah.\nmaman|Comme l'adulte a dit.\nnarrateur|Sarah pousse le sac au milieu.\nnarrateur|La gourde reste au fond.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nmaman|Tu as fini sur le banc ?\nenfant-f|Oui.\nnarrateur|Le rectangle de soleil a bougé.",
+      "sons": "banc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le crayon, le mouchoir, ou le livre.",
+      "script": "narrateur|On peut prendre le crayon, le mouchoir, ou le livre.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sur le banc, un crayon jaune attend. Il sent le bois. La mine est bien taillée. Le crayon dans le sac, Sarah. Le crayon. Sarah le glisse près du bord. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Tu as fini le crayon ? Oui, papa. Le rectangle de soleil a bougé.",
+      "script": "narrateur|Sur le banc, un crayon jaune attend.\nnarrateur|Il sent le bois.\nnarrateur|La mine est bien taillée.\nmaman|Le crayon dans le sac, Sarah.\nenfant-f|Le crayon.\nnarrateur|Sarah le glisse près du bord.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Tu as fini le crayon ?\nenfant-f|Oui, papa.\nnarrateur|Le rectangle de soleil a bougé.",
+      "sons": "crayon",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le crayon. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le rectangle de soleil a disparu. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le crayon.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le rectangle de soleil a disparu.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sur le banc, un mouchoir propre attend. Il est doux et plié. Il sent le linge. Le mouchoir dans le sac, Sarah. Le mouchoir. Sarah le pose dans une poche. Bravo. Tu as mis ce que papa a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. La poche est fermée ? Oui. Le banc est tiède.",
+      "script": "narrateur|Sur le banc, un mouchoir propre attend.\nnarrateur|Il est doux et plié.\nnarrateur|Il sent le linge.\npapa|Le mouchoir dans le sac, Sarah.\nenfant-f|Le mouchoir.\nnarrateur|Sarah le pose dans une poche.\nmaman|Bravo.\nmaman|Tu as mis ce que papa a dit.\nnarrateur|La gourde est déjà dedans.\npapa|Le sac a ce que l'adulte a dit.\nmaman|La poche est fermée ?\nenfant-f|Oui.\nnarrateur|Le banc est tiède.",
+      "sons": "mouchoir",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le mouchoir. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Le banc est tiède sous le sac. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le mouchoir.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Le banc est tiède sous le sac.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sur le banc, un petit livre attend. Les pages sentent le papier. La couverture est lisse. Le livre dans le sac, Sarah. Le livre. Sarah le glisse à plat. Bravo. Tu as mis ce que maman a dit. La gourde est déjà dedans. Le sac a ce que l'adulte a dit. Le livre est à plat ? Oui, papa. Loin, la cloche se tait.",
+      "script": "narrateur|Sur le banc, un petit livre attend.\nnarrateur|Les pages sentent le papier.\nnarrateur|La couverture est lisse.\nmaman|Le livre dans le sac, Sarah.\nenfant-f|Le livre.\nnarrateur|Sarah le glisse à plat.\npapa|Bravo.\npapa|Tu as mis ce que maman a dit.\nnarrateur|La gourde est déjà dedans.\nmaman|Le sac a ce que l'adulte a dit.\npapa|Le livre est à plat ?\nenfant-f|Oui, papa.\nnarrateur|Loin, la cloche se tait.",
+      "sons": "livre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah ferme le sac. Ça fait zzz. Le sac est prêt. Bravo, Sarah. Tu as fait du bon travail. Tu as mis la gourde. Et le livre. C'est ce que l'adulte a dit. Merci. Ils restent un moment près de le banc. Loin, la cloche de l'école se tait. L'histoire est finie.",
+      "script": "narrateur|Sarah ferme le sac.\nnarrateur|Ça fait zzz.\npapa|Le sac est prêt.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\npapa|Tu as mis la gourde.\nmaman|Et le livre.\npapa|C'est ce que l'adulte a dit.\nenfant-f|Merci.\nnarrateur|Ils restent un moment près de le banc.\nnarrateur|Loin, la cloche de l'école se tait.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

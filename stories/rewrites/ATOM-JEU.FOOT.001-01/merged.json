@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-JEU.FOOT.001-01",
+  "fil_rouge": "Un pigeon gris veille sur la fontaine. Nino se passe le ballon avec papa. Il vise le but. Il reste dans l'espace montré.",
+  "title": "Le pigeon de la fontaine",
+  "lesson_id": "JEU.FOOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "parc",
+  "secondary_lessons": "JEU.REG.002",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un pigeon gris se tient sur la fontaine. Une goutte tombe. Ploc. L'eau sent le froid. L'herbe est encore un peu mouillée. Une feuille jaune est collée à une chaussure. Un escargot avance sur le bord du chemin. Sa coquille est brune et luisante. Tu le vois, Nino ? Il va tout doux. Oui. On passe à côté. Ça sent le pain, tout loin. J'ai faim un peu. Après le jeu, on rentre. Les chaussettes de Nino sont un peu humides. L'herbe est mouillée. Oui. On va jouer sur l'herbe. Tu as vu le pigeon, Nino ? Il est gris. Il a un collier vert. Oui. Tout petit. Le banc est froid. Papa pose le sac. En ce moment, Nino est au parc. Papa pose deux gourdes. Il trace un petit rectangle. Voici l'espace montré. On reste dans l'espace montré. Au fond, papa pose deux sacs. C'est le but. Nino touche le ballon du pied. Le ballon est souple. Il est doux, papa. Oui. On va passer le ballon. Puis on vise le but. Nino passe le ballon à papa. Papa le rend. Bravo. Tu as passé. Nino pousse le ballon vers le but. Le ballon roule entre les sacs. Nino lève les bras. Dedans ! Bravo, Nino. Tu as visé le but. On reste dans le rectangle. Nino ramène le ballon. Il passe encore. Papa rend. Nino vise encore le but. Les pieds restent dans l'espace montré. Le pigeon fait un pas. Il est encore là. Oui. Il nous regarde. Un dernier passage ? Oui, papa. Nino passe. Papa rend. Nino pousse vers le but. Le ballon roule entre les sacs. Bravo. Tu as passé. Tu as visé le but. Dans l'espace montré.",
+      "script": "narrateur|Un pigeon gris se tient sur la fontaine.\nnarrateur|Une goutte tombe.\nnarrateur|Ploc.\nnarrateur|L'eau sent le froid.\nnarrateur|L'herbe est encore un peu mouillée.\nnarrateur|Une feuille jaune est collée à une chaussure.\nnarrateur|Un escargot avance sur le bord du chemin.\nnarrateur|Sa coquille est brune et luisante.\npapa|Tu le vois, Nino ?\nenfant-m|Il va tout doux.\npapa|Oui.\npapa|On passe à côté.\nnarrateur|Ça sent le pain, tout loin.\nenfant-m|J'ai faim un peu.\npapa|Après le jeu, on rentre.\nnarrateur|Les chaussettes de Nino sont un peu humides.\nenfant-m|L'herbe est mouillée.\npapa|Oui.\npapa|On va jouer sur l'herbe.\npapa|Tu as vu le pigeon, Nino ?\nenfant-m|Il est gris.\npapa|Il a un collier vert.\nenfant-m|Oui.\nenfant-m|Tout petit.\nnarrateur|Le banc est froid.\nnarrateur|Papa pose le sac.\nnarrateur|En ce moment, Nino est au parc.\nnarrateur|Papa pose deux gourdes.\nnarrateur|Il trace un petit rectangle.\npapa|Voici l'espace montré.\npapa|On reste dans l'espace montré.\nnarrateur|Au fond, papa pose deux sacs.\nnarrateur|C'est le but.\nnarrateur|Nino touche le ballon du pied.\nnarrateur|Le ballon est souple.\nenfant-m|Il est doux, papa.\npapa|Oui.\npapa|On va passer le ballon.\npapa|Puis on vise le but.\nnarrateur|Nino passe le ballon à papa.\nnarrateur|Papa le rend.\npapa|Bravo.\npapa|Tu as passé.\nnarrateur|Nino pousse le ballon vers le but.\nnarrateur|Le ballon roule entre les sacs.\nnarrateur|Nino lève les bras.\nenfant-m|Dedans !\npapa|Bravo, Nino.\npapa|Tu as visé le but.\npapa|On reste dans le rectangle.\nnarrateur|Nino ramène le ballon.\nnarrateur|Il passe encore.\nnarrateur|Papa rend.\nnarrateur|Nino vise encore le but.\nnarrateur|Les pieds restent dans l'espace montré.\nnarrateur|Le pigeon fait un pas.\nenfant-m|Il est encore là.\npapa|Oui.\npapa|Il nous regarde.\npapa|Un dernier passage ?\nenfant-m|Oui, papa.\nnarrateur|Nino passe.\nnarrateur|Papa rend.\nnarrateur|Nino pousse vers le but.\nnarrateur|Le ballon roule entre les sacs.\npapa|Bravo.\npapa|Tu as passé.\npapa|Tu as visé le but.\npapa|Dans l'espace montré.",
+      "sons": "enfants_parc,fontaine",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino joue au foot. Que fait-il ?",
+      "script": "narrateur|Nino joue au foot.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a passé le ballon. Il a visé le but. Il est resté dans l'espace montré par papa. Tu as passé, Nino. Bravo. Tu as visé le but. Dans l'espace montré.",
+      "script": "narrateur|Nino a passé le ballon.\nnarrateur|Il a visé le but.\nnarrateur|Il est resté dans l'espace montré par papa.\npapa|Tu as passé, Nino.\npapa|Bravo.\npapa|Tu as visé le but.\nenfant-m|Dans l'espace montré.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range les sacs. Nino boit une gorgée. L'eau est froide. Le pigeon s'envole. Il est parti. Oui. Tu as visé le but. Oui, papa. J'ai passé. Dans l'espace montré. Bravo. Tu as fait du bon travail. Ils marchent vers la maison. L'herbe colle un peu aux chaussures. La feuille jaune reste au parc. L'escargot est encore sur le bord. Il n'a pas fini. Il a le temps. Toi, tu as passé. Tu as visé le but. Dans l'espace montré. C'est ça. Le sac tape un peu contre la jambe de papa.",
+      "script": "narrateur|Papa range les sacs.\nnarrateur|Nino boit une gorgée.\nnarrateur|L'eau est froide.\nnarrateur|Le pigeon s'envole.\nenfant-m|Il est parti.\npapa|Oui.\npapa|Tu as visé le but.\nenfant-m|Oui, papa.\nenfant-m|J'ai passé.\nenfant-m|Dans l'espace montré.\npapa|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|Ils marchent vers la maison.\nnarrateur|L'herbe colle un peu aux chaussures.\nnarrateur|La feuille jaune reste au parc.\nnarrateur|L'escargot est encore sur le bord.\nenfant-m|Il n'a pas fini.\npapa|Il a le temps.\npapa|Toi, tu as passé.\npapa|Tu as visé le but.\nenfant-m|Dans l'espace montré.\npapa|C'est ça.\nnarrateur|Le sac tape un peu contre la jambe de papa.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La fontaine fait encore ploc. J'ai passé. J'ai visé le but. Bravo, Nino. L'histoire est finie.",
+      "script": "narrateur|La fontaine fait encore ploc.\nenfant-m|J'ai passé.\nenfant-m|J'ai visé le but.\npapa|Bravo, Nino.\nnarrateur|L'histoire est finie.",
+      "sons": "fontaine",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

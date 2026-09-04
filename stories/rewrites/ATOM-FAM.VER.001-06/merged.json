@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-06",
+  "fil_rouge": "Chouchou fait tomber le panier de chaussettes. Il raconte à papa. Plus tard, de l'eau glisse. Il raconte à maman.",
+  "title": "Chouchou raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Chouchou, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le panier de linge craque. Il sent le savon doux. Une serviette encore tiède dépasse. Des chaussettes font une petite pile. L'une est rouge. L'une est bleue. Le canapé a un plaid gris. Le plaid est rêche et chaud. Tu as senti le savon, Chouchou ? Oui, papa. Ça sent propre. Je plie le linge. Tu veux m'aider un peu ? Oui. Je veux aider. En ce moment, Chouchou tire le panier. Il est près de papa. Il attrape le panier. Le panier glisse. Les chaussettes tombent. Elles font un tas mou. Chouchou a le ventre serré. Il va vers papa. Papa, le panier est tombé. J'ai fait tomber les chaussettes. Je t'écoute, Chouchou. Merci de raconter. On ramasse ensemble. Tu as fait du bon travail. Tu prends la rouge. J'ai la bleue. D'accord. Chouchou prend une chaussette. Papa prend l'autre. Le panier se remplit à nouveau. On pose le panier plus près, hein ? Oui. Plus près. Plus tard, dans la cuisine, ça sent la soupe. Maman coupe une carotte. Un verre d'eau penche sur la table. Chouchou veut aider maman. L'eau glisse. Elle fait une petite rivière. Chouchou va vers maman. Maman, l'eau est tombée. J'ai raconté. Je t'écoute. Merci de raconter. On essuie ensemble. Bravo, Chouchou. C'est du bon travail. Papa entre. Papa, j'ai raconté. L'eau est tombée. Je t'écoute. On raconte à papa ou maman. C'est comme ça. Tu as su raconter encore. Oui. Chouchou se sent plus léger. Tu veux le torchon à carreaux ? Oui. Il est doux. La petite rivière d'eau part. La table redevient mate. La soupe fume encore. Tu veux rester près de moi ? Oui. Près de toi.",
+      "script": "narrateur|Le panier de linge craque.\nnarrateur|Il sent le savon doux.\nnarrateur|Une serviette encore tiède dépasse.\nnarrateur|Des chaussettes font une petite pile.\nnarrateur|L'une est rouge.\nnarrateur|L'une est bleue.\nnarrateur|Le canapé a un plaid gris.\nnarrateur|Le plaid est rêche et chaud.\npapa|Tu as senti le savon, Chouchou ?\nenfant-m|Oui, papa.\nenfant-m|Ça sent propre.\npapa|Je plie le linge.\npapa|Tu veux m'aider un peu ?\nenfant-m|Oui.\nenfant-m|Je veux aider.\nnarrateur|En ce moment, Chouchou tire le panier.\nnarrateur|Il est près de papa.\nnarrateur|Il attrape le panier.\nnarrateur|Le panier glisse.\nnarrateur|Les chaussettes tombent.\nnarrateur|Elles font un tas mou.\nnarrateur|Chouchou a le ventre serré.\nnarrateur|Il va vers papa.\nenfant-m|Papa, le panier est tombé.\nenfant-m|J'ai fait tomber les chaussettes.\npapa|Je t'écoute, Chouchou.\npapa|Merci de raconter.\npapa|On ramasse ensemble.\npapa|Tu as fait du bon travail.\npapa|Tu prends la rouge.\npapa|J'ai la bleue.\nenfant-m|D'accord.\nnarrateur|Chouchou prend une chaussette.\nnarrateur|Papa prend l'autre.\nnarrateur|Le panier se remplit à nouveau.\npapa|On pose le panier plus près, hein ?\nenfant-m|Oui.\nenfant-m|Plus près.\nnarrateur|Plus tard, dans la cuisine, ça sent la soupe.\nnarrateur|Maman coupe une carotte.\nnarrateur|Un verre d'eau penche sur la table.\nnarrateur|Chouchou veut aider maman.\nnarrateur|L'eau glisse.\nnarrateur|Elle fait une petite rivière.\nnarrateur|Chouchou va vers maman.\nenfant-m|Maman, l'eau est tombée.\nenfant-m|J'ai raconté.\nmaman|Je t'écoute.\nmaman|Merci de raconter.\nmaman|On essuie ensemble.\nmaman|Bravo, Chouchou.\nmaman|C'est du bon travail.\nnarrateur|Papa entre.\nenfant-m|Papa, j'ai raconté.\nenfant-m|L'eau est tombée.\npapa|Je t'écoute.\npapa|On raconte à papa ou maman.\npapa|C'est comme ça.\npapa|Tu as su raconter encore.\nenfant-m|Oui.\nnarrateur|Chouchou se sent plus léger.\nmaman|Tu veux le torchon à carreaux ?\nenfant-m|Oui.\nenfant-m|Il est doux.\nnarrateur|La petite rivière d'eau part.\nnarrateur|La table redevient mate.\nmaman|La soupe fume encore.\nmaman|Tu veux rester près de moi ?\nenfant-m|Oui.\nenfant-m|Près de toi.",
+      "sons": "panier_linge,verre_eau",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Les chaussettes sont tombées. Que fait Chouchou ?",
+      "script": "narrateur|Les chaussettes sont tombées.\nnarrateur|Que fait Chouchou ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Merci d'avoir raconté. On raconte à papa ou maman. Bravo, Chouchou. J'ai raconté. Le panier, puis l'eau. Oui. C'est du bon travail.",
+      "script": "narrateur|Chouchou a raconté.\nnarrateur|Papa a écouté.\nnarrateur|Maman a écouté.\nnarrateur|Ensemble, ils ont ramassé.\npapa|Merci d'avoir raconté.\nmaman|On raconte à papa ou maman.\npapa|Bravo, Chouchou.\nenfant-m|J'ai raconté.\nenfant-m|Le panier, puis l'eau.\nmaman|Oui.\nmaman|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le salon est rangé. La table est sèche. Chouchou se lave les mains. Tu veux rester près du panier ? Oui. Il sent le savon. La chaussette rouge est repliée. Et la bleue aussi. Le plaid gris redevient calme.",
+      "script": "narrateur|Le salon est rangé.\nnarrateur|La table est sèche.\nnarrateur|Chouchou se lave les mains.\nmaman|Tu veux rester près du panier ?\nenfant-m|Oui.\nenfant-m|Il sent le savon.\npapa|La chaussette rouge est repliée.\nenfant-m|Et la bleue aussi.\nnarrateur|Le plaid gris redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai raconté. Papa et maman ont écouté. Bravo. Tu as fait du bon travail. Le panier de linge ne craque plus. L'histoire est finie.",
+      "script": "enfant-m|J'ai raconté.\nenfant-m|Papa et maman ont écouté.\npapa|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|Le panier de linge ne craque plus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}
