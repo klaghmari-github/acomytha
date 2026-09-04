@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-# Add tout, commit, push main vers GitLab et GitHub.
+# Un dossier local → GitLab (origin) + GitHub (github).
+# Usage :
+#   ./gitpush.sh
+#   ./gitpush.sh -m "feat(F-XXX): …"
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
@@ -20,33 +23,61 @@ fi
 GITLAB_URL="git@gitlab.com:klaghmari-group/akomytha.git"
 GITHUB_URL="git@github.com:klaghmari-github/acomytha.git"
 
-if git remote get-url origin >/dev/null 2>&1; then
-  git remote set-url origin "$GITLAB_URL"
-else
-  git remote add origin "$GITLAB_URL"
-fi
-if git remote get-url github >/dev/null 2>&1; then
-  git remote set-url github "$GITHUB_URL"
-else
-  git remote add github "$GITHUB_URL"
+ensure_remote() {
+  local name="$1" url="$2"
+  if git remote get-url "$name" >/dev/null 2>&1; then
+    git remote set-url "$name" "$url"
+  else
+    git remote add "$name" "$url"
+  fi
+}
+
+ensure_remote origin "$GITLAB_URL"
+ensure_remote github "$GITHUB_URL"
+
+if [[ "$(git branch --show-current)" != "main" ]]; then
+  echo "→ checkout main"
+  git checkout main
 fi
 
-BRANCH="$(git branch --show-current)"
-if [[ -z "$BRANCH" ]]; then
-  echo "Pas de branche courante (HEAD détaché)." >&2
-  exit 1
-fi
+echo "→ fetch GitLab + GitHub"
+git fetch origin
+git fetch github || true
+
+tip() {
+  git rev-parse -q --verify "$1" 2>/dev/null || true
+}
+
+ff_to() {
+  local ref="$1"
+  [[ -z "$ref" ]] && return 0
+  git rev-parse -q --verify "$ref" >/dev/null 2>&1 || return 0
+  if git merge-base --is-ancestor HEAD "$ref"; then
+    if [[ "$(git rev-parse HEAD)" != "$(git rev-parse "$ref")" ]]; then
+      echo "→ fast-forward vers $ref"
+      git merge --ff-only "$ref"
+    fi
+  elif git merge-base --is-ancestor "$ref" HEAD; then
+    :
+  else
+    echo "→ $ref a divergé, fusion dans main"
+    git merge --no-edit "$ref"
+  fi
+}
+
+ff_to origin/main
+ff_to github/main
 
 git add -A
-
 if git diff --cached --quiet; then
   echo "Rien à committer."
 else
   git commit -m "$MSG"
 fi
 
-echo "→ GitLab ($BRANCH)"
-git push -u origin "$BRANCH"
-echo "→ GitHub ($BRANCH)"
-git push github "$BRANCH"
-echo "OK GitLab + GitHub"
+echo "→ push GitLab"
+git push -u origin main
+echo "→ push GitHub"
+git push github main
+
+echo "OK  local = GitLab = GitHub  $(git rev-parse --short HEAD)"
