@@ -35,6 +35,7 @@ export class HomeApp extends Component {
             </nav>
           </header>
           <section class="c-hero">
+            <p class="c-kicker">AcoMytha : univers d’histoires ludiques et captivantes.</p>
             <div class="c-field" aria-hidden="true">
               <span class="c-ring"></span>
               <span class="c-ring"></span>
@@ -43,7 +44,6 @@ export class HomeApp extends Component {
               <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
             </div>
             <h1>Apprendre<br>par l’<em>histoire.</em></h1>
-            <p class="c-lede">AcoMytha l’univers d’histoires ludiques et captivantes.</p>
           </section>
           <section class="c-score" aria-label="AcoMytha">
             <article class="c-move">

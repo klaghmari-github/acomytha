@@ -1080,12 +1080,21 @@ h3 {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.7fr);
   grid-template-areas:
-    "title field"
-    "lede field";
+    "kicker field"
+    "title field";
   column-gap: clamp(1rem, 4vw, 4rem);
   align-items: center;
   background: none;
   min-height: min(78dvh, 820px);
+}
+
+.s-home .c-kicker {
+  grid-area: kicker;
+  margin: 0 0 1.1rem;
+  max-width: 22em;
+  font-size: clamp(1.02rem, 1.8vw, 1.22rem);
+  line-height: 1.4;
+  color: var(--gold);
 }
 
 .s-home .c-hero h1 {
@@ -1104,15 +1113,6 @@ h3 {
   font-style: italic;
   font-weight: 360;
   color: var(--gold);
-}
-
-.s-home .c-lede {
-  grid-area: lede;
-  margin: 1.4rem 0 0;
-  max-width: 22em;
-  color: var(--muted-stage);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  line-height: 1.45;
 }
 
 .s-home .c-field {
@@ -1506,14 +1506,14 @@ h3 {
   .s-home .c-hero {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "kicker"
       "field"
-      "title"
-      "lede";
+      "title";
     min-height: auto;
     text-align: center;
     padding-top: 0.4rem;
   }
-  .s-home .c-lede {
+  .s-home .c-kicker {
     margin-inline: auto;
   }
   .s-home .c-score {

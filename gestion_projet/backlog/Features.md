@@ -445,7 +445,7 @@ L’espace parent n’est pas concerné (sélection, pas vitrine).
 ### F-APP-004 — Titre d’accueil
 
 Titre : *Apprendre par l’histoire.*  
-Sous-titre : *AcoMytha l’univers d’histoires ludiques et captivantes.*
+Ligne d’ambiance : *AcoMytha : univers d’histoires ludiques et captivantes.*
 
 **Créer un compte** uniquement en haut à droite. Pas de second bouton dans le hero.
 
