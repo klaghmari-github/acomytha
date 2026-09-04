@@ -43,6 +43,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
 | F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + 764 TREE). Chiffres : `stories/CHIFFRES.md`. |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
+| F-NAR-018 | **en cours** | Étalon structurel (avis2) : oral fluide, pas de morale dite, ramification = 9 aventures, ATOM sans récap. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -130,6 +131,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-015 | Production | Preuves de relecture, pas d’auto-validation IA | P0 | 1 | STRAT-001 | F-VAL-001 |
 | F-NAR-016 | Production | Pilote 2 ramifiés, 1 actif, archive des autres | P0 | 1 | stories/PRIORITE.md | F-NAR-010 |
 | F-NAR-017 | Production | Veille dossier ChatGPT → consignes → TREE-AUT-001 / TREE-COL-001 | P0 | 1 | stories/PRIORITE.md | F-NAR-016 |
+| F-NAR-018 | Moteur | Étalon AUT-001 : logique reprise, pas les phrases ; oral fluide ; morale vécue | P0 | 1 | stories/REWRITE.md | F-NAR-014 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -257,6 +259,21 @@ Dès qu’un fichier **nouveau** (ou changé) arrive dans `gestion_projet/feedba
 - Outil : `python3 stories/outils/watch_feedback_chatgpt.py` (`scan` / `claim` / `done` / `watch`).
 - Ledger : `gestion_projet/feedback_chatgpt/processed.json` (les audits déjà lus y sont).
 - Skill : `.grok/skills/ingest-feedback-chatgpt/SKILL.md`. Workflow : `.grok/workflows/ingest-feedback-chatgpt.rhai`.
+
+### F-NAR-018 — Étalon structurel (avis2)
+
+`avis2.txt` : le bateau d’Amir est la première base commercialisable. On en reprend la **logique**, pas le verbe.
+
+| Oui | Non |
+| --- | --- |
+| Désir → obstacle → tentative → conséquence → retour | Recopier capitaine / plic-ploc / volet jaune |
+| Phrases courtes **et** un peu liées, à l’oral | Télégraphe : « Celle-ci, la coque. » « Le manteau, Amir. » |
+| La morale se voit (Amir part sur l’autre flaque) | « Changer de chemin, ce n’est pas perdre. » |
+| T1 change le voyage (bottes qui claquent, linge qui sèche) | 27 fins vendues alors que T1 ne change que 2 phrases |
+| ATOM : un imprévu **après** le désir, joie/aide **une** fois | Décor → leçon → question → « J’ai dit le besoin. Bravo. » |
+| Fin = un détail à raconter (brindille sur la voile, pomme sauvée) | « L’histoire est finie. » |
+
+D38 inchangé : on ne réduit pas le catalogue à 20 titres. On hausse la barre partout.
 - Commerce, Stripe, ASR, bake audio : `NOTES.md` « Pas maintenant », pas une réécriture.
 - `NOTES.md` n’est pas un fichier ChatGPT.
 

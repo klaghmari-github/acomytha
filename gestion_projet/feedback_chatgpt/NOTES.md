@@ -37,6 +37,17 @@ Passe `exemple2.txt` + `Acomytha_Avis_Paquet_Prioritaire_88534be.md` (4 sept. so
 - Ramifiées : le choix doit **changer la suite**, pas seulement le lieu ou le goûter.
 - Réponses acceptées larges quand c’est juste (« papa », « maman », « un adulte ») ; silence = la narration reprend, sans échec.
 
+Passe `avis2.txt` (4 sept. 23:58, SSD, commit GitHub `ae4eb67` alors) :
+
+- **Déjà couvert** : désir ≠ leçon, monde d’abord, vraie fin, chemins à conséquences, AUT-001 bateau/jardin comme direction, Bravo/bon travail.
+- **Nouveau — structure, pas le verbe.** TREE-AUT-001 est l’**étalon de logique** (désir, obstacle, action, conséquence, retour), **pas** un gabarit de phrases. Ne pas recopier « capitaine », « plic/ploc », « volet jaune » partout.
+- **Nouveau — oral fluide.** Alterner phrases très courtes et phrases un peu plus liées. Éviter l’accumulation « Celle-ci, la coque. / Le manteau, Amir. »
+- **Nouveau — pas de morale énoncée.** « Changer de chemin, ce n’est pas perdre » doit sortir de l’action, pas de la bouche de papa.
+- **Nouveau — 9 aventures, pas 27.** T1 (manteau / bottes / linge) change le voyage (bruit, mouillé, sécher) ; la diversité vraie = destination × résolution. Ne pas vendre 27 récits distincts.
+- **Nouveau — COL-001 trop mécanique.** Il manque un vrai obstacle, T3 décoratif, fin « L’histoire est finie ». À réécrire avant d’en faire une vitrine.
+- **Nouveau — gabarit ATOM.** Décor → leçon → question → récap n’est pas une histoire. Exemples cités : *Sarah et le dessin du soleil* (joie répétée), *La boîte trop haute* (j’ai appelé / j’ai dit le besoin).
+- **Commerce « 20 histoires irréprochables, arrêter d’en produire »** : **pas maintenant comme politique.** D38 : tout le catalogue. On applique l’étalon, on ne réduit pas le corpus.
+
 ## Pas maintenant (chantier, pas une feature de plus ce tour)
 
 Commerce démo vs Stripe, vente sans audio, voix facturée sans enregistrement, commandes sans livraison, ASR, hors-ligne, FX WAV manquants, durées < 3 min sur les 2 audios témoins, `validate.py` encore collé aux JSON disparus, collection pilote 12+3 avant vente.

@@ -40,6 +40,11 @@ FORBIDDEN = (
     "il faut demander",
     "il ne faut pas rire",
     "il faut attendre",
+    "changer de chemin, ce n'est pas",
+    "j'ai dit le besoin",
+    "j'ai dit : je suis",
+    "tu as nommé",
+    "c'est de la joie",
 )
 BAD_NAMES = (
     "rania", "kilian", "béatrice", "beatrice", "bruno", "brice",

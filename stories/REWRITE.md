@@ -72,6 +72,15 @@ Référence : `gestion_projet/feedback_chatgpt/exemple.txt` (Chouchou, *La boît
 
 Papa accompagne sans tout faire. La félicitation est rare et liée à un geste vu, pas un refrain.
 
+## Passe 4 — étalon (F-NAR-018, `avis2.txt`)
+
+TREE-AUT-001 (*Le bateau d’Amir et la rivière du jardin*) donne la **logique** : monde, désir concret, déclencheur, préparation, obstacle propre au lieu, résolution qui change la fin, retour à la maison. Ce n’est **pas** un moule de phrases.
+
+- Oral : alterner très court et un peu plus lié. Pas une suite de « X, Y. »
+- Pas de morale dite (« changer de chemin, ce n’est pas perdre »). L’enfant la voit.
+- Un ramifié n’a pas 27 histoires distinctes si T1 ne change que l’accessoire. T1 doit changer le voyage.
+- ATOM : un imprévu **pendant** le projet. Interdit le récap « J’ai dit… Bravo. » en fin.
+
 Détail opérationnel (features) : **F-NAR-010 à F-NAR-015**, consignes `gestion_projet/feedback_chatgpt/f_04.txt`.
 
 ## JSON agent
