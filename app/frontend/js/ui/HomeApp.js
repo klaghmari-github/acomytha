@@ -38,7 +38,6 @@ export class HomeApp extends Component {
           <h1>Apprendre par l’histoire.</h1>
           <p>AcoMytha l’univers d’histoires ludiques et captivantes.</p>
         </section>
-        <section class="c-stats" id="stats"></section>
         <section class="c-pitches">
           <article class="c-pitch-what">
             <h2>AcoMytha, c’est quoi ?</h2>
@@ -48,6 +47,10 @@ export class HomeApp extends Component {
             <h2>AcoMytha, deux modes</h2>
             <p><strong>Mode jour :</strong> interactif — questions / réponses et options d’histoires.</p>
             <p><strong>Mode nuit :</strong> moins d’interaction. L’objectif est d’écouter jusqu’à dormir.</p>
+          </article>
+          <article class="c-pitch-what">
+            <h2>AcoMytha en chiffres</h2>
+            <p>Plus de 1000 histoires, organisées en une dizaine de thèmes, avec une centaine de leçons.</p>
           </article>
           <blockquote>Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</blockquote>
         </section>
@@ -120,9 +123,6 @@ export class HomeApp extends Component {
         o.textContent = name;
         sel.append(o);
       }
-      this.querySelector("#stats").innerHTML = `
-        <div><b>Plus d’un millier</b><span>d’histoires</span></div>
-        <div><b>Une dizaine</b><span>de thèmes</span></div>`;
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");

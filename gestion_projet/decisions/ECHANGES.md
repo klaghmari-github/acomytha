@@ -122,7 +122,9 @@ par :
 
 F-APP-004, D28. Affichage : **AcoMytha** (marque). Un seul bouton **Créer un compte** : en-tête, pas le hero.
 
-Stats accueil : pas les chiffres bruts. *Plus d’un millier d’histoires*, *Une dizaine de thèmes*.
+Section *AcoMytha en chiffres* :
+
+> plus de 1000 histoires organisées en une dizaine de thèmes avec une centaines de leçons.
 
 Section *AcoMytha, deux modes* (remplace « Jour : plus d’interaction. Nuit : plus calme ») :
 
