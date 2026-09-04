@@ -5,12 +5,22 @@ Produit **AcoMytha**. Audio-only, 3–6 ans. Décider, ne pas demander d’avis.
 ## Interdit
 
 Liste de gestes : « Alice range le triangle. Alice range le rectangle. » Ce n’est **pas** une histoire.
-« Bravo. Tu as fait du bon travail. L’histoire est finie. » en refrain.
-« Tu as mis ce que l’adulte a dit. » / recap d’objets en liste.
+« Bravo. Tu as fait du bon travail. L’histoire est finie. » — refrain **interdit**, y compris la phrase seule « L'histoire est finie. »
+« Tu as mis ce que l’adulte a dit. » / recap d’objets en liste (gourde, doudou, livre / triangle, rectangle, cercle).
 La même phrase-refrain d’une histoire à l’autre (« un chuchotement serre son ventre », « une étape après l’autre »).
 Recopier la même amorce que l’histoire d’à côté.
-Prénom hors troupe. Adulte nommé autrement que papa/maman.
-Décrire un geste dangereux (POS-001).
+Prénom hors troupe (Nora, Alice, Constantin, Lucas, Céline…). Adulte nommé autrement que papa/maman.
+Décrire un geste dangereux (POS-001) : dire quoi faire, jamais la course dans la rue.
+
+## Arc obligatoire (sinon ce n’est pas une histoire)
+
+1. **Monde** : village / ville / montagne / mer / jardin / immeuble — lumière, odeur, saison, un détail qui n’appartient qu’à *cette* histoire.
+2. **Désir** du héros (un projet concret : un bateau, un pain chaud, un ami qui attend).
+3. **Petit imprévu** (pli de travers, doudou oublié, carton mouillé, flaque, objet qui roule).
+4. **Résolution** par l’enfant, avec papa/maman qui parlent.
+5. **Fin heureuse vécue** : image sensorielle qui referme le désir du début. Pas « L'histoire est finie. »
+
+La leçon se **greffe** dans cet arc. Pas l’inverse.
 
 ## Obligatoire
 

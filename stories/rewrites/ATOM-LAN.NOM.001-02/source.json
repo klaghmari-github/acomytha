@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.NOM.001-02",
+  "fil_rouge": "",
+  "title": "Noé compte jusqu'à dix",
+  "lesson_id": "LAN.NOM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Noé, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé et maman sont dans la cuisine. Il y a un bol. Dedans, des fraises. On va compter des objets. Noé touche une fraise. Une. Deux. Trois. Quatre. Cinq. Six. Sept. Huit. Neuf. Dix. Dix fraises. Maman sourit. Il dit le nombre. Dix. Noé pose les fraises. Une, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. Les objets sont là. Noé les compte jusqu'à dix. Le bol est rouge. Parce qu'il compte, il dit le nombre. Tu as compté des objets. Noé sent une fraise. Elle sent le sucre.",
+      "script": "narrateur|Noé et maman sont dans la cuisine. Il y a un bol. Dedans, des fraises.\nmaman|On va compter des objets.\nnarrateur|Noé touche une fraise. Une. Deux. Trois. Quatre. Cinq. Six. Sept. Huit. Neuf. Dix.\nenfant-m|Dix fraises. Maman sourit. Il dit le nombre. Dix.\nnarrateur|Noé pose les fraises. Une, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. Les objets sont là. Noé les compte jusqu'à dix. Le bol est rouge. Parce qu'il compte, il dit le nombre.\nmaman|Tu as compté des objets.\nnarrateur|Noé sent une fraise. Elle sent le sucre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé compte les fraises. Combien y en a-t-il ?",
+      "script": "narrateur|Noé compte les fraises. Combien y en a-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé a compté des objets. Dix fraises. Il a dit le nombre. Jusqu'à dix.",
+      "script": "narrateur|Noé a compté des objets. Dix fraises. Il a dit le nombre. Jusqu'à dix.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le bol. Noé garde une fraise. Il croque.",
+      "script": "narrateur|Maman range le bol. Noé garde une fraise. Il croque.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

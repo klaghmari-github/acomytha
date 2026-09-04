@@ -48,20 +48,22 @@ class Voice:
 
 # Narrateur ≠ papa ≠ enfant. Maîtresse ≠ maman. Copain ≠ héros.
 # Tom était trop bas dans le mix (peak des autres voix) : volume + RMS + présence.
+# Pitch enfant ≤ ~1.2 : +2.6 semitons sur Tom = robot/chipmunk incompréhensible
+# (ex. « La gouttière de Raphaël »). Silence plus long = rythme, pas mitraillette.
 CAST = {
-    "narrateur": Voice("fr_FR-tom-medium", length=1.22, pitch=0.2, silence=0.42, volume=1.55, rms=0.13),
-    "maman": Voice("fr_FR-siwis-medium", length=1.20, pitch=0.0, silence=0.36, volume=1.05, rms=0.10),
-    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.18, pitch=0.0, silence=0.36, volume=1.12, rms=0.11),
-    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.16, pitch=-0.2, silence=0.34, volume=1.08, rms=0.10),
-    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.18, pitch=-0.6, silence=0.36, volume=1.08, rms=0.10),
-    "directeur": Voice("fr_FR-gilles-low", length=1.16, pitch=0.8, silence=0.36, volume=1.25, rms=0.11),
-    "grand-mere": Voice("fr_FR-siwis-medium", length=1.32, pitch=-1.8, silence=0.40, volume=1.10, rms=0.10),
-    "grand-pere": Voice("fr_FR-gilles-low", length=1.30, pitch=-0.6, silence=0.40, volume=1.25, rms=0.11),
-    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.18, pitch=0.4, silence=0.36, volume=1.08, rms=0.10),
-    "enfant-f": Voice("fr_FR-siwis-medium", length=1.28, pitch=2.4, silence=0.40, volume=1.08, rms=0.10),
-    "enfant-m": Voice("fr_FR-tom-medium", length=1.28, pitch=2.6, silence=0.40, volume=1.20, rms=0.11),
-    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.24, pitch=2.2, silence=0.38, volume=1.08, rms=0.10),
-    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.24, pitch=2.8, silence=0.38, volume=1.12, rms=0.10),
+    "narrateur": Voice("fr_FR-tom-medium", length=1.34, pitch=0.15, silence=0.55, volume=1.55, rms=0.13),
+    "maman": Voice("fr_FR-siwis-medium", length=1.28, pitch=0.0, silence=0.48, volume=1.05, rms=0.10),
+    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.26, pitch=0.0, silence=0.48, volume=1.12, rms=0.11),
+    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.24, pitch=-0.2, silence=0.44, volume=1.08, rms=0.10),
+    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.26, pitch=-0.6, silence=0.46, volume=1.08, rms=0.10),
+    "directeur": Voice("fr_FR-gilles-low", length=1.24, pitch=0.5, silence=0.46, volume=1.25, rms=0.11),
+    "grand-mere": Voice("fr_FR-siwis-medium", length=1.38, pitch=-1.4, silence=0.50, volume=1.10, rms=0.10),
+    "grand-pere": Voice("fr_FR-gilles-low", length=1.36, pitch=-0.4, silence=0.50, volume=1.25, rms=0.11),
+    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.26, pitch=0.3, silence=0.46, volume=1.08, rms=0.10),
+    "enfant-f": Voice("fr_FR-siwis-medium", length=1.40, pitch=1.0, silence=0.52, volume=1.08, rms=0.10),
+    "enfant-m": Voice("fr_FR-tom-medium", length=1.40, pitch=1.15, silence=0.52, volume=1.20, rms=0.11),
+    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.34, pitch=0.9, silence=0.50, volume=1.08, rms=0.10),
+    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.34, pitch=1.1, silence=0.50, volume=1.12, rms=0.10),
 }
 
 
@@ -221,7 +223,7 @@ def synth_piper(
         "--length_scale",
         str(length_scale or 1.2),
         "--sentence_silence",
-        "0.22",
+        "0.38",
         "--volume",
         str(volume or 1.0),
     ]
@@ -295,7 +297,9 @@ def synth_beats(piper: str, beats: list[tuple[str, str]], td: Path) -> tuple[np.
         raw = td / f"{i}.wav"
         synth_piper(piper, model_file(v.model), phrase, raw, v.length, v.speaker, v.volume)
         samples, sr = read_pcm16(raw)
-        samples = pitch_shift(samples, v.pitch)
+        # Léger contour : Piper à pitch fixe = récitatif plat. ±0.12 semiton, jamais chipmunk.
+        contour = (0.12, -0.08, 0.05, -0.12, 0.08)[i % 5]
+        samples = pitch_shift(samples, v.pitch + contour)
         if role == "narrateur":
             samples = presence_boost(samples, sr, db=4.0)
         samples = match_loudness(samples, v.rms)
