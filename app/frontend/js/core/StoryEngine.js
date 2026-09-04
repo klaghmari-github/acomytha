@@ -11,6 +11,7 @@ export class StoryEngine {
   #night = false;
   #abort = false;
   #userStop = false;
+  #replaced = false;
   #prefetch = new Map();
   #remain = 0;
   #heard = 0;
@@ -57,15 +58,17 @@ export class StoryEngine {
     return this.#heard;
   }
 
-  stop() {
+  stop({ replaced = false } = {}) {
     this.#abort = true;
     this.#userStop = true;
+    if (replaced) this.#replaced = true;
     this.#player.stop();
   }
 
   async run(storyId) {
     this.#abort = false;
     this.#userStop = false;
+    this.#replaced = false;
     this.#heard = 0;
     this.#prefetch.clear();
     this.#remain = this.#maxSeconds > 0 ? this.#maxSeconds : 0;
@@ -111,6 +114,7 @@ export class StoryEngine {
       id = node.default_next;
     }
     this.#onChoice?.([]);
+    if (this.#replaced) return;
     this.#onDone?.({ userStop: !!this.#userStop, heard: this.#heard || 0 });
   }
 

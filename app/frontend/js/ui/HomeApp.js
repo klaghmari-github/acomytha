@@ -460,33 +460,41 @@ export class HomeApp extends Component {
   }
 
   stopPlay() {
-    if (this.engine) {
-      this.engine.stop();
-      this.engine = null;
-    }
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop();
     this.showBar(null, "");
   }
 
+  #handoff() {
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop({ replaced: true });
+  }
+
   async preview(storyId) {
-    if (this.engine) this.engine.stop();
+    this.#handoff();
     this.closeGate();
     const story = this.stories.find((s) => s.story_id === storyId);
     this.showBar(storyId, story ? story.title : "");
     const need = this.previewSeconds || 30;
-    this.engine = new StoryEngine({
+    const engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
       preview: true,
       maxSeconds: need,
       onDone: ({ userStop, heard } = {}) => {
+        if (this.engine !== engine) return;
         this.showBar(null, "");
         if (userStop || this.me) return;
         if ((heard || 0) >= need * 0.85) this.openGate();
       },
     });
+    this.engine = engine;
     try {
-      await this.engine.run(storyId);
+      await engine.run(storyId);
     } catch (e) {
+      if (this.engine !== engine) return;
       this.showBar(null, "");
       const msg = this.querySelector("#msg");
       if (msg) msg.textContent = "L’écoute n’a pas pu démarrer.";

@@ -113,18 +113,22 @@ export class ChildApp extends Component {
   }
 
   async play(story) {
-    this.stopPlay();
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop({ replaced: true });
     this.querySelector("#file").hidden = true;
     this.querySelector("#player").hidden = false;
     this.querySelector("#now").textContent = story.title;
     const choices = this.querySelector("#choices");
-    this.engine = new StoryEngine({
+    const engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
       onStatus: (n) => {
+        if (this.engine !== engine) return;
         this.querySelector("#now").textContent = n.kind === "passage_fin" ? "C’est fini." : story.title;
       },
       onChoice: (opts) => {
+        if (this.engine !== engine) return;
         choices.replaceChildren();
         for (const o of opts) {
           const b = document.createElement("button");
@@ -135,19 +139,20 @@ export class ChildApp extends Component {
         }
       },
       onDone: () => {
+        if (this.engine !== engine) return;
         this.querySelector("#player").hidden = true;
         this.querySelector("#file").hidden = false;
       },
     });
+    this.engine = engine;
     this.engine.night = this.night;
-    await this.engine.run(story.story_id);
+    await engine.run(story.story_id);
   }
 
   stopPlay() {
-    if (this.engine) {
-      this.engine.stop();
-      this.engine = null;
-    }
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop();
     this.querySelector("#player").hidden = true;
     this.querySelector("#file").hidden = false;
   }

@@ -432,29 +432,39 @@ export class ParentApp extends Component {
   }
 
   stopPlay() {
-    if (this.engine) {
-      this.engine.stop();
-      this.engine = null;
-    }
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop();
     this.showBar(null, "");
   }
 
+  #handoff() {
+    const prev = this.engine;
+    this.engine = null;
+    if (prev) prev.stop({ replaced: true });
+  }
+
   async preview(storyId) {
-    if (this.engine) this.engine.stop();
+    this.#handoff();
     const story = this.allStories.find((s) => s.story_id === storyId);
     const owned = (this.wallet.owned || []).includes(storyId);
     const sec = this.wallet.parent_preview_seconds || 30;
     this.showBar(storyId, story ? story.title : "");
-    this.engine = new StoryEngine({
+    const engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
       preview: owned ? false : "parent",
       maxSeconds: owned ? 0 : sec,
-      onDone: () => this.showBar(null, ""),
+      onDone: () => {
+        if (this.engine !== engine) return;
+        this.showBar(null, "");
+      },
     });
+    this.engine = engine;
     try {
-      await this.engine.run(storyId);
+      await engine.run(storyId);
     } catch (e) {
+      if (this.engine !== engine) return;
       this.querySelector("#msg").textContent = e.message;
       this.showBar(null, "");
     }
