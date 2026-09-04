@@ -40,7 +40,10 @@ export class HomeApp extends Component {
         </section>
         <section class="c-stats" id="stats"></section>
         <section class="c-pitches">
-          <blockquote>Votre enfant ne fait pas qu’écouter.</blockquote>
+          <article class="c-pitch-what">
+            <h2>AcoMytha, c’est quoi ?</h2>
+            <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
+          </article>
           <blockquote>Jour : plus d’interaction. Nuit : plus calme.</blockquote>
           <blockquote>Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</blockquote>
         </section>

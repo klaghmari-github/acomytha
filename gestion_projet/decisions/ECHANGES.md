@@ -124,6 +124,10 @@ F-APP-004, D28. Affichage : **AcoMytha** (marque). Un seul bouton **Créer un co
 
 Stats accueil : pas les chiffres bruts. *Plus d’un millier d’histoires*, *Une dizaine de thèmes*.
 
+Pitch *AcoMytha, c’est quoi ?* (remplace « Votre enfant ne fait pas qu’écouter ») :
+
+> AcoMytha c'est quoi ? l'enfant apprend par l'histoire de façon interactive uniquement par la voix, sans ecran sans bouton. les histoires sont ludiques et contiennent des leçons qui peuvent varier entre respect du feux rouge, partage des jouets, manger les légumes. etc.
+
 ### Boutique
 
 Monnaie interne **acm** (affichage), code interne `A` / `balance_a`. Un **même dessin** pour le logo et le symbole de monnaie (F-PAY-003, D26). Prix = paramètres admin. Stripe Checkout ou démo carte 4242 (D24). Recharge 10–50 €.
