@@ -164,7 +164,7 @@ def t1_pass(t1: int) -> list[str]:
                 "enfant-m|C'est Nino.",
                 "papa|Le parc dore, après la sieste.",
                 f"narrateur|{t['bruit']}",
-                "enfant-m|J'attends sa phrase.",
+                "enfant-m|J'attends.",
             ]
         )
     return vet(
@@ -174,14 +174,14 @@ def t1_pass(t1: int) -> list[str]:
             "narrateur|Le sable colle sur le toboggan.",
             "enfant-m|Je veux glisser avant la nuit !",
             "narrateur|Nino cherche encore un mot.",
-            "copain|Je rentre avec.",
+            "copain|Je glisse avec.",
             "narrateur|Aniss attend, tout calme.",
             "papa|Le métal refroidit, ce soir.",
             "maman|Tu vois le sable, Aniss ?",
             "enfant-m|Oui.",
             "enfant-m|Sur le toboggan.",
             f"narrateur|{t['lum']}",
-            "enfant-m|On glisse après sa phrase.",
+            "enfant-m|On glisse après.",
         ]
     )
 
@@ -201,12 +201,12 @@ def t1_c(t1: int) -> list[str]:
     elif t1 == 2:
         fin = "Le bac est plein."
     else:
-        fin = "Je rentre avec toi."
+        fin = "Je glisse avec toi."
     return vet(
         [
             "narrateur|Nino reprend, tout doux.",
             f"copain|{fin}",
-            "enfant-m|J'ai attendu.",
+            "enfant-m|On y va.",
             "papa|Merci, Aniss.",
             "maman|On peut avancer, maintenant.",
             f"narrateur|{t['lum']}",
@@ -422,8 +422,8 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Le rouge sort, un peu sablé.",
                 f"narrateur|{t['peau']}",
                 "maman|Vous l'avez, tous les deux.",
-                "enfant-m|Maintenant, le toboggan !",
-                "narrateur|Ils portent le ballon vers l'échelle.",
+                "narrateur|Ils grimpent, le ballon contre la hanche.",
+                "narrateur|Puis ça file, tout court, tout vif.",
             ]
         )
     if t2 == 1 and t3 == 2:
@@ -441,7 +441,7 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Le bleu se remplit, grain après grain.",
                 f"narrateur|{t['metal']}",
                 "papa|La rampe redevient lisse.",
-                "enfant-m|On peut glisser !",
+                "narrateur|Ça file, tout d'un coup.",
             ]
         )
     if t2 == 1 and t3 == 3:
@@ -459,7 +459,7 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Nino le serre contre sa joue.",
                 f"narrateur|{t['bruit']}",
                 "maman|Il est prêt, maintenant.",
-                "enfant-m|On grimpe, avec lui.",
+                "narrateur|Ils glissent, le doudou entre eux.",
             ]
         )
     if t2 == 2 and t3 == 1:
@@ -477,7 +477,7 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Le rouge atterrit dans les mains d'Aniss.",
                 f"narrateur|{t['bruit']}",
                 "papa|Le chemin est libre.",
-                "enfant-m|On monte, puis on glisse !",
+                "narrateur|Ils montent, puis ça dévale.",
             ]
         )
     if t2 == 2 and t3 == 2:
@@ -495,7 +495,7 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Les grains tombent dans le bleu.",
                 f"narrateur|{t['sable']}",
                 "maman|La rampe redevient glissante.",
-                "enfant-m|À nous !",
+                "narrateur|Ils dévalent, le seau à la main.",
             ]
         )
     if t2 == 2 and t3 == 3:
@@ -506,14 +506,14 @@ def t3_pass(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Le doudou est coincé sur un barreau.",
                 "copain|Le doudou va.",
                 "narrateur|Aniss ne le prend pas, et attend.",
-                "maman|Sa phrase n'est pas finie.",
+                "maman|Il cherche encore.",
                 "copain|Le doudou va avec moi.",
                 "enfant-m|Je te le passe.",
                 "narrateur|Nino le glisse sous son bras.",
                 "narrateur|Ils montent, barreau après barreau.",
                 f"narrateur|{t['metal']}",
                 "papa|Vous y êtes, tout en haut.",
-                "enfant-m|On glisse ensemble !",
+                "narrateur|Ils glissent, le doudou au milieu.",
             ]
         )
     if t2 == 3 and t3 == 1:
@@ -654,7 +654,7 @@ def build() -> None:
             "narrateur|Nino est déjà près de l'échelle.",
             "narrateur|Ses lèvres bougent, tout lentement.",
             "copain|Je veux le.",
-            "papa|On l'écoute, Aniss ?",
+            "papa|Nino te parle, Aniss ?",
             "enfant-m|Oui.",
         ]
     )
