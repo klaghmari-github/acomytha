@@ -2,7 +2,7 @@
 
 **Lire ce fichier en premier** dans une session neuve. Ne pas « reprendre la dernière conversation ». Le contexte utile est ici et dans les docs qu’il pointe.
 
-Date de gel : **5 septembre 2026**. HEAD au gel : `e4f34904` puis un commit docs+dumps juste après. Vérifier `git log -1`.
+Date de gel : **5 septembre 2026**. HEAD au gel : **`67c3846b`**. Worktree, SSD, GitLab `origin` et GitHub `github` sont au même commit.
 
 Produit : **AcoMytha** (jamais Sentier). Forêt narrative **audio seulement**, enfants 3–6 ans (N1 / N2 / N3), famille papa-maman. POS-001. Pas religion / politique / guerre / crime / discours de genre.
 
