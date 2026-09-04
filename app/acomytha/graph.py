@@ -33,8 +33,16 @@ class StoryGraph:
     """Objet graphe : un chunk courant, des options, une politique nuit."""
 
     def __init__(self, chunks: list[Chunk]) -> None:
-        self.by_id = {c.chunk_id: c for c in chunks}
-        self.ids = set(self.by_id)
+        self._by_id = {c.chunk_id: c for c in chunks}
+        self._ids = set(self._by_id)
+
+    @property
+    def by_id(self) -> dict:
+        return self._by_id
+
+    @property
+    def ids(self) -> set:
+        return self._ids
 
     @property
     def root(self) -> str:

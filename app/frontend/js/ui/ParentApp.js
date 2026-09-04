@@ -5,18 +5,69 @@ import { StoryEngine } from "../core/StoryEngine.js";
 import { acmAmount, acmLogo } from "./acm.js";
 
 export class ParentApp extends Component {
-  constructor() {
-    super();
-    this.api = null;
-    this.router = null;
-    this.me = null;
-    this.selected = new Set();
-    this.engine = null;
-    this.playingId = null;
-    this.allStories = [];
-    this.domainNames = new Map();
-    this.wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 10, parent_preview_seconds: 30 };
-    this._filterTimer = 0;
+  #me = null;
+  #selected = new Set();
+  #engine = null;
+  #playingId = null;
+  #allStories = [];
+  #domainNames = new Map();
+  #wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 30, parent_preview_seconds: 30 };
+  #filterTimer = 0;
+  #payRef = "";
+
+  get me() {
+    return this.#me;
+  }
+  set me(value) {
+    this.#me = value || null;
+  }
+  get selected() {
+    return this.#selected;
+  }
+  set selected(value) {
+    this.#selected = value instanceof Set ? value : new Set(value || []);
+  }
+  get engine() {
+    return this.#engine;
+  }
+  set engine(value) {
+    this.#engine = value || null;
+  }
+  get playingId() {
+    return this.#playingId;
+  }
+  set playingId(value) {
+    this.#playingId = value || null;
+  }
+  get allStories() {
+    return this.#allStories;
+  }
+  set allStories(value) {
+    this.#allStories = Array.isArray(value) ? value : [];
+  }
+  get domainNames() {
+    return this.#domainNames;
+  }
+  set domainNames(value) {
+    this.#domainNames = value instanceof Map ? value : new Map();
+  }
+  get wallet() {
+    return this.#wallet;
+  }
+  set wallet(value) {
+    this.#wallet = value && typeof value === "object" ? value : this.#wallet;
+  }
+  get _filterTimer() {
+    return this.#filterTimer;
+  }
+  set _filterTimer(value) {
+    this.#filterTimer = value;
+  }
+  get _payRef() {
+    return this.#payRef;
+  }
+  set _payRef(value) {
+    this.#payRef = String(value || "");
   }
 
   async connectedCallback() {

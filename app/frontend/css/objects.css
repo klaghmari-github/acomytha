@@ -1,0 +1,29 @@
+/* Objets de layout (o-). */
+.o-app {
+  min-height: 100dvh;
+}
+
+.o-wrap {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.o-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.o-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.o-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+

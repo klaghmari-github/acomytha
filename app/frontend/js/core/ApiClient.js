@@ -1,14 +1,35 @@
 export class ApiError extends Error {
+  #status;
+  #detail;
+
   constructor(status, detail) {
     super(typeof detail === "string" ? detail : detail?.message || "erreur");
-    this.status = status;
-    this.detail = detail;
+    this.#status = Number(status) || 0;
+    this.#detail = detail;
+  }
+
+  get status() {
+    return this.#status;
+  }
+
+  get detail() {
+    return this.#detail;
   }
 }
 
 export class ApiClient {
+  #base;
+
   constructor(base = "/api") {
     this.base = base;
+  }
+
+  get base() {
+    return this.#base;
+  }
+
+  set base(value) {
+    this.#base = String(value || "/api").replace(/\/$/, "");
   }
 
   async request(path, { method = "GET", body, raw = false } = {}) {
@@ -18,7 +39,7 @@ export class ApiClient {
       headers["Content-Type"] = "application/json";
       payload = JSON.stringify(body);
     }
-    const res = await fetch(this.base + path, {
+    const res = await fetch(this.#base + path, {
       method,
       headers,
       body: payload,
@@ -51,7 +72,7 @@ export class ApiClient {
   }
 
   async postForm(path, form) {
-    const res = await fetch(this.base + path, { method: "POST", body: form, credentials: "include" });
+    const res = await fetch(this.#base + path, { method: "POST", body: form, credentials: "include" });
     const text = await res.text();
     const data = text ? JSON.parse(text) : null;
     if (!res.ok) throw new ApiError(res.status, data?.detail ?? data);

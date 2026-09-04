@@ -19,8 +19,34 @@ CHANNELS = 2
 GAP_S = 0.12
 
 
+class PreviewStudio:
+    """Assemble le clip d’aperçu (chemin par défaut) et son graphe client."""
+
+    def __init__(self, settings: Settings, vault: AudioVault) -> None:
+        self._settings = settings
+        self._vault = vault
+
+    @property
+    def settings(self) -> Settings:
+        return self._settings
+
+    @property
+    def vault(self) -> AudioVault:
+        return self._vault
+
+    @staticmethod
+    def clip_id(seconds: int) -> str:
+        return f"{PREVIEW_CHUNK}_{int(seconds)}"
+
+    def client_graph(self, story, seconds: int, key: str) -> dict:
+        return client_graph(story, seconds, key)
+
+    def ensure_chk(self, story_id: str, chunks: list[Chunk], seconds: int) -> Path:
+        return ensure_preview_chk(self._vault, self._settings, story_id, chunks, seconds)
+
+
 def preview_id(seconds: int) -> str:
-    return f"{PREVIEW_CHUNK}_{int(seconds)}"
+    return PreviewStudio.clip_id(seconds)
 
 
 def client_graph(story, seconds: int, key: str) -> dict:

@@ -40,3 +40,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D34 | Vitrine écoute | Invité : 30 s de **chaque** histoire, puis pop-up connexion / inscription. Pas de prix acm ni de solde avant connexion. F-APP-006. |
 | D35 | Veille sans conflit | Le watchdog **prévient** seulement. Le traitement éditorial est fait par l’agent principal, jamais en parallèle du watchdog. F-NAR-017. |
 | D36 | Identité hors vitrine | Connexion, inscription, parent, admin, enfant : mêmes jetons que la vitrine (nuit, or, crème, Fraunces). Solde et prix acm après connexion. F-APP-007. |
+| D37 | POO | Encapsulation réelle : champs privés, propriétés pour les invariants. Pas un getter/setter vide par variable. Une classe = un rôle. Routeurs FastAPI inchangés. F-APP-008. |

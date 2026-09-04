@@ -5,12 +5,20 @@ import { StoryEngine } from "../core/StoryEngine.js";
 import { acmLogo } from "./acm.js";
 
 export class ChildApp extends Component {
-  constructor() {
-    super();
-    this.api = null;
-    this.router = null;
-    this.engine = null;
-    this.night = false;
+  #engine = null;
+  #night = false;
+
+  get engine() {
+    return this.#engine;
+  }
+  set engine(value) {
+    this.#engine = value || null;
+  }
+  get night() {
+    return this.#night;
+  }
+  set night(value) {
+    this.#night = Boolean(value);
   }
 
   async connectedCallback() {

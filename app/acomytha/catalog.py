@@ -32,7 +32,11 @@ class CatalogImporter:
     )
 
     def __init__(self, settings: Settings) -> None:
-        self.settings = settings
+        self._settings = settings
+
+    @property
+    def settings(self) -> Settings:
+        return self._settings
 
     def import_all(self, db: Session, limit: int | None = None) -> dict[str, int]:
         n_lessons = self.import_lessons(db)

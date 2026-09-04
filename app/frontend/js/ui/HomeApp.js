@@ -4,23 +4,99 @@ import { StoryEngine } from "../core/StoryEngine.js";
 import { acmIcon, acmLogo } from "./acm.js";
 
 export class HomeApp extends Component {
-  constructor() {
-    super();
-    this.api = null;
-    this.router = null;
-    this.stories = [];
-    this.total = 0;
-    this.pageSize = 6;
-    this.domainNames = new Map();
-    this.engine = null;
-    this.playingId = null;
-    this.previewSeconds = 10;
-    this.prices = { story: 1, tree: 1 };
-    this._filterTimer = 0;
-    this._loading = false;
-    this._gen = 0;
-    this._observer = null;
-    this.me = null;
+  #stories = [];
+  #total = 0;
+  #pageSize = 6;
+  #domainNames = new Map();
+  #engine = null;
+  #playingId = null;
+  #previewSeconds = 30;
+  #prices = { story: 1, tree: 1 };
+  #filterTimer = 0;
+  #loading = false;
+  #gen = 0;
+  #observer = null;
+  #me = null;
+
+  get stories() {
+    return this.#stories;
+  }
+  set stories(value) {
+    this.#stories = Array.isArray(value) ? value : [];
+  }
+  get total() {
+    return this.#total;
+  }
+  set total(value) {
+    this.#total = Math.max(0, Number(value) || 0);
+  }
+  get pageSize() {
+    return this.#pageSize;
+  }
+  set pageSize(value) {
+    const n = Number(value) || 6;
+    this.#pageSize = Math.max(1, Math.min(n, 48));
+  }
+  get domainNames() {
+    return this.#domainNames;
+  }
+  set domainNames(value) {
+    this.#domainNames = value instanceof Map ? value : new Map();
+  }
+  get engine() {
+    return this.#engine;
+  }
+  set engine(value) {
+    this.#engine = value || null;
+  }
+  get playingId() {
+    return this.#playingId;
+  }
+  set playingId(value) {
+    this.#playingId = value || null;
+  }
+  get previewSeconds() {
+    return this.#previewSeconds;
+  }
+  set previewSeconds(value) {
+    this.#previewSeconds = Math.max(1, Number(value) || 30);
+  }
+  get prices() {
+    return this.#prices;
+  }
+  set prices(value) {
+    this.#prices = value && typeof value === "object" ? value : { story: 1, tree: 1 };
+  }
+  get me() {
+    return this.#me;
+  }
+  set me(value) {
+    this.#me = value || null;
+  }
+
+  get _filterTimer() {
+    return this.#filterTimer;
+  }
+  set _filterTimer(value) {
+    this.#filterTimer = value;
+  }
+  get _loading() {
+    return this.#loading;
+  }
+  set _loading(value) {
+    this.#loading = Boolean(value);
+  }
+  get _gen() {
+    return this.#gen;
+  }
+  set _gen(value) {
+    this.#gen = Number(value) || 0;
+  }
+  get _observer() {
+    return this.#observer;
+  }
+  set _observer(value) {
+    this.#observer = value || null;
   }
 
   async connectedCallback() {

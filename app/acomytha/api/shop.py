@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.commerce import (
+    WalletBook,
     debit,
     eur_to_a,
     free_ids,
@@ -48,32 +49,7 @@ def _parent(auth: AuthContext) -> int:
 
 
 def _wallet_payload(db: Session, parent_id: int) -> dict:
-    p = params(db)
-    w = get_wallet(db, parent_id)
-    return {
-        "balance_a": w.balance_a,
-        "lifetime_eur": w.lifetime_eur,
-        "owned": sorted(owned_ids(db, parent_id)),
-        "free": sorted(free_ids(db)),
-        "prices": {
-            "story": num(db, "price_story_a"),
-            "tree": num(db, "price_tree_a"),
-            "order": num(db, "price_order_a"),
-            "ramification": num(db, "price_ramification_a"),
-            "voice": num(db, "price_voice_record_a"),
-            "voice_apply_all": num(db, "price_voice_apply_all_a"),
-        },
-        "preview_seconds": int(num(db, "preview_seconds") or 10),
-        "parent_preview_seconds": int(num(db, "parent_preview_seconds") or 30),
-        "pack": {"count": int(num(db, "pack_trees_count") or 10), "eur": num(db, "pack_trees_eur")},
-        "fx": {
-            "start": float(p["fx_rate_start"]),
-            "step": float(p["fx_rate_step"]),
-            "every": float(p["fx_rate_every_eur"]),
-            "max": float(p["fx_rate_max"]),
-        },
-        "stripe": "ready" if (p.get("stripe_secret") or "").strip() else "demo",
-    }
+    return WalletBook(db, parent_id).payload()
 
 
 @router.get("/wallet")

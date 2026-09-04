@@ -38,8 +38,16 @@ class PasswordHasher:
 
 class SessionService:
     def __init__(self, hours: int = 72) -> None:
-        self.hours = hours
-        self.hasher = PasswordHasher()
+        self._hours = max(1, int(hours))
+        self._hasher = PasswordHasher()
+
+    @property
+    def hours(self) -> int:
+        return self._hours
+
+    @property
+    def hasher(self) -> PasswordHasher:
+        return self._hasher
 
     def issue(self, db: Session, user: User, device_id: str, acting_role: str) -> str:
         token = secrets.token_hex(32)

@@ -2,11 +2,6 @@ import { Component } from "../core/Component.js";
 import { acmLogo } from "./acm.js";
 
 export class AdminApp extends Component {
-  constructor() {
-    super();
-    this.api = null;
-    this.router = null;
-  }
 
   async connectedCallback() {
     this.innerHTML = `

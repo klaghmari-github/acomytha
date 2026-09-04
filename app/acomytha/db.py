@@ -13,21 +13,33 @@ from acomytha.settings import Settings
 
 class Database:
     def __init__(self, settings: Settings) -> None:
-        self.settings = settings
-        self.engine = create_engine(
+        self._settings = settings
+        self._engine = create_engine(
             settings.database_url,
             connect_args={"check_same_thread": False},
             future=True,
         )
 
-        @event.listens_for(self.engine, "connect")
+        @event.listens_for(self._engine, "connect")
         def _sqlite_pragmas(dbapi_conn, _rec) -> None:  # noqa: ANN001
             cur = dbapi_conn.cursor()
             cur.execute("PRAGMA foreign_keys=ON")
             cur.execute("PRAGMA journal_mode=WAL")
             cur.close()
 
-        self.SessionLocal = sessionmaker(bind=self.engine, autoflush=False, autocommit=False, future=True)
+        self._session_factory = sessionmaker(bind=self._engine, autoflush=False, autocommit=False, future=True)
+
+    @property
+    def settings(self) -> Settings:
+        return self._settings
+
+    @property
+    def engine(self):
+        return self._engine
+
+    @property
+    def SessionLocal(self):
+        return self._session_factory
 
     def create_all(self) -> None:
         Base.metadata.create_all(self.engine)
@@ -46,7 +58,7 @@ class Database:
                 conn.execute(text("ALTER TABLE stories ADD COLUMN has_interaction BOOLEAN DEFAULT 0"))
 
     def session(self) -> Generator[Session, None, None]:
-        db = self.SessionLocal()
+        db = self._session_factory()
         try:
             yield db
         finally:

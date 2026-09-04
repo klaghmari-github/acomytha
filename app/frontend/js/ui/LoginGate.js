@@ -4,11 +4,6 @@ import { ApiError } from "../core/ApiClient.js";
 import { acmLogo } from "./acm.js";
 
 export class LoginGate extends Component {
-  constructor() {
-    super();
-    this.api = null;
-    this.router = null;
-  }
 
   connectedCallback() {
     this.innerHTML = `

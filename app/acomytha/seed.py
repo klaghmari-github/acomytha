@@ -14,9 +14,21 @@ from acomytha.settings import Settings
 
 class Bootstrap:
     def __init__(self, settings: Settings) -> None:
-        self.settings = settings
-        self.hasher = PasswordHasher()
-        self.importer = CatalogImporter(settings)
+        self._settings = settings
+        self._hasher = PasswordHasher()
+        self._importer = CatalogImporter(settings)
+
+    @property
+    def settings(self) -> Settings:
+        return self._settings
+
+    @property
+    def hasher(self) -> PasswordHasher:
+        return self._hasher
+
+    @property
+    def importer(self) -> CatalogImporter:
+        return self._importer
 
     def run(self, db: Session, import_limit: int | None = None) -> None:
         seed_params(db)

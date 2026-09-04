@@ -1,141 +1,177 @@
 /** Moteur jour / nuit : enchaîne les chunks, 3 s, prefetch N+1. */
 
 export class StoryEngine {
+  #api;
+  #player;
+  #onChoice;
+  #onStatus;
+  #onDone;
+  #maxSeconds = 0;
+  #preview = false;
+  #night = false;
+  #abort = false;
+  #userStop = false;
+  #prefetch = new Map();
+  #remain = 0;
+  #heard = 0;
+  #graph = null;
+  #key = "";
+
   constructor({ api, player, onChoice, onStatus, onDone, maxSeconds = 0, preview = false }) {
-    this.api = api;
-    this.player = player;
-    this.onChoice = onChoice;
-    this.onStatus = onStatus;
-    this.onDone = onDone;
+    this.#api = api;
+    this.#player = player;
+    this.#onChoice = onChoice;
+    this.#onStatus = onStatus;
+    this.#onDone = onDone;
     this.maxSeconds = maxSeconds;
-    this.preview = preview; // false | true (visiteur) | "parent"
-    this.night = false;
-    this._abort = false;
-    this._userStop = false;
-    this._prefetch = new Map();
-    this._remain = maxSeconds > 0 ? maxSeconds : 0;
-    this._t0 = 0;
+    this.preview = preview;
+  }
+
+  get night() {
+    return this.#night;
+  }
+
+  set night(value) {
+    this.#night = Boolean(value);
+  }
+
+  get preview() {
+    return this.#preview;
+  }
+
+  set preview(value) {
+    this.#preview = value === "parent" ? "parent" : Boolean(value);
+  }
+
+  get maxSeconds() {
+    return this.#maxSeconds;
+  }
+
+  set maxSeconds(value) {
+    const n = Number(value) || 0;
+    this.#maxSeconds = n > 0 ? n : 0;
+    this.#remain = this.#maxSeconds;
+  }
+
+  get heard() {
+    return this.#heard;
   }
 
   stop() {
-    this._abort = true;
-    this._userStop = true;
-    this.player.stop();
+    this.#abort = true;
+    this.#userStop = true;
+    this.#player.stop();
   }
 
   async run(storyId) {
-    this._abort = false;
-    this._userStop = false;
-    this._heard = 0;
-    this._prefetch.clear();
-    this._remain = this.maxSeconds > 0 ? this.maxSeconds : 0;
-    const graph = await this.api.get(this._graphPath(storyId));
-    this.graph = graph;
-    this.key = graph.key;
+    this.#abort = false;
+    this.#userStop = false;
+    this.#heard = 0;
+    this.#prefetch.clear();
+    this.#remain = this.#maxSeconds > 0 ? this.#maxSeconds : 0;
+    const graph = await this.#api.get(this.#graphPath(storyId));
+    this.#graph = graph;
+    this.#key = graph.key;
     let id = graph.root;
-    while (id && !this._abort) {
+    while (id && !this.#abort) {
       const node = graph.chunks[id];
       if (!node) break;
-      this.onStatus?.(node);
+      this.#onStatus?.(node);
       const policy = node.night_policy || "play";
-      if (this.night && policy === "skip") {
+      if (this.#night && policy === "skip") {
         id = node.default_next;
         continue;
       }
       if (node.kind === "transition_question") {
-        // auto_default = nuit seulement. Le jour, l’enfant choisit (F-PLY-001).
-        if (this.night && policy === "auto_default") {
-          await this._play(storyId, id);
+        if (this.#night && policy === "auto_default") {
+          await this.#play(storyId, id);
           id = node.default_next || node.options?.[0]?.next;
           continue;
         }
-        await this._play(storyId, id);
+        await this.#play(storyId, id);
         const wait = node.wait_ms || graph.wait_default_ms || 3000;
-        id = await this._ask(node, wait);
+        id = await this.#ask(node, wait);
         continue;
       }
       if (node.kind === "passage_question") {
-        if (this.night && policy === "skip") {
+        if (this.#night && policy === "skip") {
           id = node.default_next;
           continue;
         }
-        await this._play(storyId, id);
+        await this.#play(storyId, id);
         const wait = node.wait_ms || graph.wait_default_ms || 3000;
-        await this._sleep(wait);
+        await this.#sleep(wait);
         id = node.default_next;
         continue;
       }
-      await this._play(storyId, id);
+      await this.#play(storyId, id);
       if (node.kind === "passage_fin" || !node.default_next) {
         break;
       }
       id = node.default_next;
     }
-    this.onChoice?.([]);
-    this.onDone?.({ userStop: !!this._userStop, heard: this._heard || 0 });
+    this.#onChoice?.([]);
+    this.#onDone?.({ userStop: !!this.#userStop, heard: this.#heard || 0 });
   }
 
-  async _play(storyId, chunkId) {
-    const next = this.graph.chunks[chunkId]?.default_next;
-    if (next) this._warm(storyId, next);
-    const buf = await this._load(storyId, chunkId);
-    if (this._abort) return;
+  async #play(storyId, chunkId) {
+    const next = this.#graph.chunks[chunkId]?.default_next;
+    if (next) this.#warm(storyId, next);
+    const buf = await this.#load(storyId, chunkId);
+    if (this.#abort) return;
     if (!buf) {
-      if (this.preview) throw new Error("aperçu audio absent");
+      if (this.#preview) throw new Error("aperçu audio absent");
       return;
     }
-    const cap = this._remain > 0 ? this._remain : 0;
+    const cap = this.#remain > 0 ? this.#remain : 0;
     const t0 = performance.now();
-    await this.player.play(buf, this.key, { maxSeconds: cap });
+    await this.#player.play(buf, this.#key, { maxSeconds: cap });
     const used = (performance.now() - t0) / 1000;
-    this._heard = (this._heard || 0) + used;
-    if (this.maxSeconds > 0) {
-      this._remain = Math.max(0, (this._remain || this.maxSeconds) - used);
-      if (this._remain <= 0.05) this._abort = true;
+    this.#heard += used;
+    if (this.#maxSeconds > 0) {
+      this.#remain = Math.max(0, this.#remain - used);
+      if (this.#remain <= 0.05) this.#abort = true;
     }
   }
 
-  async _load(storyId, chunkId) {
-    if (this._prefetch.has(chunkId)) return this._prefetch.get(chunkId);
-    const p = this.api.blob(this._chunkPath(storyId, chunkId));
-    this._prefetch.set(chunkId, p);
+  async #load(storyId, chunkId) {
+    if (this.#prefetch.has(chunkId)) return this.#prefetch.get(chunkId);
+    const p = this.#api.blob(this.#chunkPath(storyId, chunkId));
+    this.#prefetch.set(chunkId, p);
     return p;
   }
 
-  _warm(storyId, chunkId) {
-    if (!this._prefetch.has(chunkId)) {
-      this._prefetch.set(
-        chunkId,
-        this.api.blob(this._chunkPath(storyId, chunkId)).catch(() => null)
-      );
+  #warm(storyId, chunkId) {
+    if (!this.#prefetch.has(chunkId)) {
+      this.#prefetch.set(chunkId, this.#api.blob(this.#chunkPath(storyId, chunkId)).catch(() => null));
     }
   }
 
-  _graphPath(storyId) {
+  #graphPath(storyId) {
     const id = encodeURIComponent(storyId);
-    if (this.preview === "parent") return `/play/${id}/preview/graph`;
-    if (this.preview) return `/public/preview/${id}/graph`;
+    if (this.#preview === "parent") return `/play/${id}/preview/graph`;
+    if (this.#preview) return `/public/preview/${id}/graph`;
     return `/play/${id}/graph`;
   }
 
-  _chunkPath(storyId, chunkId) {
+  #chunkPath(storyId, chunkId) {
     const id = encodeURIComponent(storyId);
     const ck = encodeURIComponent(chunkId);
-    if (this.preview === "parent") return `/play/${id}/preview/chunk/${ck}`;
-    if (this.preview) return `/public/preview/${id}/chunk/${ck}`;
+    if (this.#preview === "parent") return `/play/${id}/preview/chunk/${ck}`;
+    if (this.#preview) return `/public/preview/${id}/chunk/${ck}`;
     return `/play/${id}/chunk/${ck}`;
   }
 
-  _ask(node, waitMs) {
+  #ask(node, waitMs) {
     return new Promise((resolve) => {
       let done = false;
       const finish = (next) => {
         if (done) return;
         done = true;
-        this.onChoice?.([]);
+        this.#onChoice?.([]);
         resolve(next);
       };
-      this.onChoice?.(
+      this.#onChoice?.(
         node.options.map((o) => ({
           ...o,
           pick: () => finish(o.next),
@@ -145,7 +181,7 @@ export class StoryEngine {
     });
   }
 
-  _sleep(ms) {
+  #sleep(ms) {
     return new Promise((r) => window.setTimeout(r, ms));
   }
 }

@@ -61,6 +61,18 @@ class DeviceGuard:
 class DeviceConflict(Exception):
     def __init__(self, user: User, binding: DeviceBinding, alert: DeviceAlert) -> None:
         super().__init__("appareil non autorisé")
-        self.user = user
-        self.binding = binding
-        self.alert = alert
+        self._user = user
+        self._binding = binding
+        self._alert = alert
+
+    @property
+    def user(self) -> User:
+        return self._user
+
+    @property
+    def binding(self) -> DeviceBinding:
+        return self._binding
+
+    @property
+    def alert(self) -> DeviceAlert:
+        return self._alert

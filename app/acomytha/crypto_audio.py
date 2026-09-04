@@ -19,8 +19,16 @@ class AudioVault:
     """Un objet coffre : enveloppe les MP3 atelier en .chk jouables seulement par l'app."""
 
     def __init__(self, settings: Settings) -> None:
-        self.settings = settings
-        self.master = self._load_or_create_master()
+        self._settings = settings
+        self._master = self._load_or_create_master()
+
+    @property
+    def settings(self) -> Settings:
+        return self._settings
+
+    @property
+    def master(self) -> bytes:
+        return self._master
 
     def _load_or_create_master(self) -> bytes:
         path = self.settings.master_key_path

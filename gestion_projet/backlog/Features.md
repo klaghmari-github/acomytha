@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.3 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.4 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -56,6 +56,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-APP-005 | **développé** | Vitrine 2026 : chambre d’écoute, typo éditoriale, catalogue dans la scène. |
 | F-APP-006 | **développé** | Vitrine : Écouter toutes les histoires, 30 s, puis pop-up compte. Pas de prix acm. |
 | F-APP-007 | **développé** | Même identité visuelle (chambre d’écoute) : connexion, inscription, parent, admin, enfant. |
+| F-APP-008 | **développé** | POO : champs privés, propriétés, une classe = un rôle (Python, JS, CSS, HTML). |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -83,6 +84,7 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-005 | App | Vitrine : design chambre d’écoute 2026 | P1 | 2 | STRAT-005 | F-APP-004 |
 | F-APP-006 | App | Vitrine : 30 s d’écoute + pop-up compte ; pas de prix | P0 | 2 | STRAT-005 | F-APP-002, F-PAR-003 |
 | F-APP-007 | App | Identité chambre d’écoute hors vitrine (gates, parent, admin, enfant) | P0 | 2 | STRAT-005 | F-APP-005 |
+| F-APP-008 | App | Encapsulation POO (privé, propriétés, responsabilités) | P0 | 2 | STRAT-005 | F-APP-001 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -92,7 +94,11 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 
 ### F-APP-001 — Socle
 
-`app/` : FastAPI factory, fichiers statiques, custom elements, jetons CSS, hash-router. Comptes démo locaux. Responsive téléphone / tablette / bureau.
+`app/` : FastAPI factory, fichiers statiques, custom elements, jetons CSS, hash-router. Comptes démo locaux. Responsive téléphone / tablette / bureau. Encapsulation : F-APP-008.
+
+### F-APP-008 — Encapsulation POO
+
+Une classe = un rôle. État **privé**. Accès public par **propriétés** (invariants, pas un getter vide par champ). Python : `ShopParams`, `WalletBook`, `PreviewStudio`, `Settings`, coffre, graphe, session. JS : champs `#`, `Component` injecte api/router, `Session`, `StoryEngine`, `CryptoPlayer`. CSS : `tokens` / `objects` / `components` / `shells`. HTML = custom elements. D37. Les routeurs FastAPI restent des routeurs (c’est le cadre).
 
 ### F-SEC-003 — Un appareil
 
