@@ -73,10 +73,12 @@ export class HomeApp extends Component {
             </article>
             <p class="c-offer">Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</p>
           </section>
-        </div>
         <section class="c-catalog">
           <header class="c-catalog__head">
-            <h2>Le catalogue</h2>
+            <div>
+              <h2>Le catalogue</h2>
+              <p class="c-catalog__invite">Une histoire. Trente secondes. Entrez.</p>
+            </div>
             <p class="c-hint" id="count"></p>
           </header>
           <div class="c-filters">
@@ -98,6 +100,7 @@ export class HomeApp extends Component {
           <div class="o-grid" id="grid"></div>
           <p class="c-more" id="more" hidden>Chargement…</p>
         </section>
+        </div>
         <div class="c-nowbar" id="nowbar" hidden>
           <span id="nowtitle"></span>
           <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
@@ -277,7 +280,7 @@ export class HomeApp extends Component {
     const theme = this.domainNames.get(s.domain) || "";
     const where = [theme, s.setting].filter(Boolean).join(" · ");
     const form = formLabel(s);
-    const rel = this.related(s);
+    const rel = this.related(s).slice(0, 3);
     const links = rel.length
       ? `<ul class="c-links">${rel
           .map(
@@ -287,11 +290,11 @@ export class HomeApp extends Component {
           .join("")}</ul>`
       : "";
     el.innerHTML = `
-      ${form ? `<div class="o-row"><span class="c-pill c-pill--ram">${form}</span></div>` : ""}
+      ${form ? `<p class="c-sheet__kind">${form}</p>` : ""}
       <h3>${escapeHtml(s.title)}</h3>
-      <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
-      <button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>
-      ${links}`;
+      <p class="c-sheet__meta">${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
+      ${links}
+      <button class="c-listen" type="button" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>`;
     return el;
   }
 
@@ -376,6 +379,7 @@ export class HomeApp extends Component {
     this.querySelectorAll("[data-play]").forEach((b) => {
       b.textContent = b.dataset.play === id ? "Arrêt" : "Écouter";
       b.classList.toggle("c-btn--stop", b.dataset.play === id);
+      b.classList.toggle("c-listen--stop", b.dataset.play === id);
     });
   }
 
