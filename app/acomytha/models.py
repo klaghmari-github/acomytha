@@ -210,3 +210,16 @@ class StoryIdea(Base):
     email: Mapped[str] = mapped_column(String(180), default="")
     text: Mapped[str] = mapped_column(Text, default="")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class StripeSession(Base):
+    __tablename__ = "stripe_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
+    ref: Mapped[str] = mapped_column(String(80), unique=True)
+    provider_id: Mapped[str] = mapped_column(String(120), default="")
+    eur: Mapped[float] = mapped_column(Float, default=0.0)
+    amount_a: Mapped[float] = mapped_column(Float, default=0.0)
+    status: Mapped[str] = mapped_column(String(16), default="pending")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

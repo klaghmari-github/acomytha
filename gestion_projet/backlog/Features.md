@@ -36,8 +36,9 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
-| F-APP-002 | **développé** | Vitrine publique, catalogue, aperçu 10 s, pop-ups de ramifications. |
-| F-PAY-001 | **prévu** | Stripe (recharge €). Non branché. Montants 10–50 € affichés. |
+| F-APP-002 | **développé** | Vitrine publique, catalogue, aperçu 10 s (clip multi-passages), pop-ups. |
+| F-PAY-001 | **développé** | Stripe Checkout + webhook. Sans clé : paiement démo. |
+| F-PAR-003 | **développé** | Visiteur 10 s, parent 30 s, acheté = entier. |
 | F-PAY-002 | **développé** | Monnaie A, solde, achats, commandes, voix. Paramètres admin. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
@@ -311,9 +312,9 @@ Histoire offerte (atelier) : paramètre `free_story_ids` (défaut `TREE-SEC-001`
 
 Pendant l’écoute : barre collée **Arrêt** (et bouton carte). Stop coupe l’audio. Chaque carte affiche la **durée** (minutes). L’âge n’est pas affiché sur la carte.
 
-### F-PAY-001 — Stripe (prévu, pas branché)
+### F-PAY-001 — Stripe
 
-Recharge : boutons **10, 20, 30, 40, 50 €** + A obtenus. Paiement carte **non** implémenté.
+Recharge : boutons **10, 20, 30, 40, 50 €** + A obtenus. Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
 
 ### F-PAY-002 — Monnaie A et boutique
 

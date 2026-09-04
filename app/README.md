@@ -20,6 +20,8 @@ Ouvrir http://127.0.0.1:8787
 
 Premier démarrage : import des xlsx `stories/arbres/` vers SQLite (`app/data/`, gitignoré).
 
+Stripe (optionnel) : `pip install stripe`, clés `STRIPE_SECRET_KEY` / `STRIPE_PUBLISHABLE_KEY` ou paramètres admin.
+
 ## Tests
 
 ```bash

@@ -14,7 +14,7 @@ export class ParentApp extends Component {
     this.playingId = null;
     this.allStories = [];
     this.domainNames = new Map();
-    this.wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 10 };
+    this.wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 10, parent_preview_seconds: 30 };
     this._filterTimer = 0;
   }
 
@@ -76,6 +76,7 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#shop"), "click", (e) => this.onShopClick(e));
     this.on(this.querySelector("#shop"), "submit", (e) => this.onShopSubmit(e));
+    this._payRef = "";
     await this.boot();
   }
 
@@ -212,17 +213,28 @@ export class ParentApp extends Component {
           <button class="c-btn" type="submit">Enregistrer le code</button>
         </form>
       </details>
-      <details class="c-panel">
+      <details class="c-panel" open>
         <summary>Recharger</summary>
-        <div class="o-row" id="recharge">
-          <button class="c-btn c-btn--ghost" data-eur="10">10 €</button>
-          <button class="c-btn c-btn--ghost" data-eur="20">20 €</button>
-          <button class="c-btn c-btn--ghost" data-eur="30">30 €</button>
-          <button class="c-btn c-btn--ghost" data-eur="40">40 €</button>
-          <button class="c-btn c-btn--ghost" data-eur="50">50 €</button>
+        <div class="c-packs" id="recharge">
+          ${[10, 20, 30, 40, 50]
+            .map((e) => `<button class="c-pack" type="button" data-eur="${e}"><b>${e} €</b><span class="c-ako">${aFor(e, this.wallet.fx)}</span></button>`)
+            .join("")}
         </div>
-        <p class="c-hint" id="recharge-msg">Le paiement arrivera bientôt.</p>
-      </details>`;
+        <p class="c-hint" id="recharge-msg">${this.wallet.stripe === "ready" ? "Paiement par carte, Stripe." : "Paiement prêt. La carte Stripe se branche avec les clés admin."}</p>
+      </details>
+      <div class="c-modal" id="paymodal" hidden>
+        <div class="c-modal__box c-pay">
+          <button class="c-modal__close" type="button" data-close-pay="1">Fermer</button>
+          <h3>Payer</h3>
+          <p id="payline"></p>
+          <div class="c-card-fake">
+            <span>Carte</span>
+            <strong>···· ···· ···· 4242</strong>
+          </div>
+          <button class="c-btn c-btn--lg" type="button" id="paygo">Payer</button>
+          <p class="c-hint" id="payhint"></p>
+        </div>
+      </div>`;
   }
 
   onGridChange(e) {
@@ -261,14 +273,49 @@ export class ParentApp extends Component {
   }
 
   async onShopClick(e) {
+    if (e.target.closest("[data-close-pay]")) {
+      const modal = this.querySelector("#paymodal");
+      if (modal) modal.hidden = true;
+      return;
+    }
+    if (e.target.id === "paygo") {
+      await this.confirmPay();
+      return;
+    }
     const eur = e.target.closest("[data-eur]");
     if (!eur) return;
     const msg = this.querySelector("#recharge-msg");
     try {
       const r = await this.api.post("/shop/recharge", { eur: Number(eur.dataset.eur) });
-      msg.textContent = `${r.eur} € → ${r.would_credit_a} A. ${r.message}`;
+      if (r.checkout_url) {
+        window.location.href = r.checkout_url;
+        return;
+      }
+      this._payRef = r.ref;
+      const modal = this.querySelector("#paymodal");
+      const line = this.querySelector("#payline");
+      const hint = this.querySelector("#payhint");
+      if (line) line.textContent = `${r.eur} € → ${r.would_credit_a} A`;
+      if (hint) hint.textContent = r.message || "";
+      if (modal) modal.hidden = false;
+      msg.textContent = "";
     } catch (err) {
       msg.textContent = err.message;
+    }
+  }
+
+  async confirmPay() {
+    const msg = this.querySelector("#recharge-msg");
+    try {
+      this.wallet = await this.api.post("/shop/recharge/confirm", { ref: this._payRef });
+      const modal = this.querySelector("#paymodal");
+      if (modal) modal.hidden = true;
+      this.drawWallet();
+      this.drawShop();
+      msg.textContent = "Recharge enregistrée.";
+    } catch (err) {
+      const hint = this.querySelector("#payhint");
+      if (hint) hint.textContent = err.message;
     }
   }
 
@@ -344,12 +391,12 @@ export class ParentApp extends Component {
     if (this.engine) this.engine.stop();
     const story = this.allStories.find((s) => s.story_id === storyId);
     const owned = (this.wallet.owned || []).includes(storyId);
-    const sec = this.wallet.preview_seconds || 10;
+    const sec = this.wallet.parent_preview_seconds || 30;
     this.showBar(storyId, story ? story.title : "");
     this.engine = new StoryEngine({
       api: this.api,
       player: new CryptoPlayer(),
-      preview: !owned,
+      preview: owned ? false : "parent",
       maxSeconds: owned ? 0 : sec,
       onDone: () => this.showBar(null, ""),
     });
@@ -383,7 +430,17 @@ function fmtDur(sec) {
 function formLabel(s) {
   if (s.kind === "ramifiee") return "Avec ramifications vers d’autres histoires";
   if (s.has_interaction) return "Avec interaction";
-  return "Courte";
+  return "";
+}
+
+function aFor(eur, fx) {
+  const start = Number(fx?.start ?? 1);
+  const step = Number(fx?.step ?? 0.25);
+  const every = Number(fx?.every ?? 10) || 10;
+  const cap = Number(fx?.max ?? 5);
+  const band = Math.floor((Math.max(eur, 1) - 1) / every);
+  const rate = Math.min(cap, start + step * band);
+  return Math.round(eur * rate * 100) / 100;
 }
 
 function fold(s) {

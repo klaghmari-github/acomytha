@@ -45,7 +45,7 @@ export class AdminApp extends Component {
               <div class="c-filters">
                 <input name="email" placeholder="email parent" required />
                 <input name="display_name" placeholder="nom" required />
-                <input name="password" type="password" placeholder="clé (≥ 8)" required minlength="8" />
+                <input name="password" type="password" placeholder="mot de passe (≥ 8)" required minlength="8" />
                 <input name="child_pin" placeholder="PIN enfant" value="2468" required />
                 <button class="c-btn c-btn--gold" type="submit">Créer</button>
               </div>

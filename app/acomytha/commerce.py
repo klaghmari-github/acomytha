@@ -8,7 +8,8 @@ from acomytha.models import AppSetting, LedgerEntry, Purchase, Story, Wallet
 
 PARAM_SPECS: list[tuple[str, str, str]] = [
     ("welcome_credit_eur", "10", "Crédit offert à l’activation (€)"),
-    ("preview_seconds", "10", "Aperçu sans achat (secondes)"),
+    ("preview_seconds", "10", "Aperçu visiteur (secondes)"),
+    ("parent_preview_seconds", "30", "Aperçu parent, histoire non achetée (secondes)"),
     ("price_story_a", "1", "Prix d’une histoire (A)"),
     ("price_tree_a", "1", "Prix d’une série avec des choix (A)"),
     ("price_order_a", "1.5", "Commander une histoire (A)"),
@@ -24,6 +25,9 @@ PARAM_SPECS: list[tuple[str, str, str]] = [
     ("pack_trees_count", "10", "Nouvelles séries dans le pack"),
     ("pack_trees_eur", "10", "Prix du pack (€)"),
     ("default_child_pin", "2468", "PIN enfant à l’inscription"),
+    ("stripe_secret", "", "Clé secrète Stripe (sk_…)"),
+    ("stripe_publishable", "", "Clé publique Stripe (pk_…)"),
+    ("stripe_webhook_secret", "", "Secret webhook Stripe"),
 ]
 
 

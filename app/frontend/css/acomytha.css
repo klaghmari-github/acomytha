@@ -734,3 +734,79 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.c-hero {
+  background:
+    radial-gradient(1200px 280px at 50% -40px, var(--accent-soft), transparent 70%);
+}
+
+.c-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.c-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(47, 109, 224, 0.08);
+  border-color: #d5e2f8;
+}
+
+.c-nowbar {
+  position: sticky;
+  bottom: 0.75rem;
+  margin-inline: 1.4rem;
+  backdrop-filter: blur(8px);
+}
+
+.c-packs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 0.5rem;
+  margin: 0.7rem 0 0.4rem;
+}
+.c-pack {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 0.75rem 0.5rem;
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  color: var(--ink);
+}
+.c-pack:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.c-pack b {
+  font-size: 1.05rem;
+}
+
+.c-pay h3 {
+  margin-bottom: 0.4rem;
+}
+.c-pay p {
+  color: var(--muted);
+  margin: 0 0 0.8rem;
+}
+.c-card-fake {
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(135deg, #1b2430, #2f6de0);
+  color: #fff;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  letter-spacing: 0.04em;
+}
+.c-card-fake span {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.c-s-home .c-nowbar,
+.s-home .c-nowbar {
+  margin-inline: auto;
+  width: min(1100px, calc(100% - 2.8rem));
+}

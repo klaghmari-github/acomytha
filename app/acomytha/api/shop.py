@@ -1,4 +1,4 @@
-"""Boutique : solde A, achats, commandes, voix. Stripe plus tard."""
+"""Boutique : solde A, achats, commandes, voix, recharge Stripe."""
 
 from __future__ import annotations
 
@@ -21,6 +21,7 @@ from acomytha.commerce import (
     price_for,
 )
 from acomytha.models import ForestEntry, Purchase, Story, StoryOrder, VoiceProfile
+from acomytha.payments import confirm_demo, create_recharge, fulfill_provider
 
 router = APIRouter(prefix="/api/shop", tags=["shop"])
 
@@ -36,6 +37,10 @@ class OrderBody(BaseModel):
 
 class RechargeBody(BaseModel):
     eur: float = Field(gt=0, le=500)
+
+
+class ConfirmBody(BaseModel):
+    ref: str = Field(min_length=6, max_length=80)
 
 
 def _parent(auth: AuthContext) -> int:
@@ -59,6 +64,7 @@ def _wallet_payload(db: Session, parent_id: int) -> dict:
             "voice_apply_all": num(db, "price_voice_apply_all_a"),
         },
         "preview_seconds": int(num(db, "preview_seconds") or 10),
+        "parent_preview_seconds": int(num(db, "parent_preview_seconds") or 30),
         "pack": {"count": int(num(db, "pack_trees_count") or 10), "eur": num(db, "pack_trees_eur")},
         "fx": {
             "start": float(p["fx_rate_start"]),
@@ -66,7 +72,7 @@ def _wallet_payload(db: Session, parent_id: int) -> dict:
             "every": float(p["fx_rate_every_eur"]),
             "max": float(p["fx_rate_max"]),
         },
-        "stripe": "planned",
+        "stripe": "ready" if (p.get("stripe_secret") or "").strip() else "demo",
     }
 
 
@@ -117,16 +123,48 @@ def order(body: OrderBody, auth: AuthContext = Depends(require_roles("parent")),
 
 
 @router.post("/recharge")
-def recharge(body: RechargeBody, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
-    p = params(db)
-    a = eur_to_a(body.eur, p)
-    return {
-        "stripe": "planned",
-        "eur": body.eur,
-        "rate": fx_rate(body.eur, p),
-        "would_credit_a": a,
-        "message": "Le paiement arrivera bientôt.",
-    }
+def recharge(
+    body: RechargeBody,
+    request: Request,
+    auth: AuthContext = Depends(require_roles("parent")),
+    db: Session = Depends(get_db),
+):
+    try:
+        return create_recharge(db, request.app.state.settings, _parent(auth), body.eur)
+    except ValueError:
+        raise HTTPException(400, "Choisissez 10, 20, 30, 40 ou 50 €.") from None
+
+
+@router.post("/recharge/confirm")
+def recharge_confirm(
+    body: ConfirmBody,
+    auth: AuthContext = Depends(require_roles("parent")),
+    db: Session = Depends(get_db),
+):
+    try:
+        confirm_demo(db, _parent(auth), body.ref)
+    except LookupError:
+        raise HTTPException(404, "paiement inconnu") from None
+    return _wallet_payload(db, _parent(auth))
+
+
+@router.post("/stripe/webhook")
+async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
+    payload = await request.body()
+    sig = request.headers.get("stripe-signature", "")
+    secret = (params(db).get("stripe_webhook_secret") or request.app.state.settings.stripe_webhook_secret or "").strip()
+    if not secret:
+        return {"ok": True, "ignored": True}
+    try:
+        import stripe
+
+        event = stripe.Webhook.construct_event(payload, sig, secret)
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(400, "signature") from exc
+    if event["type"] == "checkout.session.completed":
+        obj = event["data"]["object"]
+        fulfill_provider(db, obj.get("id") or "", (obj.get("metadata") or {}).get("ref") or "")
+    return {"ok": True}
 
 
 @router.post("/voice")

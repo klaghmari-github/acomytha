@@ -177,7 +177,12 @@ def test_public_home_and_preview(client):
     assert one["has_interaction"] is True
     graph = client.get("/api/public/preview/ATOM-SAN.ALI.001-01/graph")
     assert graph.status_code == 200
-    assert graph.json()["preview_seconds"] == 10
+    body = graph.json()
+    assert body["preview_seconds"] == 10
+    assert str(body["root"]).startswith("CHK_PREVIEW")
+    clip = client.get(f"/api/public/preview/ATOM-SAN.ALI.001-01/chunk/{body['root']}")
+    assert clip.status_code == 200
+    assert clip.content[:5] == b"SNT01"
 
 
 def test_signup_welcome_and_buy(client):
@@ -197,6 +202,33 @@ def test_signup_welcome_and_buy(client):
     assert buy.status_code == 200
     assert buy.json()["balance_a"] == 9
     assert "ATOM-SAN.ALI.001-01" in buy.json()["owned"]
+
+
+def test_parent_preview_30s_then_full_when_owned(client):
+    client.post(
+        "/api/auth/signup",
+        json={
+            "email": "preecoute@acomytha.local",
+            "password": "motdepasse",
+            "display_name": "Sam",
+            "device_id": "device-preview-parent1",
+        },
+    )
+    denied = client.get("/api/play/ATOM-SAN.ALI.001-01/graph")
+    assert denied.status_code == 402
+    g = client.get("/api/play/ATOM-SAN.ALI.001-01/preview/graph")
+    assert g.status_code == 200
+    body = g.json()
+    assert body["preview_seconds"] == 30
+    clip = client.get(f"/api/play/ATOM-SAN.ALI.001-01/preview/chunk/{body['root']}")
+    assert clip.status_code == 200
+    client.post("/api/shop/buy", json={"story_id": "ATOM-SAN.ALI.001-01"})
+    full = client.get("/api/play/ATOM-SAN.ALI.001-01/graph")
+    assert full.status_code == 200
+    chunks = full.json()["chunks"]
+    assert len(chunks) >= 5
+    assert chunks["CHK_T0000_P0000"]["default_next"] == "CHK_T0000_P0000_Q0001"
+    assert chunks["CHK_T0000_P0000_C0001"]["default_next"] == "CHK_T0000_P0000_END"
 
 
 def test_device_message_has_no_cle(client):
@@ -233,3 +265,28 @@ def test_fx_and_admin_settings(client):
     put = client.put("/api/admin/settings", json={"values": {"preview_seconds": "8"}})
     assert put.status_code == 200
     assert any(r["key"] == "preview_seconds" and r["value"] == "8" for r in put.json())
+
+
+def test_demo_recharge_credits_wallet(client):
+    client.post(
+        "/api/auth/signup",
+        json={
+            "email": "payer@acomytha.local",
+            "password": "motdepasse",
+            "display_name": "Pia",
+            "device_id": "device-pay-parent01",
+        },
+    )
+    before = client.get("/api/shop/wallet").json()
+    start = before["recharge"] if False else before["balance_a"]
+    r = client.post("/api/shop/recharge", json={"eur": 10})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["mode"] in {"demo", "stripe"}
+    assert body["would_credit_a"] == 10
+    if body["mode"] == "demo":
+        done = client.post("/api/shop/recharge/confirm", json={"ref": body["ref"]})
+        assert done.status_code == 200
+        assert done.json()["balance_a"] == start + 10
+    bad = client.post("/api/shop/recharge", json={"eur": 7})
+    assert bad.status_code == 400

@@ -19,13 +19,11 @@ def settings(tmp_path: Path) -> Settings:
     arbres.mkdir()
     audio.mkdir(parents=True)
     shutil.copy(REPO / "stories" / "arbres" / "ATOM-SAN.ALI.001-01.xlsx", arbres / "ATOM-SAN.ALI.001-01.xlsx")
-    src_mp3 = REPO / "stories" / "audio" / "ATOM-SAN.ALI.001-01" / "CHK_T0000_P0000.mp3"
-    if src_mp3.exists():
-        shutil.copy(src_mp3, audio / "CHK_T0000_P0000.mp3")
-        shutil.copy(src_mp3, audio / "CHK_T0000_P0000_Q0001.mp3")
-        shutil.copy(src_mp3, audio / "CHK_T0000_P0000_C0001.mp3")
-        shutil.copy(src_mp3, audio / "CHK_T0000_P0000_END.mp3")
-        shutil.copy(src_mp3, audio / "CHK_T0000_P0000_END_F0001.mp3")
+    src_dir = REPO / "stories" / "audio" / "ATOM-SAN.ALI.001-01"
+    if src_dir.exists():
+        for src in src_dir.iterdir():
+            if src.suffix in {".mp3", ".wav"}:
+                shutil.copy(src, audio / src.name)
     s = Settings()
     s.data_dir = tmp_path / "data"
     s.data_dir.mkdir()

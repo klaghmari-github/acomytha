@@ -8,10 +8,12 @@ export class StoryEngine {
     this.onStatus = onStatus;
     this.onDone = onDone;
     this.maxSeconds = maxSeconds;
-    this.preview = preview;
+    this.preview = preview; // false | true (visiteur) | "parent"
     this.night = false;
     this._abort = false;
     this._prefetch = new Map();
+    this._remain = maxSeconds > 0 ? maxSeconds : 0;
+    this._t0 = 0;
   }
 
   stop() {
@@ -22,11 +24,8 @@ export class StoryEngine {
   async run(storyId) {
     this._abort = false;
     this._prefetch.clear();
-    const graph = await this.api.get(
-      this.preview
-        ? `/public/preview/${encodeURIComponent(storyId)}/graph`
-        : `/play/${encodeURIComponent(storyId)}/graph`
-    );
+    this._remain = this.maxSeconds > 0 ? this.maxSeconds : 0;
+    const graph = await this.api.get(this._graphPath(storyId));
     this.graph = graph;
     this.key = graph.key;
     let id = graph.root;
@@ -76,10 +75,14 @@ export class StoryEngine {
     if (next) this._warm(storyId, next);
     const buf = await this._load(storyId, chunkId);
     if (this._abort) return;
+    const cap = this._remain > 0 ? this._remain : 0;
+    const t0 = performance.now();
     try {
-      await this.player.play(buf, this.key, { maxSeconds: this.maxSeconds });
+      await this.player.play(buf, this.key, { maxSeconds: cap });
       if (this.maxSeconds > 0) {
-        this._abort = true;
+        const used = (performance.now() - t0) / 1000;
+        this._remain = Math.max(0, (this._remain || this.maxSeconds) - used);
+        if (this._remain <= 0.05) this._abort = true;
       }
     } catch {
       /* silence : on enchaîne plutôt que de bloquer l'enfant */
@@ -102,10 +105,19 @@ export class StoryEngine {
     }
   }
 
+  _graphPath(storyId) {
+    const id = encodeURIComponent(storyId);
+    if (this.preview === "parent") return `/play/${id}/preview/graph`;
+    if (this.preview) return `/public/preview/${id}/graph`;
+    return `/play/${id}/graph`;
+  }
+
   _chunkPath(storyId, chunkId) {
     const id = encodeURIComponent(storyId);
     const ck = encodeURIComponent(chunkId);
-    return this.preview ? `/public/preview/${id}/chunk/${ck}` : `/play/${id}/chunk/${ck}`;
+    if (this.preview === "parent") return `/play/${id}/preview/chunk/${ck}`;
+    if (this.preview) return `/public/preview/${id}/chunk/${ck}`;
+    return `/play/${id}/chunk/${ck}`;
   }
 
   _ask(node, waitMs) {

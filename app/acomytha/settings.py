@@ -31,6 +31,14 @@ class Settings:
         self.child_pin = os.environ.get("ACOMYTHA_CHILD_PIN", "2468")
         self.cookie_name = "acomytha_session"
         self.cookie_secure = os.environ.get("ACOMYTHA_COOKIE_SECURE", "0") == "1"
+        self.public_url = os.environ.get("ACOMYTHA_PUBLIC_URL", "http://127.0.0.1:8787")
+        self.stripe_secret = os.environ.get("STRIPE_SECRET_KEY") or os.environ.get("ACOMYTHA_STRIPE_SECRET", "")
+        self.stripe_publishable = os.environ.get("STRIPE_PUBLISHABLE_KEY") or os.environ.get(
+            "ACOMYTHA_STRIPE_PUBLISHABLE", ""
+        )
+        self.stripe_webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET") or os.environ.get(
+            "ACOMYTHA_STRIPE_WEBHOOK_SECRET", ""
+        )
 
     @property
     def database_url(self) -> str:

@@ -9,8 +9,9 @@ from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.graph import StoryGraph
-from acomytha.commerce import owned_ids
+from acomytha.commerce import num, owned_ids
 from acomytha.models import Chunk, ForestEntry, Story
+from acomytha.preview import client_graph, ensure_preview_chk, preview_id
 
 router = APIRouter(prefix="/api/play", tags=["play"])
 
@@ -71,3 +72,42 @@ def chunk_blob(
         raise HTTPException(404, "audio encore absent pour ce chunk") from exc
     data = path.read_bytes()
     return Response(content=data, media_type="application/octet-stream", headers={"Cache-Control": "no-store"})
+
+
+@router.get("/{story_id}/preview/graph")
+def parent_preview_graph(
+    story_id: str,
+    request: Request,
+    auth: AuthContext = Depends(require_roles("admin", "parent")),
+    db: Session = Depends(get_db),
+):
+    story = db.get(Story, story_id)
+    if story is None:
+        raise HTTPException(404, "histoire inconnue")
+    seconds = int(num(db, "parent_preview_seconds") or 30)
+    key = request.app.state.vault.story_key_b64(story_id) if story.has_audio else ""
+    return client_graph(story, seconds, key)
+
+
+@router.get("/{story_id}/preview/chunk/{chunk_id}")
+def parent_preview_chunk(
+    story_id: str,
+    chunk_id: str,
+    request: Request,
+    auth: AuthContext = Depends(require_roles("admin", "parent")),
+    db: Session = Depends(get_db),
+):
+    story = db.get(Story, story_id)
+    if story is None:
+        raise HTTPException(404, "histoire inconnue")
+    seconds = int(num(db, "parent_preview_seconds") or 30)
+    if chunk_id != preview_id(seconds):
+        raise HTTPException(403, "aperçu seulement")
+    chunks = list(db.scalars(select(Chunk).where(Chunk.story_id == story_id)))
+    try:
+        path = ensure_preview_chk(
+            request.app.state.vault, request.app.state.settings, story_id, chunks, seconds
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(404, "audio encore absent") from exc
+    return Response(content=path.read_bytes(), media_type="application/octet-stream", headers={"Cache-Control": "no-store"})

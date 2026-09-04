@@ -11,8 +11,8 @@ from sqlalchemy.orm import Session
 from acomytha.api.deps import get_db
 from acomytha.catalog import list_stories, story_to_dict
 from acomytha.commerce import num
-from acomytha.graph import StoryGraph
 from acomytha.models import Chunk, Lesson, Story, StoryIdea
+from acomytha.preview import client_graph, ensure_preview_chk, preview_id
 
 router = APIRouter(prefix="/api/public", tags=["public"])
 
@@ -58,21 +58,9 @@ def preview_graph(story_id: str, request: Request, db: Session = Depends(get_db)
     story = db.get(Story, story_id)
     if story is None:
         raise HTTPException(404, "histoire inconnue")
-    chunks = list(db.scalars(select(Chunk).where(Chunk.story_id == story_id)))
-    graph = StoryGraph(chunks).as_client_dict(include_text=False)
-    root = graph["root"]
-    node = dict(graph["chunks"].get(root) or {})
-    node["default_next"] = None
-    node["options"] = []
-    return {
-        "story_id": story.story_id,
-        "title": story.title,
-        "root": root,
-        "preview_seconds": int(num(db, "preview_seconds") or 10),
-        "has_audio": story.has_audio,
-        "key": request.app.state.vault.story_key_b64(story_id) if story.has_audio else "",
-        "chunks": {root: node} if root else {},
-    }
+    seconds = int(num(db, "preview_seconds") or 10)
+    key = request.app.state.vault.story_key_b64(story_id) if story.has_audio else ""
+    return client_graph(story, seconds, key)
 
 
 @router.get("/preview/{story_id}/chunk/{chunk_id}")
@@ -80,12 +68,14 @@ def preview_chunk(story_id: str, chunk_id: str, request: Request, db: Session = 
     story = db.get(Story, story_id)
     if story is None:
         raise HTTPException(404, "histoire inconnue")
+    seconds = int(num(db, "preview_seconds") or 10)
+    if chunk_id != preview_id(seconds):
+        raise HTTPException(403, "aperçu seulement")
     chunks = list(db.scalars(select(Chunk).where(Chunk.story_id == story_id)))
-    root = StoryGraph(chunks).root
-    if chunk_id != root:
-        raise HTTPException(403, "aperçu : premier passage seulement")
     try:
-        path = request.app.state.vault.ensure_chk(story_id, chunk_id)
+        path = ensure_preview_chk(
+            request.app.state.vault, request.app.state.settings, story_id, chunks, seconds
+        )
     except FileNotFoundError as exc:
         raise HTTPException(404, "audio encore absent") from exc
     return Response(content=path.read_bytes(), media_type="application/octet-stream", headers={"Cache-Control": "no-store"})
