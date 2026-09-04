@@ -31,12 +31,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Sarah a dit pardon. Elle a proposé un geste. Elle a tendu un cube. Bravo, Sarah. C'est du bon travail. La peine de Nino reste un peu. J'ai dit pardon. Oui. Et tu as attendu.",
-      "script": "narrateur|Sarah a dit pardon.\nnarrateur|Elle a proposé un geste.\nnarrateur|Elle a tendu un cube.\nmaman|Bravo, Sarah.\nmaman|C'est du bon travail.\nmaman|La peine de Nino reste un peu.\nenfant-f|J'ai dit pardon.\nmaman|Oui.\nmaman|Et tu as attendu.",
+      "text": "Sarah a dit pardon. Elle a proposé un geste. Elle a tendu un cube. Bravo, Sarah. La peine de Nino reste un peu. J'ai dit pardon. Oui. Et tu as attendu.",
+      "script": "narrateur|Sarah a dit pardon.\nnarrateur|Elle a proposé un geste.\nnarrateur|Elle a tendu un cube.\nmaman|Bravo, Sarah.\nmaman|La peine de Nino reste un peu.\nenfant-f|J'ai dit pardon.\nmaman|Oui.\nmaman|Et tu as attendu.",
       "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Sarah a dit pardon. Elle a proposé un geste. Elle a tendu un cube. Bravo, Sarah. La peine de Nino reste un peu. J'ai dit pardon. Oui. Et tu as attendu."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END",
@@ -51,12 +52,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai dit pardon. J'ai tendu un cube. Bravo. Tu as fait du bon travail. Le rond de lampe est encore chaud. L'histoire est finie.",
-      "script": "enfant-f|J'ai dit pardon.\nenfant-f|J'ai tendu un cube.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|Le rond de lampe est encore chaud.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai dit pardon. J'ai tendu un cube. Bravo. Le rond de lampe est encore chaud.",
+      "script": "enfant-f|J'ai dit pardon.\nenfant-f|J'ai tendu un cube.\nmaman|Bravo.\nnarrateur|Le rond de lampe est encore chaud.",
       "sons": "",
       "length_scale_piper": 1.26,
       "rate_label": "slow",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai dit pardon. J'ai tendu un cube. Bravo. Le rond de lampe est encore chaud."
     }
   ]
 }

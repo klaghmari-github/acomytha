@@ -31,12 +31,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Nino a dit stop. Au bac, puis aux balançoires. Il a pu s'éloigner. Il a rejoint le parent au parc. Tu es venu vers moi, deux fois. Bravo. Tu as fini de souffler ? Oui, papa. C'est du bon travail. Nino pose la feuille sèche sur le banc. Elle est légère, toute croustillante.",
-      "script": "narrateur|Nino a dit stop.\nnarrateur|Au bac, puis aux balançoires.\nnarrateur|Il a pu s'éloigner.\nnarrateur|Il a rejoint le parent au parc.\npapa|Tu es venu vers moi, deux fois.\npapa|Bravo.\npapa|Tu as fini de souffler ?\nenfant-m|Oui, papa.\npapa|C'est du bon travail.\nnarrateur|Nino pose la feuille sèche sur le banc.\nnarrateur|Elle est légère, toute croustillante.",
+      "text": "Nino a dit stop. Au bac, puis aux balançoires. Il a pu s'éloigner. Il a rejoint le parent au parc. Tu es venu vers moi, deux fois. Bravo. Tu as fini de souffler ? Oui, papa. Nino pose la feuille sèche sur le banc. Elle est légère, toute croustillante.",
+      "script": "narrateur|Nino a dit stop.\nnarrateur|Au bac, puis aux balançoires.\nnarrateur|Il a pu s'éloigner.\nnarrateur|Il a rejoint le parent au parc.\npapa|Tu es venu vers moi, deux fois.\npapa|Bravo.\npapa|Tu as fini de souffler ?\nenfant-m|Oui, papa.\nnarrateur|Nino pose la feuille sèche sur le banc.\nnarrateur|Elle est légère, toute croustillante.",
       "sons": "enfants_parc",
       "length_scale_piper": 1.12,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Nino a dit stop. Au bac, puis aux balançoires. Il a pu s'éloigner. Il a rejoint le parent au parc. Tu es venu vers moi, deux fois. Bravo. Tu as fini de souffler ? Oui, papa. Nino pose la feuille sèche sur le banc. Elle est légère, toute croustillante."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END",
@@ -51,12 +52,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai dit stop. Je suis venu vers toi. Bravo, Nino. Tu as fait du bon travail. Les chaînes tintent encore un peu. L'histoire est finie.",
-      "script": "enfant-m|J'ai dit stop.\nenfant-m|Je suis venu vers toi.\npapa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nnarrateur|Les chaînes tintent encore un peu.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai dit stop. Je suis venu vers toi. Bravo, Nino. Les chaînes tintent encore un peu.",
+      "script": "enfant-m|J'ai dit stop.\nenfant-m|Je suis venu vers toi.\npapa|Bravo, Nino.\nnarrateur|Les chaînes tintent encore un peu.",
       "sons": null,
       "length_scale_piper": 1.2,
       "rate_label": "medium",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai dit stop. Je suis venu vers toi. Bravo, Nino. Les chaînes tintent encore un peu."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "fil_rouge": "Aniss veut une tour bien droite. Elle tombe. Il souffle, fait une pause, puis va chercher le pain chaud avec papa.",
   "title": "La tour d'Aniss et le pain chaud",
   "lesson_id": "EMO.GES.002",
-  "secondary_lessons": "EMO.LEX.007",
+  "secondary_lessons": "",
   "age_band": "N3",
   "kind": "atomic",
   "characters": "Aniss, papa, maman",
@@ -42,22 +42,24 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Aniss tient le pain encore tiède. Le papier craque un peu entre ses mains. Tu as attendu. Tu as soufflé. Tu as fait du bon travail. Le pain est chaud, papa. On rentre le montrer à maman ? Oui. Ils marchent. La pluie est fine. Aniss serre le pain contre son manteau. La maison n'est plus très loin.",
-      "script": "narrateur|Aniss tient le pain encore tiède.\nnarrateur|Le papier craque un peu entre ses mains.\npapa|Tu as attendu. Tu as soufflé.\npapa|Tu as fait du bon travail.\nenfant-m|Le pain est chaud, papa.\npapa|On rentre le montrer à maman ?\nenfant-m|Oui.\nnarrateur|Ils marchent. La pluie est fine.\nnarrateur|Aniss serre le pain contre son manteau.\nnarrateur|La maison n'est plus très loin.",
+      "text": "Aniss tient le pain encore tiède. Le papier craque un peu entre ses mains. Tu as attendu. Tu as soufflé. Le pain est chaud, papa. On rentre le montrer à maman ? Oui. Ils marchent. La pluie est fine. Aniss serre le pain contre son manteau. La maison n'est plus très loin.",
+      "script": "narrateur|Aniss tient le pain encore tiède.\nnarrateur|Le papier craque un peu entre ses mains.\npapa|Tu as attendu. Tu as soufflé.\nenfant-m|Le pain est chaud, papa.\npapa|On rentre le montrer à maman ?\nenfant-m|Oui.\nnarrateur|Ils marchent. La pluie est fine.\nnarrateur|Aniss serre le pain contre son manteau.\nnarrateur|La maison n'est plus très loin.",
       "sons": "pluie,papier",
       "length_scale_piper": 1.12,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Aniss tient le pain encore tiède. Le papier craque un peu entre ses mains. Tu as attendu. Tu as soufflé. Le pain est chaud, papa. On rentre le montrer à maman ? Oui. Ils marchent. La pluie est fine. Aniss serre le pain contre son manteau. La maison n'est plus très loin."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Aniss. Le pain est là. Vous voilà. Ça sent bon, tout le salon. L'histoire est finie.",
-      "script": "enfant-m|J'ai soufflé. J'ai fait une pause.\npapa|Bravo, Aniss.\nmaman|Le pain est là. Vous voilà.\nmaman|Ça sent bon, tout le salon.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Aniss. Le pain est là. Vous voilà. Ça sent bon, tout le salon.",
+      "script": "enfant-m|J'ai soufflé. J'ai fait une pause.\npapa|Bravo, Aniss.\nmaman|Le pain est là. Vous voilà.\nmaman|Ça sent bon, tout le salon.",
       "sons": "",
       "length_scale_piper": 1.2,
       "rate_label": "medium",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai soufflé. J'ai fait une pause. Bravo, Aniss. Le pain est là. Vous voilà. Ça sent bon, tout le salon."
     }
   ]
 }

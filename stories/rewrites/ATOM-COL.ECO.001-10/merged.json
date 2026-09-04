@@ -79,8 +79,8 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai vu le bateau. J'ai écouté. Puis j'ai raconté. On t'a écouté. Bravo, Chouchou. L'histoire est finie.",
-      "script": "enfant-m|J'ai vu le bateau.\nenfant-m|J'ai écouté.\nenfant-m|Puis j'ai raconté.\nmaman|On t'a écouté.\npapa|Bravo, Chouchou.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai vu le bateau. J'ai écouté. Puis j'ai raconté. On t'a écouté. Bravo, Chouchou.",
+      "script": "enfant-m|J'ai vu le bateau.\nenfant-m|J'ai écouté.\nenfant-m|Puis j'ai raconté.\nmaman|On t'a écouté.\npapa|Bravo, Chouchou.",
       "sons": "",
       "length_scale_piper": 1.36,
       "rate_label": "slow",
@@ -91,7 +91,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"low\">L'histoire est finie.</prosody><break time=\"600ms\"/></speak>"
+      "text_ssml": "J'ai vu le bateau. J'ai écouté. Puis j'ai raconté. On t'a écouté. Bravo, Chouchou."
     }
   ]
 }

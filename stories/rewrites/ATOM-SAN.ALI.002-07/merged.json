@@ -22,8 +22,8 @@
     {
       "chunk_id": "CHK_T0000_P0000_Q0001",
       "kind": "passage_question",
-      "text": "Sarah mange. Où est-elle, et comment ?",
-      "script": "narrateur|Sarah mange.\nnarrateur|Où est-elle, et comment ?",
+      "text": "La soupe attend. Sarah est où ?",
+      "script": "narrateur|La soupe attend.\nnarrateur|Sarah est où ?",
       "sons": "",
       "length_scale_piper": 1.3,
       "rate_label": "slow",
@@ -42,22 +42,24 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Papa coupe le pain. Le pain croustille. Tu prends ta cuillère ? Sarah prend sa cuillère. Tu attends un peu. C'est chaud. Elle attend un peu. Elle goûte. C'est chaud. C'est doux. Bravo, Sarah. Tu as goûté. C'est du bon travail. Bon appétit. Bon appétit, Sarah. Ils mangent ensemble. Sarah reste assise. Encore une petite cuillère ? Encore une cuillère. Tu restes assise. Bravo. Merci, maman. Merci, papa. Merci, Sarah. Elle boit une gorgée. Elle reste assise jusqu'à la fin.",
-      "script": "narrateur|Papa coupe le pain.\nnarrateur|Le pain croustille.\nmaman|Tu prends ta cuillère ?\nnarrateur|Sarah prend sa cuillère.\npapa|Tu attends un peu. C'est chaud.\nnarrateur|Elle attend un peu.\nnarrateur|Elle goûte.\nenfant-f|C'est chaud.\nenfant-f|C'est doux.\nmaman|Bravo, Sarah.\nmaman|Tu as goûté.\nmaman|C'est du bon travail.\npapa|Bon appétit.\nmaman|Bon appétit, Sarah.\nnarrateur|Ils mangent ensemble.\nnarrateur|Sarah reste assise.\npapa|Encore une petite cuillère ?\nnarrateur|Encore une cuillère.\npapa|Tu restes assise. Bravo.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nmaman|Merci, Sarah.\nnarrateur|Elle boit une gorgée.\nnarrateur|Elle reste assise jusqu'à la fin.",
+      "text": "Papa coupe le pain. Le pain croustille. Tu prends ta cuillère ? Sarah prend sa cuillère. Tu attends un peu. C'est chaud. Elle attend un peu. Elle goûte. C'est chaud. C'est doux. Bravo, Sarah. Tu as goûté. Bon appétit. Bon appétit, Sarah. Ils mangent ensemble. Sarah reste assise. Encore une petite cuillère ? Encore une cuillère. Tu restes assise. Bravo. Merci, maman. Merci, papa. Merci, Sarah. Elle boit une gorgée. Elle reste assise jusqu'à la fin. Tu as fini ta soupe ? Un peu. Une petite portion, c'est assez. Tu restes à table avec nous ? Oui, papa. Bravo. Le torchon orange ne bouge plus. La casserole se repose.",
+      "script": "narrateur|Papa coupe le pain.\nnarrateur|Le pain croustille.\nmaman|Tu prends ta cuillère ?\nnarrateur|Sarah prend sa cuillère.\npapa|Tu attends un peu. C'est chaud.\nnarrateur|Elle attend un peu.\nnarrateur|Elle goûte.\nenfant-f|C'est chaud.\nenfant-f|C'est doux.\nmaman|Bravo, Sarah.\nmaman|Tu as goûté.\npapa|Bon appétit.\nmaman|Bon appétit, Sarah.\nnarrateur|Ils mangent ensemble.\nnarrateur|Sarah reste assise.\npapa|Encore une petite cuillère ?\nnarrateur|Encore une cuillère.\npapa|Tu restes assise. Bravo.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nmaman|Merci, Sarah.\nnarrateur|Elle boit une gorgée.\nnarrateur|Elle reste assise jusqu'à la fin.\nmaman|Tu as fini ta soupe ?\nenfant-f|Un peu.\nmaman|Une petite portion, c'est assez.\npapa|Tu restes à table avec nous ?\nenfant-f|Oui, papa.\npapa|Bravo.\nnarrateur|Le torchon orange ne bouge plus.\nnarrateur|La casserole se repose.",
       "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Papa coupe le pain. Le pain croustille. Tu prends ta cuillère ? Sarah prend sa cuillère. Tu attends un peu. C'est chaud. Elle attend un peu. Elle goûte. C'est chaud. C'est doux. Bravo, Sarah. Tu as goûté. Bon appétit. Bon appétit, Sarah. Ils mangent ensemble. Sarah reste assise. Encore une petite cuillère ? Encore une cuillère. Tu restes assise. Bravo. Merci, maman. Merci, papa. Merci, Sarah. Elle boit une gorgée. Elle reste assise jusqu'à la fin. Tu as fini ta soupe ? Un peu. Une petite portion, c'est assez. Tu restes à table avec nous ? Oui, papa. Bravo. Le torchon orange ne bouge plus. La casserole se repose."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "La fumée s'en va. Le torchon orange ne bouge plus. On a mangé assis, ensemble. C'était doux. Bravo. Tu as fait du bon travail. L'histoire est finie.",
-      "script": "narrateur|La fumée s'en va.\nnarrateur|Le torchon orange ne bouge plus.\npapa|On a mangé assis, ensemble.\nenfant-f|C'était doux.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "text": "La fumée s'en va. Le torchon orange ne bouge plus. On a mangé assis, ensemble. C'était doux. Bravo.",
+      "script": "narrateur|La fumée s'en va.\nnarrateur|Le torchon orange ne bouge plus.\npapa|On a mangé assis, ensemble.\nenfant-f|C'était doux.\nmaman|Bravo.",
       "sons": "",
       "length_scale_piper": 1.26,
       "rate_label": "slow",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "La fumée s'en va. Le torchon orange ne bouge plus. On a mangé assis, ensemble. C'était doux. Bravo."
     }
   ]
 }

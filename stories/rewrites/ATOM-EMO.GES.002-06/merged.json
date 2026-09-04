@@ -42,22 +42,24 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Sarah range un cube dans le panier. Le verre d'eau fait un petit bruit. Tu veux une gorgée ? Oui, papa. Tu as fini la petite tour ? Oui. Et une pièce du puzzle. Tu as soufflé. Tu as fait une pause. Tu as fait du bon travail. Les chaussettes sont sèches. La lampe ronde veille encore.",
-      "script": "narrateur|Sarah range un cube dans le panier.\nnarrateur|Le verre d'eau fait un petit bruit.\npapa|Tu veux une gorgée ?\nenfant-f|Oui, papa.\nmaman|Tu as fini la petite tour ?\nenfant-f|Oui. Et une pièce du puzzle.\nmaman|Tu as soufflé. Tu as fait une pause.\npapa|Tu as fait du bon travail.\nnarrateur|Les chaussettes sont sèches.\nnarrateur|La lampe ronde veille encore.",
+      "text": "Sarah range un cube dans le panier. Le verre d'eau fait un petit bruit. Tu veux une gorgée ? Oui, papa. Tu as fini la petite tour ? Oui. Et une pièce du puzzle. Tu as soufflé. Tu as fait une pause. Les chaussettes sont sèches. La lampe ronde veille encore.",
+      "script": "narrateur|Sarah range un cube dans le panier.\nnarrateur|Le verre d'eau fait un petit bruit.\npapa|Tu veux une gorgée ?\nenfant-f|Oui, papa.\nmaman|Tu as fini la petite tour ?\nenfant-f|Oui. Et une pièce du puzzle.\nmaman|Tu as soufflé. Tu as fait une pause.\nnarrateur|Les chaussettes sont sèches.\nnarrateur|La lampe ronde veille encore.",
       "sons": "verre_eau",
       "length_scale_piper": 1.12,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Sarah range un cube dans le panier. Le verre d'eau fait un petit bruit. Tu veux une gorgée ? Oui, papa. Tu as fini la petite tour ? Oui. Et une pièce du puzzle. Tu as soufflé. Tu as fait une pause. Les chaussettes sont sèches. La lampe ronde veille encore."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Sarah. La tour tient. Le puzzle attend demain. L'histoire est finie.",
-      "script": "enfant-f|J'ai soufflé. J'ai fait une pause.\nmaman|Bravo, Sarah.\npapa|La tour tient. Le puzzle attend demain.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Sarah. La tour tient. Le puzzle attend demain.",
+      "script": "enfant-f|J'ai soufflé. J'ai fait une pause.\nmaman|Bravo, Sarah.\npapa|La tour tient. Le puzzle attend demain.",
       "sons": "",
       "length_scale_piper": 1.2,
       "rate_label": "medium",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai soufflé. J'ai fait une pause. Bravo, Sarah. La tour tient. Le puzzle attend demain."
     }
   ]
 }

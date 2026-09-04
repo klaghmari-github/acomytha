@@ -42,22 +42,24 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Nina pose un cube sur le bord. Le pont, au salon, est petit. Il tient, papa. Oui. Tu as fini de ranger ce cube ? Oui. La soupe attend. Tu t'assois ? Nina s'assoit à table. Le pain est encore chaud. Tu as soufflé. Tu as fait du bon travail. La pluie fait encore des petits coups.",
-      "script": "narrateur|Nina pose un cube sur le bord.\nnarrateur|Le pont, au salon, est petit.\nenfant-f|Il tient, papa.\npapa|Oui. Tu as fini de ranger ce cube ?\nenfant-f|Oui.\nmaman|La soupe attend. Tu t'assois ?\nnarrateur|Nina s'assoit à table.\nnarrateur|Le pain est encore chaud.\npapa|Tu as soufflé. Tu as fait du bon travail.\nnarrateur|La pluie fait encore des petits coups.",
+      "text": "Nina pose un cube sur le bord. Le pont, au salon, est petit. Il tient, papa. Oui. Tu as fini de ranger ce cube ? Oui. La soupe attend. Tu t'assois ? Nina s'assoit à table. Le pain est encore chaud. La pluie fait encore des petits coups.",
+      "script": "narrateur|Nina pose un cube sur le bord.\nnarrateur|Le pont, au salon, est petit.\nenfant-f|Il tient, papa.\npapa|Oui. Tu as fini de ranger ce cube ?\nenfant-f|Oui.\nmaman|La soupe attend. Tu t'assois ?\nnarrateur|Nina s'assoit à table.\nnarrateur|Le pain est encore chaud.\nnarrateur|La pluie fait encore des petits coups.",
       "sons": "soupe",
       "length_scale_piper": 1.12,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Nina pose un cube sur le bord. Le pont, au salon, est petit. Il tient, papa. Oui. Tu as fini de ranger ce cube ? Oui. La soupe attend. Tu t'assois ? Nina s'assoit à table. Le pain est encore chaud. La pluie fait encore des petits coups."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Nina. Le pont est petit. La soupe est là. L'histoire est finie.",
-      "script": "enfant-f|J'ai soufflé. J'ai fait une pause.\nmaman|Bravo, Nina.\npapa|Le pont est petit. La soupe est là.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Nina. Le pont est petit. La soupe est là.",
+      "script": "enfant-f|J'ai soufflé. J'ai fait une pause.\nmaman|Bravo, Nina.\npapa|Le pont est petit. La soupe est là.",
       "sons": "",
       "length_scale_piper": 1.2,
       "rate_label": "medium",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai soufflé. J'ai fait une pause. Bravo, Nina. Le pont est petit. La soupe est là."
     }
   ]
 }

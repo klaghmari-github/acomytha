@@ -31,12 +31,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Chouchou a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo. Tu as mis le pyjama ? Oui. Le pyjama. Bravo, Chouchou. Tu as fait du bon travail. On reste tout près. La chambre est calme.",
-      "script": "narrateur|Chouchou a mis le pyjama.\nnarrateur|Elle s'est couchée.\nnarrateur|Le soir, c'est le dodo.\nmaman|Tu as mis le pyjama ?\nenfant-f|Oui.\nenfant-f|Le pyjama.\npapa|Bravo, Chouchou.\npapa|Tu as fait du bon travail.\nmaman|On reste tout près.\nnarrateur|La chambre est calme.",
+      "text": "Chouchou a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo. Tu as mis le pyjama ? Oui. Le pyjama. Bravo, Chouchou. On reste tout près. La chambre est calme.",
+      "script": "narrateur|Chouchou a mis le pyjama.\nnarrateur|Elle s'est couchée.\nnarrateur|Le soir, c'est le dodo.\nmaman|Tu as mis le pyjama ?\nenfant-f|Oui.\nenfant-f|Le pyjama.\npapa|Bravo, Chouchou.\nmaman|On reste tout près.\nnarrateur|La chambre est calme.",
       "sons": "",
       "length_scale_piper": 1.18,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Chouchou a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo. Tu as mis le pyjama ? Oui. Le pyjama. Bravo, Chouchou. On reste tout près. La chambre est calme."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END",
@@ -51,12 +52,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai mis le pyjama. C'est le dodo. Bravo. Tu as fait du bon travail. Le livre reste fermé sur le canapé. L'histoire est finie.",
-      "script": "enfant-f|J'ai mis le pyjama.\nenfant-f|C'est le dodo.\nmaman|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|Le livre reste fermé sur le canapé.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai mis le pyjama. C'est le dodo. Bravo. Le livre reste fermé sur le canapé.",
+      "script": "enfant-f|J'ai mis le pyjama.\nenfant-f|C'est le dodo.\nmaman|Bravo.\nnarrateur|Le livre reste fermé sur le canapé.",
       "sons": "",
       "length_scale_piper": 1.26,
       "rate_label": "slow",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai mis le pyjama. C'est le dodo. Bravo. Le livre reste fermé sur le canapé."
     }
   ]
 }

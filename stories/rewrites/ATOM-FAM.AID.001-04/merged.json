@@ -31,12 +31,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Mila est allée vers maman. Puis vers papa. Elle a dit le besoin. Tu es venue me le dire. Bravo. Tu as dit : le pot est collé. C'est du bon travail, Mila. Merci. La perle bleue brille encore. Le fil de soleil reste sur le torchon.",
-      "script": "narrateur|Mila est allée vers maman.\nnarrateur|Puis vers papa.\nnarrateur|Elle a dit le besoin.\nmaman|Tu es venue me le dire.\nmaman|Bravo.\npapa|Tu as dit : le pot est collé.\npapa|C'est du bon travail, Mila.\nenfant-f|Merci.\nnarrateur|La perle bleue brille encore.\nnarrateur|Le fil de soleil reste sur le torchon.",
+      "text": "Mila est allée vers maman. Puis vers papa. Elle a dit le besoin. Tu es venue me le dire. Bravo. Tu as dit : le pot est collé. Merci. La perle bleue brille encore. Le fil de soleil reste sur le torchon.",
+      "script": "narrateur|Mila est allée vers maman.\nnarrateur|Puis vers papa.\nnarrateur|Elle a dit le besoin.\nmaman|Tu es venue me le dire.\nmaman|Bravo.\npapa|Tu as dit : le pot est collé.\nenfant-f|Merci.\nnarrateur|La perle bleue brille encore.\nnarrateur|Le fil de soleil reste sur le torchon.",
       "sons": null,
       "length_scale_piper": 1.18,
       "rate_label": "medium",
-      "pause_after_ms": 450
+      "pause_after_ms": 450,
+      "text_ssml": "Mila est allée vers maman. Puis vers papa. Elle a dit le besoin. Tu es venue me le dire. Bravo. Tu as dit : le pot est collé. Merci. La perle bleue brille encore. Le fil de soleil reste sur le torchon."
     },
     {
       "chunk_id": "CHK_T0000_P0000_END",
@@ -51,12 +52,13 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai dit le besoin. Oui. Tu es venue vers nous. Bravo, Mila. Tu as fait du bon travail. Les perles dorment à nouveau. L'histoire est finie.",
-      "script": "enfant-f|J'ai dit le besoin.\nmaman|Oui. Tu es venue vers nous.\npapa|Bravo, Mila.\npapa|Tu as fait du bon travail.\nnarrateur|Les perles dorment à nouveau.\nnarrateur|L'histoire est finie.",
+      "text": "J'ai dit le besoin. Oui. Tu es venue vers nous. Bravo, Mila. Les perles dorment à nouveau.",
+      "script": "enfant-f|J'ai dit le besoin.\nmaman|Oui. Tu es venue vers nous.\npapa|Bravo, Mila.\nnarrateur|Les perles dorment à nouveau.",
       "sons": null,
       "length_scale_piper": 1.26,
       "rate_label": "slow",
-      "pause_after_ms": 600
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai dit le besoin. Oui. Tu es venue vers nous. Bravo, Mila. Les perles dorment à nouveau."
     }
   ]
 }
