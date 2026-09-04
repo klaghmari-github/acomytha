@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-AUT-003",
+  "fil_rouge": "Nino va au parc avec papa et maman. Une goutte brille encore sur la vitre. Ses affaires sont dans la maison. Il les reprend avant de partir.",
+  "title": "La goutte sur la vitre",
+  "lesson_id": "AUT.AFF.003",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Nino, papa, maman",
+  "setting": "dans le salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une goutte glisse sur la vitre. Elle laisse une trace brillante. Le salon sent le cacao. Un carré de soleil pose sur le tapis. Le tapis est chaud, juste là. Les chaussons de Nino attendent près du canapé. Papa ouvre le placard de l'entrée. Les crochets font un petit cliquetis. Nino, on sort bientôt. On va au parc, avec papa. J'arrive, maman. Une cuillère tinte dans une tasse. En ce moment, Nino est dans le salon. Il voit le seau près de la porte. Le seau est bleu, un peu sablé. Le manteau est sur une chaise. Le doudou cache son oreille sous un coussin. Tes affaires sont prêtes, Nino ? Je sais plus, papa. On les reprend ensemble. Nino pose un pied sur le tapis chaud. Il regarde la cuisine. Il regarde la porte du jardin. Il regarde le couloir de la chambre.",
+      "script": "narrateur|Une goutte glisse sur la vitre.\nnarrateur|Elle laisse une trace brillante.\nnarrateur|Le salon sent le cacao.\nnarrateur|Un carré de soleil pose sur le tapis.\nnarrateur|Le tapis est chaud, juste là.\nnarrateur|Les chaussons de Nino attendent près du canapé.\nnarrateur|Papa ouvre le placard de l'entrée.\nnarrateur|Les crochets font un petit cliquetis.\nmaman|Nino, on sort bientôt.\nmaman|On va au parc, avec papa.\nenfant-m|J'arrive, maman.\nnarrateur|Une cuillère tinte dans une tasse.\nnarrateur|En ce moment, Nino est dans le salon.\nnarrateur|Il voit le seau près de la porte.\nnarrateur|Le seau est bleu, un peu sablé.\nnarrateur|Le manteau est sur une chaise.\nnarrateur|Le doudou cache son oreille sous un coussin.\npapa|Tes affaires sont prêtes, Nino ?\nenfant-m|Je sais plus, papa.\npapa|On les reprend ensemble.\nnarrateur|Nino pose un pied sur le tapis chaud.\nnarrateur|Il regarde la cuisine.\nnarrateur|Il regarde la porte du jardin.\nnarrateur|Il regarde le couloir de la chambre.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "Nino cherche où, d'abord ? La cuisine, le jardin, ou la chambre ? Tu choisis, Nino.",
+      "script": "narrateur|Nino cherche où, d'abord ?\npapa|La cuisine, le jardin, ou la chambre ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Nino pousse la porte de la cuisine. Ça sent le cacao, plus fort. La table est un peu collante. Un gant rouge est près de la tasse. Le gant est sur la table. Tu le prends, Nino ? Oui. Je le prends. Nino prend le gant. Il est doux et encore un peu chaud. Il le serre contre lui. Bravo, Nino. Tu reprends tes affaires, avant de partir. La table est vide, maintenant. On cherche aussi le seau et le manteau. D'accord, maman.",
+      "script": "narrateur|Nino pousse la porte de la cuisine.\nnarrateur|Ça sent le cacao, plus fort.\nnarrateur|La table est un peu collante.\nnarrateur|Un gant rouge est près de la tasse.\nmaman|Le gant est sur la table.\nmaman|Tu le prends, Nino ?\nenfant-m|Oui. Je le prends.\nnarrateur|Nino prend le gant.\nnarrateur|Il est doux et encore un peu chaud.\nnarrateur|Il le serre contre lui.\npapa|Bravo, Nino.\npapa|Tu reprends tes affaires, avant de partir.\nnarrateur|La table est vide, maintenant.\nmaman|On cherche aussi le seau et le manteau.\nenfant-m|D'accord, maman.",
+      "sons": "chaise",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Avant de partir, Nino reprend ses affaires ?",
+      "script": "narrateur|Avant de partir, Nino reprend ses affaires ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino a repris le gant. Il le tient bien. Bravo. C'est du bon travail. Avant de partir, on reprend ses affaires. Tu as le gant, Nino ? Oui, papa. Nino souffle un peu. Il est prêt à chercher encore.",
+      "script": "narrateur|Oui.\nnarrateur|Nino a repris le gant.\nnarrateur|Il le tient bien.\nmaman|Bravo. C'est du bon travail.\nmaman|Avant de partir, on reprend ses affaires.\npapa|Tu as le gant, Nino ?\nenfant-m|Oui, papa.\nnarrateur|Nino souffle un peu.\nnarrateur|Il est prêt à chercher encore.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Il reste un objet, dans la cuisine. Le ballon rouge, le seau bleu, ou le doudou ?",
+      "script": "narrateur|Il reste un objet, dans la cuisine.\nmaman|Le ballon rouge, le seau bleu, ou le doudou ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino est encore dans la cuisine. Ça sent encore le cacao. Le ballon rouge est sous la table. Il a une miette collée dessus. Le ballon, Nino. Tu le reprends ? Oui. Le ballon rouge. Nino le fait rouler tout doux, jusqu'à lui. Bravo. Tu le mets près de la porte. Le ballon est lisse, un peu poussiéreux. Nino pose le ballon rouge près de la porte. Le carrelage est un peu froid. Nino souffle sur le ballon. Un peu de poussière part. Tu as repris le ballon, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la cuisine.\nnarrateur|Ça sent encore le cacao.\nnarrateur|Le ballon rouge est sous la table.\nnarrateur|Il a une miette collée dessus.\nmaman|Le ballon, Nino. Tu le reprends ?\nenfant-m|Oui. Le ballon rouge.\nnarrateur|Nino le fait rouler tout doux, jusqu'à lui.\npapa|Bravo. Tu le mets près de la porte.\nnarrateur|Le ballon est lisse, un peu poussiéreux.\nnarrateur|Nino pose le ballon rouge près de la porte.\nnarrateur|Le carrelage est un peu froid.\nnarrateur|Nino souffle sur le ballon. Un peu de poussière part.\npapa|Tu as repris le ballon, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le ballon rouge. Maintenant, le sac. Une feuille collée à la vitre se détache. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Bravo, Nino. Tes affaires sont près de la porte. J'ai le sac ! Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le sac.\nnarrateur|Une feuille collée à la vitre se détache.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\npapa|Bravo, Nino. Tes affaires sont près de la porte.\nenfant-m|J'ai le sac !\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'air du parc sent l'herbe coupée. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|L'air du parc sent l'herbe coupée.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le ballon rouge. Maintenant, le manteau. Le cacao fume encore, tout petit. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Tu as repris tes affaires. C'est du bon travail. Mon manteau, maman. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le manteau.\nnarrateur|Le cacao fume encore, tout petit.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\nmaman|Tu as repris tes affaires. C'est du bon travail.\nenfant-m|Mon manteau, maman.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Une flaque brille devant le portail. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Une flaque brille devant le portail.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le ballon rouge. Maintenant, les chaussures. Un oiseau tape deux fois sur la gouttière. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. On peut partir. Tu as repris ce qu'il fallait. Mes chaussures, papa. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Un oiseau tape deux fois sur la gouttière.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\npapa|On peut partir. Tu as repris ce qu'il fallait.\nenfant-m|Mes chaussures, papa.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Le pain du matin sent encore, tout loin. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le pain du matin sent encore, tout loin.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino est encore dans la cuisine. Ça sent encore le cacao. Le seau bleu est près de l'évier. Une goutte tombe dedans. Ploc. Le seau, Nino. Tu le reprends avant de partir ? Oui, papa. Le seau. Nino le soulève. Il est léger. Bravo. Tu le mets près de la porte. Le seau est sablé, léger. Nino pose le seau bleu près de la porte. Le carrelage est un peu froid. Nino tapote le bord du seau. Ça fait toc. Tu as repris le seau, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la cuisine.\nnarrateur|Ça sent encore le cacao.\nnarrateur|Le seau bleu est près de l'évier.\nnarrateur|Une goutte tombe dedans. Ploc.\npapa|Le seau, Nino. Tu le reprends avant de partir ?\nenfant-m|Oui, papa. Le seau.\nnarrateur|Nino le soulève. Il est léger.\nmaman|Bravo. Tu le mets près de la porte.\nnarrateur|Le seau est sablé, léger.\nnarrateur|Nino pose le seau bleu près de la porte.\nnarrateur|Le carrelage est un peu froid.\nnarrateur|Nino tapote le bord du seau. Ça fait toc.\nmaman|Tu as repris le seau, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le seau bleu. Maintenant, le sac. Le tapis garde un carré de soleil. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Avant de partir, tu as bien cherché. Bravo. C'est prêt. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le sac.\nnarrateur|Le tapis garde un carré de soleil.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\nmaman|Avant de partir, tu as bien cherché. Bravo.\nenfant-m|C'est prêt.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Un vélo passe, tout doux. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Un vélo passe, tout doux.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le seau bleu. Maintenant, le manteau. Les crochets de l'entrée font tic. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Le sac est prêt. Bravo, Nino. On peut partir ? Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le manteau.\nnarrateur|Les crochets de l'entrée font tic.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\npapa|Le sac est prêt. Bravo, Nino.\nenfant-m|On peut partir ?\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Le seau tape un peu la jambe de Nino. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le seau tape un peu la jambe de Nino.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le seau bleu. Maintenant, les chaussures. Une cuillère tinte, loin, dans la cuisine. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. Le manteau est bon. Tu as fait du bon travail. J'ai tout. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Une cuillère tinte, loin, dans la cuisine.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\nmaman|Le manteau est bon. Tu as fait du bon travail.\nenfant-m|J'ai tout.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Le manteau fait un bruit de tissu. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le manteau fait un bruit de tissu.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino est encore dans la cuisine. Ça sent encore le cacao. Le doudou est sur une chaise. Il sent un peu le cacao. Ton doudou, Nino. Tu le reprends ? Oui. Mon doudou. Nino le serre contre sa joue. Bravo. Tu le mets près de la porte. Le doudou est chaud, un peu froissé. Nino serre le doudou, puis le pose près de la porte. Le carrelage est un peu froid. Nino remet l'oreille du doudou à sa place. Tu as repris le doudou, avant de partir. Il vient avec moi. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la cuisine.\nnarrateur|Ça sent encore le cacao.\nnarrateur|Le doudou est sur une chaise.\nnarrateur|Il sent un peu le cacao.\nmaman|Ton doudou, Nino. Tu le reprends ?\nenfant-m|Oui. Mon doudou.\nnarrateur|Nino le serre contre sa joue.\npapa|Bravo. Tu le mets près de la porte.\nnarrateur|Le doudou est chaud, un peu froissé.\nnarrateur|Nino serre le doudou, puis le pose près de la porte.\nnarrateur|Le carrelage est un peu froid.\nnarrateur|Nino remet l'oreille du doudou à sa place.\npapa|Tu as repris le doudou, avant de partir.\nenfant-m|Il vient avec moi.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le doudou. Maintenant, le sac. Le banc du jardin brille encore. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Les chaussures sont mises. Bravo. Le doudou vient. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le sac.\nnarrateur|Le banc du jardin brille encore.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\npapa|Les chaussures sont mises. Bravo.\nenfant-m|Le doudou vient.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Les chaussures font toc toc sur le gravier. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Les chaussures font toc toc sur le gravier.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le doudou. Maintenant, le manteau. Une goutte tombe du rebord. Ploc. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Tu as repris le seau et le manteau. Bravo. Le seau est là. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le manteau.\nnarrateur|Une goutte tombe du rebord. Ploc.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\nmaman|Tu as repris le seau et le manteau. Bravo.\nenfant-m|Le seau est là.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Le doudou regarde la rue, une oreille en l'air. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le doudou regarde la rue, une oreille en l'air.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la cuisine. Il a repris le doudou. Maintenant, les chaussures. Le rideau bouge un peu, tout seul. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. On a tout, Nino. On peut ouvrir la porte. Le ballon aussi. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la cuisine.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Le rideau bouge un peu, tout seul.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\npapa|On a tout, Nino. On peut ouvrir la porte.\nenfant-m|Le ballon aussi.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Le ballon rouge rebondit une fois, contre la hanche. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le ballon rouge rebondit une fois, contre la hanche.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Nino ouvre la porte du jardin. L'air sent la terre mouillée. L'herbe brille encore. Un chapeau est sur le banc. Le chapeau est sur le banc, Nino. Tu le prends ? Oui, papa. Nino marche sur les dalles froides. Il prend le chapeau. Le ruban est un peu humide. Bravo. Tu reprends tes affaires. C'est avant de partir. Un oiseau crie une fois, tout près. On cherche aussi le seau et le manteau. Je cherche, papa.",
+      "script": "narrateur|Nino ouvre la porte du jardin.\nnarrateur|L'air sent la terre mouillée.\nnarrateur|L'herbe brille encore.\nnarrateur|Un chapeau est sur le banc.\npapa|Le chapeau est sur le banc, Nino.\npapa|Tu le prends ?\nenfant-m|Oui, papa.\nnarrateur|Nino marche sur les dalles froides.\nnarrateur|Il prend le chapeau.\nnarrateur|Le ruban est un peu humide.\nmaman|Bravo. Tu reprends tes affaires.\nmaman|C'est avant de partir.\nnarrateur|Un oiseau crie une fois, tout près.\npapa|On cherche aussi le seau et le manteau.\nenfant-m|Je cherche, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On reprend quoi, avant de partir ?",
+      "script": "narrateur|On reprend quoi, avant de partir ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino a repris le chapeau. Il le met près de lui. Bravo, Nino. Tu as fait du bon travail. Avant de partir, on reprend ses affaires. Le chapeau est là. Nino essuie ses mains sur son pantalon. Il regarde encore le jardin.",
+      "script": "narrateur|Oui.\nnarrateur|Nino a repris le chapeau.\nnarrateur|Il le met près de lui.\npapa|Bravo, Nino. Tu as fait du bon travail.\nmaman|Avant de partir, on reprend ses affaires.\nenfant-m|Le chapeau est là.\nnarrateur|Nino essuie ses mains sur son pantalon.\nnarrateur|Il regarde encore le jardin.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Quel objet Nino reprend, dans le jardin ? Le ballon rouge, le seau bleu, ou le doudou ?",
+      "script": "narrateur|Quel objet Nino reprend, dans le jardin ?\npapa|Le ballon rouge, le seau bleu, ou le doudou ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino est encore dans le jardin. L'air sent la terre mouillée. Le ballon rouge est dans l'herbe. Il est un peu mouillé, tout brillant. Le ballon, Nino. Tu le reprends ? Oui. Il est froid ! Nino le prend à deux mains. Bravo. Tu le mets près de la porte. Le ballon est lisse, un peu poussiéreux. Nino pose le ballon rouge près de la porte. L'herbe colle un peu aux chaussons. Nino souffle sur le ballon. Un peu de poussière part. Tu as repris le ballon, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans le jardin.\nnarrateur|L'air sent la terre mouillée.\nnarrateur|Le ballon rouge est dans l'herbe.\nnarrateur|Il est un peu mouillé, tout brillant.\npapa|Le ballon, Nino. Tu le reprends ?\nenfant-m|Oui. Il est froid !\nnarrateur|Nino le prend à deux mains.\nmaman|Bravo. Tu le mets près de la porte.\nnarrateur|Le ballon est lisse, un peu poussiéreux.\nnarrateur|Nino pose le ballon rouge près de la porte.\nnarrateur|L'herbe colle un peu aux chaussons.\nnarrateur|Nino souffle sur le ballon. Un peu de poussière part.\npapa|Tu as repris le ballon, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le ballon rouge. Maintenant, le sac. Le savon de la chambre sent encore. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Merci, Nino. Tu as repris tes affaires. Merci, papa. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le sac.\nnarrateur|Le savon de la chambre sent encore.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\nmaman|Merci, Nino. Tu as repris tes affaires.\nenfant-m|Merci, papa.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Le sac est un peu lourd, bien fermé. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le sac est un peu lourd, bien fermé.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le ballon rouge. Maintenant, le manteau. Un galet froid attend sur le paillasson. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Tu as fini de ranger près de la porte ? Merci, maman. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le manteau.\nnarrateur|Un galet froid attend sur le paillasson.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\npapa|Tu as fini de ranger près de la porte ?\nenfant-m|Merci, maman.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Un chat traverse le muret, sans bruit. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Un chat traverse le muret, sans bruit.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le ballon rouge. Maintenant, les chaussures. La chaise de l'entrée ne bouge plus. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. Tu as le doudou ? Très bien. Je tiens le sac. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, les chaussures.\nnarrateur|La chaise de l'entrée ne bouge plus.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\nmaman|Tu as le doudou ? Très bien.\nenfant-m|Je tiens le sac.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "La gouttière goutte encore, tout petit. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|La gouttière goutte encore, tout petit.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino est encore dans le jardin. L'air sent la terre mouillée. Le seau bleu est près du romarin. Une feuille est tombée dedans. Le seau, Nino. Tu le vides un peu ? Je le prends, maman. Nino verse la feuille sur la terre. Bravo. Tu le mets près de la porte. Le seau est sablé, léger. Nino pose le seau bleu près de la porte. L'herbe colle un peu aux chaussons. Nino tapote le bord du seau. Ça fait toc. Tu as repris le seau, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans le jardin.\nnarrateur|L'air sent la terre mouillée.\nnarrateur|Le seau bleu est près du romarin.\nnarrateur|Une feuille est tombée dedans.\nmaman|Le seau, Nino. Tu le vides un peu ?\nenfant-m|Je le prends, maman.\nnarrateur|Nino verse la feuille sur la terre.\npapa|Bravo. Tu le mets près de la porte.\nnarrateur|Le seau est sablé, léger.\nnarrateur|Nino pose le seau bleu près de la porte.\nnarrateur|L'herbe colle un peu aux chaussons.\nnarrateur|Nino tapote le bord du seau. Ça fait toc.\nmaman|Tu as repris le seau, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le seau bleu. Maintenant, le sac. Le sac a un zip qui chante. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. On y va. Tes affaires sont avec toi. Le manteau est chaud. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le sac.\nnarrateur|Le sac a un zip qui chante.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\npapa|On y va. Tes affaires sont avec toi.\nenfant-m|Le manteau est chaud.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Le soleil a séché le banc du jardin. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le soleil a séché le banc du jardin.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le seau bleu. Maintenant, le manteau. Le manteau sent le vent d'hier. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Bravo. C'est calme, maintenant. Toc toc, mes chaussures. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le manteau.\nnarrateur|Le manteau sent le vent d'hier.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\nmaman|Bravo. C'est calme, maintenant.\nenfant-m|Toc toc, mes chaussures.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nino sent le cacao sur ses mains. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Nino sent le cacao sur ses mains.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le seau bleu. Maintenant, les chaussures. Les chaussures sont un peu sablées. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. Tu as repris le ballon. Il vient avec nous. On va au parc. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Les chaussures sont un peu sablées.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\npapa|Tu as repris le ballon. Il vient avec nous.\nenfant-m|On va au parc.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Le portail grince, puis s'ouvre. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le portail grince, puis s'ouvre.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino est encore dans le jardin. L'air sent la terre mouillée. Le doudou est sur le banc, près du chapeau. Il a une goutte sur l'oreille. Ton doudou, Nino. Tu le reprends ? Oui, papa. Nino l'essuie sur son pull. Bravo. Tu le mets près de la porte. Le doudou est chaud, un peu froissé. Nino serre le doudou, puis le pose près de la porte. L'herbe colle un peu aux chaussons. Nino remet l'oreille du doudou à sa place. Tu as repris le doudou, avant de partir. Il vient avec moi. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans le jardin.\nnarrateur|L'air sent la terre mouillée.\nnarrateur|Le doudou est sur le banc, près du chapeau.\nnarrateur|Il a une goutte sur l'oreille.\npapa|Ton doudou, Nino. Tu le reprends ?\nenfant-m|Oui, papa.\nnarrateur|Nino l'essuie sur son pull.\nmaman|Bravo. Tu le mets près de la porte.\nnarrateur|Le doudou est chaud, un peu froissé.\nnarrateur|Nino serre le doudou, puis le pose près de la porte.\nnarrateur|L'herbe colle un peu aux chaussons.\nnarrateur|Nino remet l'oreille du doudou à sa place.\npapa|Tu as repris le doudou, avant de partir.\nenfant-m|Il vient avec moi.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le doudou. Maintenant, le sac. Un rayon touche le seau bleu. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Avant de partir, on a tout repris. J'ai repris mes affaires. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le sac.\nnarrateur|Un rayon touche le seau bleu.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\nmaman|Avant de partir, on a tout repris.\nenfant-m|J'ai repris mes affaires.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Une feuille tourne sur le trottoir. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Une feuille tourne sur le trottoir.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le doudou. Maintenant, le manteau. Le ballon rouge fait une ombre ronde. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Nino, tu as fait du bon travail. C'est lourd un peu. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le manteau.\nnarrateur|Le ballon rouge fait une ombre ronde.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\npapa|Nino, tu as fait du bon travail.\nenfant-m|C'est lourd un peu.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Le parc n'est pas loin. On entend un oiseau. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le parc n'est pas loin. On entend un oiseau.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché le jardin. Il a repris le doudou. Maintenant, les chaussures. Le doudou a une oreille pliée. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. On sort ensemble. Tes affaires sont prêtes. Je suis prêt. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché le jardin.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Le doudou a une oreille pliée.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\nmaman|On sort ensemble. Tes affaires sont prêtes.\nenfant-m|Je suis prêt.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nino serre la main de maman. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Nino serre la main de maman.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Nino va dans la chambre. Le rideau est encore un peu fermé. La couverture est douce, froissée. Un chausson est sous le lit. Regarde sous le lit, Nino. J'ai le chausson ! Nino le glisse près de l'autre. Les deux chaussons se touchent. Bravo. Tu reprends tes affaires, avant de partir. La chambre sent le savon, tout doux. On cherche aussi le seau et le manteau. Je continue, maman.",
+      "script": "narrateur|Nino va dans la chambre.\nnarrateur|Le rideau est encore un peu fermé.\nnarrateur|La couverture est douce, froissée.\nnarrateur|Un chausson est sous le lit.\nmaman|Regarde sous le lit, Nino.\nenfant-m|J'ai le chausson !\nnarrateur|Nino le glisse près de l'autre.\nnarrateur|Les deux chaussons se touchent.\npapa|Bravo. Tu reprends tes affaires, avant de partir.\nnarrateur|La chambre sent le savon, tout doux.\nmaman|On cherche aussi le seau et le manteau.\nenfant-m|Je continue, maman.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "On part, et les affaires ?",
+      "script": "narrateur|On part, et les affaires ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino a repris le chausson. La paire est complète. Bravo, Nino. C'est du bon travail. Avant de partir, on reprend ses affaires. C'est prêt, presque. Nino pose la main sur la couverture. Il est calme.",
+      "script": "narrateur|Oui.\nnarrateur|Nino a repris le chausson.\nnarrateur|La paire est complète.\nmaman|Bravo, Nino. C'est du bon travail.\npapa|Avant de partir, on reprend ses affaires.\nenfant-m|C'est prêt, presque.\nnarrateur|Nino pose la main sur la couverture.\nnarrateur|Il est calme.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Quel objet Nino reprend, dans la chambre ? Le ballon rouge, le seau bleu, ou le doudou ?",
+      "script": "narrateur|Quel objet Nino reprend, dans la chambre ?\nmaman|Le ballon rouge, le seau bleu, ou le doudou ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino est encore dans la chambre. La chambre sent le savon doux. Le ballon rouge est sous le lit. Il touche le deuxième chausson. Le ballon, Nino. Tu le reprends ? Je l'ai ! Nino le tire tout doux. Bravo. Tu le mets près de la porte. Le ballon est lisse, un peu poussiéreux. Nino pose le ballon rouge près de la porte. Le parquet craque tout petit. Nino souffle sur le ballon. Un peu de poussière part. Tu as repris le ballon, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la chambre.\nnarrateur|La chambre sent le savon doux.\nnarrateur|Le ballon rouge est sous le lit.\nnarrateur|Il touche le deuxième chausson.\nmaman|Le ballon, Nino. Tu le reprends ?\nenfant-m|Je l'ai !\nnarrateur|Nino le tire tout doux.\npapa|Bravo. Tu le mets près de la porte.\nnarrateur|Le ballon est lisse, un peu poussiéreux.\nnarrateur|Nino pose le ballon rouge près de la porte.\nnarrateur|Le parquet craque tout petit.\nnarrateur|Nino souffle sur le ballon. Un peu de poussière part.\npapa|Tu as repris le ballon, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le ballon rouge. Maintenant, le sac. Le paillasson est rêche, sous les pieds. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. La porte peut s'ouvrir. Bravo. La porte, papa ? Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le sac.\nnarrateur|Le paillasson est rêche, sous les pieds.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\npapa|La porte peut s'ouvrir. Bravo.\nenfant-m|La porte, papa ?\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Papa porte le seau un moment. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Papa porte le seau un moment.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le ballon rouge. Maintenant, le manteau. La clé de papa tinte dans sa poche. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. Tu as cherché. Tu as pris. Bravo. On y va. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, le manteau.\nnarrateur|La clé de papa tinte dans sa poche.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\nmaman|Tu as cherché. Tu as pris. Bravo.\nenfant-m|On y va.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Le doudou est au chaud, sous le manteau. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le doudou est au chaud, sous le manteau.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le ballon rouge. Maintenant, les chaussures. Maman plie l'écharpe une dernière fois. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. On va au parc. Tes affaires viennent. Le gant est avec moi. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le ballon rouge.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Maman plie l'écharpe une dernière fois.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\npapa|On va au parc. Tes affaires viennent.\nenfant-m|Le gant est avec moi.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Les affaires de Nino sont avec lui. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Les affaires de Nino sont avec lui.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino est encore dans la chambre. La chambre sent le savon doux. Le seau bleu sert de coffre, près de l'armoire. Un cube est encore dedans. Le seau, Nino. Tu le reprends avant de partir ? Oui. Et le cube aussi. Nino pose le cube sur l'étagère. Bravo. Tu mets le seau près de la porte. Le seau est sablé, léger. Nino pose le seau bleu près de la porte. Le parquet craque tout petit. Nino tapote le bord du seau. Ça fait toc. Tu as repris le seau, avant de partir. Il vient au parc. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la chambre.\nnarrateur|La chambre sent le savon doux.\nnarrateur|Le seau bleu sert de coffre, près de l'armoire.\nnarrateur|Un cube est encore dedans.\npapa|Le seau, Nino. Tu le reprends avant de partir ?\nenfant-m|Oui. Et le cube aussi.\nnarrateur|Nino pose le cube sur l'étagère.\nmaman|Bravo. Tu mets le seau près de la porte.\nnarrateur|Le seau est sablé, léger.\nnarrateur|Nino pose le seau bleu près de la porte.\nnarrateur|Le parquet craque tout petit.\nnarrateur|Nino tapote le bord du seau. Ça fait toc.\nmaman|Tu as repris le seau, avant de partir.\nenfant-m|Il vient au parc.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le seau bleu. Maintenant, le sac. Le carré de soleil a bougé un peu. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Tu as repris tes affaires, avant de partir. J'ai cherché. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le sac.\nnarrateur|Le carré de soleil a bougé un peu.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\nmaman|Tu as repris tes affaires, avant de partir.\nenfant-m|J'ai cherché.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "La rue est calme, un peu mouillée. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|La rue est calme, un peu mouillée.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le seau bleu. Maintenant, le manteau. Une miette reste sur la table, loin. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. C'est du bon travail, Nino. C'est bon. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, le manteau.\nnarrateur|Une miette reste sur la table, loin.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\npapa|C'est du bon travail, Nino.\nenfant-m|C'est bon.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nino pose le sac contre sa hanche. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Nino pose le sac contre sa hanche.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le seau bleu. Maintenant, les chaussures. Le romarin sent fort, par la porte. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. Le salon est calme. On peut sortir. Mes affaires, voilà. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le seau bleu.\nnarrateur|Maintenant, les chaussures.\nnarrateur|Le romarin sent fort, par la porte.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\nmaman|Le salon est calme. On peut sortir.\nenfant-m|Mes affaires, voilà.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Le vent est doux, sur les joues. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le vent est doux, sur les joues.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino est encore dans la chambre. La chambre sent le savon doux. Le doudou est dans les draps. Il est encore chaud. Ton doudou, Nino. Tu le reprends ? Oui. Il était au lit. Nino le sort tout doux. Bravo. Tu le mets près de la porte. Le doudou est chaud, un peu froissé. Nino serre le doudou, puis le pose près de la porte. Le parquet craque tout petit. Nino remet l'oreille du doudou à sa place. Tu as repris le doudou, avant de partir. Il vient avec moi. On reprend ses affaires, avant de partir.",
+      "script": "narrateur|Nino est encore dans la chambre.\nnarrateur|La chambre sent le savon doux.\nnarrateur|Le doudou est dans les draps.\nnarrateur|Il est encore chaud.\nmaman|Ton doudou, Nino. Tu le reprends ?\nenfant-m|Oui. Il était au lit.\nnarrateur|Nino le sort tout doux.\npapa|Bravo. Tu le mets près de la porte.\nnarrateur|Le doudou est chaud, un peu froissé.\nnarrateur|Nino serre le doudou, puis le pose près de la porte.\nnarrateur|Le parquet craque tout petit.\nnarrateur|Nino remet l'oreille du doudou à sa place.\npapa|Tu as repris le doudou, avant de partir.\nenfant-m|Il vient avec moi.\nmaman|On reprend ses affaires, avant de partir.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose, pour sortir. Le sac, le manteau, ou les chaussures ? Tu choisis, Nino.",
+      "script": "narrateur|Il reste une chose, pour sortir.\npapa|Le sac, le manteau, ou les chaussures ?\nmaman|Tu choisis, Nino.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le doudou. Maintenant, le sac. Le couloir est frais, tout calme. Nino ouvre le sac. Il y glisse ce qu'il a repris. Tout est près de la porte. Tu tiens bien tes affaires. Bravo. On sort ? Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le sac.\nnarrateur|Le couloir est frais, tout calme.\nnarrateur|Nino ouvre le sac. Il y glisse ce qu'il a repris.\nnarrateur|Tout est près de la porte.\npapa|Tu tiens bien tes affaires. Bravo.\nenfant-m|On sort ?\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Le parc attend, tout vert. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Le parc attend, tout vert.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le doudou. Maintenant, le manteau. Le coussin du canapé a un creux. Nino prend le manteau. Il passe un bras, puis l'autre. Tout est près de la porte. On est prêts. Merci, Nino. Je tiens bien. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, le manteau.\nnarrateur|Le coussin du canapé a un creux.\nnarrateur|Nino prend le manteau. Il passe un bras, puis l'autre.\nnarrateur|Tout est près de la porte.\nmaman|On est prêts. Merci, Nino.\nenfant-m|Je tiens bien.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nino marche près de papa et maman. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|Nino marche près de papa et maman.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino a cherché la chambre. Il a repris le doudou. Maintenant, les chaussures. La vitre a encore une trace brillante. Nino enfile les chaussures. Elles font toc toc. Tout est près de la porte. Avant de partir, tout est repris. Avant de partir, c'est prêt. Nino reprend ses affaires, avant de partir. On a le seau. On a le manteau. On les prend. On peut sortir. Nino serre ce qu'il tient. Merci, maman. Merci, papa.",
+      "script": "narrateur|Nino a cherché la chambre.\nnarrateur|Il a repris le doudou.\nnarrateur|Maintenant, les chaussures.\nnarrateur|La vitre a encore une trace brillante.\nnarrateur|Nino enfile les chaussures. Elles font toc toc.\nnarrateur|Tout est près de la porte.\npapa|Avant de partir, tout est repris.\nenfant-m|Avant de partir, c'est prêt.\nnarrateur|Nino reprend ses affaires, avant de partir.\nmaman|On a le seau. On a le manteau.\npapa|On les prend. On peut sortir.\nnarrateur|Nino serre ce qu'il tient.\nenfant-m|Merci, maman. Merci, papa.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "La maison reste derrière, la porte fermée. Nino a repris ses affaires. C'était avant de partir. Bravo, Nino. Tu as fait du bon travail. On va au parc. L'histoire est finie.",
+      "script": "narrateur|La maison reste derrière, la porte fermée.\nnarrateur|Nino a repris ses affaires.\nnarrateur|C'était avant de partir.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nenfant-m|On va au parc.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
