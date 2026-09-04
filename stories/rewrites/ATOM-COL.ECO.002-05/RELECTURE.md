@@ -1,16 +1,12 @@
-# F-NAR-015 — ATOM-COL.ECO.002-05
+# ATOM-COL.ECO.002-05 — Le ballon du pompon
 
-Relu : ouverture, désir, ballon, question, attente, tapotement, pompon au retour, `script`.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Vécu
+Aniss veut dire que le ballon est rouge comme le pompon. Il parle trop tôt. L'écho couvre. Il lève la main, papa l'entend. Ils tapotent.
 
 ## Vu et corrigé
-
-- Désir : **dire que le ballon est rouge comme le pompon, puis le faire bouger**.
-- Ouverture : pompon sur la fermeture, lait chaud, tasse. Pas les chaussures clic-clac.
-- `P0000` s'arrête à l'envie de parler. N1 phrases courtes.
-- Fin vécue : le ballon a dansé, le pompon rentre. Doudou.
-- Troupe D16 : Aniss, papa, maman, maîtresse. POS-001. Adultes parlent (D20).
-- `chunk_id` inchangés. `retry_prompt` au prénom Aniss (plus Flora).
+N1. Pas « il faut attendre ». D16 Aniss, papa, maman. Cour d'immeuble.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

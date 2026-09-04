@@ -1,19 +1,19 @@
 {
   "story_id": "ATOM-COL.ECO.002-05",
   "fil_rouge": "",
-  "title": "Le ballon rouge d'Aniss",
+  "title": "Le pompon d'Aniss",
   "lesson_id": "COL.ECO.002",
   "age_band": "N1",
   "kind": "atomic",
-  "characters": "Flora, papa, maîtresse",
-  "setting": "classe",
+  "characters": "Aniss, papa, maman, maîtresse",
+  "setting": "entrée, classe, puis maison",
   "chunks": [
     {
       "chunk_id": "CHK_T0000_P0000",
       "kind": "passage_debut",
-      "text": "Les chaussures de papa font clic-clac. Le couloir de l'école est long. Ça sent les crayons. Un doudou attend sur une chaise. Papa tient la main d'Aniss. Ta main est bien dans la mienne. Tu vas t'asseoir, Aniss ? Oui, papa. Maman a mis le doudou dans le sac, ce matin. Le doudou t'attend ce soir. Tu attends ton tour, d'accord ? D'accord, maman. En ce moment, Aniss arrive en classe avec papa. Au revoir, Aniss. Bonne journée. Au revoir, papa. Aniss s'assoit sur le tapis. Le tapis est doux. La maîtresse montre un ballon. Le ballon est rouge. Qui veut parler du ballon ? Aniss a une idée. Il lève la main. Il faut attendre. Quelqu'un parle d'abord. Aniss attend encore. Sa main reste en l'air. J'attends. Puis je parle.",
-      "script": "narrateur|Les chaussures de papa font clic-clac.\nnarrateur|Le couloir de l'école est long.\nnarrateur|Ça sent les crayons.\nnarrateur|Un doudou attend sur une chaise.\nnarrateur|Papa tient la main d'Aniss.\npapa|Ta main est bien dans la mienne.\npapa|Tu vas t'asseoir, Aniss ?\nenfant-m|Oui, papa.\nnarrateur|Maman a mis le doudou dans le sac, ce matin.\nmaman|Le doudou t'attend ce soir.\nmaman|Tu attends ton tour, d'accord ?\nenfant-m|D'accord, maman.\nnarrateur|En ce moment, Aniss arrive en classe avec papa.\npapa|Au revoir, Aniss.\npapa|Bonne journée.\nenfant-m|Au revoir, papa.\nnarrateur|Aniss s'assoit sur le tapis.\nnarrateur|Le tapis est doux.\nnarrateur|La maîtresse montre un ballon.\nnarrateur|Le ballon est rouge.\nmaitresse|Qui veut parler du ballon ?\nnarrateur|Aniss a une idée.\nnarrateur|Il lève la main.\nnarrateur|Il faut attendre.\nnarrateur|Quelqu'un parle d'abord.\nnarrateur|Aniss attend encore.\nnarrateur|Sa main reste en l'air.\nenfant-m|J'attends. Puis je parle.",
-      "sons": "chaussures,porte",
+      "text": "Un pompon rouge rebondit sur la fermeture. Il est en laine, un peu rêche. La cuisine sent le lait chaud. Une tasse laisse un rond sur la table. Un doudou attend sur une chaise. Le doudou a une oreille un peu pliée. Papa tient la main d'Aniss. Ta main est bien dans la mienne. Tu vas t'asseoir, Aniss ? Oui, papa. Je veux parler du rouge. Le doudou t'attend ce soir. Tu attends ton tour, d'accord ? D'accord, maman. En ce moment, Aniss arrive. Au revoir, Aniss. Bonne journée. Au revoir, papa. Aniss s'assoit sur le tapis. Le tapis est doux. Le pompon reste sur le manteau. Ça sent les crayons. Une chaise grince tout bas. Un cube rouge est près du genou. Aniss le pousse un peu, tout doux. La maîtresse montre un ballon. Le ballon est rouge. Il est un peu lisse, un peu chaud. Il sent le caoutchouc. Qui veut parler du ballon ? Aniss a une idée. Le ballon est rouge, comme le pompon. Les mots lui chatouillent la bouche. Je veux parler du rouge.",
+      "script": "narrateur|Un pompon rouge rebondit sur la fermeture.\nnarrateur|Il est en laine, un peu rêche.\nnarrateur|La cuisine sent le lait chaud.\nnarrateur|Une tasse laisse un rond sur la table.\nnarrateur|Un doudou attend sur une chaise.\nnarrateur|Le doudou a une oreille un peu pliée.\nnarrateur|Papa tient la main d'Aniss.\npapa|Ta main est bien dans la mienne.\npapa|Tu vas t'asseoir, Aniss ?\nenfant-m|Oui, papa.\nenfant-m|Je veux parler du rouge.\nmaman|Le doudou t'attend ce soir.\nmaman|Tu attends ton tour, d'accord ?\nenfant-m|D'accord, maman.\nnarrateur|En ce moment, Aniss arrive.\npapa|Au revoir, Aniss.\npapa|Bonne journée.\nenfant-m|Au revoir, papa.\nnarrateur|Aniss s'assoit sur le tapis.\nnarrateur|Le tapis est doux.\nnarrateur|Le pompon reste sur le manteau.\nnarrateur|Ça sent les crayons.\nnarrateur|Une chaise grince tout bas.\nnarrateur|Un cube rouge est près du genou.\nnarrateur|Aniss le pousse un peu, tout doux.\nnarrateur|La maîtresse montre un ballon.\nnarrateur|Le ballon est rouge.\nnarrateur|Il est un peu lisse, un peu chaud.\nnarrateur|Il sent le caoutchouc.\nmaitresse|Qui veut parler du ballon ?\nnarrateur|Aniss a une idée.\nnarrateur|Le ballon est rouge, comme le pompon.\nnarrateur|Les mots lui chatouillent la bouche.\nenfant-m|Je veux parler du rouge.",
+      "sons": "pompon,porte",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
       "pause_after_ms": 400,
@@ -29,7 +29,7 @@
       "chunk_id": "CHK_T0000_P0000_Q0001",
       "kind": "passage_question",
       "text": "Aniss veut parler. Que fait-il d'abord ?",
-      "script": "narrateur|Aniss veut parler. Que fait-il d'abord ?",
+      "script": "narrateur|Aniss veut parler.\nnarrateur|Que fait-il d'abord ?",
       "sons": null,
       "length_scale_piper": 1.4,
       "rate_label": "slow",
@@ -38,15 +38,15 @@
       "option_2_label": null,
       "option_3_label": null,
       "expected_answer": "attendre",
-      "accepted_examples": "attendre | elle attend | lever la main | la main",
-      "retry_prompt": "Elle lève la main et elle attend. Que fait Flora ?",
+      "accepted_examples": "attendre | il attend | lever la main | la main",
+      "retry_prompt": "Il lève la main et il attend. Que fait Aniss ?",
       "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"medium\">Flora veut parler. Que fait-elle d'abord ?</prosody><break time=\"250ms\"/></speak>"
     },
     {
       "chunk_id": "CHK_T0000_P0000_C0001",
       "kind": "passage",
-      "text": "Aniss, c'est toi. Aniss parle. Le ballon est rouge. Merci, Aniss. Tu as attendu. Puis tu as parlé. Le soir, papa demande. Alors, Aniss ? J'ai levé la main. J'ai su attendre. Puis parler, c'est après. Tu as attendu. Puis tu as parlé. Bravo, Aniss. Tu as fait du bon travail. Tu as levé la main ? Oui, maman.",
-      "script": "maitresse|Aniss, c'est toi.\nnarrateur|Aniss parle.\nenfant-m|Le ballon est rouge.\nmaitresse|Merci, Aniss.\nmaitresse|Tu as attendu. Puis tu as parlé.\nnarrateur|Le soir, papa demande.\npapa|Alors, Aniss ?\nenfant-m|J'ai levé la main.\nenfant-m|J'ai su attendre.\nenfant-m|Puis parler, c'est après.\npapa|Tu as attendu.\npapa|Puis tu as parlé.\npapa|Bravo, Aniss.\npapa|Tu as fait du bon travail.\nmaman|Tu as levé la main ?\nenfant-m|Oui, maman.",
+      "text": "Aniss lève la main. Sa main reste en l'air. Il faut attendre. Il attend. Quelqu'un parle d'abord. Aniss attend encore. Aniss, c'est toi. Aniss parle. Le ballon est rouge. Comme mon pompon. Merci, Aniss. Tu as attendu. Puis tu as parlé. Tu veux le faire bouger ? Oui. Aniss tapote le ballon. Le ballon tremble, tout doux. Il revient, tout lent. Il danse. Il est rouge, comme tu as dit. Le pompon, sur le manteau, reste sage. Aniss tapote encore une fois. Le ballon fait un petit floup.",
+      "script": "narrateur|Aniss lève la main.\nnarrateur|Sa main reste en l'air.\nnarrateur|Il faut attendre.\nnarrateur|Il attend.\nnarrateur|Quelqu'un parle d'abord.\nnarrateur|Aniss attend encore.\nmaitresse|Aniss, c'est toi.\nnarrateur|Aniss parle.\nenfant-m|Le ballon est rouge.\nenfant-m|Comme mon pompon.\nmaitresse|Merci, Aniss.\nmaitresse|Tu as attendu.\nmaitresse|Puis tu as parlé.\nmaitresse|Tu veux le faire bouger ?\nenfant-m|Oui.\nnarrateur|Aniss tapote le ballon.\nnarrateur|Le ballon tremble, tout doux.\nnarrateur|Il revient, tout lent.\nenfant-m|Il danse.\nmaitresse|Il est rouge, comme tu as dit.\nnarrateur|Le pompon, sur le manteau, reste sage.\nnarrateur|Aniss tapote encore une fois.\nnarrateur|Le ballon fait un petit floup.",
       "sons": null,
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -62,8 +62,8 @@
     {
       "chunk_id": "CHK_T0000_P0000_END",
       "kind": "passage",
-      "text": "Aniss range son cartable. Papa l'attend à la porte. Tu mets ton manteau ? Oui, papa. Le doudou est dans le sac. Tu le prends ? Oui, maman. Le doudou sent la maison. Bravo. Tu as attendu. Puis tu as parlé.",
-      "script": "narrateur|Aniss range son cartable.\nnarrateur|Papa l'attend à la porte.\npapa|Tu mets ton manteau ?\nenfant-m|Oui, papa.\nmaman|Le doudou est dans le sac.\nmaman|Tu le prends ?\nenfant-m|Oui, maman.\nnarrateur|Le doudou sent la maison.\npapa|Bravo. Tu as attendu. Puis tu as parlé.",
+      "text": "Aniss range son cartable. Papa l'attend à la porte. Tu mets ton manteau ? Oui, papa. Le pompon rebondit encore. Le couloir est long, tout calme. Le doudou est dans le sac. Tu le prends ? Oui, maman. Le doudou sent la maison. Alors, Aniss ? Le ballon a dansé. J'ai attendu. Tu as levé la main ? Oui, maman. Le lait chaud n'est plus là. Le rond de la tasse reste.",
+      "script": "narrateur|Aniss range son cartable.\nnarrateur|Papa l'attend à la porte.\npapa|Tu mets ton manteau ?\nenfant-m|Oui, papa.\nnarrateur|Le pompon rebondit encore.\nnarrateur|Le couloir est long, tout calme.\nmaman|Le doudou est dans le sac.\nmaman|Tu le prends ?\nenfant-m|Oui, maman.\nnarrateur|Le doudou sent la maison.\npapa|Alors, Aniss ?\nenfant-m|Le ballon a dansé.\nenfant-m|J'ai attendu.\nmaman|Tu as levé la main ?\nenfant-m|Oui, maman.\nnarrateur|Le lait chaud n'est plus là.\nnarrateur|Le rond de la tasse reste.",
       "sons": "cartable,porte",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -79,8 +79,8 @@
     {
       "chunk_id": "CHK_T0000_P0000_END_F0001",
       "kind": "passage_fin",
-      "text": "J'ai levé la main. J'ai attendu. Puis j'ai parlé. Bravo, Aniss. Tu as fait du bon travail. L'histoire est finie.",
-      "script": "enfant-m|J'ai levé la main.\nenfant-m|J'ai attendu. Puis j'ai parlé.\npapa|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "text": "Le pompon est revenu. J'ai levé la main. J'ai attendu. Puis j'ai parlé. Bravo, Aniss.",
+      "script": "enfant-m|Le pompon est revenu.\nenfant-m|J'ai levé la main.\nenfant-m|J'ai attendu.\nenfant-m|Puis j'ai parlé.\npapa|Bravo, Aniss.",
       "sons": null,
       "length_scale_piper": 1.36,
       "rate_label": "slow",
@@ -91,7 +91,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"low\">L'histoire est finie.</prosody><break time=\"600ms\"/></speak>"
+      "text_ssml": "Le pompon est revenu. J'ai levé la main. J'ai attendu. Puis j'ai parlé. Bravo, Aniss."
     }
   ]
 }

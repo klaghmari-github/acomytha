@@ -1,12 +1,12 @@
-# ATOM-VIV.ANI.003-03 — Deux soifs, deux soins
+# ATOM-VIV.ANI.003-03 — L'eau de la chèvre
 
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Amir soigne Minou puis les poules. Même leçon, deux animaux.
+Amir veut que la chèvre boive pour la regarder avec son pain. Seau vide. Avec papa, ils versent. Le chien a soif aussi. Ils remplissent le bol.
 
 ## Vu et corrigé
-N3 oral. Doux, avec un adulte. Pas de saisie. Troupe Amir, papa.
+Pas « même leçon, autre animal ». Second animal = soif vécue. D16 Amir, papa.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
