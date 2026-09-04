@@ -39,7 +39,8 @@ export class StoryEngine {
         continue;
       }
       if (node.kind === "transition_question") {
-        if (this.night || policy === "auto_default") {
+        // auto_default = nuit seulement. Le jour, l’enfant choisit (F-PLY-001).
+        if (this.night && policy === "auto_default") {
           await this._play(storyId, id);
           id = node.default_next || node.options?.[0]?.next;
           continue;

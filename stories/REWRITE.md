@@ -52,6 +52,22 @@ Ramifiées : interdiction de « On va apprendre : {titre}. Voici le geste ». Le
 
 Texte d’abord. **Pas d’audio** dans cette passe.
 
+## Grille éditoriale (écoute, pas un cours)
+
+Référence : `gestion_projet/feedback_chatgpt/exemple.txt` (Chouchou, *La boîte trop haute*).
+
+| Oui | Non |
+| --- | --- |
+| Une envie concrète du héros (finir le bateau du puzzle) | Obtenir l’objet / la leçon comme tout le récit |
+| Un obstacle (la boîte est trop haute) | La leçon résolue dès l’ouverture, puis on répète |
+| L’enfant agit : prépare, demande, assemble, retrouve | L’adulte fait tout ; l’enfant écoute la consigne |
+| La question arrive **au moment du besoin** | Question-slogan collée n’importe où |
+| L’aide débloque l’aventure (papa donne la boîte) | Discours « il faut demander de l’aide » |
+| La fin tient la promesse du début (le bateau est fini, on souffle sur la voile) | « Bravo, bon travail » sans clôture vécue |
+| Après silence / mauvaise réponse : la narration reprend, sans verdict d’échec | « Non, ce n’est pas ça » |
+
+Papa accompagne sans tout faire. La félicitation est rare et liée à un geste vu, pas un refrain.
+
 ## JSON agent
 
 Mêmes `chunk_id` et `kind`. Champs : `fil_rouge`, `title`, `chunks[]` avec `text`, `script`, `sons`, `length_scale_piper`, `rate_label`.

@@ -31,6 +31,8 @@ Fichier / id absent ⇒ **fin propre** (pas d’exception enfant). Journal : `EN
 
 ## 3. Mode jour
 
+`night_policy=auto_default` **ne s’applique pas** le jour : l’enfant choisit. (Bug corrigé : le JS traitait `auto_default` comme un skip de choix même en journée.)
+
 1. Jouer `transition_question`.
 2. Jouer `transition_option` 1..n avec pause **moteur** 400–600 ms (pas dans le MP3).
 3. Ouvrir le micro / l’attente : **3 secondes** par défaut, réglable par le parent (1–8 s).
