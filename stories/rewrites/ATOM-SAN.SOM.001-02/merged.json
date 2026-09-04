@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-02",
+  "fil_rouge": "La bouilloire fait un dernier clic. Un chat passe sur le mur. Le livre reste ouvert. Chouchou met le pyjama. Puis c'est le dodo.",
+  "title": "Le livre sur le canapé",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Chouchou, papa, maman",
+  "setting": "salon puis chambre, le soir, bouilloire, chat sur le mur",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La bouilloire fait un dernier clic. La cuisine sent le tilleul. La vapeur s'en va, tout doux. La nuit s'assoit sur les toits. Les tuiles sont encore tièdes. Un chat passe sur le mur. Ses pas sont tout doux. Sa queue fait un petit S. Un livre reste ouvert sur le canapé. La couverture est lisse, un peu froide. Une page tremble près de la fenêtre. Chouchou vit ici, avec papa et maman. Maman, le chat passe ! Oui. Il rentre chez lui. Tu as vu le livre, aussi ? Oui. Il est ouvert. En ce moment, le salon devient calme. Chouchou referme le livre. C'est l'heure. Le corps a besoin de dormir. On met le pyjama ? Oui, papa. Le pyjama sent le savon. Il est crème, tout doux. Tu enfiles le pantalon ? Chouchou enfile le pantalon. Elle sent le coton chaud. Tu enfiles le haut ? Elle enfile le haut. Il sent le savon. Oui. Bravo. Tu as mis le pyjama ? Oui, maman. Bravo, Chouchou. Puis Chouchou va dans la chambre. Le plancher est un peu froid. Papa ouvre le lit. Le drap sent le propre. Tu te couches ? Chouchou se couche. Elle pose la tête sur l'oreiller. L'oreiller est doux. Oui. Tout doux. Une petite histoire ? Oui, maman. Maman raconte une petite histoire. Chouchou écoute. Ses yeux se ferment. C'est l'heure du dodo. Parce qu'elle a mis le pyjama, le dodo arrive. Papa baisse la lumière. Chouchou respire. Le soir, c'est le dodo. Dodo, maman. Oui. Dodo. Le chat n'est plus sur le mur. Le livre attend, fermé, sur le canapé.",
+      "script": "narrateur|La bouilloire fait un dernier clic.\nnarrateur|La cuisine sent le tilleul.\nnarrateur|La vapeur s'en va, tout doux.\nnarrateur|La nuit s'assoit sur les toits.\nnarrateur|Les tuiles sont encore tièdes.\nnarrateur|Un chat passe sur le mur.\nnarrateur|Ses pas sont tout doux.\nnarrateur|Sa queue fait un petit S.\nnarrateur|Un livre reste ouvert sur le canapé.\nnarrateur|La couverture est lisse, un peu froide.\nnarrateur|Une page tremble près de la fenêtre.\nnarrateur|Chouchou vit ici, avec papa et maman.\nenfant-f|Maman, le chat passe !\nmaman|Oui.\nmaman|Il rentre chez lui.\npapa|Tu as vu le livre, aussi ?\nenfant-f|Oui.\nenfant-f|Il est ouvert.\nnarrateur|En ce moment, le salon devient calme.\nnarrateur|Chouchou referme le livre.\nmaman|C'est l'heure.\nmaman|Le corps a besoin de dormir.\npapa|On met le pyjama ?\nenfant-f|Oui, papa.\nnarrateur|Le pyjama sent le savon.\nnarrateur|Il est crème, tout doux.\npapa|Tu enfiles le pantalon ?\nnarrateur|Chouchou enfile le pantalon.\nnarrateur|Elle sent le coton chaud.\nmaman|Tu enfiles le haut ?\nnarrateur|Elle enfile le haut.\nenfant-f|Il sent le savon.\nmaman|Oui.\nmaman|Bravo.\nmaman|Tu as mis le pyjama ?\nenfant-f|Oui, maman.\npapa|Bravo, Chouchou.\nnarrateur|Puis Chouchou va dans la chambre.\nnarrateur|Le plancher est un peu froid.\nnarrateur|Papa ouvre le lit.\nnarrateur|Le drap sent le propre.\npapa|Tu te couches ?\nnarrateur|Chouchou se couche.\nnarrateur|Elle pose la tête sur l'oreiller.\nenfant-f|L'oreiller est doux.\nmaman|Oui.\nmaman|Tout doux.\nmaman|Une petite histoire ?\nenfant-f|Oui, maman.\nnarrateur|Maman raconte une petite histoire.\nnarrateur|Chouchou écoute.\nnarrateur|Ses yeux se ferment.\npapa|C'est l'heure du dodo.\nnarrateur|Parce qu'elle a mis le pyjama, le dodo arrive.\nnarrateur|Papa baisse la lumière.\nnarrateur|Chouchou respire.\nmaman|Le soir, c'est le dodo.\nenfant-f|Dodo, maman.\npapa|Oui.\npapa|Dodo.\nnarrateur|Le chat n'est plus sur le mur.\nnarrateur|Le livre attend, fermé, sur le canapé.",
+      "sons": "bouilloire,chat",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chouchou va dormir. Que met-elle ?",
+      "script": "narrateur|Chouchou va dormir.\nnarrateur|Que met-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo. Tu as mis le pyjama ? Oui. Le pyjama. Bravo, Chouchou. Tu as fait du bon travail. On reste tout près. La chambre est calme.",
+      "script": "narrateur|Chouchou a mis le pyjama.\nnarrateur|Elle s'est couchée.\nnarrateur|Le soir, c'est le dodo.\nmaman|Tu as mis le pyjama ?\nenfant-f|Oui.\nenfant-f|Le pyjama.\npapa|Bravo, Chouchou.\npapa|Tu as fait du bon travail.\nmaman|On reste tout près.\nnarrateur|La chambre est calme.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Chouchou dort. Le pyjama est chaud. La chambre est calme. Tu es bien au lit ? Oui, maman. Tu as mis le pyjama ? Oui, papa. Bravo. La bouilloire s'est tue. Le tilleul sent encore un peu. Le canapé garde le livre fermé. Bonne nuit, Chouchou. Bonne nuit.",
+      "script": "narrateur|Chouchou dort.\nnarrateur|Le pyjama est chaud.\nnarrateur|La chambre est calme.\nmaman|Tu es bien au lit ?\nenfant-f|Oui, maman.\npapa|Tu as mis le pyjama ?\nenfant-f|Oui, papa.\npapa|Bravo.\nnarrateur|La bouilloire s'est tue.\nnarrateur|Le tilleul sent encore un peu.\nnarrateur|Le canapé garde le livre fermé.\nmaman|Bonne nuit, Chouchou.\nenfant-f|Bonne nuit.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai mis le pyjama. C'est le dodo. Bravo. Tu as fait du bon travail. Le livre reste fermé sur le canapé. L'histoire est finie.",
+      "script": "enfant-f|J'ai mis le pyjama.\nenfant-f|C'est le dodo.\nmaman|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|Le livre reste fermé sur le canapé.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
