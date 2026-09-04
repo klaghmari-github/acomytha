@@ -148,9 +148,9 @@ export class HomeApp extends Component {
             <article class="c-move c-move--count">
               <h2>AcoMytha en chiffres</h2>
               <div class="c-count">
-                <div><b>1449</b><span>histoires</span></div>
-                <div><b>13</b><span>thèmes</span></div>
-                <div><b>85</b><span>leçons</span></div>
+                <div><b>&gt; 1400</b><span>histoires</span></div>
+                <div><b>&gt; 10</b><span>thèmes</span></div>
+                <div><b>&gt; 80</b><span>leçons</span></div>
               </div>
             </article>
             <p class="c-offer">Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</p>
