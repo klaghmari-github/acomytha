@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.7 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.8 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -43,6 +43,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
 | F-APP-003 | **développé** | Accueil : catalogue par lots (défaut 6), chargement au scroll. Paramètre admin. |
+| F-APP-004 | **développé** | Accueil : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -66,6 +67,7 @@ Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail 
 | F-PLY-001 | Lecture | Lecteur écran pauvre, graphe jour/nuit, délai 3 s | P0 | 2 | STRAT-004 | F-AUD-004, F-ENF-001 |
 | F-APP-002 | App | Vitrine publique, aperçu, pop-ups ramifications | P0 | 2 | STRAT-005 | F-DAT-001 |
 | F-APP-003 | App | Accueil : lots + scroll infini (taille admin) | P1 | 2 | STRAT-005 | F-APP-002 |
+| F-APP-004 | App | Accueil : titre et sous-titre | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -317,8 +319,8 @@ L’accueil **séduit**, ce n’est pas un tutoriel. **Pas** le mot « gratuitem
 
 Contenu affiché :
 
-- Titre : *Une multitude d’histoires.*
-- *Créer un compte. Les transmettre à votre enfant. Le laisser s’immerger.*
+- Titre : *Apprendre par l’histoire.*
+- *AcoMytha l’univers d’histoires ludiques et captivantes.*
 - Stats : nombre d’histoires, nombre de thèmes (pas 3–6 ans, pas 10 s d’aperçu).
 - *Votre enfant ne fait pas qu’écouter.*
 - *Jour : plus d’interaction. Nuit : plus calme.*
@@ -345,6 +347,11 @@ Filtres (recherche, thème, âge, forme) : on recommence au premier lot, le tota
 API publique : `GET /api/public/stories?limit=&offset=` → `{ items, total, limit, offset }`. Pas tout le corpus dans la première réponse.
 
 L’espace parent n’est pas concerné (sélection, pas vitrine).
+
+### F-APP-004 — Titre d’accueil
+
+Titre : *Apprendre par l’histoire.*  
+Sous-titre : *AcoMytha l’univers d’histoires ludiques et captivantes.*
 
 ### F-PAR-002 — Libellés catalogue
 

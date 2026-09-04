@@ -31,3 +31,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D25 | Ouverture | Pas d’entrée brutale. Monde d’abord (lieu, famille, temps, détails), puis l’action. Chaque histoire raconte autrement. Les amorces « il était une fois / ceci est l’histoire de » sont des **exemples**, pas un moule. Audio plus tard. |
 | D26 | acm | Monnaie affichée **acm** (glyphe organique = logo). Code interne inchangé (`A`, `balance_a`). Plus de A barré. |
 | D27 | Accueil lots | Vitrine : lots de `home_catalog_page_size` (défaut 6), chargement au scroll. Pas les 1445 d’un coup. |
+| D28 | Accueil titre | Hero : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |

@@ -35,8 +35,8 @@ export class HomeApp extends Component {
         </header>
         <section class="c-hero">
           <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
-          <h1>Une multitude d’histoires.</h1>
-          <p>Créer un compte. Les transmettre à votre enfant. Le laisser s’immerger.</p>
+          <h1>Apprendre par l’histoire.</h1>
+          <p>AcoMytha l’univers d’histoires ludiques et captivantes.</p>
           <a class="c-btn c-btn--lg" href="#/inscription">Créer un compte</a>
         </section>
         <section class="c-stats" id="stats"></section>
