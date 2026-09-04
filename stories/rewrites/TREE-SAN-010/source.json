@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-010",
+  "fil_rouge": "",
+  "title": "Goûter un légume — dans la cuisine",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Zoé, papa, maman",
+  "setting": "dans la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, Zoé est dans la cuisine. Papa cuisine. Maman dresse la table. Il y a des copains. Dans la poêle, des légumes. On peut goûter une petite portion. Puis nommer le goût.",
+      "script": "narrateur|Le soir, Zoé est dans la cuisine. Papa cuisine. Maman dresse la table. Il y a des copains. Dans la poêle, des légumes.\npapa|On peut goûter une petite portion.\nnarrateur|Puis nommer le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Tom s'assoit près de Zoé. Papa sert des brocolis. Zoé goûte une petite portion. C'est un peu croquant. Elle nomme le goût : c'est doux, papa. Tom écoute.",
+      "script": "narrateur|Tom s'assoit près de Zoé. Papa sert des brocolis. Zoé goûte une petite portion. C'est un peu croquant. Elle nomme le goût : c'est doux, papa. Tom écoute.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Zoé goûte le brocoli. Que fait-elle ?",
+      "script": "narrateur|Zoé goûte le brocoli. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Zoé a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Tom applaudit.",
+      "script": "narrateur|Zoé a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Tom applaudit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé et Tom empilent des cubes. J'ai goûté une petite portion. J'ai nommé le goût. Tom pose un cube vert, comme le brocoli.",
+      "script": "narrateur|Zoé et Tom empilent des cubes.\nenfant-f|J'ai goûté une petite portion. J'ai nommé le goût. Tom pose un cube vert, comme le brocoli.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est doux. Elle a goûté une petite portion. Elle a nommé le goût. Tom sourit.",
+      "script": "enfant-f|C'est doux. Elle a goûté une petite portion. Elle a nommé le goût. Tom sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Un peu salé. Elle a goûté une petite portion. Elle nomme le goût. Tom hoche.",
+      "script": "enfant-f|Un peu salé. Elle a goûté une petite portion. Elle nomme le goût. Tom hoche.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|C'est croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Maman ouvre un livre de légumes. Zoé montre le brocoli. Elle a goûté une petite portion. Elle nomme le goût. Tom tourne la page.",
+      "script": "narrateur|Maman ouvre un livre de légumes. Zoé montre le brocoli. Elle a goûté une petite portion. Elle nomme le goût. Tom tourne la page.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Dans le livre, Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "narrateur|Dans le livre,\nenfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé, un peu. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Salé, un peu. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Croquant. Elle a goûté une petite portion. Elle nomme le goût. Tom rit.",
+      "script": "enfant-f|Croquant. Elle a goûté une petite portion. Elle nomme le goût. Tom rit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Ils font la dînette. Zoé sert un tout petit brocoli. Elle a goûté une petite portion, pour de vrai. Elle nomme le goût. Tom sert de l'eau.",
+      "script": "narrateur|Ils font la dînette. Zoé sert un tout petit brocoli. Elle a goûté une petite portion, pour de vrai. Elle nomme le goût. Tom sert de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "À la dînette, Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "narrateur|À la dînette,\nenfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Salé. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Croquant. Elle a goûté une petite portion. Elle nomme le goût. Tom tapote.",
+      "script": "enfant-f|Croquant. Elle a goûté une petite portion. Elle nomme le goût. Tom tapote.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Léa a une assiette de betterave. Elle est rose. Zoé goûte une petite portion. C'est terreux et doux. Elle nomme le goût : c'est doux, maman. Léa ouvre les yeux.",
+      "script": "narrateur|Léa a une assiette de betterave. Elle est rose. Zoé goûte une petite portion. C'est terreux et doux. Elle nomme le goût : c'est doux, maman. Léa ouvre les yeux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Zoé goûte la betterave. Que fait-elle ?",
+      "script": "narrateur|Zoé goûte la betterave. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Les lèvres de Zoé sont un peu roses. Elle a goûté. Elle a nommé le goût. Une petite portion.",
+      "script": "narrateur|Les lèvres de Zoé sont un peu roses. Elle a goûté. Elle a nommé le goût. Une petite portion.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Léa choisit un cube rose. Zoé aussi. J'ai goûté une petite portion. J'ai nommé le goût.",
+      "script": "narrateur|Léa choisit un cube rose. Zoé aussi.\nenfant-f|J'ai goûté une petite portion. J'ai nommé le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux et rose. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Doux et rose. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Un peu salé. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Un peu salé. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Pas trop croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Pas trop croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Dans le livre, une betterave. Léa montre. Zoé a goûté une petite portion. Elle nomme le goût.",
+      "script": "narrateur|Dans le livre, une betterave. Léa montre. Zoé a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux. Elle a goûté une petite portion. Elle nomme le goût. Léa sourit.",
+      "script": "enfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût. Léa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé. Elle a goûté une petite portion. Elle nomme le goût. Papa sourit.",
+      "script": "enfant-f|Salé. Elle a goûté une petite portion. Elle nomme le goût. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Tendre, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Tendre, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "À la dînette, Léa sert du rose. Zoé a goûté une petite portion pour de vrai. Elle nomme le goût. Maman rit.",
+      "script": "narrateur|À la dînette, Léa sert du rose. Zoé a goûté une petite portion pour de vrai. Elle nomme le goût. Maman rit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé, un tout petit peu. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Salé, un tout petit peu. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Mou, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Mou, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Sami a des épinards. Ils sont verts et chauds. Zoé goûte une petite portion. C'est fondant. Elle nomme le goût : c'est doux, papa. Sami hoche.",
+      "script": "narrateur|Sami a des épinards. Ils sont verts et chauds. Zoé goûte une petite portion. C'est fondant. Elle nomme le goût : c'est doux, papa. Sami hoche.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Zoé goûte les épinards. Que fait-elle ?",
+      "script": "narrateur|Zoé goûte les épinards. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Zoé a goûté les épinards. Elle a nommé le goût. Une petite portion.",
+      "script": "narrateur|Zoé a goûté les épinards. Elle a nommé le goût. Une petite portion.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sami bâtit une tour verte. J'ai goûté une petite portion. J'ai nommé le goût.",
+      "script": "narrateur|Sami bâtit une tour verte.\nenfant-f|J'ai goûté une petite portion. J'ai nommé le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux. Elle a goûté une petite portion. Elle nomme le goût. Sami pose un cube.",
+      "script": "enfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût. Sami pose un cube.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Un peu salé. Elle a goûté une petite portion. Elle nomme le goût. Maman range.",
+      "script": "enfant-f|Un peu salé. Elle a goûté une petite portion. Elle nomme le goût. Maman range.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Fondant, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Fondant, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sami trouve les épinards dans le livre. Zoé a goûté une petite portion. Elle nomme le goût.",
+      "script": "narrateur|Sami trouve les épinards dans le livre. Zoé a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux. Elle a goûté une petite portion. Elle nomme le goût. Ils se taisent une seconde.",
+      "script": "enfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût.\nnarrateur|Ils se taisent une seconde.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé. Elle a goûté une petite portion. Elle nomme le goût. Sami ferme le livre.",
+      "script": "enfant-f|Salé. Elle a goûté une petite portion. Elle nomme le goût. Sami ferme le livre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "À la dînette, Sami sert du vert. Zoé a goûté une petite portion. Elle nomme le goût. Merci d'avoir dit le goût.",
+      "script": "narrateur|À la dînette, Sami sert du vert. Zoé a goûté une petite portion. Elle nomme le goût.\npapa|Merci d'avoir dit le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre doux, salé, ou croquant.",
+      "script": "narrateur|On peut prendre doux, salé, ou croquant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Doux. Elle a goûté une petite portion. Elle nomme le goût. Un oiseau chante.",
+      "script": "enfant-f|Doux. Elle a goûté une petite portion. Elle nomme le goût.\nnarrateur|Un oiseau chante.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Salé. Elle a goûté une petite portion. Elle nomme le goût. La lumière est douce.",
+      "script": "enfant-f|Salé. Elle a goûté une petite portion. Elle nomme le goût.\nnarrateur|La lumière est douce.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Tout mou, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "script": "enfant-f|Tout mou, pas croquant. Elle a goûté une petite portion. Elle nomme le goût.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

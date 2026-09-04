@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-001",
+  "fil_rouge": "",
+  "title": "Goûter un légume — à la maison",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Lina, maman, papa",
+  "setting": "à la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est l'heure de manger. Lina a faim. Maman est dans la cuisine. Papa est là aussi. Dans l'assiette, il y a un légume. Tu peux goûter. Une petite portion. Puis tu nommes le goût. Lina écoute.",
+      "script": "narrateur|C'est l'heure de manger. Lina a faim. Maman est dans la cuisine. Papa est là aussi. Dans l'assiette, il y a un légume.\nmaman|Tu peux goûter.\nnarrateur|Une petite portion. Puis tu nommes le goût. Lina écoute.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Lina entre dans la cuisine. Ça sent la soupe. Elle s'assoit à table, près de maman. Une carotte orange est dans l'assiette. Goûte une petite portion. Lina prend une petite bouchée. C'est un peu sucré. Lina nomme le goût : c'est sucré, maman.",
+      "script": "narrateur|Lina entre dans la cuisine. Ça sent la soupe. Elle s'assoit à table, près de maman. Une carotte orange est dans l'assiette.\nmaman|Goûte une petite portion.\nnarrateur|Lina prend une petite bouchée. C'est un peu sucré. Lina nomme le goût : c'est sucré, maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Lina prend une petite bouchée. Que fait-elle ?",
+      "script": "narrateur|Lina prend une petite bouchée. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Lina a goûté. Elle a nommé le goût. Une petite portion, c'est bien. Maman sourit.",
+      "script": "narrateur|Lina a goûté. Elle a nommé le goût. Une petite portion, c'est bien. Maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la carotte, le petit pois, ou la courgette.",
+      "script": "narrateur|On peut prendre la carotte, le petit pois, ou la courgette.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Maman coupe un tout petit bout de carotte. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : sucré. Merci d'avoir goûté.",
+      "script": "narrateur|Maman coupe un tout petit bout de carotte. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : sucré.\npapa|Merci d'avoir goûté.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom s'assoit près de Lina. La carotte est sucrée. Elle a goûté une petite portion. Elle a nommé le goût. Tom tapote la table. Ils rient.",
+      "script": "narrateur|Tom s'assoit près de Lina.\nenfant-f|La carotte est sucrée. Elle a goûté une petite portion. Elle a nommé le goût. Tom tapote la table. Ils rient.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa écoute. C'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Léa sourit. Maman verse de l'eau.",
+      "script": "narrateur|Léa écoute.\nenfant-f|C'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Léa sourit. Maman verse de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami regarde la carotte orange. J'ai goûté. C'est sucré. Une petite portion. Elle nomme le goût. Sami dit merci à maman.",
+      "script": "narrateur|Sami regarde la carotte orange.\nenfant-f|J'ai goûté. C'est sucré.\nnarrateur|Une petite portion. Elle nomme le goût. Sami dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Papa pose un petit pois vert. Il est tout rond. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux. Une petite bouchée, c'est assez.",
+      "script": "narrateur|Papa pose un petit pois vert. Il est tout rond. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux.\nmaman|Une petite bouchée, c'est assez.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom compte : un petit pois. Lina goûte. Elle nomme le goût : doux. Une petite portion. Tom applaudit tout doux.",
+      "script": "narrateur|Tom compte : un petit pois. Lina goûte. Elle nomme le goût : doux. Une petite portion. Tom applaudit tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa chuchote : c'est petit. Lina goûte une petite portion. Elle nomme le goût. Léa goûte aussi, si elle veut. Maman est là.",
+      "script": "narrateur|Léa chuchote : c'est petit. Lina goûte une petite portion. Elle nomme le goût. Léa goûte aussi, si elle veut. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rit : c'est rond. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami range sa cuillère.",
+      "script": "narrateur|Sami rit : c'est rond. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami range sa cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Maman donne un cube de courgette. Il est tendre. Lina goûte une petite portion. C'est doux, un peu tiède. Elle nomme le goût à maman. Papa hoche la tête.",
+      "script": "narrateur|Maman donne un cube de courgette. Il est tendre. Lina goûte une petite portion. C'est doux, un peu tiède. Elle nomme le goût à maman. Papa hoche la tête.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est vert. C'est doux. Elle a goûté une petite portion. Elle a nommé le goût. Ils restent à table.",
+      "script": "enfant-m|C'est vert.\nenfant-f|C'est doux. Elle a goûté une petite portion. Elle a nommé le goût. Ils restent à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa touche l'assiette, tout doux. Lina goûte. Elle nomme le goût. Une petite portion. Merci maman.",
+      "script": "narrateur|Léa touche l'assiette, tout doux. Lina goûte. Elle nomme le goût. Une petite portion.\nenfant-f|Merci maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami souffle sur le cube. Lina goûte une petite portion. Elle nomme le goût : doux. Sami pose sa serviette.",
+      "script": "narrateur|Sami souffle sur le cube. Lina goûte une petite portion. Elle nomme le goût : doux. Sami pose sa serviette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Lina va au jardin avec maman. Le soleil est chaud. Une petite tomate rouge brille. Maman la lave. Goûte une petite portion. Lina croque un tout petit bout. C'est juteux. Elle nomme le goût : c'est juteux, maman.",
+      "script": "narrateur|Lina va au jardin avec maman. Le soleil est chaud. Une petite tomate rouge brille. Maman la lave.\nmaman|Goûte une petite portion.\nnarrateur|Lina croque un tout petit bout. C'est juteux. Elle nomme le goût : c'est juteux, maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Lina goûte la tomate. Que fait-elle ?",
+      "script": "narrateur|Lina goûte la tomate. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Lina a goûté au jardin. Elle a nommé le goût. Une petite portion, c'est déjà bien.",
+      "script": "narrateur|Lina a goûté au jardin. Elle a nommé le goût. Une petite portion, c'est déjà bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la tomate, le radis, ou la salade.",
+      "script": "narrateur|On peut prendre la tomate, le radis, ou la salade.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina cueille une tomate cerise. Papa est près du bac. Elle goûte une petite portion. C'est chaud du soleil. Elle nomme le goût : sucré et juteux.",
+      "script": "narrateur|Lina cueille une tomate cerise. Papa est près du bac. Elle goûte une petite portion. C'est chaud du soleil. Elle nomme le goût : sucré et juteux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom sent la tomate. C'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Une abeille passe loin.",
+      "script": "narrateur|Tom sent la tomate.\nenfant-f|C'est sucré. Elle a goûté une petite portion. Elle nomme le goût.\nnarrateur|Une abeille passe loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa s'assoit dans l'herbe. Lina goûte. Elle nomme le goût. Une petite portion. C'est rouge.",
+      "script": "narrateur|Léa s'assoit dans l'herbe. Lina goûte. Elle nomme le goût. Une petite portion.\nenfant-f|C'est rouge.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami tient l'arrosoir. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rentrent avec maman.",
+      "script": "narrateur|Sami tient l'arrosoir. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rentrent avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Maman tire un petit radis. Il pique un peu le nez. Lina goûte une petite portion. C'est vif. Elle nomme le goût : un peu piquant. Papa rit doucement.",
+      "script": "narrateur|Maman tire un petit radis. Il pique un peu le nez. Lina goûte une petite portion. C'est vif. Elle nomme le goût : un peu piquant. Papa rit doucement.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom ouvre les yeux grand. Ça pique un peu. Elle a goûté une petite portion. Elle nomme le goût. Merci.",
+      "script": "narrateur|Tom ouvre les yeux grand.\nenfant-f|Ça pique un peu. Elle a goûté une petite portion. Elle nomme le goût.\nenfant-m|Merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa boit une gorgée d'eau. Lina a goûté. Elle a nommé le goût. Une petite portion. Léa s'essuie la bouche.",
+      "script": "narrateur|Léa boit une gorgée d'eau. Lina a goûté. Elle a nommé le goût. Une petite portion. Léa s'essuie la bouche.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami sent le radis. Lina goûte une petite portion. Elle nomme le goût. Sami range le panier.",
+      "script": "narrateur|Sami sent le radis. Lina goûte une petite portion. Elle nomme le goût. Sami range le panier.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Papa cueille une feuille de salade. Elle est fraîche. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : frais. Bien dit.",
+      "script": "narrateur|Papa cueille une feuille de salade. Elle est fraîche. Lina goûte une petite portion. C'est croquant. Elle nomme le goût : frais.\nmaman|Bien dit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom touche la feuille. C'est frais. Elle a goûté une petite portion. Elle nomme le goût. Le vent est doux.",
+      "script": "narrateur|Tom touche la feuille.\nenfant-f|C'est frais. Elle a goûté une petite portion. Elle nomme le goût.\nnarrateur|Le vent est doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa met la feuille dans le panier. Lina a goûté. Elle a nommé le goût. Une petite portion. Elles marchent vers la maison.",
+      "script": "narrateur|Léa met la feuille dans le panier. Lina a goûté. Elle a nommé le goût. Une petite portion. Elles marchent vers la maison.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami écoute. Lina goûte une petite portion. Elle nomme le goût : croquant. Moi aussi, une petite bouchée.",
+      "script": "narrateur|Sami écoute. Lina goûte une petite portion. Elle nomme le goût : croquant.\nenfant-m|Moi aussi, une petite bouchée.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Lina est dans sa chambre. Maman apporte un petit plateau. Il y a un bâtonnet de concombre. Tu peux goûter une petite portion. Lina croque. C'est froid et frais. Elle nomme le goût : c'est frais, maman.",
+      "script": "narrateur|Lina est dans sa chambre. Maman apporte un petit plateau. Il y a un bâtonnet de concombre.\nmaman|Tu peux goûter une petite portion.\nnarrateur|Lina croque. C'est froid et frais. Elle nomme le goût : c'est frais, maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Lina nomme le goût. Que fait-elle ?",
+      "script": "narrateur|Lina nomme le goût. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Même dans la chambre, Lina a goûté. Elle a nommé le goût. Une petite portion suffit.",
+      "script": "narrateur|Même dans la chambre, Lina a goûté. Elle a nommé le goût. Une petite portion suffit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le concombre, le poivron, ou le maïs.",
+      "script": "narrateur|On peut prendre le concombre, le poivron, ou le maïs.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Le concombre est froid. Lina goûte une petite portion. Ça croque. Elle nomme le goût : frais. Papa pose le doudou à côté, tout sage.",
+      "script": "narrateur|Le concombre est froid. Lina goûte une petite portion. Ça croque. Elle nomme le goût : frais. Papa pose le doudou à côté, tout sage.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom s'assoit sur le tapis. C'est frais. Elle a goûté une petite portion. Elle nomme le goût. Tom pose le plateau.",
+      "script": "narrateur|Tom s'assoit sur le tapis.\nenfant-f|C'est frais. Elle a goûté une petite portion. Elle nomme le goût. Tom pose le plateau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa tient le doudou. Lina goûte. Elle nomme le goût. Une petite portion. C'est vert.",
+      "script": "narrateur|Léa tient le doudou. Lina goûte. Elle nomme le goût. Une petite portion.\nenfant-f|C'est vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami écoute près de la fenêtre. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rangent le plateau.",
+      "script": "narrateur|Sami écoute près de la fenêtre. Lina a goûté. Elle a nommé le goût. Une petite portion. Ils rangent le plateau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Maman offre un tout petit morceau de poivron. Il est rouge. Lina goûte une petite portion. C'est un peu sucré. Elle nomme le goût. Tu as dit le goût. Merci.",
+      "script": "narrateur|Maman offre un tout petit morceau de poivron. Il est rouge. Lina goûte une petite portion. C'est un peu sucré. Elle nomme le goût.\npapa|Tu as dit le goût. Merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est rouge. C'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Ils sourient.",
+      "script": "enfant-m|C'est rouge.\nenfant-f|C'est sucré. Elle a goûté une petite portion. Elle nomme le goût. Ils sourient.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa sent le poivron. Lina goûte une petite portion. Elle nomme le goût. Léa tapote le doudou.",
+      "script": "narrateur|Léa sent le poivron. Lina goûte une petite portion. Elle nomme le goût. Léa tapote le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami chuchote. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami dit merci à papa.",
+      "script": "narrateur|Sami chuchote. Lina a goûté. Elle a nommé le goût. Une petite portion. Sami dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Papa montre un grain de maïs. Il est jaune. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux. Une petite bouchée, c'est bien.",
+      "script": "narrateur|Papa montre un grain de maïs. Il est jaune. Lina goûte une petite portion. C'est doux. Elle nomme le goût : doux.\nmaman|Une petite bouchée, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rit : c'est jaune. Lina goûte. Elle nomme le goût. Une petite portion. Tom range le grain.",
+      "script": "narrateur|Tom rit : c'est jaune. Lina goûte. Elle nomme le goût. Une petite portion. Tom range le grain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa s'allonge un peu. Lina a goûté une petite portion. Elle a nommé le goût. C'est doux.",
+      "script": "narrateur|Léa s'allonge un peu. Lina a goûté une petite portion. Elle a nommé le goût.\nenfant-f|C'est doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami pose le plateau. Lina a goûté. Elle nomme le goût. Une petite portion. Maman baisse le store.",
+      "script": "narrateur|Sami pose le plateau. Lina a goûté. Elle nomme le goût. Une petite portion. Maman baisse le store.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

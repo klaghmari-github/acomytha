@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-014",
+  "fil_rouge": "",
+  "title": "Aller se coucher — au marché",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Sami, papa, maman",
+  "setting": "au marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sami a passé l'après-midi au marché avec papa. Maman les attend. Les sacs sont posés. Il fait nuit. Le soir, on met le pyjama. Puis c'est le dodo. Le corps a besoin de dormir.",
+      "script": "narrateur|Sami a passé l'après-midi au marché avec papa. Maman les attend. Les sacs sont posés. Il fait nuit. Le soir, on met le pyjama. Puis c'est le dodo. Le corps a besoin de dormir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Le sac rouge est près de la porte. Le soir, Sami met son pyjama. Papa l'aide. Maman ouvre le lit. Sami se couche. C'est le dodo.",
+      "script": "narrateur|Le sac rouge est près de la porte. Le soir, Sami met son pyjama. Papa l'aide. Maman ouvre le lit. Sami se couche. C'est le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sami rentre du marché. Que met-il ?",
+      "script": "narrateur|Sami rentre du marché. Que met-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Le sac rouge attend. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le sac rouge attend. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Le ballon rouge reste au salon. Sami a le pyjama. Le soir, il se couche. Dodo. Papa baisse la lumière.",
+      "script": "narrateur|Le ballon rouge reste au salon. Sami a le pyjama. Le soir, il se couche. Dodo. Papa baisse la lumière.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche est sur l'oreiller. Sami a le pyjama. Le soir, dodo. Papa baisse la lumière.",
+      "script": "narrateur|Le chat peluche est sur l'oreiller. Sami a le pyjama. Le soir, dodo. Papa baisse la lumière.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche est au pied. Sami a mis le pyjama. Le soir, dodo. Maman chuchote.",
+      "script": "narrateur|Le chien peluche est au pied. Sami a mis le pyjama. Le soir, dodo. Maman chuchote.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche est ronde. Sami se couche. Le soir, dodo. Le sac rouge attend.",
+      "script": "narrateur|La poule peluche est ronde. Sami se couche. Le soir, dodo. Le sac rouge attend.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Le seau bleu reste à la cuisine. Le soir, Sami a le pyjama. Au lit. Dodo.",
+      "script": "narrateur|Le seau bleu reste à la cuisine. Le soir, Sami a le pyjama. Au lit. Dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche ronronne. Sami a le pyjama. Le soir, dodo. Le seau bleu reste à la cuisine.",
+      "script": "narrateur|Le chat peluche ronronne. Sami a le pyjama. Le soir, dodo. Le seau bleu reste à la cuisine.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche garde. Sami a mis le pyjama. Le soir, dodo. Une pomme sent encore.",
+      "script": "narrateur|Le chien peluche garde. Sami a mis le pyjama. Le soir, dodo. Une pomme sent encore.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche est sous le bras. Sami, dodo. Le soir. Il respire.",
+      "script": "narrateur|La poule peluche est sous le bras. Sami, dodo. Le soir. Il respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Le doudou va au lit. Sami aussi. Le soir, pyjama. Dodo. Maman chuchote.",
+      "script": "narrateur|Le doudou va au lit. Sami aussi. Le soir, pyjama. Dodo. Maman chuchote.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. Maman pose un baiser.",
+      "script": "narrateur|Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. Maman pose un baiser.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche près du doudou. Sami a mis le pyjama. Le soir, dodo. Le salon s'éteint.",
+      "script": "narrateur|Le chien peluche près du doudou. Sami a mis le pyjama. Le soir, dodo. Le salon s'éteint.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Silence.",
+      "script": "narrateur|La poule peluche et le doudou. Sami se couche. Le soir, dodo. Silence.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Le sac bleu sent le pain. Le soir, Sami met son pyjama. Il est doux. Il se couche. C'est le dodo. Le corps a besoin de dormir.",
+      "script": "narrateur|Le sac bleu sent le pain. Le soir, Sami met son pyjama. Il est doux. Il se couche. C'est le dodo.\npapa|Le corps a besoin de dormir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Le sac bleu est posé. Sami met quoi ?",
+      "script": "narrateur|Le sac bleu est posé. Sami met quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Le pain attendra demain. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le pain attendra demain. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Le ballon rouge reste. Sami a le pyjama. Le soir, au lit. Dodo.",
+      "script": "narrateur|Le ballon rouge reste. Sami a le pyjama. Le soir, au lit. Dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche veille. Sami a le pyjama. Le soir, dodo. Le sac bleu sent le pain.",
+      "script": "narrateur|Le chat peluche veille. Sami a le pyjama. Le soir, dodo. Le sac bleu sent le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche veille. Sami a mis le pyjama. Le soir, dodo. Papa raconte deux phrases.",
+      "script": "narrateur|Le chien peluche veille. Sami a mis le pyjama. Le soir, dodo. Papa raconte deux phrases.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche veille. Sami se couche. Le soir, dodo. Le pain attendra demain.",
+      "script": "narrateur|La poule peluche veille. Sami se couche. Le soir, dodo. Le pain attendra demain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Le seau bleu est rangé. Le soir, pyjama. Sami se couche. Dodo.",
+      "script": "narrateur|Le seau bleu est rangé. Le soir, pyjama. Sami se couche. Dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche ferme un œil. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le chat peluche ferme un œil. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche a une oreille sur l'oreiller. Sami a mis le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le chien peluche a une oreille sur l'oreiller. Sami a mis le pyjama. Le soir, dodo.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche est ronde et chaude. Sami, dodo. Le soir.",
+      "script": "narrateur|La poule peluche est ronde et chaude. Sami, dodo. Le soir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Le doudou sent le savon. Sami a le pyjama. Le soir, dodo. Maman pose un baiser.",
+      "script": "narrateur|Le doudou sent le savon. Sami a le pyjama. Le soir, dodo. Maman pose un baiser.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche et le doudou sentent le savon. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le chat peluche et le doudou sentent le savon. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. Maman baisse le store.",
+      "script": "narrateur|Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. Maman baisse le store.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Demain.",
+      "script": "narrateur|La poule peluche et le doudou. Sami se couche. Le soir, dodo.\npapa|Demain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Le sac vert a des pommes. Le soir, Sami met son pyjama. Maman boutonne. Il se couche. C'est le dodo. Papa raconte deux phrases.",
+      "script": "narrateur|Le sac vert a des pommes. Le soir, Sami met son pyjama. Maman boutonne. Il se couche. C'est le dodo. Papa raconte deux phrases.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Le sac vert est posé. Sami met quoi pour dormir ?",
+      "script": "narrateur|Le sac vert est posé. Sami met quoi pour dormir ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Les pommes dormiront dans le plat. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Les pommes dormiront dans le plat. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Le ballon rouge reste au couloir. Sami a le pyjama. Le soir, dodo.",
+      "script": "narrateur|Le ballon rouge reste au couloir. Sami a le pyjama. Le soir, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche. Sami a le pyjama. Le soir, dodo. Le sac vert a des pommes.",
+      "script": "narrateur|Le chat peluche. Sami a le pyjama. Le soir, dodo. Le sac vert a des pommes.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Les pommes dormiront dans le plat.",
+      "script": "narrateur|Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Les pommes dormiront dans le plat.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche. Sami se couche. Le soir, dodo. Le ballon reste au couloir.",
+      "script": "narrateur|La poule peluche. Sami se couche. Le soir, dodo. Le ballon reste au couloir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Le seau bleu reste près des pommes. Le soir, pyjama. Sami au lit. Dodo.",
+      "script": "narrateur|Le seau bleu reste près des pommes. Le soir, pyjama. Sami au lit. Dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche. Sami a le pyjama. Le soir, dodo. Le seau bleu reste près des pommes.",
+      "script": "narrateur|Le chat peluche. Sami a le pyjama. Le soir, dodo. Le seau bleu reste près des pommes.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Une pomme roule, tout doux.",
+      "script": "narrateur|Le chien peluche. Sami a mis le pyjama. Le soir, dodo. Une pomme roule, tout doux.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche. Sami, dodo. Le soir. Il ferme les yeux.",
+      "script": "narrateur|La poule peluche. Sami, dodo. Le soir. Il ferme les yeux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Le doudou retrouve l'oreiller. Sami a le pyjama. Le soir, dodo. La maison est calme.",
+      "script": "narrateur|Le doudou retrouve l'oreiller. Sami a le pyjama. Le soir, dodo. La maison est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. La maison est calme.",
+      "script": "narrateur|Le chat peluche et le doudou. Sami a le pyjama. Le soir, dodo. La maison est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. On entend la rue, loin.",
+      "script": "narrateur|Le chien peluche et le doudou. Sami a mis le pyjama. Le soir, dodo. On entend la rue, loin.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La poule peluche et le doudou. Sami se couche. Le soir, dodo. Maman ferme la porte.",
+      "script": "narrateur|La poule peluche et le doudou. Sami se couche. Le soir, dodo. Maman ferme la porte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

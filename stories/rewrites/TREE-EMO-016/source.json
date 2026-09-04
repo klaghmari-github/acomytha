@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-EMO-016",
+  "fil_rouge": "",
+  "title": "Sami est content",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Sami, papa, maman",
+  "setting": "chemin de l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sami marche vers l'école avec papa. Ses joues sont chaudes. Il sourit. Tu es content. C'est de la joie. On peut partager. On invite. On ne bouscule pas.",
+      "script": "narrateur|Sami marche vers l'école avec papa. Ses joues sont chaudes. Il sourit.\npapa|Tu es content. C'est de la joie. On peut partager. On invite. On ne bouscule pas.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le portail, le banc, ou la cour.",
+      "script": "narrateur|On peut prendre le portail, le banc, ou la cour.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Sami va vers le portail. Les chaussures font toc toc. papa est tout près. Je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "script": "narrateur|Sami va vers le portail. Les chaussures font toc toc. papa est tout près.\nenfant-m|Je suis content.\nnarrateur|Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sami sourit fort. Quelle émotion ?",
+      "script": "narrateur|Sami sourit fort. Quelle émotion ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Sami a retenu. Sami est content. Il sent la joie. Il la partage sans bousculer. On continue avec papa.",
+      "script": "narrateur|Oui. Sami a retenu. Sami est content. Il sent la joie. Il la partage sans bousculer. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Iris.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Iris.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Sami a choisi Léa. Un oiseau chante. papa montre lentement. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Léa. Un oiseau chante. papa montre lentement. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Le portail grince doux. Je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "script": "narrateur|Sami rejoint un sourire. Le portail grince doux.\nenfant-m|Je suis content.\nnarrateur|Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "script": "narrateur|Sami rejoint une chanson. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "script": "narrateur|Sami rejoint un jeu. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Sami a choisi Tom. La lumière est claire. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Tom. La lumière est claire. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "script": "narrateur|Sami rejoint un sourire. Papa tient la main. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "script": "narrateur|Sami rejoint une chanson. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "script": "narrateur|Sami rejoint un jeu. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami a choisi Iris. Un ballon rebondit. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Iris. Un ballon rebondit. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "script": "narrateur|Sami rejoint un sourire. Un rire passe. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "script": "narrateur|Sami rejoint une chanson. Les feuilles bougent. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "script": "narrateur|Sami rejoint un jeu. Le cartable est léger. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le portail, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Sami va vers le banc. Le banc est froid. papa est tout près. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "script": "narrateur|Sami va vers le banc. Le banc est froid. papa est tout près. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Sami sourit fort. Quelle émotion ?",
+      "script": "narrateur|Sami sourit fort. Quelle émotion ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Sami respire. Sami est content. Il sent la joie. Il la partage sans bousculer. Je suis là.",
+      "script": "narrateur|Sami respire. Sami est content. Il sent la joie. Il la partage sans bousculer.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Iris.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Iris.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Sami a choisi Léa. Le portail grince doux. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Léa. Le portail grince doux. papa montre lentement. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Papa tient la main. Je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "script": "narrateur|Sami rejoint un sourire. Papa tient la main.\nenfant-m|Je suis content.\nnarrateur|Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "script": "narrateur|Sami rejoint une chanson. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "script": "narrateur|Sami rejoint un jeu. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Sami a choisi Tom. Papa tient la main. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Tom. Papa tient la main. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "script": "narrateur|Sami rejoint un sourire. Un rire passe. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "script": "narrateur|Sami rejoint une chanson. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "script": "narrateur|Sami rejoint un jeu. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami a choisi Iris. Un rire passe. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Iris. Un rire passe. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "script": "narrateur|Sami rejoint un sourire. Les feuilles bougent. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "script": "narrateur|Sami rejoint une chanson. Le cartable est léger. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Le ciel est bleu. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "script": "narrateur|Sami rejoint un jeu. Le ciel est bleu. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. le banc, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Sami va vers la cour. La cour sent l'herbe. papa est tout près. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "script": "narrateur|Sami va vers la cour. La cour sent l'herbe. papa est tout près. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Sami sourit fort. Quelle émotion ?",
+      "script": "narrateur|Sami sourit fort. Quelle émotion ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Sami est content. Il sent la joie. Il la partage sans bousculer. Sami donne la main à papa.",
+      "script": "narrateur|C'est juste. Sami est content. Il sent la joie. Il la partage sans bousculer. Sami donne la main à papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Iris.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Iris.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sami a choisi Léa. Les feuilles bougent. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Léa. Les feuilles bougent. papa montre lentement. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Un rire passe. Je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "script": "narrateur|Sami rejoint un sourire. Un rire passe.\nenfant-m|Je suis content.\nnarrateur|Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "script": "narrateur|Sami rejoint une chanson. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "script": "narrateur|Sami rejoint un jeu. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Léa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sami a choisi Tom. Le cartable est léger. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Tom. Le cartable est léger. papa montre lentement. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "script": "narrateur|Sami rejoint un sourire. Les feuilles bougent. Sami invite à partager. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "script": "narrateur|Sami rejoint une chanson. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "script": "narrateur|Sami rejoint un jeu. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Tom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami a choisi Iris. Le ciel est bleu. papa montre lentement. Je suis content. Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "script": "narrateur|Sami a choisi Iris. Le ciel est bleu. papa montre lentement.\nenfant-m|Je suis content.\nnarrateur|Sami est content. Il sent la joie. Il la partage sans bousculer. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un sourire, une chanson, ou un jeu.",
+      "script": "narrateur|On peut prendre un sourire, une chanson, ou un jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sami rejoint un sourire. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "script": "narrateur|Sami rejoint un sourire. Le cartable est léger. Sami sourit. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sami rejoint une chanson. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "script": "narrateur|Sami rejoint une chanson. Le ciel est bleu. Sami montre sa joie. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rejoint un jeu. Les chaussures font toc toc. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "script": "narrateur|Sami rejoint un jeu. Les chaussures font toc toc. Sami reste près de papa. Sami est content. Il sent la joie. Il la partage sans bousculer. papa dit merci. la cour, puis Iris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

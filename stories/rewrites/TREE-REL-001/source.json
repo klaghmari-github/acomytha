@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-REL-001",
+  "fil_rouge": "",
+  "title": "Partager un jouet — au parc",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Nino, maman, papa",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Au parc, Nino a un ballon. Tom arrive et tend les mains. Nino aime son ballon. Maman est au banc. Papa pousse une balançoire. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Au parc, Nino a un ballon. Tom arrive et tend les mains. Nino aime son ballon. Maman est au banc. Papa pousse une balançoire. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Dans un coin cuisine du parc, on joue. Tom veut le même ustensile. C'est la cuisine. Le savon sent la fleur. Nino s'approche, sans courir. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Dans un coin cuisine du parc, on joue. Tom veut le même ustensile. C'est la cuisine. Le savon sent la fleur. Nino s'approche, sans courir. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade veut le jouet. Que peut-on faire ? Avec la cuisine.",
+      "script": "narrateur|Un camarade veut le jouet. Que peut-on faire ? Avec la cuisine.",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino retient le geste. Il respire.",
+      "script": "narrateur|Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino retient le geste. Il respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino a choisi le ballon rouge, après la cuisine. La pomme est croquante. Nino montre le ballon rouge à maman. Il nomme ce qu'il sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le ballon rouge, après la cuisine. La pomme est croquante. Nino montre le ballon rouge à maman. Il nomme ce qu'il sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le ballon rouge. La tasse est encore tiède. On dit merci. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Je t'ai entendu. Papa aussi. Le soleil est encore là.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la cuisine et le ballon rouge. La tasse est encore tiède. On dit merci. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.\nmaman|Je t'ai entendu. Papa aussi.\nnarrateur|Le soleil est encore là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le ballon rouge. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Léa et va vers maman. On gardu geste.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la cuisine et le ballon rouge. Le parquet craque un tout petit peu. On écoute jusqu'au bout. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Léa et va vers maman. On gardu geste.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le ballon rouge. Une abeille bourdonne loin. On attend un petit moment. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Papa et maman sont là.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la cuisine et le ballon rouge. Une abeille bourdonne loin. On attend un petit moment. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino a choisi le seau bleu, après la cuisine. Le vent sent la mer. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le seau bleu, après la cuisine. Le vent sent la mer. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le seau bleu. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On respire.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la cuisine et le seau bleu. Un gravier roule sous une semelle. On pose les fesses sur une chaise. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le seau bleu. La fenêtre tremble un tout petit peu. On sourit un peu. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Je t'ai entendu. Papa aussi. Merci, et au dodo bientôt.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la cuisine et le seau bleu. La fenêtre tremble un tout petit peu. On sourit un peu. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.\nmaman|Je t'ai entendu. Papa aussi. Merci, et au dodo bientôt.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le seau bleu. Ça sent le savon de maman. On boit une gorgée d'eau. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Le jeu peut recommencer.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la cuisine et le seau bleu. Ça sent le savon de maman. On boit une gorgée d'eau. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. Le jeu peut recommencer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino a choisi le doudou, après la cuisine. La clochette de la porte tinte. Avec le doudou, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le doudou, après la cuisine. La clochette de la porte tinte. Avec le doudou, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la cuisine et le doudou. Un pigeon roucoule. On essuie une miette. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On se serre un peu.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la cuisine et le doudou. Un pigeon roucoule. On essuie une miette. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On se serre un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la cuisine et le doudou. La cuillère tinte. On referme un livre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On rentre.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la cuisine et le doudou. La cuillère tinte. On referme un livre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la cuisine et le doudou. Le ballon est un peu poudreux. On pose un jouet à sa place. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Je t'ai entendu. Papa aussi. La journée continue, tout doux.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la cuisine et le doudou. Le ballon est un peu poudreux. On pose un jouet à sa place. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.\nmaman|Je t'ai entendu. Papa aussi.\nnarrateur|La journée continue, tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Vers le jardin du parc, on court moins. Léa veut le ballon. Nino s'occupe du jardin. Le sable est un peu frais. Maman sourit. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Vers le jardin du parc, on court moins. Léa veut le ballon. Nino s'occupe du jardin. Le sable est un peu frais. Maman sourit. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade veut le jouet. Que peut-on faire ? Avec le jardin.",
+      "script": "narrateur|Un camarade veut le jouet. Que peut-on faire ? Avec le jardin.",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino répète le mot. Maman hoche la tête.",
+      "script": "narrateur|Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino répète le mot. Maman hoche la tête.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino a choisi le ballon rouge, après le jardin. Un ruisseau chante tout bas. Le ballon rouge reste à sa place. Nino aussi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le ballon rouge, après le jardin. Un ruisseau chante tout bas. Le ballon rouge reste à sa place. Nino aussi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le ballon rouge. Une goutte de pluie sèche déjà. On marche tout doucement. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. On se dit à plus tard.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après le jardin et le ballon rouge. Une goutte de pluie sèche déjà. On marche tout doucement. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. On se dit à plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le ballon rouge. Le banc est tiède. On se tait une seconde. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Léa un instant. Puis il reprend, calme. Le soleil est encore là.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après le jardin et le ballon rouge. Le banc est tiède. On se tait une seconde. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Léa un instant. Puis il reprend, calme. Le soleil est encore là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le ballon rouge. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On gardu geste.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après le jardin et le ballon rouge. Ça sent le savon des mains. On ouvre les mains, loin de l'autre. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino boit une gorgée. Il se sent plus léger. On gardu geste.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino a choisi le seau bleu, après le jardin. Une goutte de pluie sèche déjà. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le seau bleu, après le jardin. Une goutte de pluie sèche déjà. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le seau bleu. Une feuille tourne et tombe. On s'assoit près de l'adulte. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Papa et maman sont là.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après le jardin et le seau bleu. Une feuille tourne et tombe. On s'assoit près de l'adulte. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le seau bleu. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On respire.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après le jardin et le seau bleu. L'eau fait un tout petit bruit. On nomme ce qu'on sent. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le seau bleu. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Je t'ai entendu. Papa aussi. Merci, et au dodo bientôt.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après le jardin et le seau bleu. Le soleil chauffe un peu le nez. On reprend le jeu, plus calme. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.\nmaman|Je t'ai entendu. Papa aussi. Merci, et au dodo bientôt.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino a choisi le doudou, après le jardin. Il y a des miettes sur la table. Près du doudou, Nino prend le temps. Pas de course. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le doudou, après le jardin. Il y a des miettes sur la table. Près du doudou, Nino prend le temps. Pas de course. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après le jardin et le doudou. Une plume vole. On range les chaussures. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Le jeu peut recommencer.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après le jardin et le doudou. Une plume vole. On range les chaussures. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On laisse Tom à sa place. Nino est près de maman. Le jeu peut recommencer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après le jardin et le doudou. Le pain croustille. On met le doudou près de soi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après le jardin et le doudou. Le pain croustille. On met le doudou près de soi. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après le jardin et le doudou. La laine du doudou est douce. On écoute le cœur, tout doux. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. On rentre.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après le jardin et le doudou. La laine du doudou est douce. On écoute le cœur, tout doux. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit au revoir à Sami et va vers maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Près d'un coin comme une chambre à doudous, Sami tend la main. Voilà la chambre. Le banc est tiède. Nino pose les pieds par terre, près de maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Près d'un coin comme une chambre à doudous, Sami tend la main. Voilà la chambre. Le banc est tiède. Nino pose les pieds par terre, près de maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade veut le jouet. Que peut-on faire ? Avec la chambre.",
+      "script": "narrateur|Un camarade veut le jouet. Que peut-on faire ? Avec la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino pose les pieds par terre. On continue, tout calme.",
+      "script": "narrateur|Oui. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino pose les pieds par terre. On continue, tout calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Nino a choisi le ballon rouge, après la chambre. Une goutte tombe dans l'évier. Nino touche le ballon rouge tout doucement. Je suis là. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le ballon rouge, après la chambre. Une goutte tombe dans l'évier. Nino touche le ballon rouge tout doucement.\nmaman|Je suis là.\nnarrateur|Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le ballon rouge. Un galet est lisse dans la main. On secoue les mains, loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. La journée continue, tout doux.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la chambre et le ballon rouge. Un galet est lisse dans la main. On secoue les mains, loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. La journée continue, tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le ballon rouge. Le train souffle au loin. On pose le sac. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On se dit à plus tard.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la chambre et le ballon rouge. Le train souffle au loin. On pose le sac. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On se dit à plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le ballon rouge. Une vache meugle, loin. On dit le mot de l'émotion. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. Le soleil est encore là.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la chambre et le ballon rouge. Une vache meugle, loin. On dit le mot de l'émotion. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino dit merci à maman. Papa sourit. Le soleil est encore là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Nino a choisi le seau bleu, après la chambre. Il y a des miettes sur la table. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le seau bleu, après la chambre. Il y a des miettes sur la table. Avec le seau bleu, Nino ralentit. Il écoute maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le seau bleu. Un grillon chante, tout petit. On invite d'une petite voix. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On gardu geste.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la chambre et le seau bleu. Un grillon chante, tout petit. On invite d'une petite voix. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On gardu geste.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le seau bleu. Le bois de la table est lisse. On attend la réponse. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. Papa et maman sont là.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la chambre et le seau bleu. Le bois de la table est lisse. On attend la réponse. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le seau bleu. Une goutte tombe dans l'évier. On propose une autre idée. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On respire.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la chambre et le seau bleu. Une goutte tombe dans l'évier. On propose une autre idée. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino nomme encore le mot, tout bas. On respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Nino a choisi le doudou, après la chambre. La pomme est croquante. Nino choisit le doudou. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "script": "narrateur|Nino a choisi le doudou, après la chambre. La pomme est croquante. Nino choisit le doudou. Papa n'est pas loin. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nino rejoint Tom pour jouer, après la chambre et le doudou. Le toboggan est un peu froid. On va vers papa ou maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Tom un instant. Puis il reprend, calme. Merci, et au dodo bientôt.",
+      "script": "narrateur|Nino rejoint Tom pour jouer, après la chambre et le doudou. Le toboggan est un peu froid. On va vers papa ou maman. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. Nino range Tom un instant. Puis il reprend, calme. Merci, et au dodo bientôt.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nino rejoint Léa pour jouer, après la chambre et le doudou. La clochette de la porte tinte. On dit stop, tout clair. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. Le jeu peut recommencer.",
+      "script": "narrateur|Nino rejoint Léa pour jouer, après la chambre et le doudou. La clochette de la porte tinte. On dit stop, tout clair. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. Le jeu peut recommencer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nino rejoint Sami pour jouer, après la chambre et le doudou. Ça sent le thym du jardin. On s'éloigne d'un pas. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu.",
+      "script": "narrateur|Nino rejoint Sami pour jouer, après la chambre et le doudou. Ça sent le thym du jardin. On s'éloigne d'un pas. Nino peut prêter le jouet. Il attend son tour. Il peut aussi proposer un autre jeu. Maman est là. On écoute le silence une seconde. Nino est assis. On se serre un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

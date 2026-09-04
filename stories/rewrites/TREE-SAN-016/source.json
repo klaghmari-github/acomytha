@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-016",
+  "fil_rouge": "",
+  "title": "Éteindre l'écran et choisir un autre jeu — dans le jardin",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Zoé, papa, maman",
+  "setting": "dans le jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé est dans le jardin. Un petit écran est sur le banc. Papa s'assoit. Maman arrive. L'adulte dit fini. Zoé va éteindre. Puis elle prend un autre jeu, dehors.",
+      "script": "narrateur|Zoé est dans le jardin. Un petit écran est sur le banc. Papa s'assoit. Maman arrive. L'adulte dit fini. Zoé va éteindre. Puis elle prend un autre jeu, dehors.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Le chat du jardin passe. Fini. L'adulte dit fini. Zoé éteint l'écran. Elle le pose. Un autre jeu. Zoé cherche dans l'herbe.",
+      "script": "narrateur|Le chat du jardin passe.\npapa|Fini. L'adulte dit fini.\nnarrateur|Zoé éteint l'écran. Elle le pose.\npapa|Un autre jeu.\nnarrateur|Zoé cherche dans l'herbe.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Papa dit fini. Que fait Zoé ?",
+      "script": "narrateur|Papa dit fini. Que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Zoé a éteint. L'adulte a dit fini. Un autre jeu commence, au jardin.",
+      "script": "narrateur|Zoé a éteint. L'adulte a dit fini. Un autre jeu commence, au jardin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé va au bac à sable. L'écran est éteint. L'adulte a dit fini. Un autre jeu : creuser. Le chat s'éloigne.",
+      "script": "narrateur|Zoé va au bac à sable. L'écran est éteint. L'adulte a dit fini. Un autre jeu : creuser. Le chat s'éloigne.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Seau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu au bac.",
+      "script": "narrateur|Seau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu au bac.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Seau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle creuse.",
+      "script": "narrateur|Seau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle creuse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Seau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Le sable est chaud.",
+      "script": "narrateur|Seau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Le sable est chaud.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé gravit le toboggan. L'écran est éteint. L'adulte a dit fini. Un autre jeu : glisser. Papa la voit.",
+      "script": "narrateur|Zoé gravit le toboggan. L'écran est éteint. L'adulte a dit fini. Un autre jeu : glisser. Papa la voit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Manteau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle glisse.",
+      "script": "narrateur|Manteau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle glisse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Manteau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Papa attend en bas.",
+      "script": "narrateur|Manteau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Papa attend en bas.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Manteau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle rit.",
+      "script": "narrateur|Manteau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle rit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé se balance. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Maman pousse tout doux.",
+      "script": "narrateur|Zoé se balance. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Maman pousse tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nœud rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Ça va, ça vient.",
+      "script": "narrateur|Nœud rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Ça va, ça vient.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nœud bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Maman pousse.",
+      "script": "narrateur|Nœud bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Maman pousse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nœud vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle chante.",
+      "script": "narrateur|Nœud vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu. Elle chante.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Le chien du voisin reste loin, avec son maître. Fini. L'adulte dit fini. Zoé éteint. Elle range l'écran dans le sac. Un autre jeu.",
+      "script": "narrateur|Le chien du voisin reste loin, avec son maître.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Zoé éteint. Elle range l'écran dans le sac.\nmaman|Un autre jeu.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Zoé ?",
+      "script": "narrateur|Maman dit fini. Que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Zoé a éteint. L'adulte a dit fini. Le chien reste loin. Un autre jeu.",
+      "script": "narrateur|Zoé a éteint. L'adulte a dit fini. Le chien reste loin. Un autre jeu.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Au bac, Zoé creuse. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Au bac, Zoé creuse. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Seau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Seau rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Seau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Seau bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Seau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Seau vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Au toboggan, Zoé attend. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Au toboggan, Zoé attend. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Bonnet rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Bonnet rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Bonnet bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Bonnet bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Bonnet vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Bonnet vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "À la balançoire, Zoé s'assoit. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|À la balançoire, Zoé s'assoit. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Chaussures rouges. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Chaussures rouges. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Chaussures bleues. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Chaussures bleues. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Chaussures vertes. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Chaussures vertes. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Une poule picore au fond. Fini. L'adulte dit fini. Zoé éteint. L'écran devient noir. Un autre jeu, maintenant.",
+      "script": "narrateur|Une poule picore au fond.\npapa|Fini. L'adulte dit fini.\nnarrateur|Zoé éteint. L'écran devient noir.\npapa|Un autre jeu, maintenant.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "L'adulte dit fini. Que fait Zoé ?",
+      "script": "narrateur|L'adulte dit fini. Que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Zoé a éteint. L'adulte a dit fini. La poule picore. Un autre jeu.",
+      "script": "narrateur|Zoé a éteint. L'adulte a dit fini. La poule picore. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé empile du sable. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Zoé empile du sable. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Moule rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Moule rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Moule bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Moule bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Moule vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Moule vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé glisse. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Maman clapote.",
+      "script": "narrateur|Zoé glisse. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Maman clapote.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Collant rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Collant rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Collant bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Collant bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Collant vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Collant vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé se balance et compte. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Zoé se balance et compte. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Fil rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Fil rouge. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Fil bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Fil bleu. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Fil vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Fil vert. Zoé a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

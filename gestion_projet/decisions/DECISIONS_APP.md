@@ -42,3 +42,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D36 | Identité hors vitrine | Connexion, inscription, parent, admin, enfant : mêmes jetons que la vitrine (nuit, or, crème, Fraunces). Solde et prix acm après connexion. F-APP-007. |
 | D37 | POO | Encapsulation réelle : champs privés, propriétés pour les invariants. Pas un getter/setter vide par variable. Une classe = un rôle. Routeurs FastAPI inchangés. F-APP-008. |
 | D38 | Catalogue entier | Les consignes récit (monde, désir, imprévu, résolution, fin heureuse, leçon greffée) s’appliquent à **toutes** les histoires (685 ATOM + ramifiés). Plus seulement AUT-001 / COL-001. Texte d’abord, audio ensuite. Voix : lent, non robot, non monotone. |
+| D39 | Vitrine chiffres | Accueil : **> 1400** histoires, **> 10** thèmes, **> 80** leçons. Totaux exacts dans `stories/CHIFFRES.md` seulement. |

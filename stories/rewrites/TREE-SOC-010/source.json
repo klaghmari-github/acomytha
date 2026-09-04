@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SOC-010",
+  "fil_rouge": "",
+  "title": "Métiers de tous les jours — dans la chambre",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Lina, papa, maman",
+  "setting": "dans la chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lina est dans la chambre avec papa. Ils jouent aux métiers. Le boulanger pétrit. La maîtresse montre. Le médecin écoute. Chaque métier a un geste utile. Maman tape à la porte.",
+      "script": "narrateur|Lina est dans la chambre avec papa. Ils jouent aux métiers. Le boulanger pétrit. La maîtresse montre. Le médecin écoute. Chaque métier a un geste utile. Maman tape à la porte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Lina prend les cubes. Une feuille tombe. Les cubes servent au métier. Lina nomme le métier. Elle montre le geste utile. Oui.",
+      "script": "narrateur|Lina prend les cubes. Une feuille tombe. Les cubes servent au métier. Lina nomme le métier. Elle montre le geste utile.\npapa|Oui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Lina joue aux métiers. Que fait-on ?",
+      "script": "narrateur|Lina joue aux métiers. Que fait-on ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "script": "narrateur|Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Le soleil chauffe un peu. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Le soleil chauffe un peu. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Le sol est frais. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Le sol est frais. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Un petit bruit d'eau. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Un petit bruit d'eau. Avec les cubes et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Le sol est frais. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Le sol est frais. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Un petit bruit d'eau. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Un petit bruit d'eau. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Les chaussures font toc toc. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Les chaussures font toc toc. Avec les cubes et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Un petit bruit d'eau. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Un petit bruit d'eau. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Les chaussures font toc toc. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Les chaussures font toc toc. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Un vélo passe au loin. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Un vélo passe au loin. Avec les cubes et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Lina prend le livre. Le vent est doux. Le livre sert au métier. Lina nomme le métier. Elle montre le geste utile. Oui.",
+      "script": "narrateur|Lina prend le livre. Le vent est doux. Le livre sert au métier. Lina nomme le métier. Elle montre le geste utile.\npapa|Oui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Lina joue aux métiers. Que fait-on ?",
+      "script": "narrateur|Lina joue aux métiers. Que fait-on ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "script": "narrateur|Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Le sol est frais. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Le sol est frais. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Un petit bruit d'eau. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Un petit bruit d'eau. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Les chaussures font toc toc. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Les chaussures font toc toc. Avec le livre et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Un petit bruit d'eau. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Un petit bruit d'eau. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Les chaussures font toc toc. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Les chaussures font toc toc. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Un vélo passe au loin. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Un vélo passe au loin. Avec le livre et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Les chaussures font toc toc. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Les chaussures font toc toc. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Un vélo passe au loin. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Un vélo passe au loin. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. La lumière est claire. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. La lumière est claire. Avec le livre et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Lina prend la dînette. On entend un oiseau. La dînette sert au métier. Lina nomme le métier. Elle montre le geste utile. Oui.",
+      "script": "narrateur|Lina prend la dînette. On entend un oiseau. La dînette sert au métier. Lina nomme le métier. Elle montre le geste utile.\npapa|Oui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Lina joue aux métiers. Que fait-on ?",
+      "script": "narrateur|Lina joue aux métiers. Que fait-on ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "script": "narrateur|Oui. Métier. Geste utile. Lina a retenu. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose une pomme comme dans le métier. Le sol est frais. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Un petit bruit d'eau. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Un petit bruit d'eau. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Les chaussures font toc toc. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Les chaussures font toc toc. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Un vélo passe au loin. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Un vélo passe au loin. Avec la dînette et une pomme, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un yaourt comme dans le métier. Un petit bruit d'eau. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Les chaussures font toc toc. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Les chaussures font toc toc. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. Un vélo passe au loin. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. Un vélo passe au loin. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. La lumière est claire. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. La lumière est claire. Avec la dînette et un yaourt, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "script": "narrateur|Lina pose un morceau de pain comme dans le métier. Les chaussures font toc toc. Un métier. Un geste utile. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina rejoint le chat. Un vélo passe au loin. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chat. Un vélo passe au loin. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina rejoint le chien. La lumière est claire. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint le chien. La lumière est claire. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina rejoint la poule. Ça sent le pain. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "script": "narrateur|Lina rejoint la poule. Ça sent le pain. Avec la dînette et un morceau de pain, Lina a nommé le métier. Et le geste utile. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

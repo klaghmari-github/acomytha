@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-003",
+  "fil_rouge": "",
+  "title": "Boire de l'eau — au parc",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Maya, maman, papa",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya joue au parc avec maman. Papa arrive aussi. Le soleil tape. Maya a soif. Sa bouche est sèche. Maman a un verre. Dedans, il y a de l'eau. Quand on a soif, on boit de l'eau dans un verre.",
+      "script": "narrateur|Maya joue au parc avec maman. Papa arrive aussi. Le soleil tape. Maya a soif. Sa bouche est sèche. Maman a un verre. Dedans, il y a de l'eau. Quand on a soif, on boit de l'eau dans un verre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Maya creuse au bac à sable. Le sable est chaud. Elle a soif. Maman tend un verre. Maya boit de l'eau dans le verre. L'eau est fraîche. Quand on a soif, on boit de l'eau.",
+      "script": "narrateur|Maya creuse au bac à sable. Le sable est chaud. Elle a soif. Maman tend un verre. Maya boit de l'eau dans le verre. L'eau est fraîche.\npapa|Quand on a soif, on boit de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Maya a soif. Que boit-elle ?",
+      "script": "narrateur|Maya a soif. Que boit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Maya a bu. L'eau était dans le verre. La soif est partie. Elle peut rejouer.",
+      "script": "narrateur|Maya a bu. L'eau était dans le verre. La soif est partie. Elle peut rejouer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom a le sable aux mains. Il a soif aussi. Maman verse de l'eau dans un verre. Tom boit. L'eau, dans le verre. Quand on a soif.",
+      "script": "narrateur|Tom a le sable aux mains. Il a soif aussi. Maman verse de l'eau dans un verre. Tom boit.\nenfant-f|L'eau, dans le verre. Quand on a soif.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, le parc est calme. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "script": "narrateur|Le matin, le parc est calme. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Maya a soif. Elle prend le verre. Elle boit de l'eau. Encore un peu.",
+      "script": "narrateur|Après la sieste, Maya a soif. Elle prend le verre. Elle boit de l'eau.\nenfant-m|Encore un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, l'air est plus doux. Maya a soif. Elle boit de l'eau dans un verre. Tom range le seau.",
+      "script": "narrateur|Le soir, l'air est plus doux. Maya a soif. Elle boit de l'eau dans un verre. Tom range le seau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Léa s'assoit au bord du bac. Elle a soif. Papa donne un verre d'eau. Léa boit. Maya boit aussi. L'eau coule, fraîche.",
+      "script": "narrateur|Léa s'assoit au bord du bac. Elle a soif. Papa donne un verre d'eau. Léa boit. Maya boit aussi. L'eau coule, fraîche.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Léa a soif. Maya lui passe le verre. Elles boivent de l'eau. La soif s'en va.",
+      "script": "narrateur|Le matin, Léa a soif. Maya lui passe le verre. Elles boivent de l'eau. La soif s'en va.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Léa bâille. Elle a soif. Maya boit de l'eau dans un verre. Léa aussi.",
+      "script": "narrateur|Après la sieste, Léa bâille. Elle a soif. Maya boit de l'eau dans un verre. Léa aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Léa a encore soif. Maya prend le verre. Elles boivent de l'eau. Maman range.",
+      "script": "narrateur|Le soir, Léa a encore soif. Maya prend le verre. Elles boivent de l'eau. Maman range.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami a bâti un château. Il a soif. Maya lui montre le verre. Sami boit de l'eau. J'avais soif. L'eau m'a aidée.",
+      "script": "narrateur|Sami a bâti un château. Il a soif. Maya lui montre le verre. Sami boit de l'eau.\nenfant-f|J'avais soif. L'eau m'a aidée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Sami a soif. Maya boit de l'eau dans un verre. Sami aussi. Le château reste.",
+      "script": "narrateur|Le matin, Sami a soif. Maya boit de l'eau dans un verre. Sami aussi. Le château reste.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Sami a chaud. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Après la sieste, Sami a chaud. Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Sami range. Maya a soif. Elle boit de l'eau dans un verre. Bien.",
+      "script": "narrateur|Le soir, Sami range. Maya a soif. Elle boit de l'eau dans un verre.\npapa|Bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Maya gravit le petit toboggan. En haut, elle a soif. Elle redescend. Maman l'attend avec un verre. Maya boit de l'eau. L'eau glisse, fraîche. Soif, alors un verre d'eau.",
+      "script": "narrateur|Maya gravit le petit toboggan. En haut, elle a soif. Elle redescend. Maman l'attend avec un verre. Maya boit de l'eau. L'eau glisse, fraîche.\npapa|Soif, alors un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Maya redescend. Que boit-elle ?",
+      "script": "narrateur|Maya redescend. Que boit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Après le toboggan, Maya a bu. L'eau était dans le verre. La soif est partie.",
+      "script": "narrateur|Après le toboggan, Maya a bu. L'eau était dans le verre. La soif est partie.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom glisse aussi. Il a soif. Maman remplit le verre d'eau. Tom boit. Quand on a soif, un verre d'eau.",
+      "script": "narrateur|Tom glisse aussi. Il a soif. Maman remplit le verre d'eau. Tom boit.\nenfant-f|Quand on a soif, un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, le toboggan est frais. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "script": "narrateur|Le matin, le toboggan est frais. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Tom a chaud. Maya boit de l'eau dans un verre. La soif s'en va.",
+      "script": "narrateur|Après la sieste, Tom a chaud. Maya boit de l'eau dans un verre. La soif s'en va.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, ils glissent une dernière fois. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Le soir, ils glissent une dernière fois. Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Léa attend en bas. Elle a soif. Papa tend le verre d'eau. Léa boit. Maya boit. Elles soufflent. Plus soif.",
+      "script": "narrateur|Léa attend en bas. Elle a soif. Papa tend le verre d'eau. Léa boit. Maya boit. Elles soufflent. Plus soif.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Léa a soif. Maya lui donne le verre. Elles boivent de l'eau.",
+      "script": "narrateur|Le matin, Léa a soif. Maya lui donne le verre. Elles boivent de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Léa a les joues chaudes. Maya boit de l'eau dans un verre. Léa aussi.",
+      "script": "narrateur|Après la sieste, Léa a les joues chaudes. Maya boit de l'eau dans un verre. Léa aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Encore un peu. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Le soir,\nenfant-f|Encore un peu.\nnarrateur|Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami tient les montants. Il a soif. Maya passe le verre. Sami boit de l'eau. L'eau, c'est pour la soif.",
+      "script": "narrateur|Sami tient les montants. Il a soif. Maya passe le verre. Sami boit de l'eau.\nenfant-f|L'eau, c'est pour la soif.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Sami a soif. Maya boit de l'eau dans un verre. Ils se tapent dans les mains.",
+      "script": "narrateur|Le matin, Sami a soif. Maya boit de l'eau dans un verre. Ils se tapent dans les mains.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Sami a la bouche sèche. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Après la sieste, Sami a la bouche sèche. Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Sami range ses chaussures. Maya boit de l'eau dans un verre. La soif est partie.",
+      "script": "narrateur|Le soir, Sami range ses chaussures. Maya boit de l'eau dans un verre. La soif est partie.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Maya se balance. L'air bouge. Elle a soif. Elle s'arrête. Maman est là, avec un verre d'eau. Maya boit. L'eau est froide. Bien. Quand on a soif, on boit de l'eau dans un verre.",
+      "script": "narrateur|Maya se balance. L'air bouge. Elle a soif. Elle s'arrête. Maman est là, avec un verre d'eau. Maya boit. L'eau est froide.\npapa|Bien. Quand on a soif, on boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Maya s'arrête. Que boit-elle ?",
+      "script": "narrateur|Maya s'arrête. Que boit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Maya a bu à la balançoire. L'eau dans le verre a calmé la soif.",
+      "script": "narrateur|Maya a bu à la balançoire. L'eau dans le verre a calmé la soif.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom se balance tout doux. Il a soif. Maman verse de l'eau dans le verre. Tom boit. J'avais soif. L'eau, c'est bien.",
+      "script": "narrateur|Tom se balance tout doux. Il a soif. Maman verse de l'eau dans le verre. Tom boit.\nenfant-f|J'avais soif. L'eau, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la balançoire craque. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "script": "narrateur|Le matin, la balançoire craque. Maya a soif. Elle boit de l'eau dans un verre. Tom aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Tom a soif. Maya boit de l'eau dans un verre. Ils se reposent.",
+      "script": "narrateur|Après la sieste, Tom a soif. Maya boit de l'eau dans un verre. Ils se reposent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Encore. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Le soir,\nenfant-m|Encore.\nnarrateur|Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Léa se balance en face. Elle a soif. Papa donne le verre d'eau. Léa boit. Maya boit. Elles sourient. Plus de soif.",
+      "script": "narrateur|Léa se balance en face. Elle a soif. Papa donne le verre d'eau. Léa boit. Maya boit. Elles sourient. Plus de soif.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Léa a soif. Maya prend le verre. Elles boivent de l'eau.",
+      "script": "narrateur|Le matin, Léa a soif. Maya prend le verre. Elles boivent de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Léa a chaud. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Après la sieste, Léa a chaud. Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Léa range son manteau. Maya boit de l'eau dans un verre. La soif s'en va.",
+      "script": "narrateur|Le soir, Léa range son manteau. Maya boit de l'eau dans un verre. La soif s'en va.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sami pousse tout doux. Il a soif. Maya lui offre le verre. Sami boit de l'eau. Soif, alors de l'eau.",
+      "script": "narrateur|Sami pousse tout doux. Il a soif. Maya lui offre le verre. Sami boit de l'eau.\nenfant-f|Soif, alors de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, Sami a soif. Maya boit de l'eau dans un verre. Sami aussi.",
+      "script": "narrateur|Le matin, Sami a soif. Maya boit de l'eau dans un verre. Sami aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, Sami a les lèvres sèches. Maya a soif. Elle boit de l'eau dans un verre.",
+      "script": "narrateur|Après la sieste, Sami a les lèvres sèches. Maya a soif. Elle boit de l'eau dans un verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, Sami dit merci. Maya a soif. Elle boit de l'eau dans un verre. Papa range le verre.",
+      "script": "narrateur|Le soir, Sami dit merci. Maya a soif. Elle boit de l'eau dans un verre. Papa range le verre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

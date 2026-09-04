@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-LAN-010",
+  "fil_rouge": "",
+  "title": "Ava compte les objets de la cuisine",
+  "lesson_id": "LAN.NOM.001",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Ava, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ava est à la cuisine avec maman. Des objets sont sur la table. On compte des objets. Un, deux, trois, quatre, cinq. Ava touche chaque chose. Elle dit le nombre.",
+      "script": "narrateur|Ava est à la cuisine avec maman. Des objets sont sur la table.\nmaman|On compte des objets.\nnarrateur|Un, deux, trois, quatre, cinq. Ava touche chaque chose. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la table, l'évier, ou le panier.",
+      "script": "narrateur|On peut prendre la table, l'évier, ou le panier.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "À la table, Ava compte des objets. Une cuillère. Deux. Trois. Elle dit le nombre.",
+      "script": "narrateur|À la table, Ava compte des objets. Une cuillère. Deux. Trois. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "À la table, que fait Ava ?",
+      "script": "narrateur|À la table, que fait Ava ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Ava a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cuillères, les pommes, ou les bols.",
+      "script": "narrateur|On peut prendre les cuillères, les pommes, ou les bols.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Ava aligne les cuillères. Elle compte des objets. Un, deux, trois.",
+      "script": "narrateur|Ava aligne les cuillères. Elle compte des objets. Un, deux, trois.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les cuillères, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Les pommes sont rouges. Ava compte des objets. Elle dit le nombre.",
+      "script": "narrateur|Les pommes sont rouges. Ava compte des objets. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les pommes, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Les bols s'empilent. Ava compte des objets. Cinq.",
+      "script": "narrateur|Les bols s'empilent. Ava compte des objets. Cinq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les bols, à la table. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "À l'évier, Ava compte des objets. Un bol. Deux bols. Elle dit le nombre.",
+      "script": "narrateur|À l'évier, Ava compte des objets. Un bol. Deux bols. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "À l'évier, que fait Ava ?",
+      "script": "narrateur|À l'évier, que fait Ava ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On compte des objets. On dit le nombre.",
+      "script": "narrateur|Oui. On compte des objets. On dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cuillères, les pommes, ou les bols.",
+      "script": "narrateur|On peut prendre les cuillères, les pommes, ou les bols.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "À l'évier, les cuillères. Ava compte des objets. Le nombre.",
+      "script": "narrateur|À l'évier, les cuillères. Ava compte des objets. Le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les cuillères, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Des pommes près de l'eau. Ava compte des objets.",
+      "script": "narrateur|Des pommes près de l'eau. Ava compte des objets.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les pommes, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Les bols ruissellent. Ava compte des objets. Elle dit le nombre.",
+      "script": "narrateur|Les bols ruissellent. Ava compte des objets. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les bols, à l'évier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Dans le panier, Ava compte des objets. Une pomme. Deux. Trois. Quatre. Cinq. Le nombre.",
+      "script": "narrateur|Dans le panier, Ava compte des objets. Une pomme. Deux. Trois. Quatre. Cinq. Le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Dans le panier, que fait Ava ?",
+      "script": "narrateur|Dans le panier, que fait Ava ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Ava touche. Elle compte. Elle dit le nombre.",
+      "script": "narrateur|Ava touche. Elle compte. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cuillères, les pommes, ou les bols.",
+      "script": "narrateur|On peut prendre les cuillères, les pommes, ou les bols.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Dans le panier, les cuillères. Ava compte des objets.",
+      "script": "narrateur|Dans le panier, les cuillères. Ava compte des objets.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les cuillères, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Les pommes du panier. Ava compte des objets. Dix au plus.",
+      "script": "narrateur|Les pommes du panier. Ava compte des objets. Dix au plus.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les pommes, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Les bols du panier. Ava compte des objets. Elle dit le nombre.",
+      "script": "narrateur|Les bols du panier. Ava compte des objets. Elle dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre trois, cinq, ou dix.",
+      "script": "narrateur|On peut prendre trois, cinq, ou dix.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Ava s'arrête à trois, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à trois, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Ava s'arrête à cinq, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à cinq, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Ava s'arrête à dix, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Ava s'arrête à dix, avec les bols, à le panier. Elle a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

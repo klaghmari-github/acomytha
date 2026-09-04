@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-JEU-034",
+  "fil_rouge": "",
+  "title": "Erwan se passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Erwan, papa, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Erwan est au parc avec papa. Papa trace un cercle. Voici l'espace du jeu. On se passe le ballon. Chacun a un tour. Erwan touche le ballon.",
+      "script": "narrateur|Erwan est au parc avec papa. Papa trace un cercle.\npapa|Voici l'espace du jeu. On se passe le ballon. Chacun a un tour.\nnarrateur|Erwan touche le ballon.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la place, le square, ou le pré.",
+      "script": "narrateur|On peut prendre la place, le square, ou le pré.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Sur la place, Erwan passe le ballon. Chacun a un tour. Dans l'espace du jeu.",
+      "script": "narrateur|Sur la place, Erwan passe le ballon. Chacun a un tour. Dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sur la place, que fait Erwan ?",
+      "script": "narrateur|Sur la place, que fait Erwan ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Erwan a passé. Chacun a un tour. Dans l'espace du jeu.",
+      "script": "narrateur|Erwan a passé. Chacun a un tour. Dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Léa, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Tom, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Sami, à la place. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Au square, Erwan passe. Tour. Espace du jeu.",
+      "script": "narrateur|Au square, Erwan passe. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Au square, que fait Erwan ?",
+      "script": "narrateur|Au square, que fait Erwan ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Passer. Tour. Espace du jeu.",
+      "script": "narrateur|Oui. Passer. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Léa, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Tom, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Sami, à le square. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Dans le pré, Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Dans le pré, Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Dans le pré, que fait Erwan ?",
+      "script": "narrateur|Dans le pré, que fait Erwan ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Erwan reste dans l'espace du jeu. Il passe. Chacun a un tour.",
+      "script": "narrateur|Erwan reste dans l'espace du jeu. Il passe. Chacun a un tour.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Léa, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Tom, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Erwan passe le ballon. Tour. Espace du jeu.",
+      "script": "narrateur|Erwan passe le ballon. Tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "script": "narrateur|On peut prendre un rebond, une passe basse, ou une passe haute.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Erwan fait un rebond vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait un rebond vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Erwan fait une passe basse vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe basse vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Erwan fait une passe haute vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "script": "narrateur|Erwan fait une passe haute vers Sami, à le pré. Il passe. Chacun a un tour. Espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

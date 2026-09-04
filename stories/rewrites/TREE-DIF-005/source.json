@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-DIF-005",
+  "fil_rouge": "",
+  "title": "Laisser le temps à l'autre de finir sa phrase — au parc",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Noé, maman, papa",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé est au parc, avec papa. Maman s'assoit sur le banc. Un copain parle doucement. Il cherche ses mots. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Noé est au parc, avec papa. Maman s'assoit sur le banc. Un copain parle doucement. Il cherche ses mots.\npapa|On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Noé est encore au parc. Un Je veux le. Il cherche. Noé laisse le temps. Il attend la fin de la phrase. On écoute jusqu'au bout. On peut jouer ensemble.",
+      "script": "narrateur|C'est le matin. Noé est encore au parc. Un\nenfant-m|Je veux le. Il cherche.\nnarrateur|Noé laisse le temps. Il attend la fin de la phrase.\npapa|On écoute jusqu'au bout. On peut jouer ensemble.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "On laisse le temps ?",
+      "script": "narrateur|On laisse le temps ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On laisse le temps. Noé respire. Maman est là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On laisse le temps. Noé respire. Maman est là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la cuisine. Un Le ballon est. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la cuisine. Un\nenfant-m|Le ballon est.\nnarrateur|Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi le matin. Puis la cuisine. Puis le ballon rouge. Le sol est un peu froid. Noé souffle, puis sourit à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé a choisi le matin. Puis la cuisine. Puis le ballon rouge. Le sol est un peu froid. Noé souffle, puis sourit à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. La couverture est douce. Noé montre le seau bleu à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé s'arrête près de le seau bleu. la cuisine est rangé. La couverture est douce. Noé montre le seau bleu à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé se souvient de le matin. Et de la cuisine. Et de le doudou. On range un objet. Noé chuchote : c'est fini. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé se souvient de le matin. Et de la cuisine. Et de le doudou. On range un objet. Noé chuchote : c'est fini. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la cuisine. Un Le seau est. Noé laisse le temps. Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la cuisine. Un\nenfant-m|Le seau est.\nnarrateur|Noé laisse le temps.\nmaman|Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le ballon rouge. Après le jardin. Près de le matin. Noé s'arrête. Les chaussures font toc toc. Noé caresse le doudou. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Avec le ballon rouge. Après le jardin. Près de le matin. Noé s'arrête. Les chaussures font toc toc. Noé caresse le doudou. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé range le jardin. le seau bleu reste près de le matin. Une tasse cliquette. Noé boit une gorgée d'eau. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé range le jardin. le seau bleu reste près de le matin. Une tasse cliquette. Noé boit une gorgée d'eau. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le doudou est là. le jardin aussi. le matin reste dans le souvenir. Ça sent le pain chaud. J'ai appris. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Le doudou est là. le jardin aussi. le matin reste dans le souvenir. Ça sent le pain chaud.\nenfant-m|J'ai appris. On laisse le temps. On attend la fin de la phrase. On laisse le temps.\nnarrateur|Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la cuisine. Un Le doudou est. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la cuisine. Un\nenfant-m|Le doudou est.\nnarrateur|Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. le matin est fini. Une pomme brille un peu. Noé range la tasse. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé rejoint le ballon rouge. la chambre est rangé. le matin est fini. Une pomme brille un peu. Noé range la tasse. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de le seau bleu. Noé pose la chambre. le matin est derrière. Un ruban reste dans la poche. Noé dit merci à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Près de le seau bleu. Noé pose la chambre. le matin est derrière. Un ruban reste dans la poche. Noé dit merci à maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé montre le doudou. Maman a vu le matin. Et la chambre. Il y a des miettes sur la table. Noé raccroche un linge. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé montre le doudou. Maman a vu le matin. Et la chambre. Il y a des miettes sur la table. Noé raccroche un linge. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Noé retrouve le parc. Un Le bac est. Il s'arrête. Noé laisse le temps. Il attend la fin de la phrase. Maman lui tient la main. On peut jouer ensemble.",
+      "script": "narrateur|C'est après la sieste. Noé retrouve le parc. Un\nenfant-m|Le bac est.\nnarrateur|Il s'arrête. Noé laisse le temps. Il attend la fin de la phrase. Maman lui tient la main. On peut jouer ensemble.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On finit la phrase à sa place ?",
+      "script": "narrateur|On finit la phrase à sa place ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On laisse le temps. Noé retient le geste. Maman sourit. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On laisse le temps. Noé retient le geste. Maman sourit. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans le jardin. Un Le ballon a. Noé laisse le temps. Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans le jardin. Un\nenfant-m|Le ballon a.\nnarrateur|Noé laisse le temps.\nmaman|Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi après la sieste. Puis la cuisine. Puis le ballon rouge. Un ballon s'immobilise. Noé range encore un peu, près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé a choisi après la sieste. Puis la cuisine. Puis le ballon rouge. Un ballon s'immobilise. Noé range encore un peu, près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. Un linge sèche à l'air. Noé range après la sieste dans sa tête, comme un souvenir. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé s'arrête près de le seau bleu. la cuisine est rangé. Un linge sèche à l'air. Noé range après la sieste dans sa tête, comme un souvenir. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé se souvient de après la sieste. Et de la cuisine. Et de le doudou. Une feuille tombe. Noé écoute maman encore une fois. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé se souvient de après la sieste. Et de la cuisine. Et de le doudou. Une feuille tombe. Noé écoute maman encore une fois. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans le jardin. Un Le seau a. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans le jardin. Un\nenfant-m|Le seau a.\nnarrateur|Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le ballon rouge. Après le jardin. Près de après la sieste. Noé s'arrête. Un chat miaule une fois. Noé tend le ballon rouge à papa. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Avec le ballon rouge. Après le jardin. Près de après la sieste. Noé s'arrête. Un chat miaule une fois. Noé tend le ballon rouge à papa. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé range le jardin. le seau bleu reste près de après la sieste. On souffle doucement. Noé plie un pull. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé range le jardin. le seau bleu reste près de après la sieste. On souffle doucement. Noé plie un pull. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le doudou est là. le jardin aussi. après la sieste reste dans le souvenir. Un panier est posé sur le banc. Noé répète tout bas le geste. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Le doudou est là. le jardin aussi. après la sieste reste dans le souvenir. Un panier est posé sur le banc. Noé répète tout bas le geste. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans le jardin. Un Le doudou a. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans le jardin. Un\nenfant-m|Le doudou a.\nnarrateur|Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. après la sieste est fini. La lumière est claire. Papa n'est pas loin. Noé les rejoint. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé rejoint le ballon rouge. la chambre est rangé. après la sieste est fini. La lumière est claire. Papa n'est pas loin. Noé les rejoint. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de le seau bleu. Noé pose la chambre. après la sieste est derrière. On se tient la main. Noé prend la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Près de le seau bleu. Noé pose la chambre. après la sieste est derrière. On se tient la main. Noé prend la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé montre le doudou. Maman a vu après la sieste. Et la chambre. On écoute jusqu'au bout. Noé pose sa tête un moment. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé montre le doudou. Maman a vu après la sieste. Et la chambre. On écoute jusqu'au bout. Noé pose sa tête un moment. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Le parc devient calme. Un Je rentre avec. Il cherche le mot. Noé laisse le temps. Il attend la fin de la phrase. Papa sourit. On peut jouer ensemble.",
+      "script": "narrateur|C'est le soir. Le parc devient calme. Un\nenfant-m|Je rentre avec. Il cherche le mot.\nnarrateur|Noé laisse le temps. Il attend la fin de la phrase. Papa sourit. On peut jouer ensemble.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "On attend la fin de la phrase ?",
+      "script": "narrateur|On attend la fin de la phrase ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On laisse le temps. Noé hoche la tête. On continue, avec maman. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On laisse le temps. Noé hoche la tête. On continue, avec maman. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la chambre. Un Le ballon va. Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la chambre. Un\nenfant-m|Le ballon va.\nnarrateur|Noé laisse le temps. Maman reste tout près. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi le soir. Puis la cuisine. Puis le ballon rouge. Une chaussette est encore sablée. Noé essuie ses mains. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé a choisi le soir. Puis la cuisine. Puis le ballon rouge. Une chaussette est encore sablée. Noé essuie ses mains. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé s'arrête près de le seau bleu. la cuisine est rangé. On dit merci. Noé sourit. Maman sourit aussi. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé s'arrête près de le seau bleu. la cuisine est rangé. On dit merci. Noé sourit. Maman sourit aussi. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé se souvient de le soir. Et de la cuisine. Et de le doudou. Le savon sent bon. Noé serre la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé se souvient de le soir. Et de la cuisine. Et de le doudou. Le savon sent bon. Noé serre la main de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la chambre. Un Le seau va. Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la chambre. Un\nenfant-m|Le seau va.\nnarrateur|Noé laisse le temps. Maman montre le geste, lentement. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le ballon rouge. Après le jardin. Près de le soir. Noé s'arrête. On rit un peu. Noé marche près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Avec le ballon rouge. Après le jardin. Près de le soir. Noé s'arrête. On rit un peu. Noé marche près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé range le jardin. le seau bleu reste près de le soir. Un vélo passe au loin. Noé pose le jardin à sa place. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé range le jardin. le seau bleu reste près de le soir. Un vélo passe au loin. Noé pose le jardin à sa place. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le doudou est là. le jardin aussi. le soir reste dans le souvenir. Un crochet tient bien le manteau. Noé ferme le sac. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Le doudou est là. le jardin aussi. le soir reste dans le souvenir. Un crochet tient bien le manteau. Noé ferme le sac. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Plus tard, Noé va dans la chambre. Un Le doudou va. Noé laisse le temps. Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "script": "narrateur|Plus tard, Noé va dans la chambre. Un\nenfant-m|Le doudou va.\nnarrateur|Noé laisse le temps.\nmaman|Je suis là. On laisse le temps. On attend la fin de la phrase. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint le ballon rouge. la chambre est rangé. le soir est fini. Le vent est doux. Noé enfile ses chaussons. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé rejoint le ballon rouge. la chambre est rangé. le soir est fini. Le vent est doux. Noé enfile ses chaussons. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de le seau bleu. Noé pose la chambre. le soir est derrière. L'eau coule, tout petit bruit. Noé s'assoit près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Près de le seau bleu. Noé pose la chambre. le soir est derrière. L'eau coule, tout petit bruit. Noé s'assoit près de maman. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé montre le doudou. Maman a vu le soir. Et la chambre. Une cloche tinte, tout loin. Noé ferme la porte, tout doux. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "script": "narrateur|Noé montre le doudou. Maman a vu le soir. Et la chambre. Une cloche tinte, tout loin. Noé ferme la porte, tout doux. On laisse le temps. On attend la fin de la phrase. On laisse le temps. Noé dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

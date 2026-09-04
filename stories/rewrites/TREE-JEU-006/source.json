@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-JEU-006",
+  "fil_rouge": "",
+  "title": "Accepter de perdre — au marché",
+  "lesson_id": "JEU.REG.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Lila, papa, maman",
+  "setting": "au marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila est au marché avec papa. Ils achètent, puis ils jouent à un petit jeu. L'autre peut gagner. Lila peut être déçue. C'est permis. On peut rejouer plus tard. Maman porte le panier.",
+      "script": "narrateur|Lila est au marché avec papa. Ils achètent, puis ils jouent à un petit jeu. L'autre peut gagner. Lila peut être déçue. C'est permis. On peut rejouer plus tard. Maman porte le panier.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Lila a choisi une pomme. Une feuille tombe. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "script": "narrateur|Lila a choisi une pomme. Une feuille tombe. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "L'autre gagne. Lila fait quoi ?",
+      "script": "narrateur|L'autre gagne. Lila fait quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "script": "narrateur|Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Le sol est frais. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Le sol est frais. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Un petit bruit d'eau. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Un petit bruit d'eau. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Les chaussures font toc toc. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Les chaussures font toc toc. Après une pomme, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Un petit bruit d'eau. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Un petit bruit d'eau. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Les chaussures font toc toc. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Les chaussures font toc toc. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Un vélo passe au loin. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Un vélo passe au loin. Après une pomme, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Les chaussures font toc toc. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Les chaussures font toc toc. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Un vélo passe au loin. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Un vélo passe au loin. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. La lumière est claire. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. La lumière est claire. Après une pomme, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Lila a choisi un yaourt. Le vent est doux. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "script": "narrateur|Lila a choisi un yaourt. Le vent est doux. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "L'autre gagne. Lila fait quoi ?",
+      "script": "narrateur|L'autre gagne. Lila fait quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "script": "narrateur|Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Un petit bruit d'eau. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Un petit bruit d'eau. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Les chaussures font toc toc. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Les chaussures font toc toc. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Un vélo passe au loin. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Un vélo passe au loin. Après un yaourt, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Les chaussures font toc toc. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Les chaussures font toc toc. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Un vélo passe au loin. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Un vélo passe au loin. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. La lumière est claire. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. La lumière est claire. Après un yaourt, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Un vélo passe au loin. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Un vélo passe au loin. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. La lumière est claire. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. La lumière est claire. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Ça sent le pain. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Ça sent le pain. Après un yaourt, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Lila a choisi un morceau de pain. On entend un oiseau. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "script": "narrateur|Lila a choisi un morceau de pain. On entend un oiseau. Après le marché, un petit jeu. L'autre peut gagner. Lila est un peu déçue. C'est permis. On peut rejouer plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "L'autre gagne. Lila fait quoi ?",
+      "script": "narrateur|L'autre gagne. Lila fait quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "script": "narrateur|Oui. L'autre peut gagner. Déçu permis. Rejouer plus tard. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la cuisine. On entend un oiseau. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Les chaussures font toc toc. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Les chaussures font toc toc. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Un vélo passe au loin. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Un vélo passe au loin. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. La lumière est claire. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. La lumière est claire. Après un morceau de pain, dans la cuisine. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans le jardin. Ça sent l'herbe coupée. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. Un vélo passe au loin. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. Un vélo passe au loin. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. La lumière est claire. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. La lumière est claire. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Ça sent le pain. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Ça sent le pain. Après un morceau de pain, dans le jardin. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "script": "narrateur|On joue dans la chambre. Le soleil chauffe un peu. L'autre gagne encore. L'autre peut gagner. Déçu, c'est permis. On peut rejouer plus tard. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lila range les cubes. La lumière est claire. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range les cubes. La lumière est claire. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lila range le livre. Ça sent le pain. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range le livre. Ça sent le pain. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lila range la dînette. Un chat miaule une fois. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "script": "narrateur|Lila range la dînette. Un chat miaule une fois. Après un morceau de pain, dans la chambre. L'autre peut gagner. Lila a été déçue. C'est permis. On peut rejouer plus tard. Merci papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

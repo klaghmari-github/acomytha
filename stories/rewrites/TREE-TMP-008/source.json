@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-TMP-008",
+  "fil_rouge": "",
+  "title": "Adam choisit manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Adam, maman, papa",
+  "setting": "entrée de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Il fait froid. Il pleut. Adam est dans l'entrée avec maman. Maman tend le manteau. Adam le met. Maman tend les bottes. Adam les met. Froid, le manteau. Pluie, les bottes. Adam donne la main.",
+      "script": "narrateur|Il fait froid. Il pleut. Adam est dans l'entrée avec maman. Maman tend le manteau. Adam le met. Maman tend les bottes. Adam les met.\nmaman|Froid, le manteau. Pluie, les bottes.\nnarrateur|Adam donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre l'entrée, le jardin, ou le balcon.",
+      "script": "narrateur|On peut prendre l'entrée, le jardin, ou le balcon.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Dans l'entrée, Adam enfile le manteau. Il met les bottes. Il fait froid. Il pleut. On est prêts.",
+      "script": "narrateur|Dans l'entrée, Adam enfile le manteau. Il met les bottes. Il fait froid. Il pleut.\nmaman|On est prêts.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Dans l'entrée, que met Adam ?",
+      "script": "narrateur|Dans l'entrée, que met Adam ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "script": "narrateur|Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "script": "narrateur|On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Le ciel est gris. Adam serre le manteau. Ses bottes sont au sec. Froid. Pluie. Maman ouvre le parapluie.",
+      "script": "narrateur|Le ciel est gris. Adam serre le manteau. Ses bottes sont au sec. Froid. Pluie. Maman ouvre le parapluie.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le ciel gris. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Le vent froid arrive. Adam a le manteau. Il a les bottes. On marche doucement.",
+      "script": "narrateur|Le vent froid arrive. Adam a le manteau. Il a les bottes.\nmaman|On marche doucement.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec le vent froid. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Les flaques brillent. Adam marche avec les bottes. Le manteau est chaud. Pluie. Froid.",
+      "script": "narrateur|Les flaques brillent. Adam marche avec les bottes. Le manteau est chaud. Pluie. Froid.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis l'entrée, avec les flaques. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Au jardin, l'herbe est mouillée. Adam a le manteau. Il a les bottes. Froid et pluie. Maman est là.",
+      "script": "narrateur|Au jardin, l'herbe est mouillée. Adam a le manteau. Il a les bottes. Froid et pluie. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Au jardin, que met Adam ?",
+      "script": "narrateur|Au jardin, que met Adam ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Froid, le manteau. Pluie, les bottes.",
+      "script": "narrateur|Oui. Froid, le manteau. Pluie, les bottes.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "script": "narrateur|On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Au jardin, le ciel gris. Manteau. Bottes. Adam touche une feuille mouillée.",
+      "script": "narrateur|Au jardin, le ciel gris. Manteau. Bottes. Adam touche une feuille mouillée.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le ciel gris. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Le vent froid au jardin. Adam garde le manteau. Les bottes tapent l'herbe. Pluie fine.",
+      "script": "narrateur|Le vent froid au jardin. Adam garde le manteau. Les bottes tapent l'herbe. Pluie fine.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec le vent froid. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Une flaque au jardin. Adam la contourne avec les bottes. Le manteau reste fermé. Froid.",
+      "script": "narrateur|Une flaque au jardin. Adam la contourne avec les bottes. Le manteau reste fermé. Froid.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le jardin, avec les flaques. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Sur le balcon, l'eau tombe. Adam garde le manteau. Ses bottes tapent le sol. Froid. Pluie. Maman tient sa main.",
+      "script": "narrateur|Sur le balcon, l'eau tombe. Adam garde le manteau. Ses bottes tapent le sol. Froid. Pluie. Maman tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Sur le balcon, que met Adam ?",
+      "script": "narrateur|Sur le balcon, que met Adam ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Adam est habillé pour le froid et la pluie. Manteau. Bottes.",
+      "script": "narrateur|Adam est habillé pour le froid et la pluie. Manteau. Bottes.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "script": "narrateur|On peut prendre le ciel gris, le vent froid, ou les flaques.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Du balcon, le ciel gris. Adam a le manteau. Les bottes sont prêtes. Pluie. Froid.",
+      "script": "narrateur|Du balcon, le ciel gris. Adam a le manteau. Les bottes sont prêtes. Pluie. Froid.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le ciel gris. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Le vent froid sur le balcon. Adam serre le manteau. Bottes aux pieds. Maman est près.",
+      "script": "narrateur|Le vent froid sur le balcon. Adam serre le manteau. Bottes aux pieds. Maman est près.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec le vent froid. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Les flaques se voient du balcon. Adam a les bottes. Le manteau. Pluie. Froid.",
+      "script": "narrateur|Les flaques se voient du balcon. Adam a les bottes. Le manteau. Pluie. Froid.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le marché, l'école, ou le parc.",
+      "script": "narrateur|On peut prendre le marché, l'école, ou le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le marché. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers l'école. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "script": "narrateur|Adam va vers le parc. Il a le manteau. Il a les bottes. Froid et pluie, depuis le balcon, avec les flaques. Maman donne la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

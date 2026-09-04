@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-VIV-005",
+  "fil_rouge": "",
+  "title": "Hugo dit mâle, femelle et petit",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Hugo, maman, papa",
+  "setting": "parc près de la ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo est au parc, près de la ferme, avec maman. Un coq chante. Une poule picore. Un poussin suit. Trois noms de la famille. Coq, poule, poussin. Hugo répète.",
+      "script": "narrateur|Hugo est au parc, près de la ferme, avec maman. Un coq chante. Une poule picore. Un poussin suit.\nmaman|Trois noms de la famille. Coq, poule, poussin.\nnarrateur|Hugo répète.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poulailler, le pré, ou la niche.",
+      "script": "narrateur|On peut prendre le poulailler, le pré, ou la niche.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Hugo va vers le poulailler. Le foin sent bon. maman est tout près. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman sourit.",
+      "script": "narrateur|Hugo va vers le poulailler. Le foin sent bon. maman est tout près. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Hugo a retenu. Hugo dit les trois noms de la famille. On continue avec maman.",
+      "script": "narrateur|Oui. Hugo a retenu. Hugo dit les trois noms de la famille. On continue avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le coq, le cheval, ou le chien.",
+      "script": "narrateur|On peut prendre le coq, le cheval, ou le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo a choisi le coq. La poule picore. maman montre lentement. Hugo nomme le mâle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le coq. La poule picore. maman montre lentement. Hugo nomme le mâle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Maman est près. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poussin. Maman est près. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Un oiseau crie. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poulain. Un oiseau crie. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "script": "narrateur|Hugo rejoint le chiot. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo a choisi le cheval. L'herbe est haute. maman montre lentement. Hugo nomme la femelle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le cheval. L'herbe est haute. maman montre lentement. Hugo nomme la femelle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Un oiseau crie. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poussin. Un oiseau crie. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poulain. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le poussin est jaune. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le chiot. Le poussin est jaune. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo a choisi le chien. La niche est en bois. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le chien. La niche est en bois. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poussin. Le soleil est chaud. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le poulain est fin. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "script": "narrateur|Hugo rejoint le chiot. Le poulain est fin. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. le poulailler, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Hugo va vers le pré. Un cheval souffle. maman est tout près. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman sourit.",
+      "script": "narrateur|Hugo va vers le pré. Un cheval souffle. maman est tout près. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Hugo respire. Hugo dit les trois noms de la famille. Je suis là.",
+      "script": "narrateur|Hugo respire. Hugo dit les trois noms de la famille.\nmaman|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le coq, le cheval, ou le chien.",
+      "script": "narrateur|On peut prendre le coq, le cheval, ou le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo a choisi le coq. Maman est près. maman montre lentement. Hugo nomme la femelle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le coq. Maman est près. maman montre lentement. Hugo nomme la femelle. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Un oiseau crie. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poussin. Un oiseau crie. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le soleil est chaud. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poulain. Le soleil est chaud. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "script": "narrateur|Hugo rejoint le chiot. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo a choisi le cheval. Un oiseau crie. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le cheval. Un oiseau crie. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le soleil est chaud. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poussin. Le soleil est chaud. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le poulain est fin. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le chiot. Le poulain est fin. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo a choisi le chien. Le soleil est chaud. maman montre lentement. Hugo répète la famille. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le chien. Le soleil est chaud. maman montre lentement. Hugo répète la famille. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poussin. Le poussin est jaune. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le poulain est fin. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poulain. Le poulain est fin. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le chiot dort. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "script": "narrateur|Hugo rejoint le chiot. Le chiot dort. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. le pré, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Hugo va vers la niche. Un chien grogne tout doux. maman est tout près. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman sourit.",
+      "script": "narrateur|Hugo va vers la niche. Un chien grogne tout doux. maman est tout près. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman sourit.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Hugo dit les trois noms de la famille. Hugo donne la main à maman.",
+      "script": "narrateur|C'est juste. Hugo dit les trois noms de la famille. Hugo donne la main à maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le coq, le cheval, ou le chien.",
+      "script": "narrateur|On peut prendre le coq, le cheval, ou le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo a choisi le coq. Le poussin est jaune. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le coq. Le poussin est jaune. maman montre lentement. Hugo nomme le petit. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le soleil est chaud. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poussin. Le soleil est chaud. Hugo dit les trois noms. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "script": "narrateur|Hugo rejoint le poulain. Le poussin est jaune. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "script": "narrateur|Hugo rejoint le chiot. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le coq.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo a choisi le cheval. Le poulain est fin. maman montre lentement. Hugo répète la famille. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le cheval. Le poulain est fin. maman montre lentement. Hugo répète la famille. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le poussin est jaune. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poussin. Le poussin est jaune. Hugo nomme le mâle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le poulain. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le chiot dort. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "script": "narrateur|Hugo rejoint le chiot. Le chiot dort. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le cheval.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo a choisi le chien. Le chiot dort. maman montre lentement. Hugo dit les trois noms. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "script": "narrateur|Hugo a choisi le chien. Le chiot dort. maman montre lentement. Hugo dit les trois noms. Hugo dit les trois noms de la famille. papa n'est pas loin.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le poussin, le poulain, ou le chiot.",
+      "script": "narrateur|On peut prendre le poussin, le poulain, ou le chiot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Hugo rejoint le poussin. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poussin. Le poulain est fin. Hugo nomme la femelle. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Hugo rejoint le poulain. Le chiot dort. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "script": "narrateur|Hugo rejoint le poulain. Le chiot dort. Hugo nomme le petit. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Hugo rejoint le chiot. Le foin sent bon. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "script": "narrateur|Hugo rejoint le chiot. Le foin sent bon. Hugo répète la famille. Hugo dit les trois noms de la famille. maman dit merci. la niche, puis le chien.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

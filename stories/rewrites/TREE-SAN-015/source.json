@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-015",
+  "fil_rouge": "",
+  "title": "Éteindre l'écran et choisir un autre jeu — dans la chambre",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Hugo, maman, papa",
+  "setting": "dans la chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo est dans la chambre. Un petit écran brille. Maman s'assoit sur le lit. Papa passe la tête. L'adulte dit fini. Hugo va éteindre. Puis il prend un autre jeu.",
+      "script": "narrateur|Hugo est dans la chambre. Un petit écran brille. Maman s'assoit sur le lit. Papa passe la tête. L'adulte dit fini. Hugo va éteindre. Puis il prend un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cuisine, le jardin, ou la chambre.",
+      "script": "narrateur|On peut prendre la cuisine, le jardin, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Hugo a regardé une recette à la cuisine, sur l'écran. Fini. L'adulte dit fini. Hugo éteint. Il pose l'écran. Un autre jeu. Hugo ouvre un tiroir.",
+      "script": "narrateur|Hugo a regardé une recette à la cuisine, sur l'écran.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Hugo éteint. Il pose l'écran.\nmaman|Un autre jeu.\nnarrateur|Hugo ouvre un tiroir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Hugo ?",
+      "script": "narrateur|Maman dit fini. Que fait Hugo ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Hugo a éteint. L'adulte a dit fini. Un autre jeu commence, loin de l'écran.",
+      "script": "narrateur|Hugo a éteint. L'adulte a dit fini. Un autre jeu commence, loin de l'écran.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo prend le ballon rouge. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Il roule le ballon vers papa.",
+      "script": "narrateur|Hugo prend le ballon rouge. L'écran est éteint. L'adulte a dit fini. Un autre jeu. Il roule le ballon vers papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom attrape le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom attrape le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa tape doucement. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa tape doucement. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami fait rebondir. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami fait rebondir. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo sort le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu : remplir le seau de cuillères.",
+      "script": "narrateur|Hugo sort le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu : remplir le seau de cuillères.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom pose une cuillère. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom pose une cuillère. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa compte les cuillères. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa compte les cuillères. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo prend le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : habiller le doudou.",
+      "script": "narrateur|Hugo prend le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : habiller le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom tient le chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom tient le chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa boutonne. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa boutonne. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami fait une voix douce. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami fait une voix douce. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Hugo avait l'écran sur le banc du jardin. Fini. L'adulte dit fini. Hugo éteint. Il rentre. Un autre jeu, maintenant.",
+      "script": "narrateur|Hugo avait l'écran sur le banc du jardin.\npapa|Fini. L'adulte dit fini.\nnarrateur|Hugo éteint. Il rentre.\npapa|Un autre jeu, maintenant.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Papa dit fini. Que fait Hugo ?",
+      "script": "narrateur|Papa dit fini. Que fait Hugo ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Hugo a éteint dehors. L'adulte a dit fini. Un autre jeu l'attend.",
+      "script": "narrateur|Hugo a éteint dehors. L'adulte a dit fini. Un autre jeu l'attend.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo lance le ballon rouge dans l'herbe. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Hugo lance le ballon rouge dans l'herbe. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom court après le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom court après le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa arrête le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa arrête le ballon. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami le relance. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami le relance. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo remplit le seau bleu de feuilles. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Hugo remplit le seau bleu de feuilles. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom ajoute une feuille. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom ajoute une feuille. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa secoue le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa secoue le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. Papa sourit.",
+      "script": "narrateur|Sami porte le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo assied le doudou sur le banc. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Hugo assied le doudou sur le banc. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom parle au doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom parle au doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa lui met une feuille-chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa lui met une feuille-chapeau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami chante. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami chante. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Hugo est dans la chambre. Le dessin tourne. Fini. L'adulte dit fini. Hugo éteint. L'écran devient noir. Un autre jeu. Hugo cherche sous le lit.",
+      "script": "narrateur|Hugo est dans la chambre. Le dessin tourne.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Hugo éteint. L'écran devient noir.\nmaman|Un autre jeu.\nnarrateur|Hugo cherche sous le lit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "L'adulte dit fini. Que fait Hugo ?",
+      "script": "narrateur|L'adulte dit fini. Que fait Hugo ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Hugo a éteint dans la chambre. L'adulte a dit fini. Un autre jeu, sur le tapis.",
+      "script": "narrateur|Hugo a éteint dans la chambre. L'adulte a dit fini. Un autre jeu, sur le tapis.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Hugo fait rouler le ballon rouge sous la table. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Hugo fait rouler le ballon rouge sous la table. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom s'assoit en face. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom s'assoit en face. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa arrête le ballon avec le pied. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa arrête le ballon avec le pied. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami rit. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami rit. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Hugo range des cubes dans le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Hugo range des cubes dans le seau bleu. L'écran est éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom pose un cube. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom pose un cube. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa trie les couleurs. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa trie les couleurs. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami ferme le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami ferme le seau. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Hugo câline le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : une histoire parlée.",
+      "script": "narrateur|Hugo câline le doudou. L'écran est éteint. L'adulte a dit fini. Un autre jeu : une histoire parlée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom écoute. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Tom écoute. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Léa invente une voix. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Léa invente une voix. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sami tapote le doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "script": "narrateur|Sami tapote le doudou. Hugo a éteint. L'adulte a dit fini. Un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

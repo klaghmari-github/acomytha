@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-EMO-017",
+  "fil_rouge": "",
+  "title": "Noé est jaloux et demande un tour",
+  "lesson_id": "EMO.LEX.009",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Noé, maman, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé est à la ferme avec maman. Un camarade tient le seau. Noé sent une envie. Le ventre est serré. Tu es jaloux. On nomme. On demande un tour. On ne prend pas de force.",
+      "script": "narrateur|Noé est à la ferme avec maman. Un camarade tient le seau. Noé sent une envie. Le ventre est serré.\nmaman|Tu es jaloux. On nomme. On demande un tour. On ne prend pas de force.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la cour, l'étable, ou le verger.",
+      "script": "narrateur|On peut prendre la cour, l'étable, ou le verger.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Noé va vers la cour. Le foin sent bon. maman est tout près. Je suis jaloux. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "script": "narrateur|Noé va vers la cour. Le foin sent bon. maman est tout près.\nenfant-m|Je suis jaloux.\nnarrateur|Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Noé a envie du seau. Que fait-il ?",
+      "script": "narrateur|Noé a envie du seau. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Noé a retenu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. On continue avec maman.",
+      "script": "narrateur|Oui. Noé a retenu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. On continue avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le seau, le pinceau, ou le livre.",
+      "script": "narrateur|On peut prendre le seau, le pinceau, ou le livre.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi le seau. Le bois est lisse. maman montre lentement. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le seau. Le bois est lisse. maman montre lentement. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Le soleil est chaud. Je suis jaloux. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "script": "narrateur|Noé rejoint attendre. Le soleil est chaud.\nenfant-m|Je suis jaloux.\nnarrateur|Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. La terre est sèche. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "script": "narrateur|Noé rejoint demander. La terre est sèche. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Noé a choisi le pinceau. L'eau cloche. maman montre lentement. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le pinceau. L'eau cloche. maman montre lentement. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. La terre est sèche. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "script": "narrateur|Noé rejoint attendre. La terre est sèche. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "script": "narrateur|Noé rejoint demander. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Maman est au banc. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Maman est au banc. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Noé a choisi le livre. Un cheval souffle. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le livre. Un cheval souffle. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "script": "narrateur|Noé rejoint attendre. Un oiseau crie. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Maman est au banc. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "script": "narrateur|Noé rejoint demander. Maman est au banc. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Le seau est rouge. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "script": "narrateur|Noé rejoint un autre jeu. Le seau est rouge. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. la cour, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Noé va vers l'étable. Une poule picore. maman est tout près. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "script": "narrateur|Noé va vers l'étable. Une poule picore. maman est tout près. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Noé a envie du seau. Que fait-il ?",
+      "script": "narrateur|Noé a envie du seau. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Noé respire. Noé est jaloux. Il le dit. Il demande un tour. Il attend. Je suis là.",
+      "script": "narrateur|Noé respire. Noé est jaloux. Il le dit. Il demande un tour. Il attend.\nmaman|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le seau, le pinceau, ou le livre.",
+      "script": "narrateur|On peut prendre le seau, le pinceau, ou le livre.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi le seau. Le soleil est chaud. maman montre lentement. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le seau. Le soleil est chaud. maman montre lentement. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. La terre est sèche. Je suis jaloux. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "script": "narrateur|Noé rejoint attendre. La terre est sèche.\nenfant-m|Je suis jaloux.\nnarrateur|Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Un oiseau crie. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "script": "narrateur|Noé rejoint demander. Un oiseau crie. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Noé a choisi le pinceau. La terre est sèche. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le pinceau. La terre est sèche. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Un oiseau crie. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "script": "narrateur|Noé rejoint attendre. Un oiseau crie. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "script": "narrateur|Noé rejoint demander. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Le seau est rouge. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Le seau est rouge. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Noé a choisi le livre. Un oiseau crie. maman montre lentement. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le livre. Un oiseau crie. maman montre lentement. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "script": "narrateur|Noé rejoint attendre. Maman est au banc. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Le seau est rouge. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "script": "narrateur|Noé rejoint demander. Le seau est rouge. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Les feuilles bougent. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "script": "narrateur|Noé rejoint un autre jeu. Les feuilles bougent. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. l'étable, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Noé va vers le verger. Une pomme tombe. maman est tout près. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "script": "narrateur|Noé va vers le verger. Une pomme tombe. maman est tout près. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Noé a envie du seau. Que fait-il ?",
+      "script": "narrateur|Noé a envie du seau. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Noé est jaloux. Il le dit. Il demande un tour. Il attend. Noé donne la main à maman.",
+      "script": "narrateur|C'est juste. Noé est jaloux. Il le dit. Il demande un tour. Il attend. Noé donne la main à maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le seau, le pinceau, ou le livre.",
+      "script": "narrateur|On peut prendre le seau, le pinceau, ou le livre.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Noé a choisi le seau. Maman est au banc. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le seau. Maman est au banc. maman montre lentement. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Un oiseau crie. Je suis jaloux. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "script": "narrateur|Noé rejoint attendre. Un oiseau crie.\nenfant-m|Je suis jaloux.\nnarrateur|Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Maman est au banc. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "script": "narrateur|Noé rejoint demander. Maman est au banc. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le seau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Noé a choisi le pinceau. Le seau est rouge. maman montre lentement. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le pinceau. Le seau est rouge. maman montre lentement. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Maman est au banc. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "script": "narrateur|Noé rejoint attendre. Maman est au banc. Noé demande un tour. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "script": "narrateur|Noé rejoint demander. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Les feuilles bougent. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "script": "narrateur|Noé rejoint un autre jeu. Les feuilles bougent. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le pinceau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Noé a choisi le livre. Les feuilles bougent. maman montre lentement. Je suis jaloux. Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "script": "narrateur|Noé a choisi le livre. Les feuilles bougent. maman montre lentement.\nenfant-m|Je suis jaloux.\nnarrateur|Noé est jaloux. Il le dit. Il demande un tour. Il attend. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre attendre, demander, ou un autre jeu.",
+      "script": "narrateur|On peut prendre attendre, demander, ou un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Noé rejoint attendre. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "script": "narrateur|Noé rejoint attendre. Le seau est rouge. Noé attend la réponse. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Noé rejoint demander. Les feuilles bougent. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "script": "narrateur|Noé rejoint demander. Les feuilles bougent. Noé reste les mains loin. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Noé rejoint un autre jeu. Le foin sent bon. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "script": "narrateur|Noé rejoint un autre jeu. Le foin sent bon. Noé propose un autre jeu. Noé est jaloux. Il le dit. Il demande un tour. Il attend. maman dit merci. le verger, puis le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

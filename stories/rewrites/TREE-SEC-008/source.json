@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SEC-008",
+  "fil_rouge": "",
+  "title": "Chercher papa, maman ou la maîtresse — au parc",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Lina, maman, papa",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Aujourd'hui, Lina est au parc. Maman est là. Papa est là aussi. La maîtresse est près du portail. Si Lina cherche, elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux. Les mains tiennent la main de Maman.",
+      "script": "narrateur|Aujourd'hui, Lina est au parc. Maman est là. Papa est là aussi. La maîtresse est près du portail. Si Lina cherche, elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux. Les mains tiennent la main de Maman.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Lina voit le chat. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "script": "narrateur|Lina voit le chat. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "On va vers qui ? Papa, maman, ou la maîtresse.",
+      "script": "narrateur|On va vers qui ? Papa, maman, ou la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "script": "narrateur|Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina a choisi le bac à sable. Un oiseau chante. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le bac à sable. Un oiseau chante. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Le vent est doux. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Le vent est doux. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Un vélo sonne loin. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Un vélo sonne loin. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Le sable est frais. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Le sable est frais. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina a choisi le toboggan. Le bac gratte. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le toboggan. Le bac gratte. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Un vélo sonne loin. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Un vélo sonne loin. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Le sable est frais. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Le sable est frais. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. On rit un peu. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. On rit un peu. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina a choisi les balançoires. Le vent est doux. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi les balançoires. Le vent est doux. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Lina voit le chien. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "script": "narrateur|Lina voit le chien. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On va vers qui ? Papa, maman, ou la maîtresse.",
+      "script": "narrateur|On va vers qui ? Papa, maman, ou la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "script": "narrateur|Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina a choisi le bac à sable. Un vélo sonne loin. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le bac à sable. Un vélo sonne loin. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Un vélo sonne loin. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Un vélo sonne loin. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Le sable est frais. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Le sable est frais. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. On rit un peu. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. On rit un peu. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina a choisi le toboggan. Le sable est frais. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le toboggan. Le sable est frais. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina a choisi les balançoires. On rit un peu. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi les balançoires. On rit un peu. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. On rit un peu. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. On rit un peu. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Un oiseau chante. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Un oiseau chante. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Le bac gratte. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Le bac gratte. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Lina voit la poule. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "script": "narrateur|Lina voit la poule. Elle cherche. Elle va vers Papa. Ou vers Maman. Ou vers la maîtresse. Les pieds vont vers eux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "On va vers qui ? Papa, maman, ou la maîtresse.",
+      "script": "narrateur|On va vers qui ? Papa, maman, ou la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "script": "narrateur|Oui. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina retient : papa, maman, maîtresse. Les mains peuvent tenir la main de Maman. On continue, avec Maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "script": "narrateur|On peut prendre le bac à sable, le toboggan, ou les balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Lina a choisi le bac à sable. Un oiseau chante. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le bac à sable. Un oiseau chante. Lina va au bac à sable. Elle reste près de Maman. Ou Papa. Ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Le sable est frais. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. On rit un peu. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Un oiseau chante. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Lina a choisi le toboggan. Le bac gratte. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi le toboggan. Le bac gratte. Lina va près du toboggan. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. On rit un peu. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. On rit un peu. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Un oiseau chante. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Un oiseau chante. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Le bac gratte. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Le bac gratte. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Lina a choisi les balançoires. Le vent est doux. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "script": "narrateur|Lina a choisi les balançoires. Le vent est doux. Lina va près des balançoires. Elle va vers Papa, Maman, ou la maîtresse. Les mains peuvent tenir la main de Maman. Papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre rouge, bleu, ou vert.",
+      "script": "narrateur|On peut prendre rouge, bleu, ou vert.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Lina choisit rouge. Un oiseau chante. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit rouge. Un oiseau chante. Lina prend le seau rouge. Elle va vers Maman. Papa et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Lina choisit bleu. Le bac gratte. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit bleu. Le bac gratte. Lina prend le seau bleu. Elle va vers Papa. Maman et la maîtresse sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Lina choisit vert. Le vent est doux. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "script": "narrateur|Lina choisit vert. Le vent est doux. Lina prend le seau vert. Elle va vers la maîtresse. Papa et Maman sont là. On va vers Papa, ou vers Maman, ou vers la maîtresse. Les pieds vont vers eux. Lina dit merci à Maman. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SEC-025",
+  "fil_rouge": "",
+  "title": "Jouer là où l'adulte peut voir — à la ferme",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Sara, papa, maman",
+  "setting": "à la ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara est à la ferme avec papa. Papa montre un espace près du banc. Sara joue là. C'est l'espace montré. Papa, l'adulte, voit Sara. Maman n'est pas loin.",
+      "script": "narrateur|Sara est à la ferme avec papa. Papa montre un espace près du banc. Sara joue là. C'est l'espace montré. Papa, l'adulte, voit Sara. Maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre les cubes, le livre, ou la dînette.",
+      "script": "narrateur|On peut prendre les cubes, le livre, ou la dînette.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Sara va vers les cubes. Une feuille tombe. Les cubes restent près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara. Je suis là.",
+      "script": "narrateur|Sara va vers les cubes. Une feuille tombe. Les cubes restent près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sara joue où ? L'espace montré. L'adulte voit.",
+      "script": "narrateur|Sara joue où ? L'espace montré. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "script": "narrateur|Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Le sol est frais. Les cubes, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Le sol est frais. Les cubes, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Un petit bruit d'eau. Les cubes, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Un petit bruit d'eau. Les cubes, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Les chaussures font toc toc. Les cubes, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Les chaussures font toc toc. Les cubes, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Un petit bruit d'eau. Les cubes, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Un petit bruit d'eau. Les cubes, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Les chaussures font toc toc. Les cubes, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Les chaussures font toc toc. Les cubes, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Un vélo passe au loin. Les cubes, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Un vélo passe au loin. Les cubes, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Les chaussures font toc toc. Les cubes, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Les chaussures font toc toc. Les cubes, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Un vélo passe au loin. Les cubes, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Un vélo passe au loin. Les cubes, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. La lumière est claire. Les cubes, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. La lumière est claire. Les cubes, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Sara va vers le livre. Le vent est doux. Le livre reste près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara. Je suis là.",
+      "script": "narrateur|Sara va vers le livre. Le vent est doux. Le livre reste près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Sara joue où ? L'espace montré. L'adulte voit.",
+      "script": "narrateur|Sara joue où ? L'espace montré. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "script": "narrateur|Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Un petit bruit d'eau. Le livre, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Un petit bruit d'eau. Le livre, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Les chaussures font toc toc. Le livre, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Les chaussures font toc toc. Le livre, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Un vélo passe au loin. Le livre, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Un vélo passe au loin. Le livre, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Les chaussures font toc toc. Le livre, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Les chaussures font toc toc. Le livre, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Un vélo passe au loin. Le livre, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Un vélo passe au loin. Le livre, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. La lumière est claire. Le livre, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. La lumière est claire. Le livre, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Un vélo passe au loin. Le livre, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Un vélo passe au loin. Le livre, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. La lumière est claire. Le livre, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. La lumière est claire. Le livre, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Ça sent le pain. Le livre, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Ça sent le pain. Le livre, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Sara va vers la dînette. On entend un oiseau. La dînette reste près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara. Je suis là.",
+      "script": "narrateur|Sara va vers la dînette. On entend un oiseau. La dînette reste près du banc. C'est l'espace montré par papa. Papa, l'adulte, voit Sara.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Sara joue où ? L'espace montré. L'adulte voit.",
+      "script": "narrateur|Sara joue où ? L'espace montré. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "script": "narrateur|Oui. Sara joue dans l'espace montré. L'adulte voit. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "script": "narrateur|On peut prendre une pomme, un yaourt, ou un morceau de pain.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a une pomme. Ça sent l'herbe coupée. Sara reste avec une pomme, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Les chaussures font toc toc. La dînette, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Les chaussures font toc toc. La dînette, une pomme et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Un vélo passe au loin. La dînette, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Un vélo passe au loin. La dînette, une pomme et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. La lumière est claire. La dînette, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. La lumière est claire. La dînette, une pomme et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un yaourt. Le soleil chauffe un peu. Sara reste avec un yaourt, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. Un vélo passe au loin. La dînette, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. Un vélo passe au loin. La dînette, un yaourt et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. La lumière est claire. La dînette, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. La lumière est claire. La dînette, un yaourt et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Ça sent le pain. La dînette, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Ça sent le pain. La dînette, un yaourt et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "script": "narrateur|Sara a un morceau de pain. Le sol est frais. Sara reste avec un morceau de pain, près de papa. Toujours dans l'espace montré. L'adulte voit Sara. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le chat, le chien, ou la poule.",
+      "script": "narrateur|On peut prendre le chat, le chien, ou la poule.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint le chat. La lumière est claire. La dînette, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chat. La lumière est claire. La dînette, un morceau de pain et le chat restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint le chien. Ça sent le pain. La dînette, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint le chien. Ça sent le pain. La dînette, un morceau de pain et le chien restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint la poule. Un chat miaule une fois. La dînette, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "script": "narrateur|Sara rejoint la poule. Un chat miaule une fois. La dînette, un morceau de pain et la poule restent dans l'espace montré. Papa, l'adulte, voit Sara. Sara dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

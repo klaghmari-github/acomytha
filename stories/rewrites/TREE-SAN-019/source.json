@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-019",
+  "fil_rouge": "",
+  "title": "Zoé va se coucher",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Zoé, maman, papa",
+  "setting": "salon puis chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir arrive. Le salon est calme. C'est l'heure. Zoé prend le pyjama. Elle le met. Maman ouvre le livre. Puis Zoé se couche. C'est le dodo. Le corps a besoin de dormir.",
+      "script": "narrateur|Le soir arrive. Le salon est calme.\nmaman|C'est l'heure.\nnarrateur|Zoé prend le pyjama. Elle le met. Maman ouvre le livre. Puis Zoé se couche. C'est le dodo. Le corps a besoin de dormir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le salon, la salle d'eau, ou la chambre.",
+      "script": "narrateur|On peut prendre le salon, la salle d'eau, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Zoé va vers le salon. La lumière est douce. maman est tout près. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "script": "narrateur|Zoé va vers le salon. La lumière est douce. maman est tout près. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, que met Zoé ?",
+      "script": "narrateur|Le soir, que met Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Zoé a retenu. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. On continue avec maman.",
+      "script": "narrateur|Oui. Zoé a retenu. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. On continue avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "script": "narrateur|On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé a choisi le pyjama. Le livre sent le papier. maman montre lentement. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le pyjama. Le livre sent le papier. maman montre lentement. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Le salon est calme. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Le salon est calme. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la couverture. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la chanson. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé a choisi l'histoire. La couverture est lourde. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi l'histoire. La couverture est lourde. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la veilleuse. L'eau a coulé. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la couverture. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la chanson. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé a choisi le doudou. Maman chante tout bas. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le doudou. Maman chante tout bas. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Le lit est frais. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la couverture. Un oiseau s'est tu. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la chanson. La veilleuse est petite. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. le salon, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Zoé va vers la salle d'eau. Le pyjama est chaud. maman est tout près. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "script": "narrateur|Zoé va vers la salle d'eau. Le pyjama est chaud. maman est tout près. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, que met Zoé ?",
+      "script": "narrateur|Le soir, que met Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Zoé respire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. Je suis là.",
+      "script": "narrateur|Zoé respire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo.\nmaman|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "script": "narrateur|On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé a choisi le pyjama. Le salon est calme. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le pyjama. Le salon est calme. maman montre lentement. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. L'eau a coulé. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la veilleuse. L'eau a coulé. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la couverture. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la chanson. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé a choisi l'histoire. L'eau a coulé. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi l'histoire. L'eau a coulé. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Le lit est frais. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la couverture. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la chanson. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé a choisi le doudou. Le lit est frais. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le doudou. Le lit est frais. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la couverture. La veilleuse est petite. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. Le soir est là. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la chanson. Le soir est là. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la salle d'eau, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Zoé va vers la chambre. Le doudou sent bon. maman est tout près. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "script": "narrateur|Zoé va vers la chambre. Le doudou sent bon. maman est tout près. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, que met Zoé ?",
+      "script": "narrateur|Le soir, que met Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. Zoé donne la main à maman.",
+      "script": "narrateur|C'est juste. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. Zoé donne la main à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "script": "narrateur|On peut prendre le pyjama, l'histoire, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé a choisi le pyjama. Un oiseau s'est tu. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le pyjama. Un oiseau s'est tu. maman montre lentement. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Le lit est frais. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Le lit est frais. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la couverture. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "script": "narrateur|Zoé rejoint la chanson. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le pyjama.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé a choisi l'histoire. La veilleuse est petite. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi l'histoire. La veilleuse est petite. maman montre lentement. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la veilleuse. Un oiseau s'est tu. Zoé se couche. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la couverture. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "script": "narrateur|Zoé rejoint la chanson. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis l'histoire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé a choisi le doudou. Le soir est là. maman montre lentement. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "script": "narrateur|Zoé a choisi le doudou. Le soir est là. maman montre lentement. Zoé met le pyjama. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "script": "narrateur|On peut prendre la veilleuse, la couverture, ou la chanson.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint la veilleuse. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la veilleuse. La veilleuse est petite. Zoé écoute l'histoire. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint la couverture. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la couverture. Le soir est là. Zoé prend le doudou. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint la chanson. La lumière est douce. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "script": "narrateur|Zoé rejoint la chanson. La lumière est douce. Zoé ferme les yeux. C'est le soir. Zoé met le pyjama. C'est l'heure du dodo. maman dit merci. la chambre, puis le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

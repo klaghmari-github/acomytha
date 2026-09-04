@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-TMP-007",
+  "fil_rouge": "",
+  "title": "Maya voit le soleil et la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Maya, papa, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya est au jardin avec papa. Le jour, le soleil brille. Plus tard, le ciel change. Maya voit la lune. Elle voit les étoiles. La nuit, on fait dodo.",
+      "script": "narrateur|Maya est au jardin avec papa. Le jour, le soleil brille. Plus tard, le ciel change. Maya voit la lune. Elle voit les étoiles.\npapa|La nuit, on fait dodo.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le jardin, le balcon, ou la chambre.",
+      "script": "narrateur|On peut prendre le jardin, le balcon, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Maya va vers le jardin. Le soleil est chaud. papa est tout près. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "script": "narrateur|Maya va vers le jardin. Le soleil est chaud. papa est tout près. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Maya a retenu. Le jour, le soleil. La nuit, la lune. Dodo la nuit. On continue avec papa.",
+      "script": "narrateur|Oui. Maya a retenu. Le jour, le soleil. La nuit, la lune. Dodo la nuit. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le soleil, la lune, ou les étoiles.",
+      "script": "narrateur|On peut prendre le soleil, la lune, ou les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Maya a choisi le soleil. L'herbe est douce. papa montre lentement. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi le soleil. L'herbe est douce. papa montre lentement. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Papa est près. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "script": "narrateur|Maya rejoint jouer. Papa est près. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Un oiseau se tait. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "script": "narrateur|Maya rejoint le pyjama. Un oiseau se tait. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le ciel devient bleu foncé. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "script": "narrateur|Maya rejoint le dodo. Le ciel devient bleu foncé.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Maya a choisi la lune. Le balcon est frais. papa montre lentement. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi la lune. Le balcon est frais. papa montre lentement.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Un oiseau se tait. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "script": "narrateur|Maya rejoint jouer. Un oiseau se tait. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le ciel devient bleu foncé. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "script": "narrateur|Maya rejoint le pyjama. Le ciel devient bleu foncé.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le pyjama est chaud. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "script": "narrateur|Maya rejoint le dodo. Le pyjama est chaud. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Maya a choisi les étoiles. Le lit est calme. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi les étoiles. Le lit est calme. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Le ciel devient bleu foncé. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "script": "narrateur|Maya rejoint jouer. Le ciel devient bleu foncé.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le pyjama est chaud. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le pyjama. Le pyjama est chaud. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. La couverture glisse. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le dodo. La couverture glisse. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le jardin, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Maya va vers le balcon. La lune est ronde. papa est tout près. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "script": "narrateur|Maya va vers le balcon. La lune est ronde. papa est tout près. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Maya respire. Le jour, le soleil. La nuit, la lune. Dodo la nuit. Je suis là.",
+      "script": "narrateur|Maya respire. Le jour, le soleil. La nuit, la lune. Dodo la nuit.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le soleil, la lune, ou les étoiles.",
+      "script": "narrateur|On peut prendre le soleil, la lune, ou les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Maya a choisi le soleil. Papa est près. papa montre lentement. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi le soleil. Papa est près. papa montre lentement.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Un oiseau se tait. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "script": "narrateur|Maya rejoint jouer. Un oiseau se tait. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le ciel devient bleu foncé. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "script": "narrateur|Maya rejoint le pyjama. Le ciel devient bleu foncé. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le pyjama est chaud. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "script": "narrateur|Maya rejoint le dodo. Le pyjama est chaud.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Maya a choisi la lune. Un oiseau se tait. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi la lune. Un oiseau se tait. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Le ciel devient bleu foncé. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "script": "narrateur|Maya rejoint jouer. Le ciel devient bleu foncé. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le pyjama est chaud. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "script": "narrateur|Maya rejoint le pyjama. Le pyjama est chaud.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. La couverture glisse. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "script": "narrateur|Maya rejoint le dodo. La couverture glisse. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Maya a choisi les étoiles. Le ciel devient bleu foncé. papa montre lentement. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi les étoiles. Le ciel devient bleu foncé. papa montre lentement. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Le pyjama est chaud. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "script": "narrateur|Maya rejoint jouer. Le pyjama est chaud.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. La couverture glisse. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le pyjama. La couverture glisse. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le soir arrive. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le dodo. Le soir arrive. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. le balcon, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Maya va vers la chambre. Les étoiles clignent. papa est tout près. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "script": "narrateur|Maya va vers la chambre. Les étoiles clignent. papa est tout près.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Le jour, le soleil. La nuit, la lune. Dodo la nuit. Maya donne la main à papa.",
+      "script": "narrateur|C'est juste. Le jour, le soleil. La nuit, la lune. Dodo la nuit. Maya donne la main à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le soleil, la lune, ou les étoiles.",
+      "script": "narrateur|On peut prendre le soleil, la lune, ou les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Maya a choisi le soleil. Le pyjama est chaud. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi le soleil. Le pyjama est chaud. papa montre lentement. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Le ciel devient bleu foncé. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "script": "narrateur|Maya rejoint jouer. Le ciel devient bleu foncé. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le pyjama est chaud. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "script": "narrateur|Maya rejoint le pyjama. Le pyjama est chaud. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. La couverture glisse. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "script": "narrateur|Maya rejoint le dodo. La couverture glisse.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Maya a choisi la lune. La couverture glisse. papa montre lentement. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi la lune. La couverture glisse. papa montre lentement. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. Le pyjama est chaud. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "script": "narrateur|Maya rejoint jouer. Le pyjama est chaud. Maya nomme la lune. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. La couverture glisse. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "script": "narrateur|Maya rejoint le pyjama. La couverture glisse.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le soir arrive. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "script": "narrateur|Maya rejoint le dodo. Le soir arrive. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis la lune.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Maya a choisi les étoiles. Le soir arrive. papa montre lentement. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "script": "narrateur|Maya a choisi les étoiles. Le soir arrive. papa montre lentement. Maya nomme le soleil. Le jour, le soleil. La nuit, la lune. Dodo la nuit. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre jouer, le pyjama, ou le dodo.",
+      "script": "narrateur|On peut prendre jouer, le pyjama, ou le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Maya rejoint jouer. La couverture glisse. C'est la nuit. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "script": "narrateur|Maya rejoint jouer. La couverture glisse.\nenfant-f|C'est la nuit.\nnarrateur|Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Maya rejoint le pyjama. Le soir arrive. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le pyjama. Le soir arrive. Maya met le pyjama. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Maya rejoint le dodo. Le soleil est chaud. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "script": "narrateur|Maya rejoint le dodo. Le soleil est chaud. Maya se couche. Le jour, le soleil. La nuit, la lune. Dodo la nuit. papa dit merci. la chambre, puis les étoiles.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-FAM-006",
+  "fil_rouge": "",
+  "title": "Tom raconte une bêtise",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Tom, papa, maman",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom est à la maison. Un verre a glissé. Tom a un nœud au ventre. Papa est là. Tu peux raconter. On le dit à papa ou maman. Tom respire.",
+      "script": "narrateur|Tom est à la maison. Un verre a glissé. Tom a un nœud au ventre. Papa est là.\npapa|Tu peux raconter. On le dit à papa ou maman.\nnarrateur|Tom respire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le salon, la cuisine, ou la chambre.",
+      "script": "narrateur|On peut prendre le salon, la cuisine, ou la chambre.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Tom va vers le salon. Le tapis est doux. papa est tout près. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "script": "narrateur|Tom va vers le salon. Le tapis est doux. papa est tout près. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Une bêtise est arrivée. Que fait Tom ?",
+      "script": "narrateur|Une bêtise est arrivée. Que fait Tom ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Tom a retenu. Tom raconte. Il le dit à papa ou maman. On continue avec papa.",
+      "script": "narrateur|Oui. Tom a retenu. Tom raconte. Il le dit à papa ou maman. On continue avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le verre, le coussin, ou le crayon.",
+      "script": "narrateur|On peut prendre le verre, le coussin, ou le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom a choisi le verre. L'eau a fait un bruit. papa montre lentement. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le verre. L'eau a fait un bruit. papa montre lentement. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. Papa est près. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "script": "narrateur|Tom rejoint maman. Papa est près. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. La lumière est douce. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "script": "narrateur|Tom rejoint papa. La lumière est douce. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "script": "narrateur|Tom rejoint la sœur. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom a choisi le coussin. Le coussin est au sol. papa montre lentement. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le coussin. Le coussin est au sol. papa montre lentement. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. La lumière est douce. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "script": "narrateur|Tom rejoint maman. La lumière est douce. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "script": "narrateur|Tom rejoint papa. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. La chaise est vide. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "script": "narrateur|Tom rejoint la sœur. La chaise est vide. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom a choisi le crayon. Le crayon a roulé. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le crayon. Le crayon a roulé. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "script": "narrateur|Tom rejoint maman. Un chat miaule. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. La chaise est vide. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "script": "narrateur|Tom rejoint papa. La chaise est vide. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. Le bol est chaud. C'est moi. Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "script": "narrateur|Tom rejoint la sœur. Le bol est chaud.\nenfant-m|C'est moi.\nnarrateur|Tom raconte. Il le dit à papa ou maman. papa dit merci. le salon, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Tom va vers la cuisine. Il y a des miettes. papa est tout près. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "script": "narrateur|Tom va vers la cuisine. Il y a des miettes. papa est tout près. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Une bêtise est arrivée. Que fait Tom ?",
+      "script": "narrateur|Une bêtise est arrivée. Que fait Tom ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Tom respire. Tom raconte. Il le dit à papa ou maman. Je suis là.",
+      "script": "narrateur|Tom respire. Tom raconte. Il le dit à papa ou maman.\npapa|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le verre, le coussin, ou le crayon.",
+      "script": "narrateur|On peut prendre le verre, le coussin, ou le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom a choisi le verre. Papa est près. papa montre lentement. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le verre. Papa est près. papa montre lentement. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. La lumière est douce. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "script": "narrateur|Tom rejoint maman. La lumière est douce. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. Un chat miaule. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "script": "narrateur|Tom rejoint papa. Un chat miaule. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "script": "narrateur|Tom rejoint la sœur. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom a choisi le coussin. La lumière est douce. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le coussin. La lumière est douce. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. Un chat miaule. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "script": "narrateur|Tom rejoint maman. Un chat miaule. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "script": "narrateur|Tom rejoint papa. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. Le bol est chaud. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "script": "narrateur|Tom rejoint la sœur. Le bol est chaud. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom a choisi le crayon. Un chat miaule. papa montre lentement. C'est moi. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le crayon. Un chat miaule. papa montre lentement.\nenfant-m|C'est moi.\nnarrateur|Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "script": "narrateur|Tom rejoint maman. La chaise est vide. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. Le bol est chaud. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "script": "narrateur|Tom rejoint papa. Le bol est chaud. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. On entend un oiseau. C'est moi. Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "script": "narrateur|Tom rejoint la sœur. On entend un oiseau.\nenfant-m|C'est moi.\nnarrateur|Tom raconte. Il le dit à papa ou maman. papa dit merci. la cuisine, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Tom va vers la chambre. La couverture est tiède. papa est tout près. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "script": "narrateur|Tom va vers la chambre. La couverture est tiède. papa est tout près. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Une bêtise est arrivée. Que fait Tom ?",
+      "script": "narrateur|Une bêtise est arrivée. Que fait Tom ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Tom raconte. Il le dit à papa ou maman. Tom donne la main à papa.",
+      "script": "narrateur|C'est juste. Tom raconte. Il le dit à papa ou maman. Tom donne la main à papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le verre, le coussin, ou le crayon.",
+      "script": "narrateur|On peut prendre le verre, le coussin, ou le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom a choisi le verre. La chaise est vide. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le verre. La chaise est vide. papa montre lentement. Tom prend la main. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. Un chat miaule. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "script": "narrateur|Tom rejoint maman. Un chat miaule. Tom raconte. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. La chaise est vide. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "script": "narrateur|Tom rejoint papa. La chaise est vide. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "script": "narrateur|Tom rejoint la sœur. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le verre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom a choisi le coussin. Le bol est chaud. papa montre lentement. C'est moi. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le coussin. Le bol est chaud. papa montre lentement.\nenfant-m|C'est moi.\nnarrateur|Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. La chaise est vide. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "script": "narrateur|Tom rejoint maman. La chaise est vide. Tom dit ce qui s'est passé. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "script": "narrateur|Tom rejoint papa. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. On entend un oiseau. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "script": "narrateur|Tom rejoint la sœur. On entend un oiseau. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom a choisi le crayon. On entend un oiseau. papa montre lentement. Tom raconte. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "script": "narrateur|Tom a choisi le crayon. On entend un oiseau. papa montre lentement. Tom raconte. Tom raconte. Il le dit à papa ou maman. maman n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre maman, papa, ou la sœur.",
+      "script": "narrateur|On peut prendre maman, papa, ou la sœur.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Tom rejoint maman. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "script": "narrateur|Tom rejoint maman. Le bol est chaud. Tom va vers papa. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Tom rejoint papa. On entend un oiseau. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "script": "narrateur|Tom rejoint papa. On entend un oiseau. Tom prend la main. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Tom rejoint la sœur. Le tapis est doux. C'est moi. Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "script": "narrateur|Tom rejoint la sœur. Le tapis est doux.\nenfant-m|C'est moi.\nnarrateur|Tom raconte. Il le dit à papa ou maman. papa dit merci. la chambre, puis le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

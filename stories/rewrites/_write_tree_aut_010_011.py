@@ -680,6 +680,7 @@ def l3_010(i: int, j: int, k: int) -> list[str]:
     obj = L2_010[j]
     sac = L3_SAC_010[k]
     img = IMG_010[(i, j, k)]
+    ou = {1: "au bac à sable", 2: "au toboggan", 3: "aux balançoires"}[i]
     return [
         f"narrateur|Chouchou va vers {sac['sac']}.",
         f"narrateur|Le sac est {sac['coul']}, accroché à la barrière.",
@@ -687,7 +688,7 @@ def l3_010(i: int, j: int, k: int) -> list[str]:
         f"enfant-f|{sac['qui']}.",
         "papa|C'est l'heure, Chouchou.",
         "maman|Le chemin rentre vers la maison.",
-        f"narrateur|Elle a joué, vers {loc}.",
+        f"narrateur|Elle a joué {ou}.",
         f"narrateur|Elle a pris {obj}.",
         "narrateur|Le manteau jaune est lourd de pluie.",
         "enfant-f|Il est mouillé, maman.",
@@ -1042,10 +1043,11 @@ def fin_011(i: int, j: int, k: int) -> list[str]:
     snack = L2_011[j]
     bête = L3_011[k]
     img = IMG_011[(i, j, k)]
+    pose = {1: "près du chat", 2: "près du chien", 3: "près de la poule"}[k]
     return [
         "narrateur|Sarah tient le seau jaune.",
         "narrateur|Un peu d'eau tremble au fond.",
-        f"narrateur|Elle pose l'eau { {1: 'près du chat', 2: 'près du chien', 3: 'près de la poule'}[k] }.",
+        f"narrateur|Elle pose l'eau {pose}.",
         "enfant-f|Voilà, c'est pour toi.",
         "maman|Merci, Sarah.",
         "narrateur|Elle tient le manteau bleu.",

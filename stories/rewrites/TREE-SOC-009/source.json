@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SOC-009",
+  "fil_rouge": "",
+  "title": "Sara aide à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Sara, maman, papa",
+  "setting": "cuisine de l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara est dans la petite cuisine de l'école. Maman aide aujourd'hui. Tu peux aider. Une tâche sûre. Laver une tomate. Poser une cuillère. Apporter le pain. Avec un adulte.",
+      "script": "narrateur|Sara est dans la petite cuisine de l'école. Maman aide aujourd'hui.\nmaman|Tu peux aider.\nnarrateur|Une tâche sûre. Laver une tomate. Poser une cuillère. Apporter le pain. Avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre l'évier, la table, ou le panier.",
+      "script": "narrateur|On peut prendre l'évier, la table, ou le panier.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Sara va vers l'évier. L'eau est froide. maman est tout près. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "script": "narrateur|Sara va vers l'évier. L'eau est froide. maman est tout près. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sara aide en cuisine. Comment ?",
+      "script": "narrateur|Sara aide en cuisine. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Sara a retenu. Sara fait une tâche sûre. Avec un adulte. On continue avec maman.",
+      "script": "narrateur|Oui. Sara a retenu. Sara fait une tâche sûre. Avec un adulte. On continue avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la tomate, la cuillère, ou le pain.",
+      "script": "narrateur|On peut prendre la tomate, la cuillère, ou le pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a choisi la tomate. La cuillère tinte. maman montre lentement. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la tomate. La cuillère tinte. maman montre lentement. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Maman est près. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "script": "narrateur|Sara rejoint laver. Maman est près. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Ça sent le basilic. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "script": "narrateur|Sara rejoint poser. Ça sent le basilic. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "script": "narrateur|Sara rejoint apporter. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a choisi la cuillère. La table est lisse. maman montre lentement. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la cuillère. La table est lisse. maman montre lentement. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Ça sent le basilic. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint laver. Ça sent le basilic. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint poser. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. Un camarade attend. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint apporter. Un camarade attend. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a choisi le pain. Le panier est osier. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi le pain. Le panier est osier. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "script": "narrateur|Sara rejoint laver. Les mains sont mouillées. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Un camarade attend. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "script": "narrateur|Sara rejoint poser. Un camarade attend. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. La lumière est claire. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "script": "narrateur|Sara rejoint apporter. La lumière est claire. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. l'évier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Sara va vers la table. La tomate est lisse. maman est tout près. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "script": "narrateur|Sara va vers la table. La tomate est lisse. maman est tout près. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Sara aide en cuisine. Comment ?",
+      "script": "narrateur|Sara aide en cuisine. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Sara respire. Sara fait une tâche sûre. Avec un adulte. Je suis là.",
+      "script": "narrateur|Sara respire. Sara fait une tâche sûre. Avec un adulte.\nmaman|Je suis là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la tomate, la cuillère, ou le pain.",
+      "script": "narrateur|On peut prendre la tomate, la cuillère, ou le pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a choisi la tomate. Maman est près. maman montre lentement. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la tomate. Maman est près. maman montre lentement. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Ça sent le basilic. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "script": "narrateur|Sara rejoint laver. Ça sent le basilic. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Les mains sont mouillées. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "script": "narrateur|Sara rejoint poser. Les mains sont mouillées. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "script": "narrateur|Sara rejoint apporter. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a choisi la cuillère. Ça sent le basilic. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la cuillère. Ça sent le basilic. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Les mains sont mouillées. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "script": "narrateur|Sara rejoint laver. Les mains sont mouillées. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "script": "narrateur|Sara rejoint poser. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. La lumière est claire. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "script": "narrateur|Sara rejoint apporter. La lumière est claire. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a choisi le pain. Les mains sont mouillées. maman montre lentement. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi le pain. Les mains sont mouillées. maman montre lentement. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "script": "narrateur|Sara rejoint laver. Un camarade attend. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. La lumière est claire. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "script": "narrateur|Sara rejoint poser. La lumière est claire. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. Un oiseau chante. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "script": "narrateur|Sara rejoint apporter. Un oiseau chante. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. la table, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Sara va vers le panier. Le pain sent bon. maman est tout près. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "script": "narrateur|Sara va vers le panier. Le pain sent bon. maman est tout près. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Sara aide en cuisine. Comment ?",
+      "script": "narrateur|Sara aide en cuisine. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "C'est juste. Sara fait une tâche sûre. Avec un adulte. Sara donne la main à maman.",
+      "script": "narrateur|C'est juste. Sara fait une tâche sûre. Avec un adulte. Sara donne la main à maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la tomate, la cuillère, ou le pain.",
+      "script": "narrateur|On peut prendre la tomate, la cuillère, ou le pain.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sara a choisi la tomate. Un camarade attend. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la tomate. Un camarade attend. maman montre lentement. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Les mains sont mouillées. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "script": "narrateur|Sara rejoint laver. Les mains sont mouillées. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Un camarade attend. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "script": "narrateur|Sara rejoint poser. Un camarade attend. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "script": "narrateur|Sara rejoint apporter. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la tomate.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sara a choisi la cuillère. La lumière est claire. maman montre lentement. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi la cuillère. La lumière est claire. maman montre lentement. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. Un camarade attend. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint laver. Un camarade attend. Sara pose la cuillère. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint poser. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. Un oiseau chante. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "script": "narrateur|Sara rejoint apporter. Un oiseau chante. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis la cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sara a choisi le pain. Un oiseau chante. maman montre lentement. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "script": "narrateur|Sara a choisi le pain. Un oiseau chante. maman montre lentement. Sara lave la tomate. Sara fait une tâche sûre. Avec un adulte. papa n'est pas loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre laver, poser, ou apporter.",
+      "script": "narrateur|On peut prendre laver, poser, ou apporter.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Sara rejoint laver. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "script": "narrateur|Sara rejoint laver. La lumière est claire. Sara apporte le pain. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Sara rejoint poser. Un oiseau chante. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "script": "narrateur|Sara rejoint poser. Un oiseau chante. Sara reste avec l'adulte. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Sara rejoint apporter. L'eau est froide. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "script": "narrateur|Sara rejoint apporter. L'eau est froide. Sara essuie ses mains. Sara fait une tâche sûre. Avec un adulte. maman dit merci. le panier, puis le pain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

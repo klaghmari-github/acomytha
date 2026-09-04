@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SEC-024",
+  "fil_rouge": "",
+  "title": "Zoé attend le feu vert sur le chemin",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Zoé, maman, papa",
+  "setting": "chemin de l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé marche vers l'école avec maman. Elles s'arrêtent au bord. Les pieds de Zoé restent sur le trottoir en attendant. Maman, l'adulte, tend la main. Zoé la prend. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "script": "narrateur|Zoé marche vers l'école avec maman. Elles s'arrêtent au bord. Les pieds de Zoé restent sur le trottoir en attendant. Maman, l'adulte, tend la main. Zoé la prend. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la boulangerie, le passage piéton, ou la porte de l'école.",
+      "script": "narrateur|On peut prendre la boulangerie, le passage piéton, ou la porte de l'école.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Près de la boulangerie, ça sent le pain. Zoé s'arrête. Pieds sur le trottoir en attendant. Elle donne la main à maman, l'adulte. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "script": "narrateur|Près de la boulangerie, ça sent le pain. Zoé s'arrête. Pieds sur le trottoir en attendant. Elle donne la main à maman, l'adulte. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Près de la boulangerie, que fait Zoé ?",
+      "script": "narrateur|Près de la boulangerie, que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Zoé a attendu le feu vert. Main. Adulte. Trottoir en attendant.",
+      "script": "narrateur|Zoé a attendu le feu vert. Main. Adulte. Trottoir en attendant.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le cartable, la gourde, ou le doudou.",
+      "script": "narrateur|On peut prendre le cartable, la gourde, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Zoé tient le cartable. Elle reste sur le trottoir en attendant. Main dans la main. Feu vert. Avec l'adulte.",
+      "script": "narrateur|Zoé tient le cartable. Elle reste sur le trottoir en attendant. Main dans la main. Feu vert. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la boulangerie. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Zoé tient la gourde. Pieds sur le trottoir en attendant. Elle donne la main. Feu vert. Avec l'adulte.",
+      "script": "narrateur|Zoé tient la gourde. Pieds sur le trottoir en attendant. Elle donne la main. Feu vert. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la boulangerie. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Zoé serre le doudou. Trottoir en attendant. Main. Feu vert. Maman, l'adulte, avance avec elle.",
+      "script": "narrateur|Zoé serre le doudou. Trottoir en attendant. Main. Feu vert. Maman, l'adulte, avance avec elle.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la boulangerie. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Au passage piéton, Zoé s'arrête. Pieds sur le trottoir en attendant. Elle donne la main. Maman, l'adulte, est là. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "script": "narrateur|Au passage piéton, Zoé s'arrête. Pieds sur le trottoir en attendant. Elle donne la main. Maman, l'adulte, est là. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Au passage, que fait Zoé ?",
+      "script": "narrateur|Au passage, que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. Feu vert, la main, avec l'adulte. Pieds sur le trottoir en attendant.",
+      "script": "narrateur|Oui. Feu vert, la main, avec l'adulte. Pieds sur le trottoir en attendant.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le cartable, la gourde, ou le doudou.",
+      "script": "narrateur|On peut prendre le cartable, la gourde, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Au passage, le cartable est sur l'épaule. Trottoir en attendant. Main. Feu vert. Avec l'adulte.",
+      "script": "narrateur|Au passage, le cartable est sur l'épaule. Trottoir en attendant. Main. Feu vert. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de le passage piéton. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "La gourde tape doucement. Zoé attend le feu vert. Main. Trottoir en attendant. Avec l'adulte.",
+      "script": "narrateur|La gourde tape doucement. Zoé attend le feu vert. Main. Trottoir en attendant. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de le passage piéton. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Le doudou est sous le bras. Pieds sur le trottoir en attendant. Main. Feu vert. Avec l'adulte.",
+      "script": "narrateur|Le doudou est sous le bras. Pieds sur le trottoir en attendant. Main. Feu vert. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de le passage piéton. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Près de la porte de l'école, un feu piéton. Zoé s'arrête. Pieds sur le trottoir en attendant. Main dans la main. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "script": "narrateur|Près de la porte de l'école, un feu piéton. Zoé s'arrête. Pieds sur le trottoir en attendant. Main dans la main. Elles attendent le feu vert. Puis elles avancent avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Près de l'école, que fait Zoé ?",
+      "script": "narrateur|Près de l'école, que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Zoé a donné la main. Elle a attendu le feu vert. Avec l'adulte.",
+      "script": "narrateur|Zoé a donné la main. Elle a attendu le feu vert. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le cartable, la gourde, ou le doudou.",
+      "script": "narrateur|On peut prendre le cartable, la gourde, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Le cartable est fermé. Zoé attend le feu vert près de l'école. Main. Trottoir en attendant. Avec l'adulte.",
+      "script": "narrateur|Le cartable est fermé. Zoé attend le feu vert près de l'école. Main. Trottoir en attendant. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la porte de l'école. Elle a le cartable. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "La gourde est pleine. Zoé donne la main. Feu vert. Trottoir en attendant. Avec l'adulte.",
+      "script": "narrateur|La gourde est pleine. Zoé donne la main. Feu vert. Trottoir en attendant. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la porte de l'école. Elle a la gourde. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Le doudou reste dans le sac. Zoé attend le feu vert. Main. Trottoir en attendant. Avec l'adulte.",
+      "script": "narrateur|Le doudou reste dans le sac. Zoé attend le feu vert. Main. Trottoir en attendant. Avec l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Léa, Tom, ou Sami.",
+      "script": "narrateur|On peut prendre Léa, Tom, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Zoé rejoint Léa près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Léa près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Zoé rejoint Tom près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Tom près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Zoé rejoint Sami près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "script": "narrateur|Zoé rejoint Sami près de la porte de l'école. Elle a le doudou. Elle a attendu le feu vert. Elle a donné la main. Avec l'adulte. Pieds sur le trottoir en attendant. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

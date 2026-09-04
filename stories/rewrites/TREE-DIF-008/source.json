@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-DIF-008",
+  "fil_rouge": "",
+  "title": "Inviter sans forcer — au marché",
+  "lesson_id": "DIF.BES.002",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Kenzo, papa, maman",
+  "setting": "au marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenzo est au marché, avec papa. Maman tient le panier. Kenzo veut inviter un copain. Le copain peut dire non. On propose. On peut accepter plusieurs réponses. On joue ensemble si l'autre veut. On peut jouer ensemble.",
+      "script": "narrateur|Kenzo est au marché, avec papa. Maman tient le panier. Kenzo veut inviter un copain. Le copain peut dire non.\npapa|On propose. On peut accepter plusieurs réponses. On joue ensemble si l'autre veut. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le train, le bus, ou la voiture.",
+      "script": "narrateur|On peut prendre le train, le bus, ou la voiture.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Kenzo voit le train du marché, un petit train en bois. Il propose à Tom : tu viens ? Tom dit non. Kenzo accepte. On propose. On peut accepter plusieurs réponses. Plus tard, c'est possible. On peut jouer ensemble.",
+      "script": "narrateur|Kenzo voit le train du marché, un petit train en bois. Il propose à Tom : tu viens ? Tom dit non. Kenzo accepte. On propose. On peut accepter plusieurs réponses.\npapa|Plus tard, c'est possible. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "On propose sans forcer ?",
+      "script": "narrateur|On propose sans forcer ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On propose. On accepte plusieurs réponses. Kenzo respire. Papa est là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On propose. On accepte plusieurs réponses. Kenzo respire. Papa est là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Près du train, Kenzo propose à Tom : on joue le matin ? Tom dit non. Kenzo accepte plusieurs réponses. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du train, Kenzo propose à Tom : on joue le matin ? Tom dit non. Kenzo accepte plusieurs réponses. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo a choisi le train. Puis Tom. Puis le matin. Le sol est un peu froid. Kenzo boit une gorgée d'eau. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo a choisi le train. Puis Tom. Puis le matin. Le sol est un peu froid. Kenzo boit une gorgée d'eau. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo s'arrête près de après la sieste. Tom est rangé. Un crochet tient bien le manteau. Kenzo montre après la sieste à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo s'arrête près de après la sieste. Tom est rangé. Un crochet tient bien le manteau. Kenzo montre après la sieste à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo se souvient de le train. Et de Tom. Et de le soir. Une chaussette est encore sablée. Kenzo pose Tom à sa place. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo se souvient de le train. Et de Tom. Et de le soir. Une chaussette est encore sablée. Kenzo pose Tom à sa place. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Près du train, Kenzo propose à Tom : après la sieste ? Je regarde. Kenzo accepte plusieurs réponses. Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du train, Kenzo propose à Tom : après la sieste ?\nenfant-m|Je regarde.\nnarrateur|Kenzo accepte plusieurs réponses.\npapa|Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le matin. Après Léa. Près de le train. Kenzo s'arrête. Il y a des miettes sur la table. Kenzo s'assoit près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Avec le matin. Après Léa. Près de le train. Kenzo s'arrête. Il y a des miettes sur la table. Kenzo s'assoit près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo range Léa. après la sieste reste près de le train. Un vélo passe au loin. Kenzo raccroche un linge. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo range Léa. après la sieste reste près de le train. Un vélo passe au loin. Kenzo raccroche un linge. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir est là. Léa aussi. le train reste dans le souvenir. Ça sent le pain chaud. Kenzo range encore un peu, près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Le soir est là. Léa aussi. le train reste dans le souvenir. Ça sent le pain chaud. Kenzo range encore un peu, près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Près du train, Kenzo propose à Tom : le soir ? Plus tard. Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du train, Kenzo propose à Tom : le soir ?\nenfant-m|Plus tard.\nnarrateur|Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo rejoint le matin. Sami est rangé. le train est fini. On attend son tour. Kenzo tend le matin à maman. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo rejoint le matin. Sami est rangé. le train est fini. On attend son tour. Kenzo tend le matin à maman. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de après la sieste. Kenzo pose Sami. le train est derrière. Un ruban reste dans la poche. Kenzo caresse le doudou. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Près de après la sieste. Kenzo pose Sami. le train est derrière. Un ruban reste dans la poche. Kenzo caresse le doudou. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo montre le soir. Papa a vu le train. Et Sami. Les chaussures font toc toc. Kenzo ferme la porte, tout doux. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo montre le soir. Papa a vu le train. Et Sami. Les chaussures font toc toc. Kenzo ferme la porte, tout doux. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Kenzo voit le bus s'arrêter. Il propose à Léa : tu viens voir ? Je regarde. Kenzo accepte. On propose. On peut accepter plusieurs réponses. Maman tient le panier. On peut jouer ensemble.",
+      "script": "narrateur|Kenzo voit le bus s'arrêter. Il propose à Léa : tu viens voir ?\nenfant-f|Je regarde.\nnarrateur|Kenzo accepte. On propose. On peut accepter plusieurs réponses. Maman tient le panier. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On accepte plusieurs réponses ?",
+      "script": "narrateur|On accepte plusieurs réponses ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On propose. On accepte plusieurs réponses. Kenzo retient le geste. Papa sourit. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On propose. On accepte plusieurs réponses. Kenzo retient le geste. Papa sourit. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Près du bus, Kenzo propose à Léa : le matin ? Léa dit oui. Kenzo propose, sans forcer. Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du bus, Kenzo propose à Léa : le matin ? Léa dit oui. Kenzo propose, sans forcer.\npapa|Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo a choisi le bus. Puis Tom. Puis le matin. On souffle doucement. Kenzo dit merci à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo a choisi le bus. Puis Tom. Puis le matin. On souffle doucement. Kenzo dit merci à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo s'arrête près de après la sieste. Tom est rangé. On range un objet. Kenzo serre la main de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo s'arrête près de après la sieste. Tom est rangé. On range un objet. Kenzo serre la main de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo se souvient de le bus. Et de Tom. Et de le soir. Un chat miaule une fois. Kenzo prend la main de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo se souvient de le bus. Et de Tom. Et de le soir. Un chat miaule une fois. Kenzo prend la main de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Près du bus, Kenzo propose à Léa : après la sieste ? Léa dit non. Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du bus, Kenzo propose à Léa : après la sieste ? Léa dit non. Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le matin. Après Léa. Près de le bus. Kenzo s'arrête. Un linge sèche à l'air. Kenzo enfile ses chaussons. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Avec le matin. Après Léa. Près de le bus. Kenzo s'arrête. Un linge sèche à l'air. Kenzo enfile ses chaussons. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo range Léa. après la sieste reste près de le bus. La couverture est douce. Kenzo souffle, puis sourit à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo range Léa. après la sieste reste près de le bus. La couverture est douce. Kenzo souffle, puis sourit à papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir est là. Léa aussi. le bus reste dans le souvenir. Le vent est doux. Kenzo range le bus dans sa tête, comme un souvenir. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Le soir est là. Léa aussi. le bus reste dans le souvenir. Le vent est doux. Kenzo range le bus dans sa tête, comme un souvenir. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Près du bus, Kenzo propose à Léa : le soir ? Je regarde. Kenzo accepte plusieurs réponses. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près du bus, Kenzo propose à Léa : le soir ?\nenfant-f|Je regarde.\nnarrateur|Kenzo accepte plusieurs réponses. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo rejoint le matin. Sami est rangé. le bus est fini. La lumière est claire. Maman n'est pas loin. Kenzo les rejoint. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo rejoint le matin. Sami est rangé. le bus est fini. La lumière est claire. Maman n'est pas loin. Kenzo les rejoint. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de après la sieste. Kenzo pose Sami. le bus est derrière. Un galet est encore chaud. J'ai appris. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Près de après la sieste. Kenzo pose Sami. le bus est derrière. Un galet est encore chaud.\nenfant-m|J'ai appris. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard.\nnarrateur|Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo montre le soir. Papa a vu le bus. Et Sami. Une cloche tinte, tout loin. Kenzo plie un pull. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo montre le soir. Papa a vu le bus. Et Sami. Une cloche tinte, tout loin. Kenzo plie un pull. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Kenzo s'approche de la voiture de courses, un jouet. Il propose à Sami : on joue ? Plus tard. Kenzo accepte. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Kenzo s'approche de la voiture de courses, un jouet. Il propose à Sami : on joue ?\nenfant-m|Plus tard.\nnarrateur|Kenzo accepte. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "On invite, et après ?",
+      "script": "narrateur|On invite, et après ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On propose. On accepte plusieurs réponses. Kenzo hoche la tête. On continue, avec papa. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Oui. On propose. On accepte plusieurs réponses. Kenzo hoche la tête. On continue, avec papa. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Près de la voiture, Kenzo propose à Sami : le matin ? Plus tard. Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près de la voiture, Kenzo propose à Sami : le matin ?\nenfant-m|Plus tard.\nnarrateur|Kenzo accepte plusieurs réponses. Papa reste tout près. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo a choisi la voiture. Puis Tom. Puis le matin. Un panier est posé sur le banc. Kenzo sourit. Papa sourit aussi. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo a choisi la voiture. Puis Tom. Puis le matin. Un panier est posé sur le banc. Kenzo sourit. Papa sourit aussi. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo s'arrête près de après la sieste. Tom est rangé. On écoute jusqu'au bout. Kenzo répète tout bas le geste. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo s'arrête près de après la sieste. Tom est rangé. On écoute jusqu'au bout. Kenzo répète tout bas le geste. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo se souvient de la voiture. Et de Tom. Et de le soir. On rit un peu. Kenzo essuie ses mains. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo se souvient de la voiture. Et de Tom. Et de le soir. On rit un peu. Kenzo essuie ses mains. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Près de la voiture, Kenzo propose à Sami : après la sieste ? Sami dit oui. Kenzo propose, sans forcer. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près de la voiture, Kenzo propose à Sami : après la sieste ? Sami dit oui. Kenzo propose, sans forcer. Papa montre le geste, lentement. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Avec le matin. Après Léa. Près de la voiture. Kenzo s'arrête. Un ballon s'immobilise. Kenzo ferme le sac. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Avec le matin. Après Léa. Près de la voiture. Kenzo s'arrête. Un ballon s'immobilise. Kenzo ferme le sac. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Kenzo range Léa. après la sieste reste près de la voiture. On entend un oiseau. Kenzo range la tasse. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo range Léa. après la sieste reste près de la voiture. On entend un oiseau. Kenzo range la tasse. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir est là. Léa aussi. la voiture reste dans le souvenir. On dit merci. Kenzo écoute papa encore une fois. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Le soir est là. Léa aussi. la voiture reste dans le souvenir. On dit merci. Kenzo écoute papa encore une fois. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Près de la voiture, Kenzo propose à Sami : le soir ? Sami dit non. Kenzo accepte plusieurs réponses. Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "script": "narrateur|Près de la voiture, Kenzo propose à Sami : le soir ? Sami dit non. Kenzo accepte plusieurs réponses.\npapa|Je suis là. On propose. On peut accepter plusieurs réponses. On peut jouer ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Kenzo rejoint le matin. Sami est rangé. la voiture est fini. L'eau coule, tout petit bruit. Kenzo pose sa tête un moment. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo rejoint le matin. Sami est rangé. la voiture est fini. L'eau coule, tout petit bruit. Kenzo pose sa tête un moment. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Près de après la sieste. Kenzo pose Sami. la voiture est derrière. On se tient la main. Kenzo chuchote : c'est fini. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Près de après la sieste. Kenzo pose Sami. la voiture est derrière. On se tient la main. Kenzo chuchote : c'est fini. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Kenzo montre le soir. Papa a vu la voiture. Et Sami. Une tasse cliquette. Kenzo marche près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "script": "narrateur|Kenzo montre le soir. Papa a vu la voiture. Et Sami. Une tasse cliquette. Kenzo marche près de papa. On propose. On peut accepter plusieurs réponses. On invite. On accepte non, regarder, ou plus tard. Kenzo dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

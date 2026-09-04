@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SOC-003",
+  "fil_rouge": "",
+  "title": "Métiers de tous les jours — au parc",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Tom, maman, papa",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom est au parc, avec maman. Un boulanger est passé ce matin. Il a fait le pain. Un geste utile. Boulanger, c'est un métier. La maîtresse aide à apprendre. Un métier. Un geste utile. Tom écoute. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom est au parc, avec maman. Un boulanger est passé ce matin. Il a fait le pain. Un geste utile.\nmaman|Boulanger, c'est un métier.\nnarrateur|La maîtresse aide à apprendre. Un métier. Un geste utile. Tom écoute. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "script": "narrateur|On peut prendre le ballon rouge, le seau bleu, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Tom prend le ballon. Le chauffeur conduit le bus. C'est un métier. Un geste utile. Tom répète : chauffeur. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom prend le ballon.\nmaman|Le chauffeur conduit le bus. C'est un métier.\nnarrateur|Un geste utile. Tom répète : chauffeur. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Le boulanger fait le pain. C'est un quoi ?",
+      "script": "narrateur|Le boulanger fait le pain. C'est un quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Tom a nommé un métier. Boulanger. Geste utile : le pain. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom a nommé un métier. Boulanger. Geste utile : le pain. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom va vers Tom. Le bois sent le chaud. Tom joue. Chauffeur, métier, geste utile. Le bus avance. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Tom. Le bois sent le chaud. Tom joue.\nmaman|Chauffeur, métier, geste utile.\nnarrateur|Le bus avance. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. La lumière est claire. On essuie une miette. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "script": "narrateur|Voilà le matin. La lumière est claire. On essuie une miette. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Des miettes dorment sur la table. On met le doudou près. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "script": "narrateur|Voilà après la sieste. Des miettes dorment sur la table. On met le doudou près. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Un chat miaule une fois. On lace les chaussures. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "script": "narrateur|Voilà le soir. Un chat miaule une fois. On lace les chaussures. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom va vers Léa. La couverture est douce. Léa écoute. Maîtresse, métier. Geste utile : lire. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Léa. La couverture est douce. Léa écoute. Maîtresse, métier. Geste utile : lire. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Les chaussures font toc toc. On met le manteau. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom range. C'est bien.",
+      "script": "narrateur|Voilà le matin. Les chaussures font toc toc. On met le manteau. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom range.\nmaman|C'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. La couverture est douce. On boit une gorgée. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "script": "narrateur|Voilà après la sieste. La couverture est douce. On boit une gorgée. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Une cloche tinte au loin. On feuillette le livre. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "script": "narrateur|Voilà le soir. Une cloche tinte au loin. On feuillette le livre. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom va vers Sami. Le bois sent le chaud. Sami mime le boulanger. Métier. Geste utile. Le pain. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Sami. Le bois sent le chaud. Sami mime le boulanger. Métier. Geste utile. Le pain. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Le bois sent le chaud. On referme le livre. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "script": "narrateur|Voilà le matin. Le bois sent le chaud. On referme le livre. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Une goutte tombe, ploc. On pose le ballon. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "script": "narrateur|Voilà après la sieste. Une goutte tombe, ploc. On pose le ballon. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Le savon sent la fleur. On secoue le sable. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "script": "narrateur|Voilà le soir. Le savon sent la fleur. On secoue le sable. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Tom prend le seau. Le médecin écoute le cœur. Métier. Geste utile. Tom pose le seau. Médecin. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom prend le seau.\nmaman|Le médecin écoute le cœur. Métier. Geste utile.\nnarrateur|Tom pose le seau.\nenfant-m|Médecin. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Le médecin écoute le cœur. Quel geste ?",
+      "script": "narrateur|Le médecin écoute le cœur. Quel geste ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Médecin. Geste utile. Tom a dit le métier. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Médecin. Geste utile. Tom a dit le métier. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom va vers Tom. Le vent est doux sur la joue. Tom et Tom roulent le ballon. Chauffeur. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Tom. Le vent est doux sur la joue. Tom et Tom roulent le ballon. Chauffeur. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Le tissu est tout doux. On caresse le tissu. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom range. C'est bien.",
+      "script": "narrateur|Voilà le matin. Le tissu est tout doux. On caresse le tissu. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom range.\nmaman|C'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Une cuillère tinte. On tend la main. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "script": "narrateur|Voilà après la sieste. Une cuillère tinte. On tend la main. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Le sable est tiède. On chante un petit air. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "script": "narrateur|Voilà le soir. Le sable est tiède. On chante un petit air. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom va vers Léa. Un pigeon roucoule. Léa dit médecin. Geste utile. Tom répète le métier. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Léa. Un pigeon roucoule. Léa dit médecin. Geste utile. Tom répète le métier. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Un rire court, tout petit. On compte jusqu'à trois. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "script": "narrateur|Voilà le matin. Un rire court, tout petit. On compte jusqu'à trois. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Le papier froisse, chut. On montre du doigt. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "script": "narrateur|Voilà après la sieste. Le papier froisse, chut. On montre du doigt. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. L'herbe chatouille le mollet. On range la chaise. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "script": "narrateur|Voilà le soir. L'herbe chatouille le mollet. On range la chaise. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom va vers Sami. La terre est un peu humide. Sami range. Maman nomme encore un métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Sami. La terre est un peu humide. Sami range. Maman nomme encore un métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Un pigeon roucoule. On range un objet. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom range. C'est bien.",
+      "script": "narrateur|Voilà le matin. Un pigeon roucoule. On range un objet. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom range.\nmaman|C'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. La fenêtre vibre un peu. On se tient la main. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "script": "narrateur|Voilà après la sieste. La fenêtre vibre un peu. On se tient la main. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Le lait est froid dans le verre. On dit merci. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "script": "narrateur|Voilà le soir. Le lait est froid dans le verre. On dit merci. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Tom prend le doudou. Maman parle de la maîtresse. Elle lit une histoire. Métier. Geste utile. Tom sourit. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom prend le doudou. Maman parle de la maîtresse. Elle lit une histoire. Métier. Geste utile. Tom sourit. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "La maîtresse aide. C'est un quoi ?",
+      "script": "narrateur|La maîtresse aide. C'est un quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Maîtresse. Tom retient : métier, geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Maîtresse. Tom retient : métier, geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre Tom, Léa, ou Sami.",
+      "script": "narrateur|On peut prendre Tom, Léa, ou Sami.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Tom va vers Tom. Un pigeon roucoule. Tom s'assoit. Boulanger. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Tom. Un pigeon roucoule. Tom s'assoit. Boulanger. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. La corde du sac est rêche. On souffle doucement. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "script": "narrateur|Voilà le matin. La corde du sac est rêche. On souffle doucement. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Le savon mousse entre les doigts. On écoute jusqu'au bout. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "script": "narrateur|Voilà après la sieste. Le savon mousse entre les doigts. On écoute jusqu'au bout. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Un ruisseau chante. On attend son tour. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "script": "narrateur|Voilà le soir. Un ruisseau chante. On attend son tour. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Tom va vers Léa. La fenêtre vibre un peu. Léa sourit. Maîtresse. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Léa. La fenêtre vibre un peu. Léa sourit. Maîtresse. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. La laine gratte un peu. On sourit ensemble. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom range. C'est bien.",
+      "script": "narrateur|Voilà le matin. La laine gratte un peu. On sourit ensemble. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Tom range.\nmaman|C'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Un pain croustille. On pose les pieds par terre. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "script": "narrateur|Voilà après la sieste. Un pain croustille. On pose les pieds par terre. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. On souffle. Tom sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Le savon glisse. On parle tout bas. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "script": "narrateur|Voilà le soir. Le savon glisse. On parle tout bas. On a nommé un métier. On a dit un geste utile. Chauffeur, conduire. On nomme un métier. On dit un geste utile. Tom prend la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Tom va vers Sami. Une cloche tinte au loin. Sami tapote. Médecin. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "script": "narrateur|Tom va vers Sami. Une cloche tinte au loin. Sami tapote. Médecin. Métier. Geste utile. On nomme un métier. On dit un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre le matin, après la sieste, ou le soir.",
+      "script": "narrateur|On peut prendre le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Voilà le matin. Une plume vole. On range les jouets. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "script": "narrateur|Voilà le matin. Une plume vole. On range les jouets. On a nommé un métier. On a dit un geste utile. Boulanger, le pain. On nomme un métier. On dit un geste utile. Tom dit merci à maman. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Voilà après la sieste. Le banc est lisse. On s'assoit un moment. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "script": "narrateur|Voilà après la sieste. Le banc est lisse. On s'assoit un moment. On a nommé un métier. On a dit un geste utile. Médecin, écouter. On nomme un métier. On dit un geste utile. Maman serre Tom tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Voilà le soir. Un grelot sonne. On respire, un, deux. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "script": "narrateur|Voilà le soir. Un grelot sonne. On respire, un, deux. On a nommé un métier. On a dit un geste utile. Maîtresse, lire. On nomme un métier. On dit un geste utile. Papa n'est pas loin. On rentre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

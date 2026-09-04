@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-SAN-002",
+  "fil_rouge": "",
+  "title": "S'asseoir pour manger — dans la cuisine",
+  "lesson_id": "SAN.ALI.002",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Nora, papa, maman",
+  "setting": "dans la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est l'heure du déjeuner. Nora a faim. Papa pose les assiettes. Maman apporte le pain. On mange assis à table, ensemble. Nora va choisir sa place. Les fesses sur la chaise.",
+      "script": "narrateur|C'est l'heure du déjeuner. Nora a faim. Papa pose les assiettes. Maman apporte le pain. On mange assis à table, ensemble. Nora va choisir sa place. Les fesses sur la chaise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre près de papa, près de maman, ou sa petite chaise.",
+      "script": "narrateur|On peut prendre près de papa, près de maman, ou sa petite chaise.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Nora tire la chaise près de papa. La chaise fait un petit bruit. Elle pose les fesses sur la chaise. Elle est assise. Papa s'assoit aussi. Maman s'assoit en face. Ils sont ensemble à table. Nora prend sa cuillère. Elle reste assise.",
+      "script": "narrateur|Nora tire la chaise près de papa. La chaise fait un petit bruit. Elle pose les fesses sur la chaise. Elle est assise. Papa s'assoit aussi. Maman s'assoit en face. Ils sont ensemble à table. Nora prend sa cuillère. Elle reste assise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Nora va manger. Que fait-elle ?",
+      "script": "narrateur|Nora va manger. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Nora est assise. La table est stable. Papa, maman et Nora mangent ensemble.",
+      "script": "narrateur|Nora est assise. La table est stable. Papa, maman et Nora mangent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la soupe, le pain, ou le fromage.",
+      "script": "narrateur|On peut prendre la soupe, le pain, ou le fromage.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Papa souffle un peu sur la soupe. Nora reste assise. Elle mange à table, ensemble. La cuillère va, la cuillère vient. On est assis. C'est calme.",
+      "script": "narrateur|Papa souffle un peu sur la soupe. Nora reste assise. Elle mange à table, ensemble. La cuillère va, la cuillère vient.\nmaman|On est assis. C'est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "L'assiette bleue est devant Nora. Elle est assise à table. Ils mangent la soupe ensemble. Nora dit merci.",
+      "script": "narrateur|L'assiette bleue est devant Nora. Elle est assise à table. Ils mangent la soupe ensemble. Nora dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge brille. Nora reste assise. À table, ensemble, la soupe est tiède. Papa sourit.",
+      "script": "narrateur|L'assiette rouge brille. Nora reste assise. À table, ensemble, la soupe est tiède. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte est ronde. Nora est assise. Ils mangent ensemble à table. Maman essuie une goutte.",
+      "script": "narrateur|L'assiette verte est ronde. Nora est assise. Ils mangent ensemble à table. Maman essuie une goutte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Maman casse le pain. Nora est assise. Elle attend, les fesses sur la chaise. Puis elle mange le pain à table, ensemble. Ça sent bon.",
+      "script": "narrateur|Maman casse le pain. Nora est assise. Elle attend, les fesses sur la chaise. Puis elle mange le pain à table, ensemble. Ça sent bon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nora pose le pain dans l'assiette bleue. Elle est assise à table, ensemble. Le pain croque.",
+      "script": "narrateur|Nora pose le pain dans l'assiette bleue. Elle est assise à table, ensemble. Le pain croque.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge attend le pain. Nora reste assise. Ils mangent ensemble à table. Bravo.",
+      "script": "narrateur|L'assiette rouge attend le pain. Nora reste assise. Ils mangent ensemble à table.\npapa|Bravo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte est près de maman. Nora est assise. À table, ensemble, elle mange son morceau.",
+      "script": "narrateur|L'assiette verte est près de maman. Nora est assise. À table, ensemble, elle mange son morceau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Papa coupe un petit bout de fromage. Nora est assise. Elle mange à table, ensemble. Le fromage est doux. On reste assis jusqu'à la fin.",
+      "script": "narrateur|Papa coupe un petit bout de fromage. Nora est assise. Elle mange à table, ensemble. Le fromage est doux.\nmaman|On reste assis jusqu'à la fin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le fromage est dans l'assiette bleue. Nora est assise à table. Ils mangent ensemble. Puis ils rangent.",
+      "script": "narrateur|Le fromage est dans l'assiette bleue. Nora est assise à table. Ils mangent ensemble. Puis ils rangent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge sent le fromage. Nora reste assise. Ensemble, à table, c'est calme.",
+      "script": "narrateur|L'assiette rouge sent le fromage. Nora reste assise. Ensemble, à table, c'est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte attend. Nora est assise. Ils mangent ensemble à table. J'étais assise.",
+      "script": "narrateur|L'assiette verte attend. Nora est assise. Ils mangent ensemble à table.\nenfant-f|J'étais assise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Nora choisit la chaise près de maman. La nappe est douce. Elle s'assoit. Les fesses sur la chaise. Maman s'assoit à côté. Papa en face. Ils mangent ensemble à table. Nora tient sa fourchette. Elle reste assise.",
+      "script": "narrateur|Nora choisit la chaise près de maman. La nappe est douce. Elle s'assoit. Les fesses sur la chaise. Maman s'assoit à côté. Papa en face. Ils mangent ensemble à table. Nora tient sa fourchette. Elle reste assise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Nora est près de maman. Que fait-elle pour manger ?",
+      "script": "narrateur|Nora est près de maman. Que fait-elle pour manger ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Près de maman, Nora est assise. La table les tient ensemble.",
+      "script": "narrateur|Près de maman, Nora est assise. La table les tient ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la soupe, le pain, ou le fromage.",
+      "script": "narrateur|On peut prendre la soupe, le pain, ou le fromage.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Maman goûte la soupe. Nora est assise à côté. Elle mange à table, ensemble. Une goutte tombe. Maman l'essuie. Nora reste sur sa chaise.",
+      "script": "narrateur|Maman goûte la soupe. Nora est assise à côté. Elle mange à table, ensemble. Une goutte tombe. Maman l'essuie. Nora reste sur sa chaise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "L'assiette bleue fume un peu. Nora est assise à table, ensemble. Elle souffle.",
+      "script": "narrateur|L'assiette bleue fume un peu. Nora est assise à table, ensemble. Elle souffle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge est près de maman. Nora reste assise. Ils mangent ensemble à table.",
+      "script": "narrateur|L'assiette rouge est près de maman. Nora reste assise. Ils mangent ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte attend la cuillère. Nora est assise. Ensemble, à table, c'est bon.",
+      "script": "narrateur|L'assiette verte attend la cuillère. Nora est assise. Ensemble, à table, c'est bon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Papa passe le panier. Nora, assise, prend un morceau. Elle mange le pain à table, ensemble. Les fesses sur la chaise.",
+      "script": "narrateur|Papa passe le panier. Nora, assise, prend un morceau. Elle mange le pain à table, ensemble.\nmaman|Les fesses sur la chaise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le pain est sur l'assiette bleue. Nora est assise à table. Ils mangent ensemble. Des miettes. On les ramasse.",
+      "script": "narrateur|Le pain est sur l'assiette bleue. Nora est assise à table. Ils mangent ensemble. Des miettes. On les ramasse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge a des miettes. Nora reste assise. Ensemble, à table, elle mange.",
+      "script": "narrateur|L'assiette rouge a des miettes. Nora reste assise. Ensemble, à table, elle mange.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte est propre. Nora est assise. Ils mangent le pain ensemble à table.",
+      "script": "narrateur|L'assiette verte est propre. Nora est assise. Ils mangent le pain ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Maman pose le fromage. Nora est assise. Elle attend son tour, à table, ensemble. Puis elle mange. On est tous assis.",
+      "script": "narrateur|Maman pose le fromage. Nora est assise. Elle attend son tour, à table, ensemble. Puis elle mange.\npapa|On est tous assis.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "L'assiette bleue a un petit bout. Nora est assise à table, ensemble. Elle dit merci.",
+      "script": "narrateur|L'assiette bleue a un petit bout. Nora est assise à table, ensemble. Elle dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge sent bon. Nora reste assise. Ils mangent ensemble à table.",
+      "script": "narrateur|L'assiette rouge sent bon. Nora reste assise. Ils mangent ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte est au milieu. Nora est assise. À table, ensemble, le repas se termine.",
+      "script": "narrateur|L'assiette verte est au milieu. Nora est assise. À table, ensemble, le repas se termine.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Nora a sa petite chaise, juste à sa taille. Elle s'assoit. Les fesses bien posées. Papa et maman s'assoient aussi. Ils mangent ensemble à table. Je suis assise. Maman sourit.",
+      "script": "narrateur|Nora a sa petite chaise, juste à sa taille. Elle s'assoit. Les fesses bien posées. Papa et maman s'assoient aussi. Ils mangent ensemble à table.\nenfant-f|Je suis assise. Maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Nora a sa petite chaise. Que fait-elle ?",
+      "script": "narrateur|Nora a sa petite chaise. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "La petite chaise est stable. Nora est assise. Toute la famille est ensemble à table.",
+      "script": "narrateur|La petite chaise est stable. Nora est assise. Toute la famille est ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre la soupe, le pain, ou le fromage.",
+      "script": "narrateur|On peut prendre la soupe, le pain, ou le fromage.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "La soupe arrive. Nora, sur sa petite chaise, reste assise. Elle mange à table, ensemble. La cuillère est à sa taille.",
+      "script": "narrateur|La soupe arrive. Nora, sur sa petite chaise, reste assise. Elle mange à table, ensemble. La cuillère est à sa taille.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "L'assiette bleue est petite aussi. Nora est assise à table. Ils mangent ensemble.",
+      "script": "narrateur|L'assiette bleue est petite aussi. Nora est assise à table. Ils mangent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge va bien avec la chaise. Nora reste assise. Ensemble, à table, elle finit sa cuillère.",
+      "script": "narrateur|L'assiette rouge va bien avec la chaise. Nora reste assise. Ensemble, à table, elle finit sa cuillère.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte est ronde. Nora est assise. Ils mangent ensemble à table. Papa range.",
+      "script": "narrateur|L'assiette verte est ronde. Nora est assise. Ils mangent ensemble à table. Papa range.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Nora, assise, rompt un peu de pain. Elle mange à table, ensemble. Sa petite chaise ne bouge pas. Bien.",
+      "script": "narrateur|Nora, assise, rompt un peu de pain. Elle mange à table, ensemble. Sa petite chaise ne bouge pas.\nmaman|Bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le pain rejoint l'assiette bleue. Nora est assise à table, ensemble. Une miette tombe. Elle la pose.",
+      "script": "narrateur|Le pain rejoint l'assiette bleue. Nora est assise à table, ensemble. Une miette tombe. Elle la pose.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge attend. Nora reste assise. Ils mangent le pain ensemble à table.",
+      "script": "narrateur|L'assiette rouge attend. Nora reste assise. Ils mangent le pain ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte a une miette. Nora est assise. À table, ensemble, c'est fini.",
+      "script": "narrateur|L'assiette verte a une miette. Nora est assise. À table, ensemble, c'est fini.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Papa glisse un bout de fromage. Nora est assise. Elle mange à table, ensemble. Elle reste jusqu'au bout, sur sa petite chaise.",
+      "script": "narrateur|Papa glisse un bout de fromage. Nora est assise. Elle mange à table, ensemble. Elle reste jusqu'au bout, sur sa petite chaise.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "On peut prendre bleue, rouge, ou verte.",
+      "script": "narrateur|On peut prendre bleue, rouge, ou verte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "L'assiette bleue est vide, presque. Nora est assise à table. Ils étaient ensemble.",
+      "script": "narrateur|L'assiette bleue est vide, presque. Nora est assise à table. Ils étaient ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "L'assiette rouge a encore une odeur. Nora reste assise. Ensemble, à table, elle dit merci.",
+      "script": "narrateur|L'assiette rouge a encore une odeur. Nora reste assise. Ensemble, à table, elle dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "L'assiette verte rentre dans le placard. Nora était assise. Ils ont mangé ensemble à table.",
+      "script": "narrateur|L'assiette verte rentre dans le placard. Nora était assise. Ils ont mangé ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
