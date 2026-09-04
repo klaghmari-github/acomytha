@@ -499,7 +499,7 @@ Pendant l’écoute : barre collée **Arrêt** (et bouton carte). Stop coupe l�
 
 ### F-PAY-001 — Stripe
 
-Recharge : boutons **10, 20, 30, 40, 50 €** + acm obtenus. Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
+Onglet parent **Obtenir des billets AcoMytha**. Boutons **10, 20, 30, 40, 50 € → acm** (symbole de change). Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
 
 ### F-PAY-002 — Monnaie et boutique
 

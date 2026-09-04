@@ -2,7 +2,7 @@ import { Component } from "../core/Component.js";
 import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
-import { acmAmount, acmLogo } from "./acm.js";
+import { acmAmount, acmLogo, formatAcm } from "./acm.js";
 
 export class ParentApp extends Component {
   #me = null;
@@ -266,10 +266,18 @@ export class ParentApp extends Component {
         </form>
       </details>
       <details class="c-panel" open>
-        <summary>Recharger</summary>
+        <summary>Obtenir des billets AcoMytha</summary>
+        <p class="c-hint c-pack__legend">Vous versez des euros. Vous recevez des billets acm.</p>
         <div class="c-packs" id="recharge">
           ${[10, 20, 30, 40, 50]
-            .map((e) => `<button class="c-pack" type="button" data-eur="${e}"><b>${e} €</b>${acmAmount(aFor(e, this.wallet.fx))}</button>`)
+            .map((e) => {
+              const a = aFor(e, this.wallet.fx);
+              return `<button class="c-pack" type="button" data-eur="${e}" aria-label="${e} euros donnent ${formatAcm(a)} acm">
+                <b>${e} €</b>
+                <span class="c-pack__fx" aria-hidden="true">→</span>
+                ${acmAmount(a)}
+              </button>`;
+            })
             .join("")}
         </div>
         <p class="c-hint" id="recharge-msg">${this.wallet.stripe === "ready" ? "Paiement par carte, Stripe." : "Paiement prêt. La carte Stripe se branche avec les clés admin."}</p>
