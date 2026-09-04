@@ -159,7 +159,6 @@ export class HomeApp extends Component {
           <header class="c-catalog__head">
             <div>
               <h2>Le catalogue</h2>
-              <p class="c-catalog__invite">Une histoire. Trente secondes. Entrez.</p>
             </div>
             <p class="c-hint" id="count"></p>
           </header>
