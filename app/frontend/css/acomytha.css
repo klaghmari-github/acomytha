@@ -1431,6 +1431,59 @@ h3 {
   border-radius: 4px 28px;
 }
 
+.s-home .c-gate__box {
+  width: min(420px, 100%);
+  background: #fffdf8;
+  color: var(--paper-ink);
+  border-radius: 4px 28px;
+  padding: 1.8rem 1.5rem 1.3rem;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(14, 10, 22, 0.35);
+}
+
+.s-home .c-gate__box h2 {
+  font-family: var(--serif);
+  font-weight: 360;
+  font-size: 1.65rem;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.55rem;
+}
+
+.s-home .c-gate__box p {
+  margin: 0;
+  color: #5c5148;
+  line-height: 1.45;
+}
+
+.s-home .c-gate__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.25rem 0 0.85rem;
+}
+
+.s-home .c-gate .c-nav__ghost {
+  color: var(--paper-ink);
+  border-color: #cbb89a;
+  background: #fff;
+}
+
+.s-home .c-gate .c-nav__ghost:hover {
+  color: #5b3a8a;
+  border-color: #5b3a8a;
+}
+
+.s-home .c-gate__close {
+  display: inline-block;
+  border: 0;
+  background: none;
+  color: #8a7b6c;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+}
+
 @media (max-width: 980px) {
   .s-home .o-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

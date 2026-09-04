@@ -1,7 +1,7 @@
 import { Component } from "../core/Component.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
-import { acmAmount, acmIcon, acmLogo } from "./acm.js";
+import { acmIcon, acmLogo } from "./acm.js";
 
 export class HomeApp extends Component {
   constructor() {
@@ -109,6 +109,17 @@ export class HomeApp extends Component {
         <div class="c-modal" id="modal" hidden>
           <div class="c-modal__box" id="modalbox"></div>
         </div>
+        <div class="c-modal c-gate" id="gate" hidden>
+          <div class="c-gate__box" role="dialog" aria-labelledby="gate-title">
+            <h2 id="gate-title">La suite est derrière la porte.</h2>
+            <p>Vous venez d’écouter un aperçu. Connectez-vous ou créez un compte pour entendre l’histoire jusqu’au bout.</p>
+            <div class="c-gate__actions">
+              <a class="c-nav__gold" href="#/inscription">Créer un compte</a>
+              <a class="c-nav__ghost" href="#/entrer">Connexion</a>
+            </div>
+            <button class="c-gate__close" type="button" data-close-gate="1">Plus tard</button>
+          </div>
+        </div>
       </div>`;
     this.on(this, "pointermove", (e) => {
       const field = this.querySelector(".c-field");
@@ -125,8 +136,14 @@ export class HomeApp extends Component {
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#modal"), "click", (e) => this.onModalClick(e));
+    this.on(this.querySelector("#gate"), "click", (e) => {
+      if (e.target.id === "gate" || e.target.closest("[data-close-gate]")) this.closeGate();
+    });
     this.on(window, "keydown", (e) => {
-      if (e.key === "Escape") this.closeModal();
+      if (e.key === "Escape") {
+        this.closeModal();
+        this.closeGate();
+      }
     });
     await this.boot();
   }
@@ -144,7 +161,7 @@ export class HomeApp extends Component {
         this.api.get("/public/stats"),
         this.api.get("/public/lessons"),
       ]);
-      this.previewSeconds = stats.preview_seconds || 10;
+      this.previewSeconds = stats.preview_seconds || 30;
       this.pageSize = Math.max(1, Math.min(Number(stats.home_catalog_page_size) || 6, 48));
       this.prices = {
         story: stats.price_story_acm ?? 1,
@@ -277,8 +294,7 @@ export class HomeApp extends Component {
       ${form ? `<div class="o-row"><span class="c-pill c-pill--ram">${form}</span></div>` : ""}
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
-      <p>${acmAmount(s.kind === "ramifiee" ? this.prices.tree : this.prices.story)}</p>
-      ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}
+      <button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>
       ${links}`;
     return el;
   }
@@ -346,6 +362,16 @@ export class HomeApp extends Component {
     if (modal) modal.hidden = true;
   }
 
+  openGate() {
+    const gate = this.querySelector("#gate");
+    if (gate) gate.hidden = false;
+  }
+
+  closeGate() {
+    const gate = this.querySelector("#gate");
+    if (gate) gate.hidden = true;
+  }
+
   showBar(id, title) {
     this.playingId = id;
     const bar = this.querySelector("#nowbar");
@@ -374,13 +400,20 @@ export class HomeApp extends Component {
       player: new CryptoPlayer(),
       preview: true,
       maxSeconds: this.previewSeconds,
-      onDone: () => this.showBar(null, ""),
+      onDone: ({ userStop } = {}) => {
+        this.showBar(null, "");
+        if (!userStop && !this.me) this.openGate();
+      },
     });
     try {
       await this.engine.run(storyId);
     } catch (e) {
-      this.querySelector("#msg").textContent = e.message;
       this.showBar(null, "");
+      if (!this.me) this.openGate();
+      else {
+        const msg = this.querySelector("#msg");
+        if (msg) msg.textContent = e.message;
+      }
     }
   }
 }

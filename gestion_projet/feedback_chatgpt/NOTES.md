@@ -4,7 +4,7 @@ Sources (4 sept. 2026, commit `5e403fd`) : `Acomytha_Audit_2026-09-04.md`, `Acom
 
 Ce n’est **pas** une spec. C’est une lecture externe. On retient ce qui aide à mieux écrire et à ne pas vendre trop tôt.
 
-**Veille (F-NAR-017, D32).** Watchdog **inotify** sur le worktree **et** le clone SSD. Fichier nouveau → `ACTION_REQUIRED` immédiat. `scan` union des deux dossiers.
+**Veille (F-NAR-017, D32, D35).** Watchdog **inotify** worktree + SSD. Fichier nouveau → `ACTION_REQUIRED` seulement. Le traitement est fait par l’agent principal, jamais par le scheduler en parallèle.
 
 Passe `exemple2.txt` + `Acomytha_Avis_Paquet_Prioritaire_88534be.md` (4 sept. soir) :
 

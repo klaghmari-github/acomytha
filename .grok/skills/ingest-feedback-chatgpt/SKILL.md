@@ -16,6 +16,8 @@ Dossier **SSD** (là où les fichiers sont souvent déposés) : `/media/laghmari
 Ledger : `gestion_projet/feedback_chatgpt/processed.json`.
 Outil : `python3 stories/outils/watch_feedback_chatgpt.py`.
 
+**D35 — pas de conflit.** Le watchdog (inotify / scheduler) **signale seulement**. Il ne `claim` pas, ne réécrit pas, ne commit pas. L’agent de la conversation principale priorise et applique.
+
 ## Quand s’arrêter tout de suite
 
 ```bash

@@ -11,6 +11,7 @@ export class StoryEngine {
     this.preview = preview; // false | true (visiteur) | "parent"
     this.night = false;
     this._abort = false;
+    this._userStop = false;
     this._prefetch = new Map();
     this._remain = maxSeconds > 0 ? maxSeconds : 0;
     this._t0 = 0;
@@ -18,11 +19,13 @@ export class StoryEngine {
 
   stop() {
     this._abort = true;
+    this._userStop = true;
     this.player.stop();
   }
 
   async run(storyId) {
     this._abort = false;
+    this._userStop = false;
     this._prefetch.clear();
     this._remain = this.maxSeconds > 0 ? this.maxSeconds : 0;
     const graph = await this.api.get(this._graphPath(storyId));
@@ -68,7 +71,7 @@ export class StoryEngine {
       id = node.default_next;
     }
     this.onChoice?.([]);
-    this.onDone?.();
+    this.onDone?.({ userStop: !!this._userStop });
   }
 
   async _play(storyId, chunkId) {

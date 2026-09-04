@@ -26,7 +26,7 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D20 | Adultes parlent | Papa et maman ont des répliques. Exemples fondateur (pas un moule) : « bravo t'as fais du bon travail » ; bêtise → discuter, « as tu fini de ranger tes jouer? ». Interdit « papa sourit » / « maman est là » à la place d’une réplique. POS-001. Détail : `ECHANGES.md` §6. |
 | D21 | Ordre des passages | Le moteur enchaîne **tous** les fichiers audio d’une histoire, quel que soit leur nombre. Atomique = ordre des IDs. Ramifiée = défaut / option, sans sauter vers une branche sœur. |
 | D22 | Narrateur | Voix Tom trop basse dans le mix. RMS aligné par réplique, volume et présence relevés, cuisson relancée. |
-| D23 | Aperçus | Visiteur : 10 s du chemin (tous passages). Parent non acheté : 30 s. Parent acheté / enfant : histoire entière. Clip serveur, pas seulement le 1er fichier. |
+| D23 | Aperçus | Parent non acheté : 30 s. Parent acheté / enfant : histoire entière. Visiteur vitrine : **D34**. Clip serveur. |
 | D24 | Stripe | Recharge 10–50 € via Checkout si clés admin. Sans clé : paiement démo (carte 4242) qui crédite le solde, pour valider l’UI. |
 | D25 | Ouverture | Pas d’entrée brutale (« constentin joue au salon »). Monde d’abord, puis « en ce moment ». Deux **exemples** fondateur (conte / présentation, Constantin) : `ECHANGES.md` §7 — **pas un moule**, inventer. Audio plus tard. |
 | D26 | acm | Monnaie affichée **acm** (glyphe organique = logo). Code interne inchangé (`A`, `balance_a`). Plus de A barré. |
@@ -35,5 +35,7 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D29 | Git | Uniquement `main`. Plus de branche `feat/…`. Message `feat(F-XXX):` / `fix(F-XXX):`. |
 | D30 | Récit f_04 | Désir ≠ leçon ; arc et vraie fin ; question en chaîne ; chemins cohérents. Source `feedback_chatgpt/f_04.txt`. F-NAR-010…015. |
 | D31 | Pilote ramifié | Priorité : TREE-AUT-001 (actif) et TREE-COL-001 (archive). Un seul ramifié dans `stories/arbres/` ; 763 autres en `stories/archive/arbres/`. |
-| D32 | Veille ChatGPT | Nouveau fichier dans `feedback_chatgpt/` → lire, consignes éditoriales → améliorer TREE-AUT-001 et TREE-COL-001 (texte). Commerce reporté dans NOTES. F-NAR-017. Watchdog inotify worktree **et** clone SSD. |
+| D32 | Veille ChatGPT | Watchdog inotify worktree **et** clone SSD. Nouveau fichier → signal. |
 | D33 | N1 ramifié | Un arbre ramifié garde **3 options** par nœud (contrainte d’arbre). La règle N1 « 2 options max » vaut pour les atomiques. |
+| D34 | Vitrine écoute | Invité : 30 s de **chaque** histoire, puis pop-up connexion / inscription. Pas de prix acm ni de solde avant connexion. F-APP-006. |
+| D35 | Veille sans conflit | Le watchdog **prévient** seulement. Le traitement éditorial est fait par l’agent principal, jamais en parallèle du watchdog. F-NAR-017. |

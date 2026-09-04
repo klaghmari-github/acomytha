@@ -208,7 +208,7 @@ def test_encrypted_chunk_endpoint(client):
 def test_public_home_and_preview(client):
     s = client.get("/api/public/stats").json()
     assert s["stories"] >= 1
-    assert s["preview_seconds"] == 10
+    assert s["preview_seconds"] == 30
     page = client.get("/api/public/stories").json()
     assert "items" in page
     assert page["limit"] >= 1
@@ -219,7 +219,7 @@ def test_public_home_and_preview(client):
     graph = client.get("/api/public/preview/ATOM-SAN.ALI.001-01/graph")
     assert graph.status_code == 200
     body = graph.json()
-    assert body["preview_seconds"] == 10
+    assert body["preview_seconds"] == 30
     assert str(body["root"]).startswith("CHK_PREVIEW")
     clip = client.get(f"/api/public/preview/ATOM-SAN.ALI.001-01/chunk/{body['root']}")
     assert clip.status_code == 200

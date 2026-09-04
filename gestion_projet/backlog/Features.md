@@ -46,14 +46,15 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
-| F-APP-002 | **développé** | Vitrine publique, catalogue, aperçu 10 s (clip multi-passages), pop-ups. |
+| F-APP-002 | **développé** | Vitrine publique, catalogue, pop-ups ramifications. Écoute invité : F-APP-006. |
 | F-PAY-001 | **développé** | Stripe Checkout + webhook. Sans clé : paiement démo. |
-| F-PAR-003 | **développé** | Visiteur 10 s, parent 30 s, acheté = entier. |
+| F-PAR-003 | **développé** | Parent non acheté 30 s, acheté / enfant = entier. Visiteur vitrine : F-APP-006. |
 | F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
 | F-APP-003 | **développé** | Accueil : catalogue par lots (défaut 6), chargement au scroll. Paramètre admin. |
 | F-APP-004 | **développé** | Accueil : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |
 | F-APP-005 | **développé** | Vitrine 2026 : chambre d’écoute, typo éditoriale, catalogue papier. |
+| F-APP-006 | **développé** | Vitrine : Écouter toutes les histoires, 30 s, puis pop-up compte. Pas de prix acm. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -79,6 +80,7 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-003 | App | Accueil : lots + scroll infini (taille admin) | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-APP-004 | App | Accueil : titre et sous-titre | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-APP-005 | App | Vitrine : design chambre d’écoute 2026 | P1 | 2 | STRAT-005 | F-APP-004 |
+| F-APP-006 | App | Vitrine : 30 s d’écoute + pop-up compte ; pas de prix | P0 | 2 | STRAT-005 | F-APP-002, F-PAR-003 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -405,7 +407,7 @@ Le parent modifie le PIN (actuel + nouveau + confirmation). Exactement **4 chiff
 
 ### F-APP-002 — Accueil vitrine
 
-Sans connexion. Catalogue filtrable (recherche, thème, âge en **filtre seulement**, forme). Aperçu audio `preview_seconds` (défaut 10 s), **sans l’afficher** comme argument de vente.
+Sans connexion. Catalogue filtrable (recherche, thème, âge en **filtre seulement**, forme). Écoute invité : F-APP-006.
 
 L’accueil **séduit**, ce n’est pas un tutoriel. **Pas** le mot « gratuitement ». **Pas** de formulaire « Proposez une histoire ». **Pas** de pastille « Courte ». **Pas** d’âge sur les cartes (l’âge reste en donnée + filtre).
 
@@ -454,6 +456,22 @@ Bloc *AcoMytha, c’est quoi ?* : voix seulement, sans écran, sans bouton ; le�
 ### F-APP-005 — Vitrine chambre d’écoute
 
 Accueil public : scène sombre (écoute), catalogue papier. Fraunces + Outfit. Champ acoustique autour du symbole. Jour / nuit en deux matières. Chiffres monumentaux. Cartes en feuilles numérotées. Parent / admin / enfant inchangés. Copie fondateur conservée.
+
+### F-APP-006 — Écoute vitrine (invité)
+
+Sur l’accueil **sans compte** :
+
+- Chaque carte du catalogue a **Écouter** (toutes les histoires du rayon).
+- Un clic joue **30 secondes** de l’histoire (clip serveur, chemin par défaut).
+- À la fin des 30 s : **pop-up** — se connecter ou créer un compte pour écouter la suite. Arrêt manuel = pas de pop-up.
+- **Aucun prix acm** sur la vitrine. **Aucun solde.** Prix et solde uniquement après connexion (espace parent).
+- Paramètre `preview_seconds` = 30 (visiteur). Parent non acheté reste `parent_preview_seconds` (30). Histoire achetée / enfant : entier.
+
+D34. Remplace l’ancien aperçu visiteur de 10 s (D23) pour la vitrine.
+
+### F-NAR-017 — Veille feedback (rappel)
+
+Le watchdog **signale** un fichier nouveau (`ACTION_REQUIRED`). Il **n’applique pas** les réécritures. L’agent de la conversation principale priorise et traite, pour éviter deux mains sur les mêmes xlsx. D35.
 
 ### F-PAR-002 — Libellés catalogue
 

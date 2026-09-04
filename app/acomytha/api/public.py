@@ -29,7 +29,7 @@ def stats(db: Session = Depends(get_db)):
         "with_audio": db.query(Story).filter(Story.has_audio.is_(True)).count(),
         "themes": db.scalar(select(func.count(func.distinct(Story.domain)))) or 0,
         "ages": ["3–4 ans", "4–5 ans", "5–6 ans"],
-        "preview_seconds": int(num(db, "preview_seconds") or 10),
+        "preview_seconds": int(num(db, "preview_seconds") or 30),
         "price_story_acm": float(num(db, "price_story_a") or 1),
         "price_tree_acm": float(num(db, "price_tree_a") or 1),
         "home_catalog_page_size": max(1, min(int(num(db, "home_catalog_page_size") or 6), 48)),
@@ -86,7 +86,7 @@ def preview_graph(story_id: str, request: Request, db: Session = Depends(get_db)
     story = db.get(Story, story_id)
     if story is None:
         raise HTTPException(404, "histoire inconnue")
-    seconds = int(num(db, "preview_seconds") or 10)
+    seconds = int(num(db, "preview_seconds") or 30)
     key = request.app.state.vault.story_key_b64(story_id) if story.has_audio else ""
     return client_graph(story, seconds, key)
 
@@ -96,7 +96,7 @@ def preview_chunk(story_id: str, chunk_id: str, request: Request, db: Session = 
     story = db.get(Story, story_id)
     if story is None:
         raise HTTPException(404, "histoire inconnue")
-    seconds = int(num(db, "preview_seconds") or 10)
+    seconds = int(num(db, "preview_seconds") or 30)
     if chunk_id != preview_id(seconds):
         raise HTTPException(403, "aperçu seulement")
     chunks = list(db.scalars(select(Chunk).where(Chunk.story_id == story_id)))

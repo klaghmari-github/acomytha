@@ -270,6 +270,8 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Deux ramifiés priorité, un seul actif, archive | F-NAR-016, D31 |
 | Veille dossier feedback_chatgpt, appliquer aux histoires gardées | F-NAR-017, D32 |
 | N1 ramifié : 3 options (atomiques : 2 max) | D33 |
+| Vitrine : 30 s + pop-up compte, pas de prix | F-APP-006, D34 |
+| Watchdog signale, l’agent principal traite | F-NAR-017, D35 |
 
 ---
 

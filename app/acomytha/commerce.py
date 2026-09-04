@@ -8,7 +8,7 @@ from acomytha.models import AppSetting, LedgerEntry, Purchase, Story, Wallet
 
 PARAM_SPECS: list[tuple[str, str, str]] = [
     ("welcome_credit_eur", "10", "Crédit offert à l’activation (€)"),
-    ("preview_seconds", "10", "Aperçu visiteur (secondes)"),
+    ("preview_seconds", "30", "Aperçu visiteur vitrine (secondes)"),
     ("home_catalog_page_size", "6", "Accueil : histoires par lot (scroll)"),
     ("parent_preview_seconds", "30", "Aperçu parent, histoire non achetée (secondes)"),
     ("price_story_a", "1", "Prix d’une histoire (acm)"),
@@ -38,8 +38,11 @@ def seed_params(db: Session) -> None:
         row = existing.get(key)
         if row is None:
             db.add(AppSetting(key=key, value=value, label=label))
-        elif row.label != label:
-            row.label = label
+        else:
+            if row.label != label:
+                row.label = label
+            if key == "preview_seconds" and row.value == "10":
+                row.value = "30"
     db.commit()
 
 
