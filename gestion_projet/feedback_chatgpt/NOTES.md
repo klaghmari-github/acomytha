@@ -62,3 +62,4 @@ Passe `examples/example1/` (5 sept., SSD puis worktree) — **intégré** dans `
 - **Nouveau et gardé.** T3 bac : canal ou piste de sable, plus « un autre bateau » (ça cassait le projet promis).
 - **Modifié à l’intégration (N1).** Titre catalogue inchangé. « en ce moment » ajouté. « aujourd’hui, » / possède / expédition / proue / immobilise / scintille adoucis. Papa : « Merci, on t’attendra. »
 - **Pas copié tel quel.** « Capitaine / navire / volet jaune » restent **dans cette histoire** (c’est l’étalon bateau). Toujours interdit de les recoller ailleurs (avis2).
+- **Passe orale.** Les puces « première / deuxième / troisième » et les faits empilés ont été reliés avant le bake audio.

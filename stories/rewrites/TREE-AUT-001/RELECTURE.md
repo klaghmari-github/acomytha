@@ -11,6 +11,8 @@ Après la pluie, Amir veut un vrai voyage pour son bateau et une histoire à rap
 
 ## Vu et corrigé (N1, `_lib.check`)
 
+Passe orale (plus de puces) : plus de « la première / la deuxième / la troisième ». Les gouttes et les feuilles s’enchaînent (une, puis une autre, la dernière). Ouverture liée, pas un inventaire. T2 = chemins racontés, pas une liste de lieux. Fins : maman parle (« La soupe est prête ») au lieu de quatre faits empilés.
+
 - « en ce moment » dans l'ouverture.
 - « aujourd'hui, » retiré (`Mon bateau roule aussi !`).
 - Vocabulaire : possède → a ; expédition → voyage / prépare-toi ; proue / navire narrateur → bateau / devant ; immobilise → s'arrête ; scintille → brille. Papa peut encore dire « navire » (jeu).
