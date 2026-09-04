@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-01",
+  "fil_rouge": "Un cube jaune garde un carré de soleil. Le linge sent le savon. Sarah veut plus de lumière. Elle va appeler un adulte. Les mains avec les jouets.",
+  "title": "Le cube jaune et la lumière",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sarah, maman, papa",
+  "setting": "chambre, cubes au sol, linge près de la porte",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un cube jaune garde un carré de soleil. Le soleil est déjà plus bas. Le linge sent le savon, près de la porte. Une chaussette pend d'une chaise. Elle fait un petit drapeau mou. Le tapis de la chambre est épais. Les cubes sont par terre, tout calmes. Sarah vit ici, avec papa et maman. Maman, le cube est tout jaune ! Oui. Il a pris le soleil. Tu vois la chaussette ? Oui. Elle pend. En ce moment, Sarah construit une tour. Un cube rouge. Puis un cube bleu. La pièce devient un peu sombre. Le carré de soleil a bougé. Maman, la lumière. Sarah regarde ses mains. Les mains avec les jouets. Sarah appelle maman. On va appeler un adulte. J'arrive, Sarah. Maman vient. Maman allume. La pièce devient claire. Le cube jaune brille encore plus. Tu as appelé un adulte ? Oui, papa. Bravo, Sarah. On appelle papa ou maman pour la lumière. Les prises sont pour les adultes. Les mains avec les jouets. Sarah reprend un cube jaune. Elle le pose sur la tour. La tour est petite, un peu penchée. Elle est haute ! Oui. Tu as fait du bon travail. Parce qu'elle a appelé, la lumière est là. Les mains tiennent les jouets. Tu construis encore ? Oui. Papa s'assoit près d'elle. Le tapis est doux sous les genoux. Tu as fini de plier le linge, toi ? Presque. Sarah ajoute un cube bleu. Il fait un petit toc. Tes mains sont avec les jouets ? Oui, maman. Bravo. La chaussette pend encore. Le savon du linge sent toujours. La pièce reste claire. J'ai appelé un adulte. Oui. C'est bien. Sarah est calme. La tour tient, tout doux.",
+      "script": "narrateur|Un cube jaune garde un carré de soleil.\nnarrateur|Le soleil est déjà plus bas.\nnarrateur|Le linge sent le savon, près de la porte.\nnarrateur|Une chaussette pend d'une chaise.\nnarrateur|Elle fait un petit drapeau mou.\nnarrateur|Le tapis de la chambre est épais.\nnarrateur|Les cubes sont par terre, tout calmes.\nnarrateur|Sarah vit ici, avec papa et maman.\nenfant-f|Maman, le cube est tout jaune !\nmaman|Oui.\nmaman|Il a pris le soleil.\nmaman|Tu vois la chaussette ?\nenfant-f|Oui.\nenfant-f|Elle pend.\nnarrateur|En ce moment, Sarah construit une tour.\nnarrateur|Un cube rouge.\nnarrateur|Puis un cube bleu.\nnarrateur|La pièce devient un peu sombre.\nnarrateur|Le carré de soleil a bougé.\nenfant-f|Maman, la lumière.\nnarrateur|Sarah regarde ses mains.\nnarrateur|Les mains avec les jouets.\nnarrateur|Sarah appelle maman.\nnarrateur|On va appeler un adulte.\nmaman|J'arrive, Sarah.\nnarrateur|Maman vient.\nnarrateur|Maman allume.\nnarrateur|La pièce devient claire.\nnarrateur|Le cube jaune brille encore plus.\npapa|Tu as appelé un adulte ?\nenfant-f|Oui, papa.\npapa|Bravo, Sarah.\npapa|On appelle papa ou maman pour la lumière.\nmaman|Les prises sont pour les adultes.\nmaman|Les mains avec les jouets.\nnarrateur|Sarah reprend un cube jaune.\nnarrateur|Elle le pose sur la tour.\nnarrateur|La tour est petite, un peu penchée.\nenfant-f|Elle est haute !\nmaman|Oui.\nmaman|Tu as fait du bon travail.\nnarrateur|Parce qu'elle a appelé, la lumière est là.\nnarrateur|Les mains tiennent les jouets.\npapa|Tu construis encore ?\nenfant-f|Oui.\nnarrateur|Papa s'assoit près d'elle.\nnarrateur|Le tapis est doux sous les genoux.\nmaman|Tu as fini de plier le linge, toi ?\npapa|Presque.\nnarrateur|Sarah ajoute un cube bleu.\nnarrateur|Il fait un petit toc.\nmaman|Tes mains sont avec les jouets ?\nenfant-f|Oui, maman.\nmaman|Bravo.\nnarrateur|La chaussette pend encore.\nnarrateur|Le savon du linge sent toujours.\nnarrateur|La pièce reste claire.\nenfant-f|J'ai appelé un adulte.\npapa|Oui.\npapa|C'est bien.\nnarrateur|Sarah est calme.\nnarrateur|La tour tient, tout doux.",
+      "sons": "cubes",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah veut la lumière. Que fait-elle ?",
+      "script": "narrateur|Sarah veut la lumière.\nnarrateur|Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sarah a appelé un adulte. Les mains avec les jouets. Tu as appelé un adulte ? Oui. Maman. Bravo, Sarah. Tu as fait du bon travail. Les prises sont pour les adultes. Le cube jaune reste en haut. La lumière reste allumée.",
+      "script": "narrateur|Sarah a appelé un adulte.\nnarrateur|Les mains avec les jouets.\nmaman|Tu as appelé un adulte ?\nenfant-f|Oui.\nenfant-f|Maman.\npapa|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nmaman|Les prises sont pour les adultes.\nnarrateur|Le cube jaune reste en haut.\nnarrateur|La lumière reste allumée.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sarah pose un dernier cube. La tour ne penche plus. Tu ranges un cube, maintenant ? Un peu. Elle pose le cube rouge dans la boîte. Tu as fini de ranger ce cube ? Oui. Bravo. La lumière reste allumée. La chaussette rejoint le linge. Ça sent encore le savon.",
+      "script": "narrateur|Sarah pose un dernier cube.\nnarrateur|La tour ne penche plus.\nmaman|Tu ranges un cube, maintenant ?\nenfant-f|Un peu.\nnarrateur|Elle pose le cube rouge dans la boîte.\nmaman|Tu as fini de ranger ce cube ?\nenfant-f|Oui.\nmaman|Bravo.\npapa|La lumière reste allumée.\nnarrateur|La chaussette rejoint le linge.\nnarrateur|Ça sent encore le savon.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai appelé un adulte. Les mains avec les jouets. Bravo. C'est du bon travail. Le cube jaune garde encore un peu de soleil. L'histoire est finie.",
+      "script": "enfant-f|J'ai appelé un adulte.\nenfant-f|Les mains avec les jouets.\nmaman|Bravo.\npapa|C'est du bon travail.\nnarrateur|Le cube jaune garde encore un peu de soleil.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

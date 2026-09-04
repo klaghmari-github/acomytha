@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.002-06",
+  "fil_rouge": "La vitre est embuée. Nino pose les serviettes. Un petit pot inconnu attend. Il demande à papa. Au jardin, une baie brille. Il demande encore.",
+  "title": "Le petit pot de Nino",
+  "lesson_id": "SEC.MAI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nino, papa, maman",
+  "setting": "cuisine et jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La vitre de la cuisine est toute embuée. Une goutte glisse, toute lente. Ça sent la soupe, bien chaude. Le bois de la table est lisse. Il y a des miettes de pain. Une serviette jaune attend, pliée. Un rayon traverse la buée. Il fait un rond sur le bois. Maman remue la soupe. La cuillère fait un petit bruit. Tu as senti la soupe, Nino ? Oui, maman. C'est chaud. Le pain est prêt. Tu poses les serviettes ? En ce moment, Nino prend la serviette jaune. Le tissu est un peu rêche. Il la pose près de l'assiette. Bravo, Nino. Elle est bien à sa place. Sur la table, il y a un petit pot. Nino ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Il va vers papa. Papa, c'est l'adulte. Papa, je ne connais pas. Je demande. Merci d'avoir demandé. L'inconnu, on le montre à un adulte. Papa prend le petit pot. Il le pose plus loin. Tu as bien demandé, Nino. C'est du bon travail. J'ai demandé. Oui. On peut demander. Demander à l'adulte. Demander. Nino pose encore une serviette. Ses mains restent près de lui. Tu as fini les serviettes ? Oui, papa. Bravo. Plus tard, la porte du jardin s'ouvre. L'air sent l'herbe coupée. Une petite baie brille au soleil. Elle est rouge, toute ronde. Nino ne la connaît pas. C'est inconnu. Ses mains restent près de lui. Il va vers papa. Papa, je ne connais pas. Je demande. Je viens. On demande avant. Papa rejoint Nino. Nino reste près de l'adulte. Tu as encore demandé. Bravo. L'inconnu, on le montre. Oui. À un adulte.",
+      "script": "narrateur|La vitre de la cuisine est toute embuée.\nnarrateur|Une goutte glisse, toute lente.\nnarrateur|Ça sent la soupe, bien chaude.\nnarrateur|Le bois de la table est lisse.\nnarrateur|Il y a des miettes de pain.\nnarrateur|Une serviette jaune attend, pliée.\nnarrateur|Un rayon traverse la buée.\nnarrateur|Il fait un rond sur le bois.\nnarrateur|Maman remue la soupe.\nnarrateur|La cuillère fait un petit bruit.\nmaman|Tu as senti la soupe, Nino ?\nenfant-m|Oui, maman.\nenfant-m|C'est chaud.\npapa|Le pain est prêt.\npapa|Tu poses les serviettes ?\nnarrateur|En ce moment, Nino prend la serviette jaune.\nnarrateur|Le tissu est un peu rêche.\nnarrateur|Il la pose près de l'assiette.\nmaman|Bravo, Nino.\nmaman|Elle est bien à sa place.\nnarrateur|Sur la table, il y a un petit pot.\nnarrateur|Nino ne le connaît pas.\nnarrateur|C'est inconnu.\nnarrateur|Ses mains restent près de lui.\nnarrateur|Il va vers papa.\nnarrateur|Papa, c'est l'adulte.\nenfant-m|Papa, je ne connais pas.\nenfant-m|Je demande.\npapa|Merci d'avoir demandé.\npapa|L'inconnu, on le montre à un adulte.\nnarrateur|Papa prend le petit pot.\nnarrateur|Il le pose plus loin.\nmaman|Tu as bien demandé, Nino.\nmaman|C'est du bon travail.\nenfant-m|J'ai demandé.\npapa|Oui.\npapa|On peut demander.\npapa|Demander à l'adulte.\nenfant-m|Demander.\nnarrateur|Nino pose encore une serviette.\nnarrateur|Ses mains restent près de lui.\npapa|Tu as fini les serviettes ?\nenfant-m|Oui, papa.\npapa|Bravo.\nnarrateur|Plus tard, la porte du jardin s'ouvre.\nnarrateur|L'air sent l'herbe coupée.\nnarrateur|Une petite baie brille au soleil.\nnarrateur|Elle est rouge, toute ronde.\nnarrateur|Nino ne la connaît pas.\nnarrateur|C'est inconnu.\nnarrateur|Ses mains restent près de lui.\nnarrateur|Il va vers papa.\nenfant-m|Papa, je ne connais pas.\nenfant-m|Je demande.\npapa|Je viens.\npapa|On demande avant.\nnarrateur|Papa rejoint Nino.\nnarrateur|Nino reste près de l'adulte.\nmaman|Tu as encore demandé.\nmaman|Bravo.\nenfant-m|L'inconnu, on le montre.\npapa|Oui.\npapa|À un adulte.",
+      "sons": "soupe,porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino voit quelque chose d'inconnu. Que fait-il ?",
+      "script": "narrateur|Nino voit quelque chose d'inconnu.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a demandé. L'inconnu, on le montre à un adulte. Merci d'avoir demandé. Papa a écouté. Bravo, Nino. J'ai demandé à l'adulte. Oui. C'est du bon travail. Tu as fini de montrer l'inconnu ? Oui, papa.",
+      "script": "narrateur|Nino a demandé.\nnarrateur|L'inconnu, on le montre à un adulte.\npapa|Merci d'avoir demandé.\nmaman|Papa a écouté.\npapa|Bravo, Nino.\nenfant-m|J'ai demandé à l'adulte.\nmaman|Oui.\nmaman|C'est du bon travail.\npapa|Tu as fini de montrer l'inconnu ?\nenfant-m|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino pose une dernière serviette. Elle est jaune, bien à sa place. La soupe est prête. Tu viens t'asseoir ? Oui, maman. Les mains restent près de toi. On demande, d'accord ? D'accord. La vitre n'est plus embuée. Un oiseau chante dans le jardin. La soupe fume encore un peu. Tu as fait du bon travail. Bravo, Nino. On a demandé, tous les deux.",
+      "script": "narrateur|Nino pose une dernière serviette.\nnarrateur|Elle est jaune, bien à sa place.\nmaman|La soupe est prête.\nmaman|Tu viens t'asseoir ?\nenfant-m|Oui, maman.\npapa|Les mains restent près de toi.\npapa|On demande, d'accord ?\nenfant-m|D'accord.\nnarrateur|La vitre n'est plus embuée.\nnarrateur|Un oiseau chante dans le jardin.\nnarrateur|La soupe fume encore un peu.\nmaman|Tu as fait du bon travail.\npapa|Bravo, Nino.\npapa|On a demandé, tous les deux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai demandé. Papa a pris le petit pot. Bravo. Tu as fait du bon travail. La serviette jaune reste à sa place. L'histoire est finie.",
+      "script": "enfant-m|J'ai demandé.\nenfant-m|Papa a pris le petit pot.\npapa|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|La serviette jaune reste à sa place.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
