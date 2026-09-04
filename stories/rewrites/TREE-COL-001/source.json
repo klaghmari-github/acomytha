@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-COL-001",
+  "fil_rouge": "La casserole chante. Raphaël prépare des pommes pour Mila. Il dit bonjour, s'il te plaît, merci, avec le train, le bus ou la voiture.",
+  "title": "La casserole et les pommes de Raphaël",
+  "lesson_id": "COL.POL.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Sami, papa, maman",
+  "setting": "dans la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une goutte glisse le long de la casserole. Ça sent la pomme, toute douce. Le torchon rayé pend près de l'évier. Dehors, le marché parle tout bas. Un rond de soleil pose sur le carrelage. Les chaussons de Raphaël attendent sous la table. La casserole chante un peu, Raphaël. Tu as vu le torchon ? Il est tout rayé. Oui. Il est rouge et blanc. Papa pose des rondelles dans un bol jaune. Le bois de la planche est lisse, un peu humide. En ce moment, Raphaël est dans la cuisine. Il tient une cuillère en bois. Mila va arriver tout à l'heure. On dit bonjour, d'accord ? Bonjour. Et si tu veux une pomme ? S'il te plaît. Bravo. Et après ? Merci. Bonjour. S'il te plaît. Merci. Le train en bois attend sous la table. Le bus rouge est près du tabouret. La petite voiture brille. Mila aime les mots gentils. Toi aussi, tu les connais. Oui, papa. Une pelure de pomme fait un petit colimaçon. Tu es prêt ? Oui, maman.",
+      "script": "narrateur|Une goutte glisse le long de la casserole.\nnarrateur|Ça sent la pomme, toute douce.\nnarrateur|Le torchon rayé pend près de l'évier.\nnarrateur|Dehors, le marché parle tout bas.\nnarrateur|Un rond de soleil pose sur le carrelage.\nnarrateur|Les chaussons de Raphaël attendent sous la table.\npapa|La casserole chante un peu, Raphaël.\nmaman|Tu as vu le torchon ?\nenfant-m|Il est tout rayé.\nmaman|Oui.\nmaman|Il est rouge et blanc.\nnarrateur|Papa pose des rondelles dans un bol jaune.\nnarrateur|Le bois de la planche est lisse, un peu humide.\nnarrateur|En ce moment, Raphaël est dans la cuisine.\nnarrateur|Il tient une cuillère en bois.\nnarrateur|Mila va arriver tout à l'heure.\nmaman|On dit bonjour, d'accord ?\nenfant-m|Bonjour.\npapa|Et si tu veux une pomme ?\nenfant-m|S'il te plaît.\nmaman|Bravo.\nmaman|Et après ?\nenfant-m|Merci.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Le train en bois attend sous la table.\nnarrateur|Le bus rouge est près du tabouret.\nnarrateur|La petite voiture brille.\nmaman|Mila aime les mots gentils.\npapa|Toi aussi, tu les connais.\nenfant-m|Oui, papa.\nnarrateur|Une pelure de pomme fait un petit colimaçon.\nmaman|Tu es prêt ?\nenfant-m|Oui, maman.",
+      "sons": "casserole,pomme",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce que Raphaël prend ? Le train, le bus, ou la voiture.",
+      "script": "narrateur|Qu'est-ce que Raphaël prend ?\nmaman|Le train, le bus, ou la voiture.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Raphaël prend le train en bois. Les roues font un petit clic sur le carrelage. La porte s'ouvre, tout doux. Mila entre, les joues roses. Bonjour, Mila. Bonjour, Raphaël. Bonjour, Mila. Tu veux une rondelle ? S'il te plaît. Papa tend une pomme, toute lisse. Merci. Merci, papa. Bravo, Raphaël. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le train reste près du bol jaune.",
+      "script": "narrateur|Raphaël prend le train en bois.\nnarrateur|Les roues font un petit clic sur le carrelage.\nnarrateur|La porte s'ouvre, tout doux.\nnarrateur|Mila entre, les joues roses.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour, Raphaël.\nmaman|Bonjour, Mila.\npapa|Tu veux une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|Papa tend une pomme, toute lisse.\nenfant-f|Merci.\nenfant-m|Merci, papa.\nmaman|Bravo, Raphaël.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Le train reste près du bol jaune.",
+      "sons": "train_bois,porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "On dit bonjour, s'il te plaît, merci ?",
+      "script": "narrateur|On dit bonjour, s'il te plaît, merci ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Bonjour. S'il te plaît. Merci. Raphaël respire, tout calme. Bravo, Raphaël. Tu as fait du bon travail. Merci, papa. On continue, tout doux.",
+      "script": "narrateur|Oui.\nmaman|Bonjour.\nmaman|S'il te plaît.\nmaman|Merci.\nnarrateur|Raphaël respire, tout calme.\npapa|Bravo, Raphaël.\npapa|Tu as fait du bon travail.\nenfant-m|Merci, papa.\nmaman|On continue, tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On va où, dans la cuisine ? La table, la fenêtre, ou le tabouret.",
+      "script": "narrateur|On va où, dans la cuisine ?\npapa|La table, la fenêtre, ou le tabouret.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Raphaël pose le train en bois près de la table. Le bol jaune est au milieu. Mila tire une chaise, tout doux. Bonjour, Mila. Bonjour. Une assiette, Raphaël ? S'il te plaît. L'assiette est ronde, un peu froide. Merci, maman. Bravo. Tu as dit les mots. S'il te plaît. Une pomme. Voilà. Merci d'avoir demandé. Une rondelle brille dans l'assiette. Les mots gentils, à table aussi.",
+      "script": "narrateur|Raphaël pose le train en bois près de la table.\nnarrateur|Le bol jaune est au milieu.\nnarrateur|Mila tire une chaise, tout doux.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Une assiette, Raphaël ?\nenfant-m|S'il te plaît.\nnarrateur|L'assiette est ronde, un peu froide.\nenfant-m|Merci, maman.\npapa|Bravo.\npapa|Tu as dit les mots.\nenfant-f|S'il te plaît.\nenfant-f|Une pomme.\npapa|Voilà.\npapa|Merci d'avoir demandé.\nnarrateur|Une rondelle brille dans l'assiette.\nmaman|Les mots gentils, à table aussi.",
+      "sons": "assiette",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Le soleil touche une roue du train, sur la table. Ça sent le lait et la pomme. Raphaël est près de la table, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|Le soleil touche une roue du train, sur la table.\nnarrateur|Ça sent le lait et la pomme.\nnarrateur|Raphaël est près de la table, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la table. Il a joué avec le train en bois, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la table.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Le train dort encore sur la table. Ça sent le pain chaud. Raphaël est près de la table, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Le train dort encore sur la table.\nnarrateur|Ça sent le pain chaud.\nnarrateur|Raphaël est près de la table, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la table. Il a joué avec le train en bois, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la table.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Une lampe jaune pose un rond sur la table. Le train brille tout doux. Raphaël est près de la table, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Une lampe jaune pose un rond sur la table.\nnarrateur|Le train brille tout doux.\nnarrateur|Raphaël est près de la table, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la table. Il a joué avec le train en bois, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la table.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Raphaël va près de la fenêtre, avec le train en bois. La vitre est un peu floue. Mila trace un petit rond du doigt. Bonjour, Mila. Bonjour. Tu veux le torchon, pour la vitre ? S'il te plaît. Le torchon est doux, un peu épais. Merci, papa. Bravo, Raphaël. Merci. Je vois le marché. On dit les mots, même près de la fenêtre. Bonjour. S'il te plaît. Merci. Un oiseau passe derrière la vitre.",
+      "script": "narrateur|Raphaël va près de la fenêtre, avec le train en bois.\nnarrateur|La vitre est un peu floue.\nnarrateur|Mila trace un petit rond du doigt.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux le torchon, pour la vitre ?\nenfant-m|S'il te plaît.\nnarrateur|Le torchon est doux, un peu épais.\nenfant-m|Merci, papa.\nmaman|Bravo, Raphaël.\nenfant-f|Merci.\nenfant-f|Je vois le marché.\nmaman|On dit les mots, même près de la fenêtre.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Un oiseau passe derrière la vitre.",
+      "sons": "vitre",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. La vitre est froide sous le doigt. Le train attend près de la fenêtre. Raphaël est près de la fenêtre, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|La vitre est froide sous le doigt.\nnarrateur|Le train attend près de la fenêtre.\nnarrateur|Raphaël est près de la fenêtre, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la fenêtre. Il a joué avec le train en bois, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la fenêtre.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Un rayon paresseux traverse la fenêtre. Le train est tiède. Raphaël est près de la fenêtre, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Un rayon paresseux traverse la fenêtre.\nnarrateur|Le train est tiède.\nnarrateur|Raphaël est près de la fenêtre, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la fenêtre. Il a joué avec le train en bois, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la fenêtre.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Dehors, le marché s'est tu. Le train repose près de la vitre sombre. Raphaël est près de la fenêtre, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Dehors, le marché s'est tu.\nnarrateur|Le train repose près de la vitre sombre.\nnarrateur|Raphaël est près de la fenêtre, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la fenêtre. Il a joué avec le train en bois, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la fenêtre.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Raphaël glisse le train en bois près du tabouret. Le tabouret est bas, en bois clair. Mila s'assoit, les pieds qui balancent. Bonjour, Mila. Bonjour. Tu veux le tabouret, Raphaël ? S'il te plaît. Tu peux. Merci. Raphaël pose une main sur le bois lisse. Bravo. Tu as demandé. Merci, Mila. Les trois mots, même pour un tabouret. Bonjour. S'il te plaît. Merci. Le tabouret fait un tout petit craquement.",
+      "script": "narrateur|Raphaël glisse le train en bois près du tabouret.\nnarrateur|Le tabouret est bas, en bois clair.\nnarrateur|Mila s'assoit, les pieds qui balancent.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Tu veux le tabouret, Raphaël ?\nenfant-m|S'il te plaît.\nenfant-f|Tu peux.\nenfant-f|Merci.\nnarrateur|Raphaël pose une main sur le bois lisse.\npapa|Bravo.\npapa|Tu as demandé.\nenfant-m|Merci, Mila.\nmaman|Les trois mots, même pour un tabouret.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Le tabouret fait un tout petit craquement.",
+      "sons": "bois",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Le tabouret est un peu froid. Le train passe entre les pieds de Mila. Raphaël est près de le tabouret, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|Le tabouret est un peu froid.\nnarrateur|Le train passe entre les pieds de Mila.\nnarrateur|Raphaël est près de le tabouret, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de le tabouret. Il a joué avec le train en bois, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de le tabouret.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Le tabouret a gardé un peu de chaleur. Le train fait clic, tout bas. Raphaël est près de le tabouret, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Le tabouret a gardé un peu de chaleur.\nnarrateur|Le train fait clic, tout bas.\nnarrateur|Raphaël est près de le tabouret, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de le tabouret. Il a joué avec le train en bois, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de le tabouret.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Le tabouret craque, tout petit. Le train rentre sous la chaise. Raphaël est près de le tabouret, avec le train. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Le tabouret craque, tout petit.\nnarrateur|Le train rentre sous la chaise.\nnarrateur|Raphaël est près de le tabouret, avec le train.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de le tabouret. Il a joué avec le train en bois, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de le tabouret.\nnarrateur|Il a joué avec le train en bois, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Raphaël prend le bus rouge. Dehors, un vrai bus passe, tout bas. Mila pousse la porte de la cuisine. Bonjour, Mila. Bonjour. Bonjour, Mila. Raphaël veut le torchon rayé. S'il te plaît. Voilà le torchon. Merci, maman. Merci. Bravo. Tu as demandé, puis remercié. On dit aussi bonjour. Bonjour. Le bus rouge attend près du tabouret.",
+      "script": "narrateur|Raphaël prend le bus rouge.\nnarrateur|Dehors, un vrai bus passe, tout bas.\nnarrateur|Mila pousse la porte de la cuisine.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Bonjour, Mila.\nnarrateur|Raphaël veut le torchon rayé.\nenfant-m|S'il te plaît.\nmaman|Voilà le torchon.\nenfant-m|Merci, maman.\nenfant-f|Merci.\nmaman|Bravo.\nmaman|Tu as demandé, puis remercié.\npapa|On dit aussi bonjour.\nenfant-m|Bonjour.\nnarrateur|Le bus rouge attend près du tabouret.",
+      "sons": "bus,porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël veut le torchon. Que dit-il ?",
+      "script": "narrateur|Raphaël veut le torchon.\nnarrateur|Que dit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On dit s'il te plaît. Et bonjour. Et merci. Raphaël tient le torchon rayé. Bravo. Tu as demandé gentiment. S'il te plaît. C'est ça.",
+      "script": "narrateur|Oui.\npapa|On dit s'il te plaît.\nmaman|Et bonjour.\nmaman|Et merci.\nnarrateur|Raphaël tient le torchon rayé.\npapa|Bravo.\npapa|Tu as demandé gentiment.\nenfant-m|S'il te plaît.\nmaman|C'est ça.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On va où, dans la cuisine ? La table, la fenêtre, ou le tabouret.",
+      "script": "narrateur|On va où, dans la cuisine ?\npapa|La table, la fenêtre, ou le tabouret.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Raphaël pose le bus rouge près de la table. Le bol jaune est au milieu. Mila tire une chaise, tout doux. Bonjour, Mila. Bonjour. Une assiette, Raphaël ? S'il te plaît. L'assiette est ronde, un peu froide. Merci, maman. Bravo. Tu as dit les mots. S'il te plaît. Une pomme. Voilà. Merci d'avoir demandé. Une rondelle brille dans l'assiette. Les mots gentils, à table aussi.",
+      "script": "narrateur|Raphaël pose le bus rouge près de la table.\nnarrateur|Le bol jaune est au milieu.\nnarrateur|Mila tire une chaise, tout doux.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Une assiette, Raphaël ?\nenfant-m|S'il te plaît.\nnarrateur|L'assiette est ronde, un peu froide.\nenfant-m|Merci, maman.\npapa|Bravo.\npapa|Tu as dit les mots.\nenfant-f|S'il te plaît.\nenfant-f|Une pomme.\npapa|Voilà.\npapa|Merci d'avoir demandé.\nnarrateur|Une rondelle brille dans l'assiette.\nmaman|Les mots gentils, à table aussi.",
+      "sons": "assiette",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Le bus rouge est sur la table, près du bol. Une miette de pain brille. Raphaël est près de la table, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|Le bus rouge est sur la table, près du bol.\nnarrateur|Une miette de pain brille.\nnarrateur|Raphaël est près de la table, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la table. Il a joué avec le bus rouge, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la table.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Le bus rouge a glissé vers l'assiette. La nappe est un peu chaude. Raphaël est près de la table, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Le bus rouge a glissé vers l'assiette.\nnarrateur|La nappe est un peu chaude.\nnarrateur|Raphaël est près de la table, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la table. Il a joué avec le bus rouge, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la table.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Le bus rouge attend près de la tasse. Ça sent la soupe. Raphaël est près de la table, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Le bus rouge attend près de la tasse.\nnarrateur|Ça sent la soupe.\nnarrateur|Raphaël est près de la table, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la table. Il a joué avec le bus rouge, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la table.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Raphaël va près de la fenêtre, avec le bus rouge. La vitre est un peu floue. Mila trace un petit rond du doigt. Bonjour, Mila. Bonjour. Tu veux le torchon, pour la vitre ? S'il te plaît. Le torchon est doux, un peu épais. Merci, papa. Bravo, Raphaël. Merci. Je vois le marché. On dit les mots, même près de la fenêtre. Bonjour. S'il te plaît. Merci. Un oiseau passe derrière la vitre.",
+      "script": "narrateur|Raphaël va près de la fenêtre, avec le bus rouge.\nnarrateur|La vitre est un peu floue.\nnarrateur|Mila trace un petit rond du doigt.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux le torchon, pour la vitre ?\nenfant-m|S'il te plaît.\nnarrateur|Le torchon est doux, un peu épais.\nenfant-m|Merci, papa.\nmaman|Bravo, Raphaël.\nenfant-f|Merci.\nenfant-f|Je vois le marché.\nmaman|On dit les mots, même près de la fenêtre.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Un oiseau passe derrière la vitre.",
+      "sons": "vitre",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Un vrai bus passe derrière la fenêtre. Le bus rouge le regarde, tout petit. Raphaël est près de la fenêtre, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|Un vrai bus passe derrière la fenêtre.\nnarrateur|Le bus rouge le regarde, tout petit.\nnarrateur|Raphaël est près de la fenêtre, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la fenêtre. Il a joué avec le bus rouge, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la fenêtre.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. La vitre est tiède. Le bus rouge repose sur le rebord. Raphaël est près de la fenêtre, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|La vitre est tiède.\nnarrateur|Le bus rouge repose sur le rebord.\nnarrateur|Raphaël est près de la fenêtre, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la fenêtre. Il a joué avec le bus rouge, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la fenêtre.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Les lumières de la rue dansent sur la vitre. Le bus rouge est calme. Raphaël est près de la fenêtre, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Les lumières de la rue dansent sur la vitre.\nnarrateur|Le bus rouge est calme.\nnarrateur|Raphaël est près de la fenêtre, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la fenêtre. Il a joué avec le bus rouge, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la fenêtre.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Raphaël glisse le bus rouge près du tabouret. Le tabouret est bas, en bois clair. Mila s'assoit, les pieds qui balancent. Bonjour, Mila. Bonjour. Tu veux le tabouret, Raphaël ? S'il te plaît. Tu peux. Merci. Raphaël pose une main sur le bois lisse. Bravo. Tu as demandé. Merci, Mila. Les trois mots, même pour un tabouret. Bonjour. S'il te plaît. Merci. Le tabouret fait un tout petit craquement.",
+      "script": "narrateur|Raphaël glisse le bus rouge près du tabouret.\nnarrateur|Le tabouret est bas, en bois clair.\nnarrateur|Mila s'assoit, les pieds qui balancent.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Tu veux le tabouret, Raphaël ?\nenfant-m|S'il te plaît.\nenfant-f|Tu peux.\nenfant-f|Merci.\nnarrateur|Raphaël pose une main sur le bois lisse.\npapa|Bravo.\npapa|Tu as demandé.\nenfant-m|Merci, Mila.\nmaman|Les trois mots, même pour un tabouret.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Le tabouret fait un tout petit craquement.",
+      "sons": "bois",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. Le bus rouge est sous le tabouret. Mila balance les pieds. Raphaël est près de le tabouret, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|Le bus rouge est sous le tabouret.\nnarrateur|Mila balance les pieds.\nnarrateur|Raphaël est près de le tabouret, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de le tabouret. Il a joué avec le bus rouge, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de le tabouret.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Le tabouret a une ombre ronde. Le bus rouge sort tout doux. Raphaël est près de le tabouret, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Le tabouret a une ombre ronde.\nnarrateur|Le bus rouge sort tout doux.\nnarrateur|Raphaël est près de le tabouret, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de le tabouret. Il a joué avec le bus rouge, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de le tabouret.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. Le tabouret est près de la lampe. Le bus rouge rentre dans sa boîte. Raphaël est près de le tabouret, avec le bus rouge. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|Le tabouret est près de la lampe.\nnarrateur|Le bus rouge rentre dans sa boîte.\nnarrateur|Raphaël est près de le tabouret, avec le bus rouge.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de le tabouret. Il a joué avec le bus rouge, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de le tabouret.\nnarrateur|Il a joué avec le bus rouge, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Raphaël prend la petite voiture. Elle est lisse, un peu froide. Dehors, une portière claque, tout loin. Mila arrive, son manteau sent la pluie. Bonjour, Mila. Bonjour, Raphaël. Bonjour. Donne-moi ton manteau. S'il te plaît. Merci, Mila. Tu veux une pomme, Raphaël ? S'il te plaît. La rondelle est froide et douce. Merci, papa. Bravo, les trois mots. Bonjour. S'il te plaît. Merci. La petite voiture brille près du bol.",
+      "script": "narrateur|Raphaël prend la petite voiture.\nnarrateur|Elle est lisse, un peu froide.\nnarrateur|Dehors, une portière claque, tout loin.\nnarrateur|Mila arrive, son manteau sent la pluie.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour, Raphaël.\nmaman|Bonjour.\nmaman|Donne-moi ton manteau.\nenfant-f|S'il te plaît.\nmaman|Merci, Mila.\npapa|Tu veux une pomme, Raphaël ?\nenfant-m|S'il te plaît.\nnarrateur|La rondelle est froide et douce.\nenfant-m|Merci, papa.\nmaman|Bravo, les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|La petite voiture brille près du bol.",
+      "sons": "voiture_passe,porte",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "On dit merci ?",
+      "script": "narrateur|On dit merci ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On dit merci. Et bonjour. Et s'il te plaît. Raphaël hoche la tête. Bravo, Raphaël. Tu as fait du bon travail. Merci, maman.",
+      "script": "narrateur|Oui.\nmaman|On dit merci.\npapa|Et bonjour.\npapa|Et s'il te plaît.\nnarrateur|Raphaël hoche la tête.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "On va où, dans la cuisine ? La table, la fenêtre, ou le tabouret.",
+      "script": "narrateur|On va où, dans la cuisine ?\npapa|La table, la fenêtre, ou le tabouret.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Raphaël pose la petite voiture près de la table. Le bol jaune est au milieu. Mila tire une chaise, tout doux. Bonjour, Mila. Bonjour. Une assiette, Raphaël ? S'il te plaît. L'assiette est ronde, un peu froide. Merci, maman. Bravo. Tu as dit les mots. S'il te plaît. Une pomme. Voilà. Merci d'avoir demandé. Une rondelle brille dans l'assiette. Les mots gentils, à table aussi.",
+      "script": "narrateur|Raphaël pose la petite voiture près de la table.\nnarrateur|Le bol jaune est au milieu.\nnarrateur|Mila tire une chaise, tout doux.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Une assiette, Raphaël ?\nenfant-m|S'il te plaît.\nnarrateur|L'assiette est ronde, un peu froide.\nenfant-m|Merci, maman.\npapa|Bravo.\npapa|Tu as dit les mots.\nenfant-f|S'il te plaît.\nenfant-f|Une pomme.\npapa|Voilà.\npapa|Merci d'avoir demandé.\nnarrateur|Une rondelle brille dans l'assiette.\nmaman|Les mots gentils, à table aussi.",
+      "sons": "assiette",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. La petite voiture roule vers le bol, sur la table. Une goutte d'eau brille sur le bois. Raphaël est près de la table, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|La petite voiture roule vers le bol, sur la table.\nnarrateur|Une goutte d'eau brille sur le bois.\nnarrateur|Raphaël est près de la table, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la table. Il a joué avec la petite voiture, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la table.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. La petite voiture dort près de l'assiette. Ça sent encore le pain. Raphaël est près de la table, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|La petite voiture dort près de l'assiette.\nnarrateur|Ça sent encore le pain.\nnarrateur|Raphaël est près de la table, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la table. Il a joué avec la petite voiture, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la table.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. La petite voiture se gare près de la tasse. La table est tiède. Raphaël est près de la table, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|La petite voiture se gare près de la tasse.\nnarrateur|La table est tiède.\nnarrateur|Raphaël est près de la table, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la table. Il a joué avec la petite voiture, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la table.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Raphaël va près de la fenêtre, avec la petite voiture. La vitre est un peu floue. Mila trace un petit rond du doigt. Bonjour, Mila. Bonjour. Tu veux le torchon, pour la vitre ? S'il te plaît. Le torchon est doux, un peu épais. Merci, papa. Bravo, Raphaël. Merci. Je vois le marché. On dit les mots, même près de la fenêtre. Bonjour. S'il te plaît. Merci. Un oiseau passe derrière la vitre.",
+      "script": "narrateur|Raphaël va près de la fenêtre, avec la petite voiture.\nnarrateur|La vitre est un peu floue.\nnarrateur|Mila trace un petit rond du doigt.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux le torchon, pour la vitre ?\nenfant-m|S'il te plaît.\nnarrateur|Le torchon est doux, un peu épais.\nenfant-m|Merci, papa.\nmaman|Bravo, Raphaël.\nenfant-f|Merci.\nenfant-f|Je vois le marché.\nmaman|On dit les mots, même près de la fenêtre.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Un oiseau passe derrière la vitre.",
+      "sons": "vitre",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. La petite voiture touche la vitre froide. Un oiseau crie une fois. Raphaël est près de la fenêtre, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|La petite voiture touche la vitre froide.\nnarrateur|Un oiseau crie une fois.\nnarrateur|Raphaël est près de la fenêtre, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de la fenêtre. Il a joué avec la petite voiture, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de la fenêtre.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. La vitre a un petit nuage. La petite voiture attend sur le rebord. Raphaël est près de la fenêtre, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|La vitre a un petit nuage.\nnarrateur|La petite voiture attend sur le rebord.\nnarrateur|Raphaël est près de la fenêtre, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de la fenêtre. Il a joué avec la petite voiture, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de la fenêtre.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. La vitre est noire, un peu. La petite voiture brille sous la lampe. Raphaël est près de la fenêtre, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|La vitre est noire, un peu.\nnarrateur|La petite voiture brille sous la lampe.\nnarrateur|Raphaël est près de la fenêtre, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de la fenêtre. Il a joué avec la petite voiture, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de la fenêtre.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Raphaël glisse la petite voiture près du tabouret. Le tabouret est bas, en bois clair. Mila s'assoit, les pieds qui balancent. Bonjour, Mila. Bonjour. Tu veux le tabouret, Raphaël ? S'il te plaît. Tu peux. Merci. Raphaël pose une main sur le bois lisse. Bravo. Tu as demandé. Merci, Mila. Les trois mots, même pour un tabouret. Bonjour. S'il te plaît. Merci. Le tabouret fait un tout petit craquement.",
+      "script": "narrateur|Raphaël glisse la petite voiture près du tabouret.\nnarrateur|Le tabouret est bas, en bois clair.\nnarrateur|Mila s'assoit, les pieds qui balancent.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\nmaman|Tu veux le tabouret, Raphaël ?\nenfant-m|S'il te plaît.\nenfant-f|Tu peux.\nenfant-f|Merci.\nnarrateur|Raphaël pose une main sur le bois lisse.\npapa|Bravo.\npapa|Tu as demandé.\nenfant-m|Merci, Mila.\nmaman|Les trois mots, même pour un tabouret.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nnarrateur|Le tabouret fait un tout petit craquement.",
+      "sons": "bois",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "C'est quel moment ? Le matin, après la sieste, ou le soir.",
+      "script": "narrateur|C'est quel moment ?\nmaman|Le matin, après la sieste, ou le soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "C'est le matin. La petite voiture tourne autour du tabouret. Le bois est frais. Raphaël est près de le tabouret, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le matin.\nnarrateur|La petite voiture tourne autour du tabouret.\nnarrateur|Le bois est frais.\nnarrateur|Raphaël est près de le tabouret, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "matin",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le matin, près de le tabouret. Il a joué avec la petite voiture, avec Mila. Le soleil a touché le bol jaune. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le matin, près de le tabouret.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le soleil a touché le bol jaune.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "C'est après la sieste. Le tabouret a gardé le soleil. La petite voiture est tiède. Raphaël est près de le tabouret, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est après la sieste.\nnarrateur|Le tabouret a gardé le soleil.\nnarrateur|La petite voiture est tiède.\nnarrateur|Raphaël est près de le tabouret, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "sieste",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu après la sieste, près de le tabouret. Il a joué avec la petite voiture, avec Mila. Le pain a senti bon, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu après la sieste, près de le tabouret.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|Le pain a senti bon, tout calme.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "C'est le soir. La petite voiture se range sous le tabouret. On entend la casserole, tout loin. Raphaël est près de le tabouret, avec la petite voiture. Bonjour, Mila. Bonjour. Tu veux encore une rondelle ? S'il te plaît. La pomme est froide, un peu sucrée. Merci, papa. Bravo. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Merci, Raphaël. C'est du bon travail.",
+      "script": "narrateur|C'est le soir.\nnarrateur|La petite voiture se range sous le tabouret.\nnarrateur|On entend la casserole, tout loin.\nnarrateur|Raphaël est près de le tabouret, avec la petite voiture.\nenfant-m|Bonjour, Mila.\nenfant-f|Bonjour.\npapa|Tu veux encore une rondelle ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est froide, un peu sucrée.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les trois mots.\npapa|Bonjour.\npapa|S'il te plaît.\npapa|Merci.\nenfant-f|Merci, Raphaël.\nmaman|C'est du bon travail.",
+      "sons": "lampe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël a vécu le soir, près de le tabouret. Il a joué avec la petite voiture, avec Mila. La lampe a fait un rond doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Raphaël. Tu as fait du bon travail. Bonne journée, mon grand. L'histoire est finie.",
+      "script": "narrateur|Raphaël a vécu le soir, près de le tabouret.\nnarrateur|Il a joué avec la petite voiture, avec Mila.\nnarrateur|La lampe a fait un rond doux.\nmaman|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\nenfant-m|Et merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as fait du bon travail.\npapa|Bonne journée, mon grand.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

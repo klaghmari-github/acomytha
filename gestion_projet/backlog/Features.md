@@ -234,6 +234,8 @@ Avant d’appliquer F-NAR-010…015 à **tous** les ramifiés : deux arbres, à 
 
 763 autres `TREE-*` → `stories/archive/arbres/`. Atomiques inchangés. Détail : `stories/PRIORITE.md`. D31.
 
+Passe **texte** faite sur les deux (F-NAR-010…015, sans audio). Preuves dans `stories/rewrites/TREE-AUT-001/RELECTURE.md` et `stories/rewrites/TREE-COL-001/RELECTURE.md`.
+
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
 **Portée : générale.** Ce n’est pas une feature « parc / ambulance / chien ». Ces scènes ne sont que des **exemples**. Dès qu’un événement du monde est raconté, l’enfant qui écoute **l’entend**, dans **chaque** histoire, **chaque** chunk.
