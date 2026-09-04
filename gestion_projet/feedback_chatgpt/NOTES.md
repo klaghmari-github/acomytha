@@ -8,6 +8,7 @@ Ce n’est **pas** une spec. C’est une lecture externe. On retient ce qui aide
 
 - **Jour / nuit (F-PLY-001).** `night_policy=auto_default` ne doit plus court-circuiter les choix **le jour**. Nuit = branche par défaut. `StoryEngine.js`.
 - **Grille éditoriale** dans `stories/REWRITE.md`, calquée sur *La boîte trop haute* (`exemple.txt`) : envie, obstacle, l’enfant agit, question au bon moment, fin qui tient la promesse.
+- **f_04.txt → features F-NAR-010…015, D30.** Désir ≠ leçon, vraie fin, chaîne question, chemins, preuves de relecture.
 
 ## À garder en tête (réécritures)
 

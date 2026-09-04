@@ -68,6 +68,8 @@ Référence : `gestion_projet/feedback_chatgpt/exemple.txt` (Chouchou, *La boît
 
 Papa accompagne sans tout faire. La félicitation est rare et liée à un geste vu, pas un refrain.
 
+Détail opérationnel (features) : **F-NAR-010 à F-NAR-015**, consignes `gestion_projet/feedback_chatgpt/f_04.txt`.
+
 ## JSON agent
 
 Mêmes `chunk_id` et `kind`. Champs : `fil_rouge`, `title`, `chunks[]` avec `text`, `script`, `sons`, `length_scale_piper`, `rate_label`.

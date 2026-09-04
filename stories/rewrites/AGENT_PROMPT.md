@@ -23,6 +23,7 @@ Tu réécris des histoires AcoMytha pour enfants **3–6 ans**, audio seulement.
 10. `script` = `role|phrase` une phrase par ligne (`narrateur`, `papa`, `maman`, `enfant-m` / `enfant-f`). `text` = les phrases du script collées avec des espaces.
 11. Durée ≥ 3 min : allonger par des détails et des répliques, pas par des slogans. Plusieurs passages : certains portent la leçon, d’autres racontent.
 12. **Pas d’audio. Pas de bake. Pas de git.**
+13. **F-NAR-010…015** (`f_04.txt`) : désir du héros ≠ leçon ; vraie fin du projet (pas seulement la boîte si on a promis le puzzle) ; décrire **pendant** l’action ; amusement lié (papa qui cache la pièce), jamais humiliation ; pas de « Bravo, bon travail » en refrain ; **pas** de leçon pour remplir la durée ; question + réponses + relance **ensemble** ; jardin/chambre = préférence, pas une bonne réponse ; un choix ramifié **change** la suite ; relire le chemin entier ; propager prénom/objet partout ; **pas** de nouveau gabarit ; indiquer ce qui a été relu.
 
 ### Exemples de *manières* (à ne pas coller)
 

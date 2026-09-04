@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.0 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.1 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -35,6 +35,12 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
 | F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
 | F-NAR-009 | **en cours** | Ouverture non brutale, monde descriptif, créativité d’amorce (exemples non limitatifs). |
+| F-NAR-010 | **à faire** | Désir du héros ≠ leçon. L’histoire se réécoute même sans les questions. |
+| F-NAR-011 | **à faire** | Arc naturel + vraie fin du projet commencé. |
+| F-NAR-012 | **à faire** | Décrire dans l’action ; amusement lié ; héros agit ; pas de leçon récitée ni bravo automatique. |
+| F-NAR-013 | **à faire** | Question + chaîne de réponses complète ; préférence ≠ connaissance. |
+| F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
+| F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -102,6 +108,12 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-AUD-007 | Audio | Immersion sonore de **tout** le récit (monde entendu, pas une liste de cas) | P0 | 1 | STRAT-002 §4b | F-AUD-006 |
 | F-NAR-008 | Moteur | Fil rouge, ≥ 3 min, plusieurs passages/leçons, troupe fermée, adultes parlent | P0 | 1 | stories/REWRITE.md | F-GEN-001, F-AUD-006, F-AUD-007 |
 | F-NAR-009 | Moteur | Ouverture du monde, détails, chaque histoire racontée autrement | P0 | 1 | stories/REWRITE.md | F-NAR-008 |
+| F-NAR-010 | Moteur | Désir ≠ leçon ; réécoute sans questions | P0 | 1 | stories/REWRITE.md | F-NAR-008 |
+| F-NAR-011 | Moteur | Progression causes/conséquences ; fin du projet promis | P0 | 1 | stories/REWRITE.md | F-NAR-010 |
+| F-NAR-012 | Moteur | Décrire dans l’action ; amusement lié ; héros agit | P0 | 1 | stories/REWRITE.md | F-NAR-010 |
+| F-NAR-013 | Moteur | Chaîne question complète ; préférence ≠ connaissance | P0 | 1 | stories/REWRITE.md | F-NAR-008 |
+| F-NAR-014 | Moteur | Conséquences des choix ; chemin cohérent ; pas de gabarit | P0 | 1 | stories/REWRITE.md | F-NAR-010 |
+| F-NAR-015 | Production | Preuves de relecture, pas d’auto-validation IA | P0 | 1 | STRAT-001 | F-VAL-001 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -162,6 +174,52 @@ Les prénoms Constantin / Luca / Céline sont **dans l’exemple fondateur**. Le
 Contraintes inchangées : troupe D16, papa/maman (pas un prénom d’adulte à la place), POS-001, adultes qui parlent (D20), ≥ 3 min, phrases courtes. Audio **après** les textes.
 
 Processus : mêmes agents / `stories/REWRITE.md`. Passe sur **tout** le corpus (atomiques + ramifiées). Colonne `script` à jour. Pas de bake audio dans cette passe.
+
+Source consignes : `gestion_projet/feedback_chatgpt/f_04.txt`. Exemple : `exemple.txt` (Chouchou, *La boîte trop haute*).
+
+### F-NAR-010 — Désir du héros, pas la leçon
+
+L’histoire doit donner envie d’être **réécoutée même si l’on retire les questions**.
+
+Séparer le **désir du héros** de l’**objectif pédagogique**. Chouchou veut construire son bateau, pas « apprendre à demander de l’aide ». L’apprentissage devient utile lorsque quelque chose **l’empêche d’avancer**.
+
+### F-NAR-011 — Progression et vraie fin
+
+Construire une progression avec des causes et des conséquences : une envie, un obstacle, une tentative, un résultat, un ajustement, une résolution. **Naturelle** : ce n’est pas une formule à réciter dans chaque histoire.
+
+Donner une **vraie fin** au projet commencé. Obtenir la boîte ne suffit pas si le récit promettait un puzzle. Laisser découvrir ce que le héros en fait, puis terminer sur un geste, une réplique ou une surprise.
+
+### F-NAR-012 — Écrire pendant que ça se passe
+
+Décrire **pendant** que les choses se passent : bruit des pièces dans la boîte, un coin de tapis qui se replie, une manche mouillée. Une succession de lumières, d’odeurs et de textures **sans rapport** avec l’action alourdit.
+
+Créer un **amusement lié à la situation** : découverte inattendue, petit décalage, jeu sonore, un adulte qui cache involontairement la pièce. Aucun gag sur l’humiliation, une difficulté ou un danger.
+
+Laisser le **héros agir** : il remarque, essaie, demande, choisit, ajuste. L’adulte accompagne ; il ne résout pas chaque problème à sa place.
+
+Supprimer les **leçons récitées** et les **félicitations automatiques**. « J’ai dit le besoin » ou « Bravo, tu as fait du bon travail » répété ne remplace pas un dialogue vivant. La conséquence concrète peut suffire.
+
+**Ne jamais ajouter une leçon pour remplir une durée.** Enrichir par une tentative, une exploration ou une relation. Si rien ne mérite d’être développé, l’idée narrative est trop mince.
+
+### F-NAR-013 — Chaîne de la question
+
+Écrire chaque question **avec toute sa chaîne** : contexte, question, réponse principale, variantes admises, relance, continuation. Modifier la question sans ces champs est une source d’erreurs déjà observée.
+
+Distinguer une **préférence** d’une **connaissance**. Choisir le jardin ou la chambre n’appelle pas un verdict de justesse. Une question factuelle exige une réponse compatible avec ce qui a **réellement** été raconté.
+
+### F-NAR-014 — Chemins, changements, pas de gabarit
+
+Donner des **conséquences** aux ramifications. Changer uniquement le lieu ou le goûter ne crée pas une aventure différente. Un choix peut modifier une action, une information, une collaboration ou le résultat.
+
+Relire **chaque chemin** comme une histoire continue. Personnages, objets, quantités, informations : cohérents. Des passages corrects séparément peuvent produire une histoire incohérente une fois assemblés.
+
+Corriger **toutes les dépendances** d’un changement. Un nouveau prénom ou objet se répercute dans dialogues, questions, relances, métadonnées et audio concernés.
+
+Empêcher l’apparition d’un **nouveau gabarit** répétitif. Même une bonne trouvaille (objet perdu, surprise finale, rappel du début) devient pauvre si elle est reproduite partout. Varier envies, obstacles, rythmes, humour, résolutions.
+
+### F-NAR-015 — Preuves de contrôle
+
+L’IA indique les passages **réellement relus**, les vérifications faites, et ce qui **reste non vérifié**. Une auto-évaluation enthousiaste ne vaut pas validation. (VAL-001 : le générateur ne s’auto-approuve pas.)
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 

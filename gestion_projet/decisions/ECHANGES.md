@@ -266,3 +266,28 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Titre accueil | F-APP-004, D28 |
 | Symbole acm = logo | F-PAY-003, D26 |
 | Git `main` + gitpush.sh | D29 |
+| Consignes récit `f_04.txt` (Chouchou, bateau, chaîne question, gabarit) | F-NAR-010…015, D30 |
+
+---
+
+## 11. Consignes récit (`f_04.txt`)
+
+Texte source : `gestion_projet/feedback_chatgpt/f_04.txt`. Exemple développé : `exemple.txt`.
+
+> l’histoire doit donner envie d’être réécoutée même si l’on retire les questions. L’apprentissage doit aider le personnage à accomplir quelque chose dans cette histoire.
+
+> Chouchou veut construire son bateau, pas « apprendre à demander de l’aide ».
+
+> Obtenir la boîte ne suffit pas si le récit promettait un puzzle.
+
+> Un adulte qui cache involontairement la pièce recherchée. Aucun gag ne doit reposer sur l’humiliation.
+
+> « Bravo, tu as fait du bon travail » répété plusieurs fois ne remplace pas un dialogue vivant.
+
+> Ne jamais ajouter une leçon pour remplir une durée.
+
+> Choisir le jardin ou la chambre n’appelle pas un verdict de justesse.
+
+> Changer uniquement le lieu ou le goûter ne suffit pas à créer une aventure différente.
+
+> Une auto-évaluation enthousiaste ne vaut pas validation.
