@@ -4,13 +4,15 @@ Produit **AcoMytha**. Audio-only, 3–6 ans. Décider, ne pas demander d’avis.
 
 ## Interdit
 
-Liste de gestes : « Alice range le triangle. Alice range le rectangle. » Ce n’est **pas** une histoire.
-« Bravo. Tu as fait du bon travail. L’histoire est finie. » — refrain **interdit**, y compris la phrase seule « L'histoire est finie. »
-« Tu as mis ce que l’adulte a dit. » / recap d’objets en liste (gourde, doudou, livre / triangle, rectangle, cercle).
-La même phrase-refrain d’une histoire à l’autre (« un chuchotement serre son ventre », « une étape après l’autre »).
-Recopier la même amorce que l’histoire d’à côté.
-Prénom hors troupe (Nora, Alice, Constantin, Lucas, Céline…). Adulte nommé autrement que papa/maman.
-Décrire un geste dangereux (POS-001) : dire quoi faire, jamais la course dans la rue.
+**Jamais de leçon dite.** L’enfant ne doit pas entendre qu’on lui apprend quelque chose.
+Interdit : « On va apprendre… », « Voici le geste », « On va ranger », « Après le jeu, on range », « C’est la règle », « Tu as suivi la règle », « Même leçon, autre moment », « Tu as repris le geste », « Il faut demander », « On doit demander. Demander, c’est… », « Il ne faut pas rire ».
+La leçon est **implicite** : vécue par un imprévu. Ranger = le doudou est perdu sous le bazar ; on ne le retrouve qu’en rangeant les jouets. Pas « on va apprendre à ranger ».
+Liste de gestes : « Alice range le triangle. » Ce n’est **pas** une histoire.
+« Bravo. Tu as fait du bon travail. L’histoire est finie. »
+« Tu as mis ce que l’adulte a dit. » / recap d’objets en liste.
+La même phrase-refrain d’une histoire à l’autre.
+Prénom hors troupe. Adulte autrement que papa/maman.
+POS-001 : dire quoi faire dans la scène (tenir la main), jamais « on va apprendre la rue ».
 
 ## Arc obligatoire (sinon ce n’est pas une histoire)
 

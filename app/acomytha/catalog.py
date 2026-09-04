@@ -78,10 +78,27 @@ class CatalogImporter:
             files = files[:limit]
         n_stories = 0
         n_chunks = 0
+        keep: set[str] = set()
         for path in files:
             n_stories += 1
             n_chunks += self._import_one_story(db, path)
+            keep.add(path.stem)
+        if limit is None:
+            self._drop_missing_stories(db, keep)
         return n_stories, n_chunks
+
+    def _drop_missing_stories(self, db: Session, keep: set[str]) -> int:
+        """Le live ne sert que les xlsx d'arbres/ (ATOM + TREE-AUT-001). Archive hors catalogue."""
+        from acomytha.models import ForestEntry, Purchase
+
+        extra = [s.story_id for s in db.scalars(select(Story)).all() if s.story_id not in keep]
+        if not extra:
+            return 0
+        db.execute(delete(Chunk).where(Chunk.story_id.in_(extra)))
+        db.execute(delete(ForestEntry).where(ForestEntry.story_id.in_(extra)))
+        db.execute(delete(Purchase).where(Purchase.item_type == "story", Purchase.item_id.in_(extra)))
+        db.execute(delete(Story).where(Story.story_id.in_(extra)))
+        return len(extra)
 
     def _import_one_story(self, db: Session, path: Path) -> int:
         wb = load_workbook(path, read_only=True, data_only=True)

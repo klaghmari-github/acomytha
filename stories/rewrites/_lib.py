@@ -13,6 +13,13 @@ TROUPE_F = ("Sarah", "Chouchou", "Mila", "Nina", "Victorina")
 FORBIDDEN = (
     "on va apprendre",
     "voici le geste",
+    "on va ranger",
+    "après le jeu",
+    "c'est la règle",
+    "tu as suivi la règle",
+    "même leçon",
+    "tu as repris le geste",
+    "tu ranges",
     "papa sourit",
     "maman sourit",
     "papa est là",
@@ -28,6 +35,10 @@ FORBIDDEN = (
     "on met ce que l'adulte a dit",
     "l'histoire est finie",
     "bravo. tu as",
+    "on doit demander",
+    "il faut demander",
+    "il ne faut pas rire",
+    "il faut attendre",
 )
 BAD_NAMES = (
     "rania", "kilian", "béatrice", "beatrice", "bruno", "brice",
