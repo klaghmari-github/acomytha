@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-COL.ECO.001-11",
+  "fil_rouge": "Sarah écoute au coin tapis. Elle range un crayon. Un chuchotement lui serre le ventre. Le soir, près du pain, elle raconte.",
+  "title": "Le crayon de Sarah",
+  "lesson_id": "COL.ECO.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Sarah, papa, maman, maîtresse",
+  "setting": "école, coin tapis, puis maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dans le vestiaire, les crochets ont des prénoms. Un manteau rouge pend tout seul. Ça sent le pain du goûter. Les chaussures font un petit clac. Maman a noué les lacets de Sarah. Les lacets sont bien faits. Tu écoutes la maîtresse, Sarah ? Oui, maman. Papa a dit au revoir, tout près. À tout à l'heure, Sarah. Tu écoutes bien. À tout à l'heure, papa. En ce moment, Sarah est au coin tapis. Un rayon fait un carré d'or. Les cubes sont dans leur bac. La maîtresse parle, tout doucement. On écoute. On range. Sarah aime écouter. Elle prend un crayon vert. Le bois est un peu râpeux. Elle le pose dans la boîte. J'ai rangé, maîtresse. Bravo, Sarah. Tu as bien écouté. Plus tard, quelqu'un chuchote près d'elle. Sarah entend parler d'un secret. Son ventre se serre. Elle serre le crayon, puis le pose. Je raconterai à la maison. Le soir, papa coupe du pain. La croûte fait un petit bruit. Ça sent le four. Tu as faim, Sarah ? Sarah vient près de la planche.",
+      "script": "narrateur|Dans le vestiaire, les crochets ont des prénoms.\nnarrateur|Un manteau rouge pend tout seul.\nnarrateur|Ça sent le pain du goûter.\nnarrateur|Les chaussures font un petit clac.\nnarrateur|Maman a noué les lacets de Sarah.\nmaman|Les lacets sont bien faits.\nmaman|Tu écoutes la maîtresse, Sarah ?\nenfant-f|Oui, maman.\nnarrateur|Papa a dit au revoir, tout près.\npapa|À tout à l'heure, Sarah.\npapa|Tu écoutes bien.\nenfant-f|À tout à l'heure, papa.\nnarrateur|En ce moment, Sarah est au coin tapis.\nnarrateur|Un rayon fait un carré d'or.\nnarrateur|Les cubes sont dans leur bac.\nnarrateur|La maîtresse parle, tout doucement.\nmaitresse|On écoute.\nmaitresse|On range.\nnarrateur|Sarah aime écouter.\nnarrateur|Elle prend un crayon vert.\nnarrateur|Le bois est un peu râpeux.\nnarrateur|Elle le pose dans la boîte.\nenfant-f|J'ai rangé, maîtresse.\nmaitresse|Bravo, Sarah.\nmaitresse|Tu as bien écouté.\nnarrateur|Plus tard, quelqu'un chuchote près d'elle.\nnarrateur|Sarah entend parler d'un secret.\nnarrateur|Son ventre se serre.\nnarrateur|Elle serre le crayon, puis le pose.\nenfant-f|Je raconterai à la maison.\nnarrateur|Le soir, papa coupe du pain.\nnarrateur|La croûte fait un petit bruit.\nnarrateur|Ça sent le four.\npapa|Tu as faim, Sarah ?\nnarrateur|Sarah vient près de la planche.",
+      "sons": "vestiaire,crayon,pain",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah a un malaise. Que fait-elle ?",
+      "script": "narrateur|Sarah a un malaise. Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa, j'ai un malaise. Quelqu'un a parlé d'un secret. Maman pose le beurre. Tu as bien fait de raconter. On aime écouter la maîtresse. Si tu as un malaise, tu viens raconter. À papa ou à maman. Bravo, Sarah. Tu as fait du bon travail. Tu as bien écouté ? Oui. J'ai écouté. J'ai raconté.",
+      "script": "enfant-f|Papa, j'ai un malaise.\nenfant-f|Quelqu'un a parlé d'un secret.\nnarrateur|Maman pose le beurre.\nmaman|Tu as bien fait de raconter.\nmaman|On aime écouter la maîtresse.\npapa|Si tu as un malaise, tu viens raconter.\npapa|À papa ou à maman.\npapa|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nmaman|Tu as bien écouté ?\nenfant-f|Oui. J'ai écouté.\nenfant-f|J'ai raconté.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa verse un verre d'eau. Sarah boit une gorgée. Je te tiens la main ? Oui, papa. Sa main est chaude. Tu veux un bout de pain ? Oui, maman. La mie est toute douce. Bravo. Tu as raconté.",
+      "script": "narrateur|Papa verse un verre d'eau.\nnarrateur|Sarah boit une gorgée.\npapa|Je te tiens la main ?\nenfant-f|Oui, papa.\nnarrateur|Sa main est chaude.\nmaman|Tu veux un bout de pain ?\nenfant-f|Oui, maman.\nnarrateur|La mie est toute douce.\npapa|Bravo. Tu as raconté.",
+      "sons": "verre,pain",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté la maîtresse. J'ai raconté à la maison. Bravo, Sarah. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté la maîtresse.\nenfant-f|J'ai raconté à la maison.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "COL.ECO.002"
+}

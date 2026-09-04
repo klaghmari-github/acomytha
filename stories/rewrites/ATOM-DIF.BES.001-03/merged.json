@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-DIF.BES.001-03",
+  "fil_rouge": "Après la pluie, Nina pose des galets au jardin. Raphaël reste près du banc. Elle répète. Il observe d'abord, puis un galet bleu.",
+  "title": "Les galets de Nina",
+  "lesson_id": "DIF.BES.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, Raphaël, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La pluie a fini. Les feuilles brillent. Un escargot avance sur une pierre. Le banc de bois est encore sombre. Les galets luisent, tout ronds. En ce moment, Nina est au jardin avec maman. Tu as vu l'escargot, Nina ? Il va tout lentement. Oui. On le laisse sur sa pierre. On pose un galet. On dit une couleur. Raphaël reste près du banc. Il a besoin de calme. Ses mains restent sur le bois mouillé. Nina va vers lui. Un galet. Une couleur. C'est répéter la règle. Raphaël écoute. Il va observer d'abord. Il regarde. Il ne joue pas encore. Observer d'abord, c'est possible. Nina pose un galet gris. Gris. Le galet fait un petit bruit sur la terre. Raphaël sourit un peu. Il reste près du banc. Plus tard, il prend un galet bleu. Bleu. Il le pose, tout doux. Nina laisse l'espace. Tu as su répéter, Nina. Raphaël a pu observer d'abord. Bravo. D'abord regarder. Puis un galet. Oui. C'est ça. L'escargot n'a presque pas bougé.",
+      "script": "narrateur|La pluie a fini.\nnarrateur|Les feuilles brillent.\nnarrateur|Un escargot avance sur une pierre.\nnarrateur|Le banc de bois est encore sombre.\nnarrateur|Les galets luisent, tout ronds.\nnarrateur|En ce moment, Nina est au jardin avec maman.\nmaman|Tu as vu l'escargot, Nina ?\nenfant-f|Il va tout lentement.\nmaman|Oui. On le laisse sur sa pierre.\nmaman|On pose un galet.\nmaman|On dit une couleur.\nnarrateur|Raphaël reste près du banc.\nnarrateur|Il a besoin de calme.\nnarrateur|Ses mains restent sur le bois mouillé.\nnarrateur|Nina va vers lui.\nenfant-f|Un galet. Une couleur.\nnarrateur|C'est répéter la règle.\nnarrateur|Raphaël écoute.\nnarrateur|Il va observer d'abord.\nnarrateur|Il regarde.\nnarrateur|Il ne joue pas encore.\nmaman|Observer d'abord, c'est possible.\nnarrateur|Nina pose un galet gris.\nenfant-f|Gris.\nnarrateur|Le galet fait un petit bruit sur la terre.\nnarrateur|Raphaël sourit un peu.\nnarrateur|Il reste près du banc.\nnarrateur|Plus tard, il prend un galet bleu.\ncopain|Bleu.\nnarrateur|Il le pose, tout doux.\nnarrateur|Nina laisse l'espace.\nmaman|Tu as su répéter, Nina.\nmaman|Raphaël a pu observer d'abord.\nmaman|Bravo.\nenfant-f|D'abord regarder. Puis un galet.\nmaman|Oui. C'est ça.\nnarrateur|L'escargot n'a presque pas bougé.",
+      "sons": "jardin,galets,oiseau",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël a besoin de calme. Que peut-on faire ?",
+      "script": "narrateur|Raphaël a besoin de calme.\nnarrateur|Que peut-on faire ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina a répété. Raphaël a observé d'abord. Puis il a joué un peu. On répète. On observe d'abord. Bravo, Nina. Gris. Puis bleu. Oui. Chacun son temps.",
+      "script": "narrateur|Nina a répété.\nnarrateur|Raphaël a observé d'abord.\nnarrateur|Puis il a joué un peu.\nmaman|On répète. On observe d'abord.\nmaman|Bravo, Nina.\nenfant-f|Gris. Puis bleu.\nmaman|Oui. Chacun son temps.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range les galets. Tu as fini de ranger, Nina ? Oui, maman. Nina donne la main. Raphaël donne l'autre main. Merci d'avoir répété. Merci, maman. Les feuilles brillent encore. L'escargot est toujours sur sa pierre.",
+      "script": "narrateur|Maman range les galets.\nmaman|Tu as fini de ranger, Nina ?\nenfant-f|Oui, maman.\nnarrateur|Nina donne la main.\nnarrateur|Raphaël donne l'autre main.\nmaman|Merci d'avoir répété.\nenfant-f|Merci, maman.\nnarrateur|Les feuilles brillent encore.\nnarrateur|L'escargot est toujours sur sa pierre.",
+      "sons": "galets",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai répété. Raphaël a observé d'abord. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-f|J'ai répété.\nenfant-f|Raphaël a observé d'abord.\nmaman|Bravo. Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "DIF.BES.002"
+}

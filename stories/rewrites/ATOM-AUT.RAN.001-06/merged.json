@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-AUT.RAN.001-06",
+  "fil_rouge": "Près du radiateur, Mila pose des cubes. Quand le jeu s'arrête, les cubes rentrent dans la caisse.",
+  "title": "Les cubes près du radiateur",
+  "lesson_id": "AUT.RAN.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Mila, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le radiateur est tout chaud. Des chaussettes de laine attendent près du canapé. Elles sont épaisses. Elles sentent le linge propre. Les chaussettes sont chaudes, papa. Oui. On les laisse près du radiateur. Une caisse en bois est au salon. Elle sent la forêt. Mila, en ce moment, est près du canapé. Elle touche un cube. Le cube est lisse. Il est chaud, papa. C'est le radiateur, Mila. Mila pose un cube. Puis un autre cube. Clic. Elle fait une petite tour. Ta tour est jolie. Elle est petite, maman. Mila pose encore un cube. Clic. Puis le jeu est fini. On range. Les jouets retournent dans la caisse. Mila prend un cube. Elle le met dans la caisse. Toc. Elle prend une petite voiture. Elle la met dans la caisse. Toc. On range ensemble. Papa aide. Ils rangent ensemble. La caisse se remplit. Le tapis redevient vide. J'ai rangé. Bravo, Mila. Ranger, c'est mettre dans la caisse. Mila pousse la caisse. La caisse va près du meuble. Tu as fini de ranger tes jouets ? Oui, papa. Merci. Tu as fait du bon travail. Mila tape des mains.",
+      "script": "narrateur|Le radiateur est tout chaud.\nnarrateur|Des chaussettes de laine attendent près du canapé.\nnarrateur|Elles sont épaisses.\nnarrateur|Elles sentent le linge propre.\nmaman|Les chaussettes sont chaudes, papa.\npapa|Oui. On les laisse près du radiateur.\nnarrateur|Une caisse en bois est au salon.\nnarrateur|Elle sent la forêt.\nnarrateur|Mila, en ce moment, est près du canapé.\nnarrateur|Elle touche un cube.\nnarrateur|Le cube est lisse.\nenfant-f|Il est chaud, papa.\npapa|C'est le radiateur, Mila.\nnarrateur|Mila pose un cube.\nnarrateur|Puis un autre cube.\nnarrateur|Clic.\nnarrateur|Elle fait une petite tour.\nmaman|Ta tour est jolie.\nenfant-f|Elle est petite, maman.\nnarrateur|Mila pose encore un cube.\nnarrateur|Clic.\nnarrateur|Puis le jeu est fini.\npapa|On range.\npapa|Les jouets retournent dans la caisse.\nnarrateur|Mila prend un cube.\nnarrateur|Elle le met dans la caisse.\nnarrateur|Toc.\nnarrateur|Elle prend une petite voiture.\nnarrateur|Elle la met dans la caisse.\nnarrateur|Toc.\npapa|On range ensemble.\nnarrateur|Papa aide.\nnarrateur|Ils rangent ensemble.\nnarrateur|La caisse se remplit.\nnarrateur|Le tapis redevient vide.\nenfant-f|J'ai rangé.\npapa|Bravo, Mila.\nmaman|Ranger, c'est mettre dans la caisse.\nnarrateur|Mila pousse la caisse.\nnarrateur|La caisse va près du meuble.\npapa|Tu as fini de ranger tes jouets ?\nenfant-f|Oui, papa.\nmaman|Merci.\nmaman|Tu as fait du bon travail.\nnarrateur|Mila tape des mains.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le jeu est fini. Que fait Mila ?",
+      "script": "narrateur|Le jeu est fini. Que fait Mila ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mila a rangé. Les cubes sont dans la caisse. Papa a aidé. On a rangé ensemble. Dans la caisse. Oui. Ranger, c'est mettre dans la caisse. Tu as fini de ranger tes jouets ? Oui. Bravo, Mila. C'est du bon travail. Le tapis est libre.",
+      "script": "narrateur|Mila a rangé.\nnarrateur|Les cubes sont dans la caisse.\nnarrateur|Papa a aidé.\npapa|On a rangé ensemble.\nenfant-f|Dans la caisse.\nmaman|Oui. Ranger, c'est mettre dans la caisse.\npapa|Tu as fini de ranger tes jouets ?\nenfant-f|Oui.\nmaman|Bravo, Mila.\nmaman|C'est du bon travail.\nnarrateur|Le tapis est libre.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mila s'assoit près de papa. Le salon est calme. Le radiateur chante un tout petit peu. Tu veux tes chaussettes chaudes ? Oui, maman. Maman lui tend les chaussettes. Elles sont douces. La caisse est à sa place. Les cubes dorment. Oui. Dans la caisse. On reste encore un peu ensemble ? Oui. Bravo.",
+      "script": "narrateur|Mila s'assoit près de papa.\nnarrateur|Le salon est calme.\nnarrateur|Le radiateur chante un tout petit peu.\nmaman|Tu veux tes chaussettes chaudes ?\nenfant-f|Oui, maman.\nnarrateur|Maman lui tend les chaussettes.\nnarrateur|Elles sont douces.\npapa|La caisse est à sa place.\nenfant-f|Les cubes dorment.\npapa|Oui. Dans la caisse.\nmaman|On reste encore un peu ensemble ?\nenfant-f|Oui.\npapa|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai mis les cubes dans la caisse. Bravo. Tu as fait du bon travail. Le radiateur reste chaud. L'histoire est finie.",
+      "script": "enfant-f|J'ai mis les cubes dans la caisse.\npapa|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|Le radiateur reste chaud.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

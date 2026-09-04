@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-AUT.RAN.001-04",
+  "fil_rouge": "Sous la table, les voitures bleues roulent dans une petite lumière. Après le jeu, Sarah les met dans la caisse.",
+  "title": "Les voitures bleues sous la table",
+  "lesson_id": "AUT.RAN.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Sarah, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sous la table du salon, une petite lumière. Une ligne claire est sur le tapis. Des voitures bleues attendent dans la lumière. Les chaussons de papa font chuff, chuff. J'arrive, Sarah. Je plie la nappe, près de la fenêtre. La nappe est douce. Elle sent le savon. Juste maintenant, Sarah glisse sous la table. Elle prend une voiture bleue. La voiture est lisse et froide. Elle roule, papa. Elle roule dans la lumière. Sarah pousse la voiture. Vroom. Puis une autre voiture. Vroom. Elles vont loin, tes voitures. Jusqu'au pied de la table. Sarah aligne trois voitures. Bleue. Bleue. Bleue. Puis le jeu est fini. Le jeu est fini, Sarah. On range. Après le jeu, on range. Papa montre la caisse. La caisse est bleue. Ranger, c'est mettre dans la caisse. Sarah prend une voiture. Elle la met dans la caisse. Clac. Elle en prend une autre. Dans la caisse. Clac. Les jouets retournent dans la caisse. Ranger. Caisse. Oui. Ranger. Caisse. Sarah met encore une voiture. La caisse se remplit. Le tapis est libre. Tu as fini de ranger tes jouets ? Presque, papa. Sarah pousse la caisse. Elle est un peu lourde. Je t'aide. Ils posent la caisse près du meuble. Bravo, Sarah. Tu as fait du bon travail. Sarah a rangé.",
+      "script": "narrateur|Sous la table du salon, une petite lumière.\nnarrateur|Une ligne claire est sur le tapis.\nnarrateur|Des voitures bleues attendent dans la lumière.\nnarrateur|Les chaussons de papa font chuff, chuff.\npapa|J'arrive, Sarah.\nmaman|Je plie la nappe, près de la fenêtre.\nnarrateur|La nappe est douce.\nnarrateur|Elle sent le savon.\nnarrateur|Juste maintenant, Sarah glisse sous la table.\nnarrateur|Elle prend une voiture bleue.\nnarrateur|La voiture est lisse et froide.\nenfant-f|Elle roule, papa.\npapa|Elle roule dans la lumière.\nnarrateur|Sarah pousse la voiture.\nnarrateur|Vroom.\nnarrateur|Puis une autre voiture.\nnarrateur|Vroom.\nmaman|Elles vont loin, tes voitures.\nenfant-f|Jusqu'au pied de la table.\nnarrateur|Sarah aligne trois voitures.\nnarrateur|Bleue. Bleue. Bleue.\nnarrateur|Puis le jeu est fini.\npapa|Le jeu est fini, Sarah.\npapa|On range.\npapa|Après le jeu, on range.\nnarrateur|Papa montre la caisse.\nnarrateur|La caisse est bleue.\npapa|Ranger, c'est mettre dans la caisse.\nnarrateur|Sarah prend une voiture.\nnarrateur|Elle la met dans la caisse.\nnarrateur|Clac.\nnarrateur|Elle en prend une autre.\nnarrateur|Dans la caisse.\nnarrateur|Clac.\nmaman|Les jouets retournent dans la caisse.\nenfant-f|Ranger. Caisse.\npapa|Oui. Ranger. Caisse.\nnarrateur|Sarah met encore une voiture.\nnarrateur|La caisse se remplit.\nnarrateur|Le tapis est libre.\npapa|Tu as fini de ranger tes jouets ?\nenfant-f|Presque, papa.\nnarrateur|Sarah pousse la caisse.\nnarrateur|Elle est un peu lourde.\npapa|Je t'aide.\nnarrateur|Ils posent la caisse près du meuble.\nmaman|Bravo, Sarah.\nmaman|Tu as fait du bon travail.\nnarrateur|Sarah a rangé.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le jeu est fini. Que fait Sarah ?",
+      "script": "narrateur|Le jeu est fini. Que fait Sarah ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sarah a rangé. Les voitures sont dans la caisse. La caisse est bleue. Le tapis est libre. Bravo, Sarah. Tu as mis les voitures dans la caisse. J'ai rangé. Oui. Ranger, c'est mettre dans la caisse. Tu as fini de ranger tes jouets ? Oui, papa. C'est du bon travail.",
+      "script": "narrateur|Sarah a rangé.\nnarrateur|Les voitures sont dans la caisse.\nnarrateur|La caisse est bleue.\nnarrateur|Le tapis est libre.\npapa|Bravo, Sarah.\npapa|Tu as mis les voitures dans la caisse.\nenfant-f|J'ai rangé.\nmaman|Oui.\nmaman|Ranger, c'est mettre dans la caisse.\npapa|Tu as fini de ranger tes jouets ?\nenfant-f|Oui, papa.\nmaman|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sarah se lave les mains. L'eau est tiède. Bien, Sarah. Papa pose la caisse près du meuble. La caisse est à sa place. Les voitures dorment. Oui. Dans la caisse. La petite lumière est encore sous la table. Tu veux un peu d'eau ? Oui, maman. Sarah boit une gorgée. On reste un moment au salon ? Oui. Bravo.",
+      "script": "narrateur|Sarah se lave les mains.\nnarrateur|L'eau est tiède.\nmaman|Bien, Sarah.\nnarrateur|Papa pose la caisse près du meuble.\npapa|La caisse est à sa place.\nenfant-f|Les voitures dorment.\npapa|Oui. Dans la caisse.\nnarrateur|La petite lumière est encore sous la table.\nmaman|Tu veux un peu d'eau ?\nenfant-f|Oui, maman.\nnarrateur|Sarah boit une gorgée.\npapa|On reste un moment au salon ?\nenfant-f|Oui.\nmaman|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Les voitures sont dans la caisse. Bravo. Tu as fait du bon travail. Le tapis est libre. La lumière glisse un peu. L'histoire est finie.",
+      "script": "enfant-f|Les voitures sont dans la caisse.\npapa|Bravo.\npapa|Tu as fait du bon travail.\nmaman|Le tapis est libre.\nnarrateur|La lumière glisse un peu.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

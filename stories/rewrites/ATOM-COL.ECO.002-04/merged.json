@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-COL.ECO.002-04",
+  "fil_rouge": "Nina parle du hérisson sur le tapis. Au goûter, elle lève encore la main pour sa pomme. Elle attend. Puis elle parle.",
+  "title": "Le hérisson de Nina",
+  "lesson_id": "COL.ECO.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, maman, papa, maîtresse",
+  "setting": "classe",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Près de la haie de l'école, l'herbe est encore mouillée. Une affiche un peu de travers montre un hérisson. Les piquants sont dessinés au crayon brun. Maman tient le cartable de Nina. Le cartable est un peu humide, dehors. Tu vas t'asseoir sur le tapis ? Oui, maman. Papa a mis une pomme dans la boîte. La pomme est pour le goûter. Tu attends ton tour, d'accord ? D'accord, papa. En ce moment, Nina entre dans la classe avec maman. Au revoir, Nina. Bonne journée. Au revoir, maman. Nina s'assoit sur le tapis. Le tapis est un peu froid, encore. La maîtresse montre l'affiche du hérisson. Qui veut parler du hérisson ? Nina a une idée. Elle lève la main. Il faut attendre. Quelqu'un parle d'abord. Nina attend encore. Sa main reste en l'air. J'attends. Puis je parle.",
+      "script": "narrateur|Près de la haie de l'école, l'herbe est encore mouillée.\nnarrateur|Une affiche un peu de travers montre un hérisson.\nnarrateur|Les piquants sont dessinés au crayon brun.\nnarrateur|Maman tient le cartable de Nina.\nmaman|Le cartable est un peu humide, dehors.\nmaman|Tu vas t'asseoir sur le tapis ?\nenfant-f|Oui, maman.\nnarrateur|Papa a mis une pomme dans la boîte.\npapa|La pomme est pour le goûter.\npapa|Tu attends ton tour, d'accord ?\nenfant-f|D'accord, papa.\nnarrateur|En ce moment, Nina entre dans la classe avec maman.\nmaman|Au revoir, Nina.\nmaman|Bonne journée.\nenfant-f|Au revoir, maman.\nnarrateur|Nina s'assoit sur le tapis.\nnarrateur|Le tapis est un peu froid, encore.\nnarrateur|La maîtresse montre l'affiche du hérisson.\nmaitresse|Qui veut parler du hérisson ?\nnarrateur|Nina a une idée.\nnarrateur|Elle lève la main.\nnarrateur|Il faut attendre.\nnarrateur|Quelqu'un parle d'abord.\nnarrateur|Nina attend encore.\nnarrateur|Sa main reste en l'air.\nenfant-f|J'attends. Puis je parle.",
+      "sons": "haie,porte",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina veut parler. Que fait-elle d'abord ?",
+      "script": "narrateur|Nina veut parler. Que fait-elle d'abord ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina, c'est ton tour. Nina parle. Le hérisson a des piquants. Merci, Nina. Tu as attendu. Puis tu as parlé. Plus tard, c'est le goûter. Les boîtes s'ouvrent. Ça sent la pomme. Nina a envie de raconter son goûter. Elle lève la main. Il faut attendre. Quelqu'un parle. Nina attend. Nina. J'ai une pomme. Merci. Sur le tapis, puis au goûter, c'est pareil. On lève la main. On attend. Puis on parle.",
+      "script": "maitresse|Nina, c'est ton tour.\nnarrateur|Nina parle.\nenfant-f|Le hérisson a des piquants.\nmaitresse|Merci, Nina.\nmaitresse|Tu as attendu. Puis tu as parlé.\nnarrateur|Plus tard, c'est le goûter.\nnarrateur|Les boîtes s'ouvrent. Ça sent la pomme.\nnarrateur|Nina a envie de raconter son goûter.\nnarrateur|Elle lève la main.\nnarrateur|Il faut attendre.\nnarrateur|Quelqu'un parle.\nnarrateur|Nina attend.\nmaitresse|Nina.\nenfant-f|J'ai une pomme.\nmaitresse|Merci. Sur le tapis, puis au goûter, c'est pareil.\nmaitresse|On lève la main. On attend. Puis on parle.",
+      "sons": "boite,pomme",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le soir, maman demande près de la porte. Alors, Nina ? J'ai levé la main. J'ai su attendre. Puis j'ai parlé. Bravo, Nina. Tu as fait du bon travail. Tu as attendu au goûter aussi ? Oui, maman. Nina met son manteau. Maman l'attend à la porte. Bravo. Tu as attendu. Puis tu as parlé.",
+      "script": "narrateur|Le soir, maman demande près de la porte.\nmaman|Alors, Nina ?\nenfant-f|J'ai levé la main.\nenfant-f|J'ai su attendre.\nenfant-f|Puis j'ai parlé.\npapa|Bravo, Nina.\npapa|Tu as fait du bon travail.\nmaman|Tu as attendu au goûter aussi ?\nenfant-f|Oui, maman.\nnarrateur|Nina met son manteau.\nnarrateur|Maman l'attend à la porte.\nmaman|Bravo. Tu as attendu. Puis tu as parlé.",
+      "sons": "porte,manteau",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai levé la main. J'ai attendu. Puis j'ai parlé. Bravo, Nina. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-f|J'ai levé la main.\nenfant-f|J'ai attendu. Puis j'ai parlé.\nmaman|Bravo, Nina.\npapa|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "COL.ECO.001"
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-COL.POL.001-13",
+  "fil_rouge": "Victorino voit les pains dorés derrière la vitre floue. Il tient la main de papa. Il dit bonjour, s'il te plaît, merci. Le sachet reste chaud.",
+  "title": "Le pain chaud de Victorino",
+  "lesson_id": "COL.POL.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Victorino, papa",
+  "setting": "boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La vitre de la boulangerie est floue. Derrière, les pains sont dorés. Une odeur de beurre passe dehors. Le trottoir est encore mouillé. Une petite flaque brille. Tu as vu la flaque, Victorino ? Oui, papa. En ce moment, Victorino tient la main de papa. Ils avancent vers la porte. La cloche fait ding. On est arrivés. L'air est chaud, dedans. Ça sent bon. Oui. Le pain est chaud. La dame est derrière le comptoir. On dit bonjour ? Bonjour. Bonjour. La dame écoute. Tu veux un pain ? Oui. On dit s'il te plaît. Un pain, s'il te plaît. La dame prend un pain doré. Elle le met dans un sachet. Le sachet craque un peu. Merci. Merci. Bravo, Victorino. Tu as dit les mots. Victorino tient le sachet. Le pain est encore chaud. Il est chaud, papa. Oui. On le sent. Tu as dit bonjour. Tu as dit s'il te plaît. Tu as dit merci. Bonjour. S'il te plaît. Merci. C'est ça. Bravo. Tu as fait du bon travail.",
+      "script": "narrateur|La vitre de la boulangerie est floue.\nnarrateur|Derrière, les pains sont dorés.\nnarrateur|Une odeur de beurre passe dehors.\nnarrateur|Le trottoir est encore mouillé.\nnarrateur|Une petite flaque brille.\npapa|Tu as vu la flaque, Victorino ?\nenfant-m|Oui, papa.\nnarrateur|En ce moment, Victorino tient la main de papa.\nnarrateur|Ils avancent vers la porte.\nnarrateur|La cloche fait ding.\npapa|On est arrivés.\nnarrateur|L'air est chaud, dedans.\nenfant-m|Ça sent bon.\npapa|Oui. Le pain est chaud.\nnarrateur|La dame est derrière le comptoir.\npapa|On dit bonjour ?\nenfant-m|Bonjour.\npapa|Bonjour.\nnarrateur|La dame écoute.\npapa|Tu veux un pain ?\nenfant-m|Oui.\npapa|On dit s'il te plaît.\nenfant-m|Un pain, s'il te plaît.\nnarrateur|La dame prend un pain doré.\nnarrateur|Elle le met dans un sachet.\nnarrateur|Le sachet craque un peu.\nenfant-m|Merci.\npapa|Merci.\npapa|Bravo, Victorino.\npapa|Tu as dit les mots.\nnarrateur|Victorino tient le sachet.\nnarrateur|Le pain est encore chaud.\nenfant-m|Il est chaud, papa.\npapa|Oui. On le sent.\npapa|Tu as dit bonjour.\npapa|Tu as dit s'il te plaît.\npapa|Tu as dit merci.\nenfant-m|Bonjour. S'il te plaît. Merci.\npapa|C'est ça. Bravo.\npapa|Tu as fait du bon travail.",
+      "sons": "cloche,pain,porte",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victorino parle à la dame. Quels mots dit-il ?",
+      "script": "narrateur|Victorino parle à la dame.\nnarrateur|Quels mots dit-il ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Victorino a dit bonjour. Il a dit s'il te plaît. Il a dit merci. Tu as dit les trois mots. Bravo. Bonjour. S'il te plaît. Merci. Oui. C'est ça. Le sachet reste chaud. Victorino le serre. Tu as fini de tenir le pain ? Oui, papa.",
+      "script": "narrateur|Victorino a dit bonjour.\nnarrateur|Il a dit s'il te plaît.\nnarrateur|Il a dit merci.\npapa|Tu as dit les trois mots.\npapa|Bravo.\nenfant-m|Bonjour. S'il te plaît. Merci.\npapa|Oui. C'est ça.\nnarrateur|Le sachet reste chaud.\nnarrateur|Victorino le serre.\npapa|Tu as fini de tenir le pain ?\nenfant-m|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa ouvre la porte. La cloche fait ding, encore. L'air dehors est plus frais. Le pain est à moi. On le porte ensemble. Victorino tient le sachet. Papa tient sa main. Merci, Victorino. Merci, papa. On rentre ? Oui.",
+      "script": "narrateur|Papa ouvre la porte.\nnarrateur|La cloche fait ding, encore.\nnarrateur|L'air dehors est plus frais.\nenfant-m|Le pain est à moi.\npapa|On le porte ensemble.\nnarrateur|Victorino tient le sachet.\nnarrateur|Papa tient sa main.\npapa|Merci, Victorino.\nenfant-m|Merci, papa.\npapa|On rentre ?\nenfant-m|Oui.",
+      "sons": "porte,cloche",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai dit bonjour. S'il te plaît. Merci. Bravo. Tu as fait du bon travail. Le pain est à la maison. L'histoire est finie.",
+      "script": "enfant-m|J'ai dit bonjour.\nenfant-m|S'il te plaît. Merci.\npapa|Bravo. Tu as fait du bon travail.\nnarrateur|Le pain est à la maison.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

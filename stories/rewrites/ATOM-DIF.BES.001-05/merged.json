@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-DIF.BES.001-05",
+  "fil_rouge": "Aniss reste près du mur. Raphaël répète le jeu de cartes. Aniss observe d'abord, puis pioche un oiseau. Le soir, maman range le cartable.",
+  "title": "La carte d'Aniss",
+  "lesson_id": "DIF.BES.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Aniss, Raphaël, maman",
+  "setting": "classe",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les crayons sentent le bois. Une chaise racle un peu. Le soleil allonge une barre sur le plancher. Un carton de cartes attend, tout bas. En ce moment, Aniss est en classe. Il reste près du mur. Il a besoin de calme. Raphaël explique le jeu, tout doux. On pioche. On montre. C'est répéter la règle. Aniss écoute. Il va observer d'abord. Il regarde les cartes. Il ne joue pas encore. Observer d'abord, c'est possible. Raphaël pioche une carte. Il la montre, sans presser. Aniss suit des yeux. Plus tard, Aniss tend la main. Il pioche une carte. C'est un oiseau. Il la montre, tout doux. Le soir, à la maison, maman range le cartable. Tu as observé d'abord, Aniss ? Oui. Puis une carte. Raphaël a su répéter. Tu as pu observer d'abord. Bravo. On pioche. On montre. Oui. Tu as fait du bon travail. Le cartable se ferme, tout doux.",
+      "script": "narrateur|Les crayons sentent le bois.\nnarrateur|Une chaise racle un peu.\nnarrateur|Le soleil allonge une barre sur le plancher.\nnarrateur|Un carton de cartes attend, tout bas.\nnarrateur|En ce moment, Aniss est en classe.\nnarrateur|Il reste près du mur.\nnarrateur|Il a besoin de calme.\nnarrateur|Raphaël explique le jeu, tout doux.\ncopain|On pioche.\ncopain|On montre.\nnarrateur|C'est répéter la règle.\nnarrateur|Aniss écoute.\nnarrateur|Il va observer d'abord.\nnarrateur|Il regarde les cartes.\nnarrateur|Il ne joue pas encore.\nmaitresse|Observer d'abord, c'est possible.\nnarrateur|Raphaël pioche une carte.\nnarrateur|Il la montre, sans presser.\nnarrateur|Aniss suit des yeux.\nnarrateur|Plus tard, Aniss tend la main.\nnarrateur|Il pioche une carte.\nnarrateur|C'est un oiseau.\nnarrateur|Il la montre, tout doux.\nnarrateur|Le soir, à la maison, maman range le cartable.\nmaman|Tu as observé d'abord, Aniss ?\nenfant-m|Oui. Puis une carte.\nmaman|Raphaël a su répéter.\nmaman|Tu as pu observer d'abord.\nmaman|Bravo.\nenfant-m|On pioche. On montre.\nmaman|Oui. Tu as fait du bon travail.\nnarrateur|Le cartable se ferme, tout doux.",
+      "sons": "chaise,cartes",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Aniss a besoin de calme. Que peut-on faire ?",
+      "script": "narrateur|Aniss a besoin de calme.\nnarrateur|Que peut-on faire ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Raphaël a répété. Aniss a observé d'abord. Puis il a joué un peu. On répète. On observe d'abord. Bravo, Aniss. D'abord regarder. Puis la carte. Oui. C'est assez.",
+      "script": "narrateur|Raphaël a répété.\nnarrateur|Aniss a observé d'abord.\nnarrateur|Puis il a joué un peu.\nmaman|On répète. On observe d'abord.\nmaman|Bravo, Aniss.\nenfant-m|D'abord regarder. Puis la carte.\nmaman|Oui. C'est assez.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le cartable. Tu as fini de ranger, Aniss ? Oui, maman. Aniss donne la main. Merci d'avoir observé d'abord. Merci, maman. La barre de soleil n'est plus là. La maison est calme.",
+      "script": "narrateur|Maman range le cartable.\nmaman|Tu as fini de ranger, Aniss ?\nenfant-m|Oui, maman.\nnarrateur|Aniss donne la main.\nmaman|Merci d'avoir observé d'abord.\nenfant-m|Merci, maman.\nnarrateur|La barre de soleil n'est plus là.\nnarrateur|La maison est calme.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai observé d'abord. Raphaël a répété. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-m|J'ai observé d'abord.\nenfant-m|Raphaël a répété.\nmaman|Bravo. Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "DIF.BES.002"
+}
