@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-07",
+  "fil_rouge": "",
+  "title": "Ulric dit les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ulric, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ulric est à la cuisine. Papa accroche un calendrier. Il y a sept jours dans l'ordre. Lundi. Mardi. Mercredi. Jeudi. Vendredi. Samedi. Dimanche. Ulric pose le doigt. Il répète un jour : vendredi. Papa recommence. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Sept jours dans l'ordre.",
+      "script": "narrateur|Ulric est à la cuisine. Papa accroche un calendrier.\npapa|Il y a sept jours dans l'ordre. Lundi. Mardi. Mercredi. Jeudi. Vendredi. Samedi. Dimanche.\nnarrateur|Ulric pose le doigt. Il répète un jour : vendredi. Papa recommence.\nenfant-m|Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Sept jours dans l'ordre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ulric touche le calendrier. Que dit-il ?",
+      "script": "narrateur|Ulric touche le calendrier. Que dit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ulric a dit les sept jours dans l'ordre.",
+      "script": "narrateur|Ulric a dit les sept jours dans l'ordre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le crayon. Ulric sourit.",
+      "script": "narrateur|Papa range le crayon. Ulric sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

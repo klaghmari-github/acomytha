@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-06",
+  "fil_rouge": "Chouchou veut la grande flaque de la cour. Lundi, les chaussettes rouges sèchent, encore mouillées. Mardi, une chaussette reste humide. Elle attend un peu. Puis la flaque.",
+  "title": "La flaque de mardi",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "entrée le lundi, cour le mardi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les chaussettes rouges dansent sur la corde. Une goutte tombe du talon. Elle fait un rond sur le carrelage. Le radiateur tic tout doux. Tu as vu la goutte, Chouchou ? Elle tombe encore. C'est lundi. Lundi, les chaussettes sèchent. En ce moment, Chouchou touche une chaussette. Elle est froide, encore lourde d'eau. Je veux la flaque. La grande, dans la cour. Tes chaussettes sont mouillées. Demain, c'est mardi. Mardi, elles seront sèches. On y va maintenant ? Les pieds seraient froids. Chouchou appuie le nez à la vitre. La flaque de la cour brille, ronde. La pluie a cessé. Elle m'attend. Elle attend mardi aussi. La semaine a sept jours. Quel jour vient après lundi ? Mardi. Oui. Une autre goutte tombe. Le rond sur le carrelage s'agrandit. Je peux les aider à sécher ? On les rapproche du radiateur. Chouchou tend la corde un peu. Les chaussettes rouges dansent plus près. Merci, Chouchou. Le tic du radiateur continue. La corde tremble encore un peu. Demain, je saute. Mardi, oui.",
+      "script": "narrateur|Les chaussettes rouges dansent sur la corde.\nnarrateur|Une goutte tombe du talon.\nnarrateur|Elle fait un rond sur le carrelage.\nnarrateur|Le radiateur tic tout doux.\nmaman|Tu as vu la goutte, Chouchou ?\nenfant-f|Elle tombe encore.\nmaman|C'est lundi.\nmaman|Lundi, les chaussettes sèchent.\nnarrateur|En ce moment, Chouchou touche une chaussette.\nnarrateur|Elle est froide, encore lourde d'eau.\nenfant-f|Je veux la flaque.\nenfant-f|La grande, dans la cour.\nmaman|Tes chaussettes sont mouillées.\nmaman|Demain, c'est mardi.\nmaman|Mardi, elles seront sèches.\nenfant-f|On y va maintenant ?\nmaman|Les pieds seraient froids.\nnarrateur|Chouchou appuie le nez à la vitre.\nnarrateur|La flaque de la cour brille, ronde.\nnarrateur|La pluie a cessé.\nenfant-f|Elle m'attend.\nmaman|Elle attend mardi aussi.\nmaman|La semaine a sept jours.\nmaman|Quel jour vient après lundi ?\nenfant-f|Mardi.\nmaman|Oui.\nnarrateur|Une autre goutte tombe.\nnarrateur|Le rond sur le carrelage s'agrandit.\nenfant-f|Je peux les aider à sécher ?\nmaman|On les rapproche du radiateur.\nnarrateur|Chouchou tend la corde un peu.\nnarrateur|Les chaussettes rouges dansent plus près.\nmaman|Merci, Chouchou.\nnarrateur|Le tic du radiateur continue.\nnarrateur|La corde tremble encore un peu.\nenfant-f|Demain, je saute.\nmaman|Mardi, oui.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les chaussettes rouges dansent sur la corde. Une goutte tombe du talon. Elle fait un rond sur le carrelage. Le radiateur tic tout doux. Tu as vu la goutte, Chouchou ? Elle tombe encore. C'est lundi. Lundi, les chaussettes sèchent. En ce moment, Chouchou touche une chaussette. Elle est froide, encore lourde d'eau. Je veux la flaque. La grande, dans la cour. Tes chaussettes sont mouillées. Demain, c'est mardi. Mardi, elles seront sèches. On y va maintenant ? Les pieds seraient froids. Chouchou appuie le nez à la vitre. La flaque de la cour brille, ronde. La pluie a cessé. Elle m'attend. Elle attend mardi aussi. La semaine a sept jours. Quel jour vient après lundi ? Mardi. Oui. Une autre goutte tombe. Le rond sur le carrelage s'agrandit. Je peux les aider à sécher ? On les rapproche du radiateur. Chouchou tend la corde un peu. Les chaussettes rouges dansent plus près. Merci, Chouchou. Le tic du radiateur continue. La corde tremble encore un peu. Demain, je saute. Mardi, oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après lundi, quel jour vient ?",
+      "script": "narrateur|Après lundi, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après lundi, quel jour vient ?",
+      "expected_answer": "mardi",
+      "accepted_examples": "mardi | le mardi | c'est mardi",
+      "retry_prompt": "Lundi, les chaussettes sèchent. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lendemain, le carrelage est sec. Une chaussette est légère. L'autre reste un peu froide. C'est mardi, Chouchou. Celle-là est encore humide. On la pose un moment ici. Chouchou pose la chaussette sur le radiateur. Le tissu fume un tout petit peu. Elle sèche. Puis les bottes. Les bottes jaunes attendent sous le banc. Chouchou enfile la sèche d'abord. Puis l'autre, enfin tiède. Je suis prête. La flaque est encore là. Tu as attendu mardi. La poignée de la porte est froide.",
+      "script": "narrateur|Le lendemain, le carrelage est sec.\nnarrateur|Une chaussette est légère.\nnarrateur|L'autre reste un peu froide.\nmaman|C'est mardi, Chouchou.\nenfant-f|Celle-là est encore humide.\nmaman|On la pose un moment ici.\nnarrateur|Chouchou pose la chaussette sur le radiateur.\nnarrateur|Le tissu fume un tout petit peu.\nenfant-f|Elle sèche.\nmaman|Puis les bottes.\nnarrateur|Les bottes jaunes attendent sous le banc.\nnarrateur|Chouchou enfile la sèche d'abord.\nnarrateur|Puis l'autre, enfin tiède.\nenfant-f|Je suis prête.\nmaman|La flaque est encore là.\nmaman|Tu as attendu mardi.\nnarrateur|La poignée de la porte est froide.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lendemain, le carrelage est sec. Une chaussette est légère. L'autre reste un peu froide. C'est mardi, Chouchou. Celle-là est encore humide. On la pose un moment ici. Chouchou pose la chaussette sur le radiateur. Le tissu fume un tout petit peu. Elle sèche. Puis les bottes. Les bottes jaunes attendent sous le banc. Chouchou enfile la sèche d'abord. Puis l'autre, enfin tiède. Je suis prête. La flaque est encore là. Tu as attendu mardi. La poignée de la porte est froide."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La cour brille encore. La flaque est ronde, un peu brune. Lundi, les chaussettes. Mardi, la flaque. J'y vais. Chouchou pose un pied. L'eau fait plouf, tout doux. Elle est froide ! Les bottes tiennent. Elle pose l'autre pied. Deux ronds s'ouvrent dans l'eau. Je suis au milieu. Oui. Tes chaussettes sont sèches, dedans. Une feuille tourne à la surface. Chouchou la pousse du bout de la botte. Encore un plouf. Encore un, tout doux. Les bottes jaunes ont des gouttes. La cour sent la terre mouillée.",
+      "script": "narrateur|La cour brille encore.\nnarrateur|La flaque est ronde, un peu brune.\nmaman|Lundi, les chaussettes.\nmaman|Mardi, la flaque.\nenfant-f|J'y vais.\nnarrateur|Chouchou pose un pied.\nnarrateur|L'eau fait plouf, tout doux.\nenfant-f|Elle est froide !\nmaman|Les bottes tiennent.\nnarrateur|Elle pose l'autre pied.\nnarrateur|Deux ronds s'ouvrent dans l'eau.\nenfant-f|Je suis au milieu.\nmaman|Oui.\nmaman|Tes chaussettes sont sèches, dedans.\nnarrateur|Une feuille tourne à la surface.\nnarrateur|Chouchou la pousse du bout de la botte.\nenfant-f|Encore un plouf.\nmaman|Encore un, tout doux.\nnarrateur|Les bottes jaunes ont des gouttes.\nnarrateur|La cour sent la terre mouillée.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La cour brille encore. La flaque est ronde, un peu brune. Lundi, les chaussettes. Mardi, la flaque. J'y vais. Chouchou pose un pied. L'eau fait plouf, tout doux. Elle est froide ! Les bottes tiennent. Elle pose l'autre pied. Deux ronds s'ouvrent dans l'eau. Je suis au milieu. Oui. Tes chaussettes sont sèches, dedans. Une feuille tourne à la surface. Chouchou la pousse du bout de la botte. Encore un plouf. Encore un, tout doux. Les bottes jaunes ont des gouttes. La cour sent la terre mouillée."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Les bottes jaunes sèchent près de la porte. J'ai eu ma flaque. Oui. Lundi la corde, mardi l'eau. Les chaussettes rouges pendent, enfin légères.",
+      "script": "narrateur|Les bottes jaunes sèchent près de la porte.\nenfant-f|J'ai eu ma flaque.\nmaman|Oui.\nmaman|Lundi la corde, mardi l'eau.\nnarrateur|Les chaussettes rouges pendent, enfin légères.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Les bottes jaunes sèchent près de la porte. J'ai eu ma flaque. Oui. Lundi la corde, mardi l'eau. Les chaussettes rouges pendent, enfin légères."
+    }
+  ]
+}

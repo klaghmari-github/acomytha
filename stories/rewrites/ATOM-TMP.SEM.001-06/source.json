@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-06",
+  "fil_rouge": "",
+  "title": "François dit les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "François, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "François s'assoit sur le tapis du salon. Maman a une chaîne de sept perles. Chaque perle est un jour. Il y a sept jours. François touche une perle. C'est lisse. Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au marché. Dimanche, on mange des crêpes. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. François répète les sept jours dans l'ordre. Parce qu'il les dit dans l'ordre, il se souvient. Maman avance une perle. Après lundi, c'est mardi. Maman sourit. Ils recommencent une fois. Sept jours. Toujours dans l'ordre. François pose la perle sur mercredi. Encore. François dit toute la liste. Lundi commence. Dimanche termine.",
+      "script": "narrateur|François s'assoit sur le tapis du salon. Maman a une chaîne de sept perles. Chaque perle est un jour.\nmaman|Il y a sept jours.\nnarrateur|François touche une perle. C'est lisse.\nmaman|Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au marché. Dimanche, on mange des crêpes.\nmaman|Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.\nnarrateur|François répète les sept jours dans l'ordre. Parce qu'il les dit dans l'ordre, il se souvient. Maman avance une perle.\nenfant-m|Après lundi, c'est mardi. Maman sourit. Ils recommencent une fois. Sept jours. Toujours dans l'ordre.\nnarrateur|François pose la perle sur mercredi.\nmaman|Encore.\nnarrateur|François dit toute la liste. Lundi commence. Dimanche termine.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après lundi, quel jour vient ?",
+      "script": "narrateur|Après lundi, quel jour vient ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "François a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine.",
+      "script": "narrateur|François a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "François pose la perle sur lundi. Maman range la chaîne.",
+      "script": "narrateur|François pose la perle sur lundi. Maman range la chaîne.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
