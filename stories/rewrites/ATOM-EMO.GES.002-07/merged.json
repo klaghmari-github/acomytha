@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-EMO.GES.002-07",
+  "fil_rouge": "Amir veut empiler des cubes rouges. La tour tombe. Il souffle, fait une pause, puis pose un cube.",
+  "title": "Le cube rouge d'Amir",
+  "lesson_id": "EMO.GES.002",
+  "secondary_lessons": "EMO.LEX.007",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, papa, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soleil chauffe le plancher. Le bois est tiède sous les pieds. Un cube rouge brille près du lit. On entend les pas de papa. Papa monte l'escalier. Je pose un linge, Amir. Me voilà. La chambre est claire. Le cube est rouge, papa. Oui. Il brille au soleil. Les autres cubes sont dans la boîte. En ce moment, Amir joue. Il empile des cubes. Les cubes sont rouges. Amir veut une tour. Une tour, papa. Tu poses un cube, tout doux ? Amir pose un cube. Puis un autre. La tour tombe. Amir sent son ventre serré. C'est trop. Je suis fâché. La tour est tombée. Tu es fâché. On souffle. On fait une pause. Amir souffle. Un grand souffle. Amir s'assoit. Il pose les mains sur ses genoux. Il souffle encore. Il fait une pause. La pause est calme. Son ventre se desserre. Je souffle. Je fais une pause. Tu as soufflé. Tu as fait une pause. Bravo, Amir. C'est calme. Tu veux reprendre un cube ? Oui. Un cube rouge. Amir reprend un cube. Il souffle. Il fait une pause. Puis il pose un cube. La tour est petite. Elle tient.",
+      "script": "narrateur|Le soleil chauffe le plancher.\nnarrateur|Le bois est tiède sous les pieds.\nnarrateur|Un cube rouge brille près du lit.\nnarrateur|On entend les pas de papa.\nnarrateur|Papa monte l'escalier.\nmaman|Je pose un linge, Amir.\npapa|Me voilà. La chambre est claire.\nenfant-m|Le cube est rouge, papa.\npapa|Oui. Il brille au soleil.\nmaman|Les autres cubes sont dans la boîte.\nnarrateur|En ce moment, Amir joue.\nnarrateur|Il empile des cubes.\nnarrateur|Les cubes sont rouges.\nnarrateur|Amir veut une tour.\nenfant-m|Une tour, papa.\npapa|Tu poses un cube, tout doux ?\nnarrateur|Amir pose un cube.\nnarrateur|Puis un autre.\nnarrateur|La tour tombe.\nnarrateur|Amir sent son ventre serré.\nenfant-m|C'est trop. Je suis fâché.\npapa|La tour est tombée. Tu es fâché.\npapa|On souffle.\nmaman|On fait une pause.\nnarrateur|Amir souffle.\nnarrateur|Un grand souffle.\nnarrateur|Amir s'assoit.\nnarrateur|Il pose les mains sur ses genoux.\nnarrateur|Il souffle encore.\nnarrateur|Il fait une pause.\nnarrateur|La pause est calme.\nnarrateur|Son ventre se desserre.\nenfant-m|Je souffle. Je fais une pause.\npapa|Tu as soufflé. Tu as fait une pause.\nmaman|Bravo, Amir. C'est calme.\npapa|Tu veux reprendre un cube ?\nenfant-m|Oui. Un cube rouge.\nnarrateur|Amir reprend un cube.\nnarrateur|Il souffle.\nnarrateur|Il fait une pause.\nnarrateur|Puis il pose un cube.\nmaman|La tour est petite. Elle tient.",
+      "sons": "pas_escalier,cubes",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tour tombe. Que fait Amir ?",
+      "script": "narrateur|La tour tombe.\nnarrateur|Que fait Amir ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amir a soufflé. Il a fait une pause. Papa était là. Maman aussi. Un cube glisse encore. Je souffle. Je fais une pause. Oui. On souffle. On fait une pause. Tu t'assois. Tu souffles. Amir s'assoit. Il souffle. Il fait une pause. Bravo. Tu as repris. La tour est petite.",
+      "script": "narrateur|Amir a soufflé.\nnarrateur|Il a fait une pause.\nnarrateur|Papa était là. Maman aussi.\nnarrateur|Un cube glisse encore.\nenfant-m|Je souffle. Je fais une pause.\npapa|Oui. On souffle. On fait une pause.\nmaman|Tu t'assois. Tu souffles.\nnarrateur|Amir s'assoit.\nnarrateur|Il souffle.\nnarrateur|Il fait une pause.\npapa|Bravo. Tu as repris.\nenfant-m|La tour est petite.",
+      "sons": "cubes",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Amir pose un cube. Le soleil touche encore le plancher. Elle tient, papa. Oui. Tu as fini de poser tes cubes ? Oui. Tu as soufflé. C'est du bon travail. On range la boîte ensemble ? La boîte. Puis le linge. Le cube rouge brille encore. La chambre est calme.",
+      "script": "narrateur|Amir pose un cube.\nnarrateur|Le soleil touche encore le plancher.\nenfant-m|Elle tient, papa.\npapa|Oui. Tu as fini de poser tes cubes ?\nenfant-m|Oui.\nmaman|Tu as soufflé. C'est du bon travail.\npapa|On range la boîte ensemble ?\nenfant-m|La boîte. Puis le linge.\nnarrateur|Le cube rouge brille encore.\nnarrateur|La chambre est calme.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai soufflé. J'ai fait une pause. Bravo, Amir. Ta tour est petite. Elle tient. L'histoire est finie.",
+      "script": "enfant-m|J'ai soufflé. J'ai fait une pause.\npapa|Bravo, Amir.\nmaman|Ta tour est petite. Elle tient.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

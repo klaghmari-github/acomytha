@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.001-04",
+  "fil_rouge": "Le soleil chauffe le carrelage. Amir sent le gâteau. Il dit sa joie. Il partage deux petits bouts.",
+  "title": "Amir et le gâteau encore chaud",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, papa, maman",
+  "setting": "cuisine, matin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soleil pose des carrés chauds. Les carrés sont sur le carrelage. La cuisine sent le beurre. Un gâteau refroidit près de la fenêtre. Il est encore un peu chaud. Papa essuie la table. Maman range le saladier. Amir, tu sens le gâteau ? Oui, maman. C'est bon. Viens. On le regarde. En ce moment, Amir avance. Ses pieds touchent un carré de soleil. Le carrelage est chaud. Le gâteau est jaune et rond. Amir se penche tout près. Ça sent le citron. Tu veux une petite assiette ? Oui. Maman coupe deux petits bouts. Parce que le gâteau est là, les joues d'Amir sont chaudes. Son ventre est léger. Un sourire arrive. Je suis content. C'est de la joie. Bravo, Amir. Tu as dit ta joie. On peut partager ? Oui. On partage. Amir prend un bout. Papa prend un bout. Ils goûtent ensemble. C'est doux. C'est un peu citron. Maman, un bout ? Merci, Amir. Tu m'invites. Je suis content. Tu as de la joie ? Oui, papa. Le soleil reste sur le sol. Le gâteau sent encore bon.",
+      "script": "narrateur|Le soleil pose des carrés chauds.\nnarrateur|Les carrés sont sur le carrelage.\nnarrateur|La cuisine sent le beurre.\nnarrateur|Un gâteau refroidit près de la fenêtre.\nnarrateur|Il est encore un peu chaud.\nnarrateur|Papa essuie la table.\nnarrateur|Maman range le saladier.\nmaman|Amir, tu sens le gâteau ?\nenfant-m|Oui, maman. C'est bon.\npapa|Viens. On le regarde.\nnarrateur|En ce moment, Amir avance.\nnarrateur|Ses pieds touchent un carré de soleil.\nnarrateur|Le carrelage est chaud.\nnarrateur|Le gâteau est jaune et rond.\nnarrateur|Amir se penche tout près.\nnarrateur|Ça sent le citron.\nmaman|Tu veux une petite assiette ?\nenfant-m|Oui.\nnarrateur|Maman coupe deux petits bouts.\nnarrateur|Parce que le gâteau est là, les joues d'Amir sont chaudes.\nnarrateur|Son ventre est léger.\nnarrateur|Un sourire arrive.\nenfant-m|Je suis content.\nmaman|C'est de la joie.\npapa|Bravo, Amir.\npapa|Tu as dit ta joie.\nenfant-m|On peut partager ?\npapa|Oui. On partage.\nnarrateur|Amir prend un bout.\nnarrateur|Papa prend un bout.\nnarrateur|Ils goûtent ensemble.\nnarrateur|C'est doux. C'est un peu citron.\nenfant-m|Maman, un bout ?\nmaman|Merci, Amir.\nmaman|Tu m'invites.\nenfant-m|Je suis content.\npapa|Tu as de la joie ?\nenfant-m|Oui, papa.\nnarrateur|Le soleil reste sur le sol.\nnarrateur|Le gâteau sent encore bon.",
+      "sons": "four",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir sourit. Que dit-il ?",
+      "script": "narrateur|Amir sourit. Que dit-il ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amir mâche son petit bout. C'est de la joie. Oui. Tu es content. Tu as partagé. Bravo. C'est du bon travail. Tu as fini ton bout ? Oui. Amir essuie ses doigts. L'assiette est presque vide.",
+      "script": "narrateur|Amir mâche son petit bout.\nenfant-m|C'est de la joie.\nmaman|Oui. Tu es content.\nmaman|Tu as partagé.\npapa|Bravo. C'est du bon travail.\npapa|Tu as fini ton bout ?\nenfant-m|Oui.\nnarrateur|Amir essuie ses doigts.\nnarrateur|L'assiette est presque vide.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Amir pose l'assiette. La cuisine est calme. On reste un peu ? Oui, maman. Tu as bien invité. Je suis content. La joie est là. Le soleil touche encore le gâteau. Ils restent près de la table.",
+      "script": "narrateur|Amir pose l'assiette.\nnarrateur|La cuisine est calme.\nmaman|On reste un peu ?\nenfant-m|Oui, maman.\npapa|Tu as bien invité.\nenfant-m|Je suis content.\nmaman|La joie est là.\nnarrateur|Le soleil touche encore le gâteau.\nnarrateur|Ils restent près de la table.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai dit : je suis content. On a partagé. Bravo, Amir. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-m|J'ai dit : je suis content.\nenfant-m|On a partagé.\npapa|Bravo, Amir.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
