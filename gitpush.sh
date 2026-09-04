@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Add tout, commit, push la branche courante vers GitLab et GitHub.
+# Add tout, commit, push main vers GitLab et GitHub.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"

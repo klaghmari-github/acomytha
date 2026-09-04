@@ -1,8 +1,8 @@
-tu crée une branche pour chaque feature et tu développe la feature.
+on travaille uniquement sur `main`. pas de branche par feature.
 si la feature est complexe tu la décompose en plusieurs stories (sous features).
-tu fais plusieurs commits en fonction des stories dans la même branche de la feature.
+tu fais plusieurs commits sur `main` : un par story. le message commence par la feature (`feat(F-XXX): …`, `fix(F-XXX): …`).
 traites les features selon l'ordre de priorité et la nécessité technique (voir backlog/Features.md).
-graphe git linéaire : rebase, fast-forward main, pas de merge commit.
+graphe git linéaire : commits sur `main`, pas de merge commit.
 il y a des features qui concerne la creation des bases de données d'histoires et d'autres qui concernent l'interface graphique.
 d'abord génére les histoires (fait : corpus APPROVED_TEXT, mergé main 837d436).
 ensuite : application web F-APP-001 (STRAT-005) = SQLite, comptes, 1 appareil, 3 UI, chiffrement, lecteur.

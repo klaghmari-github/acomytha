@@ -1,9 +1,9 @@
 # AcoMytha — backlog features
 
-**Version :** 3.8 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
-**Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
+**Version :** 3.9 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
-**Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
+**Web :** `STRAT-005`. Statut : **développé** = sur `main`.
 
 Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** juste après · **P3** v2 (ne pas démarrer).
 
@@ -51,7 +51,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 
 ## Application web (v3.1 — après les textes)
 
-Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail : **STRAT-005**.
+Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-005**.
 
 | ID | Epic | Titre | Prio | Phase | Strat | Dépendances |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -293,7 +293,7 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 5. `F-LOC-002` paquets.  
 6. Compte / profil / forêt parentale (`F-ACC`, `F-PRF`, `F-TAX-003`, `F-FOR-001`).
 
-Graphe git : une branche par feature, rebase, fast-forward `main` (consigne 3 sept. 2026). `F-ACC-002` reporté au profit de `F-SEC-003`.
+Graphe git : uniquement `main`. Le message de commit porte l’ID de feature. `F-ACC-002` reporté au profit de `F-SEC-003`.
 
 ---
 
