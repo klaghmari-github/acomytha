@@ -47,12 +47,10 @@ export class HomeApp extends Component {
           </section>
           <section class="c-score" aria-label="AcoMytha">
             <article class="c-move">
-              <span class="c-move__idx">01</span>
               <h2>AcoMytha, c’est quoi ?</h2>
               <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
             </article>
             <article class="c-move c-move--modes">
-              <span class="c-move__idx">02</span>
               <h2>AcoMytha, deux modes</h2>
               <div class="c-modes">
                 <div class="c-mode c-mode--day">
@@ -66,7 +64,6 @@ export class HomeApp extends Component {
               </div>
             </article>
             <article class="c-move c-move--count">
-              <span class="c-move__idx">03</span>
               <h2>AcoMytha en chiffres</h2>
               <div class="c-count">
                 <div><b>1000+</b><span>histoires</span></div>
