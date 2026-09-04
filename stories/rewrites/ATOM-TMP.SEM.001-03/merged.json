@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-03",
+  "fil_rouge": "Nino veut une crêpe sucrée. Dimanche, la première se déchire. Il en réussit une autre. Lundi, il glisse un morceau dans le cartable. La sangle est tordue. Il la remet.",
+  "title": "Les crêpes de dimanche",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nino, maman",
+  "setting": "cuisine le dimanche, puis entrée le lundi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La poêle chante un petit bruit de beurre. Une fumée douce monte vers la fenêtre. La table a une nappe à carreaux. Un bol de pâte tremble un peu. Tu as senti le beurre, Nino ? Il sent le gâteau. C'est dimanche. Dimanche, on fait des crêpes. En ce moment, Nino tient la spatule. La spatule est trop grande pour sa main. Je veux une crêpe sucrée. On la tourne ensemble ? Oui. La pâte s'étale, trop vite. Un trou s'ouvre au milieu. Elle se déchire. La première se déchire souvent. On recommence. Nino souffle sur la poêle. La deuxième crêpe reste ronde. Elle dore, tout doux. Celle-là, elle tient. Bravo. Tu as attendu le bon moment. Maman plie la crêpe en deux. Le sucre tombe comme une neige. Elle est à moi. Oui. Nino mord un coin. Le sucre pique un peu, puis fond. J'en garde une pour demain ? Demain, c'est lundi. Lundi, c'est le cartable. La semaine a sept jours. Quel jour vient après dimanche ? Lundi. Oui. Une crêpe refroidit dans une serviette. La poêle se tait.",
+      "script": "narrateur|La poêle chante un petit bruit de beurre.\nnarrateur|Une fumée douce monte vers la fenêtre.\nnarrateur|La table a une nappe à carreaux.\nnarrateur|Un bol de pâte tremble un peu.\nmaman|Tu as senti le beurre, Nino ?\nenfant-m|Il sent le gâteau.\nmaman|C'est dimanche.\nmaman|Dimanche, on fait des crêpes.\nnarrateur|En ce moment, Nino tient la spatule.\nnarrateur|La spatule est trop grande pour sa main.\nenfant-m|Je veux une crêpe sucrée.\nmaman|On la tourne ensemble ?\nenfant-m|Oui.\nnarrateur|La pâte s'étale, trop vite.\nnarrateur|Un trou s'ouvre au milieu.\nenfant-m|Elle se déchire.\nmaman|La première se déchire souvent.\nmaman|On recommence.\nnarrateur|Nino souffle sur la poêle.\nnarrateur|La deuxième crêpe reste ronde.\nnarrateur|Elle dore, tout doux.\nenfant-m|Celle-là, elle tient.\nmaman|Bravo.\nmaman|Tu as attendu le bon moment.\nnarrateur|Maman plie la crêpe en deux.\nnarrateur|Le sucre tombe comme une neige.\nenfant-m|Elle est à moi.\nmaman|Oui.\nnarrateur|Nino mord un coin.\nnarrateur|Le sucre pique un peu, puis fond.\nenfant-m|J'en garde une pour demain ?\nmaman|Demain, c'est lundi.\nmaman|Lundi, c'est le cartable.\nmaman|La semaine a sept jours.\nmaman|Quel jour vient après dimanche ?\nenfant-m|Lundi.\nmaman|Oui.\nnarrateur|Une crêpe refroidit dans une serviette.\nnarrateur|La poêle se tait.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La poêle chante un petit bruit de beurre. Une fumée douce monte vers la fenêtre. La table a une nappe à carreaux. Un bol de pâte tremble un peu. Tu as senti le beurre, Nino ? Il sent le gâteau. C'est dimanche. Dimanche, on fait des crêpes. En ce moment, Nino tient la spatule. La spatule est trop grande pour sa main. Je veux une crêpe sucrée. On la tourne ensemble ? Oui. La pâte s'étale, trop vite. Un trou s'ouvre au milieu. Elle se déchire. La première se déchire souvent. On recommence. Nino souffle sur la poêle. La deuxième crêpe reste ronde. Elle dore, tout doux. Celle-là, elle tient. Bravo. Tu as attendu le bon moment. Maman plie la crêpe en deux. Le sucre tombe comme une neige. Elle est à moi. Oui. Nino mord un coin. Le sucre pique un peu, puis fond. J'en garde une pour demain ? Demain, c'est lundi. Lundi, c'est le cartable. La semaine a sept jours. Quel jour vient après dimanche ? Lundi. Oui. Une crêpe refroidit dans une serviette. La poêle se tait."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après dimanche, quel jour vient ?",
+      "script": "narrateur|Après dimanche, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après dimanche, quel jour vient ?",
+      "expected_answer": "lundi",
+      "accepted_examples": "lundi | le lundi | c'est lundi",
+      "retry_prompt": "Dimanche, les crêpes. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lendemain, l'entrée sent encore le beurre. Le cartable bleu attend près des chaussures. C'est lundi, Nino. Le jour du cartable. Ma crêpe ? La serviette est sur la table. Nino glisse le morceau dans une boîte. Il pose la boîte dans le cartable. Elle vient avec moi. Oui. La sangle du cartable est tordue. Elle refuse de passer. Elle est de travers. Tu peux la remettre. Nino tourne la sangle tout doux. Elle se cale sur l'épaule. Merci, Nino. Tu as préparé ton lundi. La boîte fait un petit bruit de carton.",
+      "script": "narrateur|Le lendemain, l'entrée sent encore le beurre.\nnarrateur|Le cartable bleu attend près des chaussures.\nmaman|C'est lundi, Nino.\nmaman|Le jour du cartable.\nenfant-m|Ma crêpe ?\nnarrateur|La serviette est sur la table.\nnarrateur|Nino glisse le morceau dans une boîte.\nnarrateur|Il pose la boîte dans le cartable.\nenfant-m|Elle vient avec moi.\nmaman|Oui.\nnarrateur|La sangle du cartable est tordue.\nnarrateur|Elle refuse de passer.\nenfant-m|Elle est de travers.\nmaman|Tu peux la remettre.\nnarrateur|Nino tourne la sangle tout doux.\nnarrateur|Elle se cale sur l'épaule.\nmaman|Merci, Nino.\nmaman|Tu as préparé ton lundi.\nnarrateur|La boîte fait un petit bruit de carton.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lendemain, l'entrée sent encore le beurre. Le cartable bleu attend près des chaussures. C'est lundi, Nino. Le jour du cartable. Ma crêpe ? La serviette est sur la table. Nino glisse le morceau dans une boîte. Il pose la boîte dans le cartable. Elle vient avec moi. Oui. La sangle du cartable est tordue. Elle refuse de passer. Elle est de travers. Tu peux la remettre. Nino tourne la sangle tout doux. Elle se cale sur l'épaule. Merci, Nino. Tu as préparé ton lundi. La boîte fait un petit bruit de carton."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils ouvrent la porte. L'air frais entre. Dimanche, les crêpes. Lundi, le cartable. Et ma crêpe dedans. Oui. Nino touche la boîte à travers le tissu. Elle est un peu chaude encore. Elle sent le sucre. Tu la mangeras à l'école. Les chaussures tapent le palier. Un oiseau crie dehors. On y va ? Oui, maman. La poêle, derrière, est déjà froide. La nappe a une miette de sucre. J'ai réussi la ronde. Oui. La première s'était déchirée.",
+      "script": "narrateur|Ils ouvrent la porte.\nnarrateur|L'air frais entre.\nmaman|Dimanche, les crêpes.\nmaman|Lundi, le cartable.\nenfant-m|Et ma crêpe dedans.\nmaman|Oui.\nnarrateur|Nino touche la boîte à travers le tissu.\nnarrateur|Elle est un peu chaude encore.\nenfant-m|Elle sent le sucre.\nmaman|Tu la mangeras à l'école.\nnarrateur|Les chaussures tapent le palier.\nnarrateur|Un oiseau crie dehors.\nmaman|On y va ?\nenfant-m|Oui, maman.\nnarrateur|La poêle, derrière, est déjà froide.\nnarrateur|La nappe a une miette de sucre.\nenfant-m|J'ai réussi la ronde.\nmaman|Oui.\nmaman|La première s'était déchirée.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils ouvrent la porte. L'air frais entre. Dimanche, les crêpes. Lundi, le cartable. Et ma crêpe dedans. Oui. Nino touche la boîte à travers le tissu. Elle est un peu chaude encore. Elle sent le sucre. Tu la mangeras à l'école. Les chaussures tapent le palier. Un oiseau crie dehors. On y va ? Oui, maman. La poêle, derrière, est déjà froide. La nappe a une miette de sucre. J'ai réussi la ronde. Oui. La première s'était déchirée."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le cartable bleu tape la hanche de Nino. Ma crêpe voyage. Oui. Dimanche la poêle, lundi le cartable. Une miette de sucre brille encore sur la nappe.",
+      "script": "narrateur|Le cartable bleu tape la hanche de Nino.\nenfant-m|Ma crêpe voyage.\nmaman|Oui.\nmaman|Dimanche la poêle, lundi le cartable.\nnarrateur|Une miette de sucre brille encore sur la nappe.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le cartable bleu tape la hanche de Nino. Ma crêpe voyage. Oui. Dimanche la poêle, lundi le cartable. Une miette de sucre brille encore sur la nappe."
+    }
+  ]
+}

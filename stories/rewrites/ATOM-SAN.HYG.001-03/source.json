@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.001-03",
+  "fil_rouge": "",
+  "title": "Mehdi se lave les mains, deux lieux",
+  "lesson_id": "SAN.HYG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Mehdi, papa",
+  "setting": "maison puis pique-nique au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Mehdi est à la maison avec papa. Il va aux toilettes. Après les toilettes, il va au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte les mains. Il rince. Il essuie. Plus tard, c'est l'heure de manger. Avant de manger, Mehdi retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il rince. Il essuie. Merci. L'après-midi, ils font un pique-nique au parc. Mehdi va aux toilettes du parc. Après les toilettes, papa l'emmène au point d'eau. Mehdi ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie. Puis ils sortent le panier. Avant de manger, Mehdi lave encore. Eau et savon. Comme à la maison. Même leçon, autre lieu.",
+      "script": "narrateur|Mehdi est à la maison avec papa. Il va aux toilettes. Après les toilettes, il va au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte les mains. Il rince. Il essuie. Plus tard, c'est l'heure de manger. Avant de manger, Mehdi retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il rince. Il essuie.\npapa|Merci. L'après-midi, ils font un pique-nique au parc.\nnarrateur|Mehdi va aux toilettes du parc. Après les toilettes, papa l'emmène au point d'eau. Mehdi ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie. Puis ils sortent le panier. Avant de manger, Mehdi lave encore. Eau et savon.\npapa|Comme à la maison. Même leçon, autre lieu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mehdi se lave les mains. Avec quoi ?",
+      "script": "narrateur|Mehdi se lave les mains. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Après les toilettes, Mehdi a lavé. Avant de manger, Mehdi a lavé. À la maison, puis au parc.",
+      "script": "narrateur|Après les toilettes, Mehdi a lavé. Avant de manger, Mehdi a lavé. À la maison, puis au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mehdi mange une pomme. Les mains sont propres.",
+      "script": "narrateur|Mehdi mange une pomme. Les mains sont propres.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

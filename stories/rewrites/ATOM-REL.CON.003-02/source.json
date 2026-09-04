@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.003-02",
+  "fil_rouge": "",
+  "title": "Jeanne dit pardon deux fois",
+  "lesson_id": "REL.CON.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Jeanne, Noé, papa, maman",
+  "setting": "salon puis chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jeanne joue dans le salon. Papa plie le linge. Noé a posé un puzzle. Les pièces sont lisses. Jeanne passe trop près. Le puzzle glisse. Les pièces roulent. Noé a les yeux mouillés. Il est triste. Maman s'approche. Tu peux dire pardon. Pardon, Noé. Tu peux proposer un geste. Jeanne ramasse une pièce. Elle la tend. C'est un geste simple. Noé prend la pièce. Il reste un peu triste. La peine reste un peu. Le pardon n'efface pas tout de suite. Plus tard, dans la chambre, Jeanne apporte un verre. Une goutte tombe sur le dessin de Noé. Noé fronce les sourcils. Jeanne dit encore : pardon. Elle propose un geste. Elle apporte une feuille sèche. Noé souffle. La peine reste un peu. Au salon, puis dans la chambre, c'est pareil. On dit pardon. On propose un geste. La peine reste un peu.",
+      "script": "narrateur|Jeanne joue dans le salon. Papa plie le linge. Noé a posé un puzzle. Les pièces sont lisses. Jeanne passe trop près. Le puzzle glisse. Les pièces roulent. Noé a les yeux mouillés. Il est triste. Maman s'approche.\nmaman|Tu peux dire pardon.\nenfant-f|Pardon, Noé.\nmaman|Tu peux proposer un geste.\nnarrateur|Jeanne ramasse une pièce. Elle la tend. C'est un geste simple. Noé prend la pièce. Il reste un peu triste.\nmaman|La peine reste un peu.\nnarrateur|Le pardon n'efface pas tout de suite. Plus tard, dans la chambre, Jeanne apporte un verre. Une goutte tombe sur le dessin de Noé. Noé fronce les sourcils. Jeanne dit encore : pardon. Elle propose un geste. Elle apporte une feuille sèche. Noé souffle. La peine reste un peu. Au salon, puis dans la chambre, c'est pareil. On dit pardon. On propose un geste. La peine reste un peu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le puzzle de Noé a glissé. Que fait Jeanne ?",
+      "script": "narrateur|Le puzzle de Noé a glissé. Que fait Jeanne ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jeanne a dit pardon. Elle a proposé un geste. La peine reste un peu. Papa et maman sont là.",
+      "script": "narrateur|Jeanne a dit pardon. Elle a proposé un geste. La peine reste un peu. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le puzzle reprend forme. Noé pose une pièce. Jeanne attend.",
+      "script": "narrateur|Le puzzle reprend forme. Noé pose une pièce. Jeanne attend.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

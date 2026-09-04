@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.MET.001-07",
+  "fil_rouge": "",
+  "title": "Hortense nomme les métiers du quartier",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hortense, maman, papa",
+  "setting": "quartier, marché, cabinet, école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hortense marche avec maman. Un bus s'arrête. Le chauffeur ouvre la porte. C'est un métier. Chauffeur. Le chauffeur fait un geste utile. Il conduit. Ensuite, le marché. Ça sent le pain chaud. Le boulanger pose les baguettes. C'est un métier. Boulanger. Le boulanger fait un geste utile. Il prépare le pain. Ils passent chez le médecin. Le médecin écoute le cœur. Papa les rejoint. C'est un métier. Médecin. Le médecin fait un geste utile. Il soigne. Après, ils voient l'école. La maîtresse range des livres. C'est un métier. Maîtresse. La maîtresse fait un geste utile. Elle aide les enfants. Chaque métier a un geste utile.",
+      "script": "narrateur|Hortense marche avec maman. Un bus s'arrête. Le chauffeur ouvre la porte.\nmaman|C'est un métier.\nenfant-f|Chauffeur.\nnarrateur|Le chauffeur fait un geste utile. Il conduit. Ensuite, le marché. Ça sent le pain chaud. Le boulanger pose les baguettes.\nmaman|C'est un métier.\nenfant-f|Boulanger.\nnarrateur|Le boulanger fait un geste utile. Il prépare le pain. Ils passent chez le médecin. Le médecin écoute le cœur. Papa les rejoint.\npapa|C'est un métier.\nenfant-f|Médecin.\nnarrateur|Le médecin fait un geste utile. Il soigne. Après, ils voient l'école. La maîtresse range des livres.\nmaman|C'est un métier.\nenfant-f|Maîtresse.\nnarrateur|La maîtresse fait un geste utile. Elle aide les enfants. Chaque métier a un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le boulanger pose le pain. C'est quoi ?",
+      "script": "narrateur|Le boulanger pose le pain. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hortense a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "script": "narrateur|Hortense a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hortense serre la main de maman. Ils rentrent à la maison.",
+      "script": "narrateur|Hortense serre la main de maman. Ils rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

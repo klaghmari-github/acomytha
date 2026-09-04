@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-04",
+  "fil_rouge": "C'est l'anniversaire de Raphaël, en octobre, quand les châtaignes tombent. Le vent pousse les feuilles. Une châtaigne est trop fermée. Ils en trouvent une ouverte, la font chauffer. Le gâteau attend.",
+  "title": "La châtaigne trop fermée",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, maman, papa",
+  "setting": "allée sous le châtaignier, puis cuisine venteuse",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le vent pousse les feuilles jusqu'au perron. Elles tapent le bois, sèches, brunes. Le châtaignier grince un peu. C'est mon jour. C'est octobre, Raphaël. Ton anniversaire. Les châtaignes tombent. On en cherche pour le goûter. Raphaël enfile ses gants rêches. Le cuir sent le grenier. Ils sont trop grands. Tu les gardes quand même. Une feuille se colle à sa manche. Elle me suit. Le vent la promène. Sous l'arbre, une bogue pique encore. Raphaël la retourne du bout du pied. Elle est fermée. Trop fermée. La châtaigne n'est pas sortie. Il cherche plus loin. Le vent lui jette trois feuilles au visage. Pff. Tu vois une ouverte ? En ce moment, une bogue fendue brille dans l'herbe. Deux châtaignes lisses y dorment. Celles-là. Elles sont prêtes. Papa les sort, tout doux. Elles sont froides, luisantes. Pour le gâteau ? À côté. On les chauffe.",
+      "script": "narrateur|Le vent pousse les feuilles jusqu'au perron.\nnarrateur|Elles tapent le bois, sèches, brunes.\nnarrateur|Le châtaignier grince un peu.\nenfant-m|C'est mon jour.\nmaman|C'est octobre, Raphaël.\nmaman|Ton anniversaire.\npapa|Les châtaignes tombent.\npapa|On en cherche pour le goûter.\nnarrateur|Raphaël enfile ses gants rêches.\nnarrateur|Le cuir sent le grenier.\nenfant-m|Ils sont trop grands.\npapa|Tu les gardes quand même.\nnarrateur|Une feuille se colle à sa manche.\nenfant-m|Elle me suit.\nmaman|Le vent la promène.\nnarrateur|Sous l'arbre, une bogue pique encore.\nnarrateur|Raphaël la retourne du bout du pied.\nenfant-m|Elle est fermée.\npapa|Trop fermée.\npapa|La châtaigne n'est pas sortie.\nnarrateur|Il cherche plus loin.\nnarrateur|Le vent lui jette trois feuilles au visage.\nenfant-m|Pff.\nmaman|Tu vois une ouverte ?\nnarrateur|En ce moment, une bogue fendue brille dans l'herbe.\nnarrateur|Deux châtaignes lisses y dorment.\nenfant-m|Celles-là.\nmaman|Elles sont prêtes.\nnarrateur|Papa les sort, tout doux.\nnarrateur|Elles sont froides, luisantes.\nenfant-m|Pour le gâteau ?\npapa|À côté.\npapa|On les chauffe.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le vent pousse les feuilles jusqu'au perron. Elles tapent le bois, sèches, brunes. Le châtaignier grince un peu. C'est mon jour. C'est octobre, Raphaël. Ton anniversaire. Les châtaignes tombent. On en cherche pour le goûter. Raphaël enfile ses gants rêches. Le cuir sent le grenier. Ils sont trop grands. Tu les gardes quand même. Une feuille se colle à sa manche. Elle me suit. Le vent la promène. Sous l'arbre, une bogue pique encore. Raphaël la retourne du bout du pied. Elle est fermée. Trop fermée. La châtaigne n'est pas sortie. Il cherche plus loin. Le vent lui jette trois feuilles au visage. Pff. Tu vois une ouverte ? En ce moment, une bogue fendue brille dans l'herbe. Deux châtaignes lisses y dorment. Celles-là. Elles sont prêtes. Papa les sort, tout doux. Elles sont froides, luisantes. Pour le gâteau ? À côté. On les chauffe."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël a un gâteau en octobre. Pourquoi ?",
+      "script": "narrateur|Raphaël a un gâteau en octobre.\nnarrateur|Pourquoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Raphaël a un gâteau en octobre. Pourquoi ?",
+      "expected_answer": "anniversaire",
+      "accepted_examples": "anniversaire | son anniversaire | octobre | le mois | châtaignes",
+      "retry_prompt": "C'est son anniversaire. Pourquoi le gâteau ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La cuisine sent déjà la pâte aux noisettes. Le gâteau d'octobre attend sur la grille. C'est ton anniversaire. En octobre. Oui. Papa pose les châtaignes dans la poêle. Il les fend d'un cran, tout petit. Pour qu'elles n'explosent pas. Oui. Ça crépite. Une peau se fend, chaude. Tu souffles un peu. Raphaël souffle. La vapeur lui chatouille le nez. Ça sent le bois. C'est octobre. Merci, Raphaël. Tu as trouvé les ouvertes. Pas la fermée. La fermée restera sous l'arbre.",
+      "script": "narrateur|La cuisine sent déjà la pâte aux noisettes.\nnarrateur|Le gâteau d'octobre attend sur la grille.\nmaman|C'est ton anniversaire.\nenfant-m|En octobre.\npapa|Oui.\nnarrateur|Papa pose les châtaignes dans la poêle.\nnarrateur|Il les fend d'un cran, tout petit.\nenfant-m|Pour qu'elles n'explosent pas.\npapa|Oui.\nnarrateur|Ça crépite.\nnarrateur|Une peau se fend, chaude.\nmaman|Tu souffles un peu.\nnarrateur|Raphaël souffle.\nnarrateur|La vapeur lui chatouille le nez.\nenfant-m|Ça sent le bois.\nmaman|C'est octobre.\npapa|Merci, Raphaël.\npapa|Tu as trouvé les ouvertes.\nenfant-m|Pas la fermée.\nmaman|La fermée restera sous l'arbre.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La cuisine sent déjà la pâte aux noisettes. Le gâteau d'octobre attend sur la grille. C'est ton anniversaire. En octobre. Oui. Papa pose les châtaignes dans la poêle. Il les fend d'un cran, tout petit. Pour qu'elles n'explosent pas. Oui. Ça crépite. Une peau se fend, chaude. Tu souffles un peu. Raphaël souffle. La vapeur lui chatouille le nez. Ça sent le bois. C'est octobre. Merci, Raphaël. Tu as trouvé les ouvertes. Pas la fermée. La fermée restera sous l'arbre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose une châtaigne chaude près du gâteau. L'autre reste dans la petite coupelle. Je pèle. La peau craque. Le dedans est jaune, tout doux. Tu goûtes ? Elle brûle un peu. On attend. Le vent frappe encore la vitre. Une feuille reste collée, comme une étoile. Elle veut entrer. Elle reste dehors. Raphaël souffle encore sur la châtaigne. Il la mange, enfin. Et le gâteau ? Après. C'est ton jour. Une miette de peau tombe sur la table.",
+      "script": "narrateur|Maman pose une châtaigne chaude près du gâteau.\nnarrateur|L'autre reste dans la petite coupelle.\nenfant-m|Je pèle.\nnarrateur|La peau craque.\nnarrateur|Le dedans est jaune, tout doux.\npapa|Tu goûtes ?\nenfant-m|Elle brûle un peu.\nmaman|On attend.\nnarrateur|Le vent frappe encore la vitre.\nnarrateur|Une feuille reste collée, comme une étoile.\nenfant-m|Elle veut entrer.\npapa|Elle reste dehors.\nnarrateur|Raphaël souffle encore sur la châtaigne.\nnarrateur|Il la mange, enfin.\nmaman|Et le gâteau ?\nenfant-m|Après.\npapa|C'est ton jour.\nnarrateur|Une miette de peau tombe sur la table.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman pose une châtaigne chaude près du gâteau. L'autre reste dans la petite coupelle. Je pèle. La peau craque. Le dedans est jaune, tout doux. Tu goûtes ? Elle brûle un peu. On attend. Le vent frappe encore la vitre. Une feuille reste collée, comme une étoile. Elle veut entrer. Elle reste dehors. Raphaël souffle encore sur la châtaigne. Il la mange, enfin. Et le gâteau ? Après. C'est ton jour. Une miette de peau tombe sur la table."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La poêle se tait. Il reste une odeur de bois chaud. Octobre est bon. C'est ton mois. Celui de ton anniversaire. Raphaël pose le gant près de la porte. Une feuille sèche y reste coincée. Elle m'a suivi. Tu peux la garder. Le gâteau attend encore une part. Dehors, la bogue fermée dort sous le vent.",
+      "script": "narrateur|La poêle se tait.\nnarrateur|Il reste une odeur de bois chaud.\nenfant-m|Octobre est bon.\nmaman|C'est ton mois.\npapa|Celui de ton anniversaire.\nnarrateur|Raphaël pose le gant près de la porte.\nnarrateur|Une feuille sèche y reste coincée.\nenfant-m|Elle m'a suivi.\nmaman|Tu peux la garder.\nnarrateur|Le gâteau attend encore une part.\nnarrateur|Dehors, la bogue fermée dort sous le vent.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La poêle se tait. Il reste une odeur de bois chaud. Octobre est bon. C'est ton mois. Celui de ton anniversaire. Raphaël pose le gant près de la porte. Une feuille sèche y reste coincée. Elle m'a suivi. Tu peux la garder. Le gâteau attend encore une part. Dehors, la bogue fermée dort sous le vent."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.002-06",
+  "fil_rouge": "",
+  "title": "Hermine dit stop à l'école",
+  "lesson_id": "REL.CON.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hermine, maîtresse, maman",
+  "setting": "école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hermine est sous le préau. La maîtresse est près de la porte. Un camarade bouscule la file des manteaux. Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Hermine marche vers la maîtresse. On m'a bousculée. La maîtresse l'écoute. Hermine reste près d'elle. Le soir, maman vient. Hermine raconte. Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse. Hermine hoche la tête. Elle sent la main de maman. La main est chaude.",
+      "script": "narrateur|Hermine est sous le préau. La maîtresse est près de la porte. Un camarade bouscule la file des manteaux.\nenfant-f|Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse.\nnarrateur|Hermine marche vers la maîtresse.\nnarrateur|On m'a bousculée.\nnarrateur|La maîtresse l'écoute. Hermine reste près d'elle. Le soir, maman vient. Hermine raconte.\nmaman|Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.\nnarrateur|Hermine hoche la tête. Elle sent la main de maman. La main est chaude.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Hermine. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Hermine. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hermine a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "script": "narrateur|Hermine a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman prend la main d'Hermine. Elles marchent.",
+      "script": "narrateur|Maman prend la main d'Hermine. Elles marchent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

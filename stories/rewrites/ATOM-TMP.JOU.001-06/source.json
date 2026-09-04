@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-06",
+  "fil_rouge": "",
+  "title": "Fabien voit le soleil et la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Fabien, maman",
+  "setting": "jardin puis chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le jour, Fabien joue au jardin avec maman. Le soleil brille. Il fait chaud sur les mains. Le jour, c'est le soleil. Fabien touche une pierre tiède. Parce que le soleil a chauffé. Le soir arrive. Le ciel devient bleu foncé. Fabien voit la lune. Il voit les étoiles. La nuit, c'est la lune. Ils rentrent. Fabien met son pyjama. La nuit, on fait dodo. Fabien se couche. Il ferme les yeux. Dodo la nuit. Le soleil le jour. La lune la nuit.",
+      "script": "narrateur|Le jour, Fabien joue au jardin avec maman. Le soleil brille. Il fait chaud sur les mains.\nmaman|Le jour, c'est le soleil.\nnarrateur|Fabien touche une pierre tiède. Parce que le soleil a chauffé. Le soir arrive. Le ciel devient bleu foncé. Fabien voit la lune. Il voit les étoiles.\nmaman|La nuit, c'est la lune. Ils rentrent.\nnarrateur|Fabien met son pyjama.\nmaman|La nuit, on fait dodo.\nnarrateur|Fabien se couche. Il ferme les yeux. Dodo la nuit. Le soleil le jour. La lune la nuit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fabien a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "script": "narrateur|Fabien a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman baisse la lumière. Fabien respire.",
+      "script": "narrateur|Maman baisse la lumière. Fabien respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-03",
+  "fil_rouge": "Amir veut soigner deux soifs: Minou d'abord, puis les poules. Avec papa, doux, deux fois.",
+  "title": "Deux soifs, deux soins",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Amir, papa",
+  "setting": "cuisine puis jardin, matin de cacao",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La vapeur du cacao sent le matin. Elle monte en petit nuage au-dessus de la tasse. Le bois de la table est encore froid. Bois un peu, Amir. C'est chaud. Un miaulement arrive du radiateur. Minou le chat s'étire. Sa gamelle, près du buffet, est sèche. Il a soif, papa. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. En ce moment, Amir tient le bol avec papa. L'eau arrive, un filet, pas trop. Le bol se pose sans bruit. Minou lape, tout près. Il boit. Premier soin. On reste près de moi. Plus tard, la porte du jardin s'ouvre. L'air sent l'herbe et le grain. Deux poules picorent près du grillage. Leur abreuvoir est bas, presque vide. Elles aussi. Elles ont soif. Même leçon. Autre animal. On verse avec un adulte ? Oui, papa. Amir porte le seau avec papa. Le seau tape sa jambe, tout léger. Ils versent un peu d'eau. Puis un peu de grain, tout doux. Les poules viennent. On recule. Amir met les mains dans ses poches. Il ne prend pas les poules. Deux soins. Chat, puis poules.",
+      "script": "narrateur|La vapeur du cacao sent le matin.\nnarrateur|Elle monte en petit nuage au-dessus de la tasse.\nnarrateur|Le bois de la table est encore froid.\npapa|Bois un peu, Amir.\nenfant-m|C'est chaud.\nnarrateur|Un miaulement arrive du radiateur.\nnarrateur|Minou le chat s'étire.\nnarrateur|Sa gamelle, près du buffet, est sèche.\nenfant-m|Il a soif, papa.\nenfant-m|Je veux qu'il boive.\npapa|On le fait ensemble.\npapa|Avec un adulte.\npapa|On est doux.\nnarrateur|En ce moment, Amir tient le bol avec papa.\nnarrateur|L'eau arrive, un filet, pas trop.\nnarrateur|Le bol se pose sans bruit.\nnarrateur|Minou lape, tout près.\nenfant-m|Il boit.\npapa|Premier soin.\npapa|On reste près de moi.\nnarrateur|Plus tard, la porte du jardin s'ouvre.\nnarrateur|L'air sent l'herbe et le grain.\nnarrateur|Deux poules picorent près du grillage.\nnarrateur|Leur abreuvoir est bas, presque vide.\nenfant-m|Elles aussi.\nenfant-m|Elles ont soif.\npapa|Même leçon.\npapa|Autre animal.\npapa|On verse avec un adulte ?\nenfant-m|Oui, papa.\nnarrateur|Amir porte le seau avec papa.\nnarrateur|Le seau tape sa jambe, tout léger.\nnarrateur|Ils versent un peu d'eau.\nnarrateur|Puis un peu de grain, tout doux.\nnarrateur|Les poules viennent.\npapa|On recule.\nnarrateur|Amir met les mains dans ses poches.\nnarrateur|Il ne prend pas les poules.\nenfant-m|Deux soins.\npapa|Chat, puis poules.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La vapeur du cacao sent le matin. Elle monte en petit nuage au-dessus de la tasse. Le bois de la table est encore froid. Bois un peu, Amir. C'est chaud. Un miaulement arrive du radiateur. Minou le chat s'étire. Sa gamelle, près du buffet, est sèche. Il a soif, papa. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. En ce moment, Amir tient le bol avec papa. L'eau arrive, un filet, pas trop. Le bol se pose sans bruit. Minou lape, tout près. Il boit. Premier soin. On reste près de moi. Plus tard, la porte du jardin s'ouvre. L'air sent l'herbe et le grain. Deux poules picorent près du grillage. Leur abreuvoir est bas, presque vide. Elles aussi. Elles ont soif. Même leçon. Autre animal. On verse avec un adulte ? Oui, papa. Amir porte le seau avec papa. Le seau tape sa jambe, tout léger. Ils versent un peu d'eau. Puis un peu de grain, tout doux. Les poules viennent. On recule. Amir met les mains dans ses poches. Il ne prend pas les poules. Deux soins. Chat, puis poules."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir donne à boire ou à manger. Comment ?",
+      "script": "narrateur|Amir donne à boire ou à manger.\nnarrateur|Comment ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Amir donne à boire ou à manger. Comment ?",
+      "expected_answer": "avec papa",
+      "accepted_examples": "avec papa | avec un adulte | doux | tout doux | avec l'adulte",
+      "retry_prompt": "Il le fait avec un adulte. Il est doux. Comment fait Amir ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Minou, à la maison, se lèche encore. Au jardin, les poules boivent à tour de rôle. Les deux ont bu. Oui. Tu as été doux. Avec un adulte. Deux fois. Merci, Amir. Tu as vu la différence ? Le bol, et le seau. Et le même geste. Doux. Une poule secoue le bec. Une goutte tombe dans l'herbe. L'herbe la garde. Comme Minou, tout à l'heure. Même soif. Même soin. Amir reste près de papa. Le seau vide est léger maintenant. Il le porte jusqu'au perron.",
+      "script": "narrateur|Minou, à la maison, se lèche encore.\nnarrateur|Au jardin, les poules boivent à tour de rôle.\nenfant-m|Les deux ont bu.\npapa|Oui.\npapa|Tu as été doux.\npapa|Avec un adulte.\npapa|Deux fois.\npapa|Merci, Amir.\npapa|Tu as vu la différence ?\nenfant-m|Le bol, et le seau.\npapa|Et le même geste.\npapa|Doux.\nnarrateur|Une poule secoue le bec.\nnarrateur|Une goutte tombe dans l'herbe.\nnarrateur|L'herbe la garde.\nenfant-m|Comme Minou, tout à l'heure.\npapa|Même soif.\npapa|Même soin.\nnarrateur|Amir reste près de papa.\nnarrateur|Le seau vide est léger maintenant.\nnarrateur|Il le porte jusqu'au perron.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Minou, à la maison, se lèche encore. Au jardin, les poules boivent à tour de rôle. Les deux ont bu. Oui. Tu as été doux. Avec un adulte. Deux fois. Merci, Amir. Tu as vu la différence ? Le bol, et le seau. Et le même geste. Doux. Une poule secoue le bec. Une goutte tombe dans l'herbe. L'herbe la garde. Comme Minou, tout à l'heure. Même soif. Même soin. Amir reste près de papa. Le seau vide est léger maintenant. Il le porte jusqu'au perron."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils rentrent. Le cacao a refroidi, un peu. Amir reprend une gorgée. Nous aussi, on boit. Oui. Chacun sa tasse, chacun sa gamelle. Minou s'est recouché au radiateur. Son ronron revient, bas. Dehors, une poule chante un petit coucou. Tu as soigné deux soifs. Avec toi. Avec un adulte. La vapeur n'est plus là. Il reste l'odeur du cacao, et du grain. On range le seau près des bottes ? Oui. Le seau trouve sa place. Le bois du perron est sec.",
+      "script": "narrateur|Ils rentrent.\nnarrateur|Le cacao a refroidi, un peu.\nnarrateur|Amir reprend une gorgée.\nenfant-m|Nous aussi, on boit.\npapa|Oui.\npapa|Chacun sa tasse, chacun sa gamelle.\nnarrateur|Minou s'est recouché au radiateur.\nnarrateur|Son ronron revient, bas.\nnarrateur|Dehors, une poule chante un petit coucou.\npapa|Tu as soigné deux soifs.\nenfant-m|Avec toi.\npapa|Avec un adulte.\nnarrateur|La vapeur n'est plus là.\nnarrateur|Il reste l'odeur du cacao, et du grain.\npapa|On range le seau près des bottes ?\nenfant-m|Oui.\nnarrateur|Le seau trouve sa place.\nnarrateur|Le bois du perron est sec.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils rentrent. Le cacao a refroidi, un peu. Amir reprend une gorgée. Nous aussi, on boit. Oui. Chacun sa tasse, chacun sa gamelle. Minou s'est recouché au radiateur. Son ronron revient, bas. Dehors, une poule chante un petit coucou. Tu as soigné deux soifs. Avec toi. Avec un adulte. La vapeur n'est plus là. Il reste l'odeur du cacao, et du grain. On range le seau près des bottes ? Oui. Le seau trouve sa place. Le bois du perron est sec."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Minou a bu. Les poules aussi. Deux soins, tout doux. Une plume reste collée au grillage. Le matin sent encore le cacao.",
+      "script": "enfant-m|Minou a bu.\nenfant-m|Les poules aussi.\npapa|Deux soins, tout doux.\nnarrateur|Une plume reste collée au grillage.\nnarrateur|Le matin sent encore le cacao.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Minou a bu. Les poules aussi. Deux soins, tout doux. Une plume reste collée au grillage. Le matin sent encore le cacao."
+    }
+  ]
+}

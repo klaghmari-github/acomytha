@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-03",
+  "fil_rouge": "",
+  "title": "Tom dit les trois noms à la ferme",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Tom, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom est à la ferme avec papa. Un chat marche. Une chatte le suit. Un chaton dort. Trois noms de la famille. Tom répète : chat, chatte, chaton. Près du foin : un chien, une chienne, un chiot. Tom dit les trois noms. Encore : un coq, une poule, un poussin. Tom pose le doigt vers le poussin. Le petit, c'est le poussin. Trois noms de la famille, chaque fois.",
+      "script": "narrateur|Tom est à la ferme avec papa. Un chat marche. Une chatte le suit. Un chaton dort.\npapa|Trois noms de la famille.\nnarrateur|Tom répète : chat, chatte, chaton. Près du foin : un chien, une chienne, un chiot. Tom dit les trois noms. Encore : un coq, une poule, un poussin. Tom pose le doigt vers le poussin.\npapa|Le petit, c'est le poussin. Trois noms de la famille, chaque fois.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a dit les trois noms. Chat, chatte, chaton. Coq, poule, poussin.",
+      "script": "narrateur|Tom a dit les trois noms. Chat, chatte, chaton. Coq, poule, poussin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le seau. Tom salue le chaton.",
+      "script": "narrateur|Papa range le seau. Tom salue le chaton.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

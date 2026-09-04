@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-04",
+  "fil_rouge": "",
+  "title": "Blanche a soif au parc",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Blanche, papa",
+  "setting": "parc puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Blanche joue au parc avec papa. Le soleil chauffe le toboggan. Blanche court. Sa bouche devient sèche. Elle a soif. Papa est près du banc. J'ai soif, papa. Papa sourit. Ils rentrent à la maison. Dans la cuisine, papa prend un verre. Il verse de l'eau claire. Blanche prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore. Quand on a soif, on boit de l'eau. Blanche pose le verre. Elle se sent mieux. Elle dit merci. Papa verse encore un peu. Blanche boit une dernière gorgée. L'eau coule douce dans sa gorge.",
+      "script": "narrateur|Blanche joue au parc avec papa. Le soleil chauffe le toboggan. Blanche court. Sa bouche devient sèche. Elle a soif. Papa est près du banc.\nenfant-f|J'ai soif, papa. Papa sourit. Ils rentrent à la maison.\nnarrateur|Dans la cuisine, papa prend un verre. Il verse de l'eau claire. Blanche prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore.\npapa|Quand on a soif, on boit de l'eau.\nnarrateur|Blanche pose le verre. Elle se sent mieux. Elle dit merci. Papa verse encore un peu. Blanche boit une dernière gorgée. L'eau coule douce dans sa gorge.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Blanche a soif. Que prend-elle ?",
+      "script": "narrateur|Blanche a soif. Que prend-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Blanche avait soif. Elle a pris le verre. Elle a bu de l'eau. Papa était là.",
+      "script": "narrateur|Blanche avait soif. Elle a pris le verre. Elle a bu de l'eau. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Blanche retourne au jardin. Le verre reste sur la table.",
+      "script": "narrateur|Blanche retourne au jardin. Le verre reste sur la table.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

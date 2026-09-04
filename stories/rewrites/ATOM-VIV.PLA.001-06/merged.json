@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-06",
+  "fil_rouge": "Chouchou veut une feuille de menthe pour le thé. La petite feuille ne sent rien. La grande sent fort. La menthe a soif. Elles arrosent. Le thé sent le vert.",
+  "title": "La grande feuille de menthe",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "jardin, pot de menthe sur la table",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La bouilloire attend, encore froide, près du miel. Un grain de sucre brille sur le bois. Le jardin sent la terre chaude. Le pot de menthe est sur la table dehors. Chouchou vit ici, avec maman. On fait du thé ? Oui. Avec la menthe. En ce moment, Chouchou se hausse vers le pot. Les tiges sont grêles, un peu pâles. Chouchou pince une toute petite feuille. Elle la froisse sous le nez. Elle ne sent rien. Trop petite. Essaie la grande, là-bas. La grande feuille est plus sombre. Chouchou la froisse. L'odeur saute, froide, très forte. Elle pique ! C'est la menthe. Celle-là, pour le thé. Chouchou regarde la terre. La terre est claire, craquelée. Elle a soif, la menthe. Oui. Avant le thé, on lui donne à boire ? Oui, maman. L'arrosoir de zinc est sous la table. Il est froid, un peu bosselé. Tu tiens avec moi ?",
+      "script": "narrateur|La bouilloire attend, encore froide, près du miel.\nnarrateur|Un grain de sucre brille sur le bois.\nnarrateur|Le jardin sent la terre chaude.\nnarrateur|Le pot de menthe est sur la table dehors.\nnarrateur|Chouchou vit ici, avec maman.\nmaman|On fait du thé ?\nenfant-f|Oui.\nenfant-f|Avec la menthe.\nnarrateur|En ce moment, Chouchou se hausse vers le pot.\nnarrateur|Les tiges sont grêles, un peu pâles.\nnarrateur|Chouchou pince une toute petite feuille.\nnarrateur|Elle la froisse sous le nez.\nenfant-f|Elle ne sent rien.\nmaman|Trop petite.\nmaman|Essaie la grande, là-bas.\nnarrateur|La grande feuille est plus sombre.\nnarrateur|Chouchou la froisse.\nnarrateur|L'odeur saute, froide, très forte.\nenfant-f|Elle pique !\nmaman|C'est la menthe.\nmaman|Celle-là, pour le thé.\nnarrateur|Chouchou regarde la terre.\nnarrateur|La terre est claire, craquelée.\nenfant-f|Elle a soif, la menthe.\nmaman|Oui.\nmaman|Avant le thé, on lui donne à boire ?\nenfant-f|Oui, maman.\nnarrateur|L'arrosoir de zinc est sous la table.\nnarrateur|Il est froid, un peu bosselé.\nmaman|Tu tiens avec moi ?",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La bouilloire attend, encore froide, près du miel. Un grain de sucre brille sur le bois. Le jardin sent la terre chaude. Le pot de menthe est sur la table dehors. Chouchou vit ici, avec maman. On fait du thé ? Oui. Avec la menthe. En ce moment, Chouchou se hausse vers le pot. Les tiges sont grêles, un peu pâles. Chouchou pince une toute petite feuille. Elle la froisse sous le nez. Elle ne sent rien. Trop petite. Essaie la grande, là-bas. La grande feuille est plus sombre. Chouchou la froisse. L'odeur saute, froide, très forte. Elle pique ! C'est la menthe. Celle-là, pour le thé. Chouchou regarde la terre. La terre est claire, craquelée. Elle a soif, la menthe. Oui. Avant le thé, on lui donne à boire ? Oui, maman. L'arrosoir de zinc est sous la table. Il est froid, un peu bosselé. Tu tiens avec moi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La menthe a besoin de quoi ?",
+      "script": "narrateur|La menthe a besoin de quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La menthe a besoin de quoi ?",
+      "expected_answer": "eau",
+      "accepted_examples": "eau | lumière | arroser | un adulte | de l'eau",
+      "retry_prompt": "On arrose avec un adulte. Eau et lumière. De quoi a-t-elle besoin ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou tient le zinc avec maman. L'eau tombe, claire, sur la terre craquelée. Les fentes se ferment, une à une. Elle boit. Oui. Eau, et un peu de lumière. Le soleil touche déjà les tiges. Les feuilles brillent, plus vertes. La grande, je la prends ? Oui. Une seule, pour le thé. Chouchou pince la grande feuille. La tige fait un tout petit clic. L'odeur remplit les mains. Merci, Chouchou. Tu as choisi la grande. La petite, elle grandira ? Avec de l'eau, oui. Elles rentrent. La bouilloire s'éveille, tout bas.",
+      "script": "narrateur|Chouchou tient le zinc avec maman.\nnarrateur|L'eau tombe, claire, sur la terre craquelée.\nnarrateur|Les fentes se ferment, une à une.\nenfant-f|Elle boit.\nmaman|Oui.\nmaman|Eau, et un peu de lumière.\nnarrateur|Le soleil touche déjà les tiges.\nnarrateur|Les feuilles brillent, plus vertes.\nenfant-f|La grande, je la prends ?\nmaman|Oui.\nmaman|Une seule, pour le thé.\nnarrateur|Chouchou pince la grande feuille.\nnarrateur|La tige fait un tout petit clic.\nnarrateur|L'odeur remplit les mains.\nmaman|Merci, Chouchou.\nmaman|Tu as choisi la grande.\nenfant-f|La petite, elle grandira ?\nmaman|Avec de l'eau, oui.\nnarrateur|Elles rentrent.\nnarrateur|La bouilloire s'éveille, tout bas.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Chouchou tient le zinc avec maman. L'eau tombe, claire, sur la terre craquelée. Les fentes se ferment, une à une. Elle boit. Oui. Eau, et un peu de lumière. Le soleil touche déjà les tiges. Les feuilles brillent, plus vertes. La grande, je la prends ? Oui. Une seule, pour le thé. Chouchou pince la grande feuille. La tige fait un tout petit clic. L'odeur remplit les mains. Merci, Chouchou. Tu as choisi la grande. La petite, elle grandira ? Avec de l'eau, oui. Elles rentrent. La bouilloire s'éveille, tout bas."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "L'eau chaude chante dans les tasses. Chouchou glisse la grande feuille. Elle tourne, puis s'ouvre. Ça sent fort. Comme dans le jardin. Tu souffles ? Fffff. La vapeur sent le froid de la menthe. Le miel fond, un fil d'or. La petite feuille, dehors, boit encore. On lui parlera demain ? Demain, si tu veux. Chouchou tient la tasse à deux mains. Le bord est chaud, le thé est vert. Tu as aidé la menthe. Puis tu as pris la grande. Pour le thé. Une abeille passe près de la vitre. Le miel sent encore la ruche. Tu as fini ta tasse ? Presque. Chouchou souffle encore. La feuille tourne au fond.",
+      "script": "narrateur|L'eau chaude chante dans les tasses.\nnarrateur|Chouchou glisse la grande feuille.\nnarrateur|Elle tourne, puis s'ouvre.\nenfant-f|Ça sent fort.\nmaman|Comme dans le jardin.\nmaman|Tu souffles ?\nenfant-f|Fffff.\nnarrateur|La vapeur sent le froid de la menthe.\nnarrateur|Le miel fond, un fil d'or.\nmaman|La petite feuille, dehors, boit encore.\nenfant-f|On lui parlera demain ?\nmaman|Demain, si tu veux.\nnarrateur|Chouchou tient la tasse à deux mains.\nnarrateur|Le bord est chaud, le thé est vert.\nmaman|Tu as aidé la menthe.\nmaman|Puis tu as pris la grande.\nenfant-f|Pour le thé.\nnarrateur|Une abeille passe près de la vitre.\nnarrateur|Le miel sent encore la ruche.\nmaman|Tu as fini ta tasse ?\nenfant-f|Presque.\nnarrateur|Chouchou souffle encore.\nnarrateur|La feuille tourne au fond.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "L'eau chaude chante dans les tasses. Chouchou glisse la grande feuille. Elle tourne, puis s'ouvre. Ça sent fort. Comme dans le jardin. Tu souffles ? Fffff. La vapeur sent le froid de la menthe. Le miel fond, un fil d'or. La petite feuille, dehors, boit encore. On lui parlera demain ? Demain, si tu veux. Chouchou tient la tasse à deux mains. Le bord est chaud, le thé est vert. Tu as aidé la menthe. Puis tu as pris la grande. Pour le thé. Une abeille passe près de la vitre. Le miel sent encore la ruche. Tu as fini ta tasse ? Presque. Chouchou souffle encore. La feuille tourne au fond."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Chouchou boit une gorgée. C'est chaud, et vert, et doux. La grande feuille. Oui. Celle qui sentait fort. Le thé sent la grande feuille.",
+      "script": "narrateur|Chouchou boit une gorgée.\nnarrateur|C'est chaud, et vert, et doux.\nenfant-f|La grande feuille.\nmaman|Oui.\nmaman|Celle qui sentait fort.\nnarrateur|Le thé sent la grande feuille.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Chouchou boit une gorgée. C'est chaud, et vert, et doux. La grande feuille. Oui. Celle qui sentait fort. Le thé sent la grande feuille."
+    }
+  ]
+}

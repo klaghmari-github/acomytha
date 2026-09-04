@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-07",
+  "fil_rouge": "",
+  "title": "Clarisse va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Clarisse, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Clarisse veut le puzzle des fruits. La boîte est en haut. Trop haut. C'est trop difficile. Clarisse va vers papa. Aller vers eux, c'est possible. Elle dit le besoin. Papa, j'ai besoin de la boîte. Papa écoute. Papa donne la boîte. Plus tard, dans la cuisine, le bocal est fermé. Clarisse se souvient. Elle va vers maman. Aller vers eux, encore. Elle dit le besoin. Maman, le bocal est trop dur. Maman tient le bocal avec elle. Le couvercle tourne. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "script": "narrateur|Clarisse veut le puzzle des fruits. La boîte est en haut. Trop haut. C'est trop difficile. Clarisse va vers papa. Aller vers eux, c'est possible. Elle dit le besoin.\nenfant-f|Papa, j'ai besoin de la boîte. Papa écoute. Papa donne la boîte. Plus tard, dans la cuisine, le bocal est fermé.\nnarrateur|Clarisse se souvient. Elle va vers maman. Aller vers eux, encore. Elle dit le besoin.\nenfant-f|Maman, le bocal est trop dur. Maman tient le bocal avec elle.\nnarrateur|Le couvercle tourne. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Clarisse ?",
+      "script": "narrateur|C'est trop difficile. Que fait Clarisse ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Clarisse est allée vers papa. Puis vers maman. Elle a dit le besoin.",
+      "script": "narrateur|Clarisse est allée vers papa. Puis vers maman. Elle a dit le besoin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Clarisse ouvre le puzzle. Papa s'assoit près d'elle.",
+      "script": "narrateur|Clarisse ouvre le puzzle. Papa s'assoit près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-12",
+  "fil_rouge": "",
+  "title": "Émeline arrose la tomate et le thym",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Émeline, papa, maman",
+  "setting": "jardin puis rebord de fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Émeline est dans le jardin. Le pied de tomate a des feuilles. Papa, l'adulte, prend l'arrosoir. La plante a besoin d'eau. Elle a besoin de lumière. Émeline tient l'arrosoir avec papa. Ils arrosent. L'eau tombe sur la terre. La terre devient foncée. Parce qu'il y a de l'eau et de la lumière, la plante grandit. Plus tard, maman montre le thym à la fenêtre. Même leçon, autre lieu. Maman, l'adulte, ouvre le store. La lumière arrive. Émeline arrose avec maman. L'eau sent le thym. Émeline pose l'arrosoir. L'adulte est là.",
+      "script": "narrateur|Émeline est dans le jardin. Le pied de tomate a des feuilles. Papa, l'adulte, prend l'arrosoir.\npapa|La plante a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Émeline tient l'arrosoir avec papa. Ils arrosent. L'eau tombe sur la terre. La terre devient foncée. Parce qu'il y a de l'eau et de la lumière, la plante grandit. Plus tard, maman montre le thym à la fenêtre. Même leçon, autre lieu. Maman, l'adulte, ouvre le store. La lumière arrive. Émeline arrose avec maman. L'eau sent le thym. Émeline pose l'arrosoir. L'adulte est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Émeline s'occupe des plantes. Que fait-elle ?",
+      "script": "narrateur|Émeline s'occupe des plantes. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Émeline a arrosé. Il y a de l'eau et de la lumière. Papa et maman, les adultes, étaient là.",
+      "script": "narrateur|Émeline a arrosé. Il y a de l'eau et de la lumière. Papa et maman, les adultes, étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Émeline essuie ses mains. Le thym brille.",
+      "script": "narrateur|Émeline essuie ses mains. Le thym brille.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

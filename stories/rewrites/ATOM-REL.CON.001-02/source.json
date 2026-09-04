@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-02",
+  "fil_rouge": "",
+  "title": "Ava dit stop au parc, deux fois",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ava, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ava est au parc avec maman. Maman s'assoit sur le banc. Ava joue près du bac à sable. Le sable est frais. Un camarade court. Il bouscule Ava. Ava sent un choc. Son cœur bat vite. Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers maman. Ava marche vers le banc. Maman est son parent au parc. Ava rejoint son parent au parc. On m'a bousculée. Maman l'écoute. Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Ava souffle. Plus tard, Ava va près du toboggan. Un autre camarade bouscule. Ava se souvient. Stop. Elle s'éloigne. Elle rejoint son parent au parc. Tu as repris le geste. Même règle, autre jeu. Ava reste près de maman. Le banc est calme.",
+      "script": "narrateur|Ava est au parc avec maman. Maman s'assoit sur le banc. Ava joue près du bac à sable. Le sable est frais. Un camarade court. Il bouscule Ava. Ava sent un choc. Son cœur bat vite.\nenfant-f|Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers maman.\nnarrateur|Ava marche vers le banc. Maman est son parent au parc. Ava rejoint son parent au parc.\nnarrateur|On m'a bousculée. Maman l'écoute.\nmaman|Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi.\nnarrateur|Ava souffle. Plus tard, Ava va près du toboggan. Un autre camarade bouscule. Ava se souvient.\nnarrateur|Stop.\nnarrateur|Elle s'éloigne. Elle rejoint son parent au parc.\nmaman|Tu as repris le geste. Même règle, autre jeu.\nnarrateur|Ava reste près de maman. Le banc est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Ava. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Ava. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ava a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Deux fois.",
+      "script": "narrateur|Ava a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Deux fois.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ava boit une gorgée d'eau. Maman garde sa main.",
+      "script": "narrateur|Ava boit une gorgée d'eau. Maman garde sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

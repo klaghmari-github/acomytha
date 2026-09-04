@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-09",
+  "fil_rouge": "",
+  "title": "Garance raconte la farine",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Garance, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Garance est dans la cuisine. Papa coupe une poire. Ça sent le fruit. Garance veut aider. Elle touche le saladier. Le saladier glisse. La farine tombe. Le sol est blanc. Garance a le ventre serré. Elle va vers papa. Papa, la farine est tombée. Papa s'approche. Merci de raconter. On ramasse ensemble. Garance prend la balayette. Papa tient la pelle. Maman entre. Maman, j'ai raconté. La farine est tombée. Maman écoute. Merci Garance. On raconte à papa ou maman. C'est comme ça.",
+      "script": "narrateur|Garance est dans la cuisine. Papa coupe une poire. Ça sent le fruit. Garance veut aider. Elle touche le saladier. Le saladier glisse. La farine tombe. Le sol est blanc. Garance a le ventre serré. Elle va vers papa.\nenfant-f|Papa, la farine est tombée. Papa s'approche.\npapa|Merci de raconter. On ramasse ensemble.\nnarrateur|Garance prend la balayette. Papa tient la pelle. Maman entre.\nenfant-f|Maman, j'ai raconté.\nnarrateur|La farine est tombée. Maman écoute.\nmaman|Merci Garance. On raconte à papa ou maman. C'est comme ça.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La farine est tombée. Que fait Garance ?",
+      "script": "narrateur|La farine est tombée. Que fait Garance ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Garance a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "script": "narrateur|Garance a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le sol est propre. Garance se lave les mains. Papa range la pelle.",
+      "script": "narrateur|Le sol est propre. Garance se lave les mains. Papa range la pelle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

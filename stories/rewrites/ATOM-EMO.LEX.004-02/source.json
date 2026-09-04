@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.004-02",
+  "fil_rouge": "",
+  "title": "Adam est surpris deux fois",
+  "lesson_id": "EMO.LEX.004",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Adam, papa, Nino",
+  "setting": "salle de bain puis parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Adam est dans la salle de bain avec papa. L'eau coule. Soudain, une goutte saute. Elle touche le nez d'Adam. Adam sent son cœur battre vite. Ses yeux s'ouvrent. Je suis surpris. Être surpris, ce n'est pas honteux. D'abord respirer. Ensuite comprendre, avant d'agir. Adam souffle une grande fois. Il regarde le robinet. Je veux comprendre. C'est l'eau. Rien n'est cassé. Adam est content. Il partage un sourire. La joie est là. Plus tard, ils vont au parc. Une balle arrive près d'Adam. Adam sent encore le cœur. Je suis surpris. Il souffle. Il veut respirer. Il regarde. C'est la balle de Nino. Adam comprend. Il rend la balle. Il est content. Il invite Nino. La joie se partage. Dans la salle de bain, puis au parc, c'est pareil. On nomme : surpris. On respire. On cherche à comprendre.",
+      "script": "narrateur|Adam est dans la salle de bain avec papa. L'eau coule. Soudain, une goutte saute. Elle touche le nez d'Adam. Adam sent son cœur battre vite. Ses yeux s'ouvrent.\nenfant-m|Je suis surpris. Être surpris, ce n'est pas honteux.\npapa|D'abord respirer. Ensuite comprendre, avant d'agir.\nnarrateur|Adam souffle une grande fois. Il regarde le robinet.\nnarrateur|Je veux comprendre. C'est l'eau. Rien n'est cassé.\nnarrateur|Adam est content. Il partage un sourire. La joie est là. Plus tard, ils vont au parc. Une balle arrive près d'Adam. Adam sent encore le cœur.\nnarrateur|Je suis surpris. Il souffle. Il veut respirer.\nnarrateur|Il regarde. C'est la balle de Nino. Adam comprend. Il rend la balle. Il est content. Il invite Nino. La joie se partage. Dans la salle de bain, puis au parc, c'est pareil. On nomme : surpris. On respire. On cherche à comprendre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Adam est surpris. Que fait-il d'abord ?",
+      "script": "narrateur|Adam est surpris. Que fait-il d'abord ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adam a nommé : surpris. Deux fois. Il a soufflé. Il a voulu comprendre avant d'agir.",
+      "script": "narrateur|Adam a nommé : surpris. Deux fois. Il a soufflé. Il a voulu comprendre avant d'agir.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Adam et Nino se passent la balle. Papa reste près.",
+      "script": "narrateur|Adam et Nino se passent la balle. Papa reste près.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-04",
+  "fil_rouge": "",
+  "title": "Amine dit stop au parc, deux fois",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Amine, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Amine est au parc avec papa. Papa s'assoit sur le banc. Amine joue près du toboggan. Un camarade arrive vite. Le camarade bouscule Amine. Amine sent un choc. Son cœur bat vite. Stop. Il fait un pas de côté. Il doit s'éloigner. S'éloigner, c'est marcher vers papa. Amine marche vers le banc. Papa est son parent au parc. Amine rejoint son parent au parc. On m'a bousculé. Papa l'écoute. Tu as dit stop. Tu t'es éloigné. Tu es venu vers moi. Amine souffle. Plus tard, près du bac à sable, un autre camarade bouscule encore. Amine se souvient. Stop. Il s'éloigne. Il rejoint son parent au parc. Même leçon, autre coin du parc. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "script": "narrateur|Amine est au parc avec papa. Papa s'assoit sur le banc. Amine joue près du toboggan. Un camarade arrive vite. Le camarade bouscule Amine. Amine sent un choc. Son cœur bat vite.\nenfant-f|Stop. Il fait un pas de côté. Il doit s'éloigner. S'éloigner, c'est marcher vers papa.\nnarrateur|Amine marche vers le banc. Papa est son parent au parc. Amine rejoint son parent au parc.\nnarrateur|On m'a bousculé. Papa l'écoute.\npapa|Tu as dit stop. Tu t'es éloigné. Tu es venu vers moi.\nnarrateur|Amine souffle. Plus tard, près du bac à sable, un autre camarade bouscule encore. Amine se souvient.\nnarrateur|Stop.\nnarrateur|Il s'éloigne. Il rejoint son parent au parc. Même leçon, autre coin du parc. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Amine. Que fait-il ?",
+      "script": "narrateur|Un camarade bouscule Amine. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amine a dit stop. Il a su s'éloigner. Il a rejoint son parent au parc. Plus tard, pareil.",
+      "script": "narrateur|Amine a dit stop. Il a su s'éloigner. Il a rejoint son parent au parc. Plus tard, pareil.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Amine boit une gorgée d'eau. Papa garde sa main.",
+      "script": "narrateur|Amine boit une gorgée d'eau. Papa garde sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

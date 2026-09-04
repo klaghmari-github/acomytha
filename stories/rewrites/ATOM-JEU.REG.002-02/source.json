@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-02",
+  "fil_rouge": "",
+  "title": "La règle de Tom",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Tom, maman",
+  "setting": "cour",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom joue dans la cour. Maman est là. Il y a un ballon. Maman dit une règle. La règle : on attend. Puis on passe. Tom écoute. Il prend le ballon trop vite. Maman va rappeler la règle une fois. On attend. C'est la règle. Tom s'arrête. Il attend. Puis il passe le ballon. Le ballon glisse. Tom sourit. Tu as suivi la règle. Tom répète : on attend. Une règle simple. Maman la rappelle. Tom la suit.",
+      "script": "narrateur|Tom joue dans la cour. Maman est là. Il y a un ballon. Maman dit une règle. La règle : on attend. Puis on passe. Tom écoute. Il prend le ballon trop vite. Maman va rappeler la règle une fois.\nnarrateur|On attend. C'est la règle.\nnarrateur|Tom s'arrête. Il attend. Puis il passe le ballon. Le ballon glisse. Tom sourit.\nmaman|Tu as suivi la règle.\nnarrateur|Tom répète : on attend. Une règle simple. Maman la rappelle. Tom la suit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tom joue. Que suit-il ?",
+      "script": "narrateur|Tom joue. Que suit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a suivi la règle. Il a attendu. Maman a rappelé une fois.",
+      "script": "narrateur|Tom a suivi la règle. Il a attendu. Maman a rappelé une fois.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tom pose le ballon. Maman lui verse de l'eau.",
+      "script": "narrateur|Tom pose le ballon. Maman lui verse de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.005-01",
+  "fil_rouge": "",
+  "title": "Être en colère",
+  "lesson_id": "EMO.LEX.005",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hugo, Nino, papa",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo construit une tour de cubes. Il est dans le salon, avec papa. Son frère Nino prend le cube du haut. La tour tombe sur le tapis. Hugo sent son visage chaud. Son ventre est dur. Je suis en colère. Il ouvre les doigts. Ses mains restent loin de Nino. Hugo fait un pas en arrière. Il peut s'éloigner. Il s'éloigne vers le canapé. Il souffle trois fois. Puis il va vers papa. Papa est l'adulte dans le salon. Papa, je suis en colère. Papa écoute. Plus tard, ils reconstruiront. La colère a un nom. Les mains restent loin.",
+      "script": "narrateur|Hugo construit une tour de cubes. Il est dans le salon, avec papa. Son frère Nino prend le cube du haut. La tour tombe sur le tapis. Hugo sent son visage chaud. Son ventre est dur.\nenfant-m|Je suis en colère. Il ouvre les doigts. Ses mains restent loin de Nino.\nnarrateur|Hugo fait un pas en arrière. Il peut s'éloigner. Il s'éloigne vers le canapé. Il souffle trois fois. Puis il va vers papa. Papa est l'adulte dans le salon.\nenfant-m|Papa, je suis en colère. Papa écoute. Plus tard, ils reconstruiront.\nnarrateur|La colère a un nom. Les mains restent loin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hugo est en colère. Que fait-il ?",
+      "script": "narrateur|Hugo est en colère. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo a nommé sa colère. Mains loin. Il peut s'éloigner. Il va vers papa, l'adulte.",
+      "script": "narrateur|Hugo a nommé sa colère. Mains loin. Il peut s'éloigner. Il va vers papa, l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hugo s'assoit près de papa. Les cubes restent sur le tapis.",
+      "script": "narrateur|Hugo s'assoit près de papa. Les cubes restent sur le tapis.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

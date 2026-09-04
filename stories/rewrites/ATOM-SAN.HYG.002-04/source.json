@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.002-04",
+  "fil_rouge": "",
+  "title": "Émile et la brosse du matin",
+  "lesson_id": "SAN.HYG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Émile, maman",
+  "setting": "salle de bain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, le soleil entre dans la chambre. Émile sent le pain chaud. Maman l'appelle. Émile pousse la porte de la salle de bain. L'eau coule tout doux. Maman tend la brosse bleue. Émile prend la brosse. Un adulte est avec lui. C'est maman. Ils se brossent ensemble. La brosse va en haut. La brosse va en bas. Émile sent la mousse. Ça goûte un peu la menthe. Parce qu'il brosse le matin, ses dents sont propres. Il rince sa bouche. Il range la brosse. Plus tard, le soir arrive. La lumière est douce. C'est l'heure. Émile revient. Il prend encore la brosse. Maman, l'adulte, se brosse aussi. Matin et soir, c'est pareil. Émile rit un peu. La brosse chatouille. Matin et soir, avec un adulte. Émile répète : matin, soir, brosse. Il pose la brosse dans le gobelet. Ses dents brillent.",
+      "script": "narrateur|Le matin, le soleil entre dans la chambre. Émile sent le pain chaud. Maman l'appelle. Émile pousse la porte de la salle de bain. L'eau coule tout doux. Maman tend la brosse bleue. Émile prend la brosse. Un adulte est avec lui. C'est maman. Ils se brossent ensemble. La brosse va en haut. La brosse va en bas. Émile sent la mousse. Ça goûte un peu la menthe. Parce qu'il brosse le matin, ses dents sont propres. Il rince sa bouche. Il range la brosse. Plus tard, le soir arrive. La lumière est douce.\nmaman|C'est l'heure.\nnarrateur|Émile revient. Il prend encore la brosse. Maman, l'adulte, se brosse aussi. Matin et soir, c'est pareil. Émile rit un peu. La brosse chatouille.\nmaman|Matin et soir, avec un adulte.\nnarrateur|Émile répète : matin, soir, brosse. Il pose la brosse dans le gobelet. Ses dents brillent.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Émile se brosse les dents. Quand et avec quoi ?",
+      "script": "narrateur|Émile se brosse les dents. Quand et avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Émile a pris la brosse. Il brosse avec l'adulte. C'est maman. Matin et soir.",
+      "script": "narrateur|Émile a pris la brosse. Il brosse avec l'adulte. C'est maman. Matin et soir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Émile met son pyjama. Maman éteint la petite lumière.",
+      "script": "narrateur|Émile met son pyjama. Maman éteint la petite lumière.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

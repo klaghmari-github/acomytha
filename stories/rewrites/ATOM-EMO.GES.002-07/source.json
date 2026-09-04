@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-07",
+  "fil_rouge": "",
+  "title": "Géraldine souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Géraldine, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Géraldine construit une tour. Les cubes sont rouges. La tour tombe. Géraldine sent son ventre serré. Papa arrive. On souffle. Géraldine souffle. Un grand souffle. On fait une pause. Géraldine s'assoit. Elle pose les fesses au sol. Elle souffle encore. La pause est calme. Son ventre se desserre. Papa reste près d'elle. Géraldine reprend un cube. Elle souffle. Elle fait une pause. Puis elle pose un cube. Tu as soufflé. Tu as fait une pause. Géraldine sourit.",
+      "script": "narrateur|Géraldine construit une tour. Les cubes sont rouges. La tour tombe. Géraldine sent son ventre serré. Papa arrive.\npapa|On souffle.\nnarrateur|Géraldine souffle. Un grand souffle.\npapa|On fait une pause.\nnarrateur|Géraldine s'assoit. Elle pose les fesses au sol. Elle souffle encore. La pause est calme. Son ventre se desserre. Papa reste près d'elle. Géraldine reprend un cube. Elle souffle. Elle fait une pause. Puis elle pose un cube.\npapa|Tu as soufflé. Tu as fait une pause.\nnarrateur|Géraldine sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tour tombe. Que fait Géraldine ?",
+      "script": "narrateur|La tour tombe. Que fait Géraldine ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Géraldine a soufflé. Elle a fait une pause. Papa était là.",
+      "script": "narrateur|Géraldine a soufflé. Elle a fait une pause. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Géraldine pose un cube. La tour est petite.",
+      "script": "narrateur|Géraldine pose un cube. La tour est petite.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

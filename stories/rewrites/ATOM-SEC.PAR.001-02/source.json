@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-02",
+  "fil_rouge": "",
+  "title": "Zoé et les cerceaux",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Zoé, papa",
+  "setting": "jardin public",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé arrive au jardin public. Papa montre un espace. C'est près des cerceaux colorés. Tu joues ici, dans l'espace montré. Ici, l'adulte voit. Zoé prend un cerceau. Elle le fait rouler. Papa s'assoit sur le banc. Parce que Zoé reste dans l'espace montré, papa la voit. Zoé fait un grand cercle. Elle revient près du banc. Je te vois. L'adulte voit. Zoé pose le cerceau. Elle reste dans l'espace montré. Le vent est doux. Zoé rit. Papa tape dans ses mains.",
+      "script": "narrateur|Zoé arrive au jardin public. Papa montre un espace. C'est près des cerceaux colorés.\npapa|Tu joues ici, dans l'espace montré. Ici, l'adulte voit.\nnarrateur|Zoé prend un cerceau. Elle le fait rouler. Papa s'assoit sur le banc. Parce que Zoé reste dans l'espace montré, papa la voit. Zoé fait un grand cercle. Elle revient près du banc.\npapa|Je te vois. L'adulte voit.\nnarrateur|Zoé pose le cerceau. Elle reste dans l'espace montré. Le vent est doux. Zoé rit. Papa tape dans ses mains.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Zoé joue au jardin. Où reste-t-elle ?",
+      "script": "narrateur|Zoé joue au jardin. Où reste-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Zoé est restée dans l'espace montré. Parce qu'elle y est restée, papa la voyait.",
+      "script": "narrateur|Zoé est restée dans l'espace montré. Parce qu'elle y est restée, papa la voyait.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Zoé range le cerceau. Papa lui tend la gourde.",
+      "script": "narrateur|Zoé range le cerceau. Papa lui tend la gourde.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

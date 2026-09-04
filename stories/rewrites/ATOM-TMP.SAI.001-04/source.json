@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SAI.001-04",
+  "fil_rouge": "",
+  "title": "Noémie nomme les quatre saisons",
+  "lesson_id": "TMP.SAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Noémie, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noémie marche dans le jardin avec maman. Il y a quatre saisons. Au printemps, Noémie voit des fleurs. Les fleurs sentent bon. En été, il fait chaud. Noémie boit de l'eau. En automne, les feuilles tombent. Elles sont jaunes. En hiver, Noémie met son manteau. Le manteau est doux. Maman dit un signe chacune. Fleurs, chaud, feuilles, manteau. Noémie répète : quatre saisons. Printemps, été, automne, hiver. Parce qu'il fait un peu frais, Noémie touche une feuille sèche. C'est l'automne. Un signe chacune. Noémie sourit.",
+      "script": "narrateur|Noémie marche dans le jardin avec maman.\nmaman|Il y a quatre saisons. Au printemps, Noémie voit des fleurs.\nnarrateur|Les fleurs sentent bon. En été, il fait chaud. Noémie boit de l'eau. En automne, les feuilles tombent. Elles sont jaunes. En hiver, Noémie met son manteau. Le manteau est doux. Maman dit un signe chacune. Fleurs, chaud, feuilles, manteau. Noémie répète : quatre saisons. Printemps, été, automne, hiver. Parce qu'il fait un peu frais, Noémie touche une feuille sèche.\nmaman|C'est l'automne.\nnarrateur|Un signe chacune. Noémie sourit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Les feuilles tombent. Quelle saison est-ce ?",
+      "script": "narrateur|Les feuilles tombent. Quelle saison est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noémie a nommé les quatre saisons. Un signe chacune. Maman l'a aidée.",
+      "script": "narrateur|Noémie a nommé les quatre saisons. Un signe chacune. Maman l'a aidée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noémie ramasse une feuille jaune. Maman tient sa main.",
+      "script": "narrateur|Noémie ramasse une feuille jaune. Maman tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

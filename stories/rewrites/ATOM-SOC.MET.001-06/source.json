@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.MET.001-06",
+  "fil_rouge": "",
+  "title": "Gwenaëlle nomme les métiers",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Gwenaëlle, papa, maman",
+  "setting": "bus, boulangerie, cabinet, école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gwenaëlle marche avec papa. Maman les rejoint à l'arrêt. Ils prennent le bus. Le chauffeur ouvre la porte. C'est un métier. Chauffeur. Le chauffeur fait un geste utile. Il conduit. Ensuite, la boulangerie. Ça sent le pain chaud. Le boulanger pose les croissants. C'est un métier. Boulanger. Le boulanger fait un geste utile. Il prépare le pain. Ils passent chez le médecin. Le médecin écoute le cœur. C'est un métier. Médecin. Le médecin fait un geste utile. Il soigne. Après, ils arrivent à l'école. La maîtresse lit une histoire. C'est un métier. Maîtresse. La maîtresse fait un geste utile. Elle aide les enfants. Chaque métier a un geste utile.",
+      "script": "narrateur|Gwenaëlle marche avec papa. Maman les rejoint à l'arrêt. Ils prennent le bus. Le chauffeur ouvre la porte.\npapa|C'est un métier.\nenfant-f|Chauffeur.\nnarrateur|Le chauffeur fait un geste utile. Il conduit. Ensuite, la boulangerie. Ça sent le pain chaud. Le boulanger pose les croissants.\npapa|C'est un métier.\nenfant-f|Boulanger.\nnarrateur|Le boulanger fait un geste utile. Il prépare le pain. Ils passent chez le médecin. Le médecin écoute le cœur.\nmaman|C'est un métier.\nenfant-f|Médecin.\nnarrateur|Le médecin fait un geste utile. Il soigne. Après, ils arrivent à l'école. La maîtresse lit une histoire.\npapa|C'est un métier.\nenfant-f|Maîtresse.\nnarrateur|La maîtresse fait un geste utile. Elle aide les enfants. Chaque métier a un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chauffeur ouvre la porte. C'est quoi ?",
+      "script": "narrateur|Le chauffeur ouvre la porte. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gwenaëlle a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "script": "narrateur|Gwenaëlle a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gwenaëlle serre la main de papa. Ils rentrent à la maison.",
+      "script": "narrateur|Gwenaëlle serre la main de papa. Ils rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

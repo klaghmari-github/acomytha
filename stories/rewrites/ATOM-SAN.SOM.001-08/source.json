@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-08",
+  "fil_rouge": "",
+  "title": "Bertrand met son pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Bertrand, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir arrive. La lampe de la chambre est douce. Bertrand bâille. Ses yeux piquent un peu. Le corps a besoin de dormir. Ce n'est pas une punition. C'est le dodo. Papa tend le pyjama. Le tissu est chaud. Bertrand met le pyjama. Il boutonne. Il glisse sous la couverture. Le lit est moelleux. Papa ouvre un livre. Il raconte une histoire courte. Bertrand écoute. Parce que le pyjama est mis, le corps se calme. Soir, pyjama, dodo. Bertrand pose sa tête. Il ferme les yeux. Papa reste un moment. Le dodo commence.",
+      "script": "narrateur|Le soir arrive. La lampe de la chambre est douce. Bertrand bâille. Ses yeux piquent un peu.\npapa|Le corps a besoin de dormir. Ce n'est pas une punition. C'est le dodo. Papa tend le pyjama.\nnarrateur|Le tissu est chaud. Bertrand met le pyjama. Il boutonne. Il glisse sous la couverture. Le lit est moelleux. Papa ouvre un livre. Il raconte une histoire courte. Bertrand écoute. Parce que le pyjama est mis, le corps se calme.\npapa|Soir, pyjama, dodo.\nnarrateur|Bertrand pose sa tête. Il ferme les yeux. Papa reste un moment. Le dodo commence.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, Bertrand va au lit. Que met-il ?",
+      "script": "narrateur|Le soir, Bertrand va au lit. Que met-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Bertrand a mis le pyjama. Il s'est couché. Le soir, c'est le dodo.",
+      "script": "narrateur|Bertrand a mis le pyjama. Il s'est couché. Le soir, c'est le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa baisse la lampe. Bertrand respire.",
+      "script": "narrateur|Papa baisse la lampe. Bertrand respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

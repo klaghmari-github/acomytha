@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-01",
+  "fil_rouge": "C'est l'anniversaire de Sarah, en juin, quand les fraises du jardin sont mûres. Elle en cueille une trop verte. La rouge est bonne. Le gâteau attend, parfumé.",
+  "title": "La fraise trop verte",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sarah, maman",
+  "setting": "jardin de fraisiers, puis table de la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sous les feuilles, une fraise cache sa joue rouge. Le jardin sent le sucre et la terre chaude. Une abeille passe loin, très loin. C'est juin, Sarah. Les fraises sont prêtes. C'est mon mois. Oui. Ton anniversaire. Le petit panier de paille attend près du pied. Sarah s'accroupit. Une feuille lui chatouille le poignet. J en vois une. Tu la prends ? Sarah tire. La fraise vient, trop claire. Elle est presque blanche, un peu dure. Elle est petite. Elle est trop verte. Elle n'est pas prête. Sarah la pose dans l'herbe. La fraise verte reste au pied. Je la laisse. Oui. On cherche une rouge. En ce moment, Sarah lève une feuille. Une fraise sombre brille dessous. Celle-là. Elle est mûre. Sarah la cueille, tout doux. Le fruit est chaud de soleil. Tu la sens ? Ça sent le gâteau. On en mettra dessus. Le panier reçoit trois rouges. Puis une quatrième, un peu plus petite. Juin donne les fraises. Et toi, tu as un an de plus.",
+      "script": "narrateur|Sous les feuilles, une fraise cache sa joue rouge.\nnarrateur|Le jardin sent le sucre et la terre chaude.\nnarrateur|Une abeille passe loin, très loin.\nmaman|C'est juin, Sarah.\nmaman|Les fraises sont prêtes.\nenfant-f|C'est mon mois.\nmaman|Oui.\nmaman|Ton anniversaire.\nnarrateur|Le petit panier de paille attend près du pied.\nnarrateur|Sarah s'accroupit.\nnarrateur|Une feuille lui chatouille le poignet.\nenfant-f|J en vois une.\nmaman|Tu la prends ?\nnarrateur|Sarah tire.\nnarrateur|La fraise vient, trop claire.\nnarrateur|Elle est presque blanche, un peu dure.\nenfant-f|Elle est petite.\nmaman|Elle est trop verte.\nmaman|Elle n'est pas prête.\nnarrateur|Sarah la pose dans l'herbe.\nnarrateur|La fraise verte reste au pied.\nenfant-f|Je la laisse.\nmaman|Oui.\nmaman|On cherche une rouge.\nnarrateur|En ce moment, Sarah lève une feuille.\nnarrateur|Une fraise sombre brille dessous.\nenfant-f|Celle-là.\nmaman|Elle est mûre.\nnarrateur|Sarah la cueille, tout doux.\nnarrateur|Le fruit est chaud de soleil.\nmaman|Tu la sens ?\nenfant-f|Ça sent le gâteau.\nmaman|On en mettra dessus.\nnarrateur|Le panier reçoit trois rouges.\nnarrateur|Puis une quatrième, un peu plus petite.\nmaman|Juin donne les fraises.\nmaman|Et toi, tu as un an de plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Sous les feuilles, une fraise cache sa joue rouge. Le jardin sent le sucre et la terre chaude. Une abeille passe loin, très loin. C'est juin, Sarah. Les fraises sont prêtes. C'est mon mois. Oui. Ton anniversaire. Le petit panier de paille attend près du pied. Sarah s'accroupit. Une feuille lui chatouille le poignet. J en vois une. Tu la prends ? Sarah tire. La fraise vient, trop claire. Elle est presque blanche, un peu dure. Elle est petite. Elle est trop verte. Elle n'est pas prête. Sarah la pose dans l'herbe. La fraise verte reste au pied. Je la laisse. Oui. On cherche une rouge. En ce moment, Sarah lève une feuille. Une fraise sombre brille dessous. Celle-là. Elle est mûre. Sarah la cueille, tout doux. Le fruit est chaud de soleil. Tu la sens ? Ça sent le gâteau. On en mettra dessus. Le panier reçoit trois rouges. Puis une quatrième, un peu plus petite. Juin donne les fraises. Et toi, tu as un an de plus."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah a un gâteau en juin. Pourquoi ?",
+      "script": "narrateur|Sarah a un gâteau en juin.\nnarrateur|Pourquoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Sarah a un gâteau en juin. Pourquoi ?",
+      "expected_answer": "anniversaire",
+      "accepted_examples": "anniversaire | son anniversaire | juin | le mois | fraises",
+      "retry_prompt": "C'est son anniversaire. Pourquoi le gâteau ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Elles rentrent. La cuisine sent déjà la pâte chaude. Le gâteau repose, tout nu. Il attend les fraises. Oui. Parce que c'est ton anniversaire. Sarah pose une rouge au milieu. Le jus tache un peu le dessus. Une étoile. Une fraise. Elle en pose deux autres, tout autour. La verte reste au jardin. Elle grandira. En juin, les rouges d'abord. Maman coupe une part mince. Sarah tient l'assiette à deux mains. Tu goûtes ?",
+      "script": "narrateur|Elles rentrent.\nnarrateur|La cuisine sent déjà la pâte chaude.\nnarrateur|Le gâteau repose, tout nu.\nenfant-f|Il attend les fraises.\nmaman|Oui.\nmaman|Parce que c'est ton anniversaire.\nnarrateur|Sarah pose une rouge au milieu.\nnarrateur|Le jus tache un peu le dessus.\nenfant-f|Une étoile.\nmaman|Une fraise.\nnarrateur|Elle en pose deux autres, tout autour.\nmaman|La verte reste au jardin.\nenfant-f|Elle grandira.\nmaman|En juin, les rouges d'abord.\nnarrateur|Maman coupe une part mince.\nnarrateur|Sarah tient l'assiette à deux mains.\nmaman|Tu goûtes ?",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Elles rentrent. La cuisine sent déjà la pâte chaude. Le gâteau repose, tout nu. Il attend les fraises. Oui. Parce que c'est ton anniversaire. Sarah pose une rouge au milieu. Le jus tache un peu le dessus. Une étoile. Une fraise. Elle en pose deux autres, tout autour. La verte reste au jardin. Elle grandira. En juin, les rouges d'abord. Maman coupe une part mince. Sarah tient l'assiette à deux mains. Tu goûtes ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sarah croque la fraise du dessus. Le jus sucré lui reste au menton. Elle est bonne. Parce qu elle était rouge. Une graine minuscule colle au doigt. Sarah la souffle. Merci, Sarah. Tu as choisi les mûres. Pas la verte. Pas la verte. Le panier a encore deux fruits. Ils sentent le soleil de juin. C'est mon mois. Le mois de ton anniversaire. Une mouche tourne près de la fenêtre. On range le reste au frais.",
+      "script": "narrateur|Sarah croque la fraise du dessus.\nnarrateur|Le jus sucré lui reste au menton.\nenfant-f|Elle est bonne.\nmaman|Parce qu elle était rouge.\nnarrateur|Une graine minuscule colle au doigt.\nnarrateur|Sarah la souffle.\nmaman|Merci, Sarah.\nmaman|Tu as choisi les mûres.\nenfant-f|Pas la verte.\nmaman|Pas la verte.\nnarrateur|Le panier a encore deux fruits.\nnarrateur|Ils sentent le soleil de juin.\nenfant-f|C'est mon mois.\nmaman|Le mois de ton anniversaire.\nnarrateur|Une mouche tourne près de la fenêtre.\nmaman|On range le reste au frais.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Sarah croque la fraise du dessus. Le jus sucré lui reste au menton. Elle est bonne. Parce qu elle était rouge. Une graine minuscule colle au doigt. Sarah la souffle. Merci, Sarah. Tu as choisi les mûres. Pas la verte. Pas la verte. Le panier a encore deux fruits. Ils sentent le soleil de juin. C'est mon mois. Le mois de ton anniversaire. Une mouche tourne près de la fenêtre. On range le reste au frais."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah essuie le menton d'un revers. Il reste une trace rose. Encore un peu de jus. C'est le goût de juin. Le gâteau a un trou au milieu. Là où la fraise était. Elle est dans mon ventre. Oui. Dehors, la verte attend sous sa feuille. Dedans, le panier sent encore le jardin.",
+      "script": "narrateur|Sarah essuie le menton d'un revers.\nnarrateur|Il reste une trace rose.\nenfant-f|Encore un peu de jus.\nmaman|C'est le goût de juin.\nnarrateur|Le gâteau a un trou au milieu.\nnarrateur|Là où la fraise était.\nenfant-f|Elle est dans mon ventre.\nmaman|Oui.\nnarrateur|Dehors, la verte attend sous sa feuille.\nnarrateur|Dedans, le panier sent encore le jardin.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Sarah essuie le menton d'un revers. Il reste une trace rose. Encore un peu de jus. C'est le goût de juin. Le gâteau a un trou au milieu. Là où la fraise était. Elle est dans mon ventre. Oui. Dehors, la verte attend sous sa feuille. Dedans, le panier sent encore le jardin."
+    }
+  ]
+}

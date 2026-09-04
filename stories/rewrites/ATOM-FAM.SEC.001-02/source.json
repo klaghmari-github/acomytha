@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.001-02",
+  "fil_rouge": "",
+  "title": "La surprise gentille de Jeanne",
+  "lesson_id": "FAM.SEC.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Jeanne, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est bientôt l'anniversaire de papa. Jeanne dessine un soleil. Maman aide. C'est une surprise gentille. On la garde un peu. Jeanne cache le dessin. Le papier est dans le tiroir. Papa passe. Jeanne sourit. Elle garde un peu. Puis on dit. Maintenant, on révèle. Jeanne ouvre le tiroir. Elle tend le dessin. C'est pour toi, papa. Papa rit. Il colle le soleil. C'était une surprise gentille. On l'a gardée un peu. Puis on dit. Jeanne tape des mains. Le dessin est jaune. Papa dit merci.",
+      "script": "narrateur|C'est bientôt l'anniversaire de papa. Jeanne dessine un soleil. Maman aide.\nmaman|C'est une surprise gentille. On la garde un peu.\nnarrateur|Jeanne cache le dessin. Le papier est dans le tiroir. Papa passe. Jeanne sourit. Elle garde un peu. Puis on dit.\nmaman|Maintenant, on révèle.\nnarrateur|Jeanne ouvre le tiroir. Elle tend le dessin.\nenfant-f|C'est pour toi, papa. Papa rit. Il colle le soleil. C'était une surprise gentille. On l'a gardée un peu.\nnarrateur|Puis on dit. Jeanne tape des mains. Le dessin est jaune. Papa dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jeanne cache un dessin. C'est quoi ?",
+      "script": "narrateur|Jeanne cache un dessin. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jeanne a gardé un peu. Puis on dit. C'était une surprise gentille pour papa.",
+      "script": "narrateur|Jeanne a gardé un peu. Puis on dit. C'était une surprise gentille pour papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa accroche le soleil. Jeanne boit un verre d'eau.",
+      "script": "narrateur|Papa accroche le soleil. Jeanne boit un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

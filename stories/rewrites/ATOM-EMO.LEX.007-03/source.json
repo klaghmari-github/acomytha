@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.007-03",
+  "fil_rouge": "",
+  "title": "Lila est nerveuse et demande une pause",
+  "lesson_id": "EMO.LEX.007",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Lila, papa",
+  "setting": "salle d'attente",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila attend avec papa. La chaise est dure. Ses jambes bougent. Ses mains froissent le manteau. Tu es nerveuse. Le corps n'arrive pas à tenir. On peut demander une pause. Je suis nerveuse. Je veux une pause. Papa l'écoute. Ils s'assoient près de la fenêtre. Lila souffle. Elle s'assoit. La pause aide. Nerveux, ce n'est pas vilain. Une pause, c'est bien.",
+      "script": "narrateur|Lila attend avec papa. La chaise est dure. Ses jambes bougent. Ses mains froissent le manteau.\npapa|Tu es nerveuse.\nnarrateur|Le corps n'arrive pas à tenir. On peut demander une pause.\nenfant-f|Je suis nerveuse. Je veux une pause. Papa l'écoute.\nnarrateur|Ils s'assoient près de la fenêtre. Lila souffle. Elle s'assoit. La pause aide.\npapa|Nerveux, ce n'est pas vilain.\nnarrateur|Une pause, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lila n'arrive pas à tenir. Que fait-elle ?",
+      "script": "narrateur|Lila n'arrive pas à tenir. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lila Je suis nerveuse. Elle a demandé une pause. Elle s'est assise.",
+      "script": "narrateur|Lila\nenfant-f|Je suis nerveuse. Elle a demandé une pause.\nnarrateur|Elle s'est assise.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa donne la main. Ils rentrent.",
+      "script": "narrateur|Papa donne la main. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

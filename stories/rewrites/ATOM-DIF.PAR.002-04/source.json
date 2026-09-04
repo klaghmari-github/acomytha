@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-DIF.PAR.002-04",
+  "fil_rouge": "",
+  "title": "Octave laisse le temps à Tess",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Octave, Tess, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Octave est au marché avec papa. Tess veut raconter. J'ai vu.. Puis elle cherche le mot. Octave connaît le mot. Il ouvre la bouche. On peut laisser le temps. On n'achève pas à sa place. Octave attend la fin de la phrase. Tess respire. J'ai vu un canard. Octave sourit. Il a su laisser le temps.",
+      "script": "narrateur|Octave est au marché avec papa. Tess veut raconter.\nnarrateur|J'ai vu..\nnarrateur|Puis elle cherche le mot. Octave connaît le mot. Il ouvre la bouche.\npapa|On peut laisser le temps. On n'achève pas à sa place.\nnarrateur|Octave attend la fin de la phrase. Tess respire.\nnarrateur|J'ai vu un canard.\nnarrateur|Octave sourit. Il a su laisser le temps.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tess cherche un mot. Que fait Octave ?",
+      "script": "narrateur|Tess cherche un mot. Que fait Octave ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Octave a su laisser le temps. Tess a fini sa phrase.",
+      "script": "narrateur|Octave a su laisser le temps. Tess a fini sa phrase.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa achète une poire. Octave donne la main.",
+      "script": "narrateur|Papa achète une poire. Octave donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

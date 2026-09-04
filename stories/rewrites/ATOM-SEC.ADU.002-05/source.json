@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.002-05",
+  "fil_rouge": "",
+  "title": "Diane reste avec papa au marché",
+  "lesson_id": "SEC.ADU.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Diane, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Diane va au marché. Papa vient avec elle. Papa est l'accompagnant. Diane aime rester avec l'accompagnant. Elle marche à côté de papa. Papa tient la main. Ses pieds restent près des pieds de papa. Ils voient des pommes rouges. Diane reste près. Tu restes avec moi. Diane hoche la tête. Elle sent la main de papa. La main est chaude. Ils écoutent le marchand. Diane reste avec papa. L'adulte connu est là. Diane est calme. Elle sourit. Papa prend un sac. Diane reste à côté. Rester avec l'accompagnant, c'est rester près de papa.",
+      "script": "narrateur|Diane va au marché. Papa vient avec elle. Papa est l'accompagnant. Diane aime rester avec l'accompagnant. Elle marche à côté de papa. Papa tient la main. Ses pieds restent près des pieds de papa. Ils voient des pommes rouges. Diane reste près.\npapa|Tu restes avec moi.\nnarrateur|Diane hoche la tête. Elle sent la main de papa. La main est chaude. Ils écoutent le marchand. Diane reste avec papa. L'adulte connu est là. Diane est calme. Elle sourit. Papa prend un sac. Diane reste à côté. Rester avec l'accompagnant, c'est rester près de papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Diane est au marché. Que fait-elle ?",
+      "script": "narrateur|Diane est au marché. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Diane reste avec papa. L'accompagnant est là. La main est tenue.",
+      "script": "narrateur|Diane reste avec papa. L'accompagnant est là. La main est tenue.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Diane et papa rentrent avec les pommes. Ils marchent ensemble.",
+      "script": "narrateur|Diane et papa rentrent avec les pommes. Ils marchent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

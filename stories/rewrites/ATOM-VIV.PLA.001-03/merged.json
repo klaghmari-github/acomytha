@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-03",
+  "fil_rouge": "Nino veut sentir une feuille de basilic. L'arrosoir est trop lourd. Papa tient l'anse avec lui. Ils versent. La feuille sent fort.",
+  "title": "L'arrosoir trop lourd",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "cuisine près de la fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "L'évier fait tic, tout doux. Une goutte tombe dans la cuve. Le basilic attend près de la vitre. Ça sent le savon de vaisselle. Nino vit ici, avec papa. Tu as vu les feuilles ? Elles pendent. La terre est claire, toute sèche. Je veux sentir. Une grande feuille. Il a soif, d'abord. Tu prends l'arrosoir ? En ce moment, Nino se baisse. L'arrosoir vert est près du seau. Nino tire l'anse. L'arrosoir ne bouge pas. Il est trop lourd. L'eau est dedans. On tient l'anse ensemble ? Oui, papa. La main de papa pose sur l'anse. La main de Nino est dessous. L'arrosoir se lève, tout lent. Il monte ! Ensemble. On va jusqu'au pot ? Ils marchent tout près. L'eau cloche, un peu. Nino souffle. On verse un peu. Pas tout. Le basilic attend, tout mou. Une feuille touche le rebord. Vite. Tout doux, pas vite.",
+      "script": "narrateur|L'évier fait tic, tout doux.\nnarrateur|Une goutte tombe dans la cuve.\nnarrateur|Le basilic attend près de la vitre.\nnarrateur|Ça sent le savon de vaisselle.\nnarrateur|Nino vit ici, avec papa.\npapa|Tu as vu les feuilles ?\nenfant-m|Elles pendent.\nnarrateur|La terre est claire, toute sèche.\nenfant-m|Je veux sentir.\nenfant-m|Une grande feuille.\npapa|Il a soif, d'abord.\npapa|Tu prends l'arrosoir ?\nnarrateur|En ce moment, Nino se baisse.\nnarrateur|L'arrosoir vert est près du seau.\nnarrateur|Nino tire l'anse.\nnarrateur|L'arrosoir ne bouge pas.\nenfant-m|Il est trop lourd.\npapa|L'eau est dedans.\npapa|On tient l'anse ensemble ?\nenfant-m|Oui, papa.\nnarrateur|La main de papa pose sur l'anse.\nnarrateur|La main de Nino est dessous.\nnarrateur|L'arrosoir se lève, tout lent.\nenfant-m|Il monte !\npapa|Ensemble.\npapa|On va jusqu'au pot ?\nnarrateur|Ils marchent tout près.\nnarrateur|L'eau cloche, un peu.\nnarrateur|Nino souffle.\npapa|On verse un peu.\npapa|Pas tout.\nnarrateur|Le basilic attend, tout mou.\nnarrateur|Une feuille touche le rebord.\nenfant-m|Vite.\npapa|Tout doux, pas vite.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "L'évier fait tic, tout doux. Une goutte tombe dans la cuve. Le basilic attend près de la vitre. Ça sent le savon de vaisselle. Nino vit ici, avec papa. Tu as vu les feuilles ? Elles pendent. La terre est claire, toute sèche. Je veux sentir. Une grande feuille. Il a soif, d'abord. Tu prends l'arrosoir ? En ce moment, Nino se baisse. L'arrosoir vert est près du seau. Nino tire l'anse. L'arrosoir ne bouge pas. Il est trop lourd. L'eau est dedans. On tient l'anse ensemble ? Oui, papa. La main de papa pose sur l'anse. La main de Nino est dessous. L'arrosoir se lève, tout lent. Il monte ! Ensemble. On va jusqu'au pot ? Ils marchent tout près. L'eau cloche, un peu. Nino souffle. On verse un peu. Pas tout. Le basilic attend, tout mou. Une feuille touche le rebord. Vite. Tout doux, pas vite."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La plante a soif. Que fait Nino avec papa ?",
+      "script": "narrateur|La plante a soif.\nnarrateur|Que fait Nino avec papa ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La plante a soif. Que fait Nino avec papa ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | il arrose | de l'eau | eau",
+      "retry_prompt": "Ils versent de l'eau. Que fait Nino ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino penche avec papa. L'eau tombe sur la terre. La terre devient sombre. Elle boit. Oui. Tu tiens encore l'anse ? Oui. Une goutte glisse sur le pot. Elle fait un trait brillant. On arrête. C'est assez. Ils reposent l'arrosoir. Il fait un bruit de plastique. Mes bras sont lourds. Merci, Nino. Tu as tenu avec moi. Nino sèche les mains au torchon. Le torchon sent le citron. Je peux sentir, maintenant ? La grande feuille, oui. Une goutte sèche sur le pot. Elle laisse un trait clair.",
+      "script": "narrateur|Nino penche avec papa.\nnarrateur|L'eau tombe sur la terre.\nnarrateur|La terre devient sombre.\nenfant-m|Elle boit.\npapa|Oui.\npapa|Tu tiens encore l'anse ?\nenfant-m|Oui.\nnarrateur|Une goutte glisse sur le pot.\nnarrateur|Elle fait un trait brillant.\npapa|On arrête.\npapa|C'est assez.\nnarrateur|Ils reposent l'arrosoir.\nnarrateur|Il fait un bruit de plastique.\nenfant-m|Mes bras sont lourds.\npapa|Merci, Nino.\npapa|Tu as tenu avec moi.\nnarrateur|Nino sèche les mains au torchon.\nnarrateur|Le torchon sent le citron.\nenfant-m|Je peux sentir, maintenant ?\npapa|La grande feuille, oui.\nnarrateur|Une goutte sèche sur le pot.\nnarrateur|Elle laisse un trait clair.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino penche avec papa. L'eau tombe sur la terre. La terre devient sombre. Elle boit. Oui. Tu tiens encore l'anse ? Oui. Une goutte glisse sur le pot. Elle fait un trait brillant. On arrête. C'est assez. Ils reposent l'arrosoir. Il fait un bruit de plastique. Mes bras sont lourds. Merci, Nino. Tu as tenu avec moi. Nino sèche les mains au torchon. Le torchon sent le citron. Je peux sentir, maintenant ? La grande feuille, oui. Une goutte sèche sur le pot. Elle laisse un trait clair."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino froisse la feuille. L'odeur saute, toute verte. Ça pique le nez ! C'est le basilic. Tu l'as aidé à boire. Une feuille se redresse, un peu. Le soleil la touche. Elle se lève. Oui. Parce qu'il y a de l'eau. L'évier fait encore tic. Nino pose l'arrosoir près du seau. L'anse est à toi, la prochaine fois ? Avec toi. Avec moi. Le pot reste près de la vitre. La terre est sombre, enfin. Tu as fini de sentir ? Encore un peu. Nino rapproche le nez. L'odeur reste sur sa joue. Elle reste. Oui.",
+      "script": "narrateur|Nino froisse la feuille.\nnarrateur|L'odeur saute, toute verte.\nenfant-m|Ça pique le nez !\npapa|C'est le basilic.\npapa|Tu l'as aidé à boire.\nnarrateur|Une feuille se redresse, un peu.\nnarrateur|Le soleil la touche.\nenfant-m|Elle se lève.\npapa|Oui.\npapa|Parce qu'il y a de l'eau.\nnarrateur|L'évier fait encore tic.\nnarrateur|Nino pose l'arrosoir près du seau.\npapa|L'anse est à toi, la prochaine fois ?\nenfant-m|Avec toi.\npapa|Avec moi.\nnarrateur|Le pot reste près de la vitre.\nnarrateur|La terre est sombre, enfin.\npapa|Tu as fini de sentir ?\nenfant-m|Encore un peu.\nnarrateur|Nino rapproche le nez.\nnarrateur|L'odeur reste sur sa joue.\nenfant-m|Elle reste.\npapa|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino froisse la feuille. L'odeur saute, toute verte. Ça pique le nez ! C'est le basilic. Tu l'as aidé à boire. Une feuille se redresse, un peu. Le soleil la touche. Elle se lève. Oui. Parce qu'il y a de l'eau. L'évier fait encore tic. Nino pose l'arrosoir près du seau. L'anse est à toi, la prochaine fois ? Avec toi. Avec moi. Le pot reste près de la vitre. La terre est sombre, enfin. Tu as fini de sentir ? Encore un peu. Nino rapproche le nez. L'odeur reste sur sa joue. Elle reste. Oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Nino garde l'odeur dans les doigts. Je l'ai sentie. Oui. La grande feuille. L'évier fait tic, encore. Le basilic sent fort, tout près.",
+      "script": "narrateur|Nino garde l'odeur dans les doigts.\nenfant-m|Je l'ai sentie.\npapa|Oui.\npapa|La grande feuille.\nnarrateur|L'évier fait tic, encore.\nnarrateur|Le basilic sent fort, tout près.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Nino garde l'odeur dans les doigts. Je l'ai sentie. Oui. La grande feuille. L'évier fait tic, encore. Le basilic sent fort, tout près."
+    }
+  ]
+}

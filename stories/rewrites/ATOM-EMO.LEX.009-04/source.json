@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.009-04",
+  "fil_rouge": "",
+  "title": "Jules est jaloux du vélo",
+  "lesson_id": "EMO.LEX.009",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Jules, Léa, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jules est au jardin avec maman. Léa roule sur le petit vélo. Jules le regarde. Son ventre se serre. Je suis jaloux. Maman écoute. Jules va près de Léa. Je voudrais demander un tour. Encore le chemin. Jules attend. Les mains restent sur le guidon vide. Puis Léa s'arrête. Jules a son tour. Il pédale tout doux. Tu as demandé un tour. Tu as attendu.",
+      "script": "narrateur|Jules est au jardin avec maman. Léa roule sur le petit vélo. Jules le regarde. Son ventre se serre.\nnarrateur|Je suis jaloux. Maman écoute.\nnarrateur|Jules va près de Léa.\nnarrateur|Je voudrais demander un tour.\ncopine|Encore le chemin.\nnarrateur|Jules attend. Les mains restent sur le guidon vide. Puis Léa s'arrête. Jules a son tour. Il pédale tout doux.\nmaman|Tu as demandé un tour. Tu as attendu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jules veut le vélo. Que fait-il ?",
+      "script": "narrateur|Jules veut le vélo. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules Je suis jaloux. Il a demandé un tour.",
+      "script": "narrateur|Jules\nenfant-f|Je suis jaloux. Il a demandé un tour.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le vélo. Jules essuie ses mains.",
+      "script": "narrateur|Maman range le vélo. Jules essuie ses mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

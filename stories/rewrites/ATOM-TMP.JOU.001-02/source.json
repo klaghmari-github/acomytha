@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-02",
+  "fil_rouge": "",
+  "title": "Oscar voit le soleil, puis la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Oscar, maman",
+  "setting": "jardin le jour puis chambre la nuit",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Oscar est dans le jardin avec maman. C'est le jour. Le soleil brille. Le jour, le soleil. Soleil jour. Oscar sent la chaleur sur ses mains. Les oiseaux chantent. L'herbe chatouille. Plus tard, le soir arrive. Oscar est dans sa chambre. La fenêtre est ouverte un peu. Il voit la lune. Il voit les étoiles. La nuit, la lune et les étoiles. Lune nuit. Oscar met son pyjama. Le pyjama est doux. On se couche. Dodo la nuit. Oscar se couche. Le corps a besoin de dormir. Même leçon, deux moments. Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "script": "narrateur|Oscar est dans le jardin avec maman. C'est le jour. Le soleil brille.\nmaman|Le jour, le soleil. Soleil jour.\nnarrateur|Oscar sent la chaleur sur ses mains. Les oiseaux chantent. L'herbe chatouille. Plus tard, le soir arrive. Oscar est dans sa chambre. La fenêtre est ouverte un peu. Il voit la lune. Il voit les étoiles.\nmaman|La nuit, la lune et les étoiles. Lune nuit.\nnarrateur|Oscar met son pyjama. Le pyjama est doux.\nmaman|On se couche. Dodo la nuit.\nnarrateur|Oscar se couche. Le corps a besoin de dormir. Même leçon, deux moments. Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le jour on voit le soleil. La nuit, que voit-on ?",
+      "script": "narrateur|Le jour on voit le soleil. La nuit, que voit-on ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Oscar a vu le soleil le jour. Puis la lune la nuit. Dodo la nuit.",
+      "script": "narrateur|Oscar a vu le soleil le jour. Puis la lune la nuit. Dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Oscar ferme les yeux. La lune est là.",
+      "script": "narrateur|Oscar ferme les yeux. La lune est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

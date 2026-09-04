@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-05",
+  "fil_rouge": "Chouchou veut le chat du mur. Le soleil cligne sur les toits. Un pigeon fait fuir le chat. Le soir, la lune est sur le zinc, le chat revient.",
+  "title": "Le chat du mur de Chouchou",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Chouchou, papa",
+  "setting": "balcon en ville",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les toits de zinc clignent sous le soleil. Le balcon sent le linge chaud. Une gouttière tient une feuille sèche. Le mur d'en face est déjà brûlant. Tu as vu le zinc, Chouchou ? Il brille. Oui. Les toits sont chauds. Je veux le chat. Il vient sur le mur. En ce moment, Chouchou s'accoude. Le fer du balcon est chaud. Le soleil tape les toits, fort. Le jour est clair. Le soleil est sur les toits. Un chat gris arrive sur le mur. Il se frotte, lent. Il est là. Tout doux. Un pigeon se pose, brusque. Le chat saute, disparu. Oh. Il est parti. Il reviendra. On attend ? Oui. Chouchou reste accoudée. Une lessive claque, à côté. Une radio chante, loin. Un camion passe en bas, sourd. Il tarde. Le jour est encore long. Une goutte tombe de la gouttière. Elle sèche sur le zinc, vite. L'ombre du mur s'allonge. Le zinc perd son clignement. Le ciel devient bleu foncé. Une lune ronde s'assoit sur un toit. Elle est sur le zinc. La nuit est là. La lune est sur les toits. Le chat revient, plus silencieux. Le voilà. Merci d'avoir attendu. Tu as été patiente.",
+      "script": "narrateur|Les toits de zinc clignent sous le soleil.\nnarrateur|Le balcon sent le linge chaud.\nnarrateur|Une gouttière tient une feuille sèche.\nnarrateur|Le mur d'en face est déjà brûlant.\npapa|Tu as vu le zinc, Chouchou ?\nenfant-f|Il brille.\npapa|Oui.\npapa|Les toits sont chauds.\nenfant-f|Je veux le chat.\npapa|Il vient sur le mur.\nnarrateur|En ce moment, Chouchou s'accoude.\nnarrateur|Le fer du balcon est chaud.\nnarrateur|Le soleil tape les toits, fort.\npapa|Le jour est clair.\npapa|Le soleil est sur les toits.\nnarrateur|Un chat gris arrive sur le mur.\nnarrateur|Il se frotte, lent.\nenfant-f|Il est là.\npapa|Tout doux.\nnarrateur|Un pigeon se pose, brusque.\nnarrateur|Le chat saute, disparu.\nenfant-f|Oh.\nenfant-f|Il est parti.\npapa|Il reviendra.\npapa|On attend ?\nenfant-f|Oui.\nnarrateur|Chouchou reste accoudée.\nnarrateur|Une lessive claque, à côté.\nnarrateur|Une radio chante, loin.\nnarrateur|Un camion passe en bas, sourd.\nenfant-f|Il tarde.\npapa|Le jour est encore long.\nnarrateur|Une goutte tombe de la gouttière.\nnarrateur|Elle sèche sur le zinc, vite.\nnarrateur|L'ombre du mur s'allonge.\nnarrateur|Le zinc perd son clignement.\nnarrateur|Le ciel devient bleu foncé.\nnarrateur|Une lune ronde s'assoit sur un toit.\nenfant-f|Elle est sur le zinc.\npapa|La nuit est là.\npapa|La lune est sur les toits.\nnarrateur|Le chat revient, plus silencieux.\nenfant-f|Le voilà.\npapa|Merci d'avoir attendu.\npapa|Tu as été patiente.",
+      "sons": "ville",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les toits de zinc clignent sous le soleil. Le balcon sent le linge chaud. Une gouttière tient une feuille sèche. Le mur d'en face est déjà brûlant. Tu as vu le zinc, Chouchou ? Il brille. Oui. Les toits sont chauds. Je veux le chat. Il vient sur le mur. En ce moment, Chouchou s'accoude. Le fer du balcon est chaud. Le soleil tape les toits, fort. Le jour est clair. Le soleil est sur les toits. Un chat gris arrive sur le mur. Il se frotte, lent. Il est là. Tout doux. Un pigeon se pose, brusque. Le chat saute, disparu. Oh. Il est parti. Il reviendra. On attend ? Oui. Chouchou reste accoudée. Une lessive claque, à côté. Une radio chante, loin. Un camion passe en bas, sourd. Il tarde. Le jour est encore long. Une goutte tombe de la gouttière. Elle sèche sur le zinc, vite. L'ombre du mur s'allonge. Le zinc perd son clignement. Le ciel devient bleu foncé. Une lune ronde s'assoit sur un toit. Elle est sur le zinc. La nuit est là. La lune est sur les toits. Le chat revient, plus silencieux. Le voilà. Merci d'avoir attendu. Tu as été patiente."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est sur le toit. Quel moment est-ce ?",
+      "script": "narrateur|La lune est sur le toit.\nnarrateur|Quel moment est-ce ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La lune est sur le toit. Quel moment est-ce ?",
+      "expected_answer": "nuit",
+      "accepted_examples": "nuit | la nuit | le soir | dodo | c'est la nuit",
+      "retry_prompt": "La lune est sur le toit. C'est le jour, ou la nuit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou a vu le zinc tout brillant. Maintenant la lune est sur le même toit. Le jour, c'était le soleil. La nuit, c'est la lune. Le chat est revenu. Oui. On rentre se coucher ? Encore le chat. Le chat se lèche une patte. La gouttière tient encore sa feuille. Tu lui dis au revoir ? À demain. Le linge ne claque plus. L'air du balcon est plus frais.",
+      "script": "narrateur|Chouchou a vu le zinc tout brillant.\nnarrateur|Maintenant la lune est sur le même toit.\npapa|Le jour, c'était le soleil.\npapa|La nuit, c'est la lune.\nenfant-f|Le chat est revenu.\npapa|Oui.\npapa|On rentre se coucher ?\nenfant-f|Encore le chat.\nnarrateur|Le chat se lèche une patte.\nnarrateur|La gouttière tient encore sa feuille.\npapa|Tu lui dis au revoir ?\nenfant-f|À demain.\nnarrateur|Le linge ne claque plus.\nnarrateur|L'air du balcon est plus frais.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Chouchou a vu le zinc tout brillant. Maintenant la lune est sur le même toit. Le jour, c'était le soleil. La nuit, c'est la lune. Le chat est revenu. Oui. On rentre se coucher ? Encore le chat. Le chat se lèche une patte. La gouttière tient encore sa feuille. Tu lui dis au revoir ? À demain. Le linge ne claque plus. L'air du balcon est plus frais."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Chouchou quitte le fer du balcon. Le fer est plus froid, maintenant. Le pyjama, maintenant. Le pyjama sent le linge du balcon. La lune est encore là ? À la fenêtre. Chouchou monte sur le lit. Le zinc est gris, dehors. La lune tient encore un coin de toit. La nuit, on fait dodo. Tu fermes les yeux ? Presque. Papa baisse la lumière. Chouchou respire le linge chaud.",
+      "script": "narrateur|Chouchou quitte le fer du balcon.\nnarrateur|Le fer est plus froid, maintenant.\npapa|Le pyjama, maintenant.\nnarrateur|Le pyjama sent le linge du balcon.\nenfant-f|La lune est encore là ?\npapa|À la fenêtre.\nnarrateur|Chouchou monte sur le lit.\nnarrateur|Le zinc est gris, dehors.\nnarrateur|La lune tient encore un coin de toit.\npapa|La nuit, on fait dodo.\npapa|Tu fermes les yeux ?\nenfant-f|Presque.\nnarrateur|Papa baisse la lumière.\nnarrateur|Chouchou respire le linge chaud.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Chouchou quitte le fer du balcon. Le fer est plus froid, maintenant. Le pyjama, maintenant. Le pyjama sent le linge du balcon. La lune est encore là ? À la fenêtre. Chouchou monte sur le lit. Le zinc est gris, dehors. La lune tient encore un coin de toit. La nuit, on fait dodo. Tu fermes les yeux ? Presque. Papa baisse la lumière. Chouchou respire le linge chaud."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le chat reste une tache sur le mur. La lune reste une tache sur le zinc. Il est revenu. Oui. Toi aussi, tu as attendu. Chouchou ferme les yeux. La gouttière ne bouge plus.",
+      "script": "narrateur|Le chat reste une tache sur le mur.\nnarrateur|La lune reste une tache sur le zinc.\nenfant-f|Il est revenu.\npapa|Oui.\npapa|Toi aussi, tu as attendu.\nnarrateur|Chouchou ferme les yeux.\nnarrateur|La gouttière ne bouge plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le chat reste une tache sur le mur. La lune reste une tache sur le zinc. Il est revenu. Oui. Toi aussi, tu as attendu. Chouchou ferme les yeux. La gouttière ne bouge plus."
+    }
+  ]
+}

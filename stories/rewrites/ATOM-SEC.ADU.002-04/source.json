@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.002-04",
+  "fil_rouge": "",
+  "title": "Myriam reste avec maman, deux lieux",
+  "lesson_id": "SEC.ADU.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Myriam, maman",
+  "setting": "marché puis bibliothèque",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Myriam va au marché avec maman. Maman est l'accompagnant. Myriam aime rester avec l'accompagnant. Elle marche à côté de maman. Maman tient la main. Les pieds de Myriam restent près. Ils voient des cerises. Myriam reste avec l'accompagnant. L'adulte connu est là. Tu restes avec moi. Myriam hoche la tête. Elle sent la main. La main est douce. Plus tard, elles vont à la bibliothèque. Les livres sentent le papier. Myriam se souvient. Elle reste avec l'accompagnant. Elle reste à côté de maman. Les pieds restent près. La main de maman est là. Tu restes avec l'adulte connu. Myriam sourit. Même leçon, autre lieu. L'accompagnant de la famille est là.",
+      "script": "narrateur|Myriam va au marché avec maman. Maman est l'accompagnant. Myriam aime rester avec l'accompagnant. Elle marche à côté de maman. Maman tient la main. Les pieds de Myriam restent près. Ils voient des cerises. Myriam reste avec l'accompagnant. L'adulte connu est là.\nmaman|Tu restes avec moi.\nnarrateur|Myriam hoche la tête. Elle sent la main. La main est douce. Plus tard, elles vont à la bibliothèque. Les livres sentent le papier. Myriam se souvient. Elle reste avec l'accompagnant. Elle reste à côté de maman. Les pieds restent près. La main de maman est là.\nmaman|Tu restes avec l'adulte connu.\nnarrateur|Myriam sourit. Même leçon, autre lieu. L'accompagnant de la famille est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Myriam est au marché, puis à la bibliothèque. Que fait-elle ?",
+      "script": "narrateur|Myriam est au marché, puis à la bibliothèque. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Myriam reste avec maman. Au marché, puis à la bibliothèque. L'adulte connu est là.",
+      "script": "narrateur|Myriam reste avec maman. Au marché, puis à la bibliothèque. L'adulte connu est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Myriam et maman tiennent un livre. Elles restent ensemble.",
+      "script": "narrateur|Myriam et maman tiennent un livre. Elles restent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.001-04",
+  "fil_rouge": "",
+  "title": "Marceau dit bravo deux fois",
+  "lesson_id": "JEU.REG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Marceau, papa, maman",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Marceau et papa jouent au loto, à la table. Les cartons sont lisses. Marceau a envie de gagner. Papa pose sa dernière image. Papa a gagné. Marceau sent un nœud dans le ventre. Ses yeux piquent un peu. L'autre peut gagner. C'est le jeu. Je suis déçu. Être déçu, c'est permis. Marceau souffle. Bravo papa. Papa sourit. On peut rejouer plus tard. Marceau hoche la tête. Plus tard, au jardin, maman joue aux quilles. Maman fait tomber les quilles. Maman a gagné. Marceau sent encore le nœud. Je suis déçu. Être déçu, c'est permis. L'autre peut gagner. Bravo maman. On rejoue plus tard. Au salon, puis au jardin, c'est pareil. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "script": "narrateur|Marceau et papa jouent au loto, à la table. Les cartons sont lisses. Marceau a envie de gagner. Papa pose sa dernière image. Papa a gagné. Marceau sent un nœud dans le ventre. Ses yeux piquent un peu.\npapa|L'autre peut gagner. C'est le jeu.\nenfant-m|Je suis déçu.\npapa|Être déçu, c'est permis.\nnarrateur|Marceau souffle.\nnarrateur|Bravo papa. Papa sourit.\npapa|On peut rejouer plus tard.\nnarrateur|Marceau hoche la tête. Plus tard, au jardin, maman joue aux quilles. Maman fait tomber les quilles. Maman a gagné. Marceau sent encore le nœud.\nnarrateur|Je suis déçu. Être déçu, c'est permis. L'autre peut gagner.\nnarrateur|Bravo maman.\nmaman|On rejoue plus tard. Au salon, puis au jardin, c'est pareil. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a gagné. Que peut faire Marceau ?",
+      "script": "narrateur|Papa a gagné. Que peut faire Marceau ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Marceau a dit bravo. Il était déçu, et c'était permis. Ils rejoueront plus tard.",
+      "script": "narrateur|Marceau a dit bravo. Il était déçu, et c'était permis. Ils rejoueront plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Marceau range les quilles. Papa range le loto. Ils vont boire de l'eau.",
+      "script": "narrateur|Marceau range les quilles. Papa range le loto. Ils vont boire de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

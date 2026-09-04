@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.001-01",
+  "fil_rouge": "",
+  "title": "Soutenir un camarade avec respect",
+  "lesson_id": "REL.MOQ.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Lila, Kenzo, Hugo, maman",
+  "setting": "école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila est à l'école. La classe range les manteaux. Le couloir sent le savon. Hugo fait tomber son bonnet. Kenzo commence à rire. Le rire est court. Lila ne rit pas. Il ne faut pas rire. Lila ne répète pas. Il ne faut pas répéter. Ce n'est pas gentil. Elle va vers Hugo. Elle ramasse le bonnet. Elle le tend. Hugo le remet. La maîtresse s'approche. Pardon. Le soir, maman vient. Lila raconte. Tu as bien fait. Il ne faut pas rire. Il ne faut pas répéter. Ce n'est pas gentil. Lila serre la main de maman. Le chemin est calme.",
+      "script": "narrateur|Lila est à l'école. La classe range les manteaux. Le couloir sent le savon. Hugo fait tomber son bonnet. Kenzo commence à rire. Le rire est court. Lila ne rit pas. Il ne faut pas rire. Lila ne répète pas. Il ne faut pas répéter.\nenfant-f|Ce n'est pas gentil. Elle va vers Hugo. Elle ramasse le bonnet. Elle le tend.\nnarrateur|Hugo le remet. La maîtresse s'approche.\ncopain|Pardon.\nnarrateur|Le soir, maman vient. Lila raconte.\nmaman|Tu as bien fait. Il ne faut pas rire. Il ne faut pas répéter.\nnarrateur|Ce n'est pas gentil.\nnarrateur|Lila serre la main de maman. Le chemin est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Kenzo rit. Que fait Lila ?",
+      "script": "narrateur|Kenzo rit. Que fait Lila ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lila n'a pas ri. Elle n'a pas répété. Elle Ce n'est pas gentil. Maman est là.",
+      "script": "narrateur|Lila n'a pas ri. Elle n'a pas répété. Elle\nenfant-f|Ce n'est pas gentil. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lila range son cartable. Maman marche à côté.",
+      "script": "narrateur|Lila range son cartable. Maman marche à côté.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

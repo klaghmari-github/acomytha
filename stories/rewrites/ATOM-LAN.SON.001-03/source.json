@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-03",
+  "fil_rouge": "",
+  "title": "Hanna nomme la pluie",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hanna, papa, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hanna s'assoit sous l'auvent. Papa est là. Maman arrose les pots. Il pleut. Ça fait plic ploc. C'est un son. Quel nom ? La pluie. Oui. Le nom du son, c'est la pluie. Plus loin, un bruit long. Tchou tchou. Encore un son. Quel nom ? Le train. Oui. Le nom du son, c'est le train. Puis, près des fleurs, un miaulement. Miaou. Un son. Quel nom ? Le chat. Le chat vient. Hanna le caresse. Pluie. Train. Chat. On entend. On nomme le son.",
+      "script": "narrateur|Hanna s'assoit sous l'auvent. Papa est là. Maman arrose les pots. Il pleut. Ça fait plic ploc.\npapa|C'est un son. Quel nom ?\nenfant-f|La pluie.\npapa|Oui.\nnarrateur|Le nom du son, c'est la pluie. Plus loin, un bruit long. Tchou tchou.\npapa|Encore un son. Quel nom ?\nenfant-f|Le train.\npapa|Oui.\nnarrateur|Le nom du son, c'est le train. Puis, près des fleurs, un miaulement. Miaou.\nmaman|Un son. Quel nom ?\nenfant-f|Le chat.\nnarrateur|Le chat vient. Hanna le caresse. Pluie. Train. Chat. On entend. On nomme le son.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hanna entend un bruit. C'est quoi ?",
+      "script": "narrateur|Hanna entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hanna a entendu un son. Elle a dit le nom. Pluie. Train. Chat.",
+      "script": "narrateur|Hanna a entendu un son. Elle a dit le nom. Pluie. Train. Chat.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le chat ronronne. Hanna pose la tête sur papa.",
+      "script": "narrateur|Le chat ronronne. Hanna pose la tête sur papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

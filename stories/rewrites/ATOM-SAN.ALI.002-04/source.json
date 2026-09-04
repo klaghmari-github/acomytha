@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-04",
+  "fil_rouge": "",
+  "title": "Joséphine s'assoit pour souper",
+  "lesson_id": "SAN.ALI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Joséphine, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est l'heure du souper. Joséphine est dans la cuisine. Maman pose les assiettes. Papa apporte la soupe. La soupe sent les carottes. Joséphine va s'asseoir. Elle pose les fesses sur la chaise. Elle est assise à table. Papa s'assoit aussi. Maman s'assoit près d'elle. Ils mangent ensemble. Joséphine tient sa cuillère. Elle mange assise. La chaise est stable. On mange ensemble, à table. Joséphine sourit. Elle reste assise. Papa coupe le pain. Joséphine attend, assise. Ils sont ensemble à table.",
+      "script": "narrateur|C'est l'heure du souper. Joséphine est dans la cuisine. Maman pose les assiettes. Papa apporte la soupe. La soupe sent les carottes. Joséphine va s'asseoir. Elle pose les fesses sur la chaise. Elle est assise à table. Papa s'assoit aussi. Maman s'assoit près d'elle. Ils mangent ensemble. Joséphine tient sa cuillère. Elle mange assise. La chaise est stable.\nmaman|On mange ensemble, à table.\nnarrateur|Joséphine sourit. Elle reste assise. Papa coupe le pain. Joséphine attend, assise. Ils sont ensemble à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Joséphine va manger. Que fait-elle ?",
+      "script": "narrateur|Joséphine va manger. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Joséphine est assise. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "script": "narrateur|Joséphine est assise. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Joséphine boit une gorgée. Elle reste assise jusqu'à la fin. Merci, dit maman.",
+      "script": "narrateur|Joséphine boit une gorgée. Elle reste assise jusqu'à la fin. Merci, dit maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.MOV.001-04",
+  "fil_rouge": "",
+  "title": "Malo joue dehors deux fois",
+  "lesson_id": "SAN.MOV.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Malo, papa",
+  "setting": "jardin puis parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Malo a joué aux voitures dans le salon. Ses jambes bougent encore. On va dehors. Ils mettent les chaussures. Ils ouvrent la porte du jardin. L'herbe est fraîche. Un oiseau chante. Malo court jusqu'au cerisier. Papa reste près de lui. C'est un adulte. Malo lance un cerceau. Papa le renvoie. Je joue dehors, avec un adulte. Parce qu'il a bougé, son corps est content. Ils boivent un peu d'eau. Plus tard, papa prend le sac. Ils vont au parc. Dehors, le vent est doux. Malo grimpe sur le petit pont en bois. Papa le voit. Malo court sur l'herbe du parc. Papa reste avec lui. Au jardin, puis au parc, c'est la même chose. On joue dehors un moment. On y va avec un adulte. Malo sent ses joues chaudes. Encore un peu, puis on rentre. Malo donne le cerceau. Ils marchent ensemble.",
+      "script": "narrateur|Malo a joué aux voitures dans le salon. Ses jambes bougent encore.\npapa|On va dehors.\nnarrateur|Ils mettent les chaussures. Ils ouvrent la porte du jardin. L'herbe est fraîche. Un oiseau chante. Malo court jusqu'au cerisier. Papa reste près de lui. C'est un adulte. Malo lance un cerceau. Papa le renvoie.\nenfant-m|Je joue dehors, avec un adulte. Parce qu'il a bougé, son corps est content. Ils boivent un peu d'eau. Plus tard, papa prend le sac. Ils vont au parc. Dehors, le vent est doux.\nnarrateur|Malo grimpe sur le petit pont en bois. Papa le voit. Malo court sur l'herbe du parc. Papa reste avec lui. Au jardin, puis au parc, c'est la même chose. On joue dehors un moment. On y va avec un adulte. Malo sent ses joues chaudes.\npapa|Encore un peu, puis on rentre.\nnarrateur|Malo donne le cerceau. Ils marchent ensemble.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Malo veut bouger. Où joue-t-il ?",
+      "script": "narrateur|Malo veut bouger. Où joue-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Malo a joué dehors. D'abord au jardin. Puis au parc. Papa, un adulte, était avec lui.",
+      "script": "narrateur|Malo a joué dehors. D'abord au jardin. Puis au parc. Papa, un adulte, était avec lui.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Malo range ses chaussures. Il boit encore de l'eau. Merci, dit-il à papa.",
+      "script": "narrateur|Malo range ses chaussures. Il boit encore de l'eau. Merci, dit-il à papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

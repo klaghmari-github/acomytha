@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-05",
+  "fil_rouge": "Nino veut finir le puzzle du Mont, en Italie. Une pièce manque. Elle est sous la table. Il la trouve. La neige se pose.",
+  "title": "Le puzzle du Mont de Nino",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nino, maman",
+  "setting": "salon, table basse et tapis",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La table basse sent le bois ciré. Des pièces de carton brillent comme des tuiles. Le tapis rouge est épais sous les genoux. Une boîte montre une montagne blanche. Nino vit ici, avec maman. Tu as vu la boîte, Nino ? C'est le Mont. Oui. Le Mont, en Italie. En ce moment, Nino étale les pièces. Le carton est rêche sous les doigts. Je veux finir le Mont. On commence par le ciel ? Le ciel est bleu pâle. Ils posent trois pièces de ciel. Les bords s'emboîtent avec un clic. Clic. Et la roche, maintenant ? Nino cherche les bruns. Une pièce a un peu de neige. L'Italie. Et la montagne. Un pays. Un paysage. Le Mont grandit, tout doucement. Il manque un trou, tout en haut. La neige du sommet. Elle n'est pas là. Tu l'as vue tomber ? Non. Nino regarde la boîte. Le sommet blanc est sur l'image. Sur la table, le trou reste vide. On cherche autour ? Oui. Nino se penche vers le tapis. Un fil rouge chatouille le nez. Je ne la vois pas. Et sous la table ? Nino pose la joue au sol. L'ombre de la table est fraîche. Une petite forme blanche attend. Là ! Sous la table !",
+      "script": "narrateur|La table basse sent le bois ciré.\nnarrateur|Des pièces de carton brillent comme des tuiles.\nnarrateur|Le tapis rouge est épais sous les genoux.\nnarrateur|Une boîte montre une montagne blanche.\nnarrateur|Nino vit ici, avec maman.\nmaman|Tu as vu la boîte, Nino ?\nenfant-m|C'est le Mont.\nmaman|Oui.\nmaman|Le Mont, en Italie.\nnarrateur|En ce moment, Nino étale les pièces.\nnarrateur|Le carton est rêche sous les doigts.\nenfant-m|Je veux finir le Mont.\nmaman|On commence par le ciel ?\nenfant-m|Le ciel est bleu pâle.\nnarrateur|Ils posent trois pièces de ciel.\nnarrateur|Les bords s'emboîtent avec un clic.\nenfant-m|Clic.\nmaman|Et la roche, maintenant ?\nnarrateur|Nino cherche les bruns.\nnarrateur|Une pièce a un peu de neige.\nenfant-m|L'Italie.\nenfant-m|Et la montagne.\nmaman|Un pays.\nmaman|Un paysage.\nnarrateur|Le Mont grandit, tout doucement.\nnarrateur|Il manque un trou, tout en haut.\nenfant-m|La neige du sommet.\nenfant-m|Elle n'est pas là.\nmaman|Tu l'as vue tomber ?\nenfant-m|Non.\nnarrateur|Nino regarde la boîte.\nnarrateur|Le sommet blanc est sur l'image.\nnarrateur|Sur la table, le trou reste vide.\nmaman|On cherche autour ?\nenfant-m|Oui.\nnarrateur|Nino se penche vers le tapis.\nnarrateur|Un fil rouge chatouille le nez.\nenfant-m|Je ne la vois pas.\nmaman|Et sous la table ?\nnarrateur|Nino pose la joue au sol.\nnarrateur|L'ombre de la table est fraîche.\nnarrateur|Une petite forme blanche attend.\nenfant-m|Là !\nenfant-m|Sous la table !",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La table basse sent le bois ciré. Des pièces de carton brillent comme des tuiles. Le tapis rouge est épais sous les genoux. Une boîte montre une montagne blanche. Nino vit ici, avec maman. Tu as vu la boîte, Nino ? C'est le Mont. Oui. Le Mont, en Italie. En ce moment, Nino étale les pièces. Le carton est rêche sous les doigts. Je veux finir le Mont. On commence par le ciel ? Le ciel est bleu pâle. Ils posent trois pièces de ciel. Les bords s'emboîtent avec un clic. Clic. Et la roche, maintenant ? Nino cherche les bruns. Une pièce a un peu de neige. L'Italie. Et la montagne. Un pays. Un paysage. Le Mont grandit, tout doucement. Il manque un trou, tout en haut. La neige du sommet. Elle n'est pas là. Tu l'as vue tomber ? Non. Nino regarde la boîte. Le sommet blanc est sur l'image. Sur la table, le trou reste vide. On cherche autour ? Oui. Nino se penche vers le tapis. Un fil rouge chatouille le nez. Je ne la vois pas. Et sous la table ? Nino pose la joue au sol. L'ombre de la table est fraîche. Une petite forme blanche attend. Là ! Sous la table !"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino nomme l'Italie. Il nomme aussi quoi ?",
+      "script": "narrateur|Nino nomme l'Italie.\nnarrateur|Il nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nino nomme l'Italie. Il nomme aussi quoi ?",
+      "expected_answer": "la montagne",
+      "accepted_examples": "montagne | la montagne | le Mont | mont | neige | paysage",
+      "retry_prompt": "Nino nomme aussi la montagne. Il nomme aussi quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino glisse le bras sous le bois. La pièce est un peu poussiéreuse. Je l'ai. Doucement. Tu la sors ? La pièce blanche revient à la lumière. Un peu de tapis rouge dessus. On souffle. Fffff. La poussière part. La neige du sommet est nette. Merci, Nino. Tu l'as trouvée. Nino pose la pièce dans le trou. Le clic est plus fort, cette fois. Le Mont est fini ! L'Italie. Et la montagne. Ils regardent le sommet ensemble. Le blanc tient contre le ciel pâle. Il neige, là-haut. Sur le puzzle, oui.",
+      "script": "narrateur|Nino glisse le bras sous le bois.\nnarrateur|La pièce est un peu poussiéreuse.\nenfant-m|Je l'ai.\nmaman|Doucement.\nmaman|Tu la sors ?\nnarrateur|La pièce blanche revient à la lumière.\nnarrateur|Un peu de tapis rouge dessus.\nmaman|On souffle.\nenfant-m|Fffff.\nnarrateur|La poussière part.\nnarrateur|La neige du sommet est nette.\nmaman|Merci, Nino.\nmaman|Tu l'as trouvée.\nnarrateur|Nino pose la pièce dans le trou.\nnarrateur|Le clic est plus fort, cette fois.\nenfant-m|Le Mont est fini !\nmaman|L'Italie.\nmaman|Et la montagne.\nnarrateur|Ils regardent le sommet ensemble.\nnarrateur|Le blanc tient contre le ciel pâle.\nenfant-m|Il neige, là-haut.\nmaman|Sur le puzzle, oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino glisse le bras sous le bois. La pièce est un peu poussiéreuse. Je l'ai. Doucement. Tu la sors ? La pièce blanche revient à la lumière. Un peu de tapis rouge dessus. On souffle. Fffff. La poussière part. La neige du sommet est nette. Merci, Nino. Tu l'as trouvée. Nino pose la pièce dans le trou. Le clic est plus fort, cette fois. Le Mont est fini ! L'Italie. Et la montagne. Ils regardent le sommet ensemble. Le blanc tient contre le ciel pâle. Il neige, là-haut. Sur le puzzle, oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On range les bords de la boîte ? Encore une minute. Nino suit la crête du doigt. Le carton est encore un peu froid. Tu as fini de chercher la pièce ? Oui, maman. Ils glissent le puzzle dans la boîte. Le Mont rentre sous le couvercle. Il est à l'abri. Oui. Le tapis garde une petite poussière blanche.",
+      "script": "maman|On range les bords de la boîte ?\nenfant-m|Encore une minute.\nnarrateur|Nino suit la crête du doigt.\nnarrateur|Le carton est encore un peu froid.\nmaman|Tu as fini de chercher la pièce ?\nenfant-m|Oui, maman.\nnarrateur|Ils glissent le puzzle dans la boîte.\nnarrateur|Le Mont rentre sous le couvercle.\nenfant-m|Il est à l'abri.\nmaman|Oui.\nnarrateur|Le tapis garde une petite poussière blanche.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "On range les bords de la boîte ? Encore une minute. Nino suit la crête du doigt. Le carton est encore un peu froid. Tu as fini de chercher la pièce ? Oui, maman. Ils glissent le puzzle dans la boîte. Le Mont rentre sous le couvercle. Il est à l'abri. Oui. Le tapis garde une petite poussière blanche."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La table basse sent encore le bois ciré. La boîte montre le Mont, bien fermée. La pièce était dessous. Et maintenant le sommet est là. Le tapis rouge redevient calme.",
+      "script": "narrateur|La table basse sent encore le bois ciré.\nnarrateur|La boîte montre le Mont, bien fermée.\nenfant-m|La pièce était dessous.\nmaman|Et maintenant le sommet est là.\nnarrateur|Le tapis rouge redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La table basse sent encore le bois ciré. La boîte montre le Mont, bien fermée. La pièce était dessous. Et maintenant le sommet est là. Le tapis rouge redevient calme."
+    }
+  ]
+}

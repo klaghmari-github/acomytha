@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.002-07",
+  "fil_rouge": "",
+  "title": "Camille raconte ce qui fait peur",
+  "lesson_id": "FAM.SEC.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Camille, maman, papa",
+  "setting": "jardin puis maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Camille joue au jardin avec maman. Elle est près des pots. Un volet claque fort. Camille sent son ventre. C'est serré. Camille a peur. Camille marche vers maman. Elle prend sa main. Maman, le volet a claqué. Mon ventre est serré. J'ai peur. Maman l'écoute. Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. On va raconter à papa ou maman. Parce qu'elle a raconté, Camille se sent moins seule. Maman reste tout près. Plus tard, à la maison, Camille le dit aussi à papa. Papa écoute. Camille se sent plus légère.",
+      "script": "narrateur|Camille joue au jardin avec maman. Elle est près des pots. Un volet claque fort. Camille sent son ventre. C'est serré. Camille a peur. Camille marche vers maman. Elle prend sa main.\nenfant-f|Maman, le volet a claqué. Mon ventre est serré. J'ai peur. Maman l'écoute.\nmaman|Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. On va raconter à papa ou maman. Parce qu'elle a raconté, Camille se sent moins seule. Maman reste tout près. Plus tard, à la maison, Camille le dit aussi à papa. Papa écoute.\nnarrateur|Camille se sent plus légère.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Camille a peur. Que fait-elle ?",
+      "script": "narrateur|Camille a peur. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Camille a senti la peur. Elle a marché vers maman. Elle a raconté. Papa et maman écoutent. Ce qui fait peur se raconte.",
+      "script": "narrateur|Camille a senti la peur. Elle a marché vers maman. Elle a raconté. Papa et maman écoutent. Ce qui fait peur se raconte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Camille s'assoit près de papa. Maman est là aussi. Sa main est chaude.",
+      "script": "narrateur|Camille s'assoit près de papa. Maman est là aussi. Sa main est chaude.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

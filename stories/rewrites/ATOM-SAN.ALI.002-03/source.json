@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-03",
+  "fil_rouge": "",
+  "title": "Céleste s'assoit au petit-déjeuner",
+  "lesson_id": "SAN.ALI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Céleste, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le matin. Céleste sent le pain chaud. Maman pose les bols. Papa met le lait. Céleste a faim. Elle va à table. Elle pose les fesses sur la chaise. Elle est assise. Elle est assise à table. Papa s'assoit aussi. Maman s'assoit près d'elle. Ils mangent ensemble. Céleste tient sa cuillère. Elle mange assise. La chaise est stable. On mange ensemble. On mange à table. Céleste sourit. Elle reste assise. Maman coupe la pomme. Céleste attend, assise. Ils sont ensemble à table. Le lait est tiède. Le pain est croustillant.",
+      "script": "narrateur|C'est le matin. Céleste sent le pain chaud. Maman pose les bols. Papa met le lait. Céleste a faim. Elle va à table. Elle pose les fesses sur la chaise. Elle est assise. Elle est assise à table. Papa s'assoit aussi. Maman s'assoit près d'elle. Ils mangent ensemble. Céleste tient sa cuillère. Elle mange assise. La chaise est stable.\npapa|On mange ensemble. On mange à table.\nnarrateur|Céleste sourit. Elle reste assise. Maman coupe la pomme. Céleste attend, assise. Ils sont ensemble à table. Le lait est tiède. Le pain est croustillant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Céleste va manger. Que fait-elle ?",
+      "script": "narrateur|Céleste va manger. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Céleste est assise. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "script": "narrateur|Céleste est assise. Les fesses sont sur la chaise. Papa et maman mangent ensemble, à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Céleste boit une gorgée. Elle reste assise jusqu'à la fin. Merci, dit papa.",
+      "script": "narrateur|Céleste boit une gorgée. Elle reste assise jusqu'à la fin. Merci, dit papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

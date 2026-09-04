@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-04",
+  "fil_rouge": "Nino veut un coquillage entier. Mercredi, le seau revient avec du sable. Le week-end, à la plage, une coquille entière tient dans sa paume.",
+  "title": "Le sel et la coquille",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nino, maman",
+  "setting": "petite plage mercredi, grande plage le week-end",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le sel colle déjà aux vitres. Le vent sent le goémon, un peu fort. Le sable crisse sous la première marche. C'est mercredi, Nino. Pas d'école. On va au bord ? Oui. La petite plage. Je veux un coquillage. On cherche. Nino porte un seau bleu. Le seau tape sa jambe, toc toc. En ce moment, il creuse près d'une vague. L'eau revient trop vite. Le trou se referme. Il part. La mer reprend le sable. On recule un peu ? Oui. Il recule. Ses chaussures ont un liseré blanc de sel. Il fouille avec les doigts. Un éclat cassé, rien d'entier. C'est cassé. Mercredi, on a le temps court. Samedi, on reviendra. La grande plage ? La grande. Samedi et dimanche, c'est le week-end. Pas d'école. Pas d'école. Comme mercredi. Nino verse le sable dans le seau. Ça fait chh, puis plus rien. Pas de coquille. Du sable pour attendre. Tu veux rincer tes mains ? Elles collent. L'eau froide pique un peu. Le sel reste dans les plis. On rentre. Le seau vient. Le seau vient. Une mouette crie, très haut. Nino lève le menton. Elle a vu la mer. Moi aussi. Samedi, tu verras plus loin. Le seau est lourd de sable mouillé. Une goutte tombe sur le bois de la marche.",
+      "script": "narrateur|Le sel colle déjà aux vitres.\nnarrateur|Le vent sent le goémon, un peu fort.\nnarrateur|Le sable crisse sous la première marche.\nmaman|C'est mercredi, Nino.\nmaman|Pas d'école.\nenfant-m|On va au bord ?\nmaman|Oui.\nmaman|La petite plage.\nenfant-m|Je veux un coquillage.\nmaman|On cherche.\nnarrateur|Nino porte un seau bleu.\nnarrateur|Le seau tape sa jambe, toc toc.\nnarrateur|En ce moment, il creuse près d'une vague.\nnarrateur|L'eau revient trop vite.\nnarrateur|Le trou se referme.\nenfant-m|Il part.\nmaman|La mer reprend le sable.\nmaman|On recule un peu ?\nenfant-m|Oui.\nnarrateur|Il recule.\nnarrateur|Ses chaussures ont un liseré blanc de sel.\nnarrateur|Il fouille avec les doigts.\nnarrateur|Un éclat cassé, rien d'entier.\nenfant-m|C'est cassé.\nmaman|Mercredi, on a le temps court.\nmaman|Samedi, on reviendra.\nenfant-m|La grande plage ?\nmaman|La grande.\nmaman|Samedi et dimanche, c'est le week-end.\nenfant-m|Pas d'école.\nmaman|Pas d'école.\nmaman|Comme mercredi.\nnarrateur|Nino verse le sable dans le seau.\nnarrateur|Ça fait chh, puis plus rien.\nenfant-m|Pas de coquille.\nmaman|Du sable pour attendre.\nmaman|Tu veux rincer tes mains ?\nenfant-m|Elles collent.\nnarrateur|L'eau froide pique un peu.\nnarrateur|Le sel reste dans les plis.\nmaman|On rentre.\nenfant-m|Le seau vient.\nmaman|Le seau vient.\nnarrateur|Une mouette crie, très haut.\nnarrateur|Nino lève le menton.\nmaman|Elle a vu la mer.\nenfant-m|Moi aussi.\nmaman|Samedi, tu verras plus loin.\nnarrateur|Le seau est lourd de sable mouillé.\nnarrateur|Une goutte tombe sur le bois de la marche.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le sel colle déjà aux vitres. Le vent sent le goémon, un peu fort. Le sable crisse sous la première marche. C'est mercredi, Nino. Pas d'école. On va au bord ? Oui. La petite plage. Je veux un coquillage. On cherche. Nino porte un seau bleu. Le seau tape sa jambe, toc toc. En ce moment, il creuse près d'une vague. L'eau revient trop vite. Le trou se referme. Il part. La mer reprend le sable. On recule un peu ? Oui. Il recule. Ses chaussures ont un liseré blanc de sel. Il fouille avec les doigts. Un éclat cassé, rien d'entier. C'est cassé. Mercredi, on a le temps court. Samedi, on reviendra. La grande plage ? La grande. Samedi et dimanche, c'est le week-end. Pas d'école. Pas d'école. Comme mercredi. Nino verse le sable dans le seau. Ça fait chh, puis plus rien. Pas de coquille. Du sable pour attendre. Tu veux rincer tes mains ? Elles collent. L'eau froide pique un peu. Le sel reste dans les plis. On rentre. Le seau vient. Le seau vient. Une mouette crie, très haut. Nino lève le menton. Elle a vu la mer. Moi aussi. Samedi, tu verras plus loin. Le seau est lourd de sable mouillé. Une goutte tombe sur le bois de la marche."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quels autres jours, comme mercredi, sans l'école ?",
+      "script": "narrateur|Quels autres jours, comme mercredi, sans l'école ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Quels autres jours, comme mercredi, sans l'école ?",
+      "accepted_examples": "week-end | weekend | samedi | dimanche | le week-end | mercredi",
+      "expected_answer": "week-end",
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino pose le seau près des chaussures. Samedi. Dimanche. Oui. C'est le week-end. On cherchera encore. Une entière. Une entière. Il touche le sable du seau. C'est froid, un peu lourd. Mercredi a donné le sable. Le week-end donnera la coquille. J'attends. Tu as cherché. Bravo. Tu as reculé devant la vague ? Oui, maman. Le sel sèche en petits cristaux blancs.",
+      "script": "narrateur|Nino pose le seau près des chaussures.\nenfant-m|Samedi.\nenfant-m|Dimanche.\nmaman|Oui.\nmaman|C'est le week-end.\nmaman|On cherchera encore.\nenfant-m|Une entière.\nmaman|Une entière.\nnarrateur|Il touche le sable du seau.\nnarrateur|C'est froid, un peu lourd.\nmaman|Mercredi a donné le sable.\nmaman|Le week-end donnera la coquille.\nenfant-m|J'attends.\nmaman|Tu as cherché.\nmaman|Bravo.\nmaman|Tu as reculé devant la vague ?\nenfant-m|Oui, maman.\nnarrateur|Le sel sèche en petits cristaux blancs.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino pose le seau près des chaussures. Samedi. Dimanche. Oui. C'est le week-end. On cherchera encore. Une entière. Une entière. Il touche le sable du seau. C'est froid, un peu lourd. Mercredi a donné le sable. Le week-end donnera la coquille. J'attends. Tu as cherché. Bravo. Tu as reculé devant la vague ? Oui, maman. Le sel sèche en petits cristaux blancs."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Samedi, la grande plage est plus large. Le vent pousse une odeur de goémon doux. Je cherche. Près de la laisse de mer. Nino s'agenouille. Une coquille entière, rose au bord. Elle est entière ! Tu l'as. Il la pose dans le seau, sur le sable. Elle ne se casse pas. Dimanche, on l'écoutera à la maison. La mer dedans ? La mer dedans. C'est le week-end. Merci, maman. Merci d'avoir attendu samedi. La coquille est tiède dans la paume. Le sel brille encore sur le bord rose.",
+      "script": "narrateur|Samedi, la grande plage est plus large.\nnarrateur|Le vent pousse une odeur de goémon doux.\nenfant-m|Je cherche.\nmaman|Près de la laisse de mer.\nnarrateur|Nino s'agenouille.\nnarrateur|Une coquille entière, rose au bord.\nenfant-m|Elle est entière !\nmaman|Tu l'as.\nnarrateur|Il la pose dans le seau, sur le sable.\nnarrateur|Elle ne se casse pas.\nmaman|Dimanche, on l'écoutera à la maison.\nenfant-m|La mer dedans ?\nmaman|La mer dedans.\nmaman|C'est le week-end.\nenfant-m|Merci, maman.\nmaman|Merci d'avoir attendu samedi.\nnarrateur|La coquille est tiède dans la paume.\nnarrateur|Le sel brille encore sur le bord rose.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Samedi, la grande plage est plus large. Le vent pousse une odeur de goémon doux. Je cherche. Près de la laisse de mer. Nino s'agenouille. Une coquille entière, rose au bord. Elle est entière ! Tu l'as. Il la pose dans le seau, sur le sable. Elle ne se casse pas. Dimanche, on l'écoutera à la maison. La mer dedans ? La mer dedans. C'est le week-end. Merci, maman. Merci d'avoir attendu samedi. La coquille est tiède dans la paume. Le sel brille encore sur le bord rose."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Je l'ai. Elle est entière. La coquille tient au creux de la main. Un souffle de mer reste dans le trou. Le seau bleu garde un peu de sable clair.",
+      "script": "enfant-m|Je l'ai.\nmaman|Elle est entière.\nnarrateur|La coquille tient au creux de la main.\nnarrateur|Un souffle de mer reste dans le trou.\nnarrateur|Le seau bleu garde un peu de sable clair.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Je l'ai. Elle est entière. La coquille tient au creux de la main. Un souffle de mer reste dans le trou. Le seau bleu garde un peu de sable clair."
+    }
+  ]
+}

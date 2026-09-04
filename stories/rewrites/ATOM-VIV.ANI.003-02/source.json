@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-02",
+  "fil_rouge": "",
+  "title": "Nino donne l'eau à la poule",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Nino est au jardin avec papa. Une poule picore près du grillage. Son abreuvoir est bas. On prend soin avec un adulte. On est doux. Nino porte le petit seau avec papa. Ils versent un peu d'eau. Nino pose l'abreuvoir, tout doux. La poule boit. Doux. Avec un adulte. Nino essuie ses mains. La poule reste calme.",
+      "script": "narrateur|Nino est au jardin avec papa. Une poule picore près du grillage. Son abreuvoir est bas.\npapa|On prend soin avec un adulte. On est doux.\nnarrateur|Nino porte le petit seau avec papa. Ils versent un peu d'eau. Nino pose l'abreuvoir, tout doux. La poule boit.\npapa|Doux. Avec un adulte.\nnarrateur|Nino essuie ses mains. La poule reste calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino donne l'eau à la poule. Comment fait-il ?",
+      "script": "narrateur|Nino donne l'eau à la poule. Comment fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a versé l'eau avec papa. Il a été doux.",
+      "script": "narrateur|Nino a versé l'eau avec papa. Il a été doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le seau. Nino salue la poule.",
+      "script": "narrateur|Papa range le seau. Nino salue la poule.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

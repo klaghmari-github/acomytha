@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.003-04",
+  "fil_rouge": "",
+  "title": "Timéo au balcon avec papa",
+  "lesson_id": "SEC.MAI.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Timéo, papa",
+  "setting": "balcon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Timéo est à la maison. Papa ouvre la porte du balcon. L'air sent le linge propre. Timéo reste avec l'adulte. On reste derrière la protection. Timéo pose les pieds au sol. Les pieds restent au sol. Il sent le bois sous les chaussettes. La protection est devant lui. Timéo pose les mains sur la protection. Il reste derrière la protection. Un pigeon roucoule. Papa, l'oiseau. Papa est près de lui. Parce que les pieds sont au sol, Timéo est calme. Ils regardent le ciel. Plus tard, l'après-midi, papa revient. Timéo veut revoir le pigeon. Ils vont au balcon encore. Les pieds restent au sol. Timéo reste derrière la protection. L'adulte est là. C'est papa. Le vent est doux. Timéo compte les nuages. Un. Deux. Trois. Papa tient le bord de son gilet. Le soir, ils rentrent. Les pieds restent au sol jusqu'à la porte.",
+      "script": "narrateur|Timéo est à la maison. Papa ouvre la porte du balcon. L'air sent le linge propre. Timéo reste avec l'adulte.\npapa|On reste derrière la protection.\nnarrateur|Timéo pose les pieds au sol. Les pieds restent au sol. Il sent le bois sous les chaussettes. La protection est devant lui. Timéo pose les mains sur la protection. Il reste derrière la protection. Un pigeon roucoule.\nenfant-m|Papa, l'oiseau. Papa est près de lui. Parce que les pieds sont au sol, Timéo est calme.\nnarrateur|Ils regardent le ciel. Plus tard, l'après-midi, papa revient. Timéo veut revoir le pigeon. Ils vont au balcon encore. Les pieds restent au sol. Timéo reste derrière la protection. L'adulte est là. C'est papa. Le vent est doux. Timéo compte les nuages. Un. Deux. Trois. Papa tient le bord de son gilet. Le soir, ils rentrent. Les pieds restent au sol jusqu'à la porte.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Timéo est au balcon. Que fait-il ?",
+      "script": "narrateur|Timéo est au balcon. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Timéo a les pieds au sol. Il est derrière la protection. Papa, l'adulte, est là.",
+      "script": "narrateur|Timéo a les pieds au sol. Il est derrière la protection. Papa, l'adulte, est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Timéo et papa rentrent. Les pieds restent au sol.",
+      "script": "narrateur|Timéo et papa rentrent. Les pieds restent au sol.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

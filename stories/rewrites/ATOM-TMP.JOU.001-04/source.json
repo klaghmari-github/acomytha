@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-04",
+  "fil_rouge": "",
+  "title": "Ulysse voit le soleil puis la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ulysse, maman, papa",
+  "setting": "jardin puis chambre, deux jours",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le jour, Ulysse joue au jardin avec maman. Le soleil brille. Il fait chaud. Le jour, c'est le soleil. Ulysse sent la chaleur sur les mains. Le soir arrive. Le ciel devient bleu foncé. Ulysse voit la lune. Il voit les étoiles. La nuit, c'est la lune. Ulysse met son pyjama. La nuit, on fait dodo. Ulysse se couche. Le lendemain, le soleil revient. Ulysse joue encore au jardin. Le soir, la lune revient. Ulysse se souvient. Dodo la nuit. Même leçon, autre jour. Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "script": "narrateur|Le jour, Ulysse joue au jardin avec maman. Le soleil brille. Il fait chaud.\nmaman|Le jour, c'est le soleil.\nnarrateur|Ulysse sent la chaleur sur les mains. Le soir arrive. Le ciel devient bleu foncé. Ulysse voit la lune. Il voit les étoiles.\npapa|La nuit, c'est la lune.\nnarrateur|Ulysse met son pyjama.\npapa|La nuit, on fait dodo.\nnarrateur|Ulysse se couche. Le lendemain, le soleil revient. Ulysse joue encore au jardin. Le soir, la lune revient. Ulysse se souvient.\nnarrateur|Dodo la nuit. Même leçon, autre jour.\nnarrateur|Le jour le soleil. La nuit la lune. Dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ulysse a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "script": "narrateur|Ulysse a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa baisse la lumière. Ulysse respire.",
+      "script": "narrateur|Papa baisse la lumière. Ulysse respire.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

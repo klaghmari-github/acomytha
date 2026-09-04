@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-01",
+  "fil_rouge": "",
+  "title": "La mer de France d'Inès",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Inès, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Inès s'assoit sur le tapis, près de papa. Papa ouvre un grand livre. Les pages sentent le papier. On va nommer un pays. Inès pose le doigt. Papa lit le nom : la France. Inès répète : la France. Sur la page, il y a de l'eau bleue. Des vagues. Du sable. Ça, c'est un paysage. C'est la mer. La mer. Elle entend presque le bruit des vagues. Papa tourne encore. Des sommets blancs. Ça aussi, c'est un paysage. C'est la montagne. La montagne. Un pays. Un nom. Un paysage. La France, et la mer. Papa ferme le livre. Inès le range sur la table basse.",
+      "script": "narrateur|Inès s'assoit sur le tapis, près de papa. Papa ouvre un grand livre. Les pages sentent le papier.\npapa|On va nommer un pays.\nnarrateur|Inès pose le doigt. Papa lit le nom : la France. Inès répète : la France. Sur la page, il y a de l'eau bleue. Des vagues. Du sable.\npapa|Ça, c'est un paysage. C'est la mer.\nenfant-f|La mer. Elle entend presque le bruit des vagues. Papa tourne encore. Des sommets blancs.\npapa|Ça aussi, c'est un paysage. C'est la montagne.\nenfant-f|La montagne.\nnarrateur|Un pays. Un nom. Un paysage. La France, et la mer. Papa ferme le livre. Inès le range sur la table basse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Inès nomme la France. Elle nomme aussi quoi ?",
+      "script": "narrateur|Inès nomme la France. Elle nomme aussi quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Inès a dit le nom. La France. Elle a dit le paysage. La mer. La montagne aussi.",
+      "script": "narrateur|Inès a dit le nom. La France. Elle a dit le paysage. La mer. La montagne aussi.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Inès s'allonge près de papa. Elle ferme les yeux. Elle pense à l'eau salée.",
+      "script": "narrateur|Inès s'allonge près de papa. Elle ferme les yeux. Elle pense à l'eau salée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

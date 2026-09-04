@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-05",
+  "fil_rouge": "",
+  "title": "Karim appelle papa pour le bocal",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Karim, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Karim est dans la cuisine. Il veut le bocal de farine. Le bocal est en haut. Trop haut. Karim lève les bras. Il n'arrive pas. Ses épaules se tendent. Karim va vers la porte. Il va vers papa. Papa est dans le salon. Papa. J'ai besoin du bocal. Papa écoute. Papa vient. Papa donne le bocal. Le bocal est lourd. Karim dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman arrive aussi. Elle pose un saladier. Karim verse un peu de farine. Un nuage blanc monte. Papa sourit. Parce que Karim a dit le besoin, le bocal est là. Ce n'est pas être petit. C'est demander.",
+      "script": "narrateur|Karim est dans la cuisine. Il veut le bocal de farine. Le bocal est en haut. Trop haut. Karim lève les bras. Il n'arrive pas. Ses épaules se tendent. Karim va vers la porte. Il va vers papa. Papa est dans le salon.\nenfant-m|Papa. J'ai besoin du bocal. Papa écoute. Papa vient. Papa donne le bocal.\nnarrateur|Le bocal est lourd. Karim dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman arrive aussi. Elle pose un saladier. Karim verse un peu de farine. Un nuage blanc monte. Papa sourit. Parce que Karim a dit le besoin, le bocal est là. Ce n'est pas être petit. C'est demander.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Karim n'arrive pas. Que fait-il ?",
+      "script": "narrateur|Karim n'arrive pas. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Karim a appelé. Il a dit le besoin. Papa a entendu. Le bocal est là.",
+      "script": "narrateur|Karim a appelé. Il a dit le besoin. Papa a entendu. Le bocal est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Karim mélange la farine. Papa s'assoit près de lui.",
+      "script": "narrateur|Karim mélange la farine. Papa s'assoit près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-09",
+  "fil_rouge": "",
+  "title": "Honorine nomme les sons de la cour",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Honorine, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Honorine est dans la cour de la ferme avec papa. Un son : ouah. C'est un son. Quel nom ? Le chien. Un son : cot cot. Honorine dit le nom : la poule. L'eau de l'auge cloche. L'eau. On entend un son. On dit le nom.",
+      "script": "narrateur|Honorine est dans la cour de la ferme avec papa. Un son : ouah.\npapa|C'est un son. Quel nom ?\nenfant-f|Le chien.\nnarrateur|Un son : cot cot. Honorine dit le nom : la poule. L'eau de l'auge cloche.\nenfant-f|L'eau.\npapa|On entend un son. On dit le nom.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Honorine entend un bruit. C'est quoi ?",
+      "script": "narrateur|Honorine entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Honorine a entendu un son. Elle a dit le nom. Chien. Poule. Eau.",
+      "script": "narrateur|Honorine a entendu un son. Elle a dit le nom. Chien. Poule. Eau.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le seau. Honorine écoute encore.",
+      "script": "narrateur|Papa range le seau. Honorine écoute encore.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.007-02",
+  "fil_rouge": "",
+  "title": "Nino est nerveux",
+  "lesson_id": "EMO.LEX.007",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Nino est dans le salon. Papa lit. Nino veut un jeu. Ses jambes bougent. Son corps ne tient pas. Je suis nerveux. Être nerveux, ce n'est pas honteux. Je demande une pause. Oui. Nino s'assoit. Il pose les pieds. Il souffle. Ses jambes se calment. Papa sourit. Une pause, c'est bien.",
+      "script": "narrateur|Nino est dans le salon. Papa lit. Nino veut un jeu. Ses jambes bougent. Son corps ne tient pas.\nenfant-m|Je suis nerveux. Être nerveux, ce n'est pas honteux.\nenfant-m|Je demande une pause.\npapa|Oui.\nnarrateur|Nino s'assoit. Il pose les pieds. Il souffle. Ses jambes se calment. Papa sourit.\npapa|Une pause, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino ne tient plus. Que demande-t-il ?",
+      "script": "narrateur|Nino ne tient plus. Que demande-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a nommé : nerveux. Il a demandé une pause. Il s'est assis. Papa était là.",
+      "script": "narrateur|Nino a nommé : nerveux. Il a demandé une pause. Il s'est assis. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino boit un peu d'eau. Papa lui tend un livre.",
+      "script": "narrateur|Nino boit un peu d'eau. Papa lui tend un livre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

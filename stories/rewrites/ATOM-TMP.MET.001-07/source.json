@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-07",
+  "fil_rouge": "",
+  "title": "Hubert prend manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hubert, maman",
+  "setting": "entrée de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, Hubert ouvre la porte. L'air pique les joues. Il fait froid. Froid, manteau. Hubert prend le manteau. Il enfile les manches. Le manteau est chaud. Ils sortent. Plus tard, des gouttes tapent le toit. Il pleut. Pluie, bottes. Hubert pose ses pieds dans les bottes. Les bottes sont jaunes. Elles collent un peu. Hubert marche. L'eau fait floc. Le soir, il fait encore froid. Hubert reprend le manteau. Froid, manteau. Pluie, bottes. Même leçon, autre moment. Hubert range les bottes près de la porte. Il raccroche le manteau.",
+      "script": "narrateur|Le matin, Hubert ouvre la porte. L'air pique les joues. Il fait froid.\nmaman|Froid, manteau.\nnarrateur|Hubert prend le manteau. Il enfile les manches. Le manteau est chaud. Ils sortent. Plus tard, des gouttes tapent le toit. Il pleut.\nmaman|Pluie, bottes.\nnarrateur|Hubert pose ses pieds dans les bottes. Les bottes sont jaunes. Elles collent un peu. Hubert marche. L'eau fait floc. Le soir, il fait encore froid. Hubert reprend le manteau.\nmaman|Froid, manteau. Pluie, bottes. Même leçon, autre moment.\nnarrateur|Hubert range les bottes près de la porte. Il raccroche le manteau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid. Il pleut. Que prend Hubert ?",
+      "script": "narrateur|Il fait froid. Il pleut. Que prend Hubert ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hubert a pris le manteau parce qu'il faisait froid. Il a pris les bottes parce qu'il pleuvait. Maman était là.",
+      "script": "narrateur|Hubert a pris le manteau parce qu'il faisait froid. Il a pris les bottes parce qu'il pleuvait. Maman était là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hubert pose les bottes. Le manteau sèche.",
+      "script": "narrateur|Hubert pose les bottes. Le manteau sèche.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

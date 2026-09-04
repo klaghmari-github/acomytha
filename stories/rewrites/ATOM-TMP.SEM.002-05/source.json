@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-05",
+  "fil_rouge": "",
+  "title": "Diane nomme mercredi et le week-end",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Diane, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Diane est à la cuisine. Papa accroche un calendrier. Lundi, mardi, jeudi, vendredi, c'est l'école. Mercredi, Diane reste à la maison. Elle joue avec papa. Samedi, Diane reste aussi. Dimanche encore. Samedi et dimanche, c'est le week-end. Diane touche mercredi. Elle touche samedi. Elle touche dimanche. Mercredi, samedi, dimanche, on est à la maison.",
+      "script": "narrateur|Diane est à la cuisine. Papa accroche un calendrier.\npapa|Lundi, mardi, jeudi, vendredi, c'est l'école. Mercredi, Diane reste à la maison. Elle joue avec papa. Samedi, Diane reste aussi. Dimanche encore.\npapa|Samedi et dimanche, c'est le week-end.\nnarrateur|Diane touche mercredi. Elle touche samedi. Elle touche dimanche.\npapa|Mercredi, samedi, dimanche, on est à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Diane est à la maison le mercredi. Quels autres jours aussi ?",
+      "script": "narrateur|Diane est à la maison le mercredi. Quels autres jours aussi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Diane a nommé mercredi. Elle a nommé samedi et dimanche. C'est le week-end.",
+      "script": "narrateur|Diane a nommé mercredi. Elle a nommé samedi et dimanche. C'est le week-end.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le crayon. Diane dessine.",
+      "script": "narrateur|Papa range le crayon. Diane dessine.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

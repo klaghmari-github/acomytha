@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-05",
+  "fil_rouge": "",
+  "title": "Faustine et l'eau du lapin",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Faustine, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Faustine va au jardin avec papa. Le lapin gris frotte son nez. Sa gamelle est vide. Faustine veut aider. On le fait ensemble. On est doux. Papa verse l'eau. Faustine tient le bol avec papa. L'eau arrive tout doucement. Papa met des croquettes. Faustine pose la gamelle. Elle est douce. Sa main va lentement. Le lapin vient. Il boit. Il mange. On prend soin avec un adulte. On reste doux. Faustine caresse le dos, tout doux. Le lapin croque. Faustine sourit.",
+      "script": "narrateur|Faustine va au jardin avec papa. Le lapin gris frotte son nez. Sa gamelle est vide. Faustine veut aider.\npapa|On le fait ensemble. On est doux. Papa verse l'eau.\nnarrateur|Faustine tient le bol avec papa. L'eau arrive tout doucement. Papa met des croquettes. Faustine pose la gamelle. Elle est douce. Sa main va lentement. Le lapin vient. Il boit. Il mange.\npapa|On prend soin avec un adulte. On reste doux.\nnarrateur|Faustine caresse le dos, tout doux. Le lapin croque. Faustine sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Faustine donne l'eau au lapin. Comment fait-elle ?",
+      "script": "narrateur|Faustine donne l'eau au lapin. Comment fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Faustine a été douce. Elle a versé l'eau avec un adulte. Papa était là.",
+      "script": "narrateur|Faustine a été douce. Elle a versé l'eau avec un adulte. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le lapin croque encore. Faustine s'assoit près de papa.",
+      "script": "narrateur|Le lapin croque encore. Faustine s'assoit près de papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

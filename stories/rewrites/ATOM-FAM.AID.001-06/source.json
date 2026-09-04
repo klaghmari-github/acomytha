@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-06",
+  "fil_rouge": "",
+  "title": "Maël va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Maël, papa, maman",
+  "setting": "chambre puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maël veut le livre des oiseaux. La boîte est en haut. Trop haut. C'est trop difficile. Maël va vers papa. Aller vers eux, c'est possible. Il dit le besoin. Papa, j'ai besoin de la boîte. Papa écoute. Papa donne la boîte. Plus tard, dans la cuisine, le bocal est fermé. Maël se souvient. Il va vers maman. Il dit le besoin. Maman, le bocal est trop dur. Maman tient le bocal avec lui. Le couvercle tourne. Même leçon, autre lieu. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "script": "narrateur|Maël veut le livre des oiseaux. La boîte est en haut. Trop haut. C'est trop difficile. Maël va vers papa. Aller vers eux, c'est possible. Il dit le besoin.\nenfant-m|Papa, j'ai besoin de la boîte. Papa écoute. Papa donne la boîte. Plus tard, dans la cuisine, le bocal est fermé.\nnarrateur|Maël se souvient. Il va vers maman. Il dit le besoin.\nenfant-m|Maman, le bocal est trop dur. Maman tient le bocal avec lui.\nnarrateur|Le couvercle tourne. Même leçon, autre lieu. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Maël ?",
+      "script": "narrateur|C'est trop difficile. Que fait Maël ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maël est allé vers papa. Puis vers maman. Il a dit le besoin.",
+      "script": "narrateur|Maël est allé vers papa. Puis vers maman. Il a dit le besoin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maël ouvre le livre. Papa s'assoit près de lui.",
+      "script": "narrateur|Maël ouvre le livre. Papa s'assoit près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

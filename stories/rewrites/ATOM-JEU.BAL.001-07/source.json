@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAL.001-07",
+  "fil_rouge": "",
+  "title": "Joanne se passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Joanne, papa",
+  "setting": "cour",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Joanne et papa sont dans la cour. Papa trace un petit cercle. Voici l'espace du jeu. On se passe le ballon. Chacun a un tour. Joanne touche le ballon. Elle passe le ballon à papa. Papa le rend. Joanne attend son tour. Puis elle passe encore. Les pieds restent dans l'espace du jeu.",
+      "script": "narrateur|Joanne et papa sont dans la cour. Papa trace un petit cercle.\npapa|Voici l'espace du jeu. On se passe le ballon. Chacun a un tour.\nnarrateur|Joanne touche le ballon. Elle passe le ballon à papa. Papa le rend. Joanne attend son tour. Puis elle passe encore. Les pieds restent dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Joanne joue au ballon. Que fait-elle ?",
+      "script": "narrateur|Joanne joue au ballon. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Joanne a passé le ballon. Elle a attendu son tour. Dans l'espace du jeu.",
+      "script": "narrateur|Joanne a passé le ballon. Elle a attendu son tour. Dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Joanne boit une gorgée.",
+      "script": "narrateur|Papa range le ballon. Joanne boit une gorgée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

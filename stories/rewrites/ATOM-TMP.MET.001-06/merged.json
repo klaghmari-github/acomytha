@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MET.001-06",
+  "fil_rouge": "Aniss veut le pain chaud du village. Il pleut. Il prend manteau et bottes. Une flaque barre le chemin. Les bottes font splish. Le pain rentre dans la corbeille.",
+  "title": "La corbeille vide",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Aniss, papa",
+  "setting": "maison, rue du village sous la pluie, boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La corbeille à pain est encore vide. Elle attend sur la table de bois. Une miette sèche y reste, toute seule. Il n'y a plus de pain, Aniss. On va en chercher ? Oui. Chez le boulanger. Dehors, la pluie tape le volet. Le volet claque un peu. L'air qui entre est froid. Il pique les joues. J'ai froid aux mains. Tu prends le manteau. Il fait froid. Le manteau bleu pend au crochet. Aniss le prend. Il glisse la manche gauche. Puis la droite. Le tissu est un peu rêche, déjà chaud. Le zip, tout doux. Papa ferme le zip. Ça fait zzz. Je suis au chaud. Il pleut aussi. Tu mets les bottes. Les bottes jaunes attendent près du paillasson. Le paillasson est déjà mouillé. Aniss pose le pied gauche. La botte colle un peu. Puis le pied droit. Elles sont jaunes. Oui. Tes pieds resteront au sec. Tu as tes bottes ? Oui, papa. En ce moment, papa ouvre la porte. La pluie sent la terre. L'eau court dans le zinc. Ça chante. C'est la pluie. Ils marchent vers le village. Le chemin brille. Une grande flaque barre le passage. Une mer ! Une flaque. On la contourne ? Je peux dessus. Avec tes bottes, oui.",
+      "script": "narrateur|La corbeille à pain est encore vide.\nnarrateur|Elle attend sur la table de bois.\nnarrateur|Une miette sèche y reste, toute seule.\npapa|Il n'y a plus de pain, Aniss.\nenfant-m|On va en chercher ?\npapa|Oui.\npapa|Chez le boulanger.\nnarrateur|Dehors, la pluie tape le volet.\nnarrateur|Le volet claque un peu.\nnarrateur|L'air qui entre est froid.\nnarrateur|Il pique les joues.\nenfant-m|J'ai froid aux mains.\npapa|Tu prends le manteau.\npapa|Il fait froid.\nnarrateur|Le manteau bleu pend au crochet.\nnarrateur|Aniss le prend.\nnarrateur|Il glisse la manche gauche.\nnarrateur|Puis la droite.\nnarrateur|Le tissu est un peu rêche, déjà chaud.\npapa|Le zip, tout doux.\nnarrateur|Papa ferme le zip.\nnarrateur|Ça fait zzz.\nenfant-m|Je suis au chaud.\npapa|Il pleut aussi.\npapa|Tu mets les bottes.\nnarrateur|Les bottes jaunes attendent près du paillasson.\nnarrateur|Le paillasson est déjà mouillé.\nnarrateur|Aniss pose le pied gauche.\nnarrateur|La botte colle un peu.\nnarrateur|Puis le pied droit.\nenfant-m|Elles sont jaunes.\npapa|Oui.\npapa|Tes pieds resteront au sec.\npapa|Tu as tes bottes ?\nenfant-m|Oui, papa.\nnarrateur|En ce moment, papa ouvre la porte.\nnarrateur|La pluie sent la terre.\nnarrateur|L'eau court dans le zinc.\nenfant-m|Ça chante.\npapa|C'est la pluie.\nnarrateur|Ils marchent vers le village.\nnarrateur|Le chemin brille.\nnarrateur|Une grande flaque barre le passage.\nenfant-m|Une mer !\npapa|Une flaque.\npapa|On la contourne ?\nenfant-m|Je peux dessus.\npapa|Avec tes bottes, oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La corbeille à pain est encore vide. Elle attend sur la table de bois. Une miette sèche y reste, toute seule. Il n'y a plus de pain, Aniss. On va en chercher ? Oui. Chez le boulanger. Dehors, la pluie tape le volet. Le volet claque un peu. L'air qui entre est froid. Il pique les joues. J'ai froid aux mains. Tu prends le manteau. Il fait froid. Le manteau bleu pend au crochet. Aniss le prend. Il glisse la manche gauche. Puis la droite. Le tissu est un peu rêche, déjà chaud. Le zip, tout doux. Papa ferme le zip. Ça fait zzz. Je suis au chaud. Il pleut aussi. Tu mets les bottes. Les bottes jaunes attendent près du paillasson. Le paillasson est déjà mouillé. Aniss pose le pied gauche. La botte colle un peu. Puis le pied droit. Elles sont jaunes. Oui. Tes pieds resteront au sec. Tu as tes bottes ? Oui, papa. En ce moment, papa ouvre la porte. La pluie sent la terre. L'eau court dans le zinc. Ça chante. C'est la pluie. Ils marchent vers le village. Le chemin brille. Une grande flaque barre le passage. Une mer ! Une flaque. On la contourne ? Je peux dessus. Avec tes bottes, oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid. Il pleut. Que prend Aniss ?",
+      "script": "narrateur|Il fait froid.\nnarrateur|Il pleut.\nnarrateur|Que prend Aniss ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Il fait froid. Il pleut. Que prend Aniss ?",
+      "expected_answer": "manteau",
+      "accepted_examples": "manteau | bottes | le manteau | les bottes",
+      "retry_prompt": "Froid, manteau. Pluie, bottes. Que prend-il ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Aniss pose un pied dans l'eau. Ça fait splish. L'eau monte un peu. Elle n'entre pas. Mes pieds sont au sec ! Le manteau te tient chaud. Les bottes te tiennent au sec. Il pose l'autre pied. Splish encore. Une feuille tourne dans la flaque. Elle nage. On continue. Le pain nous attend. Le village sent la farine mouillée. La vitrine de la boulangerie est embuée. Je vois le pain ! Il est tout chaud. Papa pousse la porte. Une clochette sonne. L'air dedans sent le four.",
+      "script": "narrateur|Aniss pose un pied dans l'eau.\nnarrateur|Ça fait splish.\nnarrateur|L'eau monte un peu.\nnarrateur|Elle n'entre pas.\nenfant-m|Mes pieds sont au sec !\npapa|Le manteau te tient chaud.\npapa|Les bottes te tiennent au sec.\nnarrateur|Il pose l'autre pied.\nnarrateur|Splish encore.\nnarrateur|Une feuille tourne dans la flaque.\nenfant-m|Elle nage.\npapa|On continue.\npapa|Le pain nous attend.\nnarrateur|Le village sent la farine mouillée.\nnarrateur|La vitrine de la boulangerie est embuée.\nenfant-m|Je vois le pain !\npapa|Il est tout chaud.\nnarrateur|Papa pousse la porte.\nnarrateur|Une clochette sonne.\nnarrateur|L'air dedans sent le four.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Aniss pose un pied dans l'eau. Ça fait splish. L'eau monte un peu. Elle n'entre pas. Mes pieds sont au sec ! Le manteau te tient chaud. Les bottes te tiennent au sec. Il pose l'autre pied. Splish encore. Une feuille tourne dans la flaque. Elle nage. On continue. Le pain nous attend. Le village sent la farine mouillée. La vitrine de la boulangerie est embuée. Je vois le pain ! Il est tout chaud. Papa pousse la porte. Une clochette sonne. L'air dedans sent le four."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le boulanger tend un pain doré. La croûte craque un peu. Il est lourd. Tu le portes ? Oui. Aniss serre le pain contre le manteau. Le pain chauffe le tissu. Merci, Aniss. Tu tiens bien. Ils retraversent la rue brillante. La flaque est encore là. Splish ! Tes bottes travaillent. Une goutte glisse sur le pain. Aniss le cache un peu. Le manteau le garde. Il reste chaud. La maison se rapproche. Le volet claque encore, plus doux.",
+      "script": "narrateur|Le boulanger tend un pain doré.\nnarrateur|La croûte craque un peu.\nenfant-m|Il est lourd.\npapa|Tu le portes ?\nenfant-m|Oui.\nnarrateur|Aniss serre le pain contre le manteau.\nnarrateur|Le pain chauffe le tissu.\npapa|Merci, Aniss.\npapa|Tu tiens bien.\nnarrateur|Ils retraversent la rue brillante.\nnarrateur|La flaque est encore là.\nenfant-m|Splish !\npapa|Tes bottes travaillent.\nnarrateur|Une goutte glisse sur le pain.\nnarrateur|Aniss le cache un peu.\npapa|Le manteau le garde.\nenfant-m|Il reste chaud.\nnarrateur|La maison se rapproche.\nnarrateur|Le volet claque encore, plus doux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le boulanger tend un pain doré. La croûte craque un peu. Il est lourd. Tu le portes ? Oui. Aniss serre le pain contre le manteau. Le pain chauffe le tissu. Merci, Aniss. Tu tiens bien. Ils retraversent la rue brillante. La flaque est encore là. Splish ! Tes bottes travaillent. Une goutte glisse sur le pain. Aniss le cache un peu. Le manteau le garde. Il reste chaud. La maison se rapproche. Le volet claque encore, plus doux."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Papa ouvre la porte. L'odeur du pain entre avant eux. Aniss pose le pain dans la corbeille. La corbeille n'est plus vide. Il est rentré. Oui. Tu poses les bottes ? Les bottes gouttent près du paillasson. Le manteau s'égoutte au crochet. Une miette chaude reste sur la table. Je la prends. Elle est à toi. Dehors, la flaque brille encore. Dedans, le pain sent le four.",
+      "script": "narrateur|Papa ouvre la porte.\nnarrateur|L'odeur du pain entre avant eux.\nnarrateur|Aniss pose le pain dans la corbeille.\nnarrateur|La corbeille n'est plus vide.\nenfant-m|Il est rentré.\npapa|Oui.\npapa|Tu poses les bottes ?\nnarrateur|Les bottes gouttent près du paillasson.\nnarrateur|Le manteau s'égoutte au crochet.\nnarrateur|Une miette chaude reste sur la table.\nenfant-m|Je la prends.\npapa|Elle est à toi.\nnarrateur|Dehors, la flaque brille encore.\nnarrateur|Dedans, le pain sent le four.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Papa ouvre la porte. L'odeur du pain entre avant eux. Aniss pose le pain dans la corbeille. La corbeille n'est plus vide. Il est rentré. Oui. Tu poses les bottes ? Les bottes gouttent près du paillasson. Le manteau s'égoutte au crochet. Une miette chaude reste sur la table. Je la prends. Elle est à toi. Dehors, la flaque brille encore. Dedans, le pain sent le four."
+    }
+  ]
+}

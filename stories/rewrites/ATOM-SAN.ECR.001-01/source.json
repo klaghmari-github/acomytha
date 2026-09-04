@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-01",
+  "fil_rouge": "",
+  "title": "Maya éteint l'écran",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maya, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya est dans le salon. Elle regarde un dessin à l'écran. Les couleurs dansent. Maman s'assoit près d'elle. Fini. L'adulte dit fini. Maya écoute. Elle va éteindre. Maya éteint l'écran. L'écran devient noir. Elle pose la télécommande. On prend un autre jeu. Maya va choisir un jeu. Elle choisit les cubes en bois. Elles construisent une tour. La tour est haute. L'écran est éteint. Un autre jeu, c'est bien. Maman tape dans ses mains. Maya rit. Elles ajoutent un toit. Puis elles rangent les cubes. Maya a éteint. Elle a choisi un autre jeu.",
+      "script": "narrateur|Maya est dans le salon. Elle regarde un dessin à l'écran. Les couleurs dansent. Maman s'assoit près d'elle.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Maya écoute. Elle va éteindre. Maya éteint l'écran. L'écran devient noir. Elle pose la télécommande.\nmaman|On prend un autre jeu.\nnarrateur|Maya va choisir un jeu. Elle choisit les cubes en bois. Elles construisent une tour. La tour est haute.\nenfant-f|L'écran est éteint.\nnarrateur|Un autre jeu, c'est bien. Maman tape dans ses mains. Maya rit. Elles ajoutent un toit. Puis elles rangent les cubes. Maya a éteint. Elle a choisi un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Maya ?",
+      "script": "narrateur|Maman dit fini. Que fait Maya ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maman a dit fini. Maya a éteint. Elle a pris un autre jeu. Les cubes, c'était bien.",
+      "script": "narrateur|Maman a dit fini. Maya a éteint. Elle a pris un autre jeu. Les cubes, c'était bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La tour reste un moment. Maya dit merci à maman. Le salon est calme.",
+      "script": "narrateur|La tour reste un moment. Maya dit merci à maman. Le salon est calme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

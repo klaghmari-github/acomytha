@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-02",
+  "fil_rouge": "",
+  "title": "Adam appelle pour la lumière",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Adam, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Adam joue dans le salon. Papa plie le linge. Adam a des voitures. Les voitures sont rouges. Adam veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Adam appelle papa. Papa, la lumière. Papa vient. Papa allume. La pièce est claire. Maman entre. On appelle un adulte. On appelle papa ou maman. Les mains restent avec les jouets. Adam reprend une voiture. Il fait une route. Les prises sont pour les adultes. Adam tient les jouets.",
+      "script": "narrateur|Adam joue dans le salon. Papa plie le linge. Adam a des voitures. Les voitures sont rouges. Adam veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Adam appelle papa.\nnarrateur|Papa, la lumière. Papa vient. Papa allume.\nnarrateur|La pièce est claire. Maman entre.\nmaman|On appelle un adulte. On appelle papa ou maman.\nnarrateur|Les mains restent avec les jouets. Adam reprend une voiture. Il fait une route.\npapa|Les prises sont pour les adultes.\nnarrateur|Adam tient les jouets.",
+      "sons": "voiture_passe",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Adam veut la lumière. Que fait-il ?",
+      "script": "narrateur|Adam veut la lumière. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adam a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|Adam a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Adam pousse une voiture. La lumière reste allumée.",
+      "script": "narrateur|Adam pousse une voiture. La lumière reste allumée.",
+      "sons": "voiture_passe",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

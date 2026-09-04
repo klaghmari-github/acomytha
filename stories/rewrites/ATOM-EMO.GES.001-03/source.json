@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.001-03",
+  "fil_rouge": "",
+  "title": "Fatou dit stop au parc",
+  "lesson_id": "EMO.GES.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Fatou, Côme, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fatou joue au parc. L'herbe sent l'été. Côme la serre trop fort dans un câlin. Fatou sent sa poitrine coincée. Ses épaules montent. Je n'aime pas. C'est trop. Stop. Elle recule d'un pas. Elle peut s'éloigner. Elle s'éloigne vers le banc. Maman est l'adulte sur le banc. Fatou va vers maman. C'était trop. Maman l'écoute. Fatou pose sa main dans la main de maman. Elle souffle. Ses épaules descendent. Dire stop, c'est permis. On s'éloigne. On va vers un adulte. Plus tard, Côme joue au bac à sable. Fatou reste près de maman. Puis elle reprend un seau. Le sable est tiède.",
+      "script": "narrateur|Fatou joue au parc. L'herbe sent l'été. Côme la serre trop fort dans un câlin. Fatou sent sa poitrine coincée. Ses épaules montent.\nnarrateur|Je n'aime pas. C'est trop.\nenfant-f|Stop. Elle recule d'un pas. Elle peut s'éloigner.\nnarrateur|Elle s'éloigne vers le banc. Maman est l'adulte sur le banc. Fatou va vers maman.\nnarrateur|C'était trop. Maman l'écoute.\nnarrateur|Fatou pose sa main dans la main de maman. Elle souffle. Ses épaules descendent. Dire stop, c'est permis. On s'éloigne. On va vers un adulte. Plus tard, Côme joue au bac à sable. Fatou reste près de maman. Puis elle reprend un seau. Le sable est tiède.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop pour Fatou. Que dit-elle ?",
+      "script": "narrateur|C'est trop pour Fatou. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fatou a dit stop. Elle a pu s'éloigner. Elle rejoint maman, l'adulte.",
+      "script": "narrateur|Fatou a dit stop. Elle a pu s'éloigner. Elle rejoint maman, l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Fatou reste près du banc. Maman lui parle tout bas.",
+      "script": "narrateur|Fatou reste près du banc. Maman lui parle tout bas.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

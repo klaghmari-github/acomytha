@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-03",
+  "fil_rouge": "",
+  "title": "Ismaël boit un verre d'eau",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Ismaël, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ismaël a joué avec les cubes. Il a chaud. Sa langue est sèche. Il a soif. Papa est dans la cuisine. J'ai soif, papa. Papa sourit. Papa prend un verre. Il verse de l'eau. L'eau chante dans le verre. Ismaël prend le verre d'eau. Il boit une gorgée. C'est frais. Il boit encore. Quand on a soif, on boit de l'eau. Dans un verre. Ismaël pose le verre. Il se sent mieux. Il touche le verre. Le verre est lisse. Papa essuie une goutte. Ismaël sourit.",
+      "script": "narrateur|Ismaël a joué avec les cubes. Il a chaud. Sa langue est sèche. Il a soif. Papa est dans la cuisine.\nenfant-m|J'ai soif, papa. Papa sourit. Papa prend un verre. Il verse de l'eau. L'eau chante dans le verre.\nnarrateur|Ismaël prend le verre d'eau. Il boit une gorgée. C'est frais. Il boit encore.\npapa|Quand on a soif, on boit de l'eau.\nnarrateur|Dans un verre. Ismaël pose le verre. Il se sent mieux. Il touche le verre. Le verre est lisse. Papa essuie une goutte. Ismaël sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ismaël a soif. Que prend-il ?",
+      "script": "narrateur|Ismaël a soif. Que prend-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ismaël avait soif. Il a pris le verre. Il a bu de l'eau. Papa était là.",
+      "script": "narrateur|Ismaël avait soif. Il a pris le verre. Il a bu de l'eau. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ismaël retourne aux cubes. Le verre reste près de l'évier.",
+      "script": "narrateur|Ismaël retourne aux cubes. Le verre reste près de l'évier.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

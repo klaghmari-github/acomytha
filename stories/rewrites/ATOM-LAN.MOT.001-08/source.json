@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-08",
+  "fil_rouge": "",
+  "title": "Géraldine classe fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Géraldine, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Papa pose deux paniers sur la table. Dans un saladier, il y a une pomme, une banane, un chapeau, une chaussette. Géraldine regarde. On range par catégorie. Les fruits ensemble. Les habits ensemble. Géraldine prend la pomme. Elle la met avec la banane. C'est la catégorie des fruits. Elle prend le chapeau. Elle le met avec la chaussette. C'est la catégorie des habits. Tu as classé. Géraldine nomme : pomme, banane. Fruits. Chapeau, chaussette. Habits. Deux catégories. Papa sourit. Géraldine range encore une poire avec les fruits.",
+      "script": "narrateur|Papa pose deux paniers sur la table. Dans un saladier, il y a une pomme, une banane, un chapeau, une chaussette. Géraldine regarde.\npapa|On range par catégorie.\nnarrateur|Les fruits ensemble. Les habits ensemble. Géraldine prend la pomme. Elle la met avec la banane. C'est la catégorie des fruits. Elle prend le chapeau. Elle le met avec la chaussette. C'est la catégorie des habits.\npapa|Tu as classé.\nnarrateur|Géraldine nomme : pomme, banane. Fruits. Chapeau, chaussette. Habits. Deux catégories. Papa sourit. Géraldine range encore une poire avec les fruits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Géraldine range pomme et chapeau. Que fait-elle ?",
+      "script": "narrateur|Géraldine range pomme et chapeau. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Géraldine a classé. Une catégorie pour les fruits. Une catégorie pour les habits. Papa était là.",
+      "script": "narrateur|Géraldine a classé. Une catégorie pour les fruits. Une catégorie pour les habits. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Géraldine pose la poire. Les deux paniers sont rangés.",
+      "script": "narrateur|Géraldine pose la poire. Les deux paniers sont rangés.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

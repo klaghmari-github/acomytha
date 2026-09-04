@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.TRA.001-01",
+  "fil_rouge": "",
+  "title": "Le train de Sami",
+  "lesson_id": "SOC.TRA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Sami, papa",
+  "setting": "gare et train",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Papa et Sami vont à la gare. Sami tient la main de papa. Ils restent avec un adulte. Papa, c'est l'adulte. Un train arrive. Le train fait tchou tchou. Le sol vibre un peu. C'est un train. C'est le nom du véhicule. Sami répète : un train. Ils montent avec papa. Sami s'assoit près de papa. Le train roule. Sami entend le bruit. Par la fenêtre, Sami voit le ciel. Un avion passe. L'avion fait un grand trait blanc. C'est un avion. C'est un autre nom de véhicule. Un avion. Plus loin, il y a une rivière. Un bateau glisse sur l'eau. C'est un bateau. Un bateau. Train, avion, bateau. Sami nomme. Il reste avec papa.",
+      "script": "narrateur|Papa et Sami vont à la gare. Sami tient la main de papa. Ils restent avec un adulte. Papa, c'est l'adulte. Un train arrive. Le train fait tchou tchou. Le sol vibre un peu.\npapa|C'est un train. C'est le nom du véhicule.\nnarrateur|Sami répète : un train. Ils montent avec papa. Sami s'assoit près de papa. Le train roule. Sami entend le bruit. Par la fenêtre, Sami voit le ciel. Un avion passe. L'avion fait un grand trait blanc.\npapa|C'est un avion. C'est un autre nom de véhicule.\nenfant-m|Un avion. Plus loin, il y a une rivière.\nnarrateur|Un bateau glisse sur l'eau.\npapa|C'est un bateau.\nenfant-m|Un bateau. Train, avion, bateau.\nnarrateur|Sami nomme. Il reste avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sami nomme un véhicule. Lequel ?",
+      "script": "narrateur|Sami nomme un véhicule. Lequel ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sami a dit le nom du véhicule. Train. Avion. Bateau. Il est resté avec papa.",
+      "script": "narrateur|Sami a dit le nom du véhicule. Train. Avion. Bateau. Il est resté avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le train s'arrête. Sami donne la main à papa. Ils descendent ensemble.",
+      "script": "narrateur|Le train s'arrête. Sami donne la main à papa. Ils descendent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

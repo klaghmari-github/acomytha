@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-03",
+  "fil_rouge": "",
+  "title": "Luce dit les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Luce, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Luce est dans sa chambre. Maman ouvre un livre des jours. Il y a sept jours dans l'ordre. Lundi. Mardi. Mercredi. Jeudi. Vendredi. Samedi. Dimanche. Luce pose le doigt. Elle répète un jour : vendredi. Maman recommence. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Sept jours dans l'ordre.",
+      "script": "narrateur|Luce est dans sa chambre. Maman ouvre un livre des jours.\nmaman|Il y a sept jours dans l'ordre. Lundi. Mardi. Mercredi. Jeudi. Vendredi. Samedi. Dimanche.\nnarrateur|Luce pose le doigt. Elle répète un jour : vendredi. Maman recommence.\nenfant-f|Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Sept jours dans l'ordre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Luce touche le livre. Que dit-elle ?",
+      "script": "narrateur|Luce touche le livre. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Luce a dit les sept jours dans l'ordre.",
+      "script": "narrateur|Luce a dit les sept jours dans l'ordre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman ferme le livre. Luce s'allonge.",
+      "script": "narrateur|Maman ferme le livre. Luce s'allonge.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

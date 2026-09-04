@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-02",
+  "fil_rouge": "Mila veut sentir une feuille de basilic. Une chenille est dessus. On regarde, on n'écrase pas. Maman la pose sur une plante sauvage. Puis elles arrosent.",
+  "title": "La chenille du basilic",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Mila, maman",
+  "setting": "cuisine puis cour, basilic à la fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une mouche tape le carreau de la cuisine. Le carreau vibre, tout petit. Ça sent le pain d'hier, un peu rassis. Le basilic est dans son pot gris. Mila vit ici, avec maman. Tu veux une feuille pour la tomate ? Oui. Je veux la sentir d'abord. En ce moment, Mila se hausse. Ses orteils cherchent le rebord du meuble. Une feuille brille, bien large. Celle-là. Mila approche le nez. Quelque chose bouge sur le vert. Il y a un ver ! Ce n'est pas un ver. C'est une chenille, toute rayée. Elle avance comme un soufflet. On la regarde. On ne l'écrase pas, d'accord ? Elle mange ma feuille. Un tout petit bout. On va lui trouver une autre plante ? Dehors ? Dehors, une plante sauvage. Maman glisse un carton sous la feuille. La chenille marche sur le carton. Mila ouvre la porte de la cour. L'air sent la poussière chaude. Une plante rêche pousse contre le mur. Ici. Elle a des feuilles plus dures. La chenille glisse sur le vert sauvage. Elle est partie. Oui. Ton basilic a encore soif, tu as vu ? Les feuilles du pot pendent un peu. La terre est claire, presque grise. Il veut de l'eau. On rentre l'arrosoir ?",
+      "script": "narrateur|Une mouche tape le carreau de la cuisine.\nnarrateur|Le carreau vibre, tout petit.\nnarrateur|Ça sent le pain d'hier, un peu rassis.\nnarrateur|Le basilic est dans son pot gris.\nnarrateur|Mila vit ici, avec maman.\nmaman|Tu veux une feuille pour la tomate ?\nenfant-f|Oui.\nenfant-f|Je veux la sentir d'abord.\nnarrateur|En ce moment, Mila se hausse.\nnarrateur|Ses orteils cherchent le rebord du meuble.\nnarrateur|Une feuille brille, bien large.\nenfant-f|Celle-là.\nnarrateur|Mila approche le nez.\nnarrateur|Quelque chose bouge sur le vert.\nenfant-f|Il y a un ver !\nnarrateur|Ce n'est pas un ver.\nnarrateur|C'est une chenille, toute rayée.\nnarrateur|Elle avance comme un soufflet.\nmaman|On la regarde.\nmaman|On ne l'écrase pas, d'accord ?\nenfant-f|Elle mange ma feuille.\nmaman|Un tout petit bout.\nmaman|On va lui trouver une autre plante ?\nenfant-f|Dehors ?\nmaman|Dehors, une plante sauvage.\nnarrateur|Maman glisse un carton sous la feuille.\nnarrateur|La chenille marche sur le carton.\nnarrateur|Mila ouvre la porte de la cour.\nnarrateur|L'air sent la poussière chaude.\nnarrateur|Une plante rêche pousse contre le mur.\nmaman|Ici.\nmaman|Elle a des feuilles plus dures.\nnarrateur|La chenille glisse sur le vert sauvage.\nenfant-f|Elle est partie.\nmaman|Oui.\nmaman|Ton basilic a encore soif, tu as vu ?\nnarrateur|Les feuilles du pot pendent un peu.\nnarrateur|La terre est claire, presque grise.\nenfant-f|Il veut de l'eau.\nmaman|On rentre l'arrosoir ?",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Une mouche tape le carreau de la cuisine. Le carreau vibre, tout petit. Ça sent le pain d'hier, un peu rassis. Le basilic est dans son pot gris. Mila vit ici, avec maman. Tu veux une feuille pour la tomate ? Oui. Je veux la sentir d'abord. En ce moment, Mila se hausse. Ses orteils cherchent le rebord du meuble. Une feuille brille, bien large. Celle-là. Mila approche le nez. Quelque chose bouge sur le vert. Il y a un ver ! Ce n'est pas un ver. C'est une chenille, toute rayée. Elle avance comme un soufflet. On la regarde. On ne l'écrase pas, d'accord ? Elle mange ma feuille. Un tout petit bout. On va lui trouver une autre plante ? Dehors ? Dehors, une plante sauvage. Maman glisse un carton sous la feuille. La chenille marche sur le carton. Mila ouvre la porte de la cour. L'air sent la poussière chaude. Une plante rêche pousse contre le mur. Ici. Elle a des feuilles plus dures. La chenille glisse sur le vert sauvage. Elle est partie. Oui. Ton basilic a encore soif, tu as vu ? Les feuilles du pot pendent un peu. La terre est claire, presque grise. Il veut de l'eau. On rentre l'arrosoir ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le basilic a soif. Que fait Mila avec maman ?",
+      "script": "narrateur|Le basilic a soif.\nnarrateur|Que fait Mila avec maman ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Le basilic a soif. Que fait Mila avec maman ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | elle arrose | de l'eau | eau",
+      "retry_prompt": "Elles versent de l'eau. Que fait Mila ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mila tient l'arrosoir à deux mains. Maman pose les doigts sur l'anse. L'eau tombe, un filet mince. La terre devient sombre, tout de suite. Elle boit. Oui. Un peu, pas trop. Une goutte reste sur une feuille. Elle brille comme un grain. Je peux sentir, maintenant ? La grande feuille, oui. Mila froisse tout doux le vert. L'odeur saute, poivrée, chaude. Ça pique ! C'est le basilic. Merci, Mila. Tu as regardé la chenille. Tu n'as pas écrasé. Elle mange dehors. Sur sa plante à elle.",
+      "script": "narrateur|Mila tient l'arrosoir à deux mains.\nnarrateur|Maman pose les doigts sur l'anse.\nnarrateur|L'eau tombe, un filet mince.\nnarrateur|La terre devient sombre, tout de suite.\nenfant-f|Elle boit.\nmaman|Oui.\nmaman|Un peu, pas trop.\nnarrateur|Une goutte reste sur une feuille.\nnarrateur|Elle brille comme un grain.\nenfant-f|Je peux sentir, maintenant ?\nmaman|La grande feuille, oui.\nnarrateur|Mila froisse tout doux le vert.\nnarrateur|L'odeur saute, poivrée, chaude.\nenfant-f|Ça pique !\nmaman|C'est le basilic.\nmaman|Merci, Mila.\nmaman|Tu as regardé la chenille.\nmaman|Tu n'as pas écrasé.\nenfant-f|Elle mange dehors.\nmaman|Sur sa plante à elle.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Mila tient l'arrosoir à deux mains. Maman pose les doigts sur l'anse. L'eau tombe, un filet mince. La terre devient sombre, tout de suite. Elle boit. Oui. Un peu, pas trop. Une goutte reste sur une feuille. Elle brille comme un grain. Je peux sentir, maintenant ? La grande feuille, oui. Mila froisse tout doux le vert. L'odeur saute, poivrée, chaude. Ça pique ! C'est le basilic. Merci, Mila. Tu as regardé la chenille. Tu n'as pas écrasé. Elle mange dehors. Sur sa plante à elle."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman coupe une feuille pour la tomate. Le couteau fait un tout petit clic. Et la chenille ? On va voir, si tu veux. Dans la cour, le mur est chaud. La plante sauvage sent l'herbe amère. Elle est encore là. La chenille mange, très lente. Chacun sa feuille. Le basilic pour nous. Celle-là pour elle. D'accord. Mila pose un doigt près, sans toucher. La chenille ne s'arrête pas. On laisse ? On laisse. Le basilic, derrière la vitre, tient plus droit. Une goutte sèche sur le rebord.",
+      "script": "narrateur|Maman coupe une feuille pour la tomate.\nnarrateur|Le couteau fait un tout petit clic.\nenfant-f|Et la chenille ?\nmaman|On va voir, si tu veux.\nnarrateur|Dans la cour, le mur est chaud.\nnarrateur|La plante sauvage sent l'herbe amère.\nenfant-f|Elle est encore là.\nnarrateur|La chenille mange, très lente.\nmaman|Chacun sa feuille.\nmaman|Le basilic pour nous.\nmaman|Celle-là pour elle.\nenfant-f|D'accord.\nnarrateur|Mila pose un doigt près, sans toucher.\nnarrateur|La chenille ne s'arrête pas.\nmaman|On laisse ?\nenfant-f|On laisse.\nnarrateur|Le basilic, derrière la vitre, tient plus droit.\nnarrateur|Une goutte sèche sur le rebord.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman coupe une feuille pour la tomate. Le couteau fait un tout petit clic. Et la chenille ? On va voir, si tu veux. Dans la cour, le mur est chaud. La plante sauvage sent l'herbe amère. Elle est encore là. La chenille mange, très lente. Chacun sa feuille. Le basilic pour nous. Celle-là pour elle. D'accord. Mila pose un doigt près, sans toucher. La chenille ne s'arrête pas. On laisse ? On laisse. Le basilic, derrière la vitre, tient plus droit. Une goutte sèche sur le rebord."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Mila rentre. La tomate attend, rouge, sur l'assiette. Ça sent le basilic. Oui. La feuille que tu voulais. La feuille sent encore le soleil.",
+      "script": "narrateur|Mila rentre.\nnarrateur|La tomate attend, rouge, sur l'assiette.\nenfant-f|Ça sent le basilic.\nmaman|Oui.\nmaman|La feuille que tu voulais.\nnarrateur|La feuille sent encore le soleil.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Mila rentre. La tomate attend, rouge, sur l'assiette. Ça sent le basilic. Oui. La feuille que tu voulais. La feuille sent encore le soleil."
+    }
+  ]
+}

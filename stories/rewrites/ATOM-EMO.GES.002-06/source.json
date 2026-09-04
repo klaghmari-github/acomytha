@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-06",
+  "fil_rouge": "",
+  "title": "Flore souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Flore, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Flore construit une tour dans sa chambre. Les cubes glissent. La tour tombe. Les épaules de Flore se serrent. Maman est près de la porte. On peut souffler. On peut faire une pause. Flore s'assoit sur le tapis. Elle souffle une fois. Elle souffle encore. La pause dure un moment. Les mains se posent sur les genoux. Je souffle. Je fais une pause. Maman hoche la tête. Puis Flore reprend les cubes. Elle pose un cube, puis un autre. La tour tient. Plus tard, un puzzle résiste. Flore se souvient. Elle s'assoit. Elle souffle. Elle fait une pause. Ensuite elle reprend. Maman sourit.",
+      "script": "narrateur|Flore construit une tour dans sa chambre. Les cubes glissent. La tour tombe. Les épaules de Flore se serrent. Maman est près de la porte.\nnarrateur|On peut souffler. On peut faire une pause.\nnarrateur|Flore s'assoit sur le tapis. Elle souffle une fois. Elle souffle encore. La pause dure un moment. Les mains se posent sur les genoux.\nenfant-f|Je souffle. Je fais une pause. Maman hoche la tête.\nnarrateur|Puis Flore reprend les cubes. Elle pose un cube, puis un autre. La tour tient. Plus tard, un puzzle résiste. Flore se souvient. Elle s'assoit. Elle souffle. Elle fait une pause. Ensuite elle reprend. Maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tour de Flore tombe. Que fait-elle ?",
+      "script": "narrateur|La tour de Flore tombe. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Flore a soufflé. Elle a fait une pause. Elle s'est assise. Puis elle a repris.",
+      "script": "narrateur|Flore a soufflé. Elle a fait une pause. Elle s'est assise. Puis elle a repris.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Flore range un cube. Maman lui tend la main.",
+      "script": "narrateur|Flore range un cube. Maman lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

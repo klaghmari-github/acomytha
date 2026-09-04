@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-04",
+  "fil_rouge": "",
+  "title": "William nomme un pays",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "William, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "William s'assoit près de maman. Maman ouvre un grand livre. Les pages sentent le papier. On va nommer un pays. William pose le doigt. Maman lit le nom : l'Italie. William répète : l'Italie. Sur la page, il y a de l'eau bleue. Ça, c'est un paysage. C'est la mer. La mer. Un pays. Un nom. Un paysage. L'Italie, et la mer. Maman ferme le livre.",
+      "script": "narrateur|William s'assoit près de maman. Maman ouvre un grand livre. Les pages sentent le papier.\nmaman|On va nommer un pays.\nnarrateur|William pose le doigt. Maman lit le nom : l'Italie. William répète : l'Italie. Sur la page, il y a de l'eau bleue.\nmaman|Ça, c'est un paysage. C'est la mer.\nenfant-m|La mer.\nnarrateur|Un pays. Un nom. Un paysage. L'Italie, et la mer. Maman ferme le livre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "William nomme l'Italie. Il nomme aussi quoi ?",
+      "script": "narrateur|William nomme l'Italie. Il nomme aussi quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "William a dit le nom. L'Italie. Il a dit le paysage. La mer.",
+      "script": "narrateur|William a dit le nom. L'Italie. Il a dit le paysage. La mer.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "William s'allonge près de maman. Il pense à l'eau.",
+      "script": "narrateur|William s'allonge près de maman. Il pense à l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

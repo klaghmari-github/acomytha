@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-03",
+  "fil_rouge": "",
+  "title": "Solène va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Solène, papa, maman",
+  "setting": "entrée puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Solène veut mettre son manteau. La fermeture est difficile. C'est trop difficile. Solène va vers papa. Aller vers eux, c'est possible. Elle dit le besoin. Papa, j'ai besoin d'aide. Papa l'écoute. Il tient le bas du manteau. Solène tire. Le manteau est fermé. Plus tard, dans le jardin, l'arrosoir est lourd. Solène se souvient. Elle va vers maman. Elle dit le besoin. Maman, l'arrosoir est lourd. Maman tient l'anse avec elle. L'eau coule doucement. Même leçon, autre lieu. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "script": "narrateur|Solène veut mettre son manteau. La fermeture est difficile. C'est trop difficile. Solène va vers papa. Aller vers eux, c'est possible. Elle dit le besoin.\nenfant-f|Papa, j'ai besoin d'aide. Papa l'écoute. Il tient le bas du manteau.\nnarrateur|Solène tire. Le manteau est fermé. Plus tard, dans le jardin, l'arrosoir est lourd. Solène se souvient. Elle va vers maman. Elle dit le besoin.\nenfant-f|Maman, l'arrosoir est lourd. Maman tient l'anse avec elle. L'eau coule doucement. Même leçon, autre lieu. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Solène ?",
+      "script": "narrateur|C'est trop difficile. Que fait Solène ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Solène est allée vers papa. Puis vers maman. Elle a dit le besoin.",
+      "script": "narrateur|Solène est allée vers papa. Puis vers maman. Elle a dit le besoin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Les fleurs ont de l'eau. Solène range l'arrosoir.",
+      "script": "narrateur|Les fleurs ont de l'eau. Solène range l'arrosoir.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

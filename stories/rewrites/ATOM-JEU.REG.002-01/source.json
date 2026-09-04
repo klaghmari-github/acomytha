@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-01",
+  "fil_rouge": "",
+  "title": "La règle de Lila",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Lila, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila joue dans le jardin. Papa est là. Il y a un cerceau. Papa dit une règle. La règle : on attend. Puis on passe le cerceau. Lila écoute. Elle prend le cerceau trop vite. Papa va rappeler la règle une fois. On attend. C'est la règle. Lila s'arrête. Elle attend. Puis elle passe le cerceau. Le cerceau glisse. Lila sourit. Tu as suivi la règle. Lila répète : on attend. Une règle simple. Papa la rappelle. Lila la suit.",
+      "script": "narrateur|Lila joue dans le jardin. Papa est là. Il y a un cerceau. Papa dit une règle. La règle : on attend. Puis on passe le cerceau. Lila écoute. Elle prend le cerceau trop vite. Papa va rappeler la règle une fois.\nnarrateur|On attend. C'est la règle.\nnarrateur|Lila s'arrête. Elle attend. Puis elle passe le cerceau. Le cerceau glisse. Lila sourit.\npapa|Tu as suivi la règle.\nnarrateur|Lila répète : on attend. Une règle simple. Papa la rappelle. Lila la suit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lila joue. Que suit-elle ?",
+      "script": "narrateur|Lila joue. Que suit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lila a suivi la règle. Elle a attendu. Papa a rappelé une fois.",
+      "script": "narrateur|Lila a suivi la règle. Elle a attendu. Papa a rappelé une fois.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lila pose le cerceau. Papa lui verse de l'eau.",
+      "script": "narrateur|Lila pose le cerceau. Papa lui verse de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.001-06",
+  "fil_rouge": "",
+  "title": "Clarisse s'arrête au trottoir",
+  "lesson_id": "SEC.RUE.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Clarisse, papa",
+  "setting": "trajet vers le square",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Clarisse marche avec papa. Ils vont au square. Clarisse tient la main de papa. Ils arrivent au bord. Le trottoir est là. Papa s'arrête. Clarisse s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Clarisse sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir. On s'arrête. Pieds au bord. Sur le trottoir. Clarisse pose les pieds au bord. Les pieds sont calmes. Papa sourit. On s'arrête au trottoir. On attend avec papa. Les pieds restent au bord du trottoir.",
+      "script": "narrateur|Clarisse marche avec papa. Ils vont au square. Clarisse tient la main de papa. Ils arrivent au bord. Le trottoir est là. Papa s'arrête. Clarisse s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Clarisse sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir.\npapa|On s'arrête. Pieds au bord. Sur le trottoir.\nnarrateur|Clarisse pose les pieds au bord. Les pieds sont calmes. Papa sourit. On s'arrête au trottoir. On attend avec papa. Les pieds restent au bord du trottoir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Clarisse arrive au bord. Que fait-elle ?",
+      "script": "narrateur|Clarisse arrive au bord. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Clarisse s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "script": "narrateur|Clarisse s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Clarisse donne la main à papa. Ils attendent un moment.",
+      "script": "narrateur|Clarisse donne la main à papa. Ils attendent un moment.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

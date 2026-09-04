@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.006-07",
+  "fil_rouge": "",
+  "title": "Iseult est inquiète et elle raconte",
+  "lesson_id": "EMO.LEX.006",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Iseult, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Iseult est dans le salon. Un bruit arrive. Son ventre se serre. Elle est inquiète. Elle ne reste pas seule. Elle va vers papa. Papa est l'adulte. Elle raconte : j'ai entendu un bruit. Mon ventre est serré. Je suis inquiète. Papa écoute. Merci de raconter. On rejoint un adulte. On raconte. Iseult respire.",
+      "script": "narrateur|Iseult est dans le salon. Un bruit arrive. Son ventre se serre. Elle est inquiète. Elle ne reste pas seule. Elle va vers papa. Papa est l'adulte. Elle raconte : j'ai entendu un bruit. Mon ventre est serré. Je suis inquiète. Papa écoute.\npapa|Merci de raconter. On rejoint un adulte. On raconte.\nnarrateur|Iseult respire.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iseult a le ventre serré. Que fait-elle ?",
+      "script": "narrateur|Iseult a le ventre serré. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Iseult Je suis inquiète. Elle a raconté à papa, l'adulte.",
+      "script": "narrateur|Iseult\nenfant-f|Je suis inquiète. Elle a raconté à papa, l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa allume une petite lumière. Iseult s'allonge.",
+      "script": "narrateur|Papa allume une petite lumière. Iseult s'allonge.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

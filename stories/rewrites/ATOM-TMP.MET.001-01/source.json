@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-01",
+  "fil_rouge": "",
+  "title": "Le manteau de Kenzo",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Kenzo, maman",
+  "setting": "entrée de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenzo veut sortir avec maman. Il fait froid. Maman prend le manteau. Kenzo enfile le manteau. Dehors, il y a de la pluie. Maman prend les bottes. Kenzo met les bottes. Ses pieds sont au sec. Maman ouvre la porte. Kenzo donne la main. Ils marchent. Froid, le manteau. Pluie, les bottes.",
+      "script": "narrateur|Kenzo veut sortir avec maman. Il fait froid. Maman prend le manteau. Kenzo enfile le manteau. Dehors, il y a de la pluie. Maman prend les bottes. Kenzo met les bottes. Ses pieds sont au sec. Maman ouvre la porte. Kenzo donne la main. Ils marchent.\nmaman|Froid, le manteau. Pluie, les bottes.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il pleut. Que met Kenzo ?",
+      "script": "narrateur|Il pleut. Que met Kenzo ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Kenzo a mis le manteau. Il a mis les bottes. Maman était là.",
+      "script": "narrateur|Kenzo a mis le manteau. Il a mis les bottes. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Kenzo entend la pluie. Ses pieds restent au sec.",
+      "script": "narrateur|Kenzo entend la pluie. Ses pieds restent au sec.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

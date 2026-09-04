@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.002-03",
+  "fil_rouge": "",
+  "title": "Yasmine dit stop",
+  "lesson_id": "REL.CON.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Yasmine, maîtresse, papa",
+  "setting": "cour d'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yasmine est dans la cour. La maîtresse est près du banc. Yasmine tient un cerceau. Un camarade arrive vite. Il bouscule Yasmine. Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Yasmine marche vers la maîtresse. On m'a bousculée. La maîtresse l'écoute. Le soir, papa vient. Yasmine raconte. Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.",
+      "script": "narrateur|Yasmine est dans la cour. La maîtresse est près du banc. Yasmine tient un cerceau. Un camarade arrive vite. Il bouscule Yasmine.\nenfant-f|Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse.\nnarrateur|Yasmine marche vers la maîtresse.\nnarrateur|On m'a bousculée.\nnarrateur|La maîtresse l'écoute. Le soir, papa vient. Yasmine raconte.\npapa|Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Yasmine. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Yasmine. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yasmine a dit stop. Elle a su s'éloigner. Elle a rejoint la maîtresse.",
+      "script": "narrateur|Yasmine a dit stop. Elle a su s'éloigner. Elle a rejoint la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yasmine range le cerceau. Papa lui tend la main.",
+      "script": "narrateur|Yasmine range le cerceau. Papa lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

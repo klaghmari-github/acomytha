@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-01",
+  "fil_rouge": "",
+  "title": "Maya retrouve maman au magasin",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maya, maman, papa, la maîtresse",
+  "setting": "magasin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya est au magasin. C'est la sortie de l'école. La maîtresse attend près des caisses. Maman est au rayon des pommes. Papa doit les rejoindre. Maya a regardé les crayons. Elle lève les yeux. Elle cherche. Maya se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Maya marche vers les pommes. Elle voit maman. Maman a le panier. Maya va vers maman. Parce qu'elle a cherché maman, elle la trouve. Me voici. Tu vas vers papa, maman, ou la maîtresse. Maya prend le manteau de maman. Elle est calme.",
+      "script": "narrateur|Maya est au magasin. C'est la sortie de l'école. La maîtresse attend près des caisses. Maman est au rayon des pommes. Papa doit les rejoindre. Maya a regardé les crayons. Elle lève les yeux. Elle cherche. Maya se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Maya marche vers les pommes. Elle voit maman. Maman a le panier. Maya va vers maman. Parce qu'elle a cherché maman, elle la trouve.\nmaman|Me voici. Tu vas vers papa, maman, ou la maîtresse.\nnarrateur|Maya prend le manteau de maman. Elle est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maya cherche quelqu'un. Vers qui va-t-elle ?",
+      "script": "narrateur|Maya cherche quelqu'un. Vers qui va-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maya a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "script": "narrateur|Maya a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maya tient le manteau de maman. Elles paient les pommes.",
+      "script": "narrateur|Maya tient le manteau de maman. Elles paient les pommes.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

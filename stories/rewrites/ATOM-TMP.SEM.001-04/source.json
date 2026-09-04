@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-04",
+  "fil_rouge": "",
+  "title": "Camille et les sept jours",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Camille, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Camille s'assoit à la table de la cuisine. Papa a un calendrier en carton. Il y a sept cases. Il y a sept jours. Camille touche le carton. C'est un peu rêche. Papa pose un jeton. Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au marché. Dimanche, on mange des crêpes. Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Camille répète les sept jours dans l'ordre. Parce qu'elle les dit dans l'ordre, elle se souvient. Papa avance le jeton. Après lundi, c'est mardi. Papa sourit. Ils recommencent une fois. Sept jours. Toujours dans l'ordre. Camille pose le jeton sur mercredi. Elle sent le bois du jeton. Encore. Camille dit toute la liste. Lundi commence. Dimanche termine.",
+      "script": "narrateur|Camille s'assoit à la table de la cuisine. Papa a un calendrier en carton. Il y a sept cases.\npapa|Il y a sept jours.\nnarrateur|Camille touche le carton. C'est un peu rêche. Papa pose un jeton. Lundi, on met les chaussures. Mardi, on prend le cartable. Mercredi, on reste un peu à la maison. Jeudi, on revoit les copains. Vendredi, on chante à l'école. Samedi, on va au marché. Dimanche, on mange des crêpes.\npapa|Lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.\nnarrateur|Camille répète les sept jours dans l'ordre. Parce qu'elle les dit dans l'ordre, elle se souvient. Papa avance le jeton.\nenfant-f|Après lundi, c'est mardi. Papa sourit. Ils recommencent une fois. Sept jours. Toujours dans l'ordre.\nnarrateur|Camille pose le jeton sur mercredi. Elle sent le bois du jeton.\npapa|Encore.\nnarrateur|Camille dit toute la liste. Lundi commence. Dimanche termine.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après lundi, quel jour vient ?",
+      "script": "narrateur|Après lundi, quel jour vient ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Camille a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine.",
+      "script": "narrateur|Camille a dit les sept jours dans l'ordre. Lundi commence. Dimanche termine.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Camille pose le jeton sur lundi. Papa range le calendrier.",
+      "script": "narrateur|Camille pose le jeton sur lundi. Papa range le calendrier.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-02",
+  "fil_rouge": "",
+  "title": "Zoé nomme les sons de la ferme",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Zoé, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé marche à la ferme avec papa. Un son arrive : meuh. C'est un son. Quel nom ? La vache. Un autre son : cot cot. Zoé dit le nom : la poule. Près de l'auge, l'eau cloche. L'eau. On entend un son. On dit le nom. Zoé répète : son, nom. La vache, la poule, l'eau.",
+      "script": "narrateur|Zoé marche à la ferme avec papa. Un son arrive : meuh.\npapa|C'est un son. Quel nom ?\nenfant-f|La vache.\nnarrateur|Un autre son : cot cot. Zoé dit le nom : la poule. Près de l'auge, l'eau cloche.\nenfant-f|L'eau.\npapa|On entend un son. On dit le nom.\nnarrateur|Zoé répète : son, nom. La vache, la poule, l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Zoé entend un bruit. C'est quoi ?",
+      "script": "narrateur|Zoé entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Zoé a entendu un son. Elle a dit le nom. Vache. Poule. Eau.",
+      "script": "narrateur|Zoé a entendu un son. Elle a dit le nom. Vache. Poule. Eau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa donne la main. Zoé écoute encore l'eau.",
+      "script": "narrateur|Papa donne la main. Zoé écoute encore l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

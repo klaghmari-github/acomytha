@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-02",
+  "fil_rouge": "",
+  "title": "Hanna va vers maman, puis la maîtresse",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hanna, maman, papa, la maîtresse",
+  "setting": "magasin puis école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hanna est au magasin. C'est après l'école. La maîtresse a dit au revoir près de la porte. Papa doit arriver plus tard. Maman pousse le panier. Hanna regarde les pots de yaourt. Ils sont frais. Elle lève les yeux. Elle cherche. Hanna se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Hanna marche vers les yaourts. Elle voit maman. Maman a le panier. Hanna va vers maman. Elle tient le manteau de maman. Ses pieds restent près de maman. Parce qu'elle a cherché maman, elle la trouve. Me voici. Le lendemain, Hanna est dans la cour. Elle cherche. Elle va vers la maîtresse. La maîtresse est près du bac. Hanna reste près de la maîtresse. Papa arrive. Hanna va vers papa. Elle prend la main de papa. Au magasin, puis à l'école, c'est pareil. On va vers papa, vers maman, ou vers la maîtresse.",
+      "script": "narrateur|Hanna est au magasin. C'est après l'école. La maîtresse a dit au revoir près de la porte. Papa doit arriver plus tard. Maman pousse le panier. Hanna regarde les pots de yaourt. Ils sont frais. Elle lève les yeux. Elle cherche. Hanna se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Hanna marche vers les yaourts. Elle voit maman. Maman a le panier. Hanna va vers maman. Elle tient le manteau de maman. Ses pieds restent près de maman. Parce qu'elle a cherché maman, elle la trouve.\nmaman|Me voici.\nnarrateur|Le lendemain, Hanna est dans la cour. Elle cherche. Elle va vers la maîtresse. La maîtresse est près du bac. Hanna reste près de la maîtresse. Papa arrive. Hanna va vers papa. Elle prend la main de papa. Au magasin, puis à l'école, c'est pareil. On va vers papa, vers maman, ou vers la maîtresse.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hanna cherche quelqu'un. Vers qui va-t-elle ?",
+      "script": "narrateur|Hanna cherche quelqu'un. Vers qui va-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hanna a cherché maman. À l'école, elle va vers la maîtresse. Papa est aussi un adulte connu.",
+      "script": "narrateur|Hanna a cherché maman. À l'école, elle va vers la maîtresse. Papa est aussi un adulte connu.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hanna tient la main de papa. Ils rentrent.",
+      "script": "narrateur|Hanna tient la main de papa. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.001-06",
+  "fil_rouge": "",
+  "title": "Hugues ne rit pas, deux fois",
+  "lesson_id": "REL.MOQ.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hugues, Lila, Nino, maman",
+  "setting": "école puis maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugues est à l'école. La classe range les manteaux. Lila fait tomber son bonnet. Nino commence à rire. Le rire est court. Hugues ne rit pas. Il ne faut pas rire. Hugues ne répète pas. Il ne faut pas répéter. Ce n'est pas gentil. Il ramasse le bonnet. Il le tend. Lila le remet. La maîtresse s'approche. Pardon. Plus tard, à la maison, un dessin glisse. Encore un petit rire. Hugues se souvient. Il ne rit pas. Il ne répète pas. Ce n'est pas gentil. Maman entend. Tu as bien fait. Même leçon, autre lieu. Il ne faut pas rire. Il ne faut pas répéter. Ce n'est pas gentil. Hugues serre la main de maman.",
+      "script": "narrateur|Hugues est à l'école. La classe range les manteaux. Lila fait tomber son bonnet. Nino commence à rire. Le rire est court. Hugues ne rit pas. Il ne faut pas rire. Hugues ne répète pas. Il ne faut pas répéter.\nenfant-m|Ce n'est pas gentil. Il ramasse le bonnet. Il le tend.\nnarrateur|Lila le remet. La maîtresse s'approche.\ncopain|Pardon. Plus tard, à la maison, un dessin glisse. Encore un petit rire.\nnarrateur|Hugues se souvient. Il ne rit pas. Il ne répète pas.\nnarrateur|Ce n'est pas gentil. Maman entend.\nmaman|Tu as bien fait. Même leçon, autre lieu. Il ne faut pas rire. Il ne faut pas répéter.\nnarrateur|Ce n'est pas gentil.\nnarrateur|Hugues serre la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino rit. Que fait Hugues ?",
+      "script": "narrateur|Nino rit. Que fait Hugues ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugues n'a pas ri. Il n'a pas répété. Il Ce n'est pas gentil. Maman est là.",
+      "script": "narrateur|Hugues n'a pas ri. Il n'a pas répété. Il\nenfant-f|Ce n'est pas gentil. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hugues range son cartable. Maman marche à côté.",
+      "script": "narrateur|Hugues range son cartable. Maman marche à côté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

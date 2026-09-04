@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.002-03",
+  "fil_rouge": "",
+  "title": "La brosse d'Ibrahim",
+  "lesson_id": "SAN.HYG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Ibrahim, papa",
+  "setting": "salle de bain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le matin. Ibrahim se lève. Le tapis est doux. Papa l'appelle. Papa est dans la salle de bain. L'eau coule. Ibrahim prend sa brosse. Papa prend la sienne. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. L'eau est fraîche. Ibrahim rit un peu. Il crache dans le lavabo. Il se rince. Le soir, c'est pareil. Ibrahim prend sa brosse. Un adulte est avec lui. C'est papa. Ils brossent ensemble. Matin et soir. Oui, avec moi. Les dents sont propres. Ibrahim range la brosse.",
+      "script": "narrateur|C'est le matin. Ibrahim se lève. Le tapis est doux. Papa l'appelle. Papa est dans la salle de bain. L'eau coule. Ibrahim prend sa brosse. Papa prend la sienne. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. L'eau est fraîche. Ibrahim rit un peu. Il crache dans le lavabo. Il se rince. Le soir, c'est pareil. Ibrahim prend sa brosse. Un adulte est avec lui. C'est papa. Ils brossent ensemble.\nenfant-m|Matin et soir.\npapa|Oui, avec moi.\nnarrateur|Les dents sont propres. Ibrahim range la brosse.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ibrahim se brosse les dents. Avec quoi ?",
+      "script": "narrateur|Ibrahim se brosse les dents. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ibrahim a pris la brosse. Il brosse avec l'adulte. C'est papa. Matin et soir.",
+      "script": "narrateur|Ibrahim a pris la brosse. Il brosse avec l'adulte. C'est papa. Matin et soir.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ibrahim se rince la bouche. Il dit merci à papa. Les dents brillent.",
+      "script": "narrateur|Ibrahim se rince la bouche. Il dit merci à papa. Les dents brillent.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

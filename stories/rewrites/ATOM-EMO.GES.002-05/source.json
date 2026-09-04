@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-05",
+  "fil_rouge": "",
+  "title": "Gaëlle souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Gaëlle, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaëlle joue dans sa chambre. Les cubes tombent. Ça fait un bruit sec. Gaëlle sent sa poitrine aller vite. C'est trop. Maman est près du lit. On peut souffler. Gaëlle souffle comme le vent. Une fois. Deux fois. Elle s'assoit sur le tapis. Elle fait une pause. Ses mains se posent sur ses genoux. La chambre redevient calme. Gaëlle reprend un cube bleu. Elle construit tout doucement. Maman reste près d'elle. Souffler, puis une pause. On peut reprendre.",
+      "script": "narrateur|Gaëlle joue dans sa chambre. Les cubes tombent. Ça fait un bruit sec. Gaëlle sent sa poitrine aller vite.\nnarrateur|C'est trop. Maman est près du lit.\nmaman|On peut souffler.\nnarrateur|Gaëlle souffle comme le vent. Une fois. Deux fois. Elle s'assoit sur le tapis. Elle fait une pause. Ses mains se posent sur ses genoux. La chambre redevient calme. Gaëlle reprend un cube bleu. Elle construit tout doucement. Maman reste près d'elle. Souffler, puis une pause. On peut reprendre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le corps de Gaëlle va vite. Que fait-elle ?",
+      "script": "narrateur|Le corps de Gaëlle va vite. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaëlle a soufflé. Elle a fait une pause. Son corps a ralenti.",
+      "script": "narrateur|Gaëlle a soufflé. Elle a fait une pause. Son corps a ralenti.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gaëlle pose un cube bleu. Maman reste sur le tapis.",
+      "script": "narrateur|Gaëlle pose un cube bleu. Maman reste sur le tapis.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

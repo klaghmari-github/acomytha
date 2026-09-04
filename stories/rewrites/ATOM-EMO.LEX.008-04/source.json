@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.008-04",
+  "fil_rouge": "",
+  "title": "Élie est gêné, puis il répare",
+  "lesson_id": "EMO.LEX.008",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Élie, maman",
+  "setting": "cuisine puis salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Élie aide maman dans la cuisine. Il porte un bol de farine. Le bol penche. La farine glisse sur la table. Élie sent ses joues brûlantes. Il baisse les yeux. Je suis gêné. Une erreur, ce n'est pas toi. L'erreur, on peut la dire. J'ai versé la farine. Maman tend un torchon. Je veux réparer. Il essuie la table. Maman aide un peu. Plus tard, au salon, Élie range des livres. Un livre tombe. Encore une erreur. Les joues d'Élie chauffent. Je suis gêné. Puis il ramasse le livre. Il le pose. Il a su réparer. Merci d'avoir dit. Être gêné, on le dit. Puis on peut réparer. L'erreur n'est pas Élie.",
+      "script": "narrateur|Élie aide maman dans la cuisine. Il porte un bol de farine. Le bol penche. La farine glisse sur la table. Élie sent ses joues brûlantes. Il baisse les yeux.\nenfant-f|Je suis gêné.\nmaman|Une erreur, ce n'est pas toi. L'erreur, on peut la dire.\nenfant-f|J'ai versé la farine. Maman tend un torchon.\nenfant-f|Je veux réparer. Il essuie la table. Maman aide un peu. Plus tard, au salon, Élie range des livres.\nnarrateur|Un livre tombe. Encore une erreur. Les joues d'Élie chauffent.\nnarrateur|Je suis gêné.\nnarrateur|Puis il ramasse le livre. Il le pose. Il a su réparer.\nmaman|Merci d'avoir dit. Être gêné, on le dit.\nnarrateur|Puis on peut réparer. L'erreur n'est pas Élie.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Élie a fait une erreur. Que fait-il ?",
+      "script": "narrateur|Élie a fait une erreur. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Élie a nommé : gêné. L'erreur n'est pas Élie. Il a pu réparer.",
+      "script": "narrateur|Élie a nommé : gêné. L'erreur n'est pas Élie. Il a pu réparer.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La table est propre. Le livre est rangé. Maman sourit.",
+      "script": "narrateur|La table est propre. Le livre est rangé. Maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

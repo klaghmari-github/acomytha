@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-07",
+  "fil_rouge": "Chouchou veut une soupe orange. Mercredi, une carotte roule sous la table. Elle la rattrape. Dimanche, week-end, le marché sent les mêmes carottes.",
+  "title": "La vapeur et le marché",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "cuisine mercredi, marché dimanche",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La vapeur de soupe embue la vitre. Un rond de jour flotte dans la buée. Ça sent la carotte chaude. C'est mercredi, Chouchou. Pas d'école. On fait la soupe ? Oui. Tu peux la carotte. La grande. Chouchou prend une carotte mouillée. Elle glisse. Elle roule sous la table. Elle part ! On la cherche ? Oui. En ce moment, Chouchou se penche. Le carrelage est froid aux genoux. La carotte attend près du pied de chaise. Je l'ai. Merci. Elle voulait se cacher. Chouchou la pose dans le saladier. L'eau fait un petit ploc. On coupe ensemble. Des ronds. Des ronds orange. Les ronds tombent, mous, luisants. Mercredi, on cuisine. Dimanche, on ira au marché. Pour d'autres carottes ? Pour d'autres. Samedi et dimanche, c'est le week-end. Pas d'école. Pas d'école. Comme mercredi. La casserole chante un peu. La vapeur sent plus fort. Je souffle. Pas trop près. On goûte plus tard. Chouchou trace un soleil dans la buée. Le doigt laisse une vitre claire. Tu vois le jardin ? Un peu. Samedi, on finira le bol. Dimanche, le marché. J'attends dimanche. Une goutte coule sur la carotte retrouvée. Elle brille, toute propre.",
+      "script": "narrateur|La vapeur de soupe embue la vitre.\nnarrateur|Un rond de jour flotte dans la buée.\nnarrateur|Ça sent la carotte chaude.\nmaman|C'est mercredi, Chouchou.\nmaman|Pas d'école.\nenfant-f|On fait la soupe ?\nmaman|Oui.\nmaman|Tu peux la carotte.\nenfant-f|La grande.\nnarrateur|Chouchou prend une carotte mouillée.\nnarrateur|Elle glisse.\nnarrateur|Elle roule sous la table.\nenfant-f|Elle part !\nmaman|On la cherche ?\nenfant-f|Oui.\nnarrateur|En ce moment, Chouchou se penche.\nnarrateur|Le carrelage est froid aux genoux.\nnarrateur|La carotte attend près du pied de chaise.\nenfant-f|Je l'ai.\nmaman|Merci.\nmaman|Elle voulait se cacher.\nnarrateur|Chouchou la pose dans le saladier.\nnarrateur|L'eau fait un petit ploc.\nmaman|On coupe ensemble.\nenfant-f|Des ronds.\nmaman|Des ronds orange.\nnarrateur|Les ronds tombent, mous, luisants.\nmaman|Mercredi, on cuisine.\nmaman|Dimanche, on ira au marché.\nenfant-f|Pour d'autres carottes ?\nmaman|Pour d'autres.\nmaman|Samedi et dimanche, c'est le week-end.\nenfant-f|Pas d'école.\nmaman|Pas d'école.\nmaman|Comme mercredi.\nnarrateur|La casserole chante un peu.\nnarrateur|La vapeur sent plus fort.\nenfant-f|Je souffle.\nmaman|Pas trop près.\nmaman|On goûte plus tard.\nnarrateur|Chouchou trace un soleil dans la buée.\nnarrateur|Le doigt laisse une vitre claire.\nmaman|Tu vois le jardin ?\nenfant-f|Un peu.\nmaman|Samedi, on finira le bol.\nmaman|Dimanche, le marché.\nenfant-f|J'attends dimanche.\nnarrateur|Une goutte coule sur la carotte retrouvée.\nnarrateur|Elle brille, toute propre.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La vapeur de soupe embue la vitre. Un rond de jour flotte dans la buée. Ça sent la carotte chaude. C'est mercredi, Chouchou. Pas d'école. On fait la soupe ? Oui. Tu peux la carotte. La grande. Chouchou prend une carotte mouillée. Elle glisse. Elle roule sous la table. Elle part ! On la cherche ? Oui. En ce moment, Chouchou se penche. Le carrelage est froid aux genoux. La carotte attend près du pied de chaise. Je l'ai. Merci. Elle voulait se cacher. Chouchou la pose dans le saladier. L'eau fait un petit ploc. On coupe ensemble. Des ronds. Des ronds orange. Les ronds tombent, mous, luisants. Mercredi, on cuisine. Dimanche, on ira au marché. Pour d'autres carottes ? Pour d'autres. Samedi et dimanche, c'est le week-end. Pas d'école. Pas d'école. Comme mercredi. La casserole chante un peu. La vapeur sent plus fort. Je souffle. Pas trop près. On goûte plus tard. Chouchou trace un soleil dans la buée. Le doigt laisse une vitre claire. Tu vois le jardin ? Un peu. Samedi, on finira le bol. Dimanche, le marché. J'attends dimanche. Une goutte coule sur la carotte retrouvée. Elle brille, toute propre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quels autres jours, comme mercredi, sans l'école ?",
+      "script": "narrateur|Quels autres jours, comme mercredi, sans l'école ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Quels autres jours, comme mercredi, sans l'école ?",
+      "accepted_examples": "week-end | weekend | samedi | dimanche | le week-end | mercredi",
+      "expected_answer": "samedi",
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chouchou essuie ses genoux du plat de la main. Samedi. Dimanche. Oui. C'est le week-end. Dimanche, les carottes du marché. Comme celle-là. Comme celle que tu as rattrapée. La soupe tourne, orange, épaisse. Une bulle éclate, tout doux. Tu as cherché sous la table. Bravo. Elle roulait. Et tu l'as eue. On goûte ? Oui, maman. La cuillère est chaude au bord des lèvres. La carotte a un goût sucré.",
+      "script": "narrateur|Chouchou essuie ses genoux du plat de la main.\nenfant-f|Samedi.\nenfant-f|Dimanche.\nmaman|Oui.\nmaman|C'est le week-end.\nmaman|Dimanche, les carottes du marché.\nenfant-f|Comme celle-là.\nmaman|Comme celle que tu as rattrapée.\nnarrateur|La soupe tourne, orange, épaisse.\nnarrateur|Une bulle éclate, tout doux.\nmaman|Tu as cherché sous la table.\nmaman|Bravo.\nenfant-f|Elle roulait.\nmaman|Et tu l'as eue.\nmaman|On goûte ?\nenfant-f|Oui, maman.\nnarrateur|La cuillère est chaude au bord des lèvres.\nnarrateur|La carotte a un goût sucré.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Chouchou essuie ses genoux du plat de la main. Samedi. Dimanche. Oui. C'est le week-end. Dimanche, les carottes du marché. Comme celle-là. Comme celle que tu as rattrapée. La soupe tourne, orange, épaisse. Une bulle éclate, tout doux. Tu as cherché sous la table. Bravo. Elle roulait. Et tu l'as eue. On goûte ? Oui, maman. La cuillère est chaude au bord des lèvres. La carotte a un goût sucré."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dimanche, le marché sent la terre mouillée. Une caisse de carottes fume un peu au froid. Comme la soupe. Comme mercredi. Chouchou montre une botte orange. Les fanes sont encore vertes, piquantes. Celles-là ? Celles-là. On les prend. Le sac devient lourd, froid. Pour la prochaine soupe. Pour la prochaine. C'est le week-end. Merci, maman. Merci d'avoir choisi. Une carotte dépasse du sac. Elle ne roule pas. Je la tiens. Le marché sonne de cagettes et de voix.",
+      "script": "narrateur|Dimanche, le marché sent la terre mouillée.\nnarrateur|Une caisse de carottes fume un peu au froid.\nenfant-f|Comme la soupe.\nmaman|Comme mercredi.\nnarrateur|Chouchou montre une botte orange.\nnarrateur|Les fanes sont encore vertes, piquantes.\nmaman|Celles-là ?\nenfant-f|Celles-là.\nmaman|On les prend.\nnarrateur|Le sac devient lourd, froid.\nenfant-f|Pour la prochaine soupe.\nmaman|Pour la prochaine.\nmaman|C'est le week-end.\nenfant-f|Merci, maman.\nmaman|Merci d'avoir choisi.\nnarrateur|Une carotte dépasse du sac.\nnarrateur|Elle ne roule pas.\nenfant-f|Je la tiens.\nnarrateur|Le marché sonne de cagettes et de voix.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Dimanche, le marché sent la terre mouillée. Une caisse de carottes fume un peu au froid. Comme la soupe. Comme mercredi. Chouchou montre une botte orange. Les fanes sont encore vertes, piquantes. Celles-là ? Celles-là. On les prend. Le sac devient lourd, froid. Pour la prochaine soupe. Pour la prochaine. C'est le week-end. Merci, maman. Merci d'avoir choisi. Une carotte dépasse du sac. Elle ne roule pas. Je la tiens. Le marché sonne de cagettes et de voix."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "On a les carottes. Comme mercredi, en plus grand. Les fanes piquent un peu le poignet. Le sac sent la terre et le sucré. Une vapeur de soupe semble encore là.",
+      "script": "enfant-f|On a les carottes.\nmaman|Comme mercredi, en plus grand.\nnarrateur|Les fanes piquent un peu le poignet.\nnarrateur|Le sac sent la terre et le sucré.\nnarrateur|Une vapeur de soupe semble encore là.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "On a les carottes. Comme mercredi, en plus grand. Les fanes piquent un peu le poignet. Le sac sent la terre et le sucré. Une vapeur de soupe semble encore là."
+    }
+  ]
+}

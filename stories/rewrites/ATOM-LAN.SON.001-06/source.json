@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-06",
+  "fil_rouge": "",
+  "title": "Félix nomme les sons du jardin",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Félix, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Félix est au jardin avec papa. Un son : cot cot. C'est un son. Quel nom ? La poule. Un son : meuh, au loin. Félix dit le nom : la vache. L'eau de l'arrosoir cloche. L'eau. On entend un son. On dit le nom.",
+      "script": "narrateur|Félix est au jardin avec papa. Un son : cot cot.\npapa|C'est un son. Quel nom ?\nenfant-m|La poule.\nnarrateur|Un son : meuh, au loin. Félix dit le nom : la vache. L'eau de l'arrosoir cloche.\nenfant-m|L'eau.\npapa|On entend un son. On dit le nom.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Félix entend un bruit. C'est quoi ?",
+      "script": "narrateur|Félix entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Félix a entendu un son. Il a dit le nom. Poule. Vache. Eau.",
+      "script": "narrateur|Félix a entendu un son. Il a dit le nom. Poule. Vache. Eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range l'arrosoir. Félix écoute encore.",
+      "script": "narrateur|Papa range l'arrosoir. Félix écoute encore.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

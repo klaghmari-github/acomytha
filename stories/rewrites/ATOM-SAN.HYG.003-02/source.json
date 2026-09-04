@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.003-02",
+  "fil_rouge": "",
+  "title": "Côme se mouche au jardin",
+  "lesson_id": "SAN.HYG.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Côme, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Côme aide papa au jardin. Les fleurs sentent fort. Le pollen chatouille le nez de Côme. Son nez coule un peu. Papa ouvre la poche de son manteau. Papa tend un mouchoir. Côme prend un mouchoir. Le papier est doux. Il se mouche. Atchoum, tout doux. L'air passe mieux. Mouchoir, puis poubelle. Côme va jusqu'à la poubelle du jardin. Il jette le mouchoir. La poubelle fait un petit bruit. Côme se lave les mains au robinet. L'eau est fraîche. Merci. Parce qu'il a pris un mouchoir, Côme respire mieux. Parce qu'il a jeté à la poubelle, ses mains sont prêtes à jouer. Ils arrosent les tomates. Côme sourit.",
+      "script": "narrateur|Côme aide papa au jardin. Les fleurs sentent fort. Le pollen chatouille le nez de Côme. Son nez coule un peu. Papa ouvre la poche de son manteau. Papa tend un mouchoir. Côme prend un mouchoir. Le papier est doux. Il se mouche. Atchoum, tout doux. L'air passe mieux.\npapa|Mouchoir, puis poubelle.\nnarrateur|Côme va jusqu'à la poubelle du jardin. Il jette le mouchoir. La poubelle fait un petit bruit. Côme se lave les mains au robinet. L'eau est fraîche.\npapa|Merci. Parce qu'il a pris un mouchoir, Côme respire mieux. Parce qu'il a jeté à la poubelle, ses mains sont prêtes à jouer. Ils arrosent les tomates.\nnarrateur|Côme sourit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le nez de Côme chatouille. Que prend-il ?",
+      "script": "narrateur|Le nez de Côme chatouille. Que prend-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Côme a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle. Papa était là.",
+      "script": "narrateur|Côme a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Côme essuie ses mains. Papa range l'arrosoir. Le jardin sent la terre.",
+      "script": "narrateur|Côme essuie ses mains. Papa range l'arrosoir. Le jardin sent la terre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

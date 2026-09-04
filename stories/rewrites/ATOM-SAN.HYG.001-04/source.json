@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.001-04",
+  "fil_rouge": "",
+  "title": "Rosa lave ses mains",
+  "lesson_id": "SAN.HYG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Rosa, papa",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Rosa sort des toilettes. Papa l'attend dans le couloir. Après les toilettes, on lave. Rosa ouvre l'eau. Elle prend le savon. Ça sent le citron. Elle frotte. Elle rince. Elle essuie. Plus tard, c'est l'heure du goûter. Avant de manger, Rosa retourne au lavabo. Elle ouvre l'eau. Elle prend le savon. Elle frotte, elle rince, elle essuie. Savon et eau. Rosa va à table. Les mains sont propres.",
+      "script": "narrateur|Rosa sort des toilettes. Papa l'attend dans le couloir.\npapa|Après les toilettes, on lave.\nnarrateur|Rosa ouvre l'eau. Elle prend le savon. Ça sent le citron. Elle frotte. Elle rince. Elle essuie. Plus tard, c'est l'heure du goûter. Avant de manger, Rosa retourne au lavabo. Elle ouvre l'eau. Elle prend le savon. Elle frotte, elle rince, elle essuie.\npapa|Savon et eau.\nnarrateur|Rosa va à table. Les mains sont propres.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Rosa se lave les mains. Avec quoi ?",
+      "script": "narrateur|Rosa se lave les mains. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Après les toilettes, Rosa a lavé. Avant de manger, Rosa a lavé.",
+      "script": "narrateur|Après les toilettes, Rosa a lavé. Avant de manger, Rosa a lavé.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Rosa croque une pomme. Papa s'assoit près d'elle.",
+      "script": "narrateur|Rosa croque une pomme. Papa s'assoit près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

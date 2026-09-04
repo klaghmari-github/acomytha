@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.003-07",
+  "fil_rouge": "",
+  "title": "Yseult au balcon avec papa",
+  "lesson_id": "SEC.MAI.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Yseult, papa",
+  "setting": "balcon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yseult est sur le balcon avec papa. Papa, c'est l'adulte. Yseult reste derrière la protection. Ses pieds restent au sol. Le vent est doux. Yseult tient le manteau de papa. Pieds au sol. Derrière la protection. Avec un adulte. Yseult regarde les toits. Elle ne bouge pas les pieds. Papa sourit. Ils rentrent ensemble.",
+      "script": "narrateur|Yseult est sur le balcon avec papa. Papa, c'est l'adulte. Yseult reste derrière la protection. Ses pieds restent au sol. Le vent est doux. Yseult tient le manteau de papa.\npapa|Pieds au sol. Derrière la protection. Avec un adulte.\nnarrateur|Yseult regarde les toits. Elle ne bouge pas les pieds. Papa sourit. Ils rentrent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Yseult est sur le balcon. Que fait-elle ?",
+      "script": "narrateur|Yseult est sur le balcon. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yseult a gardé les pieds au sol. Derrière la protection. Avec papa, l'adulte.",
+      "script": "narrateur|Yseult a gardé les pieds au sol. Derrière la protection. Avec papa, l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa ferme la porte. Yseult s'assoit.",
+      "script": "narrateur|Papa ferme la porte. Yseult s'assoit.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

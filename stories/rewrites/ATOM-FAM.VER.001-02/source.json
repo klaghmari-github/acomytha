@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-02",
+  "fil_rouge": "",
+  "title": "Sara raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Sara, papa, maman",
+  "setting": "jardin puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara est dans le jardin avec papa. Elle arrose les fleurs. L'arrosoir est lourd. L'eau fait un bruit doux. Le pot de basilic bascule. La terre s'étale. Sara sent son visage chaud. Elle va vers papa. Papa, le pot est tombé. C'est moi. Papa l'écoute. Merci de raconter. On ramasse la terre. Les mains sont un peu sales. Plus tard, dans la cuisine, Sara touche un verre. Le verre tremble. Sara pense : je peux raconter à papa ou maman. Maman, j'ai touché le verre. Il a bougé. Merci Sara. Raconter aide, au jardin et à la maison. Papa et maman sont là.",
+      "script": "narrateur|Sara est dans le jardin avec papa. Elle arrose les fleurs. L'arrosoir est lourd. L'eau fait un bruit doux. Le pot de basilic bascule. La terre s'étale. Sara sent son visage chaud. Elle va vers papa.\nenfant-f|Papa, le pot est tombé. C'est moi. Papa l'écoute.\npapa|Merci de raconter. On ramasse la terre.\nnarrateur|Les mains sont un peu sales. Plus tard, dans la cuisine, Sara touche un verre. Le verre tremble. Sara pense : je peux raconter à papa ou maman.\nnarrateur|Maman, j'ai touché le verre. Il a bougé.\nmaman|Merci Sara. Raconter aide, au jardin et à la maison. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quelque chose est tombé. Que fait Sara ?",
+      "script": "narrateur|Quelque chose est tombé. Que fait Sara ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sara a raconté au jardin. Puis elle a raconté dans la cuisine. Papa et maman écoutent. Raconter, c'est possible à chaque fois.",
+      "script": "narrateur|Sara a raconté au jardin. Puis elle a raconté dans la cuisine. Papa et maman écoutent. Raconter, c'est possible à chaque fois.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le basilic est remis. Le verre est stable. Sara se lave les mains.",
+      "script": "narrateur|Le basilic est remis. Le verre est stable. Sara se lave les mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

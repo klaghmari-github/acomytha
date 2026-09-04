@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.008-03",
+  "fil_rouge": "",
+  "title": "Louna est gênée",
+  "lesson_id": "EMO.LEX.008",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Louna, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Louna aide maman dans la cuisine. Papa range les bols. Louna porte un sachet de farine. Le sachet penche. La farine tombe sur la table. Louna sent ses joues chaudes. Son ventre se serre. Je suis gênée. C'est une erreur. Une erreur ne dit pas qui elle est. Être gêné, ce n'est pas honteux. Papa s'approche. J'ai versé. Elle prend un torchon. Elle répare. Elle essuie la table. La farine disparaît. Parce qu'elle a dit, elle a pu réparer. Merci. Louna souffle. Ses joues se calment. On dit. On répare.",
+      "script": "narrateur|Louna aide maman dans la cuisine. Papa range les bols. Louna porte un sachet de farine. Le sachet penche. La farine tombe sur la table. Louna sent ses joues chaudes. Son ventre se serre.\nnarrateur|Je suis gênée. C'est une erreur.\nnarrateur|Une erreur ne dit pas qui elle est. Être gêné, ce n'est pas honteux. Papa s'approche.\nenfant-f|J'ai versé.\nnarrateur|Elle prend un torchon. Elle répare. Elle essuie la table. La farine disparaît. Parce qu'elle a dit, elle a pu réparer.\nmaman|Merci.\nnarrateur|Louna souffle. Ses joues se calment. On dit. On répare.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Louna a versé la farine. Que fait-elle ?",
+      "script": "narrateur|Louna a versé la farine. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Louna Je suis gênée. C'était une erreur. Elle a réparé avec le torchon.",
+      "script": "narrateur|Louna\nenfant-f|Je suis gênée. C'était une erreur. Elle a réparé avec le torchon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Louna pose le torchon. Papa verse un peu de farine, tout doux.",
+      "script": "narrateur|Louna pose le torchon. Papa verse un peu de farine, tout doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

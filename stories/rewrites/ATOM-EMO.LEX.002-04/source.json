@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.002-04",
+  "fil_rouge": "",
+  "title": "Mateo est triste pour sa tour",
+  "lesson_id": "EMO.LEX.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Mateo, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Mateo construit une tour dans le salon. Les cubes sont bleus et jaunes. La tour est haute. Le chat passe. Les cubes tombent. Ils font un bruit sourd. Mateo sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe. Je suis triste. Papa arrive près de lui. Pleurer est permis. Mateo pleure un peu. Les larmes coulent. Puis Je veux un câlin. Papa ouvre les bras. Mateo se blottit contre papa. Le câlin est chaud. Parce que la tour est tombée, Mateo est triste. Être triste, c'est permis. Plus tard, papa pose un cube. Mateo pose un cube. Une petite tour recommence. Mateo souffle. Ses épaules se desserrent.",
+      "script": "narrateur|Mateo construit une tour dans le salon. Les cubes sont bleus et jaunes. La tour est haute. Le chat passe. Les cubes tombent. Ils font un bruit sourd. Mateo sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe.\nenfant-m|Je suis triste. Papa arrive près de lui.\npapa|Pleurer est permis.\nnarrateur|Mateo pleure un peu. Les larmes coulent. Puis\nenfant-m|Je veux un câlin. Papa ouvre les bras.\nnarrateur|Mateo se blottit contre papa. Le câlin est chaud. Parce que la tour est tombée, Mateo est triste. Être triste, c'est permis. Plus tard, papa pose un cube. Mateo pose un cube. Une petite tour recommence. Mateo souffle. Ses épaules se desserrent.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mateo a les yeux chauds. Que dit-il ?",
+      "script": "narrateur|Mateo a les yeux chauds. Que dit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mateo a nommé : triste. Pleurer est permis. Un câlin de papa aide.",
+      "script": "narrateur|Mateo a nommé : triste. Pleurer est permis. Un câlin de papa aide.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mateo pose un dernier cube. Papa reste près de lui.",
+      "script": "narrateur|Mateo pose un dernier cube. Papa reste près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

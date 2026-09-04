@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-08",
+  "fil_rouge": "",
+  "title": "Hippolyte appelle maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hippolyte, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hippolyte est dans la cuisine. Il veut le bocal. Le bocal est en haut. Trop haut. Hippolyte lève les bras. Il n'arrive pas. Hippolyte va vers la porte. Il va vers eux. Il va vers maman. Maman est dans le salon. Maman. J'ai besoin du bocal. Il dit le besoin. Maman écoute. Maman vient. Maman donne le bocal. Les noix sentent bon. Hippolyte dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman sourit. Hippolyte ouvre le bocal.",
+      "script": "narrateur|Hippolyte est dans la cuisine. Il veut le bocal. Le bocal est en haut. Trop haut. Hippolyte lève les bras. Il n'arrive pas. Hippolyte va vers la porte. Il va vers eux. Il va vers maman. Maman est dans le salon.\nenfant-m|Maman. J'ai besoin du bocal. Il dit le besoin. Maman écoute. Maman vient. Maman donne le bocal.\nnarrateur|Les noix sentent bon. Hippolyte dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Maman sourit. Hippolyte ouvre le bocal.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hippolyte n'arrive pas. Que fait-il ?",
+      "script": "narrateur|Hippolyte n'arrive pas. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hippolyte a appelé. Il a dit le besoin. Maman a entendu. Le bocal est là.",
+      "script": "narrateur|Hippolyte a appelé. Il a dit le besoin. Maman a entendu. Le bocal est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hippolyte pose une noix. Maman s'assoit près de lui.",
+      "script": "narrateur|Hippolyte pose une noix. Maman s'assoit près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

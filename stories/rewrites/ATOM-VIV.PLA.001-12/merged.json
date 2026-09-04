@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-12",
+  "fil_rouge": "Raphaël veut une sauce qui sent le jardin. L'arrosoir est vide. Il arrose la tomate avec papa, le thym avec maman. La casserole sent le thym.",
+  "title": "La sauce du jardin de Raphaël",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, papa, maman",
+  "setting": "jardin puis cuisine, rebord de fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le gravier du jardin craque sous les pas. Une casserole attend déjà dans la cuisine. Dehors, le pied de tomate a des feuilles tièdes. Deux tomates pendent, encore un peu vertes. Tu sens la terre, Raphaël ? Oui, papa. Je veux une sauce du jardin. Avec du thym, alors. D'abord la tomate. En ce moment, Raphaël soulève l'arrosoir. L'arrosoir est trop léger. Il n'y a plus d'eau. On le remplit au robinet ? Oui. L'eau tape le métal, tout fort, puis tout doux. La plante a besoin d'eau. Elle a besoin de lumière. Ils versent au pied de la tomate. La terre devient foncée. Elle boit. Le thym, lui, est à la fenêtre. On y va après ? Après, pour la sauce. Raphaël pose l'arrosoir un moment. Une coccinelle traverse une feuille, puis s'en va. On va au thym, maman ? Oui, à la fenêtre.",
+      "script": "narrateur|Le gravier du jardin craque sous les pas.\nnarrateur|Une casserole attend déjà dans la cuisine.\nnarrateur|Dehors, le pied de tomate a des feuilles tièdes.\nnarrateur|Deux tomates pendent, encore un peu vertes.\npapa|Tu sens la terre, Raphaël ?\nenfant-m|Oui, papa.\nenfant-m|Je veux une sauce du jardin.\nmaman|Avec du thym, alors.\npapa|D'abord la tomate.\nnarrateur|En ce moment, Raphaël soulève l'arrosoir.\nnarrateur|L'arrosoir est trop léger.\nenfant-m|Il n'y a plus d'eau.\npapa|On le remplit au robinet ?\nenfant-m|Oui.\nnarrateur|L'eau tape le métal, tout fort, puis tout doux.\npapa|La plante a besoin d'eau.\npapa|Elle a besoin de lumière.\nnarrateur|Ils versent au pied de la tomate.\nnarrateur|La terre devient foncée.\nenfant-m|Elle boit.\nmaman|Le thym, lui, est à la fenêtre.\npapa|On y va après ?\nenfant-m|Après, pour la sauce.\nnarrateur|Raphaël pose l'arrosoir un moment.\nnarrateur|Une coccinelle traverse une feuille, puis s'en va.\nenfant-m|On va au thym, maman ?\nmaman|Oui, à la fenêtre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le gravier du jardin craque sous les pas. Une casserole attend déjà dans la cuisine. Dehors, le pied de tomate a des feuilles tièdes. Deux tomates pendent, encore un peu vertes. Tu sens la terre, Raphaël ? Oui, papa. Je veux une sauce du jardin. Avec du thym, alors. D'abord la tomate. En ce moment, Raphaël soulève l'arrosoir. L'arrosoir est trop léger. Il n'y a plus d'eau. On le remplit au robinet ? Oui. L'eau tape le métal, tout fort, puis tout doux. La plante a besoin d'eau. Elle a besoin de lumière. Ils versent au pied de la tomate. La terre devient foncée. Elle boit. Le thym, lui, est à la fenêtre. On y va après ? Après, pour la sauce. Raphaël pose l'arrosoir un moment. Une coccinelle traverse une feuille, puis s'en va. On va au thym, maman ? Oui, à la fenêtre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël s'occupe des plantes. Que fait-il ?",
+      "script": "narrateur|Raphaël s'occupe des plantes.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Raphaël s'occupe des plantes. Que fait-il ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | de l'eau | eau | lumière | tomate | thym",
+      "retry_prompt": "Il arrose. Que fait Raphaël ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Dans la cuisine, le store de la fenêtre est fermé. Le thym est dans l'ombre, un peu terne. Il n'a pas de lumière, tu vois ? On ouvre le store ? Oui, doucement. Raphaël tire le store avec maman. Le jour arrive sur les tiges. Maintenant, un peu d'eau. Papa tend l'arrosoir. Il est encore un peu lourd. Avec toi, maman. Oui, avec un adulte. Ils versent un filet au pied du thym. L'eau sent déjà l'herbe. Deux arrosages, alors. La tomate, et le thym. Merci, Raphaël. Pour la sauce. On coupe une branche, tout petit ? Une seule, le pied reste. Raphaël tient la petite branche. Ses doigts sentent le jardin.",
+      "script": "narrateur|Dans la cuisine, le store de la fenêtre est fermé.\nnarrateur|Le thym est dans l'ombre, un peu terne.\nmaman|Il n'a pas de lumière, tu vois ?\nenfant-m|On ouvre le store ?\nmaman|Oui, doucement.\nnarrateur|Raphaël tire le store avec maman.\nnarrateur|Le jour arrive sur les tiges.\nmaman|Maintenant, un peu d'eau.\nnarrateur|Papa tend l'arrosoir.\nnarrateur|Il est encore un peu lourd.\nenfant-m|Avec toi, maman.\nmaman|Oui, avec un adulte.\nnarrateur|Ils versent un filet au pied du thym.\nnarrateur|L'eau sent déjà l'herbe.\npapa|Deux arrosages, alors.\npapa|La tomate, et le thym.\nmaman|Merci, Raphaël.\nenfant-m|Pour la sauce.\npapa|On coupe une branche, tout petit ?\nmaman|Une seule, le pied reste.\nnarrateur|Raphaël tient la petite branche.\nnarrateur|Ses doigts sentent le jardin.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Dans la cuisine, le store de la fenêtre est fermé. Le thym est dans l'ombre, un peu terne. Il n'a pas de lumière, tu vois ? On ouvre le store ? Oui, doucement. Raphaël tire le store avec maman. Le jour arrive sur les tiges. Maintenant, un peu d'eau. Papa tend l'arrosoir. Il est encore un peu lourd. Avec toi, maman. Oui, avec un adulte. Ils versent un filet au pied du thym. L'eau sent déjà l'herbe. Deux arrosages, alors. La tomate, et le thym. Merci, Raphaël. Pour la sauce. On coupe une branche, tout petit ? Une seule, le pied reste. Raphaël tient la petite branche. Ses doigts sentent le jardin."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman fait chauffer la casserole. Papa coupe deux tomates du jardin. Le jus tombe dans la sauce, tout rouge. Le thym, maintenant ? Oui, tes doigts tout doux. Raphaël effeuille la petite branche. Les feuilles tombent dans le rouge. Tu sens ? Ça sent le jardin. La tomate et le thym, ensemble. La vapeur monte, un peu verte, un peu sucrée. On a arrosé, avant. Deux fois. Oui, l'eau et la lumière.",
+      "script": "narrateur|Maman fait chauffer la casserole.\nnarrateur|Papa coupe deux tomates du jardin.\nnarrateur|Le jus tombe dans la sauce, tout rouge.\nenfant-m|Le thym, maintenant ?\nmaman|Oui, tes doigts tout doux.\nnarrateur|Raphaël effeuille la petite branche.\nnarrateur|Les feuilles tombent dans le rouge.\npapa|Tu sens ?\nenfant-m|Ça sent le jardin.\nmaman|La tomate et le thym, ensemble.\nnarrateur|La vapeur monte, un peu verte, un peu sucrée.\npapa|On a arrosé, avant.\nenfant-m|Deux fois.\nmaman|Oui, l'eau et la lumière.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman fait chauffer la casserole. Papa coupe deux tomates du jardin. Le jus tombe dans la sauce, tout rouge. Le thym, maintenant ? Oui, tes doigts tout doux. Raphaël effeuille la petite branche. Les feuilles tombent dans le rouge. Tu sens ? Ça sent le jardin. La tomate et le thym, ensemble. La vapeur monte, un peu verte, un peu sucrée. On a arrosé, avant. Deux fois. Oui, l'eau et la lumière."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La casserole chuchote tout bas. La sauce est prête ? Bientôt. Elle sent déjà le jardin. Le thym brille encore au rebord. La vapeur sent le jardin, tout entier.",
+      "script": "narrateur|La casserole chuchote tout bas.\nenfant-m|La sauce est prête ?\npapa|Bientôt.\nmaman|Elle sent déjà le jardin.\nnarrateur|Le thym brille encore au rebord.\nnarrateur|La vapeur sent le jardin, tout entier.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La casserole chuchote tout bas. La sauce est prête ? Bientôt. Elle sent déjà le jardin. Le thym brille encore au rebord. La vapeur sent le jardin, tout entier."
+    }
+  ]
+}

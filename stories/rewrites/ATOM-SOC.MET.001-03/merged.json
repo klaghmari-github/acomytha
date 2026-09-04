@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.MET.001-03",
+  "fil_rouge": "Nino veut voir le courrier dans la boîte. Le facteur glisse une carte. Puis ils vont chez le boulanger. Deux moments, deux métiers, pain et papier.",
+  "title": "La lettre dans la boîte",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "rue du village, boîte aux lettres, puis boutique du pain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La boîte aux lettres brille au soleil. Le métal est chaud, un peu piqué de poussière. Un oiseau a laissé une plume grise sur le couvercle. Nino vit ici, avec papa. La rue sent le jasmin, tout bas. Je veux voir le courrier, papa. Dans la boîte ? Oui. J'ai mis un dessin, hier. Alors on attend le facteur. En ce moment, Nino s'accroupit près du pied de la boîte. L'herbe chatouille ses chevilles. La fente est étroite, sombre, un peu froide. Elle est vide. Pas encore. On reste ici un moment ? Oui. Un vélo grince au bout de la rue. Une sacoche tape contre une jambe. Le facteur s'arrête, casquette un peu de travers. Le voilà ! Oui. C'est le facteur. C'est son métier. Il porte les lettres. Le facteur glisse une enveloppe dans la fente. Ça fait un petit clap, tout sec. Puis une carte, bleue, un peu pliée. Mon dessin ? Peut-être une réponse. Tu ouvres, tout doux ? Nino tourne la clé. La boîte sent le papier chaud. La carte est là, avec le dessin revenu, un mot au dos. Il a mis le courrier ! Bravo, Nino. Tu as attendu le facteur. Nino serre la carte contre sa chemise. On a encore faim ? Je veux du pain. Chez le boulanger, alors. Ils marchent, la carte au chaud. Le jasmin suit un peu.",
+      "script": "narrateur|La boîte aux lettres brille au soleil.\nnarrateur|Le métal est chaud, un peu piqué de poussière.\nnarrateur|Un oiseau a laissé une plume grise sur le couvercle.\nnarrateur|Nino vit ici, avec papa.\nnarrateur|La rue sent le jasmin, tout bas.\nenfant-m|Je veux voir le courrier, papa.\npapa|Dans la boîte ?\nenfant-m|Oui.\nenfant-m|J'ai mis un dessin, hier.\npapa|Alors on attend le facteur.\nnarrateur|En ce moment, Nino s'accroupit près du pied de la boîte.\nnarrateur|L'herbe chatouille ses chevilles.\nnarrateur|La fente est étroite, sombre, un peu froide.\nenfant-m|Elle est vide.\npapa|Pas encore.\npapa|On reste ici un moment ?\nenfant-m|Oui.\nnarrateur|Un vélo grince au bout de la rue.\nnarrateur|Une sacoche tape contre une jambe.\nnarrateur|Le facteur s'arrête, casquette un peu de travers.\nenfant-m|Le voilà !\npapa|Oui.\npapa|C'est le facteur.\npapa|C'est son métier.\nenfant-m|Il porte les lettres.\nnarrateur|Le facteur glisse une enveloppe dans la fente.\nnarrateur|Ça fait un petit clap, tout sec.\nnarrateur|Puis une carte, bleue, un peu pliée.\nenfant-m|Mon dessin ?\npapa|Peut-être une réponse.\npapa|Tu ouvres, tout doux ?\nnarrateur|Nino tourne la clé.\nnarrateur|La boîte sent le papier chaud.\nnarrateur|La carte est là, avec le dessin revenu, un mot au dos.\nenfant-m|Il a mis le courrier !\npapa|Bravo, Nino.\npapa|Tu as attendu le facteur.\nnarrateur|Nino serre la carte contre sa chemise.\npapa|On a encore faim ?\nenfant-m|Je veux du pain.\npapa|Chez le boulanger, alors.\nnarrateur|Ils marchent, la carte au chaud.\nnarrateur|Le jasmin suit un peu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La boîte aux lettres brille au soleil. Le métal est chaud, un peu piqué de poussière. Un oiseau a laissé une plume grise sur le couvercle. Nino vit ici, avec papa. La rue sent le jasmin, tout bas. Je veux voir le courrier, papa. Dans la boîte ? Oui. J'ai mis un dessin, hier. Alors on attend le facteur. En ce moment, Nino s'accroupit près du pied de la boîte. L'herbe chatouille ses chevilles. La fente est étroite, sombre, un peu froide. Elle est vide. Pas encore. On reste ici un moment ? Oui. Un vélo grince au bout de la rue. Une sacoche tape contre une jambe. Le facteur s'arrête, casquette un peu de travers. Le voilà ! Oui. C'est le facteur. C'est son métier. Il porte les lettres. Le facteur glisse une enveloppe dans la fente. Ça fait un petit clap, tout sec. Puis une carte, bleue, un peu pliée. Mon dessin ? Peut-être une réponse. Tu ouvres, tout doux ? Nino tourne la clé. La boîte sent le papier chaud. La carte est là, avec le dessin revenu, un mot au dos. Il a mis le courrier ! Bravo, Nino. Tu as attendu le facteur. Nino serre la carte contre sa chemise. On a encore faim ? Je veux du pain. Chez le boulanger, alors. Ils marchent, la carte au chaud. Le jasmin suit un peu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le facteur glisse le courrier. C'est quoi ?",
+      "script": "narrateur|Le facteur glisse le courrier.\nnarrateur|C'est quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Le facteur glisse le courrier. C'est quoi ?",
+      "expected_answer": "métier",
+      "accepted_examples": "métier | un métier | son métier | le métier | c'est un métier",
+      "retry_prompt": "Il porte les lettres. C'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La boutique du pain est ouverte, cette fois. Ça sent la croûte et le beurre. Le boulanger tape la planche, toc toc. Et lui ? C'est le boulanger. C'est son métier, lui aussi. Il fait le pain. Oui. Nino pose la carte sur le comptoir, une seconde. Puis il la reprend, vite. Tu la gardes. Le pain va dans le sac. Une baguette encore souple glisse dans le drap. Un peu de farine vole. Merci. Merci. Deux métiers, ce matin. Le facteur, puis le boulanger. Tous les deux utiles. Oui. Tu veux porter le sac ? Et la carte. Nino a les deux, sac et papier.",
+      "script": "narrateur|La boutique du pain est ouverte, cette fois.\nnarrateur|Ça sent la croûte et le beurre.\nnarrateur|Le boulanger tape la planche, toc toc.\nenfant-m|Et lui ?\npapa|C'est le boulanger.\npapa|C'est son métier, lui aussi.\nenfant-m|Il fait le pain.\npapa|Oui.\nnarrateur|Nino pose la carte sur le comptoir, une seconde.\nnarrateur|Puis il la reprend, vite.\npapa|Tu la gardes.\npapa|Le pain va dans le sac.\nnarrateur|Une baguette encore souple glisse dans le drap.\nnarrateur|Un peu de farine vole.\npapa|Merci.\nenfant-m|Merci.\npapa|Deux métiers, ce matin.\npapa|Le facteur, puis le boulanger.\nenfant-m|Tous les deux utiles.\npapa|Oui.\npapa|Tu veux porter le sac ?\nenfant-m|Et la carte.\nnarrateur|Nino a les deux, sac et papier.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La boutique du pain est ouverte, cette fois. Ça sent la croûte et le beurre. Le boulanger tape la planche, toc toc. Et lui ? C'est le boulanger. C'est son métier, lui aussi. Il fait le pain. Oui. Nino pose la carte sur le comptoir, une seconde. Puis il la reprend, vite. Tu la gardes. Le pain va dans le sac. Une baguette encore souple glisse dans le drap. Un peu de farine vole. Merci. Merci. Deux métiers, ce matin. Le facteur, puis le boulanger. Tous les deux utiles. Oui. Tu veux porter le sac ? Et la carte. Nino a les deux, sac et papier."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils reprennent la rue du jasmin. La boîte aux lettres est déjà derrière. Le métal ne brille plus autant. Le facteur reviendra demain ? Oui. C'est son métier, chaque jour. À la maison, Nino pose la carte près de la fenêtre. Le dessin regarde le jardin. Papa casse le pain, tout tiède. Un bout pour toi ? Oui. La croûte tombe en miettes blondes. Le facteur a bien travaillé. Et le boulanger aussi. Merci d'avoir attendu près de la boîte.",
+      "script": "narrateur|Ils reprennent la rue du jasmin.\nnarrateur|La boîte aux lettres est déjà derrière.\nnarrateur|Le métal ne brille plus autant.\nenfant-m|Le facteur reviendra demain ?\npapa|Oui.\npapa|C'est son métier, chaque jour.\nnarrateur|À la maison, Nino pose la carte près de la fenêtre.\nnarrateur|Le dessin regarde le jardin.\nnarrateur|Papa casse le pain, tout tiède.\npapa|Un bout pour toi ?\nenfant-m|Oui.\nnarrateur|La croûte tombe en miettes blondes.\nenfant-m|Le facteur a bien travaillé.\npapa|Et le boulanger aussi.\npapa|Merci d'avoir attendu près de la boîte.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils reprennent la rue du jasmin. La boîte aux lettres est déjà derrière. Le métal ne brille plus autant. Le facteur reviendra demain ? Oui. C'est son métier, chaque jour. À la maison, Nino pose la carte près de la fenêtre. Le dessin regarde le jardin. Papa casse le pain, tout tiède. Un bout pour toi ? Oui. La croûte tombe en miettes blondes. Le facteur a bien travaillé. Et le boulanger aussi. Merci d'avoir attendu près de la boîte."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La carte bleue reste au soleil. Le pain sent encore le four. Le courrier est rentré. Oui. Nino souffle sur une miette. Elle part vers le dessin, tout léger. La plume grise dort encore sur le couvercle, dehors.",
+      "script": "narrateur|La carte bleue reste au soleil.\nnarrateur|Le pain sent encore le four.\nenfant-m|Le courrier est rentré.\npapa|Oui.\nnarrateur|Nino souffle sur une miette.\nnarrateur|Elle part vers le dessin, tout léger.\nnarrateur|La plume grise dort encore sur le couvercle, dehors.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La carte bleue reste au soleil. Le pain sent encore le four. Le courrier est rentré. Oui. Nino souffle sur une miette. Elle part vers le dessin, tout léger. La plume grise dort encore sur le couvercle, dehors."
+    }
+  ]
+}

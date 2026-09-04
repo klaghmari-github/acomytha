@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-04",
+  "fil_rouge": "",
+  "title": "Naël retrouve maman au magasin",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Naël, maman, papa, la maîtresse",
+  "setting": "magasin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Naël est au magasin. C'est après l'école. La maîtresse a dit au revoir près de la porte. Papa doit arriver plus tard. Maman pousse le caddie. Naël regarde les boîtes de céréales. Les couleurs brillent. Il lève les yeux. Il cherche. Naël se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Naël marche vers le rayon des poires. Il voit maman. Maman a le caddie. Naël va vers maman. Il tient le manteau de maman. Parce qu'il a cherché maman, il la trouve. Me voici. Plus loin, près des caisses, Naël voit la maîtresse. Elle achète du pain. Naël reste près de maman. Tu vas vers papa, maman, ou la maîtresse. Papa arrive. Naël va vers papa aussi. Il prend la main de papa. Naël est calme. Ils paient les poires.",
+      "script": "narrateur|Naël est au magasin. C'est après l'école. La maîtresse a dit au revoir près de la porte. Papa doit arriver plus tard. Maman pousse le caddie. Naël regarde les boîtes de céréales. Les couleurs brillent. Il lève les yeux. Il cherche. Naël se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Naël marche vers le rayon des poires. Il voit maman. Maman a le caddie. Naël va vers maman. Il tient le manteau de maman. Parce qu'il a cherché maman, il la trouve.\nmaman|Me voici. Plus loin, près des caisses, Naël voit la maîtresse. Elle achète du pain.\nnarrateur|Naël reste près de maman.\nmaman|Tu vas vers papa, maman, ou la maîtresse. Papa arrive.\nnarrateur|Naël va vers papa aussi. Il prend la main de papa. Naël est calme. Ils paient les poires.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Naël cherche quelqu'un. Vers qui va-t-il ?",
+      "script": "narrateur|Naël cherche quelqu'un. Vers qui va-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Naël a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "script": "narrateur|Naël a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Naël tient le manteau de maman. Papa porte le sac.",
+      "script": "narrateur|Naël tient le manteau de maman. Papa porte le sac.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

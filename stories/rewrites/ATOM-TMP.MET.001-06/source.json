@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-06",
+  "fil_rouge": "",
+  "title": "Hermine prend manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hermine, papa",
+  "setting": "entrée",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hermine est dans l'entrée. Papa ouvre la porte. L'air est froid. Froid, manteau. Hermine prend le manteau. Elle enfile les manches. Le manteau est chaud. Dehors, la pluie commence. Pluie, bottes. Hermine met les bottes. Les bottes sont jaunes. Elle entend la pluie sur le toit. Papa ferme le zip. Froid, manteau. Pluie, bottes. Papa hoche la tête. Ils sortent ensemble. Les gouttes tombent sur le manteau. Les pieds restent au sec. Hermine sourit. Papa tient la main.",
+      "script": "narrateur|Hermine est dans l'entrée. Papa ouvre la porte. L'air est froid.\npapa|Froid, manteau.\nnarrateur|Hermine prend le manteau. Elle enfile les manches. Le manteau est chaud. Dehors, la pluie commence.\npapa|Pluie, bottes.\nnarrateur|Hermine met les bottes. Les bottes sont jaunes. Elle entend la pluie sur le toit. Papa ferme le zip.\nenfant-f|Froid, manteau. Pluie, bottes. Papa hoche la tête. Ils sortent ensemble.\nnarrateur|Les gouttes tombent sur le manteau. Les pieds restent au sec. Hermine sourit. Papa tient la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid. Il pleut. Que prend Hermine ?",
+      "script": "narrateur|Il fait froid. Il pleut. Que prend Hermine ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hermine a pris le manteau. Elle a mis les bottes. Papa était là.",
+      "script": "narrateur|Hermine a pris le manteau. Elle a mis les bottes. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hermine et papa marchent sous la pluie. Les bottes font splish.",
+      "script": "narrateur|Hermine et papa marchent sous la pluie. Les bottes font splish.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-01",
+  "fil_rouge": "Amir veut des prunes. Maman dit : demain, c'est samedi, le marché. Ils y vont trop tôt, c'est vendredi, volets fermés. Ils reviennent le bon jour. Les prunes sont là.",
+  "title": "Les prunes de samedi",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, maman",
+  "setting": "cuisine, puis rue de la boutique",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le filet de maman sent encore le thym. Deux brins restent collés au filet. La cuisine est tiède, un peu sucrée. Une tache violette brille sur la table. C'est le jus d'une prune. Tu as vu la tache, Amir ? Elle est violette. C'est une prune d'hier. Je veux des prunes. Des prunes maintenant. Demain, c'est samedi. Samedi, c'est le marché. Le marché a des prunes. En ce moment, Amir prend le filet. Le filet est vide et mou. On y va ? On peut aller voir. Ils marchent dans la rue calme. Le pain froid sent encore. Un chat dort sur une marche. La boutique a les volets gris. C'est fermé. C'est encore vendredi. Vendredi, le marché dort. Amir se penche sous un volet. Il voit une caisse vide. Une mouche tourne, puis part. Toc toc. Personne ne répond. Les prunes ? Demain, les volets s'ouvrent. Demain, c'est samedi. La semaine a sept jours. On revient le bon jour. Je veux entrer. On rentre à la maison. Quel jour vient après vendredi ? Samedi. Oui. Ils reprennent le chemin. Les chaussures font un bruit doux. Le filet reste vide. La tache violette attend à la maison.",
+      "script": "narrateur|Le filet de maman sent encore le thym.\nnarrateur|Deux brins restent collés au filet.\nnarrateur|La cuisine est tiède, un peu sucrée.\nnarrateur|Une tache violette brille sur la table.\nnarrateur|C'est le jus d'une prune.\nmaman|Tu as vu la tache, Amir ?\nenfant-m|Elle est violette.\nmaman|C'est une prune d'hier.\nenfant-m|Je veux des prunes.\nenfant-m|Des prunes maintenant.\nmaman|Demain, c'est samedi.\nmaman|Samedi, c'est le marché.\nmaman|Le marché a des prunes.\nnarrateur|En ce moment, Amir prend le filet.\nnarrateur|Le filet est vide et mou.\nenfant-m|On y va ?\nmaman|On peut aller voir.\nnarrateur|Ils marchent dans la rue calme.\nnarrateur|Le pain froid sent encore.\nnarrateur|Un chat dort sur une marche.\nnarrateur|La boutique a les volets gris.\nenfant-m|C'est fermé.\nmaman|C'est encore vendredi.\nmaman|Vendredi, le marché dort.\nnarrateur|Amir se penche sous un volet.\nnarrateur|Il voit une caisse vide.\nnarrateur|Une mouche tourne, puis part.\nenfant-m|Toc toc.\nnarrateur|Personne ne répond.\nenfant-m|Les prunes ?\nmaman|Demain, les volets s'ouvrent.\nmaman|Demain, c'est samedi.\nmaman|La semaine a sept jours.\nmaman|On revient le bon jour.\nenfant-m|Je veux entrer.\nmaman|On rentre à la maison.\nmaman|Quel jour vient après vendredi ?\nenfant-m|Samedi.\nmaman|Oui.\nnarrateur|Ils reprennent le chemin.\nnarrateur|Les chaussures font un bruit doux.\nnarrateur|Le filet reste vide.\nnarrateur|La tache violette attend à la maison.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le filet de maman sent encore le thym. Deux brins restent collés au filet. La cuisine est tiède, un peu sucrée. Une tache violette brille sur la table. C'est le jus d'une prune. Tu as vu la tache, Amir ? Elle est violette. C'est une prune d'hier. Je veux des prunes. Des prunes maintenant. Demain, c'est samedi. Samedi, c'est le marché. Le marché a des prunes. En ce moment, Amir prend le filet. Le filet est vide et mou. On y va ? On peut aller voir. Ils marchent dans la rue calme. Le pain froid sent encore. Un chat dort sur une marche. La boutique a les volets gris. C'est fermé. C'est encore vendredi. Vendredi, le marché dort. Amir se penche sous un volet. Il voit une caisse vide. Une mouche tourne, puis part. Toc toc. Personne ne répond. Les prunes ? Demain, les volets s'ouvrent. Demain, c'est samedi. La semaine a sept jours. On revient le bon jour. Je veux entrer. On rentre à la maison. Quel jour vient après vendredi ? Samedi. Oui. Ils reprennent le chemin. Les chaussures font un bruit doux. Le filet reste vide. La tache violette attend à la maison."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après vendredi, quel jour vient ?",
+      "script": "narrateur|Après vendredi, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après vendredi, quel jour vient ?",
+      "expected_answer": "samedi",
+      "accepted_examples": "samedi | le samedi | c'est samedi",
+      "retry_prompt": "Vendredi, c'est fermé. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lendemain, la rue sent le fruit. Les volets sont ouverts, tout grands. C'est samedi, Amir. C'est le bon jour. Les prunes ! Des prunes violettes brillent en tas. Elles sont froides, un peu poudreuses. Amir tend le filet. Tu choisis ? Celles-là. Maman les glisse dans le filet. Le filet devient lourd, tout rond. Elles sont à nous. Merci, Amir. Tu as attendu samedi. Une prune roule vers le bord. Amir la rattrape avec la main. Elle est lisse et froide. On rentre ? Oui, maman.",
+      "script": "narrateur|Le lendemain, la rue sent le fruit.\nnarrateur|Les volets sont ouverts, tout grands.\nmaman|C'est samedi, Amir.\nmaman|C'est le bon jour.\nenfant-m|Les prunes !\nnarrateur|Des prunes violettes brillent en tas.\nnarrateur|Elles sont froides, un peu poudreuses.\nnarrateur|Amir tend le filet.\nmaman|Tu choisis ?\nenfant-m|Celles-là.\nnarrateur|Maman les glisse dans le filet.\nnarrateur|Le filet devient lourd, tout rond.\nenfant-m|Elles sont à nous.\nmaman|Merci, Amir.\nmaman|Tu as attendu samedi.\nnarrateur|Une prune roule vers le bord.\nnarrateur|Amir la rattrape avec la main.\nnarrateur|Elle est lisse et froide.\nmaman|On rentre ?\nenfant-m|Oui, maman.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lendemain, la rue sent le fruit. Les volets sont ouverts, tout grands. C'est samedi, Amir. C'est le bon jour. Les prunes ! Des prunes violettes brillent en tas. Elles sont froides, un peu poudreuses. Amir tend le filet. Tu choisis ? Celles-là. Maman les glisse dans le filet. Le filet devient lourd, tout rond. Elles sont à nous. Merci, Amir. Tu as attendu samedi. Une prune roule vers le bord. Amir la rattrape avec la main. Elle est lisse et froide. On rentre ? Oui, maman."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La table a encore la tache. Amir pose le filet dessus. Tu mords la tienne ? Oui. Le jus coule sur son menton. Il est froid, très sucré. Elle est bonne. Vendredi, c'était fermé. Samedi, le marché ouvre. J'ai attendu. Oui. Le thym sent encore le filet. Deux noyaux brillent dans une coupelle. On en garde pour demain ? Demain, c'est dimanche. Oui. Amir essuie son menton. La tache violette a un ami.",
+      "script": "narrateur|La table a encore la tache.\nnarrateur|Amir pose le filet dessus.\nmaman|Tu mords la tienne ?\nenfant-m|Oui.\nnarrateur|Le jus coule sur son menton.\nnarrateur|Il est froid, très sucré.\nenfant-m|Elle est bonne.\nmaman|Vendredi, c'était fermé.\nmaman|Samedi, le marché ouvre.\nenfant-m|J'ai attendu.\nmaman|Oui.\nnarrateur|Le thym sent encore le filet.\nnarrateur|Deux noyaux brillent dans une coupelle.\nmaman|On en garde pour demain ?\nenfant-m|Demain, c'est dimanche.\nmaman|Oui.\nnarrateur|Amir essuie son menton.\nnarrateur|La tache violette a un ami.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La table a encore la tache. Amir pose le filet dessus. Tu mords la tienne ? Oui. Le jus coule sur son menton. Il est froid, très sucré. Elle est bonne. Vendredi, c'était fermé. Samedi, le marché ouvre. J'ai attendu. Oui. Le thym sent encore le filet. Deux noyaux brillent dans une coupelle. On en garde pour demain ? Demain, c'est dimanche. Oui. Amir essuie son menton. La tache violette a un ami."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Les doigts d'Amir sont un peu violets. J'ai mes prunes. Oui. Le bon jour était samedi. Le filet sent le thym et le fruit.",
+      "script": "narrateur|Les doigts d'Amir sont un peu violets.\nenfant-m|J'ai mes prunes.\nmaman|Oui.\nmaman|Le bon jour était samedi.\nnarrateur|Le filet sent le thym et le fruit.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Les doigts d'Amir sont un peu violets. J'ai mes prunes. Oui. Le bon jour était samedi. Le filet sent le thym et le fruit."
+    }
+  ]
+}

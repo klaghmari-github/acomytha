@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-07",
+  "fil_rouge": "",
+  "title": "Fabrice appelle pour la lumière",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Fabrice, maman, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fabrice joue dans le salon. Il a des cubes en bois. Le bois est lisse. Maman plie une serviette près de la porte. Fabrice veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Fabrice appelle un adulte. Maman, la lumière. Maman vient. Maman allume la lampe. La pièce est claire. Papa entre. On appelle un adulte. On appelle papa ou maman. Les mains restent avec les jouets. Fabrice reprend un cube. Il construit une tour. Les prises sont pour les adultes. Fabrice tient les cubes. Les mains sont avec les jouets.",
+      "script": "narrateur|Fabrice joue dans le salon. Il a des cubes en bois. Le bois est lisse. Maman plie une serviette près de la porte. Fabrice veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Fabrice appelle un adulte.\nnarrateur|Maman, la lumière. Maman vient. Maman allume la lampe.\nnarrateur|La pièce est claire. Papa entre.\npapa|On appelle un adulte. On appelle papa ou maman.\nnarrateur|Les mains restent avec les jouets. Fabrice reprend un cube. Il construit une tour.\nmaman|Les prises sont pour les adultes.\nnarrateur|Fabrice tient les cubes. Les mains sont avec les jouets.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Fabrice veut la lumière. Que fait-il ?",
+      "script": "narrateur|Fabrice veut la lumière. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fabrice a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|Fabrice a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Fabrice pousse un cube. La lumière reste allumée.",
+      "script": "narrateur|Fabrice pousse un cube. La lumière reste allumée.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

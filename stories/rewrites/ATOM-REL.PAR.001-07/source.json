@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-07",
+  "fil_rouge": "",
+  "title": "Gisèle prête et propose un jeu",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Gisèle, Adèle, maman",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gisèle joue à la dinette. Les tasses sont lisses. Adèle veut la tasse bleue. Maman est près de la fenêtre. Gisèle prête la tasse. Elle attend son tour. Adèle verse de l'eau imaginaire. Puis c'est le tour de Gisèle. Elle pose une assiette. On peut prêter. On attend son tour. Ou on propose un autre jeu. Plus tard, au jardin, l'herbe est tiède. Adèle veut le cerceau. On peut prêter. Ou attendre son tour. Elle prête le cerceau. Elle propose les cubes. C'est un autre jeu. Adèle prend un cube. Gisèle attend. Puis elle joue. Même leçon dehors. Prêter. Tour. Autre jeu. Maman tape dans ses mains.",
+      "script": "narrateur|Gisèle joue à la dinette. Les tasses sont lisses. Adèle veut la tasse bleue. Maman est près de la fenêtre. Gisèle prête la tasse. Elle attend son tour. Adèle verse de l'eau imaginaire. Puis c'est le tour de Gisèle. Elle pose une assiette.\nmaman|On peut prêter. On attend son tour. Ou on propose un autre jeu. Plus tard, au jardin, l'herbe est tiède.\nnarrateur|Adèle veut le cerceau.\nenfant-f|On peut prêter. Ou attendre son tour. Elle prête le cerceau. Elle propose les cubes. C'est un autre jeu.\nnarrateur|Adèle prend un cube. Gisèle attend. Puis elle joue. Même leçon dehors. Prêter. Tour. Autre jeu. Maman tape dans ses mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Adèle veut un jouet. Que peut faire Gisèle ?",
+      "script": "narrateur|Adèle veut un jouet. Que peut faire Gisèle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gisèle a prêté. Elle a attendu son tour. Elle a proposé un autre jeu.",
+      "script": "narrateur|Gisèle a prêté. Elle a attendu son tour. Elle a proposé un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gisèle range un cube. Maman ferme le portail.",
+      "script": "narrateur|Gisèle range un cube. Maman ferme le portail.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

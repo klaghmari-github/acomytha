@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.001-02",
+  "fil_rouge": "",
+  "title": "Ava se lave les mains à l'école",
+  "lesson_id": "SAN.HYG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ava, maman",
+  "setting": "école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, maman emmène Ava à l'école. Sur le chemin, À l'école, tu laves tes mains aussi. Comme à la maison. Ava range son manteau. Plus tard, Ava va aux toilettes. Après les toilettes, elle va ouvrir l'eau. Elle ouvre l'eau. Elle prend le savon. Elle frotte le dos des mains. Elle frotte entre les doigts. Elle rince. Elle essuie. La cloche sonne. C'est l'heure de manger. Avant de manger, Ava va au lavabo de la classe. Elle ouvre l'eau. Elle prend le savon. Elle rince. Elle essuie. La maîtresse sourit. Comme avec maman, à la maison. Eau et savon, deux fois. Les mains sont propres. Ava s'assoit à table.",
+      "script": "narrateur|Le matin, maman emmène Ava à l'école. Sur le chemin,\nmaman|À l'école, tu laves tes mains aussi. Comme à la maison.\nnarrateur|Ava range son manteau. Plus tard, Ava va aux toilettes. Après les toilettes, elle va ouvrir l'eau. Elle ouvre l'eau. Elle prend le savon. Elle frotte le dos des mains. Elle frotte entre les doigts. Elle rince. Elle essuie. La cloche sonne. C'est l'heure de manger. Avant de manger, Ava va au lavabo de la classe. Elle ouvre l'eau. Elle prend le savon. Elle rince. Elle essuie. La maîtresse sourit.\nenfant-f|Comme avec maman, à la maison. Eau et savon, deux fois.\nnarrateur|Les mains sont propres. Ava s'assoit à table.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ava se lave les mains à l'école. Avec quoi ?",
+      "script": "narrateur|Ava se lave les mains à l'école. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Après les toilettes, Ava a lavé. Avant de manger, Ava a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "script": "narrateur|Après les toilettes, Ava a lavé. Avant de manger, Ava a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ava mange son goûter. Le soir, elle raconte à maman. Maman dit merci.",
+      "script": "narrateur|Ava mange son goûter. Le soir, elle raconte à maman. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

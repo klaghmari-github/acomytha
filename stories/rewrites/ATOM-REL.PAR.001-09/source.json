@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-09",
+  "fil_rouge": "",
+  "title": "Thierry prête le train",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Thierry, Clémentine, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Thierry est dans le salon avec papa. Il fait rouler un train en bois. Les roues tapent le parquet. Clémentine arrive. Elle aimerait le train. Thierry peut prêter. Tu peux. C'est ton tour. Il tend le train. Clémentine pousse le wagon. Thierry attend son tour. Il s'assoit près de papa. On peut prêter. On peut attendre son tour. On peut proposer un autre jeu. Thierry prend des cubes. Un autre jeu, les cubes. Clémentine finit. Elle rend le train. Thierry le fait rouler. Parce qu'il a su prêter, le jeu continue. Papa tape dans ses mains.",
+      "script": "narrateur|Thierry est dans le salon avec papa. Il fait rouler un train en bois. Les roues tapent le parquet. Clémentine arrive. Elle aimerait le train. Thierry peut prêter.\nnarrateur|Tu peux. C'est ton tour. Il tend le train.\nnarrateur|Clémentine pousse le wagon. Thierry attend son tour. Il s'assoit près de papa.\npapa|On peut prêter. On peut attendre son tour. On peut proposer un autre jeu.\nnarrateur|Thierry prend des cubes.\nnarrateur|Un autre jeu, les cubes.\nnarrateur|Clémentine finit. Elle rend le train. Thierry le fait rouler. Parce qu'il a su prêter, le jeu continue. Papa tape dans ses mains.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Clémentine veut le train. Que peut faire Thierry ?",
+      "script": "narrateur|Clémentine veut le train. Que peut faire Thierry ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Thierry a su prêter. Il a attendu son tour. Il a proposé un autre jeu.",
+      "script": "narrateur|Thierry a su prêter. Il a attendu son tour. Il a proposé un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Thierry et Clémentine rangent le train. Papa ferme la caisse.",
+      "script": "narrateur|Thierry et Clémentine rangent le train. Papa ferme la caisse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

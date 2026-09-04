@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.001-05",
+  "fil_rouge": "",
+  "title": "Baptiste lave ses mains",
+  "lesson_id": "SAN.HYG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Baptiste, papa",
+  "setting": "maison après le jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Baptiste rentre du jardin. Ses mains sentent la terre. Il va aux toilettes. Papa l'attend dans le couloir. Après les toilettes, on lave les mains. Baptiste ouvre l'eau. L'eau est tiède. Il prend le savon. Le savon sent la pomme. Il frotte ses mains. Il rince. Il essuie sur la serviette. Les mains sont propres. C'est l'heure de manger. Avant de manger, Baptiste retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie. Savon et eau. Baptiste sourit. Il s'assoit à table. La soupe est chaude. Papa pose une cuillère. Savon avant de manger. Savon après les toilettes.",
+      "script": "narrateur|Baptiste rentre du jardin. Ses mains sentent la terre. Il va aux toilettes. Papa l'attend dans le couloir.\npapa|Après les toilettes, on lave les mains.\nnarrateur|Baptiste ouvre l'eau. L'eau est tiède. Il prend le savon. Le savon sent la pomme. Il frotte ses mains. Il rince. Il essuie sur la serviette. Les mains sont propres. C'est l'heure de manger. Avant de manger, Baptiste retourne au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte. Il rince. Il essuie.\npapa|Savon et eau.\nnarrateur|Baptiste sourit. Il s'assoit à table. La soupe est chaude. Papa pose une cuillère.\nenfant-m|Savon avant de manger. Savon après les toilettes.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Baptiste se lave les mains. Avec quoi ?",
+      "script": "narrateur|Baptiste se lave les mains. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Après les toilettes, Baptiste a lavé. Avant de manger, Baptiste a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "script": "narrateur|Après les toilettes, Baptiste a lavé. Avant de manger, Baptiste a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Baptiste s'assoit près de papa. Ses mains sont propres.",
+      "script": "narrateur|Baptiste s'assoit près de papa. Ses mains sont propres.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

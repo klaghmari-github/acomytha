@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.MET.001-07",
+  "fil_rouge": "Victorina veut un livre de fleurs, puis une vraie rose. Le livre est trop haut. La libraire le glisse. Chez la fleuriste, une goutte vise la couverture. Livre au sec, rose dans le verre.",
+  "title": "La clochette et la rose",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Victorina, maman, papa",
+  "setting": "librairie du quartier, seau de la fleuriste, table de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La clochette de la librairie tinte deux fois. Les pages sentent le papier neuf et la colle. Un rayon penche, trop haut pour une main d'enfant. Victorina vit dans ce quartier, avec maman et papa. Dehors, un platane jette des ombres rondes. Je veux un livre, maman. Un livre avec des fleurs. On demande à la libraire ? Elle est derrière le comptoir. En ce moment, Victorina suit le dos des livres. Le dos est lisse, un peu froid. Le livre aux fleurs est trop haut. Je ne l'ai pas. On reste en bas. On appelle. La libraire peut le prendre. La libraire avance, lunettes sur le nez. Elle glisse le livre, tout doux, vers les mains de Victorina. Merci. C'est la libraire. C'est son métier. Elle range les livres. Elle les trouve, aussi. Victorina ouvre une page. Une rose y est dessinée, trop plate. Je veux une vraie. Chez la fleuriste, alors. Juste après la librairie. La clochette tinte encore, en partant. Le livre tape un peu la hanche. Tu le tiens ? Oui, papa.",
+      "script": "narrateur|La clochette de la librairie tinte deux fois.\nnarrateur|Les pages sentent le papier neuf et la colle.\nnarrateur|Un rayon penche, trop haut pour une main d'enfant.\nnarrateur|Victorina vit dans ce quartier, avec maman et papa.\nnarrateur|Dehors, un platane jette des ombres rondes.\nenfant-f|Je veux un livre, maman.\nenfant-f|Un livre avec des fleurs.\nmaman|On demande à la libraire ?\npapa|Elle est derrière le comptoir.\nnarrateur|En ce moment, Victorina suit le dos des livres.\nnarrateur|Le dos est lisse, un peu froid.\nnarrateur|Le livre aux fleurs est trop haut.\nenfant-f|Je ne l'ai pas.\nmaman|On reste en bas.\nmaman|On appelle.\npapa|La libraire peut le prendre.\nnarrateur|La libraire avance, lunettes sur le nez.\nnarrateur|Elle glisse le livre, tout doux, vers les mains de Victorina.\nenfant-f|Merci.\nmaman|C'est la libraire.\nmaman|C'est son métier.\nenfant-f|Elle range les livres.\npapa|Elle les trouve, aussi.\nnarrateur|Victorina ouvre une page.\nnarrateur|Une rose y est dessinée, trop plate.\nenfant-f|Je veux une vraie.\npapa|Chez la fleuriste, alors.\nmaman|Juste après la librairie.\nnarrateur|La clochette tinte encore, en partant.\nnarrateur|Le livre tape un peu la hanche.\npapa|Tu le tiens ?\nenfant-f|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La clochette de la librairie tinte deux fois. Les pages sentent le papier neuf et la colle. Un rayon penche, trop haut pour une main d'enfant. Victorina vit dans ce quartier, avec maman et papa. Dehors, un platane jette des ombres rondes. Je veux un livre, maman. Un livre avec des fleurs. On demande à la libraire ? Elle est derrière le comptoir. En ce moment, Victorina suit le dos des livres. Le dos est lisse, un peu froid. Le livre aux fleurs est trop haut. Je ne l'ai pas. On reste en bas. On appelle. La libraire peut le prendre. La libraire avance, lunettes sur le nez. Elle glisse le livre, tout doux, vers les mains de Victorina. Merci. C'est la libraire. C'est son métier. Elle range les livres. Elle les trouve, aussi. Victorina ouvre une page. Une rose y est dessinée, trop plate. Je veux une vraie. Chez la fleuriste, alors. Juste après la librairie. La clochette tinte encore, en partant. Le livre tape un peu la hanche. Tu le tiens ? Oui, papa."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La libraire range les livres. C'est quoi ?",
+      "script": "narrateur|La libraire range les livres.\nnarrateur|C'est quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La libraire range les livres. C'est quoi ?",
+      "expected_answer": "métier",
+      "accepted_examples": "métier | un métier | son métier | le métier | c'est un métier",
+      "retry_prompt": "Elle trouve les livres. C'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le seau de la fleuriste est plein d'eau claire. Ça sent la rose et la tige coupée. Une goutte court sur le zinc. La fleuriste ! Oui. Elle aussi a un métier. Elle choisit les fleurs. Pour moi, une rose. Victorina pose le livre trop près du seau. Une goutte vise la couverture. Le livre ici, le seau là. Pardon. Elle recule le livre, tout de suite. La fleuriste tend une rose courte, encore fraîche. Merci. Merci. Bravo, Victorina. Tu as gardé le livre au sec. La rose sent plus fort que la page. Victorina a les deux, papier et pétale. On rentre ? Oui.",
+      "script": "narrateur|Le seau de la fleuriste est plein d'eau claire.\nnarrateur|Ça sent la rose et la tige coupée.\nnarrateur|Une goutte court sur le zinc.\nenfant-f|La fleuriste !\nmaman|Oui.\nmaman|Elle aussi a un métier.\npapa|Elle choisit les fleurs.\nenfant-f|Pour moi, une rose.\nnarrateur|Victorina pose le livre trop près du seau.\nnarrateur|Une goutte vise la couverture.\npapa|Le livre ici, le seau là.\nenfant-f|Pardon.\nnarrateur|Elle recule le livre, tout de suite.\nnarrateur|La fleuriste tend une rose courte, encore fraîche.\nmaman|Merci.\nenfant-f|Merci.\npapa|Bravo, Victorina.\npapa|Tu as gardé le livre au sec.\nnarrateur|La rose sent plus fort que la page.\nnarrateur|Victorina a les deux, papier et pétale.\nmaman|On rentre ?\nenfant-f|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le seau de la fleuriste est plein d'eau claire. Ça sent la rose et la tige coupée. Une goutte court sur le zinc. La fleuriste ! Oui. Elle aussi a un métier. Elle choisit les fleurs. Pour moi, une rose. Victorina pose le livre trop près du seau. Une goutte vise la couverture. Le livre ici, le seau là. Pardon. Elle recule le livre, tout de suite. La fleuriste tend une rose courte, encore fraîche. Merci. Merci. Bravo, Victorina. Tu as gardé le livre au sec. La rose sent plus fort que la page. Victorina a les deux, papier et pétale. On rentre ? Oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le platane fait encore des ronds sur le trottoir. Papa ouvre la porte de la maison. Maman cherche un verre d'eau, pour la rose. Le livre, sur la table. Et la rose, dans le verre. Les deux métiers t'ont aidée. La libraire, puis la fleuriste. Le livre, et la vraie. Tu veux que je tourne une page ? Celle de la rose. La page et la tige se regardent, un peu. Une goutte glisse dans le verre, sans bruit. Merci d'avoir reculé le livre. Il est resté sec.",
+      "script": "narrateur|Le platane fait encore des ronds sur le trottoir.\nnarrateur|Papa ouvre la porte de la maison.\nnarrateur|Maman cherche un verre d'eau, pour la rose.\nenfant-f|Le livre, sur la table.\nmaman|Et la rose, dans le verre.\npapa|Les deux métiers t'ont aidée.\npapa|La libraire, puis la fleuriste.\nenfant-f|Le livre, et la vraie.\nmaman|Tu veux que je tourne une page ?\nenfant-f|Celle de la rose.\nnarrateur|La page et la tige se regardent, un peu.\nnarrateur|Une goutte glisse dans le verre, sans bruit.\npapa|Merci d'avoir reculé le livre.\nmaman|Il est resté sec.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le platane fait encore des ronds sur le trottoir. Papa ouvre la porte de la maison. Maman cherche un verre d'eau, pour la rose. Le livre, sur la table. Et la rose, dans le verre. Les deux métiers t'ont aidée. La libraire, puis la fleuriste. Le livre, et la vraie. Tu veux que je tourne une page ? Celle de la rose. La page et la tige se regardent, un peu. Une goutte glisse dans le verre, sans bruit. Merci d'avoir reculé le livre. Il est resté sec."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La rose s'ouvre un peu, dans l'eau. La page reste plate, et sent encore la colle. J'ai les deux. Oui. Le quartier les a gardées pour toi. La clochette, tout au loin, ne tinte plus. Le verre chante une toute petite note, contre la table.",
+      "script": "narrateur|La rose s'ouvre un peu, dans l'eau.\nnarrateur|La page reste plate, et sent encore la colle.\nenfant-f|J'ai les deux.\npapa|Oui.\nmaman|Le quartier les a gardées pour toi.\nnarrateur|La clochette, tout au loin, ne tinte plus.\nnarrateur|Le verre chante une toute petite note, contre la table.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La rose s'ouvre un peu, dans l'eau. La page reste plate, et sent encore la colle. J'ai les deux. Oui. Le quartier les a gardées pour toi. La clochette, tout au loin, ne tinte plus. Le verre chante une toute petite note, contre la table."
+    }
+  ]
+}

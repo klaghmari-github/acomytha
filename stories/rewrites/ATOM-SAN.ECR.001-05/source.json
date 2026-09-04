@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-05",
+  "fil_rouge": "",
+  "title": "Bérénice éteint et choisit un puzzle",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Bérénice, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Bérénice est dans le salon. Elle regarde un dessin sur la tablette. Les oiseaux chantent dans l'histoire. Papa s'assoit près d'elle. Le canapé est moelleux. Fini. L'adulte dit fini. Bérénice écoute. Elle va éteindre. Bérénice éteint l'écran. L'écran devient noir. Elle pose la tablette sur la table. On prend un autre jeu. Bérénice va choisir un jeu. Elle choisit le puzzle des animaux. Les pièces sont lisses. Papa et Bérénice cherchent le lion. Puis l'éléphant. L'écran est éteint. Un autre jeu, c'est bien. Parce que l'adulte a dit fini, elle a éteint. Puis elle a un autre jeu. Papa tape doucement dans ses mains. Bérénice rit. Le salon est calme.",
+      "script": "narrateur|Bérénice est dans le salon. Elle regarde un dessin sur la tablette. Les oiseaux chantent dans l'histoire. Papa s'assoit près d'elle. Le canapé est moelleux.\npapa|Fini. L'adulte dit fini.\nnarrateur|Bérénice écoute. Elle va éteindre. Bérénice éteint l'écran. L'écran devient noir. Elle pose la tablette sur la table.\npapa|On prend un autre jeu.\nnarrateur|Bérénice va choisir un jeu. Elle choisit le puzzle des animaux. Les pièces sont lisses. Papa et Bérénice cherchent le lion. Puis l'éléphant.\nenfant-f|L'écran est éteint.\nnarrateur|Un autre jeu, c'est bien. Parce que l'adulte a dit fini, elle a éteint. Puis elle a un autre jeu. Papa tape doucement dans ses mains. Bérénice rit. Le salon est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa dit fini. Que fait Bérénice ?",
+      "script": "narrateur|Papa dit fini. Que fait Bérénice ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa a dit fini. Bérénice a éteint. Elle a pris un autre jeu. Le puzzle, c'était bien.",
+      "script": "narrateur|Papa a dit fini. Bérénice a éteint. Elle a pris un autre jeu. Le puzzle, c'était bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le lion est en place. Bérénice dit merci à papa.",
+      "script": "narrateur|Le lion est en place. Bérénice dit merci à papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-03",
+  "fil_rouge": "",
+  "title": "Inaya dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Inaya, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Inaya est au parc avec maman. Maman s'assoit sur le banc. Inaya joue près des cerceaux. L'herbe est tiède. Un camarade court. Il bouscule Inaya. Inaya sent un choc. Son cœur bat vite. Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers maman. Inaya marche vers le banc. Maman est son parent au parc. Inaya rejoint son parent au parc. On m'a bousculée. Maman l'écoute. Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Parce qu'elle a dit stop, Inaya est près de maman. Inaya souffle doucement. Le banc est calme. Parce qu'elle s'est éloignée, elle peut raconter. Inaya reste près de son parent au parc.",
+      "script": "narrateur|Inaya est au parc avec maman. Maman s'assoit sur le banc. Inaya joue près des cerceaux. L'herbe est tiède. Un camarade court. Il bouscule Inaya. Inaya sent un choc. Son cœur bat vite.\nenfant-f|Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers maman.\nnarrateur|Inaya marche vers le banc. Maman est son parent au parc. Inaya rejoint son parent au parc.\nnarrateur|On m'a bousculée. Maman l'écoute.\nmaman|Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Parce qu'elle a dit stop, Inaya est près de maman.\nnarrateur|Inaya souffle doucement. Le banc est calme. Parce qu'elle s'est éloignée, elle peut raconter. Inaya reste près de son parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Inaya. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Inaya. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Inaya a dit stop. Elle s'est éloignée. Elle a rejoint son parent au parc.",
+      "script": "narrateur|Inaya a dit stop. Elle s'est éloignée. Elle a rejoint son parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Inaya tient la main de maman. Les oiseaux chantent.",
+      "script": "narrateur|Inaya tient la main de maman. Les oiseaux chantent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

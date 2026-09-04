@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-03",
+  "fil_rouge": "Aniss veut une tomate rouge pour la salade. Le soleil chauffe le fruit. L'arrosoir verse de travers. Le soir, la lune pose un rond blanc sur le même pied.",
+  "title": "Les tomates d'Aniss",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Aniss, maman",
+  "setting": "jardin, pied de tomate",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les feuilles de tomate sentent le vert, fort. La terre du rang est sèche, déjà. Une abeille tourne autour d'une fleur jaune. Le tuteur en bois est chaud. Tu as senti les feuilles, Aniss ? Ça sent fort. Oui. C'est le pied de tomate. Je veux une tomate rouge. Pour la salade, ce soir ? Oui. En ce moment, Aniss touche un fruit. Le soleil le rend lisse et chaud. Un autre fruit est encore vert, dur. Le jour chauffe les rouges. Le soleil est sur les tomates. Aniss lève l'arrosoir. L'eau part de travers, trop vite. La terre fait une flaque, puis boit. Oh. Ça a trop coulé. On verse plus lentement ? Oui. Aniss penche l'arrosoir tout doux. L'eau file au pied, sans flaque. Merci, Aniss. Tu as rattrapé l'eau. Il cherche la plus rouge. Celle-là est trop haute, un peu. Je te la tends. La tomate se détache, tiède. Elle est chaude. Le soleil l'a tenue. Ils la posent dans le panier. Le panier sent l'osier sec. Plus tard, l'air refroidit les feuilles. Le ciel passe au bleu foncé. Une lune ronde s'accroche au tuteur. Elle est sur le pied. La nuit est là. La lune est sur les tomates.",
+      "script": "narrateur|Les feuilles de tomate sentent le vert, fort.\nnarrateur|La terre du rang est sèche, déjà.\nnarrateur|Une abeille tourne autour d'une fleur jaune.\nnarrateur|Le tuteur en bois est chaud.\nmaman|Tu as senti les feuilles, Aniss ?\nenfant-m|Ça sent fort.\nmaman|Oui.\nmaman|C'est le pied de tomate.\nenfant-m|Je veux une tomate rouge.\nmaman|Pour la salade, ce soir ?\nenfant-m|Oui.\nnarrateur|En ce moment, Aniss touche un fruit.\nnarrateur|Le soleil le rend lisse et chaud.\nnarrateur|Un autre fruit est encore vert, dur.\nmaman|Le jour chauffe les rouges.\nmaman|Le soleil est sur les tomates.\nnarrateur|Aniss lève l'arrosoir.\nnarrateur|L'eau part de travers, trop vite.\nnarrateur|La terre fait une flaque, puis boit.\nenfant-m|Oh.\nenfant-m|Ça a trop coulé.\nmaman|On verse plus lentement ?\nenfant-m|Oui.\nnarrateur|Aniss penche l'arrosoir tout doux.\nnarrateur|L'eau file au pied, sans flaque.\nmaman|Merci, Aniss.\nmaman|Tu as rattrapé l'eau.\nnarrateur|Il cherche la plus rouge.\nnarrateur|Celle-là est trop haute, un peu.\nmaman|Je te la tends.\nnarrateur|La tomate se détache, tiède.\nenfant-m|Elle est chaude.\nmaman|Le soleil l'a tenue.\nnarrateur|Ils la posent dans le panier.\nnarrateur|Le panier sent l'osier sec.\nnarrateur|Plus tard, l'air refroidit les feuilles.\nnarrateur|Le ciel passe au bleu foncé.\nnarrateur|Une lune ronde s'accroche au tuteur.\nenfant-m|Elle est sur le pied.\nmaman|La nuit est là.\nmaman|La lune est sur les tomates.",
+      "sons": "jardin",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les feuilles de tomate sentent le vert, fort. La terre du rang est sèche, déjà. Une abeille tourne autour d'une fleur jaune. Le tuteur en bois est chaud. Tu as senti les feuilles, Aniss ? Ça sent fort. Oui. C'est le pied de tomate. Je veux une tomate rouge. Pour la salade, ce soir ? Oui. En ce moment, Aniss touche un fruit. Le soleil le rend lisse et chaud. Un autre fruit est encore vert, dur. Le jour chauffe les rouges. Le soleil est sur les tomates. Aniss lève l'arrosoir. L'eau part de travers, trop vite. La terre fait une flaque, puis boit. Oh. Ça a trop coulé. On verse plus lentement ? Oui. Aniss penche l'arrosoir tout doux. L'eau file au pied, sans flaque. Merci, Aniss. Tu as rattrapé l'eau. Il cherche la plus rouge. Celle-là est trop haute, un peu. Je te la tends. La tomate se détache, tiède. Elle est chaude. Le soleil l'a tenue. Ils la posent dans le panier. Le panier sent l'osier sec. Plus tard, l'air refroidit les feuilles. Le ciel passe au bleu foncé. Une lune ronde s'accroche au tuteur. Elle est sur le pied. La nuit est là. La lune est sur les tomates."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est sur le pied. Quel moment est-ce ?",
+      "script": "narrateur|La lune est sur le pied.\nnarrateur|Quel moment est-ce ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La lune est sur le pied. Quel moment est-ce ?",
+      "expected_answer": "nuit",
+      "accepted_examples": "nuit | la nuit | le soir | dodo | c'est la nuit",
+      "retry_prompt": "La lune est sur les tomates. C'est le jour, ou la nuit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Aniss a cueilli au soleil, le fruit chaud. Maintenant la lune pose un rond sur les feuilles. Le jour, c'était le soleil. La nuit, c'est la lune. Le même pied. Oui. On rentre avec le panier ? La salade. Les tomates vertes restent dehors. Elles sont plus pâles, sous la lune. Elles attendront demain.",
+      "script": "narrateur|Aniss a cueilli au soleil, le fruit chaud.\nnarrateur|Maintenant la lune pose un rond sur les feuilles.\nmaman|Le jour, c'était le soleil.\nmaman|La nuit, c'est la lune.\nenfant-m|Le même pied.\nmaman|Oui.\nmaman|On rentre avec le panier ?\nenfant-m|La salade.\nnarrateur|Les tomates vertes restent dehors.\nnarrateur|Elles sont plus pâles, sous la lune.\nmaman|Elles attendront demain.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Aniss a cueilli au soleil, le fruit chaud. Maintenant la lune pose un rond sur les feuilles. Le jour, c'était le soleil. La nuit, c'est la lune. Le même pied. Oui. On rentre avec le panier ? La salade. Les tomates vertes restent dehors. Elles sont plus pâles, sous la lune. Elles attendront demain."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La cuisine sent la tomate coupée. Le fruit est encore tiède au couteau. Elle est sucrée. Le soleil l'avait gardée. La nuit, on se couche. Tu mets le pyjama ? Oui. Aniss enfile le pyjama, les doigts un peu verts. À la fenêtre, le pied est déjà sombre. La lune est encore là ? Sur les feuilles, oui. Maman baisse la lumière. Aniss respire le vert des tomates.",
+      "script": "narrateur|La cuisine sent la tomate coupée.\nnarrateur|Le fruit est encore tiède au couteau.\nenfant-m|Elle est sucrée.\nmaman|Le soleil l'avait gardée.\nmaman|La nuit, on se couche.\nmaman|Tu mets le pyjama ?\nenfant-m|Oui.\nnarrateur|Aniss enfile le pyjama, les doigts un peu verts.\nnarrateur|À la fenêtre, le pied est déjà sombre.\nenfant-m|La lune est encore là ?\nmaman|Sur les feuilles, oui.\nnarrateur|Maman baisse la lumière.\nnarrateur|Aniss respire le vert des tomates.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La cuisine sent la tomate coupée. Le fruit est encore tiède au couteau. Elle est sucrée. Le soleil l'avait gardée. La nuit, on se couche. Tu mets le pyjama ? Oui. Aniss enfile le pyjama, les doigts un peu verts. À la fenêtre, le pied est déjà sombre. La lune est encore là ? Sur les feuilles, oui. Maman baisse la lumière. Aniss respire le vert des tomates."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss pose le noyau dans le compost. À la fenêtre, le pied est noir. La lune tient encore une feuille. Elle est toujours là. Oui. Sur le même pied. Aniss ferme les yeux, le vert aux doigts.",
+      "script": "narrateur|Aniss pose le noyau dans le compost.\nnarrateur|À la fenêtre, le pied est noir.\nnarrateur|La lune tient encore une feuille.\nenfant-m|Elle est toujours là.\nmaman|Oui.\nmaman|Sur le même pied.\nnarrateur|Aniss ferme les yeux, le vert aux doigts.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Aniss pose le noyau dans le compost. À la fenêtre, le pied est noir. La lune tient encore une feuille. Elle est toujours là. Oui. Sur le même pied. Aniss ferme les yeux, le vert aux doigts."
+    }
+  ]
+}

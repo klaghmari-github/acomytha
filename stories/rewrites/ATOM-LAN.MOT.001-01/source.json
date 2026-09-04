@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-01",
+  "fil_rouge": "",
+  "title": "Noé range fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Noé, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé est dans le salon. Maman pose un panier. Dedans, il y a une pomme. Une banane. Une chaussette. Un bonnet. Noé touche la pomme. Elle est lisse. On nomme. On classe. Les fruits ensemble. Les habits ensemble. La pomme, c'est un fruit. La banane, c'est un fruit. Noé les met ensemble. La chaussette, c'est un habit. Le bonnet, c'est un habit. Noé les met ensemble. Fruits, c'est une catégorie. Habits, c'est une catégorie. Noé répète : catégorie. Il pose les fruits dans le panier. Il pose les habits sur la chaise.",
+      "script": "narrateur|Noé est dans le salon. Maman pose un panier. Dedans, il y a une pomme. Une banane. Une chaussette. Un bonnet. Noé touche la pomme. Elle est lisse.\nmaman|On nomme. On classe.\nnarrateur|Les fruits ensemble. Les habits ensemble. La pomme, c'est un fruit. La banane, c'est un fruit. Noé les met ensemble. La chaussette, c'est un habit. Le bonnet, c'est un habit. Noé les met ensemble.\nmaman|Fruits, c'est une catégorie. Habits, c'est une catégorie.\nnarrateur|Noé répète : catégorie. Il pose les fruits dans le panier. Il pose les habits sur la chaise.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé range pomme et chaussette. Que fait-il ?",
+      "script": "narrateur|Noé range pomme et chaussette. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "script": "narrateur|Noé a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé croque la pomme. Maman plie le bonnet.",
+      "script": "narrateur|Noé croque la pomme. Maman plie le bonnet.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

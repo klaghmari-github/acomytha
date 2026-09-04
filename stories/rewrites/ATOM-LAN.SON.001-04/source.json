@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-04",
+  "fil_rouge": "",
+  "title": "Tom nomme les sons de la fenêtre",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Tom, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom s'assoit près de la fenêtre avec maman. Il pleut. Plic ploc. C'est un son. Quel nom ? La pluie. Un bruit long : tchou tchou. Tom dit le nom : le train. Puis, un miaulement. Le chat. On entend un son. On dit le nom. Pluie. Train. Chat.",
+      "script": "narrateur|Tom s'assoit près de la fenêtre avec maman. Il pleut. Plic ploc.\nmaman|C'est un son. Quel nom ?\nenfant-m|La pluie.\nnarrateur|Un bruit long : tchou tchou. Tom dit le nom : le train. Puis, un miaulement.\nenfant-m|Le chat.\nmaman|On entend un son. On dit le nom. Pluie. Train. Chat.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tom entend un bruit. C'est quoi ?",
+      "script": "narrateur|Tom entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a entendu un son. Il a dit le nom. Pluie. Train. Chat.",
+      "script": "narrateur|Tom a entendu un son. Il a dit le nom. Pluie. Train. Chat.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le chat vient. Tom le caresse.",
+      "script": "narrateur|Le chat vient. Tom le caresse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

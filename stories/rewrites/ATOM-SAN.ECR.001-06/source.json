@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-06",
+  "fil_rouge": "",
+  "title": "Anouk éteint et prend un livre",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Anouk, maman",
+  "setting": "coin lecture",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Anouk est dans le coin lecture. Elle regarde un dessin sur la tablette. Un oiseau chante dans l'histoire. Le coussin est doux. Maman s'assoit près d'elle. Fini. L'adulte dit fini. Anouk écoute. Elle va éteindre. Anouk éteint l'écran. L'écran devient noir. Elle pose la tablette sur le coussin. On prend un autre jeu. Anouk choisit un livre en tissu. Le livre sent le coton. Anouk tourne une page. Maman nomme le lapin. L'écran est éteint. Un autre jeu, c'est bien. L'adulte a dit fini. Elle a éteint. Puis elle a un autre jeu. Maman tape doucement dans ses mains. Anouk rit. Le coin lecture est calme.",
+      "script": "narrateur|Anouk est dans le coin lecture. Elle regarde un dessin sur la tablette. Un oiseau chante dans l'histoire. Le coussin est doux. Maman s'assoit près d'elle.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Anouk écoute. Elle va éteindre. Anouk éteint l'écran. L'écran devient noir. Elle pose la tablette sur le coussin.\nmaman|On prend un autre jeu.\nnarrateur|Anouk choisit un livre en tissu. Le livre sent le coton. Anouk tourne une page. Maman nomme le lapin.\nenfant-m|L'écran est éteint.\nnarrateur|Un autre jeu, c'est bien. L'adulte a dit fini. Elle a éteint. Puis elle a un autre jeu. Maman tape doucement dans ses mains. Anouk rit. Le coin lecture est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Anouk ?",
+      "script": "narrateur|Maman dit fini. Que fait Anouk ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maman a dit fini. Anouk a éteint. Elle a pris un autre jeu. Le livre, c'était bien.",
+      "script": "narrateur|Maman a dit fini. Anouk a éteint. Elle a pris un autre jeu. Le livre, c'était bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le lapin est sur la page. Anouk dit merci à maman.",
+      "script": "narrateur|Le lapin est sur la page. Anouk dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

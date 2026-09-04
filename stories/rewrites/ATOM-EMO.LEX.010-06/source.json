@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.010-06",
+  "fil_rouge": "",
+  "title": "Calixte est fier de son effort",
+  "lesson_id": "EMO.LEX.010",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Calixte, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Calixte range ses cubes avec papa. La tour tombe. Calixte recommence. Il pose un cube. Encore un. La tour tient. Calixte sourit. Je suis fier. Fier de ton effort. Pas meilleur que l'autre. Mon effort. Il a recommencé. Papa applaudit tout doux. Calixte est fier de son effort.",
+      "script": "narrateur|Calixte range ses cubes avec papa. La tour tombe. Calixte recommence. Il pose un cube. Encore un. La tour tient. Calixte sourit.\nnarrateur|Je suis fier.\npapa|Fier de ton effort. Pas meilleur que l'autre.\nenfant-f|Mon effort. Il a recommencé. Papa applaudit tout doux.\nnarrateur|Calixte est fier de son effort.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tour tient. Quelle émotion ?",
+      "script": "narrateur|La tour tient. Quelle émotion ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Calixte Je suis fier. C'était son effort.",
+      "script": "narrateur|Calixte\nenfant-f|Je suis fier. C'était son effort.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa baisse la lumière. Calixte souffle.",
+      "script": "narrateur|Papa baisse la lumière. Calixte souffle.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

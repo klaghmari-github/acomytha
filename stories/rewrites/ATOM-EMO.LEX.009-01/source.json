@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.009-01",
+  "fil_rouge": "",
+  "title": "Demander un tour et attendre la réponse",
+  "lesson_id": "EMO.LEX.009",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Noé, Ava, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé est au parc avec papa. Sa sœur Ava est sur la balançoire. La balançoire va et vient. Noé la regarde longtemps. Son ventre se serre. Ses yeux restent sur la balançoire. Je suis jaloux. Papa écoute. Noé va près d'Ava. Je voudrais demander un tour. Encore un peu. Noé attend la réponse. Il compte les allers. Il reste les mains sur ses genoux. Puis Ava descend. Noé a son tour. Il se balance doucement. Tu as demandé un tour. Tu as attendu la réponse.",
+      "script": "narrateur|Noé est au parc avec papa. Sa sœur Ava est sur la balançoire. La balançoire va et vient. Noé la regarde longtemps. Son ventre se serre. Ses yeux restent sur la balançoire.\nenfant-m|Je suis jaloux. Papa écoute.\nnarrateur|Noé va près d'Ava.\nnarrateur|Je voudrais demander un tour.\ncopine|Encore un peu.\nnarrateur|Noé attend la réponse. Il compte les allers. Il reste les mains sur ses genoux. Puis Ava descend. Noé a son tour. Il se balance doucement.\npapa|Tu as demandé un tour. Tu as attendu la réponse.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé veut la balançoire. Que fait-il ?",
+      "script": "narrateur|Noé veut la balançoire. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé a nommé : jaloux. Il a demandé un tour. Il a attendu la réponse.",
+      "script": "narrateur|Noé a nommé : jaloux. Il a demandé un tour. Il a attendu la réponse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé descend. Ava reprend un tour. Papa reste au banc.",
+      "script": "narrateur|Noé descend. Ava reprend un tour. Papa reste au banc.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

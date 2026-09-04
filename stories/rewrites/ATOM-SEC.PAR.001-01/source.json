@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-01",
+  "fil_rouge": "",
+  "title": "Jules joue dans l'espace",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Jules, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jules arrive au parc. Papa lui montre un espace. Tu joues ici. C'est l'espace montré. Ici, l'adulte voit. Jules va au bac à sable. Il reste dans l'espace montré. Papa s'assoit sur le banc. Papa voit Jules. L'adulte voit. Jules verse le sable. Il fait un gâteau. Le sable est frais. Jules reste dans l'espace. Je te vois. Jules sourit. Il reste là. Les mains sont dans le sable.",
+      "script": "narrateur|Jules arrive au parc. Papa lui montre un espace.\npapa|Tu joues ici. C'est l'espace montré. Ici, l'adulte voit.\nnarrateur|Jules va au bac à sable. Il reste dans l'espace montré. Papa s'assoit sur le banc. Papa voit Jules. L'adulte voit. Jules verse le sable. Il fait un gâteau. Le sable est frais. Jules reste dans l'espace.\npapa|Je te vois.\nnarrateur|Jules sourit. Il reste là. Les mains sont dans le sable.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jules joue au parc. Où joue-t-il ?",
+      "script": "narrateur|Jules joue au parc. Où joue-t-il ?",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules est dans l'espace montré. Papa le voit. Le gâteau de sable est là.",
+      "script": "narrateur|Jules est dans l'espace montré. Papa le voit. Le gâteau de sable est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Jules range le seau. Papa lui tend la main.",
+      "script": "narrateur|Jules range le seau. Papa lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.001-07",
+  "fil_rouge": "",
+  "title": "Éva dit bravo à papa",
+  "lesson_id": "JEU.REG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Éva, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Éva et papa jouent au memory, à la table. Les cartes sont lisses. Éva a envie de gagner. Papa retourne la dernière paire. Papa a gagné. L'autre peut gagner. Éva sent un nœud dans le ventre. Ses yeux piquent un peu. L'autre peut gagner. C'est le jeu. Je suis déçue. Être déçu, c'est permis. Déçu permis. Éva souffle. Bravo papa. Papa sourit. Éva range une carte. On peut rejouer plus tard. Rejouer plus tard, c'est possible. Éva hoche la tête. Elle va boire de l'eau. Le nœud se desserre. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "script": "narrateur|Éva et papa jouent au memory, à la table. Les cartes sont lisses. Éva a envie de gagner. Papa retourne la dernière paire. Papa a gagné. L'autre peut gagner. Éva sent un nœud dans le ventre. Ses yeux piquent un peu.\npapa|L'autre peut gagner. C'est le jeu.\nenfant-f|Je suis déçue.\npapa|Être déçu, c'est permis. Déçu permis.\nnarrateur|Éva souffle.\nnarrateur|Bravo papa. Papa sourit.\nnarrateur|Éva range une carte.\npapa|On peut rejouer plus tard. Rejouer plus tard, c'est possible.\nnarrateur|Éva hoche la tête. Elle va boire de l'eau. Le nœud se desserre. Perdre, c'est le jeu. On peut être déçu. On dit bravo. On rejoue plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a gagné. Que peut faire Éva ?",
+      "script": "narrateur|Papa a gagné. Que peut faire Éva ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Éva a dit bravo. Elle était déçue, et c'était permis. Ils rejoueront plus tard.",
+      "script": "narrateur|Éva a dit bravo. Elle était déçue, et c'était permis. Ils rejoueront plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Éva range la boîte. Papa range la nappe. Ils vont lire un livre.",
+      "script": "narrateur|Éva range la boîte. Papa range la nappe. Ils vont lire un livre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

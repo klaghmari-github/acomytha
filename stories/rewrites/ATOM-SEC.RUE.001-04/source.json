@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.001-04",
+  "fil_rouge": "",
+  "title": "Clément s'arrête au trottoir",
+  "lesson_id": "SEC.RUE.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Clément, maman",
+  "setting": "trajet vers le parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Clément marche avec maman. Ils vont au parc. Le vent est doux. Ils sentent les feuilles. Ils arrivent au bord. Le bord du trottoir est là. Maman s'arrête. Clément s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Clément sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir. On s'arrête. Pieds au bord. Sur le trottoir. Clément regarde maman. Il pose les pieds au bord. Les pieds sont calmes. Maman sourit. Bravo Clément. On s'arrête au trottoir. On attend avec maman. Les pieds restent au bord du trottoir.",
+      "script": "narrateur|Clément marche avec maman. Ils vont au parc. Le vent est doux. Ils sentent les feuilles. Ils arrivent au bord. Le bord du trottoir est là. Maman s'arrête. Clément s'arrête aussi. S'arrêter, c'est le geste. Les pieds de Clément sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir.\nmaman|On s'arrête. Pieds au bord. Sur le trottoir.\nnarrateur|Clément regarde maman. Il pose les pieds au bord. Les pieds sont calmes. Maman sourit.\nmaman|Bravo Clément. On s'arrête au trottoir. On attend avec maman.\nnarrateur|Les pieds restent au bord du trottoir.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Clément arrive au bord. Que fait-il ?",
+      "script": "narrateur|Clément arrive au bord. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Clément s'arrête au bord. Les pieds sont sur le trottoir. Maman est là.",
+      "script": "narrateur|Clément s'arrête au bord. Les pieds sont sur le trottoir. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Clément donne la main à maman. Ils attendent un moment.",
+      "script": "narrateur|Clément donne la main à maman. Ils attendent un moment.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

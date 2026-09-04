@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.TRA.001-01",
+  "fil_rouge": "Raphaël veut voir la rivière par le hublot du train. Le goûter roule. Ils restent assis avec papa et le rattrapent. L'eau apparaît.",
+  "title": "La rivière du train de Raphaël",
+  "lesson_id": "SOC.TRA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Raphaël, papa",
+  "setting": "quai puis banc du train",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le quai sent le fer et le vent. Une valise passe tout doucement. Le banc du quai est froid. Papa tient un petit sac brun. Raphaël vit ici, avec papa. Tu entends le quai, Raphaël ? Ça sent le fer. Oui. Le train arrive bientôt. En ce moment, ils attendent. Raphaël pose les mains sur le bois. Je veux voir la rivière. On la verra par la fenêtre. Dans le train. Un bruit s'approche, tout long. Le sol vibre un peu. Tchou tchou. C'est le train. On reste avec papa. Ils montent ensemble. Raphaël donne la main. On s'assoit ici. Sur le banc. Le banc du train est chaud. Un hublot rond montre le quai. Le hublot ! On reste assis. Avec un adulte. Le train part, tout doucement. Les maisons glissent. La rivière ? Bientôt. Papa pose le sac brun. Le goûter est dedans. Une pomme roule sur le banc. Elle part ! On reste assis. On la rattrape d'ici. Raphaël reste sur le banc. Il tend la main. La pomme arrive vers lui. Je l'ai ! Bravo. Assis, avec papa. La pomme est un peu froide. Raphaël la remet dans le sac. Tu as vu le hublot ? Oui. Dehors, les champs sont verts. Un ruban brille, tout loin. L'eau ! La rivière.",
+      "script": "narrateur|Le quai sent le fer et le vent.\nnarrateur|Une valise passe tout doucement.\nnarrateur|Le banc du quai est froid.\nnarrateur|Papa tient un petit sac brun.\nnarrateur|Raphaël vit ici, avec papa.\npapa|Tu entends le quai, Raphaël ?\nenfant-m|Ça sent le fer.\npapa|Oui.\npapa|Le train arrive bientôt.\nnarrateur|En ce moment, ils attendent.\nnarrateur|Raphaël pose les mains sur le bois.\nenfant-m|Je veux voir la rivière.\npapa|On la verra par la fenêtre.\npapa|Dans le train.\nnarrateur|Un bruit s'approche, tout long.\nnarrateur|Le sol vibre un peu.\nenfant-m|Tchou tchou.\npapa|C'est le train.\npapa|On reste avec papa.\nnarrateur|Ils montent ensemble.\nnarrateur|Raphaël donne la main.\npapa|On s'assoit ici.\npapa|Sur le banc.\nnarrateur|Le banc du train est chaud.\nnarrateur|Un hublot rond montre le quai.\nenfant-m|Le hublot !\npapa|On reste assis.\npapa|Avec un adulte.\nnarrateur|Le train part, tout doucement.\nnarrateur|Les maisons glissent.\nenfant-m|La rivière ?\npapa|Bientôt.\nnarrateur|Papa pose le sac brun.\nnarrateur|Le goûter est dedans.\nnarrateur|Une pomme roule sur le banc.\nenfant-m|Elle part !\npapa|On reste assis.\npapa|On la rattrape d'ici.\nnarrateur|Raphaël reste sur le banc.\nnarrateur|Il tend la main.\nnarrateur|La pomme arrive vers lui.\nenfant-m|Je l'ai !\npapa|Bravo.\npapa|Assis, avec papa.\nnarrateur|La pomme est un peu froide.\nnarrateur|Raphaël la remet dans le sac.\npapa|Tu as vu le hublot ?\nenfant-m|Oui.\nnarrateur|Dehors, les champs sont verts.\nnarrateur|Un ruban brille, tout loin.\nenfant-m|L'eau !\npapa|La rivière.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le quai sent le fer et le vent. Une valise passe tout doucement. Le banc du quai est froid. Papa tient un petit sac brun. Raphaël vit ici, avec papa. Tu entends le quai, Raphaël ? Ça sent le fer. Oui. Le train arrive bientôt. En ce moment, ils attendent. Raphaël pose les mains sur le bois. Je veux voir la rivière. On la verra par la fenêtre. Dans le train. Un bruit s'approche, tout long. Le sol vibre un peu. Tchou tchou. C'est le train. On reste avec papa. Ils montent ensemble. Raphaël donne la main. On s'assoit ici. Sur le banc. Le banc du train est chaud. Un hublot rond montre le quai. Le hublot ! On reste assis. Avec un adulte. Le train part, tout doucement. Les maisons glissent. La rivière ? Bientôt. Papa pose le sac brun. Le goûter est dedans. Une pomme roule sur le banc. Elle part ! On reste assis. On la rattrape d'ici. Raphaël reste sur le banc. Il tend la main. La pomme arrive vers lui. Je l'ai ! Bravo. Assis, avec papa. La pomme est un peu froide. Raphaël la remet dans le sac. Tu as vu le hublot ? Oui. Dehors, les champs sont verts. Un ruban brille, tout loin. L'eau ! La rivière."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël voyage avec papa. Quel véhicule roule ?",
+      "script": "narrateur|Raphaël voyage avec papa.\nnarrateur|Quel véhicule roule ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Raphaël voyage avec papa. Quel véhicule roule ?",
+      "expected_answer": "le train",
+      "accepted_examples": "train | le train | un train",
+      "retry_prompt": "C'est le train. Quel véhicule roule ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le train. Oui, le train. Ils restent assis sur le banc. Le hublot se remplit d'eau. La rivière est large. Tu la voulais. La voilà. L'eau file, très vite. Un pont passe au-dessus. On est dessus ? Oui. On reste assis. Raphaël tient encore la pomme. Puis il la range. Merci, Raphaël. Tu es resté assis. Avec toi. Avec un adulte. Le train fait un bruit rond. Le hublot tremble un peu. Ça chatouille. C'est le pont.",
+      "script": "enfant-m|Le train.\npapa|Oui, le train.\nnarrateur|Ils restent assis sur le banc.\nnarrateur|Le hublot se remplit d'eau.\nenfant-m|La rivière est large.\npapa|Tu la voulais.\npapa|La voilà.\nnarrateur|L'eau file, très vite.\nnarrateur|Un pont passe au-dessus.\nenfant-m|On est dessus ?\npapa|Oui.\npapa|On reste assis.\nnarrateur|Raphaël tient encore la pomme.\nnarrateur|Puis il la range.\npapa|Merci, Raphaël.\npapa|Tu es resté assis.\nenfant-m|Avec toi.\npapa|Avec un adulte.\nnarrateur|Le train fait un bruit rond.\nnarrateur|Le hublot tremble un peu.\nenfant-m|Ça chatouille.\npapa|C'est le pont.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le train. Oui, le train. Ils restent assis sur le banc. Le hublot se remplit d'eau. La rivière est large. Tu la voulais. La voilà. L'eau file, très vite. Un pont passe au-dessus. On est dessus ? Oui. On reste assis. Raphaël tient encore la pomme. Puis il la range. Merci, Raphaël. Tu es resté assis. Avec toi. Avec un adulte. Le train fait un bruit rond. Le hublot tremble un peu. Ça chatouille. C'est le pont."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tu as fini de regarder l'eau ? Encore un peu. La rivière devient plus étroite. Des arbres la cachent. Elle part. Elle suit le train, un moment. Raphaël pose le front au hublot. Le verre est frais. Le train. Et la rivière. Oui. Le sac brun reste entre eux. La pomme ne roule plus.",
+      "script": "papa|Tu as fini de regarder l'eau ?\nenfant-m|Encore un peu.\nnarrateur|La rivière devient plus étroite.\nnarrateur|Des arbres la cachent.\nenfant-m|Elle part.\npapa|Elle suit le train, un moment.\nnarrateur|Raphaël pose le front au hublot.\nnarrateur|Le verre est frais.\nenfant-m|Le train.\nenfant-m|Et la rivière.\npapa|Oui.\nnarrateur|Le sac brun reste entre eux.\nnarrateur|La pomme ne roule plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Tu as fini de regarder l'eau ? Encore un peu. La rivière devient plus étroite. Des arbres la cachent. Elle part. Elle suit le train, un moment. Raphaël pose le front au hublot. Le verre est frais. Le train. Et la rivière. Oui. Le sac brun reste entre eux. La pomme ne roule plus."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le banc garde encore le sac. Le hublot redevient vert. J'ai vu l'eau. Assis, avec papa. Le train continue, tout rond.",
+      "script": "narrateur|Le banc garde encore le sac.\nnarrateur|Le hublot redevient vert.\nenfant-m|J'ai vu l'eau.\npapa|Assis, avec papa.\nnarrateur|Le train continue, tout rond.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le banc garde encore le sac. Le hublot redevient vert. J'ai vu l'eau. Assis, avec papa. Le train continue, tout rond."
+    }
+  ]
+}

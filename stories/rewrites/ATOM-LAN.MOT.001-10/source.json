@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-10",
+  "fil_rouge": "",
+  "title": "Albane classe jouets et livres",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Albane, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Papa pose deux paniers sur le tapis. Il y a une peluche, une voiture, un livre, un cahier. Albane écoute. On range par catégorie. Les jouets ensemble. Les livres ensemble. Albane prend la peluche. Elle la met avec la voiture. C'est la catégorie des jouets. Elle prend le livre. Elle le met avec le cahier. C'est la catégorie des livres. Tu as classé. Albane nomme : peluche, voiture. Jouets. Livre, cahier. Livres. Deux catégories. Papa sourit. Albane range encore un cube avec les jouets.",
+      "script": "narrateur|Papa pose deux paniers sur le tapis. Il y a une peluche, une voiture, un livre, un cahier. Albane écoute.\npapa|On range par catégorie.\nnarrateur|Les jouets ensemble. Les livres ensemble. Albane prend la peluche. Elle la met avec la voiture. C'est la catégorie des jouets. Elle prend le livre. Elle le met avec le cahier. C'est la catégorie des livres.\npapa|Tu as classé.\nnarrateur|Albane nomme : peluche, voiture. Jouets. Livre, cahier. Livres. Deux catégories. Papa sourit. Albane range encore un cube avec les jouets.",
+      "sons": "voiture_passe",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Albane range peluche et livre. Que fait-elle ?",
+      "script": "narrateur|Albane range peluche et livre. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Albane a classé. Une catégorie pour les jouets. Une catégorie pour les livres. Papa était là.",
+      "script": "narrateur|Albane a classé. Une catégorie pour les jouets. Une catégorie pour les livres. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Albane pose le cube. Les deux paniers sont rangés.",
+      "script": "narrateur|Albane pose le cube. Les deux paniers sont rangés.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

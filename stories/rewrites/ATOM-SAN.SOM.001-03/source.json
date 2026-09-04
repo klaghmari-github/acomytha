@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-03",
+  "fil_rouge": "",
+  "title": "Nina met le pyjama, deux soirs",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, papa, maman",
+  "setting": "salon puis chambre, deux soirs",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, Nina joue dans le salon. C'est l'heure du dodo. Le corps a besoin de dormir. Nina prend son pyjama bleu. Elle le met. Le pyjama est doux. Papa lit une petite histoire. Nina se couche. Dodo. La chambre est calme. Le lendemain, Nina a passé la journée au parc. Le soir revient. Nina a les yeux lourds. C'est le soir. On met le pyjama. Puis c'est le dodo. Nina se souvient. Elle prend le pyjama. Elle le met. Maman raconte une histoire. Nina se couche. Le corps a besoin de dormir. Même leçon, autre soir. Dodo, maman.",
+      "script": "narrateur|Le soir, Nina joue dans le salon.\npapa|C'est l'heure du dodo.\nnarrateur|Le corps a besoin de dormir. Nina prend son pyjama bleu. Elle le met. Le pyjama est doux. Papa lit une petite histoire. Nina se couche.\nnarrateur|Dodo.\nnarrateur|La chambre est calme. Le lendemain, Nina a passé la journée au parc. Le soir revient. Nina a les yeux lourds.\nmaman|C'est le soir. On met le pyjama.\nnarrateur|Puis c'est le dodo. Nina se souvient. Elle prend le pyjama. Elle le met. Maman raconte une histoire. Nina se couche. Le corps a besoin de dormir. Même leçon, autre soir.\nenfant-f|Dodo, maman.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, Nina va dormir. Que met-elle ?",
+      "script": "narrateur|Le soir, Nina va dormir. Que met-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina a mis le pyjama. Un soir avec papa. Un soir avec maman. Puis dodo.",
+      "script": "narrateur|Nina a mis le pyjama. Un soir avec papa. Un soir avec maman. Puis dodo.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nina ferme les yeux. La chambre est douce.",
+      "script": "narrateur|Nina ferme les yeux. La chambre est douce.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-10",
+  "fil_rouge": "",
+  "title": "Clémence invite Nora aux craies",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Clémence, Nora, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Clémence est au parc. Papa est au banc. Clémence a des craies. Les craies sont colorées. Nora arrive près du muret. Clémence veut jouer. Tu peux inviter. Inviter, c'est demander. Tu veux jouer avec nous ? Nora secoue la tête. Non. Clémence a le ventre un peu serré. Papa s'approche. On peut accepter un non. Accepter un non, c'est possible. D'accord. Elle dessine avec papa. Nora joue au cerceau. Clémence n'insiste pas. Merci. Tu as su inviter. Tu as su accepter un non.",
+      "script": "narrateur|Clémence est au parc. Papa est au banc. Clémence a des craies. Les craies sont colorées. Nora arrive près du muret. Clémence veut jouer.\npapa|Tu peux inviter. Inviter, c'est demander.\nenfant-f|Tu veux jouer avec nous ?\nnarrateur|Nora secoue la tête.\ncopine|Non.\nnarrateur|Clémence a le ventre un peu serré. Papa s'approche.\npapa|On peut accepter un non. Accepter un non, c'est possible.\nenfant-f|D'accord. Elle dessine avec papa.\nnarrateur|Nora joue au cerceau. Clémence n'insiste pas.\npapa|Merci. Tu as su inviter. Tu as su accepter un non.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nora dit non. Que fait Clémence ?",
+      "script": "narrateur|Nora dit non. Que fait Clémence ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Clémence a su inviter. Nora a dit non. Clémence a pu accepter un non. Papa est là.",
+      "script": "narrateur|Clémence a su inviter. Nora a dit non. Clémence a pu accepter un non. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Clémence range une craie. Papa lui tend la main.",
+      "script": "narrateur|Clémence range une craie. Papa lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

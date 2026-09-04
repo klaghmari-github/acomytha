@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-07",
+  "fil_rouge": "",
+  "title": "Daphné raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Daphné, papa, maman",
+  "setting": "cuisine puis salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Daphné est dans la cuisine. Elle veut verser l'eau. Le verre bascule. L'eau va sur la table. Daphné sent son ventre serré. Elle va vers maman. Elle raconte. L'eau est sur la table. Maman écoute. Merci d'avoir raconté. Papa arrive. Daphné raconte aussi à papa. Papa tend une éponge. Ils essuient ensemble. Plus tard, Daphné froisse un dessin de papa. Elle sent encore son ventre. Elle va vers papa et maman. Elle raconte. Merci. On dit à papa ou maman ce qui s'est passé. Raconter aide. Daphné est entourée.",
+      "script": "narrateur|Daphné est dans la cuisine. Elle veut verser l'eau. Le verre bascule. L'eau va sur la table. Daphné sent son ventre serré. Elle va vers maman. Elle raconte.\nnarrateur|L'eau est sur la table. Maman écoute.\nmaman|Merci d'avoir raconté. Papa arrive.\nnarrateur|Daphné raconte aussi à papa. Papa tend une éponge. Ils essuient ensemble. Plus tard, Daphné froisse un dessin de papa. Elle sent encore son ventre. Elle va vers papa et maman. Elle raconte.\npapa|Merci. On dit à papa ou maman ce qui s'est passé. Raconter aide.\nnarrateur|Daphné est entourée.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "L'eau est sur la table. Que fait Daphné ?",
+      "script": "narrateur|L'eau est sur la table. Que fait Daphné ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Daphné a raconté. Papa et maman ont écouté. Raconter aide.",
+      "script": "narrateur|Daphné a raconté. Papa et maman ont écouté. Raconter aide.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Daphné pose l'éponge. Maman lui verse un verre.",
+      "script": "narrateur|Daphné pose l'éponge. Maman lui verse un verre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

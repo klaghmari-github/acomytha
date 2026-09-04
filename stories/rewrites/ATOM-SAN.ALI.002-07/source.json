@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-07",
+  "fil_rouge": "",
+  "title": "Baptiste s'assoit à table",
+  "lesson_id": "SAN.ALI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Baptiste, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Baptiste a faim. La soupe sent le potiron. Papa pose les assiettes sur la table. On mange assis. Ensemble. Baptiste pose ses fesses sur la chaise. Il est assis. Parce qu'il est assis, la cuillère reste calme. Papa s'assoit. Maman s'assoit. Ils mangent ensemble à table. Baptiste sent le chaud. On est assis. Ensemble. À table. La soupe est douce. Maman sourit.",
+      "script": "narrateur|Baptiste a faim. La soupe sent le potiron. Papa pose les assiettes sur la table.\nmaman|On mange assis. Ensemble.\nnarrateur|Baptiste pose ses fesses sur la chaise. Il est assis. Parce qu'il est assis, la cuillère reste calme. Papa s'assoit. Maman s'assoit. Ils mangent ensemble à table. Baptiste sent le chaud.\nnarrateur|On est assis. Ensemble. À table.\nnarrateur|La soupe est douce. Maman sourit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Baptiste mange. Où est-il, et comment ?",
+      "script": "narrateur|Baptiste mange. Où est-il, et comment ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Baptiste s'est assis. Il a mangé à table. Papa et maman étaient ensemble avec lui.",
+      "script": "narrateur|Baptiste s'est assis. Il a mangé à table. Papa et maman étaient ensemble avec lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Baptiste pose sa cuillère. Il dit merci.",
+      "script": "narrateur|Baptiste pose sa cuillère. Il dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

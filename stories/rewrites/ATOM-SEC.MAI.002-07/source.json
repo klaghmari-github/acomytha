@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.002-07",
+  "fil_rouge": "",
+  "title": "Damien demande avant l'inconnu",
+  "lesson_id": "SEC.MAI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Damien, papa",
+  "setting": "cuisine et jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Damien aide papa dans la cuisine. Papa range le pain. Sur la table, il y a un petit pot. Damien ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Damien va vers papa. Papa, c'est l'adulte. Je demande. Papa prend le pot. Merci d'avoir demandé. L'inconnu, on le montre à un adulte. Plus tard, au jardin, Damien voit une baie. Il ne la connaît pas. C'est inconnu. Il demande à l'adulte. Papa vient. Damien a les pieds au sol, près de papa.",
+      "script": "narrateur|Damien aide papa dans la cuisine. Papa range le pain. Sur la table, il y a un petit pot. Damien ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Damien va vers papa. Papa, c'est l'adulte.\nenfant-m|Je demande. Papa prend le pot.\npapa|Merci d'avoir demandé. L'inconnu, on le montre à un adulte. Plus tard, au jardin, Damien voit une baie. Il ne la connaît pas. C'est inconnu. Il demande à l'adulte. Papa vient.\nnarrateur|Damien a les pieds au sol, près de papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Damien voit quelque chose d'inconnu. Que fait-il ?",
+      "script": "narrateur|Damien voit quelque chose d'inconnu. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Damien a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "script": "narrateur|Damien a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Damien pose une serviette. Papa sourit.",
+      "script": "narrateur|Damien pose une serviette. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

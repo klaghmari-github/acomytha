@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-02",
+  "fil_rouge": "",
+  "title": "Adam met manteau et bottes sous la pluie",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Adam, maman",
+  "setting": "entrée et marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Il pleut. Il fait froid. Adam est dans l'entrée avec maman. Froid, on prend le manteau. Pluie, on prend les bottes. Adam prend le manteau. Il passe les bras. Il met les bottes. Elles sont jaunes. Ils vont au marché. L'eau fait plic sur les bottes. Adam a chaud dans le manteau. Ils achètent du pain. Ils rentrent. Adam pose le manteau. Il range les bottes près de la porte.",
+      "script": "narrateur|Il pleut. Il fait froid. Adam est dans l'entrée avec maman.\nmaman|Froid, on prend le manteau. Pluie, on prend les bottes.\nnarrateur|Adam prend le manteau. Il passe les bras. Il met les bottes. Elles sont jaunes. Ils vont au marché. L'eau fait plic sur les bottes. Adam a chaud dans le manteau. Ils achètent du pain. Ils rentrent. Adam pose le manteau. Il range les bottes près de la porte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid et il pleut. Que met Adam ?",
+      "script": "narrateur|Il fait froid et il pleut. Que met Adam ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "script": "narrateur|Adam a mis le manteau. Il a mis les bottes. Froid et pluie.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose le pain. Adam touche ses bottes sèches.",
+      "script": "narrateur|Maman pose le pain. Adam touche ses bottes sèches.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

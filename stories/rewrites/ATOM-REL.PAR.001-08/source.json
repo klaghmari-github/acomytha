@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-08",
+  "fil_rouge": "",
+  "title": "Cécile prête l'arrosoir",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Cécile, Lila, maman",
+  "setting": "jardin de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Cécile est au jardin avec maman. Elle tient un petit arrosoir bleu. L'eau est tiède. Lila arrive. Lila aimerait l'arrosoir. Cécile peut prêter. Tu peux. C'est ton tour. Elle tend l'arrosoir. Lila arrose le basilic. Ça sent le vert. Cécile attend son tour. Elle s'assoit près de maman. On peut prêter. On peut attendre son tour. On peut aussi proposer un autre jeu. Cécile prend un seau. Un autre jeu, le seau. Lila finit. Elle rend l'arrosoir. Cécile arrose la menthe. Parce qu'elle a su prêter, le jeu continue. Maman sourit. C'est ton tour, puis le mien.",
+      "script": "narrateur|Cécile est au jardin avec maman. Elle tient un petit arrosoir bleu. L'eau est tiède. Lila arrive. Lila aimerait l'arrosoir. Cécile peut prêter.\nenfant-f|Tu peux. C'est ton tour. Elle tend l'arrosoir.\nnarrateur|Lila arrose le basilic. Ça sent le vert. Cécile attend son tour. Elle s'assoit près de maman.\nmaman|On peut prêter. On peut attendre son tour. On peut aussi proposer un autre jeu.\nnarrateur|Cécile prend un seau.\nnarrateur|Un autre jeu, le seau.\nnarrateur|Lila finit. Elle rend l'arrosoir. Cécile arrose la menthe. Parce qu'elle a su prêter, le jeu continue. Maman sourit.\nenfant-f|C'est ton tour, puis le mien.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lila veut l'arrosoir. Que peut faire Cécile ?",
+      "script": "narrateur|Lila veut l'arrosoir. Que peut faire Cécile ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Cécile a su prêter. Elle a attendu son tour. Elle a proposé un autre jeu.",
+      "script": "narrateur|Cécile a su prêter. Elle a attendu son tour. Elle a proposé un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Cécile et Lila rangent l'arrosoir. Maman ferme le robinet.",
+      "script": "narrateur|Cécile et Lila rangent l'arrosoir. Maman ferme le robinet.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

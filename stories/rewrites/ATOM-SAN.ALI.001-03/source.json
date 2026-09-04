@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-03",
+  "fil_rouge": "",
+  "title": "La petite courgette de Mila",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Mila rentre du jardin avec papa. Dans le panier, il y a des courgettes vertes. Papa les lave. L'eau est froide. Papa coupe une petite courgette. Mila s'assoit à table. La chaise est stable. Tu peux goûter. Une petite portion, c'est assez. Mila prend une petite bouchée. Elle mâche. C'est doux. C'est un peu fondant. Parce qu'elle a goûté, elle peut nommer le goût. Mila dit à papa : c'est doux. Papa sourit. Merci d'avoir goûté, dit papa. La petite portion reste dans l'assiette. Mila n'a pas besoin de tout finir. Elle boit une gorgée d'eau. L'eau est fraîche. Papa range le reste. Parce qu'elle a nommé le goût, papa est content. Mila a goûté. Une petite portion, c'est déjà bien.",
+      "script": "narrateur|Mila rentre du jardin avec papa. Dans le panier, il y a des courgettes vertes. Papa les lave. L'eau est froide. Papa coupe une petite courgette. Mila s'assoit à table. La chaise est stable.\npapa|Tu peux goûter.\nnarrateur|Une petite portion, c'est assez. Mila prend une petite bouchée. Elle mâche. C'est doux. C'est un peu fondant. Parce qu'elle a goûté, elle peut nommer le goût. Mila dit à papa : c'est doux. Papa sourit. Merci d'avoir goûté, dit papa. La petite portion reste dans l'assiette. Mila n'a pas besoin de tout finir. Elle boit une gorgée d'eau. L'eau est fraîche. Papa range le reste. Parce qu'elle a nommé le goût, papa est content. Mila a goûté. Une petite portion, c'est déjà bien.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mila goûte la courgette. Que fait-elle ?",
+      "script": "narrateur|Mila goûte la courgette. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mila a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Papa est là.",
+      "script": "narrateur|Mila a goûté. Elle a nommé le goût. Une petite portion, c'est assez. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mila range sa chaise. La courgette reste à sa place. Merci, dit Mila.",
+      "script": "narrateur|Mila range sa chaise. La courgette reste à sa place. Merci, dit Mila.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

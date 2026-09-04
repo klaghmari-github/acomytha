@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.002-03",
+  "fil_rouge": "",
+  "title": "Pablo reste avec maman, deux lieux",
+  "lesson_id": "SEC.ADU.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Pablo, maman",
+  "setting": "magasin puis gare",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Pablo va au magasin avec maman. Maman est l'accompagnant. Pablo aime rester avec l'accompagnant. Il marche à côté de maman. Maman tient la main. Les pieds de Pablo restent près. Ils voient des poires. Pablo reste avec l'accompagnant. L'adulte connu est là. Tu restes avec moi. Pablo hoche la tête. Il sent la main. La main est douce. Plus tard, ils vont à la gare. Le train fait un bruit doux. Pablo se souvient. Il reste avec l'accompagnant. Il reste à côté de maman. Les pieds restent près. La main de maman est là. Tu restes avec l'adulte connu. Pablo sourit. Même leçon, autre lieu. L'accompagnant de la famille est là.",
+      "script": "narrateur|Pablo va au magasin avec maman. Maman est l'accompagnant. Pablo aime rester avec l'accompagnant. Il marche à côté de maman. Maman tient la main. Les pieds de Pablo restent près. Ils voient des poires. Pablo reste avec l'accompagnant. L'adulte connu est là.\nmaman|Tu restes avec moi.\nnarrateur|Pablo hoche la tête. Il sent la main. La main est douce. Plus tard, ils vont à la gare. Le train fait un bruit doux. Pablo se souvient. Il reste avec l'accompagnant. Il reste à côté de maman. Les pieds restent près. La main de maman est là.\nmaman|Tu restes avec l'adulte connu.\nnarrateur|Pablo sourit. Même leçon, autre lieu. L'accompagnant de la famille est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Pablo est au magasin, puis à la gare. Que fait-il ?",
+      "script": "narrateur|Pablo est au magasin, puis à la gare. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Pablo reste avec maman. Au magasin, puis à la gare. L'adulte connu est là.",
+      "script": "narrateur|Pablo reste avec maman. Au magasin, puis à la gare. L'adulte connu est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Pablo et maman prennent le train. Ils restent ensemble.",
+      "script": "narrateur|Pablo et maman prennent le train. Ils restent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

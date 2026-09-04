@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.002-07",
+  "fil_rouge": "",
+  "title": "Amélie se brosse matin et soir",
+  "lesson_id": "SAN.HYG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Amélie, maman, papa",
+  "setting": "salle de bain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, Amélie entre dans la salle de bain. L'eau coule, tiède. Maman, l'adulte, tend la brosse. Amélie prend la brosse. Elle brosse en haut. Elle brosse en bas. La menthe pique un peu. Parce que c'est le matin, on se brosse avec un adulte. Le soir, Amélie revient. Papa est l'adulte. Amélie prend encore la brosse. Ils brossent ensemble. Même leçon, autre moment. Matin et soir, avec un adulte. Amélie range la brosse. Les dents sont propres.",
+      "script": "narrateur|Le matin, Amélie entre dans la salle de bain. L'eau coule, tiède. Maman, l'adulte, tend la brosse. Amélie prend la brosse. Elle brosse en haut. Elle brosse en bas. La menthe pique un peu. Parce que c'est le matin, on se brosse avec un adulte. Le soir, Amélie revient. Papa est l'adulte. Amélie prend encore la brosse. Ils brossent ensemble. Même leçon, autre moment. Matin et soir, avec un adulte. Amélie range la brosse. Les dents sont propres.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amélie se brosse les dents. Avec quoi, et quand ?",
+      "script": "narrateur|Amélie se brosse les dents. Avec quoi, et quand ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amélie a pris la brosse. Elle brosse avec l'adulte. Matin et soir. Maman le matin. Papa le soir.",
+      "script": "narrateur|Amélie a pris la brosse. Elle brosse avec l'adulte. Matin et soir. Maman le matin. Papa le soir.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Amélie se rince la bouche. Elle dit merci à papa. Les dents brillent.",
+      "script": "narrateur|Amélie se rince la bouche. Elle dit merci à papa. Les dents brillent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

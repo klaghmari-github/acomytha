@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-07",
+  "fil_rouge": "",
+  "title": "Ugo dit les trois noms du pré",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Ugo, maman",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ugo est au pré avec maman. Un cheval mange. Une jument est là. Un poulain reste près. Trois noms de la famille. Ugo répète : cheval, jument, poulain. Près du foin : un chien, une chienne, un chiot. Ugo dit les trois noms. Encore : coq, poule, poussin. Ugo pose le doigt vers le poussin. Le petit, c'est le poussin.",
+      "script": "narrateur|Ugo est au pré avec maman. Un cheval mange. Une jument est là. Un poulain reste près.\nmaman|Trois noms de la famille.\nnarrateur|Ugo répète : cheval, jument, poulain. Près du foin : un chien, une chienne, un chiot. Ugo dit les trois noms. Encore : coq, poule, poussin. Ugo pose le doigt vers le poussin.\nmaman|Le petit, c'est le poussin.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ugo a dit les trois noms. Cheval, jument, poulain. Coq, poule, poussin.",
+      "script": "narrateur|Ugo a dit les trois noms. Cheval, jument, poulain. Coq, poule, poussin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le seau. Ugo salue le poulain.",
+      "script": "narrateur|Maman range le seau. Ugo salue le poulain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

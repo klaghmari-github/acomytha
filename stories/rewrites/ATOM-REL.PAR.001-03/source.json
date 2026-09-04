@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-03",
+  "fil_rouge": "",
+  "title": "Iris prête, puis propose un jeu",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Iris, Jules, papa",
+  "setting": "cuisine puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Iris est dans la cuisine avec papa. La farine sent le blé. Iris a un rouleau en bois. Jules arrive. Jules regarde le rouleau. Tu peux prêter le jouet. Prêter, c'est laisser Jules essayer. Iris tend le rouleau. Jules l'aplatit. C'est le tour de Jules. Puis c'est le tour d'Iris. Tu peux proposer un autre jeu. Un autre jeu, c'est possible. Iris sort des tampons. Jules sourit. Ils tamponnent la pâte. Plus tard, ils vont au jardin. Jules a un arrosoir bleu. Iris le voudrait. Elle se souvient. Elle attend. C'est le tour de Jules. Puis Jules prête. Iris arrose. Les gouttes sont froides. Un autre jeu ? Elle sort un petit râteau. Ils ratissent les feuilles. Papa reste près d'eux. Iris a su prêter. Chacun a eu son tour. Ils ont un autre jeu. Même leçon, autre lieu.",
+      "script": "narrateur|Iris est dans la cuisine avec papa. La farine sent le blé. Iris a un rouleau en bois. Jules arrive. Jules regarde le rouleau.\npapa|Tu peux prêter le jouet. Prêter, c'est laisser Jules essayer.\nnarrateur|Iris tend le rouleau. Jules l'aplatit. C'est le tour de Jules. Puis c'est le tour d'Iris.\npapa|Tu peux proposer un autre jeu.\nnarrateur|Un autre jeu, c'est possible. Iris sort des tampons. Jules sourit. Ils tamponnent la pâte. Plus tard, ils vont au jardin. Jules a un arrosoir bleu. Iris le voudrait. Elle se souvient. Elle attend. C'est le tour de Jules. Puis Jules prête. Iris arrose. Les gouttes sont froides.\nenfant-f|Un autre jeu ? Elle sort un petit râteau. Ils ratissent les feuilles. Papa reste près d'eux.\nnarrateur|Iris a su prêter. Chacun a eu son tour. Ils ont un autre jeu. Même leçon, autre lieu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jules veut le rouleau. Que peut faire Iris ?",
+      "script": "narrateur|Jules veut le rouleau. Que peut faire Iris ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Iris a prêté le rouleau. Jules a eu son tour. Puis ils ont un autre jeu. Au jardin aussi.",
+      "script": "narrateur|Iris a prêté le rouleau. Jules a eu son tour. Puis ils ont un autre jeu. Au jardin aussi.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Iris range le râteau. Jules pose l'arrosoir. Papa sourit.",
+      "script": "narrateur|Iris range le râteau. Jules pose l'arrosoir. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

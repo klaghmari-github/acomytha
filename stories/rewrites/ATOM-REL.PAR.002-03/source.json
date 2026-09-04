@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.002-03",
+  "fil_rouge": "",
+  "title": "Justine attend le seau",
+  "lesson_id": "REL.PAR.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Justine, maman",
+  "setting": "bac à sable",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Justine est au bac à sable. Maman est près d'elle. Un enfant a le seau rouge. Justine a envie du seau. On attend. L'autre finit. Puis c'est mon tour. Justine attend. Elle pose les mains sur ses genoux. Le sable est tiède. Elle écoute. L'autre verse le sable. Puis l'autre pose le seau. Maintenant. Puis mon tour. Justine prend le seau. Elle le remplit. Le sable coule. Justine sourit. Elle a attendu. Puis c'est son tour. Bravo. Justine répète : attendre. Puis mon tour.",
+      "script": "narrateur|Justine est au bac à sable. Maman est près d'elle. Un enfant a le seau rouge. Justine a envie du seau.\nmaman|On attend. L'autre finit.\nnarrateur|Puis c'est mon tour. Justine attend. Elle pose les mains sur ses genoux. Le sable est tiède. Elle écoute. L'autre verse le sable. Puis l'autre pose le seau.\nmaman|Maintenant.\nnarrateur|Puis mon tour. Justine prend le seau. Elle le remplit. Le sable coule. Justine sourit. Elle a attendu. Puis c'est son tour.\nmaman|Bravo.\nnarrateur|Justine répète : attendre. Puis mon tour.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Justine veut le seau. Que fait-elle ?",
+      "script": "narrateur|Justine veut le seau. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Justine a attendu. Puis c'est son tour. Elle a pris le seau. Maman était là.",
+      "script": "narrateur|Justine a attendu. Puis c'est son tour. Elle a pris le seau. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Justine pose le seau. Maman lui donne la main.",
+      "script": "narrateur|Justine pose le seau. Maman lui donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

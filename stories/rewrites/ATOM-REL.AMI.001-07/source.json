@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-07",
+  "fil_rouge": "",
+  "title": "Héloïse invite et accepte un non",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Héloïse, Nino, Maya, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Héloïse est au parc. Papa est sur le banc. Héloïse a des cubes. Nino est près du toboggan. Héloïse va vers lui. Tu veux jouer avec nous ? Inviter, c'est demander. Non. Héloïse s'arrête. Elle accepte le non. Un non est possible. Tu as su inviter. Tu as su accepter un non. Héloïse revient. Elle construit une tour. Les cubes cliquent. Plus tard, Maya passe. Héloïse invite encore. Oui. Elles jouent. Le non de Nino est entendu. Maman les rejoindra au portail.",
+      "script": "narrateur|Héloïse est au parc. Papa est sur le banc. Héloïse a des cubes. Nino est près du toboggan. Héloïse va vers lui.\nnarrateur|Tu veux jouer avec nous ? Inviter, c'est demander.\ncopain|Non.\nnarrateur|Héloïse s'arrête. Elle accepte le non. Un non est possible.\npapa|Tu as su inviter. Tu as su accepter un non.\nnarrateur|Héloïse revient. Elle construit une tour. Les cubes cliquent. Plus tard, Maya passe. Héloïse invite encore.\ncopine|Oui. Elles jouent.\nnarrateur|Le non de Nino est entendu. Maman les rejoindra au portail.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino dit non. Que fait Héloïse ?",
+      "script": "narrateur|Nino dit non. Que fait Héloïse ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Héloïse a su inviter. Elle a accepté le non. Papa a vu. Un non est possible.",
+      "script": "narrateur|Héloïse a su inviter. Elle a accepté le non. Papa a vu. Un non est possible.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Héloïse range les cubes. Papa lui tend le sac.",
+      "script": "narrateur|Héloïse range les cubes. Papa lui tend le sac.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

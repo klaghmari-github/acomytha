@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-11",
+  "fil_rouge": "Nina veut goûter la tomate cerise rouge avec papa. Elle croque d'abord une verte, trop dure. Ils arrosent. Ils goûtent la rouge, tiède.",
+  "title": "La tomate rouge de Nina",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "jardin, pied de tomate cerise",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Des tomates cerises pendent, toutes petites. Une est verte, bien ronde. Une autre est rouge, déjà chaude. L'herbe gratte un peu les chevilles. Un arrosoir bleu attend près du pied. La terre du pot est un peu pâle. Tu les vois, Nina ? Oui, papa. Je veux goûter la rouge. Avec moi ? Oui, avec toi. En ce moment, Nina tend la main. Ses doigts trouvent d'abord la verte. Elle la détache tout doux. Celle-là, tu es sûre ? Elle est ronde. Nina croque un tout petit peu. Elle est dure, papa. Elle n'est pas prête. La rouge a eu plus de soleil. Nina pose la verte dans la main de papa. Les feuilles du pied sont un peu molles. La terre a soif, tu vois ? La plante a besoin d'eau. Elle a besoin de lumière. On arrose, alors ? Oui, avec moi. Nina prend l'arrosoir bleu. Papa tient aussi l'anse. Ils versent un peu d'eau au pied. La terre devient sombre. Elle boit. Oui. Une abeille passe tout près, puis s'en va. Nina essuie une goutte sur une feuille. La rouge est encore là. Elle attend un peu.",
+      "script": "narrateur|Des tomates cerises pendent, toutes petites.\nnarrateur|Une est verte, bien ronde.\nnarrateur|Une autre est rouge, déjà chaude.\nnarrateur|L'herbe gratte un peu les chevilles.\nnarrateur|Un arrosoir bleu attend près du pied.\nnarrateur|La terre du pot est un peu pâle.\npapa|Tu les vois, Nina ?\nenfant-f|Oui, papa.\nenfant-f|Je veux goûter la rouge.\npapa|Avec moi ?\nenfant-f|Oui, avec toi.\nnarrateur|En ce moment, Nina tend la main.\nnarrateur|Ses doigts trouvent d'abord la verte.\nnarrateur|Elle la détache tout doux.\npapa|Celle-là, tu es sûre ?\nenfant-f|Elle est ronde.\nnarrateur|Nina croque un tout petit peu.\nenfant-f|Elle est dure, papa.\npapa|Elle n'est pas prête.\npapa|La rouge a eu plus de soleil.\nnarrateur|Nina pose la verte dans la main de papa.\nnarrateur|Les feuilles du pied sont un peu molles.\npapa|La terre a soif, tu vois ?\npapa|La plante a besoin d'eau.\npapa|Elle a besoin de lumière.\nenfant-f|On arrose, alors ?\npapa|Oui, avec moi.\nnarrateur|Nina prend l'arrosoir bleu.\nnarrateur|Papa tient aussi l'anse.\nnarrateur|Ils versent un peu d'eau au pied.\nnarrateur|La terre devient sombre.\nenfant-f|Elle boit.\npapa|Oui.\nnarrateur|Une abeille passe tout près, puis s'en va.\nnarrateur|Nina essuie une goutte sur une feuille.\nenfant-f|La rouge est encore là.\npapa|Elle attend un peu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Des tomates cerises pendent, toutes petites. Une est verte, bien ronde. Une autre est rouge, déjà chaude. L'herbe gratte un peu les chevilles. Un arrosoir bleu attend près du pied. La terre du pot est un peu pâle. Tu les vois, Nina ? Oui, papa. Je veux goûter la rouge. Avec moi ? Oui, avec toi. En ce moment, Nina tend la main. Ses doigts trouvent d'abord la verte. Elle la détache tout doux. Celle-là, tu es sûre ? Elle est ronde. Nina croque un tout petit peu. Elle est dure, papa. Elle n'est pas prête. La rouge a eu plus de soleil. Nina pose la verte dans la main de papa. Les feuilles du pied sont un peu molles. La terre a soif, tu vois ? La plante a besoin d'eau. Elle a besoin de lumière. On arrose, alors ? Oui, avec moi. Nina prend l'arrosoir bleu. Papa tient aussi l'anse. Ils versent un peu d'eau au pied. La terre devient sombre. Elle boit. Oui. Une abeille passe tout près, puis s'en va. Nina essuie une goutte sur une feuille. La rouge est encore là. Elle attend un peu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tomate a soif. Que fait Nina avec papa ?",
+      "script": "narrateur|La tomate a soif.\nnarrateur|Que fait Nina avec papa ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La tomate a soif. Que fait Nina avec papa ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | de l'eau | eau | lumière | avec papa",
+      "retry_prompt": "Ils versent de l'eau. Que fait Nina ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina pose l'arrosoir dans l'herbe. L'herbe est un peu mouillée. La rouge, maintenant ? Oui. Papa penche une feuille. La tomate rouge est tiède. On la cueille ensemble ? Oui, papa. Nina la tient, et papa aide. La tomate se détache, toute ronde. Merci, Nina. Tu as arrosé, d'abord. Pour la plante. Pour qu'elle fasse encore des rouges. Nina souffle un peu sur la tomate. Un grain de terre tombe. Tu goûtes ? Avec toi.",
+      "script": "narrateur|Nina pose l'arrosoir dans l'herbe.\nnarrateur|L'herbe est un peu mouillée.\npapa|La rouge, maintenant ?\nenfant-f|Oui.\nnarrateur|Papa penche une feuille.\nnarrateur|La tomate rouge est tiède.\npapa|On la cueille ensemble ?\nenfant-f|Oui, papa.\nnarrateur|Nina la tient, et papa aide.\nnarrateur|La tomate se détache, toute ronde.\npapa|Merci, Nina.\npapa|Tu as arrosé, d'abord.\nenfant-f|Pour la plante.\npapa|Pour qu'elle fasse encore des rouges.\nnarrateur|Nina souffle un peu sur la tomate.\nnarrateur|Un grain de terre tombe.\npapa|Tu goûtes ?\nenfant-f|Avec toi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina pose l'arrosoir dans l'herbe. L'herbe est un peu mouillée. La rouge, maintenant ? Oui. Papa penche une feuille. La tomate rouge est tiède. On la cueille ensemble ? Oui, papa. Nina la tient, et papa aide. La tomate se détache, toute ronde. Merci, Nina. Tu as arrosé, d'abord. Pour la plante. Pour qu'elle fasse encore des rouges. Nina souffle un peu sur la tomate. Un grain de terre tombe. Tu goûtes ? Avec toi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nina croque la rouge. Elle est sucrée. Et tiède. Papa croque l'autre moitié. Le jus sent le soleil. La verte, on la laisse ? Oui, elle va mûrir. Avec de l'eau et de la lumière. Nina essuie ses doigts sur l'herbe. L'arrosoir bleu reste près du pied. On range l'arrosoir ? Oui, papa. Nina pose l'arrosoir près du pied. Le bleu de l'arrosoir brille un peu. La verte va devenir rouge ? Avec de l'eau, et du soleil.",
+      "script": "narrateur|Nina croque la rouge.\nenfant-f|Elle est sucrée.\npapa|Et tiède.\nnarrateur|Papa croque l'autre moitié.\nnarrateur|Le jus sent le soleil.\nenfant-f|La verte, on la laisse ?\npapa|Oui, elle va mûrir.\npapa|Avec de l'eau et de la lumière.\nnarrateur|Nina essuie ses doigts sur l'herbe.\nnarrateur|L'arrosoir bleu reste près du pied.\npapa|On range l'arrosoir ?\nenfant-f|Oui, papa.\nnarrateur|Nina pose l'arrosoir près du pied.\nnarrateur|Le bleu de l'arrosoir brille un peu.\nenfant-f|La verte va devenir rouge ?\npapa|Avec de l'eau, et du soleil.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina croque la rouge. Elle est sucrée. Et tiède. Papa croque l'autre moitié. Le jus sent le soleil. La verte, on la laisse ? Oui, elle va mûrir. Avec de l'eau et de la lumière. Nina essuie ses doigts sur l'herbe. L'arrosoir bleu reste près du pied. On range l'arrosoir ? Oui, papa. Nina pose l'arrosoir près du pied. Le bleu de l'arrosoir brille un peu. La verte va devenir rouge ? Avec de l'eau, et du soleil."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La tomate rouge a goûté le soleil. On l'a goûtée aussi. Oui. Le pied tient dans la terre sombre. La verte attend encore un peu de jour.",
+      "script": "narrateur|La tomate rouge a goûté le soleil.\nenfant-f|On l'a goûtée aussi.\npapa|Oui.\nnarrateur|Le pied tient dans la terre sombre.\nnarrateur|La verte attend encore un peu de jour.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La tomate rouge a goûté le soleil. On l'a goûtée aussi. Oui. Le pied tient dans la terre sombre. La verte attend encore un peu de jour."
+    }
+  ]
+}

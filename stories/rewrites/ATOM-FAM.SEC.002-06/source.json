@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.002-06",
+  "fil_rouge": "",
+  "title": "Diane raconte sa peur de l'orage",
+  "lesson_id": "FAM.SEC.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Diane, papa, maman",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, un orage arrive. Diane a peur. Son ventre se serre. Elle ne reste pas seule avec la peur. Elle va raconter à papa ou maman. Papa, j'ai peur. Le tonnerre. Papa l'écoute. Maman arrive. Diane raconte aussi à maman. Merci de raconter. Ce qui fait peur se raconte à papa ou maman. Ils restent près. Diane respire.",
+      "script": "narrateur|Le soir, un orage arrive. Diane a peur. Son ventre se serre. Elle ne reste pas seule avec la peur. Elle va raconter à papa ou maman.\nnarrateur|Papa, j'ai peur.\nnarrateur|Le tonnerre. Papa l'écoute. Maman arrive. Diane raconte aussi à maman.\npapa|Merci de raconter. Ce qui fait peur se raconte à papa ou maman. Ils restent près.\nnarrateur|Diane respire.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Diane a peur. Que fait-elle ?",
+      "script": "narrateur|Diane a peur. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Diane a eu peur. Elle a raconté à papa et maman.",
+      "script": "narrateur|Diane a eu peur. Elle a raconté à papa et maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose un coussin. Diane s'allonge.",
+      "script": "narrateur|Maman pose un coussin. Diane s'allonge.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

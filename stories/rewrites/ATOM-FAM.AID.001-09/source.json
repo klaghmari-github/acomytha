@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-09",
+  "fil_rouge": "",
+  "title": "Dorian appelle papa",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Dorian, papa, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dorian est dans sa chambre. Un carton est trop lourd. C'est trop difficile. Dorian va aller vers eux. Il va dire le besoin. Il appelle papa. Papa vient. Dorian dit le besoin : j'ai besoin d'aide. Maman n'est pas loin. Papa soulève le carton. Dorian dit merci. Demander, ce n'est pas être bébé.",
+      "script": "narrateur|Dorian est dans sa chambre. Un carton est trop lourd. C'est trop difficile. Dorian va aller vers eux. Il va dire le besoin. Il appelle papa. Papa vient. Dorian dit le besoin : j'ai besoin d'aide. Maman n'est pas loin. Papa soulève le carton. Dorian dit merci. Demander, ce n'est pas être bébé.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Dorian ?",
+      "script": "narrateur|C'est trop difficile. Que fait Dorian ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Dorian a su aller vers eux. Il a su dire le besoin. Il a appelé papa.",
+      "script": "narrateur|Dorian a su aller vers eux. Il a su dire le besoin. Il a appelé papa.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa pose le carton. Dorian s'assoit.",
+      "script": "narrateur|Papa pose le carton. Dorian s'assoit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

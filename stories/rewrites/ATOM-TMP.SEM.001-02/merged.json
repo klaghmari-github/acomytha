@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-02",
+  "fil_rouge": "Mila veut un ballon rouge. Samedi au marché, le monsieur du ballon n'est pas là. Un écriteau dit dimanche, au square. Dimanche, le ballon s'envole un peu, puis tient.",
+  "title": "Le ballon du square",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "marché du samedi, puis square du dimanche",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un chariot de paille grince sur les pavés. L'air sent l'oignon et le sucre chaud. Une caisse d'oranges brille au soleil bas. Papa tient un sac de toile rêche. Tu as senti l'oignon, Mila ? Il pique un peu. C'est samedi. C'est le jour du marché. En ce moment, Mila cherche un fil rouge. Je veux un ballon. Un ballon rouge. On le cherche. Ils passent entre les caisses. Un poulet rôti fume tout près. Mila lève les yeux. Pas de fil. Pas de ballon. Il n'est pas là. Le monsieur du ballon n'est pas au marché. Un écriteau jaune penche contre une caisse. Mila s'approche. Il y a un dessin de ballon. Dimanche, au square. C'est écrit. Pas ce samedi ? Ce samedi, c'est le marché. Demain, c'est dimanche. La semaine a sept jours. Mila serre le bord du sac. Le tissu râpe sa paume. On prend des oignons alors. Oui. Et demain, le square. Papa glisse deux oignons dans le sac. Ils sont secs, un peu bruns. Le ballon m'attend ? Au square, demain. Quel jour vient après samedi ? Dimanche. Oui. Le chariot de paille grince encore, plus loin.",
+      "script": "narrateur|Un chariot de paille grince sur les pavés.\nnarrateur|L'air sent l'oignon et le sucre chaud.\nnarrateur|Une caisse d'oranges brille au soleil bas.\nnarrateur|Papa tient un sac de toile rêche.\npapa|Tu as senti l'oignon, Mila ?\nenfant-f|Il pique un peu.\npapa|C'est samedi.\npapa|C'est le jour du marché.\nnarrateur|En ce moment, Mila cherche un fil rouge.\nenfant-f|Je veux un ballon.\nenfant-f|Un ballon rouge.\npapa|On le cherche.\nnarrateur|Ils passent entre les caisses.\nnarrateur|Un poulet rôti fume tout près.\nnarrateur|Mila lève les yeux.\nnarrateur|Pas de fil.\nnarrateur|Pas de ballon.\nenfant-f|Il n'est pas là.\npapa|Le monsieur du ballon n'est pas au marché.\nnarrateur|Un écriteau jaune penche contre une caisse.\nnarrateur|Mila s'approche.\nenfant-f|Il y a un dessin de ballon.\npapa|Dimanche, au square.\npapa|C'est écrit.\nenfant-f|Pas ce samedi ?\npapa|Ce samedi, c'est le marché.\npapa|Demain, c'est dimanche.\npapa|La semaine a sept jours.\nnarrateur|Mila serre le bord du sac.\nnarrateur|Le tissu râpe sa paume.\nenfant-f|On prend des oignons alors.\npapa|Oui.\npapa|Et demain, le square.\nnarrateur|Papa glisse deux oignons dans le sac.\nnarrateur|Ils sont secs, un peu bruns.\nenfant-f|Le ballon m'attend ?\npapa|Au square, demain.\npapa|Quel jour vient après samedi ?\nenfant-f|Dimanche.\npapa|Oui.\nnarrateur|Le chariot de paille grince encore, plus loin.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un chariot de paille grince sur les pavés. L'air sent l'oignon et le sucre chaud. Une caisse d'oranges brille au soleil bas. Papa tient un sac de toile rêche. Tu as senti l'oignon, Mila ? Il pique un peu. C'est samedi. C'est le jour du marché. En ce moment, Mila cherche un fil rouge. Je veux un ballon. Un ballon rouge. On le cherche. Ils passent entre les caisses. Un poulet rôti fume tout près. Mila lève les yeux. Pas de fil. Pas de ballon. Il n'est pas là. Le monsieur du ballon n'est pas au marché. Un écriteau jaune penche contre une caisse. Mila s'approche. Il y a un dessin de ballon. Dimanche, au square. C'est écrit. Pas ce samedi ? Ce samedi, c'est le marché. Demain, c'est dimanche. La semaine a sept jours. Mila serre le bord du sac. Le tissu râpe sa paume. On prend des oignons alors. Oui. Et demain, le square. Papa glisse deux oignons dans le sac. Ils sont secs, un peu bruns. Le ballon m'attend ? Au square, demain. Quel jour vient après samedi ? Dimanche. Oui. Le chariot de paille grince encore, plus loin."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après samedi, quel jour vient ?",
+      "script": "narrateur|Après samedi, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après samedi, quel jour vient ?",
+      "expected_answer": "dimanche",
+      "accepted_examples": "dimanche | le dimanche | c'est dimanche",
+      "retry_prompt": "Samedi, le marché. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le square sent l'herbe coupée. Un manège tourne tout doux, sans musique forte. C'est dimanche, Mila. Le bon jour du square. Le monsieur ! Un homme tient un bouquet de ballons. Le rouge est au milieu, un peu plus petit. Mila tend les deux mains. Tu le tiens bien ? Oui. Le fil est lisse, un peu collant. Le ballon tire vers le ciel. Il veut partir. On fait un nœud au poignet. Papa noue le fil tout doux. Le ballon reste, il danse. Il est à moi. Merci, Mila. Tu as attendu dimanche. Un oignon du sac sent encore, dans le fond.",
+      "script": "narrateur|Le square sent l'herbe coupée.\nnarrateur|Un manège tourne tout doux, sans musique forte.\npapa|C'est dimanche, Mila.\npapa|Le bon jour du square.\nenfant-f|Le monsieur !\nnarrateur|Un homme tient un bouquet de ballons.\nnarrateur|Le rouge est au milieu, un peu plus petit.\nnarrateur|Mila tend les deux mains.\npapa|Tu le tiens bien ?\nenfant-f|Oui.\nnarrateur|Le fil est lisse, un peu collant.\nnarrateur|Le ballon tire vers le ciel.\nenfant-f|Il veut partir.\npapa|On fait un nœud au poignet.\nnarrateur|Papa noue le fil tout doux.\nnarrateur|Le ballon reste, il danse.\nenfant-f|Il est à moi.\npapa|Merci, Mila.\npapa|Tu as attendu dimanche.\nnarrateur|Un oignon du sac sent encore, dans le fond.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le square sent l'herbe coupée. Un manège tourne tout doux, sans musique forte. C'est dimanche, Mila. Le bon jour du square. Le monsieur ! Un homme tient un bouquet de ballons. Le rouge est au milieu, un peu plus petit. Mila tend les deux mains. Tu le tiens bien ? Oui. Le fil est lisse, un peu collant. Le ballon tire vers le ciel. Il veut partir. On fait un nœud au poignet. Papa noue le fil tout doux. Le ballon reste, il danse. Il est à moi. Merci, Mila. Tu as attendu dimanche. Un oignon du sac sent encore, dans le fond."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils s'assoient sur le banc du square. Le bois est tiède. Samedi, le marché. Dimanche, le square. Et le ballon. Oui. Le ballon tape l'épaule de Mila. Toc, tout léger. Il est rouge comme l'orange. Presque. Un pigeon picore une miette. Mila tient le fil plus fort. On rentre ? Le ballon vient. Oui. Le manège s'arrête un moment. Le square redevient calme. Demain, c'est lundi. Oui. Le ballon reste avec nous.",
+      "script": "narrateur|Ils s'assoient sur le banc du square.\nnarrateur|Le bois est tiède.\npapa|Samedi, le marché.\npapa|Dimanche, le square.\nenfant-f|Et le ballon.\npapa|Oui.\nnarrateur|Le ballon tape l'épaule de Mila.\nnarrateur|Toc, tout léger.\nenfant-f|Il est rouge comme l'orange.\npapa|Presque.\nnarrateur|Un pigeon picore une miette.\nnarrateur|Mila tient le fil plus fort.\npapa|On rentre ?\nenfant-f|Le ballon vient.\npapa|Oui.\nnarrateur|Le manège s'arrête un moment.\nnarrateur|Le square redevient calme.\nenfant-f|Demain, c'est lundi.\npapa|Oui.\npapa|Le ballon reste avec nous.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils s'assoient sur le banc du square. Le bois est tiède. Samedi, le marché. Dimanche, le square. Et le ballon. Oui. Le ballon tape l'épaule de Mila. Toc, tout léger. Il est rouge comme l'orange. Presque. Un pigeon picore une miette. Mila tient le fil plus fort. On rentre ? Le ballon vient. Oui. Le manège s'arrête un moment. Le square redevient calme. Demain, c'est lundi. Oui. Le ballon reste avec nous."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le ballon rouge frotte le linteau de la porte. Il est rentré. Oui. Samedi le marché, dimanche le square. Le fil fait une ombre mince sur le carrelage.",
+      "script": "narrateur|Le ballon rouge frotte le linteau de la porte.\nenfant-f|Il est rentré.\npapa|Oui.\npapa|Samedi le marché, dimanche le square.\nnarrateur|Le fil fait une ombre mince sur le carrelage.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le ballon rouge frotte le linteau de la porte. Il est rentré. Oui. Samedi le marché, dimanche le square. Le fil fait une ombre mince sur le carrelage."
+    }
+  ]
+}

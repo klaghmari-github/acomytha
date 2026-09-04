@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-07",
+  "fil_rouge": "",
+  "title": "Éloi classe au marché",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Éloi, maman",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Éloi tient la main de maman au marché. Une poire. Une fraise. Un bonnet. Une chaussette. On nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les habits. Éloi met la poire et la fraise dans le filet. Catégorie des fruits. Il met le bonnet et la chaussette dans le sac. Catégorie des habits.",
+      "script": "narrateur|Éloi tient la main de maman au marché. Une poire. Une fraise. Un bonnet. Une chaussette.\nmaman|On nomme. On classe.\nnarrateur|Une catégorie pour les fruits. Une catégorie pour les habits. Éloi met la poire et la fraise dans le filet. Catégorie des fruits. Il met le bonnet et la chaussette dans le sac. Catégorie des habits.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Éloi range poire et bonnet. Que fait-il ?",
+      "script": "narrateur|Éloi range poire et bonnet. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Éloi a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "script": "narrateur|Éloi a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman paie. Éloi tient le filet.",
+      "script": "narrateur|Maman paie. Éloi tient le filet.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.004-03",
+  "fil_rouge": "",
+  "title": "Quentin demande avant la photo",
+  "lesson_id": "REL.MOQ.004",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Quentin, maman, Rosa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Quentin est dans la cuisine avec maman. Rosa est là aussi. Rosa a un peu de farine sur le nez. Ça sent le gâteau. Quentin voit le téléphone de maman. Il a une idée de photo. Je peux prendre une photo ? On doit demander. Demander, c'est parler avant. Une photo se fait avec un adulte. Le téléphone reste avec l'adulte. On ne prend pas une photo pour rire de l'autre. Ce n'est pas pour rire de l'autre. D'accord. Rosa essuie son nez. Maman prend la photo. Quentin et Rosa sourient. Le téléphone reste dans la main de maman. Quentin dit merci.",
+      "script": "narrateur|Quentin est dans la cuisine avec maman. Rosa est là aussi. Rosa a un peu de farine sur le nez. Ça sent le gâteau. Quentin voit le téléphone de maman. Il a une idée de photo.\nenfant-m|Je peux prendre une photo ?\nmaman|On doit demander. Demander, c'est parler avant.\nnarrateur|Une photo se fait avec un adulte.\nmaman|Le téléphone reste avec l'adulte. On ne prend pas une photo pour rire de l'autre. Ce n'est pas pour rire de l'autre.\nenfant-m|D'accord.\nnarrateur|Rosa essuie son nez. Maman prend la photo. Quentin et Rosa sourient. Le téléphone reste dans la main de maman. Quentin dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quentin veut une photo. Que fait-il ?",
+      "script": "narrateur|Quentin veut une photo. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Quentin a su demander. Le téléphone reste avec l'adulte. Ce n'est pas pour rire de l'autre.",
+      "script": "narrateur|Quentin a su demander. Le téléphone reste avec l'adulte. Ce n'est pas pour rire de l'autre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Quentin et Rosa rangent le saladier. Maman glisse le téléphone.",
+      "script": "narrateur|Quentin et Rosa rangent le saladier. Maman glisse le téléphone.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-08",
+  "fil_rouge": "",
+  "title": "Céline raconte le panier",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Céline, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Céline est dans le salon. Papa plie le linge. Ça sent le propre. Céline veut aider. Elle prend un panier. Le panier glisse. Les chaussettes tombent. Le sol est couvert. Céline a le ventre serré. Elle va vers papa. Papa, le panier est tombé. Papa s'approche. Merci de raconter. On ramasse ensemble. Céline prend une chaussette. Papa tient le panier. Maman entre. Maman, j'ai raconté. Le panier est tombé. Maman écoute. Merci Céline. On raconte à papa ou maman. C'est comme ça.",
+      "script": "narrateur|Céline est dans le salon. Papa plie le linge. Ça sent le propre. Céline veut aider. Elle prend un panier. Le panier glisse. Les chaussettes tombent. Le sol est couvert. Céline a le ventre serré. Elle va vers papa.\nenfant-f|Papa, le panier est tombé. Papa s'approche.\npapa|Merci de raconter. On ramasse ensemble.\nnarrateur|Céline prend une chaussette. Papa tient le panier. Maman entre.\nenfant-f|Maman, j'ai raconté.\nnarrateur|Le panier est tombé. Maman écoute.\nmaman|Merci Céline. On raconte à papa ou maman. C'est comme ça.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le panier est tombé. Que fait Céline ?",
+      "script": "narrateur|Le panier est tombé. Que fait Céline ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Céline a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "script": "narrateur|Céline a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le sol est propre. Céline se lave les mains. Papa plie encore une chaussette.",
+      "script": "narrateur|Le sol est propre. Céline se lave les mains. Papa plie encore une chaussette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

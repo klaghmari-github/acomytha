@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.001-04",
+  "fil_rouge": "",
+  "title": "Les petits pois d'Amine",
+  "lesson_id": "SAN.ALI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amine, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Amine s'assoit à table. Maman est près de lui. Dans l'assiette, il y a des petits pois. Ils sont verts. Ils sont ronds. Ça sent le jardin. Amine les regarde. Maman sourit. Tu peux goûter. Une petite portion, c'est assez. Amine prend une petite bouchée. Il mâche tout doucement. C'est doux. C'est un peu sucré. C'est doux, maman. Nommer le goût, c'est dire le goût. Merci d'avoir goûté. Une petite portion, c'est déjà bien. Amine boit une gorgée d'eau. L'eau est fraîche. Les petits pois restent dans l'assiette.",
+      "script": "narrateur|Amine s'assoit à table. Maman est près de lui. Dans l'assiette, il y a des petits pois. Ils sont verts. Ils sont ronds. Ça sent le jardin. Amine les regarde. Maman sourit.\nmaman|Tu peux goûter.\nnarrateur|Une petite portion, c'est assez. Amine prend une petite bouchée. Il mâche tout doucement. C'est doux. C'est un peu sucré.\nenfant-f|C'est doux, maman. Nommer le goût, c'est dire le goût.\nmaman|Merci d'avoir goûté.\nnarrateur|Une petite portion, c'est déjà bien. Amine boit une gorgée d'eau. L'eau est fraîche. Les petits pois restent dans l'assiette.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amine goûte les petits pois. Que fait-il ?",
+      "script": "narrateur|Amine goûte les petits pois. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amine a goûté. Il a su nommer le goût. Une petite portion, c'est assez. Maman est là.",
+      "script": "narrateur|Amine a goûté. Il a su nommer le goût. Une petite portion, c'est assez. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Amine range sa cuillère. Il dit merci à maman.",
+      "script": "narrateur|Amine range sa cuillère. Il dit merci à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

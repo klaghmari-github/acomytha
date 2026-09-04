@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-10",
+  "fil_rouge": "",
+  "title": "Dorian joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Dorian, maman",
+  "setting": "parc, bac à sable puis toboggan",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dorian arrive au parc avec maman. Maman montre le bac à sable. C'est l'espace montré. Dorian s'assoit. Il sent le sable frais. Maman s'assoit sur le banc. L'adulte voit Dorian. Dorian verse le seau. Il reste dans l'espace montré. Je te vois. L'adulte voit. Plus tard, maman montre le toboggan. Autre espace montré. Dorian grimpe l'échelle. Il glisse. Il revient au pied. Maman le voit encore. L'adulte voit. Même leçon, autre jeu. On reste dans l'espace montré. Papa arrivera après. Dorian range le seau. Il reste là où maman a dit.",
+      "script": "narrateur|Dorian arrive au parc avec maman. Maman montre le bac à sable. C'est l'espace montré. Dorian s'assoit. Il sent le sable frais. Maman s'assoit sur le banc. L'adulte voit Dorian. Dorian verse le seau. Il reste dans l'espace montré.\nmaman|Je te vois. L'adulte voit. Plus tard, maman montre le toboggan. Autre espace montré.\nnarrateur|Dorian grimpe l'échelle. Il glisse. Il revient au pied. Maman le voit encore. L'adulte voit. Même leçon, autre jeu. On reste dans l'espace montré. Papa arrivera après. Dorian range le seau. Il reste là où maman a dit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Dorian joue au parc. Où reste-t-il ?",
+      "script": "narrateur|Dorian joue au parc. Où reste-t-il ?",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Dorian est resté dans l'espace montré. Au bac, puis au toboggan. L'adulte voit.",
+      "script": "narrateur|Dorian est resté dans l'espace montré. Au bac, puis au toboggan. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dorian prend la main de maman. Ils quittent le parc.",
+      "script": "narrateur|Dorian prend la main de maman. Ils quittent le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.003-04",
+  "fil_rouge": "",
+  "title": "Yara et le mouchoir",
+  "lesson_id": "SAN.HYG.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Yara, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yara est dans sa chambre. Elle construit une cabane. Papa plie une couverture. Le nez de Yara chatouille. Atchoum. Yara sent le nez plein. Papa ouvre le tiroir. Il tend un mouchoir. Yara prend un mouchoir. Le papier est doux. Elle se mouche. Le nez est plus libre. Parce qu'elle a pris un mouchoir, elle respire mieux. Papa montre la poubelle. Yara va jeter. Elle met le mouchoir dans la poubelle. Mouchoir, puis poubelle. Plus tard, ils vont dans la cuisine. Yara boit de l'eau. Le nez chatouille encore. Yara prend un autre mouchoir. Elle se mouche. Elle jette dans la poubelle de la cuisine. Papa sourit. Yara se lave les mains. L'eau est tiède. Elle revient près de papa. Son nez est calme.",
+      "script": "narrateur|Yara est dans sa chambre. Elle construit une cabane. Papa plie une couverture. Le nez de Yara chatouille. Atchoum. Yara sent le nez plein. Papa ouvre le tiroir. Il tend un mouchoir. Yara prend un mouchoir. Le papier est doux. Elle se mouche. Le nez est plus libre. Parce qu'elle a pris un mouchoir, elle respire mieux. Papa montre la poubelle. Yara va jeter. Elle met le mouchoir dans la poubelle.\npapa|Mouchoir, puis poubelle. Plus tard, ils vont dans la cuisine.\nnarrateur|Yara boit de l'eau. Le nez chatouille encore. Yara prend un autre mouchoir. Elle se mouche. Elle jette dans la poubelle de la cuisine. Papa sourit. Yara se lave les mains. L'eau est tiède. Elle revient près de papa. Son nez est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le nez de Yara chatouille. Que prend-elle ?",
+      "script": "narrateur|Le nez de Yara chatouille. Que prend-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yara a pris un mouchoir. Elle s'est mouchée. Elle a jeté le mouchoir à la poubelle.",
+      "script": "narrateur|Yara a pris un mouchoir. Elle s'est mouchée. Elle a jeté le mouchoir à la poubelle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yara pose un coussin dans la cabane. Papa s'assoit près d'elle.",
+      "script": "narrateur|Yara pose un coussin dans la cabane. Papa s'assoit près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

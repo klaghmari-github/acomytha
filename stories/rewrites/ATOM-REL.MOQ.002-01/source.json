@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.002-01",
+  "fil_rouge": "",
+  "title": "Lina rejoint Nino au parc",
+  "lesson_id": "REL.MOQ.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Lina, Nino, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lina est au parc avec maman. Les enfants courent près des plots. Nino est à l'écart. Il est près du banc. Ses épaules sont basses. Tu peux le rejoindre. Rejoindre, c'est aller vers lui. Lina marche vers Nino. Tu veux jouer ? Inviter, c'est demander. Nino hésite. Lina attend. D'accord. Ils marchent vers le bac à sable. Le sable est tiède. Un enfant les écarte encore. Ça continue un peu. Lina va vers maman. Maman est l'adulte. Ça continue. On prévient un adulte si ça continue. Maman s'approche. Elle reste près d'eux. Lina et Nino creusent un petit chemin. Le sable coule entre les doigts. Maman les voit.",
+      "script": "narrateur|Lina est au parc avec maman. Les enfants courent près des plots. Nino est à l'écart. Il est près du banc. Ses épaules sont basses.\nmaman|Tu peux le rejoindre. Rejoindre, c'est aller vers lui.\nnarrateur|Lina marche vers Nino.\nnarrateur|Tu veux jouer ? Inviter, c'est demander.\nnarrateur|Nino hésite. Lina attend.\ncopain|D'accord.\nnarrateur|Ils marchent vers le bac à sable. Le sable est tiède. Un enfant les écarte encore. Ça continue un peu. Lina va vers maman. Maman est l'adulte.\nenfant-f|Ça continue. On prévient un adulte si ça continue. Maman s'approche. Elle reste près d'eux.\nnarrateur|Lina et Nino creusent un petit chemin. Le sable coule entre les doigts. Maman les voit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino est à l'écart. Que fait Lina ?",
+      "script": "narrateur|Nino est à l'écart. Que fait Lina ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lina a su rejoindre Nino. Elle a pu inviter. Elle a prévenu un adulte, car ça continue. Maman est là.",
+      "script": "narrateur|Lina a su rejoindre Nino. Elle a pu inviter. Elle a prévenu un adulte, car ça continue. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lina et Nino rangent les seaux. Maman les attend au banc.",
+      "script": "narrateur|Lina et Nino rangent les seaux. Maman les attend au banc.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

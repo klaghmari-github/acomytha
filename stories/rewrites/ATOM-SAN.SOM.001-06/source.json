@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-06",
+  "fil_rouge": "",
+  "title": "Alban met le pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Alban, papa, maman",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, la maison est calme. Alban, c'est l'heure. Alban va dans sa chambre. Il prend son pyjama. Le pyjama est bleu. Il est doux. Alban met le pyjama. Les pieds sont chauds. Maman ouvre le lit. Alban se couche. Il pose la tête. L'oreiller sent le propre. Papa raconte une petite histoire. Alban écoute. C'est le dodo. Le corps a besoin de dormir. Alban ferme les yeux. Il respire doucement. C'est le soir. C'est le dodo. Alban est au lit.",
+      "script": "narrateur|Le soir, la maison est calme.\npapa|Alban, c'est l'heure.\nnarrateur|Alban va dans sa chambre. Il prend son pyjama. Le pyjama est bleu. Il est doux. Alban met le pyjama. Les pieds sont chauds. Maman ouvre le lit. Alban se couche. Il pose la tête. L'oreiller sent le propre. Papa raconte une petite histoire. Alban écoute.\nmaman|C'est le dodo.\nnarrateur|Le corps a besoin de dormir. Alban ferme les yeux. Il respire doucement. C'est le soir. C'est le dodo. Alban est au lit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Alban va dormir. Que met-il ?",
+      "script": "narrateur|Alban va dormir. Que met-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Alban a mis le pyjama. Il s'est couché. Le soir, c'est le dodo. Papa et maman sont là.",
+      "script": "narrateur|Alban a mis le pyjama. Il s'est couché. Le soir, c'est le dodo. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Alban dort. Le pyjama est chaud. La chambre est calme.",
+      "script": "narrateur|Alban dort. Le pyjama est chaud. La chambre est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

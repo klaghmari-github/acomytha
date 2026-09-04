@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAL.001-06",
+  "fil_rouge": "",
+  "title": "Hervé passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hervé, papa, maman",
+  "setting": "cour",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hervé et papa sont dans la cour. L'herbe est courte. Maman pose deux sacs. Voici l'espace du jeu. Hervé reste dans l'espace du jeu. Papa donne le ballon. Hervé le sent. Il est un peu mou. On va passer le ballon. Chacun a son tour. Hervé passe le ballon à papa. Papa l'attrape. C'est le tour de papa. Papa passe le ballon. Hervé attend. Puis c'est son tour. Hervé passe encore. Un oiseau chante. Hervé reste dans l'espace. Il attend. Il passe. Bien joué.",
+      "script": "narrateur|Hervé et papa sont dans la cour. L'herbe est courte. Maman pose deux sacs.\nnarrateur|Voici l'espace du jeu.\nnarrateur|Hervé reste dans l'espace du jeu. Papa donne le ballon. Hervé le sent. Il est un peu mou.\npapa|On va passer le ballon. Chacun a son tour.\nnarrateur|Hervé passe le ballon à papa. Papa l'attrape. C'est le tour de papa. Papa passe le ballon. Hervé attend. Puis c'est son tour. Hervé passe encore. Un oiseau chante. Hervé reste dans l'espace. Il attend. Il passe.\npapa|Bien joué.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hervé a le ballon. Que fait-il ?",
+      "script": "narrateur|Hervé a le ballon. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hervé a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "script": "narrateur|Hervé a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Hervé boit de l'eau. Ils rentrent.",
+      "script": "narrateur|Papa range le ballon. Hervé boit de l'eau. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-12",
+  "fil_rouge": "",
+  "title": "Cécile joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Cécile, maman",
+  "setting": "jardin public, cerceaux",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Cécile arrive au jardin. Maman vient avec elle. Maman montre les cerceaux. C'est l'espace montré. Cécile saute dans un cerceau. Le cerceau est rouge. Il sent le plastique chaud. Maman s'assoit sur le banc. L'adulte voit Cécile. Cécile reste dans l'espace montré. Je te vois. L'adulte voit. Cécile saute encore. Ses pieds tapent l'herbe. Elle reste là où maman a dit. Maman sourit. Cécile range un cerceau. Elle reste près. L'espace montré, c'est ici. L'adulte voit.",
+      "script": "narrateur|Cécile arrive au jardin. Maman vient avec elle. Maman montre les cerceaux. C'est l'espace montré. Cécile saute dans un cerceau. Le cerceau est rouge. Il sent le plastique chaud. Maman s'assoit sur le banc. L'adulte voit Cécile. Cécile reste dans l'espace montré.\nmaman|Je te vois. L'adulte voit.\nnarrateur|Cécile saute encore. Ses pieds tapent l'herbe. Elle reste là où maman a dit. Maman sourit. Cécile range un cerceau. Elle reste près. L'espace montré, c'est ici. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Cécile joue au jardin. Où reste-t-elle ?",
+      "script": "narrateur|Cécile joue au jardin. Où reste-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Cécile est restée dans l'espace montré. Aux cerceaux. L'adulte voit.",
+      "script": "narrateur|Cécile est restée dans l'espace montré. Aux cerceaux. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Cécile prend la main de maman. Elles quittent le jardin.",
+      "script": "narrateur|Cécile prend la main de maman. Elles quittent le jardin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

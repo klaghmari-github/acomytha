@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-05",
+  "fil_rouge": "",
+  "title": "Maël va vers maman au marché",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maël, maman, papa, la maîtresse",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maël est au marché avec maman. C'est après l'école. La maîtresse a dit au revoir. Papa doit les rejoindre. Maman est au stand des pommes. Maël a regardé les paniers. Il lève les yeux. Il cherche. Maël se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Maël marche vers les pommes. Il voit maman. Maman a le filet. Maël va vers maman. Parce qu'il a cherché maman, il la trouve. Me voici. Tu vas vers papa, maman, ou la maîtresse. Maël prend le manteau de maman. Il est calme.",
+      "script": "narrateur|Maël est au marché avec maman. C'est après l'école. La maîtresse a dit au revoir. Papa doit les rejoindre. Maman est au stand des pommes. Maël a regardé les paniers. Il lève les yeux. Il cherche. Maël se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Maël marche vers les pommes. Il voit maman. Maman a le filet. Maël va vers maman. Parce qu'il a cherché maman, il la trouve.\nmaman|Me voici. Tu vas vers papa, maman, ou la maîtresse.\nnarrateur|Maël prend le manteau de maman. Il est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maël cherche quelqu'un. Vers qui va-t-il ?",
+      "script": "narrateur|Maël cherche quelqu'un. Vers qui va-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maël a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "script": "narrateur|Maël a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maël tient le manteau de maman. Maman paie les pommes.",
+      "script": "narrateur|Maël tient le manteau de maman. Maman paie les pommes.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.002-03",
+  "fil_rouge": "",
+  "title": "Chloé est triste, deux fois",
+  "lesson_id": "EMO.LEX.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Chloé, maman",
+  "setting": "jardin puis école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Chloé est dans le jardin avec maman. Son dessin a une tache d'eau. Chloé sent sa gorge serrée. Ses yeux sont mouillés. Je suis triste. Pleurer est permis. Pleurer permis. Chloé pleure un peu. Elle demande un câlin. Maman la serre. Le câlin est chaud. Chloé respire. Plus tard, à l'école, Lila part plus tôt. Chloé sent son ventre lourd. Elle se souvient. Elle dit à la maîtresse : je suis triste. Pleurer est permis. Chloé a les joues humides. Elle va vers maman, à la porte. Elle demande un câlin. Maman est là. Même leçon, autre lieu. Triste, on peut pleurer. On peut demander un câlin.",
+      "script": "narrateur|Chloé est dans le jardin avec maman. Son dessin a une tache d'eau. Chloé sent sa gorge serrée. Ses yeux sont mouillés.\nnarrateur|Je suis triste.\nmaman|Pleurer est permis. Pleurer permis.\nnarrateur|Chloé pleure un peu. Elle demande un câlin. Maman la serre. Le câlin est chaud. Chloé respire. Plus tard, à l'école, Lila part plus tôt. Chloé sent son ventre lourd. Elle se souvient. Elle dit à la maîtresse : je suis triste.\nmaitresse|Pleurer est permis.\nnarrateur|Chloé a les joues humides. Elle va vers maman, à la porte. Elle demande un câlin. Maman est là. Même leçon, autre lieu. Triste, on peut pleurer. On peut demander un câlin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chloé est triste. Que peut-elle faire ?",
+      "script": "narrateur|Chloé est triste. Que peut-elle faire ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Chloé Je suis triste. Au jardin, puis à l'école. Un câlin a aidé.",
+      "script": "narrateur|Chloé\nenfant-f|Je suis triste. Au jardin, puis à l'école.\nnarrateur|Un câlin a aidé.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Chloé respire. Maman tient sa main.",
+      "script": "narrateur|Chloé respire. Maman tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

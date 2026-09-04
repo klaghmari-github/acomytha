@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-04",
+  "fil_rouge": "",
+  "title": "Dahlia appelle pour la lumière",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Dahlia, papa, maman",
+  "setting": "salle de jeux",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dahlia joue dans la salle de jeux. Ses voitures en bois sont par terre. Papa range des livres près de la porte. La pièce est un peu sombre. Dahlia veut plus de lumière. Elle regarde ses mains. Les mains restent avec les jouets. Dahlia appelle un adulte. Papa, la lumière. Papa vient. Papa allume. La pièce devient claire. Maman entre. On va appeler un adulte. Les prises sont pour les adultes. Les mains restent avec les jouets. Dahlia reprend une voiture rouge. Elle la fait rouler tout doux. Parce qu'elle a appelé, la lumière est là. Les mains tiennent les jouets. Dahlia est calme. Papa s'assoit près d'elle. Ils font un petit garage. Les mains restent avec les jouets.",
+      "script": "narrateur|Dahlia joue dans la salle de jeux. Ses voitures en bois sont par terre. Papa range des livres près de la porte. La pièce est un peu sombre. Dahlia veut plus de lumière. Elle regarde ses mains. Les mains restent avec les jouets. Dahlia appelle un adulte.\nnarrateur|Papa, la lumière. Papa vient. Papa allume.\nnarrateur|La pièce devient claire. Maman entre.\nmaman|On va appeler un adulte.\nnarrateur|Les prises sont pour les adultes. Les mains restent avec les jouets. Dahlia reprend une voiture rouge. Elle la fait rouler tout doux. Parce qu'elle a appelé, la lumière est là. Les mains tiennent les jouets. Dahlia est calme. Papa s'assoit près d'elle. Ils font un petit garage. Les mains restent avec les jouets.",
+      "sons": "enfants_parc,voiture_passe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Dahlia veut la lumière. Que fait-elle ?",
+      "script": "narrateur|Dahlia veut la lumière. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Dahlia a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|Dahlia a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dahlia pose la voiture dans le garage. La lumière reste allumée.",
+      "script": "narrateur|Dahlia pose la voiture dans le garage. La lumière reste allumée.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SAI.001-01",
+  "fil_rouge": "",
+  "title": "Les saisons de Lila",
+  "lesson_id": "TMP.SAI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Lila, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila marche au parc avec papa. Il y a quatre saisons. Au printemps, Lila voit des fleurs. En été, il fait chaud. Lila boit de l'eau. En automne, les feuilles tombent. Elles sont rouges. En hiver, Lila met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Lila répète : quatre saisons.",
+      "script": "narrateur|Lila marche au parc avec papa.\npapa|Il y a quatre saisons. Au printemps, Lila voit des fleurs. En été, il fait chaud.\nnarrateur|Lila boit de l'eau. En automne, les feuilles tombent. Elles sont rouges. En hiver, Lila met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Lila répète : quatre saisons.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait chaud. Quelle saison est-ce ?",
+      "script": "narrateur|Il fait chaud. Quelle saison est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lila a nommé les quatre saisons. Un signe chacune. Papa l'a aidée.",
+      "script": "narrateur|Lila a nommé les quatre saisons. Un signe chacune. Papa l'a aidée.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lila ramasse une feuille. Papa tient sa main.",
+      "script": "narrateur|Lila ramasse une feuille. Papa tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

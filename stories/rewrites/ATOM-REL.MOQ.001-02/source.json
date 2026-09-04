@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.001-02",
+  "fil_rouge": "",
+  "title": "Nino ne rit pas, deux fois",
+  "lesson_id": "REL.MOQ.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nino, Zoé, maman",
+  "setting": "école puis parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Nino est à l'école. La classe range les crayons. Le couloir sent le savon. Zoé laisse tomber un crayon. Un camarade commence à rire. Le rire est court. Nino ne rit pas. Il ne faut pas rire. Nino ne répète pas. Il ne faut pas répéter. Ce n'est pas gentil. Il va vers Zoé. Il ramasse le crayon. Il le tend. Zoé le reprend. La maîtresse s'approche. Le Pardon. Plus tard, Nino est au parc avec maman. Un enfant laisse tomber son gant. Un autre commence à rire. Le rire est court. Nino se souvient. Il ne rit pas. Il ne répète pas. Ce n'est pas gentil. Il tend le gant. Tu as repris le geste. Même leçon, autre lieu. Il ne faut pas rire. Il ne faut pas répéter. Ce n'est pas gentil. Nino serre la main de maman.",
+      "script": "narrateur|Nino est à l'école. La classe range les crayons. Le couloir sent le savon. Zoé laisse tomber un crayon. Un camarade commence à rire. Le rire est court. Nino ne rit pas. Il ne faut pas rire. Nino ne répète pas. Il ne faut pas répéter.\nenfant-m|Ce n'est pas gentil. Il va vers Zoé. Il ramasse le crayon. Il le tend.\nnarrateur|Zoé le reprend. La maîtresse s'approche. Le\nenfant-f|Pardon. Plus tard, Nino est au parc avec maman.\nnarrateur|Un enfant laisse tomber son gant. Un autre commence à rire. Le rire est court. Nino se souvient. Il ne rit pas. Il ne répète pas.\nnarrateur|Ce n'est pas gentil. Il tend le gant.\nmaman|Tu as repris le geste. Même leçon, autre lieu. Il ne faut pas rire. Il ne faut pas répéter.\nnarrateur|Ce n'est pas gentil.\nnarrateur|Nino serre la main de maman.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade rit. Que fait Nino ?",
+      "script": "narrateur|Un camarade rit. Que fait Nino ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino n'a pas ri. Il n'a pas répété. Il Ce n'est pas gentil. À l'école, puis au parc.",
+      "script": "narrateur|Nino n'a pas ri. Il n'a pas répété. Il\nenfant-f|Ce n'est pas gentil. À l'école, puis au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino range son cartable. Maman marche à côté.",
+      "script": "narrateur|Nino range son cartable. Maman marche à côté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

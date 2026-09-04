@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-05",
+  "fil_rouge": "Raphaël veut que le lapin boive. Le foin cache le biberon d'eau. Avec papa, ils écartent le foin. Le lapin boit.",
+  "title": "Le foin devant l'eau",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Raphaël, papa",
+  "setting": "jardin, clapier, poussière de foin dans le soleil",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un rayon coupe le foin en paillettes. Les paillettes dansent, toutes d'or. Ça sent le champ coupé, et le bois sec. Le clapier a besoin d'air, Raphaël. Et d'eau. Je veux qu'il boive. On y va ensemble. Le chemin de dalles est chaud. Une abeille passe, sans s'arrêter. En ce moment, Raphaël est devant le clapier. Le lapin gris frotte son nez. Un tas de foin a glissé. Il cache le biberon d'eau. Je ne vois plus l'eau. Le foin est passé devant. On écarte, tout doux. Avec un adulte. Tu prends le foin avec moi ? Oui, papa. Raphaël pince une poignée. Le foin pique un peu les doigts. Papa pince l'autre côté. Ils posent le foin plus loin, dans le râtelier. Le biberon réapparaît. Il est presque vide. Presque plus d'eau. On remplit. Tout doux. Raphaël tient le biberon avec papa. Le robinet du jardin chante. L'eau monte, pas trop. On referme. Ils recrochent le biberon. La main de Raphaël va lentement. Une goutte apparaît au goulot. On recule. On reste près de moi. Le lapin s'approche. Il lape la goutte. Il boit.",
+      "script": "narrateur|Un rayon coupe le foin en paillettes.\nnarrateur|Les paillettes dansent, toutes d'or.\nnarrateur|Ça sent le champ coupé, et le bois sec.\npapa|Le clapier a besoin d'air, Raphaël.\nenfant-m|Et d'eau.\nenfant-m|Je veux qu'il boive.\npapa|On y va ensemble.\nnarrateur|Le chemin de dalles est chaud.\nnarrateur|Une abeille passe, sans s'arrêter.\nnarrateur|En ce moment, Raphaël est devant le clapier.\nnarrateur|Le lapin gris frotte son nez.\nnarrateur|Un tas de foin a glissé.\nnarrateur|Il cache le biberon d'eau.\nenfant-m|Je ne vois plus l'eau.\npapa|Le foin est passé devant.\npapa|On écarte, tout doux.\npapa|Avec un adulte.\npapa|Tu prends le foin avec moi ?\nenfant-m|Oui, papa.\nnarrateur|Raphaël pince une poignée.\nnarrateur|Le foin pique un peu les doigts.\nnarrateur|Papa pince l'autre côté.\nnarrateur|Ils posent le foin plus loin, dans le râtelier.\nnarrateur|Le biberon réapparaît.\nnarrateur|Il est presque vide.\nenfant-m|Presque plus d'eau.\npapa|On remplit.\npapa|Tout doux.\nnarrateur|Raphaël tient le biberon avec papa.\nnarrateur|Le robinet du jardin chante.\nnarrateur|L'eau monte, pas trop.\npapa|On referme.\nnarrateur|Ils recrochent le biberon.\nnarrateur|La main de Raphaël va lentement.\nnarrateur|Une goutte apparaît au goulot.\npapa|On recule.\npapa|On reste près de moi.\nnarrateur|Le lapin s'approche.\nnarrateur|Il lape la goutte.\nenfant-m|Il boit.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un rayon coupe le foin en paillettes. Les paillettes dansent, toutes d'or. Ça sent le champ coupé, et le bois sec. Le clapier a besoin d'air, Raphaël. Et d'eau. Je veux qu'il boive. On y va ensemble. Le chemin de dalles est chaud. Une abeille passe, sans s'arrêter. En ce moment, Raphaël est devant le clapier. Le lapin gris frotte son nez. Un tas de foin a glissé. Il cache le biberon d'eau. Je ne vois plus l'eau. Le foin est passé devant. On écarte, tout doux. Avec un adulte. Tu prends le foin avec moi ? Oui, papa. Raphaël pince une poignée. Le foin pique un peu les doigts. Papa pince l'autre côté. Ils posent le foin plus loin, dans le râtelier. Le biberon réapparaît. Il est presque vide. Presque plus d'eau. On remplit. Tout doux. Raphaël tient le biberon avec papa. Le robinet du jardin chante. L'eau monte, pas trop. On referme. Ils recrochent le biberon. La main de Raphaël va lentement. Une goutte apparaît au goulot. On recule. On reste près de moi. Le lapin s'approche. Il lape la goutte. Il boit."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël donne l'eau au lapin. Comment fait-il ?",
+      "script": "narrateur|Raphaël donne l'eau au lapin.\nnarrateur|Comment fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Raphaël donne l'eau au lapin. Comment fait-il ?",
+      "expected_answer": "doux",
+      "accepted_examples": "doux | douce | avec papa | avec un adulte",
+      "retry_prompt": "Il est doux, avec papa. Comment fait Raphaël ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lapin boit encore, tout calme. Ses oreilles vont, viennent. Le foin cachait tout. Oui. Tu as été doux. Avec un adulte. Merci, Raphaël. Tu as vu les paillettes ? Elles dansaient. Le foin, maintenant, est à sa place. Raphaël pose une poignée dans le râtelier. Pas devant l'eau. Il ne prend pas le lapin. Ses mains sentent le champ. Ça pique encore. On se rince au robinet ? Oui. L'eau du jardin est fraîche. Elle enlève les paillettes. Le lapin a de l'eau. Et du foin, à côté.",
+      "script": "narrateur|Le lapin boit encore, tout calme.\nnarrateur|Ses oreilles vont, viennent.\nenfant-m|Le foin cachait tout.\npapa|Oui.\npapa|Tu as été doux.\npapa|Avec un adulte.\npapa|Merci, Raphaël.\npapa|Tu as vu les paillettes ?\nenfant-m|Elles dansaient.\npapa|Le foin, maintenant, est à sa place.\nnarrateur|Raphaël pose une poignée dans le râtelier.\nnarrateur|Pas devant l'eau.\nnarrateur|Il ne prend pas le lapin.\nnarrateur|Ses mains sentent le champ.\nenfant-m|Ça pique encore.\npapa|On se rince au robinet ?\nenfant-m|Oui.\nnarrateur|L'eau du jardin est fraîche.\nnarrateur|Elle enlève les paillettes.\nenfant-m|Le lapin a de l'eau.\npapa|Et du foin, à côté.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lapin boit encore, tout calme. Ses oreilles vont, viennent. Le foin cachait tout. Oui. Tu as été doux. Avec un adulte. Merci, Raphaël. Tu as vu les paillettes ? Elles dansaient. Le foin, maintenant, est à sa place. Raphaël pose une poignée dans le râtelier. Pas devant l'eau. Il ne prend pas le lapin. Ses mains sentent le champ. Ça pique encore. On se rince au robinet ? Oui. L'eau du jardin est fraîche. Elle enlève les paillettes. Le lapin a de l'eau. Et du foin, à côté."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le rayon a bougé. Il touche maintenant le biberon. L'eau dedans fait un petit or. Ça brille. Il a bu. C'était ça, ton envie. Le lapin croque une tige. Puis il revient à la goutte. Foin, et eau. Les deux. Raphaël s'assoit sur la dalle chaude. Papa s'assoit près de lui. Une paillette reste sur le genou. On la souffle ? Oui. La paillette s'en va, toute légère.",
+      "script": "narrateur|Le rayon a bougé.\nnarrateur|Il touche maintenant le biberon.\nnarrateur|L'eau dedans fait un petit or.\nenfant-m|Ça brille.\npapa|Il a bu.\npapa|C'était ça, ton envie.\nnarrateur|Le lapin croque une tige.\nnarrateur|Puis il revient à la goutte.\npapa|Foin, et eau.\nenfant-m|Les deux.\nnarrateur|Raphaël s'assoit sur la dalle chaude.\nnarrateur|Papa s'assoit près de lui.\nnarrateur|Une paillette reste sur le genou.\npapa|On la souffle ?\nenfant-m|Oui.\nnarrateur|La paillette s'en va, toute légère.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le rayon a bougé. Il touche maintenant le biberon. L'eau dedans fait un petit or. Ça brille. Il a bu. C'était ça, ton envie. Le lapin croque une tige. Puis il revient à la goutte. Foin, et eau. Les deux. Raphaël s'assoit sur la dalle chaude. Papa s'assoit près de lui. Une paillette reste sur le genou. On la souffle ? Oui. La paillette s'en va, toute légère."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le biberon n'est plus caché. Le lapin trouve l'eau. Le foin sent encore le champ. Le jardin redevient calme.",
+      "script": "enfant-m|Le biberon n'est plus caché.\npapa|Le lapin trouve l'eau.\nnarrateur|Le foin sent encore le champ.\nnarrateur|Le jardin redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le biberon n'est plus caché. Le lapin trouve l'eau. Le foin sent encore le champ. Le jardin redevient calme."
+    }
+  ]
+}

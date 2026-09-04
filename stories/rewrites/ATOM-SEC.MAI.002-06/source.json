@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.002-06",
+  "fil_rouge": "",
+  "title": "Didier demande avant l'inconnu",
+  "lesson_id": "SEC.MAI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Didier, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Didier aide papa dans la cuisine. Papa coupe le pain. Didier pose les serviettes. Sur la table, il y a un petit pot. Didier ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Didier va vers papa. Papa, c'est l'adulte. Je ne connais pas. Je demande. Papa prend le pot. Merci d'avoir demandé. L'inconnu, on le montre à un adulte. Didier pose les mains sur les serviettes. Plus tard, dans le jardin, Didier voit une baie brillante. Il ne la connaît pas. C'est inconnu. Il va vers papa. Il demande. Papa le rejoint. On demande avant. Didier a les pieds au sol, près de l'adulte.",
+      "script": "narrateur|Didier aide papa dans la cuisine. Papa coupe le pain. Didier pose les serviettes. Sur la table, il y a un petit pot. Didier ne le connaît pas. C'est inconnu. Ses mains restent près de lui. Didier va vers papa. Papa, c'est l'adulte.\nenfant-m|Je ne connais pas. Je demande. Papa prend le pot.\npapa|Merci d'avoir demandé. L'inconnu, on le montre à un adulte.\nnarrateur|Didier pose les mains sur les serviettes. Plus tard, dans le jardin, Didier voit une baie brillante. Il ne la connaît pas. C'est inconnu. Il va vers papa. Il demande. Papa le rejoint.\npapa|On demande avant.\nnarrateur|Didier a les pieds au sol, près de l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Didier voit quelque chose d'inconnu. Que fait-il ?",
+      "script": "narrateur|Didier voit quelque chose d'inconnu. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Didier a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "script": "narrateur|Didier a demandé. L'inconnu, on le montre à un adulte. Papa a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Didier pose une serviette à sa place. Papa sourit.",
+      "script": "narrateur|Didier pose une serviette à sa place. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

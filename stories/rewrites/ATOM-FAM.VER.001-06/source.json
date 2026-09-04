@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-06",
+  "fil_rouge": "",
+  "title": "Diane raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Diane, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Diane est dans le salon, près de papa. Papa plie du linge. Diane veut aider. Elle attrape le panier. Le panier glisse. Les chaussettes tombent. Diane a le ventre serré. Elle va vers papa. Papa, le panier est tombé. J'ai fait tomber les chaussettes. Papa s'approche. Merci de raconter. On ramasse ensemble. Diane prend une chaussette. Papa prend l'autre. Plus tard, dans la cuisine, Diane veut aider maman. Un verre d'eau penche. L'eau glisse. Diane va vers maman. Maman, l'eau est tombée. Merci de raconter. On essuie ensemble. Papa entre. Papa, j'ai raconté. L'eau est tombée. Papa écoute. On raconte à papa ou maman. C'est comme ça. Diane se sent plus légère.",
+      "script": "narrateur|Diane est dans le salon, près de papa. Papa plie du linge. Diane veut aider. Elle attrape le panier. Le panier glisse. Les chaussettes tombent. Diane a le ventre serré. Elle va vers papa.\nenfant-f|Papa, le panier est tombé. J'ai fait tomber les chaussettes. Papa s'approche.\npapa|Merci de raconter. On ramasse ensemble.\nnarrateur|Diane prend une chaussette. Papa prend l'autre. Plus tard, dans la cuisine, Diane veut aider maman. Un verre d'eau penche. L'eau glisse. Diane va vers maman.\nenfant-f|Maman, l'eau est tombée.\nmaman|Merci de raconter. On essuie ensemble. Papa entre.\nenfant-f|Papa, j'ai raconté. L'eau est tombée. Papa écoute. On raconte à papa ou maman. C'est comme ça.\nnarrateur|Diane se sent plus légère.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Les chaussettes sont tombées. Que fait Diane ?",
+      "script": "narrateur|Les chaussettes sont tombées. Que fait Diane ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Diane a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "script": "narrateur|Diane a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le salon est rangé. La table est sèche. Diane se lave les mains.",
+      "script": "narrateur|Le salon est rangé. La table est sèche. Diane se lave les mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.001-05",
+  "fil_rouge": "",
+  "title": "Nine ne rit pas du cartable",
+  "lesson_id": "REL.MOQ.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nine, Blaise, maman",
+  "setting": "école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Nine est à l'école. Blaise fait tomber son cartable. Un camarade commence à rire. Nine ne rit pas. Il ne faut pas rire. Nine ne répète pas. Il ne faut pas répéter. Ce n'est pas gentil. Elle ramasse le cartable. Elle le tend. Le soir, maman vient. Nine raconte. Tu as bien fait. Pas rire. Pas répéter. Ce n'est pas gentil.",
+      "script": "narrateur|Nine est à l'école. Blaise fait tomber son cartable. Un camarade commence à rire. Nine ne rit pas. Il ne faut pas rire. Nine ne répète pas. Il ne faut pas répéter.\nenfant-f|Ce n'est pas gentil. Elle ramasse le cartable. Elle le tend.\nnarrateur|Le soir, maman vient. Nine raconte.\nmaman|Tu as bien fait. Pas rire. Pas répéter.\nnarrateur|Ce n'est pas gentil.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade rit. Que fait Nine ?",
+      "script": "narrateur|Un camarade rit. Que fait Nine ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nine n'a pas ri. Elle n'a pas répété. Elle Ce n'est pas gentil.",
+      "script": "narrateur|Nine n'a pas ri. Elle n'a pas répété. Elle\nenfant-f|Ce n'est pas gentil.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman prend la main de Nine. Ils marchent.",
+      "script": "narrateur|Maman prend la main de Nine. Ils marchent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

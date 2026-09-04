@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.001-06",
+  "fil_rouge": "",
+  "title": "Eva est contente du galet",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Eva, papa, maman",
+  "setting": "bord de rivière",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Eva marche au bord de l'eau. Maman tient sa main. Papa ramasse du bois. Eva trouve un galet lisse. Il est gris et chaud. Eva sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Je suis contente. C'est de la joie. Eva tend le galet. On peut partager. Papa touche le galet. Maman touche le galet. Ils sourient ensemble. Eva dit encore : je suis contente. La joie est là, près de l'eau. Le galet reste dans sa poche.",
+      "script": "narrateur|Eva marche au bord de l'eau. Maman tient sa main. Papa ramasse du bois. Eva trouve un galet lisse. Il est gris et chaud. Eva sent ses joues chaudes. Son ventre est léger. Un sourire arrive.\nenfant-f|Je suis contente.\npapa|C'est de la joie.\nnarrateur|Eva tend le galet.\nnarrateur|On peut partager. Papa touche le galet. Maman touche le galet. Ils sourient ensemble.\nnarrateur|Eva dit encore : je suis contente. La joie est là, près de l'eau. Le galet reste dans sa poche.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Eva sourit. Que dit-elle ?",
+      "script": "narrateur|Eva sourit. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Eva a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "script": "narrateur|Eva a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Eva essuie ses mains. L'eau chante. Papa lui prend la main.",
+      "script": "narrateur|Eva essuie ses mains. L'eau chante. Papa lui prend la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

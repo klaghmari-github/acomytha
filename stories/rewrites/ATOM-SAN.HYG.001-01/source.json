@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.001-01",
+  "fil_rouge": "",
+  "title": "Les mains propres de Sami",
+  "lesson_id": "SAN.HYG.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Sami, maman",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sami sort des toilettes. Maman est dans le couloir. On lave les mains. Après les toilettes, Sami va ouvrir l'eau. Il ouvre l'eau. Il prend le savon. Il frotte ses mains. Il rince. Il essuie. Les mains sont propres. C'est l'heure de manger. Avant de manger, Sami va au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte, il rince, il essuie. Savon et eau. Sami sourit. Il va à table.",
+      "script": "narrateur|Sami sort des toilettes. Maman est dans le couloir.\nmaman|On lave les mains. Après les toilettes, Sami va ouvrir l'eau. Il ouvre l'eau.\nnarrateur|Il prend le savon. Il frotte ses mains. Il rince. Il essuie. Les mains sont propres. C'est l'heure de manger. Avant de manger, Sami va au lavabo. Il ouvre l'eau. Il prend le savon. Il frotte, il rince, il essuie.\nmaman|Savon et eau.\nnarrateur|Sami sourit. Il va à table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sami se lave les mains. Avec quoi ?",
+      "script": "narrateur|Sami se lave les mains. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Après les toilettes, Sami a lavé. Avant de manger, Sami a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "script": "narrateur|Après les toilettes, Sami a lavé. Avant de manger, Sami a lavé. Ouvrir l'eau, savon, rincer, essuyer.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sami s'assoit près de maman. Ses mains sont propres. Il dit merci.",
+      "script": "narrateur|Sami s'assoit près de maman. Ses mains sont propres. Il dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

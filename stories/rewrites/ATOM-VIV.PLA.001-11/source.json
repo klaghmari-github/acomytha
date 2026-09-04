@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-11",
+  "fil_rouge": "",
+  "title": "Maxime arrose la tomate",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maxime, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maxime est au jardin avec papa. Une petite tomate a soif. La plante a besoin d'eau. Elle a besoin de lumière. Maxime prend l'arrosoir. Papa, l'adulte, tient aussi l'anse. Ils versent un peu d'eau. La terre devient sombre. La lumière du soleil arrive. On arrose avec un adulte.",
+      "script": "narrateur|Maxime est au jardin avec papa. Une petite tomate a soif.\npapa|La plante a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Maxime prend l'arrosoir. Papa, l'adulte, tient aussi l'anse. Ils versent un peu d'eau. La terre devient sombre. La lumière du soleil arrive.\npapa|On arrose avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La tomate a soif. Que fait Maxime avec papa ?",
+      "script": "narrateur|La tomate a soif. Que fait Maxime avec papa ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maxime a versé l'eau. La lumière est là. Papa, l'adulte, était avec lui.",
+      "script": "narrateur|Maxime a versé l'eau. La lumière est là. Papa, l'adulte, était avec lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maxime range l'arrosoir. La tomate sent le soleil.",
+      "script": "narrateur|Maxime range l'arrosoir. La tomate sent le soleil.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

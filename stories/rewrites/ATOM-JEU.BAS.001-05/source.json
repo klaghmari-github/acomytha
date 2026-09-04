@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAS.001-05",
+  "fil_rouge": "",
+  "title": "Barbara vise le panier dans la cour",
+  "lesson_id": "JEU.BAS.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Barbara, papa, maman",
+  "setting": "cour de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Barbara et papa sont dans la cour. Un petit panier est accroché bas. Papa donne le ballon. On va passer le ballon. Ensuite, chacun a un lancer. Barbara passe le ballon. Papa le rend. C'est le lancer de Barbara. Elle lance vers le panier. Le ballon rentre. Papa a son lancer. Chacun un lancer. Ils se passent encore le ballon. Plus tard, maman arrive. Maman a un lancer aussi. Chacun un lancer. Barbara passe à maman. Maman vise le panier. Ils rangent le ballon.",
+      "script": "narrateur|Barbara et papa sont dans la cour. Un petit panier est accroché bas. Papa donne le ballon.\npapa|On va passer le ballon. Ensuite, chacun a un lancer.\nnarrateur|Barbara passe le ballon. Papa le rend. C'est le lancer de Barbara. Elle lance vers le panier. Le ballon rentre. Papa a son lancer.\nenfant-f|Chacun un lancer.\nnarrateur|Ils se passent encore le ballon. Plus tard, maman arrive. Maman a un lancer aussi. Chacun un lancer. Barbara passe à maman. Maman vise le panier. Ils rangent le ballon.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Barbara joue au basket. Que fait-elle ?",
+      "script": "narrateur|Barbara joue au basket. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Barbara a passé le ballon. Elle a visé le panier. Chacun a eu un lancer. Papa et maman ont joué.",
+      "script": "narrateur|Barbara a passé le ballon. Elle a visé le panier. Chacun a eu un lancer. Papa et maman ont joué.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Barbara essuie ses mains.",
+      "script": "narrateur|Papa range le ballon. Barbara essuie ses mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

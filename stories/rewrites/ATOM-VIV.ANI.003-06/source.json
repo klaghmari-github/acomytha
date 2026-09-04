@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-06",
+  "fil_rouge": "",
+  "title": "Flore donne l'eau au chat",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Flore, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Flore est dans la cuisine. Le chat miaule. On prend soin, avec un adulte. On est doux. Maman prend le bol. Flore reste près de maman. Elles remplissent l'eau avec l'adulte. L'eau est fraîche. Flore pose le bol. Tout doux. Le chat vient. Flore est douce. Elle caresse le dos. Doux, tout doux. Avec un adulte, et doux. Flore hoche la tête. Le chat lape. Flore sourit. Maman sourit aussi.",
+      "script": "narrateur|Flore est dans la cuisine. Le chat miaule.\nmaman|On prend soin, avec un adulte. On est doux. Maman prend le bol.\nnarrateur|Flore reste près de maman. Elles remplissent l'eau avec l'adulte. L'eau est fraîche. Flore pose le bol. Tout doux. Le chat vient. Flore est douce. Elle caresse le dos. Doux, tout doux.\nmaman|Avec un adulte, et doux.\nnarrateur|Flore hoche la tête. Le chat lape. Flore sourit. Maman sourit aussi.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Flore donne l'eau au chat. Comment fait-elle ?",
+      "script": "narrateur|Flore donne l'eau au chat. Comment fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Flore a rempli l'eau avec un adulte. Elle a été douce. Maman était là.",
+      "script": "narrateur|Flore a rempli l'eau avec un adulte. Elle a été douce. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Flore s'assoit près de maman. Le chat ronronne.",
+      "script": "narrateur|Flore s'assoit près de maman. Le chat ronronne.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

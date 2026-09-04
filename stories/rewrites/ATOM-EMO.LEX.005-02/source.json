@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.005-02",
+  "fil_rouge": "",
+  "title": "Être en colère",
+  "lesson_id": "EMO.LEX.005",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Zoé, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé est au parc avec papa. Elle sculpte un château dans le bac à sable. Un ballon roule tout près. Le château s'affaisse d'un coup. Zoé sent son visage brûler. Ses mains deviennent chaudes et dures. Je suis en colère. Elle ouvre les doigts. Elle garde les mains loin de l'autre enfant. Zoé peut s'éloigner. Elle s'éloigne du bac à sable. Elle va sous le tilleul. Elle souffle quatre fois, lentement. Puis elle marche vers papa. Papa est l'adulte assis au banc. Papa, je suis en colère. Le château est tombé. Papa écoute. Zoé reste près de lui. Plus tard, elles refont un petit tas. La colère a un nom. Les mains restent loin. On s'éloigne. On va vers un adulte.",
+      "script": "narrateur|Zoé est au parc avec papa. Elle sculpte un château dans le bac à sable. Un ballon roule tout près. Le château s'affaisse d'un coup. Zoé sent son visage brûler. Ses mains deviennent chaudes et dures.\nenfant-f|Je suis en colère. Elle ouvre les doigts. Elle garde les mains loin de l'autre enfant.\nnarrateur|Zoé peut s'éloigner. Elle s'éloigne du bac à sable. Elle va sous le tilleul. Elle souffle quatre fois, lentement. Puis elle marche vers papa. Papa est l'adulte assis au banc.\nenfant-f|Papa, je suis en colère.\nnarrateur|Le château est tombé. Papa écoute. Zoé reste près de lui. Plus tard, elles refont un petit tas. La colère a un nom. Les mains restent loin. On s'éloigne. On va vers un adulte.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le château de Zoé s'affaisse. Que fait-elle de sa colère ?",
+      "script": "narrateur|Le château de Zoé s'affaisse. Que fait-elle de sa colère ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Zoé a nommé sa colère au parc. Mains loin. Elle peut s'éloigner. Elle rejoint papa, l'adulte.",
+      "script": "narrateur|Zoé a nommé sa colère au parc. Mains loin. Elle peut s'éloigner. Elle rejoint papa, l'adulte.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Zoé pose une coquille sur le petit tas. Papa reste au banc.",
+      "script": "narrateur|Zoé pose une coquille sur le petit tas. Papa reste au banc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

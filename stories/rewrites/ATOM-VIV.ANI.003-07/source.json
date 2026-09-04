@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-07",
+  "fil_rouge": "",
+  "title": "Géraldine prend soin du lapin avec papa",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Géraldine, papa",
+  "setting": "jardin, clapier",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Géraldine va au jardin avec papa. Le lapin a soif. Papa, c'est l'adulte. Papa prend le bol. Géraldine tient le bol avec lui. Ils remplissent l'eau, avec un adulte. L'eau cliquette. Géraldine pose le bol. Elle est douce. Sa main va tout doucement. Le lapin s'approche. Je suis douce. Papa verse aussi un peu de foin. Avec un adulte. Géraldine pose le foin. Elle reste douce. Le lapin croque. On prend soin avec un adulte. On est doux. Géraldine écoute le croquement. Elle sourit.",
+      "script": "narrateur|Géraldine va au jardin avec papa. Le lapin a soif. Papa, c'est l'adulte. Papa prend le bol. Géraldine tient le bol avec lui. Ils remplissent l'eau, avec un adulte. L'eau cliquette. Géraldine pose le bol. Elle est douce. Sa main va tout doucement. Le lapin s'approche.\nenfant-f|Je suis douce. Papa verse aussi un peu de foin. Avec un adulte.\nnarrateur|Géraldine pose le foin. Elle reste douce. Le lapin croque.\npapa|On prend soin avec un adulte. On est doux.\nnarrateur|Géraldine écoute le croquement. Elle sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Géraldine donne de l'eau au lapin. Comment fait-elle ?",
+      "script": "narrateur|Géraldine donne de l'eau au lapin. Comment fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Géraldine a rempli l'eau avec un adulte. Elle a été douce. Papa était là.",
+      "script": "narrateur|Géraldine a rempli l'eau avec un adulte. Elle a été douce. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le lapin boit. Géraldine recule doucement.",
+      "script": "narrateur|Le lapin boit. Géraldine recule doucement.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

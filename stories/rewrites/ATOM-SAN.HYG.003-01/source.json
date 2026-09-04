@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.003-01",
+  "fil_rouge": "",
+  "title": "Le mouchoir de Hugo",
+  "lesson_id": "SAN.HYG.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hugo, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo est dans le salon. Son nez chatouille. Maman est près du canapé. Maman tend un mouchoir. Hugo prend un mouchoir. Il se mouche. Atchoum, tout doux. Le nez est plus libre. Hugo va jeter le mouchoir. Il le met dans la poubelle. Mouchoir, puis poubelle. Hugo va au lavabo. Il se lave les mains. Il revient. Maman sourit. Hugo respire mieux.",
+      "script": "narrateur|Hugo est dans le salon. Son nez chatouille. Maman est près du canapé. Maman tend un mouchoir. Hugo prend un mouchoir. Il se mouche. Atchoum, tout doux. Le nez est plus libre. Hugo va jeter le mouchoir. Il le met dans la poubelle.\nmaman|Mouchoir, puis poubelle.\nnarrateur|Hugo va au lavabo. Il se lave les mains. Il revient. Maman sourit. Hugo respire mieux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hugo se mouche. Que prend-il ?",
+      "script": "narrateur|Hugo se mouche. Que prend-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "script": "narrateur|Hugo a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hugo s'assoit près de maman. Son nez est calme. Il dit merci.",
+      "script": "narrateur|Hugo s'assoit près de maman. Son nez est calme. Il dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

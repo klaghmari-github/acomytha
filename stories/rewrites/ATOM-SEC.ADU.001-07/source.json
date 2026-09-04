@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-07",
+  "fil_rouge": "",
+  "title": "Florence va vers maman à l'école",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Florence, maman, papa, la maîtresse",
+  "setting": "école, sortie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Florence est à l'école. C'est la sortie. La maîtresse est près de la porte. Maman est là. Papa arrive aussi. Florence cherche. Ses pieds restent près de la maîtresse. Ses mains tiennent son manteau. Florence va vers maman. Elle va vers papa. Elle va vers la maîtresse. Me voici. Tu vas vers papa, maman, ou la maîtresse. Florence prend la main de maman. Elle est calme. Le couloir sent le savon.",
+      "script": "narrateur|Florence est à l'école. C'est la sortie. La maîtresse est près de la porte. Maman est là. Papa arrive aussi. Florence cherche. Ses pieds restent près de la maîtresse. Ses mains tiennent son manteau. Florence va vers maman. Elle va vers papa. Elle va vers la maîtresse.\nmaman|Me voici. Tu vas vers papa, maman, ou la maîtresse.\nnarrateur|Florence prend la main de maman. Elle est calme. Le couloir sent le savon.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Florence cherche quelqu'un. Vers qui va-t-elle ?",
+      "script": "narrateur|Florence cherche quelqu'un. Vers qui va-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Florence a cherché maman. Papa et la maîtresse sont aussi des adultes connus. Ses pieds étaient près. Ses mains tenaient le manteau.",
+      "script": "narrateur|Florence a cherché maman. Papa et la maîtresse sont aussi des adultes connus. Ses pieds étaient près. Ses mains tenaient le manteau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Florence tient la main de maman. Elles marchent vers la porte.",
+      "script": "narrateur|Florence tient la main de maman. Elles marchent vers la porte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

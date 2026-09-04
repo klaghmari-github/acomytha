@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.009-02",
+  "fil_rouge": "",
+  "title": "Iris est jalouse du puzzle",
+  "lesson_id": "EMO.LEX.009",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Iris, Tom, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Iris est dans le salon avec maman. Tom tient le grand puzzle. Iris le regarde. Son ventre se serre. Je suis jalouse. Jaloux, c'est cette envie. Maman écoute. Iris va près de Tom. Je voudrais demander un tour. Encore deux pièces. Iris attend. Les mains restent sur ses genoux. Puis Tom passe une pièce. Iris a son tour. Tu as demandé un tour. Tu as attendu.",
+      "script": "narrateur|Iris est dans le salon avec maman. Tom tient le grand puzzle. Iris le regarde. Son ventre se serre.\nnarrateur|Je suis jalouse. Jaloux, c'est cette envie. Maman écoute.\nnarrateur|Iris va près de Tom.\nnarrateur|Je voudrais demander un tour.\ncopain|Encore deux pièces.\nnarrateur|Iris attend. Les mains restent sur ses genoux. Puis Tom passe une pièce. Iris a son tour.\nmaman|Tu as demandé un tour. Tu as attendu.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iris veut le puzzle. Que fait-elle ?",
+      "script": "narrateur|Iris veut le puzzle. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Iris Je suis jalouse. Elle a demandé un tour.",
+      "script": "narrateur|Iris\nenfant-f|Je suis jalouse. Elle a demandé un tour.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range la boîte. Iris pose une dernière pièce.",
+      "script": "narrateur|Maman range la boîte. Iris pose une dernière pièce.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

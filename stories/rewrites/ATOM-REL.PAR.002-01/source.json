@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.002-01",
+  "fil_rouge": "",
+  "title": "Léa attend la balançoire",
+  "lesson_id": "REL.PAR.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Léa, Maya, maman",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léa est au parc avec maman. Les oiseaux chantent. Léa aime la balançoire. Maya est déjà dessus. La balançoire va et vient. Léa a envie. Elle s'approche. On peut attendre. Attendre, c'est rester près. Léa pose les pieds au sol. Elle compte. Un. Deux. Trois. Maya se balance encore. Léa attend. Maman tient sa main. Le vent est doux. Maya descend. Puis mon tour. Puis mon tour. Léa s'assoit. Elle se balance. Ses cheveux bougent. Maya attend maintenant. Puis c'est encore le tour. On attend. Puis mon tour arrive. Léa sourit. Le bois de la balançoire est lisse. Une feuille tombe. Maman reste tout près.",
+      "script": "narrateur|Léa est au parc avec maman. Les oiseaux chantent. Léa aime la balançoire. Maya est déjà dessus. La balançoire va et vient. Léa a envie. Elle s'approche.\nmaman|On peut attendre. Attendre, c'est rester près.\nnarrateur|Léa pose les pieds au sol. Elle compte. Un. Deux. Trois. Maya se balance encore. Léa attend. Maman tient sa main. Le vent est doux. Maya descend.\nmaman|Puis mon tour.\nenfant-f|Puis mon tour.\nnarrateur|Léa s'assoit. Elle se balance. Ses cheveux bougent. Maya attend maintenant. Puis c'est encore le tour.\nmaman|On attend.\nnarrateur|Puis mon tour arrive. Léa sourit. Le bois de la balançoire est lisse. Une feuille tombe. Maman reste tout près.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maya se balance. Que fait Léa ?",
+      "script": "narrateur|Maya se balance. Que fait Léa ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léa a su attendre. Puis mon tour est venu. Elle s'est balancée. Maman est là.",
+      "script": "narrateur|Léa a su attendre. Puis mon tour est venu. Elle s'est balancée. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Léa descend. Elle prend la main de maman.",
+      "script": "narrateur|Léa descend. Elle prend la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

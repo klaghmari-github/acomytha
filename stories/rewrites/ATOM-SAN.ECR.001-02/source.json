@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-02",
+  "fil_rouge": "",
+  "title": "Sami éteint, puis choisit un jeu",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Sami, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sami est dans le salon. Il regarde un dessin sur la tablette. Les couleurs dansent. Papa s'assoit près de lui. Fini. L'adulte dit fini. Sami écoute. Il va éteindre. Sami éteint l'écran. L'écran devient noir. Il pose la tablette. On prend un autre jeu. Sami va choisir un jeu. Il choisit les cubes en bois. Ils construisent une tour. La tour est haute. L'écran est éteint. Un autre jeu, c'est bien. Plus tard, maman allume un dessin à la télé. Après un moment, Fini. L'adulte dit fini. Sami se souvient. Il éteint. Il pose la télécommande. Un autre jeu. Sami prend le ballon souple. Ils se le passent. Tu as repris le geste. Même leçon, autre écran. Quand l'adulte dit fini, on éteint. Puis on prend un autre jeu. Sami rit. Le salon est calme.",
+      "script": "narrateur|Sami est dans le salon. Il regarde un dessin sur la tablette. Les couleurs dansent. Papa s'assoit près de lui.\npapa|Fini. L'adulte dit fini.\nnarrateur|Sami écoute. Il va éteindre. Sami éteint l'écran. L'écran devient noir. Il pose la tablette.\npapa|On prend un autre jeu.\nnarrateur|Sami va choisir un jeu. Il choisit les cubes en bois. Ils construisent une tour. La tour est haute.\nenfant-m|L'écran est éteint.\nnarrateur|Un autre jeu, c'est bien. Plus tard, maman allume un dessin à la télé. Après un moment,\nmaman|Fini. L'adulte dit fini.\nnarrateur|Sami se souvient. Il éteint. Il pose la télécommande.\nmaman|Un autre jeu.\nnarrateur|Sami prend le ballon souple. Ils se le passent.\nmaman|Tu as repris le geste. Même leçon, autre écran. Quand l'adulte dit fini, on éteint.\nnarrateur|Puis on prend un autre jeu. Sami rit. Le salon est calme.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa dit fini. Que fait Sami ?",
+      "script": "narrateur|Papa dit fini. Que fait Sami ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa a dit fini. Sami a éteint. Il a pris un autre jeu. Plus tard, avec maman, pareil.",
+      "script": "narrateur|Papa a dit fini. Sami a éteint. Il a pris un autre jeu. Plus tard, avec maman, pareil.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sami range le ballon. Papa et maman sont là.",
+      "script": "narrateur|Sami range le ballon. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

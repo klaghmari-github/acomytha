@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-04",
+  "fil_rouge": "",
+  "title": "Kenza dit les trois noms au jardin",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Kenza, maman",
+  "setting": "jardin de la voisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenza va au jardin de la voisine avec maman. Un chat dort au soleil. Une chatte marche près du bac. Un chaton joue avec une feuille. Chat, chatte, chaton. Ce sont trois noms de la famille. Kenza répète : chat, chatte, chaton. Le chaton miaule tout petit. Plus loin, un chien aboie doucement. Une chienne le suit. Un chiot dort dans un panier. Chien, chienne, chiot. Trois noms de la famille. Kenza touche l'herbe. Elle est fraîche. Elle dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot. Maman sourit. Parce qu'on nomme, on comprend la famille. Kenza répète encore les trois noms de la famille.",
+      "script": "narrateur|Kenza va au jardin de la voisine avec maman. Un chat dort au soleil. Une chatte marche près du bac. Un chaton joue avec une feuille.\nmaman|Chat, chatte, chaton. Ce sont trois noms de la famille.\nnarrateur|Kenza répète : chat, chatte, chaton. Le chaton miaule tout petit. Plus loin, un chien aboie doucement. Une chienne le suit. Un chiot dort dans un panier.\nmaman|Chien, chienne, chiot. Trois noms de la famille.\nnarrateur|Kenza touche l'herbe. Elle est fraîche. Elle dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot. Maman sourit. Parce qu'on nomme, on comprend la famille. Kenza répète encore les trois noms de la famille.",
+      "sons": "enfants_parc,chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chat, la chatte, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le chat, la chatte, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Kenza a dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "script": "narrateur|Kenza a dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Kenza dit au revoir au chaton. Maman lui donne la main.",
+      "script": "narrateur|Kenza dit au revoir au chaton. Maman lui donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

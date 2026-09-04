@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MET.001-08",
+  "fil_rouge": "Nino veut glisser une lettre dans la boîte rouge. Le matin, il pleut : manteau et bottes. Le soir, le ciel s'ouvre : encore le manteau, l'air reste frais. La lettre part. Le jardin sent la terre.",
+  "title": "La lettre sous la pluie",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nino, maman, papa",
+  "setting": "maison, rue sous la pluie, jardin à l'éclaircie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le lait du matin fume encore dans le bol. Une peau fine danse à la surface. Sur la table, une enveloppe attend, un peu trop grande. C'est ma lettre. Pour la boîte rouge. Il pleut fort. On y va quand même. Les gouttes tapent le rebord de la fenêtre. Le jardin est tout gris. J'ai froid. Tu prends le manteau. Il fait froid. Le manteau gris sent la laine. Nino enfile les manches. Un bouton résiste. Celui du milieu. Nino pousse le bouton. Il passe, enfin. Il est entré. Il pleut. Tu mets les bottes. Les bottes noires sont près du seau. Nino y glisse les pieds. Tu as tes bottes ? Oui, maman. Papa tend l'enveloppe. Un coin est déjà un peu mou. Oh. On la cache sous le manteau. Nino serre la lettre contre lui. En ce moment, ils ouvrent la porte. La pluie sent le zinc et la terre. Je reste ici. Je prépare le soir. On revient vite.",
+      "script": "narrateur|Le lait du matin fume encore dans le bol.\nnarrateur|Une peau fine danse à la surface.\nnarrateur|Sur la table, une enveloppe attend, un peu trop grande.\nenfant-m|C'est ma lettre.\nmaman|Pour la boîte rouge.\npapa|Il pleut fort.\npapa|On y va quand même.\nnarrateur|Les gouttes tapent le rebord de la fenêtre.\nnarrateur|Le jardin est tout gris.\nenfant-m|J'ai froid.\nmaman|Tu prends le manteau.\nmaman|Il fait froid.\nnarrateur|Le manteau gris sent la laine.\nnarrateur|Nino enfile les manches.\nnarrateur|Un bouton résiste.\npapa|Celui du milieu.\nnarrateur|Nino pousse le bouton.\nnarrateur|Il passe, enfin.\nenfant-m|Il est entré.\npapa|Il pleut.\npapa|Tu mets les bottes.\nnarrateur|Les bottes noires sont près du seau.\nnarrateur|Nino y glisse les pieds.\nmaman|Tu as tes bottes ?\nenfant-m|Oui, maman.\nnarrateur|Papa tend l'enveloppe.\nnarrateur|Un coin est déjà un peu mou.\nenfant-m|Oh.\npapa|On la cache sous le manteau.\nnarrateur|Nino serre la lettre contre lui.\nnarrateur|En ce moment, ils ouvrent la porte.\nnarrateur|La pluie sent le zinc et la terre.\nmaman|Je reste ici.\nmaman|Je prépare le soir.\npapa|On revient vite.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le lait du matin fume encore dans le bol. Une peau fine danse à la surface. Sur la table, une enveloppe attend, un peu trop grande. C'est ma lettre. Pour la boîte rouge. Il pleut fort. On y va quand même. Les gouttes tapent le rebord de la fenêtre. Le jardin est tout gris. J'ai froid. Tu prends le manteau. Il fait froid. Le manteau gris sent la laine. Nino enfile les manches. Un bouton résiste. Celui du milieu. Nino pousse le bouton. Il passe, enfin. Il est entré. Il pleut. Tu mets les bottes. Les bottes noires sont près du seau. Nino y glisse les pieds. Tu as tes bottes ? Oui, maman. Papa tend l'enveloppe. Un coin est déjà un peu mou. Oh. On la cache sous le manteau. Nino serre la lettre contre lui. En ce moment, ils ouvrent la porte. La pluie sent le zinc et la terre. Je reste ici. Je prépare le soir. On revient vite."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid, puis il pleut. Que prend Nino ?",
+      "script": "narrateur|Il fait froid, puis il pleut.\nnarrateur|Que prend Nino ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Il fait froid, puis il pleut. Que prend Nino ?",
+      "expected_answer": "manteau",
+      "accepted_examples": "manteau | le manteau | bottes | les bottes",
+      "retry_prompt": "Froid, manteau. Pluie, bottes. Que prend-il ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La boîte rouge brille sous l'auvent. Une goutte veut tomber sur l'enveloppe. Le manteau au-dessus. Nino lève le pan du manteau. La lettre reste sèche. Je la glisse. L'enveloppe rentre, chh. La fente referme sa bouche. Elle est partie. Merci, Nino. Même sous la pluie. Manteau et bottes. Ils rentrent. Les bottes font floc dans la cour. Maman ouvre avant qu'ils toquent. Vous êtes trempés ? Le manteau a travaillé. Bien. Les bottes gouttent près du seau.",
+      "script": "narrateur|La boîte rouge brille sous l'auvent.\nnarrateur|Une goutte veut tomber sur l'enveloppe.\npapa|Le manteau au-dessus.\nnarrateur|Nino lève le pan du manteau.\nnarrateur|La lettre reste sèche.\nenfant-m|Je la glisse.\nnarrateur|L'enveloppe rentre, chh.\nnarrateur|La fente referme sa bouche.\npapa|Elle est partie.\npapa|Merci, Nino.\nenfant-m|Même sous la pluie.\npapa|Manteau et bottes.\nnarrateur|Ils rentrent.\nnarrateur|Les bottes font floc dans la cour.\nnarrateur|Maman ouvre avant qu'ils toquent.\nmaman|Vous êtes trempés ?\nenfant-m|Le manteau a travaillé.\nmaman|Bien.\nnarrateur|Les bottes gouttent près du seau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La boîte rouge brille sous l'auvent. Une goutte veut tomber sur l'enveloppe. Le manteau au-dessus. Nino lève le pan du manteau. La lettre reste sèche. Je la glisse. L'enveloppe rentre, chh. La fente referme sa bouche. Elle est partie. Merci, Nino. Même sous la pluie. Manteau et bottes. Ils rentrent. Les bottes font floc dans la cour. Maman ouvre avant qu'ils toquent. Vous êtes trempés ? Le manteau a travaillé. Bien. Les bottes gouttent près du seau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Plus tard, le ciel se déchire. Un rose pâle se pose sur le jardin. L'éclaircie ! On sort encore. Voir si les salades tiennent. L'air reste frais. On reprend le manteau ? Oui. Nino reprend le manteau gris. Il est encore un peu humide. Les bottes aussi. La terre est molle. Le jardin sent la terre ouverte. Une salade s'est couchée. Je la redresse. Nino la relève, tout doux. Elle va boire. Tu as tes bottes dans la boue. Mes pieds sont au sec. Une dernière goutte tombe du cerisier. Elle tape l'épaule du manteau.",
+      "script": "narrateur|Plus tard, le ciel se déchire.\nnarrateur|Un rose pâle se pose sur le jardin.\nenfant-m|L'éclaircie !\nmaman|On sort encore.\nmaman|Voir si les salades tiennent.\npapa|L'air reste frais.\npapa|On reprend le manteau ?\nenfant-m|Oui.\nnarrateur|Nino reprend le manteau gris.\nnarrateur|Il est encore un peu humide.\nmaman|Les bottes aussi.\nmaman|La terre est molle.\nnarrateur|Le jardin sent la terre ouverte.\nnarrateur|Une salade s'est couchée.\nenfant-m|Je la redresse.\nnarrateur|Nino la relève, tout doux.\nmaman|Elle va boire.\npapa|Tu as tes bottes dans la boue.\nenfant-m|Mes pieds sont au sec.\nnarrateur|Une dernière goutte tombe du cerisier.\nnarrateur|Elle tape l'épaule du manteau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Plus tard, le ciel se déchire. Un rose pâle se pose sur le jardin. L'éclaircie ! On sort encore. Voir si les salades tiennent. L'air reste frais. On reprend le manteau ? Oui. Nino reprend le manteau gris. Il est encore un peu humide. Les bottes aussi. La terre est molle. Le jardin sent la terre ouverte. Une salade s'est couchée. Je la redresse. Nino la relève, tout doux. Elle va boire. Tu as tes bottes dans la boue. Mes pieds sont au sec. Une dernière goutte tombe du cerisier. Elle tape l'épaule du manteau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Ils rentrent quand le rose s'éteint. Le manteau reprend le crochet. Les bottes se touchent près du seau. Deux sorties. Un manteau. Et des bottes, pour la pluie. L'enveloppe n'est plus sur la table. La boîte rouge la garde. Elle dort là-bas. Oui. Le lait du soir n'a plus de peau. Le jardin, derrière la vitre, respire.",
+      "script": "narrateur|Ils rentrent quand le rose s'éteint.\nnarrateur|Le manteau reprend le crochet.\nnarrateur|Les bottes se touchent près du seau.\nenfant-m|Deux sorties.\nmaman|Un manteau.\npapa|Et des bottes, pour la pluie.\nnarrateur|L'enveloppe n'est plus sur la table.\nnarrateur|La boîte rouge la garde.\nenfant-m|Elle dort là-bas.\nmaman|Oui.\nnarrateur|Le lait du soir n'a plus de peau.\nnarrateur|Le jardin, derrière la vitre, respire.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Ils rentrent quand le rose s'éteint. Le manteau reprend le crochet. Les bottes se touchent près du seau. Deux sorties. Un manteau. Et des bottes, pour la pluie. L'enveloppe n'est plus sur la table. La boîte rouge la garde. Elle dort là-bas. Oui. Le lait du soir n'a plus de peau. Le jardin, derrière la vitre, respire."
+    }
+  ]
+}

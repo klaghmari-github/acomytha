@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-04",
+  "fil_rouge": "Nina veut une feuille de basilic pour son pain. Le soleil est trop fort. Les feuilles cuisent. Ils arrosent, puis déplacent le pot à l'ombre du rideau.",
+  "title": "Le basilic trop au soleil",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "cuisine puis rebord de fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le carrelage brûle un peu les pieds. Un rai de soleil coupe la table en deux. Le pain de midi attend, encore tiède. Ça sent la croûte et le beurre. Nina vit ici, avec papa. Tu veux du basilic sur le pain ? Oui. Une feuille qui sent fort. En ce moment, Nina va vers la fenêtre. Le pot est dans le rai, tout blanc. Les feuilles sont molles, un peu jaunes. Elles sont chaudes. Trop de soleil. Il cuit, le pauvre. Nina touche la terre. La terre est chaude et sèche. Il a soif aussi. Oui. On lui donne de l'eau d'abord ? D'abord l'eau. Papa glisse l'arrosoir vers elle. L'anse est tiède, le plastique aussi. Nina tient avec lui. L'eau tombe, puis fume un tout petit peu. La terre fume ! Elle était trop chaude. On va le déplacer après. Où ? À côté, sous le rideau.",
+      "script": "narrateur|Le carrelage brûle un peu les pieds.\nnarrateur|Un rai de soleil coupe la table en deux.\nnarrateur|Le pain de midi attend, encore tiède.\nnarrateur|Ça sent la croûte et le beurre.\nnarrateur|Nina vit ici, avec papa.\npapa|Tu veux du basilic sur le pain ?\nenfant-f|Oui.\nenfant-f|Une feuille qui sent fort.\nnarrateur|En ce moment, Nina va vers la fenêtre.\nnarrateur|Le pot est dans le rai, tout blanc.\nnarrateur|Les feuilles sont molles, un peu jaunes.\nenfant-f|Elles sont chaudes.\npapa|Trop de soleil.\npapa|Il cuit, le pauvre.\nnarrateur|Nina touche la terre.\nnarrateur|La terre est chaude et sèche.\nenfant-f|Il a soif aussi.\npapa|Oui.\npapa|On lui donne de l'eau d'abord ?\nenfant-f|D'abord l'eau.\nnarrateur|Papa glisse l'arrosoir vers elle.\nnarrateur|L'anse est tiède, le plastique aussi.\nnarrateur|Nina tient avec lui.\nnarrateur|L'eau tombe, puis fume un tout petit peu.\nenfant-f|La terre fume !\npapa|Elle était trop chaude.\npapa|On va le déplacer après.\nenfant-f|Où ?\npapa|À côté, sous le rideau.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le carrelage brûle un peu les pieds. Un rai de soleil coupe la table en deux. Le pain de midi attend, encore tiède. Ça sent la croûte et le beurre. Nina vit ici, avec papa. Tu veux du basilic sur le pain ? Oui. Une feuille qui sent fort. En ce moment, Nina va vers la fenêtre. Le pot est dans le rai, tout blanc. Les feuilles sont molles, un peu jaunes. Elles sont chaudes. Trop de soleil. Il cuit, le pauvre. Nina touche la terre. La terre est chaude et sèche. Il a soif aussi. Oui. On lui donne de l'eau d'abord ? D'abord l'eau. Papa glisse l'arrosoir vers elle. L'anse est tiède, le plastique aussi. Nina tient avec lui. L'eau tombe, puis fume un tout petit peu. La terre fume ! Elle était trop chaude. On va le déplacer après. Où ? À côté, sous le rideau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La plante a soif. Que fait Nina avec papa ?",
+      "script": "narrateur|La plante a soif.\nnarrateur|Que fait Nina avec papa ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La plante a soif. Que fait Nina avec papa ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | elle arrose | de l'eau | eau",
+      "retry_prompt": "Ils versent de l'eau. Que fait Nina ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina pose l'arrosoir. Le pot est encore dans le rai blanc. On le prend à deux ? Oui. Nina tient le bord du pot. La terre cuite est chaude sous les doigts. Papa tient le fond. Ils glissent le pot hors du rai. Le rideau fait une ombre mauve. Ici ? Ici. Il voit encore le jour. Mais plus le feu du soleil. Une feuille qui pendait se calme. Elle ne se redresse pas encore. Elle est fatiguée. Oui. Merci, Nina. Tu as bougé le pot. Le pain attend toujours sur la table. La croûte a refroidi, un peu.",
+      "script": "narrateur|Nina pose l'arrosoir.\nnarrateur|Le pot est encore dans le rai blanc.\npapa|On le prend à deux ?\nenfant-f|Oui.\nnarrateur|Nina tient le bord du pot.\nnarrateur|La terre cuite est chaude sous les doigts.\nnarrateur|Papa tient le fond.\nnarrateur|Ils glissent le pot hors du rai.\nnarrateur|Le rideau fait une ombre mauve.\nenfant-f|Ici ?\npapa|Ici.\npapa|Il voit encore le jour.\npapa|Mais plus le feu du soleil.\nnarrateur|Une feuille qui pendait se calme.\nnarrateur|Elle ne se redresse pas encore.\nenfant-f|Elle est fatiguée.\npapa|Oui.\npapa|Merci, Nina.\npapa|Tu as bougé le pot.\nnarrateur|Le pain attend toujours sur la table.\nnarrateur|La croûte a refroidi, un peu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina pose l'arrosoir. Le pot est encore dans le rai blanc. On le prend à deux ? Oui. Nina tient le bord du pot. La terre cuite est chaude sous les doigts. Papa tient le fond. Ils glissent le pot hors du rai. Le rideau fait une ombre mauve. Ici ? Ici. Il voit encore le jour. Mais plus le feu du soleil. Une feuille qui pendait se calme. Elle ne se redresse pas encore. Elle est fatiguée. Oui. Merci, Nina. Tu as bougé le pot. Le pain attend toujours sur la table. La croûte a refroidi, un peu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nina choisit une feuille à l'ombre. Celle-là est encore bien verte. On en prend une petite. Le basilic se repose. Je la froisse ? Tout doux, oui. L'odeur arrive, moins brûlée. Elle sent le vert, enfin. Sur le pain. Nina pose la feuille sur le beurre. Le beurre fond un peu autour. Tu as aidé le basilic. Eau, puis ombre. Il cuit plus, là ? Non. Le rideau le garde. Le rai blanc reste sur la table, vide. Le pot respire dans le mauve. Tu as fini ta tartine ? Presque. Nina reprend une bouchée. Le beurre sent encore le vert.",
+      "script": "narrateur|Nina choisit une feuille à l'ombre.\nnarrateur|Celle-là est encore bien verte.\npapa|On en prend une petite.\npapa|Le basilic se repose.\nenfant-f|Je la froisse ?\npapa|Tout doux, oui.\nnarrateur|L'odeur arrive, moins brûlée.\nnarrateur|Elle sent le vert, enfin.\nenfant-f|Sur le pain.\nnarrateur|Nina pose la feuille sur le beurre.\nnarrateur|Le beurre fond un peu autour.\npapa|Tu as aidé le basilic.\npapa|Eau, puis ombre.\nenfant-f|Il cuit plus, là ?\npapa|Non.\npapa|Le rideau le garde.\nnarrateur|Le rai blanc reste sur la table, vide.\nnarrateur|Le pot respire dans le mauve.\npapa|Tu as fini ta tartine ?\nenfant-f|Presque.\nnarrateur|Nina reprend une bouchée.\nnarrateur|Le beurre sent encore le vert.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina choisit une feuille à l'ombre. Celle-là est encore bien verte. On en prend une petite. Le basilic se repose. Je la froisse ? Tout doux, oui. L'odeur arrive, moins brûlée. Elle sent le vert, enfin. Sur le pain. Nina pose la feuille sur le beurre. Le beurre fond un peu autour. Tu as aidé le basilic. Eau, puis ombre. Il cuit plus, là ? Non. Le rideau le garde. Le rai blanc reste sur la table, vide. Le pot respire dans le mauve. Tu as fini ta tartine ? Presque. Nina reprend une bouchée. Le beurre sent encore le vert."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Nina croque le pain. Le basilic est frais sur le beurre. Il sent bon. Oui. Parce qu'il n'a plus trop chaud. L'ombre du rideau est douce sur le pot.",
+      "script": "narrateur|Nina croque le pain.\nnarrateur|Le basilic est frais sur le beurre.\nenfant-f|Il sent bon.\npapa|Oui.\npapa|Parce qu'il n'a plus trop chaud.\nnarrateur|L'ombre du rideau est douce sur le pot.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Nina croque le pain. Le basilic est frais sur le beurre. Il sent bon. Oui. Parce qu'il n'a plus trop chaud. L'ombre du rideau est douce sur le pot."
+    }
+  ]
+}

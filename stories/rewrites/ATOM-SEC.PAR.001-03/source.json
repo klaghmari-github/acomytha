@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-03",
+  "fil_rouge": "",
+  "title": "Noé reste où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Noé, maman",
+  "setting": "cour d'école puis parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé arrive à la cour d'école avec maman. Maman montre un espace. C'est près des plots bleus. Tu joues ici, dans l'espace montré. Ici, l'adulte voit. Noé prend un plot. Il le pose. Il fait un petit chemin. Maman s'assoit sur le muret. Parce que Noé reste dans l'espace montré, maman le voit. Noé revient près d'elle. Je te vois. L'adulte voit. Plus tard, ils vont au parc. Maman montre un autre espace. C'est près du bac à sable. Tu joues ici. L'espace montré. Ici, l'adulte voit. Noé se souvient. Il reste près du bac. Il verse le sable. Le sable est frais. Il revient vers le banc. Tu as repris la règle. Même leçon, autre lieu. Noé sourit. Il reste dans l'espace montré. L'adulte voit.",
+      "script": "narrateur|Noé arrive à la cour d'école avec maman. Maman montre un espace. C'est près des plots bleus.\nmaman|Tu joues ici, dans l'espace montré. Ici, l'adulte voit.\nnarrateur|Noé prend un plot. Il le pose. Il fait un petit chemin. Maman s'assoit sur le muret. Parce que Noé reste dans l'espace montré, maman le voit. Noé revient près d'elle.\nmaman|Je te vois. L'adulte voit. Plus tard, ils vont au parc. Maman montre un autre espace. C'est près du bac à sable.\nmaman|Tu joues ici. L'espace montré. Ici, l'adulte voit.\nnarrateur|Noé se souvient. Il reste près du bac. Il verse le sable. Le sable est frais. Il revient vers le banc.\nmaman|Tu as repris la règle. Même leçon, autre lieu.\nnarrateur|Noé sourit. Il reste dans l'espace montré. L'adulte voit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé joue. Où reste-t-il ?",
+      "script": "narrateur|Noé joue. Où reste-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé est resté dans l'espace montré. À la cour, puis au parc. L'adulte voyait.",
+      "script": "narrateur|Noé est resté dans l'espace montré. À la cour, puis au parc. L'adulte voyait.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé range le seau. Maman lui tend la gourde.",
+      "script": "narrateur|Noé range le seau. Maman lui tend la gourde.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

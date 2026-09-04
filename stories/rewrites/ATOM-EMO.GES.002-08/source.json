@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-08",
+  "fil_rouge": "",
+  "title": "Ferdinand souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ferdinand, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ferdinand construit un pont avec des cubes. Les cubes cliquent. Le pont tombe. Ferdinand sent son ventre serré. Papa arrive. On souffle. Ferdinand souffle. Un grand souffle. On fait une pause. Ferdinand s'assoit. Il pose les fesses au tapis. Il souffle encore. La pause est calme. Son ventre se desserre. Plus tard, dans la cuisine, une casserole glisse. Ça fait un bruit fort. Ferdinand sent encore son ventre. Même leçon, autre lieu. Il s'assoit près de maman. Il souffle. Il fait une pause. Puis il reprend. Tu as soufflé. Tu as fait une pause. Ferdinand sourit.",
+      "script": "narrateur|Ferdinand construit un pont avec des cubes. Les cubes cliquent. Le pont tombe. Ferdinand sent son ventre serré. Papa arrive.\npapa|On souffle.\nnarrateur|Ferdinand souffle. Un grand souffle.\npapa|On fait une pause.\nnarrateur|Ferdinand s'assoit. Il pose les fesses au tapis. Il souffle encore. La pause est calme. Son ventre se desserre. Plus tard, dans la cuisine, une casserole glisse. Ça fait un bruit fort. Ferdinand sent encore son ventre. Même leçon, autre lieu. Il s'assoit près de maman. Il souffle. Il fait une pause. Puis il reprend.\nmaman|Tu as soufflé. Tu as fait une pause.\nnarrateur|Ferdinand sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le pont tombe. Que fait Ferdinand ?",
+      "script": "narrateur|Le pont tombe. Que fait Ferdinand ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ferdinand a soufflé. Il a fait une pause. Au salon, puis à la cuisine. Papa et maman étaient là.",
+      "script": "narrateur|Ferdinand a soufflé. Il a fait une pause. Au salon, puis à la cuisine. Papa et maman étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ferdinand pose un cube. Le pont est petit.",
+      "script": "narrateur|Ferdinand pose un cube. Le pont est petit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

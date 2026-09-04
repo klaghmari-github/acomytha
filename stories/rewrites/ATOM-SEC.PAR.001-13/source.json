@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-13",
+  "fil_rouge": "",
+  "title": "Didier joue où papa peut voir",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Didier, papa",
+  "setting": "parc, bac à sable puis plots",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Didier arrive au parc avec papa. Papa montre le bac à sable. C'est l'espace montré. Didier s'assoit dans le sable. Le sable est frais. Il remplit un seau. Papa s'assoit sur le banc. L'adulte voit Didier. Didier reste dans l'espace montré. Je te vois. L'adulte voit. Plus tard, papa montre les plots jaunes. Autre lieu, même leçon. C'est encore l'espace montré. Didier saute de plot en plot. Ses pieds tapent le caoutchouc. Il reste là où papa a dit. Papa le voit. Didier range le seau. Il reste près. L'espace montré, c'est ici. L'adulte voit.",
+      "script": "narrateur|Didier arrive au parc avec papa. Papa montre le bac à sable. C'est l'espace montré. Didier s'assoit dans le sable. Le sable est frais. Il remplit un seau. Papa s'assoit sur le banc. L'adulte voit Didier. Didier reste dans l'espace montré.\npapa|Je te vois. L'adulte voit. Plus tard, papa montre les plots jaunes. Autre lieu, même leçon. C'est encore l'espace montré.\nnarrateur|Didier saute de plot en plot. Ses pieds tapent le caoutchouc. Il reste là où papa a dit. Papa le voit. Didier range le seau. Il reste près. L'espace montré, c'est ici. L'adulte voit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Didier joue au parc. Où reste-t-il ?",
+      "script": "narrateur|Didier joue au parc. Où reste-t-il ?",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Didier est resté dans l'espace montré. Au bac, puis aux plots. L'adulte voit.",
+      "script": "narrateur|Didier est resté dans l'espace montré. Au bac, puis aux plots. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Didier prend la main de papa. Ils quittent le parc.",
+      "script": "narrateur|Didier prend la main de papa. Ils quittent le parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-05",
+  "fil_rouge": "Raphaël veut le gâteau de samedi. Vendredi, ils vont au port pour le poisson. L'étal range la glace. Samedi, un œuf roule. Il le rattrape. Le gâteau dore.",
+  "title": "Le poisson et le gâteau",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Raphaël, maman",
+  "setting": "port le vendredi, cuisine le samedi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une écaille d'argent brille entre deux planches. Les cordes des bateaux claquent contre le bois. L'air sent le sel et le citron. Une caisse de glace fume tout bas. Tu as vu l'écaille, Raphaël ? Elle brille. C'est vendredi. Vendredi, on prend le poisson du port. En ce moment, Raphaël touche la glace. Elle pique ses doigts. Je veux le gâteau. Le gâteau de demain. Demain, c'est samedi. Samedi, on le fait. D'abord le poisson. L'étal range déjà les caisses. Un tas de glace glisse vers le bord. Ils s'en vont. On demande le petit. Maman montre un poisson court. Il a l'œil encore clair. Celui-là. Le papier se ferme, tout froid. Vendredi, le port. Samedi, la farine. La semaine a sept jours. Quel jour vient après vendredi ? Samedi. Oui. Raphaël tient le sac contre lui. Le poisson tape, tout mou. Il sent la mer. On rentre. Une mouette crie au-dessus du quai. L'écaille reste coincée entre les planches.",
+      "script": "narrateur|Une écaille d'argent brille entre deux planches.\nnarrateur|Les cordes des bateaux claquent contre le bois.\nnarrateur|L'air sent le sel et le citron.\nnarrateur|Une caisse de glace fume tout bas.\nmaman|Tu as vu l'écaille, Raphaël ?\nenfant-m|Elle brille.\nmaman|C'est vendredi.\nmaman|Vendredi, on prend le poisson du port.\nnarrateur|En ce moment, Raphaël touche la glace.\nnarrateur|Elle pique ses doigts.\nenfant-m|Je veux le gâteau.\nenfant-m|Le gâteau de demain.\nmaman|Demain, c'est samedi.\nmaman|Samedi, on le fait.\nmaman|D'abord le poisson.\nnarrateur|L'étal range déjà les caisses.\nnarrateur|Un tas de glace glisse vers le bord.\nenfant-m|Ils s'en vont.\nmaman|On demande le petit.\nnarrateur|Maman montre un poisson court.\nnarrateur|Il a l'œil encore clair.\nenfant-m|Celui-là.\nnarrateur|Le papier se ferme, tout froid.\nmaman|Vendredi, le port.\nmaman|Samedi, la farine.\nmaman|La semaine a sept jours.\nmaman|Quel jour vient après vendredi ?\nenfant-m|Samedi.\nmaman|Oui.\nnarrateur|Raphaël tient le sac contre lui.\nnarrateur|Le poisson tape, tout mou.\nenfant-m|Il sent la mer.\nmaman|On rentre.\nnarrateur|Une mouette crie au-dessus du quai.\nnarrateur|L'écaille reste coincée entre les planches.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Une écaille d'argent brille entre deux planches. Les cordes des bateaux claquent contre le bois. L'air sent le sel et le citron. Une caisse de glace fume tout bas. Tu as vu l'écaille, Raphaël ? Elle brille. C'est vendredi. Vendredi, on prend le poisson du port. En ce moment, Raphaël touche la glace. Elle pique ses doigts. Je veux le gâteau. Le gâteau de demain. Demain, c'est samedi. Samedi, on le fait. D'abord le poisson. L'étal range déjà les caisses. Un tas de glace glisse vers le bord. Ils s'en vont. On demande le petit. Maman montre un poisson court. Il a l'œil encore clair. Celui-là. Le papier se ferme, tout froid. Vendredi, le port. Samedi, la farine. La semaine a sept jours. Quel jour vient après vendredi ? Samedi. Oui. Raphaël tient le sac contre lui. Le poisson tape, tout mou. Il sent la mer. On rentre. Une mouette crie au-dessus du quai. L'écaille reste coincée entre les planches."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après vendredi, quel jour vient ?",
+      "script": "narrateur|Après vendredi, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après vendredi, quel jour vient ?",
+      "expected_answer": "samedi",
+      "accepted_examples": "samedi | le samedi | c'est samedi",
+      "retry_prompt": "Vendredi, le port. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lendemain, la cuisine sent le citron. Un sac de farine attend sur la table. C'est samedi, Raphaël. Le jour du gâteau. Je casse l'œuf ? Tout doux. L'œuf roule vers le bord. Raphaël tend la main. Il le rattrape contre la farine. Je l'ai. Merci, Raphaël. Tu as rattrapé l'œuf. Ils cassent l'œuf dans le bol. La farine fait un nuage blanc. Il neige. Un peu. La pâte devient jaune, puis lisse. Au four. La porte du four claque, tiède.",
+      "script": "narrateur|Le lendemain, la cuisine sent le citron.\nnarrateur|Un sac de farine attend sur la table.\nmaman|C'est samedi, Raphaël.\nmaman|Le jour du gâteau.\nenfant-m|Je casse l'œuf ?\nmaman|Tout doux.\nnarrateur|L'œuf roule vers le bord.\nnarrateur|Raphaël tend la main.\nnarrateur|Il le rattrape contre la farine.\nenfant-m|Je l'ai.\nmaman|Merci, Raphaël.\nmaman|Tu as rattrapé l'œuf.\nnarrateur|Ils cassent l'œuf dans le bol.\nnarrateur|La farine fait un nuage blanc.\nenfant-m|Il neige.\nmaman|Un peu.\nnarrateur|La pâte devient jaune, puis lisse.\nmaman|Au four.\nnarrateur|La porte du four claque, tiède.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lendemain, la cuisine sent le citron. Un sac de farine attend sur la table. C'est samedi, Raphaël. Le jour du gâteau. Je casse l'œuf ? Tout doux. L'œuf roule vers le bord. Raphaël tend la main. Il le rattrape contre la farine. Je l'ai. Merci, Raphaël. Tu as rattrapé l'œuf. Ils cassent l'œuf dans le bol. La farine fait un nuage blanc. Il neige. Un peu. La pâte devient jaune, puis lisse. Au four. La porte du four claque, tiède."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le gâteau dore derrière la vitre. La cuisine sent le beurre chaud. Vendredi, le poisson. Samedi, le gâteau. Les deux jours. Oui. Raphaël colle le nez à la vitre. Le gâteau gonfle, tout lent. Il est presque prêt. Encore un peu. Le sac du poisson, lui, est déjà vide. Il reste une odeur de sel sur le manteau. On le sort ? Oui. Le gâteau tremble, puis se tient. Il est à nous. Oui. Tu as attendu samedi. Une miette de citron brille sur la table. Raphaël pose la spatule, encore farineuse.",
+      "script": "narrateur|Le gâteau dore derrière la vitre.\nnarrateur|La cuisine sent le beurre chaud.\nmaman|Vendredi, le poisson.\nmaman|Samedi, le gâteau.\nenfant-m|Les deux jours.\nmaman|Oui.\nnarrateur|Raphaël colle le nez à la vitre.\nnarrateur|Le gâteau gonfle, tout lent.\nenfant-m|Il est presque prêt.\nmaman|Encore un peu.\nnarrateur|Le sac du poisson, lui, est déjà vide.\nnarrateur|Il reste une odeur de sel sur le manteau.\nmaman|On le sort ?\nenfant-m|Oui.\nnarrateur|Le gâteau tremble, puis se tient.\nenfant-m|Il est à nous.\nmaman|Oui.\nmaman|Tu as attendu samedi.\nnarrateur|Une miette de citron brille sur la table.\nnarrateur|Raphaël pose la spatule, encore farineuse.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le gâteau dore derrière la vitre. La cuisine sent le beurre chaud. Vendredi, le poisson. Samedi, le gâteau. Les deux jours. Oui. Raphaël colle le nez à la vitre. Le gâteau gonfle, tout lent. Il est presque prêt. Encore un peu. Le sac du poisson, lui, est déjà vide. Il reste une odeur de sel sur le manteau. On le sort ? Oui. Le gâteau tremble, puis se tient. Il est à nous. Oui. Tu as attendu samedi. Une miette de citron brille sur la table. Raphaël pose la spatule, encore farineuse."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Raphaël souffle sur le gâteau, tout doux. Il est chaud. Oui. Le port hier, le four maintenant. Une écaille d'argent sèche encore sur la planche du quai.",
+      "script": "narrateur|Raphaël souffle sur le gâteau, tout doux.\nenfant-m|Il est chaud.\nmaman|Oui.\nmaman|Le port hier, le four maintenant.\nnarrateur|Une écaille d'argent sèche encore sur la planche du quai.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Raphaël souffle sur le gâteau, tout doux. Il est chaud. Oui. Le port hier, le four maintenant. Une écaille d'argent sèche encore sur la planche du quai."
+    }
+  ]
+}

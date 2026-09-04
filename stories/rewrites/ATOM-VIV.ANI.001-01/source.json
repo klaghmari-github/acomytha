@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.001-01",
+  "fil_rouge": "",
+  "title": "Les cris de la ferme",
+  "lesson_id": "VIV.ANI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Léa, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léa marche avec papa. Ils visitent la ferme. Un chien arrive. Le chien aboie. Ouaf ouaf. Le chien aboie. Un chat saute. Le chat miaule. Miaou. Une vache mange. La vache meugle. Meuh. Un coq est sur le mur. Le coq chante. Cocorico. Un canard nage. Le canard cancane. Chaque animal a un cri. Léa nomme l'animal. Elle dit le cri.",
+      "script": "narrateur|Léa marche avec papa. Ils visitent la ferme. Un chien arrive. Le chien aboie. Ouaf ouaf.\npapa|Le chien aboie.\nnarrateur|Un chat saute. Le chat miaule. Miaou. Une vache mange. La vache meugle. Meuh. Un coq est sur le mur. Le coq chante. Cocorico. Un canard nage. Le canard cancane.\npapa|Chaque animal a un cri.\nnarrateur|Léa nomme l'animal. Elle dit le cri.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chien fait ouaf. Quel est son cri ?",
+      "script": "narrateur|Le chien fait ouaf. Quel est son cri ?",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léa a nommé l'animal. Elle a dit le cri. Chien, chat, vache, coq, canard.",
+      "script": "narrateur|Léa a nommé l'animal. Elle a dit le cri. Chien, chat, vache, coq, canard.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Léa tient la main de papa. La ferme sent le foin.",
+      "script": "narrateur|Léa tient la main de papa. La ferme sent le foin.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

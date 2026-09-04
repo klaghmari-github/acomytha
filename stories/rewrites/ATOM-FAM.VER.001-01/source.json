@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-01",
+  "fil_rouge": "",
+  "title": "Inès raconte à maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Inès, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Inès est dans la cuisine, près de maman. Maman coupe des pommes. Ça sent le fruit. Inès veut aider. Elle attrape le saladier. Le saladier glisse. La farine tombe. Ça fait un nuage blanc. Le sol est blanc. Inès a le ventre serré. Elle va vers maman. Maman, le saladier est tombé. J'ai fait tomber la farine. Maman s'approche. Merci de raconter. On ramasse ensemble. Inès prend la petite balayette. Maman tient la pelle. La farine revient dans le seau. Papa entre. Papa, j'ai raconté. Le saladier est tombé. Papa écoute. Merci Inès. On raconte à papa ou maman. C'est comme ça.",
+      "script": "narrateur|Inès est dans la cuisine, près de maman. Maman coupe des pommes. Ça sent le fruit. Inès veut aider. Elle attrape le saladier. Le saladier glisse. La farine tombe. Ça fait un nuage blanc. Le sol est blanc. Inès a le ventre serré. Elle va vers maman.\nenfant-f|Maman, le saladier est tombé. J'ai fait tomber la farine. Maman s'approche.\nmaman|Merci de raconter. On ramasse ensemble.\nnarrateur|Inès prend la petite balayette. Maman tient la pelle. La farine revient dans le seau. Papa entre.\nenfant-f|Papa, j'ai raconté.\nnarrateur|Le saladier est tombé. Papa écoute.\npapa|Merci Inès. On raconte à papa ou maman. C'est comme ça.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La farine est tombée. Que fait Inès ?",
+      "script": "narrateur|La farine est tombée. Que fait Inès ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Inès a raconté. Maman a écouté. Papa a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "script": "narrateur|Inès a raconté. Maman a écouté. Papa a écouté. Ensemble, ils ont ramassé. Raconter aide.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le sol est propre. Inès se lave les mains. Maman coupe encore une pomme.",
+      "script": "narrateur|Le sol est propre. Inès se lave les mains. Maman coupe encore une pomme.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

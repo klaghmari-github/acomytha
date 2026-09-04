@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-01",
+  "fil_rouge": "",
+  "title": "Le mercredi d'Adam",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Adam, papa",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Adam prépare son cartable avec papa. Demain c'est lundi. Lundi, mardi, jeudi, vendredi : Adam va à l'école. Mercredi, Adam reste à la maison. Il joue avec papa. Samedi, Adam reste aussi à la maison. Dimanche encore. Samedi et dimanche, c'est le week-end. Adam range le cartable mercredi. Pas d'école ce jour-là. Il dessine. Mercredi, samedi, dimanche, on est à la maison.",
+      "script": "narrateur|Adam prépare son cartable avec papa.\npapa|Demain c'est lundi. Lundi, mardi, jeudi, vendredi : Adam va à l'école. Mercredi, Adam reste à la maison. Il joue avec papa. Samedi, Adam reste aussi à la maison. Dimanche encore.\npapa|Samedi et dimanche, c'est le week-end.\nnarrateur|Adam range le cartable mercredi. Pas d'école ce jour-là. Il dessine.\npapa|Mercredi, samedi, dimanche, on est à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Adam est à la maison le mercredi. Quels autres jours aussi ?",
+      "script": "narrateur|Adam est à la maison le mercredi. Quels autres jours aussi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adam a nommé mercredi. Il a nommé samedi et dimanche. C'est le week-end.",
+      "script": "narrateur|Adam a nommé mercredi. Il a nommé samedi et dimanche. C'est le week-end.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Adam range ses crayons. Papa prépare le goûter.",
+      "script": "narrateur|Adam range ses crayons. Papa prépare le goûter.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

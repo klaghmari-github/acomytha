@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.NOM.001-09",
+  "fil_rouge": "",
+  "title": "Hadrien compte les galets",
+  "lesson_id": "LAN.NOM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hadrien, papa",
+  "setting": "bord de rivière",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hadrien et papa sont au bord de l'eau. Il y a un seau. Dedans, des galets. On va compter des objets. Hadrien touche un galet. Une. Il en touche un autre. Deux. Encore un. Trois. Encore un. Quatre. Encore un. Cinq. Cinq galets. Papa sourit. Il dit le nombre. Cinq. Hadrien pose les galets. Une. Deux. Trois. Quatre. Cinq. Les objets sont là. Hadrien les compte. L'eau clapote. Parce qu'il a compté des objets, Hadrien peut dire le nombre. Papa range le seau. Hadrien garde un galet lisse.",
+      "script": "narrateur|Hadrien et papa sont au bord de l'eau. Il y a un seau. Dedans, des galets.\npapa|On va compter des objets.\nnarrateur|Hadrien touche un galet. Une. Il en touche un autre. Deux. Encore un. Trois. Encore un. Quatre. Encore un. Cinq.\nenfant-m|Cinq galets. Papa sourit. Il dit le nombre. Cinq.\nnarrateur|Hadrien pose les galets. Une. Deux. Trois. Quatre. Cinq. Les objets sont là. Hadrien les compte. L'eau clapote. Parce qu'il a compté des objets, Hadrien peut dire le nombre. Papa range le seau. Hadrien garde un galet lisse.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hadrien compte les galets. Combien y en a-t-il ?",
+      "script": "narrateur|Hadrien compte les galets. Combien y en a-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hadrien a compté des objets. Cinq galets. Il a dit le nombre.",
+      "script": "narrateur|Hadrien a compté des objets. Cinq galets. Il a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le seau. Hadrien garde un galet. Il le touche.",
+      "script": "narrateur|Papa range le seau. Hadrien garde un galet. Il le touche.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

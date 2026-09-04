@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-02",
+  "fil_rouge": "",
+  "title": "Le verre d'eau de Hugo",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hugo, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo entre dans la cuisine. Maman coupe des pommes. Ça sent le sucré. Hugo a soif. Sa bouche est sèche. Sa langue colle. J'ai soif, maman. Maman sourit. Maman prend un verre. Le verre est bleu. Elle verse de l'eau. L'eau est claire. Hugo prend le verre. Il boit une gorgée. C'est frais. Il boit encore. Quand on a soif, on boit de l'eau. Dans un verre. Hugo pose le verre. Il se sent mieux.",
+      "script": "narrateur|Hugo entre dans la cuisine. Maman coupe des pommes. Ça sent le sucré. Hugo a soif. Sa bouche est sèche. Sa langue colle.\nenfant-m|J'ai soif, maman. Maman sourit. Maman prend un verre.\nnarrateur|Le verre est bleu. Elle verse de l'eau. L'eau est claire. Hugo prend le verre. Il boit une gorgée. C'est frais. Il boit encore.\nmaman|Quand on a soif, on boit de l'eau.\nnarrateur|Dans un verre. Hugo pose le verre. Il se sent mieux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hugo a soif. Que prend-il ?",
+      "script": "narrateur|Hugo a soif. Que prend-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo avait soif. Il a pris le verre. Il a bu de l'eau. Maman était là.",
+      "script": "narrateur|Hugo avait soif. Il a pris le verre. Il a bu de l'eau. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hugo croque un morceau de pomme. Le verre reste sur la table. Merci, dit Hugo.",
+      "script": "narrateur|Hugo croque un morceau de pomme. Le verre reste sur la table. Merci, dit Hugo.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

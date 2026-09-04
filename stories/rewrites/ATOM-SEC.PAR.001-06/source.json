@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-06",
+  "fil_rouge": "",
+  "title": "Tania joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Tania, maman",
+  "setting": "parc puis square",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tania arrive au parc avec maman. Maman montre un espace. C'est le bac à sable. Tu joues ici. C'est l'espace montré. Ici, l'adulte voit. Tania verse le sable. Il est frais. Elle reste dans l'espace montré. Maman s'assoit sur le banc. L'adulte voit. Tania fait un gâteau. Je te vois. Plus tard, elles vont au square. Maman montre un autre espace. C'est le tapis de marelle. Tu joues ici. C'est l'espace montré. Tania se souvient. Elle saute dans les cases. Parce que maman la voit, Tania reste. Même leçon, autre lieu. L'adulte voit. Les pieds restent dans l'espace montré.",
+      "script": "narrateur|Tania arrive au parc avec maman. Maman montre un espace. C'est le bac à sable.\nmaman|Tu joues ici. C'est l'espace montré. Ici, l'adulte voit.\nnarrateur|Tania verse le sable. Il est frais. Elle reste dans l'espace montré. Maman s'assoit sur le banc. L'adulte voit. Tania fait un gâteau.\nmaman|Je te vois. Plus tard, elles vont au square. Maman montre un autre espace. C'est le tapis de marelle.\nmaman|Tu joues ici. C'est l'espace montré.\nnarrateur|Tania se souvient. Elle saute dans les cases. Parce que maman la voit, Tania reste. Même leçon, autre lieu. L'adulte voit. Les pieds restent dans l'espace montré.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tania joue dehors. Où joue-t-elle ?",
+      "script": "narrateur|Tania joue dehors. Où joue-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tania est dans l'espace montré. Maman la voit. Au parc, puis au square.",
+      "script": "narrateur|Tania est dans l'espace montré. Maman la voit. Au parc, puis au square.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tania range le seau. Maman lui tend la main.",
+      "script": "narrateur|Tania range le seau. Maman lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

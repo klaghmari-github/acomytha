@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.003-06",
+  "fil_rouge": "",
+  "title": "Le mouchoir d'Armand",
+  "lesson_id": "SAN.HYG.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Armand, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Armand est dans la cuisine. Maman coupe une pomme. Le nez d'Armand chatouille. Atchoum. Tout doux. Maman tend un mouchoir. Armand prend un mouchoir. Il se mouche. Le nez est plus libre. Armand va jeter le mouchoir. Il le met dans la poubelle. Mouchoir, puis poubelle. Armand va au lavabo. Il se lave les mains. Il revient près de maman. Maman sourit. Armand croque la pomme. Le nez est calme. Maman dit encore : mouchoir, puis poubelle. Armand hoche la tête.",
+      "script": "narrateur|Armand est dans la cuisine. Maman coupe une pomme. Le nez d'Armand chatouille. Atchoum. Tout doux. Maman tend un mouchoir. Armand prend un mouchoir. Il se mouche. Le nez est plus libre. Armand va jeter le mouchoir. Il le met dans la poubelle.\nmaman|Mouchoir, puis poubelle.\nnarrateur|Armand va au lavabo. Il se lave les mains. Il revient près de maman. Maman sourit. Armand croque la pomme. Le nez est calme. Maman dit encore : mouchoir, puis poubelle. Armand hoche la tête.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le nez d'Armand chatouille. Que prend-il ?",
+      "script": "narrateur|Le nez d'Armand chatouille. Que prend-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Armand a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "script": "narrateur|Armand a pris un mouchoir. Il s'est mouché. Il a jeté le mouchoir à la poubelle.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Armand s'assoit près de maman. Son nez est calme.",
+      "script": "narrateur|Armand s'assoit près de maman. Son nez est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

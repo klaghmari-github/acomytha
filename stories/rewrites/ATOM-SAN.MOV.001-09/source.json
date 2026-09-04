@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.MOV.001-09",
+  "fil_rouge": "",
+  "title": "Brice joue dehors à la marelle",
+  "lesson_id": "SAN.MOV.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Brice, maman",
+  "setting": "square, marelle",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Après le déjeuner, Brice a les jambes qui démangent. Il a envie de bouger. On va dehors. Maman, c'est l'adulte. Ils marchent jusqu'au square. L'air sent la poussière chaude. Une marelle est dessinée au sol. Brice saute dans les cases. Un pied. Puis deux pieds. Maman reste près de lui. Ils jouent dehors, avec un adulte. Parce que Brice a bougé, ses joues sont roses. Il rit. Encore un moment dehors. Brice saute encore. Il entend le craquement de la craie. Quand il souffle fort, On rentre. Brice a joué dehors, avec un adulte.",
+      "script": "narrateur|Après le déjeuner, Brice a les jambes qui démangent. Il a envie de bouger.\nmaman|On va dehors. Maman, c'est l'adulte.\nnarrateur|Ils marchent jusqu'au square. L'air sent la poussière chaude. Une marelle est dessinée au sol. Brice saute dans les cases. Un pied. Puis deux pieds. Maman reste près de lui. Ils jouent dehors, avec un adulte. Parce que Brice a bougé, ses joues sont roses. Il rit.\nmaman|Encore un moment dehors.\nnarrateur|Brice saute encore. Il entend le craquement de la craie. Quand il souffle fort,\nmaman|On rentre.\nnarrateur|Brice a joué dehors, avec un adulte.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Brice veut bouger. Où joue-t-il ?",
+      "script": "narrateur|Brice veut bouger. Où joue-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Brice a joué dehors. Maman, l'adulte, était avec lui. Les jambes ont bougé.",
+      "script": "narrateur|Brice a joué dehors. Maman, l'adulte, était avec lui. Les jambes ont bougé.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Brice boit de l'eau. La craie reste sur ses chaussures.",
+      "script": "narrateur|Brice boit de l'eau. La craie reste sur ses chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

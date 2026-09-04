@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.001-03",
+  "fil_rouge": "",
+  "title": "Aïcha s'arrête au trottoir",
+  "lesson_id": "SEC.RUE.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Aïcha, papa",
+  "setting": "trajet vers l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Aïcha marche avec papa. Ils vont à l'école. Le cartable est sur son dos. Ils sentent le pain de la rue. Ils arrivent au bord. Le bord du trottoir est là. Papa s'arrête. Aïcha s'arrête aussi. S'arrêter, c'est le geste. Les pieds d'Aïcha sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir. On s'arrête. Pieds au bord. Sur le trottoir. Aïcha regarde papa. Elle pose les pieds au bord. Les pieds sont calmes. Parce qu'elle s'arrête, elle attend avec papa. Papa sourit. Bravo Aïcha. On s'arrête au trottoir. On attend avec papa. Parce que les pieds restent au bord, Aïcha est avec papa. Les pieds restent au bord du trottoir.",
+      "script": "narrateur|Aïcha marche avec papa. Ils vont à l'école. Le cartable est sur son dos. Ils sentent le pain de la rue. Ils arrivent au bord. Le bord du trottoir est là. Papa s'arrête. Aïcha s'arrête aussi. S'arrêter, c'est le geste. Les pieds d'Aïcha sont au bord. Les pieds restent au bord. Les pieds sont sur le trottoir.\npapa|On s'arrête. Pieds au bord. Sur le trottoir.\nnarrateur|Aïcha regarde papa. Elle pose les pieds au bord. Les pieds sont calmes. Parce qu'elle s'arrête, elle attend avec papa. Papa sourit.\npapa|Bravo Aïcha. On s'arrête au trottoir. On attend avec papa. Parce que les pieds restent au bord, Aïcha est avec papa.\nnarrateur|Les pieds restent au bord du trottoir.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Aïcha arrive au bord. Que fait-elle ?",
+      "script": "narrateur|Aïcha arrive au bord. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Aïcha s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "script": "narrateur|Aïcha s'arrête au bord. Les pieds sont sur le trottoir. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Aïcha donne la main à papa. Ils attendent un moment.",
+      "script": "narrateur|Aïcha donne la main à papa. Ils attendent un moment.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

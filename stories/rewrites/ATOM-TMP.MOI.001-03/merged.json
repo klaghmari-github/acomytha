@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-03",
+  "fil_rouge": "C'est l'anniversaire de Nina, en mars, quand le premier narcisse ouvre. La tige est trop courte pour le vase. Ils la mettent dans un gobelet. Nina souffle la bougie.",
+  "title": "Le premier narcisse",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nina, papa, maman",
+  "setting": "jardin encore froid, puis table près de la fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dans l'herbe encore froide, un narcisse ouvre son jaune. La corolle sent le miel pâle. Un peu de terre reste au pied. Il est venu ! Le premier. C'est mars, Nina. Ton mois. Mon anniversaire. Oui. Le vent de mars pince les oreilles. Nina se baisse. Ses genoux touchent l'herbe humide. On le coupe ? Pour la table. Tout près de la terre. Papa tend les ciseaux ronds. Nina tient la tige. Clic. Il est à nous. Il viendra près du gâteau. Ils rentrent. La cuisine sent la pâte et le beurre. Un gâteau rond attend, sans bougie. La fleur d'abord. Maman sort le grand vase bleu. Nina glisse le narcisse. La tige est trop courte. La tête bascule, elle disparaît. On ne le voit plus ! Trop grand, ce vase. On cherche un gobelet ? Oui. En ce moment, Nina ouvre le placard. Un gobelet blanc s'y cache. Il est petit. Comme la tige.",
+      "script": "narrateur|Dans l'herbe encore froide, un narcisse ouvre son jaune.\nnarrateur|La corolle sent le miel pâle.\nnarrateur|Un peu de terre reste au pied.\nenfant-f|Il est venu !\npapa|Le premier.\nmaman|C'est mars, Nina.\nmaman|Ton mois.\nenfant-f|Mon anniversaire.\npapa|Oui.\nnarrateur|Le vent de mars pince les oreilles.\nnarrateur|Nina se baisse.\nnarrateur|Ses genoux touchent l'herbe humide.\nmaman|On le coupe ?\nenfant-f|Pour la table.\npapa|Tout près de la terre.\nnarrateur|Papa tend les ciseaux ronds.\nnarrateur|Nina tient la tige.\nnarrateur|Clic.\nenfant-f|Il est à nous.\nmaman|Il viendra près du gâteau.\nnarrateur|Ils rentrent.\nnarrateur|La cuisine sent la pâte et le beurre.\nnarrateur|Un gâteau rond attend, sans bougie.\nenfant-f|La fleur d'abord.\nnarrateur|Maman sort le grand vase bleu.\nnarrateur|Nina glisse le narcisse.\nnarrateur|La tige est trop courte.\nnarrateur|La tête bascule, elle disparaît.\nenfant-f|On ne le voit plus !\npapa|Trop grand, ce vase.\nmaman|On cherche un gobelet ?\nenfant-f|Oui.\nnarrateur|En ce moment, Nina ouvre le placard.\nnarrateur|Un gobelet blanc s'y cache.\nenfant-f|Il est petit.\nmaman|Comme la tige.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Dans l'herbe encore froide, un narcisse ouvre son jaune. La corolle sent le miel pâle. Un peu de terre reste au pied. Il est venu ! Le premier. C'est mars, Nina. Ton mois. Mon anniversaire. Oui. Le vent de mars pince les oreilles. Nina se baisse. Ses genoux touchent l'herbe humide. On le coupe ? Pour la table. Tout près de la terre. Papa tend les ciseaux ronds. Nina tient la tige. Clic. Il est à nous. Il viendra près du gâteau. Ils rentrent. La cuisine sent la pâte et le beurre. Un gâteau rond attend, sans bougie. La fleur d'abord. Maman sort le grand vase bleu. Nina glisse le narcisse. La tige est trop courte. La tête bascule, elle disparaît. On ne le voit plus ! Trop grand, ce vase. On cherche un gobelet ? Oui. En ce moment, Nina ouvre le placard. Un gobelet blanc s'y cache. Il est petit. Comme la tige."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina a un gâteau en mars. Pourquoi ?",
+      "script": "narrateur|Nina a un gâteau en mars.\nnarrateur|Pourquoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nina a un gâteau en mars. Pourquoi ?",
+      "expected_answer": "anniversaire",
+      "accepted_examples": "anniversaire | son anniversaire | mars | le mois | narcisse",
+      "retry_prompt": "C'est son anniversaire. Pourquoi le gâteau ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina pose le gobelet près du gâteau. Elle y glisse le narcisse. La tête jaune se tient, droite. Je le vois. Il est à sa taille. Comme toi. Papa plante une bougie au milieu. La cire est blanche, un peu molle. C'est ton anniversaire. En mars. Avec le premier narcisse. Tu souffles ? La flamme penche. Nina souffle, tout doux. La fumée fait un fil gris. Merci, Nina. Tu as trouvé le gobelet. Le vase était trop grand.",
+      "script": "narrateur|Nina pose le gobelet près du gâteau.\nnarrateur|Elle y glisse le narcisse.\nnarrateur|La tête jaune se tient, droite.\nenfant-f|Je le vois.\nmaman|Il est à sa taille.\npapa|Comme toi.\nnarrateur|Papa plante une bougie au milieu.\nnarrateur|La cire est blanche, un peu molle.\nmaman|C'est ton anniversaire.\nmaman|En mars.\nenfant-f|Avec le premier narcisse.\npapa|Tu souffles ?\nnarrateur|La flamme penche.\nnarrateur|Nina souffle, tout doux.\nnarrateur|La fumée fait un fil gris.\npapa|Merci, Nina.\npapa|Tu as trouvé le gobelet.\nenfant-f|Le vase était trop grand.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina pose le gobelet près du gâteau. Elle y glisse le narcisse. La tête jaune se tient, droite. Je le vois. Il est à sa taille. Comme toi. Papa plante une bougie au milieu. La cire est blanche, un peu molle. C'est ton anniversaire. En mars. Avec le premier narcisse. Tu souffles ? La flamme penche. Nina souffle, tout doux. La fumée fait un fil gris. Merci, Nina. Tu as trouvé le gobelet. Le vase était trop grand."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman coupe une part. La miette tombe près du gobelet. Pour le narcisse. Les fleurs ne mangent pas le gâteau. Elles boivent l'eau. Nina goûte. Le gâteau est tiède, un peu citron. Ça pique. C'est le citron de mars. Le narcisse penche vers la part. Comme s'il écoutait. On le remettra au jardin demain ? Non. Il reste la nuit. D'accord. Une goutte d'eau glisse sur le gobelet. Une miette sucrée reste au coin de la bouche. Tu l'as ? Oui.",
+      "script": "narrateur|Maman coupe une part.\nnarrateur|La miette tombe près du gobelet.\nenfant-f|Pour le narcisse.\nmaman|Les fleurs ne mangent pas le gâteau.\npapa|Elles boivent l'eau.\nnarrateur|Nina goûte.\nnarrateur|Le gâteau est tiède, un peu citron.\nenfant-f|Ça pique.\nmaman|C'est le citron de mars.\nnarrateur|Le narcisse penche vers la part.\nnarrateur|Comme s'il écoutait.\npapa|On le remettra au jardin demain ?\nenfant-f|Non.\nenfant-f|Il reste la nuit.\nmaman|D'accord.\nnarrateur|Une goutte d'eau glisse sur le gobelet.\nnarrateur|Une miette sucrée reste au coin de la bouche.\npapa|Tu l'as ?\nenfant-f|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman coupe une part. La miette tombe près du gobelet. Pour le narcisse. Les fleurs ne mangent pas le gâteau. Elles boivent l'eau. Nina goûte. Le gâteau est tiède, un peu citron. Ça pique. C'est le citron de mars. Le narcisse penche vers la part. Comme s'il écoutait. On le remettra au jardin demain ? Non. Il reste la nuit. D'accord. Une goutte d'eau glisse sur le gobelet. Une miette sucrée reste au coin de la bouche. Tu l'as ? Oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La bougie a un petit cratère de cire. Nina y pose le doigt, plus froid maintenant. Elle a fini. Toi, tu commences ton année. En mars. Le narcisse garde son jaune près de la vitre. Dehors, l'herbe attend le deuxième. Il viendra. Oui. La table sent le citron et le miel pâle.",
+      "script": "narrateur|La bougie a un petit cratère de cire.\nnarrateur|Nina y pose le doigt, plus froid maintenant.\nenfant-f|Elle a fini.\npapa|Toi, tu commences ton année.\nmaman|En mars.\nnarrateur|Le narcisse garde son jaune près de la vitre.\nnarrateur|Dehors, l'herbe attend le deuxième.\nenfant-f|Il viendra.\nmaman|Oui.\nnarrateur|La table sent le citron et le miel pâle.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La bougie a un petit cratère de cire. Nina y pose le doigt, plus froid maintenant. Elle a fini. Toi, tu commences ton année. En mars. Le narcisse garde son jaune près de la vitre. Dehors, l'herbe attend le deuxième. Il viendra. Oui. La table sent le citron et le miel pâle."
+    }
+  ]
+}

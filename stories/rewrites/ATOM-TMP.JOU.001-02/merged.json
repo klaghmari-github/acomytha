@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-02",
+  "fil_rouge": "Nina veut un coquillage. Le soleil chauffe le sable. Une vague remplit la coquille. Le soir, la lune est dans la vitre, le coquillage sur la table.",
+  "title": "Le coquillage de Nina",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, maman",
+  "setting": "mer le jour, voiture puis chambre la nuit",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le sel colle déjà aux genoux de Nina. Le sable est tiède et rêche. Une vague vient, puis recule. Ça sent l'iode et le chaud. Tu as senti l'eau, Nina ? Elle est froide aux pieds. Oui. Plus loin, elle brille. Je veux un coquillage. On en cherche un, près de l'écume. En ce moment, Nina marche au bord. Le soleil tape ses épaules, fort. Son ombre est toute courte, devant elle. Le jour est long, ici. Le soleil est sur la mer. Nina ramasse une coquille beige. Elle est pleine de sable mouillé. Il y a du sable. On la rince ? Oui. Une vague plus vive arrive. L'eau prend la coquille, un instant. Oh. Nina la reprend, ruisselante. Elle la plonge dans une flaque claire. Le sable part, le rose apparaît. Elle est rose dedans. Merci, Nina. Tu l'as rincée. Ils restent encore un peu. Les épaules de Nina piquent, chaudes. Un bateau passe, tout petit. Il va loin. Comme nous, tout à l'heure. Plus tard, le sable refroidit. Le ciel se teinte de mauve. On rentre. Dans la voiture, la coquille tient dans un gant. La mer recule derrière les dunes. La vitre s'assombrit. Une lune ronde glisse sur le verre. Elle nous suit. La nuit est là. La lune est dans la vitre.",
+      "script": "narrateur|Le sel colle déjà aux genoux de Nina.\nnarrateur|Le sable est tiède et rêche.\nnarrateur|Une vague vient, puis recule.\nnarrateur|Ça sent l'iode et le chaud.\nmaman|Tu as senti l'eau, Nina ?\nenfant-f|Elle est froide aux pieds.\nmaman|Oui.\nmaman|Plus loin, elle brille.\nenfant-f|Je veux un coquillage.\nmaman|On en cherche un, près de l'écume.\nnarrateur|En ce moment, Nina marche au bord.\nnarrateur|Le soleil tape ses épaules, fort.\nnarrateur|Son ombre est toute courte, devant elle.\nmaman|Le jour est long, ici.\nmaman|Le soleil est sur la mer.\nnarrateur|Nina ramasse une coquille beige.\nnarrateur|Elle est pleine de sable mouillé.\nenfant-f|Il y a du sable.\nmaman|On la rince ?\nenfant-f|Oui.\nnarrateur|Une vague plus vive arrive.\nnarrateur|L'eau prend la coquille, un instant.\nenfant-f|Oh.\nnarrateur|Nina la reprend, ruisselante.\nnarrateur|Elle la plonge dans une flaque claire.\nnarrateur|Le sable part, le rose apparaît.\nenfant-f|Elle est rose dedans.\nmaman|Merci, Nina.\nmaman|Tu l'as rincée.\nnarrateur|Ils restent encore un peu.\nnarrateur|Les épaules de Nina piquent, chaudes.\nnarrateur|Un bateau passe, tout petit.\nenfant-f|Il va loin.\nmaman|Comme nous, tout à l'heure.\nnarrateur|Plus tard, le sable refroidit.\nnarrateur|Le ciel se teinte de mauve.\nmaman|On rentre.\nnarrateur|Dans la voiture, la coquille tient dans un gant.\nnarrateur|La mer recule derrière les dunes.\nnarrateur|La vitre s'assombrit.\nnarrateur|Une lune ronde glisse sur le verre.\nenfant-f|Elle nous suit.\nmaman|La nuit est là.\nmaman|La lune est dans la vitre.",
+      "sons": "vagues",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le sel colle déjà aux genoux de Nina. Le sable est tiède et rêche. Une vague vient, puis recule. Ça sent l'iode et le chaud. Tu as senti l'eau, Nina ? Elle est froide aux pieds. Oui. Plus loin, elle brille. Je veux un coquillage. On en cherche un, près de l'écume. En ce moment, Nina marche au bord. Le soleil tape ses épaules, fort. Son ombre est toute courte, devant elle. Le jour est long, ici. Le soleil est sur la mer. Nina ramasse une coquille beige. Elle est pleine de sable mouillé. Il y a du sable. On la rince ? Oui. Une vague plus vive arrive. L'eau prend la coquille, un instant. Oh. Nina la reprend, ruisselante. Elle la plonge dans une flaque claire. Le sable part, le rose apparaît. Elle est rose dedans. Merci, Nina. Tu l'as rincée. Ils restent encore un peu. Les épaules de Nina piquent, chaudes. Un bateau passe, tout petit. Il va loin. Comme nous, tout à l'heure. Plus tard, le sable refroidit. Le ciel se teinte de mauve. On rentre. Dans la voiture, la coquille tient dans un gant. La mer recule derrière les dunes. La vitre s'assombrit. Une lune ronde glisse sur le verre. Elle nous suit. La nuit est là. La lune est dans la vitre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina est rentrée. La nuit, que voit-elle à la vitre ?",
+      "script": "narrateur|Nina est rentrée.\nnarrateur|La nuit, que voit-elle à la vitre ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nina est rentrée. La nuit, que voit-elle à la vitre ?",
+      "expected_answer": "lune",
+      "accepted_examples": "lune | la lune | la lune dans la vitre | la lune à la fenêtre",
+      "retry_prompt": "Le jour, le soleil. La nuit, à la vitre, que voit-on ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina a marché au soleil, le sable chaud. Maintenant la lune est sur la vitre. Le jour, c'était le soleil sur la mer. La nuit, c'est la lune. Elle est ronde, comme le coquillage. Un peu, oui. La coquille pose une tache d'eau sur le gant. Elle est encore mouillée. On la met près de la fenêtre ? Oui. La maison sent le sel, encore. Le pyjama, maintenant.",
+      "script": "narrateur|Nina a marché au soleil, le sable chaud.\nnarrateur|Maintenant la lune est sur la vitre.\nmaman|Le jour, c'était le soleil sur la mer.\nmaman|La nuit, c'est la lune.\nenfant-f|Elle est ronde, comme le coquillage.\nmaman|Un peu, oui.\nnarrateur|La coquille pose une tache d'eau sur le gant.\nenfant-f|Elle est encore mouillée.\nmaman|On la met près de la fenêtre ?\nenfant-f|Oui.\nnarrateur|La maison sent le sel, encore.\nmaman|Le pyjama, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina a marché au soleil, le sable chaud. Maintenant la lune est sur la vitre. Le jour, c'était le soleil sur la mer. La nuit, c'est la lune. Elle est ronde, comme le coquillage. Un peu, oui. La coquille pose une tache d'eau sur le gant. Elle est encore mouillée. On la met près de la fenêtre ? Oui. La maison sent le sel, encore. Le pyjama, maintenant."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nina enfile le pyjama, un peu rêche de sel. Elle pose le coquillage sur la table. La lune le touche, pâle. La nuit, on se couche. Tu fermes les yeux ? Je regarde encore. Dehors, la mer n'est plus qu'un souffle. Dedans, le verre de la fenêtre est froid. Elle est toujours là. Oui. La lune reste. Maman baisse la lumière. Nina respire l'iode sur sa peau.",
+      "script": "narrateur|Nina enfile le pyjama, un peu rêche de sel.\nnarrateur|Elle pose le coquillage sur la table.\nnarrateur|La lune le touche, pâle.\nmaman|La nuit, on se couche.\nmaman|Tu fermes les yeux ?\nenfant-f|Je regarde encore.\nnarrateur|Dehors, la mer n'est plus qu'un souffle.\nnarrateur|Dedans, le verre de la fenêtre est froid.\nenfant-f|Elle est toujours là.\nmaman|Oui.\nmaman|La lune reste.\nnarrateur|Maman baisse la lumière.\nnarrateur|Nina respire l'iode sur sa peau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina enfile le pyjama, un peu rêche de sel. Elle pose le coquillage sur la table. La lune le touche, pâle. La nuit, on se couche. Tu fermes les yeux ? Je regarde encore. Dehors, la mer n'est plus qu'un souffle. Dedans, le verre de la fenêtre est froid. Elle est toujours là. Oui. La lune reste. Maman baisse la lumière. Nina respire l'iode sur sa peau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le coquillage sèche tout doux. Le rose dedans devient mat. Il a gardé la mer. Un peu, oui. La lune reste collée à la vitre. Nina ferme les yeux, le sel aux genoux.",
+      "script": "narrateur|Le coquillage sèche tout doux.\nnarrateur|Le rose dedans devient mat.\nenfant-f|Il a gardé la mer.\nmaman|Un peu, oui.\nnarrateur|La lune reste collée à la vitre.\nnarrateur|Nina ferme les yeux, le sel aux genoux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le coquillage sèche tout doux. Le rose dedans devient mat. Il a gardé la mer. Un peu, oui. La lune reste collée à la vitre. Nina ferme les yeux, le sel aux genoux."
+    }
+  ]
+}

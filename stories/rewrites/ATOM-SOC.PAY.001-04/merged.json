@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-04",
+  "fil_rouge": "Mila veut voir la mer de France dans le livre cartonné. Une page colle. Elles tirent doucement. Le bleu s'ouvre.",
+  "title": "Le livre de mer de Mila",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Mila, maman",
+  "setting": "salon, canapé au soleil",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un rayon jaune chauffe le canapé bleu. Le coussin sent encore le savon. Une mouche tourne près de la vitre. Le salon est calme et chaud. Un livre cartonné attend par terre. Le livre est épais et lisse. Mila vit ici, avec maman. Tu as vu le livre, Mila ? Il est bleu, maman. Oui. C'est le livre de la mer. En ce moment, Mila s'assoit. Elle pose la main sur le livre. Je veux voir la mer. On ouvre ensemble ? Oui, maman. Mila tire une page. La page colle un peu. Elle colle ! On tire tout doucement ? Oui. Maman tient le bord. Mila tire encore un peu. Un bruit de papier se fait. Elle vient ! Encore un peu. La page se décolle, lentement. Un fil de colle reste brillant. Ça brille. C'est la colle. La page montre de l'eau bleue. La mer ! Oui, c'est la mer. Et le pays, tu vois ? Mila pose le doigt. C'est la France. La France. Et la mer. Un pays. Un paysage. Le carton est un peu chaud. Mila caresse le bleu. C'est mou ? Non. C'est du carton. Une petite tache de colle reste. Mila la touche du doigt. Ça colle encore. On laisse sécher ? Oui. Un bateau tout petit est dessiné. Un bateau ! Oui, sur la mer. La mer de France. Mila souffle sur la tache. Fffff. La colle devient moins brillante.",
+      "script": "narrateur|Un rayon jaune chauffe le canapé bleu.\nnarrateur|Le coussin sent encore le savon.\nnarrateur|Une mouche tourne près de la vitre.\nnarrateur|Le salon est calme et chaud.\nnarrateur|Un livre cartonné attend par terre.\nnarrateur|Le livre est épais et lisse.\nnarrateur|Mila vit ici, avec maman.\nmaman|Tu as vu le livre, Mila ?\nenfant-f|Il est bleu, maman.\nmaman|Oui.\nmaman|C'est le livre de la mer.\nnarrateur|En ce moment, Mila s'assoit.\nnarrateur|Elle pose la main sur le livre.\nenfant-f|Je veux voir la mer.\nmaman|On ouvre ensemble ?\nenfant-f|Oui, maman.\nnarrateur|Mila tire une page.\nnarrateur|La page colle un peu.\nenfant-f|Elle colle !\nmaman|On tire tout doucement ?\nenfant-f|Oui.\nnarrateur|Maman tient le bord.\nnarrateur|Mila tire encore un peu.\nnarrateur|Un bruit de papier se fait.\nenfant-f|Elle vient !\nmaman|Encore un peu.\nnarrateur|La page se décolle, lentement.\nnarrateur|Un fil de colle reste brillant.\nenfant-f|Ça brille.\nmaman|C'est la colle.\nnarrateur|La page montre de l'eau bleue.\nenfant-f|La mer !\nmaman|Oui, c'est la mer.\nmaman|Et le pays, tu vois ?\nnarrateur|Mila pose le doigt.\nmaman|C'est la France.\nenfant-f|La France.\nenfant-f|Et la mer.\nmaman|Un pays.\nmaman|Un paysage.\nnarrateur|Le carton est un peu chaud.\nnarrateur|Mila caresse le bleu.\nenfant-f|C'est mou ?\nmaman|Non.\nmaman|C'est du carton.\nnarrateur|Une petite tache de colle reste.\nnarrateur|Mila la touche du doigt.\nenfant-f|Ça colle encore.\nmaman|On laisse sécher ?\nenfant-f|Oui.\nnarrateur|Un bateau tout petit est dessiné.\nenfant-f|Un bateau !\nmaman|Oui, sur la mer.\nmaman|La mer de France.\nnarrateur|Mila souffle sur la tache.\nenfant-f|Fffff.\nnarrateur|La colle devient moins brillante.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un rayon jaune chauffe le canapé bleu. Le coussin sent encore le savon. Une mouche tourne près de la vitre. Le salon est calme et chaud. Un livre cartonné attend par terre. Le livre est épais et lisse. Mila vit ici, avec maman. Tu as vu le livre, Mila ? Il est bleu, maman. Oui. C'est le livre de la mer. En ce moment, Mila s'assoit. Elle pose la main sur le livre. Je veux voir la mer. On ouvre ensemble ? Oui, maman. Mila tire une page. La page colle un peu. Elle colle ! On tire tout doucement ? Oui. Maman tient le bord. Mila tire encore un peu. Un bruit de papier se fait. Elle vient ! Encore un peu. La page se décolle, lentement. Un fil de colle reste brillant. Ça brille. C'est la colle. La page montre de l'eau bleue. La mer ! Oui, c'est la mer. Et le pays, tu vois ? Mila pose le doigt. C'est la France. La France. Et la mer. Un pays. Un paysage. Le carton est un peu chaud. Mila caresse le bleu. C'est mou ? Non. C'est du carton. Une petite tache de colle reste. Mila la touche du doigt. Ça colle encore. On laisse sécher ? Oui. Un bateau tout petit est dessiné. Un bateau ! Oui, sur la mer. La mer de France. Mila souffle sur la tache. Fffff. La colle devient moins brillante."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mila nomme la France. Elle nomme aussi quoi ?",
+      "script": "narrateur|Mila nomme la France.\nnarrateur|Elle nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Mila nomme la France. Elle nomme aussi quoi ?",
+      "expected_answer": "la mer",
+      "accepted_examples": "mer | la mer | eau | l'eau | mer de France",
+      "retry_prompt": "Mila nomme aussi la mer. Elle nomme aussi quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La mer. Oui, la mer. La page veut se refermer. Le carton ramène un peu. Elle se recolle ! On la tient ouverte. Mila pose la paume à plat. Maman tient l'autre bord. La mer reste toute bleue. Tu la vois bien ? Oui. Elle est grande. Merci, Mila. Le fil de colle sèche. Il ne brille plus. Le bateau est petit. Il glisse sur l'eau. Mila suit le bateau du doigt. Le carton fait un bruit mat.",
+      "script": "enfant-f|La mer.\nmaman|Oui, la mer.\nnarrateur|La page veut se refermer.\nnarrateur|Le carton ramène un peu.\nenfant-f|Elle se recolle !\nmaman|On la tient ouverte.\nnarrateur|Mila pose la paume à plat.\nnarrateur|Maman tient l'autre bord.\nnarrateur|La mer reste toute bleue.\nmaman|Tu la vois bien ?\nenfant-f|Oui.\nenfant-f|Elle est grande.\nmaman|Merci, Mila.\nnarrateur|Le fil de colle sèche.\nnarrateur|Il ne brille plus.\nenfant-f|Le bateau est petit.\nmaman|Il glisse sur l'eau.\nnarrateur|Mila suit le bateau du doigt.\nnarrateur|Le carton fait un bruit mat.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La mer. Oui, la mer. La page veut se refermer. Le carton ramène un peu. Elle se recolle ! On la tient ouverte. Mila pose la paume à plat. Maman tient l'autre bord. La mer reste toute bleue. Tu la vois bien ? Oui. Elle est grande. Merci, Mila. Le fil de colle sèche. Il ne brille plus. Le bateau est petit. Il glisse sur l'eau. Mila suit le bateau du doigt. Le carton fait un bruit mat."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On ferme tout doucement ? Encore un peu. Elles regardent le bleu encore. La mouche a quitté la vitre. Tu as fini de regarder ? Oui, maman. Mila referme le livre. La page ne colle plus. La France. La mer. Oui. Le livre reste sur le canapé. Le rayon jaune le touche encore.",
+      "script": "maman|On ferme tout doucement ?\nenfant-f|Encore un peu.\nnarrateur|Elles regardent le bleu encore.\nnarrateur|La mouche a quitté la vitre.\nmaman|Tu as fini de regarder ?\nenfant-f|Oui, maman.\nnarrateur|Mila referme le livre.\nnarrateur|La page ne colle plus.\nenfant-f|La France.\nenfant-f|La mer.\nmaman|Oui.\nnarrateur|Le livre reste sur le canapé.\nnarrateur|Le rayon jaune le touche encore.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "On ferme tout doucement ? Encore un peu. Elles regardent le bleu encore. La mouche a quitté la vitre. Tu as fini de regarder ? Oui, maman. Mila referme le livre. La page ne colle plus. La France. La mer. Oui. Le livre reste sur le canapé. Le rayon jaune le touche encore."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le carton sent encore la colle. Un coin bleu dépasse un peu. La mer est dedans. Elle t'attend. Le canapé garde le livre au chaud.",
+      "script": "narrateur|Le carton sent encore la colle.\nnarrateur|Un coin bleu dépasse un peu.\nenfant-f|La mer est dedans.\nmaman|Elle t'attend.\nnarrateur|Le canapé garde le livre au chaud.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le carton sent encore la colle. Un coin bleu dépasse un peu. La mer est dedans. Elle t'attend. Le canapé garde le livre au chaud."
+    }
+  ]
+}

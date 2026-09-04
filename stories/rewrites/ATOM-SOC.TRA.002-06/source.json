@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.TRA.002-06",
+  "fil_rouge": "",
+  "title": "Félix reste assis dans la voiture",
+  "lesson_id": "SOC.TRA.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Félix, papa",
+  "setting": "voiture",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Félix va au marché avec papa. Papa montre le siège. Félix pose ses fesses. Il est assis. Papa attache la ceinture. Les pieds de Félix sont sur le repose-pieds. Papa, c'est l'adulte. Papa s'assoit aussi. On reste assis, avec l'adulte. La voiture avance. Félix tient son livre. Il reste assis. Il entend le clignotant. Tic, tic. Félix chante tout bas. Il reste assis, avec papa. La voiture s'arrête. Félix reste assis. Maintenant on sort. Ils sortent ensemble.",
+      "script": "narrateur|Félix va au marché avec papa. Papa montre le siège. Félix pose ses fesses. Il est assis. Papa attache la ceinture. Les pieds de Félix sont sur le repose-pieds. Papa, c'est l'adulte. Papa s'assoit aussi.\npapa|On reste assis, avec l'adulte.\nnarrateur|La voiture avance. Félix tient son livre. Il reste assis. Il entend le clignotant. Tic, tic. Félix chante tout bas. Il reste assis, avec papa. La voiture s'arrête. Félix reste assis.\npapa|Maintenant on sort. Ils sortent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Félix est dans la voiture. Que fait-il ?",
+      "script": "narrateur|Félix est dans la voiture. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Félix est resté assis. Papa, l'adulte, était là. La ceinture aussi.",
+      "script": "narrateur|Félix est resté assis. Papa, l'adulte, était là. La ceinture aussi.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Félix tient la main de papa. Ils sentent les fruits du marché.",
+      "script": "narrateur|Félix tient la main de papa. Ils sentent les fruits du marché.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

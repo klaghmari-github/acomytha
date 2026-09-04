@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-09",
+  "fil_rouge": "Mila veut du thé à la menthe. Une vieille feuille est amère. Ils en cueillent une jeune. Ils arrosent. Le thé sent bon.",
+  "title": "Le thé de menthe de Mila",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "cuisine près de la fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La bouilloire fait un petit chant. Une vapeur colle au carreau. Le carreau devient un peu flou. Un pot de menthe attend au rebord. Les tiges sont minces. Quelques feuilles sont sombres. Papa pose deux tasses. Les tasses sont déjà un peu chaudes. Tu sens la menthe, Mila ? Oui, papa. Je veux du thé. On fait du thé, alors. En ce moment, Mila cueille une feuille. Cette feuille est sombre. Elle est un peu sèche. Je la mets dans l'eau ? Goûte d'abord, tout doux. Mila pose la feuille sur sa langue. C'est amer, papa. Cette feuille est trop vieille. On cherche une jeune feuille ? Oui. Papa penche le pot vers le jour. Une petite feuille brille au milieu. Elle est bien verte. Celle-là ? Oui, celle-là est jeune. Mila la cueille tout doux. Le pot penche un peu. La terre est trop sèche. La menthe a besoin d'eau. Elle a besoin de lumière. On arrose ? Oui, avec moi. Mila tient l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pousse le pot. Le jour arrive sur les feuilles. Elle tient plus droit.",
+      "script": "narrateur|La bouilloire fait un petit chant.\nnarrateur|Une vapeur colle au carreau.\nnarrateur|Le carreau devient un peu flou.\nnarrateur|Un pot de menthe attend au rebord.\nnarrateur|Les tiges sont minces.\nnarrateur|Quelques feuilles sont sombres.\nnarrateur|Papa pose deux tasses.\nnarrateur|Les tasses sont déjà un peu chaudes.\npapa|Tu sens la menthe, Mila ?\nenfant-f|Oui, papa.\nenfant-f|Je veux du thé.\npapa|On fait du thé, alors.\nnarrateur|En ce moment, Mila cueille une feuille.\nnarrateur|Cette feuille est sombre.\nnarrateur|Elle est un peu sèche.\nenfant-f|Je la mets dans l'eau ?\npapa|Goûte d'abord, tout doux.\nnarrateur|Mila pose la feuille sur sa langue.\nenfant-f|C'est amer, papa.\npapa|Cette feuille est trop vieille.\npapa|On cherche une jeune feuille ?\nenfant-f|Oui.\nnarrateur|Papa penche le pot vers le jour.\nnarrateur|Une petite feuille brille au milieu.\nnarrateur|Elle est bien verte.\nenfant-f|Celle-là ?\npapa|Oui, celle-là est jeune.\nnarrateur|Mila la cueille tout doux.\nnarrateur|Le pot penche un peu.\npapa|La terre est trop sèche.\npapa|La menthe a besoin d'eau.\npapa|Elle a besoin de lumière.\nenfant-f|On arrose ?\npapa|Oui, avec moi.\nnarrateur|Mila tient l'arrosoir avec papa.\nnarrateur|Ils versent un peu d'eau.\nnarrateur|La terre devient sombre.\nnarrateur|Papa pousse le pot.\nnarrateur|Le jour arrive sur les feuilles.\nenfant-f|Elle tient plus droit.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La bouilloire fait un petit chant. Une vapeur colle au carreau. Le carreau devient un peu flou. Un pot de menthe attend au rebord. Les tiges sont minces. Quelques feuilles sont sombres. Papa pose deux tasses. Les tasses sont déjà un peu chaudes. Tu sens la menthe, Mila ? Oui, papa. Je veux du thé. On fait du thé, alors. En ce moment, Mila cueille une feuille. Cette feuille est sombre. Elle est un peu sèche. Je la mets dans l'eau ? Goûte d'abord, tout doux. Mila pose la feuille sur sa langue. C'est amer, papa. Cette feuille est trop vieille. On cherche une jeune feuille ? Oui. Papa penche le pot vers le jour. Une petite feuille brille au milieu. Elle est bien verte. Celle-là ? Oui, celle-là est jeune. Mila la cueille tout doux. Le pot penche un peu. La terre est trop sèche. La menthe a besoin d'eau. Elle a besoin de lumière. On arrose ? Oui, avec moi. Mila tient l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pousse le pot. Le jour arrive sur les feuilles. Elle tient plus droit."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La menthe a soif. Que fait Mila avec papa ?",
+      "script": "narrateur|La menthe a soif.\nnarrateur|Que fait Mila avec papa ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La menthe a soif. Que fait Mila avec papa ?",
+      "expected_answer": "arroser",
+      "accepted_examples": "arroser | de l'eau | eau | lumière | avec papa",
+      "retry_prompt": "Ils versent de l'eau. Que fait Mila ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mila pose la jeune feuille dans la tasse. Papa verse l'eau tout doux. La vapeur sent tout de suite la menthe. Ça sent bon. Ce n'est plus amer. Merci, Mila. Ils soufflent un peu. L'eau est encore chaude. On attend un peu ? Oui, papa. Mila regarde le pot au rebord. Les jeunes feuilles brillent. Elle a de l'eau. Et de la lumière. Une goutte reste sur la terre. Mila ne la touche pas. La tasse est prête ? Presque. Mila souffle encore un peu. La vapeur danse au-dessus de l'eau.",
+      "script": "narrateur|Mila pose la jeune feuille dans la tasse.\nnarrateur|Papa verse l'eau tout doux.\nnarrateur|La vapeur sent tout de suite la menthe.\nenfant-f|Ça sent bon.\npapa|Ce n'est plus amer.\npapa|Merci, Mila.\nnarrateur|Ils soufflent un peu.\nnarrateur|L'eau est encore chaude.\npapa|On attend un peu ?\nenfant-f|Oui, papa.\nnarrateur|Mila regarde le pot au rebord.\nnarrateur|Les jeunes feuilles brillent.\nenfant-f|Elle a de l'eau.\npapa|Et de la lumière.\nnarrateur|Une goutte reste sur la terre.\nnarrateur|Mila ne la touche pas.\npapa|La tasse est prête ?\nenfant-f|Presque.\nnarrateur|Mila souffle encore un peu.\nnarrateur|La vapeur danse au-dessus de l'eau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Mila pose la jeune feuille dans la tasse. Papa verse l'eau tout doux. La vapeur sent tout de suite la menthe. Ça sent bon. Ce n'est plus amer. Merci, Mila. Ils soufflent un peu. L'eau est encore chaude. On attend un peu ? Oui, papa. Mila regarde le pot au rebord. Les jeunes feuilles brillent. Elle a de l'eau. Et de la lumière. Une goutte reste sur la terre. Mila ne la touche pas. La tasse est prête ? Presque. Mila souffle encore un peu. La vapeur danse au-dessus de l'eau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mila goûte le thé. Ce n'est pas amer. C'est la jeune feuille. La tasse chauffe ses mains. Papa goûte aussi. Ça sent la menthe. Oui. Le carreau n'est plus flou. La vapeur est partie. On range l'arrosoir ? Oui, papa. Mila pose l'arrosoir près du mur. Le métal est encore un peu mouillé. La menthe a de l'eau. Oui, et de la lumière.",
+      "script": "narrateur|Mila goûte le thé.\nenfant-f|Ce n'est pas amer.\npapa|C'est la jeune feuille.\nnarrateur|La tasse chauffe ses mains.\nnarrateur|Papa goûte aussi.\npapa|Ça sent la menthe.\nenfant-f|Oui.\nnarrateur|Le carreau n'est plus flou.\nnarrateur|La vapeur est partie.\npapa|On range l'arrosoir ?\nenfant-f|Oui, papa.\nnarrateur|Mila pose l'arrosoir près du mur.\nnarrateur|Le métal est encore un peu mouillé.\nenfant-f|La menthe a de l'eau.\npapa|Oui, et de la lumière.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Mila goûte le thé. Ce n'est pas amer. C'est la jeune feuille. La tasse chauffe ses mains. Papa goûte aussi. Ça sent la menthe. Oui. Le carreau n'est plus flou. La vapeur est partie. On range l'arrosoir ? Oui, papa. Mila pose l'arrosoir près du mur. Le métal est encore un peu mouillé. La menthe a de l'eau. Oui, et de la lumière."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le thé sent encore la menthe. La jeune feuille est dedans. Oui. Le pot tient droit au rebord. Le jour reste sur les feuilles.",
+      "script": "narrateur|Le thé sent encore la menthe.\nenfant-f|La jeune feuille est dedans.\npapa|Oui.\nnarrateur|Le pot tient droit au rebord.\nnarrateur|Le jour reste sur les feuilles.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le thé sent encore la menthe. La jeune feuille est dedans. Oui. Le pot tient droit au rebord. Le jour reste sur les feuilles."
+    }
+  ]
+}

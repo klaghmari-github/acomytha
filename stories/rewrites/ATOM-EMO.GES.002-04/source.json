@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-04",
+  "fil_rouge": "",
+  "title": "Paloma souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Paloma, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Paloma est dans la cuisine avec papa. Ils collent des formes en pâte. La pâte est froide. Une forme se casse. Paloma sent sa poitrine aller vite. Ses joues chauffent. C'est trop. Papa est là, près de la table. On peut souffler. Paloma souffle comme le vent. Une fois. Deux fois. Elle s'assoit. Elle fait une pause. Ses mains se posent sur ses genoux. La cuisine redevient calme. Parce qu'elle a soufflé, son corps ralentit. Paloma reprend un morceau de pâte. Elle l'étale tout doucement. Papa reste près d'elle. Plus tard, une autre forme se plie. Paloma sent encore la poitrine vite. Elle souffle. Elle fait une pause. Elle s'assoit. Puis elle reprend. Souffler, puis une pause. On peut reprendre. Paloma pose une étoile. La pâte sent la farine.",
+      "script": "narrateur|Paloma est dans la cuisine avec papa. Ils collent des formes en pâte. La pâte est froide. Une forme se casse. Paloma sent sa poitrine aller vite. Ses joues chauffent.\nnarrateur|C'est trop. Papa est là, près de la table.\npapa|On peut souffler.\nnarrateur|Paloma souffle comme le vent. Une fois. Deux fois. Elle s'assoit. Elle fait une pause. Ses mains se posent sur ses genoux. La cuisine redevient calme. Parce qu'elle a soufflé, son corps ralentit. Paloma reprend un morceau de pâte. Elle l'étale tout doucement. Papa reste près d'elle. Plus tard, une autre forme se plie. Paloma sent encore la poitrine vite. Elle souffle. Elle fait une pause. Elle s'assoit. Puis elle reprend.\npapa|Souffler, puis une pause. On peut reprendre.\nnarrateur|Paloma pose une étoile. La pâte sent la farine.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le corps de Paloma va vite. Que fait-elle ?",
+      "script": "narrateur|Le corps de Paloma va vite. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Paloma a soufflé. Elle a fait une pause. Son corps a ralenti.",
+      "script": "narrateur|Paloma a soufflé. Elle a fait une pause. Son corps a ralenti.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Paloma pose l'étoile sur la plaque. Papa reste à côté.",
+      "script": "narrateur|Paloma pose l'étoile sur la plaque. Papa reste à côté.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

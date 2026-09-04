@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.004-03",
+  "fil_rouge": "",
+  "title": "Kenzo est surpris par le ballon",
+  "lesson_id": "EMO.LEX.004",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Kenzo, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenzo est au jardin avec maman. Un ballon rouge arrive vite. Kenzo sursaute. Il est surpris. Ses épaules montent. Tu es surpris. On respire. On comprend avant d'agir. Kenzo souffle. Il regarde. Le ballon est un ballon. Rien d'autre. Kenzo comprend. Il le ramène, tout doux. Surpris, respirer, comprendre.",
+      "script": "narrateur|Kenzo est au jardin avec maman. Un ballon rouge arrive vite. Kenzo sursaute. Il est surpris. Ses épaules montent.\nmaman|Tu es surpris. On respire. On comprend avant d'agir.\nnarrateur|Kenzo souffle. Il regarde. Le ballon est un ballon. Rien d'autre. Kenzo comprend. Il le ramène, tout doux.\nmaman|Surpris, respirer, comprendre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le ballon arrive vite. Quelle émotion ?",
+      "script": "narrateur|Le ballon arrive vite. Quelle émotion ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Kenzo a été surpris. Il a soufflé. Il a compris.",
+      "script": "narrateur|Kenzo a été surpris. Il a soufflé. Il a compris.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose le ballon. Kenzo boit une gorgée.",
+      "script": "narrateur|Maman pose le ballon. Kenzo boit une gorgée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

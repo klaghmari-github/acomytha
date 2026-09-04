@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.002-03",
+  "fil_rouge": "",
+  "title": "Estéban raconte ce qui fait peur",
+  "lesson_id": "FAM.SEC.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Estéban, maman, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Estéban marche au marché avec maman. Les fruits sentent fort. Maman choisit des pommes. Un adulte parle tout bas. C'est notre secret. Estéban sent son ventre. C'est serré. C'est un malaise. Estéban a peur. Estéban marche vers maman. Il prend sa main. Maman, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Maman l'écoute. Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. Même si un adulte parle d'un secret. On va raconter à papa ou maman. Maman reste tout près. Plus tard, à la maison, Estéban le dit aussi à papa. Papa écoute. Estéban se sent plus léger.",
+      "script": "narrateur|Estéban marche au marché avec maman. Les fruits sentent fort. Maman choisit des pommes. Un adulte parle tout bas.\nnarrateur|C'est notre secret.\nnarrateur|Estéban sent son ventre. C'est serré. C'est un malaise. Estéban a peur. Estéban marche vers maman. Il prend sa main.\nenfant-m|Maman, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Maman l'écoute.\nmaman|Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. Même si un adulte parle d'un secret. On va raconter à papa ou maman. Maman reste tout près. Plus tard, à la maison, Estéban le dit aussi à papa. Papa écoute.\nnarrateur|Estéban se sent plus léger.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Estéban a peur. Que fait-il ?",
+      "script": "narrateur|Estéban a peur. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Estéban a senti le malaise. Il a marché vers maman. Il a raconté. Papa et maman écoutent. Ce qui fait peur se raconte. On raconte à papa ou maman.",
+      "script": "narrateur|Estéban a senti le malaise. Il a marché vers maman. Il a raconté. Papa et maman écoutent. Ce qui fait peur se raconte. On raconte à papa ou maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Estéban s'assoit près de papa. Maman est là aussi. Sa main est chaude.",
+      "script": "narrateur|Estéban s'assoit près de papa. Maman est là aussi. Sa main est chaude.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-05",
+  "fil_rouge": "",
+  "title": "Olivier invite au bac à sable",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Olivier, Iris, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Olivier est au parc avec papa. Le bac à sable est tiède. Olivier a un moule étoile. Iris est près du toboggan. Olivier veut jouer. Tu peux inviter. Inviter, c'est demander. Olivier marche vers Iris. Tu veux jouer avec nous ? Iris secoue la tête. Non. Olivier a le ventre un peu serré. Papa s'approche. On peut accepter un non. Accepter un non, c'est possible. D'accord. Il retourne au bac. Il creuse un chemin. Le sable coule entre les doigts. Iris joue au toboggan. Olivier n'insiste pas. Merci. Tu as su inviter. Tu as su accepter un non. Olivier souffle. Il pose l'étoile dans le sable. Papa reste au banc.",
+      "script": "narrateur|Olivier est au parc avec papa. Le bac à sable est tiède. Olivier a un moule étoile. Iris est près du toboggan. Olivier veut jouer.\npapa|Tu peux inviter. Inviter, c'est demander.\nnarrateur|Olivier marche vers Iris.\nnarrateur|Tu veux jouer avec nous ?\nnarrateur|Iris secoue la tête.\ncopine|Non.\nnarrateur|Olivier a le ventre un peu serré. Papa s'approche.\npapa|On peut accepter un non. Accepter un non, c'est possible.\nenfant-m|D'accord. Il retourne au bac. Il creuse un chemin.\nnarrateur|Le sable coule entre les doigts. Iris joue au toboggan. Olivier n'insiste pas.\npapa|Merci. Tu as su inviter. Tu as su accepter un non.\nnarrateur|Olivier souffle. Il pose l'étoile dans le sable. Papa reste au banc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iris dit non. Que fait Olivier ?",
+      "script": "narrateur|Iris dit non. Que fait Olivier ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Olivier a su inviter. Iris a dit non. Olivier a pu accepter un non. Papa est là.",
+      "script": "narrateur|Olivier a su inviter. Iris a dit non. Olivier a pu accepter un non. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Olivier range le moule. Papa se lève du banc.",
+      "script": "narrateur|Olivier range le moule. Papa se lève du banc.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

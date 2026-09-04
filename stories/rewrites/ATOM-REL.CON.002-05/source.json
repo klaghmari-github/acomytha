@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.002-05",
+  "fil_rouge": "",
+  "title": "Octave dit stop dans le préau",
+  "lesson_id": "REL.CON.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Octave, maîtresse, maman",
+  "setting": "école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Octave est sous le préau. La maîtresse est près de la porte. Un camarade bouscule la file. Stop. Il fait un pas. Il doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Octave marche vers la maîtresse. On m'a bousculé. La maîtresse l'écoute. Le soir, maman vient. Octave raconte. Tu as dit stop. Tu t'es éloigné. Tu es allé vers la maîtresse.",
+      "script": "narrateur|Octave est sous le préau. La maîtresse est près de la porte. Un camarade bouscule la file.\nenfant-m|Stop. Il fait un pas. Il doit s'éloigner. S'éloigner, c'est aller vers la maîtresse.\nnarrateur|Octave marche vers la maîtresse.\nnarrateur|On m'a bousculé.\nnarrateur|La maîtresse l'écoute. Le soir, maman vient. Octave raconte.\nmaman|Tu as dit stop. Tu t'es éloigné. Tu es allé vers la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Octave. Que fait-il ?",
+      "script": "narrateur|Un camarade bouscule Octave. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Octave a dit stop. Il s'est éloigné. Il a rejoint la maîtresse.",
+      "script": "narrateur|Octave a dit stop. Il s'est éloigné. Il a rejoint la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman prend la main d'Octave. Ils marchent.",
+      "script": "narrateur|Maman prend la main d'Octave. Ils marchent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

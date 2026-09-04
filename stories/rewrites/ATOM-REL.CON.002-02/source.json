@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.002-02",
+  "fil_rouge": "",
+  "title": "Maya dit stop dans la cour",
+  "lesson_id": "REL.CON.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Maya, maîtresse, papa",
+  "setting": "cour d'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya est dans la cour. La maîtresse est près du banc. Maya construit une tour. Un camarade arrive vite. Il bouscule la tour. Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse. Maya marche vers la maîtresse. On m'a bousculée. La maîtresse l'écoute. Le soir, papa vient. Maya raconte. Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.",
+      "script": "narrateur|Maya est dans la cour. La maîtresse est près du banc. Maya construit une tour. Un camarade arrive vite. Il bouscule la tour.\nenfant-f|Stop. Elle fait un pas. Elle doit s'éloigner. S'éloigner, c'est aller vers la maîtresse.\nnarrateur|Maya marche vers la maîtresse.\nnarrateur|On m'a bousculée.\nnarrateur|La maîtresse l'écoute. Le soir, papa vient. Maya raconte.\npapa|Tu as dit stop. Tu t'es éloignée. Tu es allée vers la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Maya. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Maya. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maya a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "script": "narrateur|Maya a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa prend la main de Maya. Ils marchent vers la porte.",
+      "script": "narrateur|Papa prend la main de Maya. Ils marchent vers la porte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

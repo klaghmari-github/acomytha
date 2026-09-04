@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-DIF.PAR.002-05",
+  "fil_rouge": "",
+  "title": "Barbara laisse le temps à Nina",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Barbara, Nina, maman, papa",
+  "setting": "cuisine, goûter",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Barbara est à table. C'est le goûter. Maman coupe la pomme. Nina veut parler. Nina cherche ses mots. Barbara attend. Elle laisse le temps. Pomme. Puis Rouge. Barbara sourit. Barbara écoute jusqu'à la fin. Tu as laissé le temps. Papa écoute aussi. Nina finit sa phrase. Barbara attend encore. Le temps est doux. Elles croquent la pomme.",
+      "script": "narrateur|Barbara est à table. C'est le goûter. Maman coupe la pomme. Nina veut parler. Nina cherche ses mots. Barbara attend. Elle laisse le temps.\ncopine|Pomme.\nnarrateur|Puis\nnarrateur|Rouge.\nnarrateur|Barbara sourit. Barbara écoute jusqu'à la fin.\nmaman|Tu as laissé le temps. Papa écoute aussi.\nnarrateur|Nina finit sa phrase. Barbara attend encore. Le temps est doux. Elles croquent la pomme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina cherche ses mots. Que fait Barbara ?",
+      "script": "narrateur|Nina cherche ses mots. Que fait Barbara ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Barbara a laissé le temps. Nina a fini sa phrase. Papa et maman ont vu.",
+      "script": "narrateur|Barbara a laissé le temps. Nina a fini sa phrase. Papa et maman ont vu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Barbara range les peaux. Maman essuie la table.",
+      "script": "narrateur|Barbara range les peaux. Maman essuie la table.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

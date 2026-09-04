@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-05",
+  "fil_rouge": "",
+  "title": "Prune dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Prune, Idriss, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Prune est au parc avec papa. Papa s'assoit sur le banc. Prune joue près de la marelle. La craie est douce sous les doigts. Idriss court vers la marelle. Idriss bouscule Prune. Prune sent un choc. Son cœur bat vite. Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers papa. Prune marche vers le banc. Papa est son parent au parc. Prune rejoint son parent au parc. Idriss m'a bousculée. Papa l'écoute. Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Papa lui tient la main. Prune souffle doucement. Le banc est calme.",
+      "script": "narrateur|Prune est au parc avec papa. Papa s'assoit sur le banc. Prune joue près de la marelle. La craie est douce sous les doigts. Idriss court vers la marelle. Idriss bouscule Prune. Prune sent un choc. Son cœur bat vite.\nenfant-f|Stop. Elle fait un pas de côté. Elle doit s'éloigner. S'éloigner, c'est marcher vers papa.\nnarrateur|Prune marche vers le banc. Papa est son parent au parc. Prune rejoint son parent au parc.\nnarrateur|Idriss m'a bousculée. Papa l'écoute.\npapa|Tu as dit stop. Tu t'es éloignée. Tu es venue vers moi. Papa lui tient la main.\nnarrateur|Prune souffle doucement. Le banc est calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Prune. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Prune. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Prune a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Papa est là.",
+      "script": "narrateur|Prune a dit stop. Elle a su s'éloigner. Elle a rejoint son parent au parc. Papa est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Prune boit une gorgée d'eau. Papa garde sa main.",
+      "script": "narrateur|Prune boit une gorgée d'eau. Papa garde sa main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

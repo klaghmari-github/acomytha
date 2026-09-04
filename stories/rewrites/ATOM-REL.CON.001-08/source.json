@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-08",
+  "fil_rouge": "",
+  "title": "Yvonne dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Yvonne, maman",
+  "setting": "parc, bac à sable puis plots",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yvonne joue au parc. Le bac à sable est frais. Un camarade la bouscule. Yvonne sent son épaule. Stop. Elle recule. Elle peut s'éloigner. Elle s'éloigne vers le banc. Maman est le parent au parc. Yvonne va vers maman. J'ai dit stop. Maman l'écoute. Yvonne souffle. Plus tard, près des plots, un camarade la bouscule encore. Même leçon. Stop. Elle peut s'éloigner. Elle rejoint le parent au parc. Maman est sur le banc. Yvonne prend sa main. Tu as bien fait. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "script": "narrateur|Yvonne joue au parc. Le bac à sable est frais. Un camarade la bouscule. Yvonne sent son épaule.\nnarrateur|Stop. Elle recule. Elle peut s'éloigner.\nnarrateur|Elle s'éloigne vers le banc. Maman est le parent au parc. Yvonne va vers maman.\nnarrateur|J'ai dit stop. Maman l'écoute.\nnarrateur|Yvonne souffle. Plus tard, près des plots, un camarade la bouscule encore. Même leçon.\nenfant-f|Stop. Elle peut s'éloigner. Elle rejoint le parent au parc. Maman est sur le banc.\nnarrateur|Yvonne prend sa main.\nmaman|Tu as bien fait. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Yvonne. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Yvonne. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yvonne a dit stop. Au bac, puis aux plots. Elle a pu s'éloigner. Elle a rejoint le parent au parc.",
+      "script": "narrateur|Yvonne a dit stop. Au bac, puis aux plots. Elle a pu s'éloigner. Elle a rejoint le parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yvonne reste près du banc. Maman lui tient la main.",
+      "script": "narrateur|Yvonne reste près du banc. Maman lui tient la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

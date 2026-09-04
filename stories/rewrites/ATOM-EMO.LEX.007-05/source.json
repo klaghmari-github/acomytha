@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.007-05",
+  "fil_rouge": "",
+  "title": "Fabien demande une pause",
+  "lesson_id": "EMO.LEX.007",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Fabien, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fabien attend dans le salon. Maman prépare le goûter. Les pieds de Fabien tapent. Ses mains froissent le coussin. Je suis nerveux. Maman l'écoute. On peut demander une pause. Je veux une pause. Il s'assoit près de maman. Il souffle une fois. Les pieds se calment. Nerveux, ce n'est pas vilain. Une pause, c'est bien. Fabien pose les mains.",
+      "script": "narrateur|Fabien attend dans le salon. Maman prépare le goûter. Les pieds de Fabien tapent. Ses mains froissent le coussin.\nenfant-m|Je suis nerveux. Maman l'écoute.\nmaman|On peut demander une pause.\nenfant-m|Je veux une pause.\nnarrateur|Il s'assoit près de maman. Il souffle une fois. Les pieds se calment.\nmaman|Nerveux, ce n'est pas vilain.\nnarrateur|Une pause, c'est bien. Fabien pose les mains.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Fabien n'arrive pas à tenir. Que fait-il ?",
+      "script": "narrateur|Fabien n'arrive pas à tenir. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fabien a nommé : nerveux. Il a demandé une pause. Il s'est assis.",
+      "script": "narrateur|Fabien a nommé : nerveux. Il a demandé une pause. Il s'est assis.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Fabien pose les mains. Maman reste près de lui.",
+      "script": "narrateur|Fabien pose les mains. Maman reste près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

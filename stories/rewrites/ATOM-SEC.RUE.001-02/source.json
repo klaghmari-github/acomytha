@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.001-02",
+  "fil_rouge": "",
+  "title": "Léa s'arrête deux fois",
+  "lesson_id": "SEC.RUE.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Léa, maman",
+  "setting": "trajet vers la boulangerie puis le jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léa marche avec maman. Elles vont à la boulangerie. Le pain sent le beurre chaud. Elles arrivent au bord. Léa s'arrête. S'arrêter, c'est le geste. Les pieds restent au bord. Les pieds sont sur le trottoir. Maman s'arrête aussi. On s'arrête. Pieds au bord. Sur le trottoir. Léa sent le vent sur les joues. Elle attend avec maman. Les pieds restent calmes. Plus tard, elles ont le pain. Le sac est tiède. Elles vont au jardin public. Un autre bord arrive. Léa se souvient. Elle s'arrête encore. Les pieds restent au bord. Les pieds sont sur le trottoir. Tu as repris le geste. Même règle, autre chemin. Léa donne la main. Elles attendent. Les pieds restent au bord du trottoir.",
+      "script": "narrateur|Léa marche avec maman. Elles vont à la boulangerie. Le pain sent le beurre chaud. Elles arrivent au bord. Léa s'arrête. S'arrêter, c'est le geste. Les pieds restent au bord. Les pieds sont sur le trottoir. Maman s'arrête aussi.\nmaman|On s'arrête. Pieds au bord. Sur le trottoir.\nnarrateur|Léa sent le vent sur les joues. Elle attend avec maman. Les pieds restent calmes. Plus tard, elles ont le pain. Le sac est tiède. Elles vont au jardin public. Un autre bord arrive. Léa se souvient. Elle s'arrête encore. Les pieds restent au bord. Les pieds sont sur le trottoir.\nmaman|Tu as repris le geste. Même règle, autre chemin.\nnarrateur|Léa donne la main. Elles attendent. Les pieds restent au bord du trottoir.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Léa arrive au bord. Que fait-elle ?",
+      "script": "narrateur|Léa arrive au bord. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léa s'arrête au bord. Les pieds sont sur le trottoir. Elle a repris le geste. Maman est là.",
+      "script": "narrateur|Léa s'arrête au bord. Les pieds sont sur le trottoir. Elle a repris le geste. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Léa tient le sac de pain. Maman serre sa main.",
+      "script": "narrateur|Léa tient le sac de pain. Maman serre sa main.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

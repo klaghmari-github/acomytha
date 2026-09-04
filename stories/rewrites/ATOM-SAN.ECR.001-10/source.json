@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-10",
+  "fil_rouge": "",
+  "title": "Aurore éteint la tablette",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Aurore, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Aurore est dans la cuisine. Elle tient la tablette. Des sons sortent. Maman s'approche. Fini. L'adulte dit fini. Aurore écoute. Elle va éteindre. Aurore éteint la tablette. L'écran devient noir. Elle pose la tablette. Un autre jeu. Aurore prend les cuillères en bois. Toc toc sur la table. Papa arrive. Il sourit. Aurore a éteint. Elle a un autre jeu. Elles tapent un rythme. Ça sent le pain chaud.",
+      "script": "narrateur|Aurore est dans la cuisine. Elle tient la tablette. Des sons sortent. Maman s'approche.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Aurore écoute. Elle va éteindre. Aurore éteint la tablette. L'écran devient noir. Elle pose la tablette.\nmaman|Un autre jeu.\nnarrateur|Aurore prend les cuillères en bois. Toc toc sur la table. Papa arrive. Il sourit. Aurore a éteint. Elle a un autre jeu. Elles tapent un rythme. Ça sent le pain chaud.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Aurore ?",
+      "script": "narrateur|Maman dit fini. Que fait Aurore ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "L'adulte a dit fini. Aurore a éteint. Elle a pris un autre jeu. Les cuillères, c'était bien.",
+      "script": "narrateur|L'adulte a dit fini. Aurore a éteint. Elle a pris un autre jeu. Les cuillères, c'était bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Aurore range les cuillères. Papa dit merci. La cuisine est calme.",
+      "script": "narrateur|Aurore range les cuillères. Papa dit merci. La cuisine est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

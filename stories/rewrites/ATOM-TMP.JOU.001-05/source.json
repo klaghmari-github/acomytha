@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-05",
+  "fil_rouge": "",
+  "title": "Hector voit le soleil et la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Hector, papa",
+  "setting": "fenêtre puis chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le jour, Hector joue avec papa. Le soleil brille. Il fait chaud près de la fenêtre. Le jour, c'est le soleil. Le soir arrive. Le ciel devient bleu foncé. Hector voit la lune. Il voit les étoiles. La nuit, c'est la lune. Hector met son pyjama. Le pyjama est doux. La nuit, on fait dodo. Hector se couche. Il ferme les yeux. Dodo la nuit.",
+      "script": "narrateur|Le jour, Hector joue avec papa. Le soleil brille. Il fait chaud près de la fenêtre.\npapa|Le jour, c'est le soleil.\nnarrateur|Le soir arrive. Le ciel devient bleu foncé. Hector voit la lune. Il voit les étoiles.\npapa|La nuit, c'est la lune.\nnarrateur|Hector met son pyjama. Le pyjama est doux.\npapa|La nuit, on fait dodo.\nnarrateur|Hector se couche. Il ferme les yeux. Dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hector a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "script": "narrateur|Hector a vu le soleil le jour. Il a vu la lune la nuit. Il fait dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa baisse la lumière. Hector respire.",
+      "script": "narrateur|Papa baisse la lumière. Hector respire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

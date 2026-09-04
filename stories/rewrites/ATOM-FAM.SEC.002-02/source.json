@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.002-02",
+  "fil_rouge": "",
+  "title": "Lina raconte sa peur deux fois",
+  "lesson_id": "FAM.SEC.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Lina, papa, maman",
+  "setting": "parc puis magasin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lina joue au parc avec papa. Elle est près du bac à sable. Le sable est tiède. Un adulte parle tout bas. C'est notre secret. Lina sent son ventre. C'est serré. C'est un malaise. Lina a peur. Lina marche vers papa. Elle prend sa main. Papa, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Papa l'écoute. Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. Même si un adulte parle d'un secret. On va raconter à papa ou maman. Papa reste tout près. Plus tard, ils vont au magasin. Maman est là aussi. Lina sent encore son ventre. Un bruit fort la surprend. Elle a peur. Elle se souvient. Elle marche vers maman. Maman, j'ai peur. Maman écoute. Tu as repris le geste. Ce qui fait peur se raconte à papa ou maman. Lina se sent plus légère.",
+      "script": "narrateur|Lina joue au parc avec papa. Elle est près du bac à sable. Le sable est tiède. Un adulte parle tout bas.\nnarrateur|C'est notre secret.\nnarrateur|Lina sent son ventre. C'est serré. C'est un malaise. Lina a peur. Lina marche vers papa. Elle prend sa main.\nenfant-f|Papa, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Papa l'écoute.\npapa|Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. Même si un adulte parle d'un secret. On va raconter à papa ou maman. Papa reste tout près. Plus tard, ils vont au magasin. Maman est là aussi.\nnarrateur|Lina sent encore son ventre. Un bruit fort la surprend. Elle a peur. Elle se souvient. Elle marche vers maman.\nnarrateur|Maman, j'ai peur. Maman écoute.\nmaman|Tu as repris le geste. Ce qui fait peur se raconte à papa ou maman.\nnarrateur|Lina se sent plus légère.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lina a peur. Que fait-elle ?",
+      "script": "narrateur|Lina a peur. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lina a senti le malaise. Elle a marché vers papa, puis vers maman. Elle a raconté. Ce qui fait peur se raconte.",
+      "script": "narrateur|Lina a senti le malaise. Elle a marché vers papa, puis vers maman. Elle a raconté. Ce qui fait peur se raconte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lina s'assoit près de maman. Papa est là aussi. Sa main est chaude.",
+      "script": "narrateur|Lina s'assoit près de maman. Papa est là aussi. Sa main est chaude.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

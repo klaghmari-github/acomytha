@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-02",
+  "fil_rouge": "",
+  "title": "Jules appelle maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Jules, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jules est dans la cuisine. Il veut de la confiture. Le pot est fermé. Jules tourne un peu. C'est trop difficile. Jules va vers la porte. Il va vers maman. Maman est près de l'évier. Maman. J'ai besoin du pot. Il dit le besoin. Maman écoute. Maman ouvre le pot. Papa arrive. Jules dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Parce qu'il a dit le besoin, le pot s'ouvre. Jules tartine le pain. Ça sent la fraise. Papa s'assoit près de lui.",
+      "script": "narrateur|Jules est dans la cuisine. Il veut de la confiture. Le pot est fermé. Jules tourne un peu. C'est trop difficile. Jules va vers la porte. Il va vers maman. Maman est près de l'évier.\nenfant-m|Maman. J'ai besoin du pot. Il dit le besoin. Maman écoute. Maman ouvre le pot. Papa arrive.\nnarrateur|Jules dit merci. On peut aller vers eux. On peut dire le besoin. On peut appeler papa ou maman. Parce qu'il a dit le besoin, le pot s'ouvre. Jules tartine le pain. Ça sent la fraise. Papa s'assoit près de lui.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jules n'arrive pas. Que fait-il ?",
+      "script": "narrateur|Jules n'arrive pas. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules a appelé. Il a dit le besoin. Maman a entendu. Le pot est ouvert.",
+      "script": "narrateur|Jules a appelé. Il a dit le besoin. Maman a entendu. Le pot est ouvert.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Jules croque le pain. Papa s'assoit près de lui.",
+      "script": "narrateur|Jules croque le pain. Papa s'assoit près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-01",
+  "fil_rouge": "Sarah veut que Minou boive. La gamelle est vide. Ils versent trop. L'eau déborde. Ils essuient. Minou lape.",
+  "title": "La gamelle trop pleine",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sarah, papa",
+  "setting": "cuisine au soleil, carrelage tiède",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le carrelage de la cuisine est tiède. Un carré de soleil pose une nappe jaune. Ça sent le pain d'hier, un peu. Une miette brille près du buffet. Tes pieds sont chauds, Sarah. Le sol est doux. Un miaulement arrive du couloir. Minou le chat vient. Ses pattes tapent le bois. Toc, toc, tout léger. En ce moment, Sarah regarde la gamelle. La gamelle de Minou est vide. Le fond est sec, un peu blanc. Il a soif, papa. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. Tu tiens le bol avec moi ? Oui. Sarah pose les deux mains sur le bol. Le bol est froid. Papa ouvre le robinet. L'eau chante, mince. Doucement. Un peu seulement. Sarah penche le bol trop vite. L'eau monte, monte. Elle déborde. Une flaque glisse sur le carrelage. Oh. C'est trop. On arrête. On essuie. Papa prend le linge de la chaise. Le linge sent le savon. Sarah appuie avec lui. La flaque part, tout doux. Le bol, on le vide un peu ? Un peu. Ils versent l'eau en trop dans l'évier. Ça fait ploc. Il reste une lame d'eau, claire. Maintenant, on pose. Tout doux. Sarah pose la gamelle. Sa main va lentement. Le bol touche le carrelage sans bruit. Minou s'approche. Ses moustaches tremblent. Il vient. On recule un peu. On reste près de moi.",
+      "script": "narrateur|Le carrelage de la cuisine est tiède.\nnarrateur|Un carré de soleil pose une nappe jaune.\nnarrateur|Ça sent le pain d'hier, un peu.\nnarrateur|Une miette brille près du buffet.\npapa|Tes pieds sont chauds, Sarah.\nenfant-f|Le sol est doux.\nnarrateur|Un miaulement arrive du couloir.\nnarrateur|Minou le chat vient.\nnarrateur|Ses pattes tapent le bois.\nnarrateur|Toc, toc, tout léger.\nnarrateur|En ce moment, Sarah regarde la gamelle.\nnarrateur|La gamelle de Minou est vide.\nnarrateur|Le fond est sec, un peu blanc.\nenfant-f|Il a soif, papa.\nenfant-f|Je veux qu'il boive.\npapa|On le fait ensemble.\npapa|Avec un adulte.\npapa|On est doux.\npapa|Tu tiens le bol avec moi ?\nenfant-f|Oui.\nnarrateur|Sarah pose les deux mains sur le bol.\nnarrateur|Le bol est froid.\nnarrateur|Papa ouvre le robinet.\nnarrateur|L'eau chante, mince.\nenfant-f|Doucement.\npapa|Un peu seulement.\nnarrateur|Sarah penche le bol trop vite.\nnarrateur|L'eau monte, monte.\nnarrateur|Elle déborde.\nnarrateur|Une flaque glisse sur le carrelage.\nenfant-f|Oh.\nenfant-f|C'est trop.\npapa|On arrête.\npapa|On essuie.\nnarrateur|Papa prend le linge de la chaise.\nnarrateur|Le linge sent le savon.\nnarrateur|Sarah appuie avec lui.\nnarrateur|La flaque part, tout doux.\npapa|Le bol, on le vide un peu ?\nenfant-f|Un peu.\nnarrateur|Ils versent l'eau en trop dans l'évier.\nnarrateur|Ça fait ploc.\nnarrateur|Il reste une lame d'eau, claire.\npapa|Maintenant, on pose.\npapa|Tout doux.\nnarrateur|Sarah pose la gamelle.\nnarrateur|Sa main va lentement.\nnarrateur|Le bol touche le carrelage sans bruit.\nnarrateur|Minou s'approche.\nnarrateur|Ses moustaches tremblent.\nenfant-f|Il vient.\npapa|On recule un peu.\npapa|On reste près de moi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le carrelage de la cuisine est tiède. Un carré de soleil pose une nappe jaune. Ça sent le pain d'hier, un peu. Une miette brille près du buffet. Tes pieds sont chauds, Sarah. Le sol est doux. Un miaulement arrive du couloir. Minou le chat vient. Ses pattes tapent le bois. Toc, toc, tout léger. En ce moment, Sarah regarde la gamelle. La gamelle de Minou est vide. Le fond est sec, un peu blanc. Il a soif, papa. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. Tu tiens le bol avec moi ? Oui. Sarah pose les deux mains sur le bol. Le bol est froid. Papa ouvre le robinet. L'eau chante, mince. Doucement. Un peu seulement. Sarah penche le bol trop vite. L'eau monte, monte. Elle déborde. Une flaque glisse sur le carrelage. Oh. C'est trop. On arrête. On essuie. Papa prend le linge de la chaise. Le linge sent le savon. Sarah appuie avec lui. La flaque part, tout doux. Le bol, on le vide un peu ? Un peu. Ils versent l'eau en trop dans l'évier. Ça fait ploc. Il reste une lame d'eau, claire. Maintenant, on pose. Tout doux. Sarah pose la gamelle. Sa main va lentement. Le bol touche le carrelage sans bruit. Minou s'approche. Ses moustaches tremblent. Il vient. On recule un peu. On reste près de moi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah donne l'eau au chat. Comment fait-elle ?",
+      "script": "narrateur|Sarah donne l'eau au chat.\nnarrateur|Comment fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Sarah donne l'eau au chat. Comment fait-elle ?",
+      "expected_answer": "douce",
+      "accepted_examples": "douce | doux | avec papa | avec un adulte",
+      "retry_prompt": "Elle est douce, avec papa. Comment fait Sarah ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Minou pose la langue. Lape, lape, lape. L'eau baisse, tout doux. Il boit. Oui. Tu as été douce. Avec un adulte. Merci, Sarah. Sarah reste assise près de papa. Elle ne prend pas Minou. Ses mains sont sur ses genoux. La flaque est partie. Oui. On a essuyé ensemble. Tu as vu le trop d'eau ? Ça déborde. Alors on verse peu. Minou lève la tête. Une goutte brille sur sa moustache. Il se lèche la patte. Il est content. Il a bu.",
+      "script": "narrateur|Minou pose la langue.\nnarrateur|Lape, lape, lape.\nnarrateur|L'eau baisse, tout doux.\nenfant-f|Il boit.\npapa|Oui.\npapa|Tu as été douce.\npapa|Avec un adulte.\npapa|Merci, Sarah.\nnarrateur|Sarah reste assise près de papa.\nnarrateur|Elle ne prend pas Minou.\nnarrateur|Ses mains sont sur ses genoux.\nenfant-f|La flaque est partie.\npapa|Oui.\npapa|On a essuyé ensemble.\npapa|Tu as vu le trop d'eau ?\nenfant-f|Ça déborde.\npapa|Alors on verse peu.\nnarrateur|Minou lève la tête.\nnarrateur|Une goutte brille sur sa moustache.\nnarrateur|Il se lèche la patte.\nenfant-f|Il est content.\npapa|Il a bu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Minou pose la langue. Lape, lape, lape. L'eau baisse, tout doux. Il boit. Oui. Tu as été douce. Avec un adulte. Merci, Sarah. Sarah reste assise près de papa. Elle ne prend pas Minou. Ses mains sont sur ses genoux. La flaque est partie. Oui. On a essuyé ensemble. Tu as vu le trop d'eau ? Ça déborde. Alors on verse peu. Minou lève la tête. Une goutte brille sur sa moustache. Il se lèche la patte. Il est content. Il a bu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le carré de soleil a bougé. Il touche maintenant la gamelle. L'eau restante fait un petit miroir. Je vois Minou dedans. Un Minou tout petit. Minou s'allonge près du buffet. Son ventre va, vient. Un ronron commence, bas. Tu entends ? Oui. Sarah pose l'oreille vers le sol. Le ronron est chaud. On range le linge. Sarah donne le linge à papa. Le carrelage est sec. Il a bu, papa. C'était ça, ton envie.",
+      "script": "narrateur|Le carré de soleil a bougé.\nnarrateur|Il touche maintenant la gamelle.\nnarrateur|L'eau restante fait un petit miroir.\nenfant-f|Je vois Minou dedans.\npapa|Un Minou tout petit.\nnarrateur|Minou s'allonge près du buffet.\nnarrateur|Son ventre va, vient.\nnarrateur|Un ronron commence, bas.\npapa|Tu entends ?\nenfant-f|Oui.\nnarrateur|Sarah pose l'oreille vers le sol.\nnarrateur|Le ronron est chaud.\npapa|On range le linge.\nnarrateur|Sarah donne le linge à papa.\nnarrateur|Le carrelage est sec.\nenfant-f|Il a bu, papa.\npapa|C'était ça, ton envie.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le carré de soleil a bougé. Il touche maintenant la gamelle. L'eau restante fait un petit miroir. Je vois Minou dedans. Un Minou tout petit. Minou s'allonge près du buffet. Son ventre va, vient. Un ronron commence, bas. Tu entends ? Oui. Sarah pose l'oreille vers le sol. Le ronron est chaud. On range le linge. Sarah donne le linge à papa. Le carrelage est sec. Il a bu, papa. C'était ça, ton envie."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Minou a de l'eau. Un peu, tout doux. Une miette reste près du buffet. Le soleil la laisse d'or. La cuisine redevient calme.",
+      "script": "enfant-f|Minou a de l'eau.\npapa|Un peu, tout doux.\nnarrateur|Une miette reste près du buffet.\nnarrateur|Le soleil la laisse d'or.\nnarrateur|La cuisine redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Minou a de l'eau. Un peu, tout doux. Une miette reste près du buffet. Le soleil la laisse d'or. La cuisine redevient calme."
+    }
+  ]
+}

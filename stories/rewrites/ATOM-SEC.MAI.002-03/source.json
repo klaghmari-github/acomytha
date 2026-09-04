@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.002-03",
+  "fil_rouge": "",
+  "title": "Marin demande avant de goûter",
+  "lesson_id": "SEC.MAI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Marin, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Marin est au jardin avec maman. Il voit une baie brillante. Il ne la connaît pas. C'est inconnu. Marin ne goûte pas tout seul. Il va demander. Maman, je peux ? Maman, c'est l'adulte. Maman regarde. On laisse. Merci d'avoir demandé. Marin pose ses mains avec les feuilles. Inconnu : on demande à l'adulte.",
+      "script": "narrateur|Marin est au jardin avec maman. Il voit une baie brillante. Il ne la connaît pas. C'est inconnu. Marin ne goûte pas tout seul. Il va demander.\nnarrateur|Maman, je peux ? Maman, c'est l'adulte. Maman regarde.\nnarrateur|On laisse. Merci d'avoir demandé.\nnarrateur|Marin pose ses mains avec les feuilles. Inconnu : on demande à l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Marin voit une baie inconnue. Que fait-il ?",
+      "script": "narrateur|Marin voit une baie inconnue. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Marin a demandé. L'inconnu, on le dit à l'adulte.",
+      "script": "narrateur|Marin a demandé. L'inconnu, on le dit à l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman donne une fraise du panier. Marin dit merci.",
+      "script": "narrateur|Maman donne une fraise du panier. Marin dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

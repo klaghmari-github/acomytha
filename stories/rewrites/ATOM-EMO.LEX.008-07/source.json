@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.008-07",
+  "fil_rouge": "",
+  "title": "Georges est gêné, puis il répare",
+  "lesson_id": "EMO.LEX.008",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Georges, papa, maman",
+  "setting": "cuisine et salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Georges verse l'eau. Le verre penche. L'eau mouille la table. Georges sent ses joues chaudes. Je suis gêné. C'est une erreur. Une erreur, ce n'est pas toi. J'ai versé. Il prend un chiffon. Il répare. La table redevient sèche. Plus tard, au salon, Georges bouscule un puzzle. Une pièce tombe. Il est gêné. Il dit l'erreur. Il pose la pièce. Il répare. Maman sourit. Même leçon, autre pièce. On dit. On répare.",
+      "script": "narrateur|Georges verse l'eau. Le verre penche. L'eau mouille la table. Georges sent ses joues chaudes.\nnarrateur|Je suis gêné.\npapa|C'est une erreur.\nnarrateur|Une erreur, ce n'est pas toi.\nenfant-m|J'ai versé.\nnarrateur|Il prend un chiffon. Il répare. La table redevient sèche. Plus tard, au salon, Georges bouscule un puzzle. Une pièce tombe. Il est gêné. Il dit l'erreur. Il pose la pièce. Il répare. Maman sourit. Même leçon, autre pièce. On dit. On répare.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Georges a les joues chaudes. Que fait-il ?",
+      "script": "narrateur|Georges a les joues chaudes. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Georges était gêné. Il a dit l'erreur. Il a réparé. Papa et maman ont écouté.",
+      "script": "narrateur|Georges était gêné. Il a dit l'erreur. Il a réparé. Papa et maman ont écouté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Georges plie le chiffon. Le puzzle est de nouveau entier.",
+      "script": "narrateur|Georges plie le chiffon. Le puzzle est de nouveau entier.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

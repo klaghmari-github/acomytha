@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-05",
+  "fil_rouge": "",
+  "title": "Léandre suit la règle des cubes",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Léandre, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léandre est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Léandre tend la main. Papa va rappeler la règle une fois. On attend. C'est la règle. Léandre attend. Puis il pose un cube. Tu as suivi la règle. Léandre répète : une règle. Papa la rappelle. Léandre la suit.",
+      "script": "narrateur|Léandre est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Léandre tend la main. Papa va rappeler la règle une fois.\nnarrateur|On attend. C'est la règle.\nnarrateur|Léandre attend. Puis il pose un cube.\npapa|Tu as suivi la règle.\nnarrateur|Léandre répète : une règle. Papa la rappelle. Léandre la suit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Léandre joue. Que suit-il ?",
+      "script": "narrateur|Léandre joue. Que suit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léandre a suivi la règle. Papa l'a rappelée.",
+      "script": "narrateur|Léandre a suivi la règle. Papa l'a rappelée.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range les cubes. Léandre donne la main.",
+      "script": "narrateur|Papa range les cubes. Léandre donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.007-06",
+  "fil_rouge": "",
+  "title": "Valentin est nerveux et demande une pause",
+  "lesson_id": "EMO.LEX.007",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Valentin, maman",
+  "setting": "salle d'attente",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Valentin attend avec maman. Ses jambes bougent. Ses mains froissent le manteau. Tu es nerveux. Le corps n'arrive pas à tenir. On peut demander une pause. Je suis nerveux. Je veux une pause. Maman l'écoute. Ils s'assoient près de la fenêtre. Valentin souffle. Il s'assoit. La pause aide. Nerveux, ce n'est pas vilain.",
+      "script": "narrateur|Valentin attend avec maman. Ses jambes bougent. Ses mains froissent le manteau.\nmaman|Tu es nerveux.\nnarrateur|Le corps n'arrive pas à tenir. On peut demander une pause.\nenfant-m|Je suis nerveux. Je veux une pause. Maman l'écoute.\nnarrateur|Ils s'assoient près de la fenêtre. Valentin souffle. Il s'assoit. La pause aide. Nerveux, ce n'est pas vilain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Valentin n'arrive pas à tenir. Que fait-il ?",
+      "script": "narrateur|Valentin n'arrive pas à tenir. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Valentin Je suis nerveux. Il a demandé une pause.",
+      "script": "narrateur|Valentin\nenfant-f|Je suis nerveux. Il a demandé une pause.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman donne la main. Ils rentrent.",
+      "script": "narrateur|Maman donne la main. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.FOOT.001-06",
+  "fil_rouge": "",
+  "title": "Flore vise le but au jardin",
+  "lesson_id": "JEU.FOOT.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Flore, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Flore et papa sont au jardin. Papa pose deux sacs. C'est le but. Il trace un rectangle. Voici l'espace montré. On reste dans l'espace montré. Flore touche le ballon. On va passer le ballon. Puis on vise le but. Flore passe. Papa rend. Flore pousse le ballon vers le but. Les pieds restent dans l'espace montré.",
+      "script": "narrateur|Flore et papa sont au jardin. Papa pose deux sacs. C'est le but. Il trace un rectangle.\npapa|Voici l'espace montré. On reste dans l'espace montré.\nnarrateur|Flore touche le ballon.\npapa|On va passer le ballon.\nnarrateur|Puis on vise le but. Flore passe. Papa rend. Flore pousse le ballon vers le but. Les pieds restent dans l'espace montré.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Flore joue au foot. Que fait-elle ?",
+      "script": "narrateur|Flore joue au foot. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Flore a passé le ballon. Elle a visé le but. Dans l'espace montré.",
+      "script": "narrateur|Flore a passé le ballon. Elle a visé le but. Dans l'espace montré.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range les sacs. Flore boit une gorgée.",
+      "script": "narrateur|Papa range les sacs. Flore boit une gorgée.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

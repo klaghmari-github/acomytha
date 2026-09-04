@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-06",
+  "fil_rouge": "",
+  "title": "Hector prête, puis propose un jeu",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hector, Mila, papa",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hector joue aux cubes dans le salon. Les cubes sont lisses. Mila veut le cube rouge. Papa est près de la fenêtre. Hector prête le cube. Il attend son tour. Mila construit une tour. Puis c'est le tour d'Hector. Il pose un cube bleu. On peut prêter. On attend son tour. Ou on propose un autre jeu. Plus tard, au jardin, l'herbe est tiède. Mila veut le ballon. On peut prêter. Ou attendre son tour. Il prête le ballon. Il propose les cerceaux. C'est un autre jeu. Mila prend un cerceau. Hector attend. Puis il joue. Même leçon dehors. Prêter. Tour. Autre jeu. Papa tape dans ses mains. Hector rit.",
+      "script": "narrateur|Hector joue aux cubes dans le salon. Les cubes sont lisses. Mila veut le cube rouge. Papa est près de la fenêtre. Hector prête le cube. Il attend son tour. Mila construit une tour. Puis c'est le tour d'Hector. Il pose un cube bleu.\npapa|On peut prêter. On attend son tour. Ou on propose un autre jeu. Plus tard, au jardin, l'herbe est tiède.\nnarrateur|Mila veut le ballon.\nenfant-m|On peut prêter. Ou attendre son tour. Il prête le ballon. Il propose les cerceaux. C'est un autre jeu.\nnarrateur|Mila prend un cerceau. Hector attend. Puis il joue. Même leçon dehors. Prêter. Tour. Autre jeu. Papa tape dans ses mains. Hector rit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mila veut un jouet. Que peut faire Hector ?",
+      "script": "narrateur|Mila veut un jouet. Que peut faire Hector ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hector a prêté. Il a attendu son tour. Il a proposé un autre jeu. Salon, puis jardin.",
+      "script": "narrateur|Hector a prêté. Il a attendu son tour. Il a proposé un autre jeu. Salon, puis jardin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hector range un cerceau. Papa ferme le portail.",
+      "script": "narrateur|Hector range un cerceau. Papa ferme le portail.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

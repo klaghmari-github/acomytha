@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-02",
+  "fil_rouge": "",
+  "title": "Sara dit les trois noms du livre",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Sara, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara s'assoit sur le tapis avec maman. Elles ouvrent un livre d'animaux. Une page : un chat, une chatte, un chaton. Trois noms de la famille. Sara répète : chat, chatte, chaton. Autre page : un chien, une chienne, un chiot. Sara dit les trois noms. Encore : un coq, une poule, un poussin. Sara pose le doigt sur le poussin. Le petit, c'est le poussin. Sara sourit. Trois noms, chaque fois.",
+      "script": "narrateur|Sara s'assoit sur le tapis avec maman. Elles ouvrent un livre d'animaux. Une page : un chat, une chatte, un chaton.\nmaman|Trois noms de la famille.\nnarrateur|Sara répète : chat, chatte, chaton. Autre page : un chien, une chienne, un chiot. Sara dit les trois noms. Encore : un coq, une poule, un poussin. Sara pose le doigt sur le poussin.\nmaman|Le petit, c'est le poussin.\nnarrateur|Sara sourit. Trois noms, chaque fois.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sara a dit les trois noms. Chat, chatte, chaton. Coq, poule, poussin.",
+      "script": "narrateur|Sara a dit les trois noms. Chat, chatte, chaton. Coq, poule, poussin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman ferme le livre. Sara range le coussin.",
+      "script": "narrateur|Maman ferme le livre. Sara range le coussin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-02",
+  "fil_rouge": "",
+  "title": "Les douze mois de Léa",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Léa, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léa est à la cuisine. Papa accroche un calendrier près de la fenêtre. Il y a douze mois. Janvier, février, mars. Avril, mai, juin. Juillet, août, septembre. Octobre, novembre, décembre. Léa pose le doigt. Octobre. L'anniversaire de Léa est en octobre. Léa répète : douze mois. Un anniversaire a un mois. Papa dessine une petite étoile sur octobre.",
+      "script": "narrateur|Léa est à la cuisine. Papa accroche un calendrier près de la fenêtre.\npapa|Il y a douze mois. Janvier, février, mars. Avril, mai, juin. Juillet, août, septembre. Octobre, novembre, décembre.\nnarrateur|Léa pose le doigt.\npapa|Octobre. L'anniversaire de Léa est en octobre.\nnarrateur|Léa répète : douze mois. Un anniversaire a un mois. Papa dessine une petite étoile sur octobre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Léa a un mois sur le calendrier. Pourquoi ?",
+      "script": "narrateur|Léa a un mois sur le calendrier. Pourquoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léa a entendu les douze mois. Son anniversaire est en octobre.",
+      "script": "narrateur|Léa a entendu les douze mois. Son anniversaire est en octobre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le crayon. Léa touche l'étoile.",
+      "script": "narrateur|Papa range le crayon. Léa touche l'étoile.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

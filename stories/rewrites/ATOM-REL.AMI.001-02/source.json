@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-02",
+  "fil_rouge": "",
+  "title": "Hugo invite Lina",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hugo, Lina, papa",
+  "setting": "cour d'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo est dans la cour. Papa attend près du portail. Hugo a un cerceau bleu. Lina est là aussi. Hugo veut jouer. Tu peux inviter. Inviter, c'est demander. Tu veux jouer ? Lina secoue la tête. Non. Hugo a le ventre un peu serré. Papa s'approche. On peut accepter un non. Accepter un non, c'est possible. D'accord. Il joue avec papa. Le cerceau roule sur l'asphalte. Lina joue au bac à sable. Hugo n'insiste pas. Parce qu'il accepte un non, le jeu reste doux. Merci. Tu as su inviter. Tu as su accepter un non. Hugo sourit un peu.",
+      "script": "narrateur|Hugo est dans la cour. Papa attend près du portail. Hugo a un cerceau bleu. Lina est là aussi. Hugo veut jouer.\npapa|Tu peux inviter. Inviter, c'est demander.\nenfant-m|Tu veux jouer ?\nnarrateur|Lina secoue la tête.\ncopine|Non.\nnarrateur|Hugo a le ventre un peu serré. Papa s'approche.\npapa|On peut accepter un non. Accepter un non, c'est possible.\nenfant-m|D'accord. Il joue avec papa.\nnarrateur|Le cerceau roule sur l'asphalte. Lina joue au bac à sable. Hugo n'insiste pas. Parce qu'il accepte un non, le jeu reste doux.\npapa|Merci. Tu as su inviter. Tu as su accepter un non.\nnarrateur|Hugo sourit un peu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Lina dit non. Que fait Hugo ?",
+      "script": "narrateur|Lina dit non. Que fait Hugo ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo a su inviter. Lina a dit non. Hugo a pu accepter un non. Papa est là.",
+      "script": "narrateur|Hugo a su inviter. Lina a dit non. Hugo a pu accepter un non. Papa est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hugo range le cerceau. Papa ouvre le portail.",
+      "script": "narrateur|Hugo range le cerceau. Papa ouvre le portail.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

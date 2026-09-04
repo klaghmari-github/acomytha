@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-07",
+  "fil_rouge": "Chouchou veut voir la mer du Portugal sur l'image de sardine pendant que ça sent la cuisine. Une goutte d'huile tache le coin. Elles essuient. Le bleu revient.",
+  "title": "La sardine de Chouchou",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "cuisine, huile de citron et boîte illustrée",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "L'huile chaude sent le citron dans la cuisine. Une poêle fait un petit chant gras. La fenêtre est ouverte sur la cour. Une sardine dessinée attend près du pain. Chouchou vit ici, avec maman. Tu as vu la boîte, Chouchou ? Il y a un poisson. Une sardine. Dessinée, sur le Portugal. En ce moment, Chouchou prend la boîte. Le métal est froid, un peu huileux. Derrière le poisson, c'est bleu. C'est la mer du Portugal. Le Portugal. Et la mer. Un pays. Un paysage. Chouchou veut poser l'image près d'elle. Pour voir la mer, en mangeant. Tu la mets contre le sel ? Oui. La poêle crache une goutte. La goutte d'huile tombe sur le coin. Oh. Le bleu est taché ! On essuie tout de suite ? Oui, maman. Maman tend un torchon sec. Chouchou tamponne le coin, tout doux. L'huile fait un rond brillant. Ça part ? Encore un peu. Le torchon sent le citron, maintenant. Le rond devient plus pâle. La sardine est encore là. Et la mer, derrière ? Elle revient. Tu tamponnes bien. Une miette de pain roule près de la boîte. Chouchou la pousse du doigt.",
+      "script": "narrateur|L'huile chaude sent le citron dans la cuisine.\nnarrateur|Une poêle fait un petit chant gras.\nnarrateur|La fenêtre est ouverte sur la cour.\nnarrateur|Une sardine dessinée attend près du pain.\nnarrateur|Chouchou vit ici, avec maman.\nmaman|Tu as vu la boîte, Chouchou ?\nenfant-f|Il y a un poisson.\nmaman|Une sardine.\nmaman|Dessinée, sur le Portugal.\nnarrateur|En ce moment, Chouchou prend la boîte.\nnarrateur|Le métal est froid, un peu huileux.\nenfant-f|Derrière le poisson, c'est bleu.\nmaman|C'est la mer du Portugal.\nenfant-f|Le Portugal.\nenfant-f|Et la mer.\nmaman|Un pays.\nmaman|Un paysage.\nnarrateur|Chouchou veut poser l'image près d'elle.\nenfant-f|Pour voir la mer, en mangeant.\nmaman|Tu la mets contre le sel ?\nenfant-f|Oui.\nnarrateur|La poêle crache une goutte.\nnarrateur|La goutte d'huile tombe sur le coin.\nenfant-f|Oh.\nenfant-f|Le bleu est taché !\nmaman|On essuie tout de suite ?\nenfant-f|Oui, maman.\nnarrateur|Maman tend un torchon sec.\nnarrateur|Chouchou tamponne le coin, tout doux.\nnarrateur|L'huile fait un rond brillant.\nenfant-f|Ça part ?\nmaman|Encore un peu.\nnarrateur|Le torchon sent le citron, maintenant.\nnarrateur|Le rond devient plus pâle.\nenfant-f|La sardine est encore là.\nmaman|Et la mer, derrière ?\nenfant-f|Elle revient.\nmaman|Tu tamponnes bien.\nnarrateur|Une miette de pain roule près de la boîte.\nnarrateur|Chouchou la pousse du doigt.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "L'huile chaude sent le citron dans la cuisine. Une poêle fait un petit chant gras. La fenêtre est ouverte sur la cour. Une sardine dessinée attend près du pain. Chouchou vit ici, avec maman. Tu as vu la boîte, Chouchou ? Il y a un poisson. Une sardine. Dessinée, sur le Portugal. En ce moment, Chouchou prend la boîte. Le métal est froid, un peu huileux. Derrière le poisson, c'est bleu. C'est la mer du Portugal. Le Portugal. Et la mer. Un pays. Un paysage. Chouchou veut poser l'image près d'elle. Pour voir la mer, en mangeant. Tu la mets contre le sel ? Oui. La poêle crache une goutte. La goutte d'huile tombe sur le coin. Oh. Le bleu est taché ! On essuie tout de suite ? Oui, maman. Maman tend un torchon sec. Chouchou tamponne le coin, tout doux. L'huile fait un rond brillant. Ça part ? Encore un peu. Le torchon sent le citron, maintenant. Le rond devient plus pâle. La sardine est encore là. Et la mer, derrière ? Elle revient. Tu tamponnes bien. Une miette de pain roule près de la boîte. Chouchou la pousse du doigt."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chouchou nomme le Portugal. Elle nomme aussi quoi ?",
+      "script": "narrateur|Chouchou nomme le Portugal.\nnarrateur|Elle nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Chouchou nomme le Portugal. Elle nomme aussi quoi ?",
+      "expected_answer": "la mer",
+      "accepted_examples": "mer | la mer | mer du Portugal | bleu | paysage",
+      "retry_prompt": "Chouchou nomme aussi la mer. Elle nomme aussi quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La mer. Oui, la mer du Portugal. Le coin de la boîte est presque sec. Le bleu a repris sa place. Merci, Chouchou. Tu as sauvé l'image. Je la mets ici. Chouchou pose la boîte contre le sel. La sardine dessinée regarde la poêle. On voit la mer, en cuisinant. Oui. La poêle chante moins fort. Maman coupe le citron en deux. Ça pique le nez. Comme au Portugal, presque. Une goutte de citron tombe dans l'huile. Ça sent plus fort, tout à coup. La mer, et le citron. Et la sardine.",
+      "script": "enfant-f|La mer.\nmaman|Oui, la mer du Portugal.\nnarrateur|Le coin de la boîte est presque sec.\nnarrateur|Le bleu a repris sa place.\nmaman|Merci, Chouchou.\nmaman|Tu as sauvé l'image.\nenfant-f|Je la mets ici.\nnarrateur|Chouchou pose la boîte contre le sel.\nnarrateur|La sardine dessinée regarde la poêle.\nmaman|On voit la mer, en cuisinant.\nenfant-f|Oui.\nnarrateur|La poêle chante moins fort.\nnarrateur|Maman coupe le citron en deux.\nenfant-f|Ça pique le nez.\nmaman|Comme au Portugal, presque.\nnarrateur|Une goutte de citron tombe dans l'huile.\nnarrateur|Ça sent plus fort, tout à coup.\nenfant-f|La mer, et le citron.\nmaman|Et la sardine.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La mer. Oui, la mer du Portugal. Le coin de la boîte est presque sec. Le bleu a repris sa place. Merci, Chouchou. Tu as sauvé l'image. Je la mets ici. Chouchou pose la boîte contre le sel. La sardine dessinée regarde la poêle. On voit la mer, en cuisinant. Oui. La poêle chante moins fort. Maman coupe le citron en deux. Ça pique le nez. Comme au Portugal, presque. Une goutte de citron tombe dans l'huile. Ça sent plus fort, tout à coup. La mer, et le citron. Et la sardine."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tu as fini d'essuyer ? Oui, maman. Elles s'assoient près de la table. Le pain est tiède sous les doigts. Je regarde la boîte. Le Portugal. Et la mer. Chouchou mange une bouchée. Elle garde les yeux sur le bleu. Ça sent la cuisine. Et un peu le large, aussi. La fenêtre amène un air de cour.",
+      "script": "maman|Tu as fini d'essuyer ?\nenfant-f|Oui, maman.\nnarrateur|Elles s'assoient près de la table.\nnarrateur|Le pain est tiède sous les doigts.\nenfant-f|Je regarde la boîte.\nmaman|Le Portugal.\nmaman|Et la mer.\nnarrateur|Chouchou mange une bouchée.\nnarrateur|Elle garde les yeux sur le bleu.\nenfant-f|Ça sent la cuisine.\nmaman|Et un peu le large, aussi.\nnarrateur|La fenêtre amène un air de cour.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Tu as fini d'essuyer ? Oui, maman. Elles s'assoient près de la table. Le pain est tiède sous les doigts. Je regarde la boîte. Le Portugal. Et la mer. Chouchou mange une bouchée. Elle garde les yeux sur le bleu. Ça sent la cuisine. Et un peu le large, aussi. La fenêtre amène un air de cour."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La boîte reste contre le sel. Le torchon sent encore le citron. La sardine garde la mer. Pour demain, aussi. L'huile chaude se tait, enfin.",
+      "script": "narrateur|La boîte reste contre le sel.\nnarrateur|Le torchon sent encore le citron.\nenfant-f|La sardine garde la mer.\nmaman|Pour demain, aussi.\nnarrateur|L'huile chaude se tait, enfin.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La boîte reste contre le sel. Le torchon sent encore le citron. La sardine garde la mer. Pour demain, aussi. L'huile chaude se tait, enfin."
+    }
+  ]
+}

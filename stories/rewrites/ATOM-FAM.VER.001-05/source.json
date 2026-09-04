@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-05",
+  "fil_rouge": "",
+  "title": "William raconte à papa et maman",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "William, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "William joue dans le salon. Il veut poser son verre. Le verre glisse. L'eau tombe sur le tapis. William a le ventre serré. Il va vers papa. Papa, le verre est tombé. J'ai fait tomber l'eau. Papa s'approche. Merci de raconter. On essuie ensemble. William prend le torchon. Le tapis redevient sec. Plus tard, William est dans la cuisine. Il attrape le saladier. Le saladier glisse. De la farine tombe. William va vers maman. Maman, j'ai fait tomber la farine. Merci de raconter. On ramasse ensemble. Même leçon, autre pièce. On raconte à papa ou maman. C'est comme ça.",
+      "script": "narrateur|William joue dans le salon. Il veut poser son verre. Le verre glisse. L'eau tombe sur le tapis. William a le ventre serré. Il va vers papa.\nenfant-m|Papa, le verre est tombé. J'ai fait tomber l'eau. Papa s'approche.\npapa|Merci de raconter. On essuie ensemble.\nnarrateur|William prend le torchon. Le tapis redevient sec. Plus tard, William est dans la cuisine. Il attrape le saladier. Le saladier glisse. De la farine tombe. William va vers maman.\nnarrateur|Maman, j'ai fait tomber la farine.\nmaman|Merci de raconter. On ramasse ensemble. Même leçon, autre pièce. On raconte à papa ou maman. C'est comme ça.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "L'eau est tombée. Que fait William ?",
+      "script": "narrateur|L'eau est tombée. Que fait William ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "William a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé.",
+      "script": "narrateur|William a raconté. Papa a écouté. Maman a écouté. Ensemble, ils ont ramassé.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le sol est propre. William se lave les mains.",
+      "script": "narrateur|Le sol est propre. William se lave les mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-08",
+  "fil_rouge": "",
+  "title": "Gabrielle invite et accepte un non",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gabrielle, Noé, Iris, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gabrielle est dans le jardin. Maman est près des pots. Gabrielle a une corde à sauter. Noé est près du cerisier. Gabrielle va vers lui. Tu veux jouer avec nous ? Inviter, c'est demander. Non. Gabrielle s'arrête. Elle accepte le non. Un non est possible. Tu as su inviter. Tu as su accepter un non. Parce qu'elle accepte, Noé reste tranquille. Gabrielle saute seule. La corde claque doucement. Plus tard, Iris passe. Gabrielle invite encore. Oui. Elles sautent. Le non de Noé est entendu. Papa les rejoindra pour le goûter.",
+      "script": "narrateur|Gabrielle est dans le jardin. Maman est près des pots. Gabrielle a une corde à sauter. Noé est près du cerisier. Gabrielle va vers lui.\nnarrateur|Tu veux jouer avec nous ? Inviter, c'est demander.\ncopain|Non.\nnarrateur|Gabrielle s'arrête. Elle accepte le non. Un non est possible.\nmaman|Tu as su inviter. Tu as su accepter un non. Parce qu'elle accepte, Noé reste tranquille.\nnarrateur|Gabrielle saute seule. La corde claque doucement. Plus tard, Iris passe. Gabrielle invite encore.\ncopine|Oui. Elles sautent.\nnarrateur|Le non de Noé est entendu. Papa les rejoindra pour le goûter.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé dit non. Que fait Gabrielle ?",
+      "script": "narrateur|Noé dit non. Que fait Gabrielle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gabrielle a su inviter. Elle a accepté le non. Maman a vu. Un non est possible.",
+      "script": "narrateur|Gabrielle a su inviter. Elle a accepté le non. Maman a vu. Un non est possible.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gabrielle range la corde. Maman lui tend le sac.",
+      "script": "narrateur|Gabrielle range la corde. Maman lui tend le sac.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

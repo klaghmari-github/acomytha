@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-11",
+  "fil_rouge": "",
+  "title": "Denis joue où papa voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Denis, papa, maman",
+  "setting": "square, marelle puis jeu à ressort",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Denis arrive au square avec papa. Papa montre la marelle. C'est l'espace montré. Denis saute dans les cases. Il sent le sol lisse. Papa s'assoit sur le banc. L'adulte voit Denis. Denis reste dans l'espace montré. Je te vois. L'adulte voit. Plus tard, papa montre le jeu à ressort. Autre espace montré. Denis s'assoit dessus. Il revient au pied. Papa le voit encore. L'adulte voit. Même leçon, autre jeu. On reste dans l'espace montré. Maman arrivera après. Denis range son manteau sur le banc. Il reste là où papa a dit.",
+      "script": "narrateur|Denis arrive au square avec papa. Papa montre la marelle. C'est l'espace montré. Denis saute dans les cases. Il sent le sol lisse. Papa s'assoit sur le banc. L'adulte voit Denis. Denis reste dans l'espace montré.\npapa|Je te vois. L'adulte voit. Plus tard, papa montre le jeu à ressort. Autre espace montré.\nnarrateur|Denis s'assoit dessus. Il revient au pied. Papa le voit encore. L'adulte voit. Même leçon, autre jeu. On reste dans l'espace montré. Maman arrivera après. Denis range son manteau sur le banc. Il reste là où papa a dit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Denis joue au square. Où reste-t-il ?",
+      "script": "narrateur|Denis joue au square. Où reste-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Denis est resté dans l'espace montré. À la marelle, puis au jeu à ressort. L'adulte voit.",
+      "script": "narrateur|Denis est resté dans l'espace montré. À la marelle, puis au jeu à ressort. L'adulte voit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Denis prend la main de papa. Ils quittent le square.",
+      "script": "narrateur|Denis prend la main de papa. Ils quittent le square.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

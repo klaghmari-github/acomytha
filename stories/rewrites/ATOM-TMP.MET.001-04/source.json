@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-04",
+  "fil_rouge": "",
+  "title": "Myriam met manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Myriam, papa",
+  "setting": "entrée de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Myriam ouvre la porte avec papa. Il fait froid. L'air pique les joues. Papa prend le manteau. Myriam enfile le manteau. Le manteau est chaud. Froid, manteau. Ils sortent. Plus tard, il pleut. Des gouttes tombent. Papa prend les bottes. Myriam met les bottes. Ses pieds sont au sec. Pluie, bottes. Myriam marche. Les bottes font ploc. Elle touche son manteau. Elle touche ses bottes. Froid, manteau. Pluie, bottes. Papa tient sa main. Myriam répète : manteau. Bottes.",
+      "script": "narrateur|Myriam ouvre la porte avec papa. Il fait froid. L'air pique les joues. Papa prend le manteau. Myriam enfile le manteau. Le manteau est chaud.\npapa|Froid, manteau. Ils sortent. Plus tard, il pleut. Des gouttes tombent. Papa prend les bottes.\nnarrateur|Myriam met les bottes. Ses pieds sont au sec.\npapa|Pluie, bottes.\nnarrateur|Myriam marche. Les bottes font ploc. Elle touche son manteau. Elle touche ses bottes. Froid, manteau. Pluie, bottes. Papa tient sa main. Myriam répète : manteau. Bottes.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid, puis il pleut. Que met Myriam ?",
+      "script": "narrateur|Il fait froid, puis il pleut. Que met Myriam ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Myriam a mis le manteau. Il faisait froid. Puis les bottes. Il pleuvait. Papa était là.",
+      "script": "narrateur|Myriam a mis le manteau. Il faisait froid. Puis les bottes. Il pleuvait. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Myriam rentre. Elle range les bottes.",
+      "script": "narrateur|Myriam rentre. Elle range les bottes.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

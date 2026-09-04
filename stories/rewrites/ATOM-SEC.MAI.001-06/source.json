@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-06",
+  "fil_rouge": "",
+  "title": "David appelle pour la lampe",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "David, maman, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "David joue dans sa chambre. Il a des animaux en bois. Le bois est lisse. Maman plie le linge dans le couloir. David veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. David appelle un adulte. Maman, la lumière. Maman vient. Maman allume la lampe. La pièce est claire. Papa entre. On appelle un adulte. On appelle papa ou maman. Les mains restent avec les jouets. Parce qu'il a appelé, la lumière est là. David reprend une vache en bois. Il fait une ferme. Les prises sont pour les adultes. David tient les jouets. Les mains sont avec les animaux.",
+      "script": "narrateur|David joue dans sa chambre. Il a des animaux en bois. Le bois est lisse. Maman plie le linge dans le couloir. David veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. David appelle un adulte.\nnarrateur|Maman, la lumière. Maman vient. Maman allume la lampe.\nnarrateur|La pièce est claire. Papa entre.\npapa|On appelle un adulte. On appelle papa ou maman.\nnarrateur|Les mains restent avec les jouets. Parce qu'il a appelé, la lumière est là. David reprend une vache en bois. Il fait une ferme.\nmaman|Les prises sont pour les adultes.\nnarrateur|David tient les jouets. Les mains sont avec les animaux.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "David veut la lumière. Que fait-il ?",
+      "script": "narrateur|David veut la lumière. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "David a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|David a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "David pousse la vache en bois. La lumière reste allumée.",
+      "script": "narrateur|David pousse la vache en bois. La lumière reste allumée.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

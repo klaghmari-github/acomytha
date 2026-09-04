@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.008-01",
+  "fil_rouge": "",
+  "title": "Être gêné",
+  "lesson_id": "EMO.LEX.008",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maya, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya porte un verre d'eau. Elle est dans la cuisine, avec papa. Le verre penche. L'eau glisse sur la table. Maya sent ses joues brûlantes. Elle baisse les yeux. Je suis gênée. Une erreur, ce n'est pas toi. L'erreur, on peut la dire. J'ai versé l'eau. Papa tend un torchon. Je veux réparer. Elle essuie la table. Papa aide un peu. Maya relève la tête. Merci d'avoir dit. Être gêné, on le dit. Puis on peut réparer.",
+      "script": "narrateur|Maya porte un verre d'eau. Elle est dans la cuisine, avec papa. Le verre penche. L'eau glisse sur la table. Maya sent ses joues brûlantes. Elle baisse les yeux.\nenfant-f|Je suis gênée.\npapa|Une erreur, ce n'est pas toi. L'erreur, on peut la dire.\nenfant-f|J'ai versé l'eau. Papa tend un torchon.\nenfant-f|Je veux réparer. Elle essuie la table. Papa aide un peu.\nnarrateur|Maya relève la tête.\npapa|Merci d'avoir dit. Être gêné, on le dit.\nnarrateur|Puis on peut réparer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maya a versé l'eau. Que fait-elle ?",
+      "script": "narrateur|Maya a versé l'eau. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maya a nommé : gêné. L'erreur n'est pas Maya. Elle a pu réparer.",
+      "script": "narrateur|Maya a nommé : gêné. L'erreur n'est pas Maya. Elle a pu réparer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La table est sèche. Maya pose le torchon. Papa lui sourit.",
+      "script": "narrateur|La table est sèche. Maya pose le torchon. Papa lui sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

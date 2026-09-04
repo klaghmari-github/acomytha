@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-02",
+  "fil_rouge": "",
+  "title": "Ava classe fruits et couverts",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Ava, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ava est à la cuisine avec papa. Sur la table : une poire, une fraise, une cuillère, une fourchette. On nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les couverts. Ava prend la poire. Elle prend la fraise. Elle les met dans le bol. C'est la catégorie des fruits. Elle prend la cuillère. Elle prend la fourchette. Elle les met dans le tiroir. C'est la catégorie des couverts. Fruits ensemble. Couverts ensemble.",
+      "script": "narrateur|Ava est à la cuisine avec papa. Sur la table : une poire, une fraise, une cuillère, une fourchette.\npapa|On nomme. On classe.\nnarrateur|Une catégorie pour les fruits. Une catégorie pour les couverts. Ava prend la poire. Elle prend la fraise. Elle les met dans le bol. C'est la catégorie des fruits. Elle prend la cuillère. Elle prend la fourchette. Elle les met dans le tiroir. C'est la catégorie des couverts.\npapa|Fruits ensemble. Couverts ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ava range poire et cuillère. Que fait-elle ?",
+      "script": "narrateur|Ava range poire et cuillère. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ava a classé. Une catégorie pour les fruits. Une catégorie pour les couverts.",
+      "script": "narrateur|Ava a classé. Une catégorie pour les fruits. Une catégorie pour les couverts.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ava croque la poire. Papa range le tiroir.",
+      "script": "narrateur|Ava croque la poire. Papa range le tiroir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

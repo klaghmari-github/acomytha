@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-09",
+  "fil_rouge": "",
+  "title": "Honoré dit les trois noms",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Honoré, maman, papa",
+  "setting": "basse-cour",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Honoré est à la basse-cour. Maman tient sa main. Un coq chante. Une poule picore. Un poussin suit. Coq, poule, poussin. Ce sont trois noms. Trois noms de la famille. Honoré répète. Coq. Poule. Poussin. Papa montre le chien. Chien, chienne, chiot. Encore trois noms de la famille. Honoré sourit. Chiot. Le chiot est petit. Ça sent la paille.",
+      "script": "narrateur|Honoré est à la basse-cour. Maman tient sa main. Un coq chante. Une poule picore. Un poussin suit.\nmaman|Coq, poule, poussin. Ce sont trois noms. Trois noms de la famille.\nnarrateur|Honoré répète. Coq. Poule. Poussin. Papa montre le chien. Chien, chienne, chiot. Encore trois noms de la famille. Honoré sourit.\nnarrateur|Chiot.\nnarrateur|Le chiot est petit. Ça sent la paille.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Honoré a dit les trois noms. Coq, poule, poussin. Chien, chienne, chiot.",
+      "script": "narrateur|Honoré a dit les trois noms. Coq, poule, poussin. Chien, chienne, chiot.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Honoré sent la paille. Maman sourit. Ils rentrent.",
+      "script": "narrateur|Honoré sent la paille. Maman sourit. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

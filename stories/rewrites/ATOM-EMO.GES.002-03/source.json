@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-03",
+  "fil_rouge": "",
+  "title": "William souffle au jardin",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "William, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "William construit un château de terre au jardin. Le château s'effondre. William sent sa poitrine aller vite. Papa est là, près des pots. Tu peux souffler. Tu peux faire une pause. William s'assoit sur la planche. Il souffle comme le vent. Une fois. Deux fois. Il fait une pause. Ses mains se posent sur ses genoux. Le jardin redevient calme. William reprend une poignée de terre. Il construit tout doucement. Papa reste près de lui. Souffler, puis une pause. Puis on reprend.",
+      "script": "narrateur|William construit un château de terre au jardin. Le château s'effondre. William sent sa poitrine aller vite. Papa est là, près des pots.\npapa|Tu peux souffler. Tu peux faire une pause.\nnarrateur|William s'assoit sur la planche. Il souffle comme le vent. Une fois. Deux fois. Il fait une pause. Ses mains se posent sur ses genoux. Le jardin redevient calme. William reprend une poignée de terre. Il construit tout doucement. Papa reste près de lui. Souffler, puis une pause. Puis on reprend.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le corps de William va vite. Que fait-il ?",
+      "script": "narrateur|Le corps de William va vite. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "William a soufflé. Il a fait une pause. Son corps a ralenti.",
+      "script": "narrateur|William a soufflé. Il a fait une pause. Son corps a ralenti.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "William pose une feuille sur le château. Papa sourit.",
+      "script": "narrateur|William pose une feuille sur le château. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

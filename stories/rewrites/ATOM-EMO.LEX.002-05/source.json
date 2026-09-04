@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.002-05",
+  "fil_rouge": "",
+  "title": "Étienne est triste et demande un câlin",
+  "lesson_id": "EMO.LEX.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Étienne, papa, maman",
+  "setting": "chambre puis salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Étienne cherche son train en bois dans la chambre. Le train n'est pas sous le lit. Étienne sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe. Je suis triste. Papa arrive près de lui. Pleurer est permis. Étienne pleure un peu. Les larmes coulent. Puis Je veux un câlin. Papa ouvre les bras. Étienne se blottit. Le câlin est chaud. Parce que le train est perdu, Étienne est triste. Être triste, c'est permis. Plus tard, au salon, un camarade rentre chez lui. Étienne sent encore sa gorge. Je suis triste. Pleurer est permis. Étienne demande un câlin. Maman le serre. Ses épaules se desserrent. Même leçon, autre moment. On nomme. On peut pleurer. On demande un câlin.",
+      "script": "narrateur|Étienne cherche son train en bois dans la chambre. Le train n'est pas sous le lit. Étienne sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe.\nenfant-m|Je suis triste. Papa arrive près de lui.\npapa|Pleurer est permis.\nnarrateur|Étienne pleure un peu. Les larmes coulent. Puis\nenfant-m|Je veux un câlin. Papa ouvre les bras.\nnarrateur|Étienne se blottit. Le câlin est chaud. Parce que le train est perdu, Étienne est triste. Être triste, c'est permis. Plus tard, au salon, un camarade rentre chez lui. Étienne sent encore sa gorge.\nnarrateur|Je suis triste.\nmaman|Pleurer est permis.\nnarrateur|Étienne demande un câlin. Maman le serre. Ses épaules se desserrent. Même leçon, autre moment. On nomme. On peut pleurer. On demande un câlin.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Étienne a les yeux chauds. Que dit-il ?",
+      "script": "narrateur|Étienne a les yeux chauds. Que dit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Étienne a nommé : triste. Pleurer est permis. Un câlin de papa ou maman aide.",
+      "script": "narrateur|Étienne a nommé : triste. Pleurer est permis. Un câlin de papa ou maman aide.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa retrouve le train sous le canapé. Étienne le pose près de lui.",
+      "script": "narrateur|Papa retrouve le train sous le canapé. Étienne le pose près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

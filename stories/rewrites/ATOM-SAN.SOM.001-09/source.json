@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-09",
+  "fil_rouge": "",
+  "title": "Ariane met le pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Ariane, maman, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, la maison est calme. La lampe est douce. Ariane bâille. C'est l'heure. Ariane prend le pyjama. Le pyjama a des lunes. Il est doux. Ariane met le pyjama. Un bras. Puis l'autre. Papa ouvre le lit. La couverture est chaude. Ariane se couche. Elle pose la tête. Papa raconte une petite histoire. Ariane écoute. Elle ferme les yeux. C'est le dodo. Le corps a besoin de dormir. Ariane respire. Papa baisse la lampe. Ariane est au lit. Le soir, pyjama, dodo.",
+      "script": "narrateur|Le soir, la maison est calme. La lampe est douce. Ariane bâille.\nmaman|C'est l'heure.\nnarrateur|Ariane prend le pyjama. Le pyjama a des lunes. Il est doux. Ariane met le pyjama. Un bras. Puis l'autre. Papa ouvre le lit. La couverture est chaude. Ariane se couche. Elle pose la tête. Papa raconte une petite histoire. Ariane écoute. Elle ferme les yeux. C'est le dodo.\nmaman|Le corps a besoin de dormir.\nnarrateur|Ariane respire. Papa baisse la lampe. Ariane est au lit. Le soir, pyjama, dodo.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, Ariane va dormir. Que met-elle ?",
+      "script": "narrateur|Le soir, Ariane va dormir. Que met-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ariane a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo.",
+      "script": "narrateur|Ariane a mis le pyjama. Elle s'est couchée. Le soir, c'est le dodo.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa pose le livre. Ariane respire.",
+      "script": "narrateur|Papa pose le livre. Ariane respire.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.002-01",
+  "fil_rouge": "",
+  "title": "Noé reste avec papa",
+  "lesson_id": "SEC.ADU.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Noé, papa",
+  "setting": "fête de l'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Noé va à la fête. Papa vient avec lui. Papa est l'accompagnant. Noé aime rester avec l'accompagnant. Il marche à côté de papa. Papa tient la main. Ils voient des ballons. Noé reste près. Tu restes avec moi. Noé hoche la tête. Il sent la main de papa. Ils écoutent une chanson. Noé reste avec papa. L'adulte connu est là. Noé est calme. Il sourit.",
+      "script": "narrateur|Noé va à la fête. Papa vient avec lui. Papa est l'accompagnant. Noé aime rester avec l'accompagnant. Il marche à côté de papa. Papa tient la main. Ils voient des ballons. Noé reste près.\npapa|Tu restes avec moi.\nnarrateur|Noé hoche la tête. Il sent la main de papa. Ils écoutent une chanson. Noé reste avec papa. L'adulte connu est là. Noé est calme. Il sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Noé est à la fête. Que fait-il ?",
+      "script": "narrateur|Noé est à la fête. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Noé reste avec papa. L'accompagnant est là. La main est tenue.",
+      "script": "narrateur|Noé reste avec papa. L'accompagnant est là. La main est tenue.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Noé et papa regardent les ballons. Ils rentrent ensemble.",
+      "script": "narrateur|Noé et papa regardent les ballons. Ils rentrent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

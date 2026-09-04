@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-10",
+  "fil_rouge": "",
+  "title": "Éric raconte le vase",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Éric, papa, maman",
+  "setting": "salon puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Éric joue dans le salon. Un vase de fleurs penche. Il touche le vase. L'eau se répand. Éric a les mains mouillées. Son ventre est serré. Papa est dans la cuisine. Maman est près de la fenêtre. Éric va vers eux. Il va raconter. J'ai touché le vase. L'eau est par terre. Papa écoute. Maman écoute. Merci d'avoir raconté. On dit à papa ou maman ce qui s'est passé. Éric aide à essuyer. Raconter, c'est le geste. Même quand c'est une bêtise. Plus tard, à la cuisine, de la farine tombe. Même leçon, autre lieu. Éric va raconter. Il dit à papa et maman : la farine est par terre. Papa sourit. Maman tend un torchon. Éric se sent plus léger.",
+      "script": "narrateur|Éric joue dans le salon. Un vase de fleurs penche. Il touche le vase. L'eau se répand. Éric a les mains mouillées. Son ventre est serré. Papa est dans la cuisine. Maman est près de la fenêtre. Éric va vers eux. Il va raconter.\nnarrateur|J'ai touché le vase. L'eau est par terre. Papa écoute. Maman écoute.\npapa|Merci d'avoir raconté. On dit à papa ou maman ce qui s'est passé.\nnarrateur|Éric aide à essuyer.\nmaman|Raconter, c'est le geste. Même quand c'est une bêtise. Plus tard, à la cuisine, de la farine tombe. Même leçon, autre lieu.\nnarrateur|Éric va raconter. Il dit à papa et maman : la farine est par terre. Papa sourit. Maman tend un torchon. Éric se sent plus léger.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Éric a touché le vase. Que fait-il ?",
+      "script": "narrateur|Éric a touché le vase. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Éric a su raconter. Il a parlé à papa et maman. Au salon, puis à la cuisine.",
+      "script": "narrateur|Éric a su raconter. Il a parlé à papa et maman. Au salon, puis à la cuisine.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Éric pose le torchon. Maman lui tient la main.",
+      "script": "narrateur|Éric pose le torchon. Maman lui tient la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

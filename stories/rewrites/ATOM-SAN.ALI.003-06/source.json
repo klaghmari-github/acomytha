@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-06",
+  "fil_rouge": "",
+  "title": "Esteban boit de l'eau",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Esteban, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Esteban est à la cuisine. Il a soif. Sa bouche est sèche. Maman pose un verre. Dedans, il y a de l'eau. Esteban prend le verre. Il boit. L'eau est fraîche. Quand on a soif, on boit de l'eau dans un verre. Esteban repose le verre. J'avais soif. Merci l'eau.",
+      "script": "narrateur|Esteban est à la cuisine. Il a soif. Sa bouche est sèche. Maman pose un verre. Dedans, il y a de l'eau. Esteban prend le verre. Il boit. L'eau est fraîche.\nmaman|Quand on a soif, on boit de l'eau dans un verre.\nnarrateur|Esteban repose le verre.\nnarrateur|J'avais soif. Merci l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Esteban a soif. Que fait-il ?",
+      "script": "narrateur|Esteban a soif. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Esteban a eu soif. Il a pris le verre d'eau.",
+      "script": "narrateur|Esteban a eu soif. Il a pris le verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman essuie la table. Esteban sourit.",
+      "script": "narrateur|Maman essuie la table. Esteban sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

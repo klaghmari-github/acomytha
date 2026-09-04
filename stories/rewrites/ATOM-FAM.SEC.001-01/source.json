@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.001-01",
+  "fil_rouge": "",
+  "title": "La surprise gentille de Jules",
+  "lesson_id": "FAM.SEC.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Jules, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est bientôt l'anniversaire de papa. Jules est dans la cuisine avec maman. Ils font un gâteau au citron. La pâte est jaune. Ça sent bon. C'est une surprise gentille. On la garde un peu. Jules sourit. Il range le moule. Ses mains sont un peu collantes. Papa entre. Ça sent bon ici. Jules a envie de dire. Maman chuchote : encore un tout petit peu. Le soir, la table est prête. Le gâteau est là. Les bougies sont petites. Papa, surprise. C'est pour toi. Papa ouvre les yeux grands. Merci Jules. Une surprise gentille, on la garde un peu, puis on dit.",
+      "script": "narrateur|C'est bientôt l'anniversaire de papa. Jules est dans la cuisine avec maman. Ils font un gâteau au citron. La pâte est jaune. Ça sent bon.\nmaman|C'est une surprise gentille. On la garde un peu.\nnarrateur|Jules sourit. Il range le moule. Ses mains sont un peu collantes. Papa entre.\npapa|Ça sent bon ici.\nnarrateur|Jules a envie de dire. Maman chuchote : encore un tout petit peu. Le soir, la table est prête. Le gâteau est là. Les bougies sont petites.\nenfant-m|Papa, surprise. C'est pour toi. Papa ouvre les yeux grands.\npapa|Merci Jules.\nmaman|Une surprise gentille, on la garde un peu, puis on dit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le gâteau pour papa, c'est quoi ?",
+      "script": "narrateur|Le gâteau pour papa, c'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules a gardé un peu. Puis il a dit. Papa a vu le gâteau. C'était une surprise gentille, courte.",
+      "script": "narrateur|Jules a gardé un peu. Puis il a dit. Papa a vu le gâteau. C'était une surprise gentille, courte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa goûte une part. Jules goûte aussi. C'est acide et doux.",
+      "script": "narrateur|Papa goûte une part. Jules goûte aussi. C'est acide et doux.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

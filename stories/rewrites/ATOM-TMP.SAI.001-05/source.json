@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SAI.001-05",
+  "fil_rouge": "",
+  "title": "Fleur nomme les quatre saisons",
+  "lesson_id": "TMP.SAI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Fleur, papa",
+  "setting": "jardin puis parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fleur marche dans le jardin avec papa. Il y a quatre saisons. Au printemps, Fleur voit des fleurs. En été, il fait chaud. Fleur boit de l'eau. En automne, les feuilles tombent. Elles sont rouges. En hiver, Fleur met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Fleur répète : quatre saisons. Un signe chacune. Plus tard, au parc, papa montre un arbre. Fleur se souvient. Printemps, fleurs. Été, chaud. Automne, feuilles. Hiver, manteau. Quatre saisons. Un signe chacune. Papa sourit. Fleur ramasse une feuille sèche.",
+      "script": "narrateur|Fleur marche dans le jardin avec papa.\npapa|Il y a quatre saisons. Au printemps, Fleur voit des fleurs. En été, il fait chaud.\nnarrateur|Fleur boit de l'eau. En automne, les feuilles tombent. Elles sont rouges. En hiver, Fleur met son manteau. Papa dit un signe chacune. Fleurs, chaud, feuilles, manteau. Fleur répète : quatre saisons. Un signe chacune. Plus tard, au parc, papa montre un arbre. Fleur se souvient.\nnarrateur|Printemps, fleurs. Été, chaud. Automne, feuilles. Hiver, manteau. Quatre saisons.\nnarrateur|Un signe chacune. Papa sourit. Fleur ramasse une feuille sèche.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait chaud. Quelle saison est-ce ?",
+      "script": "narrateur|Il fait chaud. Quelle saison est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fleur a nommé les quatre saisons. Un signe chacune. Papa l'a aidée. Au jardin, puis au parc.",
+      "script": "narrateur|Fleur a nommé les quatre saisons. Un signe chacune. Papa l'a aidée. Au jardin, puis au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Fleur tient la feuille. Papa tient sa main.",
+      "script": "narrateur|Fleur tient la feuille. Papa tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

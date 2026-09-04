@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.001-05",
+  "fil_rouge": "",
+  "title": "La surprise gentille d'Élisa",
+  "lesson_id": "FAM.SEC.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Élisa, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est bientôt l'anniversaire de maman. Élisa plie un papier. Papa aide. C'est une surprise gentille. On la garde un peu. Élisa cache le papier dans une boîte. La boîte est sous le canapé. Maman passe. Élisa sourit. Elle garde un peu. Puis on dit. Maintenant, on révèle. Élisa ouvre la boîte. Elle tend le papier. C'est pour toi, maman. Maman rit. Elle ouvre le papier. C'est une fleur. C'était une surprise gentille. On l'a gardée un peu. Puis on dit. Élisa tape des mains. Maman dit merci.",
+      "script": "narrateur|C'est bientôt l'anniversaire de maman. Élisa plie un papier. Papa aide.\npapa|C'est une surprise gentille. On la garde un peu.\nnarrateur|Élisa cache le papier dans une boîte. La boîte est sous le canapé. Maman passe. Élisa sourit. Elle garde un peu. Puis on dit.\npapa|Maintenant, on révèle.\nnarrateur|Élisa ouvre la boîte. Elle tend le papier.\nenfant-f|C'est pour toi, maman. Maman rit. Elle ouvre le papier. C'est une fleur. C'était une surprise gentille. On l'a gardée un peu.\nnarrateur|Puis on dit. Élisa tape des mains. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Élisa cache un papier. C'est quoi ?",
+      "script": "narrateur|Élisa cache un papier. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Élisa a gardé un peu. Puis on dit. C'était une surprise gentille pour maman.",
+      "script": "narrateur|Élisa a gardé un peu. Puis on dit. C'était une surprise gentille pour maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman accroche la fleur. Élisa boit un verre d'eau.",
+      "script": "narrateur|Maman accroche la fleur. Élisa boit un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

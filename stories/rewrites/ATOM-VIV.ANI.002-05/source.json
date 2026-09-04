@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-05",
+  "fil_rouge": "",
+  "title": "Yaël dit les trois noms au jardin",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Yaël, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yaël est au jardin avec papa. Un chat miaule. Une chatte se lèche. Un chaton dort. Chat, chatte, chaton. Ce sont trois noms. Yaël répète. Plus loin, un chien aboie. Une chienne marche. Un chiot suit. Chien, chienne, chiot. Ce sont trois noms de la famille. Yaël dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "script": "narrateur|Yaël est au jardin avec papa. Un chat miaule. Une chatte se lèche. Un chaton dort.\npapa|Chat, chatte, chaton. Ce sont trois noms.\nnarrateur|Yaël répète. Plus loin, un chien aboie. Une chienne marche. Un chiot suit.\npapa|Chien, chienne, chiot. Ce sont trois noms de la famille.\nnarrateur|Yaël dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chat, la chatte, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le chat, la chatte, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yaël a dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "script": "narrateur|Yaël a dit les trois noms. Chat, chatte, chaton. Chien, chienne, chiot.",
+      "sons": "chien_bonjour",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yaël caresse l'herbe. Papa sourit.",
+      "script": "narrateur|Yaël caresse l'herbe. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-10",
+  "fil_rouge": "",
+  "title": "Damien va vers papa et maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Damien, papa, maman",
+  "setting": "cuisine et salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Damien veut ouvrir le bocal. Le couvercle est dur. Damien sent ses mains fatiguées. Il va vers eux. Papa et maman sont dans la cuisine. Damien dit le besoin : j'ai besoin d'aide. Papa tient le bocal. Plus tard, le puzzle est trop dur. Damien va vers eux. Il dit le besoin. Maman écoute. Même leçon, autre objet. Aller vers eux. Dire le besoin. Papa sourit. Maman tend une pièce.",
+      "script": "narrateur|Damien veut ouvrir le bocal. Le couvercle est dur. Damien sent ses mains fatiguées. Il va vers eux. Papa et maman sont dans la cuisine. Damien dit le besoin : j'ai besoin d'aide. Papa tient le bocal. Plus tard, le puzzle est trop dur. Damien va vers eux. Il dit le besoin. Maman écoute. Même leçon, autre objet. Aller vers eux. Dire le besoin. Papa sourit. Maman tend une pièce.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Damien ?",
+      "script": "narrateur|C'est trop difficile. Que fait Damien ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Damien est allé vers eux. Il a dit le besoin. Papa et maman ont écouté.",
+      "script": "narrateur|Damien est allé vers eux. Il a dit le besoin. Papa et maman ont écouté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le bocal est ouvert. Damien pose une pièce du puzzle.",
+      "script": "narrateur|Le bocal est ouvert. Damien pose une pièce du puzzle.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

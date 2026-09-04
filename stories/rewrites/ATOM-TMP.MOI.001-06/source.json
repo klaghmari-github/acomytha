@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-06",
+  "fil_rouge": "",
+  "title": "Eliott entend les douze mois",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Eliott, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Eliott est à la cuisine. Maman accroche un calendrier. Il y a douze mois. Janvier, février, mars. Avril, mai, juin. Juillet, août, septembre. Octobre, novembre, décembre. Eliott pose le doigt. Mars. L'anniversaire d'Eliott est en mars. Eliott répète : douze mois. Un anniversaire a un mois.",
+      "script": "narrateur|Eliott est à la cuisine. Maman accroche un calendrier.\nmaman|Il y a douze mois. Janvier, février, mars. Avril, mai, juin. Juillet, août, septembre. Octobre, novembre, décembre.\nnarrateur|Eliott pose le doigt.\nmaman|Mars. L'anniversaire d'Eliott est en mars.\nnarrateur|Eliott répète : douze mois. Un anniversaire a un mois.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Eliott a un mois sur le calendrier. Pourquoi ?",
+      "script": "narrateur|Eliott a un mois sur le calendrier. Pourquoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Eliott a entendu les douze mois. Son anniversaire est en mars.",
+      "script": "narrateur|Eliott a entendu les douze mois. Son anniversaire est en mars.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le crayon. Eliott touche une étoile.",
+      "script": "narrateur|Maman range le crayon. Eliott touche une étoile.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

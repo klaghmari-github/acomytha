@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-07",
+  "fil_rouge": "",
+  "title": "Gaston arrose le basilic",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gaston, maman, papa",
+  "setting": "fenêtre de la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaston est à la fenêtre. Le basilic est dans un pot. Les feuilles sentent fort. Maman, l'adulte, prend l'arrosoir. La plante a besoin d'eau. Elle a besoin de lumière. Gaston tient l'arrosoir avec maman. Ils arrosent. L'eau tombe sur la terre. La terre devient foncée. Parce qu'il y a de l'eau et de la lumière, la plante grandit. Papa ouvre le store. La lumière arrive. Gaston pose l'arrosoir. L'adulte est là.",
+      "script": "narrateur|Gaston est à la fenêtre. Le basilic est dans un pot. Les feuilles sentent fort. Maman, l'adulte, prend l'arrosoir.\nmaman|La plante a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Gaston tient l'arrosoir avec maman. Ils arrosent. L'eau tombe sur la terre. La terre devient foncée. Parce qu'il y a de l'eau et de la lumière, la plante grandit. Papa ouvre le store. La lumière arrive. Gaston pose l'arrosoir. L'adulte est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Gaston s'occupe du basilic. Que fait-il ?",
+      "script": "narrateur|Gaston s'occupe du basilic. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaston a arrosé. Il y a de l'eau et de la lumière. Maman, l'adulte, était là. Papa a ouvert le store.",
+      "script": "narrateur|Gaston a arrosé. Il y a de l'eau et de la lumière. Maman, l'adulte, était là. Papa a ouvert le store.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gaston essuie ses mains. Le basilic brille.",
+      "script": "narrateur|Gaston essuie ses mains. Le basilic brille.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

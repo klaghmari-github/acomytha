@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-04",
+  "fil_rouge": "",
+  "title": "L'anniversaire de Yaël en octobre",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Yaël, maman, papa",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yaël ouvre un calendrier avec maman. Maman lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Yaël pose son doigt. En octobre, c'est ton anniversaire. Yaël sourit. Il y aura un gâteau. Papa arrivera avec des pommes. Maman répète : il y a douze mois. Un anniversaire a un mois. Plus tard, papa montre avril. Mon anniversaire est en avril. Un anniversaire a un mois. Les douze mois sont là.",
+      "script": "narrateur|Yaël ouvre un calendrier avec maman. Maman lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Yaël pose son doigt.\nmaman|En octobre, c'est ton anniversaire.\nnarrateur|Yaël sourit. Il y aura un gâteau. Papa arrivera avec des pommes. Maman répète : il y a douze mois. Un anniversaire a un mois. Plus tard, papa montre avril.\npapa|Mon anniversaire est en avril.\nenfant-m|Un anniversaire a un mois.\nnarrateur|Les douze mois sont là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Yaël a un gâteau en octobre. Pourquoi ?",
+      "script": "narrateur|Yaël a un gâteau en octobre. Pourquoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yaël a entendu les douze mois. Son anniversaire est en octobre. Papa et maman étaient là.",
+      "script": "narrateur|Yaël a entendu les douze mois. Son anniversaire est en octobre. Papa et maman étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yaël ferme le calendrier. Il range le crayon.",
+      "script": "narrateur|Yaël ferme le calendrier. Il range le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

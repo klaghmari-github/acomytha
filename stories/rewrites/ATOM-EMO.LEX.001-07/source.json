@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.001-07",
+  "fil_rouge": "",
+  "title": "Émeline est contente de la fraise",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Émeline, maman, papa",
+  "setting": "jardin, fraisiers",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Émeline est dans le jardin avec maman. Les feuilles sentent le vert. Émeline trouve une fraise rouge. Elle est tiède. Parce qu'elle a trouvé la fraise, Émeline sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Je suis contente. Papa arrive près du potager. C'est de la joie. Émeline tend la fraise. On peut partager. Maman croque un bout. Papa croque un bout. Ils sourient ensemble. Émeline dit encore : je suis contente. La joie est là, près des fraisiers.",
+      "script": "narrateur|Émeline est dans le jardin avec maman. Les feuilles sentent le vert. Émeline trouve une fraise rouge. Elle est tiède. Parce qu'elle a trouvé la fraise, Émeline sent ses joues chaudes. Son ventre est léger. Un sourire arrive.\nenfant-f|Je suis contente. Papa arrive près du potager.\npapa|C'est de la joie.\nnarrateur|Émeline tend la fraise.\nnarrateur|On peut partager. Maman croque un bout. Papa croque un bout. Ils sourient ensemble.\nnarrateur|Émeline dit encore : je suis contente. La joie est là, près des fraisiers.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Émeline sourit. Que dit-elle ?",
+      "script": "narrateur|Émeline sourit. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Émeline a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "script": "narrateur|Émeline a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Émeline essuie ses doigts. La terre est tiède. Maman lui prend la main.",
+      "script": "narrateur|Émeline essuie ses doigts. La terre est tiède. Maman lui prend la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

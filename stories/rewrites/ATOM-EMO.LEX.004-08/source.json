@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.004-08",
+  "fil_rouge": "",
+  "title": "Francine est surprise",
+  "lesson_id": "EMO.LEX.004",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Francine, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Francine est dans la cuisine. Maman ouvre un placard. Une casserole tombe. Clang. Francine sent son cœur vite. Ses épaules sautent. Je suis surprise. La casserole a fait le bruit. D'abord respirer. Francine souffle. Elle va respirer encore. Puis comprendre. Elle regarde. C'est la casserole. Rien n'est cassé. Je veux comprendre. Maman sourit. Être surpris, on peut respirer. Puis on cherche à comprendre. Francine pose la main sur son ventre. Elle souffle encore. Maman range la casserole.",
+      "script": "narrateur|Francine est dans la cuisine. Maman ouvre un placard. Une casserole tombe. Clang. Francine sent son cœur vite. Ses épaules sautent.\nnarrateur|Je suis surprise.\nnarrateur|La casserole a fait le bruit.\nmaman|D'abord respirer.\nnarrateur|Francine souffle. Elle va respirer encore. Puis comprendre. Elle regarde. C'est la casserole. Rien n'est cassé.\nenfant-f|Je veux comprendre. Maman sourit. Être surpris, on peut respirer.\nnarrateur|Puis on cherche à comprendre. Francine pose la main sur son ventre. Elle souffle encore. Maman range la casserole.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Francine est surprise. Que fait-elle d'abord ?",
+      "script": "narrateur|Francine est surprise. Que fait-elle d'abord ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Francine a nommé : surprise. Elle a respiré. Elle a voulu comprendre. Maman était là.",
+      "script": "narrateur|Francine a nommé : surprise. Elle a respiré. Elle a voulu comprendre. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Francine range une cuillère. Maman ferme le placard.",
+      "script": "narrateur|Francine range une cuillère. Maman ferme le placard.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

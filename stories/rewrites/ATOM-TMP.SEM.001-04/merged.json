@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.001-04",
+  "fil_rouge": "Nina veut un livre de bateau. Mercredi à la bibliothèque, le livre est trop haut. Papa l'aide à le montrer. Jeudi, le pain chaud. Elle ouvre le livre, des miettes tombent sur la voile.",
+  "title": "Le livre et le pain",
+  "lesson_id": "TMP.SEM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "bibliothèque le mercredi, puis boulangerie le jeudi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un marque-page rouge dépasse du gros livre. La salle sent le papier et le bois ciré. Une chaise racle tout doux. La lumière tombe en carré sur le tapis. Tu as senti le papier, Nina ? Il sent le calme. C'est mercredi. Mercredi, c'est la bibliothèque. En ce moment, Nina cherche un bateau. Je veux le livre du bateau. Celui avec la voile bleue. On le cherche. Les dos des livres sont serrés. Nina passe le doigt sur les titres. Le doigt s'arrête trop bas. Il est tout en haut. Trop haut pour ta main. Nina pousse le tabouret. Le tabouret glisse, puis tient. Je montre lequel. Tu montes un pied. Je tiens le tabouret. Nina pointe le dos bleu. Papa le descend tout doux. La voile ! Tu l'as trouvé. Le livre est lourd, un peu froid. Je le lis avec du pain. Demain, c'est jeudi. Jeudi, on prend le pain. La semaine a sept jours. Quel jour vient après mercredi ? Jeudi. Oui. Nina serre le livre contre elle. Le marque-page rouge tape son poignet.",
+      "script": "narrateur|Un marque-page rouge dépasse du gros livre.\nnarrateur|La salle sent le papier et le bois ciré.\nnarrateur|Une chaise racle tout doux.\nnarrateur|La lumière tombe en carré sur le tapis.\npapa|Tu as senti le papier, Nina ?\nenfant-f|Il sent le calme.\npapa|C'est mercredi.\npapa|Mercredi, c'est la bibliothèque.\nnarrateur|En ce moment, Nina cherche un bateau.\nenfant-f|Je veux le livre du bateau.\nenfant-f|Celui avec la voile bleue.\npapa|On le cherche.\nnarrateur|Les dos des livres sont serrés.\nnarrateur|Nina passe le doigt sur les titres.\nnarrateur|Le doigt s'arrête trop bas.\nenfant-f|Il est tout en haut.\npapa|Trop haut pour ta main.\nnarrateur|Nina pousse le tabouret.\nnarrateur|Le tabouret glisse, puis tient.\nenfant-f|Je montre lequel.\npapa|Tu montes un pied.\npapa|Je tiens le tabouret.\nnarrateur|Nina pointe le dos bleu.\nnarrateur|Papa le descend tout doux.\nenfant-f|La voile !\npapa|Tu l'as trouvé.\nnarrateur|Le livre est lourd, un peu froid.\nenfant-f|Je le lis avec du pain.\npapa|Demain, c'est jeudi.\npapa|Jeudi, on prend le pain.\npapa|La semaine a sept jours.\npapa|Quel jour vient après mercredi ?\nenfant-f|Jeudi.\npapa|Oui.\nnarrateur|Nina serre le livre contre elle.\nnarrateur|Le marque-page rouge tape son poignet.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un marque-page rouge dépasse du gros livre. La salle sent le papier et le bois ciré. Une chaise racle tout doux. La lumière tombe en carré sur le tapis. Tu as senti le papier, Nina ? Il sent le calme. C'est mercredi. Mercredi, c'est la bibliothèque. En ce moment, Nina cherche un bateau. Je veux le livre du bateau. Celui avec la voile bleue. On le cherche. Les dos des livres sont serrés. Nina passe le doigt sur les titres. Le doigt s'arrête trop bas. Il est tout en haut. Trop haut pour ta main. Nina pousse le tabouret. Le tabouret glisse, puis tient. Je montre lequel. Tu montes un pied. Je tiens le tabouret. Nina pointe le dos bleu. Papa le descend tout doux. La voile ! Tu l'as trouvé. Le livre est lourd, un peu froid. Je le lis avec du pain. Demain, c'est jeudi. Jeudi, on prend le pain. La semaine a sept jours. Quel jour vient après mercredi ? Jeudi. Oui. Nina serre le livre contre elle. Le marque-page rouge tape son poignet."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Après mercredi, quel jour vient ?",
+      "script": "narrateur|Après mercredi, quel jour vient ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Après mercredi, quel jour vient ?",
+      "expected_answer": "jeudi",
+      "accepted_examples": "jeudi | le jeudi | c'est jeudi",
+      "retry_prompt": "Mercredi, la bibliothèque. Quel jour vient après ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le lendemain, la rue sent le four. Une miche dorée brille derrière la vitre. C'est jeudi, Nina. Le jour du pain. Il est chaud ? On va le prendre. Nina tient encore le livre sous le bras. La couverture frotte son manteau. Papa prend la miche. Le papier craque. Je l'ouvre à la maison. Le livre ou le pain ? Les deux. Merci, Nina. Tu as attendu jeudi. La miche chauffe le creux du sac. Le livre reste contre Nina.",
+      "script": "narrateur|Le lendemain, la rue sent le four.\nnarrateur|Une miche dorée brille derrière la vitre.\npapa|C'est jeudi, Nina.\npapa|Le jour du pain.\nenfant-f|Il est chaud ?\npapa|On va le prendre.\nnarrateur|Nina tient encore le livre sous le bras.\nnarrateur|La couverture frotte son manteau.\nnarrateur|Papa prend la miche.\nnarrateur|Le papier craque.\nenfant-f|Je l'ouvre à la maison.\npapa|Le livre ou le pain ?\nenfant-f|Les deux.\npapa|Merci, Nina.\npapa|Tu as attendu jeudi.\nnarrateur|La miche chauffe le creux du sac.\nnarrateur|Le livre reste contre Nina.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le lendemain, la rue sent le four. Une miche dorée brille derrière la vitre. C'est jeudi, Nina. Le jour du pain. Il est chaud ? On va le prendre. Nina tient encore le livre sous le bras. La couverture frotte son manteau. Papa prend la miche. Le papier craque. Je l'ouvre à la maison. Le livre ou le pain ? Les deux. Merci, Nina. Tu as attendu jeudi. La miche chauffe le creux du sac. Le livre reste contre Nina."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La table de la cuisine est claire. Nina pose le livre. Tu tournes la page ? La voile bleue. Papa casse le pain. Une miette tombe sur la voile. Le bateau a du pain. On souffle. La miette part. Le papier sent le four, un peu. Mercredi, le livre. Jeudi, le pain. J'ai les deux. Oui. Nina mord un morceau de croûte. La croûte casse, tout net. Il est chaud. Comme tu voulais. Le marque-page rouge garde la page.",
+      "script": "narrateur|La table de la cuisine est claire.\nnarrateur|Nina pose le livre.\npapa|Tu tournes la page ?\nenfant-f|La voile bleue.\nnarrateur|Papa casse le pain.\nnarrateur|Une miette tombe sur la voile.\nenfant-f|Le bateau a du pain.\npapa|On souffle.\nnarrateur|La miette part.\nnarrateur|Le papier sent le four, un peu.\npapa|Mercredi, le livre.\npapa|Jeudi, le pain.\nenfant-f|J'ai les deux.\npapa|Oui.\nnarrateur|Nina mord un morceau de croûte.\nnarrateur|La croûte casse, tout net.\nenfant-f|Il est chaud.\npapa|Comme tu voulais.\nnarrateur|Le marque-page rouge garde la page.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La table de la cuisine est claire. Nina pose le livre. Tu tournes la page ? La voile bleue. Papa casse le pain. Une miette tombe sur la voile. Le bateau a du pain. On souffle. La miette part. Le papier sent le four, un peu. Mercredi, le livre. Jeudi, le pain. J'ai les deux. Oui. Nina mord un morceau de croûte. La croûte casse, tout net. Il est chaud. Comme tu voulais. Le marque-page rouge garde la page."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Nina pose la main à plat sur la voile. Le bateau est à moi. Oui. Le pain aussi. Une miette dore encore au creux de la page.",
+      "script": "narrateur|Nina pose la main à plat sur la voile.\nenfant-f|Le bateau est à moi.\npapa|Oui.\npapa|Le pain aussi.\nnarrateur|Une miette dore encore au creux de la page.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Nina pose la main à plat sur la voile. Le bateau est à moi. Oui. Le pain aussi. Une miette dore encore au creux de la page."
+    }
+  ]
+}

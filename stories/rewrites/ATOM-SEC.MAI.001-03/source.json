@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-03",
+  "fil_rouge": "",
+  "title": "Loïc appelle pour la lampe",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Loïc, maman, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Loïc joue dans sa chambre. Son train en bois est par terre. Maman plie le linge près de la porte. Loïc veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Loïc appelle maman. Maman, la lumière. Maman vient. Maman allume la lampe. La pièce devient claire. Papa entre. On appelle papa ou maman pour la lumière. On va appeler un adulte. Les prises sont pour les adultes. Les mains restent avec les jouets. Loïc reprend un wagon rouge. Il fait un petit chemin. Parce qu'il a appelé, la lumière est là. Les mains tiennent les jouets. Parce que les mains restent avec les jouets, Loïc peut jouer. Loïc est content.",
+      "script": "narrateur|Loïc joue dans sa chambre. Son train en bois est par terre. Maman plie le linge près de la porte. Loïc veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Loïc appelle maman.\nnarrateur|Maman, la lumière. Maman vient. Maman allume la lampe.\nnarrateur|La pièce devient claire. Papa entre.\npapa|On appelle papa ou maman pour la lumière. On va appeler un adulte.\nnarrateur|Les prises sont pour les adultes. Les mains restent avec les jouets. Loïc reprend un wagon rouge. Il fait un petit chemin. Parce qu'il a appelé, la lumière est là. Les mains tiennent les jouets. Parce que les mains restent avec les jouets, Loïc peut jouer. Loïc est content.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Loïc veut la lumière. Que fait-il ?",
+      "script": "narrateur|Loïc veut la lumière. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Loïc a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|Loïc a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Loïc pose un wagon sur le chemin. La lampe reste allumée.",
+      "script": "narrateur|Loïc pose un wagon sur le chemin. La lampe reste allumée.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

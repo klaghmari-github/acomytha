@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-07",
+  "fil_rouge": "",
+  "title": "Valentine joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Valentine, maman",
+  "setting": "square",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Valentine arrive au square avec maman. Maman montre un espace. Tu joues ici. C'est l'espace montré. Ici, l'adulte voit. Valentine va au bac à sable. Elle reste dans l'espace montré. Maman s'assoit sur le banc. Maman voit Valentine. L'adulte voit. Valentine verse le sable frais. Elle fait un gâteau. Un oiseau chante. Valentine reste dans l'espace. Je te vois. Valentine sourit. Ses mains sont dans le sable. Plus tard, elle prend le seau. Elle reste encore dans l'espace montré. Maman la voit toujours.",
+      "script": "narrateur|Valentine arrive au square avec maman. Maman montre un espace.\nmaman|Tu joues ici. C'est l'espace montré. Ici, l'adulte voit.\nnarrateur|Valentine va au bac à sable. Elle reste dans l'espace montré. Maman s'assoit sur le banc. Maman voit Valentine. L'adulte voit. Valentine verse le sable frais. Elle fait un gâteau. Un oiseau chante. Valentine reste dans l'espace.\nmaman|Je te vois.\nnarrateur|Valentine sourit. Ses mains sont dans le sable. Plus tard, elle prend le seau. Elle reste encore dans l'espace montré. Maman la voit toujours.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Valentine joue au square. Où joue-t-elle ?",
+      "script": "narrateur|Valentine joue au square. Où joue-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Valentine est dans l'espace montré. Maman la voit. Le gâteau de sable est là.",
+      "script": "narrateur|Valentine est dans l'espace montré. Maman la voit. Le gâteau de sable est là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Valentine range le seau. Maman lui tend la main.",
+      "script": "narrateur|Valentine range le seau. Maman lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

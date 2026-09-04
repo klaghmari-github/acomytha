@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.003-07",
+  "fil_rouge": "",
+  "title": "Hervé dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hervé, Eva, maman, papa",
+  "setting": "jardin, sillon de graines",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hervé joue dans le jardin avec maman. Eva a planté des graines. Un petit sillon est droit. Hervé passe trop près. Le sillon s'efface. Eva a les yeux mouillés. Elle est triste. Maman s'approche. Tu peux dire pardon. Pardon, Eva. Tu peux proposer un geste. Hervé prend la petite pelle. Il redessine le sillon. C'est un geste simple. Eva regarde. Elle reste un peu triste. La peine reste un peu. Le pardon n'efface pas tout de suite. Papa arrive. Il s'assoit près d'Eva. Hervé attend. Plus tard, Eva pose une graine. Hervé tend l'arrosoir. Ils plantent doucement. La peine reste un peu. Maman laisse du temps à Eva.",
+      "script": "narrateur|Hervé joue dans le jardin avec maman. Eva a planté des graines. Un petit sillon est droit. Hervé passe trop près. Le sillon s'efface. Eva a les yeux mouillés. Elle est triste. Maman s'approche.\nmaman|Tu peux dire pardon.\nenfant-m|Pardon, Eva.\nmaman|Tu peux proposer un geste.\nnarrateur|Hervé prend la petite pelle. Il redessine le sillon. C'est un geste simple. Eva regarde. Elle reste un peu triste.\nmaman|La peine reste un peu.\nnarrateur|Le pardon n'efface pas tout de suite. Papa arrive. Il s'assoit près d'Eva. Hervé attend. Plus tard, Eva pose une graine. Hervé tend l'arrosoir. Ils plantent doucement. La peine reste un peu. Maman laisse du temps à Eva.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le sillon d'Eva s'est effacé. Que fait Hervé ?",
+      "script": "narrateur|Le sillon d'Eva s'est effacé. Que fait Hervé ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hervé a dit pardon. Il a proposé un geste. La peine reste un peu. Maman est là.",
+      "script": "narrateur|Hervé a dit pardon. Il a proposé un geste. La peine reste un peu. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le sillon redevient droit. Maman reste assise près d'eux.",
+      "script": "narrateur|Le sillon redevient droit. Maman reste assise près d'eux.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

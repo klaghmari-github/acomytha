@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-DIF.PAR.002-02",
+  "fil_rouge": "",
+  "title": "Kenzo laisse le temps à Iris",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Kenzo, Iris, maîtresse, papa",
+  "setting": "classe",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenzo est en classe. Iris veut raconter son week-end. J'ai vu.. Puis elle cherche le mot. Kenzo connaît le mot. Il ouvre la bouche. On peut laisser le temps. On n'achève pas à sa place. Kenzo attend la fin de la phrase. Iris respire. J'ai vu un canard. Kenzo sourit. Le soir, papa demande. J'ai su laisser le temps.",
+      "script": "narrateur|Kenzo est en classe. Iris veut raconter son week-end.\nnarrateur|J'ai vu..\nnarrateur|Puis elle cherche le mot. Kenzo connaît le mot. Il ouvre la bouche.\nmaitresse|On peut laisser le temps. On n'achève pas à sa place.\nnarrateur|Kenzo attend la fin de la phrase. Iris respire.\nnarrateur|J'ai vu un canard.\nnarrateur|Kenzo sourit. Le soir, papa demande.\nenfant-m|J'ai su laisser le temps.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iris cherche un mot. Que fait Kenzo ?",
+      "script": "narrateur|Iris cherche un mot. Que fait Kenzo ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Kenzo a su laisser le temps. Iris a fini sa phrase.",
+      "script": "narrateur|Kenzo a su laisser le temps. Iris a fini sa phrase.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa serre la main de Kenzo. Ils rentrent.",
+      "script": "narrateur|Papa serre la main de Kenzo. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

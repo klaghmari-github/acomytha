@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-06",
+  "fil_rouge": "",
+  "title": "Henri suit une règle, deux jeux",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Henri, papa",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Henri est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Henri tend la main. Papa va rappeler la règle une fois. On attend. C'est une règle. Henri attend. Puis il pose un cube. Tu as suivi la règle. Plus tard, au jardin, papa dit une règle. La règle : on passe le ballon. Puis on s'arrête. Henri veut le ballon. Papa va rappeler la règle une fois. On passe, puis on s'arrête. Henri passe le ballon. Il s'arrête. Même leçon, autre jeu. Une règle. La rappeler. Henri la suit.",
+      "script": "narrateur|Henri est dans le salon avec papa. Des cubes sont au sol. Papa dit une règle. La règle : on attend. Puis on pose un cube. Henri tend la main. Papa va rappeler la règle une fois.\nnarrateur|On attend. C'est une règle.\nnarrateur|Henri attend. Puis il pose un cube.\npapa|Tu as suivi la règle. Plus tard, au jardin, papa dit une règle.\nnarrateur|La règle : on passe le ballon. Puis on s'arrête. Henri veut le ballon. Papa va rappeler la règle une fois.\nnarrateur|On passe, puis on s'arrête.\nnarrateur|Henri passe le ballon. Il s'arrête. Même leçon, autre jeu. Une règle. La rappeler. Henri la suit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Henri joue. Que suit-il ?",
+      "script": "narrateur|Henri joue. Que suit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Henri a suivi une règle. Papa l'a rappelée. Cubes, puis ballon.",
+      "script": "narrateur|Henri a suivi une règle. Papa l'a rappelée. Cubes, puis ballon.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Henri donne la main.",
+      "script": "narrateur|Papa range le ballon. Henri donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-05",
+  "fil_rouge": "C'est l'anniversaire de Victorina, en mai, sous le cerisier en fleur. Un pétale tombe dans son verre. Elle le sort avec la cuillère. Le gâteau sent l'amande. La nappe est rose de pétales.",
+  "title": "Le pétale dans le verre",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Victorina, papa, maman",
+  "setting": "table sous le cerisier en fleur, jardin de mai",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un pétale rose tourne au-dessus de la nappe. Le cerisier a mis sa robe claire. Il n'y a pas encore de cerises, seulement des fleurs. C'est trop tôt pour les manger. C'est mai, Victorina. Le mois des fleurs. Et le tien. Ton anniversaire. La nappe blanche déjà attrape trois pétales. Un verre d'eau attend près de l'assiette. Je bois. Elle lève le verre. Un pétale y flotte, tout plat. Il est tombé dedans ! Un invité. Tu le sors ? En ce moment, Victorina prend la petite cuillère. Elle pêche le pétale. L'eau tremble. Je l'ai. Tu le poses où ? Sur la nappe. Le pétale s'ouvre encore, mouillé. Il fait une tache plus foncée. Le gâteau arrive. Maman pose le plat. Ça sent l'amande tiède. Il a des fleurs aussi. Des pétales de sucre. Pas ceux de l'arbre. Une abeille passe très haut, dans le blanc. Elle ne descend pas. Les fleurs lui suffisent.",
+      "script": "narrateur|Un pétale rose tourne au-dessus de la nappe.\nnarrateur|Le cerisier a mis sa robe claire.\nnarrateur|Il n'y a pas encore de cerises, seulement des fleurs.\nenfant-f|C'est trop tôt pour les manger.\npapa|C'est mai, Victorina.\npapa|Le mois des fleurs.\nmaman|Et le tien.\nmaman|Ton anniversaire.\nnarrateur|La nappe blanche déjà attrape trois pétales.\nnarrateur|Un verre d'eau attend près de l'assiette.\nenfant-f|Je bois.\nnarrateur|Elle lève le verre.\nnarrateur|Un pétale y flotte, tout plat.\nenfant-f|Il est tombé dedans !\nmaman|Un invité.\npapa|Tu le sors ?\nnarrateur|En ce moment, Victorina prend la petite cuillère.\nnarrateur|Elle pêche le pétale.\nnarrateur|L'eau tremble.\nenfant-f|Je l'ai.\nmaman|Tu le poses où ?\nenfant-f|Sur la nappe.\nnarrateur|Le pétale s'ouvre encore, mouillé.\nnarrateur|Il fait une tache plus foncée.\npapa|Le gâteau arrive.\nnarrateur|Maman pose le plat.\nnarrateur|Ça sent l'amande tiède.\nenfant-f|Il a des fleurs aussi.\nmaman|Des pétales de sucre.\npapa|Pas ceux de l'arbre.\nnarrateur|Une abeille passe très haut, dans le blanc.\nenfant-f|Elle ne descend pas.\nmaman|Les fleurs lui suffisent.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un pétale rose tourne au-dessus de la nappe. Le cerisier a mis sa robe claire. Il n'y a pas encore de cerises, seulement des fleurs. C'est trop tôt pour les manger. C'est mai, Victorina. Le mois des fleurs. Et le tien. Ton anniversaire. La nappe blanche déjà attrape trois pétales. Un verre d'eau attend près de l'assiette. Je bois. Elle lève le verre. Un pétale y flotte, tout plat. Il est tombé dedans ! Un invité. Tu le sors ? En ce moment, Victorina prend la petite cuillère. Elle pêche le pétale. L'eau tremble. Je l'ai. Tu le poses où ? Sur la nappe. Le pétale s'ouvre encore, mouillé. Il fait une tache plus foncée. Le gâteau arrive. Maman pose le plat. Ça sent l'amande tiède. Il a des fleurs aussi. Des pétales de sucre. Pas ceux de l'arbre. Une abeille passe très haut, dans le blanc. Elle ne descend pas. Les fleurs lui suffisent."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victorina a un gâteau en mai. Pourquoi ?",
+      "script": "narrateur|Victorina a un gâteau en mai.\nnarrateur|Pourquoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Victorina a un gâteau en mai. Pourquoi ?",
+      "expected_answer": "anniversaire",
+      "accepted_examples": "anniversaire | son anniversaire | mai | le mois | cerisier | pétale",
+      "retry_prompt": "C'est son anniversaire. Pourquoi le gâteau ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa plante une bougie rose. La cire sent le miel. C'est ton anniversaire. En mai. Oui. Sous le cerisier. Victorina souffle. Un pétale part avec le souffle. Il atterrit sur le gâteau, tout vrai. Encore un ! On le retire. Maman le lève du bout de la fourchette. Les vrais restent à l'arbre. Les sucrés restent au gâteau. Victorina rit, tout bas. Merci, Victorina. Tu as pêché le premier. Avec la cuillère. Elle boit enfin. L'eau a un goût de fleur, à peine.",
+      "script": "narrateur|Papa plante une bougie rose.\nnarrateur|La cire sent le miel.\nmaman|C'est ton anniversaire.\nenfant-f|En mai.\npapa|Oui.\npapa|Sous le cerisier.\nnarrateur|Victorina souffle.\nnarrateur|Un pétale part avec le souffle.\nnarrateur|Il atterrit sur le gâteau, tout vrai.\nenfant-f|Encore un !\nmaman|On le retire.\nnarrateur|Maman le lève du bout de la fourchette.\nenfant-f|Les vrais restent à l'arbre.\npapa|Les sucrés restent au gâteau.\nnarrateur|Victorina rit, tout bas.\nmaman|Merci, Victorina.\nmaman|Tu as pêché le premier.\nenfant-f|Avec la cuillère.\nnarrateur|Elle boit enfin.\nnarrateur|L'eau a un goût de fleur, à peine.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Papa plante une bougie rose. La cire sent le miel. C'est ton anniversaire. En mai. Oui. Sous le cerisier. Victorina souffle. Un pétale part avec le souffle. Il atterrit sur le gâteau, tout vrai. Encore un ! On le retire. Maman le lève du bout de la fourchette. Les vrais restent à l'arbre. Les sucrés restent au gâteau. Victorina rit, tout bas. Merci, Victorina. Tu as pêché le premier. Avec la cuillère. Elle boit enfin. L'eau a un goût de fleur, à peine."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman coupe une part. L'amande craque un peu sous la dent. C'est bon. Mai est doux. Un autre pétale se pose sur l'épaule de papa. Toi aussi. Je suis invité. La nappe devient un petit jardin. Cinq pétales, six. On ne les compte pas tous. On les laisse. Oui. Victorina pose sa part. Elle regarde trop haut, dans les fleurs. Les cerises viendront plus tard. Pas en mai. En mai, les fleurs. Et toi.",
+      "script": "narrateur|Maman coupe une part.\nnarrateur|L'amande craque un peu sous la dent.\nenfant-f|C'est bon.\npapa|Mai est doux.\nnarrateur|Un autre pétale se pose sur l'épaule de papa.\nenfant-f|Toi aussi.\npapa|Je suis invité.\nnarrateur|La nappe devient un petit jardin.\nnarrateur|Cinq pétales, six.\nmaman|On ne les compte pas tous.\nenfant-f|On les laisse.\nmaman|Oui.\nnarrateur|Victorina pose sa part.\nnarrateur|Elle regarde trop haut, dans les fleurs.\npapa|Les cerises viendront plus tard.\nenfant-f|Pas en mai.\nmaman|En mai, les fleurs.\nmaman|Et toi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman coupe une part. L'amande craque un peu sous la dent. C'est bon. Mai est doux. Un autre pétale se pose sur l'épaule de papa. Toi aussi. Je suis invité. La nappe devient un petit jardin. Cinq pétales, six. On ne les compte pas tous. On les laisse. Oui. Victorina pose sa part. Elle regarde trop haut, dans les fleurs. Les cerises viendront plus tard. Pas en mai. En mai, les fleurs. Et toi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le verre est vide, sans pétale. La cuillère brille à côté. Mon mois est rose. Mai. Celui de ton anniversaire. Un dernier pétale se pose sur le plat vide. Victorina le laisse. Il a fini le gâteau avec nous. Oui. Le cerisier respire au-dessus de la nappe. La table sent l'amande et la fleur froide.",
+      "script": "narrateur|Le verre est vide, sans pétale.\nnarrateur|La cuillère brille à côté.\nenfant-f|Mon mois est rose.\npapa|Mai.\nmaman|Celui de ton anniversaire.\nnarrateur|Un dernier pétale se pose sur le plat vide.\nnarrateur|Victorina le laisse.\nenfant-f|Il a fini le gâteau avec nous.\npapa|Oui.\nnarrateur|Le cerisier respire au-dessus de la nappe.\nnarrateur|La table sent l'amande et la fleur froide.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le verre est vide, sans pétale. La cuillère brille à côté. Mon mois est rose. Mai. Celui de ton anniversaire. Un dernier pétale se pose sur le plat vide. Victorina le laisse. Il a fini le gâteau avec nous. Oui. Le cerisier respire au-dessus de la nappe. La table sent l'amande et la fleur froide."
+    }
+  ]
+}

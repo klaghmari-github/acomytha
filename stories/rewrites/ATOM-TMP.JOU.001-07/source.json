@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-07",
+  "fil_rouge": "",
+  "title": "Gaëtane nomme le soleil et la lune",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Gaëtane, maman",
+  "setting": "jardin puis chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le jour, Gaëtane joue au jardin avec maman. Le soleil brille. Il fait chaud sur les mains. Le jour, c'est le soleil. Gaëtane touche une pierre tiède. Parce que le soleil a chauffé. Elles rangent le seau. Le soir arrive. Le ciel devient bleu foncé. Gaëtane voit la lune. Elle voit les étoiles. La nuit, c'est la lune. Elles rentrent. Gaëtane met son pyjama. La nuit, on fait dodo. Gaëtane se couche. Elle ferme les yeux. Dodo la nuit. Soleil jour. Lune nuit. Plus tard, Gaëtane se réveille un peu. Elle se souvient. Le jour, le soleil. La nuit, la lune. Dodo la nuit.",
+      "script": "narrateur|Le jour, Gaëtane joue au jardin avec maman. Le soleil brille. Il fait chaud sur les mains.\nmaman|Le jour, c'est le soleil.\nnarrateur|Gaëtane touche une pierre tiède. Parce que le soleil a chauffé. Elles rangent le seau. Le soir arrive. Le ciel devient bleu foncé. Gaëtane voit la lune. Elle voit les étoiles.\nmaman|La nuit, c'est la lune. Elles rentrent.\nnarrateur|Gaëtane met son pyjama.\nmaman|La nuit, on fait dodo.\nnarrateur|Gaëtane se couche. Elle ferme les yeux. Dodo la nuit. Soleil jour. Lune nuit. Plus tard, Gaëtane se réveille un peu. Elle se souvient. Le jour, le soleil. La nuit, la lune. Dodo la nuit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est là. Quel moment est-ce ?",
+      "script": "narrateur|La lune est là. Quel moment est-ce ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaëtane a vu le soleil le jour. Elle a vu la lune la nuit. Elle fait dodo la nuit.",
+      "script": "narrateur|Gaëtane a vu le soleil le jour. Elle a vu la lune la nuit. Elle fait dodo la nuit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman baisse la lumière. Gaëtane respire.",
+      "script": "narrateur|Maman baisse la lumière. Gaëtane respire.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

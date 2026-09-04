@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.MOV.001-01",
+  "fil_rouge": "",
+  "title": "Jules joue au parc",
+  "lesson_id": "SAN.MOV.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Jules, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jules a déjà joué un peu dans le salon. Ses jambes ont encore envie de bouger. On va dehors. Ils mettent les chaussures près de la porte. Ils prennent le ballon rouge. Ils vont au parc avec papa. Dehors, l'air est frais. Les oiseaux chantent. Jules court sur l'herbe. Papa reste près de lui. Jules lance le ballon. Papa le renvoie. Jules grimpe sur le petit muret. Papa le voit. Je joue dehors, avec un adulte. Papa sourit. Ils jouent un moment. Jules sent son corps content. Puis ils rentrent ensemble. Jules a bougé. Papa était là.",
+      "script": "narrateur|Jules a déjà joué un peu dans le salon. Ses jambes ont encore envie de bouger.\npapa|On va dehors.\nnarrateur|Ils mettent les chaussures près de la porte. Ils prennent le ballon rouge. Ils vont au parc avec papa. Dehors, l'air est frais. Les oiseaux chantent. Jules court sur l'herbe. Papa reste près de lui. Jules lance le ballon. Papa le renvoie. Jules grimpe sur le petit muret. Papa le voit.\nenfant-m|Je joue dehors, avec un adulte. Papa sourit. Ils jouent un moment.\nnarrateur|Jules sent son corps content. Puis ils rentrent ensemble. Jules a bougé. Papa était là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jules veut bouger. Où joue-t-il ?",
+      "script": "narrateur|Jules veut bouger. Où joue-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules a joué dehors. Papa, un adulte, était avec lui. Le corps a bougé. C'est bien.",
+      "script": "narrateur|Jules a joué dehors. Papa, un adulte, était avec lui. Le corps a bougé. C'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Jules boit de l'eau. Il range le ballon. Merci, dit-il à papa.",
+      "script": "narrateur|Jules boit de l'eau. Il range le ballon. Merci, dit-il à papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

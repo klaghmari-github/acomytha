@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.MET.001-04",
+  "fil_rouge": "Mila veut une petite plante pour la fenêtre. L'arrosoir penche. L'horticultrice du square tend un pot. Puis le boulanger glisse un pain rond dans le sac.",
+  "title": "L'arrosoir du square",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "square du village, terre mouillée, puis boutique du pain, fenêtre de la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un arrosoir laisse une goutte sur la pierre. La goutte brille, puis elle file dans une fissure. Le square sent la terre mouillée et la menthe. Mila vit ici, tout près, avec papa. Un banc de bois encore froid attend sous le tilleul. Je veux une petite plante, papa. Pour la fenêtre. On demande à l'horticultrice ? Celle du square. Oui. En ce moment, Mila suit la trace d'eau sur les dalles. Les dalles sont rudes, un peu vertes. L'horticultrice est accroupie près des géraniums. Ses gants sont bruns, collés de terre. Elle arrose. C'est l'horticultrice. C'est son métier. Elle soigne les plantes. Oui. Mila s'arrête trop près de l'arrosoir. L'arrosoir penche. Un filet d'eau part vers la chaussure de papa. Oh. On recule un peu. Pardon. On reste sur la dalle sèche ? Oui. L'horticultrice redresse l'arrosoir. Elle tend un petit pot, terre encore sombre. Une feuille ronde, toute neuve, au milieu. Pour la fenêtre ? Si tu la portes sans la serrer. Mila prend le pot à deux mains. La terre sent le jardin, tout fort. Merci. Merci. Bravo, Mila. Tu as trouvé l'horticultrice. J'ai faim, maintenant. Le boulanger est juste après le square.",
+      "script": "narrateur|Un arrosoir laisse une goutte sur la pierre.\nnarrateur|La goutte brille, puis elle file dans une fissure.\nnarrateur|Le square sent la terre mouillée et la menthe.\nnarrateur|Mila vit ici, tout près, avec papa.\nnarrateur|Un banc de bois encore froid attend sous le tilleul.\nenfant-f|Je veux une petite plante, papa.\nenfant-f|Pour la fenêtre.\npapa|On demande à l'horticultrice ?\nenfant-f|Celle du square.\npapa|Oui.\nnarrateur|En ce moment, Mila suit la trace d'eau sur les dalles.\nnarrateur|Les dalles sont rudes, un peu vertes.\nnarrateur|L'horticultrice est accroupie près des géraniums.\nnarrateur|Ses gants sont bruns, collés de terre.\nenfant-f|Elle arrose.\npapa|C'est l'horticultrice.\npapa|C'est son métier.\nenfant-f|Elle soigne les plantes.\npapa|Oui.\nnarrateur|Mila s'arrête trop près de l'arrosoir.\nnarrateur|L'arrosoir penche.\nnarrateur|Un filet d'eau part vers la chaussure de papa.\npapa|Oh.\npapa|On recule un peu.\nenfant-f|Pardon.\npapa|On reste sur la dalle sèche ?\nenfant-f|Oui.\nnarrateur|L'horticultrice redresse l'arrosoir.\nnarrateur|Elle tend un petit pot, terre encore sombre.\nnarrateur|Une feuille ronde, toute neuve, au milieu.\nenfant-f|Pour la fenêtre ?\npapa|Si tu la portes sans la serrer.\nnarrateur|Mila prend le pot à deux mains.\nnarrateur|La terre sent le jardin, tout fort.\npapa|Merci.\nenfant-f|Merci.\npapa|Bravo, Mila.\npapa|Tu as trouvé l'horticultrice.\nenfant-f|J'ai faim, maintenant.\npapa|Le boulanger est juste après le square.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un arrosoir laisse une goutte sur la pierre. La goutte brille, puis elle file dans une fissure. Le square sent la terre mouillée et la menthe. Mila vit ici, tout près, avec papa. Un banc de bois encore froid attend sous le tilleul. Je veux une petite plante, papa. Pour la fenêtre. On demande à l'horticultrice ? Celle du square. Oui. En ce moment, Mila suit la trace d'eau sur les dalles. Les dalles sont rudes, un peu vertes. L'horticultrice est accroupie près des géraniums. Ses gants sont bruns, collés de terre. Elle arrose. C'est l'horticultrice. C'est son métier. Elle soigne les plantes. Oui. Mila s'arrête trop près de l'arrosoir. L'arrosoir penche. Un filet d'eau part vers la chaussure de papa. Oh. On recule un peu. Pardon. On reste sur la dalle sèche ? Oui. L'horticultrice redresse l'arrosoir. Elle tend un petit pot, terre encore sombre. Une feuille ronde, toute neuve, au milieu. Pour la fenêtre ? Si tu la portes sans la serrer. Mila prend le pot à deux mains. La terre sent le jardin, tout fort. Merci. Merci. Bravo, Mila. Tu as trouvé l'horticultrice. J'ai faim, maintenant. Le boulanger est juste après le square."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "L'horticultrice arrose les plantes. C'est quoi ?",
+      "script": "narrateur|L'horticultrice arrose les plantes.\nnarrateur|C'est quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "L'horticultrice arrose les plantes. C'est quoi ?",
+      "expected_answer": "métier",
+      "accepted_examples": "métier | un métier | son métier | le métier | c'est un métier",
+      "retry_prompt": "Elle soigne les plantes. C'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ils longent la grille, le pot bien droit. Une feuille tape le menton de Mila. La boutique du pain ouvre ses deux battants. Ça sent le sésame et la croûte. Le boulanger ! Oui. Lui aussi a un métier. Le pain. Il prépare le pain. Mila pose le pot sur le bord du comptoir. Le boulanger farine ses mains, encore. Un pain rond, un peu doré, part dans le sac. Merci. Le pot, je le reprends. Les deux, plante et pain. Le sac tape la hanche, tout léger. La feuille ronde tremble à chaque pas. Tu tiens bien ? Oui, papa.",
+      "script": "narrateur|Ils longent la grille, le pot bien droit.\nnarrateur|Une feuille tape le menton de Mila.\nnarrateur|La boutique du pain ouvre ses deux battants.\nnarrateur|Ça sent le sésame et la croûte.\nenfant-f|Le boulanger !\npapa|Oui.\npapa|Lui aussi a un métier.\nenfant-f|Le pain.\npapa|Il prépare le pain.\nnarrateur|Mila pose le pot sur le bord du comptoir.\nnarrateur|Le boulanger farine ses mains, encore.\nnarrateur|Un pain rond, un peu doré, part dans le sac.\npapa|Merci.\nenfant-f|Le pot, je le reprends.\npapa|Les deux, plante et pain.\nnarrateur|Le sac tape la hanche, tout léger.\nnarrateur|La feuille ronde tremble à chaque pas.\npapa|Tu tiens bien ?\nenfant-f|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils longent la grille, le pot bien droit. Une feuille tape le menton de Mila. La boutique du pain ouvre ses deux battants. Ça sent le sésame et la croûte. Le boulanger ! Oui. Lui aussi a un métier. Le pain. Il prépare le pain. Mila pose le pot sur le bord du comptoir. Le boulanger farine ses mains, encore. Un pain rond, un peu doré, part dans le sac. Merci. Le pot, je le reprends. Les deux, plante et pain. Le sac tape la hanche, tout léger. La feuille ronde tremble à chaque pas. Tu tiens bien ? Oui, papa."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La fenêtre de la cuisine est déjà ouverte. Un peu de vent entre, avec la menthe du square. Mila pose le pot sur le rebord. La terre reste sombre, bien tenue. Elle voit le square, d'ici. Oui. L'horticultrice l'a choisie pour toi. Papa coupe le pain rond. La mie est blanche, encore tiède. Un morceau près du pot ? Pour moi. Pour toi. La plante boit l'eau, pas le pain. Je le savais. Merci d'avoir porté le pot sans le serrer.",
+      "script": "narrateur|La fenêtre de la cuisine est déjà ouverte.\nnarrateur|Un peu de vent entre, avec la menthe du square.\nnarrateur|Mila pose le pot sur le rebord.\nnarrateur|La terre reste sombre, bien tenue.\nenfant-f|Elle voit le square, d'ici.\npapa|Oui.\npapa|L'horticultrice l'a choisie pour toi.\nnarrateur|Papa coupe le pain rond.\nnarrateur|La mie est blanche, encore tiède.\npapa|Un morceau près du pot ?\nenfant-f|Pour moi.\npapa|Pour toi.\npapa|La plante boit l'eau, pas le pain.\nenfant-f|Je le savais.\npapa|Merci d'avoir porté le pot sans le serrer.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La fenêtre de la cuisine est déjà ouverte. Un peu de vent entre, avec la menthe du square. Mila pose le pot sur le rebord. La terre reste sombre, bien tenue. Elle voit le square, d'ici. Oui. L'horticultrice l'a choisie pour toi. Papa coupe le pain rond. La mie est blanche, encore tiède. Un morceau près du pot ? Pour moi. Pour toi. La plante boit l'eau, pas le pain. Je le savais. Merci d'avoir porté le pot sans le serrer."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La feuille ronde tourne vers le jour. Une goutte reste encore sur la terre. Elle est bien, là. Oui. Le square continue, tout près, avec son arrosoir. Le pain tiède sent le sésame, sur la table. La fenêtre garde la petite plante, et le vent.",
+      "script": "narrateur|La feuille ronde tourne vers le jour.\nnarrateur|Une goutte reste encore sur la terre.\nenfant-f|Elle est bien, là.\npapa|Oui.\nnarrateur|Le square continue, tout près, avec son arrosoir.\nnarrateur|Le pain tiède sent le sésame, sur la table.\nnarrateur|La fenêtre garde la petite plante, et le vent.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La feuille ronde tourne vers le jour. Une goutte reste encore sur la terre. Elle est bien, là. Oui. Le square continue, tout près, avec son arrosoir. Le pain tiède sent le sésame, sur la table. La fenêtre garde la petite plante, et le vent."
+    }
+  ]
+}

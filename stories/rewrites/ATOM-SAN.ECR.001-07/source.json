@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-07",
+  "fil_rouge": "",
+  "title": "Barbara éteint et prend un puzzle",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Barbara, maman, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Barbara est dans le salon. Elle regarde un dessin sur la tablette. Les couleurs dansent. Maman s'approche. Maman, l'adulte, dit : c'est fini. Barbara entend. Parce que l'adulte dit fini, on éteint. Barbara appuie pour éteindre. L'écran devient noir. Maman sourit. Tu peux prendre un autre jeu. Barbara choisit les puzzles. Les pièces sont en bois. Elles sentent le bois. Une pièce rentre. Papa arrive. Tu as su éteindre. Barbara range la tablette. Elle continue l'autre jeu. Plus tard, papa dit aussi : c'est fini. Barbara éteint encore. Elle prend les cubes. Un autre jeu.",
+      "script": "narrateur|Barbara est dans le salon. Elle regarde un dessin sur la tablette. Les couleurs dansent. Maman s'approche. Maman, l'adulte, dit : c'est fini. Barbara entend. Parce que l'adulte dit fini, on éteint. Barbara appuie pour éteindre. L'écran devient noir. Maman sourit.\nmaman|Tu peux prendre un autre jeu.\nnarrateur|Barbara choisit les puzzles. Les pièces sont en bois. Elles sentent le bois. Une pièce rentre. Papa arrive.\nnarrateur|Tu as su éteindre.\nnarrateur|Barbara range la tablette. Elle continue l'autre jeu. Plus tard, papa dit aussi : c'est fini. Barbara éteint encore. Elle prend les cubes. Un autre jeu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Barbara ?",
+      "script": "narrateur|Maman dit fini. Que fait Barbara ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Barbara a su éteindre. Elle a choisi un autre jeu. Maman, l'adulte, a dit fini.",
+      "script": "narrateur|Barbara a su éteindre. Elle a choisi un autre jeu. Maman, l'adulte, a dit fini.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Barbara pose une dernière pièce. Papa range la tablette.",
+      "script": "narrateur|Barbara pose une dernière pièce. Papa range la tablette.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

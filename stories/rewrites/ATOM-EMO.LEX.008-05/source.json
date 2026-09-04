@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.008-05",
+  "fil_rouge": "",
+  "title": "Tess est gênée et elle répare",
+  "lesson_id": "EMO.LEX.008",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Tess, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tess est dans le salon avec papa. Elle fait tomber un livre. Ses joues chauffent. Je suis gênée. Papa écoute. Une erreur, ce n'est pas toi tout entier. On dit. On répare. J'ai fait tomber. Elle ramasse le livre. Elle le pose. Elle répare. Merci.",
+      "script": "narrateur|Tess est dans le salon avec papa. Elle fait tomber un livre. Ses joues chauffent.\nnarrateur|Je suis gênée. Papa écoute.\npapa|Une erreur, ce n'est pas toi tout entier. On dit. On répare.\nenfant-m|J'ai fait tomber. Elle ramasse le livre. Elle le pose. Elle répare.\npapa|Merci.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tess a fait tomber le livre. Que fait-elle ?",
+      "script": "narrateur|Tess a fait tomber le livre. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tess Je suis gênée. Elle a réparé l'erreur.",
+      "script": "narrateur|Tess\nenfant-f|Je suis gênée. Elle a réparé l'erreur.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa ouvre le livre. Tess s'assoit.",
+      "script": "narrateur|Papa ouvre le livre. Tess s'assoit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

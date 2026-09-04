@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.GES.002-02",
+  "fil_rouge": "",
+  "title": "Yanis souffle et fait une pause",
+  "lesson_id": "EMO.GES.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Yanis, papa",
+  "setting": "salon puis boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Yanis construit une tour dans le salon. La tour tremble. Yanis sent son ventre serré. Papa est près de lui. Tu peux souffler. Tu peux faire une pause. Yanis s'assoit. Il souffle, long et doux. Il fait une pause. Puis il reprend. La tour tient mieux. Plus tard, ils vont à la boulangerie. La file est longue. Yanis sent ses pieds bouger. Il se souvient. Je veux souffler. On fait une pause. Yanis s'assoit sur le banc près de papa. Il souffle. Il fait une pause. Puis il reprend, calme. Même leçon, autre lieu. Souffler aide. Une pause aide.",
+      "script": "narrateur|Yanis construit une tour dans le salon. La tour tremble. Yanis sent son ventre serré. Papa est près de lui.\npapa|Tu peux souffler. Tu peux faire une pause.\nnarrateur|Yanis s'assoit. Il souffle, long et doux. Il fait une pause. Puis il reprend. La tour tient mieux. Plus tard, ils vont à la boulangerie. La file est longue. Yanis sent ses pieds bouger. Il se souvient.\nnarrateur|Je veux souffler.\npapa|On fait une pause.\nnarrateur|Yanis s'assoit sur le banc près de papa. Il souffle. Il fait une pause. Puis il reprend, calme. Même leçon, autre lieu. Souffler aide. Une pause aide.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Yanis sent son corps trop plein. Que fait-il ?",
+      "script": "narrateur|Yanis sent son corps trop plein. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Yanis a soufflé. Il a fait une pause. Dans le salon, puis à la boulangerie.",
+      "script": "narrateur|Yanis a soufflé. Il a fait une pause. Dans le salon, puis à la boulangerie.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Yanis tient le pain. Papa sourit.",
+      "script": "narrateur|Yanis tient le pain. Papa sourit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

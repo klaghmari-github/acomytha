@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-05",
+  "fil_rouge": "Nina veut un gâteau, puis le cerf-volant. Mercredi, la farine fait un nuage. Ils essuient. Dimanche, week-end, le vent prend enfin la toile.",
+  "title": "La farine et le vent",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "cuisine mercredi, colline dimanche",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La farine a fait un nuage blanc. Elle retombe sur le bois de la table. Ça sent le beurre tiède, déjà. C'est mercredi, Nina. Pas d'école. On fait le gâteau ? Oui. Pour dimanche. Le cerf-volant aussi ? Dimanche, s'il y a du vent. Samedi et dimanche, c'est le week-end. Nina verse encore un peu de farine. Le nuage revient, plus petit. Oh. Trop d'un coup. On essuie ? Oui. En ce moment, Nina passe le linge. La farine part en traînées blanches. Tu fais une place nette. Pour le bol. Pour le bol. Le bol est lourd, en terre. Nina le pose sans le faire sonner. Bien. L'œuf maintenant. L'œuf casse net. Le jaune tient, puis glisse. Il est orange. Comme le cerf-volant. Le grand. Le grand, dimanche. Ils mélangent. La pâte devient collante, puis lisse. Tu veux lécher la cuillère ? Un peu. C'est sucré, un peu rêche encore. Mercredi, on cuit. Samedi, il sera froid. Dimanche, le vent. Pas d'école. Pas d'école. Comme mercredi. Le four souffle un air chaud. Nina s'éloigne d'un pas. On regarde par la vitre. Il gonfle. Il gonfle. Une miette de farine reste sur le nez de Nina. Là. Papa l'essuie du pouce. Merci. Merci d'avoir essuyé la table.",
+      "script": "narrateur|La farine a fait un nuage blanc.\nnarrateur|Elle retombe sur le bois de la table.\nnarrateur|Ça sent le beurre tiède, déjà.\npapa|C'est mercredi, Nina.\npapa|Pas d'école.\nenfant-f|On fait le gâteau ?\npapa|Oui.\npapa|Pour dimanche.\nenfant-f|Le cerf-volant aussi ?\npapa|Dimanche, s'il y a du vent.\npapa|Samedi et dimanche, c'est le week-end.\nnarrateur|Nina verse encore un peu de farine.\nnarrateur|Le nuage revient, plus petit.\nenfant-f|Oh.\npapa|Trop d'un coup.\npapa|On essuie ?\nenfant-f|Oui.\nnarrateur|En ce moment, Nina passe le linge.\nnarrateur|La farine part en traînées blanches.\npapa|Tu fais une place nette.\nenfant-f|Pour le bol.\npapa|Pour le bol.\nnarrateur|Le bol est lourd, en terre.\nnarrateur|Nina le pose sans le faire sonner.\npapa|Bien.\npapa|L'œuf maintenant.\nnarrateur|L'œuf casse net.\nnarrateur|Le jaune tient, puis glisse.\nenfant-f|Il est orange.\npapa|Comme le cerf-volant.\nenfant-f|Le grand.\npapa|Le grand, dimanche.\nnarrateur|Ils mélangent.\nnarrateur|La pâte devient collante, puis lisse.\npapa|Tu veux lécher la cuillère ?\nenfant-f|Un peu.\nnarrateur|C'est sucré, un peu rêche encore.\npapa|Mercredi, on cuit.\npapa|Samedi, il sera froid.\npapa|Dimanche, le vent.\nenfant-f|Pas d'école.\npapa|Pas d'école.\npapa|Comme mercredi.\nnarrateur|Le four souffle un air chaud.\nnarrateur|Nina s'éloigne d'un pas.\npapa|On regarde par la vitre.\nenfant-f|Il gonfle.\npapa|Il gonfle.\nnarrateur|Une miette de farine reste sur le nez de Nina.\npapa|Là.\nnarrateur|Papa l'essuie du pouce.\nenfant-f|Merci.\npapa|Merci d'avoir essuyé la table.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La farine a fait un nuage blanc. Elle retombe sur le bois de la table. Ça sent le beurre tiède, déjà. C'est mercredi, Nina. Pas d'école. On fait le gâteau ? Oui. Pour dimanche. Le cerf-volant aussi ? Dimanche, s'il y a du vent. Samedi et dimanche, c'est le week-end. Nina verse encore un peu de farine. Le nuage revient, plus petit. Oh. Trop d'un coup. On essuie ? Oui. En ce moment, Nina passe le linge. La farine part en traînées blanches. Tu fais une place nette. Pour le bol. Pour le bol. Le bol est lourd, en terre. Nina le pose sans le faire sonner. Bien. L'œuf maintenant. L'œuf casse net. Le jaune tient, puis glisse. Il est orange. Comme le cerf-volant. Le grand. Le grand, dimanche. Ils mélangent. La pâte devient collante, puis lisse. Tu veux lécher la cuillère ? Un peu. C'est sucré, un peu rêche encore. Mercredi, on cuit. Samedi, il sera froid. Dimanche, le vent. Pas d'école. Pas d'école. Comme mercredi. Le four souffle un air chaud. Nina s'éloigne d'un pas. On regarde par la vitre. Il gonfle. Il gonfle. Une miette de farine reste sur le nez de Nina. Là. Papa l'essuie du pouce. Merci. Merci d'avoir essuyé la table."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quels autres jours, comme mercredi, sans l'école ?",
+      "script": "narrateur|Quels autres jours, comme mercredi, sans l'école ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Quels autres jours, comme mercredi, sans l'école ?",
+      "accepted_examples": "week-end | weekend | samedi | dimanche | le week-end | mercredi",
+      "expected_answer": "samedi",
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina sent encore le beurre sur ses doigts. Samedi. Dimanche. Oui. C'est le week-end. Le gâteau, puis le vent. Le cerf-volant. Dimanche. Le gâteau dore derrière la vitre. Une bulle se fige au milieu. Tu as versé trop vite, puis tu as essuyé. Bravo. Le nuage est parti. La table est nette. On attend qu'il descende ? Oui, papa. La cuisine sent le chaud et le sucre. Le linge blanc a une trace de farine.",
+      "script": "narrateur|Nina sent encore le beurre sur ses doigts.\nenfant-f|Samedi.\nenfant-f|Dimanche.\npapa|Oui.\npapa|C'est le week-end.\npapa|Le gâteau, puis le vent.\nenfant-f|Le cerf-volant.\npapa|Dimanche.\nnarrateur|Le gâteau dore derrière la vitre.\nnarrateur|Une bulle se fige au milieu.\npapa|Tu as versé trop vite, puis tu as essuyé.\npapa|Bravo.\nenfant-f|Le nuage est parti.\npapa|La table est nette.\npapa|On attend qu'il descende ?\nenfant-f|Oui, papa.\nnarrateur|La cuisine sent le chaud et le sucre.\nnarrateur|Le linge blanc a une trace de farine.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina sent encore le beurre sur ses doigts. Samedi. Dimanche. Oui. C'est le week-end. Le gâteau, puis le vent. Le cerf-volant. Dimanche. Le gâteau dore derrière la vitre. Une bulle se fige au milieu. Tu as versé trop vite, puis tu as essuyé. Bravo. Le nuage est parti. La table est nette. On attend qu'il descende ? Oui, papa. La cuisine sent le chaud et le sucre. Le linge blanc a une trace de farine."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dimanche, le vent tire déjà les herbes. Nina tient le gâteau dans un linge. Une part pour après. Après le ciel. Le cerf-volant orange claque une fois. Le fil brûle un peu la main, puis non. Tu cours dans l'herbe ? Dans l'herbe. La toile s'élève. Elle penche, puis elle tient. Il vole ! Comme mercredi le gâteau a gonflé. C'est le week-end. Samedi il était froid. Et dimanche il y a le vent. Tu tiens bien le fil ? Oui. Une miette sucrée reste au coin de la bouche. Le ciel tire l'orange tout en haut.",
+      "script": "narrateur|Dimanche, le vent tire déjà les herbes.\nnarrateur|Nina tient le gâteau dans un linge.\nenfant-f|Une part pour après.\npapa|Après le ciel.\nnarrateur|Le cerf-volant orange claque une fois.\nnarrateur|Le fil brûle un peu la main, puis non.\npapa|Tu cours dans l'herbe ?\nenfant-f|Dans l'herbe.\nnarrateur|La toile s'élève.\nnarrateur|Elle penche, puis elle tient.\nenfant-f|Il vole !\npapa|Comme mercredi le gâteau a gonflé.\npapa|C'est le week-end.\nenfant-f|Samedi il était froid.\npapa|Et dimanche il y a le vent.\npapa|Tu tiens bien le fil ?\nenfant-f|Oui.\nnarrateur|Une miette sucrée reste au coin de la bouche.\nnarrateur|Le ciel tire l'orange tout en haut.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Dimanche, le vent tire déjà les herbes. Nina tient le gâteau dans un linge. Une part pour après. Après le ciel. Le cerf-volant orange claque une fois. Le fil brûle un peu la main, puis non. Tu cours dans l'herbe ? Dans l'herbe. La toile s'élève. Elle penche, puis elle tient. Il vole ! Comme mercredi le gâteau a gonflé. C'est le week-end. Samedi il était froid. Et dimanche il y a le vent. Tu tiens bien le fil ? Oui. Une miette sucrée reste au coin de la bouche. Le ciel tire l'orange tout en haut."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le cerf-volant tient. Le gâteau aussi, dans le linge. L'orange claque au-dessus de l'herbe. Le fil vibre un peu entre les doigts. Le vent sent encore le sucre du gâteau.",
+      "script": "enfant-f|Le cerf-volant tient.\npapa|Le gâteau aussi, dans le linge.\nnarrateur|L'orange claque au-dessus de l'herbe.\nnarrateur|Le fil vibre un peu entre les doigts.\nnarrateur|Le vent sent encore le sucre du gâteau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le cerf-volant tient. Le gâteau aussi, dans le linge. L'orange claque au-dessus de l'herbe. Le fil vibre un peu entre les doigts. Le vent sent encore le sucre du gâteau."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.006-04",
+  "fil_rouge": "",
+  "title": "Basile est inquiet à la ferme",
+  "lesson_id": "EMO.LEX.006",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Basile, maman",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Basile arrive à la ferme avec maman. L'herbe est haute. Une vache meugle tout près. Le bruit est fort. Le ventre de Basile se serre. Ses mains deviennent froides. Je suis inquiet. Être inquiet, ce n'est pas honteux. Il va vers maman. Maman est l'adulte près de la barrière. J'ai le ventre serré. Tu peux raconter. Basile raconte le bruit de la vache. Maman écoute. Elle pose une main sur son épaule. Parce qu'il a raconté, son ventre se desserre un peu. Ils regardent la vache de plus loin. La vache mange de l'herbe. Basile souffle. Plus tard, un coq chante. Le ventre se serre encore un peu. Basile va vers l'adulte. Il raconte encore. Merci d'avoir dit. Basile tient le manteau de maman. Ils marchent vers les poules. Les poules picorent. Basile est plus calme.",
+      "script": "narrateur|Basile arrive à la ferme avec maman. L'herbe est haute. Une vache meugle tout près. Le bruit est fort. Le ventre de Basile se serre. Ses mains deviennent froides.\nenfant-f|Je suis inquiet. Être inquiet, ce n'est pas honteux. Il va vers maman. Maman est l'adulte près de la barrière.\nenfant-f|J'ai le ventre serré.\nmaman|Tu peux raconter.\nnarrateur|Basile raconte le bruit de la vache. Maman écoute. Elle pose une main sur son épaule. Parce qu'il a raconté, son ventre se desserre un peu. Ils regardent la vache de plus loin. La vache mange de l'herbe. Basile souffle. Plus tard, un coq chante. Le ventre se serre encore un peu. Basile va vers l'adulte. Il raconte encore.\nmaman|Merci d'avoir dit.\nnarrateur|Basile tient le manteau de maman. Ils marchent vers les poules. Les poules picorent. Basile est plus calme.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Basile a le ventre serré. Que fait-il ?",
+      "script": "narrateur|Basile a le ventre serré. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Basile a nommé : inquiet. Il a rejoint un adulte. Il a pu raconter.",
+      "script": "narrateur|Basile a nommé : inquiet. Il a rejoint un adulte. Il a pu raconter.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Basile boit une gorgée d'eau. Maman reste près de lui.",
+      "script": "narrateur|Basile boit une gorgée d'eau. Maman reste près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

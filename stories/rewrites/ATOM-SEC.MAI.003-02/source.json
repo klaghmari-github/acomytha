@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.003-02",
+  "fil_rouge": "",
+  "title": "Estéban au balcon deux fois",
+  "lesson_id": "SEC.MAI.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Estéban, papa, maman",
+  "setting": "balcon de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Estéban est à la maison. Papa ouvre la porte du balcon. L'air sent le thym. Estéban reste avec l'adulte. On reste derrière la protection. Estéban pose les pieds au sol. Les pieds restent au sol. Il sent le bois sous les chaussettes. La protection est devant lui. Estéban pose les mains sur la protection. Il reste derrière la protection. Un oiseau chante. Papa, l'oiseau. Papa est près de lui. Parce que les pieds sont au sol, Estéban est calme. L'adulte arrose une plante. Le soir, maman ouvre aussi le balcon. Estéban se souvient. Il reste avec l'adulte. Il pose encore les pieds au sol. Il reste derrière la protection. Oui. Pieds au sol, avec un adulte. Ils regardent le ciel. C'est doux.",
+      "script": "narrateur|Estéban est à la maison. Papa ouvre la porte du balcon. L'air sent le thym. Estéban reste avec l'adulte.\npapa|On reste derrière la protection.\nnarrateur|Estéban pose les pieds au sol. Les pieds restent au sol. Il sent le bois sous les chaussettes. La protection est devant lui. Estéban pose les mains sur la protection. Il reste derrière la protection. Un oiseau chante.\nenfant-m|Papa, l'oiseau. Papa est près de lui. Parce que les pieds sont au sol, Estéban est calme. L'adulte arrose une plante.\nnarrateur|Le soir, maman ouvre aussi le balcon. Estéban se souvient. Il reste avec l'adulte. Il pose encore les pieds au sol. Il reste derrière la protection.\nmaman|Oui. Pieds au sol, avec un adulte.\nnarrateur|Ils regardent le ciel. C'est doux.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Estéban est au balcon. Que fait-il ?",
+      "script": "narrateur|Estéban est au balcon. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Estéban a les pieds au sol. Il est derrière la protection. Papa puis maman, l'adulte, étaient là. Il a repris le geste le soir.",
+      "script": "narrateur|Estéban a les pieds au sol. Il est derrière la protection. Papa puis maman, l'adulte, étaient là. Il a repris le geste le soir.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Estéban et maman rentrent. Les pieds restent au sol.",
+      "script": "narrateur|Estéban et maman rentrent. Les pieds restent au sol.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

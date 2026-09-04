@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-04",
+  "fil_rouge": "",
+  "title": "Oscar classe fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Oscar, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Oscar est dans la cuisine. Maman pose un cabas. Dedans, il y a une poire. Une clémentine. Une écharpe. Un gant. Oscar touche la poire. Elle est lisse et froide. On nomme. On classe. Les fruits ensemble. Les habits ensemble. La poire, c'est un fruit. La clémentine, c'est un fruit. Oscar les met ensemble. L'écharpe, c'est un habit. Le gant, c'est un habit. Oscar les met ensemble. Fruits, c'est une catégorie. Habits, c'est une catégorie. Oscar répète : catégorie. Il pose les fruits dans le saladier. Il pose les habits sur la chaise. Parce qu'il a classé, chaque chose a sa place. Plus tard, maman sort une prune. Et une chaussette. Prune, fruit. Chaussette, habit. Il les met dans la bonne catégorie. Maman sourit. Oscar sent le parfum de la clémentine.",
+      "script": "narrateur|Oscar est dans la cuisine. Maman pose un cabas. Dedans, il y a une poire. Une clémentine. Une écharpe. Un gant. Oscar touche la poire. Elle est lisse et froide.\nmaman|On nomme. On classe.\nnarrateur|Les fruits ensemble. Les habits ensemble. La poire, c'est un fruit. La clémentine, c'est un fruit. Oscar les met ensemble. L'écharpe, c'est un habit. Le gant, c'est un habit. Oscar les met ensemble.\nmaman|Fruits, c'est une catégorie. Habits, c'est une catégorie.\nnarrateur|Oscar répète : catégorie. Il pose les fruits dans le saladier. Il pose les habits sur la chaise. Parce qu'il a classé, chaque chose a sa place. Plus tard, maman sort une prune. Et une chaussette.\nenfant-m|Prune, fruit. Chaussette, habit. Il les met dans la bonne catégorie. Maman sourit.\nnarrateur|Oscar sent le parfum de la clémentine.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Oscar range poire et écharpe. Que fait-il ?",
+      "script": "narrateur|Oscar range poire et écharpe. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Oscar a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "script": "narrateur|Oscar a nommé. Il a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Oscar croque la clémentine. Maman plie l'écharpe.",
+      "script": "narrateur|Oscar croque la clémentine. Maman plie l'écharpe.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.TRA.002-07",
+  "fil_rouge": "",
+  "title": "Étienne reste assis dans la voiture",
+  "lesson_id": "SOC.TRA.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Étienne, papa",
+  "setting": "voiture",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Étienne monte dans la voiture. Papa est l'adulte. Étienne pose ses fesses. Il est assis. Son dos est contre le siège. Ses pieds sont sur le tapis. Ses mains tiennent le doudou. On reste assis. Avec l'adulte. La voiture roule. Étienne reste assis. Papa est là. Ils arrivent. Étienne reste assis. Papa défait la ceinture. Étienne donne la main.",
+      "script": "narrateur|Étienne monte dans la voiture. Papa est l'adulte. Étienne pose ses fesses. Il est assis. Son dos est contre le siège. Ses pieds sont sur le tapis. Ses mains tiennent le doudou.\npapa|On reste assis. Avec l'adulte.\nnarrateur|La voiture roule. Étienne reste assis. Papa est là. Ils arrivent. Étienne reste assis. Papa défait la ceinture. Étienne donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Étienne est dans la voiture. Que fait-il ?",
+      "script": "narrateur|Étienne est dans la voiture. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Étienne est resté assis. Ses fesses étaient sur le siège. Papa, l'adulte, était là.",
+      "script": "narrateur|Étienne est resté assis. Ses fesses étaient sur le siège. Papa, l'adulte, était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Étienne tient la main de papa. Ils vont vers la maison.",
+      "script": "narrateur|Étienne tient la main de papa. Ils vont vers la maison.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

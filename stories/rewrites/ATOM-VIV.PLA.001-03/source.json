@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-03",
+  "fil_rouge": "",
+  "title": "Gaspard arrose le basilic",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Gaspard, papa",
+  "setting": "cuisine près de la fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaspard est dans la cuisine. Papa est là. Un petit basilic a soif. Ses feuilles sont molles. Elle a besoin d'eau. Elle a besoin de lumière. Gaspard prend l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pose le pot près de la fenêtre. La lumière arrive. Gaspard touche une feuille. C'est doux. Ça sent le basilic. On arrose avec un adulte. Gaspard répète : eau, lumière, adulte. Le basilic tient plus droit.",
+      "script": "narrateur|Gaspard est dans la cuisine. Papa est là. Un petit basilic a soif. Ses feuilles sont molles.\npapa|Elle a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Gaspard prend l'arrosoir avec papa. Ils versent un peu d'eau. La terre devient sombre. Papa pose le pot près de la fenêtre. La lumière arrive. Gaspard touche une feuille. C'est doux. Ça sent le basilic.\npapa|On arrose avec un adulte.\nnarrateur|Gaspard répète : eau, lumière, adulte. Le basilic tient plus droit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La plante a soif. Que fait Gaspard avec papa ?",
+      "script": "narrateur|La plante a soif. Que fait Gaspard avec papa ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaspard a versé l'eau. La lumière est là. Papa, l'adulte, était avec lui.",
+      "script": "narrateur|Gaspard a versé l'eau. La lumière est là. Papa, l'adulte, était avec lui.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gaspard range l'arrosoir. Le basilic tient droit.",
+      "script": "narrateur|Gaspard range l'arrosoir. Le basilic tient droit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.001-03",
+  "fil_rouge": "",
+  "title": "Emma est contente au cerisier",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Emma, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Emma marche dans le jardin. Papa est là, près du cerisier. Le soleil est doux. Emma voit une cerise rouge. Elle la cueille tout doucement. La cerise sent le sucre. Parce que la cerise est là, Emma sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Je suis contente. C'est de la joie. Être content, c'est bien. Parce qu'elle a de la joie, Emma veut partager. Elle tend la cerise. On peut partager. Papa prend un tout petit bout. Emma prend un tout petit bout. Ils sourient ensemble. Emma dit encore : je suis contente. La joie est là, dans le jardin. Papa lui prend la main.",
+      "script": "narrateur|Emma marche dans le jardin. Papa est là, près du cerisier. Le soleil est doux. Emma voit une cerise rouge. Elle la cueille tout doucement. La cerise sent le sucre. Parce que la cerise est là, Emma sent ses joues chaudes. Son ventre est léger. Un sourire arrive.\nenfant-f|Je suis contente.\npapa|C'est de la joie. Être content, c'est bien. Parce qu'elle a de la joie, Emma veut partager. Elle tend la cerise.\nnarrateur|On peut partager. Papa prend un tout petit bout.\nnarrateur|Emma prend un tout petit bout. Ils sourient ensemble. Emma dit encore : je suis contente. La joie est là, dans le jardin. Papa lui prend la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Emma sourit. Que dit-elle ?",
+      "script": "narrateur|Emma sourit. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Emma a nommé sa joie. Elle a partagé avec papa. Être content, c'est bien.",
+      "script": "narrateur|Emma a nommé sa joie. Elle a partagé avec papa. Être content, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Emma essuie ses mains. Le jardin est calme. Papa reste près d'elle.",
+      "script": "narrateur|Emma essuie ses mains. Le jardin est calme. Papa reste près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-01",
+  "fil_rouge": "",
+  "title": "L'anniversaire de Sara en juin",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sara, maman",
+  "setting": "maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara ouvre un grand calendrier avec maman. Maman lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Sara pose son doigt. En juin, c'est ton anniversaire. Sara sourit. Elle aura un gâteau. Papa arrivera avec des fleurs. Maman répète : il y a douze mois. Un anniversaire a un mois. Le mois de Sara, c'est juin.",
+      "script": "narrateur|Sara ouvre un grand calendrier avec maman. Maman lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Sara pose son doigt.\nmaman|En juin, c'est ton anniversaire.\nnarrateur|Sara sourit. Elle aura un gâteau. Papa arrivera avec des fleurs. Maman répète : il y a douze mois. Un anniversaire a un mois. Le mois de Sara, c'est juin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sara a un gâteau en juin. Pourquoi ?",
+      "script": "narrateur|Sara a un gâteau en juin. Pourquoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sara a entendu les douze mois. Son anniversaire est en juin. Maman était là.",
+      "script": "narrateur|Sara a entendu les douze mois. Son anniversaire est en juin. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sara ferme le calendrier. Elle range le crayon.",
+      "script": "narrateur|Sara ferme le calendrier. Elle range le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

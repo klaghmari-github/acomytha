@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-DIF.PAR.002-03",
+  "fil_rouge": "",
+  "title": "Céleste laisse le temps à Sami",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Céleste, Sami, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Céleste et Sami sont dans le salon. Maman pose le goûter. Papa s'assoit sur le tapis. Sami veut raconter son dessin. Il cherche les mots. Le.. Le.. Céleste a envie de finir. On laisse le temps. Céleste attend. Elle pose ses mains sur ses genoux. Le chat bleu. Parce qu'on a laissé le temps, Sami a fini sa phrase. Céleste sourit. J'aime le chat. Plus tard, Sami veut un verre. Je.. je.. Céleste attend encore. Elle laisse le temps. Je veux de l'eau. Maman tend le verre. Céleste n'a pas parlé à sa place. Elle a attendu la fin de la phrase.",
+      "script": "narrateur|Céleste et Sami sont dans le salon. Maman pose le goûter. Papa s'assoit sur le tapis. Sami veut raconter son dessin. Il cherche les mots.\nnarrateur|Le..\nnarrateur|Le.. Céleste a envie de finir.\npapa|On laisse le temps.\nnarrateur|Céleste attend. Elle pose ses mains sur ses genoux.\ncopain|Le chat bleu. Parce qu'on a laissé le temps, Sami a fini sa phrase.\nnarrateur|Céleste sourit.\nnarrateur|J'aime le chat. Plus tard, Sami veut un verre.\nnarrateur|Je.. je..\nnarrateur|Céleste attend encore. Elle laisse le temps.\ncopain|Je veux de l'eau. Maman tend le verre.\nnarrateur|Céleste n'a pas parlé à sa place. Elle a attendu la fin de la phrase.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sami cherche ses mots. Que fait Céleste ?",
+      "script": "narrateur|Sami cherche ses mots. Que fait Céleste ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Céleste a laissé le temps. Sami a fini sa phrase. Papa et maman étaient là.",
+      "script": "narrateur|Céleste a laissé le temps. Sami a fini sa phrase. Papa et maman étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Céleste croque une compote. Sami montre encore le chat bleu.",
+      "script": "narrateur|Céleste croque une compote. Sami montre encore le chat bleu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-06",
+  "fil_rouge": "Raphaël veut voir un vrai train. Mercredi, un wagon déraille sur la table. Ils le remettent. Samedi, week-end, ils regardent depuis le quai, la main dans la main.",
+  "title": "Le wagon et le vrai quai",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, maman",
+  "setting": "salon mercredi, quai de gare samedi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le petit train sent le bois et l'huile. Un rail fait un cercle sur la table. La moquette avale un écrou minuscule. C'est mercredi, Raphaël. Pas d'école. On fait le tour ? Oui. Tout doux. Samedi, le vrai ? Samedi, on ira au quai. On regardera avec moi. Samedi et dimanche, c'est le week-end. En ce moment, Raphaël pousse le wagon rouge. Le wagon saute le rail. Il tombe sur le bois, toc. Il est tombé. Le virage était trop vite. On le remet ? Oui. Il ramasse le wagon. Une petite roue tourne encore dans le vide. Tu la clipses. Ça fait clic. Il tient. Maintenant plus lent. Le train reprend le cercle. Le bois vibre un peu sous les rails. Il va à la gare. Notre gare, samedi. Le vrai quai. Le vrai quai. On reste dessus. On tient la main. Pas tout seul. Pas tout seul. Un tunnel de carton attend au bout. Le train y entre, disparaît. Il est caché. Il revient. Le wagon rouge ressort, plus calme. Mercredi, le petit. Samedi, le grand. Pas d'école. Pas d'école. Comme mercredi. Raphaël souffle sur le rail. Un peu de poussière part. Tu prépares la voie. Pour le vrai. Le vrai a des rails plus gros. On les regardera du quai. Le petit train s'arrête près du bol. L'huile sent encore, très fin.",
+      "script": "narrateur|Le petit train sent le bois et l'huile.\nnarrateur|Un rail fait un cercle sur la table.\nnarrateur|La moquette avale un écrou minuscule.\nmaman|C'est mercredi, Raphaël.\nmaman|Pas d'école.\nenfant-m|On fait le tour ?\nmaman|Oui.\nmaman|Tout doux.\nenfant-m|Samedi, le vrai ?\nmaman|Samedi, on ira au quai.\nmaman|On regardera avec moi.\nmaman|Samedi et dimanche, c'est le week-end.\nnarrateur|En ce moment, Raphaël pousse le wagon rouge.\nnarrateur|Le wagon saute le rail.\nnarrateur|Il tombe sur le bois, toc.\nenfant-m|Il est tombé.\nmaman|Le virage était trop vite.\nmaman|On le remet ?\nenfant-m|Oui.\nnarrateur|Il ramasse le wagon.\nnarrateur|Une petite roue tourne encore dans le vide.\nmaman|Tu la clipses.\nnarrateur|Ça fait clic.\nenfant-m|Il tient.\nmaman|Maintenant plus lent.\nnarrateur|Le train reprend le cercle.\nnarrateur|Le bois vibre un peu sous les rails.\nenfant-m|Il va à la gare.\nmaman|Notre gare, samedi.\nenfant-m|Le vrai quai.\nmaman|Le vrai quai.\nmaman|On reste dessus.\nmaman|On tient la main.\nenfant-m|Pas tout seul.\nmaman|Pas tout seul.\nnarrateur|Un tunnel de carton attend au bout.\nnarrateur|Le train y entre, disparaît.\nenfant-m|Il est caché.\nmaman|Il revient.\nnarrateur|Le wagon rouge ressort, plus calme.\nmaman|Mercredi, le petit.\nmaman|Samedi, le grand.\nenfant-m|Pas d'école.\nmaman|Pas d'école.\nmaman|Comme mercredi.\nnarrateur|Raphaël souffle sur le rail.\nnarrateur|Un peu de poussière part.\nmaman|Tu prépares la voie.\nenfant-m|Pour le vrai.\nmaman|Le vrai a des rails plus gros.\nmaman|On les regardera du quai.\nnarrateur|Le petit train s'arrête près du bol.\nnarrateur|L'huile sent encore, très fin.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le petit train sent le bois et l'huile. Un rail fait un cercle sur la table. La moquette avale un écrou minuscule. C'est mercredi, Raphaël. Pas d'école. On fait le tour ? Oui. Tout doux. Samedi, le vrai ? Samedi, on ira au quai. On regardera avec moi. Samedi et dimanche, c'est le week-end. En ce moment, Raphaël pousse le wagon rouge. Le wagon saute le rail. Il tombe sur le bois, toc. Il est tombé. Le virage était trop vite. On le remet ? Oui. Il ramasse le wagon. Une petite roue tourne encore dans le vide. Tu la clipses. Ça fait clic. Il tient. Maintenant plus lent. Le train reprend le cercle. Le bois vibre un peu sous les rails. Il va à la gare. Notre gare, samedi. Le vrai quai. Le vrai quai. On reste dessus. On tient la main. Pas tout seul. Pas tout seul. Un tunnel de carton attend au bout. Le train y entre, disparaît. Il est caché. Il revient. Le wagon rouge ressort, plus calme. Mercredi, le petit. Samedi, le grand. Pas d'école. Pas d'école. Comme mercredi. Raphaël souffle sur le rail. Un peu de poussière part. Tu prépares la voie. Pour le vrai. Le vrai a des rails plus gros. On les regardera du quai. Le petit train s'arrête près du bol. L'huile sent encore, très fin."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Quels autres jours, comme mercredi, sans l'école ?",
+      "script": "narrateur|Quels autres jours, comme mercredi, sans l'école ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Quels autres jours, comme mercredi, sans l'école ?",
+      "accepted_examples": "week-end | weekend | samedi | dimanche | le week-end | mercredi",
+      "expected_answer": "samedi",
+      "retry_prompt": "Samedi et dimanche. Comment on dit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Raphaël aligne le wagon contre la motrice. Samedi. Dimanche. Oui. C'est le week-end. Samedi, le quai. On tient la main. On tient la main. On reste sur le quai. Il caresse le toit rouge. Le bois est lisse, un peu chaud. Tu as remis la roue. Bravo. Clic. Clic. Il peut dormir jusqu'à samedi ? Oui, maman. Le cercle de rails garde une trace d'huile.",
+      "script": "narrateur|Raphaël aligne le wagon contre la motrice.\nenfant-m|Samedi.\nenfant-m|Dimanche.\nmaman|Oui.\nmaman|C'est le week-end.\nmaman|Samedi, le quai.\nenfant-m|On tient la main.\nmaman|On tient la main.\nmaman|On reste sur le quai.\nnarrateur|Il caresse le toit rouge.\nnarrateur|Le bois est lisse, un peu chaud.\nmaman|Tu as remis la roue.\nmaman|Bravo.\nenfant-m|Clic.\nmaman|Clic.\nmaman|Il peut dormir jusqu'à samedi ?\nenfant-m|Oui, maman.\nnarrateur|Le cercle de rails garde une trace d'huile.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Raphaël aligne le wagon contre la motrice. Samedi. Dimanche. Oui. C'est le week-end. Samedi, le quai. On tient la main. On tient la main. On reste sur le quai. Il caresse le toit rouge. Le bois est lisse, un peu chaud. Tu as remis la roue. Bravo. Clic. Clic. Il peut dormir jusqu'à samedi ? Oui, maman. Le cercle de rails garde une trace d'huile."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Samedi, le quai sent le fer chaud. Une ligne jaune court au bord. On s'arrête ici. Derrière la ligne. Je tiens ta main. Oui. Un vent arrive avant le train. Les cheveux de Raphaël bougent. Je le vois ! Le grand. Le train passe, long, profond. Le quai vibre sous les semelles. Comme la table. Plus fort. C'est le week-end. Merci, maman. Merci d'être resté avec moi. Le petit wagon, à la maison, attend le cercle. Une odeur de fer reste dans le manteau.",
+      "script": "narrateur|Samedi, le quai sent le fer chaud.\nnarrateur|Une ligne jaune court au bord.\nmaman|On s'arrête ici.\nmaman|Derrière la ligne.\nenfant-m|Je tiens ta main.\nmaman|Oui.\nnarrateur|Un vent arrive avant le train.\nnarrateur|Les cheveux de Raphaël bougent.\nenfant-m|Je le vois !\nmaman|Le grand.\nnarrateur|Le train passe, long, profond.\nnarrateur|Le quai vibre sous les semelles.\nenfant-m|Comme la table.\nmaman|Plus fort.\nmaman|C'est le week-end.\nenfant-m|Merci, maman.\nmaman|Merci d'être resté avec moi.\nnarrateur|Le petit wagon, à la maison, attend le cercle.\nnarrateur|Une odeur de fer reste dans le manteau.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Samedi, le quai sent le fer chaud. Une ligne jaune court au bord. On s'arrête ici. Derrière la ligne. Je tiens ta main. Oui. Un vent arrive avant le train. Les cheveux de Raphaël bougent. Je le vois ! Le grand. Le train passe, long, profond. Le quai vibre sous les semelles. Comme la table. Plus fort. C'est le week-end. Merci, maman. Merci d'être resté avec moi. Le petit wagon, à la maison, attend le cercle. Une odeur de fer reste dans le manteau."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai vu le vrai. Depuis le quai. La ligne jaune est encore sous les yeux. La main de maman est chaude. Le manteau garde le vent du train.",
+      "script": "enfant-m|J'ai vu le vrai.\nmaman|Depuis le quai.\nnarrateur|La ligne jaune est encore sous les yeux.\nnarrateur|La main de maman est chaude.\nnarrateur|Le manteau garde le vent du train.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai vu le vrai. Depuis le quai. La ligne jaune est encore sous les yeux. La main de maman est chaude. Le manteau garde le vent du train."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.AID.001-04",
+  "fil_rouge": "",
+  "title": "Justine va vers maman",
+  "lesson_id": "FAM.AID.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Justine, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Justine veut ouvrir la boîte de perles. Le couvercle est dur. C'est trop difficile. Justine va vers maman. Aller vers eux, c'est possible. Elle dit le besoin. Maman, j'ai besoin d'aide. Maman l'écoute. Maman tient le couvercle. Justine tire. La boîte s'ouvre. Les perles sont lisses. Plus tard, papa est près de la table. Le pot de confiture est collé. Justine se souvient. Elle va vers papa. Elle dit le besoin. Papa, le pot est collé. Papa tient le pot avec elle. Le pot s'ouvre. Justine sent la fraise. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "script": "narrateur|Justine veut ouvrir la boîte de perles. Le couvercle est dur. C'est trop difficile. Justine va vers maman. Aller vers eux, c'est possible. Elle dit le besoin.\nenfant-f|Maman, j'ai besoin d'aide. Maman l'écoute. Maman tient le couvercle.\nnarrateur|Justine tire. La boîte s'ouvre. Les perles sont lisses. Plus tard, papa est près de la table. Le pot de confiture est collé. Justine se souvient. Elle va vers papa. Elle dit le besoin.\nenfant-f|Papa, le pot est collé. Papa tient le pot avec elle.\nnarrateur|Le pot s'ouvre. Justine sent la fraise. Quand c'est trop difficile, on va vers eux. On dit le besoin. Dire le besoin, c'est possible.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "C'est trop difficile. Que fait Justine ?",
+      "script": "narrateur|C'est trop difficile. Que fait Justine ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Justine est allée vers maman. Puis vers papa. Elle a dit le besoin.",
+      "script": "narrateur|Justine est allée vers maman. Puis vers papa. Elle a dit le besoin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Justine enfile une perle. Maman pose le pot.",
+      "script": "narrateur|Justine enfile une perle. Maman pose le pot.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

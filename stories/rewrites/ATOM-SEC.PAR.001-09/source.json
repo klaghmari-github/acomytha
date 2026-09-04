@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-09",
+  "fil_rouge": "",
+  "title": "Clovis joue où maman voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Clovis, maman",
+  "setting": "parc, bac à sable",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Clovis est au parc. Maman tient sa main. Le bac à sable est là. Maman montre l'espace. C'est l'espace montré. Clovis s'assoit dans le bac. Il sent le sable. Le sable est frais. Maman s'assoit sur le banc. L'adulte voit Clovis. Maman voit. Clovis verse le sable. Le seau est rouge. Il reste dans l'espace montré. Je te vois. L'adulte voit. Clovis creuse. Il reste là. Près de maman. Papa arrivera plus tard. Clovis joue ici.",
+      "script": "narrateur|Clovis est au parc. Maman tient sa main. Le bac à sable est là. Maman montre l'espace. C'est l'espace montré. Clovis s'assoit dans le bac. Il sent le sable. Le sable est frais. Maman s'assoit sur le banc. L'adulte voit Clovis. Maman voit. Clovis verse le sable. Le seau est rouge. Il reste dans l'espace montré.\nmaman|Je te vois. L'adulte voit.\nnarrateur|Clovis creuse. Il reste là. Près de maman. Papa arrivera plus tard. Clovis joue ici.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Clovis joue au parc. Où reste-t-il ?",
+      "script": "narrateur|Clovis joue au parc. Où reste-t-il ?",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Clovis est dans l'espace montré. Maman, l'adulte, voit. Le sable reste dans le bac.",
+      "script": "narrateur|Clovis est dans l'espace montré. Maman, l'adulte, voit. Le sable reste dans le bac.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Clovis range le seau. Maman lui tend la main.",
+      "script": "narrateur|Clovis range le seau. Maman lui tend la main.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

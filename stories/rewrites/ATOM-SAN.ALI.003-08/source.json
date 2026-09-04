@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-08",
+  "fil_rouge": "",
+  "title": "Andrée boit un verre d'eau",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Andrée, maman",
+  "setting": "jardin puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Andrée joue dans le jardin. Le soleil chauffe. Andrée a soif. Sa bouche est sèche. Maman est près des tomates. J'ai soif, maman. Maman sourit. Elles vont dans la cuisine. Maman prend un verre. Elle verse de l'eau. L'eau est claire. Andrée prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore. Quand on a soif, on boit de l'eau. Dans un verre. Andrée pose le verre. Elle se sent mieux. Plus tard, au jardin, Andrée a encore soif. Elle va vers maman. Maman tend le verre d'eau. Andrée boit. La soif s'en va.",
+      "script": "narrateur|Andrée joue dans le jardin. Le soleil chauffe. Andrée a soif. Sa bouche est sèche. Maman est près des tomates.\nenfant-f|J'ai soif, maman. Maman sourit. Elles vont dans la cuisine. Maman prend un verre. Elle verse de l'eau. L'eau est claire.\nnarrateur|Andrée prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore.\nmaman|Quand on a soif, on boit de l'eau.\nnarrateur|Dans un verre. Andrée pose le verre. Elle se sent mieux. Plus tard, au jardin, Andrée a encore soif. Elle va vers maman. Maman tend le verre d'eau. Andrée boit. La soif s'en va.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Andrée a soif. Que prend-elle ?",
+      "script": "narrateur|Andrée a soif. Que prend-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Andrée avait soif. Elle a pris le verre. Elle a bu de l'eau. Maman était là.",
+      "script": "narrateur|Andrée avait soif. Elle a pris le verre. Elle a bu de l'eau. Maman était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Andrée retourne au jardin. Le verre reste sur la table. Merci, dit Andrée.",
+      "script": "narrateur|Andrée retourne au jardin. Le verre reste sur la table. Merci, dit Andrée.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

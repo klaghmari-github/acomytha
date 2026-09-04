@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.001-05",
+  "fil_rouge": "",
+  "title": "Damien appelle pour la lampe",
+  "lesson_id": "SEC.MAI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Damien, papa, maman",
+  "setting": "salle à manger",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Damien joue dans la salle à manger. Il a des trains en bois. Les trains sont lisses. Papa plie les serviettes. Damien veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Damien appelle papa. Papa, la lumière. Papa vient. Papa allume la lampe. La pièce est claire. Maman entre. On appelle un adulte. On appelle papa ou maman. Les mains restent avec les jouets. Damien reprend un train. Il fait un pont. Les prises sont pour les adultes. Damien tient les jouets. Les mains sont avec les trains.",
+      "script": "narrateur|Damien joue dans la salle à manger. Il a des trains en bois. Les trains sont lisses. Papa plie les serviettes. Damien veut plus de lumière. Il regarde ses mains. Les mains restent avec les jouets. Damien appelle papa.\nnarrateur|Papa, la lumière. Papa vient. Papa allume la lampe.\nnarrateur|La pièce est claire. Maman entre.\nmaman|On appelle un adulte. On appelle papa ou maman.\nnarrateur|Les mains restent avec les jouets. Damien reprend un train. Il fait un pont.\npapa|Les prises sont pour les adultes.\nnarrateur|Damien tient les jouets. Les mains sont avec les trains.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Damien veut la lumière. Que fait-il ?",
+      "script": "narrateur|Damien veut la lumière. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Damien a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "script": "narrateur|Damien a appelé un adulte. Les mains étaient avec les jouets. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Damien pousse un train. La lumière reste allumée.",
+      "script": "narrateur|Damien pousse un train. La lumière reste allumée.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

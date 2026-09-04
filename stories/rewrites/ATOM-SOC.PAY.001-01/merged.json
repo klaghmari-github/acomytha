@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-01",
+  "fil_rouge": "Aniss veut entendre les vagues dans le coquillage. Papa déplie la France, le bleu de la mer. Le coquillage file sous le tapis. Aniss le trouve, l'écoute, garde la main sur la carte.",
+  "title": "Le coquillage sous le tapis",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Aniss, papa",
+  "setting": "salon, tapis bleu, carte de France, fenêtre ouverte",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La carte de France dépasse du tapis bleu. Les plis sont usés, un peu brillants. Un coquillage blanc attend près du livre. Il sent encore un peu le sel, tout loin. Aniss vit ici, avec papa. La fenêtre est ouverte, sans vague. Je veux entendre la mer, papa. Avec le coquillage ? Oui. Et voir les vagues. On pose le doigt sur la carte, d'abord. En ce moment, Aniss s'assoit en tailleur. Le tapis gratte un peu les genoux. Papa déplie un grand bleu, sur la gauche. Ça, c'est la France. La France. Et ce bleu, c'est la mer. La mer de France. Les vagues sont là ? Sur la carte, c'est tout calme. Dans le coquillage, on peut les imaginer. Aniss tend la main vers le coquillage. Le coquillage roule. Il file sous le tapis, tout de suite. Il s'est caché ! Sous le tapis ? Oui. On soulève le bord, tout doux ? Le tapis est lourd, un peu rêche. Une poussière danse dans le rayon. Je ne le vois pas. Plus loin, peut-être. On cherche ensemble. Aniss glisse la main, paume ouverte. Le tapis sent la laine tiède. Rien, d'abord, sauf un fil. Tu entends encore la mer, sans lui ? Non. Je veux le coquillage.",
+      "script": "narrateur|La carte de France dépasse du tapis bleu.\nnarrateur|Les plis sont usés, un peu brillants.\nnarrateur|Un coquillage blanc attend près du livre.\nnarrateur|Il sent encore un peu le sel, tout loin.\nnarrateur|Aniss vit ici, avec papa.\nnarrateur|La fenêtre est ouverte, sans vague.\nenfant-m|Je veux entendre la mer, papa.\npapa|Avec le coquillage ?\nenfant-m|Oui.\nenfant-m|Et voir les vagues.\npapa|On pose le doigt sur la carte, d'abord.\nnarrateur|En ce moment, Aniss s'assoit en tailleur.\nnarrateur|Le tapis gratte un peu les genoux.\nnarrateur|Papa déplie un grand bleu, sur la gauche.\npapa|Ça, c'est la France.\nenfant-m|La France.\npapa|Et ce bleu, c'est la mer.\npapa|La mer de France.\nenfant-m|Les vagues sont là ?\npapa|Sur la carte, c'est tout calme.\npapa|Dans le coquillage, on peut les imaginer.\nnarrateur|Aniss tend la main vers le coquillage.\nnarrateur|Le coquillage roule.\nnarrateur|Il file sous le tapis, tout de suite.\nenfant-m|Il s'est caché !\npapa|Sous le tapis ?\nenfant-m|Oui.\npapa|On soulève le bord, tout doux ?\nnarrateur|Le tapis est lourd, un peu rêche.\nnarrateur|Une poussière danse dans le rayon.\nenfant-m|Je ne le vois pas.\npapa|Plus loin, peut-être.\npapa|On cherche ensemble.\nnarrateur|Aniss glisse la main, paume ouverte.\nnarrateur|Le tapis sent la laine tiède.\nnarrateur|Rien, d'abord, sauf un fil.\npapa|Tu entends encore la mer, sans lui ?\nenfant-m|Non.\nenfant-m|Je veux le coquillage.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La carte de France dépasse du tapis bleu. Les plis sont usés, un peu brillants. Un coquillage blanc attend près du livre. Il sent encore un peu le sel, tout loin. Aniss vit ici, avec papa. La fenêtre est ouverte, sans vague. Je veux entendre la mer, papa. Avec le coquillage ? Oui. Et voir les vagues. On pose le doigt sur la carte, d'abord. En ce moment, Aniss s'assoit en tailleur. Le tapis gratte un peu les genoux. Papa déplie un grand bleu, sur la gauche. Ça, c'est la France. La France. Et ce bleu, c'est la mer. La mer de France. Les vagues sont là ? Sur la carte, c'est tout calme. Dans le coquillage, on peut les imaginer. Aniss tend la main vers le coquillage. Le coquillage roule. Il file sous le tapis, tout de suite. Il s'est caché ! Sous le tapis ? Oui. On soulève le bord, tout doux ? Le tapis est lourd, un peu rêche. Une poussière danse dans le rayon. Je ne le vois pas. Plus loin, peut-être. On cherche ensemble. Aniss glisse la main, paume ouverte. Le tapis sent la laine tiède. Rien, d'abord, sauf un fil. Tu entends encore la mer, sans lui ? Non. Je veux le coquillage."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Aniss nomme la France. Il nomme aussi quoi ?",
+      "script": "narrateur|Aniss nomme la France.\nnarrateur|Il nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Aniss nomme la France. Il nomme aussi quoi ?",
+      "expected_answer": "mer",
+      "accepted_examples": "mer | la mer | le mer | vagues | la mer de France | paysage",
+      "retry_prompt": "Sur la carte, le bleu, c'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Les doigts d'Aniss touchent une bosse dure. Le coquillage est là, sous la laine. Je l'ai ! Bravo, Aniss. Tu l'as trouvé. Il est un peu tiède, un peu poussiéreux. Papa souffle, tout doux. La poussière part vers la fenêtre. Je l'écoute. Contre l'oreille. Aniss pose le coquillage. Un souffle lointain, comme une vague petite. J'entends la mer ! La mer de France. Le bleu, sur la carte. Les vagues. Tu les entends, dedans. Merci d'avoir cherché sous le tapis. Le bord du tapis retombe, tout plat. La France reste ouverte, avec son bleu.",
+      "script": "narrateur|Les doigts d'Aniss touchent une bosse dure.\nnarrateur|Le coquillage est là, sous la laine.\nenfant-m|Je l'ai !\npapa|Bravo, Aniss.\npapa|Tu l'as trouvé.\nnarrateur|Il est un peu tiède, un peu poussiéreux.\nnarrateur|Papa souffle, tout doux.\nnarrateur|La poussière part vers la fenêtre.\nenfant-m|Je l'écoute.\npapa|Contre l'oreille.\nnarrateur|Aniss pose le coquillage.\nnarrateur|Un souffle lointain, comme une vague petite.\nenfant-m|J'entends la mer !\npapa|La mer de France.\npapa|Le bleu, sur la carte.\nenfant-m|Les vagues.\npapa|Tu les entends, dedans.\npapa|Merci d'avoir cherché sous le tapis.\nnarrateur|Le bord du tapis retombe, tout plat.\nnarrateur|La France reste ouverte, avec son bleu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Les doigts d'Aniss touchent une bosse dure. Le coquillage est là, sous la laine. Je l'ai ! Bravo, Aniss. Tu l'as trouvé. Il est un peu tiède, un peu poussiéreux. Papa souffle, tout doux. La poussière part vers la fenêtre. Je l'écoute. Contre l'oreille. Aniss pose le coquillage. Un souffle lointain, comme une vague petite. J'entends la mer ! La mer de France. Le bleu, sur la carte. Les vagues. Tu les entends, dedans. Merci d'avoir cherché sous le tapis. Le bord du tapis retombe, tout plat. La France reste ouverte, avec son bleu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Aniss garde le coquillage contre l'oreille. L'autre main reste sur le bleu de la carte. Ça chante, papa. Oui. Même ici, sans le vent du port. Tu veux que je nomme encore ? La France. Et la mer. Un pays, un paysage. Papa replie un coin de carte, pas trop. Le bleu reste visible, comme une porte. Je referme les yeux. Les vagues sont là, dedans. Le tapis ne cache plus rien. Juste la laine, et les genoux.",
+      "script": "narrateur|Aniss garde le coquillage contre l'oreille.\nnarrateur|L'autre main reste sur le bleu de la carte.\nenfant-m|Ça chante, papa.\npapa|Oui.\npapa|Même ici, sans le vent du port.\npapa|Tu veux que je nomme encore ?\nenfant-m|La France.\nenfant-m|Et la mer.\npapa|Un pays, un paysage.\nnarrateur|Papa replie un coin de carte, pas trop.\nnarrateur|Le bleu reste visible, comme une porte.\nenfant-m|Je referme les yeux.\npapa|Les vagues sont là, dedans.\nnarrateur|Le tapis ne cache plus rien.\nnarrateur|Juste la laine, et les genoux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Aniss garde le coquillage contre l'oreille. L'autre main reste sur le bleu de la carte. Ça chante, papa. Oui. Même ici, sans le vent du port. Tu veux que je nomme encore ? La France. Et la mer. Un pays, un paysage. Papa replie un coin de carte, pas trop. Le bleu reste visible, comme une porte. Je referme les yeux. Les vagues sont là, dedans. Le tapis ne cache plus rien. Juste la laine, et les genoux."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le coquillage reste au creux de la main. Le souffle lointain continue, tout petit. La mer est là. Oui. La mer de France, sur le tapis. La fenêtre n'a toujours pas de vague. Aniss en a une, contre l'oreille, quand même.",
+      "script": "narrateur|Le coquillage reste au creux de la main.\nnarrateur|Le souffle lointain continue, tout petit.\nenfant-m|La mer est là.\npapa|Oui.\npapa|La mer de France, sur le tapis.\nnarrateur|La fenêtre n'a toujours pas de vague.\nnarrateur|Aniss en a une, contre l'oreille, quand même.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le coquillage reste au creux de la main. Le souffle lointain continue, tout petit. La mer est là. Oui. La mer de France, sur le tapis. La fenêtre n'a toujours pas de vague. Aniss en a une, contre l'oreille, quand même."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.PAR.001-08",
+  "fil_rouge": "",
+  "title": "Élisa reste où papa voit",
+  "lesson_id": "SEC.PAR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Élisa, papa",
+  "setting": "parc puis aire de jeux",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Élisa arrive au parc avec papa. Les canards font coin-coin. Papa montre le bac à sable. Voici l'espace montré. Tu joues ici. Papa s'assoit sur le banc. L'adulte voit. Élisa creuse. Le sable est frais. Elle reste dans l'espace montré. Papa la voit. Un seau rouge. Une pelle. Élisa verse le sable. Plus tard, ils vont à l'aire de jeux. Le bois du pont est lisse. Papa montre le petit pont. Ici, c'est l'espace montré. Je reste là. L'adulte voit. Élisa marche sur le pont. Elle reste où papa a dit. Même leçon, autre lieu. On joue là où l'adulte a dit. L'adulte voit. Papa me voit. Papa hoche la tête. Ils rentrent la main dans la main.",
+      "script": "narrateur|Élisa arrive au parc avec papa. Les canards font coin-coin. Papa montre le bac à sable.\nnarrateur|Voici l'espace montré. Tu joues ici. Papa s'assoit sur le banc. L'adulte voit.\nnarrateur|Élisa creuse. Le sable est frais. Elle reste dans l'espace montré. Papa la voit. Un seau rouge. Une pelle. Élisa verse le sable. Plus tard, ils vont à l'aire de jeux. Le bois du pont est lisse. Papa montre le petit pont.\nnarrateur|Ici, c'est l'espace montré. Je reste là. L'adulte voit.\nnarrateur|Élisa marche sur le pont. Elle reste où papa a dit. Même leçon, autre lieu. On joue là où l'adulte a dit. L'adulte voit.\nenfant-f|Papa me voit. Papa hoche la tête. Ils rentrent la main dans la main.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa montre un espace. Où joue Élisa ?",
+      "script": "narrateur|Papa montre un espace. Où joue Élisa ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Élisa est restée dans l'espace montré. Au parc, puis à l'aire. L'adulte voit.",
+      "script": "narrateur|Élisa est restée dans l'espace montré. Au parc, puis à l'aire. L'adulte voit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Élisa range le seau. Papa ferme le portail.",
+      "script": "narrateur|Élisa range le seau. Papa ferme le portail.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

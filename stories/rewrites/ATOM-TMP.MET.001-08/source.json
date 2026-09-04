@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MET.001-08",
+  "fil_rouge": "",
+  "title": "Céline prend manteau et bottes",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Céline, maman, papa",
+  "setting": "entrée",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Céline ouvre la porte. L'air est froid. Froid, manteau. Céline prend le manteau. Le tissu est chaud. Plus tard, il pleut. Les gouttes tapent. Pluie, bottes. Céline met les bottes. Les bottes sont en caoutchouc. Même leçon, autre temps. Froid, manteau. Pluie, bottes. Céline donne la main. Ils sortent. Le manteau sent la laine.",
+      "script": "narrateur|Céline ouvre la porte. L'air est froid.\nmaman|Froid, manteau.\nnarrateur|Céline prend le manteau. Le tissu est chaud. Plus tard, il pleut. Les gouttes tapent.\npapa|Pluie, bottes.\nnarrateur|Céline met les bottes. Les bottes sont en caoutchouc. Même leçon, autre temps. Froid, manteau. Pluie, bottes. Céline donne la main. Ils sortent. Le manteau sent la laine.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid, puis il pleut. Que prend Céline ?",
+      "script": "narrateur|Il fait froid, puis il pleut. Que prend Céline ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Céline a pris le manteau parce qu'il faisait froid. Elle a mis les bottes parce qu'il pleuvait.",
+      "script": "narrateur|Céline a pris le manteau parce qu'il faisait froid. Elle a mis les bottes parce qu'il pleuvait.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Céline marche dans une flaque. Papa tient sa main.",
+      "script": "narrateur|Céline marche dans une flaque. Papa tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

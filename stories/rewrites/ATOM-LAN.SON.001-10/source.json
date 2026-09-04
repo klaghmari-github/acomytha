@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-10",
+  "fil_rouge": "",
+  "title": "Gaston nomme les sons de la fenêtre",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Gaston, maman, papa",
+  "setting": "salon, fenêtre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaston est près de la fenêtre. Maman ouvre un peu. Un son : plic plic. C'est un son. Quel nom ? La pluie. Un son : miaou. Gaston dit le nom : le chat. Papa arrive. Un son : tchou tchou. C'est un son. Quel nom ? Le train. On entend un son. On dit le nom. Gaston répète. Pluie. Chat. Train. C'est un son. On dit le nom.",
+      "script": "narrateur|Gaston est près de la fenêtre. Maman ouvre un peu. Un son : plic plic.\nmaman|C'est un son. Quel nom ?\nenfant-m|La pluie.\nnarrateur|Un son : miaou. Gaston dit le nom : le chat. Papa arrive. Un son : tchou tchou.\npapa|C'est un son. Quel nom ?\nenfant-m|Le train.\nmaman|On entend un son. On dit le nom.\nnarrateur|Gaston répète. Pluie. Chat. Train. C'est un son. On dit le nom.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Gaston entend un bruit. C'est quoi ?",
+      "script": "narrateur|Gaston entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaston a entendu un son. Il a dit le nom. Pluie. Chat. Train.",
+      "script": "narrateur|Gaston a entendu un son. Il a dit le nom. Pluie. Chat. Train.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa ferme un peu la fenêtre. Gaston écoute encore.",
+      "script": "narrateur|Papa ferme un peu la fenêtre. Gaston écoute encore.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

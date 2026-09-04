@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.SON.001-08",
+  "fil_rouge": "",
+  "title": "Hugo nomme les sons de la fenêtre",
+  "lesson_id": "LAN.SON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hugo, maman",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo s'assoit près de la fenêtre avec maman. Un son arrive : plic ploc. C'est un son. Quel nom ? La pluie. Un autre son : tchou tchou. Hugo dit le nom : le train. Près du canapé, un miaulement. Le chat. On entend un son. On dit le nom. Hugo répète : son, nom. Plus tard, au jardin, la pluie a cessé. Un oiseau siffle. Hugo dit le nom : l'oiseau. Tu as repris le geste. Même leçon, autre lieu. On nomme le son. La pluie, le train, le chat, l'oiseau.",
+      "script": "narrateur|Hugo s'assoit près de la fenêtre avec maman. Un son arrive : plic ploc.\nmaman|C'est un son. Quel nom ?\nenfant-m|La pluie.\nnarrateur|Un autre son : tchou tchou. Hugo dit le nom : le train. Près du canapé, un miaulement.\nenfant-m|Le chat.\nmaman|On entend un son. On dit le nom.\nnarrateur|Hugo répète : son, nom. Plus tard, au jardin, la pluie a cessé. Un oiseau siffle. Hugo dit le nom : l'oiseau.\nmaman|Tu as repris le geste. Même leçon, autre lieu. On nomme le son.\nnarrateur|La pluie, le train, le chat, l'oiseau.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hugo entend un bruit. C'est quoi ?",
+      "script": "narrateur|Hugo entend un bruit. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo a entendu un son. Il a dit le nom. Pluie. Train. Chat.",
+      "script": "narrateur|Hugo a entendu un son. Il a dit le nom. Pluie. Train. Chat.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman donne la main. Hugo écoute encore le jardin.",
+      "script": "narrateur|Maman donne la main. Hugo écoute encore le jardin.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

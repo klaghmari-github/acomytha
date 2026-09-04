@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-08",
+  "fil_rouge": "",
+  "title": "Eva dit les trois noms à l'écurie",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Eva, maman, papa",
+  "setting": "écurie et grange",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Eva est à l'écurie avec maman. Papa ouvre la porte. Dans la paille, un chat miaule. Une chatte se lèche. Un chaton suit la chatte. Chat, chatte, chaton. Ce sont trois noms. Dans le pré, un cheval mange. Une jument est là. Un poulain reste près. Cheval, jument, poulain. Près du foin, un coq chante. Une poule picore. Un poussin suit. Coq, poule, poussin. Eva répète les trois noms de la famille. Elle caresse la paille. Ça sent le foin.",
+      "script": "narrateur|Eva est à l'écurie avec maman. Papa ouvre la porte. Dans la paille, un chat miaule. Une chatte se lèche. Un chaton suit la chatte.\nmaman|Chat, chatte, chaton. Ce sont trois noms.\nnarrateur|Dans le pré, un cheval mange. Une jument est là. Un poulain reste près.\npapa|Cheval, jument, poulain. Près du foin, un coq chante.\nnarrateur|Une poule picore. Un poussin suit.\nmaman|Coq, poule, poussin.\nnarrateur|Eva répète les trois noms de la famille. Elle caresse la paille. Ça sent le foin.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chat, la chatte, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le chat, la chatte, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Eva a dit les trois noms. Chat, chatte, chaton. Cheval, jument, poulain.",
+      "script": "narrateur|Eva a dit les trois noms. Chat, chatte, chaton. Cheval, jument, poulain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Eva sent le foin. Maman sourit. Ils rentrent.",
+      "script": "narrateur|Eva sent le foin. Maman sourit. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

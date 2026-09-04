@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.MAI.003-05",
+  "fil_rouge": "",
+  "title": "Daphné au balcon avec maman",
+  "lesson_id": "SEC.MAI.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Daphné, maman",
+  "setting": "balcon de la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Daphné est à la maison. Maman ouvre la porte du balcon. L'air sent les géraniums. Daphné reste avec l'adulte. C'est maman. On reste derrière la protection. Daphné pose les pieds au sol. Les pieds restent au sol. Elle sent le carrelage sous les chaussettes. La protection est devant elle. Daphné pose les mains sur la protection. Elle reste derrière la protection. Un papillon passe. Maman, le papillon. Maman est près d'elle. Parce que les pieds sont au sol, Daphné est calme. Elles regardent les pots. Les fleurs sont roses. Les pieds restent au sol. L'adulte est là.",
+      "script": "narrateur|Daphné est à la maison. Maman ouvre la porte du balcon. L'air sent les géraniums. Daphné reste avec l'adulte. C'est maman.\nmaman|On reste derrière la protection.\nnarrateur|Daphné pose les pieds au sol. Les pieds restent au sol. Elle sent le carrelage sous les chaussettes. La protection est devant elle. Daphné pose les mains sur la protection. Elle reste derrière la protection. Un papillon passe.\nenfant-f|Maman, le papillon. Maman est près d'elle. Parce que les pieds sont au sol, Daphné est calme.\nnarrateur|Elles regardent les pots. Les fleurs sont roses. Les pieds restent au sol. L'adulte est là.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Daphné est au balcon. Que fait-elle ?",
+      "script": "narrateur|Daphné est au balcon. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Daphné a les pieds au sol. Elle est derrière la protection. Maman, l'adulte, est là.",
+      "script": "narrateur|Daphné a les pieds au sol. Elle est derrière la protection. Maman, l'adulte, est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Daphné et maman rentrent. Les pieds restent au sol.",
+      "script": "narrateur|Daphné et maman rentrent. Les pieds restent au sol.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

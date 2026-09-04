@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAS.001-04",
+  "fil_rouge": "",
+  "title": "Élia vise le panier au jardin",
+  "lesson_id": "JEU.BAS.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Élia, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Élia et papa sont au jardin. Un petit panier est accroché bas. Papa donne le ballon. On va passer le ballon. Ensuite, chacun a un lancer. Élia passe le ballon. Papa le rend. C'est le lancer d'Élia. Elle lance vers le panier. Le ballon rentre. Papa a son lancer. Chacun un lancer. Ils se passent encore le ballon.",
+      "script": "narrateur|Élia et papa sont au jardin. Un petit panier est accroché bas. Papa donne le ballon.\npapa|On va passer le ballon. Ensuite, chacun a un lancer.\nnarrateur|Élia passe le ballon. Papa le rend. C'est le lancer d'Élia. Elle lance vers le panier. Le ballon rentre. Papa a son lancer.\nenfant-f|Chacun un lancer.\nnarrateur|Ils se passent encore le ballon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Élia joue au basket. Que fait-elle ?",
+      "script": "narrateur|Élia joue au basket. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Élia a passé le ballon. Elle a visé le panier. Chacun a eu un lancer.",
+      "script": "narrateur|Élia a passé le ballon. Elle a visé le panier. Chacun a eu un lancer.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le ballon. Élia essuie ses mains.",
+      "script": "narrateur|Papa range le ballon. Élia essuie ses mains.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

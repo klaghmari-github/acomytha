@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.SAI.001-07",
+  "fil_rouge": "Sarah veut une poire du poirier du jardin. Au printemps, des bourgeons. En été, des feuilles et la chaleur. En automne, le fruit est trop haut. En hiver, la branche est nue, la poire est dans sa main.",
+  "title": "La poire du poirier",
+  "lesson_id": "TMP.SAI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Sarah, papa",
+  "setting": "jardin du poirier, puis fenêtre en hiver",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une abeille rase le poirier du fond. L'écorce sent le bois mouillé. De la mousse verte tient au pied. Un seau de zinc brille près des tulipes du massif. Le seau est vide, un peu bosselé. Tu as vu l'abeille, Sarah ? Elle tourne. Elle cherche une fleur. En ce moment, Sarah pose la joue contre l'écorce. Je veux une poire. Une poire pour moi. On va regarder l'arbre. Sarah lève le nez. Des bourgeons durs pointent sur les branches. Ils sont verts, tout petits. Où est la poire ? C'est le printemps. Le poirier a des bourgeons. Pas encore de poire. Sarah touche un bourgeon du doigt. Il est froid et fermé. Il s'ouvre ? Plus tard. On revient. Ils reviennent quand l'herbe est sèche. Le soleil tape le seau de zinc. Les feuilles du poirier sont grandes. Elles font une ombre ronde. Il fait chaud, papa. C'est l'été. Les feuilles sont le signe. Sarah cherche une poire jaune. Une petite boule verte pend très haut. Elle est dure, encore trop petite. Je la prends ? Elle n'est pas prête. Elle ferait mal aux dents. J'ai trop soif de poire. On attend encore. Le poirier a quatre saisons. Chaque saison a son signe. Sarah s'assoit dans l'herbe chaude. L'abeille passe encore, trop pressée. Le seau reste vide. Quand la poire ? Quand elle sera jaune. On reviendra.",
+      "script": "narrateur|Une abeille rase le poirier du fond.\nnarrateur|L'écorce sent le bois mouillé.\nnarrateur|De la mousse verte tient au pied.\nnarrateur|Un seau de zinc brille près des tulipes du massif.\nnarrateur|Le seau est vide, un peu bosselé.\npapa|Tu as vu l'abeille, Sarah ?\nenfant-f|Elle tourne.\npapa|Elle cherche une fleur.\nnarrateur|En ce moment, Sarah pose la joue contre l'écorce.\nenfant-f|Je veux une poire.\nenfant-f|Une poire pour moi.\npapa|On va regarder l'arbre.\nnarrateur|Sarah lève le nez.\nnarrateur|Des bourgeons durs pointent sur les branches.\nnarrateur|Ils sont verts, tout petits.\nenfant-f|Où est la poire ?\npapa|C'est le printemps.\npapa|Le poirier a des bourgeons.\npapa|Pas encore de poire.\nnarrateur|Sarah touche un bourgeon du doigt.\nnarrateur|Il est froid et fermé.\nenfant-f|Il s'ouvre ?\npapa|Plus tard.\npapa|On revient.\nnarrateur|Ils reviennent quand l'herbe est sèche.\nnarrateur|Le soleil tape le seau de zinc.\nnarrateur|Les feuilles du poirier sont grandes.\nnarrateur|Elles font une ombre ronde.\nenfant-f|Il fait chaud, papa.\npapa|C'est l'été.\npapa|Les feuilles sont le signe.\nnarrateur|Sarah cherche une poire jaune.\nnarrateur|Une petite boule verte pend très haut.\nnarrateur|Elle est dure, encore trop petite.\nenfant-f|Je la prends ?\npapa|Elle n'est pas prête.\npapa|Elle ferait mal aux dents.\nenfant-f|J'ai trop soif de poire.\npapa|On attend encore.\npapa|Le poirier a quatre saisons.\npapa|Chaque saison a son signe.\nnarrateur|Sarah s'assoit dans l'herbe chaude.\nnarrateur|L'abeille passe encore, trop pressée.\nnarrateur|Le seau reste vide.\nenfant-f|Quand la poire ?\npapa|Quand elle sera jaune.\npapa|On reviendra.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Une abeille rase le poirier du fond. L'écorce sent le bois mouillé. De la mousse verte tient au pied. Un seau de zinc brille près des tulipes du massif. Le seau est vide, un peu bosselé. Tu as vu l'abeille, Sarah ? Elle tourne. Elle cherche une fleur. En ce moment, Sarah pose la joue contre l'écorce. Je veux une poire. Une poire pour moi. On va regarder l'arbre. Sarah lève le nez. Des bourgeons durs pointent sur les branches. Ils sont verts, tout petits. Où est la poire ? C'est le printemps. Le poirier a des bourgeons. Pas encore de poire. Sarah touche un bourgeon du doigt. Il est froid et fermé. Il s'ouvre ? Plus tard. On revient. Ils reviennent quand l'herbe est sèche. Le soleil tape le seau de zinc. Les feuilles du poirier sont grandes. Elles font une ombre ronde. Il fait chaud, papa. C'est l'été. Les feuilles sont le signe. Sarah cherche une poire jaune. Une petite boule verte pend très haut. Elle est dure, encore trop petite. Je la prends ? Elle n'est pas prête. Elle ferait mal aux dents. J'ai trop soif de poire. On attend encore. Le poirier a quatre saisons. Chaque saison a son signe. Sarah s'assoit dans l'herbe chaude. L'abeille passe encore, trop pressée. Le seau reste vide. Quand la poire ? Quand elle sera jaune. On reviendra."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait chaud sous les feuilles. Quelle saison est-ce ?",
+      "script": "narrateur|Il fait chaud sous les feuilles.\nnarrateur|Quelle saison est-ce ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Il fait chaud sous les feuilles. Quelle saison est-ce ?",
+      "expected_answer": "été",
+      "accepted_examples": "été | l'été | en été | chaud",
+      "retry_prompt": "Il fait chaud. Les feuilles sont grandes. Quelle saison ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "L'air sent la terre et le fruit. Une feuille jaune tourne, puis tombe. C'est l'automne, Sarah. Tu vois le fruit ? Une poire ! La poire est jaune, un peu tachetée. Elle penche au bout d'une branche haute. Je n'arrive pas. Elle est trop haute. Sarah pousse le seau sous l'arbre. Le zinc sonne, tîn. Elle monte un pied, tout doux. J'attrape le seau. Tu montres la poire. Celle-là, papa. Papa lève les bras. La poire se détache avec une petite craque. Elle tombe dans le seau. Elle est à moi. Merci, Sarah. Tu as attendu les saisons. Le jus tache déjà le zinc.",
+      "script": "narrateur|L'air sent la terre et le fruit.\nnarrateur|Une feuille jaune tourne, puis tombe.\npapa|C'est l'automne, Sarah.\npapa|Tu vois le fruit ?\nenfant-f|Une poire !\nnarrateur|La poire est jaune, un peu tachetée.\nnarrateur|Elle penche au bout d'une branche haute.\nenfant-f|Je n'arrive pas.\npapa|Elle est trop haute.\nnarrateur|Sarah pousse le seau sous l'arbre.\nnarrateur|Le zinc sonne, tîn.\nnarrateur|Elle monte un pied, tout doux.\npapa|J'attrape le seau.\npapa|Tu montres la poire.\nenfant-f|Celle-là, papa.\nnarrateur|Papa lève les bras.\nnarrateur|La poire se détache avec une petite craque.\nnarrateur|Elle tombe dans le seau.\nenfant-f|Elle est à moi.\npapa|Merci, Sarah.\npapa|Tu as attendu les saisons.\nnarrateur|Le jus tache déjà le zinc.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "L'air sent la terre et le fruit. Une feuille jaune tourne, puis tombe. C'est l'automne, Sarah. Tu vois le fruit ? Une poire ! La poire est jaune, un peu tachetée. Elle penche au bout d'une branche haute. Je n'arrive pas. Elle est trop haute. Sarah pousse le seau sous l'arbre. Le zinc sonne, tîn. Elle monte un pied, tout doux. J'attrape le seau. Tu montres la poire. Celle-là, papa. Papa lève les bras. La poire se détache avec une petite craque. Elle tombe dans le seau. Elle est à moi. Merci, Sarah. Tu as attendu les saisons. Le jus tache déjà le zinc."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils rentrent, le seau entre eux. La poire roule un peu, puis s'arrête. On la coupe près de la fenêtre ? Oui. Plus tard, le jardin est blanc de givre. La branche du poirier est nue. C'est l'hiver. Le signe, c'est la branche nue. Plus de feuilles. Quatre saisons sur le même arbre. Sarah tient encore un quartier de poire. Le quartier est froid, très sucré. Tu as ta poire. Elle a attendu, comme moi. Oui. Une goutte de givre pend à la branche. Elle brille, puis tombe. On la range dans le seau ? Le seau a encore l'odeur.",
+      "script": "narrateur|Ils rentrent, le seau entre eux.\nnarrateur|La poire roule un peu, puis s'arrête.\npapa|On la coupe près de la fenêtre ?\nenfant-f|Oui.\nnarrateur|Plus tard, le jardin est blanc de givre.\nnarrateur|La branche du poirier est nue.\npapa|C'est l'hiver.\npapa|Le signe, c'est la branche nue.\nenfant-f|Plus de feuilles.\npapa|Quatre saisons sur le même arbre.\nnarrateur|Sarah tient encore un quartier de poire.\nnarrateur|Le quartier est froid, très sucré.\npapa|Tu as ta poire.\nenfant-f|Elle a attendu, comme moi.\npapa|Oui.\nnarrateur|Une goutte de givre pend à la branche.\nnarrateur|Elle brille, puis tombe.\npapa|On la range dans le seau ?\nenfant-f|Le seau a encore l'odeur.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils rentrent, le seau entre eux. La poire roule un peu, puis s'arrête. On la coupe près de la fenêtre ? Oui. Plus tard, le jardin est blanc de givre. La branche du poirier est nue. C'est l'hiver. Le signe, c'est la branche nue. Plus de feuilles. Quatre saisons sur le même arbre. Sarah tient encore un quartier de poire. Le quartier est froid, très sucré. Tu as ta poire. Elle a attendu, comme moi. Oui. Une goutte de givre pend à la branche. Elle brille, puis tombe. On la range dans le seau ? Le seau a encore l'odeur."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Sarah pose le quartier contre la vitre. Le jus laisse un trait brillant. Ma poire est sucrée. Oui. Le poirier a tenu sa promesse. La branche nue tient une perle de givre.",
+      "script": "narrateur|Sarah pose le quartier contre la vitre.\nnarrateur|Le jus laisse un trait brillant.\nenfant-f|Ma poire est sucrée.\npapa|Oui.\npapa|Le poirier a tenu sa promesse.\nnarrateur|La branche nue tient une perle de givre.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Sarah pose le quartier contre la vitre. Le jus laisse un trait brillant. Ma poire est sucrée. Oui. Le poirier a tenu sa promesse. La branche nue tient une perle de givre."
+    }
+  ]
+}

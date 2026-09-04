@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.MOQ.002-03",
+  "fil_rouge": "",
+  "title": "Gabin rejoint Emma au jardin",
+  "lesson_id": "REL.MOQ.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gabin, Emma, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gabin est au jardin avec papa. Les enfants courent près des groseilliers. Emma est à l'écart. Elle est près du cabanon. Ses épaules sont basses. Tu peux la rejoindre. Rejoindre, c'est aller vers elle. Gabin marche vers Emma. Tu veux arroser ? Inviter, c'est demander. Emma hésite. Gabin attend. D'accord. Ils prennent le petit arrosoir. L'eau est fraîche. Un enfant les écarte encore. Ça continue un peu. Gabin va vers papa. Papa est l'adulte. Ça continue. On prévient un adulte si ça continue. Papa s'approche. Il reste près d'eux. Parce que Gabin a rejoint Emma, ils jouent ensemble. Ils arrosent les fraisiers. Parce qu'un adulte est là, le jeu reprend. Papa les voit.",
+      "script": "narrateur|Gabin est au jardin avec papa. Les enfants courent près des groseilliers. Emma est à l'écart. Elle est près du cabanon. Ses épaules sont basses.\npapa|Tu peux la rejoindre. Rejoindre, c'est aller vers elle.\nnarrateur|Gabin marche vers Emma.\nnarrateur|Tu veux arroser ? Inviter, c'est demander.\nnarrateur|Emma hésite. Gabin attend.\ncopine|D'accord.\nnarrateur|Ils prennent le petit arrosoir. L'eau est fraîche. Un enfant les écarte encore. Ça continue un peu. Gabin va vers papa. Papa est l'adulte.\nenfant-m|Ça continue. On prévient un adulte si ça continue. Papa s'approche. Il reste près d'eux. Parce que Gabin a rejoint Emma, ils jouent ensemble. Ils arrosent les fraisiers. Parce qu'un adulte est là, le jeu reprend. Papa les voit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Emma est à l'écart. Que fait Gabin ?",
+      "script": "narrateur|Emma est à l'écart. Que fait Gabin ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gabin a rejoint Emma. Il l'a invitée. Papa, l'adulte, est là si ça continue.",
+      "script": "narrateur|Gabin a rejoint Emma. Il l'a invitée. Papa, l'adulte, est là si ça continue.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gabin et Emma vident l'arrosoir. Papa reste près des fraisiers.",
+      "script": "narrateur|Gabin et Emma vident l'arrosoir. Papa reste près des fraisiers.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

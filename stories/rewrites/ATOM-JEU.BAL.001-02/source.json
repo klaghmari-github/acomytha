@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAL.001-02",
+  "fil_rouge": "",
+  "title": "Tom passe le ballon",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Tom, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom et maman sont dans le jardin. L'herbe est douce. Maman pose deux sacs. Voici l'espace du jeu. Tom reste dans l'espace du jeu. Maman donne le ballon. Tom le sent. Il est un peu lourd. On va passer le ballon. Chacun a son tour. Tom passe le ballon à maman. Maman l'attrape. C'est le tour de maman. Maman passe le ballon. Tom attend. Puis c'est son tour. Tom passe encore. Une abeille passe. Tom reste dans l'espace. Il attend. Il passe. Parce qu'il attend son tour, le jeu reste doux. Bien joué.",
+      "script": "narrateur|Tom et maman sont dans le jardin. L'herbe est douce. Maman pose deux sacs.\nnarrateur|Voici l'espace du jeu.\nnarrateur|Tom reste dans l'espace du jeu. Maman donne le ballon. Tom le sent. Il est un peu lourd.\nmaman|On va passer le ballon. Chacun a son tour.\nnarrateur|Tom passe le ballon à maman. Maman l'attrape. C'est le tour de maman. Maman passe le ballon. Tom attend. Puis c'est son tour. Tom passe encore. Une abeille passe. Tom reste dans l'espace. Il attend. Il passe. Parce qu'il attend son tour, le jeu reste doux.\nmaman|Bien joué.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tom a le ballon. Que fait-il ?",
+      "script": "narrateur|Tom a le ballon. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "script": "narrateur|Tom a passé le ballon. Il a attendu son tour. Il est resté dans l'espace du jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le ballon. Tom boit de l'eau. Ils rentrent.",
+      "script": "narrateur|Maman range le ballon. Tom boit de l'eau. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

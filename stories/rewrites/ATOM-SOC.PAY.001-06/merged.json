@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-06",
+  "fil_rouge": "Nina veut entendre la mer de Grèce dans le coquillage, en regardant la photo bleue. Le coquillage roule. Ils le rattrapent. Le hush arrive.",
+  "title": "Le coquillage de Nina",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "rebord de fenêtre, lumière de midi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La lumière de midi rend le mur tout blanc. Un coquillage froid attend près de la fenêtre. Une photo bleue est coincée sous le cadre. Le rebord sent la poussière chaude. Nina vit ici, avec papa. Tu as vu le coquillage, Nina ? Il est froid. Oui. Il vient de la Grèce. En ce moment, Nina prend la photo. Le papier est lisse et un peu gondolé. Tout bleu. C'est la mer de Grèce. La Grèce. Et la mer. Un pays. Un paysage. Nina pose la photo contre le verre. Le bleu du papier rejoint le ciel. Je veux entendre la mer. Dans le coquillage. Tu le mets à l'oreille ? Oui. Nina lève le coquillage. La coquille glisse entre ses doigts. Elle roule sur le rebord. Il part ! Doucement. On le rattrape. Papa tend la main. Nina tend la sienne aussi. Le coquillage s'arrête contre un caillou. Il a failli tomber. Il est là. Tu le reprends ? Oui, papa. La coquille est encore plus froide. Nina la serre des deux mains. À l'oreille, maintenant. Nina pose la coquille contre sa joue. Je n'entends rien. Tourne-le un peu. L'ouverture vers toi.",
+      "script": "narrateur|La lumière de midi rend le mur tout blanc.\nnarrateur|Un coquillage froid attend près de la fenêtre.\nnarrateur|Une photo bleue est coincée sous le cadre.\nnarrateur|Le rebord sent la poussière chaude.\nnarrateur|Nina vit ici, avec papa.\npapa|Tu as vu le coquillage, Nina ?\nenfant-f|Il est froid.\npapa|Oui.\npapa|Il vient de la Grèce.\nnarrateur|En ce moment, Nina prend la photo.\nnarrateur|Le papier est lisse et un peu gondolé.\nenfant-f|Tout bleu.\npapa|C'est la mer de Grèce.\nenfant-f|La Grèce.\nenfant-f|Et la mer.\npapa|Un pays.\npapa|Un paysage.\nnarrateur|Nina pose la photo contre le verre.\nnarrateur|Le bleu du papier rejoint le ciel.\nenfant-f|Je veux entendre la mer.\nenfant-f|Dans le coquillage.\npapa|Tu le mets à l'oreille ?\nenfant-f|Oui.\nnarrateur|Nina lève le coquillage.\nnarrateur|La coquille glisse entre ses doigts.\nnarrateur|Elle roule sur le rebord.\nenfant-f|Il part !\npapa|Doucement.\npapa|On le rattrape.\nnarrateur|Papa tend la main.\nnarrateur|Nina tend la sienne aussi.\nnarrateur|Le coquillage s'arrête contre un caillou.\nenfant-f|Il a failli tomber.\npapa|Il est là.\npapa|Tu le reprends ?\nenfant-f|Oui, papa.\nnarrateur|La coquille est encore plus froide.\nnarrateur|Nina la serre des deux mains.\npapa|À l'oreille, maintenant.\nnarrateur|Nina pose la coquille contre sa joue.\nenfant-f|Je n'entends rien.\npapa|Tourne-le un peu.\npapa|L'ouverture vers toi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La lumière de midi rend le mur tout blanc. Un coquillage froid attend près de la fenêtre. Une photo bleue est coincée sous le cadre. Le rebord sent la poussière chaude. Nina vit ici, avec papa. Tu as vu le coquillage, Nina ? Il est froid. Oui. Il vient de la Grèce. En ce moment, Nina prend la photo. Le papier est lisse et un peu gondolé. Tout bleu. C'est la mer de Grèce. La Grèce. Et la mer. Un pays. Un paysage. Nina pose la photo contre le verre. Le bleu du papier rejoint le ciel. Je veux entendre la mer. Dans le coquillage. Tu le mets à l'oreille ? Oui. Nina lève le coquillage. La coquille glisse entre ses doigts. Elle roule sur le rebord. Il part ! Doucement. On le rattrape. Papa tend la main. Nina tend la sienne aussi. Le coquillage s'arrête contre un caillou. Il a failli tomber. Il est là. Tu le reprends ? Oui, papa. La coquille est encore plus froide. Nina la serre des deux mains. À l'oreille, maintenant. Nina pose la coquille contre sa joue. Je n'entends rien. Tourne-le un peu. L'ouverture vers toi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina nomme la Grèce. Elle nomme aussi quoi ?",
+      "script": "narrateur|Nina nomme la Grèce.\nnarrateur|Elle nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nina nomme la Grèce. Elle nomme aussi quoi ?",
+      "expected_answer": "la mer",
+      "accepted_examples": "mer | la mer | mer de Grèce | hush | l'eau",
+      "retry_prompt": "Nina nomme aussi la mer. Elle nomme aussi quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina tourne le coquillage. L'ouverture touche son oreille. Chhh. J'entends ! Oui. Comme la mer. Le hush est doux, tout près. Nina regarde la photo en même temps. La mer de Grèce. Tu l'entends, et tu la vois. Merci, Nina. Elle tient le coquillage plus fort. Le rebord n'a plus de place pour rouler. On le pose dans le creux. Ici, près de la photo. Le bleu du papier touche la coquille. Froid contre lisse. Ils sont ensemble. La Grèce, tout près.",
+      "script": "narrateur|Nina tourne le coquillage.\nnarrateur|L'ouverture touche son oreille.\nenfant-f|Chhh.\nenfant-f|J'entends !\npapa|Oui.\npapa|Comme la mer.\nnarrateur|Le hush est doux, tout près.\nnarrateur|Nina regarde la photo en même temps.\nenfant-f|La mer de Grèce.\npapa|Tu l'entends, et tu la vois.\npapa|Merci, Nina.\nnarrateur|Elle tient le coquillage plus fort.\nnarrateur|Le rebord n'a plus de place pour rouler.\npapa|On le pose dans le creux.\nenfant-f|Ici, près de la photo.\nnarrateur|Le bleu du papier touche la coquille.\nnarrateur|Froid contre lisse.\nenfant-f|Ils sont ensemble.\npapa|La Grèce, tout près.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina tourne le coquillage. L'ouverture touche son oreille. Chhh. J'entends ! Oui. Comme la mer. Le hush est doux, tout près. Nina regarde la photo en même temps. La mer de Grèce. Tu l'entends, et tu la vois. Merci, Nina. Elle tient le coquillage plus fort. Le rebord n'a plus de place pour rouler. On le pose dans le creux. Ici, près de la photo. Le bleu du papier touche la coquille. Froid contre lisse. Ils sont ensemble. La Grèce, tout près."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tu as fini d'écouter ? Encore un peu. Nina remet la coquille à l'oreille. Le hush revient, plus bas. La mer est petite, dedans. Et grande, sur la photo. Un nuage passe sur le mur blanc. Le bleu de la photo reste. La Grèce. La mer. Oui. Nina pose enfin le coquillage. Il ne roule plus.",
+      "script": "papa|Tu as fini d'écouter ?\nenfant-f|Encore un peu.\nnarrateur|Nina remet la coquille à l'oreille.\nnarrateur|Le hush revient, plus bas.\nenfant-f|La mer est petite, dedans.\npapa|Et grande, sur la photo.\nnarrateur|Un nuage passe sur le mur blanc.\nnarrateur|Le bleu de la photo reste.\nenfant-f|La Grèce.\nenfant-f|La mer.\npapa|Oui.\nnarrateur|Nina pose enfin le coquillage.\nnarrateur|Il ne roule plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Tu as fini d'écouter ? Encore un peu. Nina remet la coquille à l'oreille. Le hush revient, plus bas. La mer est petite, dedans. Et grande, sur la photo. Un nuage passe sur le mur blanc. Le bleu de la photo reste. La Grèce. La mer. Oui. Nina pose enfin le coquillage. Il ne roule plus."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La photo bleue garde son gondolement. Le coquillage reste dans le creux. J'ai entendu la mer. Elle est encore là, si tu colles l'oreille. Le mur blanc redevient calme.",
+      "script": "narrateur|La photo bleue garde son gondolement.\nnarrateur|Le coquillage reste dans le creux.\nenfant-f|J'ai entendu la mer.\npapa|Elle est encore là, si tu colles l'oreille.\nnarrateur|Le mur blanc redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La photo bleue garde son gondolement. Le coquillage reste dans le creux. J'ai entendu la mer. Elle est encore là, si tu colles l'oreille. Le mur blanc redevient calme."
+    }
+  ]
+}

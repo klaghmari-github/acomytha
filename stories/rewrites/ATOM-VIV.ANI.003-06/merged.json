@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-06",
+  "fil_rouge": "Chouchou veut que le chat boive. Elle pense au lait. Le lait est trop froid. Maman verse un peu d'eau tiède. Le chat lape.",
+  "title": "L'eau tiède du chat",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "cuisine, bouilloire, fin d'après-midi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La bouilloire fait tic, tic, tic. Elle refroidit, tout doux. La cuisine sent le pain grillé. Une miette reste sur la planche. Tu entends, Chouchou ? Tic, tic. Le chat miaule près du buffet. Sa gamelle est vide. Il a soif. Du lait ? Le lait est trop froid. Le chat boit de l'eau. Un peu d'eau tiède. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. En ce moment, Chouchou tient le bol. Le bol est lisse, un peu froid. Tu tiens avec moi ? Oui, maman. Maman verse un peu d'eau. L'eau est tiède. Pas trop. Ça fait un petit chh. C'est chaud ? Tiède, seulement. On pose, tout doux. Chouchou pose la gamelle. Sa main va lentement. Le bol touche le carrelage. Presque pas de bruit. Le chat s'approche. Ses pattes tapent le carrelage. Toc, toc, tout léger. On recule un peu. On reste près de moi. Je reste. Le chat pose la langue. Lape, lape. Il boit. Oui. Une moustache tremble. Une goutte brille. Pas de lait. De l'eau. Pour lui. Le bol sent encore la vapeur. Une petite vapeur, déjà partie.",
+      "script": "narrateur|La bouilloire fait tic, tic, tic.\nnarrateur|Elle refroidit, tout doux.\nnarrateur|La cuisine sent le pain grillé.\nnarrateur|Une miette reste sur la planche.\nmaman|Tu entends, Chouchou ?\nenfant-f|Tic, tic.\nnarrateur|Le chat miaule près du buffet.\nnarrateur|Sa gamelle est vide.\nenfant-f|Il a soif.\nenfant-f|Du lait ?\nmaman|Le lait est trop froid.\nmaman|Le chat boit de l'eau.\nmaman|Un peu d'eau tiède.\nenfant-f|Je veux qu'il boive.\nmaman|On le fait ensemble.\nmaman|Avec un adulte.\nmaman|On est doux.\nnarrateur|En ce moment, Chouchou tient le bol.\nnarrateur|Le bol est lisse, un peu froid.\nmaman|Tu tiens avec moi ?\nenfant-f|Oui, maman.\nnarrateur|Maman verse un peu d'eau.\nnarrateur|L'eau est tiède.\nnarrateur|Pas trop.\nnarrateur|Ça fait un petit chh.\nenfant-f|C'est chaud ?\nmaman|Tiède, seulement.\nmaman|On pose, tout doux.\nnarrateur|Chouchou pose la gamelle.\nnarrateur|Sa main va lentement.\nnarrateur|Le bol touche le carrelage.\nnarrateur|Presque pas de bruit.\nnarrateur|Le chat s'approche.\nnarrateur|Ses pattes tapent le carrelage.\nnarrateur|Toc, toc, tout léger.\nmaman|On recule un peu.\nmaman|On reste près de moi.\nenfant-f|Je reste.\nnarrateur|Le chat pose la langue.\nnarrateur|Lape, lape.\nenfant-f|Il boit.\nmaman|Oui.\nnarrateur|Une moustache tremble.\nnarrateur|Une goutte brille.\nenfant-f|Pas de lait.\nmaman|De l'eau.\nmaman|Pour lui.\nnarrateur|Le bol sent encore la vapeur.\nnarrateur|Une petite vapeur, déjà partie.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La bouilloire fait tic, tic, tic. Elle refroidit, tout doux. La cuisine sent le pain grillé. Une miette reste sur la planche. Tu entends, Chouchou ? Tic, tic. Le chat miaule près du buffet. Sa gamelle est vide. Il a soif. Du lait ? Le lait est trop froid. Le chat boit de l'eau. Un peu d'eau tiède. Je veux qu'il boive. On le fait ensemble. Avec un adulte. On est doux. En ce moment, Chouchou tient le bol. Le bol est lisse, un peu froid. Tu tiens avec moi ? Oui, maman. Maman verse un peu d'eau. L'eau est tiède. Pas trop. Ça fait un petit chh. C'est chaud ? Tiède, seulement. On pose, tout doux. Chouchou pose la gamelle. Sa main va lentement. Le bol touche le carrelage. Presque pas de bruit. Le chat s'approche. Ses pattes tapent le carrelage. Toc, toc, tout léger. On recule un peu. On reste près de moi. Je reste. Le chat pose la langue. Lape, lape. Il boit. Oui. Une moustache tremble. Une goutte brille. Pas de lait. De l'eau. Pour lui. Le bol sent encore la vapeur. Une petite vapeur, déjà partie."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chouchou donne l'eau au chat. Comment fait-elle ?",
+      "script": "narrateur|Chouchou donne l'eau au chat.\nnarrateur|Comment fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Chouchou donne l'eau au chat. Comment fait-elle ?",
+      "expected_answer": "doux",
+      "accepted_examples": "doux | douce | avec maman | avec un adulte | tout doux",
+      "retry_prompt": "Elle est avec maman. Elle est douce. Comment fait-elle ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le chat lape encore. Le bol se vide, tout doux. Il avait soif. Oui. Tu as été douce. Avec un adulte. Merci, Chouchou. Tu as vu l'eau tiède ? Pas froide. Un peu tiède. Chouchou a les mains sur ses genoux. Elle ne prend pas le chat. Le chat se lèche la patte. Il est content. Il a bu. La bouilloire a fini ses tics. Elle est calme. Tic plus. Elle s'est reposée.",
+      "script": "narrateur|Le chat lape encore.\nnarrateur|Le bol se vide, tout doux.\nenfant-f|Il avait soif.\nmaman|Oui.\nmaman|Tu as été douce.\nmaman|Avec un adulte.\nmaman|Merci, Chouchou.\nmaman|Tu as vu l'eau tiède ?\nenfant-f|Pas froide.\nmaman|Un peu tiède.\nnarrateur|Chouchou a les mains sur ses genoux.\nnarrateur|Elle ne prend pas le chat.\nnarrateur|Le chat se lèche la patte.\nenfant-f|Il est content.\nmaman|Il a bu.\nnarrateur|La bouilloire a fini ses tics.\nnarrateur|Elle est calme.\nenfant-f|Tic plus.\nmaman|Elle s'est reposée.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le chat lape encore. Le bol se vide, tout doux. Il avait soif. Oui. Tu as été douce. Avec un adulte. Merci, Chouchou. Tu as vu l'eau tiède ? Pas froide. Un peu tiède. Chouchou a les mains sur ses genoux. Elle ne prend pas le chat. Le chat se lèche la patte. Il est content. Il a bu. La bouilloire a fini ses tics. Elle est calme. Tic plus. Elle s'est reposée."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le chat s'allonge près du buffet. Son poil est chaud, un peu. Un ronron commence. J'entends. Moi aussi. Chouchou s'assoit près de maman. La planche sent encore le pain. On range le bol demain. Il a de l'eau. C'était ça, ton envie. Une miette reste sur le bois. Le chat ferme un œil. Dodo. Un petit dodo, oui. Le carrelage est tiède, comme l'eau. Tu as tenu le bol. Avec toi.",
+      "script": "narrateur|Le chat s'allonge près du buffet.\nnarrateur|Son poil est chaud, un peu.\nnarrateur|Un ronron commence.\nenfant-f|J'entends.\nmaman|Moi aussi.\nnarrateur|Chouchou s'assoit près de maman.\nnarrateur|La planche sent encore le pain.\nmaman|On range le bol demain.\nenfant-f|Il a de l'eau.\nmaman|C'était ça, ton envie.\nnarrateur|Une miette reste sur le bois.\nnarrateur|Le chat ferme un œil.\nenfant-f|Dodo.\nmaman|Un petit dodo, oui.\nnarrateur|Le carrelage est tiède, comme l'eau.\nmaman|Tu as tenu le bol.\nenfant-f|Avec toi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le chat s'allonge près du buffet. Son poil est chaud, un peu. Un ronron commence. J'entends. Moi aussi. Chouchou s'assoit près de maman. La planche sent encore le pain. On range le bol demain. Il a de l'eau. C'était ça, ton envie. Une miette reste sur le bois. Le chat ferme un œil. Dodo. Un petit dodo, oui. Le carrelage est tiède, comme l'eau. Tu as tenu le bol. Avec toi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le chat a bu. De l'eau tiède, tout doux. La bouilloire ne fait plus tic. La cuisine sent le pain, encore. Le ronron remplit la pièce.",
+      "script": "enfant-f|Le chat a bu.\nmaman|De l'eau tiède, tout doux.\nnarrateur|La bouilloire ne fait plus tic.\nnarrateur|La cuisine sent le pain, encore.\nnarrateur|Le ronron remplit la pièce.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le chat a bu. De l'eau tiède, tout doux. La bouilloire ne fait plus tic. La cuisine sent le pain, encore. Le ronron remplit la pièce."
+    }
+  ]
+}

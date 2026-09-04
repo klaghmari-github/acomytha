@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.003-03",
+  "fil_rouge": "",
+  "title": "Jade prend soin, chat puis poules",
+  "lesson_id": "VIV.ANI.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Jade, papa",
+  "setting": "maison puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jade est à la maison avec papa. Le chat Minou a soif. Il miaule tout bas. On prend soin avec un adulte. On est doux. Jade va vers papa. Ils remplissent l'eau ensemble. L'eau fait un bruit doux. Jade pose le bol, tout doux. Minou lape. Plus tard, au jardin, les poules picorent. On donne le grain avec un adulte. On est doux. Jade se souvient. Elle reste près de papa. Elle verse le grain, tout doux. Les poules viennent. Merci d'être douce. Même leçon, autre animal. Eau ou nourriture, avec un adulte. On est doux.",
+      "script": "narrateur|Jade est à la maison avec papa. Le chat Minou a soif. Il miaule tout bas.\npapa|On prend soin avec un adulte. On est doux.\nnarrateur|Jade va vers papa. Ils remplissent l'eau ensemble. L'eau fait un bruit doux. Jade pose le bol, tout doux. Minou lape. Plus tard, au jardin, les poules picorent.\npapa|On donne le grain avec un adulte. On est doux.\nnarrateur|Jade se souvient. Elle reste près de papa. Elle verse le grain, tout doux. Les poules viennent.\npapa|Merci d'être douce. Même leçon, autre animal. Eau ou nourriture, avec un adulte. On est doux.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Jade donne à boire ou à manger. Comment ?",
+      "script": "narrateur|Jade donne à boire ou à manger. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jade a été douce. Avec papa. Pour le chat, puis pour les poules.",
+      "script": "narrateur|Jade a été douce. Avec papa. Pour le chat, puis pour les poules.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Minou se lèche. Les poules picorent.",
+      "script": "narrateur|Minou se lèche. Les poules picorent.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

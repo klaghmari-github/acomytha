@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-06",
+  "fil_rouge": "",
+  "title": "Gaëlle arrose la menthe",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gaëlle, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaëlle est dans le jardin avec maman. Le pot de menthe est sur la table. Les feuilles sentent fort. La plante a besoin d'eau. Elle a besoin de lumière. On arrose avec un adulte. Gaëlle tient l'arrosoir. L'eau est froide. Maman guide. Ils versent un peu. Le terreau devient sombre. Maman pose le pot au soleil. La lumière touche les feuilles. Eau et lumière. Avec un adulte. La menthe brille. Une goutte tombe. Gaëlle essuie la table. Maman sourit.",
+      "script": "narrateur|Gaëlle est dans le jardin avec maman. Le pot de menthe est sur la table. Les feuilles sentent fort.\nmaman|La plante a besoin d'eau. Elle a besoin de lumière. On arrose avec un adulte.\nnarrateur|Gaëlle tient l'arrosoir. L'eau est froide. Maman guide. Ils versent un peu. Le terreau devient sombre. Maman pose le pot au soleil. La lumière touche les feuilles.\nenfant-f|Eau et lumière. Avec un adulte.\nnarrateur|La menthe brille. Une goutte tombe. Gaëlle essuie la table. Maman sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La menthe a besoin de quoi ?",
+      "script": "narrateur|La menthe a besoin de quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaëlle a arrosé avec maman. Eau. Lumière. Un adulte était là.",
+      "script": "narrateur|Gaëlle a arrosé avec maman. Eau. Lumière. Un adulte était là.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gaëlle pose l'arrosoir. La menthe reste au soleil.",
+      "script": "narrateur|Gaëlle pose l'arrosoir. La menthe reste au soleil.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

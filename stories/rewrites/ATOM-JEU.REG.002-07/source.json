@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-07",
+  "fil_rouge": "",
+  "title": "Isidore suit la règle du cerceau",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Isidore, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Isidore est au jardin avec maman. Un cerceau est au sol. Maman dit une règle. La règle : on attend. Puis on passe le cerceau. Isidore tend la main. Maman va rappeler la règle une fois. On attend. C'est la règle. Isidore attend. Puis il passe le cerceau. Tu as suivi la règle. Isidore répète : une règle. Maman la rappelle. Isidore la suit.",
+      "script": "narrateur|Isidore est au jardin avec maman. Un cerceau est au sol. Maman dit une règle. La règle : on attend. Puis on passe le cerceau. Isidore tend la main. Maman va rappeler la règle une fois.\nnarrateur|On attend. C'est la règle.\nnarrateur|Isidore attend. Puis il passe le cerceau.\nmaman|Tu as suivi la règle.\nnarrateur|Isidore répète : une règle. Maman la rappelle. Isidore la suit.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Isidore joue. Que suit-il ?",
+      "script": "narrateur|Isidore joue. Que suit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Isidore a suivi la règle. Maman l'a rappelée.",
+      "script": "narrateur|Isidore a suivi la règle. Maman l'a rappelée.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le cerceau. Isidore donne la main.",
+      "script": "narrateur|Maman range le cerceau. Isidore donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

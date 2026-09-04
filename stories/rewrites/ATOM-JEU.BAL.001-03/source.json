@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.BAL.001-03",
+  "fil_rouge": "",
+  "title": "Sacha passe le ballon, deux espaces",
+  "lesson_id": "JEU.BAL.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Sacha, Lina, papa",
+  "setting": "parc puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sacha est au parc avec papa. Papa montre un cercle d'herbe. C'est l'espace du jeu. On reste dans l'espace du jeu. Sacha a un ballon rouge. Chacun a un tour. On se passe le ballon. Sacha passe le ballon à Lina. Lina le passe à papa. C'est le tour de Sacha. Il reste dans l'espace du jeu. Plus tard, au jardin, papa pose deux sacs. C'est l'espace du jeu. Sacha se souvient. Il passe le ballon. Il attend son tour. Puis il joue. Les pieds restent dans l'espace du jeu. Même leçon, autre lieu. Passer. Un tour. L'espace du jeu.",
+      "script": "narrateur|Sacha est au parc avec papa. Papa montre un cercle d'herbe.\npapa|C'est l'espace du jeu. On reste dans l'espace du jeu.\nnarrateur|Sacha a un ballon rouge.\npapa|Chacun a un tour. On se passe le ballon.\nnarrateur|Sacha passe le ballon à Lina. Lina le passe à papa. C'est le tour de Sacha. Il reste dans l'espace du jeu. Plus tard, au jardin, papa pose deux sacs. C'est l'espace du jeu. Sacha se souvient. Il passe le ballon. Il attend son tour. Puis il joue. Les pieds restent dans l'espace du jeu. Même leçon, autre lieu. Passer. Un tour. L'espace du jeu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sacha a le ballon. Que fait-il ?",
+      "script": "narrateur|Sacha a le ballon. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sacha a passé le ballon. Au parc, puis au jardin. Dans l'espace du jeu. Chacun a eu un tour.",
+      "script": "narrateur|Sacha a passé le ballon. Au parc, puis au jardin. Dans l'espace du jeu. Chacun a eu un tour.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sacha pose le ballon. Papa range les sacs.",
+      "script": "narrateur|Sacha pose le ballon. Papa range les sacs.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

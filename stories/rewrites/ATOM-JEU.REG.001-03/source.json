@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.001-03",
+  "fil_rouge": "",
+  "title": "Adam dit bravo, puis rejoue",
+  "lesson_id": "JEU.REG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Adam, papa, maman",
+  "setting": "salon puis jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Adam et papa jouent au jeu de l'oie. Les pions sont lisses. Papa arrive le premier. Papa a gagné. Adam sent un nœud dans le ventre. L'autre peut gagner. C'est le jeu. Je suis déçu. Être déçu, c'est permis. Adam souffle. Bravo papa. Papa sourit. On peut rejouer plus tard. Adam hoche la tête. Il va boire de l'eau. Plus tard, au jardin, Adam joue aux quilles avec maman. Maman fait tomber plus de quilles. Maman a gagné. Adam sent encore le nœud. Il se souvient. L'autre peut gagner. Je suis déçu. Être déçu, c'est permis. Bravo maman. On rejoue plus tard. D'abord, on range. Adam empile les quilles. Après le goûter, ils rejouent. Adam sourit. Même leçon, autre jeu. Perdre un tour, ce n'est pas grave. On dit bravo. On rejoue plus tard.",
+      "script": "narrateur|Adam et papa jouent au jeu de l'oie. Les pions sont lisses. Papa arrive le premier. Papa a gagné. Adam sent un nœud dans le ventre.\npapa|L'autre peut gagner. C'est le jeu.\nenfant-m|Je suis déçu.\npapa|Être déçu, c'est permis.\nnarrateur|Adam souffle.\nnarrateur|Bravo papa. Papa sourit.\npapa|On peut rejouer plus tard.\nnarrateur|Adam hoche la tête. Il va boire de l'eau. Plus tard, au jardin, Adam joue aux quilles avec maman. Maman fait tomber plus de quilles. Maman a gagné. Adam sent encore le nœud. Il se souvient. L'autre peut gagner.\nnarrateur|Je suis déçu. Être déçu, c'est permis.\nnarrateur|Bravo maman.\nmaman|On rejoue plus tard. D'abord, on range.\nnarrateur|Adam empile les quilles. Après le goûter, ils rejouent. Adam sourit. Même leçon, autre jeu. Perdre un tour, ce n'est pas grave. On dit bravo. On rejoue plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a gagné. Que peut faire Adam ?",
+      "script": "narrateur|Papa a gagné. Que peut faire Adam ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adam a nommé sa déception. C'était permis. Il a dit bravo. Ils ont rejoué plus tard.",
+      "script": "narrateur|Adam a nommé sa déception. C'était permis. Il a dit bravo. Ils ont rejoué plus tard.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Adam pose la dernière quille. Maman verse le goûter.",
+      "script": "narrateur|Adam pose la dernière quille. Maman verse le goûter.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

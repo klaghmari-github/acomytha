@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.004-05",
+  "fil_rouge": "",
+  "title": "Faustine est surprise",
+  "lesson_id": "EMO.LEX.004",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Faustine, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Faustine est dans le salon. Papa ouvre une boîte. Un ballon sort. Pop. Faustine sent son cœur vite. Ses yeux s'ouvrent. Je suis surprise. D'abord respirer. Ensuite comprendre. Faustine souffle une grande fois. Elle regarde le ballon. Je veux comprendre. Elle voit le ballon. Rien n'est cassé. Papa sourit. Faustine souffle encore. Être surpris, on peut respirer. Puis on cherche à comprendre. Faustine touche le ballon. Il est doux. Tu as soufflé. Faustine hoche la tête.",
+      "script": "narrateur|Faustine est dans le salon. Papa ouvre une boîte. Un ballon sort. Pop. Faustine sent son cœur vite. Ses yeux s'ouvrent.\nenfant-f|Je suis surprise.\npapa|D'abord respirer. Ensuite comprendre.\nnarrateur|Faustine souffle une grande fois. Elle regarde le ballon.\nnarrateur|Je veux comprendre. Elle voit le ballon. Rien n'est cassé. Papa sourit.\nnarrateur|Faustine souffle encore. Être surpris, on peut respirer. Puis on cherche à comprendre. Faustine touche le ballon. Il est doux.\npapa|Tu as soufflé.\nnarrateur|Faustine hoche la tête.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Faustine est surprise. Que fait-elle d'abord ?",
+      "script": "narrateur|Faustine est surprise. Que fait-elle d'abord ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Faustine a nommé : surpris. Elle a soufflé. Elle a voulu comprendre.",
+      "script": "narrateur|Faustine a nommé : surpris. Elle a soufflé. Elle a voulu comprendre.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le ballon reste dans le salon. Faustine s'assoit près de papa.",
+      "script": "narrateur|Le ballon reste dans le salon. Faustine s'assoit près de papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

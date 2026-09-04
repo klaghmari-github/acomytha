@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.003-03",
+  "fil_rouge": "",
+  "title": "Sami dit pardon et propose un geste",
+  "lesson_id": "REL.CON.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sami, Lila, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sami est dans le salon. Sa tour de cubes tombe sur le dessin de Lila. Lila a de la peine. Sami va vers elle. Il dit pardon. Il propose un geste : je t'aide à poser les cubes. Lila écoute. La peine reste un peu. Le pardon et un geste, c'est bien. Ça n'efface pas tout de suite la peine. Sami attend. Lila hoche la tête, un peu.",
+      "script": "narrateur|Sami est dans le salon. Sa tour de cubes tombe sur le dessin de Lila. Lila a de la peine. Sami va vers elle. Il dit pardon. Il propose un geste : je t'aide à poser les cubes. Lila écoute. La peine reste un peu.\nmaman|Le pardon et un geste, c'est bien. Ça n'efface pas tout de suite la peine.\nnarrateur|Sami attend. Lila hoche la tête, un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sami a fait une bêtise. Que fait-il ?",
+      "script": "narrateur|Sami a fait une bêtise. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sami a dit pardon. Il a proposé un geste. La peine de Lila reste un peu.",
+      "script": "narrateur|Sami a dit pardon. Il a proposé un geste. La peine de Lila reste un peu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose un coussin. Sami s'assoit près de Lila.",
+      "script": "narrateur|Maman pose un coussin. Sami s'assoit près de Lila.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

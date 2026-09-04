@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.SOM.001-07",
+  "fil_rouge": "",
+  "title": "Brice met le pyjama",
+  "lesson_id": "SAN.SOM.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Brice, papa",
+  "setting": "salon puis chambre, le soir",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir arrive. Brice pousse encore ses petites voitures. Ses yeux piquent. Le corps a besoin de dormir. Brice range une voiture. Papa prend le pyjama bleu. Le tissu est doux. Brice met le pyjama. Il glisse un bras, puis l'autre. Ils s'assoient sur le lit. Papa lit une courte histoire. Brice sent son corps se calmer. Parce qu'il a mis le pyjama. Parce que c'est l'heure. Papa baisse la lumière. Brice se couche. C'est le dodo. Le dodo aide le corps. Brice ferme les yeux. Le soir, pyjama, puis dodo.",
+      "script": "narrateur|Le soir arrive. Brice pousse encore ses petites voitures. Ses yeux piquent.\npapa|Le corps a besoin de dormir.\nnarrateur|Brice range une voiture. Papa prend le pyjama bleu. Le tissu est doux. Brice met le pyjama. Il glisse un bras, puis l'autre. Ils s'assoient sur le lit. Papa lit une courte histoire. Brice sent son corps se calmer. Parce qu'il a mis le pyjama. Parce que c'est l'heure. Papa baisse la lumière. Brice se couche. C'est le dodo.\npapa|Le dodo aide le corps.\nnarrateur|Brice ferme les yeux. Le soir, pyjama, puis dodo.",
+      "sons": "enfants_parc,voiture_passe",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le soir, que met Brice avant le dodo ?",
+      "script": "narrateur|Le soir, que met Brice avant le dodo ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Brice a mis le pyjama. Il s'est couché. Le soir, le dodo aide le corps.",
+      "script": "narrateur|Brice a mis le pyjama. Il s'est couché. Le soir, le dodo aide le corps.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa pose le livre. Brice respire.",
+      "script": "narrateur|Papa pose le livre. Brice respire.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

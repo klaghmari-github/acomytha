@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.001-04",
+  "fil_rouge": "",
+  "title": "Marceau prête l'arrosoir",
+  "lesson_id": "REL.PAR.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Marceau, Léa, papa, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Marceau est dans le jardin. Papa arrose les tomates. Maman cueille une feuille. Léa arrive. Elle veut l'arrosoir vert. Marceau le tient. L'eau est fraîche. Tu peux prêter. Marceau prête l'arrosoir. Léa arrose. Marceau attend son tour. Le tour arrive. Léa rend l'arrosoir. Marceau arrose une fleur. Puis Léa veut encore. Tu peux proposer un autre jeu. Le bac à sable. Oui. Ils vont au bac. Parce qu'il a prêté, le jeu continue. Parce qu'il a attendu son tour, c'est calme. Un autre jeu, c'est bien aussi. Marceau verse le sable. Léa fait un gâteau.",
+      "script": "narrateur|Marceau est dans le jardin. Papa arrose les tomates. Maman cueille une feuille. Léa arrive. Elle veut l'arrosoir vert. Marceau le tient. L'eau est fraîche.\npapa|Tu peux prêter.\nnarrateur|Marceau prête l'arrosoir. Léa arrose. Marceau attend son tour. Le tour arrive. Léa rend l'arrosoir. Marceau arrose une fleur. Puis Léa veut encore.\nmaman|Tu peux proposer un autre jeu.\nenfant-m|Le bac à sable.\ncopine|Oui. Ils vont au bac. Parce qu'il a prêté, le jeu continue. Parce qu'il a attendu son tour, c'est calme.\nnarrateur|Un autre jeu, c'est bien aussi. Marceau verse le sable. Léa fait un gâteau.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Léa veut l'arrosoir. Que peut faire Marceau ?",
+      "script": "narrateur|Léa veut l'arrosoir. Que peut faire Marceau ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Marceau a prêté. Il a attendu son tour. Puis il a proposé un autre jeu.",
+      "script": "narrateur|Marceau a prêté. Il a attendu son tour. Puis il a proposé un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Marceau range l'arrosoir. Papa range le tuyau.",
+      "script": "narrateur|Marceau range l'arrosoir. Papa range le tuyau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

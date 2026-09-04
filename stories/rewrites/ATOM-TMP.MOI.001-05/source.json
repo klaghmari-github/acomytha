@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.MOI.001-05",
+  "fil_rouge": "",
+  "title": "L'anniversaire d'Héloïse en mai",
+  "lesson_id": "TMP.MOI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Héloïse, papa, maman",
+  "setting": "maison, calendrier",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Héloïse ouvre un calendrier avec papa. Papa lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Héloïse pose son doigt. En mai, c'est ton anniversaire. Héloïse sourit. Il y aura un gâteau. Maman arrivera avec des cerises. Papa répète : il y a douze mois. Un anniversaire a un mois. Plus tard, maman montre septembre. Mon anniversaire est en septembre. Un anniversaire a un mois. Les douze mois sont là.",
+      "script": "narrateur|Héloïse ouvre un calendrier avec papa. Papa lit les douze mois. Janvier, février, mars, avril. Mai, juin, juillet, août. Septembre, octobre, novembre, décembre. Héloïse pose son doigt.\npapa|En mai, c'est ton anniversaire.\nnarrateur|Héloïse sourit. Il y aura un gâteau. Maman arrivera avec des cerises. Papa répète : il y a douze mois. Un anniversaire a un mois. Plus tard, maman montre septembre.\nmaman|Mon anniversaire est en septembre.\nenfant-f|Un anniversaire a un mois.\nnarrateur|Les douze mois sont là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Héloïse a un gâteau en mai. Pourquoi ?",
+      "script": "narrateur|Héloïse a un gâteau en mai. Pourquoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Héloïse a entendu les douze mois. Son anniversaire est en mai. Papa et maman étaient là.",
+      "script": "narrateur|Héloïse a entendu les douze mois. Son anniversaire est en mai. Papa et maman étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Héloïse ferme le calendrier. Elle range le crayon.",
+      "script": "narrateur|Héloïse ferme le calendrier. Elle range le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

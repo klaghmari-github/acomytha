@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.002-05",
+  "fil_rouge": "",
+  "title": "Cédric raconte ce qui fait peur",
+  "lesson_id": "FAM.SEC.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Cédric, papa, maman",
+  "setting": "parc puis maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Cédric est au parc avec papa. Il sent l'herbe. Un adulte parle tout bas. C'est notre secret. Cédric sent son ventre. C'est serré. C'est un malaise. Cédric a peur. Cédric marche vers papa. Il prend sa main. Papa, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Papa l'écoute. Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. On va raconter à papa ou maman. Plus tard, à la maison, Cédric le dit aussi à maman. Maman écoute. Cédric se sent plus léger. Même leçon, autre lieu. Peur ou malaise, on raconte à papa ou maman.",
+      "script": "narrateur|Cédric est au parc avec papa. Il sent l'herbe. Un adulte parle tout bas.\nnarrateur|C'est notre secret.\nnarrateur|Cédric sent son ventre. C'est serré. C'est un malaise. Cédric a peur. Cédric marche vers papa. Il prend sa main.\nenfant-m|Papa, un adulte a parlé d'un secret. Mon ventre est serré. J'ai peur. Papa l'écoute.\npapa|Merci de raconter. Tu as le droit de le dire. Ce qui fait peur se raconte. On va raconter à papa ou maman. Plus tard, à la maison, Cédric le dit aussi à maman. Maman écoute.\nnarrateur|Cédric se sent plus léger. Même leçon, autre lieu. Peur ou malaise, on raconte à papa ou maman.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Cédric a peur. Que fait-il ?",
+      "script": "narrateur|Cédric a peur. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Cédric a senti le malaise. Il a marché vers papa. Il a raconté. Papa et maman écoutent. Ce qui fait peur se raconte.",
+      "script": "narrateur|Cédric a senti le malaise. Il a marché vers papa. Il a raconté. Papa et maman écoutent. Ce qui fait peur se raconte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Cédric s'assoit près de maman. Papa est là aussi. Sa main est chaude.",
+      "script": "narrateur|Cédric s'assoit près de maman. Papa est là aussi. Sa main est chaude.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

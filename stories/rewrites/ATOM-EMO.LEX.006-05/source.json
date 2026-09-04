@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.006-05",
+  "fil_rouge": "",
+  "title": "Ewen est inquiet",
+  "lesson_id": "EMO.LEX.006",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Ewen, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ewen est dans le salon. Dehors, le vent souffle fort. Le ventre d'Ewen est serré. Ewen est inquiet. Inquiet, c'est le ventre serré. Maman est près du canapé. Maman est un adulte. Ewen va vers maman. Maman, je suis inquiet. Il veut raconter. Ewen raconte : le vent fait du bruit. Maman l'écoute. Tu es inquiet. Tu as bien raconté. Elle ouvre les bras. Ewen prend un câlin. Le ventre se desserre un peu. Ewen reste près de l'adulte. Il a raconté. Maman est là.",
+      "script": "narrateur|Ewen est dans le salon. Dehors, le vent souffle fort. Le ventre d'Ewen est serré. Ewen est inquiet. Inquiet, c'est le ventre serré. Maman est près du canapé. Maman est un adulte. Ewen va vers maman.\nnarrateur|Maman, je suis inquiet. Il veut raconter.\nnarrateur|Ewen raconte : le vent fait du bruit. Maman l'écoute.\nmaman|Tu es inquiet. Tu as bien raconté. Elle ouvre les bras.\nnarrateur|Ewen prend un câlin. Le ventre se desserre un peu. Ewen reste près de l'adulte. Il a raconté. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ewen a le ventre serré. Que fait-il ?",
+      "script": "narrateur|Ewen a le ventre serré. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ewen était inquiet. Il a rejoint un adulte. Il a raconté à maman.",
+      "script": "narrateur|Ewen était inquiet. Il a rejoint un adulte. Il a raconté à maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ewen s'assoit près de maman. Le salon est calme.",
+      "script": "narrateur|Ewen s'assoit près de maman. Le salon est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-02",
+  "fil_rouge": "",
+  "title": "Le basilic de Lila à la fenêtre",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Lila, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Lila est à la cuisine avec maman. Un petit pot de basilic est près de la fenêtre. Les feuilles sont un peu molles. La plante a besoin d'eau. Elle a besoin de lumière. Lila prend le petit arrosoir. Maman, l'adulte, tient aussi l'anse. Elles versent un peu d'eau. La terre devient sombre. La lumière de la fenêtre arrive. Lila touche une feuille, tout doux. On arrose avec un adulte.",
+      "script": "narrateur|Lila est à la cuisine avec maman. Un petit pot de basilic est près de la fenêtre. Les feuilles sont un peu molles.\nmaman|La plante a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Lila prend le petit arrosoir. Maman, l'adulte, tient aussi l'anse. Elles versent un peu d'eau. La terre devient sombre. La lumière de la fenêtre arrive. Lila touche une feuille, tout doux.\nmaman|On arrose avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le basilic a soif. Que fait Lila avec maman ?",
+      "script": "narrateur|Le basilic a soif. Que fait Lila avec maman ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Lila a versé l'eau. La lumière est là. Maman, l'adulte, était avec elle.",
+      "script": "narrateur|Lila a versé l'eau. La lumière est là. Maman, l'adulte, était avec elle.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Lila range l'arrosoir. Le basilic sent bon.",
+      "script": "narrateur|Lila range l'arrosoir. Le basilic sent bon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

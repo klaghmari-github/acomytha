@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.002-07",
+  "fil_rouge": "",
+  "title": "Alice dit stop et rejoint la maîtresse",
+  "lesson_id": "REL.CON.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Alice, maîtresse, papa",
+  "setting": "école, couloir",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, papa emmène Alice à l'école. Alice range son manteau. Dans le couloir, un camarade la bouscule. Alice sent son épaule. Stop. Sa voix est claire. Puis Alice s'éloigne. Elle fait trois pas vers le mur. Elle va vers la maîtresse. La maîtresse écoute. J'ai dit stop. Je me suis éloignée. La maîtresse reste près d'elle. Plus tard, à la récréation, le camarade arrive trop près. Alice dit encore : stop. Elle s'éloigne. Elle rejoint la maîtresse. Le soir, papa arrive. Alice raconte. Tu as dit stop. Tu t'es éloignée. Tu as rejoint la maîtresse. Même leçon, autre moment.",
+      "script": "narrateur|Le matin, papa emmène Alice à l'école. Alice range son manteau. Dans le couloir, un camarade la bouscule. Alice sent son épaule.\nnarrateur|Stop. Sa voix est claire.\nnarrateur|Puis Alice s'éloigne. Elle fait trois pas vers le mur. Elle va vers la maîtresse. La maîtresse écoute.\nenfant-f|J'ai dit stop. Je me suis éloignée.\nnarrateur|La maîtresse reste près d'elle. Plus tard, à la récréation, le camarade arrive trop près. Alice dit encore : stop. Elle s'éloigne. Elle rejoint la maîtresse. Le soir, papa arrive. Alice raconte.\npapa|Tu as dit stop. Tu t'es éloignée. Tu as rejoint la maîtresse. Même leçon, autre moment.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Alice. Que fait-elle ?",
+      "script": "narrateur|Un camarade bouscule Alice. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Alice a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse. Papa a écouté.",
+      "script": "narrateur|Alice a dit stop. Elle s'est éloignée. Elle a rejoint la maîtresse. Papa a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Alice prend la main de papa. Ils marchent vers la maison.",
+      "script": "narrateur|Alice prend la main de papa. Ils marchent vers la maison.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

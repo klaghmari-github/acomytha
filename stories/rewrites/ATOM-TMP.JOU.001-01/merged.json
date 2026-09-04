@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.JOU.001-01",
+  "fil_rouge": "Nino veut un pique-nique sous le cerisier. Le soleil chauffe les cerises. Une fourmi arrive sur la nappe. Le soir, la lune se pose dans les branches.",
+  "title": "Le pique-nique de Nino",
+  "lesson_id": "TMP.JOU.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nino, papa",
+  "setting": "jardin, cerisier, nappe",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les cerises encore vertes pendent au dessus du bac. L'herbe est encore mouillée, fraîche. Un merle picore sous le cerisier. Le tronc est chaud d'un côté. Tu as vu le merle, Nino ? Il saute. Oui. Il cherche un ver. Je veux un pique nique. Sous le cerisier ? Oui. En ce moment, Nino tire la nappe. La nappe sent le tiroir. Il la pose dans l'herbe. Le soleil chauffe les cerises, au dessus. Des ronds d'ombre bougent sur le tissu. Le jour est chaud. Le soleil est sur l'arbre. Papa pose le pain. Nino pose deux pommes. Et le fromage. Une fourmi arrive sur la nappe. Elle est toute petite, noire. Oh. Une fourmi. Elle veut la mie ? C'est notre pain. Nino souffle tout doux. La fourmi ne part pas. On avance le pain un peu ? Oui. Nino pousse le pain. La fourmi reste sur le coin. Ils mangent de l'autre côté. Merci, Nino. Tu as laissé la fourmi. Le pain a des miettes. Une cerise tombe près du bac. Elle est dure. Pas encore mûre. L'ombre du cerisier s'allonge. L'air refroidit les bras. Le jour s'en va. Le merle est parti. Le ciel devient bleu foncé. Une lune ronde se pose dans les branches. Elle est dans l'arbre. La nuit est là. La lune est sur le cerisier. On range la nappe ? Oui.",
+      "script": "narrateur|Les cerises encore vertes pendent au dessus du bac.\nnarrateur|L'herbe est encore mouillée, fraîche.\nnarrateur|Un merle picore sous le cerisier.\nnarrateur|Le tronc est chaud d'un côté.\npapa|Tu as vu le merle, Nino ?\nenfant-m|Il saute.\npapa|Oui.\npapa|Il cherche un ver.\nenfant-m|Je veux un pique nique.\npapa|Sous le cerisier ?\nenfant-m|Oui.\nnarrateur|En ce moment, Nino tire la nappe.\nnarrateur|La nappe sent le tiroir.\nnarrateur|Il la pose dans l'herbe.\nnarrateur|Le soleil chauffe les cerises, au dessus.\nnarrateur|Des ronds d'ombre bougent sur le tissu.\npapa|Le jour est chaud.\npapa|Le soleil est sur l'arbre.\nnarrateur|Papa pose le pain.\nnarrateur|Nino pose deux pommes.\nenfant-m|Et le fromage.\nnarrateur|Une fourmi arrive sur la nappe.\nnarrateur|Elle est toute petite, noire.\nenfant-m|Oh.\nenfant-m|Une fourmi.\npapa|Elle veut la mie ?\nenfant-m|C'est notre pain.\nnarrateur|Nino souffle tout doux.\nnarrateur|La fourmi ne part pas.\npapa|On avance le pain un peu ?\nenfant-m|Oui.\nnarrateur|Nino pousse le pain.\nnarrateur|La fourmi reste sur le coin.\nnarrateur|Ils mangent de l'autre côté.\npapa|Merci, Nino.\npapa|Tu as laissé la fourmi.\nnarrateur|Le pain a des miettes.\nnarrateur|Une cerise tombe près du bac.\nenfant-m|Elle est dure.\npapa|Pas encore mûre.\nnarrateur|L'ombre du cerisier s'allonge.\nnarrateur|L'air refroidit les bras.\npapa|Le jour s'en va.\nenfant-m|Le merle est parti.\nnarrateur|Le ciel devient bleu foncé.\nnarrateur|Une lune ronde se pose dans les branches.\nenfant-m|Elle est dans l'arbre.\npapa|La nuit est là.\npapa|La lune est sur le cerisier.\npapa|On range la nappe ?\nenfant-m|Oui.",
+      "sons": "oiseaux,jardin",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les cerises encore vertes pendent au dessus du bac. L'herbe est encore mouillée, fraîche. Un merle picore sous le cerisier. Le tronc est chaud d'un côté. Tu as vu le merle, Nino ? Il saute. Oui. Il cherche un ver. Je veux un pique nique. Sous le cerisier ? Oui. En ce moment, Nino tire la nappe. La nappe sent le tiroir. Il la pose dans l'herbe. Le soleil chauffe les cerises, au dessus. Des ronds d'ombre bougent sur le tissu. Le jour est chaud. Le soleil est sur l'arbre. Papa pose le pain. Nino pose deux pommes. Et le fromage. Une fourmi arrive sur la nappe. Elle est toute petite, noire. Oh. Une fourmi. Elle veut la mie ? C'est notre pain. Nino souffle tout doux. La fourmi ne part pas. On avance le pain un peu ? Oui. Nino pousse le pain. La fourmi reste sur le coin. Ils mangent de l'autre côté. Merci, Nino. Tu as laissé la fourmi. Le pain a des miettes. Une cerise tombe près du bac. Elle est dure. Pas encore mûre. L'ombre du cerisier s'allonge. L'air refroidit les bras. Le jour s'en va. Le merle est parti. Le ciel devient bleu foncé. Une lune ronde se pose dans les branches. Elle est dans l'arbre. La nuit est là. La lune est sur le cerisier. On range la nappe ? Oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La lune est dans les branches. Quel moment est-ce ?",
+      "script": "narrateur|La lune est dans les branches.\nnarrateur|Quel moment est-ce ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "La lune est dans les branches. Quel moment est-ce ?",
+      "expected_answer": "nuit",
+      "accepted_examples": "nuit | la nuit | le soir | dodo | c'est la nuit",
+      "retry_prompt": "La lune est dans l'arbre. C'est le jour, ou la nuit ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a mangé sous le cerisier. Le soleil était sur les cerises. Maintenant la lune est dans l'arbre. Le jour, c'était le soleil. La nuit, c'est la lune. Elle est ronde. Oui. On rentre se coucher ? Encore un peu. La fourmi a quitté le coin. La nappe a une tache de mie. Tu plies ton côté ? Oui, papa.",
+      "script": "narrateur|Nino a mangé sous le cerisier.\nnarrateur|Le soleil était sur les cerises.\nnarrateur|Maintenant la lune est dans l'arbre.\npapa|Le jour, c'était le soleil.\npapa|La nuit, c'est la lune.\nenfant-m|Elle est ronde.\npapa|Oui.\npapa|On rentre se coucher ?\nenfant-m|Encore un peu.\nnarrateur|La fourmi a quitté le coin.\nnarrateur|La nappe a une tache de mie.\npapa|Tu plies ton côté ?\nenfant-m|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino a mangé sous le cerisier. Le soleil était sur les cerises. Maintenant la lune est dans l'arbre. Le jour, c'était le soleil. La nuit, c'est la lune. Elle est ronde. Oui. On rentre se coucher ? Encore un peu. La fourmi a quitté le coin. La nappe a une tache de mie. Tu plies ton côté ? Oui, papa."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nino plie la nappe, tout croche. Papa prend le pain. Ils rentrent, l'herbe froide aux chevilles. Le pyjama, maintenant. Le pyjama est doux, un peu rêche aux poignets. La lune est encore là ? À la fenêtre. Nino monte sur le lit. Le cerisier est noir, dehors. La lune tient encore une branche. La nuit, on fait dodo. Tu fermes les yeux ? Presque. Papa baisse la lumière. Nino respire le savon du drap.",
+      "script": "narrateur|Nino plie la nappe, tout croche.\nnarrateur|Papa prend le pain.\nnarrateur|Ils rentrent, l'herbe froide aux chevilles.\npapa|Le pyjama, maintenant.\nnarrateur|Le pyjama est doux, un peu rêche aux poignets.\nenfant-m|La lune est encore là ?\npapa|À la fenêtre.\nnarrateur|Nino monte sur le lit.\nnarrateur|Le cerisier est noir, dehors.\nnarrateur|La lune tient encore une branche.\npapa|La nuit, on fait dodo.\npapa|Tu fermes les yeux ?\nenfant-m|Presque.\nnarrateur|Papa baisse la lumière.\nnarrateur|Nino respire le savon du drap.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino plie la nappe, tout croche. Papa prend le pain. Ils rentrent, l'herbe froide aux chevilles. Le pyjama, maintenant. Le pyjama est doux, un peu rêche aux poignets. La lune est encore là ? À la fenêtre. Nino monte sur le lit. Le cerisier est noir, dehors. La lune tient encore une branche. La nuit, on fait dodo. Tu fermes les yeux ? Presque. Papa baisse la lumière. Nino respire le savon du drap."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Une cerise bouge encore, dehors. La lune la touche, toute pâle. Notre nappe est pliée. Oui. Le pique nique est fini. Nino ferme les yeux. Le merle se tait, déjà.",
+      "script": "narrateur|Une cerise bouge encore, dehors.\nnarrateur|La lune la touche, toute pâle.\nenfant-m|Notre nappe est pliée.\npapa|Oui.\npapa|Le pique nique est fini.\nnarrateur|Nino ferme les yeux.\nnarrateur|Le merle se tait, déjà.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Une cerise bouge encore, dehors. La lune la touche, toute pâle. Notre nappe est pliée. Oui. Le pique nique est fini. Nino ferme les yeux. Le merle se tait, déjà."
+    }
+  ]
+}

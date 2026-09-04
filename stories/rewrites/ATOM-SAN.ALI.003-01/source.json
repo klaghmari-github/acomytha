@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-01",
+  "fil_rouge": "",
+  "title": "Le verre d'eau de Nora",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nora, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Nora joue dans le jardin. Le soleil chauffe. Nora a soif. Sa bouche est sèche. Papa est près des fleurs. J'ai soif, papa. Papa sourit. Ils vont dans la cuisine. Papa prend un verre. Il verse de l'eau. L'eau est claire. Nora prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore. Quand on a soif, on boit de l'eau. Nora pose le verre. Elle se sent mieux.",
+      "script": "narrateur|Nora joue dans le jardin. Le soleil chauffe. Nora a soif. Sa bouche est sèche. Papa est près des fleurs.\nenfant-f|J'ai soif, papa. Papa sourit. Ils vont dans la cuisine. Papa prend un verre. Il verse de l'eau. L'eau est claire.\nnarrateur|Nora prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore.\npapa|Quand on a soif, on boit de l'eau.\nnarrateur|Nora pose le verre. Elle se sent mieux.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nora a soif. Que prend-elle ?",
+      "script": "narrateur|Nora a soif. Que prend-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nora avait soif. Elle a pris le verre. Elle a bu de l'eau. Papa était là.",
+      "script": "narrateur|Nora avait soif. Elle a pris le verre. Elle a bu de l'eau. Papa était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nora retourne au jardin. Le verre reste sur la table. Merci, dit Nora.",
+      "script": "narrateur|Nora retourne au jardin. Le verre reste sur la table. Merci, dit Nora.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

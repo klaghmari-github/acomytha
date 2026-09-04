@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.001-08",
+  "fil_rouge": "",
+  "title": "La surprise gentille de Constance",
+  "lesson_id": "FAM.SEC.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Constance, papa, maman",
+  "setting": "atelier, galet peint",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est bientôt l'anniversaire de maman. Constance peint un galet. Papa aide. La peinture sent un peu. C'est une surprise gentille. On la garde un peu. Constance pose le galet dans une boîte. La boîte est dans le tiroir. Maman passe. Constance sourit. Elle garde un peu. Puis on dit. Maintenant, on révèle. Constance ouvre la boîte. Elle tend le galet. C'est pour toi, maman. Maman rit. Elle touche le galet lisse. C'était une surprise gentille. On l'a gardée un peu. Puis on dit. Constance tape des mains. Maman dit merci.",
+      "script": "narrateur|C'est bientôt l'anniversaire de maman. Constance peint un galet. Papa aide. La peinture sent un peu.\npapa|C'est une surprise gentille. On la garde un peu.\nnarrateur|Constance pose le galet dans une boîte. La boîte est dans le tiroir. Maman passe. Constance sourit. Elle garde un peu. Puis on dit.\npapa|Maintenant, on révèle.\nnarrateur|Constance ouvre la boîte. Elle tend le galet.\nenfant-f|C'est pour toi, maman. Maman rit. Elle touche le galet lisse. C'était une surprise gentille. On l'a gardée un peu.\nnarrateur|Puis on dit. Constance tape des mains. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Constance cache un galet. C'est quoi ?",
+      "script": "narrateur|Constance cache un galet. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Constance a gardé un peu. Puis on dit. C'était une surprise gentille pour maman.",
+      "script": "narrateur|Constance a gardé un peu. Puis on dit. C'était une surprise gentille pour maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman pose le galet sur la table. Constance boit un verre d'eau.",
+      "script": "narrateur|Maman pose le galet sur la table. Constance boit un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

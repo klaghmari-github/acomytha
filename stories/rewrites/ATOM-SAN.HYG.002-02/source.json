@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.002-02",
+  "fil_rouge": "",
+  "title": "Diego prend sa brosse",
+  "lesson_id": "SAN.HYG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Diego, papa, maman",
+  "setting": "salle de bain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le matin, Diego se lève. Papa l'appelle. Ils vont dans la salle de bain. Diego prend sa brosse. La brosse est jaune. Un adulte est avec lui. C'est papa. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. Ça goûte la fraise. Diego rit un peu. Il range la brosse. Le soir, maman l'appelle. C'est pareil. Diego prend sa brosse. Un adulte est avec lui. C'est maman. Ils brossent ensemble. Matin et soir. Matin et soir. Oui, avec un adulte. Les dents sont propres. Diego pose la brosse.",
+      "script": "narrateur|Le matin, Diego se lève. Papa l'appelle. Ils vont dans la salle de bain. Diego prend sa brosse. La brosse est jaune. Un adulte est avec lui. C'est papa. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. Ça goûte la fraise. Diego rit un peu. Il range la brosse. Le soir, maman l'appelle. C'est pareil. Diego prend sa brosse. Un adulte est avec lui. C'est maman. Ils brossent ensemble. Matin et soir.\nenfant-m|Matin et soir.\nmaman|Oui, avec un adulte.\nnarrateur|Les dents sont propres. Diego pose la brosse.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Diego se brosse les dents. Avec quoi ?",
+      "script": "narrateur|Diego se brosse les dents. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Diego a pris la brosse. Il brosse avec l'adulte. Matin et soir. Papa et maman sont là.",
+      "script": "narrateur|Diego a pris la brosse. Il brosse avec l'adulte. Matin et soir. Papa et maman sont là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Diego se rince la bouche. Il dit merci à maman. Les dents brillent.",
+      "script": "narrateur|Diego se rince la bouche. Il dit merci à maman. Les dents brillent.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

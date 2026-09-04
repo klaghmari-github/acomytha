@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.HYG.002-06",
+  "fil_rouge": "",
+  "title": "Boris se brosse matin et soir",
+  "lesson_id": "SAN.HYG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Boris, papa, maman",
+  "setting": "salle de bain",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, Boris entre dans la salle de bain. L'eau coule. Ça sent la menthe. Papa est là. Un adulte est avec lui. Boris prend sa brosse. Papa prend la sienne. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. Boris crache. Il rince. Il range la brosse près du verre. Le matin, c'est pareil. Boris se lève. Le tapis est doux. Il va dans la salle de bain. Maman l'attend. Un adulte est avec lui. Boris prend sa brosse. Ils brossent ensemble. Matin et soir. Oui, avec un adulte. Les dents sont propres. Boris range la brosse.",
+      "script": "narrateur|Le soir, Boris entre dans la salle de bain. L'eau coule. Ça sent la menthe. Papa est là. Un adulte est avec lui. Boris prend sa brosse. Papa prend la sienne. Ils se brossent les dents. La brosse va en haut. La brosse va en bas. Boris crache. Il rince. Il range la brosse près du verre. Le matin, c'est pareil. Boris se lève. Le tapis est doux. Il va dans la salle de bain. Maman l'attend. Un adulte est avec lui. Boris prend sa brosse. Ils brossent ensemble.\nenfant-m|Matin et soir.\nmaman|Oui, avec un adulte.\nnarrateur|Les dents sont propres. Boris range la brosse.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Boris se brosse les dents. Avec quoi ?",
+      "script": "narrateur|Boris se brosse les dents. Avec quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Boris a pris la brosse. Il brosse avec l'adulte. C'est papa, puis maman. Matin et soir.",
+      "script": "narrateur|Boris a pris la brosse. Il brosse avec l'adulte. C'est papa, puis maman. Matin et soir.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Boris se rince la bouche. Il dit merci à maman. Les dents brillent.",
+      "script": "narrateur|Boris se rince la bouche. Il dit merci à maman. Les dents brillent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

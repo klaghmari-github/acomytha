@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-03",
+  "fil_rouge": "",
+  "title": "Romy invite, et accepte un non",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Romy, Nadir, Lila, maman",
+  "setting": "parc puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Romy est au parc avec maman. Elle joue au bac à sable. Nadir arrive. Tu veux jouer avec nous ? C'est inviter. Non, merci. Romy écoute. Accepter un non, c'est possible. D'accord. Elle continue son château. Maman sourit. Plus tard, à la maison, Romy prépare de la pâte. Lila dessine. Tu veux jouer avec nous ? Non, je dessine. Romy se souvient. Accepter un non. D'accord. Elle pétrit la pâte. Tu as su inviter. Tu as su accepter un non. Même leçon, autre lieu.",
+      "script": "narrateur|Romy est au parc avec maman. Elle joue au bac à sable. Nadir arrive.\nenfant-m|Tu veux jouer avec nous ? C'est inviter.\ncopain|Non, merci.\nnarrateur|Romy écoute. Accepter un non, c'est possible.\nnarrateur|D'accord. Elle continue son château. Maman sourit. Plus tard, à la maison, Romy prépare de la pâte.\nnarrateur|Lila dessine.\nenfant-m|Tu veux jouer avec nous ?\ncopine|Non, je dessine.\nnarrateur|Romy se souvient. Accepter un non.\nnarrateur|D'accord. Elle pétrit la pâte.\nmaman|Tu as su inviter. Tu as su accepter un non. Même leçon, autre lieu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Romy veut jouer. Que peut-elle dire ?",
+      "script": "narrateur|Romy veut jouer. Que peut-elle dire ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Romy a invité. Au parc, puis à la maison. Elle a su accepter un non.",
+      "script": "narrateur|Romy a invité. Au parc, puis à la maison. Elle a su accepter un non.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Romy range la pâte. Maman dit merci.",
+      "script": "narrateur|Romy range la pâte. Maman dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

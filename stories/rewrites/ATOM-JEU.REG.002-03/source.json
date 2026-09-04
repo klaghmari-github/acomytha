@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.REG.002-03",
+  "fil_rouge": "",
+  "title": "Iris suit la règle de la marelle",
+  "lesson_id": "JEU.REG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Iris, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Iris est au parc avec papa. Une marelle est dessinée. Papa dit une règle. La règle : on attend. Puis on saute une case. Iris veut sauter tout de suite. Papa va rappeler la règle une fois. On attend. C'est la règle. Iris attend. Puis elle saute une case. Tu as suivi la règle. Iris répète : une règle. Papa la rappelle. Iris la suit.",
+      "script": "narrateur|Iris est au parc avec papa. Une marelle est dessinée. Papa dit une règle. La règle : on attend. Puis on saute une case. Iris veut sauter tout de suite. Papa va rappeler la règle une fois.\nnarrateur|On attend. C'est la règle.\nnarrateur|Iris attend. Puis elle saute une case.\npapa|Tu as suivi la règle.\nnarrateur|Iris répète : une règle. Papa la rappelle. Iris la suit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iris joue. Que suit-elle ?",
+      "script": "narrateur|Iris joue. Que suit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Iris a suivi la règle. Papa l'a rappelée. Iris a attendu, puis elle a sauté.",
+      "script": "narrateur|Iris a suivi la règle. Papa l'a rappelée. Iris a attendu, puis elle a sauté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range la craie. Iris donne la main.",
+      "script": "narrateur|Papa range la craie. Iris donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

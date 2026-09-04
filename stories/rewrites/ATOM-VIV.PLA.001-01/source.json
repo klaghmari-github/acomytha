@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.PLA.001-01",
+  "fil_rouge": "",
+  "title": "L'arrosoir de Jules",
+  "lesson_id": "VIV.PLA.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Jules, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Jules est au jardin avec maman. Une petite plante a soif. Ses feuilles sont molles. Elle a besoin d'eau. Elle a besoin de lumière. Jules prend l'arrosoir avec maman. Ils versent un peu d'eau. La terre devient sombre. Maman pose le pot près de la fenêtre. La lumière arrive. Jules touche une feuille. C'est doux. On arrose avec un adulte.",
+      "script": "narrateur|Jules est au jardin avec maman. Une petite plante a soif. Ses feuilles sont molles.\nmaman|Elle a besoin d'eau. Elle a besoin de lumière.\nnarrateur|Jules prend l'arrosoir avec maman. Ils versent un peu d'eau. La terre devient sombre. Maman pose le pot près de la fenêtre. La lumière arrive. Jules touche une feuille. C'est doux.\nmaman|On arrose avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "La plante a soif. Que fait Jules avec maman ?",
+      "script": "narrateur|La plante a soif. Que fait Jules avec maman ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Jules a versé l'eau. La lumière est là. Maman, l'adulte, était avec lui.",
+      "script": "narrateur|Jules a versé l'eau. La lumière est là. Maman, l'adulte, était avec lui.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Jules range l'arrosoir. La plante tient droit.",
+      "script": "narrateur|Jules range l'arrosoir. La plante tient droit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

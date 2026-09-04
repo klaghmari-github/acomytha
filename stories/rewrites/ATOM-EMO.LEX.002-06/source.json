@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.002-06",
+  "fil_rouge": "",
+  "title": "Félix est triste et demande un câlin",
+  "lesson_id": "EMO.LEX.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Félix, maman, papa",
+  "setting": "jardin puis salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Félix a planté une petite fleur dans le jardin. Le vent a couché la tige. Félix sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe. Je suis triste. Maman arrive près de lui. Pleurer est permis. Félix pleure un peu. Les larmes coulent. Puis Je veux un câlin. Maman ouvre les bras. Félix se blottit. Le câlin est chaud. Parce que la fleur est couchée, Félix est triste. Être triste, c'est permis. Plus tard, au salon, le dessin de Félix se déchire un peu. Félix sent encore sa gorge. Je suis triste. Pleurer est permis. Félix demande un câlin. Papa le serre. Ses épaules se desserrent. Même leçon, autre moment. On nomme. On peut pleurer. On demande un câlin.",
+      "script": "narrateur|Félix a planté une petite fleur dans le jardin. Le vent a couché la tige. Félix sent sa gorge serrée. Ses yeux deviennent chauds. Une larme tombe.\nenfant-m|Je suis triste. Maman arrive près de lui.\nmaman|Pleurer est permis.\nnarrateur|Félix pleure un peu. Les larmes coulent. Puis\nenfant-m|Je veux un câlin. Maman ouvre les bras.\nnarrateur|Félix se blottit. Le câlin est chaud. Parce que la fleur est couchée, Félix est triste. Être triste, c'est permis. Plus tard, au salon, le dessin de Félix se déchire un peu. Félix sent encore sa gorge.\nnarrateur|Je suis triste.\npapa|Pleurer est permis.\nnarrateur|Félix demande un câlin. Papa le serre. Ses épaules se desserrent. Même leçon, autre moment. On nomme. On peut pleurer. On demande un câlin.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Félix a les yeux chauds. Que dit-il ?",
+      "script": "narrateur|Félix a les yeux chauds. Que dit-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Félix a nommé : triste. Pleurer est permis. Un câlin de papa ou maman aide.",
+      "script": "narrateur|Félix a nommé : triste. Pleurer est permis. Un câlin de papa ou maman aide.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman redresse la petite fleur. Félix pose son dessin près de lui.",
+      "script": "narrateur|Maman redresse la petite fleur. Félix pose son dessin près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

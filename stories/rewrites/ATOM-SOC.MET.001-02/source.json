@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.MET.001-02",
+  "fil_rouge": "",
+  "title": "Les métiers de Sara",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sara, papa",
+  "setting": "bus, boulangerie, chez le médecin, école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sara monte dans le bus avec papa. Le chauffeur ouvre la porte. C'est un métier. Le chauffeur fait un geste utile. Il conduit. Chauffeur. Ils descendent. Ça sent le pain chaud. Le boulanger pose les brioches. C'est un métier. Le boulanger fait un geste utile. Il prépare le pain. Boulanger. Plus tard, ils passent chez le médecin. Le médecin écoute le cœur. C'est un métier. Un geste utile. Il soigne. À l'école, la maîtresse lit. C'est un métier. Un geste utile. Elle aide les enfants. Sara nomme chaque métier. Parce qu'elle nomme, elle comprend le geste.",
+      "script": "narrateur|Sara monte dans le bus avec papa. Le chauffeur ouvre la porte.\npapa|C'est un métier.\nnarrateur|Le chauffeur fait un geste utile. Il conduit.\nenfant-f|Chauffeur. Ils descendent. Ça sent le pain chaud.\nnarrateur|Le boulanger pose les brioches.\npapa|C'est un métier.\nnarrateur|Le boulanger fait un geste utile. Il prépare le pain.\nenfant-f|Boulanger. Plus tard, ils passent chez le médecin.\nnarrateur|Le médecin écoute le cœur. C'est un métier. Un geste utile. Il soigne. À l'école, la maîtresse lit. C'est un métier. Un geste utile. Elle aide les enfants. Sara nomme chaque métier. Parce qu'elle nomme, elle comprend le geste.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le chauffeur conduit le bus. C'est quoi ?",
+      "script": "narrateur|Le chauffeur conduit le bus. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sara a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "script": "narrateur|Sara a nommé les métiers. Chauffeur. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sara serre la main de papa. Ils rentrent à la maison.",
+      "script": "narrateur|Sara serre la main de papa. Ils rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

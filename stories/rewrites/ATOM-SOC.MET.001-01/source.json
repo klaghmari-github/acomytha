@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.MET.001-01",
+  "fil_rouge": "",
+  "title": "Les métiers de Tom",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Tom, maman",
+  "setting": "quartier",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Tom marche avec maman. Ils vont dans la rue. D'abord, la boulangerie. Ça sent le pain chaud. Le boulanger pose les baguettes. C'est un métier. Boulanger. Le boulanger fait un geste utile. Il prépare le pain. Ensuite, ils passent chez le médecin. Le médecin écoute le cœur. C'est un métier. Médecin. Le médecin fait un geste utile. Il soigne. Après, ils arrivent à l'école. La maîtresse lit une histoire. C'est un métier. Maîtresse. La maîtresse fait un geste utile. Elle aide les enfants. Boulanger. Médecin. Maîtresse. Chaque métier a un geste utile.",
+      "script": "narrateur|Tom marche avec maman. Ils vont dans la rue. D'abord, la boulangerie. Ça sent le pain chaud. Le boulanger pose les baguettes.\nmaman|C'est un métier.\nenfant-m|Boulanger.\nnarrateur|Le boulanger fait un geste utile. Il prépare le pain. Ensuite, ils passent chez le médecin. Le médecin écoute le cœur.\nmaman|C'est un métier.\nenfant-m|Médecin.\nnarrateur|Le médecin fait un geste utile. Il soigne. Après, ils arrivent à l'école. La maîtresse lit une histoire.\nmaman|C'est un métier.\nenfant-m|Maîtresse.\nnarrateur|La maîtresse fait un geste utile. Elle aide les enfants. Boulanger. Médecin. Maîtresse. Chaque métier a un geste utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le boulanger fait du pain. C'est quoi ?",
+      "script": "narrateur|Le boulanger fait du pain. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Tom a nommé les métiers. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "script": "narrateur|Tom a nommé les métiers. Boulanger. Médecin. Maîtresse. Chaque geste est utile.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tom serre la main de maman. Ils rentrent à la maison.",
+      "script": "narrateur|Tom serre la main de maman. Ils rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MET.001-03",
+  "fil_rouge": "Nina veut le pain chaud chez le voisin. La neige fond. Il pleut. Le sac se mouille. Ils le protègent. Le pain sent encore le four.",
+  "title": "Le pain dans la neige fondue",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, papa",
+  "setting": "trottoir de neige fondue, maison du voisin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La neige fond en filets gris sur le trottoir. Une gouttière du voisin verse dans une flaque sale. L'air sent le pain, déjà, très loin. Nina vit ici, avec papa. La maison du voisin a une fenêtre jaune. De la vapeur y danse. Tu as senti le pain ? Oui, papa. Je veux y aller. Il pleut sur la neige fondue. On se couvre ? En ce moment, Nina prend le manteau lourd. Il sent la laine mouillée d'hier. Papa tend les bottes. Nina les enfile. La neige fondue fait un bruit mou sous la porte. C'est glissant. On va doucement. Ils sortent. La pluie pique les capuches. Les filets gris courent vers le caniveau. Nina donne la main à papa. Le sac en toile pend à son poignet. Devant chez le voisin, trois marches luisent. Tu montes ? Nina pose un pied. La neige fondue fuit sous la botte. Oups. Je te tiens. Elle gravit les marches. Papa frappe. La porte s'ouvre sur la vapeur. Le pain est là, trop chaud pour les mains. Il sent le four ! Merci. Nina tend le sac. Le voisin y glisse le pain. Une goutte de pluie tombe dans le sac. Le sac est mouillé. On le serre contre le manteau ? Nina presse le sac contre elle. Le pain reste au chaud, à l'abri. Bravo. Tu l'as protégé.",
+      "script": "narrateur|La neige fond en filets gris sur le trottoir.\nnarrateur|Une gouttière du voisin verse dans une flaque sale.\nnarrateur|L'air sent le pain, déjà, très loin.\nnarrateur|Nina vit ici, avec papa.\nnarrateur|La maison du voisin a une fenêtre jaune.\nnarrateur|De la vapeur y danse.\npapa|Tu as senti le pain ?\nenfant-f|Oui, papa.\nenfant-f|Je veux y aller.\npapa|Il pleut sur la neige fondue.\npapa|On se couvre ?\nnarrateur|En ce moment, Nina prend le manteau lourd.\nnarrateur|Il sent la laine mouillée d'hier.\nnarrateur|Papa tend les bottes.\nnarrateur|Nina les enfile.\nnarrateur|La neige fondue fait un bruit mou sous la porte.\nenfant-f|C'est glissant.\npapa|On va doucement.\nnarrateur|Ils sortent.\nnarrateur|La pluie pique les capuches.\nnarrateur|Les filets gris courent vers le caniveau.\nnarrateur|Nina donne la main à papa.\nnarrateur|Le sac en toile pend à son poignet.\nnarrateur|Devant chez le voisin, trois marches luisent.\npapa|Tu montes ?\nnarrateur|Nina pose un pied.\nnarrateur|La neige fondue fuit sous la botte.\nenfant-f|Oups.\npapa|Je te tiens.\nnarrateur|Elle gravit les marches.\nnarrateur|Papa frappe.\nnarrateur|La porte s'ouvre sur la vapeur.\nnarrateur|Le pain est là, trop chaud pour les mains.\nenfant-f|Il sent le four !\npapa|Merci.\nnarrateur|Nina tend le sac.\nnarrateur|Le voisin y glisse le pain.\nnarrateur|Une goutte de pluie tombe dans le sac.\nenfant-f|Le sac est mouillé.\npapa|On le serre contre le manteau ?\nnarrateur|Nina presse le sac contre elle.\nnarrateur|Le pain reste au chaud, à l'abri.\npapa|Bravo.\npapa|Tu l'as protégé.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La neige fond en filets gris sur le trottoir. Une gouttière du voisin verse dans une flaque sale. L'air sent le pain, déjà, très loin. Nina vit ici, avec papa. La maison du voisin a une fenêtre jaune. De la vapeur y danse. Tu as senti le pain ? Oui, papa. Je veux y aller. Il pleut sur la neige fondue. On se couvre ? En ce moment, Nina prend le manteau lourd. Il sent la laine mouillée d'hier. Papa tend les bottes. Nina les enfile. La neige fondue fait un bruit mou sous la porte. C'est glissant. On va doucement. Ils sortent. La pluie pique les capuches. Les filets gris courent vers le caniveau. Nina donne la main à papa. Le sac en toile pend à son poignet. Devant chez le voisin, trois marches luisent. Tu montes ? Nina pose un pied. La neige fondue fuit sous la botte. Oups. Je te tiens. Elle gravit les marches. Papa frappe. La porte s'ouvre sur la vapeur. Le pain est là, trop chaud pour les mains. Il sent le four ! Merci. Nina tend le sac. Le voisin y glisse le pain. Une goutte de pluie tombe dans le sac. Le sac est mouillé. On le serre contre le manteau ? Nina presse le sac contre elle. Le pain reste au chaud, à l'abri. Bravo. Tu l'as protégé."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il pleut, et la neige fond. Que met Nina ?",
+      "script": "narrateur|Il pleut, et la neige fond.\nnarrateur|Que met Nina ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Il pleut, et la neige fond. Que met Nina ?",
+      "expected_answer": "manteau",
+      "accepted_examples": "manteau | bottes | le manteau | les bottes",
+      "retry_prompt": "Pluie et neige fondue. Que met-on ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ils redescendent les marches. Nina tient le sac très fort. Il est encore chaud. Oui. On rentre avant qu'il refroidisse. La pluie a grossi les filets gris. Une flaque barre le trottoir. On la contourne ? Oui. Nina marche au bord. Ses bottes restent au sec, presque. Le manteau lourd fume un peu. Chez eux, papa ouvre. L'air de la cuisine est plus doux. Nina pose le sac sur la table. Le pain a une croûte dorée. Pas mouillé ! Tu l'as bien tenu. Papa coupe une tranche. La mie fume. C'est pour nous. Oui. Après la neige fondue.",
+      "script": "narrateur|Ils redescendent les marches.\nnarrateur|Nina tient le sac très fort.\nenfant-f|Il est encore chaud.\npapa|Oui.\npapa|On rentre avant qu'il refroidisse.\nnarrateur|La pluie a grossi les filets gris.\nnarrateur|Une flaque barre le trottoir.\npapa|On la contourne ?\nenfant-f|Oui.\nnarrateur|Nina marche au bord.\nnarrateur|Ses bottes restent au sec, presque.\nnarrateur|Le manteau lourd fume un peu.\nnarrateur|Chez eux, papa ouvre.\nnarrateur|L'air de la cuisine est plus doux.\nnarrateur|Nina pose le sac sur la table.\nnarrateur|Le pain a une croûte dorée.\nenfant-f|Pas mouillé !\npapa|Tu l'as bien tenu.\nnarrateur|Papa coupe une tranche.\nnarrateur|La mie fume.\nenfant-f|C'est pour nous.\npapa|Oui.\npapa|Après la neige fondue.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils redescendent les marches. Nina tient le sac très fort. Il est encore chaud. Oui. On rentre avant qu'il refroidisse. La pluie a grossi les filets gris. Une flaque barre le trottoir. On la contourne ? Oui. Nina marche au bord. Ses bottes restent au sec, presque. Le manteau lourd fume un peu. Chez eux, papa ouvre. L'air de la cuisine est plus doux. Nina pose le sac sur la table. Le pain a une croûte dorée. Pas mouillé ! Tu l'as bien tenu. Papa coupe une tranche. La mie fume. C'est pour nous. Oui. Après la neige fondue."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Nina range les bottes près de la porte. De la neige fondue s'égoutte encore. Le manteau au crochet ? Oui. Le pain attend, déjà entamé. La fenêtre du voisin est encore jaune.",
+      "script": "narrateur|Nina range les bottes près de la porte.\nnarrateur|De la neige fondue s'égoutte encore.\npapa|Le manteau au crochet ?\nenfant-f|Oui.\nnarrateur|Le pain attend, déjà entamé.\nnarrateur|La fenêtre du voisin est encore jaune.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nina range les bottes près de la porte. De la neige fondue s'égoutte encore. Le manteau au crochet ? Oui. Le pain attend, déjà entamé. La fenêtre du voisin est encore jaune."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La croûte craque sous les dents. Dehors, les filets gris courent encore. Il est chaud. Oui. Le sac mouillé sèche sur la chaise.",
+      "script": "narrateur|La croûte craque sous les dents.\nnarrateur|Dehors, les filets gris courent encore.\nenfant-f|Il est chaud.\npapa|Oui.\nnarrateur|Le sac mouillé sèche sur la chaise.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La croûte craque sous les dents. Dehors, les filets gris courent encore. Il est chaud. Oui. Le sac mouillé sèche sur la chaise."
+    }
+  ]
+}

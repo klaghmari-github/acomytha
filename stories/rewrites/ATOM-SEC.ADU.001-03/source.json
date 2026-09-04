@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-03",
+  "fil_rouge": "",
+  "title": "Karim cherche maman au magasin",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Karim, maman, papa, la maîtresse",
+  "setting": "magasin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Karim est au magasin. C'est après l'école. La maîtresse attend près des caisses. Papa choisit du pain. Maman est au rayon des yaourts. Karim a regardé les balles colorées. Il lève les yeux. Il cherche. Ses pieds restent près du rayon. Karim se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Karim marche vers les yaourts. Ses mains restent près de son manteau. Il voit maman. Maman a le panier. Karim va vers maman. Parce qu'il a cherché maman, il la trouve. Me voici. Tu vas vers papa, maman, ou la maîtresse. Karim prend le manteau de maman. Il est calme. Papa les rejoint. La maîtresse les salue près des caisses.",
+      "script": "narrateur|Karim est au magasin. C'est après l'école. La maîtresse attend près des caisses. Papa choisit du pain. Maman est au rayon des yaourts. Karim a regardé les balles colorées. Il lève les yeux. Il cherche. Ses pieds restent près du rayon. Karim se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Karim marche vers les yaourts. Ses mains restent près de son manteau. Il voit maman. Maman a le panier. Karim va vers maman. Parce qu'il a cherché maman, il la trouve.\nmaman|Me voici. Tu vas vers papa, maman, ou la maîtresse.\nnarrateur|Karim prend le manteau de maman. Il est calme. Papa les rejoint. La maîtresse les salue près des caisses.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Karim cherche quelqu'un. Vers qui va-t-il ?",
+      "script": "narrateur|Karim cherche quelqu'un. Vers qui va-t-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Karim a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "script": "narrateur|Karim a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Karim tient le manteau de maman. Ils paient les yaourts.",
+      "script": "narrateur|Karim tient le manteau de maman. Ils paient les yaourts.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

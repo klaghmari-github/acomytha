@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.PAR.002-02",
+  "fil_rouge": "",
+  "title": "Naël attend, puis c'est son tour",
+  "lesson_id": "REL.PAR.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Naël, Tina, papa",
+  "setting": "parc puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Naël est au parc avec papa. Tina est sur le toboggan. Le bois est lisse. Naël a envie de glisser. On attend. L'autre finit, puis c'est mon tour. Puis mon tour. Naël attend près de l'échelle. Il compte les oiseaux. Tina glisse. Puis c'est le tour de Naël. Naël glisse. L'air est frais. Tu as su attendre. Plus tard, à la maison, ils peignent. La peinture sent le fruit. Tina a le pinceau rouge. Naël se souvient. Il attend. Puis mon tour. Tina pose le pinceau. Puis c'est le tour de Naël. Il peint une pomme. Même leçon, autre lieu. Attendre, puis jouer.",
+      "script": "narrateur|Naël est au parc avec papa. Tina est sur le toboggan. Le bois est lisse. Naël a envie de glisser.\npapa|On attend. L'autre finit, puis c'est mon tour.\nnarrateur|Puis mon tour. Naël attend près de l'échelle. Il compte les oiseaux. Tina glisse. Puis c'est le tour de Naël. Naël glisse. L'air est frais.\npapa|Tu as su attendre. Plus tard, à la maison, ils peignent.\nnarrateur|La peinture sent le fruit. Tina a le pinceau rouge. Naël se souvient. Il attend.\npapa|Puis mon tour.\nnarrateur|Tina pose le pinceau. Puis c'est le tour de Naël. Il peint une pomme. Même leçon, autre lieu. Attendre, puis jouer.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Tina joue encore. Que fait Naël ?",
+      "script": "narrateur|Tina joue encore. Que fait Naël ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Naël a attendu. Au toboggan, puis avec le pinceau. Puis c'était son tour.",
+      "script": "narrateur|Naël a attendu. Au toboggan, puis avec le pinceau. Puis c'était son tour.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Naël pose le pinceau. Papa range les pots.",
+      "script": "narrateur|Naël pose le pinceau. Papa range les pots.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

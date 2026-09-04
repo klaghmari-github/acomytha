@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.PAY.001-03",
+  "fil_rouge": "Amir veut trouver le cyprès sur la photo d'Italie de tante. Le cadre penche, la poussière cache l'arbre. Ils essuient, ils trouvent la flamme verte.",
+  "title": "Le cyprès d'Amir",
+  "lesson_id": "SOC.PAY.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Amir, maman",
+  "setting": "salle à manger, buffet et cadre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un cadre penche un peu sur le buffet. La poussière danse dans un carré de soleil. La salle sent le bois et le café. Un napperon blanc a un fil qui pend. Amir vit ici, avec maman. Tu as vu le cadre, Amir ? Il penche. C'est la photo de tante. En Italie. En ce moment, Amir se hausse. Le verre du cadre est un peu terne. Tante sourit, toute petite. Derrière elle, un ciel très pâle. Je cherche le cyprès. Celui de la photo. Il est en Italie. Un pays, l'Italie. Amir passe le doigt sur le verre. Une trace ronde apparaît. Je ne le vois pas. La poussière le cache, peut-être. Le cadre glisse d'un cran. Amir le rattrape des deux mains. Il voulait tomber. On le pose à plat. Sur le napperon. Ils posent le cadre tout doucement. Le bois tape un tout petit coup. Tu prends le chiffon ? Oui. Le chiffon sent le citron sec. Amir essuie le verre, en rond. Tante devient plus nette. Le ciel est plus bleu. Et à côté de tante ? Amir plisse les yeux. Un coin reste encore gris. Là, c'est sombre. On essuie encore ce coin ? Oui, maman. Le chiffon passe sur le coin. Une forme mince se lève. Vert très foncé, comme une flamme.",
+      "script": "narrateur|Un cadre penche un peu sur le buffet.\nnarrateur|La poussière danse dans un carré de soleil.\nnarrateur|La salle sent le bois et le café.\nnarrateur|Un napperon blanc a un fil qui pend.\nnarrateur|Amir vit ici, avec maman.\nmaman|Tu as vu le cadre, Amir ?\nenfant-m|Il penche.\nmaman|C'est la photo de tante.\nmaman|En Italie.\nnarrateur|En ce moment, Amir se hausse.\nnarrateur|Le verre du cadre est un peu terne.\nnarrateur|Tante sourit, toute petite.\nnarrateur|Derrière elle, un ciel très pâle.\nenfant-m|Je cherche le cyprès.\nenfant-m|Celui de la photo.\nmaman|Il est en Italie.\nmaman|Un pays, l'Italie.\nnarrateur|Amir passe le doigt sur le verre.\nnarrateur|Une trace ronde apparaît.\nenfant-m|Je ne le vois pas.\nmaman|La poussière le cache, peut-être.\nnarrateur|Le cadre glisse d'un cran.\nnarrateur|Amir le rattrape des deux mains.\nenfant-m|Il voulait tomber.\nmaman|On le pose à plat.\nmaman|Sur le napperon.\nnarrateur|Ils posent le cadre tout doucement.\nnarrateur|Le bois tape un tout petit coup.\nmaman|Tu prends le chiffon ?\nenfant-m|Oui.\nnarrateur|Le chiffon sent le citron sec.\nnarrateur|Amir essuie le verre, en rond.\nnarrateur|Tante devient plus nette.\nenfant-m|Le ciel est plus bleu.\nmaman|Et à côté de tante ?\nnarrateur|Amir plisse les yeux.\nnarrateur|Un coin reste encore gris.\nenfant-m|Là, c'est sombre.\nmaman|On essuie encore ce coin ?\nenfant-m|Oui, maman.\nnarrateur|Le chiffon passe sur le coin.\nnarrateur|Une forme mince se lève.\nnarrateur|Vert très foncé, comme une flamme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un cadre penche un peu sur le buffet. La poussière danse dans un carré de soleil. La salle sent le bois et le café. Un napperon blanc a un fil qui pend. Amir vit ici, avec maman. Tu as vu le cadre, Amir ? Il penche. C'est la photo de tante. En Italie. En ce moment, Amir se hausse. Le verre du cadre est un peu terne. Tante sourit, toute petite. Derrière elle, un ciel très pâle. Je cherche le cyprès. Celui de la photo. Il est en Italie. Un pays, l'Italie. Amir passe le doigt sur le verre. Une trace ronde apparaît. Je ne le vois pas. La poussière le cache, peut-être. Le cadre glisse d'un cran. Amir le rattrape des deux mains. Il voulait tomber. On le pose à plat. Sur le napperon. Ils posent le cadre tout doucement. Le bois tape un tout petit coup. Tu prends le chiffon ? Oui. Le chiffon sent le citron sec. Amir essuie le verre, en rond. Tante devient plus nette. Le ciel est plus bleu. Et à côté de tante ? Amir plisse les yeux. Un coin reste encore gris. Là, c'est sombre. On essuie encore ce coin ? Oui, maman. Le chiffon passe sur le coin. Une forme mince se lève. Vert très foncé, comme une flamme."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir a nommé l'Italie. Il nomme aussi quoi ?",
+      "script": "narrateur|Amir a nommé l'Italie.\nnarrateur|Il nomme aussi quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Amir a nommé l'Italie. Il nomme aussi quoi ?",
+      "expected_answer": "le cyprès",
+      "accepted_examples": "cyprès | le cyprès | un cyprès | montagne | paysage | arbre",
+      "retry_prompt": "Amir a trouvé le cyprès. Il nomme aussi quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le cyprès ! Je l'ai trouvé. Oui. Le cyprès d'Italie. Amir suit l'arbre du doigt. Il est droit, tout étroit. C'est un paysage. Un arbre d'Italie. Il ressemble à une flamme. Tu l'as cherché longtemps. Merci d'avoir essuyé le verre. Amir redresse le cadre. Le buffet le reçoit, bien droit. Il ne penche plus. On le voit, maintenant. Tante, et le cyprès. Un oiseau crie dehors, tout près. Ce n'est pas un cyprès, dehors. Dehors, c'est le pin du jardin. Le cyprès est sur la photo. Amir compare les deux verts. Le pin est plus large. Le cyprès reste une flamme.",
+      "script": "enfant-m|Le cyprès !\nenfant-m|Je l'ai trouvé.\nmaman|Oui.\nmaman|Le cyprès d'Italie.\nnarrateur|Amir suit l'arbre du doigt.\nnarrateur|Il est droit, tout étroit.\nmaman|C'est un paysage.\nmaman|Un arbre d'Italie.\nenfant-m|Il ressemble à une flamme.\nmaman|Tu l'as cherché longtemps.\nmaman|Merci d'avoir essuyé le verre.\nnarrateur|Amir redresse le cadre.\nnarrateur|Le buffet le reçoit, bien droit.\nenfant-m|Il ne penche plus.\nmaman|On le voit, maintenant.\nmaman|Tante, et le cyprès.\nnarrateur|Un oiseau crie dehors, tout près.\nenfant-m|Ce n'est pas un cyprès, dehors.\nmaman|Dehors, c'est le pin du jardin.\nmaman|Le cyprès est sur la photo.\nnarrateur|Amir compare les deux verts.\nnarrateur|Le pin est plus large.\nnarrateur|Le cyprès reste une flamme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le cyprès ! Je l'ai trouvé. Oui. Le cyprès d'Italie. Amir suit l'arbre du doigt. Il est droit, tout étroit. C'est un paysage. Un arbre d'Italie. Il ressemble à une flamme. Tu l'as cherché longtemps. Merci d'avoir essuyé le verre. Amir redresse le cadre. Le buffet le reçoit, bien droit. Il ne penche plus. On le voit, maintenant. Tante, et le cyprès. Un oiseau crie dehors, tout près. Ce n'est pas un cyprès, dehors. Dehors, c'est le pin du jardin. Le cyprès est sur la photo. Amir compare les deux verts. Le pin est plus large. Le cyprès reste une flamme."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tu veux le regarder encore ? Oui. Amir s'assoit sur le tabouret. Le tabouret grince un peu. Le cyprès tient dans le soleil. L'Italie. Et le cyprès. Un pays. Un paysage. Tu as fini de chercher ? Je l'ai. Le napperon a encore son fil. Le cadre, lui, ne penche plus.",
+      "script": "maman|Tu veux le regarder encore ?\nenfant-m|Oui.\nnarrateur|Amir s'assoit sur le tabouret.\nnarrateur|Le tabouret grince un peu.\nnarrateur|Le cyprès tient dans le soleil.\nenfant-m|L'Italie.\nenfant-m|Et le cyprès.\nmaman|Un pays.\nmaman|Un paysage.\nmaman|Tu as fini de chercher ?\nenfant-m|Je l'ai.\nnarrateur|Le napperon a encore son fil.\nnarrateur|Le cadre, lui, ne penche plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Tu veux le regarder encore ? Oui. Amir s'assoit sur le tabouret. Le tabouret grince un peu. Le cyprès tient dans le soleil. L'Italie. Et le cyprès. Un pays. Un paysage. Tu as fini de chercher ? Je l'ai. Le napperon a encore son fil. Le cadre, lui, ne penche plus."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le verre est clair, enfin. Tante reste au soleil du buffet. Le cyprès est trouvé. Il était là, tout le temps. La flamme verte ne bouge plus.",
+      "script": "narrateur|Le verre est clair, enfin.\nnarrateur|Tante reste au soleil du buffet.\nenfant-m|Le cyprès est trouvé.\nmaman|Il était là, tout le temps.\nnarrateur|La flamme verte ne bouge plus.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le verre est clair, enfin. Tante reste au soleil du buffet. Le cyprès est trouvé. Il était là, tout le temps. La flamme verte ne bouge plus."
+    }
+  ]
+}

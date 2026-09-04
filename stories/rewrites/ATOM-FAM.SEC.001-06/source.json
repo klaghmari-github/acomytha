@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.SEC.001-06",
+  "fil_rouge": "",
+  "title": "La surprise gentille de Domitille",
+  "lesson_id": "FAM.SEC.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Domitille, maman, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est bientôt l'anniversaire de papa. Domitille plie un papier. Maman aide. C'est une surprise gentille. On la garde un peu. Domitille cache le papier dans une boîte. La boîte est dans le placard. Papa passe. Domitille sourit. Elle garde un peu. Puis on dit. Maintenant, on révèle. Domitille ouvre la boîte. Elle tend le papier. C'est pour toi, papa. Papa rit. Il ouvre le papier. C'est un soleil. C'était une surprise gentille. On l'a gardée un peu. Puis on dit. Domitille tape des mains. Papa dit merci.",
+      "script": "narrateur|C'est bientôt l'anniversaire de papa. Domitille plie un papier. Maman aide.\nmaman|C'est une surprise gentille. On la garde un peu.\nnarrateur|Domitille cache le papier dans une boîte. La boîte est dans le placard. Papa passe. Domitille sourit. Elle garde un peu. Puis on dit.\nmaman|Maintenant, on révèle.\nnarrateur|Domitille ouvre la boîte. Elle tend le papier.\nenfant-f|C'est pour toi, papa. Papa rit. Il ouvre le papier. C'est un soleil. C'était une surprise gentille. On l'a gardée un peu.\nnarrateur|Puis on dit. Domitille tape des mains. Papa dit merci.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Domitille cache un papier. C'est quoi ?",
+      "script": "narrateur|Domitille cache un papier. C'est quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Domitille a gardé un peu. Puis on dit. C'était une surprise gentille pour papa.",
+      "script": "narrateur|Domitille a gardé un peu. Puis on dit. C'était une surprise gentille pour papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa accroche le soleil. Domitille boit un verre d'eau.",
+      "script": "narrateur|Papa accroche le soleil. Domitille boit un verre d'eau.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

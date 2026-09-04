@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-VIV.ANI.002-06",
+  "fil_rouge": "",
+  "title": "Étienne dit les trois noms à la ferme",
+  "lesson_id": "VIV.ANI.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Étienne, papa",
+  "setting": "ferme",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Étienne est à la ferme avec papa. Un coq chante. Une poule picore. Un poussin suit. Coq, poule, poussin. Ce sont trois noms. Étienne répète. Parce qu'il a nommé, il retient. Plus loin, un cheval hennit. Une jument marche. Un poulain suit. Cheval, jument, poulain. Ce sont trois noms de la famille. Étienne dit les trois noms. Coq, poule, poussin. Cheval, jument, poulain. Papa sourit. Étienne sent l'herbe.",
+      "script": "narrateur|Étienne est à la ferme avec papa. Un coq chante. Une poule picore. Un poussin suit.\npapa|Coq, poule, poussin. Ce sont trois noms.\nnarrateur|Étienne répète. Parce qu'il a nommé, il retient. Plus loin, un cheval hennit. Une jument marche. Un poulain suit.\npapa|Cheval, jument, poulain. Ce sont trois noms de la famille.\nnarrateur|Étienne dit les trois noms. Coq, poule, poussin. Cheval, jument, poulain. Papa sourit. Étienne sent l'herbe.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le coq, la poule, et le petit. Quel est le petit ?",
+      "script": "narrateur|Le coq, la poule, et le petit. Quel est le petit ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Étienne a dit les trois noms. Coq, poule, poussin. Cheval, jument, poulain.",
+      "script": "narrateur|Étienne a dit les trois noms. Coq, poule, poussin. Cheval, jument, poulain.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Étienne caresse l'herbe. Papa tient sa main.",
+      "script": "narrateur|Étienne caresse l'herbe. Papa tient sa main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

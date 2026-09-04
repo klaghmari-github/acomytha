@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-04",
+  "fil_rouge": "",
+  "title": "Apolline éteint et pétrit",
+  "lesson_id": "SAN.ECR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Apolline, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Apolline est dans la cuisine. Maman est là. Un petit écran est allumé. Des couleurs bougent. Apolline entend une chanson. Fini. L'adulte dit fini. Apolline écoute. Elle va éteindre. Apolline éteint. L'écran devient noir. Elle pose la tablette. On prend un autre jeu. Apolline choisit la pâte. La pâte est molle. Elles pétrissent. La farine sent bon. L'écran est éteint. Un autre jeu, c'est bien. Maman sourit. Elles font un petit pain. Puis elles rangent. Apolline a éteint. Elle a choisi un autre jeu.",
+      "script": "narrateur|Apolline est dans la cuisine. Maman est là. Un petit écran est allumé. Des couleurs bougent. Apolline entend une chanson.\nmaman|Fini. L'adulte dit fini.\nnarrateur|Apolline écoute. Elle va éteindre. Apolline éteint. L'écran devient noir. Elle pose la tablette.\nmaman|On prend un autre jeu.\nnarrateur|Apolline choisit la pâte. La pâte est molle. Elles pétrissent. La farine sent bon.\nenfant-f|L'écran est éteint.\nnarrateur|Un autre jeu, c'est bien. Maman sourit. Elles font un petit pain. Puis elles rangent. Apolline a éteint. Elle a choisi un autre jeu.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Apolline ?",
+      "script": "narrateur|Maman dit fini. Que fait Apolline ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maman a dit fini. Apolline a éteint. Elle a pris un autre jeu. La pâte, c'était bien.",
+      "script": "narrateur|Maman a dit fini. Apolline a éteint. Elle a pris un autre jeu. La pâte, c'était bien.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le petit pain repose. Apolline dit merci à maman. La cuisine est calme.",
+      "script": "narrateur|Le petit pain repose. Apolline dit merci à maman. La cuisine est calme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

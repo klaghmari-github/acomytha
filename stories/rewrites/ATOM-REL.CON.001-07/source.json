@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.CON.001-07",
+  "fil_rouge": "",
+  "title": "Hadrien dit stop au parc",
+  "lesson_id": "REL.CON.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Hadrien, papa",
+  "setting": "parc, bac à sable puis balançoires",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hadrien joue au parc. Le sable est tiède. Un camarade le bouscule près du bac. Hadrien sent son épaule. Stop. Il recule. Il peut s'éloigner. Il s'éloigne vers le banc. Papa est le parent au parc. Hadrien va vers papa. J'ai dit stop. Papa l'écoute. Hadrien souffle. Plus tard, près des balançoires, un camarade le bouscule encore. Même leçon, autre jeu. Stop. Il peut s'éloigner. Il rejoint le parent au parc. Papa est sur le banc. Hadrien prend sa main. Tu as bien fait. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "script": "narrateur|Hadrien joue au parc. Le sable est tiède. Un camarade le bouscule près du bac. Hadrien sent son épaule.\nnarrateur|Stop. Il recule. Il peut s'éloigner.\nnarrateur|Il s'éloigne vers le banc. Papa est le parent au parc. Hadrien va vers papa.\nnarrateur|J'ai dit stop. Papa l'écoute.\nnarrateur|Hadrien souffle. Plus tard, près des balançoires, un camarade le bouscule encore. Même leçon, autre jeu.\nenfant-m|Stop. Il peut s'éloigner. Il rejoint le parent au parc. Papa est sur le banc.\nnarrateur|Hadrien prend sa main.\npapa|Tu as bien fait. On dit stop. On s'éloigne. On va vers papa ou maman, le parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Un camarade bouscule Hadrien. Que fait-il ?",
+      "script": "narrateur|Un camarade bouscule Hadrien. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hadrien a dit stop. Au bac, puis aux balançoires. Il a pu s'éloigner. Il a rejoint le parent au parc.",
+      "script": "narrateur|Hadrien a dit stop. Au bac, puis aux balançoires. Il a pu s'éloigner. Il a rejoint le parent au parc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Hadrien reste près du banc. Papa lui tient la main.",
+      "script": "narrateur|Hadrien reste près du banc. Papa lui tient la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

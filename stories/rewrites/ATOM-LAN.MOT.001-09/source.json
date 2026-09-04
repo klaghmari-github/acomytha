@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-09",
+  "fil_rouge": "",
+  "title": "Violette classe au salon",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Violette, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Violette est dans le salon avec maman. Sur le tapis : une pomme, une banane, une chaussette, un bonnet. On nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les habits. Violette met la pomme et la banane dans le panier. Catégorie des fruits. Elle met la chaussette et le bonnet sur la chaise. Catégorie des habits.",
+      "script": "narrateur|Violette est dans le salon avec maman. Sur le tapis : une pomme, une banane, une chaussette, un bonnet.\nmaman|On nomme. On classe.\nnarrateur|Une catégorie pour les fruits. Une catégorie pour les habits. Violette met la pomme et la banane dans le panier. Catégorie des fruits. Elle met la chaussette et le bonnet sur la chaise. Catégorie des habits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Violette range pomme et chaussette. Que fait-elle ?",
+      "script": "narrateur|Violette range pomme et chaussette. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Violette a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "script": "narrateur|Violette a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Violette croque la pomme. Maman plie le bonnet.",
+      "script": "narrateur|Violette croque la pomme. Maman plie le bonnet.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

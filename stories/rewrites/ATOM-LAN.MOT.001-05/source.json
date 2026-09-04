@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-05",
+  "fil_rouge": "",
+  "title": "Honorine classe fruits et habits",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Honorine, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Honorine est dans la cuisine. Papa pose un panier. Dedans, il y a une pomme. Une poire. Un bonnet. Une chaussette. On nomme. On classe. Les fruits ensemble. Les habits ensemble. La pomme, c'est un fruit. La poire, c'est un fruit. Honorine les met ensemble. Le bonnet, c'est un habit. La chaussette, c'est un habit. Fruits, c'est une catégorie. Habits, c'est une catégorie. Honorine répète : catégorie. Elle pose les fruits. Elle pose les habits.",
+      "script": "narrateur|Honorine est dans la cuisine. Papa pose un panier. Dedans, il y a une pomme. Une poire. Un bonnet. Une chaussette.\npapa|On nomme. On classe.\nnarrateur|Les fruits ensemble. Les habits ensemble. La pomme, c'est un fruit. La poire, c'est un fruit. Honorine les met ensemble. Le bonnet, c'est un habit. La chaussette, c'est un habit.\npapa|Fruits, c'est une catégorie. Habits, c'est une catégorie.\nnarrateur|Honorine répète : catégorie. Elle pose les fruits. Elle pose les habits.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Honorine range pomme et bonnet. Que fait-elle ?",
+      "script": "narrateur|Honorine range pomme et bonnet. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Honorine a nommé. Elle a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "script": "narrateur|Honorine a nommé. Elle a classé. Une catégorie pour les fruits. Une catégorie pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Honorine croque la pomme. Papa plie le bonnet.",
+      "script": "narrateur|Honorine croque la pomme. Papa plie le bonnet.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

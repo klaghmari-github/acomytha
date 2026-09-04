@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-EMO.LEX.001-05",
+  "fil_rouge": "",
+  "title": "Ninon est contente du dessin",
+  "lesson_id": "EMO.LEX.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ninon, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ninon est dans le salon avec papa. Elle a fini un dessin. Un soleil jaune. Une petite maison. Ninon sent ses joues chaudes. Son ventre est léger. Un sourire arrive. Je suis contente. C'est de la joie. Ninon tend le dessin. On peut partager. Papa le regarde. Il sourit. Plus tard, maman rentre. Ninon montre le dessin à maman aussi. Elle partage sa joie sans bousculer. Merci Ninon. Ninon dit encore : je suis contente. La joie est là, dans le salon. Papa et maman sont près d'elle.",
+      "script": "narrateur|Ninon est dans le salon avec papa. Elle a fini un dessin. Un soleil jaune. Une petite maison. Ninon sent ses joues chaudes. Son ventre est léger. Un sourire arrive.\nenfant-f|Je suis contente.\npapa|C'est de la joie.\nnarrateur|Ninon tend le dessin.\nnarrateur|On peut partager. Papa le regarde.\nnarrateur|Il sourit. Plus tard, maman rentre. Ninon montre le dessin à maman aussi. Elle partage sa joie sans bousculer.\nmaman|Merci Ninon.\nnarrateur|Ninon dit encore : je suis contente. La joie est là, dans le salon. Papa et maman sont près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ninon sourit. Que dit-elle ?",
+      "script": "narrateur|Ninon sourit. Que dit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ninon a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "script": "narrateur|Ninon a nommé sa joie. Elle a partagé avec papa et maman. Être content, c'est bien.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ninon range ses crayons. Le salon est calme. Papa lui prend la main.",
+      "script": "narrateur|Ninon range ses crayons. Le salon est calme. Papa lui prend la main.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

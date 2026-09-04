@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.ADU.001-06",
+  "fil_rouge": "",
+  "title": "Céline va vers maman à la serre",
+  "lesson_id": "SEC.ADU.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Céline, maman, papa, la maîtresse",
+  "setting": "serre du jardin municipal",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Céline est à la serre. C'est la sortie de l'école. La maîtresse attend près de la porte. Maman est au rayon des pots. Papa doit les rejoindre. Céline a regardé les graines. Elle lève les yeux. Elle se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Céline marche vers les pots. Ses pieds restent près de maman. Ses mains tiennent le manteau de maman. Elle voit maman. Maman a le panier. Céline va vers maman. Me voici. Tu vas vers papa, maman, ou la maîtresse. Céline est calme. L'air sent la terre humide.",
+      "script": "narrateur|Céline est à la serre. C'est la sortie de l'école. La maîtresse attend près de la porte. Maman est au rayon des pots. Papa doit les rejoindre. Céline a regardé les graines. Elle lève les yeux. Elle se souvient. On va vers papa. On va vers maman. On va vers la maîtresse. Céline marche vers les pots. Ses pieds restent près de maman. Ses mains tiennent le manteau de maman. Elle voit maman. Maman a le panier. Céline va vers maman.\nmaman|Me voici. Tu vas vers papa, maman, ou la maîtresse.\nnarrateur|Céline est calme. L'air sent la terre humide.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Céline cherche quelqu'un. Vers qui va-t-elle ?",
+      "script": "narrateur|Céline cherche quelqu'un. Vers qui va-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Céline a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "script": "narrateur|Céline a cherché maman. Papa et la maîtresse sont aussi des adultes connus.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Céline tient le manteau de maman. Elles paient un petit pot.",
+      "script": "narrateur|Céline tient le manteau de maman. Elles paient un petit pot.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

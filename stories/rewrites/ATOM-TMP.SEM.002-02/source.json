@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-TMP.SEM.002-02",
+  "fil_rouge": "",
+  "title": "Ava nomme mercredi et le week-end",
+  "lesson_id": "TMP.SEM.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Ava, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ava est à la cuisine. Papa accroche un calendrier. Lundi, mardi, jeudi, vendredi, c'est l'école. Mercredi, Ava reste à la maison. Elle joue avec papa. Samedi, Ava reste aussi. Dimanche encore. Samedi et dimanche, c'est le week-end. Ava touche mercredi. Elle touche samedi. Elle touche dimanche. Mercredi, samedi, dimanche, on est à la maison.",
+      "script": "narrateur|Ava est à la cuisine. Papa accroche un calendrier.\npapa|Lundi, mardi, jeudi, vendredi, c'est l'école. Mercredi, Ava reste à la maison. Elle joue avec papa. Samedi, Ava reste aussi. Dimanche encore.\npapa|Samedi et dimanche, c'est le week-end.\nnarrateur|Ava touche mercredi. Elle touche samedi. Elle touche dimanche.\npapa|Mercredi, samedi, dimanche, on est à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ava est à la maison le mercredi. Quels autres jours aussi ?",
+      "script": "narrateur|Ava est à la maison le mercredi. Quels autres jours aussi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ava a nommé mercredi. Elle a nommé samedi et dimanche. C'est le week-end.",
+      "script": "narrateur|Ava a nommé mercredi. Elle a nommé samedi et dimanche. C'est le week-end.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le calendrier. Ava dessine un soleil.",
+      "script": "narrateur|Papa range le calendrier. Ava dessine un soleil.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

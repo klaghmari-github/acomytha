@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.FOOT.001-07",
+  "fil_rouge": "",
+  "title": "Fabrice vise le but au parc",
+  "lesson_id": "JEU.FOOT.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Fabrice, papa",
+  "setting": "parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fabrice est au parc. L'herbe est tiède. Papa est là. Papa pose deux gourdes. C'est le but. Papa montre un rectangle. Voici l'espace montré. On reste dans l'espace montré. Fabrice touche le ballon. Le ballon est souple. On va passer. Fabrice passe le ballon. Papa rend le ballon. Fabrice vise le but. Le ballon roule au fond. Les pieds restent dans l'espace montré. Bien. Dans l'espace montré. Fabrice sourit.",
+      "script": "narrateur|Fabrice est au parc. L'herbe est tiède. Papa est là. Papa pose deux gourdes. C'est le but. Papa montre un rectangle. Voici l'espace montré. On reste dans l'espace montré. Fabrice touche le ballon. Le ballon est souple.\npapa|On va passer.\nnarrateur|Fabrice passe le ballon. Papa rend le ballon. Fabrice vise le but. Le ballon roule au fond. Les pieds restent dans l'espace montré.\npapa|Bien.\nnarrateur|Dans l'espace montré. Fabrice sourit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Fabrice joue au foot. Que fait-il ?",
+      "script": "narrateur|Fabrice joue au foot. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fabrice a passé le ballon. Il a visé le but. Dans l'espace montré.",
+      "script": "narrateur|Fabrice a passé le ballon. Il a visé le but. Dans l'espace montré.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range les gourdes. Fabrice boit une gorgée.",
+      "script": "narrateur|Papa range les gourdes. Fabrice boit une gorgée.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

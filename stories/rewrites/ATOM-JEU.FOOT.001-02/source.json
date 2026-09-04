@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-JEU.FOOT.001-02",
+  "fil_rouge": "",
+  "title": "Inès vise le but dans la cour",
+  "lesson_id": "JEU.FOOT.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Inès, maman",
+  "setting": "cour d'école",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Inès et maman sont dans la cour. Maman pose deux sacs. C'est le but. Elle trace un petit rectangle. Voici l'espace montré. On reste dans l'espace montré. Inès touche le ballon du pied. On va passer le ballon. Puis on vise le but. Inès passe le ballon. Maman le rend. Inès pousse le ballon vers le but. Le ballon roule entre les sacs. Les pieds restent dans l'espace montré par maman.",
+      "script": "narrateur|Inès et maman sont dans la cour. Maman pose deux sacs. C'est le but. Elle trace un petit rectangle.\nmaman|Voici l'espace montré. On reste dans l'espace montré.\nnarrateur|Inès touche le ballon du pied.\nmaman|On va passer le ballon.\nnarrateur|Puis on vise le but. Inès passe le ballon. Maman le rend. Inès pousse le ballon vers le but. Le ballon roule entre les sacs. Les pieds restent dans l'espace montré par maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Inès joue au foot. Que fait-elle ?",
+      "script": "narrateur|Inès joue au foot. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Inès a passé le ballon. Elle a visé le but. Elle est restée dans l'espace montré.",
+      "script": "narrateur|Inès a passé le ballon. Elle a visé le but. Elle est restée dans l'espace montré.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range les sacs. Inès boit une gorgée.",
+      "script": "narrateur|Maman range les sacs. Inès boit une gorgée.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-TMP.MET.001-07",
+  "fil_rouge": "Mila veut porter le grain aux poules. L'orage tape le poulailler. Elle met manteau et bottes. Un trou de soleil s'ouvre. Les poules sortent. Le grain tombe dans l'auge mouillée.",
+  "title": "Le trou de soleil",
+  "lesson_id": "TMP.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Mila, maman",
+  "setting": "maison, jardin, poulailler après l'orage",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le toit du poulailler sonne comme un tambour. Les gouttes frappent le zinc, fort. Une poule grise s'abrite sous la planche. Elles ont faim, maman. L'orage passe encore. On attend un peu. La cuisine sent le grain dans le seau. Le seau est rouge, un peu ébréché. Je veux le porter. Oui. Quand le ciel s'ouvre. La vitre est toute striée. Un éclair lointain blanchit le cerisier. J'ai froid aux bras. Tu prends le manteau. Il fait froid. Le manteau vert pend près des crochets. Mila glisse les manches. Le tissu sent encore la pluie d'hier. Le zip, tout au bout. Mila tire le zip. Ça fait zzz, puis ça coince. Il ne veut pas. Doucement. Maman aide le curseur. Le zip part. Il est passé. Il pleut encore un peu. Tu mets les bottes. Les bottes bleues attendent sous le banc. Mila y pose les pieds. La semelle colle au talon. Tu as tes bottes ? Oui, maman. En ce moment, un trou de soleil perce le nuage. Un carré clair tombe sur l'herbe. Le ciel a un trou ! L'orage s'en va. On peut aller aux poules. Maman prend le seau de grain. Mila tient l'anse avec elle. La porte du jardin craque.",
+      "script": "narrateur|Le toit du poulailler sonne comme un tambour.\nnarrateur|Les gouttes frappent le zinc, fort.\nnarrateur|Une poule grise s'abrite sous la planche.\nenfant-f|Elles ont faim, maman.\nmaman|L'orage passe encore.\nmaman|On attend un peu.\nnarrateur|La cuisine sent le grain dans le seau.\nnarrateur|Le seau est rouge, un peu ébréché.\nenfant-f|Je veux le porter.\nmaman|Oui.\nmaman|Quand le ciel s'ouvre.\nnarrateur|La vitre est toute striée.\nnarrateur|Un éclair lointain blanchit le cerisier.\nenfant-f|J'ai froid aux bras.\nmaman|Tu prends le manteau.\nmaman|Il fait froid.\nnarrateur|Le manteau vert pend près des crochets.\nnarrateur|Mila glisse les manches.\nnarrateur|Le tissu sent encore la pluie d'hier.\nmaman|Le zip, tout au bout.\nnarrateur|Mila tire le zip.\nnarrateur|Ça fait zzz, puis ça coince.\nenfant-f|Il ne veut pas.\nmaman|Doucement.\nnarrateur|Maman aide le curseur.\nnarrateur|Le zip part.\nenfant-f|Il est passé.\nmaman|Il pleut encore un peu.\nmaman|Tu mets les bottes.\nnarrateur|Les bottes bleues attendent sous le banc.\nnarrateur|Mila y pose les pieds.\nnarrateur|La semelle colle au talon.\nmaman|Tu as tes bottes ?\nenfant-f|Oui, maman.\nnarrateur|En ce moment, un trou de soleil perce le nuage.\nnarrateur|Un carré clair tombe sur l'herbe.\nenfant-f|Le ciel a un trou !\nmaman|L'orage s'en va.\nmaman|On peut aller aux poules.\nnarrateur|Maman prend le seau de grain.\nnarrateur|Mila tient l'anse avec elle.\nnarrateur|La porte du jardin craque.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le toit du poulailler sonne comme un tambour. Les gouttes frappent le zinc, fort. Une poule grise s'abrite sous la planche. Elles ont faim, maman. L'orage passe encore. On attend un peu. La cuisine sent le grain dans le seau. Le seau est rouge, un peu ébréché. Je veux le porter. Oui. Quand le ciel s'ouvre. La vitre est toute striée. Un éclair lointain blanchit le cerisier. J'ai froid aux bras. Tu prends le manteau. Il fait froid. Le manteau vert pend près des crochets. Mila glisse les manches. Le tissu sent encore la pluie d'hier. Le zip, tout au bout. Mila tire le zip. Ça fait zzz, puis ça coince. Il ne veut pas. Doucement. Maman aide le curseur. Le zip part. Il est passé. Il pleut encore un peu. Tu mets les bottes. Les bottes bleues attendent sous le banc. Mila y pose les pieds. La semelle colle au talon. Tu as tes bottes ? Oui, maman. En ce moment, un trou de soleil perce le nuage. Un carré clair tombe sur l'herbe. Le ciel a un trou ! L'orage s'en va. On peut aller aux poules. Maman prend le seau de grain. Mila tient l'anse avec elle. La porte du jardin craque."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Il fait froid. Il pleut. Que prend Mila ?",
+      "script": "narrateur|Il fait froid.\nnarrateur|Il pleut.\nnarrateur|Que prend Mila ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Il fait froid. Il pleut. Que prend Mila ?",
+      "expected_answer": "manteau",
+      "accepted_examples": "manteau | le manteau | bottes | les bottes",
+      "retry_prompt": "Froid : manteau. Pluie : bottes. Que prend-elle ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "L'herbe mouillée chatouille les bottes. Ça fait floc, floc. Une flaque étroite coupe le sentier. Je passe. Avec tes bottes, oui. Mila enjambe l'eau. Une goutte tombe encore du cerisier. Elle tape le manteau. Je suis au chaud. Le manteau travaille. Le poulailler sent la paille mouillée. La poule grise sort la tête. Coucou. Elles t'attendaient. Mila pose le seau près de l'auge. Le grain glisse. Ça fait chh sur le bois mouillé. Tu verses bien. Pour elles.",
+      "script": "narrateur|L'herbe mouillée chatouille les bottes.\nnarrateur|Ça fait floc, floc.\nnarrateur|Une flaque étroite coupe le sentier.\nenfant-f|Je passe.\nmaman|Avec tes bottes, oui.\nnarrateur|Mila enjambe l'eau.\nnarrateur|Une goutte tombe encore du cerisier.\nnarrateur|Elle tape le manteau.\nenfant-f|Je suis au chaud.\nmaman|Le manteau travaille.\nnarrateur|Le poulailler sent la paille mouillée.\nnarrateur|La poule grise sort la tête.\nenfant-f|Coucou.\nmaman|Elles t'attendaient.\nnarrateur|Mila pose le seau près de l'auge.\nnarrateur|Le grain glisse.\nnarrateur|Ça fait chh sur le bois mouillé.\nmaman|Tu verses bien.\nenfant-f|Pour elles.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "L'herbe mouillée chatouille les bottes. Ça fait floc, floc. Une flaque étroite coupe le sentier. Je passe. Avec tes bottes, oui. Mila enjambe l'eau. Une goutte tombe encore du cerisier. Elle tape le manteau. Je suis au chaud. Le manteau travaille. Le poulailler sent la paille mouillée. La poule grise sort la tête. Coucou. Elles t'attendaient. Mila pose le seau près de l'auge. Le grain glisse. Ça fait chh sur le bois mouillé. Tu verses bien. Pour elles."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Trois poules viennent, encore humides. Leurs plumes brillent. Une rouge picore tout près de la botte. Elle n'a pas peur. Tu es restée douce. Merci, Mila. Le trou de soleil s'élargit. Une vapeur monte de l'auge. Ça fume. L'eau s'en va. Mila recule d'un pas. Une botte glisse un peu dans la boue. Doucement. Je tiens. La poule grise rentre sous la planche. Puis elle ressort, le jabot plein. On rentre ? Encore une minute. D accord. Un dernier grain roule vers l'herbe.",
+      "script": "narrateur|Trois poules viennent, encore humides.\nnarrateur|Leurs plumes brillent.\nnarrateur|Une rouge picore tout près de la botte.\nenfant-f|Elle n'a pas peur.\nmaman|Tu es restée douce.\nmaman|Merci, Mila.\nnarrateur|Le trou de soleil s'élargit.\nnarrateur|Une vapeur monte de l'auge.\nenfant-f|Ça fume.\nmaman|L'eau s'en va.\nnarrateur|Mila recule d'un pas.\nnarrateur|Une botte glisse un peu dans la boue.\nmaman|Doucement.\nenfant-f|Je tiens.\nnarrateur|La poule grise rentre sous la planche.\nnarrateur|Puis elle ressort, le jabot plein.\nmaman|On rentre ?\nenfant-f|Encore une minute.\nmaman|D accord.\nnarrateur|Un dernier grain roule vers l'herbe.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Trois poules viennent, encore humides. Leurs plumes brillent. Une rouge picore tout près de la botte. Elle n'a pas peur. Tu es restée douce. Merci, Mila. Le trou de soleil s'élargit. Une vapeur monte de l'auge. Ça fume. L'eau s'en va. Mila recule d'un pas. Une botte glisse un peu dans la boue. Doucement. Je tiens. La poule grise rentre sous la planche. Puis elle ressort, le jabot plein. On rentre ? Encore une minute. D accord. Un dernier grain roule vers l'herbe."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Mila referme le loquet du poulailler. Le zinc ne sonne plus. Le tambour s'est tu. L'orage est parti. Elles marchent vers la maison. Le manteau vert s'égoutte un peu. Les bottes laissent deux traces sombres. Tu poses les bottes près du banc ? Oui. Le seau vide sonne, léger. Le trou de soleil reste sur le cerisier. Une poule chante, tout bas.",
+      "script": "narrateur|Mila referme le loquet du poulailler.\nnarrateur|Le zinc ne sonne plus.\nenfant-f|Le tambour s'est tu.\nmaman|L'orage est parti.\nnarrateur|Elles marchent vers la maison.\nnarrateur|Le manteau vert s'égoutte un peu.\nnarrateur|Les bottes laissent deux traces sombres.\nmaman|Tu poses les bottes près du banc ?\nenfant-f|Oui.\nnarrateur|Le seau vide sonne, léger.\nnarrateur|Le trou de soleil reste sur le cerisier.\nnarrateur|Une poule chante, tout bas.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Mila referme le loquet du poulailler. Le zinc ne sonne plus. Le tambour s'est tu. L'orage est parti. Elles marchent vers la maison. Le manteau vert s'égoutte un peu. Les bottes laissent deux traces sombres. Tu poses les bottes près du banc ? Oui. Le seau vide sonne, léger. Le trou de soleil reste sur le cerisier. Une poule chante, tout bas."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.MET.001-05",
+  "fil_rouge": "",
+  "title": "Héloïse nomme les métiers",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Héloïse, papa, maman",
+  "setting": "quartier",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Héloïse marche avec papa. Ils voient la boulangerie. Le boulanger a un métier. Son geste utile, c'est le pain. Ils voient le cabinet. Le médecin a un métier. Son geste utile, c'est soigner. Ils voient l'école. La maîtresse a un métier. Son geste utile, c'est raconter. Un bus passe. Le chauffeur a un métier. Son geste utile, c'est conduire. Métier. Un geste utile. Maman les rejoint. Héloïse répète les métiers.",
+      "script": "narrateur|Héloïse marche avec papa. Ils voient la boulangerie. Le boulanger a un métier. Son geste utile, c'est le pain. Ils voient le cabinet. Le médecin a un métier. Son geste utile, c'est soigner. Ils voient l'école. La maîtresse a un métier. Son geste utile, c'est raconter. Un bus passe. Le chauffeur a un métier. Son geste utile, c'est conduire.\nenfant-f|Métier.\npapa|Un geste utile. Maman les rejoint.\nnarrateur|Héloïse répète les métiers.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le boulanger, le médecin, la maîtresse. Qu'est-ce que c'est ?",
+      "script": "narrateur|Le boulanger, le médecin, la maîtresse. Qu'est-ce que c'est ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Héloïse a nommé les métiers. Chaque métier a un geste utile. Papa et maman étaient là.",
+      "script": "narrateur|Héloïse a nommé les métiers. Chaque métier a un geste utile. Papa et maman étaient là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Héloïse prend la main de maman. Ils rentrent.",
+      "script": "narrateur|Héloïse prend la main de maman. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

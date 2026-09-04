@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-FAM.VER.001-03",
+  "fil_rouge": "",
+  "title": "Zoé raconte le verre d'eau",
+  "lesson_id": "FAM.VER.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Zoé, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Zoé est dans le salon. Un verre d'eau a glissé. L'eau est sur la table. Zoé a un nœud au ventre. Papa est près de la fenêtre. Maman est dans la cuisine. Zoé va vers papa. Elle va raconter. Papa, le verre a glissé. Papa l'écoute. Maman arrive. Zoé raconte aussi à maman. Merci d'avoir su raconter. On le dit à papa ou maman. Zoé aide à essuyer. Le nœud se desserre.",
+      "script": "narrateur|Zoé est dans le salon. Un verre d'eau a glissé. L'eau est sur la table. Zoé a un nœud au ventre. Papa est près de la fenêtre. Maman est dans la cuisine. Zoé va vers papa. Elle va raconter.\nnarrateur|Papa, le verre a glissé. Papa l'écoute. Maman arrive.\nnarrateur|Zoé raconte aussi à maman.\npapa|Merci d'avoir su raconter. On le dit à papa ou maman.\nnarrateur|Zoé aide à essuyer. Le nœud se desserre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le verre a glissé. Que fait Zoé ?",
+      "script": "narrateur|Le verre a glissé. Que fait Zoé ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Zoé a raconté. Papa et maman ont écouté.",
+      "script": "narrateur|Zoé a raconté. Papa et maman ont écouté.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa pose un nouveau verre. Zoé sourit.",
+      "script": "narrateur|Papa pose un nouveau verre. Zoé sourit.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-05",
+  "fil_rouge": "",
+  "title": "Adèle boit un verre d'eau",
+  "lesson_id": "SAN.ALI.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Adèle, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le goûter. Adèle s'assoit à table. Maman est là. Maman coupe une pomme. Adèle a soif. Sa bouche est sèche. Tu as soif. Adèle hoche la tête. Maman pose un verre. Le verre est petit. Dedans, il y a de l'eau. Adèle prend le verre d'eau. Elle boit une gorgée. L'eau est fraîche. Merci maman. Quand on a soif, on boit de l'eau. On boit dans un verre. Adèle pose le verre. Elle croque un morceau de pomme.",
+      "script": "narrateur|C'est le goûter. Adèle s'assoit à table. Maman est là. Maman coupe une pomme. Adèle a soif. Sa bouche est sèche.\nmaman|Tu as soif.\nnarrateur|Adèle hoche la tête. Maman pose un verre. Le verre est petit. Dedans, il y a de l'eau. Adèle prend le verre d'eau. Elle boit une gorgée. L'eau est fraîche.\nenfant-f|Merci maman. Quand on a soif, on boit de l'eau. On boit dans un verre.\nnarrateur|Adèle pose le verre. Elle croque un morceau de pomme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Adèle a soif. Que boit-elle ?",
+      "script": "narrateur|Adèle a soif. Que boit-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Adèle a eu soif. Elle a pris le verre. Elle a bu de l'eau.",
+      "script": "narrateur|Adèle a eu soif. Elle a pris le verre. Elle a bu de l'eau.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Adèle pose le verre. Maman range la pomme.",
+      "script": "narrateur|Adèle pose le verre. Maman range la pomme.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

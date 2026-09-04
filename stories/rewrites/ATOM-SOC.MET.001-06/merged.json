@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.MET.001-06",
+  "fil_rouge": "Raphaël veut voir les filets au port. Une gerbe d'eau saute. Ils reculent derrière la rambarde. Puis le boulanger du port glisse un pain chaud dans le papier.",
+  "title": "Les filets du port",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, papa, maman",
+  "setting": "quai, filets, rambarde, boutique bleue du pain, banc face à l'eau",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les filets sentent le sel et l'eau. Ils pendent le long du quai, encore goutte à goutte. Une mouette crie au-dessus du mât. Raphaël vit près d'ici, avec papa et maman. Le bois du quai est gris, piqué de sel. Je veux voir les filets, papa. On reste sur le quai. Près de moi. En ce moment, Raphaël pose les deux mains sur la rambarde. Le métal est froid, un peu collant. Un marin tire un filet, lentement. L'eau tombe en perles, sur le bois. Il est fort. C'est le marin. C'est son métier. Il ramène les filets. Oui. Le filet glisse, trop vite, un instant. Une gerbe d'eau saute vers les chaussures. Oh. On recule d'un pas. On reste derrière la rambarde ? Oui. Raphaël essuie une goutte sur sa manche. Ça sent encore plus le sel. Mes mains sont mouillées. Le marin travaille dans l'eau. Toi, tu regardes. Le marin range le filet en rond, tout serré. Une écaille brille, puis elle disparaît. Merci, marin ! Merci. Bravo, Raphaël. Tu as regardé sans te pencher trop. J'ai faim, maintenant. Le boulanger du port est ouvert. Du pain, avec le sel encore dans l'air.",
+      "script": "narrateur|Les filets sentent le sel et l'eau.\nnarrateur|Ils pendent le long du quai, encore goutte à goutte.\nnarrateur|Une mouette crie au-dessus du mât.\nnarrateur|Raphaël vit près d'ici, avec papa et maman.\nnarrateur|Le bois du quai est gris, piqué de sel.\nenfant-m|Je veux voir les filets, papa.\npapa|On reste sur le quai.\nmaman|Près de moi.\nnarrateur|En ce moment, Raphaël pose les deux mains sur la rambarde.\nnarrateur|Le métal est froid, un peu collant.\nnarrateur|Un marin tire un filet, lentement.\nnarrateur|L'eau tombe en perles, sur le bois.\nenfant-m|Il est fort.\npapa|C'est le marin.\npapa|C'est son métier.\nenfant-m|Il ramène les filets.\nmaman|Oui.\nnarrateur|Le filet glisse, trop vite, un instant.\nnarrateur|Une gerbe d'eau saute vers les chaussures.\nmaman|Oh.\nmaman|On recule d'un pas.\npapa|On reste derrière la rambarde ?\nenfant-m|Oui.\nnarrateur|Raphaël essuie une goutte sur sa manche.\nnarrateur|Ça sent encore plus le sel.\nenfant-m|Mes mains sont mouillées.\nmaman|Le marin travaille dans l'eau.\npapa|Toi, tu regardes.\nnarrateur|Le marin range le filet en rond, tout serré.\nnarrateur|Une écaille brille, puis elle disparaît.\nenfant-m|Merci, marin !\npapa|Merci.\nmaman|Bravo, Raphaël.\nmaman|Tu as regardé sans te pencher trop.\nenfant-m|J'ai faim, maintenant.\npapa|Le boulanger du port est ouvert.\nmaman|Du pain, avec le sel encore dans l'air.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les filets sentent le sel et l'eau. Ils pendent le long du quai, encore goutte à goutte. Une mouette crie au-dessus du mât. Raphaël vit près d'ici, avec papa et maman. Le bois du quai est gris, piqué de sel. Je veux voir les filets, papa. On reste sur le quai. Près de moi. En ce moment, Raphaël pose les deux mains sur la rambarde. Le métal est froid, un peu collant. Un marin tire un filet, lentement. L'eau tombe en perles, sur le bois. Il est fort. C'est le marin. C'est son métier. Il ramène les filets. Oui. Le filet glisse, trop vite, un instant. Une gerbe d'eau saute vers les chaussures. Oh. On recule d'un pas. On reste derrière la rambarde ? Oui. Raphaël essuie une goutte sur sa manche. Ça sent encore plus le sel. Mes mains sont mouillées. Le marin travaille dans l'eau. Toi, tu regardes. Le marin range le filet en rond, tout serré. Une écaille brille, puis elle disparaît. Merci, marin ! Merci. Bravo, Raphaël. Tu as regardé sans te pencher trop. J'ai faim, maintenant. Le boulanger du port est ouvert. Du pain, avec le sel encore dans l'air."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le marin tire les filets. C'est quoi ?",
+      "script": "narrateur|Le marin tire les filets.\nnarrateur|C'est quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Le marin tire les filets. C'est quoi ?",
+      "expected_answer": "métier",
+      "accepted_examples": "métier | un métier | son métier | le métier | c'est un métier",
+      "retry_prompt": "Il ramène les filets. C'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ils quittent le quai, pas à pas. Le bois sonne sous les chaussures. La boutique du pain est toute proche, peinte en bleu. Ça sent le beurre, après le sel. Le boulanger ! Oui. Lui aussi a un métier. Il prépare le pain. Pour nous. Raphaël a encore une goutte de sel au poignet. Il la sent, puis il tend les mains au sac. Un pain long, encore chaud, plie le papier. Merci. Tu le portes ? Oui. Les filets, et le pain. Deux métiers. Oui. Une mouette les suit un instant, puis elle part.",
+      "script": "narrateur|Ils quittent le quai, pas à pas.\nnarrateur|Le bois sonne sous les chaussures.\nnarrateur|La boutique du pain est toute proche, peinte en bleu.\nnarrateur|Ça sent le beurre, après le sel.\nenfant-m|Le boulanger !\nmaman|Oui.\nmaman|Lui aussi a un métier.\npapa|Il prépare le pain.\nenfant-m|Pour nous.\nnarrateur|Raphaël a encore une goutte de sel au poignet.\nnarrateur|Il la sent, puis il tend les mains au sac.\nnarrateur|Un pain long, encore chaud, plie le papier.\npapa|Merci.\nmaman|Tu le portes ?\nenfant-m|Oui.\npapa|Les filets, et le pain.\nenfant-m|Deux métiers.\nmaman|Oui.\nnarrateur|Une mouette les suit un instant, puis elle part.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils quittent le quai, pas à pas. Le bois sonne sous les chaussures. La boutique du pain est toute proche, peinte en bleu. Ça sent le beurre, après le sel. Le boulanger ! Oui. Lui aussi a un métier. Il prépare le pain. Pour nous. Raphaël a encore une goutte de sel au poignet. Il la sent, puis il tend les mains au sac. Un pain long, encore chaud, plie le papier. Merci. Tu le portes ? Oui. Les filets, et le pain. Deux métiers. Oui. Une mouette les suit un instant, puis elle part."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sur un banc face à l'eau, ils s'assoient. Le pain craque, tout fort. Des miettes tombent, trop petites pour les poissons. Ça sent le sel, et le four. Oui. Le marin, puis le boulanger. Tu as vu les filets ? Oui. Ils gouttaient. Et toi, tu es resté derrière la rambarde. Merci d'avoir reculé, tout de suite. L'eau clapote contre le bois, tout régulier. Le sac de pain pèse encore un peu, sur les genoux.",
+      "script": "narrateur|Sur un banc face à l'eau, ils s'assoient.\nnarrateur|Le pain craque, tout fort.\nnarrateur|Des miettes tombent, trop petites pour les poissons.\nenfant-m|Ça sent le sel, et le four.\npapa|Oui.\npapa|Le marin, puis le boulanger.\nmaman|Tu as vu les filets ?\nenfant-m|Oui.\nenfant-m|Ils gouttaient.\nmaman|Et toi, tu es resté derrière la rambarde.\npapa|Merci d'avoir reculé, tout de suite.\nnarrateur|L'eau clapote contre le bois, tout régulier.\nnarrateur|Le sac de pain pèse encore un peu, sur les genoux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Sur un banc face à l'eau, ils s'assoient. Le pain craque, tout fort. Des miettes tombent, trop petites pour les poissons. Ça sent le sel, et le four. Oui. Le marin, puis le boulanger. Tu as vu les filets ? Oui. Ils gouttaient. Et toi, tu es resté derrière la rambarde. Merci d'avoir reculé, tout de suite. L'eau clapote contre le bois, tout régulier. Le sac de pain pèse encore un peu, sur les genoux."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Une dernière goutte tombe d'un filet, au loin. Elle fait un rond, puis plus rien. Le pain est bon. Oui. Le port garde le sel. Raphaël essuie sa manche, déjà sèche. Le papier du pain claque un peu, dans le vent.",
+      "script": "narrateur|Une dernière goutte tombe d'un filet, au loin.\nnarrateur|Elle fait un rond, puis plus rien.\nenfant-m|Le pain est bon.\nmaman|Oui.\npapa|Le port garde le sel.\nnarrateur|Raphaël essuie sa manche, déjà sèche.\nnarrateur|Le papier du pain claque un peu, dans le vent.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Une dernière goutte tombe d'un filet, au loin. Elle fait un rond, puis plus rien. Le pain est bon. Oui. Le port garde le sel. Raphaël essuie sa manche, déjà sèche. Le papier du pain claque un peu, dans le vent."
+    }
+  ]
+}

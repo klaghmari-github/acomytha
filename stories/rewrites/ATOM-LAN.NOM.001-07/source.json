@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.NOM.001-07",
+  "fil_rouge": "",
+  "title": "Béatrice compte les pommes",
+  "lesson_id": "LAN.NOM.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Béatrice, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Béatrice est à la cuisine avec maman. Des pommes sont dans le panier. On compte des objets. Béatrice touche. Un. Deux. Trois. Quatre. Cinq. Cinq pommes. Maman en pose encore. Six. Sept. Huit. Neuf. Dix. Béatrice répète : dix. Elle a compté des objets. Elle a dit le nombre. Plus tard, maman sort des noix. Béatrice recommence. Un, deux, trois, quatre, cinq. Elle dit le nombre. Maman sourit. Compter des objets, c'est toucher et dire.",
+      "script": "narrateur|Béatrice est à la cuisine avec maman. Des pommes sont dans le panier.\nmaman|On compte des objets.\nnarrateur|Béatrice touche. Un. Deux. Trois. Quatre. Cinq.\nnarrateur|Cinq pommes. Maman en pose encore. Six. Sept. Huit. Neuf. Dix.\nnarrateur|Béatrice répète : dix. Elle a compté des objets. Elle a dit le nombre. Plus tard, maman sort des noix. Béatrice recommence. Un, deux, trois, quatre, cinq. Elle dit le nombre. Maman sourit. Compter des objets, c'est toucher et dire.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Béatrice touche les pommes. Que fait-elle ?",
+      "script": "narrateur|Béatrice touche les pommes. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Béatrice a compté des objets. Elle a dit le nombre.",
+      "script": "narrateur|Béatrice a compté des objets. Elle a dit le nombre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range les pommes. Béatrice essuie la table.",
+      "script": "narrateur|Maman range les pommes. Béatrice essuie la table.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

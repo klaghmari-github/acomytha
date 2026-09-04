@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-LAN.MOT.001-06",
+  "fil_rouge": "",
+  "title": "Gabin classe au salon",
+  "lesson_id": "LAN.MOT.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gabin, papa",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gabin est dans le salon avec papa. Sur le tapis : une pomme, une banane, une chaussette, un bonnet. On nomme. On classe. Une catégorie pour les fruits. Une catégorie pour les habits. Gabin met la pomme et la banane dans le panier. Catégorie des fruits. Il met la chaussette et le bonnet sur la chaise. Catégorie des habits.",
+      "script": "narrateur|Gabin est dans le salon avec papa. Sur le tapis : une pomme, une banane, une chaussette, un bonnet.\npapa|On nomme. On classe.\nnarrateur|Une catégorie pour les fruits. Une catégorie pour les habits. Gabin met la pomme et la banane dans le panier. Catégorie des fruits. Il met la chaussette et le bonnet sur la chaise. Catégorie des habits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Gabin range pomme et chaussette. Que fait-il ?",
+      "script": "narrateur|Gabin range pomme et chaussette. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gabin a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "script": "narrateur|Gabin a classé. Une catégorie pour les fruits. Une pour les habits.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Gabin croque la pomme. Papa plie le bonnet.",
+      "script": "narrateur|Gabin croque la pomme. Papa plie le bonnet.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

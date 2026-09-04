@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.MET.001-05",
+  "fil_rouge": "Nina veut voir le camion rouge. Sirène au loin. Papa et maman tiennent les mains, sur le trottoir. La caserne reste loin. Ils regardent, puis rentrent.",
+  "title": "Le camion rouge au loin",
+  "lesson_id": "SOC.MET.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nina, papa, maman",
+  "setting": "trottoir du village, caserne vue de loin, pas de la porte",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Au loin, une sirène chante très bas. Le son arrive au-dessus des toits. La rue du village est calme, encore. Nina vit ici, avec papa et maman. Le trottoir est chaud sous les sandales. J'entends le camion ! Oui, Nina. On reste ici. Sur le trottoir. Je veux voir le rouge. On regarde de loin. En ce moment, Nina prend deux mains. La main de papa, la main de maman. Un oiseau part d'un toit. La sirène reste loin, tout bas. Il est où ? Là-bas. Près de la caserne. Un point rouge avance, tout petit. Il brille entre deux maisons. Le camion ! Oui. C'est le pompier. C'est son métier. Pompier. Il aide. On le regarde d'ici. Nina se penche un peu. Ses sandales restent sur le trottoir. On reste ici, Nina. Pieds sur le trottoir. On tient les mains. Je tiens. La sirène descend, encore plus loin. Le point rouge passe, tout petit. Il va vite. Oui. Nous, on reste. Tu vois le camion ? Oui, papa. Un chien aboie derrière une porte. Puis il se tait. L'air sent la poussière chaude.",
+      "script": "narrateur|Au loin, une sirène chante très bas.\nnarrateur|Le son arrive au-dessus des toits.\nnarrateur|La rue du village est calme, encore.\nnarrateur|Nina vit ici, avec papa et maman.\nnarrateur|Le trottoir est chaud sous les sandales.\nenfant-f|J'entends le camion !\npapa|Oui, Nina.\nmaman|On reste ici.\nmaman|Sur le trottoir.\nenfant-f|Je veux voir le rouge.\npapa|On regarde de loin.\nnarrateur|En ce moment, Nina prend deux mains.\nnarrateur|La main de papa, la main de maman.\nnarrateur|Un oiseau part d'un toit.\nnarrateur|La sirène reste loin, tout bas.\nenfant-f|Il est où ?\nmaman|Là-bas.\nmaman|Près de la caserne.\nnarrateur|Un point rouge avance, tout petit.\nnarrateur|Il brille entre deux maisons.\nenfant-f|Le camion !\npapa|Oui.\npapa|C'est le pompier.\npapa|C'est son métier.\nenfant-f|Pompier.\nmaman|Il aide.\nmaman|On le regarde d'ici.\nnarrateur|Nina se penche un peu.\nnarrateur|Ses sandales restent sur le trottoir.\npapa|On reste ici, Nina.\npapa|Pieds sur le trottoir.\nmaman|On tient les mains.\nenfant-f|Je tiens.\nnarrateur|La sirène descend, encore plus loin.\nnarrateur|Le point rouge passe, tout petit.\nenfant-f|Il va vite.\nmaman|Oui.\nmaman|Nous, on reste.\npapa|Tu vois le camion ?\nenfant-f|Oui, papa.\nnarrateur|Un chien aboie derrière une porte.\nnarrateur|Puis il se tait.\nnarrateur|L'air sent la poussière chaude.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Au loin, une sirène chante très bas. Le son arrive au-dessus des toits. La rue du village est calme, encore. Nina vit ici, avec papa et maman. Le trottoir est chaud sous les sandales. J'entends le camion ! Oui, Nina. On reste ici. Sur le trottoir. Je veux voir le rouge. On regarde de loin. En ce moment, Nina prend deux mains. La main de papa, la main de maman. Un oiseau part d'un toit. La sirène reste loin, tout bas. Il est où ? Là-bas. Près de la caserne. Un point rouge avance, tout petit. Il brille entre deux maisons. Le camion ! Oui. C'est le pompier. C'est son métier. Pompier. Il aide. On le regarde d'ici. Nina se penche un peu. Ses sandales restent sur le trottoir. On reste ici, Nina. Pieds sur le trottoir. On tient les mains. Je tiens. La sirène descend, encore plus loin. Le point rouge passe, tout petit. Il va vite. Oui. Nous, on reste. Tu vois le camion ? Oui, papa. Un chien aboie derrière une porte. Puis il se tait. L'air sent la poussière chaude."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Le pompier a un camion. C'est quoi ?",
+      "script": "narrateur|Le pompier a un camion.\nnarrateur|C'est quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Le pompier a un camion. C'est quoi ?",
+      "expected_answer": "métier",
+      "accepted_examples": "métier | un métier | son métier | le métier | c'est un métier",
+      "retry_prompt": "Il aide avec le camion. C'est quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le point rouge devient tout petit. La sirène n'est plus qu'un fil. Il est parti. Oui. Le pompier fait son métier. Et nous, on est restés ici. Sur le trottoir. J'ai vu le rouge. Bravo, Nina. Tu as regardé de loin. Merci d'avoir tenu les mains. Nina serre encore les deux mains. Les sandales sont un peu poussiéreuses. On rentre ? Oui. On marche sur le trottoir. Un toit cache déjà la caserne. Il ne reste qu'un peu de silence.",
+      "script": "narrateur|Le point rouge devient tout petit.\nnarrateur|La sirène n'est plus qu'un fil.\nenfant-f|Il est parti.\npapa|Oui.\npapa|Le pompier fait son métier.\nmaman|Et nous, on est restés ici.\nmaman|Sur le trottoir.\nenfant-f|J'ai vu le rouge.\npapa|Bravo, Nina.\npapa|Tu as regardé de loin.\nmaman|Merci d'avoir tenu les mains.\nnarrateur|Nina serre encore les deux mains.\nnarrateur|Les sandales sont un peu poussiéreuses.\nmaman|On rentre ?\nenfant-f|Oui.\npapa|On marche sur le trottoir.\nnarrateur|Un toit cache déjà la caserne.\nnarrateur|Il ne reste qu'un peu de silence.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le point rouge devient tout petit. La sirène n'est plus qu'un fil. Il est parti. Oui. Le pompier fait son métier. Et nous, on est restés ici. Sur le trottoir. J'ai vu le rouge. Bravo, Nina. Tu as regardé de loin. Merci d'avoir tenu les mains. Nina serre encore les deux mains. Les sandales sont un peu poussiéreuses. On rentre ? Oui. On marche sur le trottoir. Un toit cache déjà la caserne. Il ne reste qu'un peu de silence."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La maison sent le linge au soleil. Nina s'assoit sur le pas de la porte. Ses sandales tapent la pierre, tout doux. Le camion était rouge. Oui. Vu de loin. Le pompier aide, là-bas. Nous, on reste près de la maison. J'ai tenu les mains. Oui. Tu as bien fait. Tu veux de l'eau ? Oui, papa. L'eau est fraîche dans le verre. Nina boit, un peu trop vite. Doucement.",
+      "script": "narrateur|La maison sent le linge au soleil.\nnarrateur|Nina s'assoit sur le pas de la porte.\nnarrateur|Ses sandales tapent la pierre, tout doux.\nenfant-f|Le camion était rouge.\nmaman|Oui.\nmaman|Vu de loin.\npapa|Le pompier aide, là-bas.\npapa|Nous, on reste près de la maison.\nenfant-f|J'ai tenu les mains.\nmaman|Oui.\nmaman|Tu as bien fait.\npapa|Tu veux de l'eau ?\nenfant-f|Oui, papa.\nnarrateur|L'eau est fraîche dans le verre.\nnarrateur|Nina boit, un peu trop vite.\nmaman|Doucement.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La maison sent le linge au soleil. Nina s'assoit sur le pas de la porte. Ses sandales tapent la pierre, tout doux. Le camion était rouge. Oui. Vu de loin. Le pompier aide, là-bas. Nous, on reste près de la maison. J'ai tenu les mains. Oui. Tu as bien fait. Tu veux de l'eau ? Oui, papa. L'eau est fraîche dans le verre. Nina boit, un peu trop vite. Doucement."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La rue redevient calme. Plus de sirène, plus de point rouge. Je l'ai vu. Oui. De loin, sur le trottoir. Les sandales sèchent sur la pierre. Le toit garde le village, tout tranquille.",
+      "script": "narrateur|La rue redevient calme.\nnarrateur|Plus de sirène, plus de point rouge.\nenfant-f|Je l'ai vu.\npapa|Oui.\nmaman|De loin, sur le trottoir.\nnarrateur|Les sandales sèchent sur la pierre.\nnarrateur|Le toit garde le village, tout tranquille.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La rue redevient calme. Plus de sirène, plus de point rouge. Je l'ai vu. Oui. De loin, sur le trottoir. Les sandales sèchent sur la pierre. Le toit garde le village, tout tranquille."
+    }
+  ]
+}

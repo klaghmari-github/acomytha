@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.TRA.001-02",
+  "fil_rouge": "Victorino veut voir la maison rouge de l'autre rive, en bac avec maman. Le banc est mouillé. Ils s'assoient au sec. Le bac glisse. La maison arrive.",
+  "title": "Le bac de Victorino",
+  "lesson_id": "SOC.TRA.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Victorino, maman",
+  "setting": "ponton puis banc du petit bac",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les cordes du bac sentent l'eau salée. Le ponton mouillé brille par plaques. Une mouette crie, tout près. Le petit bac attend, tout bas. Victorino vit ici, avec maman. Tu as vu le bac, Victorino ? Il est petit. Oui. C'est un bateau. En ce moment, ils donnent la main. Ils montent sur le bac ensemble. Je veux la maison rouge. Sur l'autre rive. On la verra en glissant. On reste avec maman. Le banc du bac est mouillé. Une flaque tient au milieu. Il est mouillé ! On s'assoit sur le bord sec. Ici, près de moi. Victorino s'assoit contre maman. Le bois sec est rêche. Je reste. Oui. Assis, avec un adulte. Une corde tombe dans l'eau. Le bac se détache du ponton. On part ! On reste assis. L'eau clapote sous le plancher. Victorino tient la manche de maman. Ça bouge. Le bateau glisse. Toi, tu restes. Une petite vague lèche le bord. Des gouttes sautent sur la chaussure. Ma chaussure ! Elle va sécher. On ne se lève pas. Victorino garde les pieds au bois. Au loin, un toit rouge apparaît. La maison ! Bientôt. Le bac tourne un peu. La maison se cache, puis revient.",
+      "script": "narrateur|Les cordes du bac sentent l'eau salée.\nnarrateur|Le ponton mouillé brille par plaques.\nnarrateur|Une mouette crie, tout près.\nnarrateur|Le petit bac attend, tout bas.\nnarrateur|Victorino vit ici, avec maman.\nmaman|Tu as vu le bac, Victorino ?\nenfant-m|Il est petit.\nmaman|Oui.\nmaman|C'est un bateau.\nnarrateur|En ce moment, ils donnent la main.\nnarrateur|Ils montent sur le bac ensemble.\nenfant-m|Je veux la maison rouge.\nenfant-m|Sur l'autre rive.\nmaman|On la verra en glissant.\nmaman|On reste avec maman.\nnarrateur|Le banc du bac est mouillé.\nnarrateur|Une flaque tient au milieu.\nenfant-m|Il est mouillé !\nmaman|On s'assoit sur le bord sec.\nmaman|Ici, près de moi.\nnarrateur|Victorino s'assoit contre maman.\nnarrateur|Le bois sec est rêche.\nenfant-m|Je reste.\nmaman|Oui.\nmaman|Assis, avec un adulte.\nnarrateur|Une corde tombe dans l'eau.\nnarrateur|Le bac se détache du ponton.\nenfant-m|On part !\nmaman|On reste assis.\nnarrateur|L'eau clapote sous le plancher.\nnarrateur|Victorino tient la manche de maman.\nenfant-m|Ça bouge.\nmaman|Le bateau glisse.\nmaman|Toi, tu restes.\nnarrateur|Une petite vague lèche le bord.\nnarrateur|Des gouttes sautent sur la chaussure.\nenfant-m|Ma chaussure !\nmaman|Elle va sécher.\nmaman|On ne se lève pas.\nnarrateur|Victorino garde les pieds au bois.\nnarrateur|Au loin, un toit rouge apparaît.\nenfant-m|La maison !\nmaman|Bientôt.\nnarrateur|Le bac tourne un peu.\nnarrateur|La maison se cache, puis revient.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les cordes du bac sentent l'eau salée. Le ponton mouillé brille par plaques. Une mouette crie, tout près. Le petit bac attend, tout bas. Victorino vit ici, avec maman. Tu as vu le bac, Victorino ? Il est petit. Oui. C'est un bateau. En ce moment, ils donnent la main. Ils montent sur le bac ensemble. Je veux la maison rouge. Sur l'autre rive. On la verra en glissant. On reste avec maman. Le banc du bac est mouillé. Une flaque tient au milieu. Il est mouillé ! On s'assoit sur le bord sec. Ici, près de moi. Victorino s'assoit contre maman. Le bois sec est rêche. Je reste. Oui. Assis, avec un adulte. Une corde tombe dans l'eau. Le bac se détache du ponton. On part ! On reste assis. L'eau clapote sous le plancher. Victorino tient la manche de maman. Ça bouge. Le bateau glisse. Toi, tu restes. Une petite vague lèche le bord. Des gouttes sautent sur la chaussure. Ma chaussure ! Elle va sécher. On ne se lève pas. Victorino garde les pieds au bois. Au loin, un toit rouge apparaît. La maison ! Bientôt. Le bac tourne un peu. La maison se cache, puis revient."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victorino glisse sur l'eau. Quel véhicule le porte ?",
+      "script": "narrateur|Victorino glisse sur l'eau.\nnarrateur|Quel véhicule le porte ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Victorino glisse sur l'eau. Quel véhicule le porte ?",
+      "expected_answer": "le bateau",
+      "accepted_examples": "bateau | le bateau | un bateau | bac | le bac",
+      "retry_prompt": "C'est le bateau. Quel véhicule le porte ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le bateau. Le bac. Oui, le bateau. Ils restent assis sur le bord sec. La maison rouge grossit. Je la vois bien. Tu l'as voulue. La voilà. Une mouette suit le bac. Son ombre passe sur l'eau. Elle vole avec nous. Nous, on reste assis. Merci, Victorino. Le ponton de l'autre rive s'approche. Une corde attend, déjà. On arrive. On se lève avec maman. Quand le bac est arrêté. Le bois donne un petit choc. L'eau se calme contre le ponton. Il ne bouge plus. Maintenant on peut descendre.",
+      "script": "enfant-m|Le bateau.\nenfant-m|Le bac.\nmaman|Oui, le bateau.\nnarrateur|Ils restent assis sur le bord sec.\nnarrateur|La maison rouge grossit.\nenfant-m|Je la vois bien.\nmaman|Tu l'as voulue.\nmaman|La voilà.\nnarrateur|Une mouette suit le bac.\nnarrateur|Son ombre passe sur l'eau.\nenfant-m|Elle vole avec nous.\nmaman|Nous, on reste assis.\nmaman|Merci, Victorino.\nnarrateur|Le ponton de l'autre rive s'approche.\nnarrateur|Une corde attend, déjà.\nenfant-m|On arrive.\nmaman|On se lève avec maman.\nmaman|Quand le bac est arrêté.\nnarrateur|Le bois donne un petit choc.\nnarrateur|L'eau se calme contre le ponton.\nenfant-m|Il ne bouge plus.\nmaman|Maintenant on peut descendre.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le bateau. Le bac. Oui, le bateau. Ils restent assis sur le bord sec. La maison rouge grossit. Je la vois bien. Tu l'as voulue. La voilà. Une mouette suit le bac. Son ombre passe sur l'eau. Elle vole avec nous. Nous, on reste assis. Merci, Victorino. Le ponton de l'autre rive s'approche. Une corde attend, déjà. On arrive. On se lève avec maman. Quand le bac est arrêté. Le bois donne un petit choc. L'eau se calme contre le ponton. Il ne bouge plus. Maintenant on peut descendre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Tu donnes la main ? Oui, maman. Ils descendent ensemble. Le ponton sent encore le sel. La maison rouge. Elle est là, tout près. Victorino regarde le bac derrière lui. Le petit bateau attend déjà. On est venus en bateau. Avec un adulte. Sa chaussure laisse une trace humide. Puis le bois du ponton la boit.",
+      "script": "maman|Tu donnes la main ?\nenfant-m|Oui, maman.\nnarrateur|Ils descendent ensemble.\nnarrateur|Le ponton sent encore le sel.\nenfant-m|La maison rouge.\nmaman|Elle est là, tout près.\nnarrateur|Victorino regarde le bac derrière lui.\nnarrateur|Le petit bateau attend déjà.\nenfant-m|On est venus en bateau.\nmaman|Avec un adulte.\nnarrateur|Sa chaussure laisse une trace humide.\nnarrateur|Puis le bois du ponton la boit.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Tu donnes la main ? Oui, maman. Ils descendent ensemble. Le ponton sent encore le sel. La maison rouge. Elle est là, tout près. Victorino regarde le bac derrière lui. Le petit bateau attend déjà. On est venus en bateau. Avec un adulte. Sa chaussure laisse une trace humide. Puis le bois du ponton la boit."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La maison rouge a un volet ouvert. Le bac reste collé au ponton. J'ai vu l'autre rive. Assis, avec maman. L'eau salée clapote encore, tout bas.",
+      "script": "narrateur|La maison rouge a un volet ouvert.\nnarrateur|Le bac reste collé au ponton.\nenfant-m|J'ai vu l'autre rive.\nmaman|Assis, avec maman.\nnarrateur|L'eau salée clapote encore, tout bas.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La maison rouge a un volet ouvert. Le bac reste collé au ponton. J'ai vu l'autre rive. Assis, avec maman. L'eau salée clapote encore, tout bas."
+    }
+  ]
+}
