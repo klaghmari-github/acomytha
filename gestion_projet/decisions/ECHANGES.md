@@ -120,7 +120,7 @@ par :
 
 > Apprendre par l'histoire. Acomytha l'univers d'histoires ludiques et captivantes.
 
-F-APP-004, D28. Affichage : **AcoMytha** (marque).
+F-APP-004, D28. Affichage : **AcoMytha** (marque). Un seul bouton **Créer un compte** : en-tête, pas le hero.
 
 ### Boutique
 

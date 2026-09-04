@@ -356,6 +356,8 @@ L’espace parent n’est pas concerné (sélection, pas vitrine).
 Titre : *Apprendre par l’histoire.*  
 Sous-titre : *AcoMytha l’univers d’histoires ludiques et captivantes.*
 
+**Créer un compte** uniquement en haut à droite. Pas de second bouton dans le hero.
+
 ### F-PAR-002 — Libellés catalogue
 
 | Condition | Libellé UI |
