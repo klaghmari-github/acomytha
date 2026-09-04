@@ -12,7 +12,18 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 ARBRES = ROOT / "arbres"
+ARCHIVE = ROOT / "archive" / "arbres"
 REWRITES = ROOT / "rewrites"
+
+
+def xlsx_path(story_id: str) -> Path:
+    live = ARBRES / f"{story_id}.xlsx"
+    if live.exists():
+        return live
+    archived = ARCHIVE / f"{story_id}.xlsx"
+    if archived.exists():
+        return archived
+    raise SystemExit(f"absent: {story_id}.xlsx (arbres/ et archive/)")
 
 CHUNK_FIELDS = (
     "chunk_id",
@@ -34,9 +45,7 @@ CHUNK_FIELDS = (
 
 
 def dump_story(story_id: str) -> Path:
-    src = ARBRES / f"{story_id}.xlsx"
-    if not src.exists():
-        raise SystemExit(f"absent: {src}")
+    src = xlsx_path(story_id)
     wb = load_workbook(src, read_only=True, data_only=True)
     meta = {}
     if "meta" in wb.sheetnames:
@@ -113,7 +122,7 @@ def apply_story(story_id: str) -> Path:
     if not merged_path.exists():
         merge_story(story_id)
     merged = json.loads(merged_path.read_text(encoding="utf-8"))
-    src = ARBRES / f"{story_id}.xlsx"
+    src = xlsx_path(story_id)
     backup = folder / "original.xlsx"
     if not backup.exists():
         shutil.copy2(src, backup)
@@ -173,6 +182,11 @@ def apply_story(story_id: str) -> Path:
         wb["journal"].append(["F-NAR-008 récit, pas une leçon en puces"])
     wb.save(src)
     wb.close()
+    dest = ARBRES / f"{story_id}.xlsx"
+    if src.resolve() != dest.resolve():
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(src), str(dest))
+        src = dest
     return src
 
 
@@ -194,7 +208,9 @@ def apply_ready() -> list[str]:
         if not merged.exists():
             continue
         sid = folder.name
-        if not (ARBRES / f"{sid}.xlsx").exists():
+        try:
+            xlsx_path(sid)
+        except SystemExit:
             continue
         apply_story(sid)
         done.append(sid)
