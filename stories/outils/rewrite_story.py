@@ -118,20 +118,25 @@ def apply_story(story_id: str) -> Path:
     if not backup.exists():
         shutil.copy2(src, backup)
     wb = load_workbook(src)
-    if "meta" in wb.sheetnames and merged.get("title"):
+    if "meta" in wb.sheetnames:
         ms = wb["meta"]
+        meta_map = {
+            "title": merged.get("title") or "",
+            "fil_rouge": merged.get("fil_rouge") or "",
+            "characters": merged.get("characters") or "",
+            "setting": merged.get("setting") or "",
+        }
+        if merged.get("secondary_lessons") is not None:
+            meta_map["secondary_lessons"] = merged.get("secondary_lessons") or ""
+        seen: set[str] = set()
         for row in ms.iter_rows(min_col=1, max_col=2):
-            if row[0].value == "title":
-                row[1].value = merged["title"]
-            if row[0].value == "fil_rouge":
-                row[1].value = merged.get("fil_rouge") or ""
-            if row[0].value == "secondary_lessons" and merged.get("secondary_lessons") is not None:
-                row[1].value = merged.get("secondary_lessons") or ""
-        keys = {str(c.value) for c in ms["A"] if c.value}
-        if "fil_rouge" not in keys:
-            ms.append(["fil_rouge", merged.get("fil_rouge") or ""])
-        if "secondary_lessons" not in keys and merged.get("secondary_lessons"):
-            ms.append(["secondary_lessons", merged.get("secondary_lessons")])
+            key = row[0].value
+            if key in meta_map:
+                row[1].value = meta_map[key]
+                seen.add(str(key))
+        for key, val in meta_map.items():
+            if key not in seen and val:
+                ms.append([key, val])
     ws = wb["chunks"]
     headers = [c.value for c in ws[1]]
     for name in ("script", "sons", "length_scale_piper", "rate_label"):
