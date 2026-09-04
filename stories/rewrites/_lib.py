@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -116,8 +117,10 @@ def check(sid: str, age: str, chunks: list[dict]) -> None:
         if bad in low:
             raise SystemExit(f"{sid} interdit: {bad}")
     for name in BAD_NAMES:
-        if name in low:
-            raise SystemExit(f"{sid} prénom hors troupe: {name}")
+        token = name.strip()
+        if not re.search(rf"\b{re.escape(token)}\b", low):
+            continue
+        raise SystemExit(f"{sid} prénom hors troupe: {name}")
     adults = [ln for ln in joined.splitlines() if ln.startswith("papa|") or ln.startswith("maman|")]
     if not adults:
         raise SystemExit(f"{sid}: aucun papa/maman")

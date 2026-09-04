@@ -1,6 +1,6 @@
 # Archive des arbres ramifiés
 
-**730** xlsx `TREE-*` encore en archive (corpus ramifié : 764 ; 34 déjà dans `stories/arbres/`). Chiffres : [`../CHIFFRES.md`](../CHIFFRES.md).
+**685** xlsx `TREE-*` encore en archive (corpus ramifié : 764 ; 79 déjà dans `stories/arbres/`). Chiffres : [`../CHIFFRES.md`](../CHIFFRES.md).
 
 Pour ressortir un arbre :
 

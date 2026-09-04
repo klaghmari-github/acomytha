@@ -32,11 +32,15 @@ Chaque histoire a un `lesson_id` parmi ces 85. Aucune leçon sans histoire. Aucu
 
 ## Histoires
 
+Les totaux corpus (1449 / 685 / 764) sont stables. Le split live / archive bouge quand un ramifié repris passe de `archive/arbres/` à `arbres/`.
+
 | | Corpus | Live `arbres/` | Archive |
 | --- | ---: | ---: | ---: |
-| **Total** | **1449** | **719** | **730** |
+| **Total** | **1449** | **764** | **685** |
 | Atomiques (`ATOM-*`) | 685 | 685 | 0 |
-| Ramifiées (`TREE-*`) | 764 | 34 | 730 |
+| Ramifiées (`TREE-*`) | 764 | 79 | 685 |
+
+Familles ramifiées live : Autonomie 44, Vie collective 35 (COL entière). Le reste (DIF, EMO, FAM, JEU, LAN, REL, SAN, SEC, SOC, TMP, VIV) est encore en archive.
 
 Une ramifiée a 86 passages (dont 16 nœuds question, 13 nœuds à 3 options, 27 fins). Une atomique a typiquement 5 passages, dont **1 question ouverte** (réponse parlée, pas 3 boutons).
 
@@ -59,4 +63,5 @@ Une ramifiée a 86 passages (dont 16 nœuds question, 13 nœuds à 3 options, 27
 | | N1 | N2 | N3 |
 | --- | ---: | ---: | ---: |
 | Corpus | 404 | 567 | 478 |
-| Live | 192 | 293 | 234 |
+| Live | 201 | 312 | 251 |
+| Archive | 203 | 255 | 227 |

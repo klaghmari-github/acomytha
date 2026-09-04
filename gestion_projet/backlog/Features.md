@@ -246,7 +246,7 @@ Avant d’appliquer F-NAR-010…015 à **tous** les ramifiés : deux arbres, à 
 | `TREE-AUT-001` | Premier ramifié actif |
 | `TREE-COL-001` | Second chantier, maintenant aussi dans `stories/arbres/` |
 
-Corpus : **1449** histoires (**685** atomiques, **764** ramifiées), **toutes avec question**. **85** leçons, **13** thèmes. Live `arbres/` : 719. Archive : 730 TREE. Détail : `stories/CHIFFRES.md`. D31 (un seul ramifié live) est dépassé : les ramifiés repris y rentrent au fur et à mesure.
+Corpus : **1449** histoires (**685** atomiques, **764** ramifiées), **toutes avec question**. **85** leçons, **13** thèmes. Live `arbres/` : 764 (685 ATOM + 79 TREE). Archive : 685 TREE. Détail : `stories/CHIFFRES.md`. D31 (un seul ramifié live) est dépassé : les ramifiés repris y rentrent au fur et à mesure.
 
 Passe **texte** faite sur les deux (F-NAR-010…015, sans audio). Preuves dans `stories/rewrites/TREE-AUT-001/RELECTURE.md` et `stories/rewrites/TREE-COL-001/RELECTURE.md`.
 
