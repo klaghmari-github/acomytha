@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-05",
+  "fil_rouge": "Le pain saute. Hop. Le miel brille. Les pantoufles d'Aniss font flap. Il s'assoit. On déjeune ensemble, à table.",
+  "title": "Le pain qui saute",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": "SAN.ALI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Aniss, papa, maman",
+  "setting": "cuisine, petit-déjeuner",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le pain saute dans la cuisine. Il fait un petit bruit. Hop. Un rayon touche le pot de miel. Le pot est un peu collant, lui aussi. Une goutte tombe, tout doucement. Les pantoufles d'Aniss sont trop grandes. Elles font flap, flap. Aniss vit ici, avec papa et maman. La maison sent le pain chaud. Dehors, le village est encore calme. Un oiseau chante sur le toit. Aniss, le pain est prêt ! J'arrive, papa ! Aniss marche vers la cuisine. Des miettes dorées attendent sur la planche. Le pain a sauté ! Oui. Hop, dans l'assiette. Viens t'asseoir. Aniss va vers sa chaise. Il tire un peu la chaise. Il s'assoit. Il pose les pieds par terre. Bravo, Aniss. Tu es bien assis. Maman s'assoit près de lui. Papa s'assoit aussi. On est ensemble. On mange à table. Sa chaise ne bouge plus. Tu poses les mains sur la table ? Il pose les mains. Le yaourt est frais. Il a un petit chapeau blanc. La cuillère cliquette. Tu as entendu la cuillère ? Elle chante. On attend un petit moment. Aniss tient sa cuillère. Il reste assis.",
+      "script": "narrateur|Le pain saute dans la cuisine.\nnarrateur|Il fait un petit bruit.\nnarrateur|Hop.\nnarrateur|Un rayon touche le pot de miel.\nnarrateur|Le pot est un peu collant, lui aussi.\nnarrateur|Une goutte tombe, tout doucement.\nnarrateur|Les pantoufles d'Aniss sont trop grandes.\nnarrateur|Elles font flap, flap.\nnarrateur|Aniss vit ici, avec papa et maman.\nnarrateur|La maison sent le pain chaud.\nnarrateur|Dehors, le village est encore calme.\nnarrateur|Un oiseau chante sur le toit.\npapa|Aniss, le pain est prêt !\nenfant-m|J'arrive, papa !\nnarrateur|Aniss marche vers la cuisine.\nnarrateur|Des miettes dorées attendent sur la planche.\nenfant-m|Le pain a sauté !\npapa|Oui.\npapa|Hop, dans l'assiette.\nmaman|Viens t'asseoir.\nnarrateur|Aniss va vers sa chaise.\nnarrateur|Il tire un peu la chaise.\nnarrateur|Il s'assoit.\nnarrateur|Il pose les pieds par terre.\nmaman|Bravo, Aniss.\nmaman|Tu es bien assis.\nnarrateur|Maman s'assoit près de lui.\nnarrateur|Papa s'assoit aussi.\npapa|On est ensemble.\npapa|On mange à table.\nnarrateur|Sa chaise ne bouge plus.\nmaman|Tu poses les mains sur la table ?\nnarrateur|Il pose les mains.\nnarrateur|Le yaourt est frais.\nnarrateur|Il a un petit chapeau blanc.\nnarrateur|La cuillère cliquette.\npapa|Tu as entendu la cuillère ?\nenfant-m|Elle chante.\nmaman|On attend un petit moment.\nnarrateur|Aniss tient sa cuillère.\nnarrateur|Il reste assis.",
+      "sons": "pain,chaise",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Aniss va manger. Que fait-il ?",
+      "script": "narrateur|Aniss va manger.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Aniss est assis. Il est à table. On est tous assis. On est ensemble. Le yaourt attend. Ta chaise reste à table ? Oui. Aniss reste assis. Une miette dorée brille encore. Tu restes avec nous ? Oui. Bravo. Tu attends un petit moment.",
+      "script": "narrateur|Aniss est assis.\nnarrateur|Il est à table.\npapa|On est tous assis.\nmaman|On est ensemble.\nnarrateur|Le yaourt attend.\npapa|Ta chaise reste à table ?\nenfant-m|Oui.\nnarrateur|Aniss reste assis.\nnarrateur|Une miette dorée brille encore.\npapa|Tu restes avec nous ?\nenfant-m|Oui.\nmaman|Bravo. Tu attends un petit moment.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa verse un peu d'eau. L'eau fait un petit bruit. Tu croques le pain ? Aniss croque le pain. C'est croustillant. C'est bon. Tu restes assis. Bravo, Aniss. Tu as goûté. C'est du bon travail. Bon appétit. Bon appétit, Aniss. Ils mangent ensemble. Aniss reste assis. Encore une petite cuillère ? Encore une cuillère de yaourt. Tu restes assis. Bravo. Merci, maman. Merci, papa. Merci, Aniss. Il boit une gorgée. Il reste assis jusqu'à la fin.",
+      "script": "narrateur|Papa verse un peu d'eau.\nnarrateur|L'eau fait un petit bruit.\nmaman|Tu croques le pain ?\nnarrateur|Aniss croque le pain.\nenfant-m|C'est croustillant.\nenfant-m|C'est bon.\npapa|Tu restes assis.\nmaman|Bravo, Aniss.\nmaman|Tu as goûté.\nmaman|C'est du bon travail.\npapa|Bon appétit.\nmaman|Bon appétit, Aniss.\nnarrateur|Ils mangent ensemble.\nnarrateur|Aniss reste assis.\npapa|Encore une petite cuillère ?\nnarrateur|Encore une cuillère de yaourt.\npapa|Tu restes assis. Bravo.\nenfant-m|Merci, maman.\nenfant-m|Merci, papa.\nmaman|Merci, Aniss.\nnarrateur|Il boit une gorgée.\nnarrateur|Il reste assis jusqu'à la fin.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Les miettes dorées se reposent. Le miel ne brille plus autant. On a mangé assis, ensemble. C'était bon. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "narrateur|Les miettes dorées se reposent.\nnarrateur|Le miel ne brille plus autant.\npapa|On a mangé assis, ensemble.\nenfant-m|C'était bon.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-SAN.ALI.002-03",
+  "fil_rouge": "La lampe du couloir fait un rond jaune. Un oiseau tape le volet. Ça sent le lait chaud. Victorina amène sa chaise. On mange assis.",
+  "title": "Le rond jaune du couloir",
+  "lesson_id": "SAN.ALI.002",
+  "secondary_lessons": "SAN.ALI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Victorina, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La petite lampe du couloir est encore allumée. Elle fait un rond jaune. Les rideaux de la cuisine sont fermés. Le village dort encore un peu. Un oiseau tape le volet. Toc. Toc. Ça sent le lait chaud. Ça sent aussi le pain. Papa marche en pantoufles. Les pantoufles font chut, chut. Victorina vit ici, avec papa et maman. Elle sort de sa chambre. Sa couverture est encore chaude. J'ai entendu l'oiseau ! Moi aussi. Il dit bonjour. Victorina, le lait est prêt. Viens t'asseoir. Victorina va vers la table. Le carrelage est un peu froid. Elle voit les bols. Les bols sont blancs, tout ronds. Elle voit sa chaise. Elle tire un peu la chaise. Elle s'assoit. Elle pose les pieds par terre. Bravo, Victorina. Tu es bien assise. Papa s'assoit aussi. Maman s'assoit près d'elle. On est ensemble. On mange à table. Sa chaise ne bouge plus. Tu poses les mains sur la table ? Elle pose les mains. Le bois est lisse. Un peu de lait a fait un rond. Tu as vu la petite vapeur ? Elle danse. Le lait est tiède. Le pain est croustillant. On attend un petit moment. Victorina tient sa cuillère. Elle reste assise.",
+      "script": "narrateur|La petite lampe du couloir est encore allumée.\nnarrateur|Elle fait un rond jaune.\nnarrateur|Les rideaux de la cuisine sont fermés.\nnarrateur|Le village dort encore un peu.\nnarrateur|Un oiseau tape le volet.\nnarrateur|Toc. Toc.\nnarrateur|Ça sent le lait chaud.\nnarrateur|Ça sent aussi le pain.\nnarrateur|Papa marche en pantoufles.\nnarrateur|Les pantoufles font chut, chut.\nnarrateur|Victorina vit ici, avec papa et maman.\nnarrateur|Elle sort de sa chambre.\nnarrateur|Sa couverture est encore chaude.\nenfant-f|J'ai entendu l'oiseau !\npapa|Moi aussi.\npapa|Il dit bonjour.\nmaman|Victorina, le lait est prêt.\nmaman|Viens t'asseoir.\nnarrateur|Victorina va vers la table.\nnarrateur|Le carrelage est un peu froid.\nnarrateur|Elle voit les bols.\nnarrateur|Les bols sont blancs, tout ronds.\nnarrateur|Elle voit sa chaise.\nnarrateur|Elle tire un peu la chaise.\nnarrateur|Elle s'assoit.\nnarrateur|Elle pose les pieds par terre.\nmaman|Bravo, Victorina.\nmaman|Tu es bien assise.\nnarrateur|Papa s'assoit aussi.\nnarrateur|Maman s'assoit près d'elle.\npapa|On est ensemble.\npapa|On mange à table.\nnarrateur|Sa chaise ne bouge plus.\nmaman|Tu poses les mains sur la table ?\nnarrateur|Elle pose les mains.\nnarrateur|Le bois est lisse.\nnarrateur|Un peu de lait a fait un rond.\npapa|Tu as vu la petite vapeur ?\nenfant-f|Elle danse.\nnarrateur|Le lait est tiède.\nnarrateur|Le pain est croustillant.\nmaman|On attend un petit moment.\nnarrateur|Victorina tient sa cuillère.\nnarrateur|Elle reste assise.",
+      "sons": "volet,chaise",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victorina va manger. Que fait-elle ?",
+      "script": "narrateur|Victorina va manger.\nnarrateur|Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Victorina est assise. Elle est à table. On est tous assis. On est ensemble. Le bol attend. Ta chaise reste à table ? Oui. Victorina reste assise. L'oiseau tape encore, tout loin. Tu restes avec nous ? Oui. Bravo. Tu attends un petit moment.",
+      "script": "narrateur|Victorina est assise.\nnarrateur|Elle est à table.\npapa|On est tous assis.\nmaman|On est ensemble.\nnarrateur|Le bol attend.\npapa|Ta chaise reste à table ?\nenfant-f|Oui.\nnarrateur|Victorina reste assise.\nnarrateur|L'oiseau tape encore, tout loin.\nmaman|Tu restes avec nous ?\nenfant-f|Oui.\nmaman|Bravo. Tu attends un petit moment.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman coupe une pomme. La pomme sent le sucré. Tu prends ta cuillère ? Victorina prend sa cuillère. Tu restes assise. Elle goûte le lait. C'est tiède. C'est bon. Bravo, Victorina. Tu as goûté. C'est du bon travail. Bon appétit. Bon appétit, Victorina. Ils mangent ensemble. Victorina reste assise. Encore une petite cuillère ? Encore une cuillère. Tu restes assise. Bravo. Merci, maman. Merci, papa. Merci, Victorina. Elle boit une gorgée. Elle reste assise jusqu'à la fin.",
+      "script": "narrateur|Maman coupe une pomme.\nnarrateur|La pomme sent le sucré.\nmaman|Tu prends ta cuillère ?\nnarrateur|Victorina prend sa cuillère.\npapa|Tu restes assise.\nnarrateur|Elle goûte le lait.\nenfant-f|C'est tiède.\nenfant-f|C'est bon.\nmaman|Bravo, Victorina.\nmaman|Tu as goûté.\nmaman|C'est du bon travail.\npapa|Bon appétit.\nmaman|Bon appétit, Victorina.\nnarrateur|Ils mangent ensemble.\nnarrateur|Victorina reste assise.\npapa|Encore une petite cuillère ?\nnarrateur|Encore une cuillère.\npapa|Tu restes assise. Bravo.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nmaman|Merci, Victorina.\nnarrateur|Elle boit une gorgée.\nnarrateur|Elle reste assise jusqu'à la fin.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'oiseau s'en va. Le rond jaune s'éteint. On a mangé assis, ensemble. C'était bon. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "narrateur|L'oiseau s'en va.\nnarrateur|Le rond jaune s'éteint.\npapa|On a mangé assis, ensemble.\nenfant-f|C'était bon.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

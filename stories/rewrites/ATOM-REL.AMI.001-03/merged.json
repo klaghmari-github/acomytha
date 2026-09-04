@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-REL.AMI.001-03",
+  "fil_rouge": "Une pelle de bois a du sable. Nina invite Nino au bac, puis à la pâte. Deux fois, elle accepte un non.",
+  "title": "Le château de Nina",
+  "lesson_id": "REL.AMI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, Nino, maman",
+  "setting": "parc puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une pelle de bois a du sable collé. Le seau a un petit trou. Le bac sent le sable chaud. Un pigeon marche sur le chemin. Maman pose le panier près du banc. Le banc a des rayures d'ombre. Nina, le château attend. En ce moment, Nina creuse dans le bac. Le sable coule entre ses doigts. Il est chaud, maman. Oui. Nino arrive près des pigeons. Nina veut jouer. Tu peux inviter. Inviter, c'est demander. Tu veux jouer avec nous ? Non, merci. Nina écoute. Accepter un non, c'est possible. D'accord. Elle continue son château. Le seau laisse un filet de sable. Nino regarde les pigeons. Bravo, Nina. Tu as su inviter. Tu as su accepter un non. Plus tard, à la maison, la table est farinée. Ça sent la pâte tiède. Nina pétrit un morceau. Nino dessine près de la fenêtre. Tu veux jouer avec nous ? Non, je dessine. Nina se souvient. D'accord. Elle pétrit la pâte. Tu as su inviter. Tu as su accepter un non. Ici, comme au parc. Tu as fait du bon travail. La pâte est molle. Oui. La farine fait un petit nuage. Nina forme une petite tour. Nino tourne sa feuille. Tu as invité deux fois. Tu as accepté un non deux fois. D'accord. Le jeu reste doux. Un pigeon passe encore derrière la vitre.",
+      "script": "narrateur|Une pelle de bois a du sable collé.\nnarrateur|Le seau a un petit trou.\nnarrateur|Le bac sent le sable chaud.\nnarrateur|Un pigeon marche sur le chemin.\nnarrateur|Maman pose le panier près du banc.\nnarrateur|Le banc a des rayures d'ombre.\nmaman|Nina, le château attend.\nnarrateur|En ce moment, Nina creuse dans le bac.\nnarrateur|Le sable coule entre ses doigts.\nenfant-f|Il est chaud, maman.\nmaman|Oui.\nnarrateur|Nino arrive près des pigeons.\nnarrateur|Nina veut jouer.\nmaman|Tu peux inviter.\nmaman|Inviter, c'est demander.\nenfant-f|Tu veux jouer avec nous ?\ncopain|Non, merci.\nnarrateur|Nina écoute.\nmaman|Accepter un non, c'est possible.\nenfant-f|D'accord.\nnarrateur|Elle continue son château.\nnarrateur|Le seau laisse un filet de sable.\nnarrateur|Nino regarde les pigeons.\nmaman|Bravo, Nina.\nmaman|Tu as su inviter.\nmaman|Tu as su accepter un non.\nnarrateur|Plus tard, à la maison, la table est farinée.\nnarrateur|Ça sent la pâte tiède.\nnarrateur|Nina pétrit un morceau.\nnarrateur|Nino dessine près de la fenêtre.\nenfant-f|Tu veux jouer avec nous ?\ncopain|Non, je dessine.\nnarrateur|Nina se souvient.\nenfant-f|D'accord.\nnarrateur|Elle pétrit la pâte.\nmaman|Tu as su inviter.\nmaman|Tu as su accepter un non.\nmaman|Ici, comme au parc.\nmaman|Tu as fait du bon travail.\nenfant-f|La pâte est molle.\nmaman|Oui.\nnarrateur|La farine fait un petit nuage.\nnarrateur|Nina forme une petite tour.\nnarrateur|Nino tourne sa feuille.\nmaman|Tu as invité deux fois.\nmaman|Tu as accepté un non deux fois.\nenfant-f|D'accord.\nmaman|Le jeu reste doux.\nnarrateur|Un pigeon passe encore derrière la vitre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina veut jouer. Que peut-elle dire ?",
+      "script": "narrateur|Nina veut jouer.\nnarrateur|Que peut-elle dire ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nina a invité. Au parc, puis à la maison. Elle a su accepter un non. Tu as invité ? Oui, maman. Nino a dit non. Tu as accepté un non. Oui. Bravo. Tu as fait du bon travail. Nina forme une petite boule. Nino continue son dessin. C'est un oiseau. Oui. On peut inviter. On peut accepter un non. La pâte reste molle sous les doigts. La fenêtre sent encore le dehors. Le château est au parc. Oui. Tu as demandé. Tu as accepté un non. Oui, maman. Un peu de farine tombe. Ça fait un tout petit bruit.",
+      "script": "narrateur|Nina a invité.\nnarrateur|Au parc, puis à la maison.\nnarrateur|Elle a su accepter un non.\nmaman|Tu as invité ?\nenfant-f|Oui, maman.\nmaman|Nino a dit non.\nmaman|Tu as accepté un non.\nenfant-f|Oui.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|Nina forme une petite boule.\nnarrateur|Nino continue son dessin.\nenfant-f|C'est un oiseau.\nmaman|Oui.\nmaman|On peut inviter.\nmaman|On peut accepter un non.\nnarrateur|La pâte reste molle sous les doigts.\nnarrateur|La fenêtre sent encore le dehors.\nenfant-f|Le château est au parc.\nmaman|Oui.\nmaman|Tu as demandé.\nmaman|Tu as accepté un non.\nenfant-f|Oui, maman.\nnarrateur|Un peu de farine tombe.\nnarrateur|Ça fait un tout petit bruit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On range la pâte ? Oui. Nina range la pâte dans le bol. Maman essuie la table. Il reste un peu de farine. Tu as fini de pétrir ? Oui, maman. Merci. Bravo. Nino range son crayon. Au revoir le château. Au revoir. La cuisine sent encore la pâte. Tu as su inviter, Nina. Oui. Le bol attend au milieu. La table redevient lisse.",
+      "script": "maman|On range la pâte ?\nenfant-f|Oui.\nnarrateur|Nina range la pâte dans le bol.\nnarrateur|Maman essuie la table.\nnarrateur|Il reste un peu de farine.\nmaman|Tu as fini de pétrir ?\nenfant-f|Oui, maman.\nmaman|Merci.\nmaman|Bravo.\nnarrateur|Nino range son crayon.\ncopain|Au revoir le château.\nenfant-f|Au revoir.\nnarrateur|La cuisine sent encore la pâte.\nmaman|Tu as su inviter, Nina.\nenfant-f|Oui.\nnarrateur|Le bol attend au milieu.\nnarrateur|La table redevient lisse.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai invité. Nino a dit non. Tu as accepté un non. Bravo, Nina. Le bol attend sur la table. L'histoire est finie.",
+      "script": "enfant-f|J'ai invité.\nenfant-f|Nino a dit non.\nmaman|Tu as accepté un non.\nmaman|Bravo, Nina.\nnarrateur|Le bol attend sur la table.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

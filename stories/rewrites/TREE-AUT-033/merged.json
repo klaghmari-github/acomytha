@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-AUT-033",
+  "fil_rouge": "La gouttière du kiosque goutte encore. Nino joue au parc. Avant de partir, il cherche le seau et le manteau, puis il les prend.",
+  "title": "La gouttière du kiosque et le manteau bleu",
+  "lesson_id": "AUT.AFF.003",
+  "age_band": "N1",
+  "kind": "ramifiee",
+  "characters": "Nino, papa, maman",
+  "setting": "au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La gouttière du kiosque goutte encore. Ploc. Une flaque ronde brille au sol. Une feuille y tourne, toute lente. Le banc du parc est encore mouillé. Un manteau bleu sèche dessus. Les boutons sont ronds, un peu froids. Un seau jaune est sous le banc. Il sent le sable mouillé. Papa essuie le bois avec sa manche. Maman ouvre un sac de pain. Ça sent le pain, tout chaud. Tu as vu la flaque, Nino ? Oui. Elle brille. Le banc est encore humide. En ce moment, Nino touche le seau. L'anse est froide, un peu rêche. Je veux jouer ! D'accord. On joue. Avant de partir, on reprend les affaires. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Oui. On les prend. Une goutte tombe encore. Ploc.",
+      "script": "narrateur|La gouttière du kiosque goutte encore.\nnarrateur|Ploc.\nnarrateur|Une flaque ronde brille au sol.\nnarrateur|Une feuille y tourne, toute lente.\nnarrateur|Le banc du parc est encore mouillé.\nnarrateur|Un manteau bleu sèche dessus.\nnarrateur|Les boutons sont ronds, un peu froids.\nnarrateur|Un seau jaune est sous le banc.\nnarrateur|Il sent le sable mouillé.\nnarrateur|Papa essuie le bois avec sa manche.\nnarrateur|Maman ouvre un sac de pain.\nnarrateur|Ça sent le pain, tout chaud.\nmaman|Tu as vu la flaque, Nino ?\nenfant-m|Oui.\nenfant-m|Elle brille.\npapa|Le banc est encore humide.\nnarrateur|En ce moment, Nino touche le seau.\nnarrateur|L'anse est froide, un peu rêche.\nenfant-m|Je veux jouer !\nmaman|D'accord.\nmaman|On joue.\npapa|Avant de partir, on reprend les affaires.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Oui.\nmaman|On les prend.\nnarrateur|Une goutte tombe encore.\nnarrateur|Ploc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "Au parc, Nino peut commencer à trois endroits. Le bac à sable, le toboggan, ou les balançoires ? Tu choisis. Ensuite on reprend les affaires.",
+      "script": "narrateur|Au parc, Nino peut commencer à trois endroits.\npapa|Le bac à sable, le toboggan, ou les balançoires ?\nmaman|Tu choisis.\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Nino s'agenouille près du bac. Le sable est frais, un peu humide. Il coule entre ses doigts. Chh. Une petite pelle jaune attend. Le sable est doux, maman. Oui. Il est doux et frais. On joue ici un moment. Le manteau bleu reste sur le banc. Le seau jaune n'est pas loin. On joue. Puis on reprend les affaires. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo. Tu t'en souviens. Un grain de sable brille sur son genou.",
+      "script": "narrateur|Nino s'agenouille près du bac.\nnarrateur|Le sable est frais, un peu humide.\nnarrateur|Il coule entre ses doigts.\nnarrateur|Chh.\nnarrateur|Une petite pelle jaune attend.\nenfant-m|Le sable est doux, maman.\nmaman|Oui.\nmaman|Il est doux et frais.\npapa|On joue ici un moment.\nnarrateur|Le manteau bleu reste sur le banc.\nnarrateur|Le seau jaune n'est pas loin.\nmaman|On joue.\nmaman|Puis on reprend les affaires.\npapa|On cherche le seau.\npapa|On cherche le manteau.\nmaman|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\npapa|Bravo.\npapa|Tu t'en souviens.\nnarrateur|Un grain de sable brille sur son genou.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Nino est près du bac à sable. Avant de partir, on reprend quoi ?",
+      "script": "narrateur|Nino est près du bac à sable.\nmaman|Avant de partir, on reprend quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo, Nino. Tu as fait du bon travail. Un grain de sable brille sur son genou. On continue ensemble.",
+      "script": "papa|Oui.\npapa|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Un grain de sable brille sur son genou.\npapa|On continue ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Près du bac à sable, Nino prend un objet. Le ballon, le seau, ou le doudou ? Tu choisis. Ensuite on reprend les affaires.",
+      "script": "narrateur|Près du bac à sable, Nino prend un objet.\npapa|Le ballon, le seau, ou le doudou ?\nmaman|Tu choisis.\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Près du bac à sable, le ballon est là. Le ballon rouge attend près de Nino. Il est lisse, un peu frais. Le ballon, maman. D'accord. Nino pose les deux mains dessus. Le ballon fait un petit bruit de peau. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le ballon prend un peu de sable. Le ballon reste rond, tout calme. Un grain de sable brille sur son genou.",
+      "script": "narrateur|Près du bac à sable, le ballon est là.\nnarrateur|Le ballon rouge attend près de Nino.\nnarrateur|Il est lisse, un peu frais.\nenfant-m|Le ballon, maman.\npapa|D'accord.\nnarrateur|Nino pose les deux mains dessus.\nnarrateur|Le ballon fait un petit bruit de peau.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le ballon prend un peu de sable.\nnarrateur|Le ballon reste rond, tout calme.\nnarrateur|Un grain de sable brille sur son genou.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le ballon, près du bac à sable. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le ballon, près du bac à sable.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du bac à sable. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Une miette de pain reste dans une maille. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Une miette de pain reste dans une maille.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le ballon. Puis le filet. Une miette de pain reste dans une maille. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le ballon.\nnarrateur|Puis le filet.\nnarrateur|Une miette de pain reste dans une maille.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du bac à sable. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Une goutte d'eau roule sur le ballon. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Une goutte d'eau roule sur le ballon.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le ballon. Puis la fontaine. Une goutte d'eau roule sur le ballon. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la fontaine.\nnarrateur|Une goutte d'eau roule sur le ballon.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du bac à sable. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le ballon frotte la grille, tout doux. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le ballon frotte la grille, tout doux.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le ballon. Puis la grille. Le ballon frotte la grille, tout doux. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la grille.\nnarrateur|Le ballon frotte la grille, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Près du bac à sable, le seau est là. Le seau jaune est tout près. L'anse est un peu froide. Le seau, papa. D'accord. Nino tient l'anse des deux mains. Le seau racle un peu, toc. On joue un moment. Tu as déjà le seau. Il restera le manteau. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le seau se pose dans le sable, toc. Le seau reste dans ses mains. Un grain de sable brille sur son genou.",
+      "script": "narrateur|Près du bac à sable, le seau est là.\nnarrateur|Le seau jaune est tout près.\nnarrateur|L'anse est un peu froide.\nenfant-m|Le seau, papa.\npapa|D'accord.\nnarrateur|Nino tient l'anse des deux mains.\nnarrateur|Le seau racle un peu, toc.\nmaman|On joue un moment.\npapa|Tu as déjà le seau.\nmaman|Il restera le manteau.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le seau se pose dans le sable, toc.\nnarrateur|Le seau reste dans ses mains.\nnarrateur|Un grain de sable brille sur son genou.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le seau, près du bac à sable. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le seau, près du bac à sable.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du bac à sable. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Du sable reste au fond du seau. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Du sable reste au fond du seau.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le seau. Puis le filet. Du sable reste au fond du seau. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le seau.\nnarrateur|Puis le filet.\nnarrateur|Du sable reste au fond du seau.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du bac à sable. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Le seau sonne un peu sous l'eau. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Le seau sonne un peu sous l'eau.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le seau. Puis la fontaine. Le seau sonne un peu sous l'eau. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le seau.\nnarrateur|Puis la fontaine.\nnarrateur|Le seau sonne un peu sous l'eau.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du bac à sable. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le seau tapote la barre verte. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le seau tapote la barre verte.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le seau. Puis la grille. Le seau tapote la barre verte. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le seau.\nnarrateur|Puis la grille.\nnarrateur|Le seau tapote la barre verte.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Près du bac à sable, le doudou est là. Le doudou gris est tout près. Le tissu est doux, un peu humide. Le doudou, maman. D'accord. Nino le serre contre lui. Le doudou sent encore le savon. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le doudou a un grain sur l'oreille. Le doudou reste contre sa joue. Un grain de sable brille sur son genou.",
+      "script": "narrateur|Près du bac à sable, le doudou est là.\nnarrateur|Le doudou gris est tout près.\nnarrateur|Le tissu est doux, un peu humide.\nenfant-m|Le doudou, maman.\npapa|D'accord.\nnarrateur|Nino le serre contre lui.\nnarrateur|Le doudou sent encore le savon.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le doudou a un grain sur l'oreille.\nnarrateur|Le doudou reste contre sa joue.\nnarrateur|Un grain de sable brille sur son genou.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le doudou, près du bac à sable. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le doudou, près du bac à sable.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du bac à sable. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le doudou a un grain de sable. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le doudou a un grain de sable.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le doudou. Puis le filet. Le doudou a un grain de sable. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le doudou.\nnarrateur|Puis le filet.\nnarrateur|Le doudou a un grain de sable.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du bac à sable. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Le doudou sent un peu l'eau. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Le doudou sent un peu l'eau.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le doudou. Puis la fontaine. Le doudou sent un peu l'eau. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la fontaine.\nnarrateur|Le doudou sent un peu l'eau.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du bac à sable. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le doudou frotte la feuille coincée. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du bac à sable.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le doudou frotte la feuille coincée.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du bac à sable. Il avait le doudou. Puis la grille. Le doudou frotte la feuille coincée. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du bac à sable.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la grille.\nnarrateur|Le doudou frotte la feuille coincée.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Nino va vers le toboggan. Le métal est un peu froid. Une marche est lisse. Une goutte y brille encore. Le toboggan sent le fer mouillé. Il est froid, papa. Oui. Le soleil va le tiédir. On reste près des marches. Le manteau bleu reste sur le banc. Le seau jaune n'est pas loin. On joue. Puis on reprend les affaires. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo. Tu t'en souviens. Une goutte a séché sur le métal.",
+      "script": "narrateur|Nino va vers le toboggan.\nnarrateur|Le métal est un peu froid.\nnarrateur|Une marche est lisse.\nnarrateur|Une goutte y brille encore.\nnarrateur|Le toboggan sent le fer mouillé.\nenfant-m|Il est froid, papa.\nmaman|Oui.\nmaman|Le soleil va le tiédir.\npapa|On reste près des marches.\nnarrateur|Le manteau bleu reste sur le banc.\nnarrateur|Le seau jaune n'est pas loin.\nmaman|On joue.\nmaman|Puis on reprend les affaires.\npapa|On cherche le seau.\npapa|On cherche le manteau.\nmaman|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\npapa|Bravo.\npapa|Tu t'en souviens.\nnarrateur|Une goutte a séché sur le métal.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Nino est près du toboggan. Avant de partir, on reprend quoi ?",
+      "script": "narrateur|Nino est près du toboggan.\nmaman|Avant de partir, on reprend quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte a séché sur le métal. On continue ensemble.",
+      "script": "papa|Oui.\npapa|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte a séché sur le métal.\npapa|On continue ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Près du toboggan, Nino prend un objet. Le ballon, le seau, ou le doudou ? Tu choisis. Ensuite on reprend les affaires.",
+      "script": "narrateur|Près du toboggan, Nino prend un objet.\npapa|Le ballon, le seau, ou le doudou ?\nmaman|Tu choisis.\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Près du toboggan, le ballon est là. Le ballon rouge attend près de Nino. Il est lisse, un peu frais. Le ballon, maman. D'accord. Nino pose les deux mains dessus. Le ballon fait un petit bruit de peau. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le ballon s'appuie contre une marche. Le ballon reste rond, tout calme. Une goutte a séché sur le métal.",
+      "script": "narrateur|Près du toboggan, le ballon est là.\nnarrateur|Le ballon rouge attend près de Nino.\nnarrateur|Il est lisse, un peu frais.\nenfant-m|Le ballon, maman.\npapa|D'accord.\nnarrateur|Nino pose les deux mains dessus.\nnarrateur|Le ballon fait un petit bruit de peau.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le ballon s'appuie contre une marche.\nnarrateur|Le ballon reste rond, tout calme.\nnarrateur|Une goutte a séché sur le métal.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le ballon, près du toboggan. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le ballon, près du toboggan.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du toboggan. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le ballon a une trace de métal froid. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le ballon a une trace de métal froid.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le ballon. Puis le filet. Le ballon a une trace de métal froid. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le ballon.\nnarrateur|Puis le filet.\nnarrateur|Le ballon a une trace de métal froid.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du toboggan. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Une goutte du toboggan rejoint la fontaine. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Une goutte du toboggan rejoint la fontaine.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le ballon. Puis la fontaine. Une goutte du toboggan rejoint la fontaine. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la fontaine.\nnarrateur|Une goutte du toboggan rejoint la fontaine.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du toboggan. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le ballon rebondit une fois, près de la grille. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le ballon rebondit une fois, près de la grille.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le ballon. Puis la grille. Le ballon rebondit une fois, près de la grille. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la grille.\nnarrateur|Le ballon rebondit une fois, près de la grille.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Près du toboggan, le seau est là. Le seau jaune est tout près. L'anse est un peu froide. Le seau, papa. D'accord. Nino tient l'anse des deux mains. Le seau racle un peu, toc. On joue un moment. Tu as déjà le seau. Il restera le manteau. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le seau attend au pied du toboggan. Le seau reste dans ses mains. Une goutte a séché sur le métal.",
+      "script": "narrateur|Près du toboggan, le seau est là.\nnarrateur|Le seau jaune est tout près.\nnarrateur|L'anse est un peu froide.\nenfant-m|Le seau, papa.\npapa|D'accord.\nnarrateur|Nino tient l'anse des deux mains.\nnarrateur|Le seau racle un peu, toc.\nmaman|On joue un moment.\npapa|Tu as déjà le seau.\nmaman|Il restera le manteau.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le seau attend au pied du toboggan.\nnarrateur|Le seau reste dans ses mains.\nnarrateur|Une goutte a séché sur le métal.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le seau, près du toboggan. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le seau, près du toboggan.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du toboggan. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. L'anse du seau a une goutte du toboggan. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|L'anse du seau a une goutte du toboggan.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le seau. Puis le filet. L'anse du seau a une goutte du toboggan. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le seau.\nnarrateur|Puis le filet.\nnarrateur|L'anse du seau a une goutte du toboggan.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du toboggan. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Le seau se rince un tout petit peu. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Le seau se rince un tout petit peu.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le seau. Puis la fontaine. Le seau se rince un tout petit peu. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le seau.\nnarrateur|Puis la fontaine.\nnarrateur|Le seau se rince un tout petit peu.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du toboggan. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le seau jaune brille près de la grille. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le seau jaune brille près de la grille.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le seau. Puis la grille. Le seau jaune brille près de la grille. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le seau.\nnarrateur|Puis la grille.\nnarrateur|Le seau jaune brille près de la grille.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Près du toboggan, le doudou est là. Le doudou gris est tout près. Le tissu est doux, un peu humide. Le doudou, maman. D'accord. Nino le serre contre lui. Le doudou sent encore le savon. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le doudou regarde le métal froid. Le doudou reste contre sa joue. Une goutte a séché sur le métal.",
+      "script": "narrateur|Près du toboggan, le doudou est là.\nnarrateur|Le doudou gris est tout près.\nnarrateur|Le tissu est doux, un peu humide.\nenfant-m|Le doudou, maman.\npapa|D'accord.\nnarrateur|Nino le serre contre lui.\nnarrateur|Le doudou sent encore le savon.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le doudou regarde le métal froid.\nnarrateur|Le doudou reste contre sa joue.\nnarrateur|Une goutte a séché sur le métal.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le doudou, près du toboggan. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le doudou, près du toboggan.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près du toboggan. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le doudou a touché la marche lisse. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le doudou a touché la marche lisse.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le doudou. Puis le filet. Le doudou a touché la marche lisse. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le doudou.\nnarrateur|Puis le filet.\nnarrateur|Le doudou a touché la marche lisse.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près du toboggan. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Une goutte du toboggan sèche sur le doudou. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Une goutte du toboggan sèche sur le doudou.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le doudou. Puis la fontaine. Une goutte du toboggan sèche sur le doudou. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la fontaine.\nnarrateur|Une goutte du toboggan sèche sur le doudou.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près du toboggan. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le doudou passe sous la barre verte. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près du toboggan.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le doudou passe sous la barre verte.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près du toboggan. Il avait le doudou. Puis la grille. Le doudou passe sous la barre verte. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près du toboggan.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la grille.\nnarrateur|Le doudou passe sous la barre verte.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Nino va vers les balançoires. Une chaîne fait tic, tout doux. Le siège rouge est encore humide. Le vent le pousse un peu. Une feuille est collée au siège. Ça bouge tout seul. C'est le vent, Nino. On reste près du siège. La chaîne est froide, un peu. Le manteau bleu reste sur le banc. Le seau jaune n'est pas loin. On joue. Puis on reprend les affaires. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo. Tu t'en souviens. La chaîne ne fait plus tic.",
+      "script": "narrateur|Nino va vers les balançoires.\nnarrateur|Une chaîne fait tic, tout doux.\nnarrateur|Le siège rouge est encore humide.\nnarrateur|Le vent le pousse un peu.\nnarrateur|Une feuille est collée au siège.\nenfant-m|Ça bouge tout seul.\nmaman|C'est le vent, Nino.\nmaman|On reste près du siège.\npapa|La chaîne est froide, un peu.\nnarrateur|Le manteau bleu reste sur le banc.\nnarrateur|Le seau jaune n'est pas loin.\nmaman|On joue.\nmaman|Puis on reprend les affaires.\npapa|On cherche le seau.\npapa|On cherche le manteau.\nmaman|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\npapa|Bravo.\npapa|Tu t'en souviens.\nnarrateur|La chaîne ne fait plus tic.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Nino est près des balançoires. Avant de partir, on reprend quoi ?",
+      "script": "narrateur|Nino est près des balançoires.\nmaman|Avant de partir, on reprend quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On cherche le seau. On cherche le manteau. On les prend. Le seau. Le manteau. Bravo, Nino. Tu as fait du bon travail. La chaîne ne fait plus tic. On continue ensemble.",
+      "script": "papa|Oui.\npapa|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La chaîne ne fait plus tic.\npapa|On continue ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Près des balançoires, Nino prend un objet. Le ballon, le seau, ou le doudou ? Tu choisis. Ensuite on reprend les affaires.",
+      "script": "narrateur|Près des balançoires, Nino prend un objet.\npapa|Le ballon, le seau, ou le doudou ?\nmaman|Tu choisis.\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Près des balançoires, le ballon est là. Le ballon rouge attend près de Nino. Il est lisse, un peu frais. Le ballon, maman. D'accord. Nino pose les deux mains dessus. Le ballon fait un petit bruit de peau. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le ballon roule sous le siège, tout doux. Le ballon reste rond, tout calme. La chaîne ne fait plus tic.",
+      "script": "narrateur|Près des balançoires, le ballon est là.\nnarrateur|Le ballon rouge attend près de Nino.\nnarrateur|Il est lisse, un peu frais.\nenfant-m|Le ballon, maman.\npapa|D'accord.\nnarrateur|Nino pose les deux mains dessus.\nnarrateur|Le ballon fait un petit bruit de peau.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le ballon roule sous le siège, tout doux.\nnarrateur|Le ballon reste rond, tout calme.\nnarrateur|La chaîne ne fait plus tic.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le ballon, près des balançoires. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le ballon, près des balançoires.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près des balançoires. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le ballon a une feuille collée un instant. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le ballon a une feuille collée un instant.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le ballon. Puis le filet. Le ballon a une feuille collée un instant. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le ballon.\nnarrateur|Puis le filet.\nnarrateur|Le ballon a une feuille collée un instant.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près des balançoires. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. L'eau de la fontaine chante comme la chaîne. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|L'eau de la fontaine chante comme la chaîne.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le ballon. Puis la fontaine. L'eau de la fontaine chante comme la chaîne. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la fontaine.\nnarrateur|L'eau de la fontaine chante comme la chaîne.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près des balançoires. Le ballon reste rond, tout calme. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le vent pousse encore le ballon, tout doux. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le ballon reste rond, tout calme.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le vent pousse encore le ballon, tout doux.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le ballon. Puis la grille. Le vent pousse encore le ballon, tout doux. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le ballon.\nnarrateur|Puis la grille.\nnarrateur|Le vent pousse encore le ballon, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Près des balançoires, le seau est là. Le seau jaune est tout près. L'anse est un peu froide. Le seau, papa. D'accord. Nino tient l'anse des deux mains. Le seau racle un peu, toc. On joue un moment. Tu as déjà le seau. Il restera le manteau. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le seau est près de la chaîne. Le seau reste dans ses mains. La chaîne ne fait plus tic.",
+      "script": "narrateur|Près des balançoires, le seau est là.\nnarrateur|Le seau jaune est tout près.\nnarrateur|L'anse est un peu froide.\nenfant-m|Le seau, papa.\npapa|D'accord.\nnarrateur|Nino tient l'anse des deux mains.\nnarrateur|Le seau racle un peu, toc.\nmaman|On joue un moment.\npapa|Tu as déjà le seau.\nmaman|Il restera le manteau.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le seau est près de la chaîne.\nnarrateur|Le seau reste dans ses mains.\nnarrateur|La chaîne ne fait plus tic.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le seau, près des balançoires. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le seau, près des balançoires.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près des balançoires. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le seau a une feuille au fond. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le seau a une feuille au fond.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le seau. Puis le filet. Le seau a une feuille au fond. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le seau.\nnarrateur|Puis le filet.\nnarrateur|Le seau a une feuille au fond.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près des balançoires. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. L'eau chante tout bas, près du seau. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|L'eau chante tout bas, près du seau.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le seau. Puis la fontaine. L'eau chante tout bas, près du seau. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le seau.\nnarrateur|Puis la fontaine.\nnarrateur|L'eau chante tout bas, près du seau.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près des balançoires. Le seau reste dans ses mains. C'est l'heure de partir. On reprend les affaires. Nino tient déjà le seau jaune. Cherche le manteau, Nino. Nino va vers le banc. Le manteau bleu sèche encore. Il le prend. Bravo. Tu as le manteau. Tu as le seau. J'ai les deux. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. Le seau passe sous la barre, sans se cogner. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le seau reste dans ses mains.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nnarrateur|Nino tient déjà le seau jaune.\nmaman|Cherche le manteau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le manteau bleu sèche encore.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\npapa|Tu as le seau.\nenfant-m|J'ai les deux.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|Le seau passe sous la barre, sans se cogner.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le seau. Puis la grille. Le seau passe sous la barre, sans se cogner. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le seau.\nnarrateur|Puis la grille.\nnarrateur|Le seau passe sous la barre, sans se cogner.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Près des balançoires, le doudou est là. Le doudou gris est tout près. Le tissu est doux, un peu humide. Le doudou, maman. D'accord. Nino le serre contre lui. Le doudou sent encore le savon. On joue un moment. Le seau attend encore. Le manteau aussi. Avant de partir, on cherche. On cherche le seau. On cherche le manteau. On les prend. D'accord. Bravo. Le doudou s'assoit sur le siège rouge. Le doudou reste contre sa joue. La chaîne ne fait plus tic.",
+      "script": "narrateur|Près des balançoires, le doudou est là.\nnarrateur|Le doudou gris est tout près.\nnarrateur|Le tissu est doux, un peu humide.\nenfant-m|Le doudou, maman.\npapa|D'accord.\nnarrateur|Nino le serre contre lui.\nnarrateur|Le doudou sent encore le savon.\nmaman|On joue un moment.\npapa|Le seau attend encore.\nmaman|Le manteau aussi.\npapa|Avant de partir, on cherche.\nmaman|On cherche le seau.\nmaman|On cherche le manteau.\npapa|On les prend.\nenfant-m|D'accord.\nmaman|Bravo.\nnarrateur|Le doudou s'assoit sur le siège rouge.\nnarrateur|Le doudou reste contre sa joue.\nnarrateur|La chaîne ne fait plus tic.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Nino a le doudou, près des balançoires. Avant de partir, on passe où ? Le filet, la fontaine, ou la grille ? Ensuite on reprend les affaires.",
+      "script": "narrateur|Nino a le doudou, près des balançoires.\nmaman|Avant de partir, on passe où ?\npapa|Le filet, la fontaine, ou la grille ?\nmaman|Ensuite on reprend les affaires.",
+      "sons": "",
+      "length_scale_piper": 1.38,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le filet est accroché au banc. Les mailles sont un peu rudes. Ça sent le pain, tout près. Nino est encore près des balançoires. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. On met les affaires dans le filet. Le seau. Le manteau. Dans le filet. Dans le filet. Bravo, Nino. Tu as fait du bon travail. Le filet devient un peu lourd. Le doudou a une petite feuille dessus. Merci, papa. Merci, maman.",
+      "script": "narrateur|Le filet est accroché au banc.\nnarrateur|Les mailles sont un peu rudes.\nnarrateur|Ça sent le pain, tout près.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|On met les affaires dans le filet.\npapa|Le seau.\npapa|Le manteau.\npapa|Dans le filet.\nenfant-m|Dans le filet.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Le filet devient un peu lourd.\nnarrateur|Le doudou a une petite feuille dessus.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le doudou. Puis le filet. Le doudou a une petite feuille dessus. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le doudou.\nnarrateur|Puis le filet.\nnarrateur|Le doudou a une petite feuille dessus.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "La fontaine fait un tout petit bruit. L'eau brille, toute claire. La pierre est froide sous la main. Nino est encore près des balançoires. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. D'abord les affaires. Ensuite on rince les mains. Les affaires sont avec nous. Bravo. J'ai le seau. J'ai le manteau. Bravo, Nino. Tu as fait du bon travail. Une goutte tombe sur la pierre. Le doudou s'éloigne de l'eau, tout doux. Merci, papa. Merci, maman.",
+      "script": "narrateur|La fontaine fait un tout petit bruit.\nnarrateur|L'eau brille, toute claire.\nnarrateur|La pierre est froide sous la main.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|D'abord les affaires.\npapa|Ensuite on rince les mains.\npapa|Les affaires sont avec nous.\npapa|Bravo.\nenfant-m|J'ai le seau.\nenfant-m|J'ai le manteau.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|Une goutte tombe sur la pierre.\nnarrateur|Le doudou s'éloigne de l'eau, tout doux.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le doudou. Puis la fontaine. Le doudou s'éloigne de l'eau, tout doux. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la fontaine.\nnarrateur|Le doudou s'éloigne de l'eau, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "La grille du parc est verte. La barre est un peu froide. Une feuille y est coincée. Nino est encore près des balançoires. Le doudou reste contre sa joue. C'est l'heure de partir. On reprend les affaires. Cherche le seau, Nino. Nino va vers le banc. Le seau jaune est dessous. Il le prend. Bravo. Tu as le seau. Cherche le manteau. Le manteau bleu est dessus. Il le prend. Bravo. Tu as le manteau. Le seau. Le manteau. Avant la grille, les affaires. On a le seau. On a le manteau. On peut passer. J'ai tout. Bravo, Nino. Tu as fait du bon travail. La grille fait clic, tout doux. La chaîne s'est tue, tout à fait. Merci, papa. Merci, maman.",
+      "script": "narrateur|La grille du parc est verte.\nnarrateur|La barre est un peu froide.\nnarrateur|Une feuille y est coincée.\nnarrateur|Nino est encore près des balançoires.\nnarrateur|Le doudou reste contre sa joue.\npapa|C'est l'heure de partir.\nmaman|On reprend les affaires.\nmaman|Cherche le seau, Nino.\nnarrateur|Nino va vers le banc.\nnarrateur|Le seau jaune est dessous.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le seau.\nmaman|Cherche le manteau.\nnarrateur|Le manteau bleu est dessus.\nnarrateur|Il le prend.\npapa|Bravo.\npapa|Tu as le manteau.\nenfant-m|Le seau.\nenfant-m|Le manteau.\nmaman|Avant la grille, les affaires.\npapa|On a le seau.\npapa|On a le manteau.\npapa|On peut passer.\nenfant-m|J'ai tout.\nmaman|Bravo, Nino.\nmaman|Tu as fait du bon travail.\nnarrateur|La grille fait clic, tout doux.\nnarrateur|La chaîne s'est tue, tout à fait.\nenfant-m|Merci, papa.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Bravo, Nino. Tu as fait du bon travail. Tu as cherché le seau. Tu as cherché le manteau. Tu les as pris. Nino est passé près des balançoires. Il avait le doudou. Puis la grille. La chaîne s'est tue, tout à fait. L'histoire est finie.",
+      "script": "papa|Bravo, Nino.\npapa|Tu as fait du bon travail.\nmaman|Tu as cherché le seau.\nmaman|Tu as cherché le manteau.\npapa|Tu les as pris.\nnarrateur|Nino est passé près des balançoires.\nnarrateur|Il avait le doudou.\nnarrateur|Puis la grille.\nnarrateur|La chaîne s'est tue, tout à fait.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

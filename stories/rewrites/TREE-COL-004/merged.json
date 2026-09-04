@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-COL-004",
+  "fil_rouge": "À l'école, Sarah écoute la maîtresse. Un camarade chuchote. Son ventre se serre. À la maison, elle raconte à papa et maman.",
+  "title": "La cloche et le crayon jaune",
+  "lesson_id": "COL.ECO.001",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Sarah, maman, papa",
+  "setting": "école, puis la maison",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La cloche de l'école sonne une fois, toute ronde. Les carreaux du couloir sont froids sous les chaussures. Ça sent la craie et le savon des mains. Un rayon glisse sur le casier de Sarah. Le cartable est un peu lourd. Un crayon jaune dépasse, tout lisse. Maman s'arrête près de la porte de la classe. La poignée est froide. Bonne journée, Sarah. Tu écoutes la maîtresse, d'accord ? D'accord, maman. Papa t'écoute ce soir, à la maison. En ce moment, Sarah s'assoit. La chaise fait un petit toc. La maîtresse ouvre un grand livre. Il y a un train, un bus, une voiture. On écoute d'abord. Sarah écoute. Un camarade se penche. Il chuchote tout près de l'oreille. Sarah sent un malaise. Son ventre se serre, tout petit. Elle reste sur sa chaise. Elle écoute encore la maîtresse. À la maison, je raconte.",
+      "script": "narrateur|La cloche de l'école sonne une fois, toute ronde.\nnarrateur|Les carreaux du couloir sont froids sous les chaussures.\nnarrateur|Ça sent la craie et le savon des mains.\nnarrateur|Un rayon glisse sur le casier de Sarah.\nnarrateur|Le cartable est un peu lourd.\nnarrateur|Un crayon jaune dépasse, tout lisse.\nnarrateur|Maman s'arrête près de la porte de la classe.\nnarrateur|La poignée est froide.\nmaman|Bonne journée, Sarah.\nmaman|Tu écoutes la maîtresse, d'accord ?\nenfant-f|D'accord, maman.\nmaman|Papa t'écoute ce soir, à la maison.\nnarrateur|En ce moment, Sarah s'assoit.\nnarrateur|La chaise fait un petit toc.\nnarrateur|La maîtresse ouvre un grand livre.\nnarrateur|Il y a un train, un bus, une voiture.\nmaitresse|On écoute d'abord.\nnarrateur|Sarah écoute.\nnarrateur|Un camarade se penche.\nnarrateur|Il chuchote tout près de l'oreille.\nnarrateur|Sarah sent un malaise.\nnarrateur|Son ventre se serre, tout petit.\nnarrateur|Elle reste sur sa chaise.\nnarrateur|Elle écoute encore la maîtresse.\nenfant-f|À la maison, je raconte.",
+      "sons": "cloche",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "Le livre a trois images. Le train, le bus, ou la voiture ? On écoute. Ensuite, si malaise, on raconte à la maison.",
+      "script": "narrateur|Le livre a trois images.\nmaitresse|Le train, le bus, ou la voiture ?\nmaman|On écoute.\nmaman|Ensuite, si malaise, on raconte à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "La maîtresse montre le train. Les roues sont noires, toutes rondes. Une petite cheminée est dessinée, tout gris. On écoute d'abord. Sarah écoute. Un camarade se penche. Il chuchote tout près. Sarah sent un malaise. Son ventre se serre, tout petit. Elle reste sur sa chaise. Elle écoute encore la maîtresse. Je raconte à la maison. Merci, Sarah. Tu as écouté.",
+      "script": "narrateur|La maîtresse montre le train.\nnarrateur|Les roues sont noires, toutes rondes.\nnarrateur|Une petite cheminée est dessinée, tout gris.\nmaitresse|On écoute d'abord.\nnarrateur|Sarah écoute.\nnarrateur|Un camarade se penche.\nnarrateur|Il chuchote tout près.\nnarrateur|Sarah sent un malaise.\nnarrateur|Son ventre se serre, tout petit.\nnarrateur|Elle reste sur sa chaise.\nnarrateur|Elle écoute encore la maîtresse.\nenfant-f|Je raconte à la maison.\nmaitresse|Merci, Sarah.\nmaitresse|Tu as écouté.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah a un malaise. Que fait-elle, à la maison ?",
+      "script": "narrateur|Sarah a un malaise.\nmaman|Que fait-elle, à la maison ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. On écoute la maîtresse. Si malaise, on raconte à la maison. Sarah respire. Je raconte à papa, ou à maman. On t'écoute. Bravo, Sarah.",
+      "script": "maman|Oui.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\nnarrateur|Sarah respire.\nenfant-f|Je raconte à papa, ou à maman.\npapa|On t'écoute.\npapa|Bravo, Sarah.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Le coin des peluches attend, près du casier. Tom, Léa, ou Sami ? Tu t'assoies un peu. Ensuite, tu racontes à la maison.",
+      "script": "narrateur|Le coin des peluches attend, près du casier.\nmaman|Tom, Léa, ou Sami ?\npapa|Tu t'assoies un peu.\npapa|Ensuite, tu racontes à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah rejoint l'ours Tom. L'ours est brun, un peu râpé. Une oreille est plus douce que l'autre. Sarah l'assoit contre le casier. Tom, j'ai écouté. J'ai un malaise. Tu peux le dire à la maison. Papa et maman t'écoutent. Sarah caresse l'oreille de l'ours. On écoute la maîtresse. Si malaise, on raconte à la maison. L'ours a un ticket de train, collé au ventre. Sarah se souvient encore de le train. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint l'ours Tom.\nnarrateur|L'ours est brun, un peu râpé.\nnarrateur|Une oreille est plus douce que l'autre.\nnarrateur|Sarah l'assoit contre le casier.\nenfant-f|Tom, j'ai écouté.\nenfant-f|J'ai un malaise.\nmaman|Tu peux le dire à la maison.\nmaman|Papa et maman t'écoutent.\nnarrateur|Sarah caresse l'oreille de l'ours.\npapa|On écoute la maîtresse.\npapa|Si malaise, on raconte à la maison.\nnarrateur|L'ours a un ticket de train, collé au ventre.\nnarrateur|Sarah se souvient encore de le train.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. L'ours Tom est sur la chaise, près du cacao. Sarah se souvient de le train. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|L'ours Tom est sur la chaise, près du cacao.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu l'ours Tom. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu l'ours Tom. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. L'ours Tom a glissé sous la couverture. Sarah se souvient de le train. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|L'ours Tom a glissé sous la couverture.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu l'ours Tom. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu l'ours Tom. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. L'ours Tom est près de l'assiette, tout sage. Sarah se souvient de le train. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|L'ours Tom est près de l'assiette, tout sage.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu l'ours Tom. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu l'ours Tom. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah rejoint la poupée Léa. La robe est bleue, un peu froissée. Un bouton brille, tout petit. Sarah pose Léa sur ses genoux. Léa, j'ai écouté la maîtresse. Mon ventre est serré. Ce n'est pas un secret pour nous. Tu racontes à la maison. On t'écoute. Sarah lisse la robe bleue. Le malaise est encore là, tout petit. La poupée a un chapeau, comme le contrôleur. Sarah se souvient encore de le train. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint la poupée Léa.\nnarrateur|La robe est bleue, un peu froissée.\nnarrateur|Un bouton brille, tout petit.\nnarrateur|Sarah pose Léa sur ses genoux.\nenfant-f|Léa, j'ai écouté la maîtresse.\nenfant-f|Mon ventre est serré.\nmaman|Ce n'est pas un secret pour nous.\nmaman|Tu racontes à la maison.\npapa|On t'écoute.\nnarrateur|Sarah lisse la robe bleue.\nnarrateur|Le malaise est encore là, tout petit.\nnarrateur|La poupée a un chapeau, comme le contrôleur.\nnarrateur|Sarah se souvient encore de le train.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. La poupée Léa a un peu de cacao sur la robe. Sarah se souvient de le train. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|La poupée Léa a un peu de cacao sur la robe.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu la poupée Léa. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu la poupée Léa. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. La poupée Léa veille au bord du lit. Sarah se souvient de le train. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|La poupée Léa veille au bord du lit.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu la poupée Léa. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu la poupée Léa. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. La poupée Léa est sur la nappe, loin de la soupe. Sarah se souvient de le train. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|La poupée Léa est sur la nappe, loin de la soupe.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu la poupée Léa. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu la poupée Léa. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah rejoint le lion Sami. La crinière est en laine, un peu mêlée. Un œil de bouton regarde, tout calme. Sarah tient Sami contre son cartable. Sami, j'ai un malaise. Tu as écouté la maîtresse. Ensuite, tu racontes à papa ou maman. Je t'écoute. Sarah range une mèche de laine. Le crayon jaune est encore dans la poche. Le lion a une petite valise, tout carton. Sarah se souvient encore de le train. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint le lion Sami.\nnarrateur|La crinière est en laine, un peu mêlée.\nnarrateur|Un œil de bouton regarde, tout calme.\nnarrateur|Sarah tient Sami contre son cartable.\nenfant-f|Sami, j'ai un malaise.\nmaman|Tu as écouté la maîtresse.\nmaman|Ensuite, tu racontes à papa ou maman.\npapa|Je t'écoute.\nnarrateur|Sarah range une mèche de laine.\nnarrateur|Le crayon jaune est encore dans la poche.\nnarrateur|Le lion a une petite valise, tout carton.\nnarrateur|Sarah se souvient encore de le train.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. Le lion Sami a une miette dans la crinière. Sarah se souvient de le train. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|Le lion Sami a une miette dans la crinière.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu le lion Sami. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu le lion Sami. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. Le lion Sami chauffe au soleil du volet. Sarah se souvient de le train. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|Le lion Sami chauffe au soleil du volet.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu le lion Sami. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu le lion Sami. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. Le lion Sami écoute la cuillère, tout calme. Sarah se souvient de le train. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|Le lion Sami écoute la cuillère, tout calme.\nnarrateur|Sarah se souvient de le train.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le train. Elle a tenu le lion Sami. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le train. Elle a tenu le lion Sami. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "La maîtresse montre le bus. Les fenêtres sont jaunes, toutes alignées. Un petit volant est dessiné, tout rond. On écoute le bus, ensemble. Sarah écoute. Un camarade chuchote derrière le livre. Sarah a un malaise. Ses mains deviennent chaudes. Elle pose le crayon, tout droit. Elle écoute la maîtresse jusqu'au bout. Maman m'écoute, à la maison. Oui. D'abord on écoute ici.",
+      "script": "narrateur|La maîtresse montre le bus.\nnarrateur|Les fenêtres sont jaunes, toutes alignées.\nnarrateur|Un petit volant est dessiné, tout rond.\nmaitresse|On écoute le bus, ensemble.\nnarrateur|Sarah écoute.\nnarrateur|Un camarade chuchote derrière le livre.\nnarrateur|Sarah a un malaise.\nnarrateur|Ses mains deviennent chaudes.\nnarrateur|Elle pose le crayon, tout droit.\nnarrateur|Elle écoute la maîtresse jusqu'au bout.\nenfant-f|Maman m'écoute, à la maison.\nmaitresse|Oui.\nmaitresse|D'abord on écoute ici.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "On écoute la maîtresse. Et si malaise, on raconte à la maison ?",
+      "script": "narrateur|On écoute la maîtresse.\npapa|Et si malaise, on raconte à la maison ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On écoute. Si malaise, raconter à la maison. Sarah essuie ses mains sur sa robe. J'ai écouté. Et tu nous racontes. C'est du bon travail.",
+      "script": "papa|Oui.\npapa|On écoute.\npapa|Si malaise, raconter à la maison.\nnarrateur|Sarah essuie ses mains sur sa robe.\nenfant-f|J'ai écouté.\nmaman|Et tu nous racontes.\nmaman|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Le coin des peluches attend, près du casier. Tom, Léa, ou Sami ? Tu t'assoies un peu. Ensuite, tu racontes à la maison.",
+      "script": "narrateur|Le coin des peluches attend, près du casier.\nmaman|Tom, Léa, ou Sami ?\npapa|Tu t'assoies un peu.\npapa|Ensuite, tu racontes à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah rejoint l'ours Tom. L'ours est brun, un peu râpé. Une oreille est plus douce que l'autre. Sarah l'assoit contre le casier. Tom, j'ai écouté. J'ai un malaise. Tu peux le dire à la maison. Papa et maman t'écoutent. Sarah caresse l'oreille de l'ours. On écoute la maîtresse. Si malaise, on raconte à la maison. L'ours est assis comme dans un bus, tout droit. Sarah se souvient encore de le bus. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint l'ours Tom.\nnarrateur|L'ours est brun, un peu râpé.\nnarrateur|Une oreille est plus douce que l'autre.\nnarrateur|Sarah l'assoit contre le casier.\nenfant-f|Tom, j'ai écouté.\nenfant-f|J'ai un malaise.\nmaman|Tu peux le dire à la maison.\nmaman|Papa et maman t'écoutent.\nnarrateur|Sarah caresse l'oreille de l'ours.\npapa|On écoute la maîtresse.\npapa|Si malaise, on raconte à la maison.\nnarrateur|L'ours est assis comme dans un bus, tout droit.\nnarrateur|Sarah se souvient encore de le bus.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. L'ours Tom est dans le cartable, près de la porte. Sarah se souvient de le bus. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|L'ours Tom est dans le cartable, près de la porte.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu l'ours Tom. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu l'ours Tom. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. L'ours Tom a l'oreille pliée, comme un ticket. Sarah se souvient de le bus. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|L'ours Tom a l'oreille pliée, comme un ticket.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu l'ours Tom. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu l'ours Tom. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. L'ours Tom sent encore le savon de l'école. Sarah se souvient de le bus. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|L'ours Tom sent encore le savon de l'école.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu l'ours Tom. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu l'ours Tom. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah rejoint la poupée Léa. La robe est bleue, un peu froissée. Un bouton brille, tout petit. Sarah pose Léa sur ses genoux. Léa, j'ai écouté la maîtresse. Mon ventre est serré. Ce n'est pas un secret pour nous. Tu racontes à la maison. On t'écoute. Sarah lisse la robe bleue. Le malaise est encore là, tout petit. La poupée a un ticket jaune, tout plié. Sarah se souvient encore de le bus. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint la poupée Léa.\nnarrateur|La robe est bleue, un peu froissée.\nnarrateur|Un bouton brille, tout petit.\nnarrateur|Sarah pose Léa sur ses genoux.\nenfant-f|Léa, j'ai écouté la maîtresse.\nenfant-f|Mon ventre est serré.\nmaman|Ce n'est pas un secret pour nous.\nmaman|Tu racontes à la maison.\npapa|On t'écoute.\nnarrateur|Sarah lisse la robe bleue.\nnarrateur|Le malaise est encore là, tout petit.\nnarrateur|La poupée a un ticket jaune, tout plié.\nnarrateur|Sarah se souvient encore de le bus.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. La poupée Léa est près du bol, tout droite. Sarah se souvient de le bus. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|La poupée Léa est près du bol, tout droite.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu la poupée Léa. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu la poupée Léa. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. La poupée Léa a la robe froissée, après la sieste. Sarah se souvient de le bus. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|La poupée Léa a la robe froissée, après la sieste.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu la poupée Léa. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu la poupée Léa. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. La poupée Léa a un ticket jaune dans la poche. Sarah se souvient de le bus. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|La poupée Léa a un ticket jaune dans la poche.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu la poupée Léa. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu la poupée Léa. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah rejoint le lion Sami. La crinière est en laine, un peu mêlée. Un œil de bouton regarde, tout calme. Sarah tient Sami contre son cartable. Sami, j'ai un malaise. Tu as écouté la maîtresse. Ensuite, tu racontes à papa ou maman. Je t'écoute. Sarah range une mèche de laine. Le crayon jaune est encore dans la poche. Le lion regarde la fenêtre du livre, tout loin. Sarah se souvient encore de le bus. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint le lion Sami.\nnarrateur|La crinière est en laine, un peu mêlée.\nnarrateur|Un œil de bouton regarde, tout calme.\nnarrateur|Sarah tient Sami contre son cartable.\nenfant-f|Sami, j'ai un malaise.\nmaman|Tu as écouté la maîtresse.\nmaman|Ensuite, tu racontes à papa ou maman.\npapa|Je t'écoute.\nnarrateur|Sarah range une mèche de laine.\nnarrateur|Le crayon jaune est encore dans la poche.\nnarrateur|Le lion regarde la fenêtre du livre, tout loin.\nnarrateur|Sarah se souvient encore de le bus.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. Le lion Sami baille, tout doux, près du cacao. Sarah se souvient de le bus. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|Le lion Sami baille, tout doux, près du cacao.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu le lion Sami. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu le lion Sami. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. Le lion Sami a chaud, sous la couverture. Sarah se souvient de le bus. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|Le lion Sami a chaud, sous la couverture.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu le lion Sami. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu le lion Sami. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. Le lion Sami a une goutte de soupe sur la laine. Sarah se souvient de le bus. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|Le lion Sami a une goutte de soupe sur la laine.\nnarrateur|Sarah se souvient de le bus.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu le bus. Elle a tenu le lion Sami. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu le bus. Elle a tenu le lion Sami. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "La maîtresse montre la voiture. Les phares sont blancs, tout petits. Une porte est ouverte, sur le papier. On écoute. Sarah écoute. Le malaise est là, dans le ventre. Un camarade a parlé tout bas. Sarah respire. Ce soir, je raconte. Tu as bien écouté le livre. Sarah garde le crayon jaune dans la main. Le bois est lisse.",
+      "script": "narrateur|La maîtresse montre la voiture.\nnarrateur|Les phares sont blancs, tout petits.\nnarrateur|Une porte est ouverte, sur le papier.\nmaitresse|On écoute.\nnarrateur|Sarah écoute.\nnarrateur|Le malaise est là, dans le ventre.\nnarrateur|Un camarade a parlé tout bas.\nnarrateur|Sarah respire.\nenfant-f|Ce soir, je raconte.\nmaitresse|Tu as bien écouté le livre.\nnarrateur|Sarah garde le crayon jaune dans la main.\nnarrateur|Le bois est lisse.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "À l'école, Sarah a écouté. On écoute la maîtresse ?",
+      "script": "narrateur|À l'école, Sarah a écouté.\nmaman|On écoute la maîtresse ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. On écoute la maîtresse. Si malaise, raconter à papa ou maman. Sarah hoche la tête. J'écoute. Puis je raconte. Bravo. On continue ensemble.",
+      "script": "maman|Oui.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à papa ou maman.\nnarrateur|Sarah hoche la tête.\nenfant-f|J'écoute.\nenfant-f|Puis je raconte.\npapa|Bravo.\npapa|On continue ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Le coin des peluches attend, près du casier. Tom, Léa, ou Sami ? Tu t'assoies un peu. Ensuite, tu racontes à la maison.",
+      "script": "narrateur|Le coin des peluches attend, près du casier.\nmaman|Tom, Léa, ou Sami ?\npapa|Tu t'assoies un peu.\npapa|Ensuite, tu racontes à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Sarah rejoint l'ours Tom. L'ours est brun, un peu râpé. Une oreille est plus douce que l'autre. Sarah l'assoit contre le casier. Tom, j'ai écouté. J'ai un malaise. Tu peux le dire à la maison. Papa et maman t'écoutent. Sarah caresse l'oreille de l'ours. On écoute la maîtresse. Si malaise, on raconte à la maison. L'ours a une ceinture de papier, tout simple. Sarah se souvient encore de la voiture. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint l'ours Tom.\nnarrateur|L'ours est brun, un peu râpé.\nnarrateur|Une oreille est plus douce que l'autre.\nnarrateur|Sarah l'assoit contre le casier.\nenfant-f|Tom, j'ai écouté.\nenfant-f|J'ai un malaise.\nmaman|Tu peux le dire à la maison.\nmaman|Papa et maman t'écoutent.\nnarrateur|Sarah caresse l'oreille de l'ours.\npapa|On écoute la maîtresse.\npapa|Si malaise, on raconte à la maison.\nnarrateur|L'ours a une ceinture de papier, tout simple.\nnarrateur|Sarah se souvient encore de la voiture.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. L'ours Tom a la ceinture de papier, encore là. Sarah se souvient de la voiture. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|L'ours Tom a la ceinture de papier, encore là.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu l'ours Tom. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu l'ours Tom. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. L'ours Tom ronronne presque, tout brun. Sarah se souvient de la voiture. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|L'ours Tom ronronne presque, tout brun.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu l'ours Tom. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu l'ours Tom. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. L'ours Tom regarde la fenêtre de la cuisine. Sarah se souvient de la voiture. Elle tient encore l'ours Tom. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|L'ours Tom regarde la fenêtre de la cuisine.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore l'ours Tom.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu l'ours Tom. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu l'ours Tom. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Sarah rejoint la poupée Léa. La robe est bleue, un peu froissée. Un bouton brille, tout petit. Sarah pose Léa sur ses genoux. Léa, j'ai écouté la maîtresse. Mon ventre est serré. Ce n'est pas un secret pour nous. Tu racontes à la maison. On t'écoute. Sarah lisse la robe bleue. Le malaise est encore là, tout petit. La poupée tient un volant de carton. Sarah se souvient encore de la voiture. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint la poupée Léa.\nnarrateur|La robe est bleue, un peu froissée.\nnarrateur|Un bouton brille, tout petit.\nnarrateur|Sarah pose Léa sur ses genoux.\nenfant-f|Léa, j'ai écouté la maîtresse.\nenfant-f|Mon ventre est serré.\nmaman|Ce n'est pas un secret pour nous.\nmaman|Tu racontes à la maison.\npapa|On t'écoute.\nnarrateur|Sarah lisse la robe bleue.\nnarrateur|Le malaise est encore là, tout petit.\nnarrateur|La poupée tient un volant de carton.\nnarrateur|Sarah se souvient encore de la voiture.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. La poupée Léa tient encore le volant de carton. Sarah se souvient de la voiture. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|La poupée Léa tient encore le volant de carton.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu la poupée Léa. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu la poupée Léa. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. La poupée Léa a un bouton défait, tout petit. Sarah se souvient de la voiture. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|La poupée Léa a un bouton défait, tout petit.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu la poupée Léa. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu la poupée Léa. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. La poupée Léa est sur les genoux, près de la lampe. Sarah se souvient de la voiture. Elle tient encore la poupée Léa. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|La poupée Léa est sur les genoux, près de la lampe.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore la poupée Léa.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu la poupée Léa. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu la poupée Léa. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Sarah rejoint le lion Sami. La crinière est en laine, un peu mêlée. Un œil de bouton regarde, tout calme. Sarah tient Sami contre son cartable. Sami, j'ai un malaise. Tu as écouté la maîtresse. Ensuite, tu racontes à papa ou maman. Je t'écoute. Sarah range une mèche de laine. Le crayon jaune est encore dans la poche. Le lion a une clé de bois, trop grande. Sarah se souvient encore de la voiture. On écoute la maîtresse. Si malaise, raconter à la maison.",
+      "script": "narrateur|Sarah rejoint le lion Sami.\nnarrateur|La crinière est en laine, un peu mêlée.\nnarrateur|Un œil de bouton regarde, tout calme.\nnarrateur|Sarah tient Sami contre son cartable.\nenfant-f|Sami, j'ai un malaise.\nmaman|Tu as écouté la maîtresse.\nmaman|Ensuite, tu racontes à papa ou maman.\npapa|Je t'écoute.\nnarrateur|Sarah range une mèche de laine.\nnarrateur|Le crayon jaune est encore dans la poche.\nnarrateur|Le lion a une clé de bois, trop grande.\nnarrateur|Sarah se souvient encore de la voiture.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, raconter à la maison.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Sarah racontera, à la maison. Le matin, après la sieste, ou le soir ? On t'écoute.",
+      "script": "narrateur|Sarah racontera, à la maison.\nmaman|Le matin, après la sieste, ou le soir ?\npapa|On t'écoute.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Le matin, la cuisine sent le cacao. La tasse est chaude, tout près des mains. Une miette reste sur la table. Bonjour, Sarah. Tu as dormi ? Un peu. Le lion Sami a la clé de bois, trop grande. Sarah se souvient de la voiture. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le matin, la cuisine sent le cacao.\nnarrateur|La tasse est chaude, tout près des mains.\nnarrateur|Une miette reste sur la table.\npapa|Bonjour, Sarah.\nmaman|Tu as dormi ?\nenfant-f|Un peu.\nnarrateur|Le lion Sami a la clé de bois, trop grande.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu le lion Sami. Le matin, elle a parlé. La tasse de cacao est presque vide. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu le lion Sami. Le matin, elle a parlé.\nnarrateur|La tasse de cacao est presque vide.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Après la sieste, la couverture est tiède. Une joue de Sarah est encore marquée. Le volet fait une raie de lumière. Tu es réveillée ? Oui, maman. Viens. On a le temps. Le lion Sami a la crinière plate, après la sieste. Sarah se souvient de la voiture. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Après la sieste, la couverture est tiède.\nnarrateur|Une joue de Sarah est encore marquée.\nnarrateur|Le volet fait une raie de lumière.\nmaman|Tu es réveillée ?\nenfant-f|Oui, maman.\npapa|Viens.\npapa|On a le temps.\nnarrateur|Le lion Sami a la crinière plate, après la sieste.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu le lion Sami. Après la sieste, elle a parlé. La couverture retombe, tout doux. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu le lion Sami. Après la sieste, elle a parlé.\nnarrateur|La couverture retombe, tout doux.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Le soir, la soupe fume dans les assiettes. La lampe fait un rond jaune sur la nappe. Ça sent le pain. Te voilà. Assieds-toi, Sarah. J'ai quelque chose. Le lion Sami écoute la soupe, tout près. Sarah se souvient de la voiture. Elle tient encore le lion Sami. Papa. Maman. J'ai eu un malaise. Un camarade a chuchoté. J'ai écouté la maîtresse. Tu as bien fait de raconter. On écoute la maîtresse. Si malaise, on raconte à la maison. Bravo, Sarah. C'est du bon travail. Merci, maman. Merci, papa. Le ventre de Sarah se desserre, tout doucement.",
+      "script": "narrateur|Le soir, la soupe fume dans les assiettes.\nnarrateur|La lampe fait un rond jaune sur la nappe.\nnarrateur|Ça sent le pain.\npapa|Te voilà.\nmaman|Assieds-toi, Sarah.\nenfant-f|J'ai quelque chose.\nnarrateur|Le lion Sami écoute la soupe, tout près.\nnarrateur|Sarah se souvient de la voiture.\nnarrateur|Elle tient encore le lion Sami.\nenfant-f|Papa.\nenfant-f|Maman.\nenfant-f|J'ai eu un malaise.\nenfant-f|Un camarade a chuchoté.\nenfant-f|J'ai écouté la maîtresse.\npapa|Tu as bien fait de raconter.\nmaman|On écoute la maîtresse.\nmaman|Si malaise, on raconte à la maison.\npapa|Bravo, Sarah.\npapa|C'est du bon travail.\nenfant-f|Merci, maman.\nenfant-f|Merci, papa.\nnarrateur|Le ventre de Sarah se desserre, tout doucement.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai écouté. Puis j'ai raconté. Bravo, Sarah. Tu as fait du bon travail. Sarah a vu la voiture. Elle a tenu le lion Sami. Le soir, elle a parlé. La lampe reste allumée, un moment. L'histoire est finie.",
+      "script": "enfant-f|J'ai écouté.\nenfant-f|Puis j'ai raconté.\nmaman|Bravo, Sarah.\npapa|Tu as fait du bon travail.\nnarrateur|Sarah a vu la voiture. Elle a tenu le lion Sami. Le soir, elle a parlé.\nnarrateur|La lampe reste allumée, un moment.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}
