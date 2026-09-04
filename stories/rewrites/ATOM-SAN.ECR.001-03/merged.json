@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-03",
+  "fil_rouge": "Le doudou attend sur l'oreiller. Papa dit fini. Victorina éteint. Ils posent les pièces du puzzle. Une maison apparaît.",
+  "title": "Le doudou et le puzzle",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": "",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Victorina, papa",
+  "setting": "chambre",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le doudou attend sur l'oreiller. Il a une oreille un peu pliée. Le rideau respire avec le vent. Victorina vit ici, avec papa et maman. Maman est à la cuisine, tout près. La chambre sent le linge propre. En ce moment, un petit écran est allumé. Des couleurs bougent. Victorina est assise près du lit. Papa entre. Il s'assoit près du lit. Victorina. Fini. Victorina écoute. Elle éteint. L'écran devient noir. Elle pose la télécommande. Bravo, Victorina. Tu as éteint. On prend un autre jeu. Tu vas choisir ? Mon puzzle. Les pièces sentent le carton. Elles sont un peu rudes. Papa et Victorina posent les pièces. Une maison apparaît. L'écran est éteint. Oui. Un autre jeu, c'est bien. Bravo. Tu as entendu le carton ? Oui. Ça fait chh. Ils ajoutent un toit. Le doudou regarde, sur l'oreiller. On range les pièces ? Victorina range une pièce. Papa range la boîte. Merci, papa. Merci, Victorina. Tu as su éteindre. Tu as choisi un autre jeu. C'est du bon travail.",
+      "script": "narrateur|Le doudou attend sur l'oreiller.\nnarrateur|Il a une oreille un peu pliée.\nnarrateur|Le rideau respire avec le vent.\nnarrateur|Victorina vit ici, avec papa et maman.\nnarrateur|Maman est à la cuisine, tout près.\nnarrateur|La chambre sent le linge propre.\nnarrateur|En ce moment, un petit écran est allumé.\nnarrateur|Des couleurs bougent.\nnarrateur|Victorina est assise près du lit.\nnarrateur|Papa entre.\nnarrateur|Il s'assoit près du lit.\npapa|Victorina.\npapa|Fini.\nnarrateur|Victorina écoute.\nnarrateur|Elle éteint.\nnarrateur|L'écran devient noir.\nnarrateur|Elle pose la télécommande.\npapa|Bravo, Victorina.\npapa|Tu as éteint.\npapa|On prend un autre jeu.\npapa|Tu vas choisir ?\nenfant-f|Mon puzzle.\nnarrateur|Les pièces sentent le carton.\nnarrateur|Elles sont un peu rudes.\nnarrateur|Papa et Victorina posent les pièces.\nnarrateur|Une maison apparaît.\nenfant-f|L'écran est éteint.\npapa|Oui.\npapa|Un autre jeu, c'est bien.\npapa|Bravo.\npapa|Tu as entendu le carton ?\nenfant-f|Oui.\nenfant-f|Ça fait chh.\nnarrateur|Ils ajoutent un toit.\nnarrateur|Le doudou regarde, sur l'oreiller.\npapa|On range les pièces ?\nnarrateur|Victorina range une pièce.\nnarrateur|Papa range la boîte.\nenfant-f|Merci, papa.\npapa|Merci, Victorina.\npapa|Tu as su éteindre.\npapa|Tu as choisi un autre jeu.\npapa|C'est du bon travail.",
+      "sons": "puzzle,rideau",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa dit fini. Que fait Victorina ?",
+      "script": "narrateur|Papa dit fini.\nnarrateur|Que fait Victorina ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Victorina a éteint. Papa avait dit fini. Elle a pris un autre jeu. Tu as éteint ? Oui, papa. J'ai pris le puzzle. Bravo, Victorina. Quand on dit fini, on éteint. Puis on prend un autre jeu. Le puzzle était là. C'est du bon travail.",
+      "script": "narrateur|Victorina a éteint.\nnarrateur|Papa avait dit fini.\nnarrateur|Elle a pris un autre jeu.\npapa|Tu as éteint ?\nenfant-f|Oui, papa.\nenfant-f|J'ai pris le puzzle.\npapa|Bravo, Victorina.\npapa|Quand on dit fini, on éteint.\npapa|Puis on prend un autre jeu.\nnarrateur|Le puzzle était là.\npapa|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Victorina range une pièce. Papa range la boîte. Merci, papa. Merci, Victorina. Le doudou attend encore. Tu lui racontes le puzzle ? Oui. On a fait une maison. On reste encore un peu ? Oui. Le rideau respire encore. Tu as éteint. Tu as choisi un autre jeu. Bravo.",
+      "script": "narrateur|Victorina range une pièce.\nnarrateur|Papa range la boîte.\nenfant-f|Merci, papa.\npapa|Merci, Victorina.\nnarrateur|Le doudou attend encore.\npapa|Tu lui racontes le puzzle ?\nenfant-f|Oui.\nenfant-f|On a fait une maison.\npapa|On reste encore un peu ?\nenfant-f|Oui.\nnarrateur|Le rideau respire encore.\npapa|Tu as éteint.\npapa|Tu as choisi un autre jeu.\npapa|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Papa a dit fini. J'ai éteint. On a fait le puzzle. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-f|Papa a dit fini.\nenfant-f|J'ai éteint.\nenfant-f|On a fait le puzzle.\npapa|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

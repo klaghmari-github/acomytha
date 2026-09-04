@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-SAN.ECR.001-04",
+  "fil_rouge": "Un rayon traverse la farine. Une chanson sort de la tablette. Maman dit fini. Chouchou éteint. Ils pétrissent la pâte. Un petit pain tout rond.",
+  "title": "La pâte molle",
+  "lesson_id": "SAN.ECR.001",
+  "secondary_lessons": "",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Chouchou, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un rayon traverse la farine. La farine fait un petit nuage. La cuillère en bois attend. Une chanson sort de la tablette. Chouchou vit ici, avec maman. Papa est au jardin, tout près. La cuisine sent le pain. En ce moment, l'écran est allumé. Des couleurs bougent. Chouchou écoute la chanson. Chouchou. Fini. Chouchou écoute. Il va éteindre. Il éteint. L'écran devient noir. Il pose la tablette. Bravo, Chouchou. Tu as éteint. On prend un autre jeu. Tu vas choisir ? La pâte. La pâte est molle. Elle est un peu froide. Ils pétrissent. La farine sent bon. L'écran est éteint. Oui. Un autre jeu, c'est bien. Bravo. Tu as les mains farineuses ? Oui, maman. C'est doux. Ils font un petit pain. Le petit pain est tout rond. On range la farine ? Chouchou pousse le bol. Maman range la cuillère. Merci, maman. Merci, Chouchou. Tu as éteint. Tu as choisi un autre jeu. C'est du bon travail.",
+      "script": "narrateur|Un rayon traverse la farine.\nnarrateur|La farine fait un petit nuage.\nnarrateur|La cuillère en bois attend.\nnarrateur|Une chanson sort de la tablette.\nnarrateur|Chouchou vit ici, avec maman.\nnarrateur|Papa est au jardin, tout près.\nnarrateur|La cuisine sent le pain.\nnarrateur|En ce moment, l'écran est allumé.\nnarrateur|Des couleurs bougent.\nnarrateur|Chouchou écoute la chanson.\nmaman|Chouchou.\nmaman|Fini.\nnarrateur|Chouchou écoute.\nnarrateur|Il va éteindre.\nnarrateur|Il éteint.\nnarrateur|L'écran devient noir.\nnarrateur|Il pose la tablette.\nmaman|Bravo, Chouchou.\nmaman|Tu as éteint.\nmaman|On prend un autre jeu.\nmaman|Tu vas choisir ?\nenfant-m|La pâte.\nnarrateur|La pâte est molle.\nnarrateur|Elle est un peu froide.\nnarrateur|Ils pétrissent.\nnarrateur|La farine sent bon.\nenfant-m|L'écran est éteint.\nmaman|Oui.\nmaman|Un autre jeu, c'est bien.\nmaman|Bravo.\nmaman|Tu as les mains farineuses ?\nenfant-m|Oui, maman.\nenfant-m|C'est doux.\nnarrateur|Ils font un petit pain.\nnarrateur|Le petit pain est tout rond.\nmaman|On range la farine ?\nnarrateur|Chouchou pousse le bol.\nnarrateur|Maman range la cuillère.\nenfant-m|Merci, maman.\nmaman|Merci, Chouchou.\nmaman|Tu as éteint.\nmaman|Tu as choisi un autre jeu.\nmaman|C'est du bon travail.",
+      "sons": "pate,farine",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman dit fini. Que fait Chouchou ?",
+      "script": "narrateur|Maman dit fini.\nnarrateur|Que fait Chouchou ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maman a dit fini. Chouchou a éteint. Il a pris un autre jeu. Tu as éteint ? Oui, maman. J'ai pris la pâte. Bravo, Chouchou. Quand on dit fini, on éteint. Puis on prend un autre jeu. La pâte, c'était bien. C'est du bon travail.",
+      "script": "narrateur|Maman a dit fini.\nnarrateur|Chouchou a éteint.\nnarrateur|Il a pris un autre jeu.\nmaman|Tu as éteint ?\nenfant-m|Oui, maman.\nenfant-m|J'ai pris la pâte.\nmaman|Bravo, Chouchou.\nmaman|Quand on dit fini, on éteint.\nmaman|Puis on prend un autre jeu.\nnarrateur|La pâte, c'était bien.\nmaman|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Le petit pain repose. Il est tout rond, tout blanc. Merci, maman. Merci, Chouchou. La cuisine est calme. On reste encore un peu ? Oui. Un peu de farine brille encore. Tu as éteint. Tu as choisi un autre jeu. Bravo.",
+      "script": "narrateur|Le petit pain repose.\nnarrateur|Il est tout rond, tout blanc.\nenfant-m|Merci, maman.\nmaman|Merci, Chouchou.\nnarrateur|La cuisine est calme.\nmaman|On reste encore un peu ?\nenfant-m|Oui.\nnarrateur|Un peu de farine brille encore.\nmaman|Tu as éteint.\nmaman|Tu as choisi un autre jeu.\nmaman|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Maman a dit fini. J'ai éteint. On a pétri la pâte. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-m|Maman a dit fini.\nenfant-m|J'ai éteint.\nenfant-m|On a pétri la pâte.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

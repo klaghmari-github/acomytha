@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-COL-012",
+  "fil_rouge": "Une bâche claque au-dessus des caisses. Aniss tient le filet. Au marché, il dit bonjour, s'il te plaît, merci.",
+  "title": "La bâche du marché d'Aniss",
+  "lesson_id": "COL.POL.001",
+  "age_band": "N2",
+  "kind": "ramifiee",
+  "characters": "Aniss, papa, maman",
+  "setting": "marché du village, après la pluie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Une bâche claque au-dessus des caisses. Une fraise brille, encore mouillée. L'eau tremble dans une ornière. Tu entends les pièces, Aniss ? Elles font tic, dans le porte-monnaie. Ça sent l'oignon et le savon. Le filet de maman est encore vide. Il est un peu rêche, contre la jambe. Un pigeon picore près d'une caisse. En ce moment, Aniss tient le filet. Il est au marché, avec papa et maman. On dit bonjour, d'accord ? Bonjour. Si tu veux une fraise ? S'il te plaît. Bravo. Et ensuite ? Merci. Bonjour. S'il te plaît. Merci. La boulangerie sent le four, plus loin. L'étal des fruits est tout rouge. La fromagerie est un peu fraîche. Tu restes près de nous. Oui, maman. Le filet va se remplir, tout doux. Tu es prêt ? Oui, papa. Une feuille collée au pavé, tout plat. Le soleil revient sur la bâche. Ça sent aussi le thym, tout bas.",
+      "script": "narrateur|Une bâche claque au-dessus des caisses.\nnarrateur|Une fraise brille, encore mouillée.\nnarrateur|L'eau tremble dans une ornière.\npapa|Tu entends les pièces, Aniss ?\nmaman|Elles font tic, dans le porte-monnaie.\nnarrateur|Ça sent l'oignon et le savon.\nnarrateur|Le filet de maman est encore vide.\nnarrateur|Il est un peu rêche, contre la jambe.\nnarrateur|Un pigeon picore près d'une caisse.\nnarrateur|En ce moment, Aniss tient le filet.\nnarrateur|Il est au marché, avec papa et maman.\nmaman|On dit bonjour, d'accord ?\nenfant-m|Bonjour.\npapa|Si tu veux une fraise ?\nenfant-m|S'il te plaît.\nmaman|Bravo.\npapa|Et ensuite ?\nenfant-m|Merci.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|La boulangerie sent le four, plus loin.\nnarrateur|L'étal des fruits est tout rouge.\nnarrateur|La fromagerie est un peu fraîche.\nmaman|Tu restes près de nous.\nenfant-m|Oui, maman.\npapa|Le filet va se remplir, tout doux.\nmaman|Tu es prêt ?\nenfant-m|Oui, papa.\nnarrateur|Une feuille collée au pavé, tout plat.\nnarrateur|Le soleil revient sur la bâche.\nnarrateur|Ça sent aussi le thym, tout bas.",
+      "sons": "bache,marche",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "Où va Aniss, d'abord ? La boulangerie, l'étal des fruits, ou la fromagerie.",
+      "script": "narrateur|Où va Aniss, d'abord ?\nmaman|La boulangerie, l'étal des fruits, ou la fromagerie.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Aniss pousse la porte de la boulangerie. Un grelot tinte, tout aigu. L'air sent le beurre, tout chaud. Des croûtes dorées sont alignées. Bonjour. Bonjour. Tu veux un petit pain, Aniss ? S'il te plaît. Le papier du sachet est un peu rêche. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le bois du comptoir est lisse, tout chaud.",
+      "script": "narrateur|Aniss pousse la porte de la boulangerie.\nnarrateur|Un grelot tinte, tout aigu.\nnarrateur|L'air sent le beurre, tout chaud.\nnarrateur|Des croûtes dorées sont alignées.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu veux un petit pain, Aniss ?\nenfant-m|S'il te plaît.\nnarrateur|Le papier du sachet est un peu rêche.\nenfant-m|Merci.\npapa|Bravo, Aniss.\nmaman|Tu as dit les trois mots.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Le bois du comptoir est lisse, tout chaud.",
+      "sons": "cloche,papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Aniss veut le petit pain. Que dit-il ?",
+      "script": "narrateur|Aniss veut le petit pain.\nmaman|Que dit-il ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Bonjour. S'il te plaît. Merci. Aniss tient le sachet, tout calme. Bravo, Aniss. Tu as fait du bon travail. Merci, papa. On continue, tout doux.",
+      "script": "narrateur|Oui.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Aniss tient le sachet, tout calme.\npapa|Bravo, Aniss.\npapa|Tu as fait du bon travail.\nenfant-m|Merci, papa.\nmaman|On continue, tout doux.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qui est là, près d'Aniss ? La boulangère, le voisin, ou la maîtresse.",
+      "script": "narrateur|Qui est là, près d'Aniss ?\npapa|La boulangère, le voisin, ou la maîtresse.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Aniss voit la boulangère, à la boulangerie. De la farine blanche reste sur le tablier. Le tablier sent le four, tout chaud. Bonjour. Bonjour. Tu restes près de nous, Aniss. Oui, maman. Tu veux que je tienne le filet ? S'il te plaît. Le filet est rêche, un peu lourd déjà. Merci, papa. Bravo. Tu as dit les mots gentils. Bonjour. S'il te plaît. Merci. Aniss reste tout près de la jambe de maman.",
+      "script": "narrateur|Aniss voit la boulangère, à la boulangerie.\nnarrateur|De la farine blanche reste sur le tablier.\nnarrateur|Le tablier sent le four, tout chaud.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu restes près de nous, Aniss.\nenfant-m|Oui, maman.\npapa|Tu veux que je tienne le filet ?\nenfant-m|S'il te plaît.\nnarrateur|Le filet est rêche, un peu lourd déjà.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les mots gentils.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Aniss reste tout près de la jambe de maman.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la boulangère. Le pain est chaud, dans le papier rêche. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la boulangère.\nnarrateur|Le pain est chaud, dans le papier rêche.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la boulangère. Il a le pain dans le filet. Le papier du pain reste tiède, dans le filet. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Le papier du pain reste tiède, dans le filet.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la boulangère. Une pomme brille, près des croûtes dorées. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la boulangère.\nnarrateur|Une pomme brille, près des croûtes dorées.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la boulangère. Il a une pomme dans le filet. La pomme roule un peu, puis s'arrête. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|La pomme roule un peu, puis s'arrête.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la boulangère. Le fromage sent le lait, à côté du four. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la boulangère.\nnarrateur|Le fromage sent le lait, à côté du four.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la boulangère. Il a un fromage dans le filet. Le fromage sent le lait, tout doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|Le fromage sent le lait, tout doux.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Aniss voit le voisin, à la boulangerie. Le voisin tient un sachet déjà tiède. Le sac du voisin est déjà un peu plein. Bonjour. Bonjour. Tu veux le filet un moment ? S'il te plaît. Papa tend le filet, tout doux. Merci, papa. Bravo. Bonjour. S'il te plaît. Merci. Le voisin hoche la tête, tout calme. Merci.",
+      "script": "narrateur|Aniss voit le voisin, à la boulangerie.\nnarrateur|Le voisin tient un sachet déjà tiède.\nnarrateur|Le sac du voisin est déjà un peu plein.\nenfant-m|Bonjour.\nmaman|Bonjour.\npapa|Tu veux le filet un moment ?\nenfant-m|S'il te plaît.\nnarrateur|Papa tend le filet, tout doux.\nenfant-m|Merci, papa.\nmaman|Bravo.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Le voisin hoche la tête, tout calme.\nenfant-m|Merci.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près du voisin. Le voisin glisse le pain dans son filet. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près du voisin.\nnarrateur|Le voisin glisse le pain dans son filet.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué le voisin. Il a le pain dans le filet. Le sachet du voisin fait un bruit de papier. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Le sachet du voisin fait un bruit de papier.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près du voisin. Le voisin a une pomme, tout lisse. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près du voisin.\nnarrateur|Le voisin a une pomme, tout lisse.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué le voisin. Il a une pomme dans le filet. Une croûte dore encore, derrière la vitre. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|Une croûte dore encore, derrière la vitre.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près du voisin. Le voisin a un fromage, tout blanc. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près du voisin.\nnarrateur|Le voisin a un fromage, tout blanc.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué le voisin. Il a un fromage dans le filet. La cloche de la porte fait ding, encore. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|La cloche de la porte fait ding, encore.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Aniss voit la maîtresse, à la boulangerie. La maîtresse choisit un petit pain doré. Son panier a un linge à carreaux. Bonjour. Bonjour. Tu veux un fruit, Aniss ? S'il te plaît. Maman tend le filet, tout ouvert. Merci, maman. Bravo, Aniss. Bonjour. S'il te plaît. Merci. La maîtresse range un fruit, tout doux. On reste ensemble.",
+      "script": "narrateur|Aniss voit la maîtresse, à la boulangerie.\nnarrateur|La maîtresse choisit un petit pain doré.\nnarrateur|Son panier a un linge à carreaux.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu veux un fruit, Aniss ?\nenfant-m|S'il te plaît.\nnarrateur|Maman tend le filet, tout ouvert.\nenfant-m|Merci, maman.\npapa|Bravo, Aniss.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|La maîtresse range un fruit, tout doux.\npapa|On reste ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la maîtresse. La maîtresse a le pain contre le cartable. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la maîtresse.\nnarrateur|La maîtresse a le pain contre le cartable.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la maîtresse. Il a le pain dans le filet. Le cartable de la maîtresse est un peu lourd. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Le cartable de la maîtresse est un peu lourd.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la maîtresse. La maîtresse a une pomme dans la poche. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la maîtresse.\nnarrateur|La maîtresse a une pomme dans la poche.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la maîtresse. Il a une pomme dans le filet. La farine reste blanche, sur le bois. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|La farine reste blanche, sur le bois.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la boulangerie, près de la maîtresse. La maîtresse a un fromage, tout frais. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la boulangerie, près de la maîtresse.\nnarrateur|La maîtresse a un fromage, tout frais.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la boulangerie. Il a salué la maîtresse. Il a un fromage dans le filet. L'air chaud de la boutique caresse les joues. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la boulangerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|L'air chaud de la boutique caresse les joues.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Aniss s'arrête à l'étal des fruits. Les caisses sont rouges, un peu humides. Une balance de fer attend, tout calme. Bonjour. Bonjour. Tu veux une pomme, Aniss ? S'il te plaît. La pomme est lisse, encore un peu froide. Merci, papa. Bravo. Tu as demandé, puis remercié. On dit aussi bonjour. Bonjour. Une fraise brille, tout près du filet.",
+      "script": "narrateur|Aniss s'arrête à l'étal des fruits.\nnarrateur|Les caisses sont rouges, un peu humides.\nnarrateur|Une balance de fer attend, tout calme.\nenfant-m|Bonjour.\nmaman|Bonjour.\npapa|Tu veux une pomme, Aniss ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, encore un peu froide.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as demandé, puis remercié.\npapa|On dit aussi bonjour.\nenfant-m|Bonjour.\nnarrateur|Une fraise brille, tout près du filet.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "À l'étal, quels mots ?",
+      "script": "narrateur|À l'étal, quels mots ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On dit bonjour. S'il te plaît. Merci. Aniss pose la pomme dans le filet. Bravo. Tu as demandé gentiment. S'il te plaît. C'est ça.",
+      "script": "narrateur|Oui.\npapa|On dit bonjour.\nmaman|S'il te plaît. Merci.\nnarrateur|Aniss pose la pomme dans le filet.\npapa|Bravo.\npapa|Tu as demandé gentiment.\nenfant-m|S'il te plaît.\nmaman|C'est ça.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qui est là, près d'Aniss ? La boulangère, le voisin, ou la maîtresse.",
+      "script": "narrateur|Qui est là, près d'Aniss ?\npapa|La boulangère, le voisin, ou la maîtresse.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Aniss voit la boulangère, à l'étal des fruits. La boulangère pèse une poire, tout doux. Le tablier sent le four, tout chaud. Bonjour. Bonjour. Tu restes près de nous, Aniss. Oui, maman. Tu veux que je tienne le filet ? S'il te plaît. Le filet est rêche, un peu lourd déjà. Merci, papa. Bravo. Tu as dit les mots gentils. Bonjour. S'il te plaît. Merci. Aniss reste tout près de la jambe de maman.",
+      "script": "narrateur|Aniss voit la boulangère, à l'étal des fruits.\nnarrateur|La boulangère pèse une poire, tout doux.\nnarrateur|Le tablier sent le four, tout chaud.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu restes près de nous, Aniss.\nenfant-m|Oui, maman.\npapa|Tu veux que je tienne le filet ?\nenfant-m|S'il te plaît.\nnarrateur|Le filet est rêche, un peu lourd déjà.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les mots gentils.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Aniss reste tout près de la jambe de maman.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la boulangère. Le pain dore, près des caisses de fruits. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la boulangère.\nnarrateur|Le pain dore, près des caisses de fruits.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la boulangère. Il a le pain dans le filet. Une fraise brille encore, dans la caisse. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Une fraise brille encore, dans la caisse.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la boulangère. La pomme est rouge, encore un peu humide. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la boulangère.\nnarrateur|La pomme est rouge, encore un peu humide.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la boulangère. Il a une pomme dans le filet. La balance fait un petit clic. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|La balance fait un petit clic.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la boulangère. Le fromage est posé loin des fraises. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la boulangère.\nnarrateur|Le fromage est posé loin des fraises.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la boulangère. Il a un fromage dans le filet. Le filet de maman s'alourdit, tout doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|Le filet de maman s'alourdit, tout doux.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Aniss voit le voisin, à l'étal des fruits. Le voisin prend une fraise, encore mouillée. Le sac du voisin est déjà un peu plein. Bonjour. Bonjour. Tu veux le filet un moment ? S'il te plaît. Papa tend le filet, tout doux. Merci, papa. Bravo. Bonjour. S'il te plaît. Merci. Le voisin hoche la tête, tout calme. Merci.",
+      "script": "narrateur|Aniss voit le voisin, à l'étal des fruits.\nnarrateur|Le voisin prend une fraise, encore mouillée.\nnarrateur|Le sac du voisin est déjà un peu plein.\nenfant-m|Bonjour.\nmaman|Bonjour.\npapa|Tu veux le filet un moment ?\nenfant-m|S'il te plaît.\nnarrateur|Papa tend le filet, tout doux.\nenfant-m|Merci, papa.\nmaman|Bravo.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Le voisin hoche la tête, tout calme.\nenfant-m|Merci.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près du voisin. Le voisin a du pain, et une poire. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près du voisin.\nnarrateur|Le voisin a du pain, et une poire.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué le voisin. Il a le pain dans le filet. Une poire reste verte, près de la pomme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Une poire reste verte, près de la pomme.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près du voisin. Le voisin choisit une pomme, tout ronde. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près du voisin.\nnarrateur|Le voisin choisit une pomme, tout ronde.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué le voisin. Il a une pomme dans le filet. L'eau tremble encore dans l'ornière. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|L'eau tremble encore dans l'ornière.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près du voisin. Le voisin a un fromage, près des cerises. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près du voisin.\nnarrateur|Le voisin a un fromage, près des cerises.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué le voisin. Il a un fromage dans le filet. La bâche claque, au-dessus des caisses. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|La bâche claque, au-dessus des caisses.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Aniss voit la maîtresse, à l'étal des fruits. La maîtresse choisit des fraises, tout rouge. Son panier a un linge à carreaux. Bonjour. Bonjour. Tu veux un fruit, Aniss ? S'il te plaît. Maman tend le filet, tout ouvert. Merci, maman. Bravo, Aniss. Bonjour. S'il te plaît. Merci. La maîtresse range un fruit, tout doux. On reste ensemble.",
+      "script": "narrateur|Aniss voit la maîtresse, à l'étal des fruits.\nnarrateur|La maîtresse choisit des fraises, tout rouge.\nnarrateur|Son panier a un linge à carreaux.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu veux un fruit, Aniss ?\nenfant-m|S'il te plaît.\nnarrateur|Maman tend le filet, tout ouvert.\nenfant-m|Merci, maman.\npapa|Bravo, Aniss.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|La maîtresse range un fruit, tout doux.\npapa|On reste ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la maîtresse. La maîtresse a le pain, et des fraises. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la maîtresse.\nnarrateur|La maîtresse a le pain, et des fraises.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la maîtresse. Il a le pain dans le filet. Les fraises sentent le sucre, tout bas. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Les fraises sentent le sucre, tout bas.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la maîtresse. La maîtresse pèse une pomme, tout doux. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la maîtresse.\nnarrateur|La maîtresse pèse une pomme, tout doux.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la maîtresse. Il a une pomme dans le filet. Un pigeon picore plus loin, tout calme. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|Un pigeon picore plus loin, tout calme.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à l'étal des fruits, près de la maîtresse. La maîtresse a un fromage, tout pâle. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à l'étal des fruits, près de la maîtresse.\nnarrateur|La maîtresse a un fromage, tout pâle.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu l'étal des fruits. Il a salué la maîtresse. Il a un fromage dans le filet. Le soleil revient sur les fruits rouges. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu l'étal des fruits.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|Le soleil revient sur les fruits rouges.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Aniss entre à la fromagerie. L'air est frais, comme le marbre. Ça sent le lait, tout doux. Bonjour. Bonjour. Tu veux voir un fromage rond ? S'il te plaît. Le papier blanc fait un bruit doux. Merci, maman. Bravo, Aniss. Bonjour. S'il te plaît. Merci. Le filet reste ouvert, tout près de la jambe. On reste ensemble, ici.",
+      "script": "narrateur|Aniss entre à la fromagerie.\nnarrateur|L'air est frais, comme le marbre.\nnarrateur|Ça sent le lait, tout doux.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu veux voir un fromage rond ?\nenfant-m|S'il te plaît.\nnarrateur|Le papier blanc fait un bruit doux.\nenfant-m|Merci, maman.\npapa|Bravo, Aniss.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet reste ouvert, tout près de la jambe.\npapa|On reste ensemble, ici.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "À la fromagerie, Aniss salue. On dit bonjour, s'il te plaît, merci ?",
+      "script": "narrateur|À la fromagerie, Aniss salue.\npapa|On dit bonjour, s'il te plaît, merci ?",
+      "sons": "",
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Les trois mots sont là. Bonjour. S'il te plaît. Merci. Aniss hoche la tête. Bravo, Aniss. Tu as fait du bon travail. Merci, maman.",
+      "script": "narrateur|Oui.\nmaman|Les trois mots sont là.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Aniss hoche la tête.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qui est là, près d'Aniss ? La boulangère, le voisin, ou la maîtresse.",
+      "script": "narrateur|Qui est là, près d'Aniss ?\npapa|La boulangère, le voisin, ou la maîtresse.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Aniss voit la boulangère, à la fromagerie. La boulangère sent le lait, tout calme. Le tablier sent le four, tout chaud. Bonjour. Bonjour. Tu restes près de nous, Aniss. Oui, maman. Tu veux que je tienne le filet ? S'il te plaît. Le filet est rêche, un peu lourd déjà. Merci, papa. Bravo. Tu as dit les mots gentils. Bonjour. S'il te plaît. Merci. Aniss reste tout près de la jambe de maman.",
+      "script": "narrateur|Aniss voit la boulangère, à la fromagerie.\nnarrateur|La boulangère sent le lait, tout calme.\nnarrateur|Le tablier sent le four, tout chaud.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu restes près de nous, Aniss.\nenfant-m|Oui, maman.\npapa|Tu veux que je tienne le filet ?\nenfant-m|S'il te plaît.\nnarrateur|Le filet est rêche, un peu lourd déjà.\nenfant-m|Merci, papa.\nmaman|Bravo.\nmaman|Tu as dit les mots gentils.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Aniss reste tout près de la jambe de maman.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la boulangère. Le pain reste au chaud, loin du lait. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la boulangère.\nnarrateur|Le pain reste au chaud, loin du lait.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la boulangère. Il a le pain dans le filet. Le marbre de la fromagerie reste froid. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Le marbre de la fromagerie reste froid.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la boulangère. Une pomme attend sur le marbre froid. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la boulangère.\nnarrateur|Une pomme attend sur le marbre froid.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la boulangère. Il a une pomme dans le filet. Le papier blanc fait un bruit doux. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|Le papier blanc fait un bruit doux.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la boulangère. Le fromage est blanc, un peu tendre. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la boulangère.\nnarrateur|Le fromage est blanc, un peu tendre.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la boulangère. Il a un fromage dans le filet. Ça sent le lait, tout près du filet. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la boulangère.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|Ça sent le lait, tout près du filet.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Aniss voit le voisin, à la fromagerie. Le voisin goûte un tout petit bout. Le sac du voisin est déjà un peu plein. Bonjour. Bonjour. Tu veux le filet un moment ? S'il te plaît. Papa tend le filet, tout doux. Merci, papa. Bravo. Bonjour. S'il te plaît. Merci. Le voisin hoche la tête, tout calme. Merci.",
+      "script": "narrateur|Aniss voit le voisin, à la fromagerie.\nnarrateur|Le voisin goûte un tout petit bout.\nnarrateur|Le sac du voisin est déjà un peu plein.\nenfant-m|Bonjour.\nmaman|Bonjour.\npapa|Tu veux le filet un moment ?\nenfant-m|S'il te plaît.\nnarrateur|Papa tend le filet, tout doux.\nenfant-m|Merci, papa.\nmaman|Bravo.\npapa|Bonjour. S'il te plaît. Merci.\nnarrateur|Le voisin hoche la tête, tout calme.\nenfant-m|Merci.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près du voisin. Le voisin a le pain, près du comptoir. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près du voisin.\nnarrateur|Le voisin a le pain, près du comptoir.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué le voisin. Il a le pain dans le filet. Le voisin range son sachet, tout sage. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a le pain dans le filet.\nnarrateur|Le voisin range son sachet, tout sage.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près du voisin. Le voisin pose une pomme, tout loin. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près du voisin.\nnarrateur|Le voisin pose une pomme, tout loin.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué le voisin. Il a une pomme dans le filet. Une pièce tinte, dans le porte-monnaie. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|Une pièce tinte, dans le porte-monnaie.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près du voisin. Le voisin a un fromage, tout rond. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près du voisin.\nnarrateur|Le voisin a un fromage, tout rond.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué le voisin. Il a un fromage dans le filet. Le thym sent encore, sur le pavé. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué le voisin.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|Le thym sent encore, sur le pavé.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Aniss voit la maîtresse, à la fromagerie. La maîtresse attend près du comptoir frais. Son panier a un linge à carreaux. Bonjour. Bonjour. Tu veux un fruit, Aniss ? S'il te plaît. Maman tend le filet, tout ouvert. Merci, maman. Bravo, Aniss. Bonjour. S'il te plaît. Merci. La maîtresse range un fruit, tout doux. On reste ensemble.",
+      "script": "narrateur|Aniss voit la maîtresse, à la fromagerie.\nnarrateur|La maîtresse attend près du comptoir frais.\nnarrateur|Son panier a un linge à carreaux.\nenfant-m|Bonjour.\npapa|Bonjour.\nmaman|Tu veux un fruit, Aniss ?\nenfant-m|S'il te plaît.\nnarrateur|Maman tend le filet, tout ouvert.\nenfant-m|Merci, maman.\npapa|Bravo, Aniss.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|La maîtresse range un fruit, tout doux.\npapa|On reste ensemble.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qui va dans le filet ? Le pain, une pomme, ou un fromage.",
+      "script": "narrateur|Qu'est-ce qui va dans le filet ?\nmaman|Le pain, une pomme, ou un fromage.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la maîtresse. La maîtresse a le pain, tout contre elle. Bonjour. Tu veux le pain ? S'il te plaît. Le pain est tiède, contre les doigts. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la maîtresse.\nnarrateur|La maîtresse a le pain, tout contre elle.\nenfant-m|Bonjour.\nmaman|Tu veux le pain ?\nenfant-m|S'il te plaît.\nnarrateur|Le pain est tiède, contre les doigts.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "papier",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la maîtresse. Il a le pain dans le filet. La maîtresse dit au revoir, tout bas. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a le pain dans le filet.\nnarrateur|La maîtresse dit au revoir, tout bas.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la maîtresse. La maîtresse a une pomme, tout brillante. Bonjour. Tu veux une pomme ? S'il te plaît. La pomme est lisse, un peu froide. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la maîtresse.\nnarrateur|La maîtresse a une pomme, tout brillante.\nenfant-m|Bonjour.\nmaman|Tu veux une pomme ?\nenfant-m|S'il te plaît.\nnarrateur|La pomme est lisse, un peu froide.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la maîtresse. Il a une pomme dans le filet. Le filet frotte la jambe, un peu rêche. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a une pomme dans le filet.\nnarrateur|Le filet frotte la jambe, un peu rêche.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Aniss est encore à la fromagerie, près de la maîtresse. La maîtresse a un fromage, tout frais. Bonjour. Tu veux un fromage ? S'il te plaît. Le fromage est frais, tout enveloppé. Merci. Bravo, Aniss. Tu as dit les trois mots. Bonjour. S'il te plaît. Merci. Le filet s'arrondit, tout doux. On a ce qu'il faut, maintenant.",
+      "script": "narrateur|Aniss est encore à la fromagerie, près de la maîtresse.\nnarrateur|La maîtresse a un fromage, tout frais.\nenfant-m|Bonjour.\nmaman|Tu veux un fromage ?\nenfant-m|S'il te plaît.\nnarrateur|Le fromage est frais, tout enveloppé.\nenfant-m|Merci.\npapa|Bravo, Aniss.\npapa|Tu as dit les trois mots.\nmaman|Bonjour. S'il te plaît. Merci.\nnarrateur|Le filet s'arrondit, tout doux.\npapa|On a ce qu'il faut, maintenant.",
+      "sons": "",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Aniss a vu la fromagerie. Il a salué la maîtresse. Il a un fromage dans le filet. La maison n'est plus très loin, maintenant. Tu as dit bonjour. Tu as dit s'il te plaît. Et merci. Bravo, Aniss. Tu as fait du bon travail. Merci, maman. On rentre, le filet est plein. L'histoire est finie.",
+      "script": "narrateur|Aniss a vu la fromagerie.\nnarrateur|Il a salué la maîtresse.\nnarrateur|Il a un fromage dans le filet.\nnarrateur|La maison n'est plus très loin, maintenant.\npapa|Tu as dit bonjour.\nmaman|Tu as dit s'il te plaît.\npapa|Et merci.\nmaman|Bravo, Aniss.\nmaman|Tu as fait du bon travail.\nenfant-m|Merci, maman.\npapa|On rentre, le filet est plein.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

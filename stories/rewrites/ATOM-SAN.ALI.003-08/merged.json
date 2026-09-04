@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-SAN.ALI.003-08",
+  "fil_rouge": "L'arrosoir goutte. Les tomates sentent le soleil. Mila a soif. Elles vont à la cuisine. Mila boit dans un verre. Au jardin, elle reprend de l'eau.",
+  "title": "Les tomates et l'eau fraîche",
+  "lesson_id": "SAN.ALI.003",
+  "secondary_lessons": "SAN.ALI.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Mila, maman",
+  "setting": "jardin puis cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "L'arrosoir goutte sur la terre. Ploc. Ploc. Ploc. Les tomates sentent le soleil. Elles sont rouges, tout rondes. Mila vit ici, avec maman. Papa est à la maison, tout près. La terre est tiède sous les pieds. Mila tient l'arrosoir. Il est un peu lourd. Doucement, Mila. Un peu d'eau pour les tomates. Une tomate brille. Elle est rouge, maman ! Oui. Comme une petite balle. Le soleil chauffe le dos. Mila a la bouche sèche. J'ai soif, maman. Tu as soif ? Viens. On va à la cuisine. Elles quittent le jardin. Le carrelage est frais. Ça fait du bien aux pieds. Viens t'asseoir. Mila va vers sa chaise. Elle s'assoit près de maman. Elle pose les pieds par terre. Bravo, Mila. Tu es bien assise. Maman prend un verre. Elle verse de l'eau. L'eau est claire. Tu prends le verre ? Mila prend le verre d'eau. Elle boit une gorgée. C'est frais. Elle boit encore. Quand on a soif, on boit de l'eau. Dans un verre. Bravo, Mila. Mila pose le verre. Merci maman. Tu te sens mieux ? Oui. Plus tard, au jardin, Mila a encore soif. Maman, j'ai encore soif. Voici le verre d'eau. Maman tend le verre. Mila boit. Bravo. La soif s'en va.",
+      "script": "narrateur|L'arrosoir goutte sur la terre.\nnarrateur|Ploc. Ploc. Ploc.\nnarrateur|Les tomates sentent le soleil.\nnarrateur|Elles sont rouges, tout rondes.\nnarrateur|Mila vit ici, avec maman.\nnarrateur|Papa est à la maison, tout près.\nnarrateur|La terre est tiède sous les pieds.\nnarrateur|Mila tient l'arrosoir.\nnarrateur|Il est un peu lourd.\nmaman|Doucement, Mila.\nmaman|Un peu d'eau pour les tomates.\nnarrateur|Une tomate brille.\nenfant-f|Elle est rouge, maman !\nmaman|Oui.\nmaman|Comme une petite balle.\nnarrateur|Le soleil chauffe le dos.\nnarrateur|Mila a la bouche sèche.\nenfant-f|J'ai soif, maman.\nmaman|Tu as soif ?\nmaman|Viens.\nmaman|On va à la cuisine.\nnarrateur|Elles quittent le jardin.\nnarrateur|Le carrelage est frais.\nnarrateur|Ça fait du bien aux pieds.\nmaman|Viens t'asseoir.\nnarrateur|Mila va vers sa chaise.\nnarrateur|Elle s'assoit près de maman.\nnarrateur|Elle pose les pieds par terre.\nmaman|Bravo, Mila.\nmaman|Tu es bien assise.\nnarrateur|Maman prend un verre.\nnarrateur|Elle verse de l'eau.\nnarrateur|L'eau est claire.\nmaman|Tu prends le verre ?\nnarrateur|Mila prend le verre d'eau.\nnarrateur|Elle boit une gorgée.\nenfant-f|C'est frais.\nnarrateur|Elle boit encore.\nmaman|Quand on a soif, on boit de l'eau.\nmaman|Dans un verre.\nmaman|Bravo, Mila.\nnarrateur|Mila pose le verre.\nenfant-f|Merci maman.\nmaman|Tu te sens mieux ?\nenfant-f|Oui.\nnarrateur|Plus tard, au jardin, Mila a encore soif.\nenfant-f|Maman, j'ai encore soif.\nmaman|Voici le verre d'eau.\nnarrateur|Maman tend le verre.\nnarrateur|Mila boit.\nmaman|Bravo.\nmaman|La soif s'en va.",
+      "sons": "arrosoir,verre",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mila a soif. Que prend-elle ?",
+      "script": "narrateur|Mila a soif.\nnarrateur|Que prend-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Mila avait soif. Elle a pris le verre. Elle a bu de l'eau. Tu as pris le verre ? Oui, maman. J'ai bu de l'eau. Bravo, Mila. C'est du bon travail. Le verre reste près d'elle.",
+      "script": "narrateur|Mila avait soif.\nnarrateur|Elle a pris le verre.\nnarrateur|Elle a bu de l'eau.\nmaman|Tu as pris le verre ?\nenfant-f|Oui, maman.\nenfant-f|J'ai bu de l'eau.\nmaman|Bravo, Mila.\nmaman|C'est du bon travail.\nnarrateur|Le verre reste près d'elle.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Mila retourne au jardin. Le verre reste sur la table. L'arrosoir attend près des tomates. Merci, maman. Merci, Mila. Les tomates ont de l'eau. Et toi aussi. Moi, dans un verre. Oui. Quand on a soif, on boit de l'eau. On reste encore un peu ? Oui. Une tomate brille encore. Tu as fait du bon travail. Bravo.",
+      "script": "narrateur|Mila retourne au jardin.\nnarrateur|Le verre reste sur la table.\nnarrateur|L'arrosoir attend près des tomates.\nenfant-f|Merci, maman.\nmaman|Merci, Mila.\nmaman|Les tomates ont de l'eau.\nmaman|Et toi aussi.\nenfant-f|Moi, dans un verre.\nmaman|Oui.\nmaman|Quand on a soif, on boit de l'eau.\nmaman|On reste encore un peu ?\nenfant-f|Oui.\nnarrateur|Une tomate brille encore.\nmaman|Tu as fait du bon travail.\nmaman|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'avais soif. J'ai pris le verre. J'ai bu de l'eau. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-f|J'avais soif.\nenfant-f|J'ai pris le verre.\nenfant-f|J'ai bu de l'eau.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
