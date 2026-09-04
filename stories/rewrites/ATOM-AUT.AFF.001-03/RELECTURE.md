@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Nino veut le biscuit dehors. Gourde trop froide, chapeau trop haut. Il agit. Croûte chaude, pierre, vent.
+Nino veut le biscuit dehors. Gourde trop froide, chapeau trop haut. Croûte, pierre.
 
 ## Vu et corrigé
-Leçon greffée (sac) sans liste chantée.
+Bulletin « Bravo, tu as préparé » → biscuit encore chaud.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

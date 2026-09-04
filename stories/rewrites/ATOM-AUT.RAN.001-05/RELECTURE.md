@@ -1,16 +1,12 @@
-# F-NAR-008 — ATOM-AUT.RAN.001-05
+# ATOM-AUT.RAN.001-05 — La voiture rouge
 
-Relu : P0000, Q0001, C0001, END, END_F0001, `script`, question, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
-## Vu
+## Vécu
+Victorino veut l'histoire au lit avec la rouge. Pile de voitures, la rouge disparaît. Cherche sous le lit, dans les mains. Voitures dans la caisse. Rouge sous la noire. Rideau, merle, orange.
 
-- Désir : **voir le merle depuis le lit, rideau ouvert** (plus « César range les voitures »).
-- Ouverture : odeur d’orange, lumière de miel, abeille puis merle.
-- Imprévu : voitures sur le chemin du lit. P0000 s’arrête avant le rangement.
-- Leçon greffée : Victorino met les voitures dans la caisse (garage). Il tire le rideau.
-- Fin : ils regardent le merle. « L’histoire est finie. »
-- Troupe D16 : Victorino, papa, maman. POS-001. Adultes parlent. N2. `chunk_id` inchangés.
+## Vu et corrigé
+Pas de ranger dit. Question = où est la voiture rouge. Fin = merle se tait.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l’écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

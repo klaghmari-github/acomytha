@@ -1,16 +1,12 @@
-# F-NAR-008 — ATOM-AUT.RAN.001-04
+# ATOM-AUT.RAN.001-04 — La cabane sous la table
 
-Relu : P0000, Q0001, C0001, END, END_F0001, `script`, question, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
-## Vu
+## Vécu
+Sarah veut la cabane. Doudou contre le pied, voitures glissent dessus. Cherche chaise, coussin. Voitures dans la caisse bleue. Doudou sous les roues. Coussin, nappe-plafond.
 
-- Désir : **une cabane douce sous la table** (plus « Kenza range les voitures »).
-- Ouverture : ombre du pied de chaise, nappe au savon, cuillère au loin.
-- Imprévu : une voiture pique le genou, le coussin n’a pas de place. P0000 s’arrête avant le rangement.
-- Leçon greffée : Sarah met les voitures dans la caisse bleue. Le coussin rentre.
-- Fin : eau dans la cabane. « L’histoire est finie. »
-- Troupe D16 : Sarah, papa, maman. POS-001. Adultes parlent. N1. `chunk_id` inchangés.
+## Vu et corrigé
+Pas de ranger dit. Question = où est le doudou. Fin = ombre douce.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l’écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

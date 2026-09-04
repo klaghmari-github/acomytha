@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Nino veut le pain. Pyjama, marche trop tôt. Pull, marches, beurre, croûte.
+Nino veut le pain. Pyjama, marche trop tôt. Pull, marches, croûte.
 
 ## Vu et corrigé
-Sans refrain interdit. Fin = la croûte.
+« Tu as mis ce qu'il faut » → le pain est tout près. Pas de liste.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

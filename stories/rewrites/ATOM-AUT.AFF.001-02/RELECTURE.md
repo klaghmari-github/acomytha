@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Sarah veut Chouchou en bas. Chapeau sous la chaise, zip coincé. Elle agit. La cour, le linge, la main.
+Sarah veut Chouchou. Chapeau sous la chaise, zip coincé. Cour, linge, main.
 
 ## Vu et corrigé
-Pas de refrain d'objets. Fin = le désir (la cour, l'amie).
+Bulletin « Bravo, tu as préparé » → doudou chaud dans le sac.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

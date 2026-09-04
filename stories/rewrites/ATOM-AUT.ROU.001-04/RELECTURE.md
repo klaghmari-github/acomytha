@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Sarah veut les fraises. Cabas vide, pas de chaussures. Matin, miel, marché, jus rouge.
+Sarah veut les fraises. Cabas vide. Miel, marché, jus rouge.
 
 ## Vu et corrigé
-Sans refrain interdit. Fin = le doigt sucré.
+« Tu as mis ce qu'il faut » → les fraises sont tout près. Pas de liste.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

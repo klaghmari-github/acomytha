@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Chouchou veut l'allée. Roue perdue. Elle se lève, s'habille, déjeune, pose le train. Dalles tièdes.
+Chouchou veut l'allée. Roue perdue. Wagon sur les dalles tièdes.
 
 ## Vu et corrigé
-Sans refrain une étape après l'autre. Fin sensorielle.
+Bulletin « Bravo, tu as avancé » → wagon chaud sous les doigts.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

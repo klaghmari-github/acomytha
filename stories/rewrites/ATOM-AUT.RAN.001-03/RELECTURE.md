@@ -1,16 +1,12 @@
-# F-NAR-008 — ATOM-AUT.RAN.001-03
+# ATOM-AUT.RAN.001-03 — Le pain d'Amir
 
-Relu : P0000, Q0001, C0001, END, END_F0001, `script`, question, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
-## Vu
+## Vécu
+Amir veut le pain au bout du couloir. Doudou contre la boulangerie, cubes tombent. Cherche porte, table. Cubes dans la caisse, pas encore. Voitures du couloir dans la caisse. Doudou sous les roues. Pain chaud.
 
-- Désir : **livrer le pain chaud jusqu’au bout du couloir** (plus « Kenzo range deux fois » en slogan).
-- Ouverture : clochette de vélo, farine, baguette qui craque.
-- Imprévu : les cubes bloquent les voitures. P0000 s’arrête avant le rangement.
-- Leçon greffée : Amir range les cubes, les voitures roulent ; puis il range les voitures pour s’asseoir. Transfert N3, deux lieux.
-- Fin : ils goûtent le pain. « L’histoire est finie. »
-- Troupe D16 : Amir, papa, maman. POS-001. Adultes parlent. N3. `chunk_id` inchangés.
+## Vu et corrigé
+Pas de ranger dit. Question = où est le doudou. Fin = croûte chaude.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l’écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

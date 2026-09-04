@@ -1,16 +1,12 @@
-# F-NAR-008 — ATOM-AUT.RAN.001-07
+# ATOM-AUT.RAN.001-07 — La vache d'or
 
-Relu : P0000, Q0001, C0001, END, END_F0001, `script`, question, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
-## Vu
+## Vécu
+Aniss veut l'histoire au lit avec la vache. Ferme bascule, mouton sur la vache. Cherche sous le lit, dans le rond d'or. Cheval, mouton, perles dans la caisse. Vache sous le mouton. Couverture, voix basse.
 
-- Désir : **un collier pour la vache, puis une histoire avec maman** (plus « Éva range après le jeu »).
-- Ouverture : papillon de nuit, terre mouillée, plancher qui craque.
-- Imprévu : cheval sur le coussin, perle qui roule, pas de place pour maman. P0000 s’arrête avant le rangement.
-- Leçon greffée : Aniss range la ferme, puis les perles. Transfert N3.
-- Fin : maman raconte la vache au collier. « L’histoire est finie. »
-- Troupe D16 : Aniss, papa, maman. POS-001. Adultes parlent. N3. `chunk_id` inchangés.
+## Vu et corrigé
+Pas de ranger dit. Question = où est la vache. Fin = rond d'or sur la couverture.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l’écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

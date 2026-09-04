@@ -1,16 +1,12 @@
-# F-NAR-008 — ATOM-AUT.RAN.001-02
+# ATOM-AUT.RAN.001-02 — Le cacao de Nina
 
-Relu : P0000, Q0001, C0001, END, END_F0001, `script`, question, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
-## Vu
+## Vécu
+Nina veut le cacao au milieu du tapis. Ours au pique-nique, perdu sous poule et tasses. Cherche lit, couverture. Tasses et peluches dans la caisse. Ours sous la poule. Cacao.
 
-- Désir : **boire le vrai cacao au milieu du tapis** (plus « Sami range les peluches »).
-- Ouverture : boîte à musique, chaussette sur la chaise, feuilles mouillées.
-- Imprévu : tasse en bois et patte de l’ours prennent la place du cacao. P0000 s’arrête avant le rangement.
-- Leçon greffée : Nina met peluches et tasses dans la caisse. Le cacao a son rond.
-- Fin : elle boit. Les peluches se reposent dans la caisse. « L’histoire est finie. »
-- Troupe D16 : Nina, papa, maman. POS-001. Adultes parlent. N2. `chunk_id` inchangés.
+## Vu et corrigé
+Pas de ranger dit. Question = où est l'ours. Fin = tapis chaud.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l’écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

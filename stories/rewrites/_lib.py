@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 LIMITS = {"N1": 10, "N2": 15, "N3": 16}
-ROLES = {"narrateur", "papa", "maman", "enfant-m", "enfant-f", "copain", "copine"}
+ROLES = {"narrateur", "papa", "maman", "enfant-m", "enfant-f", "copain", "copine", "maitresse"}
 TROUPE_M = ("Amir", "Aniss", "Nino", "Raphaël", "Victorino")
 TROUPE_F = ("Sarah", "Chouchou", "Mila", "Nina", "Victorina")
 FORBIDDEN = (
