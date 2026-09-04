@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-AUT.ROU.001-07",
+  "fil_rouge": "La gouttière chante sous la pluie. Raphaël s'habille, déjeune, prépare le sac, une étape après l'autre, puis met les bottes.",
+  "title": "La gouttière de Raphaël",
+  "lesson_id": "AUT.ROU.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Raphaël, papa, maman",
+  "setting": "maison sous la pluie, chambre puis cuisine, le matin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Dehors, il pleut tout doux. La rue est brillante. Papa et maman sont dans la maison avec Raphaël. La gouttière chante goutte à goutte. Les gouttes tapent le zinc. La fenêtre est un peu embuée. Raphaël, tu entends la gouttière ? Oui, papa. Ça chante. La pluie fait sa musique. En ce moment, Raphaël ouvre les yeux. Le drap est chaud. On entend encore les gouttes. On se lève. Une étape après l'autre. Raphaël se lève. Ses pieds touchent le tapis. Le tapis est doux. Bravo. Tu es debout. Tu as fait l'étape dite. Ensuite, on s'habille. Le pull vert est sur la chaise. Raphaël met le pull. Il met le pantalon. C'est fait. Bravo, Raphaël. Tu as fait du bon travail.",
+      "script": "narrateur|Dehors, il pleut tout doux.\nnarrateur|La rue est brillante.\nnarrateur|Papa et maman sont dans la maison avec Raphaël.\nnarrateur|La gouttière chante goutte à goutte.\nnarrateur|Les gouttes tapent le zinc.\nnarrateur|La fenêtre est un peu embuée.\npapa|Raphaël, tu entends la gouttière ?\nenfant-m|Oui, papa. Ça chante.\nmaman|La pluie fait sa musique.\nnarrateur|En ce moment, Raphaël ouvre les yeux.\nnarrateur|Le drap est chaud.\nnarrateur|On entend encore les gouttes.\npapa|On se lève.\npapa|Une étape après l'autre.\nnarrateur|Raphaël se lève.\nnarrateur|Ses pieds touchent le tapis.\nnarrateur|Le tapis est doux.\nmaman|Bravo. Tu es debout.\nmaman|Tu as fait l'étape dite.\npapa|Ensuite, on s'habille.\nnarrateur|Le pull vert est sur la chaise.\nnarrateur|Raphaël met le pull.\nnarrateur|Il met le pantalon.\nenfant-m|C'est fait.\npapa|Bravo, Raphaël.\npapa|Tu as fait du bon travail.",
+      "sons": "pluie,gouttiere",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël se prépare. Comment avance-t-il ?",
+      "script": "narrateur|Raphaël se prépare.\nnarrateur|Comment avance-t-il ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Raphaël a fait l'étape dite. Une étape après l'autre. Maintenant, le déjeuner. Raphaël va à la cuisine. La cuisine est claire. Ça sent le lait tiède. Raphaël s'assoit à table. Tu es bien assis. Bravo. Il mange du pain. Il boit du lait. Tu as fini ton bol ? Oui, papa. Bravo. L'étape est finie.",
+      "script": "narrateur|Raphaël a fait l'étape dite.\nmaman|Une étape après l'autre.\npapa|Maintenant, le déjeuner.\nnarrateur|Raphaël va à la cuisine.\nnarrateur|La cuisine est claire.\nnarrateur|Ça sent le lait tiède.\nnarrateur|Raphaël s'assoit à table.\nmaman|Tu es bien assis. Bravo.\nnarrateur|Il mange du pain.\nnarrateur|Il boit du lait.\npapa|Tu as fini ton bol ?\nenfant-m|Oui, papa.\npapa|Bravo. L'étape est finie.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ensuite, le sac. Le sac bleu est près du radiateur. Raphaël met la gourde. Il met le doudou. Tu as mis ce que maman a dit. Le sac est prêt. Bravo. Tu as fait du bon travail. Raphaël met les bottes. Les bottes sont vertes. Maman ouvre la porte. L'air sent la pluie. Ça sent l'eau. Oui. Tu as enchaîné le matin. Une étape après l'autre. C'est plus calme.",
+      "script": "maman|Ensuite, le sac.\nnarrateur|Le sac bleu est près du radiateur.\nnarrateur|Raphaël met la gourde.\nnarrateur|Il met le doudou.\npapa|Tu as mis ce que maman a dit.\nenfant-m|Le sac est prêt.\nmaman|Bravo. Tu as fait du bon travail.\nnarrateur|Raphaël met les bottes.\nnarrateur|Les bottes sont vertes.\nnarrateur|Maman ouvre la porte.\nnarrateur|L'air sent la pluie.\nenfant-m|Ça sent l'eau.\nmaman|Oui. Tu as enchaîné le matin.\npapa|Une étape après l'autre. C'est plus calme.",
+      "sons": "porte",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Je me suis levé. Je me suis habillé. J'ai déjeuné. J'ai fait le sac. Bravo, Raphaël. La gouttière chantait, et toi tu as avancé. L'histoire est finie.",
+      "script": "enfant-m|Je me suis levé.\nenfant-m|Je me suis habillé.\nenfant-m|J'ai déjeuné.\nenfant-m|J'ai fait le sac.\nmaman|Bravo, Raphaël.\npapa|La gouttière chantait, et toi tu as avancé.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
