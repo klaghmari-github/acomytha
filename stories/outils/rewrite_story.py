@@ -142,18 +142,51 @@ def apply_story(story_id: str) -> Path:
             if k in idx and c.get(k) is not None:
                 ws.cell(r, idx[k], c[k])
     if "journal" in wb.sheetnames:
-        wb["journal"].append(["F-NAR-008 récit captivant, fusion agents"])
+        wb["journal"].append(["F-NAR-009 ouverture du monde, fusion agents"])
     wb.save(src)
     wb.close()
     return src
 
 
+def dump_list(path: Path) -> int:
+    ids = [ln.strip() for ln in path.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    n = 0
+    for sid in ids:
+        dump_story(sid)
+        n += 1
+    return n
+
+
+def apply_ready() -> list[str]:
+    done = []
+    for folder in sorted(REWRITES.iterdir()):
+        if not folder.is_dir():
+            continue
+        merged = folder / "merged.json"
+        if not merged.exists():
+            continue
+        sid = folder.name
+        if not (ARBRES / f"{sid}.xlsx").exists():
+            continue
+        apply_story(sid)
+        done.append(sid)
+    return done
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["dump", "merge", "apply"])
-    ap.add_argument("story_id")
+    ap.add_argument("cmd", choices=["dump", "merge", "apply", "dump-list", "apply-ready"])
+    ap.add_argument("story_id", nargs="?")
     args = ap.parse_args()
-    if args.cmd == "dump":
+    if args.cmd == "dump-list":
+        if not args.story_id:
+            raise SystemExit("dump-list <fichier d'ids>")
+        print(dump_list(Path(args.story_id)))
+    elif args.cmd == "apply-ready":
+        done = apply_ready()
+        print("\n".join(done))
+        print(f"applied {len(done)}")
+    elif args.cmd == "dump":
         print(dump_story(args.story_id))
     elif args.cmd == "merge":
         print(merge_story(args.story_id))

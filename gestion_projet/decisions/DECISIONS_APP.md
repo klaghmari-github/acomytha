@@ -28,3 +28,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D22 | Narrateur | Voix Tom trop basse dans le mix. RMS aligné par réplique, volume et présence relevés, cuisson relancée. |
 | D23 | Aperçus | Visiteur : 10 s du chemin (tous passages). Parent non acheté : 30 s. Parent acheté / enfant : histoire entière. Clip serveur, pas seulement le 1er fichier. |
 | D24 | Stripe | Recharge 10–50 € via Checkout si clés admin. Sans clé : paiement démo (carte 4242) qui crédite le solde, pour valider l’UI. |
+| D25 | Ouverture | Pas d’entrée brutale. Monde d’abord (lieu, famille, temps, détails), puis l’action. Chaque histoire raconte autrement. Les amorces « il était une fois / ceci est l’histoire de » sont des **exemples**, pas un moule. Audio plus tard. |

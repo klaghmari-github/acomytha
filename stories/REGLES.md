@@ -28,6 +28,7 @@ Public : enfants 3–6 ans (N1 = 3–4, N2 = 4–5, N3 = 5–6). Audio seulement
 20. **Le générateur ne s’auto-approuve pas** (VAL-001). Statut initial : `PENDING`.
 21. **Troupe enfant fermée.** Les enfants nommés sont seulement : **Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina**. Pas d’autre prénom d’enfant. Dans **une** histoire : un seul héros, au plus **un** autre enfant de la liste, plus papa et/ou maman. Pas de foule : l’enfant se perd.
 22. **Adultes parlent** (D20). Papa et maman ont des répliques, adaptées à la scène. Interdit de remplacer leur voix par un remplissage (« papa sourit », « maman est là »). Bon geste : féliciter (« Bravo, tu as fait du bon travail. »). Bêtise : discuter, demander la conduite (« Tu as fini de ranger tes jouets ? »), sans décrire le geste interdit, sans humilier (POS-001).
+23. **Ouverture et monde** (D25). On n’entre jamais dans l’action comme un constat sec (« X joue au salon. »). D’abord un monde : lieu, famille, temps, atmosphère, détails sensoriels ; ensuite seulement « en ce moment ». Chaque histoire a **sa** façon de commencer. Les formules du type « il était une fois » sont des **exemples**, pas un modèle à recopier. L’enfant aime les détails : textures, bruits, lumières, odeurs, petits gestes. Interdit : deux histoires qui s’ouvrent pareil.
 
 ## Troupe (enfants)
 
@@ -45,7 +46,7 @@ Religion, prière, église, mosquée, synagogue, dieu comme culte, politique, é
 
 ## Structure d’un chemin
 
-Accroche orale → héros, lieu, objectif concret → petit problème lié à la leçon → exploration non humiliante → interaction (question ou choix) → résolution de la branche → fin naturelle.
+Accroche orale **du monde** (où, qui, quel temps, quelle maison) → on arrive à « en ce moment » → héros, lieu, envie concrète → petit problème lié à la leçon → exploration non humiliante → interaction (question ou choix) → résolution de la branche → fin naturelle, encore vécue (pas un slogan).
 
 Types de nœuds : `audio`, `question_comprehension`, `question_lesson`, `choice_story`, `feedback`, `transition`, `silence_check`, `ending`.
 
@@ -79,3 +80,10 @@ Types de nœuds : `audio`, `question_comprehension`, `question_lesson`, `choice_
 Vivant, concret, sensoriel (bruits, goûts, textures) sans spectacle du danger. Répéter les mots-clés de la leçon. Nommer papa ou maman, pas « un parent ».
 
 Papa et maman **parlent**. Le narrateur décrit le décor et les gestes ; il ne mime pas l’adulte par un sourire ou une présence muette. L’adulte félicite, discute, pose une question **de la scène** (pas un slogan collé). Les exemples (« Bravo », « Tu as fini de ranger tes jouets ? ») s’adaptent : repas, jeu, rangement, attente… jamais une phrase unique recopiée.
+
+**Ouverture (D25).** L’entrée n’est pas brutale. On installe un monde avant l’action. Exemples de *manières* (ce ne sont **pas** des textes à coller, il faut inventer à chaque histoire) :
+
+- Conte : « Il était une fois, dans un petit village, une petite famille heureuse… Un jour de pluie, l’enfant n’a pas pu aller au parc. En ce moment même, il joue au salon. »
+- Présentation : « Ceci est l’histoire d’un enfant heureux qui s’appelait… Il vivait avec papa et maman dans une belle maison. En ce moment, dans ce village, il pleut… »
+
+D’autres manières existent : une odeur qui entre par la fenêtre, un bruit de gouttière, une lumière sur le plancher, un doudou qui attend, une rue mouillée vue du canapé. **Être créatif.** Ne pas se limiter à ces exemples. Ne pas commencer deux fois de la même façon. Détails concrets, phrases courtes (N1 ~8 mots, N2 < 16). Adultes = papa / maman (pas un prénom d’adulte à la place). Troupe enfant fermée (règle 21).

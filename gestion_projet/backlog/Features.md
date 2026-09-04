@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.4 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.5 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -33,6 +33,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-003 | **remplacé** | « Une voix / histoire » annulé par F-AUD-006. |
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
 | F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
+| F-NAR-009 | **en cours** | Ouverture non brutale, monde descriptif, créativité d’amorce (exemples non limitatifs). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -93,6 +94,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-AUD-006 | Audio | Cast multi-voix (narrateur / famille / école / enfants) | P0 | 1 | STRAT-002 §4 | F-AUD-005 |
 | F-AUD-007 | Audio | Immersion sonore de **tout** le récit (monde entendu, pas une liste de cas) | P0 | 1 | STRAT-002 §4b | F-AUD-006 |
 | F-NAR-008 | Moteur | Fil rouge, ≥ 3 min, plusieurs passages/leçons, troupe fermée, adultes parlent | P0 | 1 | stories/REWRITE.md | F-GEN-001, F-AUD-006, F-AUD-007 |
+| F-NAR-009 | Moteur | Ouverture du monde, détails, chaque histoire racontée autrement | P0 | 1 | stories/REWRITE.md | F-NAR-008 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -127,6 +129,30 @@ Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histo
 - `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
 - `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
 - `ATOM-SAN.ALI.002-01` Tom — *Le bateau de Tom* (N1)
+
+### F-NAR-009 — Ouverture du monde (pas d’entrée brutale)
+
+**Problème :** beaucoup d’histoires commencent comme un constat. L’enfant est jeté dans l’action : « Constantin joue au salon. » C’est **brutal**. Pas de village, pas de famille, pas de temps, pas de détails. On dirait une consigne, pas un conte.
+
+**Cible :** chaque histoire **installe un monde** avant l’action. L’enfant voit où on est, avec qui, quel temps il fait, ce que ça sent, ce qu’on entend. Ensuite seulement : « en ce moment… » Les enfants **adorent les détails**. Le récit reste captivant tout du long, pas seulement au début.
+
+**Créativité obligatoire.** Chaque histoire a sa manière. On ne recopie pas une amorce. On n’enchaîne pas deux histoires qui commencent pareil.
+
+Les textes ci-dessous sont des **exemples de manières**, pas des modèles à coller, pas une liste fermée. Il **faut inventer** d’autres ouvertures.
+
+*Manière conte (exemple, à ne pas recopier) :*
+
+> Il était une fois, dans un petit village, une petite famille heureuse, un enfant, un papa et une maman. Un jour pluvieux, l’enfant n’a pas pu sortir au parc. Il est resté à la maison. En ce moment même, il joue au salon.
+
+*Manière présentation (exemple, à ne pas recopier) :*
+
+> Ceci est l’histoire d’un enfant heureux. Il vivait avec son papa et sa maman dans une belle maison. La maison se trouvait dans un village très lointain. En ce moment, dans ce village, il pleut. L’enfant ne peut pas sortir au parc. Il est au salon, il joue…
+
+*D’autres manières (toujours des exemples) :* une gouttière qui chante, une odeur de soupe qui monte l’escalier, un rayon sur le tapis, des chaussures qui sèchent près de la porte, le doudou qui attend dans le canapé, la fenêtre embuée, le marché qu’on entend d’en bas… **Inventer.**
+
+Contraintes inchangées : troupe D16, papa/maman (pas un prénom d’adulte à la place), POS-001, adultes qui parlent (D20), ≥ 3 min, phrases courtes. Audio **après** les textes.
+
+Processus : mêmes agents / `stories/REWRITE.md`. Passe sur **tout** le corpus (atomiques + ramifiées). Colonne `script` à jour. Pas de bake audio dans cette passe.
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
