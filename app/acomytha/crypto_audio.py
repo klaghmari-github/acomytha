@@ -48,9 +48,10 @@ class AudioVault:
 
     def ensure_chk(self, story_id: str, chunk_id: str) -> Path:
         dest = self.chk_path(story_id, chunk_id)
-        if dest.exists() and dest.stat().st_size > 32:
-            return dest
         src = self.mp3_path(story_id, chunk_id)
+        if dest.exists() and dest.stat().st_size > 32:
+            if not src.exists() or dest.stat().st_mtime >= src.stat().st_mtime:
+                return dest
         if not src.exists():
             raise FileNotFoundError(f"mp3 absent: {src}")
         dest.parent.mkdir(parents=True, exist_ok=True)

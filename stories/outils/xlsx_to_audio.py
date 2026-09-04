@@ -42,23 +42,26 @@ class Voice:
     length: float = 1.18
     pitch: float = 0.0
     silence: float = 0.28
+    volume: float = 1.0
+    rms: float = 0.10  # RMS cible après synth, 0–1 (float)
 
 
 # Narrateur ≠ papa ≠ enfant. Maîtresse ≠ maman. Copain ≠ héros.
+# Tom était trop bas dans le mix (peak des autres voix) : volume + RMS + présence.
 CAST = {
-    "narrateur": Voice("fr_FR-tom-medium", length=1.18, pitch=0.0, silence=0.32),
-    "maman": Voice("fr_FR-siwis-medium", length=1.14, pitch=0.0),
-    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.12, pitch=0.0),  # pierre
-    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.08, pitch=-0.4),  # jessica
-    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.12, pitch=-1.2),
-    "directeur": Voice("fr_FR-gilles-low", length=1.12, pitch=0.0),
-    "grand-mere": Voice("fr_FR-siwis-medium", length=1.38, pitch=-3.2),
-    "grand-pere": Voice("fr_FR-gilles-low", length=1.40, pitch=-2.4),
-    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.10, pitch=0.6),
-    "enfant-f": Voice("fr_FR-siwis-medium", length=1.04, pitch=4.2),
-    "enfant-m": Voice("fr_FR-tom-medium", length=1.04, pitch=4.6),
-    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.02, pitch=3.4),
-    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.02, pitch=5.2),
+    "narrateur": Voice("fr_FR-tom-medium", length=1.06, pitch=0.6, silence=0.28, volume=1.55, rms=0.13),
+    "maman": Voice("fr_FR-siwis-medium", length=1.12, pitch=0.0, volume=1.05, rms=0.10),
+    "papa": Voice("fr_FR-upmc-medium", speaker=1, length=1.10, pitch=0.0, volume=1.12, rms=0.11),
+    "maitresse": Voice("fr_FR-upmc-medium", speaker=0, length=1.08, pitch=-0.2, volume=1.08, rms=0.10),
+    "directrice": Voice("fr_FR-upmc-medium", speaker=0, length=1.12, pitch=-0.8, volume=1.08, rms=0.10),
+    "directeur": Voice("fr_FR-gilles-low", length=1.08, pitch=1.2, volume=1.25, rms=0.11),
+    "grand-mere": Voice("fr_FR-siwis-medium", length=1.30, pitch=-2.4, volume=1.10, rms=0.10),
+    "grand-pere": Voice("fr_FR-gilles-low", length=1.28, pitch=-0.8, volume=1.25, rms=0.11),
+    "nounou": Voice("fr_FR-upmc-medium", speaker=0, length=1.10, pitch=0.6, volume=1.08, rms=0.10),
+    "enfant-f": Voice("fr_FR-siwis-medium", length=1.04, pitch=4.2, volume=1.08, rms=0.10),
+    "enfant-m": Voice("fr_FR-tom-medium", length=1.04, pitch=4.6, volume=1.20, rms=0.11),
+    "copine": Voice("fr_FR-upmc-medium", speaker=0, length=1.02, pitch=3.4, volume=1.08, rms=0.10),
+    "copain": Voice("fr_FR-upmc-medium", speaker=1, length=1.02, pitch=5.2, volume=1.12, rms=0.10),
 }
 
 
@@ -81,6 +84,38 @@ def pitch_shift(samples: np.ndarray, semitones: float) -> np.ndarray:
     factor = 2.0 ** (semitones / 12.0)
     n = max(32, int(round(len(samples) / factor)))
     return resample(samples, n).astype(np.float32)
+
+
+def match_loudness(samples: np.ndarray, target_rms: float) -> np.ndarray:
+    """Aligne le RMS (voix Tom trop basse après un peak-norm du mix)."""
+    if samples.size < 32:
+        return samples
+    rms = float(np.sqrt(np.mean(samples.astype(np.float64) ** 2)))
+    if rms < 1.0:
+        return samples
+    target = target_rms * 32767.0
+    out = samples * (target / rms)
+    peak = float(np.max(np.abs(out)))
+    cap = 0.95 * 32767.0
+    if peak > cap:
+        out *= cap / peak
+    return out.astype(np.float32)
+
+
+def presence_boost(samples: np.ndarray, sr: int, db: float = 3.5) -> np.ndarray:
+    """Léger coup de présence (2–4 kHz) pour une voix d’homme trop sourde."""
+    if samples.size < 64 or abs(db) < 0.2:
+        return samples
+    from scipy.signal import butter, sosfilt
+
+    lo = min(2000 / (sr / 2), 0.45)
+    hi = min(4200 / (sr / 2), 0.48)
+    if hi <= lo:
+        return samples
+    sos = butter(2, [lo, hi], btype="band", output="sos")
+    band = sosfilt(sos, samples)
+    gain = 10 ** (db / 20.0) - 1.0
+    return (samples + gain * band).astype(np.float32)
 
 
 def read_pcm16(path: Path) -> tuple[np.ndarray, int]:
@@ -174,6 +209,7 @@ def synth_piper(
     out: Path,
     length_scale: float,
     speaker: int | None = None,
+    volume: float = 1.0,
 ):
     out.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
@@ -186,6 +222,8 @@ def synth_piper(
         str(length_scale or 1.2),
         "--sentence_silence",
         "0.22",
+        "--volume",
+        str(volume or 1.0),
     ]
     if speaker is not None:
         cmd.extend(["--speaker", str(speaker)])
@@ -255,9 +293,12 @@ def synth_beats(piper: str, beats: list[tuple[str, str]], td: Path) -> tuple[np.
             continue
         v = CAST.get(role, CAST["narrateur"])
         raw = td / f"{i}.wav"
-        synth_piper(piper, model_file(v.model), phrase, raw, v.length, v.speaker)
+        synth_piper(piper, model_file(v.model), phrase, raw, v.length, v.speaker, v.volume)
         samples, sr = read_pcm16(raw)
         samples = pitch_shift(samples, v.pitch)
+        if role == "narrateur":
+            samples = presence_boost(samples, sr, db=4.0)
+        samples = match_loudness(samples, v.rms)
         parts.append(samples)
         parts.append(np.zeros(int(sr * (v.silence or GAP_S)), dtype=np.float32))
     if not parts:

@@ -16,7 +16,8 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-GEN-001 | **développé** | Corpus 1445 xlsx + audio témoin stéréo 44100. `main` = `837d436`. |
 | F-NAR-007 | **développé** | IDs chunks dans les xlsx. |
 | F-TAX-001 / F-TAX-002 | **développé** | `lecons.xlsx` + `lecon_histoires.xlsx`. |
-| F-AUD-005 | partiel | Piper local, échantillons git + bake disque (317 histoires audio vues au runtime). |
+| F-AUD-005 | partiel | Piper local, échantillons git + bake disque. |
+| F-AUD-002 | **développé** | Loudness : narrateur aligné (plus audible). |
 | F-ACC-002 | **reporté** | Contredit F-SEC-003 (une clé = un appareil). |
 | F-APP-001 | **développé** | Socle FastAPI + PWA, POO HTML/CSS/JS. |
 | F-DAT-001 | **développé** | SQLite 1445 histoires / 68787 chunks, API liste+filtres. |
