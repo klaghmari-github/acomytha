@@ -75,6 +75,18 @@ EAU = {
     3: {"lab": "l'arrosoir", "de": "de l'arrosoir de maman"},
 }
 
+FIN_AIR = {
+    (1, 1): "Le bac garde un rond d'ombre.",
+    (1, 2): "La petite tasse se tait.",
+    (1, 3): "Papa s'essuie les mains sur le linge rose.",
+    (2, 1): "Une tomate encore chaude brille à côté.",
+    (2, 2): "La terre a un petit sourire mouillé.",
+    (2, 3): "Les plants de tomates ne bougent plus.",
+    (3, 1): "Une perle d'eau reste dans l'ombre.",
+    (3, 2): "Le bois sent encore la pluie d'hier.",
+    (3, 3): "L'ombre du banc a reculé d'un pas.",
+}
+
 FIN_IMG = {
     (1, 1, 1): "Un grain de sable sèche sur le pétale jaune.",
     (1, 1, 2): "La tasse garde un rond de soleil.",
@@ -407,7 +419,7 @@ def t3_pass(i: int, j: int, k: int) -> list[str]:
             f"narrateur|{f['tete']} se redresse un peu.",
             "narrateur|Raphaël gigote, puis il se tient.",
             "maman|Bravo, elle boit.",
-            f"narrateur|{w['lab'].capitalize()} n'est plus qu'un murmure.",
+            f"narrateur|{w['lab'].capitalize()} fait à peine plic.",
             f"enfant-m|{f['insecte'].capitalize()} peut revenir.",
         )
     if k == 2:
@@ -463,8 +475,7 @@ def t3_fin(i: int, j: int, k: int) -> list[str]:
         extra[0],
         extra[1],
         extra[2],
-        "narrateur|Ça sent encore la menthe, tout près.",
-        f"narrateur|{f['insecte'].capitalize()} passe, puis s'en va.",
+        f"narrateur|{FIN_AIR[(i, k)]}",
         f"narrateur|{img}",
     )
 
@@ -494,8 +505,8 @@ def main() -> None:
         "enfant-m|Je vais trop vite.",
         "maman|Tu peux choisir une fleur.",
         "narrateur|Une jaune attend près du bac.",
-        "narrateur|Une rouge attend près des tomates.",
-        "narrateur|Une bleue attend près du banc.",
+        "narrateur|Plus loin, une rouge se tient près des tomates.",
+        "narrateur|À l'ombre, une bleue penche près du banc.",
         "papa|Merci d'avoir vu sa soif.",
         "maman|Quelle couleur, Raphaël ?",
     )
