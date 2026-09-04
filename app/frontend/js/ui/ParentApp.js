@@ -2,6 +2,7 @@ import { Component } from "../core/Component.js";
 import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
+import { acmAmount, acmLogo } from "./acm.js";
 
 export class ParentApp extends Component {
   constructor() {
@@ -22,7 +23,7 @@ export class ParentApp extends Component {
     this.innerHTML = `
       <div class="s-shell">
         <aside class="s-rail">
-          <div class="c-mark"><strong>AcoMytha</strong><span>espace parent</span></div>
+          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">espace parent</span></div>
           <nav>
             <a href="#/parent" class="is-on">Histoires</a>
             <a href="#/enfant">Mode enfant</a>
@@ -166,7 +167,7 @@ export class ParentApp extends Component {
       ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Pour l’enfant</label>` : ""}
       <div class="o-row">
         ${s.has_audio ? `<button class="c-btn ${this.playingId === s.story_id ? "c-btn--stop" : "c-btn--ghost"}" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : owned ? "Écouter" : "Écouter"}</button>` : ""}
-        ${owned ? "" : `<button class="c-btn" data-buy="${s.story_id}">Débloquer <span class="c-ako">${price ?? 1}</span></button>`}
+        ${owned ? "" : `<button class="c-btn" data-buy="${s.story_id}">Débloquer ${acmAmount(price ?? 1)}</button>`}
       </div>`;
     return el;
   }
@@ -174,7 +175,7 @@ export class ParentApp extends Component {
   drawWallet() {
     const el = this.querySelector("#wallet");
     if (!el) return;
-    el.innerHTML = `<span class="c-ako c-ako--lg">${this.wallet.balance_a ?? 0}</span>`;
+    el.innerHTML = acmAmount(this.wallet.balance_a ?? 0, { unit: true, size: "lg" });
   }
 
   drawShop() {
@@ -183,7 +184,7 @@ export class ParentApp extends Component {
     const p = this.wallet.prices || {};
     el.innerHTML = `
       <details class="c-panel">
-        <summary>Commander une histoire · <span class="c-ako">${p.order ?? 1.5}</span> + <span class="c-ako">${p.ramification ?? 0.5}</span> / choix</summary>
+        <summary>Commander une histoire · ${acmAmount(p.order ?? 1.5)} + ${acmAmount(p.ramification ?? 0.5)} / choix</summary>
         <form id="orderform" class="o-stack">
           <textarea name="context" rows="3" required minlength="8" placeholder="Le contexte, les personnages…"></textarea>
           <label>Choix <input type="number" name="ramifications" min="0" max="3" value="0" /></label>
@@ -191,7 +192,7 @@ export class ParentApp extends Component {
         </form>
       </details>
       <details class="c-panel">
-        <summary>Enregistrer une voix · <span class="c-ako">${p.voice ?? 5}</span></summary>
+        <summary>Enregistrer une voix · ${acmAmount(p.voice ?? 5)}</summary>
         <form id="voiceform" class="o-stack">
           <select name="role">
             <option value="narrateur">Narrateur</option>
@@ -217,7 +218,7 @@ export class ParentApp extends Component {
         <summary>Recharger</summary>
         <div class="c-packs" id="recharge">
           ${[10, 20, 30, 40, 50]
-            .map((e) => `<button class="c-pack" type="button" data-eur="${e}"><b>${e} €</b><span class="c-ako">${aFor(e, this.wallet.fx)}</span></button>`)
+            .map((e) => `<button class="c-pack" type="button" data-eur="${e}"><b>${e} €</b>${acmAmount(aFor(e, this.wallet.fx))}</button>`)
             .join("")}
         </div>
         <p class="c-hint" id="recharge-msg">${this.wallet.stripe === "ready" ? "Paiement par carte, Stripe." : "Paiement prêt. La carte Stripe se branche avec les clés admin."}</p>
@@ -295,7 +296,7 @@ export class ParentApp extends Component {
       const modal = this.querySelector("#paymodal");
       const line = this.querySelector("#payline");
       const hint = this.querySelector("#payhint");
-      if (line) line.textContent = `${r.eur} € → ${r.would_credit_a} A`;
+      if (line) line.innerHTML = `${r.eur} € → ${acmAmount(r.would_credit_a)}`;
       if (hint) hint.textContent = r.message || "";
       if (modal) modal.hidden = false;
       msg.textContent = "";

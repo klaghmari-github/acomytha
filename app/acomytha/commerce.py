@@ -1,4 +1,4 @@
-"""Solde A, taux €→A, paramètres admin."""
+"""Solde acm (clés internes *_a), taux €→acm, paramètres admin."""
 
 from __future__ import annotations
 
@@ -10,17 +10,17 @@ PARAM_SPECS: list[tuple[str, str, str]] = [
     ("welcome_credit_eur", "10", "Crédit offert à l’activation (€)"),
     ("preview_seconds", "10", "Aperçu visiteur (secondes)"),
     ("parent_preview_seconds", "30", "Aperçu parent, histoire non achetée (secondes)"),
-    ("price_story_a", "1", "Prix d’une histoire (A)"),
-    ("price_tree_a", "1", "Prix d’une série avec des choix (A)"),
-    ("price_order_a", "1.5", "Commander une histoire (A)"),
-    ("price_ramification_a", "0.5", "Branche supplémentaire à la commande (A)"),
+    ("price_story_a", "1", "Prix d’une histoire (acm)"),
+    ("price_tree_a", "1", "Prix d’une série avec des choix (acm)"),
+    ("price_order_a", "1.5", "Commander une histoire (acm)"),
+    ("price_ramification_a", "0.5", "Branche supplémentaire à la commande (acm)"),
     ("max_ramifications", "3", "Branches max par commande"),
-    ("price_voice_record_a", "5", "Enregistrer une voix (A)"),
-    ("price_voice_apply_all_a", "5", "Appliquer la voix à tout le déjà-acheté (A)"),
-    ("fx_rate_start", "1", "Taux A par €, première tranche"),
+    ("price_voice_record_a", "5", "Enregistrer une voix (acm)"),
+    ("price_voice_apply_all_a", "5", "Appliquer la voix à tout le déjà-acheté (acm)"),
+    ("fx_rate_start", "1", "Taux acm par €, première tranche"),
     ("fx_rate_step", "0.25", "Hausse du taux toutes les N €"),
     ("fx_rate_every_eur", "10", "Largeur d’une tranche (€)"),
-    ("fx_rate_max", "5", "Taux max A par €"),
+    ("fx_rate_max", "5", "Taux max acm par €"),
     ("free_story_ids", "TREE-SEC-001", "Histoires offertes (ids, virgules)"),
     ("pack_trees_count", "10", "Nouvelles séries dans le pack"),
     ("pack_trees_eur", "10", "Prix du pack (€)"),
@@ -32,10 +32,13 @@ PARAM_SPECS: list[tuple[str, str, str]] = [
 
 
 def seed_params(db: Session) -> None:
-    existing = {r.key for r in db.query(AppSetting).all()}
+    existing = {r.key: r for r in db.query(AppSetting).all()}
     for key, value, label in PARAM_SPECS:
-        if key not in existing:
+        row = existing.get(key)
+        if row is None:
             db.add(AppSetting(key=key, value=value, label=label))
+        elif row.label != label:
+            row.label = label
     db.commit()
 
 

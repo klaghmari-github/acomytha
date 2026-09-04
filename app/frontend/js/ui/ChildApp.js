@@ -2,6 +2,7 @@ import { Component } from "../core/Component.js";
 import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
+import { acmLogo } from "./acm.js";
 
 export class ChildApp extends Component {
   constructor() {
@@ -16,7 +17,7 @@ export class ChildApp extends Component {
     this.innerHTML = `
       <section class="s-child">
         <header>
-          <h1>AcoMytha</h1>
+          ${acmLogo({ size: "sm", href: "#/enfant" })}
           <div class="o-row">
             <button class="c-btn c-btn--ghost" id="mode">Jour</button>
             <button class="c-btn c-btn--ghost" id="back">Parent</button>

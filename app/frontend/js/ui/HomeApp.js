@@ -1,6 +1,7 @@
 import { Component } from "../core/Component.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
+import { acmAmount, acmIcon, acmLogo } from "./acm.js";
 
 export class HomeApp extends Component {
   constructor() {
@@ -12,6 +13,7 @@ export class HomeApp extends Component {
     this.engine = null;
     this.playingId = null;
     this.previewSeconds = 10;
+    this.prices = { story: 1, tree: 1 };
     this._filterTimer = 0;
     this.me = null;
   }
@@ -20,13 +22,14 @@ export class HomeApp extends Component {
     this.innerHTML = `
       <div class="s-home">
         <header class="c-top">
-          <strong>AcoMytha</strong>
+          ${acmLogo({ size: "sm" })}
           <nav>
             <a href="#/entrer">Connexion</a>
             <a class="c-btn" href="#/inscription">Créer un compte</a>
           </nav>
         </header>
         <section class="c-hero">
+          <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
           <h1>Une multitude d’histoires.</h1>
           <p>Créer un compte. Les transmettre à votre enfant. Le laisser s’immerger.</p>
           <a class="c-btn c-btn--lg" href="#/inscription">Créer un compte</a>
@@ -92,6 +95,10 @@ export class HomeApp extends Component {
         this.api.get("/public/stories"),
       ]);
       this.previewSeconds = stats.preview_seconds || 10;
+      this.prices = {
+        story: stats.price_story_acm ?? 1,
+        tree: stats.price_tree_acm ?? 1,
+      };
       this.allStories = stories;
       this.domainNames = new Map(lessons.map((l) => [l.domain_id, l.domain]));
       const sel = this.querySelector("#domain");
@@ -169,6 +176,7 @@ export class HomeApp extends Component {
       ${form ? `<div class="o-row"><span class="c-pill c-pill--ram">${form}</span></div>` : ""}
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
+      <p>${acmAmount(s.kind === "ramifiee" ? this.prices.tree : this.prices.story)}</p>
       ${s.has_audio ? `<button class="c-btn c-btn--ghost" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>` : ""}
       ${links}`;
     return el;

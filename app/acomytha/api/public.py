@@ -30,6 +30,8 @@ def stats(db: Session = Depends(get_db)):
         "themes": db.scalar(select(func.count(func.distinct(Story.domain)))) or 0,
         "ages": ["3–4 ans", "4–5 ans", "5–6 ans"],
         "preview_seconds": int(num(db, "preview_seconds") or 10),
+        "price_story_acm": float(num(db, "price_story_a") or 1),
+        "price_tree_acm": float(num(db, "price_tree_a") or 1),
     }
 
 

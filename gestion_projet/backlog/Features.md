@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 3.5 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 3.6 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `feat/<ID>-<slug>` (voir `consignes.txt`). L’ID ne change plus.  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = mergé sur `main` (fast-forward).
@@ -40,7 +40,8 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-APP-002 | **développé** | Vitrine publique, catalogue, aperçu 10 s (clip multi-passages), pop-ups. |
 | F-PAY-001 | **développé** | Stripe Checkout + webhook. Sans clé : paiement démo. |
 | F-PAR-003 | **développé** | Visiteur 10 s, parent 30 s, acheté = entier. |
-| F-PAY-002 | **développé** | Monnaie A, solde, achats, commandes, voix. Paramètres admin. |
+| F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
+| F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -65,7 +66,8 @@ Feature complexe `F-APP-001` : stories sur une branche, puis FF `main`. Détail 
 | F-APP-002 | App | Vitrine publique, aperçu, pop-ups ramifications | P0 | 2 | STRAT-005 | F-DAT-001 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
-| F-PAY-002 | Boutique | Monnaie A, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
+| F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
+| F-PAY-003 | Marque | Symbole acm + logo (un seul dessin) | P1 | 2 | STRAT-005 | F-PAY-002 |
 | F-PLY-002 | Lecture | Arrêt visible + durée sur les cartes | P0 | 2 | STRAT-004 | F-PLY-001 |
 | F-PAR-002 | Parent | Libellés interaction / ramifications | P0 | 2 | STRAT-005 | F-PAR-001 |
 
@@ -340,39 +342,53 @@ Pendant l’écoute : barre collée **Arrêt** (et bouton carte). Stop coupe l�
 
 ### F-PAY-001 — Stripe
 
-Recharge : boutons **10, 20, 30, 40, 50 €** + A obtenus. Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
+Recharge : boutons **10, 20, 30, 40, 50 €** + acm obtenus. Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
 
-### F-PAY-002 — Monnaie A et boutique
+### F-PAY-002 — Monnaie et boutique
 
-Symbole **A** (lettre A barrée, comme un dollar). Unité interne `A`.
+Unité interne `A` (`balance_a`, `price_*_a`). **Affichage : acm** (F-PAY-003). Plus de « A barré ».
 
-**Change € → A** (à la recharge, selon le montant versé) :
+**Change € → acm** (à la recharge, selon le montant versé) :
 
 | Tranche versée | Taux |
 | --- | --- |
-| 1–10 € | 1 € = 1 A |
-| 11–20 € | 1 € = 1,25 A |
-| 21–30 € | 1 € = 1,50 A |
-| … | +0,25 A / € tous les 10 € |
-| plafond | 1 € = 5 A |
+| 1–10 € | 1 € = 1 acm |
+| 11–20 € | 1 € = 1,25 acm |
+| 21–30 € | 1 € = 1,50 acm |
+| … | +0,25 acm / € tous les 10 € |
+| plafond | 1 € = 5 acm |
 
 Paramètres : `fx_rate_start` 1 · `fx_rate_step` 0,25 · `fx_rate_every_eur` 10 · `fx_rate_max` 5.
 
-Crédit d’activation 10 € → **10 A**. Le parent achète avec ce solde. Quand il est à 0, il recharge (F-PAY-001).
+Crédit d’activation 10 € → **10 acm**. Le parent achète avec ce solde. Quand il est à 0, il recharge (F-PAY-001).
 
 **Dépenses (défauts admin) :**
 
 | Action | Prix | Paramètre |
 | --- | --- | --- |
-| Histoire déjà au catalogue | 1 A | `price_story_a` |
-| Série complète (histoire avec des choix / arbre atelier) | 1 A | `price_tree_a` |
-| Commander une histoire (contexte → l’équipe la crée sous quelques jours) | 1,5 A | `price_order_a` |
-| Chaque branche demandée en plus (max 3) | +0,5 A | `price_ramification_a`, `max_ramifications` 3 |
-| Enregistrer une voix (puis l’attribuer : narrateur, papa, maman, copain…) | 5 A | `price_voice_record_a` |
-| Appliquer cette voix à toutes les histoires déjà achetées | 5 A | `price_voice_apply_all_a` |
+| Histoire déjà au catalogue | 1 acm | `price_story_a` |
+| Série complète (histoire avec des choix / arbre atelier) | 1 acm | `price_tree_a` |
+| Commander une histoire (contexte → l’équipe la crée sous quelques jours) | 1,5 acm | `price_order_a` |
+| Chaque branche demandée en plus (max 3) | +0,5 acm | `price_ramification_a`, `max_ramifications` 3 |
+| Enregistrer une voix (puis l’attribuer : narrateur, papa, maman, copain…) | 5 acm | `price_voice_record_a` |
+| Appliquer cette voix à toutes les histoires déjà achetées | 5 acm | `price_voice_apply_all_a` |
 
-Les voix nouvelles s’appliquent aux **prochaines** histoires achetées. L’application à tout le déjà-acheté est l’option 5 A.
+Les voix nouvelles s’appliquent aux **prochaines** histoires achetées. L’application à tout le déjà-acheté est l’option 5 acm.
 
 Offre catalogue prévue : **10 nouvelles séries** pour **10 €** (`pack_trees_count` 10, `pack_trees_eur` 10) — affichage après compte, paiement via F-PAY-001.
 
-Le parent dépense son A : histoires, séries, commandes, voix. L’admin change tous les chiffres sans redéployer.
+Le parent dépense ses acm : histoires, séries, commandes, voix. L’admin change tous les chiffres sans redéployer.
+
+### F-PAY-003 — Symbole acm et logo
+
+**Un seul dessin** pour la monnaie et la marque. C’est le glyphe organique (chemins + points or), pas un « A » barré.
+
+Où il apparaît :
+
+- **Logo** : accueil, connexion, inscription, barre parent, console, mode enfant, favicon. Mot « AcoMytha » à côté du glyphe.
+- **Montants** : chaque fois qu’on peut obtenir un produit ou un service — prix d’une histoire (vitrine et parent), solde, packs de recharge, commande, voix, paiement. Forme `1 250` + glyphe. Libellé accessible « acm ».
+- **Tailles** : le glyphe suit la taille du texte (`1em`). Variantes `xs` / `sm` / `md` / `lg` / `xl` pour le logo. Fond sombre : violet clair.
+
+Technique : `<symbol id="acm-mark">` une fois dans `index.html`, `<use href="#acm-mark">` partout. Fichier `assets/acm-mark.svg` pour l’icône. Helper `js/ui/acm.js` (`acmAmount`, `acmLogo`). Pas de JavaScript pour dessiner.
+
+Les deux maquettes HTML fournies sont des **exemples de mise en page**. Le glyphe retenu est le dessin détaillé (chemins du logo). L’autre esquisse (forme simplifiée + pastille) n’est pas un second symbole.

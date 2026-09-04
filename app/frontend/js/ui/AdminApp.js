@@ -1,4 +1,5 @@
 import { Component } from "../core/Component.js";
+import { acmLogo } from "./acm.js";
 
 export class AdminApp extends Component {
   constructor() {
@@ -11,7 +12,7 @@ export class AdminApp extends Component {
     this.innerHTML = `
       <div class="s-shell s-shell--admin">
         <aside class="s-rail">
-          <div class="c-mark"><strong>AcoMytha</strong><span>console</span></div>
+          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">console</span></div>
           <nav>
             <a href="#/admin" class="is-on">Veille</a>
             <a href="#/parent">Vue parent</a>
@@ -35,7 +36,7 @@ export class AdminApp extends Component {
             <div style="overflow:auto"><table class="c-table" id="users"></table></div>
           </article>
           <article class="c-card">
-            <h3>Paramètres (prix, A, aperçu)</h3>
+            <h3>Paramètres (prix, acm, aperçu)</h3>
             <form id="settings" class="o-stack"></form>
             <p class="c-hint" id="setok"></p>
           </article>

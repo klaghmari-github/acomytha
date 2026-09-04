@@ -61,7 +61,7 @@ def create_recharge(db: Session, settings: Settings, parent_id: int, eur: float)
                         "price_data": {
                             "currency": "eur",
                             "unit_amount": int(round(eur * 100)),
-                            "product_data": {"name": f"AcoMytha · {a} A"},
+                            "product_data": {"name": f"AcoMytha · {a} acm"},
                         },
                     }
                 ],

@@ -20,6 +20,9 @@
   --radius: 16px;
   --font: "Outfit", "Segoe UI", sans-serif;
   --tap: 48px;
+  --acm-purple: #5b3a8a;
+  --acm-line: #f6f1ea;
+  --acm-gold: #e8a54b;
 }
 
 *,
@@ -115,16 +118,29 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
-.c-mark strong {
-  font-size: 1.7rem;
-  font-weight: 580;
-  color: var(--ink);
-}
-
-.c-mark span {
+.c-mark span.c-mark__sub {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.c-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.c-logo strong {
+  font-size: 1.35rem;
+  font-weight: 580;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.c-mark .c-logo strong {
+  font-size: 1.55rem;
 }
 
 .c-field {
@@ -224,11 +240,11 @@ h3 {
   margin-bottom: 0;
 }
 
-.s-rail .c-mark strong {
-  font-size: 1.25rem;
+.s-rail .c-mark .c-logo strong {
+  font-size: 1.2rem;
 }
 
-.s-rail .c-mark span {
+.s-rail .c-mark span.c-mark__sub {
   font-size: 0.82rem;
 }
 
@@ -558,6 +574,14 @@ h3 {
 }
 
 @media (max-width: 560px) {
+  .c-top {
+    flex-wrap: wrap;
+  }
+  .c-top nav {
+    width: 100%;
+    justify-content: flex-end;
+    margin-left: 0;
+  }
   .c-filters {
     grid-template-columns: 1fr;
   }
@@ -570,38 +594,127 @@ h3 {
   }
 }
 
-/* Monnaie A : A barré, comme un dollar */
-.c-ako {
+/* Symbole acm (F-PAY-003) : un seul dessin, monnaie et logo. */
+.acm-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.acm {
+  --acm-size: 1em;
+  display: inline-block;
+  width: var(--acm-size);
+  height: calc(var(--acm-size) * 1.12);
+  flex: 0 0 auto;
+  overflow: visible;
+  vertical-align: -0.18em;
+}
+
+.acm svg,
+.acm use {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.acm--xs { --acm-size: 16px; }
+.acm--sm { --acm-size: 22px; }
+.acm--md { --acm-size: 40px; }
+.acm--lg { --acm-size: 72px; }
+.acm--xl { --acm-size: 120px; }
+
+.acm--badge {
+  background: var(--acm-purple);
+  border-radius: 22%;
+  padding: 12%;
+  width: calc(var(--acm-size) * 1.15);
+  height: calc(var(--acm-size) * 1.28);
+  --acm-purple: #f6f1ea;
+  --acm-line: #4a2d73;
+}
+
+.acm--mono {
+  --acm-purple: currentColor;
+  --acm-line: currentColor;
+  --acm-gold: currentColor;
+}
+
+.acm-amount {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.12em;
-  font-weight: 580;
-}
-.c-ako::before {
-  content: "A";
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
+  align-items: center;
+  gap: 0.22em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
   font-weight: 700;
-  position: relative;
-  padding: 0 0.18em;
 }
-.c-ako::before {
-  background: linear-gradient(currentColor, currentColor) 50% 18% / 2px 70% no-repeat;
+
+.acm-amount .acm {
+  --acm-size: 1.15em;
 }
-.c-ako--lg {
-  font-size: 1.4rem;
+
+.acm-amount--lg {
+  font-size: 1.45rem;
+}
+
+.acm-amount .unit {
+  font-size: 0.55em;
+  font-weight: 600;
+  color: var(--acm-purple);
+  letter-spacing: 0.02em;
+}
+
+.c-btn:not(.c-btn--ghost) .acm {
+  --acm-purple: #f6f1ea;
+  --acm-line: #3d2a66;
+}
+
+.s-child .acm,
+.s-child.is-night .acm {
+  --acm-purple: #c6a7ef;
+  --acm-line: #1d2633;
+}
+
+.s-child .c-logo strong {
+  color: #f4f6f8;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .c-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.8rem;
   padding: 1rem 1.4rem;
   background: var(--surface);
   border-bottom: 1px solid var(--line);
 }
-.c-top strong {
+.c-top nav {
+  margin-left: auto;
+}
+.c-top .c-logo strong {
   font-size: 1.2rem;
+}
+.c-hero-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.c-hero-logo .acm {
+  --acm-size: 88px;
+  filter: drop-shadow(0 8px 18px rgba(91, 58, 138, 0.18));
 }
 .c-top nav {
   display: flex;
@@ -712,6 +825,16 @@ h3 {
 
 .c-wallet {
   padding: 0.4rem 0;
+}
+.c-wallet .acm-amount {
+  font-size: 1.35rem;
+}
+.c-card .acm-amount {
+  font-size: 1.05rem;
+}
+.c-pack .acm-amount {
+  font-size: 0.95rem;
+  color: var(--acm-purple);
 }
 .c-shop {
   display: grid;

@@ -1,6 +1,7 @@
 import { Component } from "../core/Component.js";
 import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { ApiError } from "../core/ApiClient.js";
+import { acmLogo } from "./acm.js";
 
 export class LoginGate extends Component {
   constructor() {
@@ -14,7 +15,7 @@ export class LoginGate extends Component {
       <section class="s-gate">
         <form class="c-paper" id="login">
           <div class="c-mark">
-            <strong>AcoMytha</strong>
+            ${acmLogo({ size: "md" })}
           </div>
           <div class="c-field">
             <label for="email">E-mail</label>

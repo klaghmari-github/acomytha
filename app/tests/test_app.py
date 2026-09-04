@@ -15,6 +15,21 @@ def test_index(client):
     r = client.get("/")
     assert r.status_code == 200
     assert "AcoMytha" in r.text
+    assert 'id="acm-mark"' in r.text
+
+
+def test_public_stats_include_acm_prices(client):
+    r = client.get("/api/public/stats")
+    assert r.status_code == 200
+    body = r.json()
+    assert "price_story_acm" in body
+    assert body["price_story_acm"] > 0
+
+
+def test_acm_mark_asset(client):
+    r = client.get("/assets/acm-mark.svg")
+    assert r.status_code == 200
+    assert "svg" in r.text.lower()
 
 
 def test_login_and_catalog(client):

@@ -1,6 +1,7 @@
 import { Component } from "../core/Component.js";
 import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { ApiError } from "../core/ApiClient.js";
+import { acmLogo } from "./acm.js";
 
 export class SignupGate extends Component {
   constructor() {
@@ -13,7 +14,7 @@ export class SignupGate extends Component {
     this.innerHTML = `
       <section class="s-gate">
         <form class="c-paper" id="signup">
-          <div class="c-mark"><strong>AcoMytha</strong></div>
+          <div class="c-mark">${acmLogo({ size: "md" })}</div>
           <div class="c-field">
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="username" required />
