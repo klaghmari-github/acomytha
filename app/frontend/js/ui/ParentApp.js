@@ -266,8 +266,8 @@ export class ParentApp extends Component {
         </form>
       </details>
       <details class="c-panel" open>
-        <summary>Obtenir des billets AcoMytha</summary>
-        <p class="c-hint c-pack__legend">Vous versez des euros. Vous recevez des billets acm.</p>
+        <summary>Obtenir des pièces AcoMytha</summary>
+        <p class="c-hint c-pack__legend">Vous versez des euros. Vous recevez des pièces acm.</p>
         <div class="c-packs" id="recharge">
           ${[10, 20, 30, 40, 50]
             .map((e) => {
