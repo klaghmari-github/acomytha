@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-DIF.PAR.002-05",
+  "fil_rouge": "Maman coupe la pomme. Sarah cherche ses mots. Raphaël attend. Pomme. Puis rouge. Ils croquent ensemble.",
+  "title": "La pomme de Sarah",
+  "lesson_id": "DIF.PAR.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Raphaël, Sarah, maman, papa",
+  "setting": "cuisine, goûter",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les pelures de pomme font une spirale. La nappe a des petits carrés bleus. Le frigo fait un petit ronron. Un rayon pose un carré sur la table. C'est le goûter. J'ai coupé la pomme. Ça sent bon, hein ? Oui, papa. En ce moment, Raphaël est à table. Sarah est à côté. Elle veut parler. Elle cherche ses mots. Po... Raphaël connaît le mot. Il ouvre la bouche. On laisse le temps. On attend la fin. Raphaël referme la bouche. Il pose ses mains. Il attend. Pomme. Puis un silence. Rouge. Rouge, oui. Bravo, Raphaël. Tu as laissé le temps. C'est du bon travail. Tu as écouté jusqu'à la fin ? Oui, papa. Maman donne un quartier. Il est froid et lisse. Encore... Sarah cherche encore. Raphaël attend encore. Le frigo ronronne. Encore un morceau. Voici, Sarah. Tu as fini ta phrase. Ils croquent la pomme. Ça fait un petit bruit. C'est doux, la pomme ? Oui. Un peu sucré. Le temps est doux. Raphaël écoute jusqu'à la fin.",
+      "script": "narrateur|Les pelures de pomme font une spirale.\nnarrateur|La nappe a des petits carrés bleus.\nnarrateur|Le frigo fait un petit ronron.\nnarrateur|Un rayon pose un carré sur la table.\nmaman|C'est le goûter.\nmaman|J'ai coupé la pomme.\npapa|Ça sent bon, hein ?\nenfant-m|Oui, papa.\nnarrateur|En ce moment, Raphaël est à table.\nnarrateur|Sarah est à côté.\nnarrateur|Elle veut parler.\nnarrateur|Elle cherche ses mots.\ncopine|Po...\nnarrateur|Raphaël connaît le mot.\nnarrateur|Il ouvre la bouche.\nmaman|On laisse le temps.\nmaman|On attend la fin.\nnarrateur|Raphaël referme la bouche.\nnarrateur|Il pose ses mains.\nnarrateur|Il attend.\ncopine|Pomme.\nnarrateur|Puis un silence.\ncopine|Rouge.\nenfant-m|Rouge, oui.\nmaman|Bravo, Raphaël.\nmaman|Tu as laissé le temps.\npapa|C'est du bon travail.\npapa|Tu as écouté jusqu'à la fin ?\nenfant-m|Oui, papa.\nnarrateur|Maman donne un quartier.\nnarrateur|Il est froid et lisse.\ncopine|Encore...\nnarrateur|Sarah cherche encore.\nnarrateur|Raphaël attend encore.\nnarrateur|Le frigo ronronne.\ncopine|Encore un morceau.\nmaman|Voici, Sarah.\nmaman|Tu as fini ta phrase.\nnarrateur|Ils croquent la pomme.\nnarrateur|Ça fait un petit bruit.\npapa|C'est doux, la pomme ?\nenfant-m|Oui. Un peu sucré.\nnarrateur|Le temps est doux.\nnarrateur|Raphaël écoute jusqu'à la fin.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah cherche ses mots. Que fait Raphaël ?",
+      "script": "narrateur|Sarah cherche ses mots. Que fait Raphaël ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Raphaël a laissé le temps. Sarah a fini sa phrase. On laisse le temps. Bravo, Raphaël. J'ai attendu.",
+      "script": "narrateur|Raphaël a laissé le temps.\nnarrateur|Sarah a fini sa phrase.\nmaman|On laisse le temps.\npapa|Bravo, Raphaël.\nenfant-m|J'ai attendu.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Raphaël range les pelures. Tu mets ça dans le petit bol ? Oui, maman. Maman essuie la table. La nappe est propre, maintenant. Le carré de soleil a bougé.",
+      "script": "narrateur|Raphaël range les pelures.\nmaman|Tu mets ça dans le petit bol ?\nenfant-m|Oui, maman.\nnarrateur|Maman essuie la table.\npapa|La nappe est propre, maintenant.\nnarrateur|Le carré de soleil a bougé.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai attendu la fin. Bravo. Tu as fait du bon travail. La spirale de pelures est dans le bol. L'histoire est finie.",
+      "script": "enfant-m|J'ai attendu la fin.\nmaman|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|La spirale de pelures est dans le bol.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
