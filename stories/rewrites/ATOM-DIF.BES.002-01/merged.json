@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-DIF.BES.002-01",
+  "fil_rouge": "Nino construit une tour. Il propose. Victorina dit non, puis je regarde, puis oui un peu. Nino accepte.",
+  "title": "Nino propose, Victorina choisit",
+  "lesson_id": "DIF.BES.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nino, Victorina, papa, maman",
+  "setting": "salon",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La lampe fait un rond sur le tapis. La gouttière chante dehors. Ça sent la soupe, dans la cuisine. Une boîte en bois attend. Dedans, des cubes rouges. Des cubes bleus aussi. Le canapé est gris, tout mou. Tu entends la gouttière, Nino ? Oui, maman. La soupe va attendre un peu. On reste au salon. En ce moment même, Nino s'assoit. Il est à quatre pattes. Le tapis pique un peu les genoux. Maman ouvre la porte. Victorina arrive. Ses chaussettes sont rouges. Tu viens ? Non. Nino regarde maman. On peut proposer. On peut accepter plusieurs réponses. Oui. Non. Regarder. Plus tard. D'accord. Nino pose un cube rouge. Il pose un cube bleu. La tour grandit. Victorina s'assoit près du canapé. Elle regarde. Nino laisse sa place. Plus tard, tu viens ? Je regarde. Regarder, c'est une réponse. On accepte plusieurs réponses. Nino pose encore un cube. Rouge, puis bleu. Tu as vu la tour, Nino ? Oui, papa. Victorina avance un peu. Elle ne touche pas. C'est bien. Tu veux un cube ? Plus tard. D'accord. La tour penche. Elle tombe. Les cubes font un petit bruit. On recommence ? Oui. Victorina pose un cube jaune. Puis elle s'arrête. Nino accepte. Tu as su proposer. Tu as su accepter. Plusieurs réponses sont possibles. Bravo, Nino. Tu as fait du bon travail.",
+      "script": "narrateur|La lampe fait un rond sur le tapis.\nnarrateur|La gouttière chante dehors.\nnarrateur|Ça sent la soupe, dans la cuisine.\nnarrateur|Une boîte en bois attend.\nnarrateur|Dedans, des cubes rouges.\nnarrateur|Des cubes bleus aussi.\nnarrateur|Le canapé est gris, tout mou.\nmaman|Tu entends la gouttière, Nino ?\nenfant-m|Oui, maman.\npapa|La soupe va attendre un peu.\npapa|On reste au salon.\nnarrateur|En ce moment même, Nino s'assoit.\nnarrateur|Il est à quatre pattes.\nnarrateur|Le tapis pique un peu les genoux.\nnarrateur|Maman ouvre la porte.\nnarrateur|Victorina arrive.\nnarrateur|Ses chaussettes sont rouges.\nenfant-m|Tu viens ?\ncopine|Non.\nnarrateur|Nino regarde maman.\nmaman|On peut proposer.\nmaman|On peut accepter plusieurs réponses.\npapa|Oui.\npapa|Non.\npapa|Regarder.\npapa|Plus tard.\nenfant-m|D'accord.\nnarrateur|Nino pose un cube rouge.\nnarrateur|Il pose un cube bleu.\nnarrateur|La tour grandit.\nnarrateur|Victorina s'assoit près du canapé.\nnarrateur|Elle regarde.\nnarrateur|Nino laisse sa place.\nenfant-m|Plus tard, tu viens ?\ncopine|Je regarde.\nmaman|Regarder, c'est une réponse.\npapa|On accepte plusieurs réponses.\nnarrateur|Nino pose encore un cube.\nnarrateur|Rouge, puis bleu.\npapa|Tu as vu la tour, Nino ?\nenfant-m|Oui, papa.\nnarrateur|Victorina avance un peu.\nnarrateur|Elle ne touche pas.\nmaman|C'est bien.\nenfant-m|Tu veux un cube ?\ncopine|Plus tard.\nenfant-m|D'accord.\nnarrateur|La tour penche.\nnarrateur|Elle tombe.\nnarrateur|Les cubes font un petit bruit.\nenfant-m|On recommence ?\ncopine|Oui.\nnarrateur|Victorina pose un cube jaune.\nnarrateur|Puis elle s'arrête.\nnarrateur|Nino accepte.\npapa|Tu as su proposer.\nmaman|Tu as su accepter.\nmaman|Plusieurs réponses sont possibles.\npapa|Bravo, Nino.\nmaman|Tu as fait du bon travail.",
+      "sons": "gouttiere,cubes",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino invite Victorina. Que fait-on ?",
+      "script": "narrateur|Nino invite Victorina.\nnarrateur|Que fait-on ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino a su proposer. Victorina a dit non, puis regarder. Nino a pu accepter plusieurs réponses. Tu as accepté, Nino ? Oui, papa. Bravo. Regarder, c'est une réponse. La tour est petite, maintenant. Le cube jaune brille. C'est du bon travail.",
+      "script": "narrateur|Nino a su proposer.\nnarrateur|Victorina a dit non, puis regarder.\nnarrateur|Nino a pu accepter plusieurs réponses.\npapa|Tu as accepté, Nino ?\nenfant-m|Oui, papa.\nmaman|Bravo.\nmaman|Regarder, c'est une réponse.\nnarrateur|La tour est petite, maintenant.\nnarrateur|Le cube jaune brille.\npapa|C'est du bon travail.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On range. Nino met un cube dans la boîte. Victorina met le cube jaune. Tu as fini de ranger tes cubes ? Oui, papa. Bravo. Merci, Victorina. Ils se disent merci. La soupe sent plus fort. La gouttière chante encore.",
+      "script": "maman|On range.\nnarrateur|Nino met un cube dans la boîte.\nnarrateur|Victorina met le cube jaune.\npapa|Tu as fini de ranger tes cubes ?\nenfant-m|Oui, papa.\npapa|Bravo.\nmaman|Merci, Victorina.\nnarrateur|Ils se disent merci.\nnarrateur|La soupe sent plus fort.\nnarrateur|La gouttière chante encore.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai proposé. J'ai accepté. Bravo. Tu as fait du bon travail. Les cubes dorment dans la boîte. L'histoire est finie.",
+      "script": "enfant-m|J'ai proposé.\nenfant-m|J'ai accepté.\nmaman|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|Les cubes dorment dans la boîte.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "DIF.BES.001"
+}

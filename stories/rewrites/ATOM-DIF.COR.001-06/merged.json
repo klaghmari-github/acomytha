@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-DIF.COR.001-06",
+  "fil_rouge": "Sur la terrasse, Raphaël ouvre une caisse de cubes. Chouchou est plus petit. Raphaël l'invite. Ils construisent une tour, ensemble.",
+  "title": "Raphaël et les cubes du jardin",
+  "lesson_id": "DIF.COR.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, Chouchou, papa",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Sur la terrasse, une caisse de bois sent chaud. Dedans, des cubes attendent. Le soleil du soir pose des carrés d'or. La chaise de papa craque un peu. Un linge à carreaux sèche sur le fil. En ce moment, Raphaël ouvre la caisse. Papa, les cubes sentent le bois ! Oui, Raphaël. Tu veux construire une tour ? Oui. Chouchou arrive sur les dalles. Chouchou est plus petit. Raphaël est plus grand. Ils ont des tailles différentes. Les tailles sont différentes. On joue ensemble. Raphaël dit le prénom, tout simple. Chouchou, tu veux un cube ? Oui. Raphaël tend un cube. Chouchou pose un cube. La tour grandit, tout doux. Vous jouez ensemble. Bravo.",
+      "script": "narrateur|Sur la terrasse, une caisse de bois sent chaud.\nnarrateur|Dedans, des cubes attendent.\nnarrateur|Le soleil du soir pose des carrés d'or.\nnarrateur|La chaise de papa craque un peu.\nnarrateur|Un linge à carreaux sèche sur le fil.\nnarrateur|En ce moment, Raphaël ouvre la caisse.\nenfant-m|Papa, les cubes sentent le bois !\npapa|Oui, Raphaël.\npapa|Tu veux construire une tour ?\nenfant-m|Oui.\nnarrateur|Chouchou arrive sur les dalles.\nnarrateur|Chouchou est plus petit.\nnarrateur|Raphaël est plus grand.\nnarrateur|Ils ont des tailles différentes.\npapa|Les tailles sont différentes.\npapa|On joue ensemble.\nnarrateur|Raphaël dit le prénom, tout simple.\nenfant-m|Chouchou, tu veux un cube ?\ncopain|Oui.\nnarrateur|Raphaël tend un cube.\nnarrateur|Chouchou pose un cube.\nnarrateur|La tour grandit, tout doux.\npapa|Vous jouez ensemble.\npapa|Bravo.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Chouchou est plus petit. Que fait Raphaël ?",
+      "script": "narrateur|Chouchou est plus petit.\nnarrateur|Que fait Raphaël ?",
+      "sons": "",
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "La tour penche un peu. Raphaël pose un cube plus bas. Chouchou pose le sien tout près. Les deux façons marchent. On joue ensemble. Plus petit ou plus grand, on joue. Bravo, Raphaël. Tu as fait du bon travail. Raphaël n'invente pas de surnom. Il dit encore le prénom. Encore un cube, Chouchou ? Oui. Un oiseau passe au-dessus du fil. La tour tient debout. Vous avez des tailles différentes. Et vous jouez ensemble. La tour est belle, non ? Oui, papa.",
+      "script": "narrateur|La tour penche un peu.\nnarrateur|Raphaël pose un cube plus bas.\nnarrateur|Chouchou pose le sien tout près.\nnarrateur|Les deux façons marchent.\npapa|On joue ensemble.\npapa|Plus petit ou plus grand, on joue.\npapa|Bravo, Raphaël.\npapa|Tu as fait du bon travail.\nnarrateur|Raphaël n'invente pas de surnom.\nnarrateur|Il dit encore le prénom.\nenfant-m|Encore un cube, Chouchou ?\ncopain|Oui.\nnarrateur|Un oiseau passe au-dessus du fil.\nnarrateur|La tour tient debout.\npapa|Vous avez des tailles différentes.\npapa|Et vous jouez ensemble.\npapa|La tour est belle, non ?\nenfant-m|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On range les cubes ? Oui. Papa glisse les cubes dans la caisse. Raphaël donne la main. Le linge bouge un peu, au vent. Bravo. Tu as invité. Vous avez joué ensemble. On rentre ? Oui. La terrasse redevient calme.",
+      "script": "papa|On range les cubes ?\nenfant-m|Oui.\nnarrateur|Papa glisse les cubes dans la caisse.\nnarrateur|Raphaël donne la main.\nnarrateur|Le linge bouge un peu, au vent.\npapa|Bravo.\npapa|Tu as invité.\npapa|Vous avez joué ensemble.\npapa|On rentre ?\nenfant-m|Oui.\nnarrateur|La terrasse redevient calme.",
+      "sons": "",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "On a fait une tour. On a joué ensemble. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-m|On a fait une tour.\nenfant-m|On a joué ensemble.\npapa|Bravo.\npapa|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "DIF.BES.002"
+}

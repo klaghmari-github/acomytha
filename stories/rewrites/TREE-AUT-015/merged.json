@@ -1,0 +1,872 @@
+{
+  "story_id": "TREE-AUT-015",
+  "fil_rouge": "Nina veut aller au parc. Près de la fenêtre embuée, elle prépare son sac bleu avec ce que maman a dit. Au parc, elle choisit un lieu, un jeu, puis une dernière chose à mettre dans le sac.",
+  "title": "Le sac de Nina près de la fenêtre",
+  "lesson_id": "AUT.AFF.001",
+  "age_band": "N3",
+  "kind": "ramifiee",
+  "characters": "Nina, maman, papa",
+  "setting": "près de la fenêtre, puis au parc",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La vitre près de la cuisine est un peu embuée. Un moineau tapote le rebord mouillé. Le soleil revient sur le plancher de bois. Il dessine des carrés chauds, tout jaunes. Ça sent le cacao dans la petite casserole. Un sac bleu est ouvert sur la chaise. Les sangles pendent, molles et lisses. Les chaussettes rouges de Nina sèchent près du radiateur. Nina, la gourde est dans le placard. Je te la passe. On prépare le sac avant le parc. On met ce que j'ai dit. La gourde, le doudou, et le petit livre. En ce moment, Nina est près de la fenêtre. Maman et papa sont avec elle. Nina a envie d'aller au parc. Elle écoute maman jusqu'au bout. Elle prend la gourde bleue. Le plastique est frais sous ses doigts. Elle la met dans le sac. Ça fait un petit bruit de plastique. Elle prend le doudou, tout doux. Elle le met dans le sac. Elle prend le petit livre. Elle le met dans le sac, comme maman a dit. Nina appuie sur la fermeture. Ça fait zzz. Bravo, Nina. Tu as fait du bon travail. Tu as mis ce que l'adulte a dit ? Oui, maman. Le sac est prêt. Le sac est fermé. Il attend près de la fenêtre.",
+      "script": "narrateur|La vitre près de la cuisine est un peu embuée.\nnarrateur|Un moineau tapote le rebord mouillé.\nnarrateur|Le soleil revient sur le plancher de bois.\nnarrateur|Il dessine des carrés chauds, tout jaunes.\nnarrateur|Ça sent le cacao dans la petite casserole.\nnarrateur|Un sac bleu est ouvert sur la chaise.\nnarrateur|Les sangles pendent, molles et lisses.\nnarrateur|Les chaussettes rouges de Nina sèchent près du radiateur.\npapa|Nina, la gourde est dans le placard.\npapa|Je te la passe.\nmaman|On prépare le sac avant le parc.\nmaman|On met ce que j'ai dit.\nmaman|La gourde, le doudou, et le petit livre.\nnarrateur|En ce moment, Nina est près de la fenêtre.\nnarrateur|Maman et papa sont avec elle.\nnarrateur|Nina a envie d'aller au parc.\nnarrateur|Elle écoute maman jusqu'au bout.\nnarrateur|Elle prend la gourde bleue.\nnarrateur|Le plastique est frais sous ses doigts.\nnarrateur|Elle la met dans le sac.\nnarrateur|Ça fait un petit bruit de plastique.\nnarrateur|Elle prend le doudou, tout doux.\nnarrateur|Elle le met dans le sac.\nnarrateur|Elle prend le petit livre.\nnarrateur|Elle le met dans le sac, comme maman a dit.\nnarrateur|Nina appuie sur la fermeture.\nnarrateur|Ça fait zzz.\npapa|Bravo, Nina. Tu as fait du bon travail.\nmaman|Tu as mis ce que l'adulte a dit ?\nenfant-f|Oui, maman. Le sac est prêt.\nnarrateur|Le sac est fermé. Il attend près de la fenêtre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0001_P0000",
+      "kind": "transition_question",
+      "text": "On va au parc. Où va-t-on d'abord ? On peut aller au bac à sable, au toboggan, ou aux balançoires.",
+      "script": "maman|On va au parc. Où va-t-on d'abord ?\nnarrateur|On peut aller au bac à sable, au toboggan, ou aux balançoires.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001",
+      "kind": "passage",
+      "text": "Nina marche vers le bac à sable. Le sable est un peu froid, tout fin. Il glisse entre les doigts. Le bois du rebord sent le soleil. Le sac bleu est posé contre le rebord. On pose le sac ici, près de nous. Tu te souviens ? On met dans le sac ce que l'adulte a dit. Nina ouvre un peu le sac. Elle vérifie le doudou et le livre. Ils sont dans le sac. Bravo. Tu as écouté. Un oiseau chante tout près. Le vent soulève un peu de sable clair.",
+      "script": "narrateur|Nina marche vers le bac à sable.\nnarrateur|Le sable est un peu froid, tout fin.\nnarrateur|Il glisse entre les doigts.\nnarrateur|Le bois du rebord sent le soleil.\nnarrateur|Le sac bleu est posé contre le rebord.\nmaman|On pose le sac ici, près de nous.\npapa|Tu te souviens ? On met dans le sac ce que l'adulte a dit.\nnarrateur|Nina ouvre un peu le sac.\nnarrateur|Elle vérifie le doudou et le livre.\nenfant-f|Ils sont dans le sac.\nmaman|Bravo. Tu as écouté.\nnarrateur|Un oiseau chante tout près.\nnarrateur|Le vent soulève un peu de sable clair.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_Q0001",
+      "kind": "passage_question",
+      "text": "Nina prépare le sac. Que met-elle ?",
+      "script": "narrateur|Nina prépare le sac.\nnarrateur|Que met-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_C0001",
+      "kind": "passage",
+      "text": "Oui. Nina met dans le sac ce que l'adulte a dit. Bravo. C'est ça. On continue. Le sac reste avec nous. Nina respire. Le sable est froid sous ses mains.",
+      "script": "narrateur|Oui. Nina met dans le sac ce que l'adulte a dit.\nmaman|Bravo. C'est ça.\npapa|On continue. Le sac reste avec nous.\nnarrateur|Nina respire. Le sable est froid sous ses mains.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qu'on met encore dans le sac ? On peut prendre le ballon, le seau, ou le doudou.",
+      "script": "papa|Qu'est-ce qu'on met encore dans le sac ?\nnarrateur|On peut prendre le ballon, le seau, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001",
+      "kind": "passage",
+      "text": "Nina a choisi le ballon. Il est rouge, un peu poussiéreux. Il sent le caoutchouc chaud. Le ballon, on le met dans le sac. Nina pousse le ballon dans l'ouverture. Le sac devient tout rond. Bravo. Tu as mis ce que l'adulte a dit. Le ballon est dans le sac. Un peu d'eau goutte d'un robinet, tout près.",
+      "script": "narrateur|Nina a choisi le ballon.\nnarrateur|Il est rouge, un peu poussiéreux.\nnarrateur|Il sent le caoutchouc chaud.\nmaman|Le ballon, on le met dans le sac.\nnarrateur|Nina pousse le ballon dans l'ouverture.\nnarrateur|Le sac devient tout rond.\npapa|Bravo. Tu as mis ce que l'adulte a dit.\nenfant-f|Le ballon est dans le sac.\nnarrateur|Un peu d'eau goutte d'un robinet, tout près.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le ballon dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le ballon dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le ballon dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002",
+      "kind": "passage",
+      "text": "Nina a choisi le seau. Il est jaune. L'anse est un peu rêche. Il y a du sable au fond, tout fin. Le seau, on le met dans le sac aussi. Nina le glisse à côté du doudou. Tu as fini de mettre le seau ? Oui. Il est dans le sac. Bravo, Nina. Bon travail. Un vélo passe au loin, tout léger.",
+      "script": "narrateur|Nina a choisi le seau.\nnarrateur|Il est jaune. L'anse est un peu rêche.\nnarrateur|Il y a du sable au fond, tout fin.\npapa|Le seau, on le met dans le sac aussi.\nnarrateur|Nina le glisse à côté du doudou.\nmaman|Tu as fini de mettre le seau ?\nenfant-f|Oui. Il est dans le sac.\npapa|Bravo, Nina. Bon travail.\nnarrateur|Un vélo passe au loin, tout léger.",
+      "sons": "voiture_passe",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le seau dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le seau dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le seau dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003",
+      "kind": "passage",
+      "text": "Nina a choisi le doudou. Il est déjà un peu dans le sac. Nina le pousse bien au fond, tout doux. Le doudou reste dans le sac. Comme j'ai dit. Le tissu sent la maison. Bravo. Tu as mis ce que l'adulte a dit. Mon doudou est prêt. La lumière est claire sur le tissu bleu. On souffle un peu. Puis on continue.",
+      "script": "narrateur|Nina a choisi le doudou.\nnarrateur|Il est déjà un peu dans le sac.\nnarrateur|Nina le pousse bien au fond, tout doux.\nmaman|Le doudou reste dans le sac. Comme j'ai dit.\nnarrateur|Le tissu sent la maison.\npapa|Bravo. Tu as mis ce que l'adulte a dit.\nenfant-f|Mon doudou est prêt.\nnarrateur|La lumière est claire sur le tissu bleu.\nmaman|On souffle un peu. Puis on continue.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le doudou dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le doudou dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le sable reste froid sous les chaussures. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le sable reste froid sous les chaussures.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le bac à sable. Elle a mis le doudou dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le bac à sable.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002",
+      "kind": "passage",
+      "text": "Nina marche vers le toboggan. Le plastique lisse brille au soleil. Les marches métalliques sont tièdes. Nina pose la main dessus, tout doucement. Le sac bleu est au pied du toboggan. On garde le sac près de nous. Avant de jouer, on met ce que j'ai dit. Nina ouvre le sac. Elle voit le doudou et le livre. C'est dans le sac. Bravo, Nina. Tu as fait du bon travail. Une feuille sèche tourne sur le sol. Ça sent l'herbe coupée.",
+      "script": "narrateur|Nina marche vers le toboggan.\nnarrateur|Le plastique lisse brille au soleil.\nnarrateur|Les marches métalliques sont tièdes.\nnarrateur|Nina pose la main dessus, tout doucement.\nnarrateur|Le sac bleu est au pied du toboggan.\npapa|On garde le sac près de nous.\nmaman|Avant de jouer, on met ce que j'ai dit.\nnarrateur|Nina ouvre le sac.\nnarrateur|Elle voit le doudou et le livre.\nenfant-f|C'est dans le sac.\npapa|Bravo, Nina. Tu as fait du bon travail.\nnarrateur|Une feuille sèche tourne sur le sol.\nnarrateur|Ça sent l'herbe coupée.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_Q0001",
+      "kind": "passage_question",
+      "text": "Nina prépare le sac. Que met-elle ?",
+      "script": "narrateur|Nina prépare le sac.\nnarrateur|Que met-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_C0001",
+      "kind": "passage",
+      "text": "Oui. On met dans le sac ce que l'adulte a dit. Bravo, Nina. Tu as écouté. Le sac est prêt. On peut jouer un peu. Nina pose la main sur la sangle lisse.",
+      "script": "narrateur|Oui. On met dans le sac ce que l'adulte a dit.\npapa|Bravo, Nina. Tu as écouté.\nmaman|Le sac est prêt. On peut jouer un peu.\nnarrateur|Nina pose la main sur la sangle lisse.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qu'on met encore dans le sac ? On peut prendre le ballon, le seau, ou le doudou.",
+      "script": "papa|Qu'est-ce qu'on met encore dans le sac ?\nnarrateur|On peut prendre le ballon, le seau, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001",
+      "kind": "passage",
+      "text": "Nina a choisi le ballon, près du toboggan. Il rebondit une fois, tout mou. On le met dans le sac, maintenant. Nina le prend à deux mains. Elle le glisse dans le sac bleu. C'est ce que l'adulte a dit. Bravo. Le ballon est avec le livre. Il y a des miettes de goûter sur une table basse. On range. Le sac reste fermé.",
+      "script": "narrateur|Nina a choisi le ballon, près du toboggan.\nnarrateur|Il rebondit une fois, tout mou.\nmaman|On le met dans le sac, maintenant.\nnarrateur|Nina le prend à deux mains.\nnarrateur|Elle le glisse dans le sac bleu.\npapa|C'est ce que l'adulte a dit. Bravo.\nenfant-f|Le ballon est avec le livre.\nnarrateur|Il y a des miettes de goûter sur une table basse.\nmaman|On range. Le sac reste fermé.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le ballon dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le ballon dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le ballon dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002",
+      "kind": "passage",
+      "text": "Nina a choisi le seau, au pied du toboggan. Un chat miaule une fois, tout près. Le seau va dans le sac. Nina le pose sur le doudou. Tu as mis ce que j'ai dit ? Oui. Le seau est dedans. Bravo. On dit merci au seau, tout bas. Nina rit un peu. L'anse cliquette.",
+      "script": "narrateur|Nina a choisi le seau, au pied du toboggan.\nnarrateur|Un chat miaule une fois, tout près.\npapa|Le seau va dans le sac.\nnarrateur|Nina le pose sur le doudou.\nmaman|Tu as mis ce que j'ai dit ?\nenfant-f|Oui. Le seau est dedans.\npapa|Bravo. On dit merci au seau, tout bas.\nnarrateur|Nina rit un peu. L'anse cliquette.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le seau dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le seau dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le seau dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003",
+      "kind": "passage",
+      "text": "Nina a choisi le doudou, près des marches. Les chaussures font toc toc sur le métal. Le doudou, on le met bien dans le sac. Nina l'enfonce tout doucement. Bravo. Tu as écouté. Il est au chaud dans le sac. Nina souffle. Le toboggan brille encore. On continue. Il reste une chose.",
+      "script": "narrateur|Nina a choisi le doudou, près des marches.\nnarrateur|Les chaussures font toc toc sur le métal.\nmaman|Le doudou, on le met bien dans le sac.\nnarrateur|Nina l'enfonce tout doucement.\npapa|Bravo. Tu as écouté.\nenfant-f|Il est au chaud dans le sac.\nnarrateur|Nina souffle. Le toboggan brille encore.\nmaman|On continue. Il reste une chose.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le doudou dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le doudou dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Le toboggan brille encore derrière eux. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Le toboggan brille encore derrière eux.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers le toboggan. Elle a mis le doudou dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers le toboggan.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003",
+      "kind": "passage",
+      "text": "Nina marche vers les balançoires. Les chaînes font un petit clin clin. Le siège en bois est lisse et chaud. Le vent passe dans les cheveux de Nina. Le sac bleu est posé dans l'herbe. On met le sac ici, à côté de la balançoire. On met dans le sac ce que l'adulte a dit. Nina touche la sangle lisse. Elle sent le doudou à travers le tissu. Le sac est avec nous. Très bien. On reste ensemble. Au loin, un vélo passe tout doux. L'air est frais sur les joues.",
+      "script": "narrateur|Nina marche vers les balançoires.\nnarrateur|Les chaînes font un petit clin clin.\nnarrateur|Le siège en bois est lisse et chaud.\nnarrateur|Le vent passe dans les cheveux de Nina.\nnarrateur|Le sac bleu est posé dans l'herbe.\nmaman|On met le sac ici, à côté de la balançoire.\npapa|On met dans le sac ce que l'adulte a dit.\nnarrateur|Nina touche la sangle lisse.\nnarrateur|Elle sent le doudou à travers le tissu.\nenfant-f|Le sac est avec nous.\nmaman|Très bien. On reste ensemble.\nnarrateur|Au loin, un vélo passe tout doux.\nnarrateur|L'air est frais sur les joues.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_Q0001",
+      "kind": "passage_question",
+      "text": "Nina prépare le sac. Que met-elle ?",
+      "script": "narrateur|Nina prépare le sac.\nnarrateur|Que met-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_C0001",
+      "kind": "passage",
+      "text": "Oui. Nina met les choses dans le sac. Tu as mis ce que j'ai dit. Bravo. On garde le sac près des balançoires. Nina entend encore le clin des chaînes.",
+      "script": "narrateur|Oui. Nina met les choses dans le sac.\nmaman|Tu as mis ce que j'ai dit. Bravo.\npapa|On garde le sac près des balançoires.\nnarrateur|Nina entend encore le clin des chaînes.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0000",
+      "kind": "transition_question",
+      "text": "Qu'est-ce qu'on met encore dans le sac ? On peut prendre le ballon, le seau, ou le doudou.",
+      "script": "papa|Qu'est-ce qu'on met encore dans le sac ?\nnarrateur|On peut prendre le ballon, le seau, ou le doudou.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001",
+      "kind": "passage",
+      "text": "Nina a choisi le ballon, près des balançoires. Il est rouge comme une pomme. On le met dans le sac, comme maman a dit. Nina ouvre, elle pousse, elle ferme. Bravo. Le ballon est à sa place. Dans le sac ! Les chaînes se taisent une seconde. On a mis ce que l'adulte a dit.",
+      "script": "narrateur|Nina a choisi le ballon, près des balançoires.\nnarrateur|Il est rouge comme une pomme.\npapa|On le met dans le sac, comme maman a dit.\nnarrateur|Nina ouvre, elle pousse, elle ferme.\nmaman|Bravo. Le ballon est à sa place.\nenfant-f|Dans le sac !\nnarrateur|Les chaînes se taisent une seconde.\npapa|On a mis ce que l'adulte a dit.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le ballon dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le ballon dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le ballon fait une bosse dans le sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le ballon fait une bosse dans le sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le ballon dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le ballon dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002",
+      "kind": "passage",
+      "text": "Nina a choisi le seau, dans l'herbe. L'anse tape un peu contre le plastique. Le seau, on le met dans le sac. Nina le glisse à côté du livre. Tu as fini de ranger le seau ? Oui, papa. Bravo. Tu as fait du bon travail. Un oiseau répond, tout haut.",
+      "script": "narrateur|Nina a choisi le seau, dans l'herbe.\nnarrateur|L'anse tape un peu contre le plastique.\nmaman|Le seau, on le met dans le sac.\nnarrateur|Nina le glisse à côté du livre.\npapa|Tu as fini de ranger le seau ?\nenfant-f|Oui, papa.\nmaman|Bravo. Tu as fait du bon travail.\nnarrateur|Un oiseau répond, tout haut.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le seau dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le seau dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. L'anse du seau dépasse un tout petit peu. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|L'anse du seau dépasse un tout petit peu.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le seau dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le seau dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003",
+      "kind": "passage",
+      "text": "Nina a choisi le doudou, contre le sac. La couverture du doudou est douce. On le met dans le sac. C'est ce que l'adulte a dit. Nina le range. Elle appuie un peu. Bravo, Nina. Il est bien. Le vent sent l'herbe et le bois chaud. On souffle. Puis la dernière chose.",
+      "script": "narrateur|Nina a choisi le doudou, contre le sac.\nnarrateur|La couverture du doudou est douce.\npapa|On le met dans le sac. C'est ce que l'adulte a dit.\nnarrateur|Nina le range. Elle appuie un peu.\nmaman|Bravo, Nina.\nenfant-f|Il est bien.\nnarrateur|Le vent sent l'herbe et le bois chaud.\npapa|On souffle. Puis la dernière chose.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
+      "kind": "transition_question",
+      "text": "Il reste une chose à mettre dans le sac. On peut prendre la gourde, le goûter, ou la casquette.",
+      "script": "maman|Il reste une chose à mettre dans le sac.\nnarrateur|On peut prendre la gourde, le goûter, ou la casquette.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 500
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
+      "kind": "passage",
+      "text": "Nina prend la gourde. Elle est bleue. L'eau chante un peu dedans. La gourde, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la gourde.\nnarrateur|Elle est bleue.\nnarrateur|L'eau chante un peu dedans.\nmaman|La gourde, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le doudou dans le sac. Elle a mis la gourde aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la gourde aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
+      "kind": "passage",
+      "text": "Nina prend le goûter. Il est dans un linge. Ça sent la pomme douce. Le goûter, on le met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend le goûter.\nnarrateur|Il est dans un linge.\nnarrateur|Ça sent la pomme douce.\npapa|Le goûter, on le met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\nmaman|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le doudou dans le sac. Elle a mis le goûter aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis le goûter aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003",
+      "kind": "passage",
+      "text": "Nina prend la casquette. Elle est à visière. Le tissu est un peu rêche. La casquette, on la met dans le sac. Nina l'écoute. Elle met la chose dans le sac. C'est ce que l'adulte a dit. Bravo. Tu as fait du bon travail. Le sac est prêt. Le doudou chauffe le fond du sac. Les chaînes des balançoires se taisent. On a mis ce qu'il fallait. On rentre ? Oui. Le sac vient avec nous. Nina dit merci. Les chaussures font toc toc.",
+      "script": "narrateur|Nina prend la casquette.\nnarrateur|Elle est à visière.\nnarrateur|Le tissu est un peu rêche.\nmaman|La casquette, on la met dans le sac.\nnarrateur|Nina l'écoute. Elle met la chose dans le sac.\nnarrateur|C'est ce que l'adulte a dit.\npapa|Bravo. Tu as fait du bon travail.\nenfant-f|Le sac est prêt.\nnarrateur|Le doudou chauffe le fond du sac.\nnarrateur|Les chaînes des balançoires se taisent.\nmaman|On a mis ce qu'il fallait. On rentre ?\npapa|Oui. Le sac vient avec nous.\nnarrateur|Nina dit merci. Les chaussures font toc toc.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0003_F0001",
+      "kind": "passage_fin",
+      "text": "Nina a joué vers les balançoires. Elle a mis le doudou dans le sac. Elle a mis la casquette aussi. Le sac est sur le dos, lourd et doux. Merci, Nina. Tu as écouté. Bravo. On rentre à la maison. La fenêtre les attend, encore un peu embuée. L'histoire est finie.",
+      "script": "narrateur|Nina a joué vers les balançoires.\nnarrateur|Elle a mis le doudou dans le sac.\nnarrateur|Elle a mis la casquette aussi.\nnarrateur|Le sac est sur le dos, lourd et doux.\nmaman|Merci, Nina. Tu as écouté.\npapa|Bravo. On rentre à la maison.\nnarrateur|La fenêtre les attend, encore un peu embuée.\nnarrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

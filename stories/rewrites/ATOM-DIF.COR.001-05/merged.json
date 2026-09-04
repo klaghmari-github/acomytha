@@ -1,0 +1,63 @@
+{
+  "story_id": "ATOM-DIF.COR.001-05",
+  "fil_rouge": "Dans le jardin, Amir invite Sarah près du bac. Ils ont des tailles différentes. Ils font un gâteau de sable, ensemble.",
+  "title": "Amir invite Sarah au bac",
+  "lesson_id": "DIF.COR.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, Sarah, maman",
+  "setting": "jardin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le tuyau du jardin est enroulé près du mur. Les carreaux mouillés brillent au soleil. Un seau à anse jaune attend. Une pétale est collée sur la chaussure de maman. Les fleurs sentent fort, tout doux. En ce moment, Amir prend une petite pelle. Maman, je veux du sable. Oui, Amir. Le bac est près des fleurs. Sarah arrive avec un seau. Sarah est plus grande. Amir est plus petit. Ils ont des tailles différentes. Viens jouer. Oui. Ils vont près du bac. Sarah porte un gros seau. Amir porte un petit seau. Vous jouez ensemble. Amir donne une pelle. Sarah donne un moule. Ils tapent le sable, tout doux.",
+      "script": "narrateur|Le tuyau du jardin est enroulé près du mur.\nnarrateur|Les carreaux mouillés brillent au soleil.\nnarrateur|Un seau à anse jaune attend.\nnarrateur|Une pétale est collée sur la chaussure de maman.\nnarrateur|Les fleurs sentent fort, tout doux.\nnarrateur|En ce moment, Amir prend une petite pelle.\nenfant-m|Maman, je veux du sable.\nmaman|Oui, Amir.\nmaman|Le bac est près des fleurs.\nnarrateur|Sarah arrive avec un seau.\nnarrateur|Sarah est plus grande.\nnarrateur|Amir est plus petit.\nnarrateur|Ils ont des tailles différentes.\nenfant-m|Viens jouer.\ncopine|Oui.\nnarrateur|Ils vont près du bac.\nnarrateur|Sarah porte un gros seau.\nnarrateur|Amir porte un petit seau.\nmaman|Vous jouez ensemble.\nnarrateur|Amir donne une pelle.\nnarrateur|Sarah donne un moule.\nnarrateur|Ils tapent le sable, tout doux.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir invite Sarah. Que font-ils ?",
+      "script": "narrateur|Amir invite Sarah.\nnarrateur|Que font-ils ?",
+      "sons": "",
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ils font un gâteau de sable. Amir met un caillou dessus. Sarah met une feuille verte. Ils tapent des mains. On invite. On joue ensemble. Petit ou grand, on joue ensemble. Bravo, Amir. Tu as fait du bon travail. Amir verse un peu d'eau. Sarah lisse le tas. Le gâteau tient debout. Vous avez des tailles différentes. Et vous jouez ensemble. C'est un beau gâteau, non ? Oui, maman.",
+      "script": "narrateur|Ils font un gâteau de sable.\nnarrateur|Amir met un caillou dessus.\nnarrateur|Sarah met une feuille verte.\nnarrateur|Ils tapent des mains.\nmaman|On invite.\nmaman|On joue ensemble.\nmaman|Petit ou grand, on joue ensemble.\nmaman|Bravo, Amir.\nmaman|Tu as fait du bon travail.\nnarrateur|Amir verse un peu d'eau.\nnarrateur|Sarah lisse le tas.\nnarrateur|Le gâteau tient debout.\nmaman|Vous avez des tailles différentes.\nmaman|Et vous jouez ensemble.\nmaman|C'est un beau gâteau, non ?\nenfant-m|Oui, maman.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "On range ? Oui. Amir range un seau. Sarah range une pelle. À demain. À demain. Bravo. Tu as invité. Vous avez joué ensemble. Le jardin redevient calme. Les carreaux sèchent au soleil.",
+      "script": "maman|On range ?\nenfant-m|Oui.\nnarrateur|Amir range un seau.\nnarrateur|Sarah range une pelle.\ncopine|À demain.\nenfant-m|À demain.\nmaman|Bravo.\nmaman|Tu as invité.\nmaman|Vous avez joué ensemble.\nnarrateur|Le jardin redevient calme.\nnarrateur|Les carreaux sèchent au soleil.",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "On a fait un gâteau de sable. On a joué ensemble. Bravo. Tu as fait du bon travail. L'histoire est finie.",
+      "script": "enfant-m|On a fait un gâteau de sable.\nenfant-m|On a joué ensemble.\nmaman|Bravo.\nmaman|Tu as fait du bon travail.\nnarrateur|L'histoire est finie.",
+      "sons": "",
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ],
+  "secondary_lessons": "DIF.BES.002"
+}
