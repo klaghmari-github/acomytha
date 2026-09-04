@@ -26,35 +26,63 @@ export class HomeApp extends Component {
   async connectedCallback() {
     this.innerHTML = `
       <div class="s-home">
-        <header class="c-top">
-          ${acmLogo({ size: "sm" })}
-          <nav>
-            <a href="#/entrer">Connexion</a>
-            <a class="c-btn" href="#/inscription">Créer un compte</a>
-          </nav>
-        </header>
-        <section class="c-hero">
-          <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
-          <h1>Apprendre par l’histoire.</h1>
-          <p>AcoMytha l’univers d’histoires ludiques et captivantes.</p>
-        </section>
-        <section class="c-pitches">
-          <article class="c-pitch-what">
-            <h2>AcoMytha, c’est quoi ?</h2>
-            <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
-          </article>
-          <article class="c-pitch-what">
-            <h2>AcoMytha, deux modes</h2>
-            <p><strong>Mode jour :</strong> interactif — questions / réponses et options d’histoires.</p>
-            <p><strong>Mode nuit :</strong> moins d’interaction. L’objectif est d’écouter jusqu’à dormir.</p>
-          </article>
-          <article class="c-pitch-what">
-            <h2>AcoMytha en chiffres</h2>
-            <p>Plus de 1000 histoires, organisées en une dizaine de thèmes, avec une centaine de leçons.</p>
-          </article>
-          <blockquote>Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</blockquote>
-        </section>
+        <div class="c-stage">
+          <header class="c-top">
+            ${acmLogo({ size: "sm" })}
+            <nav>
+              <a href="#/entrer">Connexion</a>
+              <a class="c-btn c-btn--listen" href="#/inscription">Créer un compte</a>
+            </nav>
+          </header>
+          <section class="c-hero">
+            <p class="c-kicker">écoute seulement · sans écran</p>
+            <div class="c-field" aria-hidden="true">
+              <span class="c-ring"></span>
+              <span class="c-ring"></span>
+              <span class="c-ring"></span>
+              <span class="c-filament"></span>
+              <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
+            </div>
+            <h1>Apprendre<br>par l’<em>histoire.</em></h1>
+            <p class="c-lede">AcoMytha l’univers d’histoires ludiques et captivantes.</p>
+          </section>
+          <section class="c-score" aria-label="AcoMytha">
+            <article class="c-move">
+              <span class="c-move__idx">01</span>
+              <h2>AcoMytha, c’est quoi ?</h2>
+              <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
+            </article>
+            <article class="c-move c-move--modes">
+              <span class="c-move__idx">02</span>
+              <h2>AcoMytha, deux modes</h2>
+              <div class="c-modes">
+                <div class="c-mode c-mode--day">
+                  <b>Jour</b>
+                  <p>Interactif — questions / réponses et options d’histoires.</p>
+                </div>
+                <div class="c-mode c-mode--night">
+                  <b>Nuit</b>
+                  <p>Moins d’interaction. L’objectif est d’écouter jusqu’à dormir.</p>
+                </div>
+              </div>
+            </article>
+            <article class="c-move c-move--count">
+              <span class="c-move__idx">03</span>
+              <h2>AcoMytha en chiffres</h2>
+              <div class="c-count">
+                <div><b>1000+</b><span>histoires</span></div>
+                <div><b>~10</b><span>thèmes</span></div>
+                <div><b>~100</b><span>leçons</span></div>
+              </div>
+            </article>
+            <p class="c-offer">Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</p>
+          </section>
+        </div>
         <section class="c-catalog">
+          <header class="c-catalog__head">
+            <h2>Le catalogue</h2>
+            <p class="c-hint" id="count"></p>
+          </header>
           <div class="c-filters">
             <input id="q" placeholder="Rechercher une histoire…" />
             <select id="domain"><option value="">Thème</option></select>
@@ -70,7 +98,6 @@ export class HomeApp extends Component {
               <option value="ramifiee">Avec ramifications vers d’autres histoires</option>
             </select>
           </div>
-          <p class="c-hint" id="count"></p>
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
           <p class="c-more" id="more" hidden>Chargement…</p>
@@ -83,6 +110,14 @@ export class HomeApp extends Component {
           <div class="c-modal__box" id="modalbox"></div>
         </div>
       </div>`;
+    this.on(this, "pointermove", (e) => {
+      const field = this.querySelector(".c-field");
+      if (!field) return;
+      const r = field.getBoundingClientRect();
+      if (r.width < 8) return;
+      field.style.setProperty("--mx", ((e.clientX - r.left) / r.width - 0.5).toFixed(3));
+      field.style.setProperty("--my", ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
+    });
     this.on(this.querySelector("#q"), "input", () => this.scheduleFetch());
     this.on(this.querySelector("#domain"), "change", () => this.fetchPage({ reset: true }));
     this.on(this.querySelector("#age"), "change", () => this.fetchPage({ reset: true }));
@@ -126,7 +161,7 @@ export class HomeApp extends Component {
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");
-        nav.innerHTML = `<a class="c-btn" href="#/${this.me.role === "admin" ? "admin" : "parent"}">Mon espace</a>`;
+        nav.innerHTML = `<a class="c-btn c-btn--listen" href="#/${this.me.role === "admin" ? "admin" : "parent"}">Mon espace</a>`;
       } catch {
         this.me = null;
       }
@@ -225,7 +260,7 @@ export class HomeApp extends Component {
 
   card(s) {
     const el = document.createElement("article");
-    el.className = "c-card";
+    el.className = "c-card c-sheet";
     const theme = this.domainNames.get(s.domain) || "";
     const where = [theme, s.setting].filter(Boolean).join(" · ");
     const form = formLabel(s);

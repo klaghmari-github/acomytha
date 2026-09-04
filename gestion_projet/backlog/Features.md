@@ -53,6 +53,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
 | F-APP-003 | **développé** | Accueil : catalogue par lots (défaut 6), chargement au scroll. Paramètre admin. |
 | F-APP-004 | **développé** | Accueil : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |
+| F-APP-005 | **développé** | Vitrine 2026 : chambre d’écoute, typo éditoriale, catalogue papier. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -77,6 +78,7 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-002 | App | Vitrine publique, aperçu, pop-ups ramifications | P0 | 2 | STRAT-005 | F-DAT-001 |
 | F-APP-003 | App | Accueil : lots + scroll infini (taille admin) | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-APP-004 | App | Accueil : titre et sous-titre | P1 | 2 | STRAT-005 | F-APP-002 |
+| F-APP-005 | App | Vitrine : design chambre d’écoute 2026 | P1 | 2 | STRAT-005 | F-APP-004 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -448,6 +450,10 @@ Sous-titre : *AcoMytha l’univers d’histoires ludiques et captivantes.*
 *AcoMytha en chiffres* : plus de 1000 histoires, une dizaine de thèmes, une centaine de leçons.
 
 Bloc *AcoMytha, c’est quoi ?* : voix seulement, sans écran, sans bouton ; leçons variables (feu rouge, jouets, légumes…).
+
+### F-APP-005 — Vitrine chambre d’écoute
+
+Accueil public : scène sombre (écoute), catalogue papier. Fraunces + Outfit. Champ acoustique autour du symbole. Jour / nuit en deux matières. Chiffres monumentaux. Cartes en feuilles numérotées. Parent / admin / enfant inchangés. Copie fondateur conservée.
 
 ### F-PAR-002 — Libellés catalogue
 
