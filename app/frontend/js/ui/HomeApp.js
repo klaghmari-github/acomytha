@@ -44,7 +44,11 @@ export class HomeApp extends Component {
             <h2>AcoMytha, c’est quoi ?</h2>
             <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
           </article>
-          <blockquote>Jour : plus d’interaction. Nuit : plus calme.</blockquote>
+          <article class="c-pitch-what">
+            <h2>AcoMytha, deux modes</h2>
+            <p><strong>Mode jour :</strong> interactif — questions / réponses et options d’histoires.</p>
+            <p><strong>Mode nuit :</strong> moins d’interaction. L’objectif est d’écouter jusqu’à dormir.</p>
+          </article>
           <blockquote>Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</blockquote>
         </section>
         <section class="c-catalog">

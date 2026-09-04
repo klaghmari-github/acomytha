@@ -124,6 +124,10 @@ F-APP-004, D28. Affichage : **AcoMytha** (marque). Un seul bouton **Créer un co
 
 Stats accueil : pas les chiffres bruts. *Plus d’un millier d’histoires*, *Une dizaine de thèmes*.
 
+Section *AcoMytha, deux modes* (remplace « Jour : plus d’interaction. Nuit : plus calme ») :
+
+> AcoMytha deux modes: modes jour : interactif questions/réponses et options d'histoires. mode nuit moins d'interaction, l'objectif est d'écouter jusqu'à dormir.
+
 Pitch *AcoMytha, c’est quoi ?* (remplace « Votre enfant ne fait pas qu’écouter ») :
 
 > AcoMytha c'est quoi ? l'enfant apprend par l'histoire de façon interactive uniquement par la voix, sans ecran sans bouton. les histoires sont ludiques et contiennent des leçons qui peuvent varier entre respect du feux rouge, partage des jouets, manger les légumes. etc.

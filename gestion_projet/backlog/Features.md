@@ -326,7 +326,7 @@ Contenu affiché :
 - *AcoMytha l’univers d’histoires ludiques et captivantes.*
 - Stats : *Plus d’un millier d’histoires* · *Une dizaine de thèmes* (pas le compteur exact, pas 3–6 ans, pas 10 s d’aperçu).
 - *AcoMytha, c’est quoi ?* L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Leçons variables (ex. feu rouge, partage des jouets, légumes).
-- *Jour : plus d’interaction. Nuit : plus calme.*
+- *AcoMytha, deux modes.* Jour : questions / réponses et options d’histoires. Nuit : moins d’interaction, écouter jusqu’à dormir.
 - *Offrez à votre enfant l’opportunité d’apprendre par l’histoire.*
 
 Histoires ramifiées : liste de **liens** vers les autres histoires de la même leçon ; clic → **pop-up** avec le panneau de cette histoire (écoute, liens).
