@@ -1,6 +1,6 @@
 # Archive des arbres ramifiés
 
-763 xlsx `TREE-*` hors chantier prioritaire. Le ramifié **actif** est `stories/arbres/TREE-AUT-001.xlsx`.
+**730** xlsx `TREE-*` encore en archive (corpus ramifié : 764 ; 34 déjà dans `stories/arbres/`). Chiffres : [`../CHIFFRES.md`](../CHIFFRES.md).
 
 Pour ressortir un arbre :
 

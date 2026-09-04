@@ -41,7 +41,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-013 | **à faire** | Question + chaîne de réponses complète ; préférence ≠ connaissance. |
 | F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
 | F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
-| F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + archive). |
+| F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + 764 TREE). Chiffres : `stories/CHIFFRES.md`. |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
@@ -243,10 +243,10 @@ Avant d’appliquer F-NAR-010…015 à **tous** les ramifiés : deux arbres, à 
 
 | ID | Rôle |
 | --- | --- |
-| `TREE-AUT-001` | Actif dans `stories/arbres/` |
-| `TREE-COL-001` | Second chantier, dans `stories/archive/arbres/` |
+| `TREE-AUT-001` | Premier ramifié actif |
+| `TREE-COL-001` | Second chantier, maintenant aussi dans `stories/arbres/` |
 
-763 autres `TREE-*` → `stories/archive/arbres/`. Atomiques inchangés. Détail : `stories/PRIORITE.md`. D31.
+Corpus : **1449** histoires (**685** atomiques, **764** ramifiées), **toutes avec question**. **85** leçons, **13** thèmes. Live `arbres/` : 719. Archive : 730 TREE. Détail : `stories/CHIFFRES.md`. D31 (un seul ramifié live) est dépassé : les ramifiés repris y rentrent au fur et à mesure.
 
 Passe **texte** faite sur les deux (F-NAR-010…015, sans audio). Preuves dans `stories/rewrites/TREE-AUT-001/RELECTURE.md` et `stories/rewrites/TREE-COL-001/RELECTURE.md`.
 

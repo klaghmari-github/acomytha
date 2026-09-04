@@ -12,8 +12,11 @@ Comptes locaux : voir [`app/README.md`](app/README.md). Architecture : [`gestion
 
 ## Corpus
 
-- 1445 histoires Excel : `stories/arbres/`
-- Leçons : `stories/referentiel/`
+Chiffres exacts : [`stories/CHIFFRES.md`](stories/CHIFFRES.md).
+
+- **1449** histoires (685 atomiques + 764 ramifiées). **Toutes** ont une question.
+- **85** leçons, **13** thèmes. Référentiel : `stories/referentiel/`
+- Live : `stories/arbres/` (719 : 685 ATOM + 34 TREE). Archive ramifiée : `stories/archive/arbres/` (730).
 - Audio témoin (stéréo 44100) : `stories/audio/ATOM-SAN.ALI.001-01/`, `TREE-SEC-001/`, `stories/TEST_SON.mp3`
 
 ## Projet

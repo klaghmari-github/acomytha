@@ -11,6 +11,4 @@ Avant d’appliquer F-NAR-010…015 à tout le corpus ramifié : **deux** arbres
 
 **Texte (cette passe).** F-NAR-010…015 appliqués aux deux arbres (sans audio) : désir du héros, branches à conséquences, chaînes de questions, troupe D16. Preuves : `stories/rewrites/TREE-AUT-001/RELECTURE.md` et `stories/rewrites/TREE-COL-001/RELECTURE.md`. Audio plus tard.
 
-Les **685 atomiques** restent dans `stories/arbres/`. Les **763** autres ramifiés sont dans `stories/archive/arbres/` (pas perdus).
-
-Le chiffre vitrine « plus de 1000 histoires » compte **tout** le corpus (actif + archive).
+Les **685 atomiques** restent dans `stories/arbres/`. Les ramifiés non encore repris sont dans `stories/archive/arbres/` (730). Live : 34 ramifiés + 685 ATOM = **719**. Corpus entier : **1449**. Leçons : **85**. Détail : [`CHIFFRES.md`](CHIFFRES.md).
