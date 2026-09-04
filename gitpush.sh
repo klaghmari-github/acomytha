@@ -48,5 +48,5 @@ fi
 echo "→ GitLab ($BRANCH)"
 git push -u origin "$BRANCH"
 echo "→ GitHub ($BRANCH)"
-git push -u github "$BRANCH"
+git push github "$BRANCH"
 echo "OK GitLab + GitHub"
