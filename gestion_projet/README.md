@@ -14,7 +14,7 @@ Un produit, peu de documents. Chaque fichier a un rôle unique. Les features **p
 | [`decisions/DECISIONS_APP.md`](decisions/DECISIONS_APP.md) | Décisions prises sans questionnaire (D1…). |
 | [`decisions/ECHANGES.md`](decisions/ECHANGES.md) | Traçabilité : demandes fondateur + **exemples** (citations). |
 | [`consignes.txt`](consignes.txt) | Git : uniquement `main`, message `feat(F-XXX):`. |
-| [`feedback_chatgpt/`](feedback_chatgpt/) | Audit externe (4 sept. 2026) + `NOTES.md` : ce qu’on en retient. |
+| [`feedback_chatgpt/`](feedback_chatgpt/) | Dépôt des retours ChatGPT. Veille F-NAR-017 : nouveau fichier → consignes → histoires gardées. `NOTES.md` = ce qu’on en retient. |
 
 **Données, pas de spec :** leçons dans `stories/referentiel/lecons.xlsx`, liaisons dans `lecon_histoires.xlsx`. Arbres dans `stories/arbres/*.xlsx`.
 

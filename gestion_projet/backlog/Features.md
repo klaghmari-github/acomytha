@@ -42,6 +42,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
 | F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
 | F-NAR-016 | **en cours** | Pilote : 2 ramifiés (AUT-001, COL-001). Un seul actif ; le reste en archive. |
+| F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -116,6 +117,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-014 | Moteur | Conséquences des choix ; chemin cohérent ; pas de gabarit | P0 | 1 | stories/REWRITE.md | F-NAR-010 |
 | F-NAR-015 | Production | Preuves de relecture, pas d’auto-validation IA | P0 | 1 | STRAT-001 | F-VAL-001 |
 | F-NAR-016 | Production | Pilote 2 ramifiés, 1 actif, archive des autres | P0 | 1 | stories/PRIORITE.md | F-NAR-010 |
+| F-NAR-017 | Production | Veille dossier ChatGPT → consignes → TREE-AUT-001 / TREE-COL-001 | P0 | 1 | stories/PRIORITE.md | F-NAR-016 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -235,6 +237,18 @@ Avant d’appliquer F-NAR-010…015 à **tous** les ramifiés : deux arbres, à 
 763 autres `TREE-*` → `stories/archive/arbres/`. Atomiques inchangés. Détail : `stories/PRIORITE.md`. D31.
 
 Passe **texte** faite sur les deux (F-NAR-010…015, sans audio). Preuves dans `stories/rewrites/TREE-AUT-001/RELECTURE.md` et `stories/rewrites/TREE-COL-001/RELECTURE.md`.
+
+### F-NAR-017 — Veille feedback ChatGPT
+
+Dès qu’un fichier **nouveau** (ou changé) arrive dans `gestion_projet/feedback_chatgpt/` : le lire, en tirer des consignes éditoriales, les appliquer aux histoires **gardées** (TREE-AUT-001, TREE-COL-001), texte d’abord, pas d’audio.
+
+- Outil : `python3 stories/outils/watch_feedback_chatgpt.py` (`scan` / `claim` / `done` / `watch`).
+- Ledger : `gestion_projet/feedback_chatgpt/processed.json` (les audits déjà lus y sont).
+- Skill : `.grok/skills/ingest-feedback-chatgpt/SKILL.md`. Workflow : `.grok/workflows/ingest-feedback-chatgpt.rhai`.
+- Commerce, Stripe, ASR, bake audio : `NOTES.md` « Pas maintenant », pas une réécriture.
+- `NOTES.md` n’est pas un fichier ChatGPT.
+
+D32.
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 

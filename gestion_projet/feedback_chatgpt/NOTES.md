@@ -4,6 +4,8 @@ Sources (4 sept. 2026, commit `5e403fd`) : `Acomytha_Audit_2026-09-04.md`, `Acom
 
 Ce n’est **pas** une spec. C’est une lecture externe. On retient ce qui aide à mieux écrire et à ne pas vendre trop tôt.
 
+**Veille (F-NAR-017, D32).** Un agent surveille ce dossier. Fichier nouveau ou changé → lecture → consignes éditoriales → TREE-AUT-001 et TREE-COL-001 (texte, pas d’audio). Les fichiers déjà dans `processed.json` ne sont pas relus tant que le contenu ne change pas. `NOTES.md` n’est pas un input ChatGPT.
+
 ## Déjà appliqué
 
 - **Jour / nuit (F-PLY-001).** `night_policy=auto_default` ne doit plus court-circuiter les choix **le jour**. Nuit = branche par défaut. `StoryEngine.js`.
