@@ -126,9 +126,9 @@ Passe 2 (3 atomiques alimentation) : compréhensible 3–6 ans, un fil par histo
 
 **Adultes parlent (D20) :** papa et maman ont des répliques (félicitations, questions, discussion) adaptées à la scène. Interdit : « papa sourit », « maman est là » à la place de leur voix. Bêtise : discuter / demander la conduite, POS-001.
 
-- `ATOM-SAN.ALI.001-01` Lina — *Le petit soleil dans l'assiette* (N1)
-- `ATOM-SAN.ALI.001-02` Noé — *La carotte qui s'échappe* (N2)
-- `ATOM-SAN.ALI.002-01` Tom — *Le bateau de Tom* (N1)
+- `ATOM-SAN.ALI.001-01` Sarah — *Le petit soleil dans l'assiette* (N1)
+- `ATOM-SAN.ALI.001-02` Amir — *La carotte qui s'échappe* (N2)
+- `ATOM-SAN.ALI.002-01` Nino — *Le bateau de Nino* (N1)
 
 ### F-NAR-009 — Ouverture du monde (pas d’entrée brutale)
 
