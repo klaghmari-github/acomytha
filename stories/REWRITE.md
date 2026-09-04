@@ -20,7 +20,11 @@ Un **fil rouge** (aventure, envie, petit fait) **dirige** le récit. Les leçons
 3. Fusion : `python stories/outils/rewrite_story.py merge <story_id>` → `merged.json`
 4. Remplacement : `python stories/outils/rewrite_story.py apply <story_id>` (l’ancien xlsx est remplacé).
 
-Une histoire à la fois (plusieurs agents **sur la même** histoire). Texte d’abord ; audio plus tard.
+Une histoire à la fois **par agent**. Plusieurs histoires en parallèle (dossiers `rewrites/<id>/` distincts). **D38 : tout le catalogue**, pas seulement deux ramifiés. Texte d’abord ; audio ensuite.
+
+**Interdit.** Liste de gestes : « Alice range le triangle. Alice range le rectangle. » Ce n’est pas une histoire. Personne n’achète ça.
+
+**Obligatoire.** Monde (village, maison, jardin, saison) → désir du héros → petit imprévu → résolution → fin heureuse. La leçon se greffe. Papa/maman parlent. Troupe D16. POS-001. Ouverture inventée (D25).
 
 ## Passe 2 (3–6 ans)
 

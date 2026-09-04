@@ -41,7 +41,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-013 | **à faire** | Question + chaîne de réponses complète ; préférence ≠ connaissance. |
 | F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
 | F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
-| F-NAR-016 | **en cours** | Pilote : 2 ramifiés (AUT-001, COL-001). Un seul actif ; le reste en archive. |
+| F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + archive). |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |

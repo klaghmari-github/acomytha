@@ -2,8 +2,8 @@
 name: ingest-feedback-chatgpt
 description: >
   Ingest a new ChatGPT feedback file from gestion_projet/feedback_chatgpt/,
-  extract editorial consignes, and improve the kept stories (TREE-AUT-001,
-  TREE-COL-001) in text only. Use when a new file appears in feedback_chatgpt,
+  extract editorial consignes, and improve the catalogue (ATOM actifs d’abord,
+  puis ramifiés). Texte seulement. Use when a new file appears in feedback_chatgpt,
   when the user mentions ChatGPT audit/feedback/f_04, or when running
   /ingest-feedback-chatgpt.
 ---
@@ -38,10 +38,10 @@ Si `"files": []` : une ligne « Rien de nouveau. » et **stop**. Pas de réécri
    - **Commerce / moteur / ASR / Stripe / audio bake** → une puce dans `NOTES.md` section « Pas maintenant ». Pas une feature de plus ce tour.
 4. **Comparer** à ce qui existe déjà : `stories/REWRITE.md`, F-NAR-008…016, `NOTES.md`, `f_04.txt`. Si c’est déjà dit : noter dans `NOTES.md` « déjà couvert » et **ne pas** réécrire les xlsx.
 5. **Consignes vraiment nouvelles** : une entrée courte dans `NOTES.md` ; si ça tient en feature, F-NAR-01x dans `Features.md` (pas de doublon).
-6. **Histoires** (texte seulement, **pas d’audio**) :
-   - Actif : `TREE-AUT-001` (`stories/arbres/`).
-   - Archive : `TREE-COL-001` (`stories/archive/arbres/`) — dump à la main depuis ce chemin, `apply` n’y va pas tout seul.
-   - Pas les 685 atomiques, pas les 763 autres TREE.
+6. **Histoires** (texte seulement d’abord, **D38 tout le catalogue**) :
+   - D’abord les ATOM dans `stories/arbres/` (ce que le parent voit).
+   - Ramifié actif : `TREE-AUT-001`. Archive : `stories/archive/arbres/` ensuite.
+   - Même consignes partout : monde, désir, imprévu, résolution, fin heureuse. Pas des puces de leçon.
    - Garder `chunk_id`, `kind`, graphe `option_*_next_chunk`.
    - Patcher `expected_answer` / `accepted_examples` / `retry_prompt` / `characters` (apply ne le fait pas).
    - Preuve : `stories/rewrites/<id>/RELECTURE.md` (F-NAR-015).

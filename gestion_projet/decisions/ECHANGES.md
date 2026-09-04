@@ -274,6 +274,7 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Watchdog signale, l’agent principal traite | F-NAR-017, D35 |
 | Identité chambre d’écoute hors vitrine | F-APP-007, D36 |
 | Restructuration POO (privé, propriétés) | F-APP-008, D37 |
+| Consignes récit sur tout le catalogue | F-NAR-008…016, D38 |
 
 ---
 

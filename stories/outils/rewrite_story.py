@@ -23,6 +23,13 @@ CHUNK_FIELDS = (
     "length_scale_piper",
     "rate_label",
     "pause_after_ms",
+    "option_1_label",
+    "option_2_label",
+    "option_3_label",
+    "expected_answer",
+    "accepted_examples",
+    "retry_prompt",
+    "text_ssml",
 )
 
 
@@ -138,11 +145,27 @@ def apply_story(story_id: str) -> Path:
         if cid not in by_id:
             continue
         c = by_id[cid]
-        for k in ("text", "script", "sons", "length_scale_piper", "rate_label"):
-            if k in idx and c.get(k) is not None:
+        for k in (
+            "text",
+            "script",
+            "sons",
+            "length_scale_piper",
+            "rate_label",
+            "pause_after_ms",
+            "option_1_label",
+            "option_2_label",
+            "option_3_label",
+            "expected_answer",
+            "accepted_examples",
+            "retry_prompt",
+            "text_ssml",
+        ):
+            if k in idx and c.get(k) not in (None, ""):
                 ws.cell(r, idx[k], c[k])
+                if k == "text" and "text_ssml" in idx and not c.get("text_ssml"):
+                    ws.cell(r, idx["text_ssml"], c[k])
     if "journal" in wb.sheetnames:
-        wb["journal"].append(["F-NAR-009 ouverture du monde, fusion agents"])
+        wb["journal"].append(["F-NAR-008 récit, pas une leçon en puces"])
     wb.save(src)
     wb.close()
     return src
