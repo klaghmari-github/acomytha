@@ -60,7 +60,7 @@ export class ChildApp extends Component {
     gate.innerHTML = `
       <p>Code pour écouter.</p>
       <form class="o-stack" id="pinform">
-        <input id="pin" inputmode="numeric" autocomplete="one-time-code" maxlength="4" pattern="[0-9]{4}" required />
+        <input id="pin" class="c-pin" inputmode="numeric" autocomplete="one-time-code" maxlength="4" pattern="[0-9]{4}" required />
         <button class="c-btn c-btn--gold" type="submit">C’est parti</button>
         <p class="c-error" id="perr"></p>
       </form>`;
@@ -100,6 +100,7 @@ export class ChildApp extends Component {
   toggleNight() {
     this.night = !this.night;
     this.querySelector("#mode").textContent = this.night ? "Nuit" : "Jour";
+    this.querySelector(".s-child")?.classList.toggle("is-night", this.night);
     if (this.engine) this.engine.night = this.night;
   }
 
@@ -154,7 +155,7 @@ export class ChildApp extends Component {
     gate.innerHTML = `
       <p>Code pour revenir.</p>
       <form class="o-stack" id="backpin">
-        <input id="pinback" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required />
+        <input id="pinback" class="c-pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" required />
         <button class="c-btn" type="submit">OK</button>
         <p class="c-error" id="perr"></p>
       </form>`;

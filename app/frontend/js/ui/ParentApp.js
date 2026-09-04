@@ -23,7 +23,7 @@ export class ParentApp extends Component {
     this.innerHTML = `
       <div class="s-shell">
         <aside class="s-rail">
-          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">espace parent</span></div>
+          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">L’écoute, à la maison.</span></div>
           <nav>
             <a href="#/parent" class="is-on">Histoires</a>
             <a href="#/enfant">Mode enfant</a>
@@ -175,7 +175,7 @@ export class ParentApp extends Component {
   drawWallet() {
     const el = this.querySelector("#wallet");
     if (!el) return;
-    el.innerHTML = acmAmount(this.wallet.balance_a ?? 0, { unit: true, size: "lg" });
+    el.innerHTML = `<span class="c-wallet__label">Solde</span>${acmAmount(this.wallet.balance_a ?? 0, { unit: true, size: "lg" })}`;
   }
 
   drawShop() {

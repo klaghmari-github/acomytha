@@ -14,7 +14,10 @@ export class SignupGate extends Component {
     this.innerHTML = `
       <section class="s-gate">
         <form class="c-paper" id="signup">
-          <div class="c-mark">${acmLogo({ size: "md" })}</div>
+          <div class="c-mark">
+            ${acmLogo({ size: "md" })}
+            <span class="c-mark__sub">Pour entendre les histoires jusqu’au bout.</span>
+          </div>
           <div class="c-field">
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="username" required />
@@ -25,7 +28,7 @@ export class SignupGate extends Component {
           </div>
           <p class="c-error" id="err"></p>
           <button class="c-btn c-btn--wide" type="submit">Créer un compte</button>
-          <p class="c-hint"><a href="#/entrer">J’ai déjà un compte</a></p>
+          <p class="c-hint"><a href="#/entrer">J’ai déjà un compte</a> · <a href="#/">Accueil</a></p>
         </form>
       </section>`;
     this.on(this.querySelector("#signup"), "submit", (ev) => this.submit(ev));

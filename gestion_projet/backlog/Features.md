@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.2 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.3 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -52,9 +52,10 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
 | F-APP-003 | **développé** | Accueil : catalogue par lots (défaut 6), chargement au scroll. Paramètre admin. |
-| F-APP-004 | **développé** | Accueil : *Apprendre par l’histoire.* / *AcoMytha l’univers d’histoires ludiques et captivantes.* |
-| F-APP-005 | **développé** | Vitrine 2026 : chambre d’écoute, typo éditoriale, catalogue papier. |
+| F-APP-004 | **développé** | Accueil : *Apprendre par l’histoire.* / *AcoMytha : univers d’histoires ludiques et captivantes.* |
+| F-APP-005 | **développé** | Vitrine 2026 : chambre d’écoute, typo éditoriale, catalogue dans la scène. |
 | F-APP-006 | **développé** | Vitrine : Écouter toutes les histoires, 30 s, puis pop-up compte. Pas de prix acm. |
+| F-APP-007 | **développé** | Même identité visuelle (chambre d’écoute) : connexion, inscription, parent, admin, enfant. |
 | F-PLY-002 | **développé** | Bouton Arrêt visible + durée affichée (minutes). |
 | F-PAR-002 | **développé** | Libellés : Avec interaction / Avec ramifications vers d’autres histoires. |
 
@@ -81,6 +82,7 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-004 | App | Accueil : titre et sous-titre | P1 | 2 | STRAT-005 | F-APP-002 |
 | F-APP-005 | App | Vitrine : design chambre d’écoute 2026 | P1 | 2 | STRAT-005 | F-APP-004 |
 | F-APP-006 | App | Vitrine : 30 s d’écoute + pop-up compte ; pas de prix | P0 | 2 | STRAT-005 | F-APP-002, F-PAR-003 |
+| F-APP-007 | App | Identité chambre d’écoute hors vitrine (gates, parent, admin, enfant) | P0 | 2 | STRAT-005 | F-APP-005 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
 | F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
@@ -455,7 +457,7 @@ Bloc *AcoMytha, c’est quoi ?* : voix seulement, sans écran, sans bouton ; le�
 
 ### F-APP-005 — Vitrine chambre d’écoute
 
-Accueil public : scène sombre (écoute), catalogue papier. Fraunces + Outfit. Champ acoustique autour du symbole. Jour / nuit en deux matières. Chiffres monumentaux. Cartes en feuilles numérotées. Parent / admin / enfant inchangés. Copie fondateur conservée.
+Accueil public : scène sombre (écoute), catalogue dans la scène. Fraunces + Outfit. Champ acoustique autour du symbole. Jour / nuit en deux matières. Chiffres monumentaux. Cartes verre / or. Copie fondateur conservée. Parent / admin / enfant : F-APP-007.
 
 ### F-APP-006 — Écoute vitrine (invité)
 
@@ -468,6 +470,10 @@ Sur l’accueil **sans compte** :
 - Paramètre `preview_seconds` = 30 (visiteur). Parent non acheté reste `parent_preview_seconds` (30). Histoire achetée / enfant : entier.
 
 D34. Remplace l’ancien aperçu visiteur de 10 s (D23) pour la vitrine.
+
+### F-APP-007 — Identité hors vitrine
+
+Après F-APP-005, connexion, inscription, espace parent, console admin et mode enfant partagent les **mêmes jetons** (nuit, or, crème, Fraunces). Portes = feuille crème sur la scène (comme le pop-up). Parent / admin / enfant = scène + verre / or. Le parent voit **solde et prix acm**. L’invité, non. D36 (remplace la palette claire/bleu de D14).
 
 ### F-NAR-017 — Veille feedback (rappel)
 

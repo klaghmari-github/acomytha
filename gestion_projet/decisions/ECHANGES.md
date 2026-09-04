@@ -272,6 +272,7 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | N1 ramifié : 3 options (atomiques : 2 max) | D33 |
 | Vitrine : 30 s + pop-up compte, pas de prix | F-APP-006, D34 |
 | Watchdog signale, l’agent principal traite | F-NAR-017, D35 |
+| Identité chambre d’écoute hors vitrine | F-APP-007, D36 |
 
 ---
 

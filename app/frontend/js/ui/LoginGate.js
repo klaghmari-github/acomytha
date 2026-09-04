@@ -16,6 +16,7 @@ export class LoginGate extends Component {
         <form class="c-paper" id="login">
           <div class="c-mark">
             ${acmLogo({ size: "md" })}
+            <span class="c-mark__sub">L’écoute continue ici.</span>
           </div>
           <div class="c-field">
             <label for="email">E-mail</label>

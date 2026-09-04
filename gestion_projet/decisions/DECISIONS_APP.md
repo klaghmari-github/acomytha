@@ -17,7 +17,7 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D11 | F-AUD-007 | Immersion **générale**. Colonne `sons` (vide = silence). Ordre : bruit seul, puis récit au calme. Jamais parler dans le bruit, jamais nappe sur tout le passage. |
 | D12 | F-NAR-008 | Reconstruire les textes autour d’un fil rouge. L’xlsx n’est touché qu’après fusion d’agents. Passe 2 : fusion **éditoriale** (un moment par chunk, 3–6 ans, leçon vécue en fin). Le merge « plus long gagne » recolle un cours : on ne s’en sert pas comme vérité. |
 | D13 | Marque | Le produit s’appelle **AcoMytha**. « Sentier » est retiré de l’UI, du code, des docs et des comptes démo. |
-| D14 | UI parent | Pas de métaphore forêt/arbre dans l’UI. Histoires, sélection, interaction, ramifications. Palette claire, accent bleu. |
+| D14 | UI parent | Pas de métaphore forêt/arbre dans l’UI. Histoires, sélection, interaction, ramifications. Palette : **D36**. |
 | D15 | Vitrine + A | Accueil public, inscription e-mail/mdp, aperçu 10 s (non affiché). Pas « gratuitement », pas pastille Courte, pas âge sur les cartes. |
 | D16 | Troupe enfant | Amir, Aniss, Sarah, Chouchou, Mila, Nino, Nina, Raphaël, Victorino, Victorina. Pas d’autre prénom d’enfant. Une histoire = 1 héros, au plus 1 autre enfant, papa/maman. |
 | D17 | Durée | Histoire ≥ 3 min. Plusieurs passages ; certains portent une leçon. Atomique : plusieurs leçons possibles pour tenir 3 min. Allonger si le récit le demande. |
@@ -39,3 +39,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D33 | N1 ramifié | Un arbre ramifié garde **3 options** par nœud (contrainte d’arbre). La règle N1 « 2 options max » vaut pour les atomiques. |
 | D34 | Vitrine écoute | Invité : 30 s de **chaque** histoire, puis pop-up connexion / inscription. Pas de prix acm ni de solde avant connexion. F-APP-006. |
 | D35 | Veille sans conflit | Le watchdog **prévient** seulement. Le traitement éditorial est fait par l’agent principal, jamais en parallèle du watchdog. F-NAR-017. |
+| D36 | Identité hors vitrine | Connexion, inscription, parent, admin, enfant : mêmes jetons que la vitrine (nuit, or, crème, Fraunces). Solde et prix acm après connexion. F-APP-007. |

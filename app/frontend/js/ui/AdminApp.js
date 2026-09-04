@@ -12,7 +12,7 @@ export class AdminApp extends Component {
     this.innerHTML = `
       <div class="s-shell s-shell--admin">
         <aside class="s-rail">
-          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">console</span></div>
+          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">La salle de veille.</span></div>
           <nav>
             <a href="#/admin" class="is-on">Veille</a>
             <a href="#/parent">Vue parent</a>
