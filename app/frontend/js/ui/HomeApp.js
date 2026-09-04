@@ -35,7 +35,6 @@ export class HomeApp extends Component {
             </nav>
           </header>
           <section class="c-hero">
-            <p class="c-kicker">écoute seulement · sans écran</p>
             <div class="c-field" aria-hidden="true">
               <span class="c-ring"></span>
               <span class="c-ring"></span>
