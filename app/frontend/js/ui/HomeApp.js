@@ -29,9 +29,9 @@ export class HomeApp extends Component {
         <div class="c-stage">
           <header class="c-top">
             ${acmLogo({ size: "sm" })}
-            <nav>
-              <a href="#/entrer">Connexion</a>
-              <a class="c-btn c-btn--listen" href="#/inscription">Créer un compte</a>
+            <nav class="c-nav">
+              <a class="c-nav__ghost" href="#/entrer">Connexion</a>
+              <a class="c-nav__gold" href="#/inscription">Créer un compte</a>
             </nav>
           </header>
           <section class="c-hero">
@@ -161,7 +161,7 @@ export class HomeApp extends Component {
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");
-        nav.innerHTML = `<a class="c-btn c-btn--listen" href="#/${this.me.role === "admin" ? "admin" : "parent"}">Mon espace</a>`;
+        nav.innerHTML = `<a class="c-nav__gold" href="#/${this.me.role === "admin" ? "admin" : "parent"}">Mon espace</a>`;
       } catch {
         this.me = null;
       }
