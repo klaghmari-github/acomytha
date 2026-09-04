@@ -2,7 +2,7 @@
 
 **Lire ce fichier en premier** dans une session neuve. Ne pas « reprendre la dernière conversation ». Le contexte utile est ici et dans les docs qu’il pointe.
 
-Date de gel : **5 septembre 2026**. HEAD au gel : **`67c3846b`**. Worktree, SSD, GitLab `origin` et GitHub `github` sont au même commit.
+Date de gel : **5 septembre 2026**. HEAD : **`4fa95621`**. Worktree, SSD, GitLab `origin` et GitHub `github` = ce commit.
 
 Produit : **AcoMytha** (jamais Sentier). Forêt narrative **audio seulement**, enfants 3–6 ans (N1 / N2 / N3), famille papa-maman. POS-001. Pas religion / politique / guerre / crime / discours de genre.
 
@@ -208,10 +208,45 @@ Frontend changé : copier JS/CSS/HTML vers le SSD **avant** de juger le live, pu
 
 ---
 
-## 10. Commits récents (repères)
+## 10. Où sont tes consignes et exemples (ne pas les chercher dans le chat)
+
+On ne recopie pas tout ici. Une session neuve lit **ces fichiers** :
+
+| Ce que tu as donné | Où c’est sauvé |
+| --- | --- |
+| Décisions D1–D39 (sans questionnaire) | `gestion_projet/decisions/DECISIONS_APP.md` |
+| Citations fondateur (Constantin / Luca / Céline, « il était une fois », bravo, PIN, acm…) | `gestion_projet/decisions/ECHANGES.md` |
+| Spec produit | `gestion_projet/specification/AcoMytha_Specification.md` |
+| Git `main` only, `feat(F-XXX):` | `gestion_projet/consignes.txt` |
+| Grille récit + étalon avis2 | `stories/REWRITE.md` |
+| Chiffres exacts | `stories/CHIFFRES.md` |
+| Backlog F-* développé / en cours / à faire | `gestion_projet/backlog/Features.md` |
+| Audits ChatGPT + NOTES | `gestion_projet/feedback_chatgpt/` (`exemple.txt`, `exemple2.txt`, `f_04.txt`, `avis1.txt`, `avis2.txt`, `NOTES.md`) |
+| Ce gel (fait / reste / commandes) | **ce fichier** |
+
+## 11. Features : développé vs reste
+
+**Développé (app, sur `main`)** : F-APP-001…008, F-ACC-001/003/004, F-SEC-002/003, F-PAR-001/002/003, F-ENF-001, F-ADM-004, F-PLY-001/002, F-PAY-001/002/003, F-AUD-002/004/006, F-DAT-001, F-TAX-001/002, F-NAR-002/007, F-NAR-017 (veille, actuellement **éteinte**).
+
+**En cours (texte)** : F-NAR-008…016 et **F-NAR-018**. Règles posées. Appliqué à fond : TREE-AUT-001, TREE-COL-001, 2 ATOM cités par avis2. ATOM 685 : première réécriture + leçon implicite, **pas** encore tous au niveau étalon. TREE live 79 (AUT+COL) ; archive 685 à reprendre (prochain = DIF).
+
+**À faire** : F-AUD-007 (SFX partout). F-AUD-005 partiel (bake ATOM arrêté à ~27/686). F-ACC-002 reporté (contredit 1 appareil).
+
+**Pas maintenant** (NOTES) : Stripe réel en prod, ASR, hors-ligne, vente sans audio validé.
+
+## 12. Hors git (volontaire)
+
+| | |
+| --- | --- |
+| `stories/audio/**` | gitignoré sauf `TREE-SEC-001/` et `ATOM-SAN.ALI.001-01/`. Le bake local n’est **pas** sur GitLab/GitHub. |
+| `app/data/acomytha.sqlite` | base live SSD, pas dans git. Réimportable depuis les xlsx. |
+| 13 `TREE-DIF-00x/original.xlsx` | copies locales de l’archive déjà versionnée. Inutiles. |
+
+## 13. Commits récents (repères)
 
 | Hash | Quoi |
 | --- | --- |
+| `4fa95621` | Gel + dumps TREE archive + ce fichier |
 | `e4f34904` | Vitrine > 1400 / > 10 / > 80 |
 | `b979be8a` | avis2 : AUT-001, COL-001, 2 ATOM, F-NAR-018 |
 | `681223cb` | TREE-COL-007 à 035 au catalogue |

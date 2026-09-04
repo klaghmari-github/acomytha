@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.4 — 4 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`.  
+**Version :** 4.5 — 5 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -10,7 +10,7 @@ Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** j
 
 Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction fermée · 4 renouvellement · 5 leçons parentales · 6–7 hors MVP.
 
-### Statut (4 sept. 2026)
+### Statut (5 sept. 2026)
 
 | ID | Statut | Note |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-002 | **développé** | Loudness : narrateur aligné (plus audible). |
 | F-ACC-002 | **reporté** | Contredit F-SEC-003 (une clé = un appareil). |
 | F-APP-001 | **développé** | Socle FastAPI + PWA, POO HTML/CSS/JS. |
-| F-DAT-001 | **développé** | SQLite 1445 histoires / 68787 chunks, API liste+filtres. |
+| F-DAT-001 | **développé** | SQLite live **764** histoires / **10221** chunks (685 ATOM + 79 TREE). Corpus xlsx 1449. |
 | F-ACC-001 | **développé** | Login parent/admin, PIN enfant. |
 | F-SEC-003 | **développé** | 1 appareil / clé, alerte admin, reset. |
 | F-SEC-002 | **développé** | Mode enfant sans catalogue. |
@@ -35,12 +35,12 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-007 | **à faire** | Immersion **générale** : tout événement du récit a son bruit (toutes les histoires). |
 | F-NAR-008 | **en cours** | Fil rouge narratif : l’histoire captive, la leçon se greffe. Texte d’abord. |
 | F-NAR-009 | **en cours** | Ouverture non brutale, monde descriptif, créativité d’amorce (exemples non limitatifs). |
-| F-NAR-010 | **à faire** | Désir du héros ≠ leçon. L’histoire se réécoute même sans les questions. |
-| F-NAR-011 | **à faire** | Arc naturel + vraie fin du projet commencé. |
-| F-NAR-012 | **à faire** | Décrire dans l’action ; amusement lié ; héros agit ; pas de leçon récitée ni bravo automatique. |
-| F-NAR-013 | **à faire** | Question + chaîne de réponses complète ; préférence ≠ connaissance. |
-| F-NAR-014 | **à faire** | Ramifications à conséquences ; relire chaque chemin ; propager tout changement ; pas de gabarit. |
-| F-NAR-015 | **à faire** | Preuves de relecture : ce qui a été vu, ce qui reste. Pas d’auto-validation. |
+| F-NAR-010 | **en cours** | Règle posée. Appliqué AUT-001, COL-001, 2 ATOM. Pas tout le catalogue. |
+| F-NAR-011 | **en cours** | Idem. Fins vécues sur l’étalon ; beaucoup d’ATOM encore en récap. |
+| F-NAR-012 | **en cours** | Idem. Bravo/bon travail encore trop fréquent hors étalon. |
+| F-NAR-013 | **en cours** | Chaîne question corrigée sur les histoires reprises. |
+| F-NAR-014 | **en cours** | AUT-001 / COL-001 : choix à conséquences. COL-007–035 et archive : pas encore. |
+| F-NAR-015 | **en cours** | `RELECTURE.md` sur les arbres repris. Pas une validation globale. |
 | F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + 764 TREE). Chiffres : `stories/CHIFFRES.md`. |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-018 | **en cours** | Étalon structurel (avis2) : oral fluide, pas de morale dite, ramification = 9 aventures, ATOM sans récap. |
