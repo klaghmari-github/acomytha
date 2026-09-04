@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-07",
+  "fil_rouge": "",
+  "title": "Éléonore aide à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Éléonore, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Éléonore est dans la cuisine avec papa. La carotte est orange et lisse. Tu peux aider. Une tâche sûre, avec un adulte. Éléonore lave une carotte. L'eau est froide. Elle pose la carotte dans le saladier. Papa est à côté. Il sourit. Maman arrive. Le pain sent le four. Éléonore apporte le pain. Elle pose une cuillère près du bol. Merci. Éléonore a lavé. Elle a apporté. Elle a posé. Aider, c'est une tâche sûre, avec un adulte.",
+      "script": "narrateur|Éléonore est dans la cuisine avec papa. La carotte est orange et lisse.\npapa|Tu peux aider.\nnarrateur|Une tâche sûre, avec un adulte. Éléonore lave une carotte. L'eau est froide. Elle pose la carotte dans le saladier. Papa est à côté. Il sourit. Maman arrive. Le pain sent le four. Éléonore apporte le pain. Elle pose une cuillère près du bol.\nmaman|Merci.\nnarrateur|Éléonore a lavé. Elle a apporté. Elle a posé. Aider, c'est une tâche sûre, avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Éléonore aide en cuisine. Comment ?",
+      "script": "narrateur|Éléonore aide en cuisine. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Éléonore a lavé la carotte. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "script": "narrateur|Éléonore a lavé la carotte. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Éléonore s'assoit. Le goûter est prêt.",
+      "script": "narrateur|Éléonore s'assoit. Le goûter est prêt.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

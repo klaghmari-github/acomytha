@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-03",
+  "fil_rouge": "Au port, Amir veut un citron pour le poisson. Le citron roule sur la glace. Il le rattrape. Papa paie. Le jus pique les doigts.",
+  "title": "Le citron du port",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Amir, papa",
+  "setting": "poissonnier du port, caisses de glace, quai, goéland",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les caisses de glace sentent le sel. Un goéland crie au-dessus du quai. L'eau du port claque contre la pierre. Ça sent le poisson et le citron, déjà. Papa porte un sac de toile rêche. Amir vit ici, avec papa. Papa, le goéland crie fort ! Oui. Le poissonnier est ouvert. Je veux un citron, pour le poisson. Le jaune, bien rond ? Oui. En ce moment, Amir tient le bord du sac. La glace brille dans les caisses. Un poisson argenté attend sur le zinc. Celui-là, pour ce soir. Papa montre le poisson du doigt. Le poissonnier le glisse dans un papier. Il est mouillé. Oui. Il lui faut un citron. Un tas de citrons jaunes attend. Amir en montre un, bien rond. Le citron glisse sur la glace. Il roule vers le bord du zinc. Il part ! Tu peux le rattraper, tout doux. Amir tend la main. Le citron est froid, un peu mouillé. Je l'ai. Bravo, Amir. J'ai une pièce, pour le prendre. Papa tend la pièce. La pièce sonne dans le tiroir mouillé. Le tiroir se ferme. Le citron reste dans la main d'Amir. Il pique un peu. C'est le zeste. Tu le poses dans le sac ? Avec le poisson. Amir pose le citron près du papier. Ça sent le sel et le jaune, ensemble. Tu as fini de le sentir ? Encore un peu.",
+      "script": "narrateur|Les caisses de glace sentent le sel.\nnarrateur|Un goéland crie au-dessus du quai.\nnarrateur|L'eau du port claque contre la pierre.\nnarrateur|Ça sent le poisson et le citron, déjà.\nnarrateur|Papa porte un sac de toile rêche.\nnarrateur|Amir vit ici, avec papa.\nenfant-m|Papa, le goéland crie fort !\npapa|Oui.\npapa|Le poissonnier est ouvert.\nenfant-m|Je veux un citron, pour le poisson.\npapa|Le jaune, bien rond ?\nenfant-m|Oui.\nnarrateur|En ce moment, Amir tient le bord du sac.\nnarrateur|La glace brille dans les caisses.\nnarrateur|Un poisson argenté attend sur le zinc.\npapa|Celui-là, pour ce soir.\nnarrateur|Papa montre le poisson du doigt.\nnarrateur|Le poissonnier le glisse dans un papier.\nenfant-m|Il est mouillé.\npapa|Oui.\npapa|Il lui faut un citron.\nnarrateur|Un tas de citrons jaunes attend.\nnarrateur|Amir en montre un, bien rond.\nnarrateur|Le citron glisse sur la glace.\nnarrateur|Il roule vers le bord du zinc.\nenfant-m|Il part !\npapa|Tu peux le rattraper, tout doux.\nnarrateur|Amir tend la main.\nnarrateur|Le citron est froid, un peu mouillé.\nenfant-m|Je l'ai.\npapa|Bravo, Amir.\npapa|J'ai une pièce, pour le prendre.\nnarrateur|Papa tend la pièce.\nnarrateur|La pièce sonne dans le tiroir mouillé.\nnarrateur|Le tiroir se ferme.\nnarrateur|Le citron reste dans la main d'Amir.\nenfant-m|Il pique un peu.\npapa|C'est le zeste.\npapa|Tu le poses dans le sac ?\nenfant-m|Avec le poisson.\nnarrateur|Amir pose le citron près du papier.\nnarrateur|Ça sent le sel et le jaune, ensemble.\npapa|Tu as fini de le sentir ?\nenfant-m|Encore un peu.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les caisses de glace sentent le sel. Un goéland crie au-dessus du quai. L'eau du port claque contre la pierre. Ça sent le poisson et le citron, déjà. Papa porte un sac de toile rêche. Amir vit ici, avec papa. Papa, le goéland crie fort ! Oui. Le poissonnier est ouvert. Je veux un citron, pour le poisson. Le jaune, bien rond ? Oui. En ce moment, Amir tient le bord du sac. La glace brille dans les caisses. Un poisson argenté attend sur le zinc. Celui-là, pour ce soir. Papa montre le poisson du doigt. Le poissonnier le glisse dans un papier. Il est mouillé. Oui. Il lui faut un citron. Un tas de citrons jaunes attend. Amir en montre un, bien rond. Le citron glisse sur la glace. Il roule vers le bord du zinc. Il part ! Tu peux le rattraper, tout doux. Amir tend la main. Le citron est froid, un peu mouillé. Je l'ai. Bravo, Amir. J'ai une pièce, pour le prendre. Papa tend la pièce. La pièce sonne dans le tiroir mouillé. Le tiroir se ferme. Le citron reste dans la main d'Amir. Il pique un peu. C'est le zeste. Tu le poses dans le sac ? Avec le poisson. Amir pose le citron près du papier. Ça sent le sel et le jaune, ensemble. Tu as fini de le sentir ? Encore un peu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a donné une pièce. L'argent sert à quoi ?",
+      "script": "narrateur|Papa a donné une pièce.\nnarrateur|L'argent sert à quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Papa a donné une pièce. L'argent sert à quoi ?",
+      "expected_answer": "acheter",
+      "accepted_examples": "acheter | le citron | le poisson | prendre le citron | la pièce",
+      "retry_prompt": "On prend un citron. L'argent sert à quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le citron est dans le sac, près du poisson. Le papier reste un peu mouillé. La pièce a servi à prendre le citron. Pour le poisson. Oui. On achète le citron avec ça. Un goéland se pose plus loin. L'eau claque encore contre la pierre. Il nous regarde. On lui laisse les miettes, pas le citron. Amir referme le sac. Le zeste sent encore ses doigts. Tu as rattrapé le citron. Merci, Amir. La glace fond un peu sur le zinc. On rentre ? Oui, papa. Le sac tape contre la jambe. Ça sent le port, tout le long. Le poisson attend le citron, ce soir. Je le presserai.",
+      "script": "narrateur|Le citron est dans le sac, près du poisson.\nnarrateur|Le papier reste un peu mouillé.\npapa|La pièce a servi à prendre le citron.\nenfant-m|Pour le poisson.\npapa|Oui.\npapa|On achète le citron avec ça.\nnarrateur|Un goéland se pose plus loin.\nnarrateur|L'eau claque encore contre la pierre.\nenfant-m|Il nous regarde.\npapa|On lui laisse les miettes, pas le citron.\nnarrateur|Amir referme le sac.\nnarrateur|Le zeste sent encore ses doigts.\npapa|Tu as rattrapé le citron.\npapa|Merci, Amir.\nnarrateur|La glace fond un peu sur le zinc.\npapa|On rentre ?\nenfant-m|Oui, papa.\nnarrateur|Le sac tape contre la jambe.\nnarrateur|Ça sent le port, tout le long.\npapa|Le poisson attend le citron, ce soir.\nenfant-m|Je le presserai.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le citron est dans le sac, près du poisson. Le papier reste un peu mouillé. La pièce a servi à prendre le citron. Pour le poisson. Oui. On achète le citron avec ça. Un goéland se pose plus loin. L'eau claque encore contre la pierre. Il nous regarde. On lui laisse les miettes, pas le citron. Amir referme le sac. Le zeste sent encore ses doigts. Tu as rattrapé le citron. Merci, Amir. La glace fond un peu sur le zinc. On rentre ? Oui, papa. Le sac tape contre la jambe. Ça sent le port, tout le long. Le poisson attend le citron, ce soir. Je le presserai."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La cuisine sent encore le quai, un peu. Papa pose le papier sur l'évier. Tu poses le citron ? Oui. Amir pose le citron près du robinet. Une goutte d'eau brille sur le zeste. On le coupe ? En deux, tout doux. Papa coupe le citron. Le jus pique un peu l'air. Ça pique le nez ! Oui. Tu presses un peu ? Amir presse un demi-citron. Le jus tombe sur le poisson. Il est prêt. Oui. Les doigts d'Amir sentent le jaune.",
+      "script": "narrateur|La cuisine sent encore le quai, un peu.\nnarrateur|Papa pose le papier sur l'évier.\npapa|Tu poses le citron ?\nenfant-m|Oui.\nnarrateur|Amir pose le citron près du robinet.\nnarrateur|Une goutte d'eau brille sur le zeste.\nenfant-m|On le coupe ?\npapa|En deux, tout doux.\nnarrateur|Papa coupe le citron.\nnarrateur|Le jus pique un peu l'air.\nenfant-m|Ça pique le nez !\npapa|Oui.\npapa|Tu presses un peu ?\nnarrateur|Amir presse un demi-citron.\nnarrateur|Le jus tombe sur le poisson.\nenfant-m|Il est prêt.\npapa|Oui.\nnarrateur|Les doigts d'Amir sentent le jaune.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La cuisine sent encore le quai, un peu. Papa pose le papier sur l'évier. Tu poses le citron ? Oui. Amir pose le citron près du robinet. Une goutte d'eau brille sur le zeste. On le coupe ? En deux, tout doux. Papa coupe le citron. Le jus pique un peu l'air. Ça pique le nez ! Oui. Tu presses un peu ? Amir presse un demi-citron. Le jus tombe sur le poisson. Il est prêt. Oui. Les doigts d'Amir sentent le jaune."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le citron a roulé. On l'a pris, pour le poisson. Bravo, Amir. Le jus brille encore sur le zinc. Le citron pique un peu les doigts.",
+      "script": "enfant-m|Le citron a roulé.\nenfant-m|On l'a pris, pour le poisson.\npapa|Bravo, Amir.\nnarrateur|Le jus brille encore sur le zinc.\nnarrateur|Le citron pique un peu les doigts.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le citron a roulé. On l'a pris, pour le poisson. Bravo, Amir. Le jus brille encore sur le zinc. Le citron pique un peu les doigts."
+    }
+  ]
+}

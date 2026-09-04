@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-01",
+  "fil_rouge": "",
+  "title": "Maya aide maman",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Maya, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le matin. Maya entre dans la cuisine. Maman est là. Je veux aider. Maman sourit. Tu fais une tâche sûre, avec un adulte. Maya ouvre l'eau. Elle lave une tomate. L'eau est froide. La tomate est lisse. Maya pose la tomate. Ensuite, elle prend une cuillère. Elle pose la cuillère près de l'assiette. Puis Maya va au pain. Elle apporte le pain à table. Merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Maya reste avec maman.",
+      "script": "narrateur|C'est le matin. Maya entre dans la cuisine. Maman est là.\nenfant-f|Je veux aider. Maman sourit.\nmaman|Tu fais une tâche sûre, avec un adulte.\nnarrateur|Maya ouvre l'eau. Elle lave une tomate. L'eau est froide. La tomate est lisse. Maya pose la tomate. Ensuite, elle prend une cuillère. Elle pose la cuillère près de l'assiette. Puis Maya va au pain. Elle apporte le pain à table.\nmaman|Merci. Laver. Poser. Apporter. Ce sont des tâches sûres.\nnarrateur|Maya reste avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maya aide maman. Que fait-elle ?",
+      "script": "narrateur|Maya aide maman. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maya a lavé la tomate. Elle a posé la cuillère. Elle a apporté le pain. Avec maman.",
+      "script": "narrateur|Maya a lavé la tomate. Elle a posé la cuillère. Elle a apporté le pain. Avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maya s'assoit. Elle croque un morceau de pain. Maman est près d'elle.",
+      "script": "narrateur|Maya s'assoit. Elle croque un morceau de pain. Maman est près d'elle.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

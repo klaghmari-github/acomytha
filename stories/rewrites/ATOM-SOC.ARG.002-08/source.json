@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-08",
+  "fil_rouge": "",
+  "title": "Victor demande pour un biscuit",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Victor, papa",
+  "setting": "boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Victor est à la boulangerie. Papa est avec lui. Victor voit un biscuit. Il a envie. L'argent se range. Victor ne le prend pas. Il va demander. Il demande à papa. Papa, c'est l'adulte. S'il te plaît ? Papa écoute. Papa dit oui. Il paie. Victor dit merci. On demande à l'adulte. Le biscuit est croustillant. Ça sent le beurre. Ils sortent ensemble.",
+      "script": "narrateur|Victor est à la boulangerie. Papa est avec lui. Victor voit un biscuit. Il a envie. L'argent se range. Victor ne le prend pas. Il va demander. Il demande à papa. Papa, c'est l'adulte.\nenfant-m|S'il te plaît ? Papa écoute. Papa dit oui. Il paie.\nnarrateur|Victor dit merci. On demande à l'adulte. Le biscuit est croustillant. Ça sent le beurre. Ils sortent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victor veut un biscuit. Que fait-il ?",
+      "script": "narrateur|Victor veut un biscuit. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Victor a demandé à l'adulte. Papa a écouté.",
+      "script": "narrateur|Victor a demandé à l'adulte. Papa a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils sortent. Victor tient le biscuit.",
+      "script": "narrateur|Ils sortent. Victor tient le biscuit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

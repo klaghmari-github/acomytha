@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-02",
+  "fil_rouge": "Sarah veut voir le chausson bleu derrière la vitre. Son foulard glisse. Elle reste près de maman, main sur le manteau. Puis le chausson tout doux.",
+  "title": "Le chausson bleu",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Sarah, maman",
+  "setting": "rue du village, vitrine des chaussons, fin d'après-midi",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un chausson bleu dort derrière la vitre. Le soleil bas pose une bande d'or sur le cuir. La rue sent la laine et un peu de savon. Le foulard de Sarah chatouille son cou. Sarah vit ici, avec maman. Maman, le chausson est bleu comme la mer ! Oui. Il a l'air tout doux. Tu as vu le pompon ? Il est rond. En ce moment, Sarah prend le manteau de maman. Le tissu est épais, un peu rêche au bord. Je veux voir le chausson de près. On y va. Tu restes près de moi. Elles marchent côte à côte sur le trottoir. Une feuille sèche tourne contre la vitrine. Le foulard de Sarah glisse vers l'épaule. Mon foulard ! On le rattrape ici. Près de moi. Sarah s'arrête contre maman. Le foulard pend, tout léger, sur le trottoir. Tu tiens le manteau ? Oui. Maman ramasse le foulard près de leurs pieds. La laine sent encore le cou de Sarah. Il était par terre. Oui. Et toi, tu es restée près. Bravo. Sarah remet le foulard, tout chaud. Elle garde le manteau de l'autre main. On reste près ? Près de toi. La vitrine est plus proche maintenant. Le chausson bleu grossit derrière le verre. Tu marches à côté ? À côté. Leurs ombres se touchent sur le trottoir. Le cuir du chausson luit un peu. Je vois le pompon ! Merci d'être restée près. Sarah serre encore le manteau. La bande d'or a glissé sur le bleu.",
+      "script": "narrateur|Un chausson bleu dort derrière la vitre.\nnarrateur|Le soleil bas pose une bande d'or sur le cuir.\nnarrateur|La rue sent la laine et un peu de savon.\nnarrateur|Le foulard de Sarah chatouille son cou.\nnarrateur|Sarah vit ici, avec maman.\nenfant-f|Maman, le chausson est bleu comme la mer !\nmaman|Oui.\nmaman|Il a l'air tout doux.\nmaman|Tu as vu le pompon ?\nenfant-f|Il est rond.\nnarrateur|En ce moment, Sarah prend le manteau de maman.\nnarrateur|Le tissu est épais, un peu rêche au bord.\nenfant-f|Je veux voir le chausson de près.\nmaman|On y va.\nmaman|Tu restes près de moi.\nnarrateur|Elles marchent côte à côte sur le trottoir.\nnarrateur|Une feuille sèche tourne contre la vitrine.\nnarrateur|Le foulard de Sarah glisse vers l'épaule.\nenfant-f|Mon foulard !\nmaman|On le rattrape ici.\nmaman|Près de moi.\nnarrateur|Sarah s'arrête contre maman.\nnarrateur|Le foulard pend, tout léger, sur le trottoir.\nmaman|Tu tiens le manteau ?\nenfant-f|Oui.\nnarrateur|Maman ramasse le foulard près de leurs pieds.\nnarrateur|La laine sent encore le cou de Sarah.\nenfant-f|Il était par terre.\nmaman|Oui.\nmaman|Et toi, tu es restée près.\nmaman|Bravo.\nnarrateur|Sarah remet le foulard, tout chaud.\nnarrateur|Elle garde le manteau de l'autre main.\nmaman|On reste près ?\nenfant-f|Près de toi.\nnarrateur|La vitrine est plus proche maintenant.\nnarrateur|Le chausson bleu grossit derrière le verre.\nmaman|Tu marches à côté ?\nenfant-f|À côté.\nnarrateur|Leurs ombres se touchent sur le trottoir.\nnarrateur|Le cuir du chausson luit un peu.\nenfant-f|Je vois le pompon !\nmaman|Merci d'être restée près.\nnarrateur|Sarah serre encore le manteau.\nnarrateur|La bande d'or a glissé sur le bleu.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un chausson bleu dort derrière la vitre. Le soleil bas pose une bande d'or sur le cuir. La rue sent la laine et un peu de savon. Le foulard de Sarah chatouille son cou. Sarah vit ici, avec maman. Maman, le chausson est bleu comme la mer ! Oui. Il a l'air tout doux. Tu as vu le pompon ? Il est rond. En ce moment, Sarah prend le manteau de maman. Le tissu est épais, un peu rêche au bord. Je veux voir le chausson de près. On y va. Tu restes près de moi. Elles marchent côte à côte sur le trottoir. Une feuille sèche tourne contre la vitrine. Le foulard de Sarah glisse vers l'épaule. Mon foulard ! On le rattrape ici. Près de moi. Sarah s'arrête contre maman. Le foulard pend, tout léger, sur le trottoir. Tu tiens le manteau ? Oui. Maman ramasse le foulard près de leurs pieds. La laine sent encore le cou de Sarah. Il était par terre. Oui. Et toi, tu es restée près. Bravo. Sarah remet le foulard, tout chaud. Elle garde le manteau de l'autre main. On reste près ? Près de toi. La vitrine est plus proche maintenant. Le chausson bleu grossit derrière le verre. Tu marches à côté ? À côté. Leurs ombres se touchent sur le trottoir. Le cuir du chausson luit un peu. Je vois le pompon ! Merci d'être restée près. Sarah serre encore le manteau. La bande d'or a glissé sur le bleu."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Sarah marche dans la rue. Où est-elle ?",
+      "script": "narrateur|Sarah marche dans la rue.\nnarrateur|Où est-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Sarah marche dans la rue. Où est-elle ?",
+      "expected_answer": "près de maman",
+      "accepted_examples": "près | près de maman | à côté | la main | le manteau | près de moi",
+      "retry_prompt": "Elle reste près de maman. Où est Sarah ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Sarah est près de maman. La main tient le manteau. Le foulard est revenu autour du cou. Tu es restée près de moi ? Oui. J'ai tenu le manteau. Bravo, Sarah. Près de moi. Le manteau reste épais sous les doigts. Le foulard sent encore la laine chaude. La vitrine est tout près.",
+      "script": "narrateur|Sarah est près de maman.\nnarrateur|La main tient le manteau.\nnarrateur|Le foulard est revenu autour du cou.\nmaman|Tu es restée près de moi ?\nenfant-f|Oui.\nenfant-f|J'ai tenu le manteau.\nmaman|Bravo, Sarah.\nmaman|Près de moi.\nnarrateur|Le manteau reste épais sous les doigts.\nnarrateur|Le foulard sent encore la laine chaude.\nnarrateur|La vitrine est tout près.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Sarah est près de maman. La main tient le manteau. Le foulard est revenu autour du cou. Tu es restée près de moi ? Oui. J'ai tenu le manteau. Bravo, Sarah. Près de moi. Le manteau reste épais sous les doigts. Le foulard sent encore la laine chaude. La vitrine est tout près."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Elles s'arrêtent devant les chaussons. Tu vois le bleu ? Sarah pose la joue près de la vitre. Le pompon a l'air tout mou ! Oui. Tu es restée près. Le verre est frais contre sa joue. Le chausson a une petite couture blanche. On peut le toucher ? Dedans, oui. La clochette de la boutique fait un ding doux. Sarah garde le manteau d'une main. Maman lui tend le chausson bleu. Il est trop doux ! Oui. On rentre près l'une de l'autre. Le foulard tient bien, cette fois. Le cuir sent encore le soleil bas.",
+      "script": "narrateur|Elles s'arrêtent devant les chaussons.\nmaman|Tu vois le bleu ?\nnarrateur|Sarah pose la joue près de la vitre.\nenfant-f|Le pompon a l'air tout mou !\nmaman|Oui.\nmaman|Tu es restée près.\nnarrateur|Le verre est frais contre sa joue.\nnarrateur|Le chausson a une petite couture blanche.\nenfant-f|On peut le toucher ?\nmaman|Dedans, oui.\nnarrateur|La clochette de la boutique fait un ding doux.\nnarrateur|Sarah garde le manteau d'une main.\nnarrateur|Maman lui tend le chausson bleu.\nenfant-f|Il est trop doux !\nmaman|Oui.\nmaman|On rentre près l'une de l'autre.\nnarrateur|Le foulard tient bien, cette fois.\nnarrateur|Le cuir sent encore le soleil bas.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Elles s'arrêtent devant les chaussons. Tu vois le bleu ? Sarah pose la joue près de la vitre. Le pompon a l'air tout mou ! Oui. Tu es restée près. Le verre est frais contre sa joue. Le chausson a une petite couture blanche. On peut le toucher ? Dedans, oui. La clochette de la boutique fait un ding doux. Sarah garde le manteau d'une main. Maman lui tend le chausson bleu. Il est trop doux ! Oui. On rentre près l'une de l'autre. Le foulard tient bien, cette fois. Le cuir sent encore le soleil bas."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le chausson sent la laine. Oui. Merci d'être restée près. Le pompon reste rond dans sa paume. Le chausson bleu reste doux contre sa joue.",
+      "script": "enfant-f|Le chausson sent la laine.\nmaman|Oui.\nmaman|Merci d'être restée près.\nnarrateur|Le pompon reste rond dans sa paume.\nnarrateur|Le chausson bleu reste doux contre sa joue.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le chausson sent la laine. Oui. Merci d'être restée près. Le pompon reste rond dans sa paume. Le chausson bleu reste doux contre sa joue."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-07",
+  "fil_rouge": "Aniss et papa vont au marché couvert avec l'argent du travail. Le fromage fort pique. Ils prennent le doux. Aniss le tient.",
+  "title": "Le fromage doux d'Aniss",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Aniss, papa",
+  "setting": "marché couvert, hall de verre, stand de fromage",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les vitres du hall font des carreaux d'or. Des pigeons marchent sur une poutre. Ça sent le foin et le lait. Une paille craque sous une caisse. Le toit de verre cliquette un peu. Papa a fini son travail. Sa poche de toile est lourde. J'ai travaillé, Aniss. Avec le travail, on a de l'argent. L'argent sert à acheter. On achète du fromage ? Oui. Pour le pain de ce soir. En ce moment, ils marchent sous le verre. Aniss tient le bord du cabas. Le cabas gratte un peu sa jambe. Un stand aligne des meules. Des croûtes jaunes brillent. Ça sent fort ! Tu as senti le fromage ? Aniss se penche vers une meule. La croûte est rêche sous son doigt. Je veux celui-là. Papa coupe un tout petit bout. Aniss goûte. Le goût pique sa langue. Il est trop fort ! Il pique, n'est-ce pas ? Aniss recule d'un pas. Ses yeux piquent un peu. Je n'en veux plus. On prend le doux, alors ? À côté, une meule est plus claire. Elle sent le lait, presque rien. Celle-là. Elle est douce. Tu la veux pour le pain ? Oui, papa. Papa sort l'argent de sa poche. Les pièces sont froides et claires. C'est l'argent du travail. Il sert à acheter.",
+      "script": "narrateur|Les vitres du hall font des carreaux d'or.\nnarrateur|Des pigeons marchent sur une poutre.\nnarrateur|Ça sent le foin et le lait.\nnarrateur|Une paille craque sous une caisse.\nnarrateur|Le toit de verre cliquette un peu.\nnarrateur|Papa a fini son travail.\nnarrateur|Sa poche de toile est lourde.\npapa|J'ai travaillé, Aniss.\npapa|Avec le travail, on a de l'argent.\npapa|L'argent sert à acheter.\nenfant-m|On achète du fromage ?\npapa|Oui.\npapa|Pour le pain de ce soir.\nnarrateur|En ce moment, ils marchent sous le verre.\nnarrateur|Aniss tient le bord du cabas.\nnarrateur|Le cabas gratte un peu sa jambe.\nnarrateur|Un stand aligne des meules.\nnarrateur|Des croûtes jaunes brillent.\nenfant-m|Ça sent fort !\npapa|Tu as senti le fromage ?\nnarrateur|Aniss se penche vers une meule.\nnarrateur|La croûte est rêche sous son doigt.\nenfant-m|Je veux celui-là.\nnarrateur|Papa coupe un tout petit bout.\nnarrateur|Aniss goûte.\nnarrateur|Le goût pique sa langue.\nenfant-m|Il est trop fort !\npapa|Il pique, n'est-ce pas ?\nnarrateur|Aniss recule d'un pas.\nnarrateur|Ses yeux piquent un peu.\nenfant-m|Je n'en veux plus.\npapa|On prend le doux, alors ?\nnarrateur|À côté, une meule est plus claire.\nnarrateur|Elle sent le lait, presque rien.\nenfant-m|Celle-là.\nenfant-m|Elle est douce.\npapa|Tu la veux pour le pain ?\nenfant-m|Oui, papa.\nnarrateur|Papa sort l'argent de sa poche.\nnarrateur|Les pièces sont froides et claires.\npapa|C'est l'argent du travail.\npapa|Il sert à acheter.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les vitres du hall font des carreaux d'or. Des pigeons marchent sur une poutre. Ça sent le foin et le lait. Une paille craque sous une caisse. Le toit de verre cliquette un peu. Papa a fini son travail. Sa poche de toile est lourde. J'ai travaillé, Aniss. Avec le travail, on a de l'argent. L'argent sert à acheter. On achète du fromage ? Oui. Pour le pain de ce soir. En ce moment, ils marchent sous le verre. Aniss tient le bord du cabas. Le cabas gratte un peu sa jambe. Un stand aligne des meules. Des croûtes jaunes brillent. Ça sent fort ! Tu as senti le fromage ? Aniss se penche vers une meule. La croûte est rêche sous son doigt. Je veux celui-là. Papa coupe un tout petit bout. Aniss goûte. Le goût pique sa langue. Il est trop fort ! Il pique, n'est-ce pas ? Aniss recule d'un pas. Ses yeux piquent un peu. Je n'en veux plus. On prend le doux, alors ? À côté, une meule est plus claire. Elle sent le lait, presque rien. Celle-là. Elle est douce. Tu la veux pour le pain ? Oui, papa. Papa sort l'argent de sa poche. Les pièces sont froides et claires. C'est l'argent du travail. Il sert à acheter."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a travaillé. L'argent sert à quoi ?",
+      "script": "narrateur|Papa a travaillé.\nnarrateur|L'argent sert à quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Papa a travaillé. L'argent sert à quoi ?",
+      "expected_answer": "acheter",
+      "accepted_examples": "acheter | le fromage | fromage | acheter du fromage | à acheter",
+      "retry_prompt": "L'argent sert à acheter. L'argent sert à quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa pose les pièces sur le bois. Le bois est taché de lait. On lui tend le fromage doux. Il est enveloppé dans un papier. Le papier craque un peu. Il est à nous ? Oui. On l'a acheté. Merci, Aniss. Tu as choisi le doux. Aniss prend le paquet contre lui. Le fromage est frais, un peu mou. Il ne pique plus. Tu le portes jusqu'à la maison ? Oui. Ils quittent le stand. Une goutte tombe du toit de verre. Elle fait un rond dans la poussière.",
+      "script": "narrateur|Papa pose les pièces sur le bois.\nnarrateur|Le bois est taché de lait.\nnarrateur|On lui tend le fromage doux.\nnarrateur|Il est enveloppé dans un papier.\nnarrateur|Le papier craque un peu.\nenfant-m|Il est à nous ?\npapa|Oui.\npapa|On l'a acheté.\npapa|Merci, Aniss.\npapa|Tu as choisi le doux.\nnarrateur|Aniss prend le paquet contre lui.\nnarrateur|Le fromage est frais, un peu mou.\nenfant-m|Il ne pique plus.\npapa|Tu le portes jusqu'à la maison ?\nenfant-m|Oui.\nnarrateur|Ils quittent le stand.\nnarrateur|Une goutte tombe du toit de verre.\nnarrateur|Elle fait un rond dans la poussière.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Papa pose les pièces sur le bois. Le bois est taché de lait. On lui tend le fromage doux. Il est enveloppé dans un papier. Le papier craque un peu. Il est à nous ? Oui. On l'a acheté. Merci, Aniss. Tu as choisi le doux. Aniss prend le paquet contre lui. Le fromage est frais, un peu mou. Il ne pique plus. Tu le portes jusqu'à la maison ? Oui. Ils quittent le stand. Une goutte tombe du toit de verre. Elle fait un rond dans la poussière."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dehors, l'air est plus léger. Le cabas tape contre la jambe. Aniss garde le fromage dans ses bras. Tu as encore le paquet ? Oui. Il est frais. Le pain nous attend. La rue sent encore le foin. Une feuille tourne près du caniveau. Ils montent les marches de la maison. La clé fait un petit clic. La table de la cuisine est claire. Le pain est déjà là, tiède. Tu poses le fromage près du pain ? Aniss pose le paquet. Il ouvre le papier, tout doux.",
+      "script": "narrateur|Dehors, l'air est plus léger.\nnarrateur|Le cabas tape contre la jambe.\nnarrateur|Aniss garde le fromage dans ses bras.\npapa|Tu as encore le paquet ?\nenfant-m|Oui.\nenfant-m|Il est frais.\npapa|Le pain nous attend.\nnarrateur|La rue sent encore le foin.\nnarrateur|Une feuille tourne près du caniveau.\nnarrateur|Ils montent les marches de la maison.\nnarrateur|La clé fait un petit clic.\nnarrateur|La table de la cuisine est claire.\nnarrateur|Le pain est déjà là, tiède.\npapa|Tu poses le fromage près du pain ?\nnarrateur|Aniss pose le paquet.\nnarrateur|Il ouvre le papier, tout doux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Dehors, l'air est plus léger. Le cabas tape contre la jambe. Aniss garde le fromage dans ses bras. Tu as encore le paquet ? Oui. Il est frais. Le pain nous attend. La rue sent encore le foin. Une feuille tourne près du caniveau. Ils montent les marches de la maison. La clé fait un petit clic. La table de la cuisine est claire. Le pain est déjà là, tiède. Tu poses le fromage près du pain ? Aniss pose le paquet. Il ouvre le papier, tout doux."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Papa coupe une tranche de pain. Aniss étale le fromage doux. Ça fond un peu, blanc et calme. Il ne pique pas. Bravo. Tu as bien choisi. Aniss croque. Le pain est tiède sous les dents. Le fromage doux reste sur sa langue. Il tient encore le papier vide. Le fromage doux fond encore sur le pain.",
+      "script": "narrateur|Papa coupe une tranche de pain.\nnarrateur|Aniss étale le fromage doux.\nnarrateur|Ça fond un peu, blanc et calme.\nenfant-m|Il ne pique pas.\npapa|Bravo.\npapa|Tu as bien choisi.\nnarrateur|Aniss croque.\nnarrateur|Le pain est tiède sous les dents.\nnarrateur|Le fromage doux reste sur sa langue.\nnarrateur|Il tient encore le papier vide.\nnarrateur|Le fromage doux fond encore sur le pain.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Papa coupe une tranche de pain. Aniss étale le fromage doux. Ça fond un peu, blanc et calme. Il ne pique pas. Bravo. Tu as bien choisi. Aniss croque. Le pain est tiède sous les dents. Le fromage doux reste sur sa langue. Il tient encore le papier vide. Le fromage doux fond encore sur le pain."
+    }
+  ]
+}

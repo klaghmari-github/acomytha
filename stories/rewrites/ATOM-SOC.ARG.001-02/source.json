@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-02",
+  "fil_rouge": "",
+  "title": "Louna voit à quoi sert l'argent",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Louna, maman, papa",
+  "setting": "boulangerie puis marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ce matin, maman a fini son travail. Elle rentre avec son sac. Louna l'attend près de la porte. Papa noue les lacets de Louna. J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Ils vont à la boulangerie. Maman donne l'argent. Elle peut acheter du pain. Louna porte la baguette tiède. Plus tard, ils vont au marché. D'abord, les légumes. Des poireaux. Des tomates. L'argent sert aussi aux légumes. Louna pose une tomate dans le cabas. Ensuite, il y a des chaussures. Maman montre une paire. L'argent sert aux chaussures, quand on en a besoin. Louna touche le cuir souple. Papa range le reste. À la boulangerie, puis au marché, c'est pareil. Le travail sert à acheter. Pain. Légumes. Chaussures.",
+      "script": "narrateur|Ce matin, maman a fini son travail. Elle rentre avec son sac. Louna l'attend près de la porte. Papa noue les lacets de Louna.\nmaman|J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Ils vont à la boulangerie. Maman donne l'argent. Elle peut acheter du pain.\nnarrateur|Louna porte la baguette tiède. Plus tard, ils vont au marché. D'abord, les légumes. Des poireaux. Des tomates.\npapa|L'argent sert aussi aux légumes.\nnarrateur|Louna pose une tomate dans le cabas. Ensuite, il y a des chaussures. Maman montre une paire.\nnarrateur|L'argent sert aux chaussures, quand on en a besoin.\nnarrateur|Louna touche le cuir souple. Papa range le reste. À la boulangerie, puis au marché, c'est pareil.\nenfant-f|Le travail sert à acheter. Pain. Légumes. Chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman a travaillé. L'argent sert à quoi ?",
+      "script": "narrateur|Maman a travaillé. L'argent sert à quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Louna a compris. Le travail de maman sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "script": "narrateur|Louna a compris. Le travail de maman sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "À la maison, Louna pose le pain. Papa range les légumes.",
+      "script": "narrateur|À la maison, Louna pose le pain. Papa range les légumes.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-03",
+  "fil_rouge": "",
+  "title": "Élise reste près de papa, deux rues",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Élise, papa",
+  "setting": "rue de l'école puis rue du marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Élise sort avec papa. Ils vont à l'école. La rue sent le pain chaud. Élise reste près de l'adulte. Elle prend la main de papa. Main ou manteau. Les pieds d'Élise marchent à côté. Près de moi. Élise sent la main. La main est chaude. Ils passent la boulangerie. Élise reste près de l'adulte. Les pieds restent près. La main tient le manteau. Tu marches à côté. Élise hoche la tête. Plus tard, ils vont au marché. La rue sent les oranges. Élise se souvient. Elle reste près de l'adulte. Elle prend la main de papa. Main ou manteau. Les pieds marchent à côté. Papa achète une pomme. Élise garde la main. Même leçon, autre rue. Merci d'être près de moi.",
+      "script": "narrateur|Élise sort avec papa. Ils vont à l'école. La rue sent le pain chaud. Élise reste près de l'adulte. Elle prend la main de papa. Main ou manteau. Les pieds d'Élise marchent à côté.\npapa|Près de moi.\nnarrateur|Élise sent la main. La main est chaude. Ils passent la boulangerie. Élise reste près de l'adulte. Les pieds restent près. La main tient le manteau.\npapa|Tu marches à côté.\nnarrateur|Élise hoche la tête. Plus tard, ils vont au marché. La rue sent les oranges. Élise se souvient. Elle reste près de l'adulte. Elle prend la main de papa. Main ou manteau. Les pieds marchent à côté. Papa achète une pomme. Élise garde la main. Même leçon, autre rue.\npapa|Merci d'être près de moi.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Élise marche dans la rue. Où reste-t-elle ?",
+      "script": "narrateur|Élise marche dans la rue. Où reste-t-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Élise est près de papa. À l'école, puis au marché. Main ou manteau. Les pieds restent à côté.",
+      "script": "narrateur|Élise est près de papa. À l'école, puis au marché. Main ou manteau. Les pieds restent à côté.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Élise garde la main de papa. Ils rentrent à la maison.",
+      "script": "narrateur|Élise garde la main de papa. Ils rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

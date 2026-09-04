@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-01",
+  "fil_rouge": "",
+  "title": "L'argent du marché de Léa",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Léa, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ce matin, papa a fini son travail. Il rentre avec son sac. Léa l'attend près de la porte. J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Léa et papa vont au marché. D'abord, le stand du pain. Papa donne l'argent. Il peut acheter du pain. Léa porte la baguette tiède. Ensuite, les légumes. Des carottes. Des tomates. L'argent sert aussi aux légumes. Léa pose une carotte dans le cabas. Plus loin, il y a des chaussures. Papa montre une paire. L'argent sert aux chaussures, quand on en a besoin. Léa touche le cuir souple. Papa range le reste de l'argent. Le travail de papa sert à acheter. Pain. Légumes. Chaussures.",
+      "script": "narrateur|Ce matin, papa a fini son travail. Il rentre avec son sac. Léa l'attend près de la porte.\npapa|J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter.\nnarrateur|Léa et papa vont au marché. D'abord, le stand du pain. Papa donne l'argent. Il peut acheter du pain. Léa porte la baguette tiède. Ensuite, les légumes. Des carottes. Des tomates.\npapa|L'argent sert aussi aux légumes.\nnarrateur|Léa pose une carotte dans le cabas. Plus loin, il y a des chaussures. Papa montre une paire.\nnarrateur|L'argent sert aux chaussures, quand on en a besoin.\nnarrateur|Léa touche le cuir souple. Papa range le reste de l'argent.\nenfant-f|Le travail de papa sert à acheter. Pain. Légumes. Chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a travaillé. L'argent sert à quoi ?",
+      "script": "narrateur|Papa a travaillé. L'argent sert à quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léa a compris. Le travail de papa sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "script": "narrateur|Léa a compris. Le travail de papa sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "À la maison, Léa pose le pain sur la table. Papa range les légumes.",
+      "script": "narrateur|À la maison, Léa pose le pain sur la table. Papa range les légumes.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

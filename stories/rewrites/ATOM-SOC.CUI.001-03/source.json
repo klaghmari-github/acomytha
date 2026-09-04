@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-03",
+  "fil_rouge": "",
+  "title": "Léna aide à préparer, deux repas",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Léna, papa, maman",
+  "setting": "cuisine, déjeuner puis goûter",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Léna est dans la cuisine avec papa. La tomate est rouge et lisse. Tu peux aider. Une tâche sûre, avec un adulte. Léna lave une tomate. L'eau est froide. Elle pose la tomate dans le saladier. Papa est à côté. Il sourit. Plus tard, maman prépare le goûter. Le pain sent le four. Léna se souvient. Une tâche sûre, avec un adulte. Elle apporte le pain. Elle pose une cuillère près du bol. Merci. Léna a lavé. Elle a apporté. Elle a posé. Même leçon, autre repas. Aider, c'est une tâche sûre, avec un adulte.",
+      "script": "narrateur|Léna est dans la cuisine avec papa. La tomate est rouge et lisse.\npapa|Tu peux aider.\nnarrateur|Une tâche sûre, avec un adulte. Léna lave une tomate. L'eau est froide. Elle pose la tomate dans le saladier. Papa est à côté. Il sourit. Plus tard, maman prépare le goûter. Le pain sent le four. Léna se souvient. Une tâche sûre, avec un adulte. Elle apporte le pain. Elle pose une cuillère près du bol.\nmaman|Merci.\nnarrateur|Léna a lavé. Elle a apporté. Elle a posé. Même leçon, autre repas. Aider, c'est une tâche sûre, avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Léna aide en cuisine. Comment ?",
+      "script": "narrateur|Léna aide en cuisine. Comment ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Léna a lavé la tomate. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "script": "narrateur|Léna a lavé la tomate. Puis elle a apporté le pain. Avec papa, puis avec maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Léna s'assoit. Le goûter est prêt.",
+      "script": "narrateur|Léna s'assoit. Le goûter est prêt.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

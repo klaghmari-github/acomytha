@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-05",
+  "fil_rouge": "",
+  "title": "Idriss aide papa à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Idriss, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le soir. Idriss entre dans la cuisine. Papa est là. Je veux aider. Papa sourit. Tu fais une tâche sûre, avec un adulte. Idriss ouvre l'eau. Il lave une feuille de salade. L'eau est froide. La feuille est lisse. Idriss pose la salade. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Idriss va au pain. Il apporte le pain à table. Merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Idriss reste avec papa.",
+      "script": "narrateur|C'est le soir. Idriss entre dans la cuisine. Papa est là.\nenfant-m|Je veux aider. Papa sourit.\npapa|Tu fais une tâche sûre, avec un adulte.\nnarrateur|Idriss ouvre l'eau. Il lave une feuille de salade. L'eau est froide. La feuille est lisse. Idriss pose la salade. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Idriss va au pain. Il apporte le pain à table.\npapa|Merci. Laver. Poser. Apporter. Ce sont des tâches sûres.\nnarrateur|Idriss reste avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Idriss aide papa. Que fait-il ?",
+      "script": "narrateur|Idriss aide papa. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Idriss a lavé la salade. Il a posé la cuillère. Il a apporté le pain. Avec papa.",
+      "script": "narrateur|Idriss a lavé la salade. Il a posé la cuillère. Il a apporté le pain. Avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Idriss s'assoit. Il croque un morceau de pain. Papa est près de lui.",
+      "script": "narrateur|Idriss s'assoit. Il croque un morceau de pain. Papa est près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

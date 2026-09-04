@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-08",
+  "fil_rouge": "",
+  "title": "Colette près de maman",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Colette, maman",
+  "setting": "rue du marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Colette sort avec maman. Elles marchent dans la rue. Colette reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Le manteau est doux. La main de maman est chaude. Elles passent le marché. Colette sent les oranges. Elle reste près de l'adulte. Elle marche à côté. Près de moi. Colette serre la main. Elles avancent ensemble. Les paniers froissent. Colette sourit.",
+      "script": "narrateur|Colette sort avec maman. Elles marchent dans la rue. Colette reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Le manteau est doux. La main de maman est chaude. Elles passent le marché. Colette sent les oranges. Elle reste près de l'adulte. Elle marche à côté.\nmaman|Près de moi.\nnarrateur|Colette serre la main. Elles avancent ensemble. Les paniers froissent. Colette sourit.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Colette marche dans la rue. Où est-elle ?",
+      "script": "narrateur|Colette marche dans la rue. Où est-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Colette est près de maman. La main tient le manteau. Maman est là.",
+      "script": "narrateur|Colette est près de maman. La main tient le manteau. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Colette garde la main de maman. Elles rentrent à la maison.",
+      "script": "narrateur|Colette garde la main de maman. Elles rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

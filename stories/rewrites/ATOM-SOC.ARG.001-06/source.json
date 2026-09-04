@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-06",
+  "fil_rouge": "",
+  "title": "Alix voit à quoi sert l'argent",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Alix, maman",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Alix tient la main de maman au marché. Maman a travaillé. Le travail donne l'argent. L'argent sert à acheter. Le pain. Les légumes. Les chaussures. Alix touche le pain. Elle sent les carottes. Elle voit des petites chaussures. Maman paie. Pain, légumes, chaussures. Le travail, puis on achète.",
+      "script": "narrateur|Alix tient la main de maman au marché. Maman a travaillé. Le travail donne l'argent.\nmaman|L'argent sert à acheter.\nnarrateur|Le pain. Les légumes. Les chaussures. Alix touche le pain. Elle sent les carottes. Elle voit des petites chaussures. Maman paie.\nenfant-m|Pain, légumes, chaussures.\nnarrateur|Le travail, puis on achète.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman a de l'argent. Ça sert à quoi ?",
+      "script": "narrateur|Maman a de l'argent. Ça sert à quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Alix a compris. Le travail. Acheter pain, légumes, chaussures.",
+      "script": "narrateur|Alix a compris. Le travail. Acheter pain, légumes, chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman range le filet. Alix donne la main.",
+      "script": "narrateur|Maman range le filet. Alix donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

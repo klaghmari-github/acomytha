@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-03",
+  "fil_rouge": "",
+  "title": "Amine demande pour un achat",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amine, papa",
+  "setting": "boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Amine entre à la boulangerie. Papa est là. Ça sent le pain chaud. Amine voit un petit gâteau. Il a envie. L'argent est dans la poche de papa. Papa range l'argent. Amine s'arrête. Papa, je peux l'avoir ? Il va demander. Papa, c'est l'adulte. Papa écoute. Aujourd'hui, on achète le pain. Le gâteau attendra. Amine sent un petit pincement. Puis il respire. Il a demandé. Papa prend sa main. Ils prennent le pain. L'argent reste avec l'adulte. Pour un achat, on va demander. On demande à papa ou maman.",
+      "script": "narrateur|Amine entre à la boulangerie. Papa est là. Ça sent le pain chaud. Amine voit un petit gâteau. Il a envie. L'argent est dans la poche de papa. Papa range l'argent. Amine s'arrête.\nnarrateur|Papa, je peux l'avoir ? Il va demander. Papa, c'est l'adulte. Papa écoute.\npapa|Aujourd'hui, on achète le pain.\nnarrateur|Le gâteau attendra. Amine sent un petit pincement. Puis il respire. Il a demandé. Papa prend sa main. Ils prennent le pain. L'argent reste avec l'adulte. Pour un achat, on va demander. On demande à papa ou maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amine veut un gâteau. Que fait-il ?",
+      "script": "narrateur|Amine veut un gâteau. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amine a demandé à l'adulte. Papa a répondu. L'argent est resté avec papa.",
+      "script": "narrateur|Amine a demandé à l'adulte. Papa a répondu. L'argent est resté avec papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sur le chemin, Amine sent le pain. Il tient la main de papa.",
+      "script": "narrateur|Sur le chemin, Amine sent le pain. Il tient la main de papa.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

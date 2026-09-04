@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-04",
+  "fil_rouge": "",
+  "title": "Olivier aide papa à préparer",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Olivier, papa, maman",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "C'est le soir. Olivier entre dans la cuisine. Papa est là. Je veux aider. Papa sourit. Tu fais une tâche sûre, avec un adulte. Olivier ouvre l'eau. Il lave une tomate. L'eau est froide. La tomate est lisse. Olivier pose la tomate. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Olivier va au pain. Il apporte le pain à table. Merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Plus tard, maman arrive. Olivier se souvient. Il lave une feuille de salade. C'est encore une tâche sûre, avec un adulte. Tu as transféré le geste. Olivier reste avec papa. Ils préparent ensemble.",
+      "script": "narrateur|C'est le soir. Olivier entre dans la cuisine. Papa est là.\nenfant-m|Je veux aider. Papa sourit.\npapa|Tu fais une tâche sûre, avec un adulte.\nnarrateur|Olivier ouvre l'eau. Il lave une tomate. L'eau est froide. La tomate est lisse. Olivier pose la tomate. Ensuite, il prend une cuillère. Il pose la cuillère près de l'assiette. Puis Olivier va au pain. Il apporte le pain à table.\npapa|Merci. Laver. Poser. Apporter. Ce sont des tâches sûres. Plus tard, maman arrive.\nnarrateur|Olivier se souvient. Il lave une feuille de salade. C'est encore une tâche sûre, avec un adulte.\nmaman|Tu as transféré le geste.\nnarrateur|Olivier reste avec papa. Ils préparent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Olivier aide papa. Que fait-il ?",
+      "script": "narrateur|Olivier aide papa. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Olivier a lavé la tomate. Il a posé la cuillère. Il a apporté le pain. Avec un adulte.",
+      "script": "narrateur|Olivier a lavé la tomate. Il a posé la cuillère. Il a apporté le pain. Avec un adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Olivier s'assoit. Il croque un morceau de pain. Papa est près de lui.",
+      "script": "narrateur|Olivier s'assoit. Il croque un morceau de pain. Papa est près de lui.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

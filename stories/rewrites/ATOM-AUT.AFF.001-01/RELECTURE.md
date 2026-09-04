@@ -1,9 +1,12 @@
-# ATOM-AUT.AFF.001-01 — Le pain et le sac d'Amir
+# ATOM-AUT.AFF.001-01 — Le four du village
 
-Relu : ouverture, désir, imprévu (doudou sur le lit), question, packing, chemin, fin. `chunk_id` / `kind` inchangés.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Amir veut sentir le pain du village tout près. Papa dit gourde, doudou, livre. Le doudou manque. Amir le cherche, ferme le sac bleu, marche. Le four est tiède.
+Amir veut le pain chaud. Doudou oublié, sangle coincée. Il agit, le sac ferme, le four est tiède.
+
+## Vu et corrigé
+Plus de liste gourde-doudou-livre. Fin sensorielle, pas mécanique.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

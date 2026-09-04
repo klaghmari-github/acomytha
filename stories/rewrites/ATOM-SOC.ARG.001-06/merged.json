@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-06",
+  "fil_rouge": "Au kiosque, Raphaël veut le crayon jaune. Le crayon roule. Il le rattrape. La pièce tombe dans le tiroir. Il dessine un soleil.",
+  "title": "Le crayon jaune de Raphaël",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Raphaël, maman",
+  "setting": "kiosque à journaux, gobelet de crayons, tiroir, table de la cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les journaux du kiosque sentent l'encre. Une pince à linge tient une une pliée. Le bois du comptoir est rêche, un peu gris. Un gobelet de crayons attend au bord. Maman range une pièce dans sa poche. Raphaël vit ici, avec maman. Maman, ça sent le papier ! Oui. Le kiosque est ouvert. Je veux un crayon, le jaune. Celui du gobelet ? Oui. En ce moment, Raphaël se hausse un peu. Le gobelet est trop près du bord. Il tend la main vers le jaune. Le crayon roule hors du gobelet. Il part sur le bois du comptoir. Il part ! Tu peux le rattraper. Raphaël pose la main, tout doux. Le crayon s'arrête contre ses doigts. Je l'ai. Oui. J'ai une pièce, pour le prendre. Maman tend la pièce. La pièce tombe dans le tiroir du kiosque. Le tiroir sonne, puis se ferme. Le crayon est à nous. Oui. Tu le tiens ? Oui, maman. Raphaël tient le crayon jaune. Le bois est lisse, un peu hexagonal. Ça sent le bois neuf, tout près. Il a une gomme au bout. Oui. Pour tes dessins, à la maison. Un journal claque un peu au vent. La pince à linge tient encore. Tu as fini de le sentir ? Encore un peu. Raphaël passe le crayon sous son nez. Le bois sent la mine, un peu. On rentre ? Oui.",
+      "script": "narrateur|Les journaux du kiosque sentent l'encre.\nnarrateur|Une pince à linge tient une une pliée.\nnarrateur|Le bois du comptoir est rêche, un peu gris.\nnarrateur|Un gobelet de crayons attend au bord.\nnarrateur|Maman range une pièce dans sa poche.\nnarrateur|Raphaël vit ici, avec maman.\nenfant-m|Maman, ça sent le papier !\nmaman|Oui.\nmaman|Le kiosque est ouvert.\nenfant-m|Je veux un crayon, le jaune.\nmaman|Celui du gobelet ?\nenfant-m|Oui.\nnarrateur|En ce moment, Raphaël se hausse un peu.\nnarrateur|Le gobelet est trop près du bord.\nnarrateur|Il tend la main vers le jaune.\nnarrateur|Le crayon roule hors du gobelet.\nnarrateur|Il part sur le bois du comptoir.\nenfant-m|Il part !\nmaman|Tu peux le rattraper.\nnarrateur|Raphaël pose la main, tout doux.\nnarrateur|Le crayon s'arrête contre ses doigts.\nenfant-m|Je l'ai.\nmaman|Oui.\nmaman|J'ai une pièce, pour le prendre.\nnarrateur|Maman tend la pièce.\nnarrateur|La pièce tombe dans le tiroir du kiosque.\nnarrateur|Le tiroir sonne, puis se ferme.\nenfant-m|Le crayon est à nous.\nmaman|Oui.\nmaman|Tu le tiens ?\nenfant-m|Oui, maman.\nnarrateur|Raphaël tient le crayon jaune.\nnarrateur|Le bois est lisse, un peu hexagonal.\nnarrateur|Ça sent le bois neuf, tout près.\nenfant-m|Il a une gomme au bout.\nmaman|Oui.\nmaman|Pour tes dessins, à la maison.\nnarrateur|Un journal claque un peu au vent.\nnarrateur|La pince à linge tient encore.\nmaman|Tu as fini de le sentir ?\nenfant-m|Encore un peu.\nnarrateur|Raphaël passe le crayon sous son nez.\nnarrateur|Le bois sent la mine, un peu.\nmaman|On rentre ?\nenfant-m|Oui.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les journaux du kiosque sentent l'encre. Une pince à linge tient une une pliée. Le bois du comptoir est rêche, un peu gris. Un gobelet de crayons attend au bord. Maman range une pièce dans sa poche. Raphaël vit ici, avec maman. Maman, ça sent le papier ! Oui. Le kiosque est ouvert. Je veux un crayon, le jaune. Celui du gobelet ? Oui. En ce moment, Raphaël se hausse un peu. Le gobelet est trop près du bord. Il tend la main vers le jaune. Le crayon roule hors du gobelet. Il part sur le bois du comptoir. Il part ! Tu peux le rattraper. Raphaël pose la main, tout doux. Le crayon s'arrête contre ses doigts. Je l'ai. Oui. J'ai une pièce, pour le prendre. Maman tend la pièce. La pièce tombe dans le tiroir du kiosque. Le tiroir sonne, puis se ferme. Le crayon est à nous. Oui. Tu le tiens ? Oui, maman. Raphaël tient le crayon jaune. Le bois est lisse, un peu hexagonal. Ça sent le bois neuf, tout près. Il a une gomme au bout. Oui. Pour tes dessins, à la maison. Un journal claque un peu au vent. La pince à linge tient encore. Tu as fini de le sentir ? Encore un peu. Raphaël passe le crayon sous son nez. Le bois sent la mine, un peu. On rentre ? Oui."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maman a donné une pièce. L'argent sert à quoi ?",
+      "script": "narrateur|Maman a donné une pièce.\nnarrateur|L'argent sert à quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Maman a donné une pièce. L'argent sert à quoi ?",
+      "expected_answer": "acheter",
+      "accepted_examples": "acheter | le crayon | prendre le crayon | la pièce | le tiroir",
+      "retry_prompt": "On prend le crayon. L'argent sert à quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le crayon jaune est dans la main de Raphaël. La gomme du bout est encore neuve. La pièce a servi à le prendre. Pour le crayon. Oui. On achète le crayon avec ça. Le tiroir du kiosque reste fermé. L'encre des journaux sent encore. La pièce est dans le tiroir. Et le crayon est avec toi. Bravo, Raphaël. Raphaël range le crayon dans sa poche. Le bois fait un petit bruit contre le tissu. Il ne roule plus. Il est à l'abri. On rentre dessiner ? Oui, maman. Le kiosque reste derrière, tout gris. La pince à linge tient encore la une. Tu as rattrapé le crayon. Tout doux.",
+      "script": "narrateur|Le crayon jaune est dans la main de Raphaël.\nnarrateur|La gomme du bout est encore neuve.\nmaman|La pièce a servi à le prendre.\nenfant-m|Pour le crayon.\nmaman|Oui.\nmaman|On achète le crayon avec ça.\nnarrateur|Le tiroir du kiosque reste fermé.\nnarrateur|L'encre des journaux sent encore.\nenfant-m|La pièce est dans le tiroir.\nmaman|Et le crayon est avec toi.\nmaman|Bravo, Raphaël.\nnarrateur|Raphaël range le crayon dans sa poche.\nnarrateur|Le bois fait un petit bruit contre le tissu.\nmaman|Il ne roule plus.\nenfant-m|Il est à l'abri.\nmaman|On rentre dessiner ?\nenfant-m|Oui, maman.\nnarrateur|Le kiosque reste derrière, tout gris.\nnarrateur|La pince à linge tient encore la une.\nmaman|Tu as rattrapé le crayon.\nenfant-m|Tout doux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le crayon jaune est dans la main de Raphaël. La gomme du bout est encore neuve. La pièce a servi à le prendre. Pour le crayon. Oui. On achète le crayon avec ça. Le tiroir du kiosque reste fermé. L'encre des journaux sent encore. La pièce est dans le tiroir. Et le crayon est avec toi. Bravo, Raphaël. Raphaël range le crayon dans sa poche. Le bois fait un petit bruit contre le tissu. Il ne roule plus. Il est à l'abri. On rentre dessiner ? Oui, maman. Le kiosque reste derrière, tout gris. La pince à linge tient encore la une. Tu as rattrapé le crayon. Tout doux."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La table de la cuisine est claire. Une feuille blanche attend. Tu sors le crayon ? Oui. Raphaël pose le crayon sur la feuille. Il dessine un soleil, tout rond. Il est jaune, comme le crayon. Oui. Merci d'avoir rattrapé le crayon. La mine laisse un trait doux. Ça sent encore un peu l'encre, sur ses doigts. Le kiosque sentait pareil. Oui. Le soleil a des rayons un peu croches. C'est le mien. Oui. La gomme du bout n'a pas encore servi.",
+      "script": "narrateur|La table de la cuisine est claire.\nnarrateur|Une feuille blanche attend.\nmaman|Tu sors le crayon ?\nenfant-m|Oui.\nnarrateur|Raphaël pose le crayon sur la feuille.\nnarrateur|Il dessine un soleil, tout rond.\nenfant-m|Il est jaune, comme le crayon.\nmaman|Oui.\nmaman|Merci d'avoir rattrapé le crayon.\nnarrateur|La mine laisse un trait doux.\nnarrateur|Ça sent encore un peu l'encre, sur ses doigts.\nenfant-m|Le kiosque sentait pareil.\nmaman|Oui.\nnarrateur|Le soleil a des rayons un peu croches.\nenfant-m|C'est le mien.\nmaman|Oui.\nnarrateur|La gomme du bout n'a pas encore servi.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La table de la cuisine est claire. Une feuille blanche attend. Tu sors le crayon ? Oui. Raphaël pose le crayon sur la feuille. Il dessine un soleil, tout rond. Il est jaune, comme le crayon. Oui. Merci d'avoir rattrapé le crayon. La mine laisse un trait doux. Ça sent encore un peu l'encre, sur ses doigts. Le kiosque sentait pareil. Oui. Le soleil a des rayons un peu croches. C'est le mien. Oui. La gomme du bout n'a pas encore servi."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le crayon a roulé. On l'a pris, avec la pièce. Bravo, Raphaël. Le soleil jaune sèche sur la feuille. Le crayon sent encore le bois neuf.",
+      "script": "enfant-m|Le crayon a roulé.\nenfant-m|On l'a pris, avec la pièce.\nmaman|Bravo, Raphaël.\nnarrateur|Le soleil jaune sèche sur la feuille.\nnarrateur|Le crayon sent encore le bois neuf.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le crayon a roulé. On l'a pris, avec la pièce. Bravo, Raphaël. Le soleil jaune sèche sur la feuille. Le crayon sent encore le bois neuf."
+    }
+  ]
+}

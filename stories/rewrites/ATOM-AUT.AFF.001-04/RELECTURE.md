@@ -1,9 +1,12 @@
-# ATOM-AUT.AFF.001-04 — Le dessin de Mila
+# ATOM-AUT.AFF.001-04 — Le bateau de Mila
 
-Relu : réveil, dessin, doudou dans la poche, chaussure sous le banc, chemin d'école, fin. `chunk_id` / `kind` inchangés.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Mila veut montrer son dessin. Maman dit gourde, goûter, doudou. Le doudou est dans le manteau. Une chaussure rouge se cache. Les chaussures tapent. L'école n'est plus loin.
+Mila veut le bateau. Doudou caché, loquet coincé. Elle agit. Sel, bois, flot.
+
+## Vu et corrigé
+Pas de liste d'objets en refrain.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

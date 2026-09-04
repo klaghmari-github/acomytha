@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SEC.RUE.002-09",
+  "fil_rouge": "Victorina veut une fraise dans la cagette rouge. Une pêche roule. Au bord, elle attend le feu vert, la main dans la main. Puis le jus sucré.",
+  "title": "La cagette rouge",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Victorina, maman",
+  "setting": "trottoir vers le marché, cagettes au soleil",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le bois des cagettes craque sous le soleil. Les fraises brillent, toutes rouges. Ça sent le sucré et le bois chaud. Une pêche ronde dort tout au bord. Le marché chante un peu plus loin. Victorina vit ici, avec maman. Maman, les fraises brillent ! Oui. Elles sentent le soleil. Tu as vu la cagette rouge ? Elle est trop belle. En ce moment, Victorina tend la main. La main de maman est douce. Elles marchent sur le trottoir. Le bois des cagettes craque encore. Je veux une fraise ! Bientôt. On reste sur le trottoir. Une pêche roule tout doux. Elle s'arrête près d'une caisse. La pêche ! On la verra après. Le bord du trottoir arrive. Une petite lumière rouge attend. On s'arrête. On attend le feu vert. Tu donnes la main ? Victorina serre la main. Ses pieds restent sur le trottoir. J'attends. Bravo. Une abeille tourne au-dessus des fruits. Les fraises sentent plus fort. Elle bourdonne ! Oui. On attend encore ? Oui, maman. La lumière reste rouge un peu. Victorina sent le sucré tout près. Tu tiens bien ma main ? Oui. Puis la lumière devient verte. Feu vert. On avance avec maman. Elles avancent ensemble, tout doux. Victorina garde la main. La cagette rouge est tout près. Ça sent trop bon ! Merci d'avoir attendu. Le bois chaud craque encore.",
+      "script": "narrateur|Le bois des cagettes craque sous le soleil.\nnarrateur|Les fraises brillent, toutes rouges.\nnarrateur|Ça sent le sucré et le bois chaud.\nnarrateur|Une pêche ronde dort tout au bord.\nnarrateur|Le marché chante un peu plus loin.\nnarrateur|Victorina vit ici, avec maman.\nenfant-f|Maman, les fraises brillent !\nmaman|Oui.\nmaman|Elles sentent le soleil.\nmaman|Tu as vu la cagette rouge ?\nenfant-f|Elle est trop belle.\nnarrateur|En ce moment, Victorina tend la main.\nnarrateur|La main de maman est douce.\nnarrateur|Elles marchent sur le trottoir.\nnarrateur|Le bois des cagettes craque encore.\nenfant-f|Je veux une fraise !\nmaman|Bientôt.\nmaman|On reste sur le trottoir.\nnarrateur|Une pêche roule tout doux.\nnarrateur|Elle s'arrête près d'une caisse.\nenfant-f|La pêche !\nmaman|On la verra après.\nnarrateur|Le bord du trottoir arrive.\nnarrateur|Une petite lumière rouge attend.\nmaman|On s'arrête.\nmaman|On attend le feu vert.\nmaman|Tu donnes la main ?\nnarrateur|Victorina serre la main.\nnarrateur|Ses pieds restent sur le trottoir.\nenfant-f|J'attends.\nmaman|Bravo.\nnarrateur|Une abeille tourne au-dessus des fruits.\nnarrateur|Les fraises sentent plus fort.\nenfant-f|Elle bourdonne !\nmaman|Oui.\nmaman|On attend encore ?\nenfant-f|Oui, maman.\nnarrateur|La lumière reste rouge un peu.\nnarrateur|Victorina sent le sucré tout près.\nmaman|Tu tiens bien ma main ?\nenfant-f|Oui.\nnarrateur|Puis la lumière devient verte.\nmaman|Feu vert.\nmaman|On avance avec maman.\nnarrateur|Elles avancent ensemble, tout doux.\nnarrateur|Victorina garde la main.\nnarrateur|La cagette rouge est tout près.\nenfant-f|Ça sent trop bon !\nmaman|Merci d'avoir attendu.\nnarrateur|Le bois chaud craque encore.",
+      "sons": "marche",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Le bois des cagettes craque sous le soleil. Les fraises brillent, toutes rouges. Ça sent le sucré et le bois chaud. Une pêche ronde dort tout au bord. Le marché chante un peu plus loin. Victorina vit ici, avec maman. Maman, les fraises brillent ! Oui. Elles sentent le soleil. Tu as vu la cagette rouge ? Elle est trop belle. En ce moment, Victorina tend la main. La main de maman est douce. Elles marchent sur le trottoir. Le bois des cagettes craque encore. Je veux une fraise ! Bientôt. On reste sur le trottoir. Une pêche roule tout doux. Elle s'arrête près d'une caisse. La pêche ! On la verra après. Le bord du trottoir arrive. Une petite lumière rouge attend. On s'arrête. On attend le feu vert. Tu donnes la main ? Victorina serre la main. Ses pieds restent sur le trottoir. J'attends. Bravo. Une abeille tourne au-dessus des fruits. Les fraises sentent plus fort. Elle bourdonne ! Oui. On attend encore ? Oui, maman. La lumière reste rouge un peu. Victorina sent le sucré tout près. Tu tiens bien ma main ? Oui. Puis la lumière devient verte. Feu vert. On avance avec maman. Elles avancent ensemble, tout doux. Victorina garde la main. La cagette rouge est tout près. Ça sent trop bon ! Merci d'avoir attendu. Le bois chaud craque encore."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Victorina est avec maman. Que fait-elle ?",
+      "script": "narrateur|Victorina est avec maman.\nnarrateur|Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Victorina est avec maman. Que fait-elle ?",
+      "expected_answer": "attendre le feu vert",
+      "accepted_examples": "attendre | feu vert | la main | avec maman | elle attend | donner la main",
+      "retry_prompt": "Elle attend le feu vert. Que fait Victorina ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Victorina a donné la main. Elle a attendu le feu vert. Ses pieds sont restés au bord. Tu as attendu le feu vert ? Oui. J'ai donné la main. Bravo, Victorina. On avance avec maman. La main de maman reste douce. Les fraises brillent plus fort. La pêche dort encore près de la caisse.",
+      "script": "narrateur|Victorina a donné la main.\nnarrateur|Elle a attendu le feu vert.\nnarrateur|Ses pieds sont restés au bord.\nmaman|Tu as attendu le feu vert ?\nenfant-f|Oui.\nenfant-f|J'ai donné la main.\nmaman|Bravo, Victorina.\nmaman|On avance avec maman.\nnarrateur|La main de maman reste douce.\nnarrateur|Les fraises brillent plus fort.\nnarrateur|La pêche dort encore près de la caisse.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Victorina a donné la main. Elle a attendu le feu vert. Ses pieds sont restés au bord. Tu as attendu le feu vert ? Oui. J'ai donné la main. Bravo, Victorina. On avance avec maman. La main de maman reste douce. Les fraises brillent plus fort. La pêche dort encore près de la caisse."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maman parle à l'étal. Tu prends une fraise ? Victorina tient une fraise tiède. Elle est sucrée ! Oui. Tu as bien attendu. Le jus brille un peu au coin des lèvres. Le bois de la cagette est rêche. Et la pêche ? Elle reste à l'étal. Elles tiennent encore la main. Le marché sent le sucré et le thym. Une cagette vide sonne tout creux. Elle fait toc ! Oui. Et toi, tu as gardé la main. Victorina lèche un doigt rouge. Le soleil chauffe encore le bois.",
+      "script": "narrateur|Maman parle à l'étal.\nmaman|Tu prends une fraise ?\nnarrateur|Victorina tient une fraise tiède.\nenfant-f|Elle est sucrée !\nmaman|Oui.\nmaman|Tu as bien attendu.\nnarrateur|Le jus brille un peu au coin des lèvres.\nnarrateur|Le bois de la cagette est rêche.\nenfant-f|Et la pêche ?\nmaman|Elle reste à l'étal.\nnarrateur|Elles tiennent encore la main.\nnarrateur|Le marché sent le sucré et le thym.\nnarrateur|Une cagette vide sonne tout creux.\nenfant-f|Elle fait toc !\nmaman|Oui.\nmaman|Et toi, tu as gardé la main.\nnarrateur|Victorina lèche un doigt rouge.\nnarrateur|Le soleil chauffe encore le bois.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman parle à l'étal. Tu prends une fraise ? Victorina tient une fraise tiède. Elle est sucrée ! Oui. Tu as bien attendu. Le jus brille un peu au coin des lèvres. Le bois de la cagette est rêche. Et la pêche ? Elle reste à l'étal. Elles tiennent encore la main. Le marché sent le sucré et le thym. Une cagette vide sonne tout creux. Elle fait toc ! Oui. Et toi, tu as gardé la main. Victorina lèche un doigt rouge. Le soleil chauffe encore le bois."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La fraise sent le soleil. Oui. Merci d'être restée près. Une abeille s'éloigne. La cagette rouge reste pleine. Le jus de fraise brille sur ses doigts.",
+      "script": "enfant-f|La fraise sent le soleil.\nmaman|Oui.\nmaman|Merci d'être restée près.\nnarrateur|Une abeille s'éloigne.\nnarrateur|La cagette rouge reste pleine.\nnarrateur|Le jus de fraise brille sur ses doigts.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La fraise sent le soleil. Oui. Merci d'être restée près. Une abeille s'éloigne. La cagette rouge reste pleine. Le jus de fraise brille sur ses doigts."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.CUI.001-02",
+  "fil_rouge": "",
+  "title": "Ava prépare le dîner avec papa",
+  "lesson_id": "SOC.CUI.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Ava, papa",
+  "setting": "cuisine",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Le soir, Ava entre dans la cuisine. Papa met la nappe. Je peux aider ? Oui. Une tâche sûre, avec un adulte. Papa, c'est l'adulte. Ava ouvre le robinet. Elle lave une tomate rouge. L'eau coule. La peau brille. Alors la tomate est propre. Ava l'essuie. Papa pose les assiettes. Ava prend une cuillère. Elle pose la cuillère près de chaque assiette. Alors chacun a sa cuillère. Ava va au panier. Elle apporte le pain. Elle le pose au milieu. Alors le pain est à table. Merci. Laver, poser, apporter. Ava reste près de papa. Ensemble, ils appellent maman.",
+      "script": "narrateur|Le soir, Ava entre dans la cuisine. Papa met la nappe.\nenfant-f|Je peux aider ?\npapa|Oui.\nnarrateur|Une tâche sûre, avec un adulte. Papa, c'est l'adulte. Ava ouvre le robinet. Elle lave une tomate rouge. L'eau coule. La peau brille. Alors la tomate est propre. Ava l'essuie. Papa pose les assiettes. Ava prend une cuillère. Elle pose la cuillère près de chaque assiette. Alors chacun a sa cuillère. Ava va au panier. Elle apporte le pain. Elle le pose au milieu. Alors le pain est à table.\npapa|Merci. Laver, poser, apporter.\nnarrateur|Ava reste près de papa. Ensemble, ils appellent maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Ava prépare avec papa. Que fait-elle ?",
+      "script": "narrateur|Ava prépare avec papa. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Ava a lavé la tomate. Elle a posé les cuillères. Elle a apporté le pain. Avec papa. Une tâche sûre.",
+      "script": "narrateur|Ava a lavé la tomate. Elle a posé les cuillères. Elle a apporté le pain. Avec papa. Une tâche sûre.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Toute la famille s'assoit. Ava croque la tomate. Elle est fraîche.",
+      "script": "narrateur|Toute la famille s'assoit. Ava croque la tomate. Elle est fraîche.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

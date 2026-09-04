@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.002-09",
+  "fil_rouge": "",
+  "title": "Constance attend le feu vert au marché",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Constance, maman",
+  "setting": "trajet vers le marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Constance va au marché. Elle marche avec maman. Maman est l'adulte. Elles arrivent au bord. Constance donne la main. La main est dans la main. Les pieds restent sur le trottoir. Elles restent sur le trottoir en attendant. On attend le feu vert. Constance sent la main de maman. Elle regarde maman. Le feu est vert. Feu vert. On avance avec l'adulte. Constance tient la main. Elles marchent ensemble. Les fruits sentent le sucré. Merci maman.",
+      "script": "narrateur|Constance va au marché. Elle marche avec maman. Maman est l'adulte. Elles arrivent au bord. Constance donne la main. La main est dans la main. Les pieds restent sur le trottoir. Elles restent sur le trottoir en attendant.\nmaman|On attend le feu vert.\nnarrateur|Constance sent la main de maman. Elle regarde maman. Le feu est vert.\nmaman|Feu vert. On avance avec l'adulte.\nnarrateur|Constance tient la main. Elles marchent ensemble. Les fruits sentent le sucré.\nenfant-f|Merci maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Constance est avec maman. Que fait-elle ?",
+      "script": "narrateur|Constance est avec maman. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Constance a donné la main. Elle a attendu le feu vert. Maman, l'adulte, était là.",
+      "script": "narrateur|Constance a donné la main. Elle a attendu le feu vert. Maman, l'adulte, était là.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Constance serre la main de maman. Elles tiennent un sac de pommes.",
+      "script": "narrateur|Constance serre la main de maman. Elles tiennent un sac de pommes.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

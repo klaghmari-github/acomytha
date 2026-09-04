@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-02",
+  "fil_rouge": "",
+  "title": "Iris près de maman",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Iris, maman",
+  "setting": "rue du marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Iris sort avec maman. Elles vont au marché. La rue sent le pain chaud. Iris reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Les pieds d'Iris marchent à côté. Près de moi. Iris sent le manteau. Le manteau est chaud. La main de maman est douce. Elles passent les étals. Iris sent les fraises. Elle reste près de l'adulte. Les pieds restent près. La main tient le manteau. Parce qu'elle reste près, maman la guide. Iris marche à côté. Main ou manteau. Maman achète une poire. Iris garde la main. Elles rentrent près l'une de l'autre.",
+      "script": "narrateur|Iris sort avec maman. Elles vont au marché. La rue sent le pain chaud. Iris reste près de l'adulte. Elle prend la main de maman. Elle tient aussi le manteau. Main ou manteau. Les pieds d'Iris marchent à côté.\nmaman|Près de moi.\nnarrateur|Iris sent le manteau. Le manteau est chaud. La main de maman est douce. Elles passent les étals. Iris sent les fraises. Elle reste près de l'adulte. Les pieds restent près. La main tient le manteau. Parce qu'elle reste près, maman la guide. Iris marche à côté. Main ou manteau. Maman achète une poire. Iris garde la main. Elles rentrent près l'une de l'autre.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Iris marche dans la rue. Où est-elle ?",
+      "script": "narrateur|Iris marche dans la rue. Où est-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Iris est près de maman. La main tient le manteau. Maman est là.",
+      "script": "narrateur|Iris est près de maman. La main tient le manteau. Maman est là.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Iris garde la main de maman. Elles rentrent à la maison.",
+      "script": "narrateur|Iris garde la main de maman. Elles rentrent à la maison.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

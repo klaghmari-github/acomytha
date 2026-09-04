@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-07",
+  "fil_rouge": "",
+  "title": "Roxane demande pour un cahier",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Roxane, papa",
+  "setting": "papeterie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Roxane est à la papeterie avec papa. Elle voit un cahier. Elle a envie. L'argent se range. Roxane ne le prend pas. Elle va demander à papa. Papa, c'est l'adulte. S'il te plaît, ce cahier ? Papa écoute. Il dit oui. Il paie. Roxane dit merci. On demande à l'adulte.",
+      "script": "narrateur|Roxane est à la papeterie avec papa. Elle voit un cahier. Elle a envie. L'argent se range. Roxane ne le prend pas. Elle va demander à papa. Papa, c'est l'adulte.\nenfant-f|S'il te plaît, ce cahier ? Papa écoute. Il dit oui. Il paie.\nnarrateur|Roxane dit merci. On demande à l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Roxane veut un cahier. Que fait-elle ?",
+      "script": "narrateur|Roxane veut un cahier. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Roxane a demandé à l'adulte. Papa a écouté.",
+      "script": "narrateur|Roxane a demandé à l'adulte. Papa a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils sortent. Roxane tient le cahier.",
+      "script": "narrateur|Ils sortent. Roxane tient le cahier.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

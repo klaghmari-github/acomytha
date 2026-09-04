@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-07",
+  "fil_rouge": "Raphaël veut un cahier bleu. Il tend la main. Papa attend. Il demande. Puis il demande une gomme. Les deux sont à lui.",
+  "title": "Le cahier bleu de Raphaël",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Raphaël, papa",
+  "setting": "papeterie, piles de cahiers, bac à gommes",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les cahiers bleus sentent l'encre froide. Ils sont empilés, bien droits. Le sol de bois craque un peu. Une pile de feuilles penche un peu. Papa pousse la porte. Une clochette fait un ding bas. Les cahiers ! Oui. On en prend un, pour dessiner. Raphaël passe près d'un bac à crayons. Les bouts pointent comme des toits. Tu as vu le bleu ? Oui. Il brille. Un cahier rouge est trop loin. Le bleu, papa. En ce moment, Raphaël touche un cahier. La couverture est lisse, d'un bleu profond. Celui-là. Il est bleu. Raphaël tire le cahier de la pile. La pile penche un peu. Papa ne sort pas l'argent. Raphaël. Tu me demandes ? Le cahier reste dans ses mains, encore. Oh. Il repose le cahier sur la pile. On achète si tu demandes. Tu te souviens ? Je peux demander. Tu me dis s'il te plaît ? Oui, papa. Le bleu attend sur le bois.",
+      "script": "narrateur|Les cahiers bleus sentent l'encre froide.\nnarrateur|Ils sont empilés, bien droits.\nnarrateur|Le sol de bois craque un peu.\nnarrateur|Une pile de feuilles penche un peu.\nnarrateur|Papa pousse la porte.\nnarrateur|Une clochette fait un ding bas.\nenfant-m|Les cahiers !\npapa|Oui.\npapa|On en prend un, pour dessiner.\nnarrateur|Raphaël passe près d'un bac à crayons.\nnarrateur|Les bouts pointent comme des toits.\npapa|Tu as vu le bleu ?\nenfant-m|Oui.\nenfant-m|Il brille.\nnarrateur|Un cahier rouge est trop loin.\nenfant-m|Le bleu, papa.\nnarrateur|En ce moment, Raphaël touche un cahier.\nnarrateur|La couverture est lisse, d'un bleu profond.\nenfant-m|Celui-là.\nenfant-m|Il est bleu.\nnarrateur|Raphaël tire le cahier de la pile.\nnarrateur|La pile penche un peu.\nnarrateur|Papa ne sort pas l'argent.\npapa|Raphaël.\npapa|Tu me demandes ?\nnarrateur|Le cahier reste dans ses mains, encore.\nenfant-m|Oh.\nnarrateur|Il repose le cahier sur la pile.\npapa|On achète si tu demandes.\npapa|Tu te souviens ?\nenfant-m|Je peux demander.\npapa|Tu me dis s'il te plaît ?\nenfant-m|Oui, papa.\nnarrateur|Le bleu attend sur le bois.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les cahiers bleus sentent l'encre froide. Ils sont empilés, bien droits. Le sol de bois craque un peu. Une pile de feuilles penche un peu. Papa pousse la porte. Une clochette fait un ding bas. Les cahiers ! Oui. On en prend un, pour dessiner. Raphaël passe près d'un bac à crayons. Les bouts pointent comme des toits. Tu as vu le bleu ? Oui. Il brille. Un cahier rouge est trop loin. Le bleu, papa. En ce moment, Raphaël touche un cahier. La couverture est lisse, d'un bleu profond. Celui-là. Il est bleu. Raphaël tire le cahier de la pile. La pile penche un peu. Papa ne sort pas l'argent. Raphaël. Tu me demandes ? Le cahier reste dans ses mains, encore. Oh. Il repose le cahier sur la pile. On achète si tu demandes. Tu te souviens ? Je peux demander. Tu me dis s'il te plaît ? Oui, papa. Le bleu attend sur le bois."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Raphaël veut le cahier bleu. Que fait-il ?",
+      "script": "narrateur|Raphaël veut le cahier bleu.\nnarrateur|Que fait-il ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Raphaël veut le cahier bleu. Que fait-il ?",
+      "expected_answer": "demander",
+      "accepted_examples": "demander | il demande | à papa | s'il te plaît",
+      "retry_prompt": "Il demande à papa. Que fait Raphaël ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa, s'il te plaît. Je peux avoir ce cahier ? Oui. Merci, Raphaël. Tu as demandé. Papa pose l'argent sur le comptoir. On lui tend le cahier bleu. Raphaël le serre sous le bras. Plus loin, un bac tient des gommes. Une gomme blanche a roulé au bord. Papa. La gomme aussi, s'il te plaît ? Tu demandes encore. Oui. On prend la gomme. Papa ajoute une pièce. Raphaël prend la gomme. Elle est souple, un peu rêche. J'ai les deux. Parce que tu as demandé. Tu tiens bien tout ? Oui, papa. Le bac à gommes a un trou blanc.",
+      "script": "enfant-m|Papa, s'il te plaît.\nenfant-m|Je peux avoir ce cahier ?\npapa|Oui.\npapa|Merci, Raphaël.\npapa|Tu as demandé.\nnarrateur|Papa pose l'argent sur le comptoir.\nnarrateur|On lui tend le cahier bleu.\nnarrateur|Raphaël le serre sous le bras.\nnarrateur|Plus loin, un bac tient des gommes.\nnarrateur|Une gomme blanche a roulé au bord.\nenfant-m|Papa.\nenfant-m|La gomme aussi, s'il te plaît ?\npapa|Tu demandes encore.\npapa|Oui.\npapa|On prend la gomme.\nnarrateur|Papa ajoute une pièce.\nnarrateur|Raphaël prend la gomme.\nnarrateur|Elle est souple, un peu rêche.\nenfant-m|J'ai les deux.\npapa|Parce que tu as demandé.\npapa|Tu tiens bien tout ?\nenfant-m|Oui, papa.\nnarrateur|Le bac à gommes a un trou blanc.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Papa, s'il te plaît. Je peux avoir ce cahier ? Oui. Merci, Raphaël. Tu as demandé. Papa pose l'argent sur le comptoir. On lui tend le cahier bleu. Raphaël le serre sous le bras. Plus loin, un bac tient des gommes. Une gomme blanche a roulé au bord. Papa. La gomme aussi, s'il te plaît ? Tu demandes encore. Oui. On prend la gomme. Papa ajoute une pièce. Raphaël prend la gomme. Elle est souple, un peu rêche. J'ai les deux. Parce que tu as demandé. Tu tiens bien tout ? Oui, papa. Le bac à gommes a un trou blanc."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils sortent. La clochette dingue derrière eux. Raphaël a le cahier sous le bras. La gomme est dans l'autre main. On dessinera à la maison ? Oui. Et je gommerai. Tu as demandé deux fois. Bravo. La rue sent encore le papier. Le cahier tape un peu sa hanche. La gomme reste chaude dans sa paume. Tu as les deux. Le cahier et la gomme.",
+      "script": "narrateur|Ils sortent.\nnarrateur|La clochette dingue derrière eux.\nnarrateur|Raphaël a le cahier sous le bras.\nnarrateur|La gomme est dans l'autre main.\npapa|On dessinera à la maison ?\nenfant-m|Oui.\nenfant-m|Et je gommerai.\npapa|Tu as demandé deux fois.\npapa|Bravo.\nnarrateur|La rue sent encore le papier.\nnarrateur|Le cahier tape un peu sa hanche.\nnarrateur|La gomme reste chaude dans sa paume.\npapa|Tu as les deux.\nenfant-m|Le cahier et la gomme.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils sortent. La clochette dingue derrière eux. Raphaël a le cahier sous le bras. La gomme est dans l'autre main. On dessinera à la maison ? Oui. Et je gommerai. Tu as demandé deux fois. Bravo. La rue sent encore le papier. Le cahier tape un peu sa hanche. La gomme reste chaude dans sa paume. Tu as les deux. Le cahier et la gomme."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "À la table, Raphaël ouvre le cahier. La première page est blanche, un peu rêche. Il pose la gomme à côté. Je peux dessiner. Oui. Tu as le cahier dans les mains. Raphaël pose la paume sur le bleu. Il trace un petit bateau, tout simple. La voile est bleue. Comme le cahier. La gomme sent encore le caoutchouc neuf.",
+      "script": "narrateur|À la table, Raphaël ouvre le cahier.\nnarrateur|La première page est blanche, un peu rêche.\nnarrateur|Il pose la gomme à côté.\nenfant-m|Je peux dessiner.\npapa|Oui.\npapa|Tu as le cahier dans les mains.\nnarrateur|Raphaël pose la paume sur le bleu.\nnarrateur|Il trace un petit bateau, tout simple.\nenfant-m|La voile est bleue.\npapa|Comme le cahier.\nnarrateur|La gomme sent encore le caoutchouc neuf.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "À la table, Raphaël ouvre le cahier. La première page est blanche, un peu rêche. Il pose la gomme à côté. Je peux dessiner. Oui. Tu as le cahier dans les mains. Raphaël pose la paume sur le bleu. Il trace un petit bateau, tout simple. La voile est bleue. Comme le cahier. La gomme sent encore le caoutchouc neuf."
+    }
+  ]
+}

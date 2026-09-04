@@ -1,9 +1,12 @@
-# ATOM-AUT.AFF.001-08 — Le château de Victorina
+# ATOM-AUT.AFF.001-08 — Le château de la rive
 
-Relu : robinet, seau mouillé, hésitation, packing, bottes, premier mur de sable, fin. `chunk_id` / `kind` inchangés.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Victorina veut un château. Papa dit gourde et seau. Une goutte tombe. Elle essuie, met le seau, arrive au bac. Un petit mur tient.
+Victorina veut le château. Seau mouillé, hésitation, essuyage. Elle agit. Mur, fleuve, sable.
+
+## Vu et corrigé
+Pas de refrain gourde-seau. Fin = le château.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

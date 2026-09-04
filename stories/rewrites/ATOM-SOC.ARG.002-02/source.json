@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-02",
+  "fil_rouge": "",
+  "title": "Maya demande pour un achat",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Maya, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Maya marche au marché avec papa. Elle sent le pain chaud. Les étals sont colorés. Elle voit un moulinet. Maya a envie. L'argent se range. Il est dans la poche de papa. Papa est l'adulte. Je peux demander. Elle demande à papa. Papa écoute. Parce qu'elle a demandé, papa peut répondre. Aujourd'hui, le pain. Le moulinet attend. Maya hoche la tête. Elle tient la main de papa. Ils achètent le pain. Le pain est chaud. Maya dit merci. Demander à l'adulte, c'est la règle.",
+      "script": "narrateur|Maya marche au marché avec papa. Elle sent le pain chaud. Les étals sont colorés. Elle voit un moulinet. Maya a envie. L'argent se range. Il est dans la poche de papa. Papa est l'adulte.\nenfant-f|Je peux demander. Elle demande à papa. Papa écoute. Parce qu'elle a demandé, papa peut répondre.\npapa|Aujourd'hui, le pain.\nnarrateur|Le moulinet attend. Maya hoche la tête. Elle tient la main de papa. Ils achètent le pain. Le pain est chaud. Maya dit merci. Demander à l'adulte, c'est la règle.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Maya veut un moulinet. Que fait-elle ?",
+      "script": "narrateur|Maya veut un moulinet. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maya a su demander. Papa, l'adulte, a écouté. L'argent est resté rangé.",
+      "script": "narrateur|Maya a su demander. Papa, l'adulte, a écouté. L'argent est resté rangé.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Maya porte le pain. Papa tient sa main. Ils rentrent.",
+      "script": "narrateur|Maya porte le pain. Papa tient sa main. Ils rentrent.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

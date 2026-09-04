@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-03",
+  "fil_rouge": "Mila veut une pêche au stand. Elle tend la main. Papa attend. Elle demande. La pêche est à elle.",
+  "title": "La pêche de Mila",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "stand de fruits, caisses en bois, soleil",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Les pêches brillent dans la caisse. Le bois est chaud. Ça sent le sucre. Une abeille tourne tout près. Papa tient le cabas. Mila marche à côté. Le sol est un peu poudreux. Une feuille colle à sa chaussure. Une caisse de prunes est plus loin. Les prunes sont sombres, toutes lisses. Un parasol fait une ombre ronde. Mila entre dans l'ombre. Tu as vu les fruits ? Oui. Ils brillent. Ça sent bon, tu vois ? Oui, papa. Un grain de sable colle au bois. En ce moment, Mila s'arrête. Elle voit une pêche. La pêche est ronde. Elle est jaune et rose. Je la veux. Mila tend la main. Ses doigts touchent le duvet. Papa ne bouge pas. Mila. Tu demandes ? La main s'arrête. La pêche reste dans la caisse. Oh. On achète si tu demandes. Je peux demander. Tu me dis s'il te plaît ? Oui, papa. L'abeille s'éloigne. Une autre pêche roule un peu. Le duvet de la pêche brille.",
+      "script": "narrateur|Les pêches brillent dans la caisse.\nnarrateur|Le bois est chaud.\nnarrateur|Ça sent le sucre.\nnarrateur|Une abeille tourne tout près.\nnarrateur|Papa tient le cabas.\nnarrateur|Mila marche à côté.\nnarrateur|Le sol est un peu poudreux.\nnarrateur|Une feuille colle à sa chaussure.\nnarrateur|Une caisse de prunes est plus loin.\nnarrateur|Les prunes sont sombres, toutes lisses.\nnarrateur|Un parasol fait une ombre ronde.\nnarrateur|Mila entre dans l'ombre.\npapa|Tu as vu les fruits ?\nenfant-f|Oui.\nenfant-f|Ils brillent.\npapa|Ça sent bon, tu vois ?\nenfant-f|Oui, papa.\nnarrateur|Un grain de sable colle au bois.\nnarrateur|En ce moment, Mila s'arrête.\nnarrateur|Elle voit une pêche.\nnarrateur|La pêche est ronde.\nnarrateur|Elle est jaune et rose.\nenfant-f|Je la veux.\nnarrateur|Mila tend la main.\nnarrateur|Ses doigts touchent le duvet.\nnarrateur|Papa ne bouge pas.\npapa|Mila.\npapa|Tu demandes ?\nnarrateur|La main s'arrête.\nnarrateur|La pêche reste dans la caisse.\nenfant-f|Oh.\npapa|On achète si tu demandes.\nenfant-f|Je peux demander.\npapa|Tu me dis s'il te plaît ?\nenfant-f|Oui, papa.\nnarrateur|L'abeille s'éloigne.\nnarrateur|Une autre pêche roule un peu.\nnarrateur|Le duvet de la pêche brille.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Les pêches brillent dans la caisse. Le bois est chaud. Ça sent le sucre. Une abeille tourne tout près. Papa tient le cabas. Mila marche à côté. Le sol est un peu poudreux. Une feuille colle à sa chaussure. Une caisse de prunes est plus loin. Les prunes sont sombres, toutes lisses. Un parasol fait une ombre ronde. Mila entre dans l'ombre. Tu as vu les fruits ? Oui. Ils brillent. Ça sent bon, tu vois ? Oui, papa. Un grain de sable colle au bois. En ce moment, Mila s'arrête. Elle voit une pêche. La pêche est ronde. Elle est jaune et rose. Je la veux. Mila tend la main. Ses doigts touchent le duvet. Papa ne bouge pas. Mila. Tu demandes ? La main s'arrête. La pêche reste dans la caisse. Oh. On achète si tu demandes. Je peux demander. Tu me dis s'il te plaît ? Oui, papa. L'abeille s'éloigne. Une autre pêche roule un peu. Le duvet de la pêche brille."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Mila veut la pêche. Que fait-elle ?",
+      "script": "narrateur|Mila veut la pêche.\nnarrateur|Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Mila veut la pêche. Que fait-elle ?",
+      "expected_answer": "demander",
+      "accepted_examples": "demander | elle demande | à papa | s'il te plaît",
+      "retry_prompt": "Elle demande à papa. Que fait Mila ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Papa, s'il te plaît. Je peux avoir la pêche ? Oui. Merci, Mila. Tu as demandé. Papa pose l'argent. On lui tend la pêche. Mila la prend. Elle est douce, un peu chaude. Elle est à moi. Oui. Parce que tu as demandé. Tu la tiens bien ? Oui, papa. Le cabas reste ouvert. Mila garde la pêche. Elle la tourne dans sa paume. Le rose est plus chaud que le jaune. Elle est mûre. Elle est douce. Un peu de duvet reste au doigt.",
+      "script": "enfant-f|Papa, s'il te plaît.\nenfant-f|Je peux avoir la pêche ?\npapa|Oui.\npapa|Merci, Mila.\npapa|Tu as demandé.\nnarrateur|Papa pose l'argent.\nnarrateur|On lui tend la pêche.\nnarrateur|Mila la prend.\nnarrateur|Elle est douce, un peu chaude.\nenfant-f|Elle est à moi.\npapa|Oui.\npapa|Parce que tu as demandé.\npapa|Tu la tiens bien ?\nenfant-f|Oui, papa.\nnarrateur|Le cabas reste ouvert.\nnarrateur|Mila garde la pêche.\nnarrateur|Elle la tourne dans sa paume.\nnarrateur|Le rose est plus chaud que le jaune.\npapa|Elle est mûre.\nenfant-f|Elle est douce.\nnarrateur|Un peu de duvet reste au doigt.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Papa, s'il te plaît. Je peux avoir la pêche ? Oui. Merci, Mila. Tu as demandé. Papa pose l'argent. On lui tend la pêche. Mila la prend. Elle est douce, un peu chaude. Elle est à moi. Oui. Parce que tu as demandé. Tu la tiens bien ? Oui, papa. Le cabas reste ouvert. Mila garde la pêche. Elle la tourne dans sa paume. Le rose est plus chaud que le jaune. Elle est mûre. Elle est douce. Un peu de duvet reste au doigt."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils quittent le stand. Le bois craque un peu. Mila marche avec la pêche. Le duvet chatouille sa paume. On rentre ? Oui. Avec la pêche. La rue sent encore le sucre. Une feuille tourne. Tu as demandé. Bravo. Mila serre la pêche. Elle la sent encore. Ça sent le soleil. Papa prend sa main libre. Je tiens la pêche. Oui. Ils passent près d'une flaque.",
+      "script": "narrateur|Ils quittent le stand.\nnarrateur|Le bois craque un peu.\nnarrateur|Mila marche avec la pêche.\nnarrateur|Le duvet chatouille sa paume.\npapa|On rentre ?\nenfant-f|Oui.\nenfant-f|Avec la pêche.\nnarrateur|La rue sent encore le sucre.\nnarrateur|Une feuille tourne.\npapa|Tu as demandé.\npapa|Bravo.\nnarrateur|Mila serre la pêche.\nnarrateur|Elle la sent encore.\nnarrateur|Ça sent le soleil.\nnarrateur|Papa prend sa main libre.\nenfant-f|Je tiens la pêche.\npapa|Oui.\nnarrateur|Ils passent près d'une flaque.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils quittent le stand. Le bois craque un peu. Mila marche avec la pêche. Le duvet chatouille sa paume. On rentre ? Oui. Avec la pêche. La rue sent encore le sucre. Une feuille tourne. Tu as demandé. Bravo. Mila serre la pêche. Elle la sent encore. Ça sent le soleil. Papa prend sa main libre. Je tiens la pêche. Oui. Ils passent près d'une flaque."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "À la maison, Mila s'assoit. Elle croque la pêche. Le jus est sucré. Il brille sur son menton. Elle est bonne. Oui. Tu l'as dans les mains. Mila tient le noyau. Il est lisse et chaud. Elle le pose près du cabas. Il reste. Oui. Le cœur de la pêche. Mila essuie son menton. Le jus de pêche brille sur son menton.",
+      "script": "narrateur|À la maison, Mila s'assoit.\nnarrateur|Elle croque la pêche.\nnarrateur|Le jus est sucré.\nnarrateur|Il brille sur son menton.\nenfant-f|Elle est bonne.\npapa|Oui.\npapa|Tu l'as dans les mains.\nnarrateur|Mila tient le noyau.\nnarrateur|Il est lisse et chaud.\nnarrateur|Elle le pose près du cabas.\nenfant-f|Il reste.\npapa|Oui.\npapa|Le cœur de la pêche.\nnarrateur|Mila essuie son menton.\nnarrateur|Le jus de pêche brille sur son menton.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "À la maison, Mila s'assoit. Elle croque la pêche. Le jus est sucré. Il brille sur son menton. Elle est bonne. Oui. Tu l'as dans les mains. Mila tient le noyau. Il est lisse et chaud. Elle le pose près du cabas. Il reste. Oui. Le cœur de la pêche. Mila essuie son menton. Le jus de pêche brille sur son menton."
+    }
+  ]
+}

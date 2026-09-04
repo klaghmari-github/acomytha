@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-03",
+  "fil_rouge": "",
+  "title": "Gaspard voit à quoi sert l'argent",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Gaspard, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Gaspard tient la main de papa au marché. Papa a travaillé. Le travail donne l'argent. L'argent sert à acheter. Le pain. Les légumes. Les chaussures. Gaspard touche le pain. Il sent les carottes. Il voit des petites chaussures. Papa paie. Pain, légumes, chaussures. Papa sourit. Le travail, puis on achète.",
+      "script": "narrateur|Gaspard tient la main de papa au marché. Papa a travaillé. Le travail donne l'argent.\npapa|L'argent sert à acheter.\nnarrateur|Le pain. Les légumes. Les chaussures. Gaspard touche le pain. Il sent les carottes. Il voit des petites chaussures. Papa paie.\nenfant-m|Pain, légumes, chaussures. Papa sourit.\nnarrateur|Le travail, puis on achète.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a de l'argent. Ça sert à quoi ?",
+      "script": "narrateur|Papa a de l'argent. Ça sert à quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Gaspard a compris. Le travail. Acheter pain, légumes, chaussures.",
+      "script": "narrateur|Gaspard a compris. Le travail. Acheter pain, légumes, chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Papa range le filet. Gaspard donne la main.",
+      "script": "narrateur|Papa range le filet. Gaspard donne la main.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-01",
+  "fil_rouge": "",
+  "title": "Demander à papa ou maman pour un achat",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Hugo, maman",
+  "setting": "magasin",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Hugo et maman entrent dans le magasin. Ça sent le papier et le bois. Hugo voit un petit camion rouge. Il a très envie de le prendre. L'argent est dans le sac de maman. Maman range l'argent. Elle le ferme. Hugo s'arrête. Maman, je peux l'avoir ? Il demande à l'adulte. Maman, c'est l'adulte. Maman écoute. Elle regarde le camion. Aujourd'hui, on achète le pain. Le camion attendra. Hugo sent un petit pincement. Puis il respire. Il a demandé. Maman prend sa main. Ils vont au rayon pain. Hugo porte le pain. L'argent reste dans le sac. Pour un achat, on va demander à papa ou maman.",
+      "script": "narrateur|Hugo et maman entrent dans le magasin. Ça sent le papier et le bois. Hugo voit un petit camion rouge. Il a très envie de le prendre. L'argent est dans le sac de maman. Maman range l'argent. Elle le ferme. Hugo s'arrête.\nnarrateur|Maman, je peux l'avoir ? Il demande à l'adulte. Maman, c'est l'adulte. Maman écoute.\nnarrateur|Elle regarde le camion.\nnarrateur|Aujourd'hui, on achète le pain.\nnarrateur|Le camion attendra. Hugo sent un petit pincement. Puis il respire. Il a demandé. Maman prend sa main. Ils vont au rayon pain. Hugo porte le pain. L'argent reste dans le sac. Pour un achat, on va demander à papa ou maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Hugo veut un camion. Que fait-il ?",
+      "script": "narrateur|Hugo veut un camion. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Hugo a demandé à l'adulte. Maman a répondu. L'argent est resté dans le sac.",
+      "script": "narrateur|Hugo a demandé à l'adulte. Maman a répondu. L'argent est resté dans le sac.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Sur le chemin, Hugo sent le pain chaud. Il tient la main de maman.",
+      "script": "narrateur|Sur le chemin, Hugo sent le pain chaud. Il tient la main de maman.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

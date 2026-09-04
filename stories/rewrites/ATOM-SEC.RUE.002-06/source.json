@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.002-06",
+  "fil_rouge": "",
+  "title": "Cédric attend le feu vert",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Cédric, maman",
+  "setting": "trajet vers le marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Cédric va au marché. Il marche avec maman. Maman est l'adulte. Ils arrivent au bord. Cédric donne la main. La main est dans la main. Les pieds restent sur le trottoir. Ils restent sur le trottoir en attendant. On attend le feu vert. Cédric sent la main. Il reste près de maman. Le feu est vert. Feu vert. On avance avec l'adulte. Cédric tient la main. Ils marchent ensemble. L'adulte est là. Merci maman.",
+      "script": "narrateur|Cédric va au marché. Il marche avec maman. Maman est l'adulte. Ils arrivent au bord. Cédric donne la main. La main est dans la main. Les pieds restent sur le trottoir. Ils restent sur le trottoir en attendant.\nmaman|On attend le feu vert.\nnarrateur|Cédric sent la main. Il reste près de maman. Le feu est vert.\nmaman|Feu vert. On avance avec l'adulte.\nnarrateur|Cédric tient la main. Ils marchent ensemble. L'adulte est là.\nenfant-m|Merci maman.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Cédric attend avec maman. Que fait-il ?",
+      "script": "narrateur|Cédric attend avec maman. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.4,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Cédric a donné la main. Il a attendu le feu vert. Maman, l'adulte, était là. Les pieds sont restés sur le trottoir en attendant.",
+      "script": "narrateur|Cédric a donné la main. Il a attendu le feu vert. Maman, l'adulte, était là. Les pieds sont restés sur le trottoir en attendant.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Cédric serre la main de maman. Ils sentent les fruits.",
+      "script": "narrateur|Cédric serre la main de maman. Ils sentent les fruits.",
+      "sons": null,
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.36,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

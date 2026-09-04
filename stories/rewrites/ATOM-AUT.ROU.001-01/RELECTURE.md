@@ -1,17 +1,12 @@
-# F-NAR-015 — ATOM-AUT.ROU.001-01
+# ATOM-AUT.ROU.001-01 — Le train de l'allée
 
-Relu : P0000, question, C0001, END, fin, `script`, `expected_answer`, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Vécu
+Chouchou veut l'allée. Roue perdue. Elle se lève, s'habille, déjeune, pose le train. Dalles tièdes.
 
 ## Vu et corrigé
-
-- Désir : **faire rouler le train de bois sur l'allée** (plus la liste lever / habiller / déjeuner / sac).
-- Ouverture : rebord, wagon rouge, terre mouillée, merle. Pas d'alarme, pas « il était une fois ».
-- Imprévu : Chouchou prend wagon et chaussure à la fois, une roue part sous la chaise.
-- Leçon greffée : une étape après l'autre, puis le train part sur les dalles tièdes.
-- Troupe D16 : Chouchou (`enfant-f`), papa, maman. POS-001. Adultes parlent (D20).
-- Question + relance + `une étape` ensemble. Plus Hugo. Pas de « Bravo, bon travail » en refrain.
-- `chunk_id` / `kind` inchangés.
+Sans refrain une étape après l'autre. Fin sensorielle.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

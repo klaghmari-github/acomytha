@@ -1,16 +1,12 @@
-# F-NAR-015 — ATOM-AUT.ROU.001-06
+# ATOM-AUT.ROU.001-06 — Le doudou de Mila
 
-Relu : P0000, question, C0001, END, fin, `script`, `expected_answer`, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Vécu
+Mila veut sortir. Porte fermée, pyjama. Pull, lait, sac, chemin. Oreille dehors.
 
 ## Vu et corrigé
-
-- Désir : **sortir avec le doudou rouge**, pas préparer le sac pour la leçon.
-- Ouverture : oreilles molles, murs pêche, mobile (étoile, oiseau).
-- Imprévu : Mila va à la porte en pyjama. La porte est fermée. Le doudou viendra dans le sac.
-- Fin vécue : une oreille dépasse, la promenade sent les feuilles.
-- Troupe D16 : Mila, papa, maman. Relance au prénom Mila (plus Bénédicte).
-- `chunk_id` / `kind` inchangés.
+Sans refrain interdit. Fin = l'air frais.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

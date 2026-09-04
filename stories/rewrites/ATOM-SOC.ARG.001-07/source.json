@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-07",
+  "fil_rouge": "",
+  "title": "Coralie et l'argent du marché",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Coralie, papa",
+  "setting": "marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Ce matin, papa a fini son travail. Il rentre avec son sac. Coralie l'attend près de la porte. J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter. Coralie et papa vont au marché. D'abord, le stand du pain. Papa donne l'argent. Il peut acheter du pain. Coralie porte la baguette tiède. Ensuite, les légumes. Des poireaux. Des tomates. L'argent sert aussi aux légumes. Coralie pose une tomate dans le cabas. Plus loin, il y a des chaussures. Papa montre une paire. L'argent sert aux chaussures, quand on en a besoin. Coralie touche le cuir souple. Papa range le reste. Le travail de papa sert à acheter pain légumes chaussures. L'argent ne pousse pas tout seul.",
+      "script": "narrateur|Ce matin, papa a fini son travail. Il rentre avec son sac. Coralie l'attend près de la porte.\npapa|J'ai travaillé. Avec le travail, on a de l'argent. L'argent sert à acheter.\nnarrateur|Coralie et papa vont au marché. D'abord, le stand du pain. Papa donne l'argent. Il peut acheter du pain. Coralie porte la baguette tiède. Ensuite, les légumes. Des poireaux. Des tomates.\npapa|L'argent sert aussi aux légumes.\nnarrateur|Coralie pose une tomate dans le cabas. Plus loin, il y a des chaussures. Papa montre une paire.\nnarrateur|L'argent sert aux chaussures, quand on en a besoin.\nnarrateur|Coralie touche le cuir souple. Papa range le reste.\nenfant-f|Le travail de papa sert à acheter pain légumes chaussures. L'argent ne pousse pas tout seul.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a travaillé. L'argent sert à quoi ?",
+      "script": "narrateur|Papa a travaillé. L'argent sert à quoi ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Coralie a compris. Le travail de papa sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "script": "narrateur|Coralie a compris. Le travail de papa sert. L'argent sert à acheter. Pain. Légumes. Chaussures.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "À la maison, Coralie pose le pain. Papa range les légumes.",
+      "script": "narrateur|À la maison, Coralie pose le pain. Papa range les légumes.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

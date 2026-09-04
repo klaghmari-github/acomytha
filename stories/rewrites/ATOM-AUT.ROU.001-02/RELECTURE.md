@@ -1,16 +1,12 @@
-# F-NAR-015 — ATOM-AUT.ROU.001-02
+# ATOM-AUT.ROU.001-02 — Les miettes de Victorina
 
-Relu : P0000, question, C0001, END, fin, `script`, `expected_answer`, relance.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Vécu
+Victorina veut l'oiseau. Trop vite, il part. Pull, pain, miettes, barrière. Il picore.
 
 ## Vu et corrigé
-
-- Désir : **dire bonjour à l'oiseau gris** (miettes sur la barrière).
-- Ouverture : toc à la vitre, ventre rond, rosée, ciel rose. Pas le gabarit « le soleil entre ».
-- Imprévu : Victorina va à la fenêtre en chemise de nuit, l'oiseau s'envole.
-- Fin vécue : l'oiseau picore les miettes. Leçon greffée, pas récité.
-- Troupe D16 : Victorina, papa, maman. POS-001 (pas de grimpe). Adultes parlent.
-- Relance au prénom Victorina (plus Lila). `chunk_id` / `kind` inchangés.
+Sans refrain interdit. Fin = l'oiseau.
 
 ## Non vérifié
-
-- Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.

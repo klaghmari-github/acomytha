@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-01",
+  "fil_rouge": "Amir veut voir le bateau dans la vitrine jaune. Un pigeon bat des ailes. Amir recule contre papa, reste près, main sur le manteau. Puis le bateau brille.",
+  "title": "La librairie jaune",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Amir, papa",
+  "setting": "rue du village vers la librairie jaune",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La façade jaune luit entre deux toits gris. Le soleil pose un carré sur le mur. Ça sent le papier et un peu de poussière. Un bateau peint dort derrière la vitre. La rue du village est calme. Amir vit ici, avec papa. Papa, la maison est jaune ! Oui. C'est la librairie. Tu as vu le bateau ? Il a une voile blanche. En ce moment, Amir prend le manteau. Le manteau de papa est laineux. Ils marchent tout près l'un de l'autre. Je veux voir le bateau ! On y va. Tu restes près de moi. Un pigeon gris picore une miette. Ses plumes brillent un peu. Le pigeon ! Il cherche du pain. Le pigeon bat des ailes, tout près. Ça fait un bruit de vent. Oh ! Amir recule contre papa. Son dos touche le manteau chaud. Tu es près de moi. Tu tiens le manteau ? Oui. Bravo. Le pigeon se pose sur un toit. Amir garde le tissu laineux. On reste près ? Oui, papa. La façade jaune est plus proche. Le bateau grossit dans la vitre. Tu marches à côté ? À côté. Leurs pieds vont ensemble. Le papier sent plus fort. Je vois la voile ! Merci d'être resté près. Amir serre encore le manteau. Le carré de soleil a bougé.",
+      "script": "narrateur|La façade jaune luit entre deux toits gris.\nnarrateur|Le soleil pose un carré sur le mur.\nnarrateur|Ça sent le papier et un peu de poussière.\nnarrateur|Un bateau peint dort derrière la vitre.\nnarrateur|La rue du village est calme.\nnarrateur|Amir vit ici, avec papa.\nenfant-m|Papa, la maison est jaune !\npapa|Oui.\npapa|C'est la librairie.\npapa|Tu as vu le bateau ?\nenfant-m|Il a une voile blanche.\nnarrateur|En ce moment, Amir prend le manteau.\nnarrateur|Le manteau de papa est laineux.\nnarrateur|Ils marchent tout près l'un de l'autre.\nenfant-m|Je veux voir le bateau !\npapa|On y va.\npapa|Tu restes près de moi.\nnarrateur|Un pigeon gris picore une miette.\nnarrateur|Ses plumes brillent un peu.\nenfant-m|Le pigeon !\npapa|Il cherche du pain.\nnarrateur|Le pigeon bat des ailes, tout près.\nnarrateur|Ça fait un bruit de vent.\nenfant-m|Oh !\nnarrateur|Amir recule contre papa.\nnarrateur|Son dos touche le manteau chaud.\npapa|Tu es près de moi.\npapa|Tu tiens le manteau ?\nenfant-m|Oui.\npapa|Bravo.\nnarrateur|Le pigeon se pose sur un toit.\nnarrateur|Amir garde le tissu laineux.\npapa|On reste près ?\nenfant-m|Oui, papa.\nnarrateur|La façade jaune est plus proche.\nnarrateur|Le bateau grossit dans la vitre.\npapa|Tu marches à côté ?\nenfant-m|À côté.\nnarrateur|Leurs pieds vont ensemble.\nnarrateur|Le papier sent plus fort.\nenfant-m|Je vois la voile !\npapa|Merci d'être resté près.\nnarrateur|Amir serre encore le manteau.\nnarrateur|Le carré de soleil a bougé.",
+      "sons": "oiseau",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La façade jaune luit entre deux toits gris. Le soleil pose un carré sur le mur. Ça sent le papier et un peu de poussière. Un bateau peint dort derrière la vitre. La rue du village est calme. Amir vit ici, avec papa. Papa, la maison est jaune ! Oui. C'est la librairie. Tu as vu le bateau ? Il a une voile blanche. En ce moment, Amir prend le manteau. Le manteau de papa est laineux. Ils marchent tout près l'un de l'autre. Je veux voir le bateau ! On y va. Tu restes près de moi. Un pigeon gris picore une miette. Ses plumes brillent un peu. Le pigeon ! Il cherche du pain. Le pigeon bat des ailes, tout près. Ça fait un bruit de vent. Oh ! Amir recule contre papa. Son dos touche le manteau chaud. Tu es près de moi. Tu tiens le manteau ? Oui. Bravo. Le pigeon se pose sur un toit. Amir garde le tissu laineux. On reste près ? Oui, papa. La façade jaune est plus proche. Le bateau grossit dans la vitre. Tu marches à côté ? À côté. Leurs pieds vont ensemble. Le papier sent plus fort. Je vois la voile ! Merci d'être resté près. Amir serre encore le manteau. Le carré de soleil a bougé."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Amir marche dans la rue. Où est-il ?",
+      "script": "narrateur|Amir marche dans la rue.\nnarrateur|Où est-il ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Amir marche dans la rue. Où est-il ?",
+      "expected_answer": "près de papa",
+      "accepted_examples": "près | près de papa | à côté | la main | le manteau | contre papa",
+      "retry_prompt": "Il reste près de papa. Où est Amir ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Amir est près de papa. La main tient le manteau. Il a reculé contre papa. Tu es resté près de moi ? Oui. J'ai tenu le manteau. Bravo, Amir. Près de moi. Le manteau laineux reste doux. Le pigeon roucoule sur le toit. La vitre jaune est tout près.",
+      "script": "narrateur|Amir est près de papa.\nnarrateur|La main tient le manteau.\nnarrateur|Il a reculé contre papa.\npapa|Tu es resté près de moi ?\nenfant-m|Oui.\nenfant-m|J'ai tenu le manteau.\npapa|Bravo, Amir.\npapa|Près de moi.\nnarrateur|Le manteau laineux reste doux.\nnarrateur|Le pigeon roucoule sur le toit.\nnarrateur|La vitre jaune est tout près.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Amir est près de papa. La main tient le manteau. Il a reculé contre papa. Tu es resté près de moi ? Oui. J'ai tenu le manteau. Bravo, Amir. Près de moi. Le manteau laineux reste doux. Le pigeon roucoule sur le toit. La vitre jaune est tout près."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Ils s'arrêtent devant la librairie. Tu vois le bateau ? Amir pose le nez sur la vitre. La voile est blanche ! Oui. Tu es resté près. Le verre est un peu froid. Le bateau a une petite ancre. Il peut flotter ? Dans l'histoire, oui. Amir garde le manteau d'une main. De l'autre, il montre le bateau. Le soleil chauffe le mur jaune. C'est tout chaud ! Oui. On rentre près l'un de l'autre. Le pigeon a trouvé sa miette. La poussière danse dans le carré jaune.",
+      "script": "narrateur|Ils s'arrêtent devant la librairie.\npapa|Tu vois le bateau ?\nnarrateur|Amir pose le nez sur la vitre.\nenfant-m|La voile est blanche !\npapa|Oui.\npapa|Tu es resté près.\nnarrateur|Le verre est un peu froid.\nnarrateur|Le bateau a une petite ancre.\nenfant-m|Il peut flotter ?\npapa|Dans l'histoire, oui.\nnarrateur|Amir garde le manteau d'une main.\nnarrateur|De l'autre, il montre le bateau.\nnarrateur|Le soleil chauffe le mur jaune.\nenfant-m|C'est tout chaud !\npapa|Oui.\npapa|On rentre près l'un de l'autre.\nnarrateur|Le pigeon a trouvé sa miette.\nnarrateur|La poussière danse dans le carré jaune.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Ils s'arrêtent devant la librairie. Tu vois le bateau ? Amir pose le nez sur la vitre. La voile est blanche ! Oui. Tu es resté près. Le verre est un peu froid. Le bateau a une petite ancre. Il peut flotter ? Dans l'histoire, oui. Amir garde le manteau d'une main. De l'autre, il montre le bateau. Le soleil chauffe le mur jaune. C'est tout chaud ! Oui. On rentre près l'un de l'autre. Le pigeon a trouvé sa miette. La poussière danse dans le carré jaune."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "J'ai vu le bateau. Oui. Merci d'être resté près. Le mur jaune reste chaud. Le bateau du livre brille dans le soleil jaune.",
+      "script": "enfant-m|J'ai vu le bateau.\npapa|Oui.\npapa|Merci d'être resté près.\nnarrateur|Le mur jaune reste chaud.\nnarrateur|Le bateau du livre brille dans le soleil jaune.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "J'ai vu le bateau. Oui. Merci d'être resté près. Le mur jaune reste chaud. Le bateau du livre brille dans le soleil jaune."
+    }
+  ]
+}

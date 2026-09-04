@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-06",
+  "fil_rouge": "",
+  "title": "Fleur demande pour un crayon",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Fleur, maman",
+  "setting": "papeterie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Fleur est à la papeterie avec maman. Elle voit un crayon bleu. Elle a envie. L'argent se range. Fleur ne le prend pas. Elle va demander à maman. Maman, c'est l'adulte. S'il te plaît, ce crayon ? Maman écoute. Elle dit oui. Elle paie. Fleur dit merci. On demande à l'adulte.",
+      "script": "narrateur|Fleur est à la papeterie avec maman. Elle voit un crayon bleu. Elle a envie. L'argent se range. Fleur ne le prend pas. Elle va demander à maman. Maman, c'est l'adulte.\nenfant-m|S'il te plaît, ce crayon ? Maman écoute. Elle dit oui. Elle paie.\nnarrateur|Fleur dit merci. On demande à l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Fleur veut un crayon. Que fait-elle ?",
+      "script": "narrateur|Fleur veut un crayon. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.3,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Fleur a demandé à l'adulte. Maman a écouté.",
+      "script": "narrateur|Fleur a demandé à l'adulte. Maman a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Elles sortent. Fleur tient le crayon.",
+      "script": "narrateur|Elles sortent. Fleur tient le crayon.",
+      "sons": null,
+      "length_scale_piper": 1.18,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.26,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

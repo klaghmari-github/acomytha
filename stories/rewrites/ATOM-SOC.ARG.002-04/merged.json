@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-04",
+  "fil_rouge": "Nina veut un livre d'images. Le premier rayon n'en a pas. Au second, elle tire un livre. Maman attend. Nina demande. Le livre est à elle.",
+  "title": "Le livre d'images de Nina",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Nina, maman",
+  "setting": "librairie, deux rayons de bois, odeur de papier",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Deux allées sentent le papier neuf. Le bois des rayons est sombre, lisse. Une poussière d'or flotte dans le jour. Maman pousse la porte vitrée. Un tapis étouffe les pas. Une lampe basse éclaire le comptoir. Ça sent le papier. Oui. On cherche un livre d'images. Nina glisse la main sur un dos. En ce moment, Nina entre dans la première allée. Les dos sont épais, sans images. Il n'y en a pas. C'est l'autre rayon. Tu viens ? Elles tournent au bout. La seconde allée est plus basse. Des couvertures colorées regardent. Nina s'arrête. Un petit livre montre un bateau. Celui-là. Il a un bateau. Nina tire le livre. Le papier racle le bois. Maman ne sort pas l'argent. Nina. Tu me demandes ? Le livre reste à moitié sorti. Oh. Nina rentre le livre d'un doigt. On achète si tu demandes. Tu te souviens ? Je peux demander. Tu me dis s'il te plaît ? Oui, maman. Le bateau du livre attend encore.",
+      "script": "narrateur|Deux allées sentent le papier neuf.\nnarrateur|Le bois des rayons est sombre, lisse.\nnarrateur|Une poussière d'or flotte dans le jour.\nnarrateur|Maman pousse la porte vitrée.\nnarrateur|Un tapis étouffe les pas.\nnarrateur|Une lampe basse éclaire le comptoir.\nenfant-f|Ça sent le papier.\nmaman|Oui.\nmaman|On cherche un livre d'images.\nnarrateur|Nina glisse la main sur un dos.\nnarrateur|En ce moment, Nina entre dans la première allée.\nnarrateur|Les dos sont épais, sans images.\nenfant-f|Il n'y en a pas.\nmaman|C'est l'autre rayon.\nmaman|Tu viens ?\nnarrateur|Elles tournent au bout.\nnarrateur|La seconde allée est plus basse.\nnarrateur|Des couvertures colorées regardent.\nnarrateur|Nina s'arrête.\nnarrateur|Un petit livre montre un bateau.\nenfant-f|Celui-là.\nenfant-f|Il a un bateau.\nnarrateur|Nina tire le livre.\nnarrateur|Le papier racle le bois.\nnarrateur|Maman ne sort pas l'argent.\nmaman|Nina.\nmaman|Tu me demandes ?\nnarrateur|Le livre reste à moitié sorti.\nenfant-f|Oh.\nnarrateur|Nina rentre le livre d'un doigt.\nmaman|On achète si tu demandes.\nmaman|Tu te souviens ?\nenfant-f|Je peux demander.\nmaman|Tu me dis s'il te plaît ?\nenfant-f|Oui, maman.\nnarrateur|Le bateau du livre attend encore.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Deux allées sentent le papier neuf. Le bois des rayons est sombre, lisse. Une poussière d'or flotte dans le jour. Maman pousse la porte vitrée. Un tapis étouffe les pas. Une lampe basse éclaire le comptoir. Ça sent le papier. Oui. On cherche un livre d'images. Nina glisse la main sur un dos. En ce moment, Nina entre dans la première allée. Les dos sont épais, sans images. Il n'y en a pas. C'est l'autre rayon. Tu viens ? Elles tournent au bout. La seconde allée est plus basse. Des couvertures colorées regardent. Nina s'arrête. Un petit livre montre un bateau. Celui-là. Il a un bateau. Nina tire le livre. Le papier racle le bois. Maman ne sort pas l'argent. Nina. Tu me demandes ? Le livre reste à moitié sorti. Oh. Nina rentre le livre d'un doigt. On achète si tu demandes. Tu te souviens ? Je peux demander. Tu me dis s'il te plaît ? Oui, maman. Le bateau du livre attend encore."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nina veut le livre d'images. Que fait-elle ?",
+      "script": "narrateur|Nina veut le livre d'images.\nnarrateur|Que fait-elle ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nina veut le livre d'images. Que fait-elle ?",
+      "expected_answer": "demander",
+      "accepted_examples": "demander | elle demande | à maman | s'il te plaît",
+      "retry_prompt": "Elle demande à maman. Que fait Nina ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Maman, s'il te plaît. Je peux avoir ce livre ? Oui. Merci, Nina. Tu as demandé. Maman ouvre le petit sac. Elle pose l'argent sur le comptoir. On glisse le livre dans un sachet. Nina le prend contre elle. Le sachet est lisse, un peu froid. Il est à moi. Oui. Parce que tu as demandé. Tu le tiens bien ? Oui, maman. Elles quittent la seconde allée. Le tapis étouffe encore les pas. Nina sent le sachet contre sa veste.",
+      "script": "enfant-f|Maman, s'il te plaît.\nenfant-f|Je peux avoir ce livre ?\nmaman|Oui.\nmaman|Merci, Nina.\nmaman|Tu as demandé.\nnarrateur|Maman ouvre le petit sac.\nnarrateur|Elle pose l'argent sur le comptoir.\nnarrateur|On glisse le livre dans un sachet.\nnarrateur|Nina le prend contre elle.\nnarrateur|Le sachet est lisse, un peu froid.\nenfant-f|Il est à moi.\nmaman|Oui.\nmaman|Parce que tu as demandé.\nmaman|Tu le tiens bien ?\nenfant-f|Oui, maman.\nnarrateur|Elles quittent la seconde allée.\nnarrateur|Le tapis étouffe encore les pas.\nnarrateur|Nina sent le sachet contre sa veste.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Maman, s'il te plaît. Je peux avoir ce livre ? Oui. Merci, Nina. Tu as demandé. Maman ouvre le petit sac. Elle pose l'argent sur le comptoir. On glisse le livre dans un sachet. Nina le prend contre elle. Le sachet est lisse, un peu froid. Il est à moi. Oui. Parce que tu as demandé. Tu le tiens bien ? Oui, maman. Elles quittent la seconde allée. Le tapis étouffe encore les pas. Nina sent le sachet contre sa veste."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Dehors, le jour est plus vif. Nina marche avec le sachet. Le bateau de la couverture se sent. On le regardera à la maison ? Oui. Le bateau. Tu as demandé avant d'acheter. Bravo. Une feuille tourne près du caniveau. Le sachet tape un peu la jambe. Nina serre le livre contre elle. Le papier sent encore la boutique.",
+      "script": "narrateur|Dehors, le jour est plus vif.\nnarrateur|Nina marche avec le sachet.\nnarrateur|Le bateau de la couverture se sent.\nmaman|On le regardera à la maison ?\nenfant-f|Oui.\nenfant-f|Le bateau.\nmaman|Tu as demandé avant d'acheter.\nmaman|Bravo.\nnarrateur|Une feuille tourne près du caniveau.\nnarrateur|Le sachet tape un peu la jambe.\nnarrateur|Nina serre le livre contre elle.\nnarrateur|Le papier sent encore la boutique.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Dehors, le jour est plus vif. Nina marche avec le sachet. Le bateau de la couverture se sent. On le regardera à la maison ? Oui. Le bateau. Tu as demandé avant d'acheter. Bravo. Une feuille tourne près du caniveau. Le sachet tape un peu la jambe. Nina serre le livre contre elle. Le papier sent encore la boutique."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "À la maison, Nina s'assoit. Elle sort le livre du sachet. Elle ouvre la première page. Le bateau a une voile rouge. Il avance. Oui. Tu l'as dans les mains. Nina tourne la page, tout doux. Une vague dessinée mouille presque le papier. Elle est bleue. Comme la mer. Le livre d'images reste ouvert sur ses genoux.",
+      "script": "narrateur|À la maison, Nina s'assoit.\nnarrateur|Elle sort le livre du sachet.\nnarrateur|Elle ouvre la première page.\nnarrateur|Le bateau a une voile rouge.\nenfant-f|Il avance.\nmaman|Oui.\nmaman|Tu l'as dans les mains.\nnarrateur|Nina tourne la page, tout doux.\nnarrateur|Une vague dessinée mouille presque le papier.\nenfant-f|Elle est bleue.\nmaman|Comme la mer.\nnarrateur|Le livre d'images reste ouvert sur ses genoux.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "À la maison, Nina s'assoit. Elle sort le livre du sachet. Elle ouvre la première page. Le bateau a une voile rouge. Il avance. Oui. Tu l'as dans les mains. Nina tourne la page, tout doux. Une vague dessinée mouille presque le papier. Elle est bleue. Comme la mer. Le livre d'images reste ouvert sur ses genoux."
+    }
+  ]
+}

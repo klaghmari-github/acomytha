@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SOC.ARG.001-01",
+  "fil_rouge": "Au marché sous la bâche, Mila veut un petit pain chaud. Celui qu'elle montre est déjà vendu. Papa paie un autre, encore tiède. Elle croque la mie.",
+  "title": "Le petit pain chaud de Mila",
+  "lesson_id": "SOC.ARG.001",
+  "age_band": "N2",
+  "kind": "atomic",
+  "characters": "Mila, papa",
+  "setting": "marché sous la bâche, stand du pain, cabas de toile",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "La bâche du marché sent la farine chaude. Un pigeon picore une miette grise. Les caisses de bois sont encore humides. Ça sent le beurre et le café. Papa range une pièce dans sa poche. Mila vit ici, avec papa. Papa, ça sent le four ! Oui. Le stand du pain est ouvert. Je veux un petit pain chaud. Le rond, bien doré ? Oui. En ce moment, Mila tient le cabas. Le tissu râpe un peu ses doigts. Elles avancent sous la bâche. La vitrine du stand est pleine. Des petits pains dorés alignés. Celui-là, le bien doré ! Tu le montres du doigt ? Oui. Mila montre le petit pain du milieu. Il brille encore un peu. Une main le prend, plus loin. Le pain part dans un autre sac. Il n'est plus là. Il est déjà vendu. On en prend un autre ? Encore chaud ? Oui. Papa montre un pain tout près. La croûte est plus claire, encore tiède. Celui-là. J'ai une pièce, dans la poche. Elle sert à prendre le pain. Papa tend la pièce. La pièce sonne dans le tiroir. Le tiroir se ferme, tout court. Le petit pain passe dans le cabas. Il est chaud ! Oui. Tu le tiens ? Oui, papa. Mila pose les deux mains autour. La croûte pique un peu les paumes. Ça sent le four, tout près. Tu as fini de le sentir ? Presque.",
+      "script": "narrateur|La bâche du marché sent la farine chaude.\nnarrateur|Un pigeon picore une miette grise.\nnarrateur|Les caisses de bois sont encore humides.\nnarrateur|Ça sent le beurre et le café.\nnarrateur|Papa range une pièce dans sa poche.\nnarrateur|Mila vit ici, avec papa.\nenfant-f|Papa, ça sent le four !\npapa|Oui.\npapa|Le stand du pain est ouvert.\nenfant-f|Je veux un petit pain chaud.\npapa|Le rond, bien doré ?\nenfant-f|Oui.\nnarrateur|En ce moment, Mila tient le cabas.\nnarrateur|Le tissu râpe un peu ses doigts.\nnarrateur|Elles avancent sous la bâche.\nnarrateur|La vitrine du stand est pleine.\nnarrateur|Des petits pains dorés alignés.\nenfant-f|Celui-là, le bien doré !\npapa|Tu le montres du doigt ?\nenfant-f|Oui.\nnarrateur|Mila montre le petit pain du milieu.\nnarrateur|Il brille encore un peu.\nnarrateur|Une main le prend, plus loin.\nnarrateur|Le pain part dans un autre sac.\nenfant-f|Il n'est plus là.\npapa|Il est déjà vendu.\npapa|On en prend un autre ?\nenfant-f|Encore chaud ?\npapa|Oui.\nnarrateur|Papa montre un pain tout près.\nnarrateur|La croûte est plus claire, encore tiède.\nenfant-f|Celui-là.\npapa|J'ai une pièce, dans la poche.\npapa|Elle sert à prendre le pain.\nnarrateur|Papa tend la pièce.\nnarrateur|La pièce sonne dans le tiroir.\nnarrateur|Le tiroir se ferme, tout court.\nnarrateur|Le petit pain passe dans le cabas.\nenfant-f|Il est chaud !\npapa|Oui.\npapa|Tu le tiens ?\nenfant-f|Oui, papa.\nnarrateur|Mila pose les deux mains autour.\nnarrateur|La croûte pique un peu les paumes.\nnarrateur|Ça sent le four, tout près.\npapa|Tu as fini de le sentir ?\nenfant-f|Presque.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "La bâche du marché sent la farine chaude. Un pigeon picore une miette grise. Les caisses de bois sont encore humides. Ça sent le beurre et le café. Papa range une pièce dans sa poche. Mila vit ici, avec papa. Papa, ça sent le four ! Oui. Le stand du pain est ouvert. Je veux un petit pain chaud. Le rond, bien doré ? Oui. En ce moment, Mila tient le cabas. Le tissu râpe un peu ses doigts. Elles avancent sous la bâche. La vitrine du stand est pleine. Des petits pains dorés alignés. Celui-là, le bien doré ! Tu le montres du doigt ? Oui. Mila montre le petit pain du milieu. Il brille encore un peu. Une main le prend, plus loin. Le pain part dans un autre sac. Il n'est plus là. Il est déjà vendu. On en prend un autre ? Encore chaud ? Oui. Papa montre un pain tout près. La croûte est plus claire, encore tiède. Celui-là. J'ai une pièce, dans la poche. Elle sert à prendre le pain. Papa tend la pièce. La pièce sonne dans le tiroir. Le tiroir se ferme, tout court. Le petit pain passe dans le cabas. Il est chaud ! Oui. Tu le tiens ? Oui, papa. Mila pose les deux mains autour. La croûte pique un peu les paumes. Ça sent le four, tout près. Tu as fini de le sentir ? Presque."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Papa a donné une pièce. L'argent sert à quoi ?",
+      "script": "narrateur|Papa a donné une pièce.\nnarrateur|L'argent sert à quoi ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Papa a donné une pièce. L'argent sert à quoi ?",
+      "expected_answer": "acheter",
+      "accepted_examples": "acheter | le pain | le petit pain | prendre le pain | la pièce",
+      "retry_prompt": "On prend le petit pain. L'argent sert à quoi ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Le petit pain est dans les mains de Mila. Il chauffe encore les doigts. La pièce a servi à le prendre. Pour le pain chaud. Oui. On achète le pain avec ça. Une graine tombe sur le cabas. Mila la pose sur la croûte. Elle est restée. Oui. Tu as choisi l'autre pain. Bravo, Mila. Le pigeon n'a plus de miette. La bâche claque un peu au vent. Le cabas sent le four, tout fort. On rentre ? Oui. Mila garde le pain contre elle. La croûte fait un petit bruit. Il est encore chaud, non ? Oui, papa.",
+      "script": "narrateur|Le petit pain est dans les mains de Mila.\nnarrateur|Il chauffe encore les doigts.\npapa|La pièce a servi à le prendre.\nenfant-f|Pour le pain chaud.\npapa|Oui.\npapa|On achète le pain avec ça.\nnarrateur|Une graine tombe sur le cabas.\nnarrateur|Mila la pose sur la croûte.\nenfant-f|Elle est restée.\npapa|Oui.\npapa|Tu as choisi l'autre pain.\npapa|Bravo, Mila.\nnarrateur|Le pigeon n'a plus de miette.\nnarrateur|La bâche claque un peu au vent.\nnarrateur|Le cabas sent le four, tout fort.\npapa|On rentre ?\nenfant-f|Oui.\nnarrateur|Mila garde le pain contre elle.\nnarrateur|La croûte fait un petit bruit.\npapa|Il est encore chaud, non ?\nenfant-f|Oui, papa.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Le petit pain est dans les mains de Mila. Il chauffe encore les doigts. La pièce a servi à le prendre. Pour le pain chaud. Oui. On achète le pain avec ça. Une graine tombe sur le cabas. Mila la pose sur la croûte. Elle est restée. Oui. Tu as choisi l'autre pain. Bravo, Mila. Le pigeon n'a plus de miette. La bâche claque un peu au vent. Le cabas sent le four, tout fort. On rentre ? Oui. Mila garde le pain contre elle. La croûte fait un petit bruit. Il est encore chaud, non ? Oui, papa."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La porte de la maison claque doucement. La table de bois est froide. Tu poses le pain ? Oui. Mila pose le petit pain au milieu. Une petite vapeur monte encore. Il fume ! Oui. Merci d'avoir tenu le cabas. Papa coupe le pain en deux. La mie est blanche, toute douce. Je goûte ? Un morceau, tout petit. Mila croque un coin. Ça croustille, puis c'est tiède. C'est bon. Le four était encore allumé. La graine reste collée à sa lèvre.",
+      "script": "narrateur|La porte de la maison claque doucement.\nnarrateur|La table de bois est froide.\npapa|Tu poses le pain ?\nenfant-f|Oui.\nnarrateur|Mila pose le petit pain au milieu.\nnarrateur|Une petite vapeur monte encore.\nenfant-f|Il fume !\npapa|Oui.\npapa|Merci d'avoir tenu le cabas.\nnarrateur|Papa coupe le pain en deux.\nnarrateur|La mie est blanche, toute douce.\nenfant-f|Je goûte ?\npapa|Un morceau, tout petit.\nnarrateur|Mila croque un coin.\nnarrateur|Ça croustille, puis c'est tiède.\nenfant-f|C'est bon.\npapa|Le four était encore allumé.\nnarrateur|La graine reste collée à sa lèvre.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La porte de la maison claque doucement. La table de bois est froide. Tu poses le pain ? Oui. Mila pose le petit pain au milieu. Une petite vapeur monte encore. Il fume ! Oui. Merci d'avoir tenu le cabas. Papa coupe le pain en deux. La mie est blanche, toute douce. Je goûte ? Un morceau, tout petit. Mila croque un coin. Ça croustille, puis c'est tiède. C'est bon. Le four était encore allumé. La graine reste collée à sa lèvre."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "Le premier était vendu. On a pris l'autre, chaud. Bravo, Mila. La mie sent encore le four. Le petit pain chauffe encore sa main.",
+      "script": "enfant-f|Le premier était vendu.\nenfant-f|On a pris l'autre, chaud.\npapa|Bravo, Mila.\nnarrateur|La mie sent encore le four.\nnarrateur|Le petit pain chauffe encore sa main.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "Le premier était vendu. On a pris l'autre, chaud. Bravo, Mila. La mie sent encore le four. Le petit pain chauffe encore sa main."
+    }
+  ]
+}

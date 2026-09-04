@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.002-02",
+  "fil_rouge": "",
+  "title": "Kenzo et le feu vert",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Kenzo, Lila, maman",
+  "setting": "retour du marché",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Kenzo rentre du marché avec maman. Le sac sent les oranges. Sa petite sœur Lila marche avec eux. Ils arrivent au passage. Kenzo pose les pieds sur le trottoir. Il donne la main à maman. Lila donne la main aussi. Ils restent sur le trottoir en attendant. Kenzo comprend la règle. On attend le feu vert. Parce qu'on attend le feu vert, on avance ensuite avec l'adulte. La main reste tenue. Le feu vert, c'est le signal. On avance ensemble. Kenzo marche. Ses pieds suivent maman. L'adulte guide Lila et Kenzo. De l'autre côté, Kenzo dit à Lila : main, feu vert, avec l'adulte. Maman serre les deux mains. Kenzo est fier.",
+      "script": "narrateur|Kenzo rentre du marché avec maman. Le sac sent les oranges. Sa petite sœur Lila marche avec eux. Ils arrivent au passage. Kenzo pose les pieds sur le trottoir. Il donne la main à maman. Lila donne la main aussi. Ils restent sur le trottoir en attendant. Kenzo comprend la règle. On attend le feu vert. Parce qu'on attend le feu vert, on avance ensuite avec l'adulte. La main reste tenue.\nmaman|Le feu vert, c'est le signal. On avance ensemble.\nnarrateur|Kenzo marche. Ses pieds suivent maman. L'adulte guide Lila et Kenzo. De l'autre côté, Kenzo dit à Lila : main, feu vert, avec l'adulte. Maman serre les deux mains. Kenzo est fier.",
+      "sons": "enfants_parc",
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Kenzo est au passage. Que fait-il ?",
+      "script": "narrateur|Kenzo est au passage. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Kenzo a attendu le feu vert. La main était tenue. L'adulte guidait. Lila a entendu la règle aussi.",
+      "script": "narrateur|Kenzo a attendu le feu vert. La main était tenue. L'adulte guidait. Lila a entendu la règle aussi.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Kenzo porte le sac d'oranges. Maman ouvre la porte.",
+      "script": "narrateur|Kenzo porte le sac d'oranges. Maman ouvre la porte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}

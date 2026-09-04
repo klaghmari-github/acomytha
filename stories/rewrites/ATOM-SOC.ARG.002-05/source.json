@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-05",
+  "fil_rouge": "",
+  "title": "Armand demande pour un achat",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Armand, papa",
+  "setting": "boulangerie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Armand va à la boulangerie avec papa. Ça sent le pain chaud. Armand voit un gâteau. Il a envie. L'argent se range. Papa a le porte-monnaie. Papa est l'adulte. Armand va demander. Papa, on peut ? Papa écoute. Tu as demandé. Merci. Papa paie le pain. Armand tient le sac. Plus tard, au marché, Armand voit des fraises. Il se souvient. Il va demander à l'adulte. Il dit encore : papa, s'il te plaît. Papa sourit. L'argent se range. On demande à papa ou maman.",
+      "script": "narrateur|Armand va à la boulangerie avec papa. Ça sent le pain chaud. Armand voit un gâteau. Il a envie. L'argent se range. Papa a le porte-monnaie. Papa est l'adulte. Armand va demander.\nnarrateur|Papa, on peut ? Papa écoute.\npapa|Tu as demandé. Merci. Papa paie le pain.\nnarrateur|Armand tient le sac. Plus tard, au marché, Armand voit des fraises. Il se souvient. Il va demander à l'adulte. Il dit encore : papa, s'il te plaît. Papa sourit. L'argent se range. On demande à papa ou maman.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Armand veut un gâteau. Que fait-il ?",
+      "script": "narrateur|Armand veut un gâteau. Que fait-il ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Armand a demandé à papa. L'adulte a écouté. L'argent se range.",
+      "script": "narrateur|Armand a demandé à papa. L'adulte a écouté. L'argent se range.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Armand et papa rentrent avec le pain. Ils marchent ensemble.",
+      "script": "narrateur|Armand et papa rentrent avec le pain. Ils marchent ensemble.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

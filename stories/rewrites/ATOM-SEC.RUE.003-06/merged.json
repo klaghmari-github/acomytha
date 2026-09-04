@@ -1,0 +1,70 @@
+{
+  "story_id": "ATOM-SEC.RUE.003-06",
+  "fil_rouge": "Nino veut une fleur bleue pour la table, puis le pain du village. Un caillou roule sur la sente. Il reste près de maman. La sente rejoint la rue. Puis la fleur et le pain.",
+  "title": "La sente et la fleur",
+  "lesson_id": "SEC.RUE.003",
+  "age_band": "N1",
+  "kind": "atomic",
+  "characters": "Nino, maman",
+  "setting": "sente de montagne qui rejoint la rue du village",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Un caillou chaud roule dans l'herbe sèche. La sente sent le thym et la poussière. Une fleur bleue penche au bord du chemin. Loin, une clochette de chèvre tinte. Le vent porte un peu de résine. Nino vit ici, avec maman. Maman, la fleur est bleue ! Oui. Elle sent un peu le miel. Tu as entendu la clochette ? La chèvre est là-haut. En ce moment, Nino prend le manteau. Le manteau de maman sent le thym. Je veux la fleur pour la table ! On y va. Tu restes près de moi. Ils marchent sur la sente étroite. L'herbe sèche racle les chaussures. Le caillou chaud redescend un peu. Il roule ! On le laisse. Toi, tu restes près. Nino se serre contre maman. Il garde le manteau. Bravo. Maman cueille la fleur, tout près. Nino la voit, sans lâcher le tissu. Elle est douce. Oui. Maintenant, la rue. La sente rejoint les premières maisons. La rue sent déjà le pain. Le village ! On reste près aussi. Tu tiens le manteau ? Oui. Nino marche à côté, sur le trottoir. La fleur bleue tremble dans la main de maman. Tu marches à côté ? À côté. Leurs ombres se collent au mur. La clochette tinte plus loin. Je veux le pain aussi. Merci d'être resté près. Nino serre encore le manteau. Le thym de la sente reste dans l'air.",
+      "script": "narrateur|Un caillou chaud roule dans l'herbe sèche.\nnarrateur|La sente sent le thym et la poussière.\nnarrateur|Une fleur bleue penche au bord du chemin.\nnarrateur|Loin, une clochette de chèvre tinte.\nnarrateur|Le vent porte un peu de résine.\nnarrateur|Nino vit ici, avec maman.\nenfant-m|Maman, la fleur est bleue !\nmaman|Oui.\nmaman|Elle sent un peu le miel.\nmaman|Tu as entendu la clochette ?\nenfant-m|La chèvre est là-haut.\nnarrateur|En ce moment, Nino prend le manteau.\nnarrateur|Le manteau de maman sent le thym.\nenfant-m|Je veux la fleur pour la table !\nmaman|On y va.\nmaman|Tu restes près de moi.\nnarrateur|Ils marchent sur la sente étroite.\nnarrateur|L'herbe sèche racle les chaussures.\nnarrateur|Le caillou chaud redescend un peu.\nenfant-m|Il roule !\nmaman|On le laisse.\nmaman|Toi, tu restes près.\nnarrateur|Nino se serre contre maman.\nnarrateur|Il garde le manteau.\nmaman|Bravo.\nnarrateur|Maman cueille la fleur, tout près.\nnarrateur|Nino la voit, sans lâcher le tissu.\nenfant-m|Elle est douce.\nmaman|Oui.\nmaman|Maintenant, la rue.\nnarrateur|La sente rejoint les premières maisons.\nnarrateur|La rue sent déjà le pain.\nenfant-m|Le village !\nmaman|On reste près aussi.\nmaman|Tu tiens le manteau ?\nenfant-m|Oui.\nnarrateur|Nino marche à côté, sur le trottoir.\nnarrateur|La fleur bleue tremble dans la main de maman.\nmaman|Tu marches à côté ?\nenfant-m|À côté.\nnarrateur|Leurs ombres se collent au mur.\nnarrateur|La clochette tinte plus loin.\nenfant-m|Je veux le pain aussi.\nmaman|Merci d'être resté près.\nnarrateur|Nino serre encore le manteau.\nnarrateur|Le thym de la sente reste dans l'air.",
+      "sons": "oiseau",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 400,
+      "text_ssml": "Un caillou chaud roule dans l'herbe sèche. La sente sent le thym et la poussière. Une fleur bleue penche au bord du chemin. Loin, une clochette de chèvre tinte. Le vent porte un peu de résine. Nino vit ici, avec maman. Maman, la fleur est bleue ! Oui. Elle sent un peu le miel. Tu as entendu la clochette ? La chèvre est là-haut. En ce moment, Nino prend le manteau. Le manteau de maman sent le thym. Je veux la fleur pour la table ! On y va. Tu restes près de moi. Ils marchent sur la sente étroite. L'herbe sèche racle les chaussures. Le caillou chaud redescend un peu. Il roule ! On le laisse. Toi, tu restes près. Nino se serre contre maman. Il garde le manteau. Bravo. Maman cueille la fleur, tout près. Nino la voit, sans lâcher le tissu. Elle est douce. Oui. Maintenant, la rue. La sente rejoint les premières maisons. La rue sent déjà le pain. Le village ! On reste près aussi. Tu tiens le manteau ? Oui. Nino marche à côté, sur le trottoir. La fleur bleue tremble dans la main de maman. Tu marches à côté ? À côté. Leurs ombres se collent au mur. La clochette tinte plus loin. Je veux le pain aussi. Merci d'être resté près. Nino serre encore le manteau. Le thym de la sente reste dans l'air."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Nino marche sur la sente. Où est-il ?",
+      "script": "narrateur|Nino marche sur la sente.\nnarrateur|Où est-il ?",
+      "sons": "",
+      "length_scale_piper": 1.28,
+      "rate_label": "slow",
+      "pause_after_ms": 250,
+      "text_ssml": "Nino marche sur la sente. Où est-il ?",
+      "expected_answer": "près de maman",
+      "accepted_examples": "près | près de maman | à côté | la main | le manteau | sur la sente",
+      "retry_prompt": "Il reste près de maman. Où est Nino ?"
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Nino est près de maman. La main tient le manteau. Sur la sente, puis dans la rue. Tu es resté près de moi ? Oui. J'ai tenu le manteau. Bravo, Nino. Près de moi. Le manteau sent encore le thym. La fleur bleue tremble un peu. Le pain du village sent plus fort.",
+      "script": "narrateur|Nino est près de maman.\nnarrateur|La main tient le manteau.\nnarrateur|Sur la sente, puis dans la rue.\nmaman|Tu es resté près de moi ?\nenfant-m|Oui.\nenfant-m|J'ai tenu le manteau.\nmaman|Bravo, Nino.\nmaman|Près de moi.\nnarrateur|Le manteau sent encore le thym.\nnarrateur|La fleur bleue tremble un peu.\nnarrateur|Le pain du village sent plus fort.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "Nino est près de maman. La main tient le manteau. Sur la sente, puis dans la rue. Tu es resté près de moi ? Oui. J'ai tenu le manteau. Bravo, Nino. Près de moi. Le manteau sent encore le thym. La fleur bleue tremble un peu. Le pain du village sent plus fort."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "La boulangerie ouvre sa porte. Tu prends le pain ? Nino tient le pain, et le manteau. Il est chaud ! Oui. Tu es resté près. La fleur bleue voyage à côté. Ça sent le miel et le four. Pour la table. Oui. Ils rentrent par la rue, tout près. Puis la sente remonte un peu. La chèvre tinte encore. Oui. On rentre près l'un de l'autre. L'herbe sèche racle encore. Le pain chauffe les mains de Nino.",
+      "script": "narrateur|La boulangerie ouvre sa porte.\nmaman|Tu prends le pain ?\nnarrateur|Nino tient le pain, et le manteau.\nenfant-m|Il est chaud !\nmaman|Oui.\nmaman|Tu es resté près.\nnarrateur|La fleur bleue voyage à côté.\nnarrateur|Ça sent le miel et le four.\nenfant-m|Pour la table.\nmaman|Oui.\nnarrateur|Ils rentrent par la rue, tout près.\nnarrateur|Puis la sente remonte un peu.\nenfant-m|La chèvre tinte encore.\nmaman|Oui.\nmaman|On rentre près l'un de l'autre.\nnarrateur|L'herbe sèche racle encore.\nnarrateur|Le pain chauffe les mains de Nino.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 450,
+      "text_ssml": "La boulangerie ouvre sa porte. Tu prends le pain ? Nino tient le pain, et le manteau. Il est chaud ! Oui. Tu es resté près. La fleur bleue voyage à côté. Ça sent le miel et le four. Pour la table. Oui. Ils rentrent par la rue, tout près. Puis la sente remonte un peu. La chèvre tinte encore. Oui. On rentre près l'un de l'autre. L'herbe sèche racle encore. Le pain chauffe les mains de Nino."
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "La fleur sent le miel. Oui. Merci d'être resté près. Le pain repose près de la fleur bleue. La clochette de la chèvre tinte tout loin.",
+      "script": "enfant-m|La fleur sent le miel.\nmaman|Oui.\nmaman|Merci d'être resté près.\nnarrateur|Le pain repose près de la fleur bleue.\nnarrateur|La clochette de la chèvre tinte tout loin.",
+      "sons": "",
+      "length_scale_piper": 1.22,
+      "rate_label": "medium",
+      "pause_after_ms": 600,
+      "text_ssml": "La fleur sent le miel. Oui. Merci d'être resté près. Le pain repose près de la fleur bleue. La clochette de la chèvre tinte tout loin."
+    }
+  ]
+}

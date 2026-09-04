@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SOC.ARG.002-04",
+  "fil_rouge": "",
+  "title": "Pia demande pour un livre",
+  "lesson_id": "SOC.ARG.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Pia, maman",
+  "setting": "librairie",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Pia est à la librairie avec maman. Elle voit un petit livre. Elle a envie. L'argent se range. Pia ne le prend pas. Elle va demander à maman. Maman, c'est l'adulte. S'il te plaît, ce livre ? Maman écoute. Elle dit oui. Elle paie. Pia dit merci. On demande à l'adulte.",
+      "script": "narrateur|Pia est à la librairie avec maman. Elle voit un petit livre. Elle a envie. L'argent se range. Pia ne le prend pas. Elle va demander à maman. Maman, c'est l'adulte.\nenfant-f|S'il te plaît, ce livre ? Maman écoute. Elle dit oui. Elle paie.\nnarrateur|Pia dit merci. On demande à l'adulte.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Pia veut un livre. Que fait-elle ?",
+      "script": "narrateur|Pia veut un livre. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "medium",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Pia a demandé à l'adulte. Maman a écouté.",
+      "script": "narrateur|Pia a demandé à l'adulte. Maman a écouté.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Elles sortent. Pia tient le livre.",
+      "script": "narrateur|Elles sortent. Pia tient le livre.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.2,
+      "rate_label": "medium",
+      "pause_after_ms": 600
+    }
+  ]
+}

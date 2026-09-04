@@ -1,0 +1,62 @@
+{
+  "story_id": "ATOM-SEC.RUE.002-03",
+  "fil_rouge": "",
+  "title": "Inès attend le feu vert deux fois",
+  "lesson_id": "SEC.RUE.002",
+  "age_band": "N3",
+  "kind": "atomic",
+  "characters": "Inès, papa",
+  "setting": "trajet vers la bibliothèque",
+  "chunks": [
+    {
+      "chunk_id": "CHK_T0000_P0000",
+      "kind": "passage_debut",
+      "text": "Inès va à la bibliothèque avec papa. Le sac sent le papier. Ils arrivent au passage. Inès pose les pieds sur le trottoir. Elle donne la main à papa. Papa est l'adulte. Ils restent sur le trottoir en attendant. On attend le feu vert. Inès tient la main. Le feu vert arrive. Feu vert. On avance avec l'adulte. Inès marche. Ses pieds suivent papa. La main reste tenue. Ils prennent deux livres. Les pages sentent le bois. Au retour, un autre passage. Inès se souvient. Elle pose les pieds sur le trottoir. Elle donne encore la main. Ils restent sur le trottoir en attendant. On attend le feu vert. Oui. Avec l'adulte. Le feu vert arrive. Ils avancent ensemble. La main reste tenue. Inès est fière.",
+      "script": "narrateur|Inès va à la bibliothèque avec papa. Le sac sent le papier. Ils arrivent au passage. Inès pose les pieds sur le trottoir. Elle donne la main à papa. Papa est l'adulte. Ils restent sur le trottoir en attendant.\npapa|On attend le feu vert.\nnarrateur|Inès tient la main. Le feu vert arrive.\npapa|Feu vert. On avance avec l'adulte.\nnarrateur|Inès marche. Ses pieds suivent papa. La main reste tenue. Ils prennent deux livres. Les pages sentent le bois. Au retour, un autre passage. Inès se souvient. Elle pose les pieds sur le trottoir. Elle donne encore la main. Ils restent sur le trottoir en attendant.\nenfant-f|On attend le feu vert.\npapa|Oui. Avec l'adulte.\nnarrateur|Le feu vert arrive. Ils avancent ensemble. La main reste tenue. Inès est fière.",
+      "sons": null,
+      "length_scale_piper": 1.12,
+      "rate_label": "medium",
+      "pause_after_ms": 400
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_Q0001",
+      "kind": "passage_question",
+      "text": "Inès est au passage. Que fait-elle ?",
+      "script": "narrateur|Inès est au passage. Que fait-elle ?",
+      "sons": null,
+      "length_scale_piper": 1.24,
+      "rate_label": "slow",
+      "pause_after_ms": 250
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_C0001",
+      "kind": "passage",
+      "text": "Inès a attendu le feu vert. La main était tenue. L'adulte guidait. Elle a repris le geste au retour.",
+      "script": "narrateur|Inès a attendu le feu vert. La main était tenue. L'adulte guidait. Elle a repris le geste au retour.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END",
+      "kind": "passage",
+      "text": "Inès porte les deux livres. Papa ouvre la porte.",
+      "script": "narrateur|Inès porte les deux livres. Papa ouvre la porte.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 450
+    },
+    {
+      "chunk_id": "CHK_T0000_P0000_END_F0001",
+      "kind": "passage_fin",
+      "text": "L'histoire est finie.",
+      "script": "narrateur|L'histoire est finie.",
+      "sons": null,
+      "length_scale_piper": 1.22,
+      "rate_label": "slow",
+      "pause_after_ms": 600
+    }
+  ]
+}
