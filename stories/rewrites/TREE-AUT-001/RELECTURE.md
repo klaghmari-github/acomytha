@@ -21,4 +21,4 @@ Passe orale (plus de puces) : plus de « la première / la deuxième / la troisi
 
 ## Non vérifié
 
-Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.
+Audio cuit, 86 wav stéréo 44100. Durée réelle à l'écoute. Playtest moteur des 27 chemins.
