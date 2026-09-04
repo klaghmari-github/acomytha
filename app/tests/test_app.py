@@ -98,7 +98,60 @@ def test_graph_root_and_fin():
     g = StoryGraph(chunks)
     assert g.root == "CHK_T0000_P0000"
     assert g.successor("CHK_T0000_P0000") == "CHK_T0000_P0000_Q0001"
+    assert g.successor("CHK_T0000_P0000_C0001") == "CHK_T0000_P0000_END"
+    assert g.successor("CHK_T0000_P0000_END") == "CHK_T0000_P0000_END_F0001"
     assert g.successor("CHK_T0000_P0000_END_F0001") is None
+    assert g.default_path() == [c.chunk_id for c in chunks]
+
+
+def test_graph_many_passages_linear():
+    chunks = [
+        Chunk(chunk_id="CHK_T0000_P0000", story_id="s", kind="passage_debut"),
+        Chunk(chunk_id="CHK_T0000_P0001", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0000_P0002", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0000_P0003", story_id="s", kind="passage_fin"),
+    ]
+    g = StoryGraph(chunks)
+    assert g.is_linear()
+    assert g.default_path() == [
+        "CHK_T0000_P0000",
+        "CHK_T0000_P0001",
+        "CHK_T0000_P0002",
+        "CHK_T0000_P0003",
+    ]
+
+
+def test_graph_ramified_does_not_jump_sibling():
+    chunks = [
+        Chunk(chunk_id="CHK_T0000_P0000", story_id="s", kind="passage_debut"),
+        Chunk(
+            chunk_id="CHK_T0001_P0000",
+            story_id="s",
+            kind="transition_question",
+            default_next="CHK_T0001_P0001",
+            option_1_label="a",
+            option_1_next="CHK_T0001_P0001",
+            option_2_label="b",
+            option_2_next="CHK_T0001_P0002",
+        ),
+        Chunk(chunk_id="CHK_T0001_P0001", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0001_P0001_Q0001", story_id="s", kind="passage_question", default_next="CHK_T0001_P0001_C0001"),
+        Chunk(chunk_id="CHK_T0001_P0001_C0001", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0001_P0001_T0002_P0000", story_id="s", kind="transition_question", default_next="CHK_T0001_P0001_T0002_P0001"),
+        Chunk(chunk_id="CHK_T0001_P0001_T0002_P0001", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0001_P0001_T0002_P0001_F0001", story_id="s", kind="passage_fin"),
+        Chunk(chunk_id="CHK_T0001_P0002", story_id="s", kind="passage"),
+        Chunk(chunk_id="CHK_T0001_P0002_F0001", story_id="s", kind="passage_fin"),
+    ]
+    g = StoryGraph(chunks)
+    assert not g.is_linear()
+    assert g.successor("CHK_T0000_P0000") == "CHK_T0001_P0000"
+    assert g.successor("CHK_T0001_P0001") == "CHK_T0001_P0001_Q0001"
+    assert g.successor("CHK_T0001_P0001_C0001") == "CHK_T0001_P0001_T0002_P0000"
+    assert g.successor("CHK_T0001_P0001_T0002_P0001") == "CHK_T0001_P0001_T0002_P0001_F0001"
+    path = g.default_path()
+    assert "CHK_T0001_P0002" not in path
+    assert path[-1] == "CHK_T0001_P0001_T0002_P0001_F0001"
 
 
 def test_encrypted_chunk_endpoint(client):
