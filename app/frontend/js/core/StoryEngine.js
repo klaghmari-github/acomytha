@@ -26,6 +26,7 @@ export class StoryEngine {
   async run(storyId) {
     this._abort = false;
     this._userStop = false;
+    this._heard = 0;
     this._prefetch.clear();
     this._remain = this.maxSeconds > 0 ? this.maxSeconds : 0;
     const graph = await this.api.get(this._graphPath(storyId));
@@ -71,7 +72,7 @@ export class StoryEngine {
       id = node.default_next;
     }
     this.onChoice?.([]);
-    this.onDone?.({ userStop: !!this._userStop });
+    this.onDone?.({ userStop: !!this._userStop, heard: this._heard || 0 });
   }
 
   async _play(storyId, chunkId) {
@@ -79,17 +80,18 @@ export class StoryEngine {
     if (next) this._warm(storyId, next);
     const buf = await this._load(storyId, chunkId);
     if (this._abort) return;
+    if (!buf) {
+      if (this.preview) throw new Error("aperçu audio absent");
+      return;
+    }
     const cap = this._remain > 0 ? this._remain : 0;
     const t0 = performance.now();
-    try {
-      await this.player.play(buf, this.key, { maxSeconds: cap });
-      if (this.maxSeconds > 0) {
-        const used = (performance.now() - t0) / 1000;
-        this._remain = Math.max(0, (this._remain || this.maxSeconds) - used);
-        if (this._remain <= 0.05) this._abort = true;
-      }
-    } catch {
-      /* silence : on enchaîne plutôt que de bloquer l'enfant */
+    await this.player.play(buf, this.key, { maxSeconds: cap });
+    const used = (performance.now() - t0) / 1000;
+    this._heard = (this._heard || 0) + used;
+    if (this.maxSeconds > 0) {
+      this._remain = Math.max(0, (this._remain || this.maxSeconds) - used);
+      if (this._remain <= 0.05) this._abort = true;
     }
   }
 

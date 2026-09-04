@@ -87,7 +87,7 @@ def preview_graph(story_id: str, request: Request, db: Session = Depends(get_db)
     if story is None:
         raise HTTPException(404, "histoire inconnue")
     seconds = int(num(db, "preview_seconds") or 30)
-    key = request.app.state.vault.story_key_b64(story_id) if story.has_audio else ""
+    key = request.app.state.vault.story_key_b64(story_id)
     return client_graph(story, seconds, key)
 
 
