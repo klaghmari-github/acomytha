@@ -36,7 +36,7 @@ Ouverture, 3 passages T1, 3 questions, 3 confirmations, 9 passages T2, 9 choix T
 - 27 fins textuellement distinctes
 - `text` et `script` synchronisés
 - `text_ssml` et `text_xai_tags` sur les 86
-- `check()` N3 ≤ 16
+- `check()` N3 ≤ 16, 631 à 682 mots par chemin
 - aucune occurrence de « on va apprendre », « une étape après l'autre », « on va ranger »
 
 ## Non vérifié
