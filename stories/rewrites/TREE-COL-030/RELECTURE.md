@@ -10,7 +10,7 @@ Reprise complète 86 nœuds. Labels T1 doigt/tasse/crayon, T2 romarin/flaque/por
 
 ## Contrôles
 - 86 chunks, 27 chemins, 27 fins distinctes
-- 469 à 500 mots par chemin, moyenne 482
+- 467 à 498 mots par chemin, moyenne 481
 - `text` / `script` synchronisés ; `text_ssml` et `text_xai_tags` sur 86 nœuds
 - N1 ≤ 10 mots/phrase ; papa et maman parlent ; `en ce moment`
 
