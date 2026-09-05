@@ -1,17 +1,55 @@
-# F-NAR-015 — ATOM-AUT.AFF.003-06
+# ATOM-AUT.AFF.003-06 — Les gouttes du seau vert
 
-Relu : ouverture, P0000, Q0001, C0001, END, END_F0001, `script`, ids.
+Réécriture éditoriale F-NAR-019, example4 v2. `chunk_id` / `kind` inchangés. Texte seulement. Pas d'apply. Pas de git. Pas d'audio.
+
+- **Public :** N1 (3–4 ans), audio familial
+- **Leçon :** AUT.AFF.003 — reprendre ses affaires (vécue, jamais dite)
+- **Personnages :** Sarah, maman. Troupe D16.
+- **Lieu :** rebord de fenêtre puis jardin après la pluie (cuvette, tuyau de zinc)
+- **Indice unique :** point de gouttière (zinc du rebord → tuyau du jardin → dore sur l'eau de la soucoupe)
+- **Structure conservée :** 5 chunks, `chunk_id` / `kind` / graphe inchangés
+
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Promesse narrative
+
+Le zinc tic. Une goutte tient. Un point de gouttière brille. Sarah connaît ce rebord, après la pluie. Elle veut l'eau **maintenant**, dans le seau vert, pour le doudou beige. Elle pousse trop vite sous le zinc : l'eau gicle, le seau reste vide. Manteau à terre, doudou vers le pot. Première idée ratée. Sourire parti. Maman se baisse, pose une question. Sarah ramasse, dit « je le reprends ». Merci vécu après bottes, manteau, doudou. Au jardin, elle tend trop vite : le seau penche. Elle refuse de foncer, retrouve le point du rebord. Elle tient sans bouger. Ploc. La soucoupe paie le début : le point de gouttière dore, mince, sur l'eau.
+
+## Arc dramatique
+
+- Monde : rebord froid, zinc, cuvette grise, jardin luisant.
+- Désir : l'eau de la gouttière, maintenant, dans le seau vert.
+- Objet : seau vert, manteau rouge, doudou beige, bottes rouges.
+- Indice unique : point de gouttière, vu dès l'ouverture, payé au climax.
+- Urgence douce : l'eau pour le doudou, tout de suite.
+- Imprévu 1 : trop vite sous le zinc, seau vide, affaires à terre.
+- Cue : maman à la même hauteur, une question. Un merci vécu, après les affaires dans les bras.
+- Imprévu 2 (plus rusé) : le seau penche sous le tuyau ; Sarah veut foncer.
+- Résolution : elle refuse de foncer, lit le point, tient sans bouger.
+- Retour : goutte dans la soucoupe, point doré sur l'eau.
+
+## Vécu
+
+Sarah veut l'eau **maintenant**. Impatience, puis sourire qui disparaît quand le seau reste vide. Maman se baisse, pose une question, ne récite pas la règle. Sarah agit : genou au sol, seau, manteau, doudou, bottes. Merci vécu après « tu tiens tout ». Au jardin, elle refuse de foncer. Fin : le point du début dore sur l'eau. Seau vert, pas jaune. Pas de ferme, pas de sable.
 
 ## Vu et corrigé
 
-- Désir : de l'eau de gouttière pour le doudou beige.
-- Ouverture : plic plic dans la cuvette grise. N1, phrases courtes.
-- Imprévu : l'heure, oreille du doudou mouillée, manteau sur la chaise.
-- Fin : une goutte dans la soucoupe. Le doudou « boit ».
-- Leçon greffée : reprendre ses affaires, avant de partir. Pas de liste de gestes. Pas de refrain « bon travail ».
-- Troupe D16 : Sarah, maman. POS-001. Adultes parlent (D20). `chunk_id` inchangés.
-- Titre : Les gouttes du seau vert.
+- Titre noyau conservé. Lieu : rebord de fenêtre puis jardin après la pluie. ≠ ATOM-AUT.AFF.003-01 (seau jaune, Raphaël, parc, sable). ≠ TREE-AUT-011 (seau jaune, Sarah, ferme, grain de paille).
+- Ouverture inventée (le zinc tic, goutte ronde), pas un gabarit v2, pas « Sarah est au jardin ».
+- Indice unique : point de gouttière. Pas grain de miette/foin/feuille/paille/pin/pépin/pomme/sable, pas éclat de pince/thermos/coquille/bouton/ticket/goutte/boucle/corde/caisse/marche/caillou/liste/clé/cuillère/sonnette/horloge/tasse/orange/colle/lessive/vitre, pas trait de craie/vitre, merle, miel.
+- Tics encore/déjà/tout doux/tout calme et `aujourd'hui,` retirés.
+- Leçon non dite : elle reprend seau, manteau, doudou, bottes. Pas de morale.
+- Un « en ce moment ». Un merci vécu. Adulte + question.
+- Question moteur inchangée (reprendre). 5 chunks, kinds inchangés.
+- TTS complet (5) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration). `slow` = question et fin. Obstacle plus tendu. Action plus vive à l'ouverture.
+- 648 mots. N1 ≤ 10. `check()` OK. Pas apply.
+
+## Contrôles
+
+- 5 chunks, graphe inchangé
+- 648 mots
+- `text` = `script` collé
 
 ## Non vérifié
 
-- Audio (pas cuit). Durée réelle. Écoute à voix haute. Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
