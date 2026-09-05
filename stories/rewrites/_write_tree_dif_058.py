@@ -818,7 +818,7 @@ FIN = {
         ("maman", "Vos voix sont devenues toutes petites."),
         ("narrateur", "Les clochettes restent dans la paume de Chouchou."),
         ("copain", "Je reste un peu."),
-        ("narrateur", "Une poussière reste collée aux cheveux."),
+        ("enfant-f", "Tes cheveux sentent le bois."),
         ("narrateur", "Une poussière dore les cheveux, sous l'abat-jour."),
     ),
     (1, 1, 3): L(
@@ -871,9 +871,9 @@ FIN = {
         ("copain", "Tu nouais le bas."),
         ("maman", "Le carreau sent le soir, tout près."),
         ("papa", "La porte sonnera, demain."),
-        ("narrateur", "Chouchou les pose contre la vitre."),
+        ("enfant-f", "Je les pose contre la vitre."),
         ("narrateur", "Les clochettes pèsent sur le loquet."),
-        ("narrateur", "Un rai jaune traverse le métal."),
+        ("copain", "Le jaune de la rue les touche."),
         ("narrateur", "Un rai jaune traverse le loquet."),
     ),
     (1, 3, 2): L(
@@ -917,7 +917,7 @@ FIN = {
         ("maman", "Vos voix sont devenues toutes petites."),
         ("narrateur", "Le ruban reste dans la paume de Chouchou."),
         ("copain", "Je reste un peu."),
-        ("narrateur", "Une poussière reste collée aux cheveux."),
+        ("enfant-f", "Une mèche à toi, sur le bois."),
         ("narrateur", "Le tabouret garde une mèche, dans l'ombre jaune."),
     ),
     (2, 1, 3): L(
@@ -970,9 +970,9 @@ FIN = {
         ("copain", "Tu nouais le bas."),
         ("maman", "Le carreau sent le soir, tout près."),
         ("papa", "La porte sonnera, demain."),
-        ("narrateur", "Chouchou les pose contre la vitre."),
+        ("enfant-f", "Je pose le rouge contre la vitre."),
         ("narrateur", "Le ruban rouge veille au loquet."),
-        ("narrateur", "Un rai jaune traverse le métal."),
+        ("copain", "La rue le dore, un peu."),
         ("narrateur", "Le loquet pèse, doré par la rue."),
     ),
     (2, 3, 2): L(
@@ -984,7 +984,7 @@ FIN = {
         ("narrateur", "Le ruban pose une ombre au plancher."),
         ("copain", "Ça tinte trop, Chouchou."),
         ("enfant-f", "C'est pour ça."),
-        ("narrateur", "Deux paires de pieds se touchent, au rebord."),
+        ("narrateur", "Le satin laisse un trait rouge, au rebord."),
     ),
     (2, 3, 3): L(
         ("narrateur", "Un peu de buée reste au carreau."),
@@ -1016,7 +1016,7 @@ FIN = {
         ("maman", "Vos voix sont devenues toutes petites."),
         ("narrateur", "L'anneau reste dans la paume de Chouchou."),
         ("copain", "Je reste un peu."),
-        ("narrateur", "Une poussière reste collée aux cheveux."),
+        ("enfant-f", "Il a pris ta poussière, Nino."),
         ("narrateur", "Le tabouret sent le bois, sous la lumière."),
     ),
     (3, 1, 3): L(
@@ -1069,9 +1069,9 @@ FIN = {
         ("copain", "Tu nouais le bas."),
         ("maman", "Le carreau sent le soir, tout près."),
         ("papa", "La porte sonnera, demain."),
-        ("narrateur", "Chouchou les pose contre la vitre."),
+        ("enfant-f", "Je pose l'anneau contre la vitre."),
         ("narrateur", "L'anneau de bois veille au loquet."),
-        ("narrateur", "Un rai jaune traverse le métal."),
+        ("copain", "Mes talons sont chauds, là."),
         ("narrateur", "Les talons de Nino restent chauds, au loquet."),
     ),
     (3, 3, 2): L(
