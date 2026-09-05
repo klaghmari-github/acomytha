@@ -567,7 +567,7 @@ T3 = {
         ("maman", "Derrière la boîte."),
         ("narrateur", COL[1]),
         ("papa", "On a chuchoté ensemble."),
-        ("maman", "La suite a eu sa place."),
+        ("maman", "On l'entend, maintenant."),
     ),
     (1, 2, 3): L(
         ("enfant-f", "La marche, là."),
@@ -599,8 +599,8 @@ T3 = {
         ("narrateur", "Une lune de papier penche, bas, tombée."),
         ("narrateur", "Elle attendait près de la plinthe, sans un bruit."),
         ("narrateur", COL[1]),
-        ("maman", "Le mot a fini sa route."),
-        ("papa", "Merci d'avoir regardé jusque-là."),
+        ("maman", "Elle attendait là, tout bas."),
+        ("papa", "Merci d'avoir baissé les yeux."),
     ),
     (1, 3, 3): L(
         ("enfant-f", "Tes bras, papa."),
@@ -610,7 +610,7 @@ T3 = {
         ("enfant-f", "Je la vois !"),
         ("narrateur", "Un rond blanc brille entre deux livres, enfin."),
         ("narrateur", COL[1]),
-        ("maman", "Tes bras ont fini la phrase."),
+        ("maman", "Elle est entre les livres."),
         ("papa", "Chacun a fait sa part."),
     ),
     (2, 1, 1): L(
@@ -666,7 +666,7 @@ T3 = {
         ("maman", "Derrière la boîte."),
         ("narrateur", COL[2]),
         ("papa", "On a chuchoté ensemble."),
-        ("maman", "La suite a eu sa place."),
+        ("maman", "On l'entend, maintenant."),
     ),
     (2, 2, 3): L(
         ("enfant-f", "La marche, loup avec moi."),
@@ -698,8 +698,8 @@ T3 = {
         ("narrateur", "Une lune de papier penche, bas, tombée."),
         ("narrateur", "Le museau la touche, sans la froisser."),
         ("narrateur", COL[2]),
-        ("maman", "Le mot a fini sa route."),
-        ("papa", "Merci d'avoir regardé jusque-là."),
+        ("maman", "Elle attendait là, tout bas."),
+        ("papa", "Merci d'avoir baissé les yeux."),
     ),
     (2, 3, 3): L(
         ("enfant-f", "Tes bras, et le loup."),
@@ -709,7 +709,7 @@ T3 = {
         ("enfant-f", "Il la voit !"),
         ("narrateur", "Un rond blanc brille entre deux livres, enfin."),
         ("narrateur", COL[2]),
-        ("maman", "Tes bras ont fini la phrase."),
+        ("maman", "Elle est entre les livres."),
         ("papa", "Chacun a fait sa part."),
     ),
     (3, 1, 1): L(
@@ -765,7 +765,7 @@ T3 = {
         ("maman", "Derrière la boîte."),
         ("narrateur", COL[3]),
         ("papa", "On a chuchoté ensemble."),
-        ("maman", "La suite a eu sa place."),
+        ("maman", "On l'entend, maintenant."),
     ),
     (3, 2, 3): L(
         ("enfant-f", "La marche, lampe posée."),
@@ -797,8 +797,8 @@ T3 = {
         ("narrateur", "Une lune de papier penche, bas, tombée."),
         ("narrateur", "Le rond la réveille, sans un clic."),
         ("narrateur", COL[3]),
-        ("maman", "Le mot a fini sa route."),
-        ("papa", "Merci d'avoir regardé jusque-là."),
+        ("maman", "Elle attendait là, tout bas."),
+        ("papa", "Merci d'avoir baissé les yeux."),
     ),
     (3, 3, 3): L(
         ("enfant-f", "Tes bras, et la lampe."),
@@ -808,7 +808,7 @@ T3 = {
         ("enfant-f", "Le rond l'a eue !"),
         ("narrateur", "Un rond blanc brille entre deux livres, enfin."),
         ("narrateur", COL[3]),
-        ("maman", "Tes bras ont fini la phrase."),
+        ("maman", "Elle est entre les livres."),
         ("papa", "Chacun a fait sa part."),
     ),
 }
@@ -819,10 +819,10 @@ FIN = {
         ("narrateur", "La lune rentre dans le poing, un petit clic."),
         ("enfant-f", "Il marche !"),
         ("papa", "Sur le mur du buffet, tout droit."),
-        ("maman", "Bravo."),
+        ("maman", "Regarde ses oreilles, droites."),
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Une miette sèche sur le bois."),
-        ("narrateur", "Le buffet redevient calme, autour des assiettes."),
+        ("narrateur", "Le buffet se tait autour des assiettes."),
         ("narrateur", "Le savon de la cuisine sent, tiède."),
     ),
     (1, 1, 2): L(
@@ -833,7 +833,7 @@ FIN = {
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina pose le carton contre l'épaule."),
         ("narrateur", "Une assiette tinte, puis se tait."),
-        ("narrateur", "Le couloir laisse un rai, mince."),
+        ("narrateur", "Un rai mince coupe le linge, puis s'arrête."),
     ),
     (1, 1, 3): L(
         ("narrateur", "Contre la chaise, le loup tient."),
@@ -843,7 +843,7 @@ FIN = {
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina tapote le bois, léger."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "Une horloge tape, puis le buffet se tait."),
+        ("narrateur", "L'horloge tape une fois, le buffet se tait."),
     ),
     (1, 2, 1): L(
         ("narrateur", "Loin de l'écho, la lune était là, contre le carton."),
@@ -862,8 +862,8 @@ FIN = {
         ("maman", "Le mur t'attend."),
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina essuie une main sur son pantalon."),
-        ("narrateur", "Une ombre reste sur le bois."),
-        ("narrateur", "Le loup avance, pas après pas."),
+        ("narrateur", "Une ombre de drap reste sur le bois."),
+        ("narrateur", "Les oreilles du loup touchent le bois, sans bruit."),
     ),
     (1, 2, 3): L(
         ("narrateur", "Sur la marche, la lune penche."),
@@ -873,7 +873,7 @@ FIN = {
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina souffle un peu sur les oreilles."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "La marche garde son ombre, seule."),
+        ("narrateur", "La marche garde une ombre de drap, seule."),
     ),
     (1, 3, 1): L(
         ("narrateur", "Sur le tabouret, Victorina a vu le cadre."),
@@ -883,17 +883,17 @@ FIN = {
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Le loup marche jusqu'au palier."),
         ("narrateur", "Une marche se tait, puis l'autre."),
-        ("narrateur", "L'étagère redevient calme, une planche."),
+        ("narrateur", "La planche du palier redevient une planche."),
     ),
     (1, 3, 2): L(
         ("narrateur", "Tout en bas, la lune brille, près de la plinthe."),
         ("enfant-f", "Tu as dit petit, à la fin."),
-        ("papa", "Merci d'avoir écouté jusque-là."),
-        ("maman", "Un peu de lait, après le mur."),
+        ("papa", "Merci d'avoir regardé en bas."),
+        ("maman", "Le savon t'attend, près de l'eau."),
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina pose le carton contre le mur du palier."),
         ("narrateur", "L'étagère reprend sa place, sage."),
-        ("narrateur", "Le haut n'a plus de secret, ce soir."),
+        ("narrateur", "Les carreaux du palier reprennent la bande jaune."),
     ),
     (1, 3, 3): L(
         ("narrateur", "Dans les bras de papa, la lune était là."),
@@ -903,17 +903,17 @@ FIN = {
         ("narrateur", "Le drap blanc tient le carton, droit."),
         ("narrateur", "Victorina pose le carton près des carreaux."),
         ("narrateur", "Les oreilles touchent l'air."),
-        ("narrateur", "Une bande jaune s'allonge, puis la lampe se tait."),
+        ("narrateur", "La bande jaune s'allonge, puis la lampe se tait."),
     ),
     (2, 1, 1): L(
         ("narrateur", "La lune rentre derrière une oreille, un petit clic."),
         ("enfant-f", "Il marche, lui !"),
         ("papa", "Sur le mur du buffet, les oreilles hautes."),
-        ("maman", "Bravo."),
+        ("maman", "Regarde, il ne glisse plus."),
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Une anse d'assiette garde un fil de colle."),
-        ("narrateur", "Le buffet redevient calme, autour des assiettes."),
-        ("narrateur", "Le savon de la cuisine sent, tiède."),
+        ("narrateur", "Le buffet se tait autour des assiettes."),
+        ("narrateur", "Un fil de colle sèche sur une anse."),
     ),
     (2, 1, 2): L(
         ("narrateur", "Le loup part entre deux ombres d'assiettes."),
@@ -923,7 +923,7 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina redresse une oreille, du pouce."),
         ("narrateur", "Une assiette tinte, puis se tait."),
-        ("narrateur", "Le couloir laisse un rai, mince."),
+        ("narrateur", "Le couloir laisse un rai sur le carton gris."),
     ),
     (2, 1, 3): L(
         ("narrateur", "Contre la chaise, le loup tient, museau bas."),
@@ -933,7 +933,7 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina gratte un peu de colle, du doigt."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "Une horloge tape, puis le buffet se tait."),
+        ("narrateur", "L'horloge tape, et le museau se tient."),
     ),
     (2, 2, 1): L(
         ("narrateur", "Loin de l'écho, la lune était collée au carton."),
@@ -943,7 +943,7 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Une poussière sèche sur une oreille."),
         ("narrateur", "Victorina fait marcher le loup, près du bois."),
-        ("narrateur", "Le placard redevient un placard, simple."),
+        ("narrateur", "Le placard referme son écho, sans un mot."),
     ),
     (2, 2, 2): L(
         ("narrateur", "Dans le chuchotement, le loup a entendu la fin."),
@@ -953,7 +953,7 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina essuie la colle sur son pantalon."),
         ("narrateur", "Une ombre d'oreille reste sur le bois."),
-        ("narrateur", "Le loup avance, pas après pas."),
+        ("narrateur", "Le loup avance, oreilles hautes, pas après pas."),
     ),
     (2, 2, 3): L(
         ("narrateur", "Sur la marche, la lune penche vers le museau."),
@@ -963,7 +963,7 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina souffle un peu sur les oreilles."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "La marche garde son ombre, seule."),
+        ("narrateur", "La marche garde une ombre de museau, seule."),
     ),
     (2, 3, 1): L(
         ("narrateur", "Sur le tabouret, le loup a vu le cadre."),
@@ -973,17 +973,17 @@ FIN = {
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Le loup marche jusqu'au palier, oreilles hautes."),
         ("narrateur", "Une marche se tait, puis l'autre."),
-        ("narrateur", "L'étagère redevient calme, une planche."),
+        ("narrateur", "Deux oreilles passent la planche, puis s'arrêtent."),
     ),
     (2, 3, 2): L(
         ("narrateur", "Tout en bas, la lune brille, près du museau."),
         ("enfant-f", "Tu as dit petit, à la fin."),
-        ("papa", "Merci d'avoir écouté jusque-là."),
-        ("maman", "Un peu de lait, après le mur."),
+        ("papa", "Merci d'avoir regardé en bas."),
+        ("maman", "Le savon t'attend, près de l'eau."),
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina pose le carton contre le mur du palier."),
         ("narrateur", "L'étagère reprend sa place, sage."),
-        ("narrateur", "Le haut n'a plus de secret, ce soir."),
+        ("narrateur", "Le haut n'a plus rien à cacher, ce soir."),
     ),
     (2, 3, 3): L(
         ("narrateur", "Dans les bras de papa, le loup a pris la lune."),
@@ -992,18 +992,18 @@ FIN = {
         ("maman", "Le haut gardera son ombre."),
         ("narrateur", "Le loup de carton serre le bois."),
         ("narrateur", "Victorina pose le carton près des carreaux."),
-        ("narrateur", "Les oreilles touchent l'air."),
-        ("narrateur", "Une bande jaune s'allonge, puis la lampe se tait."),
+        ("narrateur", "Les oreilles touchent l'air, près des carreaux."),
+        ("narrateur", "La lampe du portemanteau tient un rond, puis s'éteint."),
     ),
     (3, 1, 1): L(
         ("narrateur", "La lune rentre dans le rond, un petit clic."),
         ("enfant-f", "Il marche, dans la lumière !"),
         ("papa", "Sur le mur du buffet, le rond le suit."),
-        ("maman", "Bravo."),
+        ("maman", "Le rond le tient, maintenant."),
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Une miette sèche dans le cercle jaune."),
-        ("narrateur", "Le buffet redevient calme, autour des assiettes."),
-        ("narrateur", "Le savon de la cuisine sent, tiède."),
+        ("narrateur", "Le buffet se tait autour des assiettes."),
+        ("narrateur", "Le savon sent, et le rond s'éteint."),
     ),
     (3, 1, 2): L(
         ("narrateur", "Le loup part, gris, dans le rond des assiettes."),
@@ -1013,7 +1013,7 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina pose le carton contre l'épaule."),
         ("narrateur", "Une assiette tinte, puis se tait."),
-        ("narrateur", "Le couloir laisse un rai, mince."),
+        ("narrateur", "Un rai mince dort dans le verre de la lampe."),
     ),
     (3, 1, 3): L(
         ("narrateur", "Contre la chaise, le loup tient, dans le rond."),
@@ -1023,7 +1023,7 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina tapote le bois, léger."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "Une horloge tape, puis le buffet se tait."),
+        ("narrateur", "L'horloge tape, le rond se tait."),
     ),
     (3, 2, 1): L(
         ("narrateur", "Loin de l'écho, la lune était là, dans le rond."),
@@ -1033,7 +1033,7 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Une poussière sèche sur le verre."),
         ("narrateur", "Victorina fait marcher le loup, près du bois."),
-        ("narrateur", "Le placard redevient un placard, simple."),
+        ("narrateur", "Le verre de la lampe redevient froid."),
     ),
     (3, 2, 2): L(
         ("narrateur", "Dans le chuchotement, le rond a parlé."),
@@ -1042,8 +1042,8 @@ FIN = {
         ("maman", "Le mur t'attend."),
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina essuie le verre sur son pantalon."),
-        ("narrateur", "Une ombre ronde reste sur le bois."),
-        ("narrateur", "Le loup avance, pas après pas."),
+        ("narrateur", "Le clic dort dans sa poche, oublié."),
+        ("narrateur", "Une ombre ronde reste collée au bois."),
     ),
     (3, 2, 3): L(
         ("narrateur", "Sur la marche, la lune penche dans le rond."),
@@ -1053,7 +1053,7 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina souffle un peu sur les oreilles."),
         ("narrateur", "Une poussière s'envole, puis retombe."),
-        ("narrateur", "La marche garde son ombre, seule."),
+        ("narrateur", "La marche garde un rond, puis l'oublie."),
     ),
     (3, 3, 1): L(
         ("narrateur", "Sur le tabouret, le rond a vu le cadre."),
@@ -1063,17 +1063,17 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Le loup marche jusqu'au palier, dans le rond."),
         ("narrateur", "Une marche se tait, puis l'autre."),
-        ("narrateur", "L'étagère redevient calme, une planche."),
+        ("narrateur", "Le palier garde un cercle, puis s'éteint."),
     ),
     (3, 3, 2): L(
         ("narrateur", "Tout en bas, la lune brille dans le rond, près de la plinthe."),
         ("enfant-f", "Tu as dit petit, à la fin."),
-        ("papa", "Merci d'avoir écouté jusque-là."),
-        ("maman", "Un peu de lait, après le mur."),
+        ("papa", "Merci d'avoir regardé en bas."),
+        ("maman", "Le savon t'attend, près de l'eau."),
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina pose le carton contre le mur du palier."),
         ("narrateur", "L'étagère reprend sa place, sage."),
-        ("narrateur", "Le haut n'a plus de secret, ce soir."),
+        ("narrateur", "La plinthe reprend son ombre, sans secret."),
     ),
     (3, 3, 3): L(
         ("narrateur", "Dans les bras de papa, le rond a pris la lune."),
@@ -1083,7 +1083,7 @@ FIN = {
         ("narrateur", "La lampe ronde cliquette une fois, puis se tait."),
         ("narrateur", "Victorina pose le carton près des carreaux."),
         ("narrateur", "Les oreilles touchent l'air."),
-        ("narrateur", "Une bande jaune s'allonge, puis la lampe se tait."),
+        ("narrateur", "La bande jaune s'allonge, et le rond s'éteint."),
     ),
 }
 
@@ -1266,7 +1266,7 @@ def build() -> None:
         "- Titre noyau conservé. N3 ≤ 16. Troupe D16 : Victorina, papa, maman.\n"
         "- Inès, bac-toboggan-balançoires, « On va apprendre » jetés. Première idée "
         "échoue (elle coupe, le loup glisse).\n"
-        "- 27 fins textuellement distinctes. Un merci / bravo vécu, pas un refrain.\n"
+        "- 27 fins textuellement distinctes (27 dernières images uniques). Merci vécu, pas un refrain Bravo.\n"
         "- TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/"
         "resolution/ending).\n"
         "- `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.\n"

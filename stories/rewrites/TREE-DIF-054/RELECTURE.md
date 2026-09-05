@@ -8,7 +8,7 @@ Soir dans la maison : carreaux, bande jaune du portemanteau, savon, horloge. Vic
 ## Vu et corrigé
 - Titre noyau conservé. N3 ≤ 16. Troupe D16 : Victorina, papa, maman.
 - Inès, bac-toboggan-balançoires, « On va apprendre » jetés. Première idée échoue (elle coupe, le loup glisse).
-- 27 fins textuellement distinctes. Un merci / bravo vécu, pas un refrain.
+- 27 fins textuellement distinctes (27 dernières images uniques). Merci vécu, pas un refrain Bravo.
 - TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/resolution/ending).
 - `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
 - Tics « tout doux / tout calme / encore / déjà » écartés. Leçon vécue, pas dite (pas « laisser le temps »).
