@@ -23,6 +23,8 @@ fi
 GITLAB_URL="git@gitlab.com:klaghmari-group/akomytha.git"
 GITHUB_URL="git@github.com:klaghmari-github/acomytha.git"
 
+git add .
+
 ensure_remote() {
   local name="$1" url="$2"
   if git remote get-url "$name" >/dev/null 2>&1; then
