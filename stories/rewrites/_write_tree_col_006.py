@@ -825,7 +825,7 @@ T3 = {
         "enfant-f|La virgule, sur la vitre !",
         "copine|Le ciel, sur la vitre !",
         "narrateur|Le crayon glisse, et un trait rate le ciel.",
-        "narrateur|Nina grogne, tout bas.",
+        "narrateur|Nina souffle, tout bas.",
         "narrateur|Mila retire la mine, sans frotter.",
         "narrateur|Dans le miroir, la vraie virgule d'or tient.",
         "enfant-f|Toi le ciel, dans l'eau.",
@@ -1093,7 +1093,7 @@ FINS = {
         "enfant-f|Elle chante, sur nos genoux.",
         "maman|Deux chansons, un bois nu.",
         "narrateur|Nina tapote, plus léger.",
-        "narrateur|Papa plie l'écharpe, le fil d'or au bord.",
+        "narrateur|Papa raccroche le ciré, au crochet voisin.",
         "narrateur|Maman a plié l'écharpe, le fil d'or caché.",
     ),
     (2, 2, 3): L(
