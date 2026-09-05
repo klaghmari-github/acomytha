@@ -634,8 +634,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le soleil de buée tient, rond.",
         f"{N}|Le ballon s'endort contre le mur, miette au chaud.",
         f"{N}|Le crayon rejoint le pot, une pointe un peu humide.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où la goutte est devenue un rayon.",
+        f"{M}|Tu as vu le rayon, en bas ?",
+        f"{E}|La goutte s'est arrêtée en rayon.",
         f"{P}|La cuillère-étoile a séché, à côté.",
         f"{N}|L'anse bleue fait un dernier toc, tout petit.",
         f"{N}|Dehors, le toit ne goutte plus.",
@@ -662,8 +662,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, la tasse étoilée a un fond brun.",
         f"{N}|Le ballon s'endort, miette tournée vers la vitre.",
         f"{N}|Le soleil de doigt tient, un peu flou, heureux.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où mon doigt a eu chaud, enfin.",
+        f"{M}|Ton doigt est tiède, maintenant ?",
+        f"{E}|Il a tenu le rond, tout seul.",
         f"{P}|La perle jaune de la cuillère brille au sec.",
         f"{N}|Un dernier toc, plus grave, sur la soucoupe.",
         f"{N}|Le tapis tiède garde la forme de ses genoux.",
@@ -690,8 +690,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, l'écharpe sent le cacao, un peu.",
         f"{N}|Le ballon veille au pied, rouge sur le tapis tiède.",
         f"{N}|Le soleil de souffle touche presque le cadre.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le nuage est revenu, juste pour moi.",
+        f"{M}|Le nuage est revenu, c'est ça ?",
+        f"{E}|Il est revenu, juste pour moi.",
         f"{P}|La cuillère-étoile brille au bord.",
         f"{N}|Un toc étouffé sous la laine, puis le silence.",
         f"{E}|J'ai réchauffé la vitre, toute seule.",
@@ -718,8 +718,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le soleil habite le haut de la vitre.",
         f"{N}|Le seau bleu, vide, garde une perle d'eau oubliée.",
         f"{N}|Le crayon repose en travers, comme un pont.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où j'ai dessiné au-dessus du flou.",
+        f"{M}|Tu as dessiné au-dessus du flou ?",
+        f"{E}|Le haut du soleil m'a suffi.",
         f"{P}|La cuillère-étoile a retrouvé son tic.",
         f"{N}|Un toc clair, puis le seau qui ne cloche plus.",
         f"{E}|J'ai sauvé le haut du soleil.",
@@ -746,8 +746,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le seau bleu est un plateau d'étoile.",
         f"{N}|La tasse y fait toc, plus grave qu'au début.",
         f"{N}|Le soleil de doigt a un point, en bas, comme un pied.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le seau a porté à ma place.",
+        f"{M}|Le seau a porté, vraiment ?",
+        f"{E}|Il a porté à ma place.",
         f"{P}|La perle jaune est sèche, collée au bord.",
         f"{N}|Un toc creux, puis plus rien que le cacao.",
         f"{E}|J'ai bougé la tasse sans la lâcher.",
@@ -774,8 +774,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, l'écharpe a un coin un peu humide.",
         f"{N}|Le seau bleu, vide, garde l'odeur du bois mouillé.",
         f"{N}|Le soleil de souffle est bas, large, posé.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où la perle a repris son jaune.",
+        f"{M}|La perle a repris son jaune ?",
+        f"{E}|Elle brille, toute sèche.",
         f"{P}|La cuillère-étoile fait tic, toute sèche.",
         f"{N}|Un toc, puis le froissement de la laine.",
         f"{E}|J'ai séché, puis j'ai dessiné.",
@@ -803,8 +803,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le soleil a une étoile au ventre.",
         f"{N}|Le doudou garde son pli en triangle, sage.",
         f"{N}|Le crayon a une pointe un peu de buée.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'étoile est allée sur le verre.",
+        f"{M}|L'étoile est allée sur le verre ?",
+        f"{E}|Elle est au centre, pour qu'on la trouve.",
         f"{P}|La cuillère-étoile veille, perle vers le dessin.",
         f"{N}|Un toc, puis plus rien que le tapis tiède.",
         f"{E}|J'ai montré l'anse, sans la cacher.",
@@ -831,8 +831,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le doudou est une soucoupe molle.",
         f"{N}|La tasse étoilée y fait un toc mou, content.",
         f"{N}|Le soleil de doigt a un point, sous une étoile.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le toc est devenu un rire.",
+        f"{M}|Le toc est devenu un rire ?",
+        f"{E}|Un toc mou, comme un rire.",
         f"{P}|La cuillère-étoile dort sur le tissu, en travers.",
         f"{N}|Un toc mou, puis l'odeur du savon et du cacao.",
         f"{E}|J'ai bu sans cacher l'anse.",
@@ -859,8 +859,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux tissus gardent la tasse étoilée.",
         f"{N}|L'étoile bleue reste dehors, ronde, visible.",
         f"{N}|Le soleil de souffle est large, presque un manteau.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'anse a eu le droit d'être vue.",
+        f"{M}|L'anse a eu le droit d'être vue ?",
+        f"{E}|Dehors, pour le toc, et pour Nina.",
         f"{P}|La cuillère-étoile dépasse, perle vers la vitre.",
         f"{N}|Un toc net, puis le silence des deux laines.",
         f"{E}|J'ai soufflé, sans cacher l'étoile.",
@@ -888,8 +888,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux gouttes se tiennent par un trait.",
         f"{N}|Le ballon, sec, garde un rond plus pâle au flanc.",
         f"{N}|Le crayon sent la menthe, un peu, à la pointe.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le dedans a parlé au dehors.",
+        f"{M}|Le dedans a parlé au dehors ?",
+        f"{E}|Les deux gouttes se tiennent.",
         f"{P}|La feuille de menthe a séché, en virgule.",
         f"{N}|Un toc, puis une dalle qui ne claque plus.",
         f"{E}|J'ai rendu la goutte au soleil.",
@@ -916,8 +916,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le cacao sent la menthe, enfin.",
         f"{N}|Le ballon, sec, tourne sa trace vers la porte.",
         f"{N}|Le soleil de doigt a un point frais, comme une dalle.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le nez a trouvé le jardin.",
+        f"{M}|Le nez a trouvé le jardin ?",
+        f"{E}|La menthe, avant les yeux.",
         f"{P}|La feuille flotte, petite barque, dans le fond.",
         f"{N}|Un toc, puis l'odeur verte qui ne part plus.",
         f"{E}|J'ai bu le dehors, sans ouvrir.",
@@ -944,8 +944,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le soleil a une menthe au cœur.",
         f"{N}|L'écharpe sent l'air du passage des gouttes.",
         f"{N}|Le ballon, sec, n'a plus de miroir au flanc.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où la feuille a laissé son peigne.",
+        f"{M}|La feuille a laissé son peigne ?",
+        f"{E}|Un tampon de menthe, au milieu.",
         f"{P}|La vraie menthe sèche, à côté, un peu froissée.",
         f"{N}|Un toc, puis un froissement d'écharpe.",
         f"{E}|J'ai tamponné le dehors sur le dedans.",
@@ -973,8 +973,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, une rivière de buée monte vers un soleil.",
         f"{N}|Le seau bleu garde une perle, rien qu'une.",
         f"{N}|Le crayon a le bois un peu taché de vert.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'eau est devenue un chemin.",
+        f"{M}|L'eau est devenue un chemin ?",
+        f"{E}|Une rivière, du seau au soleil.",
         f"{P}|La menthe, sur le bord, a la forme d'un bateau.",
         f"{N}|Un toc sec, puis plus de cloche dans le seau.",
         f"{E}|J'ai dessiné ce que l'eau avait emporté.",
@@ -1001,8 +1001,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le seau bleu est une table de tasse.",
         f"{N}|Le cacao sent une menthe discrète, revenue.",
         f"{N}|Le soleil de doigt a une perle, jumelle du seau.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où les deux perles se sont vues.",
+        f"{M}|Les deux perles se sont vues ?",
+        f"{E}|Une dans le seau, une sur le verre.",
         f"{P}|La feuille a coulé, puis elle flotte, petite.",
         f"{N}|Un toc grave, creux, comme un puits gentil.",
         f"{E}|J'ai rendu l'odeur, sans l'eau de trop.",
@@ -1029,8 +1029,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, un soleil entoure une ombre de menthe.",
         f"{N}|L'écharpe sent l'air froid, arrêté à la porte.",
         f"{N}|Le seau bleu cale le bois, vide et utile.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'ombre de la feuille est devenue un cœur.",
+        f"{M}|L'ombre est devenue un cœur ?",
+        f"{E}|L'ombre de la feuille, au centre.",
         f"{P}|La vraie menthe sèche, collée au bord, en virgule.",
         f"{N}|Un toc, puis plus d'air froid sur les chevilles.",
         f"{E}|J'ai tenu le jardin à sa place.",
@@ -1058,8 +1058,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, un nuage denté entoure un soleil.",
         f"{N}|Le doudou montre une médaille verte, presque sèche.",
         f"{N}|Le crayon a une pointe un peu jardin.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où la tache est devenue un nuage.",
+        f"{M}|La tache est devenue un nuage ?",
+        f"{E}|Un ovale denté, plus une saleté.",
         f"{P}|La menthe vraie sèche, loin du tissu.",
         f"{N}|Un toc net, puis plus de dalle derrière la porte.",
         f"{E}|J'ai changé la tache en dessin.",
@@ -1086,8 +1086,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le cacao sent la menthe et le savon.",
         f"{N}|Le doudou tourne sa médaille vers le mur, discrète.",
         f"{N}|Le soleil de doigt a un point, loin de tout vert.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'étoile a regardé toute seule.",
+        f"{M}|L'étoile a regardé toute seule ?",
+        f"{E}|Le bleu vers la vitre, le vert caché.",
         f"{P}|La feuille de menthe sèche, à l'écart du tissu.",
         f"{N}|Un toc clair, sans laine par-dessus.",
         f"{E}|J'ai bu, et le doudou a eu sa place.",
@@ -1114,8 +1114,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux ronds de buée se regardent.",
         f"{N}|L'écharpe sent le passage des gouttes, arrêté.",
         f"{N}|Le doudou s'abrite sous l'ovale, médaille cachée.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le doudou a eu son propre soleil.",
+        f"{M}|Le doudou a eu son soleil ?",
+        f"{E}|Un petit rond, rien que pour lui.",
         f"{P}|La menthe sèche entre les deux dessins, en bas.",
         f"{N}|Un toc net, puis deux silences de laine.",
         f"{E}|J'ai soufflé pour deux.",
@@ -1143,8 +1143,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, une spirale de buée noue un soleil.",
         f"{N}|Le ballon, sous la chaise, n'a plus de fil.",
         f"{N}|Le crayon a une pointe un peu laineuse, pour de faux.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le fil est devenu un nœud sur le verre.",
+        f"{M}|Le fil est devenu un nœud ?",
+        f"{E}|Une boucle de buée, en haut.",
         f"{P}|Le vrai fil dort dans ta poche, en boucle.",
         f"{N}|Un toc clair, sous le carré de laine.",
         f"{E}|J'ai donné un manteau au soleil.",
@@ -1171,8 +1171,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le carré de laine est une anse molle.",
         f"{N}|Le ballon dort sous la chaise, sans fil.",
         f"{N}|Le soleil de doigt a un point chaud, beige pour de faux.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'anse est restée visible, malgré le chaud.",
+        f"{M}|L'anse est restée visible ?",
+        f"{E}|Un coin, malgré le chaud.",
         f"{P}|Le fil, dans ta poche, ne s'échappe plus.",
         f"{N}|Un toc doux, juste, sous la laine.",
         f"{E}|J'ai bu sans tout couvrir.",
@@ -1199,8 +1199,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux laines gardent un toc étouffé.",
         f"{N}|L'étoile bleue a une fenêtre, ronde, dans le tissu.",
         f"{N}|Le soleil de souffle est large, presque une couverture.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où l'anse a eu une fenêtre, pas un cache.",
+        f"{M}|L'anse a eu une fenêtre ?",
+        f"{E}|Une fenêtre ronde, pas un cache.",
         f"{P}|Le ballon, sous la chaise, n'a plus rien à voler.",
         f"{N}|Un toc étouffé, puis le silence des laines.",
         f"{E}|J'ai soufflé avec deux chauds.",
@@ -1228,8 +1228,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux mains de buée tiennent un soleil.",
         f"{N}|Le seau bleu, vide, a de la place, enfin.",
         f"{N}|Le crayon a tracé des doigts un peu trop grands.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où mes mains n'ont plus été trop pleines.",
+        f"{M}|Tes mains n'étaient plus trop pleines ?",
+        f"{E}|Une chose, puis l'autre.",
         f"{P}|Le chausson dort sous le lit, à sa place.",
         f"{N}|Un toc net, rien qui penche.",
         f"{E}|J'ai dessiné le un par un.",
@@ -1256,8 +1256,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, trois étages : seau, laine, étoile.",
         f"{N}|Le soleil de doigt a un point, pile au centre.",
         f"{N}|La tasse étoilée a le toc le plus petit, le juste.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui des trois tocs, de plus en plus vrais.",
+        f"{M}|Les trois tocs étaient justes ?",
+        f"{E}|De plus en plus vrais, un par un.",
         f"{P}|Le chausson n'est plus dans le seau.",
         f"{N}|Un dernier petit toc, puis le cacao.",
         f"{E}|J'ai mis l'ordre, pas la chambre.",
@@ -1284,8 +1284,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, le seau cale le tapis, vide et sage.",
         f"{N}|L'écharpe tient Mila. Le carré tient l'anse.",
         f"{N}|Le soleil de souffle a des rayons, et des mains vides.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où mes mains n'avaient plus rien à rattraper.",
+        f"{M}|Tes mains n'avaient plus rien à rattraper ?",
+        f"{E}|Libres, pendant que je soufflais.",
         f"{P}|Le chausson est rentré sous le lit, pour de bon.",
         f"{N}|Un toc, puis plus de bascule.",
         f"{E}|J'ai soufflé, les mains libres.",
@@ -1313,8 +1313,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, deux soleils : le bon, et le petit à gauche.",
         f"{N}|Le doudou s'assoit sous le petit, sans toucher l'anse.",
         f"{N}|Le crayon a fini les deux ronds, sans se tromper.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le mauvais beige a eu sa place, à part.",
+        f"{M}|Le mauvais beige a eu sa place ?",
+        f"{E}|À part, sous son petit rond.",
         f"{P}|Le carré, lui, reste sous la vraie étoile.",
         f"{N}|Un toc net, du bon côté.",
         f"{E}|J'ai dessiné pour ne plus mêler les deux.",
@@ -1341,8 +1341,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, un seul rond de doigt, le bon.",
         f"{N}|Le doudou, ami, n'est plus un gant.",
         f"{N}|La tasse étoilée, dans le carré, a le toc franc.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où le doudou a eu le droit d'être lui.",
+        f"{M}|Le doudou a eu le droit d'être lui ?",
+        f"{E}|Un ami, plus un gant.",
         f"{P}|Le carré, lui, reste le gant de l'anse.",
         f"{N}|Un toc franc, sans double beige.",
         f"{E}|J'ai bu, et chacun avait son métier.",
@@ -1369,8 +1369,8 @@ def t3_end() -> dict[tuple[int, int, int], tuple]:
         f"{N}|Au campement, trois chauds, un sourire de goutte.",
         f"{N}|L'étoile bleue a sa fenêtre. Le doudou, son petit rond.",
         f"{N}|L'écharpe sent le cacao, et un peu la chambre.",
-        f"{M}|Quel moment tu gardes, Mila ?",
-        f"{E}|Celui où personne n'était sur les pieds de personne.",
+        f"{M}|Personne sur les pieds de personne ?",
+        f"{E}|Trois places, et le verre à nous.",
         f"{P}|La tasse étoilée fume à peine, juste assez.",
         f"{N}|Un toc, puis le sourire qui ne glisse plus.",
         f"{E}|J'ai soufflé pour le grand, et laissé le petit.",
@@ -1517,24 +1517,35 @@ def build() -> None:
         SID,
         TITLE,
         (
-            "Mila veut porter la tasse étoilée au campement de la vitre et y "
-            "dessiner un soleil avant que la goutte arrive en bas : Nina vient. "
-            "Vapeur trop chaude, elle court sans la tasse. Cuisine (cuillère-étoile), "
-            "jardin (menthe) ou chambre (carré de laine) : première idée ratée, "
-            "elle reprend la tasse. Ballon (toc qui vole le glissement), seau "
-            "(eau qui floute ou lave), doudou (étoile cachée / beige trompeur) : "
-            "deuxième ruse. Crayon (suivre le trait), tasse (doigt tiède), écharpe "
-            "(souffle qui rend la buée) : 27 climaxes, 27 souvenirs. La goutte "
-            "du début paie le crayon."
+            "- **Public :** N2 (3–6 ans), audio familial\n"
+            "- **Leçon :** AUT.AFF.003 — reprendre, vécue (la tasse étoilée ne "
+            "sert le soleil que lorsque Mila revient la chercher)\n"
+            "- **Personnages :** Mila, papa, maman (Nina attendue au goûter)\n"
+            "- **Objet :** tasse étoilée (anse bleue, toc sur la soucoupe)\n"
+            "- **Lieu nommé :** campement de la vitre, table du cacao, "
+            "passage des gouttes, nid de laine\n"
+            "- **Mission :** porter la tasse au carré de buée et y tracer un "
+            "soleil avant que la goutte arrive en bas\n"
+            "- **Déclencheur :** il manque la cuillère-étoile, la menthe ou "
+            "le carré ; Nina n'est pas là\n"
+            "- **1er imprévu :** dessiner sans la tasse, doigt froid, rond pâle\n"
+            "- **2e ruse :** ballon (toc qui vole le glissement), seau (eau "
+            "qui floute ou lave), doudou (étoile cachée / beige trompeur)\n"
+            "- **Indice du début :** goutte-crayon ; la fin la transforme en rayon"
         ),
         (
-            "Reprise F-NAR-019 P1. Noyau tasse/vitre conservé. T1 ne retire pas "
-            "la tasse : elle reste au salon, Mila revient. Plus de tout doux / "
-            "encore / déjà / tout calme. Un merci vécu (l'étoile visible). "
-            "Question adulte. 27 fins, 27 T3, 9 T2. TTS profils opening/choice/"
-            "clue/confirm/action/obstacle/resolution/ending. "
-            f"N2 ≤ 15. Chemins {min(counts)}–{max(counts)} mots, moy {sum(counts)//27}. "
-            "check() OK. Pas d'apply."
+            "Reprise F-NAR-019 P1. Noyau « La tasse de cacao et la vitre » "
+            "conservé (salon, cuisine, jardin, chambre, vitre embuée). "
+            "T1 ne retire pas l'équipement : la tasse reste au salon, Mila "
+            "revient. Impatience, petit découragement, fierté calme. "
+            "Adulte guide peu, pas de règle dite. Plus de tout doux / encore / "
+            "déjà / tout calme. Un merci vécu (l'étoile visible). Question "
+            "adulte. 27 fins, 27 T3, 9 T2 textuellement distincts. "
+            "TTS : text_ssml, text_xai_tags, notes (arc, intention, émotion, "
+            "intensité, destinataire, sous-texte, tempo, sourire, respiration), "
+            "slow = choix / indice / fin. "
+            f"N2 ≤ 15. Chemins {min(counts)}–{max(counts)} mots, "
+            f"moy {sum(counts)//27}. check() OK. Pas d'apply."
         ),
     )
     print(f"wrote {SID} {len(merged['chunks'])} chunks  chemins {min(counts)}-{max(counts)}")
