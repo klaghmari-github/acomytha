@@ -41,7 +41,7 @@ Impatience au départ, petit découragement quand le manteau résiste ou dispara
 - 86 chunks
 - 27 chemins, 27 fins textuellement distinctes
 - 27 T3 distincts, 9 T2 distincts
-- 676 à 695 mots par chemin, moyenne 683
+- 677 à 695 mots par chemin, moyenne 684
 - `text` et `script` synchronisés
 - `text_ssml` et `text_xai_tags` enrichis
 - `notes` présentes sur les 86 chunks
