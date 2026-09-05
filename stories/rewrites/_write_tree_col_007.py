@@ -290,7 +290,7 @@ T1 = {
         "narrateur|Il pose les mains à plat, sur le bois.",
         "narrateur|Il attend que la racle se taise.",
         "papa|Je m'accroupis, près des pieds de la chaise.",
-        "maman|Ta phrase, on la prend dans le calme ?",
+        "maman|Ta phrase, on la prend sans le bruit ?",
         "enfant-m|Oui. Un camarade a parlé trop fort.",
         "enfant-m|Ça m'a pincé, ici.",
         "papa|Merci d'avoir gardé tes mains sur la table.",
@@ -586,7 +586,7 @@ T3 = {
         "enfant-m|À l'école, j'ai tracé les bottes, après l'attente.",
         "narrateur|Papa pose le crayon à côté, sans le prendre.",
         "maman|Le rond de la lampe est assez grand pour deux.",
-        "narrateur|Les bottes et le crayon dorment dans la lumière.",
+        "narrateur|Les bottes, le crayon et un croissant de buée dorment dans la lumière.",
     ),
     (1, 2, 3): L(
         "narrateur|Le soir, Sarah a un point jaune au bout du nez.",
@@ -624,7 +624,7 @@ T3 = {
         "narrateur|Papa s'arrête pile, et penche l'oreille.",
         "enfant-m|Bottes, bottes, sur le tapis.",
         "maman|Cette fois, ta note a toute la place.",
-        "narrateur|Les boucles vibrent, comme un petit tambour.",
+        "narrateur|Les boucles vibrent. Un croissant de buée suit le rythme.",
         "papa|On les pose près du radiateur, sur le dernier mot.",
     ),
     (1, 3, 3): L(
@@ -845,7 +845,7 @@ T3 = {
         "maman|Chante-moi le creux, ici.",
         "narrateur|Nino glisse sa note. La vapeur danse, sans ploc.",
         "papa|On pose les bottes sur le dernier mot.",
-        "narrateur|Le couplet rentre dans la vapeur, et s'y perd.",
+        "narrateur|Le couplet rentre dans le croissant de vapeur, et s'y perd.",
         "enfant-m|Cette fois, ma note a eu le silence.",
     ),
     (3, 3, 2): L(
@@ -872,7 +872,7 @@ T3 = {
         "maman|Sarah pousse le bol. Le bonnet rouge ne goutte plus.",
         "enfant-f|Toi, tu as le creux. Moi, le bonnet.",
         "narrateur|Sarah chante tout bas, une fois, puis le bol se tait.",
-        "narrateur|Les bottes s'endorment, légères, près du bois.",
+        "narrateur|Les bottes s'endorment près du croissant de buée.",
     ),
 }
 
@@ -963,7 +963,7 @@ FINS = {
         "narrateur|Les boucles vibrent, puis s'arrêtent.",
         "papa|Le moment où ça cassait, tu le dis ?",
         "enfant-m|Oui. Sur le tapis.",
-        "narrateur|Le radiateur n'a plus de tic, plus de refrain.",
+        "narrateur|Le croissant de buée quitte le radiateur, sans refrain.",
     ),
     (1, 3, 3): L(
         "narrateur|Nino a donné le trou à Sarah, et la chanson.",
@@ -1150,7 +1150,7 @@ FINS = {
         "narrateur|La casserole ne répond plus, trop basse.",
         "maman|Tu gardes la note trop haute ?",
         "enfant-m|Surtout celle-là.",
-        "narrateur|Une botte claque, puis plus.",
+        "narrateur|Une botte claque. Le croissant de buée s'en va.",
     ),
     (3, 3, 2): L(
         "narrateur|Nino a chanté après le filet de cacao.",
@@ -1172,7 +1172,7 @@ FINS = {
         "narrateur|Les bottes s'endorment, légères, près du bois.",
         "enfant-m|J'ai chanté dans l'eau. Après, dans le silence.",
         "enfant-f|Moi, j'ai tapoté, puis j'ai écouté.",
-        "narrateur|Le bonnet rouge ne goutte plus, plus du tout.",
+        "narrateur|Le croissant de buée s'endort sur le bonnet rouge.",
     ),
 }
 

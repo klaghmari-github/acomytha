@@ -8,7 +8,7 @@ La paume de papa chauffe la poignée : la porte vitrée s'embue. Un croissant de
 
 ## Vécu
 
-Nino veut poser ses bottes au radiateur du hall des gouttes, ramener le bonnet rouge, et garder une phrase qui pince. Première tentative : il parle pendant maman. Le croissant avale la fin. Tapis (chuchotis), table (racle) ou préau (ploc) changent l'échec. Histoire, dessin ou chanson changent la ruse : page coupée, crayon tiré, couplet trop tôt (sauf la goutte vers le crayon, où parler pile sauve le papier). Le soir, cuillère, tasse ou mâche recouvrent les mots ; il attend ; le croissant revient. 27 fins : bottes légères, croissant payé. Chemins 667–698 mots (moyenne 683).
+Nino veut poser ses bottes au radiateur du hall des gouttes, ramener le bonnet rouge, et garder une phrase qui pince. Première tentative : il parle pendant maman. Le croissant avale la fin. Tapis (chuchotis), table (racle) ou préau (ploc) changent l'échec. Histoire, dessin ou chanson changent la ruse : page coupée, crayon tiré, couplet trop tôt (sauf la goutte vers le crayon, où parler pile sauve le papier). Le soir, cuillère, tasse ou mâche recouvrent les mots ; il attend ; le croissant revient. 27 fins : bottes légères, croissant payé. Chemins 668–698 mots (moyenne 683).
 
 ## Vu et corrigé
 
