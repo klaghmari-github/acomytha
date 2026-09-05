@@ -44,6 +44,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + 764 TREE). Chiffres : `stories/CHIFFRES.md`. |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-018 | **en cours** | Étalon structurel (avis2) : oral fluide, pas de morale dite, ramification = 9 aventures, ATOM sans récap. |
+| F-NAR-019 | **en cours** | Audit vocal example2 : récit humain, 27 chemins vraiment distincts, métadonnées TTS (arc/émotion/tempo). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -132,6 +133,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-016 | Production | Pilote 2 ramifiés, 1 actif, archive des autres | P0 | 1 | stories/PRIORITE.md | F-NAR-010 |
 | F-NAR-017 | Production | Veille dossier ChatGPT → consignes → TREE-AUT-001 / TREE-COL-001 | P0 | 1 | stories/PRIORITE.md | F-NAR-016 |
 | F-NAR-018 | Moteur | Étalon AUT-001 : logique reprise, pas les phrases ; oral fluide ; morale vécue | P0 | 1 | stories/REWRITE.md | F-NAR-014 |
+| F-NAR-019 | Moteur | Récit humain + métadonnées TTS ; 27 chemins distincts (audit example2) | P0 | 1 | stories/REWRITE.md | F-NAR-018 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -278,6 +280,20 @@ D38 inchangé : on ne réduit pas le catalogue à 20 titres. On hausse la barre 
 - `NOTES.md` n’est pas un fichier ChatGPT.
 
 D32.
+
+### F-NAR-019 — Récit humain + voix (example2)
+
+Source : `gestion_projet/feedback_chatgpt/examples/example2/` (audit vocal 5 sept., étalon `TREE-COL-015`).
+
+| Oui | Non |
+| --- | --- |
+| Style oral d’humain : rythme variable, vocabulaire simple et **divers** | Gabarit IA, tics « tout doux / encore / déjà », mêmes phrases d’un titre à l’autre |
+| Arc **sur chaque chemin** : monde, désir, imprévu, 1re tentative ratée, péripéties, climax, dénouement | Décor + consigne + validation ; même aventure avec 3 goûters |
+| T1/T2/T3 changent **l’enquête et la fin** (27 fins textuellement distinctes) | 27 copies avec un mot différent |
+| TTS : `notes` (arc, intention, émotion, tempo), `text_xai_tags`, pitch/volume/pause **selon la scène** | `text_xai_tags` = copie de `text` ; un seul `length_scale` partout |
+| Un merci/bravo **vécu une fois**, lié au geste | Refrain « Bravo, bon travail » ; zéro reconnaissance |
+
+Étalon vocal : `examples/example2/raw.js` (profils opening/choice/clue/obstacle/resolution/ending). Ne **pas** recopier l’escargot ailleurs. Piper : `slow` seulement choix, danger doux, émotion sensible.
 
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 

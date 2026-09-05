@@ -54,6 +54,15 @@ Commerce démo vs Stripe, vente sans audio, voix facturée sans enregistrement, 
 
 La vitrine peut rester chaleureuse ; ne pas compter comme « produit disponible » un fichier sans audio validé.
 
+Passe `examples/example2/` (5 sept. matin, SSD) — **F-NAR-019**, commit `45e0e23c` :
+
+- **Nouveau.** `text_xai_tags` était identique à `text` sur 16 499 segments : inutile. Remplir tags expressifs + `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration).
+- **Nouveau.** Chaque chemin ramifié = une vraie histoire (imprévu, 1re tentative ratée, péripéties, climax, fin qui paie le début). 27 fins distinctes, pas 27 calques.
+- **Nouveau.** Vocabulaire simple mais divers ; tics corpus (« tout doux », « encore », « déjà ») à casser. Style humain, pas fiche pédagogique.
+- **Étalon.** TREE-COL-015 *Aniss et le secret de la trace d'argent* (example2) : à intégrer après `_lib.check` (couper phrases N2, un merci vécu). Ne pas coller l’escargot ailleurs.
+- **Priorité audit.** P0 = 25 ramifiés (score ~37–54), dont COL-015/016/021/025/026/030/031/034. Puis P1 (68), P2 (58). ATOM ensuite.
+- Apply/dump : colonnes vocales persistées (`rewrite_story.py`).
+
 Passe `examples/example1/` (5 sept., SSD puis worktree) — **intégré** dans `TREE-AUT-001` :
 
 - **Déjà couvert** : désir bateau/jardin, 9 aventures = destination × résolution, pas de morale dite, graphe 86 chunks.
