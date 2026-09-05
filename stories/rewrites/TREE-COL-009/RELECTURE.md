@@ -20,8 +20,8 @@ Tours de parole : envie de couper, chute du bouton, retenue, écoute d'Aniss, pl
 
 ## Contrôles
 - 86 chunks, 27 chemins
-- 6002 mots au total
-- 590 à 641 mots par chemin, moyenne 610
+- 6001 mots au total
+- 589 à 641 mots par chemin, moyenne 610
 - `check()` OK
 
 ## Non vérifié

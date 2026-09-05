@@ -818,7 +818,7 @@ def main() -> None:
             "enfant-f|Oui, le fil est long.",
             "maman|Le cube bosselé rentre aussi ?",
             "enfant-f|Oui, près du rouge.",
-            "narrateur|Le cartable se ferme sur la virgule de fil.",
+            "narrateur|Le cartable garde la plume et la perle, au chaud.",
         ),
         (1, 3, 1): L(
             "narrateur|Nina recoud près du radiateur, de retour.",
@@ -997,7 +997,7 @@ def main() -> None:
             "enfant-f|Oui, le fil est long.",
             "maman|La dînette rentre aussi ?",
             "enfant-f|La tasse, oui.",
-            "narrateur|Le cartable se ferme sur la virgule de fil.",
+            "narrateur|La tasse cliquette une fois, puis plus rien.",
         ),
         (3, 3, 1): L(
             "narrateur|Nina recoud au coin du crochet, la casserole à côté.",
@@ -1006,7 +1006,7 @@ def main() -> None:
             "enfant-f|Juste.",
             "maman|La dînette sent le pain, un peu.",
             "narrateur|Le tic du radiateur suit le dernier point.",
-            "narrateur|Le manteau ferme, le crochet reste vide.",
+            "narrateur|La casserole de dînette reste tiède, vide.",
         ),
         (3, 3, 2): L(
             "narrateur|Nina s'assoit sur la marche du milieu, la casserole sur les genoux.",
@@ -1026,7 +1026,7 @@ def main() -> None:
             "enfant-f|Oui, la soupe pour de rire est finie.",
             "maman|Le trou est plein, maintenant ?",
             "enfant-f|Plein.",
-            "narrateur|La virgule de fil dépasse, comme un secret.",
+            "narrateur|Une plume pique le col, tout léger.",
         ),
     }
 
