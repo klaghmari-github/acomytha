@@ -27,7 +27,7 @@ TTS par chunk (opening/choice/clue/confirm/action/obstacle/resolution/ending) : 
 ## Contrôles
 
 - 86 chunks
-- 27 chemins, 593 à 630 mots, moyenne 610
+- 27 chemins, 590 à 631 mots, moyenne 608
 - 27 fins et 27 dernières images distinctes
 - `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés
 - N3 ≤ 16 mots/phrase. `check()` OK.
