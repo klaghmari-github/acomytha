@@ -1,78 +1,1204 @@
 #!/usr/bin/env python3
-"""TREE-DIF-064 — Le cerf-volant d'Amir, sur la dune (N3, DIF.BES.001)."""
+"""TREE-DIF-064 — Le cerf-volant d'Amir, sur la dune (F-NAR-019, N3, TTS)."""
 from __future__ import annotations
 
 import json
+import re
 import sys
+from copy import deepcopy
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import ROOT, check, make_chunk, relecture, words  # noqa: E402
+from _lib import FORBIDDEN, LIMITS, ROOT, check, from_script, relecture, words  # noqa: E402
 
 SID = "TREE-DIF-064"
-N3 = 16
+N3 = LIMITS["N3"]
 TITLE = "Le cerf-volant d'Amir, sur la dune"
-FIL = (
-    "Au bord de la mer, Amir veut que son cerf-volant rouge voie la mer, "
-    "avant que le vent se couche. Il prend d'abord le cerf-volant, la ficelle "
-    "ou le piquet ; les trois viennent. La crête souffle trop, l'herbe accroche "
-    "trop, l'écume mouille trop. Neuf façons de laisser du temps. Le rouge vole."
-)
-CHARS = "Amir, papa, maman"
-SETTING = "bord de mer : cabanes, dune, crête, herbe, écume"
+TICS = re.compile(r"\b(tout doux|tout calme|encore|déjà|deja)\b", re.I)
+
+PROFILES = {
+    "opening": dict(
+        rate="medium", wpm=142, speed=0.98, piper=1.12, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=500,
+        sentence=260, energy="warm", contour="storytelling", noise=0.36,
+        emphasis="cerf-volant",
+        note="arc=installation; intention=émerveiller; emotion=impatience_curieuse; intensite=1; destinataire=enfant; sous_texte=le rouge veut voir la mer avant le vent; tempo=naturel; sourire=léger; respiration=ample",
+    ),
+    "choice": dict(
+        rate="slow", wpm=116, speed=0.84, piper=1.30, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=900,
+        sentence=330, energy="focused", contour="rising", noise=0.33,
+        emphasis=None,
+        note="arc=choix; intention=inviter; emotion=curiosité; intensite=1; destinataire=enfant; sous_texte=ton choix change la suite; tempo=suspendu; sourire=léger; respiration=pause_avant_choix",
+    ),
+    "clue": dict(
+        rate="slow", wpm=120, speed=0.86, piper=1.27, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="soft", db=-2, pause=700,
+        sentence=320, energy="focused", contour="rising", noise=0.32,
+        emphasis="cerf-volant",
+        note="arc=indice; intention=faire_deviner; emotion=attention; intensite=1; destinataire=enfant; sous_texte=regarde ce qu'il tient; tempo=suspendu; sourire=aucun; respiration=courte_avant_question",
+    ),
+    "confirm": dict(
+        rate="medium", wpm=132, speed=0.92, piper=1.20, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=450,
+        sentence=280, energy="bright", contour="falling", noise=0.34,
+        emphasis="dune",
+        note="arc=confirmation; intention=relancer; emotion=élan; intensite=1; destinataire=enfant; sous_texte=les trois affaires viennent; tempo=naturel; sourire=léger; respiration=fluide",
+    ),
+    "action": dict(
+        rate="medium", wpm=146, speed=1.0, piper=1.10, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=420,
+        sentence=250, energy="lively", contour="dynamic", noise=0.37,
+        emphasis=None,
+        note="arc=action; intention=entraîner; emotion=élan; intensite=2; destinataire=enfant; sous_texte=il veut lancer trop vite; tempo=vif; sourire=léger; respiration=courte",
+    ),
+    "obstacle": dict(
+        rate="medium", wpm=134, speed=0.93, piper=1.18, pitch="low",
+        pitchSsml="-2st", pitchTag="low-pitch", volume="medium", db=0, pause=520,
+        sentence=300, energy="tense", contour="dynamic", noise=0.34,
+        emphasis=None,
+        note="arc=obstacle; intention=alerter_sans_effrayer; emotion=découragement_léger; intensite=2; destinataire=enfant; sous_texte=le premier lancer rate; tempo=resserré; sourire=aucun; respiration=retenue",
+    ),
+    "resolution": dict(
+        rate="medium", wpm=140, speed=0.97, piper=1.14, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=560,
+        sentence=270, energy="bright", contour="falling", noise=0.35,
+        emphasis=None,
+        note="arc=résolution; intention=faire_vivre_la_réussite; emotion=soulagement_joyeux; intensite=2; destinataire=enfant; sous_texte=le calme a ouvert l'air; tempo=naturel; sourire=franc; respiration=relâchée",
+    ),
+    "ending": dict(
+        rate="slow", wpm=118, speed=0.85, piper=1.28, pitch="low",
+        pitchSsml="-2st", pitchTag="low-pitch", volume="soft", db=-3, pause=900,
+        sentence=340, energy="calm", contour="falling", noise=0.31,
+        emphasis="cerf-volant",
+        note="arc=retour; intention=refermer; emotion=tendresse_et_fierté_calme; intensite=1; destinataire=enfant; sous_texte=le rouge a vu la mer; tempo=posé; sourire=léger; respiration=ample",
+    ),
+}
 
 
-def L(*rows: str) -> list[str]:
-    out: list[str] = []
-    for raw in rows:
+def vet(lines: list[str]) -> list[str]:
+    out = []
+    for raw in lines:
         role, ph = raw.split("|", 1)
+        ph = ph.strip()
         n = words(ph)
         if n > N3:
             raise SystemExit(f"{n}>{N3}: {ph}")
+        if n == 0:
+            raise SystemExit(f"vide: {raw}")
         marks = ph.count(".") + ph.count("?") + ph.count("!")
         if marks != 1:
             raise SystemExit(f"ponctuation {marks}: {ph}")
+        if not ph.endswith((".", "?", "!")):
+            raise SystemExit(f"fin: {ph}")
+        if TICS.search(ph):
+            raise SystemExit(f"tic: {ph}")
+        low = ph.lower()
+        for bad in FORBIDDEN:
+            if bad in low:
+                raise SystemExit(f"interdit {bad}: {ph}")
         out.append(f"{role}|{ph}")
     return out
 
 
-def t3lab(a: str, b: str, c: str) -> dict:
-    return {"option_1_label": a, "option_2_label": b, "option_3_label": c}
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def qf(ans: str, acc: str, retry: str) -> dict:
-    return {"expected_answer": ans, "accepted_examples": acc, "retry_prompt": retry}
+def ssml(text: str, m: dict) -> str:
+    body = esc(text)
+    emp = m.get("emphasis")
+    if emp:
+        e = esc(emp)
+        if e in body:
+            body = body.replace(e, f'<emphasis level="moderate">{e}</emphasis>', 1)
+    return (
+        f'<speak><prosody rate="{m["rate"]}" pitch="{m["pitchSsml"]}">'
+        f'{body}</prosody><break time="{m["pause"]}ms"/></speak>'
+    )
 
 
-def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dict[str, str]) -> None:
-    src = json.loads((ROOT / SID / "source.json").read_text(encoding="utf-8"))
+def xai(text: str, m: dict) -> str:
+    body = text
+    emp = m.get("emphasis")
+    if emp and emp in body:
+        body = body.replace(emp, f"<emphasis>{emp}</emphasis>", 1)
+    if m["rate"] == "slow":
+        body = f"<slow>{body}</slow>"
+    if m["volume"] == "soft":
+        body = f"<soft>{body}</soft>"
+    tag = m.get("pitchTag")
+    if tag:
+        body = f"<{tag}>{body}</{tag}>"
+    pause = m["pause"]
+    suffix = " [long-pause]" if pause >= 800 else (" [pause]" if pause >= 400 else "")
+    return (body + suffix).strip()
+
+
+def voice(src: dict, lines: list[str], profile: str, sons: str, extra: dict | None = None) -> dict:
+    extra = extra or {}
+    m = dict(PROFILES[profile])
+    if "emphasis" in extra:
+        m["emphasis"] = extra["emphasis"]
+    if "note" in extra:
+        m["note"] = extra["note"]
+    text, script = from_script(lines)
+    if m.get("emphasis") and m["emphasis"] not in text:
+        m["emphasis"] = None
+    out = deepcopy(src)
+    out["text"] = text
+    out["script"] = script
+    out["sons"] = sons if sons is not None else (src.get("sons") or "")
+    if out["sons"] is None:
+        out["sons"] = ""
+    out["text_ssml"] = ssml(text, m)
+    out["text_xai_tags"] = xai(text, m)
+    out["rate_wpm"] = m["wpm"]
+    out["rate_label"] = m["rate"]
+    out["speed_xai"] = m["speed"]
+    out["length_scale_piper"] = m["piper"]
+    out["pitch_label"] = m["pitch"]
+    out["pitch_ssml"] = m["pitchSsml"]
+    out["pitch_xai_tag"] = m["pitchTag"]
+    out["volume_label"] = m["volume"]
+    out["volume_db"] = m["db"]
+    out["emphasis_words"] = m.get("emphasis") or ""
+    out["pause_before_ms"] = extra.get("pause_before_ms", 0)
+    out["pause_after_ms"] = m["pause"]
+    out["pause_sentence_ms"] = m["sentence"]
+    out["style_energy"] = m["energy"]
+    out["style_contour"] = m["contour"]
+    out["noise_scale_piper"] = m["noise"]
+    out["kokoro_speed"] = m["speed"]
+    out["melo_speed"] = m["speed"]
+    out["espeak_amp"] = 82 if m["volume"] == "soft" else 100
+    out["espeak_pitch"] = 42 if m["pitch"] == "low" else 50
+    out["espeak_word_gap"] = 12 if m["rate"] == "slow" else 8
+    out["notes"] = m["note"]
+    out["night_policy"] = "play"
+    out["locale"] = "fr-FR"
+    out["voice_id"] = "fr_FR-siwis-medium"
+    for k, v in extra.items():
+        if k in ("emphasis", "note", "pause_before_ms"):
+            continue
+        out[k] = v
+    return out
+
+
+def ending_note(a: int, b: int, c: int) -> str:
+    times = {1: "posé", 2: "lent", 3: "ample"}
+    emos = {1: "fierté_calme", 2: "tendresse", 3: "chaleur"}
+    return (
+        f"arc=retour; intention=refermer; emotion={emos[c]}; intensite=1; "
+        f"destinataire=enfant; sous_texte=le_rouge_a_vu_la_mer; "
+        f"tempo={times[c]}; sourire=léger; respiration=ample; chemin={a}{b}{c}"
+    )
+
+
+OPENING = vet(
+    [
+        "narrateur|Sur le bois de la cabane, un grain de sel brille.",
+        "narrateur|Le fil du linge claque, sec, contre le pin.",
+        "narrateur|Ça sent la résine chaude, et la mer.",
+        "narrateur|Amir vit là, avec papa et maman.",
+        "narrateur|La queue rouge tape la marche, impatiente.",
+        "papa|Tu as vu la queue, Amir ?",
+        "enfant-m|Elle veut partir !",
+        "maman|C'est le cerf-volant, tout rouge.",
+        "narrateur|En ce moment, Amir déplie un coin du tissu.",
+        "enfant-m|Je veux qu'il voie la mer.",
+        "narrateur|Il lance trop vite, depuis la marche.",
+        "narrateur|Le nez rouge se plie contre le bois.",
+        "enfant-m|Il ne vole pas !",
+        "papa|Le vent va se coucher, tout à l'heure.",
+        "maman|On prend les affaires, alors ?",
+        "papa|Merci, tu as dénoué la ficelle.",
+    ]
+)
+
+T1_CHOICE = vet(
+    [
+        "narrateur|Trois affaires attendent près du sable.",
+        "narrateur|Le cerf-volant, la ficelle, et le piquet.",
+        "maman|Tu prends quoi d'abord, Amir ?",
+    ]
+)
+
+T1 = {
+    1: dict(
+        lab="le cerf-volant",
+        ans="cerf-volant",
+        acc="cerf-volant | le cerf-volant | d'abord le cerf-volant | le tissu | le rouge",
+        retry="Amir prend le cerf-volant d'abord.",
+        sons="tissu,vent",
+        emp="tissu",
+        passage=vet(
+            [
+                "narrateur|Amir prend le tissu rouge, chaud de soleil.",
+                "enfant-m|Toi, tu vas voir la mer.",
+                "narrateur|Il déplie trop vite, et le tissu claque.",
+                "maman|Tiens le nez, pas la queue.",
+                "narrateur|La queue rouge lui fouette le cou.",
+                "papa|Ta queue me chatouille !",
+                "enfant-m|Elle est trop contente.",
+                "narrateur|Amir serre les lèvres, puis il ralentit.",
+                "narrateur|Maman glisse la ficelle contre son poignet.",
+                "narrateur|Le piquet roule contre son genou, lourd.",
+                "enfant-m|Nez en avant, queue derrière.",
+                "papa|Le rouge est à toi.",
+            ]
+        ),
+        question=vet(
+            [
+                "narrateur|Amir a pris le cerf-volant.",
+                "maman|Il a pris quoi, d'abord ?",
+            ]
+        ),
+        confirm=vet(
+            [
+                "narrateur|Le tissu rouge reste contre sa poitrine, chaud.",
+                "enfant-m|On va jusqu'à la dune.",
+                "maman|Le vent n'attendra pas longtemps.",
+                "papa|Tu tiens bien, Amir ?",
+                "enfant-m|Oui, papa.",
+                "narrateur|Un coin du tissu cherche l'air.",
+            ]
+        ),
+        hip={
+            1: "Entre ses doigts, le tissu rouge est chaud.",
+            2: "Le tissu se tord, trop vite, trop fort.",
+            3: "Un pli du tissu s'accroche, trop serré.",
+            4: "Le tissu pèse, trop lourd, trop salé.",
+        },
+    ),
+    2: dict(
+        lab="la ficelle",
+        ans="ficelle",
+        acc="ficelle | la ficelle | d'abord la ficelle | le fil",
+        retry="Amir prend la ficelle d'abord.",
+        sons="ficelle",
+        emp="ficelle",
+        passage=vet(
+            [
+                "narrateur|Amir enroule la ficelle autour du poignet.",
+                "enfant-m|Tu vas tenir le rouge.",
+                "narrateur|Il serre trop, et ça marque la peau.",
+                "papa|Pas trop serré, laisse un peu d'air.",
+                "narrateur|Un tour glisse, puis tient.",
+                "maman|Tu m'as fait un anneau.",
+                "enfant-m|C'est pour tenir.",
+                "narrateur|Papa pose le tissu plié contre le seau.",
+                "narrateur|Le piquet reste planté, un peu de travers.",
+                "enfant-m|Fil, tu restes avec moi.",
+                "maman|La ficelle est prête.",
+            ]
+        ),
+        question=vet(
+            [
+                "narrateur|Amir a pris la ficelle.",
+                "papa|Il a pris quoi, d'abord ?",
+            ]
+        ),
+        confirm=vet(
+            [
+                "narrateur|La ficelle fait un bracelet lâche, au poignet.",
+                "enfant-m|Elle va tenir le rouge.",
+                "papa|Ça sent le sel, toi.",
+                "maman|Tes mains sont prêtes ?",
+                "enfant-m|Oui, maman.",
+                "narrateur|Un tour se desserre, puis se tait.",
+            ]
+        ),
+        hip={
+            1: "Au poignet, la ficelle colle un peu, de sel.",
+            2: "La ficelle siffle, trop tendue, trop vive.",
+            3: "La ficelle fait un nœud, trop vite.",
+            4: "La ficelle goutte, trop mouillée, trop froide.",
+        },
+    ),
+    3: dict(
+        lab="le piquet",
+        ans="piquet",
+        acc="piquet | le piquet | d'abord le piquet | le bois",
+        retry="Amir prend le piquet d'abord.",
+        sons="bois,sable",
+        emp="piquet",
+        passage=vet(
+            [
+                "narrateur|Amir lève le piquet, le bois chaud.",
+                "enfant-m|Tu vas tenir le fil.",
+                "narrateur|Il plante trop fort, et le bois penche.",
+                "maman|Pointe vers le bas, sans forcer.",
+                "narrateur|Le bois tape le sable, un toc.",
+                "papa|Il a tracé une ligne, comme un serpent.",
+                "enfant-m|C'est le chemin.",
+                "narrateur|Maman glisse le tissu sous son autre bras.",
+                "narrateur|La ficelle pend contre sa manche.",
+                "enfant-m|Piquet, je te porte.",
+                "papa|Le piquet est prêt, on avance.",
+            ]
+        ),
+        question=vet(
+            [
+                "narrateur|Amir a pris le piquet.",
+                "maman|Il a pris quoi, d'abord ?",
+            ]
+        ),
+        confirm=vet(
+            [
+                "narrateur|Le piquet reste contre son bras, lourd.",
+                "enfant-m|Il va tenir le fil.",
+                "maman|Le bois sent le soleil.",
+                "papa|On y va, tous les trois ?",
+                "enfant-m|Oui.",
+                "narrateur|La pointe du piquet attend le sable.",
+            ]
+        ),
+        hip={
+            1: "Dans sa paume, le bois du piquet est tiède.",
+            2: "Le piquet penche, trop léger dans l'air.",
+            3: "Le piquet disparaît dans l'herbe, trop caché.",
+            4: "Le piquet s'enfonce, trop mou dans le sable.",
+        },
+    ),
+}
+
+T2_CHOICE = {
+    1: vet(
+        [
+            "narrateur|Le tissu tape sa poitrine, tout bas.",
+            "narrateur|Devant, la crête soulève trop de vent.",
+            "narrateur|L'herbe, elle, accroche les fils.",
+            "narrateur|Plus bas, l'écume mouille le sable.",
+            "papa|Amir, vous partez où ?",
+        ]
+    ),
+    2: vet(
+        [
+            "narrateur|La ficelle frotte son poignet, un peu serrée.",
+            "narrateur|Devant, la crête soulève trop de vent.",
+            "narrateur|L'herbe, elle, accroche les fils.",
+            "narrateur|Plus bas, l'écume mouille le sable.",
+            "maman|Amir, vous partez où ?",
+        ]
+    ),
+    3: vet(
+        [
+            "narrateur|Le piquet tape son bras, sans bruit.",
+            "narrateur|Devant, la crête soulève trop de vent.",
+            "narrateur|L'herbe, elle, accroche les fils.",
+            "narrateur|Plus bas, l'écume mouille le sable.",
+            "papa|Amir, vous partez où ?",
+        ]
+    ),
+}
+
+T2 = {
+    1: dict(
+        sons="vent,dune",
+        emp="crête",
+        head="La crête de la dune souffle trop fort.",
+        fail="Amir lance tout de suite, face au vent.",
+        cry="Il va se déchirer !",
+        mid1="La queue claque, trop prise.",
+        mid2="Le nez rouge se plie, minuscule.",
+        papa="Ici, le vent est trop grand.",
+        maman="Le rouge a besoin d'un vent plus petit.",
+        hip_key=2,
+    ),
+    2: dict(
+        sons="herbe",
+        emp="herbe",
+        head="L'herbe de la dune tient trop, trop verte.",
+        fail="Amir court, et l'herbe attrape le fil.",
+        cry="Le fil est coincé !",
+        mid1="Une tige tire, puis une autre.",
+        mid2="Le rouge n'a plus d'air, trop bas.",
+        papa="Ici, ça s'accroche trop.",
+        maman="Le fil n'avance plus.",
+        hip_key=3,
+    ),
+    3: dict(
+        sons="vague,ecume",
+        emp="écume",
+        head="L'écume lèche le sable, trop près.",
+        fail="Amir avance trop près, et une vague lèche.",
+        cry="Il est tout mouillé !",
+        mid1="Une vague revient, trop blanche.",
+        mid2="Le rouge n'a plus de vent, trop lourd.",
+        papa="Ici, ça mouille trop.",
+        maman="Il lui faut du sec, et du temps.",
+        hip_key=4,
+    ),
+}
+
+T3_LABS = {
+    1: ("plus bas", "attendre", "de côté"),
+    2: ("plus court", "à genoux", "le sable"),
+    3: ("plus haut", "après la vague", "loin de l'eau"),
+}
+
+T3_Q = {
+    1: vet(
+        [
+            "narrateur|La crête n'a pas fini de souffler.",
+            "papa|Plus bas, attendre, ou de côté ?",
+        ]
+    ),
+    2: vet(
+        [
+            "narrateur|L'herbe n'a pas fini d'accrocher.",
+            "maman|Plus court, à genoux, ou le sable ?",
+        ]
+    ),
+    3: vet(
+        [
+            "narrateur|L'écume n'a pas fini de lécher.",
+            "papa|Plus haut, après la vague, ou loin de l'eau ?",
+        ]
+    ),
+}
+
+
+def t2_scene(t1: int, t2: int) -> list[str]:
+    o = T1[t1]
+    d = T2[t2]
+    return vet(
+        [
+            f"narrateur|{o['hip'][1]}",
+            f"narrateur|{d['head']}",
+            f"narrateur|{d['fail']}",
+            f"narrateur|{o['hip'][d['hip_key']]}",
+            f"enfant-m|{d['cry']}",
+            f"narrateur|{d['mid1']}",
+            f"narrateur|{d['mid2']}",
+            f"papa|{d['papa']}",
+            f"maman|{d['maman']}",
+            "enfant-m|Alors on fait quoi ?",
+            "papa|Tu vois comment, Amir ?",
+        ]
+    )
+
+
+RES = {
+    (1, 1, 1): vet(
+        [
+            "enfant-m|Plus bas, d'abord.",
+            "narrateur|Il baisse le tissu, loin de la crête.",
+            "narrateur|Amir descend la pente, les genoux au sable.",
+            "narrateur|L'air est plus petit, contre la dune.",
+            "narrateur|Il compte un, deux, sans lancer.",
+            "narrateur|Un coin du tissu cherche l'air.",
+            "papa|Tu as regardé le vent.",
+            "enfant-m|Ici, tu ne te déchires plus.",
+            "maman|Plus bas, ça tenait mieux.",
+        ]
+    ),
+    (1, 1, 2): vet(
+        [
+            "enfant-m|On attend le vent.",
+            "narrateur|Il tient le tissu contre lui, sans le lancer.",
+            "narrateur|Le souffle passe, une fois, puis plus.",
+            "enfant-m|Tu peux partir, maintenant.",
+            "narrateur|Le tissu reste plié, sage contre lui.",
+            "papa|Le vent s'est tu.",
+            "narrateur|Le rouge se lève, sans se tordre.",
+            "maman|Le rouge a eu son silence.",
+        ]
+    ),
+    (1, 1, 3): vet(
+        [
+            "enfant-m|De côté, pas face au vent.",
+            "narrateur|Il tourne le tissu de côté, sans forcer.",
+            "narrateur|Le nez rouge prend moins d'air.",
+            "narrateur|Amir compte tout bas, un, deux.",
+            "narrateur|Le tissu reste plié, le temps d'un souffle.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "enfant-m|Tu es à l'abri.",
+            "maman|Le nez a moins tiré, comme ça.",
+        ]
+    ),
+    (1, 2, 1): vet(
+        [
+            "enfant-m|Plus court, d'abord.",
+            "narrateur|Il tient le tissu tout près, ficelle courte.",
+            "narrateur|L'herbe n'atteint plus le fil.",
+            "narrateur|Le rouge se lève, tout petit.",
+            "narrateur|Le tissu reste plié un instant, puis s'ouvre.",
+            "maman|Le fil n'a plus accroché.",
+            "enfant-m|Maintenant, tu me vois.",
+            "papa|Tu as commencé tout près.",
+        ]
+    ),
+    (1, 2, 2): vet(
+        [
+            "enfant-m|À genoux, on dénoue.",
+            "narrateur|À genoux, il dénoue le tissu, sans tirer.",
+            "narrateur|Un nœud lâche, puis un autre.",
+            "narrateur|L'herbe se tait, plus loin, toute seule.",
+            "narrateur|Un coin du tissu cherche l'air.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "enfant-m|C'est pour toi.",
+            "maman|Le nœud a lâché tout seul.",
+        ]
+    ),
+    (1, 2, 3): vet(
+        [
+            "enfant-m|Le sable, pas l'herbe.",
+            "narrateur|Amir recule vers le sable nu, sans courir.",
+            "narrateur|Sur le sable nu, le tissu ne s'accroche plus.",
+            "narrateur|Plus de tiges, plus de nœuds.",
+            "narrateur|Le tissu reste un moment, puis s'ouvre.",
+            "papa|Tu t'es mis où c'est vide.",
+            "enfant-m|Le fil est libre.",
+            "maman|Le sable nu était plus simple.",
+        ]
+    ),
+    (1, 3, 1): vet(
+        [
+            "enfant-m|Plus haut, d'abord.",
+            "narrateur|Plus haut, le tissu n'a plus d'écume.",
+            "narrateur|Amir gravit la dune, le sable qui glisse.",
+            "narrateur|L'écume reste en bas, trop loin pour lécher.",
+            "narrateur|Le tissu sèche un peu, contre lui.",
+            "papa|La vague n'a plus touché.",
+            "enfant-m|Maintenant, tu peux rester.",
+            "maman|Le sable était plus sec, là-haut.",
+        ]
+    ),
+    (1, 3, 2): vet(
+        [
+            "enfant-m|On attend la vague, d'abord.",
+            "narrateur|Il tient le tissu, puis regarde la vague.",
+            "narrateur|L'eau va, revient, puis se tait.",
+            "narrateur|Le sable redevient ferme, tout net.",
+            "narrateur|Un coin du tissu cherche l'air.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "enfant-m|Tu es sec, maintenant.",
+            "maman|Tu as laissé la vague finir.",
+        ]
+    ),
+    (1, 3, 3): vet(
+        [
+            "enfant-m|Loin de l'eau, tout sec.",
+            "narrateur|Loin de l'eau, le tissu reste sec, tout rouge.",
+            "narrateur|Amir recule vers les cabanes, sans se presser.",
+            "narrateur|L'écume se tait, plus loin, toute seule.",
+            "narrateur|Le tissu sèche au vent du pin.",
+            "papa|Le sec était assez large.",
+            "enfant-m|Tu restes, rouge.",
+            "maman|Loin de l'eau, ça suffisait.",
+        ]
+    ),
+    (2, 1, 1): vet(
+        [
+            "enfant-m|Plus bas, d'abord.",
+            "narrateur|Il baisse la ficelle, loin de la crête.",
+            "narrateur|Amir descend, le fil lâche au poignet.",
+            "narrateur|L'air est plus petit, contre la pente.",
+            "narrateur|Il compte un, deux, le fil sans siffler.",
+            "narrateur|Un bout de ficelle brille, prêt à tenir.",
+            "papa|Tu as regardé le vent.",
+            "enfant-m|Ici, tu ne te déchires plus.",
+            "maman|Plus bas, le fil tenait mieux.",
+        ]
+    ),
+    (2, 1, 2): vet(
+        [
+            "enfant-m|On attend le vent.",
+            "narrateur|Il tient la ficelle, sans la dérouler.",
+            "narrateur|Le souffle passe, une fois, puis plus.",
+            "enfant-m|Tu peux partir, maintenant.",
+            "narrateur|Enroulée, la ficelle attend contre sa manche.",
+            "papa|Le vent s'est tu.",
+            "narrateur|Le rouge se lève, le fil sans crier.",
+            "maman|Le fil a eu son silence.",
+        ]
+    ),
+    (2, 1, 3): vet(
+        [
+            "enfant-m|De côté, pas face au vent.",
+            "narrateur|Il tourne la ficelle de côté, sans forcer.",
+            "narrateur|Le fil prend moins d'air, moins de bruit.",
+            "narrateur|Amir compte tout bas, un, deux.",
+            "narrateur|Enroulée, la ficelle attend un souffle.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "enfant-m|Tu es à l'abri.",
+            "maman|Le fil a moins tiré, comme ça.",
+        ]
+    ),
+    (2, 2, 1): vet(
+        [
+            "enfant-m|Plus court, d'abord.",
+            "narrateur|Il déroule peu de ficelle, tout court.",
+            "narrateur|L'herbe n'atteint plus le fil.",
+            "narrateur|Le rouge se lève, tout petit.",
+            "narrateur|Enroulée, la ficelle reste sage un instant.",
+            "maman|Le fil n'a plus accroché.",
+            "enfant-m|Maintenant, tu me vois.",
+            "papa|Tu as commencé tout près.",
+        ]
+    ),
+    (2, 2, 2): vet(
+        [
+            "enfant-m|À genoux, on dénoue.",
+            "narrateur|À genoux, il dénoue la ficelle, sans tirer.",
+            "narrateur|Un nœud lâche, puis un autre.",
+            "narrateur|L'herbe se tait, plus loin, toute seule.",
+            "narrateur|Un bout de ficelle brille, prêt à tenir.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "enfant-m|C'est pour toi.",
+            "maman|Le nœud a lâché tout seul.",
+        ]
+    ),
+    (2, 2, 3): vet(
+        [
+            "enfant-m|Le sable, pas l'herbe.",
+            "narrateur|Amir recule vers le sable nu, sans courir.",
+            "narrateur|Sur le sable nu, la ficelle ne s'accroche plus.",
+            "narrateur|Plus de tiges, plus de nœuds.",
+            "narrateur|Enroulée, la ficelle attend, puis s'ouvre.",
+            "papa|Tu t'es mis où c'est vide.",
+            "enfant-m|Le fil est libre.",
+            "maman|Le sable nu était plus simple.",
+        ]
+    ),
+    (2, 3, 1): vet(
+        [
+            "enfant-m|Plus haut, d'abord.",
+            "narrateur|Plus haut, la ficelle n'a plus d'écume.",
+            "narrateur|Amir gravit la dune, le fil contre la manche.",
+            "narrateur|L'écume reste en bas, trop loin pour lécher.",
+            "narrateur|La ficelle sèche un peu, au poignet.",
+            "papa|La vague n'a plus touché.",
+            "enfant-m|Maintenant, tu peux rester.",
+            "maman|Le sable était plus sec, là-haut.",
+        ]
+    ),
+    (2, 3, 2): vet(
+        [
+            "enfant-m|On attend la vague, d'abord.",
+            "narrateur|Il tient la ficelle, puis regarde la vague.",
+            "narrateur|L'eau va, revient, puis se tait.",
+            "narrateur|Le sable redevient ferme, tout net.",
+            "narrateur|Un bout de ficelle brille, prêt à tenir.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "enfant-m|Tu es sec, maintenant.",
+            "maman|Tu as laissé la vague finir.",
+        ]
+    ),
+    (2, 3, 3): vet(
+        [
+            "enfant-m|Loin de l'eau, tout sec.",
+            "narrateur|Loin de l'eau, la ficelle reste sèche.",
+            "narrateur|Amir recule vers les cabanes, sans se presser.",
+            "narrateur|L'écume se tait, plus loin, toute seule.",
+            "narrateur|La ficelle sent le pin, au poignet.",
+            "papa|Le sec était assez large.",
+            "enfant-m|Tu restes, rouge.",
+            "maman|Loin de l'eau, ça suffisait.",
+        ]
+    ),
+    (3, 1, 1): vet(
+        [
+            "enfant-m|Plus bas, d'abord.",
+            "narrateur|Il plante le piquet plus bas, loin de la crête.",
+            "narrateur|Amir descend, le bois contre le sable.",
+            "narrateur|L'air est plus petit, contre la pente.",
+            "narrateur|Il compte un, deux, le bois sans trembler.",
+            "narrateur|La pointe du piquet attend le sable.",
+            "papa|Tu as regardé le vent.",
+            "enfant-m|Ici, tu ne te déchires plus.",
+            "maman|Plus bas, le bois tenait mieux.",
+        ]
+    ),
+    (3, 1, 2): vet(
+        [
+            "enfant-m|On attend le vent.",
+            "narrateur|Il tient le piquet, sans le planter.",
+            "narrateur|Le souffle passe, une fois, puis plus.",
+            "enfant-m|Tu peux partir, maintenant.",
+            "narrateur|Planté, le piquet reste droit, sans bouger.",
+            "papa|Le vent s'est tu.",
+            "narrateur|Le rouge se lève, le bois sans penche.",
+            "maman|Le bois a eu son silence.",
+        ]
+    ),
+    (3, 1, 3): vet(
+        [
+            "enfant-m|De côté, pas face au vent.",
+            "narrateur|Il plante le piquet de côté, sans forcer.",
+            "narrateur|Le bois prend moins d'air, moins de bruit.",
+            "narrateur|Amir compte tout bas, un, deux.",
+            "narrateur|Planté, le piquet attend un souffle.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "enfant-m|Tu es à l'abri.",
+            "maman|Le bois a moins tiré, comme ça.",
+        ]
+    ),
+    (3, 2, 1): vet(
+        [
+            "enfant-m|Plus court, d'abord.",
+            "narrateur|Il plante le piquet tout près, fil court.",
+            "narrateur|L'herbe n'atteint plus le fil.",
+            "narrateur|Le rouge se lève, tout petit.",
+            "narrateur|Planté, le piquet reste un instant, puis tient.",
+            "maman|Le fil n'a plus accroché.",
+            "enfant-m|Maintenant, tu me vois.",
+            "papa|Tu as commencé tout près.",
+        ]
+    ),
+    (3, 2, 2): vet(
+        [
+            "enfant-m|À genoux, on dénoue.",
+            "narrateur|À genoux, il dégage le piquet, sans tirer.",
+            "narrateur|Un nœud lâche, puis un autre.",
+            "narrateur|L'herbe se tait, plus loin, toute seule.",
+            "narrateur|La pointe du piquet attend le sable.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "enfant-m|C'est pour toi.",
+            "maman|Le nœud a lâché tout seul.",
+        ]
+    ),
+    (3, 2, 3): vet(
+        [
+            "enfant-m|Le sable, pas l'herbe.",
+            "narrateur|Amir recule vers le sable nu, sans courir.",
+            "narrateur|Sur le sable nu, le piquet trouve sa place.",
+            "narrateur|Plus de tiges, plus de nœuds.",
+            "narrateur|Planté, le piquet attend, puis tient.",
+            "papa|Tu t'es mis où c'est vide.",
+            "enfant-m|Le fil est libre.",
+            "maman|Le sable nu était plus simple.",
+        ]
+    ),
+    (3, 3, 1): vet(
+        [
+            "enfant-m|Plus haut, d'abord.",
+            "narrateur|Plus haut, le piquet n'a plus d'eau.",
+            "narrateur|Amir gravit la dune, le bois contre le bras.",
+            "narrateur|L'écume reste en bas, trop loin pour lécher.",
+            "narrateur|Le bois sèche un peu, dans sa paume.",
+            "papa|La vague n'a plus touché.",
+            "enfant-m|Maintenant, tu peux rester.",
+            "maman|Le sable était plus sec, là-haut.",
+        ]
+    ),
+    (3, 3, 2): vet(
+        [
+            "enfant-m|On attend la vague, d'abord.",
+            "narrateur|Il tient le piquet, puis regarde la vague.",
+            "narrateur|L'eau va, revient, puis se tait.",
+            "narrateur|Le sable redevient ferme, tout net.",
+            "narrateur|La pointe du piquet attend le sable.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "enfant-m|Tu es sec, maintenant.",
+            "maman|Tu as laissé la vague finir.",
+        ]
+    ),
+    (3, 3, 3): vet(
+        [
+            "enfant-m|Loin de l'eau, tout sec.",
+            "narrateur|Loin de l'eau, le piquet tient, sans s'enfoncer.",
+            "narrateur|Amir recule vers les cabanes, sans se presser.",
+            "narrateur|L'écume se tait, plus loin, toute seule.",
+            "narrateur|Le bois sent le pin, près des marches.",
+            "papa|Le sec était assez large.",
+            "enfant-m|Tu restes, rouge.",
+            "maman|Loin de l'eau, ça suffisait.",
+        ]
+    ),
+}
+
+FIN = {
+    (1, 1, 1): vet(
+        [
+            "narrateur|Plus bas, le cerf-volant voit la mer.",
+            "enfant-m|On s'est baissés.",
+            "papa|Le vent, en bas, était plus petit.",
+            "maman|Essuie tes genoux, sur le maillot.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|Un carré rouge reste bas, face à l'eau.",
+        ]
+    ),
+    (1, 1, 2): vet(
+        [
+            "narrateur|Quand le vent s'est tu, le rouge a vu la mer.",
+            "enfant-m|On a compté le souffle.",
+            "papa|Le silence a laissé partir le nez.",
+            "maman|Rentrez, le pin sent le chaud.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|Une poussière de sable tourne, puis s'arrête.",
+        ]
+    ),
+    (1, 1, 3): vet(
+        [
+            "narrateur|De côté, le cerf-volant tient, sans se tordre.",
+            "enfant-m|Je n'ai pas fait face.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "maman|Le bois des cabanes est retombé, plus loin.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|La mer se tait, derrière le tissu tiède.",
+        ]
+    ),
+    (1, 2, 1): vet(
+        [
+            "narrateur|Tout près, le rouge a repris l'air.",
+            "enfant-m|On a commencé tout court.",
+            "papa|Le silence vous a aidés.",
+            "maman|L'herbe sent le sel, moins fort.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|Un brin d'herbe se recouche, lent.",
+        ]
+    ),
+    (1, 2, 2): vet(
+        [
+            "narrateur|Quand le nœud s'est tu, le rouge a volé.",
+            "enfant-m|On a dénoué, à genoux.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "maman|Le fil a parlé tout seul.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|Un nœud vide reste dans sa paume.",
+        ]
+    ),
+    (1, 2, 3): vet(
+        [
+            "narrateur|Sur le sable nu, le rouge touche le bleu.",
+            "enfant-m|Je me suis mis où c'est vide.",
+            "papa|Tu t'es glissé, comme le vent.",
+            "maman|Vous rentrez, les mains pleines de sable.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|L'herbe reste derrière, sans rien tenir.",
+        ]
+    ),
+    (1, 3, 1): vet(
+        [
+            "narrateur|Plus haut, le cerf-volant a tenu, tout sec.",
+            "enfant-m|On a gravi la dune.",
+            "papa|La vague n'a plus touché.",
+            "maman|Vos manches sentent le sel.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|Un grain de sable sèche sur le bois.",
+        ]
+    ),
+    (1, 3, 2): vet(
+        [
+            "narrateur|Après la vague, le rouge a vu la mer.",
+            "enfant-m|On a laissé l'eau se taire.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "maman|Tes doigts sentent le sel.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|La vague reste à sa place, plus loin.",
+        ]
+    ),
+    (1, 3, 3): vet(
+        [
+            "narrateur|Loin de l'eau, le rouge tient, face aux cabanes.",
+            "enfant-m|On a reculé vers les cabanes.",
+            "papa|Le sec était assez large.",
+            "maman|Rentrez, le maillot est sec.",
+            "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
+            "narrateur|L'écume se tait, vers les cabanes.",
+        ]
+    ),
+    (2, 1, 1): vet(
+        [
+            "narrateur|Plus bas, le fil tient le rouge au-dessus de l'eau.",
+            "enfant-m|On s'est baissés, le fil lâche.",
+            "papa|Le vent, en bas, était plus petit.",
+            "maman|Essuie tes genoux, sur le maillot.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|La ficelle laisse un anneau tiède au poignet.",
+        ]
+    ),
+    (2, 1, 2): vet(
+        [
+            "narrateur|Quand le vent s'est tu, le fil a laissé le rouge.",
+            "enfant-m|On a compté, le fil sans siffler.",
+            "papa|Le silence a laissé partir le nez.",
+            "maman|Rentrez, le pin sent le chaud.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Le fil ne siffle plus, et le rouge tient.",
+        ]
+    ),
+    (2, 1, 3): vet(
+        [
+            "narrateur|De côté, le fil tient, sans trop tirer.",
+            "enfant-m|Je n'ai pas fait face.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "maman|Le bois des cabanes est retombé, plus loin.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Un côté du tissu, à l'abri, voit la mer.",
+        ]
+    ),
+    (2, 2, 1): vet(
+        [
+            "narrateur|Tout près, le fil court, net, au-dessus des tiges.",
+            "enfant-m|On a commencé tout court.",
+            "papa|Le silence vous a aidés.",
+            "maman|L'herbe sent le sel, moins fort.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Le fil court, net, au-dessus des tiges.",
+        ]
+    ),
+    (2, 2, 2): vet(
+        [
+            "narrateur|Quand le nœud s'est tu, le fil a parlé.",
+            "enfant-m|On a dénoué, à genoux.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "maman|Le fil a parlé tout seul.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Un tour de ficelle s'endort contre sa manche.",
+        ]
+    ),
+    (2, 2, 3): vet(
+        [
+            "narrateur|Sur le sable nu, le fil garde une ligne.",
+            "enfant-m|Je me suis mis où c'est vide.",
+            "papa|Tu t'es glissé, comme le vent.",
+            "maman|Vous rentrez, les mains pleines de sable.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Le sable nu garde une ligne de fil.",
+        ]
+    ),
+    (2, 3, 1): vet(
+        [
+            "narrateur|Plus haut, le fil, sec, tremble un peu, puis tient.",
+            "enfant-m|On a gravi la dune.",
+            "papa|La vague n'a plus touché.",
+            "maman|Vos manches sentent le sel.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Le fil, sec, tremble un peu, puis tient.",
+        ]
+    ),
+    (2, 3, 2): vet(
+        [
+            "narrateur|Après la vague, le fil a vu la mer, sec.",
+            "enfant-m|On a laissé l'eau se taire.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "maman|Tes doigts sentent le sel.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|Un bout collant de sel sèche au poignet.",
+        ]
+    ),
+    (2, 3, 3): vet(
+        [
+            "narrateur|Loin de l'eau, le fil sent le pin.",
+            "enfant-m|On a reculé vers les cabanes.",
+            "papa|Le sec était assez large.",
+            "maman|Rentrez, le maillot est sec.",
+            "narrateur|La ficelle reste enroulée, un bout collant de sel.",
+            "narrateur|La ficelle sent le pin, loin de l'eau.",
+        ]
+    ),
+    (3, 1, 1): vet(
+        [
+            "narrateur|Plus bas, le piquet garde le fil, face à l'eau.",
+            "enfant-m|On s'est baissés, le bois droit.",
+            "papa|Le vent, en bas, était plus petit.",
+            "maman|Essuie tes genoux, sur le maillot.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Le piquet, plus bas, garde le fil.",
+        ]
+    ),
+    (3, 1, 2): vet(
+        [
+            "narrateur|Quand le vent s'est tu, le bois est resté droit.",
+            "enfant-m|On a compté, le bois sans penche.",
+            "papa|Le silence a laissé partir le nez.",
+            "maman|Rentrez, le pin sent le chaud.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Le bois reste droit, sans trembler.",
+        ]
+    ),
+    (3, 1, 3): vet(
+        [
+            "narrateur|De côté, une ombre de piquet, sur le sable.",
+            "enfant-m|Je n'ai pas fait face.",
+            "papa|De côté, ça n'a pas trop tiré.",
+            "maman|Le bois des cabanes est retombé, plus loin.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Une ombre de piquet, de côté, sur le sable.",
+        ]
+    ),
+    (3, 2, 1): vet(
+        [
+            "narrateur|Tout près, la pointe du piquet, dans le sable nu.",
+            "enfant-m|On a commencé tout court.",
+            "papa|Le silence vous a aidés.",
+            "maman|L'herbe sent le sel, moins fort.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|La pointe du piquet, près, dans le sable nu.",
+        ]
+    ),
+    (3, 2, 2): vet(
+        [
+            "narrateur|Quand le nœud s'est tu, un toc de bois, puis plus.",
+            "enfant-m|On a dénoué, à genoux.",
+            "papa|Tu n'as pas tiré trop fort.",
+            "maman|Le fil a parlé tout seul.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Un toc de bois, puis plus rien.",
+        ]
+    ),
+    (3, 2, 3): vet(
+        [
+            "narrateur|Sur le sable nu, le piquet tient, hors de l'herbe.",
+            "enfant-m|Je me suis mis où c'est vide.",
+            "papa|Tu t'es glissé, comme le vent.",
+            "maman|Vous rentrez, les mains pleines de sable.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Le piquet tient, hors de l'herbe.",
+        ]
+    ),
+    (3, 3, 1): vet(
+        [
+            "narrateur|Plus haut, le bois, sec, n'a plus d'eau.",
+            "enfant-m|On a gravi la dune.",
+            "papa|La vague n'a plus touché.",
+            "maman|Vos manches sentent le sel.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Le bois, plus haut, n'a plus d'eau.",
+        ]
+    ),
+    (3, 3, 2): vet(
+        [
+            "narrateur|Après la vague, un trait de piquet, sec.",
+            "enfant-m|On a laissé l'eau se taire.",
+            "papa|Tu n'as pas couru dans l'eau.",
+            "maman|Tes doigts sentent le sel.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Un trait de piquet, sec, après la vague.",
+        ]
+    ),
+    (3, 3, 3): vet(
+        [
+            "narrateur|Loin de l'eau, le piquet, près des cabanes, sent le pin.",
+            "enfant-m|On a reculé vers les cabanes.",
+            "papa|Le sec était assez large.",
+            "maman|Rentrez, le maillot est sec.",
+            "narrateur|Le piquet garde un peu de sable, près du fil.",
+            "narrateur|Le piquet, près des cabanes, sent le pin.",
+        ]
+    ),
+}
+
+
+def main() -> None:
+    folder = ROOT / SID
+    src = json.loads((folder / "source.json").read_text(encoding="utf-8"))
+    by_src = {c["chunk_id"]: c for c in src["chunks"]}
+    scripts: dict[str, tuple[list[str], str, str, dict]] = {}
+
+    scripts["CHK_T0000_P0000"] = (OPENING, "opening", "mer,linge", {"emphasis": "cerf-volant"})
+    scripts["CHK_T0001_P0000"] = (
+        T1_CHOICE,
+        "choice",
+        "",
+        {
+            "option_1_label": "le cerf-volant",
+            "option_2_label": "la ficelle",
+            "option_3_label": "le piquet",
+        },
+    )
+
+    for a in (1, 2, 3):
+        base = f"CHK_T0001_P000{a}"
+        t1 = T1[a]
+        scripts[base] = (t1["passage"], "action", t1["sons"], {"emphasis": t1["emp"]})
+        scripts[f"{base}_Q0001"] = (
+            t1["question"],
+            "clue",
+            "",
+            {
+                "expected_answer": t1["ans"],
+                "accepted_examples": t1["acc"],
+                "retry_prompt": t1["retry"],
+                "engine_ok_text": "Oui, c'est ça.",
+                "engine_near_text": "Tu es tout près. Écoute l'indice.",
+                "emphasis": t1["ans"],
+            },
+        )
+        scripts[f"{base}_C0001"] = (t1["confirm"], "confirm", t1["sons"], {"emphasis": "dune"})
+        scripts[f"{base}_T0002_P0000"] = (
+            T2_CHOICE[a],
+            "choice",
+            "",
+            {
+                "option_1_label": "la crête",
+                "option_2_label": "l'herbe",
+                "option_3_label": "l'écume",
+            },
+        )
+        for b in (1, 2, 3):
+            leaf2 = f"{base}_T0002_P000{b}"
+            t2d = T2[b]
+            scripts[leaf2] = (t2_scene(a, b), "obstacle", t2d["sons"], {"emphasis": t2d["emp"]})
+            scripts[f"{leaf2}_T0003_P0000"] = (
+                T3_Q[b],
+                "choice",
+                "",
+                {
+                    "option_1_label": T3_LABS[b][0],
+                    "option_2_label": T3_LABS[b][1],
+                    "option_3_label": T3_LABS[b][2],
+                },
+            )
+            for c in (1, 2, 3):
+                leaf3 = f"{leaf2}_T0003_P000{c}"
+                scripts[leaf3] = (
+                    RES[(a, b, c)],
+                    "resolution",
+                    "vent,cerf-volant",
+                    {"emphasis": "rouge"},
+                )
+                scripts[f"{leaf3}_F0001"] = (
+                    FIN[(a, b, c)],
+                    "ending",
+                    "mer,pin",
+                    {"emphasis": "cerf-volant", "note": ending_note(a, b, c)},
+                )
+
     missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in scripts]
-    extra_ids = set(scripts) - {c["chunk_id"] for c in src["chunks"]}
-    if missing or extra_ids:
-        raise SystemExit(f"{SID} missing={missing[:8]} extra={sorted(extra_ids)[:8]}")
-    by = {}
+    extra = set(scripts) - {c["chunk_id"] for c in src["chunks"]}
+    if missing or extra:
+        raise SystemExit(f"missing={missing[:8]} extra={sorted(extra)[:8]}")
+
+    chunks = []
     for c in src["chunks"]:
         cid = c["chunk_id"]
-        kind = c.get("kind") or ""
-        if kind in ("passage_question", "transition_question"):
-            scale, rate = 1.28, "slow"
-        else:
-            scale, rate = 1.22, "medium"
-        nc = make_chunk(c, scripts[cid], sons.get(cid, c.get("sons") or ""), scale, rate)
-        if cid in extras:
-            nc.update(extras[cid])
-        by[cid] = nc
-    out = dict(src)
-    out["fil_rouge"] = FIL
-    out["title"] = TITLE
-    out["characters"] = CHARS
-    out["setting"] = SETTING
-    out["chunks"] = [by[c["chunk_id"]] for c in src["chunks"]]
-    check(SID, out["age_band"], out["chunks"])
-    blob = "\n".join(c["script"] for c in out["chunks"]).lower()
+        lines, profile, sons, extra = scripts[cid]
+        chunks.append(voice(by_src[cid], lines, profile, sons, extra))
+
+    fins = [ch["text"] for ch in chunks if ch["kind"] == "passage_fin"]
+    if len(fins) != 27 or len(set(fins)) != 27:
+        raise SystemExit(f"fins distinctes: {len(set(fins))}/27")
+    last_n = []
+    for ch in chunks:
+        if ch.get("kind") != "passage_fin":
+            continue
+        last = [x for x in ch["script"].splitlines() if x.startswith("narrateur|")][-1]
+        last_n.append(last.split("|", 1)[1])
+        last_low = last.split("|", 1)[1].lower()
+        if "histoire" in last_low or "bravo" in last_low or "bon travail" in last_low:
+            raise SystemExit(f"{ch['chunk_id']} fin mécanique: {last_low}")
+    if len(set(last_n)) != 27:
+        raise SystemExit(f"dernières images: {len(set(last_n))}/27")
+    res_txt = [
+        ch["text"]
+        for ch in chunks
+        if ch["kind"] == "passage"
+        and "_T0003_P000" in ch["chunk_id"]
+        and "_F0001" not in ch["chunk_id"]
+        and not ch["chunk_id"].endswith("_T0003_P0000")
+    ]
+    if len(res_txt) != 27 or len(set(res_txt)) != 27:
+        raise SystemExit(f"résolutions distinctes: {len(set(res_txt))}/{len(res_txt)}")
+
+    blob = "\n".join(c["script"] for c in chunks).lower()
     labels = " ".join(
         f"{c.get('option_1_label') or ''} {c.get('option_2_label') or ''} {c.get('option_3_label') or ''}"
-        for c in out["chunks"]
+        for c in chunks
     ).lower()
     whole = blob + "\n" + labels
     for bad in (
@@ -125,515 +1251,64 @@ def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dic
         raise SystemExit(f"{SID}: Amir absent")
     if "cerf-volant" not in blob:
         raise SystemExit(f"{SID}: cerf-volant absent")
-    for c in out["chunks"]:
-        if c.get("kind") != "passage_fin":
-            continue
-        last_n = [x for x in c["script"].splitlines() if x.startswith("narrateur|")]
-        last = last_n[-1].split("|", 1)[1].lower()
-        if "histoire" in last or "bravo" in last or "bon travail" in last:
-            raise SystemExit(f"{SID} {c['chunk_id']} fin mécanique: {last}")
-    (ROOT / SID / "merged.json").write_text(
+
+    out = dict(src)
+    out["fil_rouge"] = (
+        "Au bord de la mer, Amir veut que son cerf-volant rouge voie la mer, "
+        "avant que le vent se couche. Il lance trop vite depuis la marche : le nez "
+        "se plie. Il prend d'abord le cerf-volant, la ficelle ou le piquet ; les trois "
+        "viennent. La crête souffle trop, l'herbe accroche trop, l'écume mouille trop. "
+        "Neuf façons de laisser du temps. Le rouge vole."
+    )
+    out["title"] = TITLE
+    out["characters"] = "Amir, papa, maman"
+    out["setting"] = "bord de mer : cabanes, dune, crête, herbe, écume"
+    out["chunks"] = chunks
+    check(SID, out["age_band"], out["chunks"])
+
+    def path_words(a: int, b: int, c: int) -> int:
+        ids = [
+            "CHK_T0000_P0000",
+            "CHK_T0001_P0000",
+            f"CHK_T0001_P000{a}",
+            f"CHK_T0001_P000{a}_Q0001",
+            f"CHK_T0001_P000{a}_C0001",
+            f"CHK_T0001_P000{a}_T0002_P0000",
+            f"CHK_T0001_P000{a}_T0002_P000{b}",
+            f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P0000",
+            f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}",
+            f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}_F0001",
+        ]
+        mp = {ch["chunk_id"]: ch for ch in chunks}
+        return sum(words(mp[i]["text"]) for i in ids)
+
+    ws = [path_words(a, b, c) for a in (1, 2, 3) for b in (1, 2, 3) for c in (1, 2, 3)]
+    print(f"chemins mots min={min(ws)} max={max(ws)} moy={sum(ws)//len(ws)}")
+
+    (folder / "merged.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-
-
-OBJ = {
-    1: {
-        "lab": "le cerf-volant",
-        "ans": "cerf-volant",
-        "acc": "cerf-volant | le cerf-volant | d'abord le cerf-volant | le tissu | le rouge",
-        "retry": "Amir prend le cerf-volant d'abord.",
-        "coda": "Le tissu rouge sèche près du seau, un pli encore salé.",
-        "hip": "Entre ses doigts, le tissu rouge est déjà chaud.",
-        "wait": "Pendant ce temps, le tissu reste plié, sage.",
-        "use": "Un coin du tissu cherche encore l'air.",
-    },
-    2: {
-        "lab": "la ficelle",
-        "ans": "ficelle",
-        "acc": "ficelle | la ficelle | d'abord la ficelle | le fil",
-        "retry": "Amir prend la ficelle d'abord.",
-        "coda": "La ficelle reste enroulée, un bout encore collant de sel.",
-        "hip": "Au poignet, la ficelle colle un peu, de sel.",
-        "wait": "Enroulée, la ficelle attend contre sa manche.",
-        "use": "Un bout de ficelle brille, prêt à tenir.",
-    },
-    3: {
-        "lab": "le piquet",
-        "ans": "piquet",
-        "acc": "piquet | le piquet | d'abord le piquet | le bois",
-        "retry": "Amir prend le piquet d'abord.",
-        "coda": "Le piquet garde un peu de sable, près du fil.",
-        "hip": "Dans sa paume, le bois du piquet est tiède.",
-        "wait": "Planté, le piquet reste droit, sans bouger.",
-        "use": "La pointe du piquet attend le sable.",
-    },
-}
-
-T3_LABS = {
-    1: ("plus bas", "attendre", "de côté"),
-    2: ("plus court", "à genoux", "le sable"),
-    3: ("plus haut", "après la vague", "loin de l'eau"),
-}
-
-
-def t1_passage(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Amir déplie d'abord le cerf-volant, encore tiède.",
-            "enfant-m|Toi, tu vas voir la mer.",
-            "maman|Tiens le nez, pas la queue.",
-            "narrateur|La queue rouge claque une fois, puis se tait.",
-            "papa|Ta queue me chatouille le cou.",
-            "enfant-m|Elle est trop contente.",
-            "narrateur|Maman glisse la ficelle contre son poignet.",
-            "narrateur|Le piquet roule contre son genou, tout lourd.",
-            "enfant-m|Nez en avant, queue derrière.",
-            "papa|Le rouge est à toi, maintenant.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Amir enroule d'abord la ficelle, autour du poignet.",
-            "enfant-m|Tu vas tenir le rouge.",
-            "papa|Pas trop serré, laisse un peu d'air.",
-            "narrateur|Un tour glisse, puis tient.",
-            "maman|Tu m'as fait un anneau, tout doux.",
-            "enfant-m|C'est pour tenir.",
-            "narrateur|Papa pose le tissu plié contre le seau.",
-            "narrateur|Le piquet attend, planté un peu, déjà.",
-            "enfant-m|Fil, tu restes avec moi.",
-            "maman|La ficelle est prête, tu peux y aller.",
-        )
-    return L(
-        "narrateur|Amir lève d'abord le piquet, le bois encore chaud.",
-        "enfant-m|Tu vas tenir le fil.",
-        "maman|Pointe vers le bas, tout doux.",
-        "narrateur|Le bois tape le sable, un toc.",
-        "papa|Il a tracé une ligne, comme un serpent.",
-        "enfant-m|C'est le chemin.",
-        "narrateur|Maman glisse le tissu sous son autre bras.",
-        "narrateur|La ficelle pend, déjà, contre sa manche.",
-        "enfant-m|Piquet, je te porte.",
-        "papa|Le piquet est prêt, on avance.",
-    )
-
-
-def t1_confirm(t1: int) -> list[str]:
-    o = OBJ[t1]
-    if t1 == 1:
-        return L(
-            "narrateur|Le tissu rouge reste contre sa poitrine, encore chaud.",
-            "enfant-m|On va jusqu'à la dune.",
-            "maman|Le vent n'attendra pas longtemps.",
-            "papa|Tu tiens bien, Amir ?",
-            "enfant-m|Oui, papa.",
-            f"narrateur|{o['use']}",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|La ficelle fait un bracelet lâche, au poignet.",
-            "enfant-m|Elle va tenir le rouge.",
-            "papa|Ça sent encore le sel, toi.",
-            "maman|Tes mains sont prêtes ?",
-            "enfant-m|Oui, maman.",
-            "narrateur|Un tour se desserre, puis se tait.",
-        )
-    return L(
-        "narrateur|Le piquet reste contre son bras, encore lourd.",
-        "enfant-m|Il va tenir le fil.",
-        "maman|Le bois sent encore le soleil.",
-        "papa|On y va, tous les trois ?",
-        "enfant-m|Oui.",
-        f"narrateur|{o['use']}",
-    )
-
-
-def t2_question(t1: int) -> list[str]:
-    head = {
-        1: "Le tissu tape sa poitrine, tout bas.",
-        2: "La ficelle frotte son poignet, un peu serrée.",
-        3: "Le piquet tape son bras, tout doux.",
-    }[t1]
-    return L(
-        f"narrateur|{head}",
-        "narrateur|Devant, la crête soulève trop de vent.",
-        "narrateur|L'herbe, elle, accroche encore les fils.",
-        "narrateur|Plus bas, l'écume mouille déjà le sable.",
-        "papa|Amir, vous partez où ?",
-    )
-
-
-def t2_scene(t1: int, t2: int) -> list[str]:
-    o = OBJ[t1]
-    if t2 == 1:
-        extra = {
-            1: "Le tissu se tord, trop vite, trop fort.",
-            2: "La ficelle siffle, trop tendue, trop vive.",
-            3: "Le piquet penche, trop léger dans l'air.",
-        }[t1]
-        return L(
-            f"narrateur|{o['hip']}",
-            "narrateur|La crête de la dune souffle trop fort.",
-            f"narrateur|{extra}",
-            "enfant-m|Il va se déchirer !",
-            "narrateur|La queue claque trop, encore une fois.",
-            "narrateur|Le nez rouge se plie, trop pris.",
-            "papa|Ici, le vent est trop grand.",
-            "maman|Le rouge a besoin d'un vent plus doux.",
-            "enfant-m|Alors on fait quoi ?",
-            "papa|Tu vois comment, Amir ?",
-        )
-    if t2 == 2:
-        extra = {
-            1: "Un pli du tissu s'accroche, trop serré.",
-            2: "La ficelle fait un nœud, trop vite.",
-            3: "Le piquet disparaît dans l'herbe, trop caché.",
-        }[t1]
-        return L(
-            f"narrateur|{o['hip']}",
-            "narrateur|L'herbe de la dune tient trop, trop verte.",
-            f"narrateur|{extra}",
-            "enfant-m|Le fil est coincé !",
-            "narrateur|Une tige tire, puis une autre.",
-            "narrateur|Le rouge n'a plus d'air, trop bas.",
-            "papa|Ici, ça s'accroche trop.",
-            "maman|Le fil n'avance plus.",
-            "enfant-m|Alors on fait quoi ?",
-            "maman|Tu vois comment, Amir ?",
-        )
-    extra = {
-        1: "Le tissu pèse, trop lourd, trop salé.",
-        2: "La ficelle goutte, trop mouillée, trop froide.",
-        3: "Le piquet s'enfonce, trop mou dans le sable.",
-    }[t1]
-    return L(
-        f"narrateur|{o['hip']}",
-        "narrateur|L'écume lèche le sable, trop près.",
-        f"narrateur|{extra}",
-        "enfant-m|Il est tout mouillé !",
-        "narrateur|Une vague revient, trop blanche.",
-        "narrateur|Le rouge n'a plus de vent, trop lourd.",
-        "papa|Ici, ça mouille trop.",
-        "maman|Il lui faut du temps, et du sec.",
-        "enfant-m|Alors on fait quoi ?",
-        "papa|Tu vois comment, Amir ?",
-    )
-
-
-def t3_question(t2: int) -> list[str]:
-    if t2 == 1:
-        return L(
-            "narrateur|La crête n'a pas fini de souffler.",
-            "papa|Plus bas, attendre, ou de côté ?",
-        )
-    if t2 == 2:
-        return L(
-            "narrateur|L'herbe n'a pas fini d'accrocher.",
-            "maman|Plus court, à genoux, ou le sable ?",
-        )
-    return L(
-        "narrateur|L'écume n'a pas fini de lécher.",
-        "papa|Plus haut, après la vague, ou loin de l'eau ?",
-    )
-
-
-def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
-    if t2 == 1 and t3 == 1:
-        low = {
-            1: "Il baisse le tissu, loin de la crête.",
-            2: "Il baisse la ficelle, loin de la crête.",
-            3: "Il plante le piquet plus bas, loin de la crête.",
-        }[t1]
-        return L(
-            "enfant-m|Plus bas, d'abord.",
-            f"narrateur|{low}",
-            "narrateur|Amir descend la pente, les genoux au sable.",
-            "narrateur|L'air est plus doux, contre la dune.",
-            f"narrateur|{o['use']}",
-            "papa|Tu as regardé le vent, avant.",
-            "enfant-m|Ici, tu ne te déchires plus.",
-            "maman|Plus bas, ça tenait mieux.",
-        )
-    if t2 == 1 and t3 == 2:
-        wait = {
-            1: "Il tient le tissu contre lui, sans le lancer.",
-            2: "Il tient la ficelle, sans la dérouler encore.",
-            3: "Il tient le piquet, sans le planter encore.",
-        }[t1]
-        return L(
-            "enfant-m|On attend le vent.",
-            f"narrateur|{wait}",
-            "narrateur|Le souffle passe, une fois, puis plus.",
-            "enfant-m|Tu peux partir, maintenant.",
-            f"narrateur|{o['wait']}",
-            "papa|Le vent s'est tu, maintenant.",
-            "narrateur|Le rouge se lève, tout calme.",
-            "maman|Le rouge a eu son calme.",
-        )
-    if t2 == 1 and t3 == 3:
-        side = {
-            1: "Il tourne le tissu de côté, tout doux.",
-            2: "Il tourne la ficelle de côté, tout doux.",
-            3: "Il plante le piquet de côté, tout doux.",
-        }[t1]
-        return L(
-            "enfant-m|De côté, pas face au vent.",
-            f"narrateur|{side}",
-            "narrateur|Le nez rouge prend moins d'air, déjà.",
-            "narrateur|Amir compte tout bas, un, deux.",
-            f"narrateur|{o['wait']}",
-            "papa|De côté, ça n'a pas trop tiré.",
-            "enfant-m|Tu es à l'abri.",
-            "maman|Le nez a moins tiré, comme ça.",
-        )
-    if t2 == 2 and t3 == 1:
-        short = {
-            1: "Il tient le tissu tout près, ficelle courte.",
-            2: "Il déroule peu de ficelle, tout court.",
-            3: "Il plante le piquet tout près, fil court.",
-        }[t1]
-        return L(
-            "enfant-m|Plus court, d'abord.",
-            f"narrateur|{short}",
-            "narrateur|L'herbe n'atteint plus le fil, trop loin.",
-            "narrateur|Le rouge se lève, tout petit, déjà.",
-            f"narrateur|{o['wait']}",
-            "maman|Le fil n'a plus accroché.",
-            "enfant-m|Maintenant, tu me vois.",
-            "papa|Tu as commencé tout près.",
-        )
-    if t2 == 2 and t3 == 2:
-        knee = {
-            1: "À genoux, il dénoue le tissu, tout doux.",
-            2: "À genoux, il dénoue la ficelle, tout doux.",
-            3: "À genoux, il dégage le piquet, tout doux.",
-        }[t1]
-        return L(
-            "enfant-m|À genoux, on dénoue.",
-            f"narrateur|{knee}",
-            "narrateur|Un nœud lâche, puis un autre.",
-            "narrateur|L'herbe se tait, plus loin, toute seule.",
-            f"narrateur|{o['use']}",
-            "papa|Tu n'as pas tiré trop fort.",
-            "enfant-m|C'est pour toi.",
-            "maman|Le nœud a lâché tout seul.",
-        )
-    if t2 == 2 and t3 == 3:
-        sand = {
-            1: "Sur le sable nu, le tissu ne s'accroche plus.",
-            2: "Sur le sable nu, la ficelle ne s'accroche plus.",
-            3: "Sur le sable nu, le piquet trouve sa place.",
-        }[t1]
-        return L(
-            "enfant-m|Le sable, pas l'herbe.",
-            "narrateur|Amir recule vers le sable nu, tout doux.",
-            f"narrateur|{sand}",
-            "narrateur|Plus de tiges, plus de nœuds.",
-            f"narrateur|{o['wait']}",
-            "papa|Tu t'es mis où c'est vide.",
-            "enfant-m|Le fil est libre.",
-            "maman|Le sable nu était plus simple.",
-        )
-    if t2 == 3 and t3 == 1:
-        high = {
-            1: "Plus haut, le tissu n'a plus d'écume.",
-            2: "Plus haut, la ficelle n'a plus d'écume.",
-            3: "Plus haut, le piquet n'a plus d'eau.",
-        }[t1]
-        return L(
-            "enfant-m|Plus haut, d'abord.",
-            f"narrateur|{high}",
-            "narrateur|Amir gravit la dune, le sable qui glisse.",
-            "narrateur|L'écume reste en bas, trop loin pour lécher.",
-            f"narrateur|{o['wait']}",
-            "papa|La vague n'a plus touché.",
-            "enfant-m|Maintenant, tu peux rester.",
-            "maman|Le sable était plus sec, là-haut.",
-        )
-    if t2 == 3 and t3 == 2:
-        wave = {
-            1: "Il tient le tissu, puis attend la vague.",
-            2: "Il tient la ficelle, puis attend la vague.",
-            3: "Il tient le piquet, puis attend la vague.",
-        }[t1]
-        return L(
-            "enfant-m|On attend la vague, d'abord.",
-            f"narrateur|{wave}",
-            "narrateur|L'eau va, revient, puis se tait.",
-            "narrateur|Le sable redevient ferme, tout net.",
-            f"narrateur|{o['use']}",
-            "papa|Tu n'as pas couru dans l'eau.",
-            "enfant-m|Tu es sec, maintenant.",
-            "maman|Tu as laissé la vague finir.",
-        )
-    far = {
-        1: "Loin de l'eau, le tissu reste sec, tout rouge.",
-        2: "Loin de l'eau, la ficelle reste sèche, déjà.",
-        3: "Loin de l'eau, le piquet tient, sans s'enfoncer.",
-    }[t1]
-    return L(
-        "enfant-m|Loin de l'eau, tout sec.",
-        f"narrateur|{far}",
-        "narrateur|Amir recule vers les cabanes, tout doux.",
-        "narrateur|L'écume se tait, plus loin, toute seule.",
-        f"narrateur|{o['wait']}",
-        "papa|Le sec était assez large.",
-        "enfant-m|Tu restes, rouge.",
-        "maman|Loin de l'eau, ça suffisait.",
-    )
-
-
-def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
-    coda = OBJ[t1]["coda"]
-    if t2 == 1 and t3 == 1:
-        return L(
-            "narrateur|Plus bas, le cerf-volant voit la mer, tout calme.",
-            "enfant-m|On s'est baissés, d'abord.",
-            "papa|Tu as regardé le vent avant de lancer.",
-            "maman|Essuie tes genoux, sur le maillot.",
-            f"narrateur|{coda}",
-            "narrateur|Un carré rouge reste dans le ciel, puis pâlit.",
-        )
-    if t2 == 1 and t3 == 2:
-        return L(
-            "narrateur|Quand le vent s'est tu, le rouge a vu la mer.",
-            "enfant-m|On a attendu le souffle.",
-            "papa|Merci d'avoir laissé le vent se taire.",
-            "maman|Rentrez, le pin sent encore le chaud.",
-            f"narrateur|{coda}",
-            "narrateur|Une poussière de sable tourne, puis s'arrête.",
-        )
-    if t2 == 1 and t3 == 3:
-        return L(
-            "narrateur|De côté, le cerf-volant tient, sans se tordre.",
-            "enfant-m|Je n'ai pas fait face.",
-            "papa|De côté, ça n'a pas trop tiré.",
-            "maman|Le bois des cabanes est retombé, plus loin.",
-            f"narrateur|{coda}",
-            "narrateur|La mer se tait, derrière le tissu tiède.",
-        )
-    if t2 == 2 and t3 == 1:
-        return L(
-            "narrateur|Tout près, le rouge a repris l'air, déjà.",
-            "enfant-m|On a commencé tout court.",
-            "papa|Le silence vous a aidés.",
-            "maman|L'herbe sent encore le sel, moins fort.",
-            f"narrateur|{coda}",
-            "narrateur|Un brin d'herbe se recouche, tout lent.",
-        )
-    if t2 == 2 and t3 == 2:
-        return L(
-            "narrateur|Quand le nœud s'est tu, le rouge a volé.",
-            "enfant-m|On a dénoué, à genoux.",
-            "papa|Tu n'as pas tiré trop fort.",
-            "maman|Le fil a parlé tout seul.",
-            f"narrateur|{coda}",
-            "narrateur|Un carré net reste dans le ciel, puis pâlit.",
-        )
-    if t2 == 2 and t3 == 3:
-        return L(
-            "narrateur|Sur le sable nu, le rouge touche déjà le bleu.",
-            "enfant-m|Je me suis mis où c'est vide.",
-            "papa|Tu t'es glissé, comme le vent.",
-            "maman|Vous rentrez, les mains pleines de sable.",
-            f"narrateur|{coda}",
-            "narrateur|L'herbe reste derrière, sans accrocher.",
-        )
-    if t2 == 3 and t3 == 1:
-        return L(
-            "narrateur|Plus haut, le cerf-volant a tenu, tout sec.",
-            "enfant-m|On a gravi la dune.",
-            "papa|La vague n'a plus touché.",
-            "maman|Vos manches sentent encore le sel.",
-            f"narrateur|{coda}",
-            "narrateur|Un grain de sable sèche sur le bois, puis plus.",
-        )
-    if t2 == 3 and t3 == 2:
-        return L(
-            "narrateur|Après la vague, le rouge a vu la mer, déjà.",
-            "enfant-m|On a attendu que ça se taise.",
-            "papa|Tu n'as pas couru dans l'eau.",
-            "maman|Tes doigts sentent encore le sel.",
-            f"narrateur|{coda}",
-            "narrateur|La vague reste à sa place, plus loin.",
-        )
-    return L(
-        "narrateur|Loin de l'eau, le rouge tient, tout calme.",
-        "enfant-m|On a reculé vers les cabanes.",
-        "papa|Le sec était assez large.",
-        "maman|Rentrez, le maillot est déjà sec.",
-        f"narrateur|{coda}",
-        "narrateur|L'écume se tait, plus loin, toute seule.",
-    )
-
-
-def main() -> None:
-    s: dict[str, list[str]] = {}
-    extras: dict[str, dict] = {}
-    sons: dict[str, str] = {"CHK_T0000_P0000": ""}
-
-    s["CHK_T0000_P0000"] = L(
-        "narrateur|Un grain de sel brille sur le bois de la cabane.",
-        "narrateur|Le fil du linge tape, tout petit.",
-        "narrateur|Ça sent le pin chaud, et la mer.",
-        "papa|Tu as vu la queue, Amir ?",
-        "enfant-m|Elle tape déjà la marche.",
-        "maman|C'est le cerf-volant, encore rouge.",
-        "narrateur|En ce moment, Amir déplie un coin du tissu.",
-        "enfant-m|Je veux qu'il voie la mer.",
-        "papa|Le vent va se coucher bientôt.",
-        "maman|On prend les affaires, alors ?",
-        "papa|Merci, tu as dénoué la ficelle.",
-    )
-    s["CHK_T0001_P0000"] = L(
-        "narrateur|Trois affaires attendent près du sable.",
-        "narrateur|Le cerf-volant, la ficelle, et le piquet.",
-        "maman|Tu prends quoi d'abord, Amir ?",
-    )
-    extras["CHK_T0001_P0000"] = t3lab("le cerf-volant", "la ficelle", "le piquet")
-
-    for t1 in (1, 2, 3):
-        p = f"CHK_T0001_P000{t1}"
-        o = OBJ[t1]
-        s[p] = t1_passage(t1)
-        s[f"{p}_Q0001"] = L(
-            f"narrateur|Amir a pris {o['lab']} d'abord.",
-            "maman|Il a pris quoi, d'abord ?",
-        )
-        extras[f"{p}_Q0001"] = qf(o["ans"], o["acc"], o["retry"])
-        s[f"{p}_C0001"] = t1_confirm(t1)
-        s[f"{p}_T0002_P0000"] = t2_question(t1)
-        extras[f"{p}_T0002_P0000"] = t3lab("la crête", "l'herbe", "l'écume")
-
-        for t2 in (1, 2, 3):
-            sp = f"{p}_T0002_P000{t2}"
-            s[sp] = t2_scene(t1, t2)
-            s[f"{sp}_T0003_P0000"] = t3_question(t2)
-            extras[f"{sp}_T0003_P0000"] = t3lab(*T3_LABS[t2])
-            for t3 in (1, 2, 3):
-                s[f"{sp}_T0003_P000{t3}"] = t3_scene(t1, t2, t3)
-                s[f"{sp}_T0003_P000{t3}_F0001"] = fin_scene(t1, t2, t3)
-
-    write_tree(s, extras, sons)
     relecture(
         SID,
         TITLE,
-        "Cabanes de bois, grain de sel, fil du linge, pin chaud. "
-        "Amir veut que son cerf-volant rouge voie la mer, avant que le vent se couche. "
-        "T1 = cerf-volant / ficelle / piquet (les trois viennent). "
-        "T2 = crête trop venteuse / herbe trop accrochante / écume trop mouillée. "
-        "T3 = neuf résolutions (plus bas, attendre, de côté ; plus court, à genoux, sable ; "
-        "plus haut, après la vague, loin de l'eau). La leçon se vit : il attend, "
-        "il compte, il lance quand le vent se tait. Fin : le rouge vole.",
-        "N3 ≤ 16. Slogan « Plus de temps ou de calme », Hugo, Tom/Léa/Sami, "
-        "bac/toboggan/balançoires, « bon travail », calque AUT-001 jetés. "
-        "Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), "
+        "Cabanes de bois, grain de sel, fil du linge, pin chaud. Amir veut que son "
+        "cerf-volant rouge voie la mer, avant que le vent se couche. Il lance trop "
+        "vite depuis la marche : le nez se plie. T1 = cerf-volant / ficelle / piquet "
+        "(les trois viennent). T2 = crête trop venteuse / herbe trop accrochante / "
+        "écume trop mouillée : le premier lancer rate. T3 = neuf résolutions (plus "
+        "bas, attendre, de côté ; plus court, à genoux, sable ; plus haut, après la "
+        "vague, loin de l'eau). La leçon se vit : il compte, il tient sans lancer, "
+        "il laisse le nœud ou la vague finir. Fin : le rouge voit la mer.",
+        "P0 F-NAR-019. N3 ≤ 16. Slogan « Plus de temps ou de calme », Hugo, "
+        "Tom/Léa/Sami, bac/toboggan/balançoires, « bon travail », calque AUT-001 "
+        "jetés. Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), "
         "DIF-040 (veau/ferme), DIF-048 (étoile/fenêtre), DIF-056 (bulle/bronze). "
-        "Merci de papa (ficelle dénouée). Relecture : morales collées "
-        "(« laissé le temps », « observé d'abord », « parlé lentement ») "
-        "remplacées par des faits vus. chunk_id inchangés. check() OK. "
-        "xlsx live : stories/arbres/TREE-DIF-064.xlsx. Audio non cuit.",
+        "Merci de papa (ficelle dénouée), une fois. 27 fins et 27 résolutions "
+        "textuellement distinctes. TTS par fonction (opening/choice/clue/action/"
+        "obstacle/resolution/ending). slow réservé aux choix, à l'indice et aux "
+        f"fins. Chemins : {min(ws)}–{max(ws)} mots (moyenne {sum(ws)//len(ws)}). "
+        "Tics « tout doux / encore / déjà / tout calme » interdits. chunk_id "
+        "inchangés. check() OK. Pas d'apply. Audio non cuit.",
     )
 
 
