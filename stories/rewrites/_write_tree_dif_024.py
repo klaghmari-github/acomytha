@@ -1,638 +1,1034 @@
 #!/usr/bin/env python3
-"""TREE-DIF-024 — Le cerf-volant de Chouchou dans le pommier (N1, DIF.COR.001)."""
+"""TREE-DIF-024 — Le cerf-volant de Chouchou dans le pommier (F-NAR-019, N1, example4 v2)."""
 from __future__ import annotations
 
 import json
+import re
 import sys
+from copy import deepcopy
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import ROOT, check, make_chunk, relecture, words  # noqa: E402
+from _lib import ROOT, check, from_script, words  # noqa: E402
 
 SID = "TREE-DIF-024"
-N1 = 10
+LIM = 10
+TITLE = "Le cerf-volant de Chouchou dans le pommier"
+CHARS = "Chouchou, Aniss, papa, maman"
+SETTING = "jardin, pommier après le vent"
+FIL = (
+    "Après le vent, l'herbe aux pommes fendues sent le fruit. "
+    "Sur la marche, la queue rouge du cerf-volant jaune est déchirée. "
+    "Un grain de pomme y reste, collé. Chouchou l'avait promis au toit. "
+    "Le jaune dort dans le pommier : le jouet n'a pas atteint le ciel promis. "
+    "Aniss arrive, plus grand, sans se presser. Silence = réponse. "
+    "T1 = ficelle / bâton / tabouret, les trois partent. "
+    "Première idée trop vite : poche froissée, pique de travers, toc. "
+    "T2 = branches basses / fourche / branche haute. "
+    "Le jaune glisse, s'enfonce, ou s'éloigne. Sourire parti. "
+    "T3 : ils refusent de foncer, retrouvent le grain, font avec. "
+    "27 fins : le papier rentre, le grain paie, ça a failli."
+)
+TICS = (
+    "tout doux",
+    "tout calme",
+    "on va apprendre",
+    "voici le geste",
+    "l'histoire est finie",
+    "il faut attendre",
+    "bravo tu as",
+    "bon travail",
+    "j'ai compris",
+    "mission accomplie",
+    "aujourd'hui,",
+    "aujourd'hui ",
+)
 
 
-def L(*rows: str) -> list[str]:
-    out: list[str] = []
-    for raw in rows:
-        role, ph = raw.split("|", 1)
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def ssml(text: str, m: dict) -> str:
+    body = esc(text)
+    emp = m.get("emphasis")
+    if emp:
+        e = esc(emp)
+        body = body.replace(e, f'<emphasis level="moderate">{e}</emphasis>', 1)
+    return (
+        f'<speak><prosody rate="{m["rate"]}" pitch="{m["pitch_ssml"]}">'
+        f'{body}</prosody><break time="{m["pause"]}ms"/></speak>'
+    )
+
+
+def xai(text: str, m: dict) -> str:
+    body = text
+    emp = m.get("emphasis")
+    if emp:
+        body = body.replace(emp, f"<emphasis>{emp}</emphasis>", 1)
+    if m["rate"] == "slow":
+        body = f"<slow>{body}</slow>"
+    if m["volume"] == "soft":
+        body = f"<soft>{body}</soft>"
+    if m.get("pitch_tag"):
+        body = f"<{m['pitch_tag']}>{body}</{m['pitch_tag']}>"
+    pause = m["pause"]
+    tail = " [long-pause]" if pause >= 800 else (" [pause]" if pause >= 400 else "")
+    return f"{body}{tail}".strip()
+
+
+PROFILES = {
+    "opening": dict(
+        rate="medium", wpm=142, speed=0.98, piper=1.12, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="medium", db=0, pause=500,
+        sentence=260, energy="warm", contour="storytelling", noise=0.36,
+        note="arc=installation; intention=émerveiller; emotion=impatience_curieuse; intensite=1; destinataire=enfant; sous_texte=le_grain_de_pomme_tient_sur_la_queue_rouge; tempo=naturel; sourire=léger; respiration=ample",
+    ),
+    "choice": dict(
+        rate="slow", wpm=116, speed=0.84, piper=1.30, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="medium", db=0, pause=900,
+        sentence=330, energy="focused", contour="rising", noise=0.33,
+        note="arc=choix; intention=inviter; emotion=curiosité; intensite=1; destinataire=enfant; sous_texte=ton_choix_colore_la_descente; tempo=suspendu; sourire=léger; respiration=pause_avant_choix",
+    ),
+    "clue": dict(
+        rate="slow", wpm=120, speed=0.86, piper=1.27, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="soft", db=-2, pause=700,
+        sentence=320, energy="focused", contour="rising", noise=0.32,
+        note="arc=indice; intention=faire_deviner; emotion=attention; intensite=1; destinataire=enfant; sous_texte=regarde_ou_voyage_le_papier_jaune; tempo=suspendu; sourire=aucun; respiration=courte_avant_question",
+    ),
+    "confirm": dict(
+        rate="medium", wpm=132, speed=0.92, piper=1.20, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="medium", db=0, pause=450,
+        sentence=280, energy="bright", contour="falling", noise=0.34,
+        note="arc=confirmation; intention=relancer; emotion=élan_retenu; intensite=1; destinataire=enfant; sous_texte=les_trois_affaires_partent; tempo=naturel; sourire=léger; respiration=fluide",
+    ),
+    "action": dict(
+        rate="medium", wpm=146, speed=1.0, piper=1.10, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="medium", db=0, pause=420,
+        sentence=250, energy="lively", contour="dynamic", noise=0.37,
+        note="arc=action; intention=entraîner; emotion=impatience; intensite=2; destinataire=enfant; sous_texte=trop_vite_le_papier_resiste; tempo=vif; sourire=léger; respiration=courte",
+    ),
+    "obstacle": dict(
+        rate="medium", wpm=134, speed=0.93, piper=1.18, pitch="low",
+        pitch_ssml="-2st", pitch_tag="low-pitch", volume="medium", db=0, pause=520,
+        sentence=300, energy="tense", contour="dynamic", noise=0.34,
+        note="arc=obstacle; intention=alerter_sans_effrayer; emotion=impatience_et_inquiétude; intensite=2; destinataire=enfant; sous_texte=le_jaune_n_atteint_pas_le_toit_promis; tempo=resserré; sourire=aucun; respiration=retenue",
+    ),
+    "resolution": dict(
+        rate="medium", wpm=140, speed=0.97, piper=1.14, pitch="medium",
+        pitch_ssml="medium", pitch_tag=None, volume="medium", db=0, pause=560,
+        sentence=270, energy="bright", contour="falling", noise=0.35,
+        note="arc=résolution; intention=faire_vivre_la_réussite; emotion=fierté_calme; intensite=2; destinataire=enfant; sous_texte=ils_refusent_de_foncer_retrouvent_le_grain; tempo=naturel; sourire=franc; respiration=relâchée",
+    ),
+    "ending": dict(
+        rate="slow", wpm=118, speed=0.85, piper=1.28, pitch="low",
+        pitch_ssml="-2st", pitch_tag="low-pitch", volume="soft", db=-3, pause=900,
+        sentence=340, energy="calm", contour="falling", noise=0.31,
+        note="arc=retour; intention=refermer; emotion=tendresse_et_fierté_calme; intensite=1; destinataire=enfant; sous_texte=le_grain_de_pomme_paie_le_debut; tempo=posé; sourire=léger; respiration=ample",
+    ),
+}
+
+
+def vet(pairs: list[tuple[str, str]], where: str) -> None:
+    prev = ""
+    run = 1
+    for role, ph in pairs:
         n = words(ph)
-        if n > N1:
-            raise SystemExit(f"{n}>{N1}: {ph}")
+        if n > LIM:
+            raise SystemExit(f"{where} {n}>{LIM}: {ph}")
+        if n == 0:
+            raise SystemExit(f"{where} vide")
+        if "|" in ph:
+            raise SystemExit(f"{where} pipe: {ph}")
+        if not ph.endswith((".", "?", "!")):
+            raise SystemExit(f"{where} ponctuation: {ph}")
         marks = ph.count(".") + ph.count("?") + ph.count("!")
         if marks != 1:
-            raise SystemExit(f"ponctuation {marks}: {ph}")
-        out.append(f"{role}|{ph}")
+            raise SystemExit(f"{where} {marks} phrases: {ph}")
+        low = ph.lower()
+        for tic in TICS:
+            if tic in low:
+                raise SystemExit(f"{where} tic « {tic} »: {ph}")
+        for tic in ("encore", "déjà", "deja", "tout doux", "tout calme"):
+            if tic in low:
+                raise SystemExit(f"{where} tic corpus « {tic} »: {ph}")
+        if role == "narrateur":
+            tok = ph.split()[0].lower()
+            if tok == prev:
+                run += 1
+                if run >= 4:
+                    raise SystemExit(f"{where} puces « {tok} »")
+            else:
+                run = 1
+                prev = tok
+        else:
+            run = 1
+            prev = ""
+
+
+def voice(old: dict, pairs: list[tuple[str, str]], profile: str, extra: dict | None = None) -> dict:
+    extra = extra or {}
+    vet(pairs, old["chunk_id"])
+    m = dict(PROFILES[profile])
+    if "emphasis" in extra:
+        m["emphasis"] = extra["emphasis"]
+    elif "emphasis" not in m:
+        m["emphasis"] = None
+    lines = [f"{r}|{p}" for r, p in pairs]
+    text, script = from_script(lines)
+    out = deepcopy(old)
+    out["text"] = text
+    out["script"] = script
+    out["sons"] = extra.get("sons", old.get("sons") or "")
+    if out["sons"] is None:
+        out["sons"] = ""
+    out["text_ssml"] = ssml(text, m)
+    out["text_xai_tags"] = xai(text, m)
+    out["rate_wpm"] = m["wpm"]
+    out["rate_label"] = m["rate"]
+    out["speed_xai"] = m["speed"]
+    out["length_scale_piper"] = m["piper"]
+    out["pitch_label"] = m["pitch"]
+    out["pitch_ssml"] = m["pitch_ssml"]
+    out["pitch_xai_tag"] = m["pitch_tag"]
+    out["volume_label"] = m["volume"]
+    out["volume_db"] = m["db"]
+    out["emphasis_words"] = m.get("emphasis") or ""
+    out["pause_before_ms"] = extra.get("pause_before", 0)
+    out["pause_after_ms"] = m["pause"]
+    out["pause_sentence_ms"] = m["sentence"]
+    out["style_energy"] = m["energy"]
+    out["style_contour"] = m["contour"]
+    out["noise_scale_piper"] = m["noise"]
+    out["kokoro_speed"] = m["speed"]
+    out["melo_speed"] = m["speed"]
+    out["espeak_amp"] = 82 if m["volume"] == "soft" else 100
+    out["espeak_pitch"] = 42 if m["pitch"] == "low" else 50
+    out["espeak_word_gap"] = 12 if m["rate"] == "slow" else 8
+    out["notes"] = extra.get("note", m["note"])
+    out["night_policy"] = extra.get("night_policy", "play")
+    out["locale"] = "fr-FR"
+    out["voice_id"] = "fr_FR-siwis-medium"
+    for k, v in extra.get("fields", {}).items():
+        out[k] = v
     return out
 
 
-def t3lab(a: str, b: str, c: str) -> dict:
-    return {"option_1_label": a, "option_2_label": b, "option_3_label": c}
+def L(*rows: tuple[str, str]) -> list[tuple[str, str]]:
+    return list(rows)
 
 
-def qf(ans: str, acc: str, retry: str) -> dict:
-    return {"expected_answer": ans, "accepted_examples": acc, "retry_prompt": retry}
+OPENING = L(
+    ("narrateur", "Après le vent, l'herbe garde des pommes fendues."),
+    ("narrateur", "Le volet claque une fois, puis se tait."),
+    ("narrateur", "La cuisine sent le fruit écrasé."),
+    ("narrateur", "Sur la marche, une queue rouge est déchirée."),
+    ("narrateur", "Un grain de pomme y reste, collé."),
+    ("papa", "Tu as vu ce grain, Chouchou ?"),
+    ("enfant-f", "Il tient sur le papier jaune."),
+    ("narrateur", "Chouchou lève le nez vers le pommier."),
+    ("narrateur", "Son cerf-volant jaune dort dans les branches."),
+    ("enfant-f", "Je l'avais promis au toit."),
+    ("narrateur", "Le ciel au-dessus du toit reste vide."),
+    ("narrateur", "La piste du toit n'a pas son jaune."),
+    ("narrateur", "En ce moment, Aniss arrive dans l'herbe."),
+    ("narrateur", "Son ombre va jusqu'aux pommes fendues."),
+    ("enfant-f", "Viens, on le prend !"),
+    ("narrateur", "Aniss ne bouge pas."),
+    ("narrateur", "Il pose un doigt sur le grain."),
+    ("papa", "Merci, tu as vu qu'il attend."),
+    ("maman", "On prépare les affaires, alors ?"),
+)
+
+T1 = {
+    1: dict(
+        name="la ficelle",
+        expected="poche",
+        accepted="poche | la poche | dans la poche | dans ma poche",
+        retry="Le papier est dans la poche.",
+        ok="Oui, il est dans la poche.",
+        sons="ficelle,papier",
+        emphasis="ficelle",
+        passage=L(
+            ("narrateur", "Chouchou enroule la ficelle, trop vite."),
+            ("enfant-f", "Le papier jaune va avec."),
+            ("narrateur", "Elle le pousse dans la poche."),
+            ("narrateur", "Le grain de pomme froisse, un peu."),
+            ("enfant-m", "Doucement."),
+            ("narrateur", "Aniss ne dit rien de plus."),
+            ("enfant-f", "Je ralentis."),
+            ("maman", "Glisse-le dans ta poche."),
+            ("papa", "Le bâton aussi, près du sac."),
+            ("narrateur", "Maman pose le tabouret contre le tronc."),
+            ("narrateur", "Les trois affaires partent ensemble."),
+            ("narrateur", "Aniss marche derrière, sans se presser."),
+            ("papa", "La ficelle d'abord, vous l'avez."),
+        ),
+        question=L(
+            ("narrateur", "Chouchou a glissé le papier dans la poche."),
+            ("maman", "Il est où, le bout de papier ?"),
+        ),
+        confirm=L(
+            ("narrateur", "La ficelle porte le papier, dans la poche."),
+            ("enfant-m", "Ça a fait un froissement."),
+            ("enfant-f", "C'est pour retrouver le jaune."),
+            ("narrateur", "Le grain de pomme tient, contre le tissu."),
+            ("narrateur", "Le bâton et le tabouret voyagent aussi."),
+            ("maman", "Le grand jaune vous attend, plus haut."),
+            ("enfant-f", "Il doit voler au-dessus du toit."),
+            ("papa", "On avance sous les feuilles ?"),
+            ("enfant-f", "Oui, papa."),
+        ),
+        choice=L(
+            ("narrateur", "La ficelle tape, contre sa poche."),
+            ("narrateur", "Des branches basses pendent à gauche."),
+            ("narrateur", "Au milieu, une fourche écarte le ciel."),
+            ("narrateur", "À droite, une branche haute penche."),
+            ("papa", "Où allez-vous chercher le jaune ?"),
+        ),
+    ),
+    2: dict(
+        name="le bâton",
+        expected="bâton",
+        accepted="bâton | le bâton | sur le bâton | le bois",
+        retry="Le papier est sur le bâton.",
+        ok="Oui, il est sur le bâton.",
+        sons="bois,papier",
+        emphasis="bâton",
+        passage=L(
+            ("narrateur", "Chouchou prend le bâton, trop vite."),
+            ("enfant-f", "Je pique le papier dessus."),
+            ("narrateur", "Le jaune penche, presque dehors."),
+            ("narrateur", "Le grain de pomme bascule, un peu."),
+            ("enfant-m", "Attends."),
+            ("narrateur", "Aniss reste là, les lèvres fermées."),
+            ("enfant-f", "Je le tiens plus droit."),
+            ("papa", "Enroule-le, comme un drapeau."),
+            ("maman", "La ficelle, ensuite, près des pieds."),
+            ("narrateur", "Elle glisse le tabouret d'une main."),
+            ("narrateur", "Les trois affaires partent ensemble."),
+            ("narrateur", "Aniss marche derrière, sans se presser."),
+            ("maman", "Le bâton d'abord, il est prêt."),
+        ),
+        question=L(
+            ("narrateur", "Chouchou a piqué le papier sur le bâton."),
+            ("papa", "Il est où, le bout de papier ?"),
+        ),
+        confirm=L(
+            ("narrateur", "Le bâton tient le papier, comme un drapeau."),
+            ("enfant-m", "Je vois un coin, tout jaune."),
+            ("enfant-f", "Ne touche pas, pas maintenant."),
+            ("narrateur", "Le grain de pomme brille, contre le bois."),
+            ("narrateur", "La ficelle et le tabouret voyagent aussi."),
+            ("papa", "Ça sent le fruit, ici."),
+            ("enfant-f", "Il doit voler au-dessus du toit."),
+            ("maman", "Vos pieds, dans l'herbe ?"),
+            ("enfant-m", "Oui, maman."),
+        ),
+        choice=L(
+            ("narrateur", "Le bâton sent la sève, un peu."),
+            ("narrateur", "Des branches basses pendent à gauche."),
+            ("narrateur", "Au milieu, une fourche écarte le ciel."),
+            ("narrateur", "À droite, une branche haute penche."),
+            ("maman", "Où allez-vous chercher le jaune ?"),
+        ),
+    ),
+    3: dict(
+        name="le tabouret",
+        expected="tabouret",
+        accepted="tabouret | le tabouret | sous le tabouret | le bois",
+        retry="Le papier est sous le tabouret.",
+        ok="Oui, il est sous le tabouret.",
+        sons="bois,toc",
+        emphasis="tabouret",
+        passage=L(
+            ("narrateur", "Chouchou tire le tabouret, trop vite."),
+            ("enfant-f", "Le papier reste dessous."),
+            ("narrateur", "Le bois tape un petit toc."),
+            ("narrateur", "Le grain de pomme tremble, au-dessous."),
+            ("enfant-m", "Stop."),
+            ("narrateur", "Aniss pose sa paume, sans parler."),
+            ("enfant-f", "Je le tiens droit."),
+            ("maman", "Tiens-le droit, près du tronc."),
+            ("papa", "La ficelle et le bâton, avec vous."),
+            ("narrateur", "Il les pose près des sandales."),
+            ("narrateur", "Les trois affaires partent ensemble."),
+            ("narrateur", "Aniss marche derrière, sans se presser."),
+            ("papa", "Le tabouret d'abord, il est prêt."),
+        ),
+        question=L(
+            ("narrateur", "Chouchou a glissé le papier sous le tabouret."),
+            ("maman", "Il est où, le bout de papier ?"),
+        ),
+        confirm=L(
+            ("narrateur", "Le tabouret cache le papier, au-dessous."),
+            ("enfant-f", "Ça sent le bois."),
+            ("enfant-m", "Il est là, au creux."),
+            ("narrateur", "Le grain de pomme tient, sous l'assise."),
+            ("narrateur", "La ficelle et le bâton voyagent aussi."),
+            ("maman", "Le pommier vous attend, devant."),
+            ("enfant-f", "Il doit voler au-dessus du toit."),
+            ("papa", "On y va, tous les quatre ?"),
+            ("enfant-f", "Oui."),
+        ),
+        choice=L(
+            ("narrateur", "Le tabouret frotte l'herbe fendue."),
+            ("narrateur", "Des branches basses pendent à gauche."),
+            ("narrateur", "Au milieu, une fourche écarte le ciel."),
+            ("narrateur", "À droite, une branche haute penche."),
+            ("papa", "Où allez-vous chercher le jaune ?"),
+        ),
+    ),
+}
+
+T2_LABS = ("les branches basses", "la fourche", "la branche haute")
+T3_LABS = {
+    1: ("le passage de Chouchou", "la branche levée", "le vent qui défait"),
+    2: ("les mains d'Aniss", "le bâton d'en bas", "tirer à deux"),
+    3: ("le tabouret d'Aniss", "la ficelle lancée", "le geste d'en bas"),
+}
+OBJ = {1: "la ficelle", 2: "le bâton", 3: "le tabouret"}
+CAP = {1: "La ficelle", 2: "Le bâton", 3: "Le tabouret"}
 
 
-def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dict[str, str]) -> None:
-    src = json.loads((ROOT / SID / "source.json").read_text(encoding="utf-8"))
-    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in scripts]
-    extra_ids = set(scripts) - {c["chunk_id"] for c in src["chunks"]}
-    if missing or extra_ids:
-        raise SystemExit(f"{SID} missing={missing[:8]} extra={sorted(extra_ids)[:8]}")
-    by = {}
-    for c in src["chunks"]:
-        cid = c["chunk_id"]
-        kind = c.get("kind") or ""
-        if kind in ("passage_question", "transition_question"):
-            scale, rate = 1.28, "slow"
-        else:
-            scale, rate = 1.22, "medium"
-        nc = make_chunk(c, scripts[cid], sons.get(cid, c.get("sons") or ""), scale, rate)
-        if cid in extras:
-            nc.update(extras[cid])
-        by[cid] = nc
-    out = dict(src)
-    out["fil_rouge"] = (
-        "Après le vent, le cerf-volant de Chouchou dort dans le pommier. "
-        "Elle le veut pour voler encore. Aniss est plus grand. "
-        "Ils emportent ficelle, bâton et tabouret. "
-        "Trois coins, neuf façons. Le papier rentre à la maison."
+def t2_basses(a: int) -> list[tuple[str, str]]:
+    pose = {
+        1: "Chouchou pose la ficelle sous les branches.",
+        2: "Chouchou tend le bâton sous les branches.",
+        3: "Chouchou pousse le tabouret sous les branches.",
+    }[a]
+    mishap = {
+        1: "La ficelle s'accroche trop bas, trop tôt.",
+        2: "Le bâton tape trop bas, à côté.",
+        3: "Le tabouret bute, trop large pour passer.",
+    }[a]
+    return L(
+        ("narrateur", pose),
+        ("enfant-f", "Je passe dessous, Aniss !"),
+        ("narrateur", "Les branches basses sentent le fruit."),
+        ("narrateur", "Chouchou se baisse, d'un coup."),
+        ("narrateur", mishap),
+        ("enfant-f", "Ma main n'y arrive pas."),
+        ("enfant-m", "Moi, je ne rentre pas."),
+        ("narrateur", "Aniss reste dehors, trop grand."),
+        ("enfant-f", "Attrape-le, vite !"),
+        ("narrateur", "Aniss ne bouge pas."),
+        ("narrateur", "Le jaune glisse vers une autre branche."),
+        ("narrateur", "Il n'est plus à l'endroit promis."),
+        ("narrateur", "Le sourire de Chouchou disparaît."),
+        ("narrateur", "L'envie et l'inquiétude se bousculent."),
+        ("papa", "Je m'accroupis, à votre hauteur."),
+        ("maman", "Vous faites comment, tous les deux ?"),
     )
-    out["title"] = "Le cerf-volant de Chouchou dans le pommier"
-    out["characters"] = "Chouchou, Aniss, papa, maman"
-    out["setting"] = "jardin, pommier après le vent"
+
+
+def t2_fourche(a: int) -> list[tuple[str, str]]:
+    pose = {
+        1: "La ficelle file trop vite vers la fourche.",
+        2: "Le bâton pique trop vite dans la fourche.",
+        3: "Le tabouret penche sous la fourche, trop court.",
+    }[a]
+    return L(
+        ("narrateur", pose),
+        ("enfant-f", "Je le sors, toute seule !"),
+        ("narrateur", "Le jaune s'enfonce, plus loin."),
+        ("enfant-m", "Je le vois, entre les deux bois."),
+        ("narrateur", "Un grain de pomme luit, puis se cache."),
+        ("enfant-f", "Prends-le, Aniss, tes mains !"),
+        ("narrateur", "Aniss lève les bras, puis les baisse."),
+        ("narrateur", "Il reste planté, sans un mot."),
+        ("enfant-f", "Il va partir plus haut !"),
+        ("narrateur", "Le jaune ne vole pas vers le toit."),
+        ("narrateur", "L'endroit promis reste vide, au-dessus."),
+        ("narrateur", "Le sourire de Chouchou n'est plus là."),
+        ("narrateur", "Ça serre, juste sous la gorge."),
+        ("papa", "Je m'accroupis, près du tronc."),
+        ("papa", "Vous le reprenez comment ?"),
+    )
+
+
+def t2_haute(a: int) -> list[tuple[str, str]]:
+    pose = {
+        1: "Chouchou lance la ficelle, trop courte.",
+        2: "Chouchou lève le bâton, trop court.",
+        3: "Chouchou monte sur le tabouret, trop petite.",
+    }[a]
+    return L(
+        ("narrateur", pose),
+        ("enfant-f", "Je l'attrape pour le toit !"),
+        ("enfant-m", "Il est trop loin, Chouchou."),
+        ("narrateur", "La branche haute penche, trop haute."),
+        ("narrateur", "Un souffle lève le jaune, un peu."),
+        ("enfant-f", "Il s'éloigne du ciel promis !"),
+        ("narrateur", "Le toit promis reste trop loin."),
+        ("narrateur", "Chouchou veut grimper plus."),
+        ("narrateur", "Aniss tend la paume, sans parler."),
+        ("enfant-f", "Aide-moi, alors !"),
+        ("narrateur", "Aniss ne grimpe pas."),
+        ("narrateur", "Le sourire de Chouchou s'en va."),
+        ("narrateur", "Dans sa poitrine, deux envies se poussent."),
+        ("maman", "Je m'accroupis, face à l'arbre."),
+        ("papa", "Vous le descendez comment, tous les deux ?"),
+    )
+
+
+T2_FN = {1: t2_basses, 2: t2_fourche, 3: t2_haute}
+T2_SONS = {1: "feuilles,pas", 2: "bois,branche", 3: "vent,bois"}
+T2_EMPH = {1: "branches", 2: "fourche", 3: "branche"}
+
+
+def t3_choice(t2: int) -> list[tuple[str, str]]:
+    if t2 == 1:
+        return L(
+            ("narrateur", "Les branches restent trop basses pour Aniss."),
+            ("narrateur", "Chouchou pose une main, sans sauter."),
+            ("papa", "Ton passage, la branche levée, ou le vent ?"),
+        )
+    if t2 == 2:
+        return L(
+            ("narrateur", "Le jaune s'est enfoncé dans la fourche."),
+            ("narrateur", "Chouchou pose le bois, sans piquer."),
+            ("maman", "Les mains d'Aniss, le bâton, ou tirer ?"),
+        )
+    return L(
+        ("narrateur", "La branche haute reste trop loin."),
+        ("narrateur", "Chouchou pose un pied, sans grimper."),
+        ("papa", "Le tabouret, la ficelle, ou le geste ?"),
+    )
+
+
+def t3(a: int, b: int, c: int) -> list[tuple[str, str]]:
+    o = OBJ[a]
+    cap = CAP[a]
+    table = {
+        (1, 1): L(
+            ("enfant-f", "On n'y court pas."),
+            ("enfant-m", "Toi tu passes, moi je reste dehors."),
+            ("narrateur", "Chouchou glisse sous le vert bas."),
+            ("narrateur", f"Aniss garde {o} contre le tronc."),
+            ("narrateur", "Papa se tait, accroupi."),
+            ("narrateur", "Chouchou écoute les feuilles, puis l'herbe."),
+            ("narrateur", "Le grain de pomme brille, sur le jaune."),
+            ("enfant-f", "Je le touche !"),
+            ("narrateur", "Le papier vient, sans se déchirer."),
+            ("papa", "Ton passage allait jusque-là, Chouchou."),
+            ("enfant-m", "Regarde, il est à nous."),
+            ("enfant-f", "Il est un peu froissé."),
+        ),
+        (1, 2): L(
+            ("enfant-f", "Pas de saut, Aniss."),
+            ("enfant-m", "Je lève la branche, tout haut."),
+            ("narrateur", "Un tunnel s'ouvre, à sa taille."),
+            ("narrateur", f"{cap} attend en bas, plein d'herbe."),
+            ("enfant-f", "Je le vois, tout près."),
+            ("narrateur", "Chouchou tend les deux mains."),
+            ("narrateur", "Elle refuse de tirer trop fort."),
+            ("narrateur", "Le grain de pomme penche, à hauteur d'yeux."),
+            ("enfant-m", "C'est lui, je le reconnais."),
+            ("narrateur", "Le jaune glisse vers Chouchou."),
+            ("maman", "Vous le partagez."),
+            ("enfant-f", "Il est à moi, un moment."),
+        ),
+        (1, 3): L(
+            ("enfant-f", "On attend le petit vent."),
+            ("enfant-m", "Moi aussi, j'attends."),
+            ("narrateur", "Un souffle défait la queue rouge."),
+            ("narrateur", "Le jaune descend, tout près."),
+            ("narrateur", f"{cap} cueille le papier, au bord."),
+            ("narrateur", "Chouchou refuse de foncer sous le vert."),
+            ("narrateur", "Le grain de pomme voyage avec la queue."),
+            ("papa", "Il est venu vers vous."),
+            ("enfant-f", "On l'a repris."),
+            ("enfant-m", "Regarde, il brille, Chouchou."),
+            ("maman", "Vos poches sentent le fruit."),
+            ("narrateur", "Les branches se taisent, sans rien garder."),
+        ),
+        (2, 1): L(
+            ("enfant-f", "Tes mains, Aniss."),
+            ("enfant-m", "Je les tends, sans sauter."),
+            ("narrateur", "Ses doigts passent dans la fourche."),
+            ("narrateur", "Une bulle de papier cache le jaune."),
+            ("enfant-f", "Là !"),
+            ("narrateur", f"Chouchou pose le papier dans {o}."),
+            ("narrateur", "Elle ne pique pas vers le bois."),
+            ("narrateur", "Le grain de pomme réapparaît, sur le jaune."),
+            ("papa", "Tes mains allaient assez loin."),
+            ("enfant-m", "On l'a, Chouchou."),
+            ("enfant-f", "Il est tiède."),
+            ("maman", "Vous avez suivi ce qui était petit."),
+        ),
+        (2, 2): L(
+            ("enfant-f", "On reste ici."),
+            ("enfant-m", "On attrape de loin."),
+            ("narrateur", f"Aniss tend {o}, bras tout longs."),
+            ("narrateur", "Chouchou guide le bord, sans avancer."),
+            ("narrateur", "Papa ne dit pas le geste."),
+            ("narrateur", f"Chouchou écoute la fourche, puis {o}."),
+            ("narrateur", "Le grain de pomme marque le bois, brun."),
+            ("narrateur", "Le jaune rentre, un peu rêche."),
+            ("enfant-f", "Je le tiens !"),
+            ("maman", "Vous n'avez pas piqué trop fort."),
+            ("enfant-m", "Il sent les pommes."),
+            ("papa", "Soufflez dessus, sans presser."),
+        ),
+        (2, 3): L(
+            ("enfant-f", "On tire à deux."),
+            ("enfant-m", "Moi la ficelle, toi le bord."),
+            ("narrateur", "Ils tirent, un tout petit peu."),
+            ("narrateur", "Le jaune se décroche, sans se déchirer."),
+            ("narrateur", f"{cap} reçoit le papier, au creux."),
+            ("narrateur", "Chouchou refuse de foncer dans la fourche."),
+            ("narrateur", "Le grain de pomme tient, au centre."),
+            ("papa", "Vous avez tiré ensemble."),
+            ("enfant-f", "On l'a repris."),
+            ("enfant-m", "Regarde, il brille, Chouchou."),
+            ("maman", "Vos mains sentent le bois."),
+            ("narrateur", "La fourche reste vide, sans eux."),
+        ),
+        (3, 1): L(
+            ("enfant-m", "Je monte, toi tu guides."),
+            ("narrateur", f"Chouchou garde {o} au pied."),
+            ("narrateur", "Aniss est plus haut, d'une tête."),
+            ("enfant-f", "Passe-moi la queue rouge."),
+            ("enfant-m", "La voilà."),
+            ("narrateur", "Il la tend, un tout petit peu."),
+            ("narrateur", "Il ne grimpe pas plus loin."),
+            ("narrateur", "Le grain de pomme redevient net, au creux."),
+            ("enfant-f", "Il brille pour de vrai."),
+            ("papa", "Tu es monté juste assez."),
+            ("maman", "Chouchou tenait bien le pied."),
+            ("narrateur", "Le ciel du toit les attend, plus tard."),
+        ),
+        (3, 2): L(
+            ("enfant-f", "On lance la ficelle, vers la queue."),
+            ("enfant-m", "Oui, un peu."),
+            ("narrateur", "La boucle accroche la queue rouge."),
+            ("narrateur", "Un fil relie leurs deux mains."),
+            ("enfant-m", "Maintenant, on peut."),
+            ("narrateur", "Ils tirent le jaune, tous les deux."),
+            ("narrateur", f"Ils posent {o} sur l'herbe fendue."),
+            ("narrateur", "Chouchou ne grimpe pas trop tôt."),
+            ("narrateur", "Le grain de pomme tient, propre, au centre."),
+            ("enfant-f", "Il est à nous."),
+            ("papa", "Le fil vous a laissé la place."),
+            ("maman", "Vous avez regardé ensemble."),
+        ),
+        (3, 3): L(
+            ("enfant-f", "On le descend d'ici, d'en bas."),
+            ("enfant-m", "Sans monter trop."),
+            ("narrateur", f"Papa tend {o}, près des pieds."),
+            ("narrateur", "Aniss et Chouchou tiennent le bord."),
+            ("narrateur", "La queue rouge glisse vers l'herbe."),
+            ("narrateur", "Personne ne pousse, ici."),
+            ("narrateur", "Le grain de pomme redevient brun, net."),
+            ("enfant-f", "Il brille, Aniss."),
+            ("enfant-m", "Je le vois trop bien."),
+            ("maman", "Vous avez tiré ensemble."),
+            ("papa", "La branche haute reste à sa place."),
+            ("narrateur", "Le jaune s'endort, contre leurs genoux."),
+        ),
+    }
+    return table[(b, c)]
+
+
+def fin(a: int, b: int, c: int) -> list[tuple[str, str]]:
+    cap = CAP[a]
+    last = {
+        (1, 1, 1): "La ficelle garde un grain de pomme au nœud.",
+        (1, 1, 2): "La ficelle porte une feuille basse, collée.",
+        (1, 1, 3): "La ficelle sent le vent, près du palier.",
+        (1, 2, 1): "La ficelle pose une écorce au paillasson.",
+        (1, 2, 2): "La ficelle sent la sève, à la porte.",
+        (1, 2, 3): "La ficelle laisse un trait brun sur le carreau.",
+        (1, 3, 1): "La ficelle sèche au seuil, un peu rêche.",
+        (1, 3, 2): "Un fil relie la ficelle au crochet du palier.",
+        (1, 3, 3): "La ficelle brille, pleine d'herbe, au rebord.",
+        (2, 1, 1): "Le bâton sèche, un grain de pomme au bois.",
+        (2, 1, 2): "Le bâton garde une poudre de feuille basse.",
+        (2, 1, 3): "Le bâton ombre la marche, près des sandales.",
+        (2, 2, 1): "Le bâton pose une écorce au palier.",
+        (2, 2, 2): "Le bois sent la sève, à la porte.",
+        (2, 2, 3): "Le bâton laisse un fil d'écorce sur le carreau.",
+        (2, 3, 1): "Le bâton sèche au seuil, un peu lourd.",
+        (2, 3, 2): "Un anneau d'herbe cerne le bâton, au carrelage.",
+        (2, 3, 3): "Le bâton brille, lourd de sève, au rebord.",
+        (3, 1, 1): "Le tabouret garde un grain de pomme à l'assise.",
+        (3, 1, 2): "Le tabouret garde une poudre de feuille.",
+        (3, 1, 3): "Le tabouret borde la marche, près des sandales.",
+        (3, 2, 1): "Le tabouret pose une écorce au palier.",
+        (3, 2, 2): "Le bois du tabouret sent la sève, à la porte.",
+        (3, 2, 3): "Le tabouret laisse un trait d'herbe sur le carreau.",
+        (3, 3, 1): "Le tabouret sèche au seuil, un pied rêche.",
+        (3, 3, 2): "Un rond d'herbe cerne le tabouret, au carrelage.",
+        (3, 3, 3): "Le tabouret brille, lourd d'herbe, au rebord.",
+    }[(a, b, c)]
+    cores = {
+        (1, 1): L(
+            ("narrateur", "Ils rentrent, le jaune au creux."),
+            ("enfant-f", "Il sent le fruit."),
+            ("enfant-m", "Ton passage l'a fait descendre."),
+            ("papa", "Vous l'avez descendu, enfin."),
+            ("maman", "Posez-le sur la marche, au grain."),
+            ("narrateur", "Le volet garde le grain de pomme, minuscule."),
+            ("narrateur", "Le ciel du toit reste vide, un peu."),
+            ("enfant-f", "Tu l'as vu, Aniss."),
+            ("enfant-m", "Oui."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (1, 2): L(
+            ("narrateur", "Sous la branche levée, la maison était proche."),
+            ("enfant-f", "Aniss, tu l'as vu briller."),
+            ("enfant-m", "Oui, tout près de tes yeux."),
+            ("papa", "Je vous ai regardés, pas trop longtemps."),
+            ("maman", "Vos traces rentrent, grandes et petites."),
+            ("narrateur", "Le jaune reste dans la paume de Chouchou."),
+            ("narrateur", "Le grain de pomme y tient, un peu plat."),
+            ("enfant-f", "Je le tiens, Aniss."),
+            ("narrateur", "La table sent les pommes fendues."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (1, 3): L(
+            ("narrateur", "Le petit vent les suit jusqu'à la porte."),
+            ("enfant-f", "Il est venu vers nos mains."),
+            ("enfant-m", "On a attendu, tous les deux."),
+            ("papa", "Il est descendu vers vous."),
+            ("maman", "Changez le linge des poches, d'abord."),
+            ("narrateur", "Une ligne d'herbe marque le carreau."),
+            ("enfant-f", "Regarde-le, Aniss, il brille."),
+            ("narrateur", "Sur la table, le grain de pomme tient."),
+            ("narrateur", "Près du pain, le jaune reste au chaud."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (2, 1): L(
+            ("narrateur", "Ils rentrent avec de l'écorce aux genoux."),
+            ("enfant-m", "Mes mains savaient le chemin."),
+            ("enfant-f", "La fourche aussi, peut-être."),
+            ("papa", "Vous avez suivi ce qui était à vous."),
+            ("maman", "Soufflez la dernière feuille, dehors."),
+            ("enfant-m", "Il est pour Chouchou, maintenant."),
+            ("enfant-f", "Il est un peu rêche."),
+            ("narrateur", "Le grain de pomme sèche sur le palier."),
+            ("narrateur", "Chouchou pose le jaune contre le bois."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (2, 2): L(
+            ("narrateur", "Ils n'ont pas piqué jusqu'au bois."),
+            ("enfant-f", "On l'a attrapé de loin."),
+            ("enfant-m", "Tes bras guidaient assez bien."),
+            ("maman", "La sève sent fort, sur vos mains."),
+            ("papa", "Lavez-les, au bac, sans presser."),
+            ("narrateur", f"{cap} garde une feuille de pommier."),
+            ("enfant-f", "Je le tiens, Aniss."),
+            ("narrateur", "Le grain de pomme reste au creux, brun."),
+            ("narrateur", "Le bac se tait, puis la fenêtre."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (2, 3): L(
+            ("narrateur", "Leurs mains sentent le bois, un peu."),
+            ("enfant-f", "On a tiré ensemble."),
+            ("enfant-m", "Sans trop entrer."),
+            ("papa", "La fourche est restée à sa place."),
+            ("maman", "Vos paumes sentent le fruit."),
+            ("narrateur", "Chouchou pose le jaune au rebord."),
+            ("enfant-m", "Tu l'as vu, enfin."),
+            ("narrateur", "Le grain de pomme s'endort, contre le bois."),
+            ("narrateur", "Dehors, le volet se tait."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (3, 1): L(
+            ("narrateur", "Les chevilles d'Aniss sont rêches, un peu."),
+            ("enfant-f", "Tu l'as tendu pour moi."),
+            ("enfant-m", "Tu tenais le pied."),
+            ("maman", "Essuie tes pieds, sur le paillasson."),
+            ("papa", "Le jaune est net, maintenant."),
+            ("narrateur", "Chouchou le pose contre la vitre."),
+            ("narrateur", "Un rai de soleil traverse le papier."),
+            ("narrateur", "Le grain de pomme y fait un éclat."),
+            ("enfant-m", "Tu l'as vu, enfin."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (3, 2): L(
+            ("narrateur", "Un fil les suit jusqu'à la porte."),
+            ("enfant-f", "La boucle nous l'a rendu."),
+            ("enfant-m", "On a tiré ensemble, après."),
+            ("papa", "Le fil vous a laissé le temps."),
+            ("maman", "L'herbe sèche sur vos mollets."),
+            ("narrateur", f"{cap} pose une auréole au carrelage."),
+            ("enfant-f", "Il brille trop, Aniss."),
+            ("enfant-m", "C'est pour ça."),
+            ("narrateur", "Le grain de pomme tient, tout proche de la vitre."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+        (3, 3): L(
+            ("narrateur", "Un peu d'herbe fendue reste au seuil."),
+            ("enfant-f", "On a tiré d'en bas."),
+            ("enfant-m", "Sans trop monter."),
+            ("papa", "La branche haute est restée à sa place."),
+            ("maman", "Vos mains sentent le fruit."),
+            ("narrateur", "Chouchou pose le jaune au rebord."),
+            ("enfant-m", "Tu l'as vu, enfin."),
+            ("narrateur", "Le grain de pomme s'endort, contre le bois."),
+            ("narrateur", "Dehors, le volet se tait."),
+            ("narrateur", "Ça a failli rester dans l'arbre."),
+        ),
+    }
+    rows = list(cores[(b, c)])
+    rows.append(("narrateur", last))
+    return rows
+
+
+T3_EMPH = {
+    1: {1: "passage", 2: "branche", 3: "vent"},
+    2: {1: "mains", 2: "bâton", 3: "ensemble"},
+    3: {1: "tabouret", 2: "ficelle", 3: "bas"},
+}
+T3_SONS = {
+    1: {1: "feuilles,pas", 2: "branche,pas", 3: "vent,papier"},
+    2: {1: "bois,mains", 2: "bois,branche", 3: "ficelle,bois"},
+    3: {1: "bois,pas", 2: "ficelle,vent", 3: "herbe,papier"},
+}
+FIN_SONS = {1: "porte,papier", 2: "bois,porte", 3: "vent,silence"}
+
+
+def main() -> None:
+    folder = ROOT / SID
+    src = json.loads((folder / "source.json").read_text(encoding="utf-8"))
+    by_old = {c["chunk_id"]: c for c in src["chunks"]}
+    by: dict[str, dict] = {}
+
+    by["CHK_T0000_P0000"] = voice(
+        by_old["CHK_T0000_P0000"], OPENING, "opening",
+        extra={"sons": "vent,volet", "emphasis": "grain de pomme"},
+    )
+    by["CHK_T0001_P0000"] = voice(
+        by_old["CHK_T0001_P0000"],
+        L(
+            ("narrateur", "Trois affaires attendent sous le pommier."),
+            ("narrateur", "La ficelle, le bâton, et le tabouret."),
+            ("maman", "Tu prends quoi d'abord, Chouchou ?"),
+        ),
+        "choice",
+        extra={"sons": "", "fields": {
+            "option_1_label": "la ficelle",
+            "option_2_label": "le bâton",
+            "option_3_label": "le tabouret",
+        }},
+    )
+
+    for a in (1, 2, 3):
+        t1 = T1[a]
+        base = f"CHK_T0001_P000{a}"
+        by[base] = voice(
+            by_old[base], t1["passage"], "action",
+            extra={"sons": t1["sons"], "emphasis": t1["emphasis"]},
+        )
+        by[f"{base}_Q0001"] = voice(
+            by_old[f"{base}_Q0001"], t1["question"], "clue",
+            extra={"sons": "", "emphasis": t1["emphasis"], "fields": {
+                "expected_answer": t1["expected"],
+                "accepted_examples": t1["accepted"],
+                "retry_prompt": t1["retry"],
+                "engine_ok_text": t1["ok"],
+                "engine_near_text": "Tu es très proche. Reprenons l'indice.",
+            }},
+        )
+        by[f"{base}_C0001"] = voice(
+            by_old[f"{base}_C0001"], t1["confirm"], "confirm",
+            extra={"sons": "", "emphasis": t1["emphasis"]},
+        )
+        tid = f"{base}_T0002_P0000"
+        by[tid] = voice(
+            by_old[tid], t1["choice"], "choice",
+            extra={"sons": "", "fields": {
+                "option_1_label": T2_LABS[0],
+                "option_2_label": T2_LABS[1],
+                "option_3_label": T2_LABS[2],
+            }},
+        )
+        for b in (1, 2, 3):
+            p2 = f"{base}_T0002_P000{b}"
+            by[p2] = voice(
+                by_old[p2], T2_FN[b](a), "obstacle",
+                extra={"sons": T2_SONS[b], "emphasis": T2_EMPH[b]},
+            )
+            t3q = f"{p2}_T0003_P0000"
+            labs = T3_LABS[b]
+            by[t3q] = voice(
+                by_old[t3q], t3_choice(b), "choice",
+                extra={"sons": "", "fields": {
+                    "option_1_label": labs[0],
+                    "option_2_label": labs[1],
+                    "option_3_label": labs[2],
+                }},
+            )
+            for c in (1, 2, 3):
+                leaf = f"{p2}_T0003_P000{c}"
+                by[leaf] = voice(
+                    by_old[leaf], t3(a, b, c), "resolution",
+                    extra={"sons": T3_SONS[b][c], "emphasis": "grain de pomme"},
+                )
+                fin_id = f"{leaf}_F0001"
+                by[fin_id] = voice(
+                    by_old[fin_id], fin(a, b, c), "ending",
+                    extra={"sons": FIN_SONS[b], "emphasis": "grain de pomme"},
+                )
+
+    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in by]
+    extra_ids = set(by) - {c["chunk_id"] for c in src["chunks"]}
+    if missing or extra_ids:
+        raise SystemExit(f"missing={missing[:8]} extra={sorted(extra_ids)[:8]}")
+
+    fins = [by[c["chunk_id"]]["text"] for c in src["chunks"] if c["kind"] == "passage_fin"]
+    if len(set(fins)) != 27:
+        raise SystemExit(f"fins non distinctes: {len(set(fins))}/27")
+
+    out = dict(src)
+    out["fil_rouge"] = FIL
+    out["title"] = TITLE
+    out["characters"] = CHARS
+    out["setting"] = SETTING
     out["chunks"] = [by[c["chunk_id"]] for c in src["chunks"]]
     check(SID, out["age_band"], out["chunks"])
+
     blob = "\n".join(c["script"] for c in out["chunks"]).lower()
     labels = " ".join(
         f"{c.get('option_1_label') or ''} {c.get('option_2_label') or ''} {c.get('option_3_label') or ''}"
         for c in out["chunks"]
     ).lower()
     whole = blob + "\n" + labels
+    for tic in TICS:
+        if tic in whole:
+            raise SystemExit(f"tic global: {tic}")
+    n_enc = len(re.findall(r"\bencore\b", blob))
+    n_dej = len(re.findall(r"\bd[eé]jà\b", blob))
+    if n_enc or n_dej:
+        raise SystemExit(f"tics encore={n_enc} déjà={n_dej}")
+    if blob.count("en ce moment") != 1:
+        raise SystemExit(f"en ce moment ×{blob.count('en ce moment')}")
+    if "chouchou" not in blob or "aniss" not in blob:
+        raise SystemExit("Chouchou/Aniss absents")
+    if "grain de pomme" not in blob:
+        raise SystemExit("indice grain de pomme absent")
+    if "cerf-volant" not in blob and "cerf volant" not in blob:
+        raise SystemExit("cerf-volant absent")
     for bad in (
         "on va apprendre",
         "voici le geste",
         "l'histoire est finie",
-        "tailles sont différentes",
-        "le corps n'est pas",
-        "la première",
-        "la deuxième",
-        "la troisième",
         "bravo tu as",
         "bon travail",
+        "j'ai compris",
+        "mission accomplie",
+        "merle",
+        "miel",
+        "grand-père",
+        "maîtresse",
+        "jardinier",
+        "bibliothécaire",
+        "gardienne",
+        "grain d'ambre",
+        "grain de sève",
+        "grain de seve",
+        "point d'écume",
+        "point d'ecume",
+        "étoile brune",
+        "etoile brune",
+        "fil pâle",
+        "fil pale",
+        "ancre",
+        "clou à tête",
+        "clou a tete",
+        "nichoir",
+        "rond de jus",
+        "pomme du haut",
+        "marque fine",
+        "ombre-flèche",
+        "ombre-fleche",
+        "tache de couleur",
+        "tailles sont différentes",
+        "tailles sont differentes",
+        "on peut jouer ensemble",
         "inès",
         "ines",
         "sami",
-        "léa",
-        " toboggan",
+        "toboggan",
         "balançoire",
-        "capitaine",
-        "plic",
-        "volet jaune",
+        "balancoire",
+        "gouttes au bord",
     ):
         if bad in whole:
-            raise SystemExit(f"{SID} slogan: {bad}")
+            raise SystemExit(f"calque: {bad}")
     for c in out["chunks"]:
+        if not c.get("text_xai_tags") or not c.get("notes") or not c.get("style_energy"):
+            raise SystemExit(f"{c['chunk_id']}: TTS incomplet")
+        if c["text_xai_tags"] == c["text"]:
+            raise SystemExit(f"{c['chunk_id']}: text_xai_tags = text")
         if c.get("kind") != "passage_fin":
             continue
         last_n = [x for x in c["script"].splitlines() if x.startswith("narrateur|")]
         last = last_n[-1].split("|", 1)[1].lower()
         if "histoire" in last or "bravo" in last or "bon travail" in last:
-            raise SystemExit(f"{SID} {c['chunk_id']} fin mécanique: {last}")
-    (ROOT / SID / "merged.json").write_text(
+            raise SystemExit(f"{c['chunk_id']} fin mécanique: {last}")
+
+    nwords = sum(words(c["text"]) for c in out["chunks"])
+    path_lens = []
+    for a in (1, 2, 3):
+        t1 = f"CHK_T0001_P000{a}"
+        seq1 = ["CHK_T0000_P0000", "CHK_T0001_P0000", t1, f"{t1}_Q0001", f"{t1}_C0001", f"{t1}_T0002_P0000"]
+        for b in (1, 2, 3):
+            t2 = f"{t1}_T0002_P000{b}"
+            seq2 = seq1 + [t2, f"{t2}_T0003_P0000"]
+            for c in (1, 2, 3):
+                t3 = f"{t2}_T0003_P000{c}"
+                seq = seq2 + [t3, f"{t3}_F0001"]
+                path_lens.append(sum(words(by[i]["text"]) for i in seq))
+    pmin, pmax = min(path_lens), max(path_lens)
+    pavg = round(sum(path_lens) / len(path_lens))
+    (folder / "merged.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-
-
-OBJ = {
-    1: {
-        "lab": "la ficelle",
-        "cap": "La ficelle",
-        "t1q": "dans la poche",
-        "t1acc": "poche | la poche | dans la poche | dans ma poche",
-        "t1retry": "Le papier est dans la poche.",
-    },
-    2: {
-        "lab": "le bâton",
-        "cap": "Le bâton",
-        "t1q": "sur le bâton",
-        "t1acc": "bâton | le bâton | sur le bâton | le bois",
-        "t1retry": "Le papier est sur le bâton.",
-    },
-    3: {
-        "lab": "le tabouret",
-        "cap": "Le tabouret",
-        "t1q": "sous le tabouret",
-        "t1acc": "tabouret | le tabouret | sous le tabouret | le bois",
-        "t1retry": "Le papier est sous le tabouret.",
-    },
-}
-
-T3_LABS = {
-    1: ("le passage de Chouchou", "la branche levée", "le vent qui défait"),
-    2: ("les mains d'Aniss", "le bâton d'en bas", "tirer à deux"),
-    3: ("le tabouret d'Aniss", "la ficelle lancée", "le geste d'en bas"),
-}
-
-
-def t1_passage(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Chouchou enroule la ficelle, tout doux.",
-            "enfant-f|Le papier va avec.",
-            "maman|Glisse-le dans ta poche.",
-            "narrateur|Le bout de papier fait un froissement.",
-            "papa|Le bâton aussi, près du sac.",
-            "narrateur|Maman pose le tabouret contre le tronc.",
-            "narrateur|Les trois affaires partent ensemble.",
-            "enfant-f|Aniss, viens sous le pommier.",
-            "enfant-m|J'arrive, Chouchou.",
-            "papa|La ficelle d'abord, vous l'avez.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Chouchou prend le bâton, encore tiède.",
-            "enfant-f|Je pique le papier dessus.",
-            "papa|Enroule-le, comme un drapeau.",
-            "narrateur|Le bois sent encore la sève.",
-            "maman|La ficelle, ensuite, près des pieds.",
-            "narrateur|Elle glisse le tabouret d'une main.",
-            "narrateur|Les trois affaires partent ensemble.",
-            "enfant-f|Aniss, on y va.",
-            "enfant-m|Je suis là.",
-            "maman|Le bâton d'abord, il est prêt.",
-        )
-    return L(
-        "narrateur|Chouchou tire le tabouret, tout rêche.",
-        "enfant-f|Le papier reste dessous.",
-        "maman|Tiens-le droit, tout doux.",
-        "narrateur|Le bois tape un petit toc.",
-        "papa|La ficelle et le bâton, avec vous.",
-        "narrateur|Il les pose près des sandales.",
-        "narrateur|Les trois affaires partent ensemble.",
-        "enfant-f|Aniss, vite !",
-        "enfant-m|J'arrive sous l'arbre.",
-        "papa|Le tabouret d'abord, il est prêt.",
+    (folder / "RELECTURE.md").write_text(
+        f"# {SID} — {TITLE}\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` inchangés. Graphe `option_*_next` conservé.\n\n"
+        "## Vécu\n"
+        "Jardin après le vent, herbe aux pommes fendues. Le volet claque, "
+        "puis se tait. Sur la marche, la queue rouge du cerf-volant jaune "
+        "est déchirée. Un grain de pomme y reste, collé. Mission : le "
+        "descendre pour le promettre au toit, maintenant. Le ciel au-dessus "
+        "du toit reste vide : le jouet n'a pas atteint l'endroit promis. "
+        "Aniss arrive, plus grand, sans se presser. Chouchou propose de "
+        "courir ; son silence compte. Papa remercie Chouchou d'avoir vu "
+        "qu'il attend. T1 = ficelle / bâton / tabouret (les trois partent ; "
+        "trop vite : poche froissée, pique de travers, toc). T2 = branches "
+        "basses (Aniss trop grand pour passer) / fourche (Chouchou trop "
+        "petite, le jaune s'enfonce) / branche haute (un souffle l'éloigne "
+        "du ciel promis). Sourire parti, poitrine serrée, adulte accroupi. "
+        "T3 : ils refusent de foncer, retrouvent le grain du début, font "
+        "avec. 27 fins : le jaune rentre, l'objet porte une trace, ça a "
+        "failli. Leçon DIF.COR.001 vécue (faire avec Aniss, pas toute "
+        "seule), jamais dite. Monde ≠ TREE-DIF-014 (Mila, pomme du haut, "
+        "grain de sève), ≠ TREE-DIF-053 (Nina, merle, nichoir).\n\n"
+        "## Vu et corrigé\n"
+        f"`python3 stories/rewrites/_write_tree_dif_024.py` → `OK {SID} {nwords} mots`. "
+        "N1 ≤ 10. `_lib.check` vert.\n"
+        "- Ouverture inventée (volet, pommes fendues, pas « encore »).\n"
+        "- Indice unique : grain de pomme, payé au climax et en coda.\n"
+        "- Voix : notes + ssml + xai + piper par chunk, profils raw.js. "
+        "`slow` = choix, question, retour.\n"
+        "- Tics encore / déjà / tout doux / tout calme jetés. "
+        "Merle, miel, Mission accomplie, J'ai compris jetés.\n"
+        "- Un merci vécu (voir le silence d'Aniss). Pas apply. Audio non cuit.\n\n"
+        "## Contrôles\n"
+        "- 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images\n"
+        f"- {pmin} à {pmax} mots par chemin (moyenne {pavg})\n"
+        "- `text` = `script` collé ; graphe inchangé\n"
+        "- TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes`\n\n"
+        "## Non vérifié\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.\n",
+        encoding="utf-8",
     )
-
-
-def t1_confirm(t1: int) -> list[str]:
-    o = OBJ[t1]
-    if t1 == 1:
-        return L(
-            f"narrateur|{o['cap']} porte le papier, dans la poche.",
-            "enfant-m|Ça a fait un froissement.",
-            "enfant-f|C'est pour retrouver le cerf-volant.",
-            "maman|Le grand bleu vous attend, plus haut.",
-            "papa|On avance sous les feuilles ?",
-            "enfant-f|Oui, papa.",
-        )
-    if t1 == 2:
-        return L(
-            f"narrateur|{o['cap']} tient le papier, comme un drapeau.",
-            "enfant-m|Je vois un coin, tout bleu.",
-            "enfant-f|Ne touche pas encore.",
-            "papa|Ça sent déjà la sève, ici.",
-            "maman|Vos pieds, dans l'herbe ?",
-            "enfant-m|Oui, maman.",
-        )
-    return L(
-        f"narrateur|{o['cap']} cache le papier, tout rêche.",
-        "enfant-m|Il roule un peu.",
-        "enfant-f|Je le rattrape.",
-        "maman|Le pommier est calme, devant.",
-        "papa|On y va, tous les quatre ?",
-        "enfant-f|Oui.",
-    )
-
-
-def t2_question() -> list[str]:
-    return L(
-        "narrateur|Le pommier ouvre trois coins.",
-        "narrateur|Sous les branches, l'ombre est basse.",
-        "narrateur|Dans la fourche, le papier brille.",
-        "narrateur|Tout en haut, une queue danse.",
-        "papa|Où allez-vous, sous le pommier ?",
-    )
-
-
-def t2_scene(t1: int, t2: int) -> list[str]:
-    o = OBJ[t1]
-    if t2 == 1:
-        lead = {
-            1: "narrateur|La ficelle frotte une feuille basse.",
-            2: "narrateur|Le bâton accroche une brindille.",
-            3: "narrateur|Le tabouret bute contre une racine.",
-        }[t1]
-        return L(
-            lead,
-            "narrateur|Les branches basses font un tunnel vert.",
-            "enfant-f|J'y vais.",
-            "narrateur|Chouchou penche la tête, assez petite.",
-            "enfant-f|Ça me touche à peine.",
-            "enfant-m|Moi, je reste coincé.",
-            "narrateur|Aniss bute du front, trop grand.",
-            "papa|Tes épaules passent, Chouchou.",
-            "narrateur|La queue du cerf-volant s'enroule là.",
-            "enfant-f|Elle est mêlée, tout bas.",
-            "maman|Vous la prenez comment, tous les deux ?",
-        )
-    if t2 == 2:
-        lead = {
-            1: f"narrateur|{o['cap']} penche, trop vite, vers la fourche.",
-            2: f"narrateur|{o['cap']} tape un peu l'écorce chaude.",
-            3: f"narrateur|{o['cap']} s'enfonce un peu, près du tronc.",
-        }[t1]
-        return L(
-            lead,
-            "narrateur|La fourche du tronc est chaude, rêche.",
-            "enfant-m|Je vois le papier, là-dedans.",
-            "narrateur|Aniss a les yeux assez hauts.",
-            "narrateur|Les bras de Chouchou restent trop courts.",
-            "enfant-f|Moi, je vois que l'écorce.",
-            "papa|Tes yeux sont plus hauts, Aniss.",
-            "maman|Les mains de Chouchou sont plus près.",
-            "enfant-f|On le sort comment ?",
-        )
-    lead = {
-        1: f"narrateur|{o['cap']} pose un toc contre le tronc.",
-        2: f"narrateur|{o['cap']} glisse sur l'herbe sèche.",
-        3: f"narrateur|{o['cap']} cogne le pied du tronc.",
-    }[t1]
-    return L(
-        lead,
-        "narrateur|La branche haute tremble, tout légère.",
-        "enfant-f|Je me hausse, pour le cerf-volant.",
-        "narrateur|Chouchou lève les talons, trop petite.",
-        "narrateur|Ses doigts frôlent l'air, pas plus.",
-        "enfant-m|Mes bras vont plus loin.",
-        "papa|Le tabouret n'est pas assez, tout seul.",
-        "maman|Chouchou, tu restes en bas.",
-        "enfant-f|Il brille, juste au-dessus.",
-        "papa|Vous faites comment, tous les deux ?",
-    )
-
-
-def t3_question(t2: int) -> list[str]:
-    if t2 == 1:
-        return L(
-            "narrateur|La queue reste coincée dans les feuilles.",
-            "papa|Le passage de Chouchou, la branche, ou le vent ?",
-        )
-    if t2 == 2:
-        return L(
-            "narrateur|Le papier se cache dans la fourche.",
-            "maman|Les mains d'Aniss, le bâton, ou tirer ?",
-        )
-    return L(
-        "narrateur|Le cerf-volant reste trop loin, tout haut.",
-        "papa|Tabouret, ficelle, ou geste d'en bas ?",
-    )
-
-
-def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    if t2 == 1 and t3 == 1:
-        use = {
-            1: "narrateur|Chouchou pousse la ficelle sous les feuilles.",
-            2: "narrateur|Chouchou glisse le bâton sous le tunnel.",
-            3: "narrateur|Chouchou pousse le tabouret sous le vert.",
-        }[t1]
-        return L(
-            "enfant-f|Je passe, Aniss.",
-            "narrateur|Chouchou rampe, tout petite, sous le vert.",
-            "enfant-m|Doucement.",
-            use,
-            "narrateur|Ses doigts dénouent la queue, tout lent.",
-            "enfant-f|Je la tiens !",
-            "papa|Tes épaules étaient assez petites.",
-            "narrateur|Le cerf-volant glisse à leur hauteur.",
-            "enfant-m|Regarde, Chouchou.",
-            "enfant-f|Il est à nous.",
-        )
-    if t2 == 1 and t3 == 2:
-        wait = {
-            1: "narrateur|La ficelle attend en bas, plein d'ombre.",
-            2: "narrateur|Le bâton attend en bas, un peu vert.",
-            3: "narrateur|Le tabouret attend en bas, un peu humide.",
-        }[t1]
-        return L(
-            "enfant-m|Je soulève la branche.",
-            "papa|Je te tiens, Aniss.",
-            "narrateur|Aniss lève le bois, plus haut que Chouchou.",
-            "enfant-f|Je vois la queue !",
-            "narrateur|Chouchou tend les deux mains.",
-            "narrateur|La queue glisse vers elle.",
-            "enfant-m|Elle est à toi, un moment.",
-            "maman|Vous la partagez.",
-            wait,
-        )
-    if t2 == 1 and t3 == 3:
-        catch = {
-            1: "narrateur|La ficelle cueille la queue, tout doux.",
-            2: "narrateur|Le bâton cueille la queue, tout rêche.",
-            3: "narrateur|Le tabouret cueille la queue, toc.",
-        }[t1]
-        return L(
-            "enfant-f|On attend un peu.",
-            "enfant-m|Moi aussi, j'attends.",
-            "narrateur|Un souffle passe dans les feuilles.",
-            "narrateur|La queue se défait, toute seule.",
-            catch,
-            "papa|Elle est venue vers vous.",
-            "enfant-m|On l'a reprise.",
-            "enfant-f|Elle brille encore.",
-            "maman|Vos cheveux sentent la feuille.",
-        )
-    if t2 == 2 and t3 == 1:
-        carry = {
-            1: "narrateur|Aniss pose le papier contre la ficelle.",
-            2: "narrateur|Aniss pose le papier contre le bâton.",
-            3: "narrateur|Aniss pose le papier sur le tabouret.",
-        }[t1]
-        return L(
-            "enfant-m|Je ramasse, tout près de la fourche.",
-            "enfant-f|Je te guide, d'en bas.",
-            "narrateur|Aniss écarte deux brindilles, tout doux.",
-            "narrateur|Le papier bleu est là, collé.",
-            "enfant-m|Je le tiens !",
-            carry,
-            "papa|Tes mains étaient à la bonne hauteur.",
-            "enfant-f|Passe-le, un peu.",
-            "enfant-m|Il est encore chaud.",
-        )
-    if t2 == 2 and t3 == 2:
-        reach = {
-            1: "narrateur|Chouchou tend la ficelle, bras tout courts.",
-            2: "narrateur|Chouchou tend le bâton, bras tout courts.",
-            3: "narrateur|Chouchou pousse le tabouret, tout près.",
-        }[t1]
-        return L(
-            "enfant-f|Je reste ici, plus bas.",
-            "enfant-m|Je vais où tu dis.",
-            reach,
-            "narrateur|Chouchou pousse, tout doux, d'en bas.",
-            "narrateur|Aniss voit le bleu, dans la fourche.",
-            "enfant-m|Je le tiens !",
-            "maman|Tes yeux ont trouvé le chemin.",
-            "enfant-f|Il sent l'écorce.",
-            "papa|Soufflez dessus, tout léger.",
-        )
-    if t2 == 2 and t3 == 3:
-        nest = {
-            1: "narrateur|La ficelle devient un nid, contre l'écorce.",
-            2: "narrateur|Le bâton devient un nid, contre l'écorce.",
-            3: "narrateur|Le tabouret devient un nid, contre l'écorce.",
-        }[t1]
-        return L(
-            "enfant-f|Papa, écarte un peu ?",
-            "papa|Je fais un chemin, tout doux.",
-            "narrateur|Les brindilles s'ouvrent, comme une porte.",
-            "narrateur|Le papier bleu apparaît, collé.",
-            nest,
-            "enfant-m|On le prend ensemble.",
-            "enfant-f|Oui.",
-            "maman|Vous y arrivez, tous les deux.",
-            "narrateur|Deux paires de mains tiennent le papier.",
-        )
-    if t2 == 3 and t3 == 1:
-        hold = {
-            1: "narrateur|Chouchou garde la ficelle au pied.",
-            2: "narrateur|Chouchou garde le bâton au pied.",
-            3: "narrateur|Chouchou garde le tabouret au pied.",
-        }[t1]
-        return L(
-            "enfant-m|Je me hausse encore.",
-            hold,
-            "narrateur|Les doigts d'Aniss touchent le papier.",
-            "enfant-m|Il bouge !",
-            "narrateur|Le cerf-volant penche, puis se détache.",
-            "enfant-f|Je le rattrape.",
-            "papa|Tes doigts allaient assez loin.",
-            "maman|Chouchou tenait bien le bas.",
-            "enfant-m|Il est à nous.",
-        )
-    if t2 == 3 and t3 == 2:
-        up = {
-            1: "narrateur|Chouchou lance la ficelle, tout léger.",
-            2: "narrateur|Chouchou tend le bâton, tout léger.",
-            3: "narrateur|Chouchou pousse le tabouret, tout près.",
-        }[t1]
-        return L(
-            "enfant-f|On lance la ficelle ?",
-            "enfant-m|Oui, tout doux.",
-            up,
-            "narrateur|Papa tient le bois, tout ferme.",
-            "narrateur|Chouchou et Aniss tendent ensemble.",
-            "enfant-f|Elle accroche !",
-            "enfant-m|Je la sens.",
-            "maman|Vous avez tiré ensemble.",
-            "papa|La ficelle est restée douce.",
-        )
-    two = {
-        1: "narrateur|Aniss tend la ficelle, bras tout longs.",
-        2: "narrateur|Aniss tend le bâton, bras tout longs.",
-        3: "narrateur|Aniss pousse le tabouret, tout près.",
-    }[t1]
-    return L(
-        "enfant-f|Reste en haut, Aniss.",
-        "enfant-m|Je tends, d'ici.",
-        two,
-        "narrateur|Aniss fait basculer le papier, tout doux.",
-        "narrateur|Le cerf-volant tombe dans les mains d'en bas.",
-        "enfant-f|Je le tiens !",
-        "papa|Chacun a fait sa part.",
-        "enfant-m|Il sent le soleil.",
-        "maman|Vos bras n'avaient pas la même longueur.",
-    )
-
-
-def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
-    coda = {
-        1: "narrateur|La ficelle sèche près des sandales.",
-        2: "narrateur|Le bâton sèche près des sandales.",
-        3: "narrateur|Le tabouret sèche près des sandales.",
-    }[t1]
-    if t2 == 1 and t3 == 1:
-        return L(
-            "narrateur|Ils rentrent, le papier au creux.",
-            "enfant-m|Il sent encore la feuille.",
-            "enfant-f|Tes épaules l'ont laissé passer.",
-            "papa|Vous l'avez pris, enfin.",
-            "maman|Posez-le sur la table, au calme.",
-            "narrateur|Le tronc garde une ombre, tout petit.",
-            coda,
-            "narrateur|Un bourdon passe, plus loin.",
-            "narrateur|Le bleu dort contre le bois.",
-        )
-    if t2 == 1 and t3 == 2:
-        return L(
-            "narrateur|Sous la branche, la maison paraît petite.",
-            "enfant-f|Aniss, tu l'as vue glisser.",
-            "enfant-m|Oui, tout près de tes mains.",
-            "papa|Je t'ai tenu, pas trop longtemps.",
-            "maman|Vos têtes, haute et basse, rentrent.",
-            "narrateur|Le papier reste dans la paume de Chouchou.",
-            coda,
-            "narrateur|Une feuille reste collée aux cheveux.",
-            "narrateur|La table sent encore le vent.",
-        )
-    if t2 == 1 and t3 == 3:
-        return L(
-            "narrateur|Le souffle du pommier les suit jusqu'à la porte.",
-            "enfant-m|Elle est tombée vers nous.",
-            "enfant-f|On a attendu, tous les deux.",
-            "maman|Elle n'était plus trop mêlée.",
-            "papa|Le papier froisse encore, dans l'air.",
-            f"narrateur|{o['cap']} pose une feuille, tout léger.",
-            "narrateur|La porte claque, tout doux.",
-            "narrateur|Une odeur de pomme reste dans l'entrée.",
-            "narrateur|Le bleu veille près des souliers.",
-        )
-    if t2 == 2 and t3 == 1:
-        return L(
-            "narrateur|Ils rentrent avec de l'écorce aux genoux.",
-            "enfant-m|Mes mains savaient le chemin.",
-            "enfant-f|Moi, je voyais trop bas.",
-            "papa|Vous avez suivi ce qui était à vous.",
-            "maman|Soufflez le dernier brin, dehors.",
-            "enfant-f|Il est pour voler, demain.",
-            "enfant-m|Il est un peu chaud encore.",
-            coda,
-            "narrateur|L'écorce sèche déjà sur le palier.",
-        )
-    if t2 == 2 and t3 == 2:
-        return L(
-            "narrateur|Ils n'ont pas couru dans tout le pré.",
-            "enfant-f|Je l'ai poussé d'en bas.",
-            "enfant-m|Tes bras étaient assez courts.",
-            "maman|L'écorce sent fort, sur vos mains.",
-            "papa|Lavez-les, tout doux, au bac.",
-            f"narrateur|{o['cap']} garde un brin d'écorce.",
-            "enfant-m|Je le tiens, Chouchou.",
-            "narrateur|Le bac goutte, puis se tait.",
-            "narrateur|Le papier sèche près de la fenêtre.",
-        )
-    if t2 == 2 and t3 == 3:
-        return L(
-            "narrateur|Leurs chaussettes portent encore de l'herbe.",
-            "enfant-f|Papa a ouvert un chemin.",
-            "enfant-m|On l'a pris ensemble.",
-            "papa|L'écorce vous a laissé la place.",
-            "maman|Changez le linge des pieds, d'abord.",
-            coda,
-            "narrateur|Un coin de papier marque le carreau.",
-            "enfant-f|Regarde-le, Aniss, il brille.",
-            "narrateur|Le bleu reste au chaud, sur la table.",
-        )
-    if t2 == 3 and t3 == 1:
-        return L(
-            "narrateur|Les talons d'Aniss sont encore chauds.",
-            "enfant-f|Tu l'as fait pencher pour moi.",
-            "enfant-m|Tu tenais le bas.",
-            "maman|Essuie tes pieds, sur le paillasson.",
-            "papa|Le cerf-volant est à vous, maintenant.",
-            "narrateur|Chouchou le pose contre la vitre.",
-            coda,
-            "narrateur|Un rai de soleil traverse le bleu.",
-            "narrateur|Dehors, la branche redevient calme.",
-        )
-    if t2 == 3 and t3 == 2:
-        return L(
-            "narrateur|Un peu de soleil les suit jusqu'à la porte.",
-            "enfant-m|Tu l'as lancée, d'en bas.",
-            "enfant-f|Tes bras l'ont fait descendre.",
-            "papa|Chacun a fait sa part, à sa hauteur.",
-            "maman|Le bois du tabouret sèche déjà.",
-            f"narrateur|{o['cap']} pose une ombre au carrelage.",
-            "enfant-m|Il brille trop, Chouchou.",
-            "enfant-f|C'est pour ça.",
-            "narrateur|La vitre garde le bleu, tout proche.",
-        )
-    return L(
-        "narrateur|Un peu de poussière d'herbe reste au seuil.",
-        "enfant-f|On a tiré ensemble.",
-        "enfant-m|Sans trop monter.",
-        "papa|Le tabouret est resté à sa place.",
-        "maman|Vos mains sentent encore le vent.",
-        coda,
-        "narrateur|Chouchou pose le papier au rebord.",
-        "enfant-m|Tu l'as eu, enfin.",
-        "narrateur|Le bleu tremble un peu, puis s'endort.",
-    )
-
-
-def main() -> None:
-    s: dict[str, list[str]] = {}
-    extras: dict[str, dict] = {}
-    sons: dict[str, str] = {"CHK_T0000_P0000": "oiseau"}
-
-    s["CHK_T0000_P0000"] = L(
-        "narrateur|Un bout de papier tremble sur le carreau.",
-        "narrateur|Le vent passe dans les pommes.",
-        "narrateur|Une ficelle traîne dans l'herbe chaude.",
-        "papa|Tu as vu l'ombre, Chouchou ?",
-        "enfant-f|Elle court sur le mur.",
-        "maman|Le papier sent encore le soleil.",
-        "narrateur|En ce moment, Chouchou lève le nez.",
-        "narrateur|Son cerf-volant dort dans le pommier.",
-        "enfant-f|Je le veux, pour voler.",
-        "papa|Aniss arrive, plus grand que toi.",
-        "narrateur|Aniss a de l'ombre jusqu'aux épaules.",
-        "enfant-m|On le prend ensemble ?",
-        "maman|On prépare d'abord, alors ?",
-        "papa|Merci, tu regardes bien le papier.",
-    )
-    s["CHK_T0001_P0000"] = L(
-        "narrateur|Trois affaires attendent sous l'arbre.",
-        "narrateur|La ficelle, le bâton, et le tabouret.",
-        "maman|Tu prends quoi d'abord, Chouchou ?",
-    )
-    extras["CHK_T0001_P0000"] = t3lab("la ficelle", "le bâton", "le tabouret")
-
-    for t1 in (1, 2, 3):
-        p = f"CHK_T0001_P000{t1}"
-        o = OBJ[t1]
-        s[p] = t1_passage(t1)
-        s[f"{p}_Q0001"] = L(
-            f"narrateur|Chouchou a glissé le papier {o['t1q']}.",
-            "maman|Il est où, le bout de papier ?",
-        )
-        extras[f"{p}_Q0001"] = qf(o["t1q"].split()[-1], o["t1acc"], o["t1retry"])
-        s[f"{p}_C0001"] = t1_confirm(t1)
-        s[f"{p}_T0002_P0000"] = t2_question()
-        extras[f"{p}_T0002_P0000"] = t3lab("les branches basses", "la fourche", "la branche haute")
-
-        for t2 in (1, 2, 3):
-            sp = f"{p}_T0002_P000{t2}"
-            s[sp] = t2_scene(t1, t2)
-            s[f"{sp}_T0003_P0000"] = t3_question(t2)
-            extras[f"{sp}_T0003_P0000"] = t3lab(*T3_LABS[t2])
-            for t3 in (1, 2, 3):
-                s[f"{sp}_T0003_P000{t3}"] = t3_scene(t1, t2, t3)
-                s[f"{sp}_T0003_P000{t3}_F0001"] = fin_scene(t1, t2, t3)
-
-    write_tree(s, extras, sons)
-    relecture(
-        SID,
-        "Le cerf-volant de Chouchou dans le pommier",
-        "Après le vent, le cerf-volant de Chouchou dort dans le pommier. "
-        "Elle le veut pour voler encore. Aniss est plus grand. "
-        "T1 = ficelle / bâton / tabouret (les trois partent). "
-        "T2 = branches basses trop basses pour Aniss / fourche trop haute "
-        "pour Chouchou / branche trop haute pour elle seule. "
-        "T3 = neuf résolutions (passage de Chouchou, branche levée, vent qui "
-        "défait ; mains d'Aniss, bâton d'en bas, tirer à deux ; tabouret "
-        "d'Aniss, ficelle lancée, geste d'en bas). La leçon (tailles, jouer "
-        "ensemble) se vit dans les gestes, sans slogan. Fin : le papier "
-        "rentre à la maison.",
-        "N1 ≤ 10. Inès / Tom / Léa / Sami et bac/toboggan/balançoires jetés. "
-        "Titre leçon collée remplacé (objet + désir). Autre récit que "
-        "DIF-014 (cerf-volant, pas la pomme du haut). Un merci de papa lié "
-        "au geste (regarder le papier). Audio non cuit.",
-    )
+    print(f"OK {SID} {nwords} mots  1re: {out['chunks'][0]['script'].splitlines()[0].split('|',1)[1]}")
 
 
 if __name__ == "__main__":
