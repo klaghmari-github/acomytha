@@ -41,12 +41,12 @@ Raphaël veut parler **maintenant**. Impatience (coupe, cartable trop vite, bouc
 - Leçon non dite : on l'entend quand il attend le silence. Pas « j'ai écouté », pas « bon travail », pas « l'histoire est finie », pas « on écoute la maîtresse ».
 - Un « en ce moment ». Un merci vécu. Adulte + question. Maîtresse = label, pas de réplique de leçon.
 - TTS complet (5) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration). `slow` = question et fin. Action plus vive vers la gourde.
-- 721 mots. N3 ≤ 16. `check()` OK. Pas apply.
+- 751 mots. N3 ≤ 16. `check()` OK. Pas apply.
 
 ## Contrôles
 
 - 5 chunks, graphe inchangé
-- 721 mots
+- 751 mots
 - `text` = `script` collé
 
 ## Non vérifié
