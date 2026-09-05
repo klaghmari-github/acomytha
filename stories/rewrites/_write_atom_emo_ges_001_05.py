@@ -1,0 +1,864 @@
+#!/usr/bin/env python3
+"""ATOM-EMO.GES.001-05 — Victorina dit stop (F-NAR-019, N1, EMO.GES.001)."""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from copy import deepcopy
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _lib import FORBIDDEN, LIMITS, ROOT, check, from_script, words  # noqa: E402
+
+SID = "ATOM-EMO.GES.001-05"
+TITLE = "Victorina dit stop"
+N1 = LIMITS["N1"]
+CHARS = "Victorina, Nino, papa, maman"
+SETTING = (
+    "salon, table, lampe, pile de livres, livre d'images, "
+    "pages, carton, rond de lumière"
+)
+INDICE = "éclat de livre"
+FIL = (
+    "Un rond de lumière dort sur la table. Sur le dos du livre, "
+    "un éclat de livre luit. Victorina veut jouer, maintenant. "
+    "Nino serre trop. Poitrine coincée, sourire parti. Papa "
+    "s'accroupit. Stop. Elle recule. Merci vécu. Le livre glisse. "
+    "Nino serre pour aider. Stop, recule. Un éclat de livre tient "
+    "sur le dos."
+)
+TICS = re.compile(
+    r"\b(tout doux|tout calme|tout lent|tout bas|tout doucement|"
+    r"encore|déjà|deja)\b",
+    re.I,
+)
+BAN_WORDS = re.compile(
+    r"\b(flaque|grille|botte|bottes|limace|perron|tiroir|"
+    r"fraisier|cuivre|buis|coussin|figue|robinet|planche|"
+    r"émail|email|samare|bassine|entrée|entree|merle|miel|"
+    r"piquet|cerceau|drap|savon|bol|feuille|pierre|commode|"
+    r"lacet|tapis|sauge|chiffon|parquet|canapé|canape|plaid|"
+    r"balançoire|balancoire|rideau|toboggan|radiateur|"
+    r"chaussette|chaussettes|bateau|cabane|seau|chatouille|"
+    r"chatouilles|gond|portail|ballon|cour)\b",
+    re.I,
+)
+EXTRA_BAD = (
+    "aujourd'hui",
+    "grand-père",
+    "grand-pere",
+    "jardinier",
+    "bibliothécaire",
+    "bibliothecaire",
+    "gardienne",
+    "maîtresse",
+    "maitresse",
+    "j'ai compris",
+    "j'ai écouté",
+    "j'ai ecoute",
+    "mission accomplie",
+    "on dirait que notre mission",
+    "l'histoire est finie",
+    "bon travail",
+    "les trois mots",
+    "tu as bien fait",
+    "on va ranger",
+    "tu ranges",
+    "il faut attendre",
+    "on doit demander",
+    "il faut demander",
+    "il ne faut pas rire",
+    "on ne rit pas",
+    "dire stop, c'est permis",
+    "dire stop c'est permis",
+    "on s'éloigne",
+    "on s eloigne",
+    "on va vers un adulte",
+    "tu as reculé",
+    "tu as recule",
+    "tu as dit stop",
+    "bravo",
+    "grain de",
+    "marque fine",
+    "ombre en forme",
+    "minuscule symbole",
+    "tache de couleur",
+    "éclat de pierre",
+    "éclat de cerceau",
+    "éclat de flaque",
+    "éclat de grille",
+    "éclat de cour",
+    "éclat de botte",
+    "éclat de portail",
+    "éclat de feuille",
+    "éclat de piquet",
+    "éclat de commode",
+    "éclat de lacet",
+    "éclat de tapis",
+    "éclat de sauge",
+    "éclat de chiffon",
+    "éclat de parquet",
+    "éclat d'écorce",
+    "éclat d'ecorce",
+    "éclat de pin",
+    "éclat de pomme",
+    "éclat de sève",
+    "éclat de seve",
+    "éclat de limace",
+    "éclat de perron",
+    "éclat de chaise",
+    "éclat de tiroir",
+    "éclat de fraisier",
+    "éclat de cuivre",
+    "éclat de buis",
+    "éclat de casserole",
+    "éclat de citron",
+    "éclat de coquille",
+    "éclat de zeste",
+    "éclat de coussin",
+    "éclat de figue",
+    "éclat de robinet",
+    "éclat de planche",
+    "éclat d'émail",
+    "éclat d'email",
+    "éclat de samare",
+    "éclat de bassine",
+    "éclat de nappe",
+    "éclat de farine",
+    "éclat de bol",
+    "éclat de tablier",
+    "éclat de biscuit",
+    "éclat de toit",
+    "éclat de volet",
+    "éclat de pavé",
+    "éclat de pave",
+    "éclat de parapluie",
+    "éclat de bâche",
+    "éclat de bache",
+    "éclat de poire",
+    "éclat de seau",
+    "éclat de pompon",
+    "éclat de carotte",
+    "éclat de carton",
+    "éclat de mousse",
+    "éclat de laine",
+    "éclat de tasse",
+    "éclat de crayon",
+    "éclat de cartable",
+    "éclat de wagon",
+    "éclat de buée",
+    "éclat de buee",
+    "éclat de croûte",
+    "éclat de croute",
+    "éclat de tableau",
+    "éclat de casier",
+    "éclat de moufle",
+    "éclat de craie",
+    "éclat de pinceau",
+    "éclat de ballon",
+    "éclat de manteau",
+    "éclat de marche",
+    "éclat de vitre",
+    "éclat de grain",
+    "éclat de liste",
+    "éclat de cheminée",
+    "éclat de cheminee",
+    "éclat de couloir",
+    "éclat de plaque",
+    "éclat de dalle",
+    "éclat de couvercle",
+    "éclat de thermos",
+    "éclat de bouton",
+    "éclat de ticket",
+    "éclat de boucle",
+    "éclat de corde",
+    "éclat de caisse",
+    "éclat de caillou",
+    "éclat de clé",
+    "éclat de cle",
+    "éclat de cuillère",
+    "éclat de cuillere",
+    "éclat de sonnette",
+    "éclat de lessive",
+    "éclat de carreau",
+    "éclat de coton",
+    "éclat de gravier",
+    "éclat de gilet",
+    "éclat de lunettes",
+    "éclat de résine",
+    "éclat de resine",
+    "éclat de canapé",
+    "éclat de canape",
+    "éclat de plaid",
+    "éclat de balançoire",
+    "éclat de balancoire",
+    "éclat de rideau",
+    "éclat de toboggan",
+    "éclat de gond",
+    "éclat de page",
+    "éclat de lampe",
+    "éclat de table",
+    "point de gouttière",
+    "point de gouttiere",
+    "lune d'étain",
+    "lune d'etain",
+    "grain de pin",
+)
+
+# N1 : mêmes champs que DIF.ENE.001-09 (voix, tempos plus lents).
+PROFILES = {
+    "opening": dict(
+        rate="medium", wpm=124, speed=0.90, piper=1.22, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=560,
+        sentence=300, energy="warm", contour="storytelling", noise=0.34,
+        emphasis="éclat de livre",
+        note=(
+            "arc=installation; intention=émerveiller puis tendre; "
+            "emotion=impatience puis gêne; intensite=2; "
+            "destinataire=enfant; sous_texte=elle_veut_jouer_maintenant; "
+            "tempo=posé puis resserré; sourire=léger puis aucun; "
+            "respiration=ample puis retenue"
+        ),
+    ),
+    "clue": dict(
+        rate="slow", wpm=104, speed=0.80, piper=1.36, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="soft", db=-2, pause=780,
+        sentence=360, energy="focused", contour="rising", noise=0.30,
+        emphasis="trop",
+        note=(
+            "arc=indice; intention=faire_deviner; emotion=attention; "
+            "intensite=1; destinataire=enfant; "
+            "sous_texte=c_est_trop_que_dit_elle; "
+            "tempo=suspendu; sourire=aucun; respiration=courte_avant_question"
+        ),
+    ),
+    "resolution": dict(
+        rate="medium", wpm=122, speed=0.88, piper=1.24, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=620,
+        sentence=310, energy="bright", contour="falling", noise=0.33,
+        emphasis="livre",
+        note=(
+            "arc=résolution; intention=faire_vivre_le_geste; "
+            "emotion=retenue puis fierté_calme; intensite=2; "
+            "destinataire=enfant; sous_texte=elle_garde_un_pas_ils_tiennent; "
+            "tempo=posé; sourire=léger; respiration=relâchée"
+        ),
+    ),
+    "action": dict(
+        rate="medium", wpm=128, speed=0.92, piper=1.18, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=480,
+        sentence=280, energy="lively", contour="dynamic", noise=0.35,
+        emphasis="éclat de livre",
+        note=(
+            "arc=action; intention=entraîner; emotion=élan puis prudence; "
+            "intensite=2; destinataire=enfant; "
+            "sous_texte=le_livre_glisse_nino_serre_pour_aider; "
+            "tempo=un peu vif puis posé; sourire=léger; respiration=courte"
+        ),
+    ),
+    "ending": dict(
+        rate="slow", wpm=102, speed=0.80, piper=1.36, pitch="low",
+        pitchSsml="-2st", pitchTag="low-pitch", volume="soft", db=-3, pause=980,
+        sentence=380, energy="calm", contour="falling", noise=0.29,
+        emphasis="éclat de livre",
+        note=(
+            "arc=retour; intention=refermer; "
+            "emotion=tendresse_et_fierté_calme; intensite=1; "
+            "destinataire=enfant; "
+            "sous_texte=l_eclat_du_debut_tient_sur_le_dos; "
+            "tempo=très posé; sourire=léger; respiration=ample"
+        ),
+    ),
+}
+
+Q_FIELDS = {
+    "expected_answer": None,
+    "accepted_examples": None,
+    "retry_prompt": None,
+}
+
+SCRIPTS = {
+    "CHK_T0000_P0000": (
+        "opening",
+        "",
+        [
+            "narrateur|Un rond de lumière dort sur la table.",
+            "enfant-f|Il est chaud, papa.",
+            "papa|Tu le vois, le rond ?",
+            "enfant-f|Oui, papa.",
+            "narrateur|Ça sent le papier, un peu sec.",
+            "maman|Tu le sens, le papier ?",
+            "enfant-f|Oui, maman.",
+            "narrateur|Une page se lève un peu.",
+            "enfant-f|Elle bouge, maman.",
+            "maman|Le livre est là, sous la lampe.",
+            "enfant-f|Je le vois.",
+            "narrateur|Papa tapote le dos du livre.",
+            "narrateur|Toc, toc, sur le carton.",
+            "papa|Tu entends le carton, Victorina ?",
+            "enfant-f|Oui, il sonne.",
+            "narrateur|Maman pose la main près de la lampe.",
+            "narrateur|La lampe est tiède, un peu ronde.",
+            "narrateur|Sur le dos, un éclat de livre luit.",
+            "enfant-f|Il luit, papa.",
+            "papa|Tu le vois, sur le dos ?",
+            "enfant-f|Oui, un petit point.",
+            "maman|La lumière le touche.",
+            "narrateur|Un rayon glisse le long des livres.",
+            "narrateur|Victorina connaît cette table.",
+            "enfant-f|Le point est nouveau.",
+            "maman|Tu t'assois près du livre ?",
+            "enfant-f|Un peu.",
+            "narrateur|Un coin de page se plie.",
+            "enfant-f|Il est plié.",
+            "papa|La page a un pli, tu vois ?",
+            "enfant-f|Oui, papa.",
+            "narrateur|Le livre d'images attend sous la lampe.",
+            "narrateur|En ce moment, Victorina le prend.",
+            "enfant-f|Je veux jouer, maintenant !",
+            "papa|Tout de suite ?",
+            "enfant-f|Oui, papa.",
+            "narrateur|Le carton est lisse, un peu tiède.",
+            "maman|Tu tournes une page ?",
+            "enfant-f|Oui, maman.",
+            "narrateur|Nino arrive dans le salon.",
+            "narrateur|Il serre trop.",
+            "narrateur|Il saute près de la table.",
+            "copain|Le livre !",
+            "enfant-f|Tu viens, Nino ?",
+            "copain|Oui.",
+            "narrateur|Victorina ouvre le livre trop vite.",
+            "narrateur|Nino passe les bras autour.",
+            "narrateur|Le câlin est trop fort.",
+            "narrateur|Le livre reste fermé.",
+            "enfant-f|Oh.",
+            "copain|Je te tiens.",
+            "narrateur|Le sourire de Victorina disparaît.",
+            "narrateur|Dans sa poitrine, ça se bouscule.",
+            "narrateur|L'envie et la peur se heurtent.",
+            "narrateur|Ses épaules montent un peu.",
+            "narrateur|Papa s'accroupit à la même hauteur.",
+            "papa|Tu vois Nino, Victorina ?",
+            "enfant-f|Oui, papa.",
+            "maman|Tes bras sont coincés, Victorina ?",
+            "enfant-f|Un peu, maman.",
+            "enfant-f|C'est trop.",
+            "enfant-f|Stop.",
+            "narrateur|Victorina recule d'un pas.",
+            "narrateur|L'éclat de livre tremble, puis tient.",
+        ],
+    ),
+    "CHK_T0000_P0000_Q0001": (
+        "clue",
+        "",
+        [
+            "narrateur|C'est trop pour Victorina.",
+            "narrateur|Que dit-elle ?",
+        ],
+    ),
+    "CHK_T0000_P0000_C0001": (
+        "resolution",
+        "",
+        [
+            "narrateur|Victorina garde un pas d'air.",
+            "enfant-f|Le livre, là.",
+            "narrateur|Elle pose le livre sur la table.",
+            "copain|Je m'approche.",
+            "narrateur|Nino se penche trop.",
+            "enfant-f|Un peu loin.",
+            "narrateur|Nino recule d'un pas, lui aussi.",
+            "copain|D'accord.",
+            "papa|Tu veux le livre avec Nino ?",
+            "enfant-f|Oui, chacun un bord.",
+            "narrateur|Nino ne dit rien, d'abord.",
+            "copain|Je tiens ma page.",
+            "enfant-f|Moi aussi.",
+            "papa|Merci, Victorina.",
+            "narrateur|Papa a vu les deux, près de la lampe.",
+            "maman|Le papier colle un peu, sous les doigts.",
+            "enfant-f|Il est sec.",
+            "narrateur|Ils essuient la page du plat de la main.",
+            "narrateur|Nino tient sa page, plus loin.",
+            "enfant-f|Elle tourne !",
+            "copain|Oui.",
+            "papa|Tu la vois, la bête ?",
+            "enfant-f|Oui, papa.",
+            "maman|Au milieu, Nino ?",
+            "copain|J'y vais.",
+            "narrateur|Victorina pousse la page, sans se presser.",
+            "narrateur|Nino suit l'image des yeux.",
+            "narrateur|La page danse une fois.",
+            "copain|Un.",
+            "enfant-f|Deux.",
+            "narrateur|Le ventre de Victorina se desserre.",
+            "narrateur|Les épaules descendent un peu.",
+            "papa|On reste près de la table ?",
+            "enfant-f|Oui.",
+            "maman|Tes mains sont au chaud ?",
+            "enfant-f|Un peu, maman.",
+        ],
+    ),
+    "CHK_T0000_P0000_END": (
+        "action",
+        "",
+        [
+            "narrateur|Maman pousse la pile vers le bord.",
+            "narrateur|La pile est un peu haute.",
+            "enfant-f|Le livre, maintenant !",
+            "narrateur|Nino avance trop, tout de suite.",
+            "narrateur|Il saute vers le livre.",
+            "copain|À moi !",
+            "narrateur|Le livre glisse vers le bord.",
+            "enfant-f|Il part !",
+            "narrateur|Victorina avance les mains, trop vite.",
+            "narrateur|Nino la serre pour l'aider.",
+            "narrateur|Les bras ferment trop.",
+            "enfant-f|Oh.",
+            "narrateur|Victorina refuse d'avancer, cette fois.",
+            "narrateur|Ses mains se ferment, puis s'ouvrent.",
+            "narrateur|Personne ne dit la suite.",
+            "narrateur|Elle observe le livre, un instant.",
+            "narrateur|Elle écoute le carton de la table.",
+            "narrateur|Sur le dos, un éclat de livre luit.",
+            "enfant-f|Là, sur le dos.",
+            "enfant-f|Stop.",
+            "narrateur|Victorina recule d'un pas.",
+            "enfant-f|Tu tends les doigts, Nino ?",
+            "narrateur|Nino ne dit rien.",
+            "narrateur|Il souffle, puis tend les doigts.",
+            "copain|Oui.",
+            "papa|On arrête le livre ?",
+            "enfant-f|Oui, papa.",
+            "narrateur|Le dos sent le carton tiède.",
+            "narrateur|Le livre est là, un peu au bord.",
+            "narrateur|Victorina le pose près de Nino.",
+            "narrateur|Nino le rend, sans serrer.",
+            "enfant-f|Frou.",
+            "copain|Frou.",
+            "papa|La page est bien ouverte ?",
+            "enfant-f|Oui, papa.",
+            "maman|Le papier est sec, Nino ?",
+            "copain|Un peu.",
+            "narrateur|Ils se passent la page, près d'eux.",
+            "narrateur|La table est lisse, sous les genoux.",
+            "enfant-f|C'est plus facile.",
+            "papa|La lampe est calme ?",
+            "enfant-f|Oui, papa.",
+            "maman|Un rayon passe sur le dos.",
+            "enfant-f|Il allume le point.",
+        ],
+    ),
+    "CHK_T0000_P0000_END_F0001": (
+        "ending",
+        "",
+        [
+            "narrateur|Ils restent près de la lampe.",
+            "narrateur|Maman lisse un coin de page.",
+            "enfant-f|Le livre a glissé, papa.",
+            "papa|Tu l'as vu, toi ?",
+            "enfant-f|Oui, près de la table.",
+            "maman|On est bien, ici.",
+            "narrateur|Victorina tapote le dos du doigt.",
+            "enfant-f|Il a une trace de doigt.",
+            "maman|Tu la vois, la trace ?",
+            "enfant-f|Oui, maman.",
+            "papa|Le livre est resté, Victorina.",
+            "enfant-f|Oui, avec Nino.",
+            "copain|Le livre est resté.",
+            "narrateur|Ça sent le papier, un peu tiède.",
+            "enfant-f|Et le carton, maman.",
+            "maman|Oui, dans l'air.",
+            "narrateur|Le livre reste sous la lampe.",
+            "narrateur|Un éclat de livre tient sur le dos.",
+        ],
+    ),
+}
+
+
+def vet(lines: list[str], cid: str = "") -> list[str]:
+    out: list[str] = []
+    starts: list[str] = []
+    skip_lesson = cid == "CHK_T0000_P0000_Q0001"
+    for raw in lines:
+        role, ph = raw.split("|", 1)
+        ph = ph.strip()
+        n = words(ph)
+        if n > N1:
+            raise SystemExit(f"{n}>{N1}: {ph}")
+        if n == 0:
+            raise SystemExit(f"vide: {raw}")
+        marks = ph.count(".") + ph.count("?") + ph.count("!")
+        if marks != 1:
+            raise SystemExit(f"ponctuation {marks}: {ph}")
+        if not ph.endswith((".", "?", "!")):
+            raise SystemExit(f"fin: {ph}")
+        if TICS.search(ph):
+            raise SystemExit(f"tic: {ph}")
+        if BAN_WORDS.search(ph):
+            raise SystemExit(f"ban mot: {ph}")
+        low = ph.lower()
+        for bad in FORBIDDEN:
+            if bad in low:
+                raise SystemExit(f"interdit {bad}: {ph}")
+        if not skip_lesson:
+            for bad in EXTRA_BAD:
+                if bad in low:
+                    raise SystemExit(f"extra {bad}: {ph}")
+        if role not in ("narrateur", "papa", "maman", "enfant-f", "copain"):
+            raise SystemExit(f"rôle {role}: {raw}")
+        tok = ph.split()[0].lower() if role == "narrateur" else ""
+        starts.append(tok)
+        out.append(f"{role}|{ph}")
+    run = 1
+    for i in range(1, len(starts)):
+        if starts[i] and starts[i] == starts[i - 1]:
+            run += 1
+            if run >= 4:
+                raise SystemExit(f"puces {starts[i]}")
+        else:
+            run = 1
+    return out
+
+
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def ssml(text: str, m: dict) -> str:
+    body = esc(text)
+    emp = m.get("emphasis")
+    if emp:
+        e = esc(emp)
+        if e in body:
+            body = body.replace(e, f'<emphasis level="moderate">{e}</emphasis>', 1)
+    return (
+        f'<speak><prosody rate="{m["rate"]}" pitch="{m["pitchSsml"]}">'
+        f'{body}</prosody><break time="{m["pause"]}ms"/></speak>'
+    )
+
+
+def xai(text: str, m: dict) -> str:
+    body = text
+    emp = m.get("emphasis")
+    if emp and emp in body:
+        body = body.replace(emp, f"<emphasis>{emp}</emphasis>", 1)
+    if m["rate"] == "slow":
+        body = f"<slow>{body}</slow>"
+    if m["volume"] == "soft":
+        body = f"<soft>{body}</soft>"
+    tag = m.get("pitchTag")
+    if tag:
+        body = f"<{tag}>{body}</{tag}>"
+    pause = m["pause"]
+    suffix = " [long-pause]" if pause >= 800 else (" [pause]" if pause >= 400 else "")
+    return (body + suffix).strip()
+
+
+def voice(src: dict, lines: list[str], profile: str, sons: str, extra: dict | None = None) -> dict:
+    extra = extra or {}
+    cid = src.get("chunk_id") or ""
+    lines = vet(lines, cid)
+    m = dict(PROFILES[profile])
+    if "emphasis" in extra:
+        m["emphasis"] = extra["emphasis"]
+    if extra.get("note"):
+        m["note"] = extra["note"]
+    text, script = from_script(lines)
+    if m.get("emphasis") and m["emphasis"] not in text:
+        m["emphasis"] = None
+    out = deepcopy(src)
+    out["text"] = text
+    out["script"] = script
+    out["sons"] = sons if sons is not None else (src.get("sons") or "")
+    if out["sons"] is None:
+        out["sons"] = ""
+    out["text_ssml"] = ssml(text, m)
+    out["text_xai_tags"] = xai(text, m)
+    out["rate_wpm"] = m["wpm"]
+    out["rate_label"] = m["rate"]
+    out["speed_xai"] = m["speed"]
+    out["length_scale_piper"] = m["piper"]
+    out["pitch_label"] = m["pitch"]
+    out["pitch_ssml"] = m["pitchSsml"]
+    out["pitch_xai_tag"] = m["pitchTag"]
+    out["volume_label"] = m["volume"]
+    out["volume_db"] = m["db"]
+    out["emphasis_words"] = m.get("emphasis") or ""
+    out["pause_before_ms"] = extra.get("pause_before_ms", 0)
+    out["pause_after_ms"] = m["pause"]
+    out["pause_sentence_ms"] = m["sentence"]
+    out["style_energy"] = m["energy"]
+    out["style_contour"] = m["contour"]
+    out["noise_scale_piper"] = m["noise"]
+    out["kokoro_speed"] = m["speed"]
+    out["melo_speed"] = m["speed"]
+    out["espeak_amp"] = 82 if m["volume"] == "soft" else 100
+    out["espeak_pitch"] = 42 if m["pitch"] == "low" else 50
+    out["espeak_word_gap"] = 12 if m["rate"] == "slow" else 8
+    out["notes"] = m["note"]
+    out["night_policy"] = extra.get("night_policy", "play")
+    out["locale"] = "fr-FR"
+    out["voice_id"] = "fr_FR-siwis-medium"
+    out.update(extra.get("fields") or {})
+    return out
+
+
+def main() -> None:
+    folder = ROOT / SID
+    src = json.loads((folder / "source.json").read_text(encoding="utf-8"))
+    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in SCRIPTS]
+    extra = set(SCRIPTS) - {c["chunk_id"] for c in src["chunks"]}
+    if missing or extra:
+        raise SystemExit(f"{SID} chunks missing={missing} extra={extra}")
+    by = {}
+    for c in src["chunks"]:
+        cid = c["chunk_id"]
+        profile, sons, lines = SCRIPTS[cid]
+        extra_kw: dict = {}
+        if cid == "CHK_T0000_P0000_Q0001":
+            extra_kw["pause_before_ms"] = 200
+            extra_kw["fields"] = Q_FIELDS
+        elif cid != "CHK_T0000_P0000":
+            extra_kw["pause_before_ms"] = 200
+        by[cid] = voice(c, lines, profile, sons, extra_kw)
+        if c.get("kind") != by[cid].get("kind"):
+            raise SystemExit(f"{cid}: kind changé")
+    chunks = [by[c["chunk_id"]] for c in src["chunks"]]
+    check(SID, src["age_band"], chunks)
+
+    blob = "\n".join(c["script"] for c in chunks).lower()
+    if blob.count("en ce moment") != 1:
+        raise SystemExit(f"{SID}: en ce moment ×{blob.count('en ce moment')}")
+    adults = " ".join(
+        ln.split("|", 1)[1]
+        for c in chunks
+        for ln in c["script"].splitlines()
+        if ln.startswith("papa|") or ln.startswith("maman|")
+    ).lower()
+    if adults.count("merci") != 1:
+        raise SystemExit(f"{SID}: merci ×{adults.count('merci')}")
+    if "bravo" in adults:
+        raise SystemExit(f"{SID}: bravo en trop")
+    if INDICE not in by["CHK_T0000_P0000"]["text"].lower():
+        raise SystemExit(f"{SID}: indice absent à l'ouverture")
+    if INDICE not in by["CHK_T0000_P0000_END_F0001"]["text"].lower():
+        raise SystemExit(f"{SID}: indice non payé à la fin")
+    n_clue = blob.count(INDICE)
+    if n_clue != 4:
+        raise SystemExit(f"{SID}: {INDICE} ×{n_clue} (voulu 4)")
+    if "enfant-m|" in blob:
+        raise SystemExit(f"{SID}: enfant-m (Victorina = enfant-f, Nino = copain)")
+    if "copain|" not in blob:
+        raise SystemExit(f"{SID}: Nino absent (copain)")
+    if "copine|" in blob:
+        raise SystemExit(f"{SID}: copine")
+    if "maitresse|" in blob or "maîtresse" in blob:
+        raise SystemExit(f"{SID}: maîtresse inventée")
+    roles = [
+        ln.split("|", 1)[0]
+        for c in chunks
+        for ln in c["script"].splitlines()
+    ]
+    if any(r not in ("narrateur", "papa", "maman", "enfant-f", "copain") for r in roles):
+        raise SystemExit(f"{SID}: rôle hors troupe")
+    if not any(r == "papa" for r in roles):
+        raise SystemExit(f"{SID}: papa absent")
+    if not any(r == "maman" for r in roles):
+        raise SystemExit(f"{SID}: maman absente")
+    if not any(r == "copain" for r in roles):
+        raise SystemExit(f"{SID}: copain absent")
+    if not any(r == "enfant-f" for r in roles):
+        raise SystemExit(f"{SID}: enfant-f absent")
+    body = "\n".join(
+        c["script"] for c in chunks if c["chunk_id"] != "CHK_T0000_P0000_Q0001"
+    ).lower()
+    for lesson in (
+        "dire stop, c'est permis",
+        "on s'éloigne",
+        "on va vers un adulte",
+        "tu as reculé",
+        "tu as dit stop",
+        "bravo",
+    ):
+        if lesson in body:
+            raise SystemExit(f"{SID}: leçon dite ({lesson})")
+    q = by["CHK_T0000_P0000_Q0001"]
+    if q["text"] != "C'est trop pour Victorina. Que dit-elle ?":
+        raise SystemExit(f"{SID}: question moteur altérée: {q['text']}")
+    if q.get("expected_answer") is not None:
+        raise SystemExit(f"{SID}: expected_answer doit rester null")
+    if q.get("accepted_examples") is not None:
+        raise SystemExit(f"{SID}: accepted_examples doit rester null")
+    if q.get("retry_prompt") is not None:
+        raise SystemExit(f"{SID}: retry_prompt doit rester null")
+    if "stop" not in blob:
+        raise SystemExit(f"{SID}: manque stop vécu")
+    if "recule" not in blob:
+        raise SystemExit(f"{SID}: manque recule vécu")
+    if "livre" not in blob:
+        raise SystemExit(f"{SID}: manque livre")
+    if "lampe" not in blob:
+        raise SystemExit(f"{SID}: manque lampe")
+    if "salon" not in blob:
+        raise SystemExit(f"{SID}: manque salon")
+    if "nino" not in blob:
+        raise SystemExit(f"{SID}: manque Nino")
+    if "victorina" not in blob:
+        raise SystemExit(f"{SID}: manque Victorina")
+    for ban in (
+        "éclat de page",
+        "éclat de lampe",
+        "éclat de table",
+        "éclat de carton",
+        "éclat de canapé",
+        "éclat de tapis",
+        "éclat de coussin",
+        "éclat de plaid",
+        "éclat de balançoire",
+        "éclat de rideau",
+        "éclat de toboggan",
+        "tout doux",
+        "tout calme",
+        "fleur",
+        "amir",
+        "chouchou",
+        "tapis",
+        "coussin",
+        "canapé",
+        "plaid",
+        "balançoire",
+        "rideau",
+        "toboggan",
+    ):
+        if ban in blob:
+            raise SystemExit(f"{SID}: BAN {ban}")
+    tts_ok = all(
+        c.get("text_xai_tags")
+        and c.get("notes")
+        and c.get("style_energy")
+        and c["text_xai_tags"] != c["text"]
+        and c["text_ssml"].startswith("<speak>")
+        for c in chunks
+    )
+    if not tts_ok:
+        raise SystemExit(f"{SID}: TTS incomplet")
+
+    out = dict(src)
+    out["fil_rouge"] = FIL
+    out["title"] = TITLE
+    out["characters"] = CHARS
+    out["setting"] = SETTING
+    out["chunks"] = chunks
+    path = folder / "merged.json"
+    path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    nwords = sum(words(c["text"]) for c in chunks)
+
+    (folder / "RELECTURE.md").write_text(
+        f"# {SID} — {TITLE}\n\n"
+        "Réécriture éditoriale F-NAR-019, example4 v2. `chunk_id` / `kind` "
+        "inchangés. Texte seulement. Pas d'apply. Pas de git. Pas d'audio.\n\n"
+        "- **Public :** N1 (≤10 mots/phrase), audio familial, voc 3–4 ans\n"
+        "- **Leçon :** EMO.GES.001 — trop fort → stop, reculer "
+        "(vécue : Nino serre trop, poitrine coincée, Stop, un pas en "
+        "arrière, puis câlin d'aide trop serré, Stop encore). JAMAIS "
+        "dite dans le récit. Pas « dire stop, c'est permis ». Pas "
+        "« on s'éloigne / on va vers un adulte ».\n"
+        "- **Personnages :** Victorina, Nino, papa, maman. Dump "
+        "Fleur/Amir/Chouchou/maman → D16 Victorina = enfant-f (veut "
+        "jouer maintenant). Nino = copain (serre, saute, tend les "
+        "doigts). Troupe D16. Pas de maîtresse.\n"
+        "- **Lieu :** salon, table, lampe, pile de livres, livre "
+        "d'images, pages, carton, rond de lumière. ≠ 001-04 cabane de "
+        "coussins/plaid. ≠ 001-06 coussin chat. ≠ 001-08 canapé/"
+        "chatouilles. PAS tapis / coussin / canapé.\n"
+        "- **Indice unique :** éclat de livre (luit à l'ouverture → "
+        "tremble au câlin → luit quand le livre glisse → tient sur "
+        "le dos). BAN éclat de page / lampe / table / carton / "
+        "canapé / tapis / coussin / plaid / balançoire / rideau / "
+        "toboggan.\n"
+        "- **Question moteur :** « C'est trop pour Victorina. Que "
+        "dit-elle ? » expected / accepted / retry **null** (dump). "
+        "Non récitée comme consigne dans les autres chunks.\n"
+        "- **Structure conservée :** 5 chunks, `chunk_id` / `kind` / graphe "
+        "inchangés\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` inchangés.\n\n"
+        "## Promesse narrative\n\n"
+        "Un rond de lumière dort sur la table. Toc toc sur le carton. "
+        "Sur le dos, un éclat de livre luit. Papier sec, page qui se "
+        "lève. Victorina veut jouer **maintenant**. Nino serre trop. "
+        "Sourire parti. Papa s'accroupit. Stop. Elle recule. Ils "
+        "tiennent chacun un bord. Merci vécu. Deuxième ruse : le "
+        "livre glisse, Nino serre pour aider. Elle refuse d'avancer, "
+        "dit stop, recule. Un éclat de livre tient sur le dos.\n\n"
+        "## Arc dramatique\n\n"
+        "- Monde : salon, table, lampe, pile, livre d'images, rond "
+        "de lumière. ≠ 001-04 coussins. ≠ 001-06 coussin chat. ≠ "
+        "001-08 canapé.\n"
+        "- Désir : jouer avec le livre, maintenant.\n"
+        "- Objet : livre d'images, puis livre qui glisse vers le bord.\n"
+        "- Indice unique : éclat de livre, vu dès l'ouverture, payé "
+        "sur le dos. Pas éclat de page / lampe / table / canapé / "
+        "tapis / coussin / plaid.\n"
+        "- Urgence douce : Nino arrive, serre trop, le livre attend.\n"
+        "- Imprévu 1 : ouverture trop vite, bras autour, câlin trop "
+        "fort, livre fermé.\n"
+        "- Cue : papa à la même hauteur. Stop. Recule. Un merci "
+        "vécu, après « chacun un bord ».\n"
+        "- Imprévu 2 (plus rusé) : pile, livre qui glisse, Nino "
+        "serre pour aider.\n"
+        "- Résolution : elle refuse d'avancer, observe, écoute le "
+        "carton, retrouve l'éclat, Nino tend les doigts.\n"
+        "- Retour : frou tout près, livre sous la lampe, éclat sur "
+        "le dos.\n\n"
+        "## Vécu\n\n"
+        "Victorina veut jouer **maintenant**. Impatience, puis câlin "
+        "trop fort, sourire parti. Nino prend son élan, pose sa "
+        "limite après elle (d'accord, souffle, tend les doigts). "
+        "Papa se baisse, pose une question, ne récite pas la règle. "
+        "Ils agissent : un pas d'air, bord tenu, page sans se "
+        "presser, livre rendu sans serrer. Merci vécu. Fin : "
+        "l'éclat du début tient sur le dos.\n\n"
+        "## Vu et corrigé\n\n"
+        "- Titre : Victorina dit stop (noyau dump « dit stop » + "
+        "prénom D16). Relance : Que dit-elle ? expected null.\n"
+        "- Lieu du dump-meta (salon). Maman et papa. Nino = copain. "
+        "Victorina = héroïne.\n"
+        "- Ouverture inventée (rond de lumière, papier, page), pas "
+        "un gabarit v2, pas radiateur/chaussettes/savon du source, "
+        "pas « Fleur joue au salon ».\n"
+        "- Indice unique : éclat de livre (salon, livre d'images). "
+        "BAN éclat de page / lampe / table / carton / canapé / "
+        "tapis / coussin / plaid / balançoire / rideau / toboggan. "
+        "Pas tache/flèche/marque/symbole.\n"
+        "- Tics encore/déjà/tout doux/tout calme et `aujourd'hui` "
+        "retirés. Strip « encore » du dump.\n"
+        "- Leçon non dite : on la voit quand Nino serre, quand la "
+        "poitrine se coince, quand elle dit stop, quand elle "
+        "recule, quand le livre revient. Pas « dire stop, c'est "
+        "permis ». Pas « on s'éloigne / on va vers un adulte ».\n"
+        "- Un « en ce moment ». Un merci vécu. Adulte + question.\n"
+        "- Question moteur : « C'est trop pour Victorina. Que "
+        "dit-elle ? ». expected/accepted/retry null. 5 chunks, "
+        "kinds inchangés.\n"
+        "- example4 042 / 074 / 006 (manière volée, gabarit non "
+        "collé). Voix : `_write_atom_dif_ene_001_09.py`, profiles N1.\n"
+        "- TTS complet (5) : `text_ssml`, `text_xai_tags`, `notes` "
+        "(arc, intention, émotion, intensité, destinataire, sous-texte, "
+        "tempo, sourire, respiration). `slow` = question et fin. "
+        "Action un peu plus vive vers le livre qui glisse.\n"
+        f"- {nwords} mots. N1 ≤ 10. `check()` OK. Pas apply.\n\n"
+        "## Contrôles\n\n"
+        "- 5 chunks, graphe inchangé\n"
+        f"- {nwords} mots\n"
+        "- `text` = `script` collé\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.\n",
+        encoding="utf-8",
+    )
+    print(f"wrote {path} mots={nwords} bytes={path.stat().st_size}")
+
+
+if __name__ == "__main__":
+    main()
