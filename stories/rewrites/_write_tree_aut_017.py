@@ -718,7 +718,6 @@ T3[(1, 1, 1)] = [
     "narrateur|Une étoile de tissu brille.",
     "narrateur|Elle glisse le manteau, le seau, le ballon.",
     "enfant-f|Le citron dessus, pour voir sa feuille.",
-    "papa|Merci.",
     "papa|Tu as trouvé sa virgule dans le sable.",
     "narrateur|Un grain rouge colle au sac bleu.",
     "enfant-f|Le bol nous attend.",
@@ -748,7 +747,6 @@ T3[(1, 1, 2)] = [
     "narrateur|Le seau entre.",
     "narrateur|Le ballon entre.",
     "enfant-f|Le citron, tout seul, sur le dernier carré.",
-    "maman|Merci.",
     "maman|Le sac à carreaux tient tout.",
     "narrateur|Le ballon laisse une trace ronde au tissu.",
     "papa|Le bol, au salon, a son rond à lui.",
@@ -784,7 +782,6 @@ T3[(1, 1, 3)] = [
     "narrateur|Seau.",
     "narrateur|Ballon.",
     "narrateur|Citron.",
-    "papa|Merci.",
     "papa|Tu as compté jusqu'au jaune.",
     "narrateur|Un brin d'herbe reste au sac vert.",
     "enfant-f|La virgule a voyagé.",
@@ -814,7 +811,6 @@ T3[(1, 2, 1)] = [
     "papa|L'anse d'abord, puis le tissu.",
     "narrateur|Elle met le seau, le manteau, le citron au-dessus.",
     "enfant-f|Sa feuille, je la vois dans le zip.",
-    "papa|Merci.",
     "papa|Le clic rentre avec nous.",
     "narrateur|Du sable fin brille dans le sac bleu.",
     "maman|Le bol, lui, n'a pas de sable.",
@@ -847,7 +843,6 @@ T3[(1, 2, 2)] = [
     "enfant-f|Le citron, je le sors.",
     "enfant-f|Il va sur le bleu du sac.",
     "narrateur|La virgule verte touche un carreau clair.",
-    "maman|Merci.",
     "maman|Tu as sorti le soleil du sable.",
     "narrateur|L'anse jaune touche le sac rouge.",
     "papa|Au salon, le bol est bleu, pas rouge.",
@@ -883,7 +878,6 @@ T3[(1, 2, 3)] = [
     "narrateur|Elle glisse tout.",
     "narrateur|Un coquillage minuscule roule au fond.",
     "enfant-f|Il était dans le sable.",
-    "papa|Merci.",
     "papa|Tu as gardé le jaune pour le bol.",
     "narrateur|Un coquillage minuscule roule au sac vert.",
     "maman|Le bol n'a pas de coquillage.",
@@ -917,7 +911,6 @@ T3[(1, 3, 1)] = [
     "narrateur|Puis le manteau.",
     "narrateur|Puis le seau.",
     "enfant-f|Le citron contre l'oreille, pour qu'il n'ait pas froid.",
-    "papa|Merci.",
     "papa|Tu as sorti le sable de l'oreille, aussi.",
     "maman|Le bol va voir un soleil un peu tiède.",
     "enfant-f|Il a dormi contre le doudou.",
@@ -948,7 +941,6 @@ T3[(1, 3, 2)] = [
     "narrateur|Seau.",
     "narrateur|Puis le citron au milieu.",
     "enfant-f|Il est au centre, comme au château.",
-    "maman|Merci.",
     "maman|Tu as remis le soleil au milieu.",
     "narrateur|Le doudou sent le sable, contre le sac rouge.",
     "papa|Au salon, le bol est le milieu, lui.",
@@ -981,7 +973,6 @@ T3[(1, 3, 3)] = [
     "maman|Rond le doudou, rond le seau, rond le citron.",
     "narrateur|Elle glisse le manteau en dernier, comme un toit.",
     "enfant-f|Le toit du château, pour rentrer.",
-    "papa|Merci.",
     "papa|Tu as fermé le bouton, toute seule.",
     "narrateur|Un fil gris pend du sac vert.",
     "maman|Le bol n'a pas de toit.",
@@ -1013,7 +1004,6 @@ T3[(2, 1, 1)] = [
     "narrateur|Une étoile, puis le manteau, le seau, le ballon.",
     "maman|Le citron au-dessus.",
     "maman|Sa feuille a vu la rampe.",
-    "papa|Merci.",
     "papa|Tu l'as sorti de sous le métal.",
     "narrateur|La feuille jaune de la rampe colle au sac bleu.",
     "enfant-f|C'est sa médaille.",
@@ -1048,7 +1038,6 @@ T3[(2, 1, 2)] = [
     "narrateur|Le citron, elle le garde au creux de la main.",
     "enfant-f|Toi, tu ne glisses plus.",
     "enfant-f|Tu rentres.",
-    "maman|Merci.",
     "maman|Tu as gardé le jaune hors de la rampe.",
     "narrateur|Le ballon est un peu froid, près du sac rouge.",
     "papa|Au salon, le bol est tiède, lui.",
@@ -1081,7 +1070,6 @@ T3[(2, 1, 3)] = [
     "maman|Ronds : ballon, citron, bouton.",
     "narrateur|Elle glisse le seau, le manteau, le ballon.",
     "enfant-f|Le citron au milieu, au sec.",
-    "papa|Merci.",
     "papa|Tu l'as sorti de la goutte.",
     "narrateur|Une goutte glisse vers le sac vert, puis s'arrête.",
     "maman|Le bol, au salon, n'a pas de goutte.",
@@ -1113,7 +1101,6 @@ T3[(2, 2, 1)] = [
     "narrateur|Elle le pose, anse vers le zip, pour le tenir.",
     "enfant-f|Le citron au-dessus.",
     "enfant-f|Plus de pente.",
-    "papa|Merci.",
     "papa|Tes deux mains ont tenu l'anse.",
     "narrateur|Le seau sonne, très bas, contre le sac bleu.",
     "maman|Au salon, le bol n'a pas de pente.",
@@ -1145,7 +1132,6 @@ T3[(2, 2, 2)] = [
     "maman|On glisse les affaires, sans les jeter.",
     "narrateur|Mila glisse le seau, puis le manteau, puis le citron.",
     "enfant-f|Une glissade sage, celle-là.",
-    "maman|Merci.",
     "maman|Tu as choisi la pente du sac.",
     "narrateur|Le métal du toboggan se tait, près du sac rouge.",
     "papa|Le bol, lui, n'est pas une rampe.",
@@ -1181,7 +1167,6 @@ T3[(2, 2, 3)] = [
     "narrateur|Mila tourne le bouton.",
     "narrateur|Le seau entre, droit.",
     "enfant-f|Le citron, je le tiens jusqu'à la maison.",
-    "papa|Merci.",
     "papa|Tu n'as pas relâché l'anse.",
     "narrateur|Un pas sur la rampe, puis le sac vert se ferme.",
     "maman|Le bol n'a pas de vent.",
@@ -1215,7 +1200,6 @@ T3[(2, 3, 1)] = [
     "narrateur|Citron contre l'oreille, à vue.",
     "enfant-f|Plus de poche.",
     "enfant-f|Plus de cachette.",
-    "papa|Merci.",
     "papa|Tu as dénoué le foulard, tout à l'heure.",
     "narrateur|Le doudou a vu le toboggan, dans le sac bleu.",
     "maman|Le bol va voir un soleil, lui.",
@@ -1248,7 +1232,6 @@ T3[(2, 3, 2)] = [
     "narrateur|Mila range.",
     "narrateur|Elle ne recouvre plus le jaune.",
     "enfant-f|Je te vois, soleil.",
-    "maman|Merci.",
     "maman|Tu as laissé la virgule à l'air.",
     "narrateur|L'oreille molle dépasse du sac rouge.",
     "papa|Le bol, au salon, laissera la feuille à l'air, trop.",
@@ -1280,7 +1263,6 @@ T3[(2, 3, 3)] = [
     "maman|Rond le doudou, rond le citron, rond le bouton.",
     "narrateur|Elle glisse le seau, le manteau, le gris, le jaune.",
     "enfant-f|Tous visibles, dans la bouche du sac.",
-    "papa|Merci.",
     "papa|Tu n'as rien caché sous le foulard.",
     "narrateur|La rampe brille, loin du sac vert.",
     "maman|Le bol n'a pas de rampe.",
@@ -1317,7 +1299,6 @@ T3[(3, 1, 1)] = [
     "narrateur|Ballon.",
     "narrateur|Citron à l'air.",
     "maman|Deux ronds, deux mains, tout à l'heure.",
-    "papa|Merci.",
     "papa|Tu n'as pas relâché le jaune pour le fil.",
     "narrateur|La chaîne a fait cling, près du sac bleu.",
     "enfant-f|Le bol n'a pas de fil.",
@@ -1350,7 +1331,6 @@ T3[(3, 1, 2)] = [
     "narrateur|Mila enroule le fil.",
     "narrateur|Elle pose le citron à part.",
     "enfant-f|Vous ne vous mélangez plus.",
-    "maman|Merci.",
     "maman|Tu as séparé l'ombre rouge du jaune.",
     "narrateur|Le ballon a touché le sable, près du sac rouge.",
     "papa|Le bol n'a pas d'ombre rouge.",
@@ -1386,7 +1366,6 @@ T3[(3, 1, 3)] = [
     "narrateur|Manteau.",
     "enfant-f|Cinq.",
     "enfant-f|Tous là.",
-    "papa|Merci.",
     "papa|Tu as compté le jaune, pas seulement le rouge.",
     "narrateur|Un nuage passe au-dessus du sac vert.",
     "maman|Le bol, sous le toit, n'a pas de nuage.",
@@ -1421,7 +1400,6 @@ T3[(3, 2, 1)] = [
     "narrateur|Le manteau.",
     "narrateur|Le citron au fond, à vue.",
     "enfant-f|Un nid qui voyage, pour le bol.",
-    "papa|Merci.",
     "papa|Tes tibias ont ramené le seau.",
     "narrateur|L'anse du seau est froide, contre le sac bleu.",
     "maman|Le bol n'a pas d'anse.",
@@ -1456,7 +1434,6 @@ T3[(3, 2, 2)] = [
     "narrateur|Elle ne met plus le seau sous ses pieds.",
     "enfant-f|Le nid, dans le sac.",
     "enfant-f|Pas sous les talons.",
-    "maman|Merci.",
     "maman|Tu as changé la place du seau.",
     "narrateur|Un cling lointain, et le sac rouge se ferme.",
     "papa|Le bol n'a pas de cling.",
@@ -1487,7 +1464,6 @@ T3[(3, 2, 3)] = [
     "narrateur|Mila glisse le seau, le manteau, le citron au milieu.",
     "enfant-f|Le nid au milieu, comme sous la balançoire.",
     "enfant-f|Mais fermé.",
-    "papa|Merci.",
     "papa|Tu as fermé le nid, cette fois.",
     "narrateur|Le seau jaune pose son ombre au sac vert.",
     "maman|Le bol a un rond de lumière, pas d'ombre de seau.",
@@ -1519,7 +1495,6 @@ T3[(3, 3, 1)] = [
     "narrateur|Manteau.",
     "narrateur|Jaune à vue, contre le gris.",
     "enfant-f|Les mains, pas l'air.",
-    "papa|Merci.",
     "papa|Tu as cherché la virgule, pas la colère.",
     "narrateur|Le doudou a senti le vent, dans le sac bleu.",
     "maman|Le bol n'a pas de vent.",
@@ -1553,7 +1528,6 @@ T3[(3, 3, 2)] = [
     "narrateur|Mila ne lance plus.",
     "narrateur|Elle pose.",
     "enfant-f|Posé, pas lancé.",
-    "maman|Merci.",
     "maman|Tes mains ont appris le passage.",
     "narrateur|La chaîne se tait, près du sac rouge.",
     "papa|Le bol n'a pas de chaîne.",
@@ -1585,7 +1559,6 @@ T3[(3, 3, 3)] = [
     "maman|Rond l'oreille, rond le citron, rond le bouton.",
     "narrateur|Elle glisse le doudou, le seau, le manteau, le jaune.",
     "enfant-f|Le campement du salon va tout revoir.",
-    "papa|Merci.",
     "papa|Tu as ramassé entre les pieds de bois.",
     "narrateur|L'oreille grise dépasse du sac vert.",
     "maman|Le bol a un rond de lumière, qui t'attend.",
@@ -1847,7 +1820,7 @@ def main() -> None:
         "- **Structure conservée :** 86 nœuds, trois choix à trois options, "
         "27 chemins et 27 fins distinctes\n\n"
         "## Promesse narrative\n\n"
-        "L'horloge du salon répond au clic du citron dans le bol bleu. Mila veut "
+        "L'horloge du salon répond à un clic, plus petit, dans le bol bleu. Mila veut "
         "porter ce citron au parc pour qu'il soit le soleil du jeu, puis le ramener "
         "avant la limonade. Une feuille verte, mince, reste collée dessus : une "
         "virgule. Elle l'attrape trop vite : le bol bascule, le jaune file sous le "
@@ -1856,7 +1829,7 @@ def main() -> None:
         "rassemblent seau, manteau, jeu et citron. Au retour, le bol retrouve son "
         "soleil, et la virgule a voyagé.\n\n"
         "## Améliorations appliquées\n\n"
-        "- Ouverture : deux bruits se répondent (toc / clic), puis l'objet. "
+        "- Ouverture : l'horloge répond à un clic nouveau, puis l'objet. "
         "Pas « Aujourd'hui, je mène la mission ».\n"
         "- Indice unique du début : la virgule verte, payée à chaque fin.\n"
         "- Corps : sourire disparu, envie et inquiétude dans la poitrine, "
@@ -1867,7 +1840,7 @@ def main() -> None:
         "- T1 ne retire pas l'équipement (citron, seau, manteau).\n"
         "- T3 : sacs (plus Tom / Léa / Sami). Leçon dans le geste de rassembler.\n"
         "- 27 fins textuellement distinctes, dernière image unique.\n"
-        "- Un merci vécu (confirmations et sacs), question d'adulte.\n"
+        "- Un merci vécu (Mila reprend seau et manteau), question d'adulte.\n"
         "- Pas de « encore / déjà / tout doux », pas merle, pas miel, pas apply.\n\n"
         "## Direction vocale\n\n"
         "TTS par chunk (opening/choice/clue/confirm/action/obstacle/resolution/ending) : "
