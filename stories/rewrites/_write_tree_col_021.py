@@ -233,7 +233,7 @@ def t1_passage(a: int) -> list[tuple[str, str]]:
             "papa|Elle chauffe, sur le radiateur.",
             "narrateur|Maman tend la chaussette chaude.",
             "narrateur|Victorino enfile le coton tiède.",
-            "papa|Les bottes font un petit ploc.",
+            "papa|Elles font ploc.",
         )
     return L(
         "narrateur|Victorino prend son bateau de papier.",
@@ -268,7 +268,7 @@ def t1_q(a: int) -> tuple[list[tuple[str, str]], dict]:
     if a == 2:
         return L(
             "narrateur|Une botte attend son coton.",
-            "maman|Que manque-t-il, pour la botte ?",
+            "maman|Il manque quoi, pour la botte ?",
         ), dict(
             expected_answer="chaussette",
             accepted_examples="chaussette | une chaussette | le coton | coton",
@@ -276,7 +276,7 @@ def t1_q(a: int) -> tuple[list[tuple[str, str]], dict]:
         )
     return L(
         "narrateur|Victorino a un plan, pour l'eau.",
-        "papa|Que veut-il poser sur la flaque ?",
+        "papa|Il veut poser quoi, sur la flaque ?",
     ), dict(
         expected_answer="bateau",
         accepted_examples="bateau | le bateau | papier | le papier",
@@ -300,7 +300,7 @@ def t1_confirm(a: int) -> list[tuple[str, str]]:
         return L(
             "enfant-m|La chaussette !",
             "narrateur|Oui, la chaussette du radiateur.",
-            "narrateur|Maman l'a entendue, cette fois.",
+            "narrateur|Maman a entendu, cette fois.",
             "papa|Merci, Victorino.",
             "papa|Tes mots sont arrivés.",
             "narrateur|Les bottes font un petit ploc.",
@@ -459,6 +459,7 @@ def t3_body(b: int, c: int) -> list[tuple[str, str]]:
         (3, 3): L(
             "narrateur|Victorino choisit de regarder.",
             "narrateur|Papa garde les mains loin de l'arrosoir.",
+            "narrateur|Une goutte reste au bec de l'arrosoir.",
             "maman|Il avance vers toi, Victorino.",
             "narrateur|Victorino ne répond pas.",
             "narrateur|Il laisse le silence au bateau.",
@@ -662,7 +663,7 @@ def main() -> None:
             "narrateur|Le cacao fait un petit nuage.",
             "papa|Voilà, je t'écoute.",
             "enfant-m|Je veux aller à la flaque.",
-            "maman|Avec quoi commençons-nous ?",
+            "maman|On commence avec quoi ?",
         ),
         "opening",
         extra={"sons": "goutte,cacao"},
@@ -672,7 +673,7 @@ def main() -> None:
         by["CHK_T0001_P0000"],
         L(
             "narrateur|Victorino peut prendre le ciré, les bottes, ou le bateau.",
-            "maman|Que prends-tu pour la flaque ?",
+            "maman|Tu prends quoi, pour la flaque ?",
         ),
         "choice",
         extra={
@@ -686,7 +687,7 @@ def main() -> None:
 
     t1_sons = {1: "crochet,goutte", 2: "bottes", 3: "papier"}
     t1_emp = {1: "ciré", 2: "bottes", 3: "bateau"}
-    t1_q_emp = {1: "goutte", 2: "chaussette", 3: "bateau"}
+    t1_q_emp = {1: "capuchon", 2: "botte", 3: "flaque"}
 
     for a in (1, 2, 3):
         base = f"CHK_T0001_P000{a}"
@@ -698,13 +699,13 @@ def main() -> None:
             "clue",
             extra={"emphasis": t1_q_emp[a], "fields": q_fields},
         )
-        voice(by[f"{base}_C0001"], t1_confirm(a), "confirm", extra={"emphasis": t1_q_emp[a]})
+        voice(by[f"{base}_C0001"], t1_confirm(a), "confirm", extra={"emphasis": t1_emp[a]})
         voice(
             by[f"{base}_T0002_P0000"],
             L(
                 "narrateur|Dehors, l'eau brille en trois endroits.",
                 "papa|La flaque du portail, la gouttière, ou le bac ?",
-                "maman|Où allons-nous ?",
+                "maman|On va où ?",
             ),
             "choice",
             extra={
