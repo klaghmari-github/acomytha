@@ -3,10 +3,15 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Le soir, gare de colline, train de montagne. Chouchou veut que le hérisson tout rond et le renard de bois tout mince voient le tunnel ensemble. T1 = châle bleu / boîte à biscuits / ficelle de laine (les trois partent). T2 = filet (mailles trop lâches) / banquette chaude (vinyle trop lisse) / passage entre les voitures (plancher qui tremble). T3 = neuf résolutions (nid de laine, boîte dans le filet, contre soi ; vallée du châle, maison-boîte, ficelle au dossier ; poitrine, marche, attendre le calme). La leçon se vit : on les garde tous les deux, sans blague sur le corps. Fin : le noir du tunnel, puis la neige.
+Soir, gare de colline : pont, fer mouillé, lampe jaune, cacao. Chouchou veut que le hérisson rond et le renard de bois voient le tunnel ensemble. Première idée : elle prend le plus facile, le renard tombe dans le sac. Papa remercie qu'elle l'ait repris avec l'autre. T1 = châle / boîte / ficelle (elle enroule, ferme ou noue trop vite un seul, puis les deux). T2 = filet trop lâche / banquette trop lisse / passage qui tremble : ils se séparent, elle retient un mot sur les corps. T3 change le geste (nid, cabine, bras ; vallée, maison, ceinture ; poitrine, marche, attendre). Chaque fin paie le noir du tunnel, puis une neige unique (maille, couvercle, manteau, buée, vinyle, fente, fer, couloir). La leçon se vit : on les garde ensemble, sans blague. Autre récit que TREE-DIF-041 (pas mer, pas pain, pas Nina).
 
 ## Vu et corrigé
-N3 ≤ 16. Lina hors troupe → Chouchou, papa/maman. Slogan « Plus rond ou plus mince » jeté. Autre récit que DIF-041 (pas mer, pas pain, pas Nina), DIF-043 (pas canards, pas parc) et DIF-035 (pas poupées, pas bain). Un merci de papa lié au geste (sortir les deux sans les bousculer). Pas de « bon travail ». Audio non cuit.
+- Titre noyau conservé. N3 ≤ 16. Troupe D16 : Chouchou, papa, maman.
+- Slogan « Plus rond ou plus mince » jeté. Première idée échoue (un seul voyageur, le pli du sac).
+- 27 fins textuellement distinctes. Un merci vécu (reprendre les deux), pas un refrain Bravo.
+- TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/resolution/ending).
+- `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
+- Tics « tout doux / tout calme / encore / déjà » écartés. Hérisson lent et lourd, renard vif et glissant : deux rythmes, même voyage.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
