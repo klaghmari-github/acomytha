@@ -20,7 +20,7 @@ Fin de jour, maison au-dessus de la place. Un cerf-volant rouge s'accroche au fi
 - Un merci vécu (papa, après la phrase achevée). Une question d'adulte. `en ce moment`.
 - Pas de « on lève la main / on attend / puis on parle ». Pas de tics tout doux / tout calme.
 - `check()` N3 ≤ 16 mots/phrase. `text` = `script`. TTS renseigné sur 86 chunks.
-- Chemins : 628–662 mots (moy 644).
+- Chemins : 625–662 mots (moy 644).
 
 ## Non vérifié
 

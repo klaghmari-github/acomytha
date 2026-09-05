@@ -640,7 +640,7 @@ T3_PASS = {
         "maman|Pardon, on était loin.",
         "maman|Montre ton trait.",
         "enfant-m|Le jaune, c'est le soleil sur le rouge.",
-        "papa|On croirait le figuier, en miniature.",
+        "papa|On dirait le figuier, plus petit.",
         "narrateur|Farine et craie se touchent, sur sa main.",
         "narrateur|Deux blancs différents, l'un chaud, l'un sec.",
         "maman|Le pain peut veiller le dessin.",
@@ -649,7 +649,7 @@ T3_PASS = {
         "narrateur|Aniss lève l'ardoise vers le volet, craie au poing.",
         "narrateur|Il veut finir la queue dehors.",
         "enfant-m|Un trait, juste un !",
-        "narrateur|Le mot trop vite se perd dans le vent.",
+        "narrateur|Sa phrase trop vite se perd dans le vent.",
         "narrateur|Le volet bouge, le trait dérape.",
         "narrateur|Aniss recule d'un pas, sur le tapis.",
         "narrateur|Il attend que le bois tienne.",
@@ -665,7 +665,7 @@ T3_PASS = {
         "narrateur|Aniss tend l'ardoise, les talons levés.",
         "enfant-m|Je l'accroche !",
         "narrateur|Papa parle, et le tabouret penche.",
-        "narrateur|Aniss ravalé son cri.",
+        "narrateur|Aniss ravale son cri.",
         "narrateur|Il attend que papa tienne le bois.",
         "papa|Je te tiens.",
         "papa|Vas-y, doucement.",
@@ -700,7 +700,7 @@ T3_PASS = {
         "papa|Je retiens le bois.",
         "papa|Parle, maintenant.",
         "enfant-m|Dehors il danse, ici il tient.",
-        "maman|Deux danses, une seule histoire de queue.",
+        "maman|Deux danses, et une seule queue.",
         "narrateur|Sa main haute garde le volet.",
         "narrateur|Le tabouret ne bouge plus.",
         "narrateur|Un fil de laine s'accroche à son talon.",
@@ -745,7 +745,7 @@ T3_PASS = {
         "papa|Les pièces sont sages.",
         "papa|Ouvre le volet, on compare.",
         "enfant-m|Pâle ici, rouge là-bas.",
-        "maman|Deux versions, une même queue.",
+        "maman|Deux queues, une pâle, une rouge.",
         "narrateur|L'éponge laisse un rond sur le bois.",
         "narrateur|Sa main écarte le volet, sans claquer.",
         "narrateur|Le figuier entre dans la cuisine.",
@@ -783,12 +783,12 @@ T3_PASS = {
     (2, 2, 3): L(
         "narrateur|Aniss porte craie et ardoise vers le volet.",
         "narrateur|Il veut la dernière ligne pendant que papa parle.",
-        "enfant-m|La nervure de la feuille !",
+        "enfant-m|Le trait de la feuille !",
         "narrateur|Le volet cède d'un souffle.",
         "narrateur|La ligne part de travers.",
         "narrateur|Aniss pose la craie, les lèvres closes.",
         "papa|Je tiens le volet.",
-        "papa|Recommence la nervure.",
+        "papa|Recommence le trait de feuille.",
         "enfant-m|Voilà, elle rejoint le figuier.",
         "maman|Le volet dort, la ligne est nette.",
         "narrateur|Un grain jaune reste au loquet.",
@@ -808,7 +808,7 @@ T3_PASS = {
         "enfant-m|Il surveille la table.",
         "maman|Le tabouret rentre, l'ardoise veille.",
         "narrateur|Sa main quitte le bois, un peu blanche.",
-        "narrateur|Une miette orpheline reste sur une barre.",
+        "narrateur|Une miette oubliée reste sur une barre.",
     ),
     (2, 3, 2): L(
         "narrateur|Du tabouret, Aniss tend l'ardoise vers le pain.",
@@ -826,7 +826,7 @@ T3_PASS = {
         "narrateur|Sa main sent le pain, de loin.",
     ),
     (2, 3, 3): L(
-        "narrateur|Aniss hisse le tabouret contre le volet.",
+        "narrateur|Aniss pousse le tabouret contre le volet.",
         "narrateur|Du haut, le figuier remplit la vitre.",
         "enfant-m|Il est énorme !",
         "narrateur|Papa veut fermer un peu, à cause du soleil.",
@@ -851,7 +851,7 @@ T3_PASS = {
         "narrateur|Le triangle pâle se pend, un peu froid.",
         "enfant-m|Les feuilles tapent, contre le verre.",
         "papa|Elles applaudissent, peut-être.",
-        "narrateur|L'éponge reste sur le rebord, en sentinelle.",
+        "narrateur|L'éponge reste sur le rebord, comme une garde.",
         "narrateur|Sa main laisse un croissant d'eau sous le clou.",
         "maman|On le verra, chaque fois qu'on ouvre.",
     ),
@@ -861,7 +861,7 @@ T3_PASS = {
         "enfant-m|On mange avec lui !",
         "narrateur|Papa pose deux tasses, et compte à voix haute.",
         "narrateur|L'ardoise glisse d'un souffle.",
-        "narrateur|Aniss la plaque, sans parler.",
+        "narrateur|Aniss la retient, sans parler.",
         "narrateur|Il attend la deuxième tasse.",
         "papa|Voilà, c'est posé.",
         "papa|Ton dessin peut s'asseoir.",
@@ -897,7 +897,7 @@ T3_PASS = {
         "enfant-m|Il chauffe le cerf-volant du mur.",
         "papa|Une virgule jaune reste sous le clou, en trop.",
         "narrateur|Aniss la chasse d'un doigt.",
-        "narrateur|Sa main porte un petit astre.",
+        "narrateur|Sa main porte un petit soleil.",
         "maman|Le clou a son étoile.",
     ),
     (3, 2, 2): L(
@@ -971,7 +971,7 @@ T3_PASS = {
         "papa|Montre.",
         "enfant-m|Le tabouret, le volet, et ma main.",
         "maman|Trois choses sages, et un cerf-volant.",
-        "narrateur|Le bois, le bois, et la peau se tiennent.",
+        "narrateur|Tabouret, volet, et main restent collés.",
         "narrateur|Dehors, le rouge reste, pour un peu.",
         "narrateur|Sa main, au loquet, ne serre plus trop.",
     ),
@@ -1031,7 +1031,7 @@ def ending(a: int, b: int, c: int) -> list[str]:
         "papa|À toi, Aniss.",
         "papa|Nous t'écoutons jusqu'au bout.",
         f"enfant-m|J'ai dessiné {spoken}, avec {tool}, puis {fin}.",
-        "maman|On a entendu toute ta phrase.",
+        "maman|Tes mots sont arrivés, cette fois.",
         f"narrateur|{hand}",
         f"narrateur|{last}",
     )
@@ -1109,7 +1109,7 @@ def main() -> None:
         "Un cerf-volant rouge s'accroche au figuier. Aniss veut le copier "
         "sur l'ardoise verte avant le vent. Sa première phrase se perd, "
         "la craie casse, sa main se couvre de poussière. Sur le tapis, "
-        "la table ou la fenêtre, il apprend à attendre la fin des voix. "
+        "la table ou la fenêtre, il attend la fin des voix. "
         "L'éponge, la craie ou le tabouret changent le dessin. Le clou, "
         "le pain ou le volet lui donnent enfin des oreilles. Le soir, "
         "l'ardoise garde le cerf-volant, et sa main n'est plus trop pressée."
