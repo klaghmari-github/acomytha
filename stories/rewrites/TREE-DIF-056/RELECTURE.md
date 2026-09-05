@@ -28,7 +28,7 @@ Nina veut la bulle **maintenant**. Papa et maman veulent marcher. Poussière, ch
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 558 à 583 mots par chemin (moyenne 567)
+- 568 à 594 mots par chemin (moyenne 578)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

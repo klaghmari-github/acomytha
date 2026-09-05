@@ -842,7 +842,7 @@ T3 = {
         "papa|Le tilleul n'a plus claqué.",
         "enfant-f|Maintenant, tu peux rester.",
         "narrateur|Fermé, le savon attend contre son pouce.",
-        "narrateur|Elle recapsule entre deux souffles.",
+        "narrateur|Elle remet le bouchon entre deux souffles.",
         "enfant-f|J'ouvre quand ça se tait.",
         "maman|Tu as laissé les feuilles finir.",
     ],
@@ -1090,6 +1090,8 @@ ENDINGS = {
         "papa|Le gravier s'est tu, pour toi.",
         "maman|La cloche n'a pas sonné.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|La goutte a failli trop tôt.",
+        "enfant-f|Surtout le silence des pas.",
         "narrateur|Une goutte reste au bouchon, face à la larme.",
     ],
     (2, 1, 2): [
@@ -1098,6 +1100,8 @@ ENDINGS = {
         "papa|Tu as vu l'herbe avant de souffler.",
         "maman|Essuie tes genoux, on rentre.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|L'herbe a failli trop piquer.",
+        "enfant-f|Surtout les genoux bas.",
         "narrateur|Le flacon penche dans l'herbe, bouchon fermé.",
     ],
     (2, 1, 3): [
@@ -1106,6 +1110,8 @@ ENDINGS = {
         "papa|Le bord n'a pas soulevé.",
         "maman|L'herbe est retombée, plus loin.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|L'ovale a failli trop s'étaler.",
+        "enfant-f|Surtout le bord d'herbe.",
         "narrateur|Le savon a laissé un ovale au bord de l'allée.",
     ],
     (2, 2, 1): [
@@ -1114,6 +1120,8 @@ ENDINGS = {
         "papa|L'ombre vous a aidées.",
         "maman|Le bronze sent le soleil, moins fort.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|Le savon a failli trop sécher.",
+        "enfant-f|Surtout sous l'ombre.",
         "narrateur|Le bronze tiède ne fume plus sous l'ombre.",
     ],
     (2, 2, 2): [
@@ -1122,6 +1130,8 @@ ENDINGS = {
         "papa|Tu n'as pas soufflé trop fort.",
         "maman|L'oiseau était plus frais, d'abord.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|Le reflet a failli trop glisser.",
+        "enfant-f|Surtout le bec, d'abord.",
         "narrateur|L'oiseau tient un reflet de savon, minuscule.",
     ],
     (2, 2, 3): [
@@ -1130,6 +1140,8 @@ ENDINGS = {
         "papa|Tu t'es glissée, comme l'ombre.",
         "maman|Vos mains sentent le savon.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|La manche a failli trop coller.",
+        "enfant-f|Surtout tout contre le socle.",
         "narrateur|Le flacon colle à sa manche, face au socle.",
     ],
     (2, 3, 1): [
@@ -1138,6 +1150,8 @@ ENDINGS = {
         "papa|Le tilleul n'a plus claqué.",
         "maman|Vos manches sentent le tilleul.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|Le bouchon a failli trop tôt.",
+        "enfant-f|Surtout entre deux souffles.",
         "narrateur|Une feuille s'immobilise, loin du flacon.",
     ],
     (2, 3, 2): [
@@ -1146,6 +1160,8 @@ ENDINGS = {
         "papa|Tu n'as pas couru.",
         "maman|Tes doigts sentent le savon.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|Le savon a failli trop s'envoler.",
+        "enfant-f|Surtout à l'abri du tronc.",
         "narrateur|Derrière le tronc, le savon ne tremble plus.",
     ],
     (2, 3, 3): [
@@ -1154,6 +1170,8 @@ ENDINGS = {
         "papa|Le petit rond n'a pas volé.",
         "maman|Le savon est sec, on rentre.",
         "narrateur|Le flacon reste fermé, une goutte au bouchon.",
+        "narrateur|Deux gouttes ont failli trop venir.",
+        "enfant-f|Surtout la toute petite.",
         "narrateur|Une toute petite goutte sèche sur la larme.",
     ],
     (3, 1, 1): [
@@ -1162,6 +1180,8 @@ ENDINGS = {
         "papa|Le gravier s'est tu, pour toi.",
         "maman|La cloche n'a pas sonné.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le miroir a failli trop pencher.",
+        "enfant-f|Surtout le tenir droit.",
         "narrateur|La coupelle sèche près du gravier, un cercle net.",
     ],
     (3, 1, 2): [
@@ -1170,6 +1190,8 @@ ENDINGS = {
         "papa|Tu as vu l'herbe avant de souffler.",
         "maman|Essuie tes genoux, on rentre.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le bol a failli trop verser.",
+        "enfant-f|Surtout posé dans l'herbe.",
         "narrateur|Un miroir de savon reste au fond de la coupelle.",
     ],
     (3, 1, 3): [
@@ -1178,6 +1200,8 @@ ENDINGS = {
         "papa|Le bord n'a pas soulevé.",
         "maman|L'herbe est retombée, plus loin.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le gris a failli trop entrer.",
+        "enfant-f|Surtout hors du gravier.",
         "narrateur|L'herbe a pris un rond, au bord de l'allée.",
     ],
     (3, 2, 1): [
@@ -1186,6 +1210,8 @@ ENDINGS = {
         "papa|L'ombre vous a aidées.",
         "maman|Le bronze sent le soleil, moins fort.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le bol a failli trop fumer.",
+        "enfant-f|Surtout le miroir froid.",
         "narrateur|La coupelle se tait à l'ombre, contre le socle.",
     ],
     (3, 2, 2): [
@@ -1194,6 +1220,8 @@ ENDINGS = {
         "papa|Tu n'as pas soufflé trop fort.",
         "maman|L'oiseau était plus frais, d'abord.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le bec a failli trop garder le rond.",
+        "enfant-f|Surtout le pencher vers l'oiseau.",
         "narrateur|L'oiseau voit le rond, collé à la larme.",
     ],
     (3, 2, 3): [
@@ -1202,6 +1230,8 @@ ENDINGS = {
         "papa|Tu t'es glissée, comme l'ombre.",
         "maman|Vos mains sentent le savon.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le bol a failli trop loin.",
+        "enfant-f|Surtout le lever tout près.",
         "narrateur|La coupelle reste plate, tout contre le bronze.",
     ],
     (3, 3, 1): [
@@ -1210,6 +1240,8 @@ ENDINGS = {
         "papa|Le tilleul n'a plus claqué.",
         "maman|Vos manches sentent le tilleul.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Une feuille a failli trop tomber.",
+        "enfant-f|Surtout la paume dessus.",
         "narrateur|Les feuilles se taisent, au-dessus de la coupelle.",
     ],
     (3, 3, 2): [
@@ -1218,6 +1250,8 @@ ENDINGS = {
         "papa|Tu n'as pas couru.",
         "maman|Tes doigts sentent le savon.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le bol a failli trop basculer.",
+        "enfant-f|Surtout au pied du tronc.",
         "narrateur|Derrière le tronc, la coupelle n'a pas versé.",
     ],
     (3, 3, 3): [
@@ -1226,6 +1260,8 @@ ENDINGS = {
         "papa|Le petit rond n'a pas volé.",
         "maman|Le savon est sec, on rentre.",
         "narrateur|La coupelle sèche près du gravier, un cercle de savon.",
+        "narrateur|Le grand rond a failli trop partir.",
+        "enfant-f|Surtout le petit cercle.",
         "narrateur|Un tout petit miroir dort au fond, sous la larme.",
     ],
 }
