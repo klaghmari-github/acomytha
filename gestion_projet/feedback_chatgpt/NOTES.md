@@ -53,3 +53,22 @@ Passe `avis2.txt` (4 sept. 23:58, SSD, commit GitHub `ae4eb67` alors) :
 Commerce démo vs Stripe, vente sans audio, voix facturée sans enregistrement, commandes sans livraison, ASR, hors-ligne, FX WAV manquants, durées < 3 min sur les 2 audios témoins, `validate.py` encore collé aux JSON disparus, collection pilote 12+3 avant vente.
 
 La vitrine peut rester chaleureuse ; ne pas compter comme « produit disponible » un fichier sans audio validé.
+
+Passe `examples/example2/` (5 sept. matin, SSD) — **F-NAR-019**, commit `45e0e23c` :
+
+- **Nouveau.** `text_xai_tags` était identique à `text` sur 16 499 segments : inutile. Remplir tags expressifs + `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration).
+- **Nouveau.** Chaque chemin ramifié = une vraie histoire (imprévu, 1re tentative ratée, péripéties, climax, fin qui paie le début). 27 fins distinctes, pas 27 calques.
+- **Nouveau.** Vocabulaire simple mais divers ; tics corpus (« tout doux », « encore », « déjà ») à casser. Style humain, pas fiche pédagogique.
+- **Étalon.** TREE-COL-015 *Aniss et le secret de la trace d'argent* (example2) : à intégrer après `_lib.check` (couper phrases N2, un merci vécu). Ne pas coller l’escargot ailleurs.
+- **Priorité audit.** P0 = 25 ramifiés (score ~37–54), dont COL-015/016/021/025/026/030/031/034. Puis P1 (68), P2 (58). ATOM ensuite.
+- Apply/dump : colonnes vocales persistées (`rewrite_story.py`).
+
+Passe `examples/example1/` (5 sept., SSD puis worktree) — **intégré** dans `TREE-AUT-001` :
+
+- **Déjà couvert** : désir bateau/jardin, 9 aventures = destination × résolution, pas de morale dite, graphe 86 chunks.
+- **Nouveau et gardé.** T1 ne prive plus d’un objet : on choisit **lequel on prépare d’abord**, puis manteau + bottes + linge partent tous. Les trois réapparaissent à l’arrivée et au retour.
+- **Nouveau et gardé.** Urgence douce (le soleil sèche l’eau). Promesse (rapporter une histoire / un trésor) tenue par un souvenir distinct à chaque fin.
+- **Nouveau et gardé.** T3 bac : canal ou piste de sable, plus « un autre bateau » (ça cassait le projet promis).
+- **Modifié à l’intégration (N1).** Titre catalogue inchangé. « en ce moment » ajouté. « aujourd’hui, » / possède / expédition / proue / immobilise / scintille adoucis. Papa : « Merci, on t’attendra. »
+- **Pas copié tel quel.** « Capitaine / navire / volet jaune » restent **dans cette histoire** (c’est l’étalon bateau). Toujours interdit de les recoller ailleurs (avis2).
+- **Passe orale.** Les puces « première / deuxième / troisième » et les faits empilés ont été reliés avant le bake audio.

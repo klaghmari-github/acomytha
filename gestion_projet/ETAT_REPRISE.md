@@ -133,7 +133,7 @@ Audio **gitignoré** sauf `TREE-SEC-001/` et `ATOM-SAN.ALI.001-01/`.
 - `import_all` ne laisse plus les 764 TREE archive dans sqlite.
 
 ### Textes TREE live (79)
-- AUT-001 **étalon** (avis1 + avis2) : *Le bateau d’Amir et la rivière du jardin*.
+- AUT-001 **étalon** (avis1 + avis2 + example1) : *Le bateau d’Amir et la rivière du jardin*. T1 = préparer d’abord un objet, les trois partent ; 9 résolutions. Source `feedback_chatgpt/examples/example1/`. Audio local cuit (86 wav/mp3, gitignoré).
 - AUT-002–040, 045–048 promus (qualité variable, pas tous au niveau avis2).
 - COL-001 **réécrit avis2** : pomme qui s’échappe ; T3 = on ramasse / on attend / on invente ; plus « L’histoire est finie » (`b979be8a`).
 - COL-002–006 : récits 86 nœuds, D16, leçon implicite.
