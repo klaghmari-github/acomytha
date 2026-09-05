@@ -173,6 +173,7 @@ def qf(ans: str, acc: str, retry: str) -> dict:
 T1 = {
     1: dict(
         nom="le bac à sable",
+        de="du bac à sable",
         sons="sable,linge",
         q_ans="maman",
         q_acc="maman | papa | raconter | dire | ventre",
@@ -213,6 +214,7 @@ T1 = {
     ),
     2: dict(
         nom="le toboggan",
+        de="du toboggan",
         sons="metal,vent",
         q_ans="secret",
         q_acc="secret | ventre | voix | raconter | papa",
@@ -251,6 +253,7 @@ T1 = {
     ),
     3: dict(
         nom="les balançoires",
+        de="des balançoires",
         sons="corde,herbe",
         q_ans="raconter",
         q_acc="raconter | parler | dire | ventre | arrêter",
@@ -437,11 +440,11 @@ T3_SONS = {1: "poule,foin", 2: "clochette,foin", 3: "poulain,foin"}
 
 def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     """Climax unique : l'animal + l'objet + le lieu changent l'action."""
-    lieu, jouet, animal = T1[t1]["nom"], T2_NOM[t2], T3_NOM[t3]
+    lieu, de, jouet, animal = T1[t1]["nom"], T1[t1]["de"], T2_NOM[t2], T3_NOM[t3]
     if t3 == 1:  # poule
         if t2 == 1:
             return L(
-                f"narrateur|Près de {lieu}, la poule picore autour du ballon.",
+                f"narrateur|Près {de}, la poule picore autour du ballon.",
                 "narrateur|Elle tourne. Une plume blonde reste dans l'herbe.",
                 "enfant-f|La voix a dit : son œuf est à nous.",
                 "narrateur|Sarah avance la main. Puis elle la retire.",
@@ -452,11 +455,11 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
                 "maman|Elle a son nid. Nous, le nôtre.",
                 "enfant-f|J'ai regardé avant la main.",
                 "narrateur|La poule se recouche, cot cot, rassurée.",
-                "papa|Bravo. Tu as vu, puis tu as parlé.",
+                "papa|Tes yeux ont parlé avant ta main.",
             )
         if t2 == 2:
             return L(
-                f"narrateur|La poule s'approche du seau, près de {lieu}.",
+                f"narrateur|La poule s'approche du seau, près {de}.",
                 "narrateur|Elle saute un peu. Un grain tombe.",
                 "enfant-f|La voix a dit de prendre l'œuf, vite.",
                 "narrateur|Sarah pose le seau. Elle ne plonge pas.",
@@ -470,7 +473,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
                 "maman|Merci d'avoir posé le seau, pas la main.",
             )
         return L(
-            f"narrateur|La poule frôle le doudou, près de {lieu}.",
+            f"narrateur|La poule frôle le doudou, près {de}.",
             "narrateur|Elle tire un fil gris, puis recule.",
             "enfant-f|La voix a dit : cache l'œuf dans le doudou.",
             "narrateur|Sarah serre le doudou. Son ventre dit non.",
@@ -486,7 +489,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     if t3 == 2:  # chèvre
         if t2 == 1:
             return L(
-                f"narrateur|La chèvre pose le nez sur le ballon, près de {lieu}.",
+                f"narrateur|La chèvre pose le nez sur le ballon, près {de}.",
                 "narrateur|Sa clochette sonne, courte, un peu rêche.",
                 "enfant-f|La voix a dit : elle ouvre le loquet, c'est drôle.",
                 "narrateur|Sarah voit le loquet, à demi tiré.",
@@ -501,7 +504,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             )
         if t2 == 2:
             return L(
-                f"narrateur|La chèvre tire le foin du seau, près de {lieu}.",
+                f"narrateur|La chèvre tire le foin du seau, près {de}.",
                 "narrateur|L'anse penche. La clochette s'énerve.",
                 "enfant-f|La voix a dit de la laisser sortir.",
                 "narrateur|Sarah voit le loquet. Elle recule d'un pas.",
@@ -511,11 +514,11 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
                 "narrateur|Sarah pose le seau contre la planche.",
                 "narrateur|La chèvre mange, le poil chaud, rassuré.",
                 "enfant-f|Son dîner, pas la porte.",
-                "papa|Bravo. Tu as fermé la phrase, et le loquet.",
+                "papa|La phrase est fermée, et le loquet aussi.",
                 "narrateur|Un brin de foin reste sur sa barbe.",
             )
         return L(
-            f"narrateur|La chèvre mâchonne le doudou, près de {lieu}.",
+            f"narrateur|La chèvre mâchonne le doudou, près {de}.",
             "narrateur|Un fil gris pend à sa lèvre.",
             "enfant-f|Non ! Il n'est pas à manger !",
             "narrateur|Sarah tend la main, trop vite, trop près.",
@@ -531,7 +534,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     # poulain
     if t2 == 1:
         return L(
-            f"narrateur|Le poulain souffle, près de {lieu}, loin du ballon.",
+            f"narrateur|Le poulain souffle, près {de}, loin du ballon.",
             "narrateur|Sa crinière est en bataille, un peu claire.",
             "enfant-f|La voix a dit : agite le gilet, il court.",
             "narrateur|Le gilet claque. Le poulain recule.",
@@ -546,7 +549,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 2:
         return L(
-            f"narrateur|Le poulain renifle le seau, près de {lieu}.",
+            f"narrateur|Le poulain renifle le seau, près {de}.",
             "narrateur|Le gilet claque au vent. Il recule.",
             "enfant-f|La voix a dit de faire peur, pour rire.",
             "enfant-f|Rire, là, ça me serre.",
@@ -556,7 +559,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Le poulain revient. Son souffle est chaud.",
             "narrateur|Il croque. Une paille d'or bouge sur sa lèvre.",
             "enfant-f|J'ai dit le rire. Puis je l'ai arrêté.",
-            "papa|Bravo. Il mange, sans courir.",
+            "papa|Il mange, sans courir.",
             "narrateur|Le seau reste, vide, comme une auge.",
         )
     return L(
@@ -593,7 +596,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Le ballon, sablé, repose hors du passage.",
             "enfant-f|Le loquet est fermé. J'ai dit, au lieu de rire.",
             "papa|Le gilet a perdu son brin de sable.",
-            "narrateur|La paille d'or brille encore sur le bois.",
+            "narrateur|La paille d'or brille sur le bois.",
             "maman|Le linge rayé ne claque plus.",
             "narrateur|La chèvre mâche, le poil tiède au vent.",
             "narrateur|Le pré redevient large, jusqu'au saule.",
@@ -666,7 +669,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|La paille d'or reste la gardienne du bois.",
             "papa|Son souffle a fait un nid invisible.",
             "narrateur|Une oreille grise a un brin, comme une broche.",
-            "narrateur|Le bac à sable garde un creux, vide et calme.",
+            "narrateur|Le bac à sable garde un creux, vide et lisse.",
         ),
         (2, 1, 1): L(
             "narrateur|Le toboggan refroidit. Le métal perd le soleil.",
@@ -695,7 +698,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Sa crinière est redescendue.",
             "narrateur|La paille d'or accroche le bois, pas le tissu.",
             "maman|Tes paumes n'ont plus le piquant du métal.",
-            "narrateur|Un brin de foin glisse encore sur la rampe.",
+            "narrateur|Un brin de foin glisse sur la rampe.",
             "narrateur|Le hangar avale le dernier rond de soleil.",
         ),
         (2, 2, 1): L(
@@ -739,7 +742,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Ça sent le lait, plus le métal.",
         ),
         (2, 3, 2): L(
-            "narrateur|Le doudou a un fil repris, encore un peu humide.",
+            "narrateur|Le doudou a un fil repris, un peu humide.",
             "narrateur|La chèvre a échangé le gris contre le foin.",
             "enfant-f|J'étais sur la marche. J'ai parlé.",
             "maman|Le loquet a entendu, lui aussi.",
@@ -756,7 +759,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Le gilet, plié, tient chaud aux œufs.",
             "maman|La paille d'or n'a plus rien à retenir.",
             "narrateur|La rampe garde une trace de poil gris.",
-            "narrateur|Le hangar ferme le jour, tout doucement.",
+            "narrateur|Le hangar ferme le jour, sans bruit.",
         ),
         (3, 1, 1): L(
             "narrateur|La balançoire ne bouge plus. La corde se tait.",
