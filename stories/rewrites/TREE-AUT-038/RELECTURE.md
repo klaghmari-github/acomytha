@@ -18,7 +18,7 @@ Square, table de bois, pain tiède, mouche, pigeon, clou de cuivre, seau jaune, 
 
 ## Vu et corrigé
 
-P1 F-NAR-019 example4 v2. Ouverture inventée (tic du bois, fournil, clou qui cligne), pas les cinq manières listées. Indice unique : clou de cuivre, payé au climax (cligne à l'ombre, toc). Corps : sourire disparaît, envie et inquiétude, adulte à la même hauteur. Revers allongé (audit : obstacle trop ponctuel) : 1re traction, butée, serviette ou manche, refuse de foncer, écoute. Fin qui a failli (une seconde, le fournil, le pigeon). Pas gabarit example3. Tics « encore / déjà / tout doux / tout calme » retirés. Troupe D16 Mila. 27 fins, 27 L3, 27 dernières images. TTS par chunk : `notes`, `text_ssml`, `text_xai_tags`, piper 1.10–1.30. `slow` = choix, indice, fins. `check()` N1 OK. Chemins 550–580 mots, moyenne 565. Pas apply.
+P1 F-NAR-019 example4 v2. Ouverture inventée (tic du bois, fournil, clou qui cligne), pas les cinq manières listées. Indice unique : clou de cuivre, payé au climax (cligne à l'ombre, toc). Corps : sourire disparaît, envie et inquiétude, adulte à la même hauteur. Revers allongé (audit : obstacle trop ponctuel) : 1re traction, butée, serviette ou manche, refuse de foncer, écoute. Fin qui a failli (une seconde, le fournil, le pigeon). Pas gabarit example3. Tics « encore / déjà / tout doux / tout calme » retirés. Troupe D16 Mila. 27 fins, 27 L3, 27 dernières images. TTS par chunk : `notes`, `text_ssml`, `text_xai_tags`, piper 1.10–1.30. `slow` = choix, indice, fins. `check()` N1 OK. Chemins 572–608 mots, moyenne 588. Pas apply.
 
 ## Direction vocale
 
@@ -27,7 +27,7 @@ Chaque segment a un arc dans `notes`. Débit, hauteur, volume et pause suivent l
 ## Contrôles
 
 - 86 chunks
-- 27 chemins, 550 à 580 mots, moyenne 565
+- 27 chemins, 572 à 608 mots, moyenne 588
 - 27 fins distinctes, 27 L3 distincts, 27 dernières images
 - `text` = `script` collé
 - 0 occurrence de « encore », « déjà », « tout doux », « tout calme »
