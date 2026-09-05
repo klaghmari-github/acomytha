@@ -625,7 +625,7 @@ def main() -> None:
         "T2 = crête trop venteuse / herbe trop accrochante / écume trop mouillée. "
         "T3 = neuf résolutions (plus bas, attendre, de côté ; plus court, à genoux, sable ; "
         "plus haut, après la vague, loin de l'eau). La leçon se vit : il attend, "
-        "il observe, il répète tout bas. Fin : le rouge vole au-dessus de la mer.",
+        "il compte, il lance quand le vent se tait. Fin : le rouge vole.",
         "N3 ≤ 16. Slogan « Plus de temps ou de calme », Hugo, Tom/Léa/Sami, "
         "bac/toboggan/balançoires, « bon travail », calque AUT-001 jetés. "
         "Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), "
