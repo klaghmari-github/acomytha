@@ -603,7 +603,7 @@ T3 = {
         "enfant-m|Je l'entends, maintenant.",
         "narrateur|Le seau rouge reste contre la jambe.",
         "maman|Le mot est venu, tout seul.",
-        "papa|Tu as laissé la fin.",
+        "papa|Le mot était long, cette fois.",
     ],
     (1, 2, 2): [
         "enfant-m|Mes mains, ici.",
@@ -812,7 +812,7 @@ T3 = {
         "maman|Près des feuilles.",
         "narrateur|Le torchon dort contre sa poche.",
         "papa|Tes mains ont deux métiers.",
-        "maman|Écouter d'abord, essuyer après.",
+        "maman|Le linge peut attendre, un peu.",
     ],
     (3, 2, 3): [
         "enfant-m|Le banc, le torchon sur les genoux.",
@@ -823,7 +823,7 @@ T3 = {
         "enfant-m|Je l'essuie, contre le thym.",
         "narrateur|Le torchon dort contre sa poche.",
         "papa|Le banc a gardé le linge.",
-        "maman|Le mot d'abord, le tissu ensuite.",
+        "maman|Le thym a eu son mot, puis le linge.",
     ],
     (3, 3, 1): [
         "enfant-m|Je dis rien, le torchon reste.",
