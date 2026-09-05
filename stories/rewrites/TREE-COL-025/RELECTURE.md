@@ -20,7 +20,7 @@ Nina veut sauver l'eau de sa plante. Elle crie trop tôt : on entend « gouttiè
 - TTS par fonction (ouverture, choix, indice, action, obstacle, résolution, retour).
 - `slow` réservé aux choix, à l'indice et aux fins.
 - N3 ≤ 16 mots/phrase. Pas de leçon dite. Pas de tics « tout doux / encore / déjà / tout calme ».
-- Chemins : 564–593 mots (moyenne 578).
+- Chemins : 565–594 mots (moyenne 579).
 
 ## Direction vocale
 

@@ -299,7 +299,7 @@ T1 = {
                 "enfant-f|La feuille !",
                 "narrateur|Oui, coincée dans le zinc.",
                 "narrateur|Maman a vu le doigt, puis le coude.",
-                "papa|Merci d'avoir attendu le calme.",
+                "papa|Merci d'avoir laissé le vent passer.",
                 "maman|Le vent nous avait mélangés.",
                 "papa|Montre-nous avec un objet, maintenant.",
             ]
@@ -575,7 +575,7 @@ T2 = {
 T3_Q = {
     (1, 1): vet(
         [
-            "narrateur|Le petit zinc de cubes peut attendre le matin, après la sieste, ou le soir.",
+            "narrateur|Le petit zinc de cubes peut se montrer le matin, après la sieste, ou le soir.",
             "papa|Quand montrons-nous la feuille au vrai zinc ?",
         ]
     ),
@@ -593,7 +593,7 @@ T3_Q = {
     ),
     (2, 1): vet(
         [
-            "narrateur|Les cubes mouillés peuvent attendre le matin, après la sieste, ou le soir.",
+            "narrateur|Les cubes mouillés peuvent servir le matin, après la sieste, ou le soir.",
             "maman|Quand allons-nous au coude ?",
         ]
     ),
@@ -623,7 +623,7 @@ T3_Q = {
     ),
     (3, 3): vet(
         [
-            "narrateur|L'assiette naine peut attendre le matin, après la sieste, ou le soir.",
+            "narrateur|L'assiette naine peut travailler le matin, après la sieste, ou le soir.",
             "papa|Quand attrapons-nous la goutte ?",
         ]
     ),
@@ -882,7 +882,7 @@ RES = {
         "narrateur|Après la sieste, le livre sert de toit au doudou.",
         "narrateur|Nina lève la main, sans le déranger.",
         "papa|Nous t'écoutons.",
-        "enfant-f|On approche le bol, tout doucement.",
+        "enfant-f|On approche le bol, sans le faire tinter.",
         "narrateur|Le filet lent entre.",
         "narrateur|Ils glissent la feuille comme un signet, un instant.",
         "maman|La page a tenu ta place.",
@@ -1141,7 +1141,7 @@ FIN = {
         "enfant-f|La tasse a visé, le bol a reçu.",
         "narrateur|La tasse naine attrape une goutte du rebord.",
         "narrateur|Le basilic tremble, puis se tient.",
-        "narrateur|Nina essuie sa main au rideau, tout doucement.",
+        "narrateur|Nina essuie sa main au rideau, sans bruit.",
     ),
     (3, 3, 2): R(
         "narrateur|L'assiette garde un rond clair.",
@@ -1267,7 +1267,7 @@ def main() -> None:
         "et l'eau rate le pot de basilic de Nina. Elle veut le dire tout de suite, "
         "mais ses mots se cognent à ceux de papa. Cuisine, jardin ou chambre changent "
         "l'obstacle ; cubes, livre ou dînette changent la manière de montrer ; "
-        "matin, sieste ou soir changent le rythme de l'attente. Quand sa main lève "
+        "matin, sieste ou soir changent le rythme de l'attente. Quand sa main ouvre "
         "une place, le bol bleu reçoit enfin l'eau, et le zinc chante plus juste."
     )
     out["title"] = "La gouttière et la main de Nina"
