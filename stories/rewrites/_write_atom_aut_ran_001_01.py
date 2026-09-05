@@ -273,7 +273,7 @@ P0000 = [
     "narrateur|Elle repose sur la chaise.",
     "narrateur|Sur un carreau rouge, un éclat de nappe brille.",
     "enfant-m|Il est tout petit, maman.",
-    "maman|C'est un éclat de nappe.",
+    "maman|C'est le soleil sur le rouge.",
     "narrateur|Le tissu sent un peu le savon.",
     "papa|Raphaël, tu sens le gâteau ?",
     "enfant-m|Oui, papa.",
@@ -382,7 +382,7 @@ END = [
     "narrateur|La vanille remplit le salon.",
     "enfant-m|Le doudou a un carreau.",
     "maman|Oui, le carreau rouge.",
-    "narrateur|L'éclat de nappe tremble sur le rouge.",
+    "narrateur|Le carreau rouge tremble un peu.",
     "papa|Tu veux un peu d'eau ?",
     "enfant-m|Oui, papa.",
     "narrateur|L'eau fait un petit bruit.",
@@ -399,7 +399,7 @@ FIN = [
     "enfant-m|Le gâteau est là.",
     "maman|Oui, tout chaud.",
     "narrateur|Le doudou a un tout petit bout.",
-    "enfant-m|Comme l'éclat de nappe, papa !",
+    "enfant-m|Comme sur la chaise, papa !",
     "papa|Tu le vois, toi ?",
     "enfant-m|Oui, sur le carreau rouge.",
     "narrateur|Raphaël glisse le doudou sans se presser.",
@@ -467,6 +467,9 @@ def main() -> None:
         raise SystemExit(f"{SID}: indice absent à l'ouverture")
     if "éclat de nappe" not in by["CHK_T0000_P0000_END_F0001"]["text"].lower():
         raise SystemExit(f"{SID}: indice non payé à la fin")
+    n_clue = blob.count("éclat de nappe")
+    if n_clue != 4:
+        raise SystemExit(f"{SID}: éclat de nappe ×{n_clue} (voulu 4)")
     if not all(c.get("text_xai_tags") and c.get("notes") and c.get("style_energy") for c in chunks):
         raise SystemExit(f"{SID}: TTS incomplet")
     adults = " ".join(
