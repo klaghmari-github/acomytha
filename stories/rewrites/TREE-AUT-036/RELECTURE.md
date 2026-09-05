@@ -25,7 +25,7 @@ Personne ne donne la réponse. Sarah refuse de foncer, observe la virgule, écou
 - Pas de gabarit v2 : aujourd'hui, merle/miel, Mission accomplie, J'ai compris, jardinier/maîtresse.
 - TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration), `style_energy`, pauses, pitch, volume. `slow` = choix, indice, fin.
 - 27 souvenirs, 27 dernières images. Ouverture + 3 L1 + 9 L2 + 27 L3/fins relus.
-- `check()` N3≤16. Pas apply. Pas git. Pas audio.
+- `check()` N3≤16, ~655–684 mots/chemin. Pas apply. Pas git. Pas audio.
 
 ## Non vérifié
 

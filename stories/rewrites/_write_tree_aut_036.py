@@ -559,17 +559,17 @@ T3_CHOICE = {
     1: [
         "narrateur|Sarah pose le ballon, sans frapper.",
         "papa|Le banc, la grille, ou le cerisier ?",
-        "maman|Où l'oiseau peut-il s'ouvrir tout seul ?",
+        "maman|Où poses-tu le sac, ouvert ?",
     ],
     2: [
         "narrateur|Sarah pose le seau, sans verser.",
         "papa|Le banc, la grille, ou le cerisier ?",
-        "maman|Où l'oiseau peut-il s'ouvrir tout seul ?",
+        "maman|Où poses-tu le sac, ouvert ?",
     ],
     3: [
         "narrateur|Sarah pose le doudou, sans serrer.",
         "papa|Le banc, la grille, ou le cerisier ?",
-        "maman|Où l'oiseau peut-il s'ouvrir tout seul ?",
+        "maman|Où poses-tu le sac, ouvert ?",
     ],
 }
 
@@ -580,7 +580,7 @@ T3 = {
         "narrateur|Le ballon reste dans le sable, loin.",
         "enfant-f|Je pourrais le pousser.",
         "narrateur|Elle retient sa main.",
-        "narrateur|Personne ne dit le geste.",
+        "narrateur|Le banc ne dit rien.",
         "narrateur|Elle regarde la virgule bleue.",
         "narrateur|Un grain tombe, tout seul.",
         "narrateur|L'aile se déplie, sans elle.",
@@ -598,7 +598,7 @@ T3 = {
         "narrateur|La virgule bleue se tourne vers lui.",
         "narrateur|L'oiseau penche, sans main.",
         "maman|Le vent de la grille, pas celui du ballon.",
-        "enfant-f|Il a compris le trou.",
+        "enfant-f|Il a vu le trou.",
         "narrateur|Une feuille coincée tremble, puis se tait.",
         "narrateur|Le sac reste ouvert, contre rien.",
     ],
@@ -1006,7 +1006,7 @@ ENDINGS = {
         "enfant-f|Surtout quand j'ai voulu verser.",
         "maman|L'arbre n'avait pas besoin du seau.",
         "narrateur|Sarah pose le sac au pied du lit.",
-        "narrateur|Les sangles du sac sentent le bois, un peu.",
+        "narrateur|Les sangles du sac sentent la feuille, un peu.",
     ],
     (1, 3, 1): [
         "narrateur|Ils rentrent, le doudou plié, l'oiseau libre.",
@@ -1094,7 +1094,7 @@ ENDINGS = {
         "enfant-f|Surtout le tapis de pente.",
         "maman|La grille a soufflé, sans étouffer.",
         "narrateur|Sarah pose le sac, un peu ouvert.",
-        "narrateur|Le seau pose son ombre ronde sur le tapis.",
+        "narrateur|L'oreille du doudou garde une goutte de métal.",
     ],
     (2, 3, 3): [
         "narrateur|Ils rentrent, un toit de feuilles dans la tête.",
@@ -1102,7 +1102,7 @@ ENDINGS = {
         "enfant-f|Surtout le nœud trop haut.",
         "maman|La branche tenait, sans doudou.",
         "narrateur|Sarah pose le sac au pied du lit.",
-        "narrateur|Le ballon s'endort contre les sangles molles.",
+        "narrateur|Une pétale sèche sur l'oreille du doudou.",
     ],
     (3, 1, 1): [
         "narrateur|Ils rentrent, la chaîne loin derrière.",
@@ -1110,7 +1110,7 @@ ENDINGS = {
         "enfant-f|Surtout le tic sur le sac.",
         "maman|Le banc n'a pas tapé.",
         "narrateur|Sarah pose le sac au pied du lit.",
-        "narrateur|Une pétale sèche sur le rebord, près du livre.",
+        "narrateur|Le ballon s'endort contre les sangles molles.",
     ],
     (3, 1, 2): [
         "narrateur|Ils rentrent, un vent droit dans les oreilles.",
@@ -1380,7 +1380,7 @@ def main() -> None:
         "intensité, destinataire, sous-texte, tempo, sourire, respiration), `style_energy`, "
         "pauses, pitch, volume. `slow` = choix, indice, fin.\n"
         "- 27 souvenirs, 27 dernières images. Ouverture + 3 L1 + 9 L2 + 27 L3/fins relus.\n"
-        "- `check()` N3≤16. Pas apply. Pas git. Pas audio.\n\n"
+        f"- `check()` N3≤16, ~{min(counts)}–{max(counts)} mots/chemin. Pas apply. Pas git. Pas audio.\n\n"
         "## Non vérifié\n\n"
         "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.\n",
         encoding="utf-8",
