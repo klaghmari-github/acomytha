@@ -19,8 +19,8 @@ Mila veut les oranges rondes pour le jus. Au marché, sous la bâche jaune, elle
 
 ## Contrôles
 - 86 chunks, 27 chemins
-- 4491 mots au total
-- 475 à 498 mots par chemin, moyenne 489
+- 4484 mots au total
+- 475 à 497 mots par chemin, moyenne 488
 - `check()` OK
 
 ## Non vérifié
