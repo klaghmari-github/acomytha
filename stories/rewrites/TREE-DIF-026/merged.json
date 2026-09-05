@@ -28,8 +28,8 @@
     {
       "chunk_id": "CHK_T0001_P0000",
       "kind": "transition_question",
-      "text": "Trois affaires attendent près du coffre. Le drap, les pinces, et la marionnette. Tu prends quoi d'abord, Mila ?",
-      "script": "narrateur|Trois affaires attendent près du coffre.\nnarrateur|Le drap, les pinces, et la marionnette.\nmaman|Tu prends quoi d'abord, Mila ?",
+      "text": "Près du coffre, le drap sent encore le soleil. Les pinces cliquettent, la marionnette attend. Tu prends quoi d'abord, Mila ?",
+      "script": "narrateur|Près du coffre, le drap sent encore le soleil.\nnarrateur|Les pinces cliquettent, la marionnette attend.\nmaman|Tu prends quoi d'abord, Mila ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -40,13 +40,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Trois affaires attendent près du coffre. Le drap, les pinces, et la marionnette. Tu prends quoi d'abord, Mila ?"
+      "text_ssml": "Près du coffre, le drap sent encore le soleil. Les pinces cliquettent, la marionnette attend. Tu prends quoi d'abord, Mila ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001",
       "kind": "passage",
-      "text": "Mila prend d'abord le drap à carreaux. Il sent encore le soleil de la fenêtre. Glisse-le dans le panier, tout plié. Le tissu fait un petit froissement. Les pinces, ensuite, dans ta poche. Maman noue la marionnette rouge au poignet. Les trois affaires partent ensemble. Nino, tu portes le panier ? Je le tiens, même un peu flou. Le drap d'abord, vous l'avez.",
-      "script": "narrateur|Mila prend d'abord le drap à carreaux.\nenfant-f|Il sent encore le soleil de la fenêtre.\nmaman|Glisse-le dans le panier, tout plié.\nnarrateur|Le tissu fait un petit froissement.\npapa|Les pinces, ensuite, dans ta poche.\nnarrateur|Maman noue la marionnette rouge au poignet.\nnarrateur|Les trois affaires partent ensemble.\nenfant-f|Nino, tu portes le panier ?\ncopain|Je le tiens, même un peu flou.\npapa|Le drap d'abord, vous l'avez.",
+      "text": "Mila prend d'abord le drap à carreaux. Il sent encore le soleil de la fenêtre. Glisse-le dans le panier, tout plié. Le tissu fait un petit froissement. Les pinces, ensuite, dans ta poche. Maman noue la marionnette rouge au poignet. Tout le théâtre se met en route. Nino, tu portes le panier ? Je le tiens, même un peu flou. Le drap d'abord, vous l'avez.",
+      "script": "narrateur|Mila prend d'abord le drap à carreaux.\nenfant-f|Il sent encore le soleil de la fenêtre.\nmaman|Glisse-le dans le panier, tout plié.\nnarrateur|Le tissu fait un petit froissement.\npapa|Les pinces, ensuite, dans ta poche.\nnarrateur|Maman noue la marionnette rouge au poignet.\nnarrateur|Tout le théâtre se met en route.\nenfant-f|Nino, tu portes le panier ?\ncopain|Je le tiens, même un peu flou.\npapa|Le drap d'abord, vous l'avez.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -57,13 +57,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila prend d'abord le drap à carreaux. Il sent encore le soleil de la fenêtre. Glisse-le dans le panier, tout plié. Le tissu fait un petit froissement. Les pinces, ensuite, dans ta poche. Maman noue la marionnette rouge au poignet. Les trois affaires partent ensemble. Nino, tu portes le panier ? Je le tiens, même un peu flou. Le drap d'abord, vous l'avez."
+      "text_ssml": "Mila prend d'abord le drap à carreaux. Il sent encore le soleil de la fenêtre. Glisse-le dans le panier, tout plié. Le tissu fait un petit froissement. Les pinces, ensuite, dans ta poche. Maman noue la marionnette rouge au poignet. Tout le théâtre se met en route. Nino, tu portes le panier ? Je le tiens, même un peu flou. Le drap d'abord, vous l'avez."
     },
     {
       "chunk_id": "CHK_T0001_P0001_Q0001",
       "kind": "passage_question",
-      "text": "Mila a glissé le drap à carreaux dans le panier. C'est où, maintenant ?",
-      "script": "narrateur|Mila a glissé le drap à carreaux dans le panier.\nmaman|C'est où, maintenant ?",
+      "text": "Le drap à carreaux est dans le panier. Le drap est où ?",
+      "script": "narrateur|Le drap à carreaux est dans le panier.\nmaman|Le drap est où ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -74,7 +74,7 @@
       "expected_answer": "panier",
       "accepted_examples": "panier | le panier | dans le panier | au panier",
       "retry_prompt": "Le drap est dans le panier.",
-      "text_ssml": "Mila a glissé le drap à carreaux dans le panier. C'est où, maintenant ?"
+      "text_ssml": "Le drap à carreaux est dans le panier. Le drap est où ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_C0001",
@@ -96,8 +96,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0000",
       "kind": "transition_question",
-      "text": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?",
-      "script": "narrateur|Le salon a le radiateur tout chaud.\nnarrateur|Des crochets attendent dans le couloir.\nnarrateur|La chambre a le lit, comme une scène.\npapa|Vous jouez où, pour le spectacle ?",
+      "text": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?",
+      "script": "narrateur|Le radiateur du salon fait un air tout chaud.\nnarrateur|Dans le couloir, les crochets attendent, tout hauts.\nnarrateur|Le lit de la chambre ressemble déjà à une scène.\npapa|Vous jouez où, pour le spectacle ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -108,13 +108,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?"
+      "text_ssml": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001",
       "kind": "passage",
-      "text": "Mila déplie le drap entre les deux chaises. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Le drap retombe, Nino n'a pas vu le bord. Le drap à carreaux attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila déplie le drap entre les deux chaises.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|Le drap retombe, Nino n'a pas vu le bord.\nenfant-f|Le drap à carreaux attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila déplie le drap entre les deux chaises. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Le drap retombe, Nino n'a pas vu le bord. Le drap à carreaux attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?",
+      "script": "narrateur|Mila déplie le drap entre les deux chaises.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|Le drap retombe, Nino n'a pas vu le bord.\nenfant-f|Le drap à carreaux attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|La scène est floue, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -125,7 +125,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila déplie le drap entre les deux chaises. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Le drap retombe, Nino n'a pas vu le bord. Le drap à carreaux attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila déplie le drap entre les deux chaises. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Le drap retombe, Nino n'a pas vu le bord. Le drap à carreaux attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0000",
@@ -249,8 +249,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002",
       "kind": "passage",
-      "text": "Mila jette le drap vers le crochet du manteau. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. Le drap glisse, accroché à une mèche mouillée. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila jette le drap vers le crochet du manteau.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|Le drap glisse, accroché à une mèche mouillée.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils séchent, tout doux, ce n'est rien.\npapa|Toi tes nattes tiennent, les siennes gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila jette le drap vers le crochet du manteau. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. Le drap glisse, accroché à une mèche mouillée. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?",
+      "script": "narrateur|Mila jette le drap vers le crochet du manteau.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|Le drap glisse, accroché à une mèche mouillée.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils sèchent, tout doux, ce n'est rien.\npapa|Toi tes cheveux tiennent, les siens gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Le rideau accroche, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -261,7 +261,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila jette le drap vers le crochet du manteau. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. Le drap glisse, accroché à une mèche mouillée. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila jette le drap vers le crochet du manteau. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. Le drap glisse, accroché à une mèche mouillée. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0000",
@@ -283,8 +283,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
       "kind": "passage",
-      "text": "On met la pince plus haut. Mes cheveux restent en bas, alors. Mila clipse le drap plus haut, hors des mèches. Le rideau tient au crochet, tout droit. Les mèches de Nino pendent, libres. Tu peux bouger, maintenant. Le drap ne m'attrape plus. Chacun a sa hauteur, sur le crochet. Les cheveux ont eu leur place.",
-      "script": "enfant-f|On met la pince plus haut.\ncopain|Mes cheveux restent en bas, alors.\nnarrateur|Mila clipse le drap plus haut, hors des mèches.\nnarrateur|Le rideau tient au crochet, tout droit.\nnarrateur|Les mèches de Nino pendent, libres.\nenfant-f|Tu peux bouger, maintenant.\ncopain|Le drap ne m'attrape plus.\npapa|Chacun a sa hauteur, sur le crochet.\nmaman|Les cheveux ont eu leur place.",
+      "text": "On met la pince plus haut. Mes cheveux restent en bas, alors. Mila attache le drap plus haut, hors des mèches. Le rideau tient au crochet, tout droit. Les mèches de Nino pendent, libres. Tu peux bouger, maintenant. Le drap ne m'attrape plus. Chacun a sa hauteur, sur le crochet. Les cheveux ont eu leur place.",
+      "script": "enfant-f|On met la pince plus haut.\ncopain|Mes cheveux restent en bas, alors.\nnarrateur|Mila attache le drap plus haut, hors des mèches.\nnarrateur|Le rideau tient au crochet, tout droit.\nnarrateur|Les mèches de Nino pendent, libres.\nenfant-f|Tu peux bouger, maintenant.\ncopain|Le drap ne m'attrape plus.\npapa|Chacun a sa hauteur, sur le crochet.\nmaman|Les cheveux ont eu leur place.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -295,7 +295,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "On met la pince plus haut. Mes cheveux restent en bas, alors. Mila clipse le drap plus haut, hors des mèches. Le rideau tient au crochet, tout droit. Les mèches de Nino pendent, libres. Tu peux bouger, maintenant. Le drap ne m'attrape plus. Chacun a sa hauteur, sur le crochet. Les cheveux ont eu leur place."
+      "text_ssml": "On met la pince plus haut. Mes cheveux restent en bas, alors. Mila attache le drap plus haut, hors des mèches. Le rideau tient au crochet, tout droit. Les mèches de Nino pendent, libres. Tu peux bouger, maintenant. Le drap ne m'attrape plus. Chacun a sa hauteur, sur le crochet. Les cheveux ont eu leur place."
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001_F0001",
@@ -351,8 +351,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003",
       "kind": "passage",
-      "text": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le drap à deux mains, sans pince. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
-      "script": "enfant-f|Tu tiens le drap, moi je clips à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le drap à deux mains, sans pince.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
+      "text": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le drap à deux mains, sans pince. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
+      "script": "enfant-f|Tu tiens le drap, moi j'attache à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le drap à deux mains, sans pince.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -363,7 +363,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le drap à deux mains, sans pince. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
+      "text_ssml": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le drap à deux mains, sans pince. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0003_F0001",
@@ -385,8 +385,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0003",
       "kind": "passage",
-      "text": "Mila tend le drap au pied du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue emporte un coin du drap. Le drap à carreaux disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila tend le drap au pied du lit.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue emporte un coin du drap.\nnarrateur|Le drap à carreaux disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila tend le drap au pied du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue emporte un coin du drap. Le drap à carreaux disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?",
+      "script": "narrateur|Mila tend le drap au pied du lit.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue emporte un coin du drap.\nnarrateur|Le drap à carreaux disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Le pull et le roi, vous faites comment ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -397,7 +397,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila tend le drap au pied du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue emporte un coin du drap. Le drap à carreaux disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila tend le drap au pied du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue emporte un coin du drap. Le drap à carreaux disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0000",
@@ -521,8 +521,8 @@
     {
       "chunk_id": "CHK_T0001_P0002",
       "kind": "passage",
-      "text": "Mila prend d'abord les pinces, toutes froides. Elles cliquettent dans ma paume. Range-les dans ta poche, tout doux. Le métal fait un petit toc contre le tissu. Le drap, ensuite, dans le panier. Elle glisse la marionnette rouge au poignet. Les trois affaires partent ensemble. Nino, tu clips le bord ? J'essaie, mes lunettes glissent un peu. Les pinces d'abord, elles sont prêtes.",
-      "script": "narrateur|Mila prend d'abord les pinces, toutes froides.\nenfant-f|Elles cliquettent dans ma paume.\npapa|Range-les dans ta poche, tout doux.\nnarrateur|Le métal fait un petit toc contre le tissu.\nmaman|Le drap, ensuite, dans le panier.\nnarrateur|Elle glisse la marionnette rouge au poignet.\nnarrateur|Les trois affaires partent ensemble.\nenfant-f|Nino, tu clips le bord ?\ncopain|J'essaie, mes lunettes glissent un peu.\nmaman|Les pinces d'abord, elles sont prêtes.",
+      "text": "Mila prend d'abord les pinces, toutes froides. Elles cliquettent dans ma paume. Range-les dans ta poche, tout doux. Le métal fait un petit toc contre le tissu. Le drap, ensuite, dans le panier. Elle glisse la marionnette rouge au poignet. Ils avancent, les affaires avec eux. Nino, tu accroches le bord ? J'essaie, mes lunettes glissent un peu. Les pinces d'abord, elles sont prêtes.",
+      "script": "narrateur|Mila prend d'abord les pinces, toutes froides.\nenfant-f|Elles cliquettent dans ma paume.\npapa|Range-les dans ta poche, tout doux.\nnarrateur|Le métal fait un petit toc contre le tissu.\nmaman|Le drap, ensuite, dans le panier.\nnarrateur|Elle glisse la marionnette rouge au poignet.\nnarrateur|Ils avancent, les affaires avec eux.\nenfant-f|Nino, tu accroches le bord ?\ncopain|J'essaie, mes lunettes glissent un peu.\nmaman|Les pinces d'abord, elles sont prêtes.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -533,13 +533,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila prend d'abord les pinces, toutes froides. Elles cliquettent dans ma paume. Range-les dans ta poche, tout doux. Le métal fait un petit toc contre le tissu. Le drap, ensuite, dans le panier. Elle glisse la marionnette rouge au poignet. Les trois affaires partent ensemble. Nino, tu clips le bord ? J'essaie, mes lunettes glissent un peu. Les pinces d'abord, elles sont prêtes."
+      "text_ssml": "Mila prend d'abord les pinces, toutes froides. Elles cliquettent dans ma paume. Range-les dans ta poche, tout doux. Le métal fait un petit toc contre le tissu. Le drap, ensuite, dans le panier. Elle glisse la marionnette rouge au poignet. Ils avancent, les affaires avec eux. Nino, tu accroches le bord ? J'essaie, mes lunettes glissent un peu. Les pinces d'abord, elles sont prêtes."
     },
     {
       "chunk_id": "CHK_T0001_P0002_Q0001",
       "kind": "passage_question",
-      "text": "Mila a glissé les pinces dans la poche. C'est où, maintenant ?",
-      "script": "narrateur|Mila a glissé les pinces dans la poche.\nmaman|C'est où, maintenant ?",
+      "text": "Les pinces sont dans la poche. Les pinces sont où ?",
+      "script": "narrateur|Les pinces sont dans la poche.\nmaman|Les pinces sont où ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -550,7 +550,7 @@
       "expected_answer": "poche",
       "accepted_examples": "poche | la poche | dans la poche | sa poche",
       "retry_prompt": "Les pinces sont dans la poche.",
-      "text_ssml": "Mila a glissé les pinces dans la poche. C'est où, maintenant ?"
+      "text_ssml": "Les pinces sont dans la poche. Les pinces sont où ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_C0001",
@@ -572,8 +572,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0000",
       "kind": "transition_question",
-      "text": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?",
-      "script": "narrateur|Le salon a le radiateur tout chaud.\nnarrateur|Des crochets attendent dans le couloir.\nnarrateur|La chambre a le lit, comme une scène.\npapa|Vous jouez où, pour le spectacle ?",
+      "text": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?",
+      "script": "narrateur|Le radiateur du salon fait un air tout chaud.\nnarrateur|Dans le couloir, les crochets attendent, tout hauts.\nnarrateur|Le lit de la chambre ressemble déjà à une scène.\npapa|Vous jouez où, pour le spectacle ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -584,13 +584,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?"
+      "text_ssml": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001",
       "kind": "passage",
-      "text": "Mila clipse le drap, pince après pince. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Une pince tombe : Nino visait à côté. Les pinces attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila clipse le drap, pince après pince.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|Une pince tombe : Nino visait à côté.\nenfant-f|Les pinces attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila attache le drap, pince après pince. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Une pince tombe : Nino visait à côté. Les pinces attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?",
+      "script": "narrateur|Mila attache le drap, pince après pince.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|Une pince tombe : Nino visait à côté.\nenfant-f|Les pinces attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|La scène est floue, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -601,7 +601,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila clipse le drap, pince après pince. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Une pince tombe : Nino visait à côté. Les pinces attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila attache le drap, pince après pince. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. Une pince tombe : Nino visait à côté. Les pinces attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0000",
@@ -691,8 +691,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003",
       "kind": "passage",
-      "text": "On ouvre un peu, papa ? Un doigt de fenêtre, pas plus. L'air froid chasse la buée, tout lent. Les pinces tintent, puis s'apaise le métal. Ça redevient clair ! Le spectacle peut commencer. Nino ajuste ses lunettes, tout net. La chaleur est partie, le jeu reste. Vous avez attendu le verre clair.",
-      "script": "enfant-f|On ouvre un peu, papa ?\npapa|Un doigt de fenêtre, pas plus.\nnarrateur|L'air froid chasse la buée, tout lent.\nnarrateur|Les pinces tintent, puis s'apaise le métal.\ncopain|Ça redevient clair !\nenfant-f|Le spectacle peut commencer.\nnarrateur|Nino ajuste ses lunettes, tout net.\nmaman|La chaleur est partie, le jeu reste.\npapa|Vous avez attendu le verre clair.",
+      "text": "On ouvre un peu, papa ? Un doigt de fenêtre, pas plus. L'air froid chasse la buée, tout lent. Les pinces tintent, puis le métal se tait. Ça redevient clair ! Le spectacle peut commencer. Nino ajuste ses lunettes, tout net. La chaleur est partie, le jeu reste. Vous avez attendu le verre clair.",
+      "script": "enfant-f|On ouvre un peu, papa ?\npapa|Un doigt de fenêtre, pas plus.\nnarrateur|L'air froid chasse la buée, tout lent.\nnarrateur|Les pinces tintent, puis le métal se tait.\ncopain|Ça redevient clair !\nenfant-f|Le spectacle peut commencer.\nnarrateur|Nino ajuste ses lunettes, tout net.\nmaman|La chaleur est partie, le jeu reste.\npapa|Vous avez attendu le verre clair.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -703,7 +703,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "On ouvre un peu, papa ? Un doigt de fenêtre, pas plus. L'air froid chasse la buée, tout lent. Les pinces tintent, puis s'apaise le métal. Ça redevient clair ! Le spectacle peut commencer. Nino ajuste ses lunettes, tout net. La chaleur est partie, le jeu reste. Vous avez attendu le verre clair."
+      "text_ssml": "On ouvre un peu, papa ? Un doigt de fenêtre, pas plus. L'air froid chasse la buée, tout lent. Les pinces tintent, puis le métal se tait. Ça redevient clair ! Le spectacle peut commencer. Nino ajuste ses lunettes, tout net. La chaleur est partie, le jeu reste. Vous avez attendu le verre clair."
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0003_F0001",
@@ -725,8 +725,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002",
       "kind": "passage",
-      "text": "Mila tend une pince vers le crochet haut. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La pince pince un cheveu, pas le tissu. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila tend une pince vers le crochet haut.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|La pince pince un cheveu, pas le tissu.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils séchent, tout doux, ce n'est rien.\npapa|Toi tes nattes tiennent, les siennes gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila tend une pince vers le crochet haut. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La pince pince un cheveu, pas le tissu. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?",
+      "script": "narrateur|Mila tend une pince vers le crochet haut.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|La pince pince un cheveu, pas le tissu.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils sèchent, tout doux, ce n'est rien.\npapa|Toi tes cheveux tiennent, les siens gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Le rideau accroche, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -737,7 +737,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila tend une pince vers le crochet haut. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La pince pince un cheveu, pas le tissu. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila tend une pince vers le crochet haut. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La pince pince un cheveu, pas le tissu. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0000",
@@ -827,8 +827,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
       "kind": "passage",
-      "text": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le bord, Mila garde les pinces. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
-      "script": "enfant-f|Tu tiens le drap, moi je clips à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le bord, Mila garde les pinces.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
+      "text": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le bord, Mila garde les pinces. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
+      "script": "enfant-f|Tu tiens le drap, moi j'attache à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le bord, Mila garde les pinces.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -839,7 +839,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le bord, Mila garde les pinces. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
+      "text_ssml": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le bord, Mila garde les pinces. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003_F0001",
@@ -861,8 +861,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003",
       "kind": "passage",
-      "text": "Mila clipse le drap au bois du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue balaie les pinces. Les pinces disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|Mila clipse le drap au bois du lit.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue balaie les pinces.\nnarrateur|Les pinces disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "Mila attache le drap au bois du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue balaie les pinces. Les pinces disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?",
+      "script": "narrateur|Mila attache le drap au bois du lit.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue balaie les pinces.\nnarrateur|Les pinces disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Le pull et le roi, vous faites comment ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -873,7 +873,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila clipse le drap au bois du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue balaie les pinces. Les pinces disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "Mila attache le drap au bois du lit. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue balaie les pinces. Les pinces disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0000",
@@ -929,8 +929,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
       "kind": "passage",
-      "text": "Moi je tiens la marionnette. Moi je fais le rideau, avec le drap. Mila clipse, Nino lève le drap comme un rideau. Les manches trop longues bougent le tissu, seulement. La petite laine reste hors du pull. Le château s'ouvre ! Le roi sort, tout rouge. Chacun a pris sa part, à sa taille. Le lit a tenu le théâtre.",
-      "script": "enfant-f|Moi je tiens la marionnette.\ncopain|Moi je fais le rideau, avec le drap.\nnarrateur|Mila clipse, Nino lève le drap comme un rideau.\nnarrateur|Les manches trop longues bougent le tissu, seulement.\nnarrateur|La petite laine reste hors du pull.\ncopain|Le château s'ouvre !\nenfant-f|Le roi sort, tout rouge.\npapa|Chacun a pris sa part, à sa taille.\nmaman|Le lit a tenu le théâtre.",
+      "text": "Moi je tiens la marionnette. Moi je fais le rideau, avec le drap. Mila attache, Nino lève le drap comme un rideau. Les manches trop longues bougent le tissu, seulement. La petite laine reste hors du pull. Le château s'ouvre ! Le roi sort, tout rouge. Chacun a pris sa part, à sa taille. Le lit a tenu le théâtre.",
+      "script": "enfant-f|Moi je tiens la marionnette.\ncopain|Moi je fais le rideau, avec le drap.\nnarrateur|Mila attache, Nino lève le drap comme un rideau.\nnarrateur|Les manches trop longues bougent le tissu, seulement.\nnarrateur|La petite laine reste hors du pull.\ncopain|Le château s'ouvre !\nenfant-f|Le roi sort, tout rouge.\npapa|Chacun a pris sa part, à sa taille.\nmaman|Le lit a tenu le théâtre.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -941,7 +941,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Moi je tiens la marionnette. Moi je fais le rideau, avec le drap. Mila clipse, Nino lève le drap comme un rideau. Les manches trop longues bougent le tissu, seulement. La petite laine reste hors du pull. Le château s'ouvre ! Le roi sort, tout rouge. Chacun a pris sa part, à sa taille. Le lit a tenu le théâtre."
+      "text_ssml": "Moi je tiens la marionnette. Moi je fais le rideau, avec le drap. Mila attache, Nino lève le drap comme un rideau. Les manches trop longues bougent le tissu, seulement. La petite laine reste hors du pull. Le château s'ouvre ! Le roi sort, tout rouge. Chacun a pris sa part, à sa taille. Le lit a tenu le théâtre."
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002_F0001",
@@ -997,8 +997,8 @@
     {
       "chunk_id": "CHK_T0001_P0003",
       "kind": "passage",
-      "text": "Mila enfile d'abord la marionnette rouge. Elle marche déjà sur ma main. Garde-la au poignet, comme un secret. La laine rouge chatouille la peau. Le drap et les pinces, avec vous. Il les pose près du panier. Les trois affaires partent ensemble. Nino, elle te salue ! Bonjour, petite laine. La marionnette d'abord, elle est prête.",
-      "script": "narrateur|Mila enfile d'abord la marionnette rouge.\nenfant-f|Elle marche déjà sur ma main.\nmaman|Garde-la au poignet, comme un secret.\nnarrateur|La laine rouge chatouille la peau.\npapa|Le drap et les pinces, avec vous.\nnarrateur|Il les pose près du panier.\nnarrateur|Les trois affaires partent ensemble.\nenfant-f|Nino, elle te salue !\ncopain|Bonjour, petite laine.\npapa|La marionnette d'abord, elle est prête.",
+      "text": "Mila enfile d'abord la marionnette rouge. Elle marche déjà sur ma main. Garde-la au poignet, comme un secret. La laine rouge chatouille la peau. Le drap et les pinces, avec vous. Il les pose près du panier. Le spectacle quitte le coffre, enfin. Nino, elle te salue ! Bonjour, petite laine. La marionnette d'abord, elle est prête.",
+      "script": "narrateur|Mila enfile d'abord la marionnette rouge.\nenfant-f|Elle marche déjà sur ma main.\nmaman|Garde-la au poignet, comme un secret.\nnarrateur|La laine rouge chatouille la peau.\npapa|Le drap et les pinces, avec vous.\nnarrateur|Il les pose près du panier.\nnarrateur|Le spectacle quitte le coffre, enfin.\nenfant-f|Nino, elle te salue !\ncopain|Bonjour, petite laine.\npapa|La marionnette d'abord, elle est prête.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1009,13 +1009,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Mila enfile d'abord la marionnette rouge. Elle marche déjà sur ma main. Garde-la au poignet, comme un secret. La laine rouge chatouille la peau. Le drap et les pinces, avec vous. Il les pose près du panier. Les trois affaires partent ensemble. Nino, elle te salue ! Bonjour, petite laine. La marionnette d'abord, elle est prête."
+      "text_ssml": "Mila enfile d'abord la marionnette rouge. Elle marche déjà sur ma main. Garde-la au poignet, comme un secret. La laine rouge chatouille la peau. Le drap et les pinces, avec vous. Il les pose près du panier. Le spectacle quitte le coffre, enfin. Nino, elle te salue ! Bonjour, petite laine. La marionnette d'abord, elle est prête."
     },
     {
       "chunk_id": "CHK_T0001_P0003_Q0001",
       "kind": "passage_question",
-      "text": "Mila a glissé la marionnette rouge au poignet. C'est où, maintenant ?",
-      "script": "narrateur|Mila a glissé la marionnette rouge au poignet.\nmaman|C'est où, maintenant ?",
+      "text": "La marionnette rouge est au poignet. La marionnette est où ?",
+      "script": "narrateur|La marionnette rouge est au poignet.\nmaman|La marionnette est où ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -1026,7 +1026,7 @@
       "expected_answer": "poignet",
       "accepted_examples": "poignet | au poignet | le poignet | son poignet",
       "retry_prompt": "La marionnette est au poignet.",
-      "text_ssml": "Mila a glissé la marionnette rouge au poignet. C'est où, maintenant ?"
+      "text_ssml": "La marionnette rouge est au poignet. La marionnette est où ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_C0001",
@@ -1048,8 +1048,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0000",
       "kind": "transition_question",
-      "text": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?",
-      "script": "narrateur|Le salon a le radiateur tout chaud.\nnarrateur|Des crochets attendent dans le couloir.\nnarrateur|La chambre a le lit, comme une scène.\npapa|Vous jouez où, pour le spectacle ?",
+      "text": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?",
+      "script": "narrateur|Le radiateur du salon fait un air tout chaud.\nnarrateur|Dans le couloir, les crochets attendent, tout hauts.\nnarrateur|Le lit de la chambre ressemble déjà à une scène.\npapa|Vous jouez où, pour le spectacle ?",
       "sons": "",
       "length_scale_piper": 1.28,
       "rate_label": "slow",
@@ -1060,13 +1060,13 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Le salon a le radiateur tout chaud. Des crochets attendent dans le couloir. La chambre a le lit, comme une scène. Vous jouez où, pour le spectacle ?"
+      "text_ssml": "Le radiateur du salon fait un air tout chaud. Dans le couloir, les crochets attendent, tout hauts. Le lit de la chambre ressemble déjà à une scène. Vous jouez où, pour le spectacle ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001",
       "kind": "passage",
-      "text": "La marionnette grimpe le dossier d'une chaise. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. La marionnette salue, Nino la cherche trop bas. La marionnette rouge attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|La marionnette grimpe le dossier d'une chaise.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|La marionnette salue, Nino la cherche trop bas.\nenfant-f|La marionnette rouge attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "La marionnette grimpe le dossier d'une chaise. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. La marionnette salue, Nino la cherche trop bas. La marionnette rouge attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?",
+      "script": "narrateur|La marionnette grimpe le dossier d'une chaise.\nnarrateur|Le radiateur souffle un air tiède, tout proche.\ncopain|Je vois un nuage sur mes lunettes !\nnarrateur|Un rond de buée cache la scène.\nnarrateur|La marionnette salue, Nino la cherche trop bas.\nenfant-f|La marionnette rouge attend encore, tout prêt.\nmaman|La chaleur a voilé ses verres, c'est tout.\npapa|Toi tu vois net, lui un peu flou.\ncopain|On joue comment, alors ?\npapa|La scène est floue, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1077,7 +1077,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "La marionnette grimpe le dossier d'une chaise. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. La marionnette salue, Nino la cherche trop bas. La marionnette rouge attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "La marionnette grimpe le dossier d'une chaise. Le radiateur souffle un air tiède, tout proche. Je vois un nuage sur mes lunettes ! Un rond de buée cache la scène. La marionnette salue, Nino la cherche trop bas. La marionnette rouge attend encore, tout prêt. La chaleur a voilé ses verres, c'est tout. Toi tu vois net, lui un peu flou. On joue comment, alors ? La scène est floue, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0000",
@@ -1201,8 +1201,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002",
       "kind": "passage",
-      "text": "La marionnette tire le drap, vers le crochet. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La laine rouge s'emmêle à une mèche encore humide. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|La marionnette tire le drap, vers le crochet.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|La laine rouge s'emmêle à une mèche encore humide.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils séchent, tout doux, ce n'est rien.\npapa|Toi tes nattes tiennent, les siennes gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "La marionnette tire le drap, vers le crochet. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La laine rouge s'emmêle à une mèche encore humide. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?",
+      "script": "narrateur|La marionnette tire le drap, vers le crochet.\nenfant-f|Ici, le couloir fait un rideau, Nino.\ncopain|Mes cheveux sont encore lourds du bain.\nnarrateur|La laine rouge s'emmêle à une mèche encore humide.\nnarrateur|Une goutte tombe sur le carrelage, toc.\nmaman|Ils sèchent, tout doux, ce n'est rien.\npapa|Toi tes cheveux tiennent, les siens gouttent.\nenfant-f|On peut jouer avec lui ?\npapa|Le rideau accroche, vous faites quoi ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1213,7 +1213,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "La marionnette tire le drap, vers le crochet. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La laine rouge s'emmêle à une mèche encore humide. Une goutte tombe sur le carrelage, toc. Ils séchent, tout doux, ce n'est rien. Toi tes nattes tiennent, les siennes gouttent. On peut jouer avec lui ? Vous trouvez, tous les deux ?"
+      "text_ssml": "La marionnette tire le drap, vers le crochet. Ici, le couloir fait un rideau, Nino. Mes cheveux sont encore lourds du bain. La laine rouge s'emmêle à une mèche encore humide. Une goutte tombe sur le carrelage, toc. Ils sèchent, tout doux, ce n'est rien. Toi tes cheveux tiennent, les siens gouttent. On peut jouer avec lui ? Le rideau accroche, vous faites quoi ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0000",
@@ -1303,8 +1303,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003",
       "kind": "passage",
-      "text": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le drap, la marionnette salue. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
-      "script": "enfant-f|Tu tiens le drap, moi je clips à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le drap, la marionnette salue.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
+      "text": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le drap, la marionnette salue. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris.",
+      "script": "enfant-f|Tu tiens le drap, moi j'attache à côté.\ncopain|Mes mains font le crochet, alors.\nnarrateur|Nino tient le drap, la marionnette salue.\nnarrateur|Le rideau s'ouvre quand Nino recule.\nnarrateur|Il se ferme quand il avance.\nenfant-f|C'est toi le rideau vivant !\ncopain|Et toi le spectacle.\npapa|Vous jouez avec ce que vous avez.\nmaman|Les cheveux n'ont plus besoin d'être pris.",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1315,7 +1315,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "Tu tiens le drap, moi je clips à côté. Mes mains font le crochet, alors. Nino tient le drap, la marionnette salue. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
+      "text_ssml": "Tu tiens le drap, moi j'attache à côté. Mes mains font le crochet, alors. Nino tient le drap, la marionnette salue. Le rideau s'ouvre quand Nino recule. Il se ferme quand il avance. C'est toi le rideau vivant ! Et toi le spectacle. Vous jouez avec ce que vous avez. Les cheveux n'ont plus besoin d'être pris."
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0003_F0001",
@@ -1337,8 +1337,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0003",
       "kind": "passage",
-      "text": "La marionnette se cache sous l'oreiller. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue avale la marionnette. La marionnette rouge disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?",
-      "script": "narrateur|La marionnette se cache sous l'oreiller.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue avale la marionnette.\nnarrateur|La marionnette rouge disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Vous trouvez, tous les deux ?",
+      "text": "La marionnette se cache sous l'oreiller. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue avale la marionnette. La marionnette rouge disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?",
+      "script": "narrateur|La marionnette se cache sous l'oreiller.\nenfant-f|Le lit est notre château, Nino.\ncopain|Mon pull me suit jusqu'aux genoux !\nnarrateur|Une manche trop longue avale la marionnette.\nnarrateur|La marionnette rouge disparaît un instant, sous le tissu.\nmaman|Le pull est un peu grand, c'est tout.\npapa|Toi tes manches s'arrêtent, les siennes voyagent.\ncopain|On joue comment, alors ?\npapa|Le pull et le roi, vous faites comment ?",
       "sons": "",
       "length_scale_piper": 1.22,
       "rate_label": "medium",
@@ -1349,7 +1349,7 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "La marionnette se cache sous l'oreiller. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue avale la marionnette. La marionnette rouge disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Vous trouvez, tous les deux ?"
+      "text_ssml": "La marionnette se cache sous l'oreiller. Le lit est notre château, Nino. Mon pull me suit jusqu'aux genoux ! Une manche trop longue avale la marionnette. La marionnette rouge disparaît un instant, sous le tissu. Le pull est un peu grand, c'est tout. Toi tes manches s'arrêtent, les siennes voyagent. On joue comment, alors ? Le pull et le roi, vous faites comment ?"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0000",
