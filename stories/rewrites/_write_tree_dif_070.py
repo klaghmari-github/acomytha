@@ -607,7 +607,7 @@ def main() -> None:
         "« voici le geste » jetés. Monde autre que DIF-005/056 (parc), "
         "DIF-040/062 (ferme), DIF-046 (marché/moulinet), DIF-054 (loup de carton). "
         "Merci de papa (banc essuyé). chunk_id inchangés. check() OK. "
-        "xlsx : stories/archive/arbres/TREE-DIF-070.xlsx. Audio non cuit.",
+        "xlsx live : stories/arbres/TREE-DIF-070.xlsx. Audio non cuit.",
     )
 
 
