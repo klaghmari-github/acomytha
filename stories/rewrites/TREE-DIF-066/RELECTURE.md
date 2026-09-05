@@ -2,11 +2,31 @@
 
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
+## Promesse narrative
+
+La trappe du grenier gémit, prête à se fermer. Amir connaît le bois, la malle, le rai ; un détail paraît nouveau : un **grain de toile** tient sur la poignée de la petite valise à pois. Il veut descendre la petite valise à deux, avec Nina, avant que la trappe se referme. Nina veut rester dans la malle. Il tire trop vite : elle ne vient pas. Sourire parti. Papa s'accroupit. Merci vécu : la trappe tenue. Valise à pois, valise en carton ou cordelette : les trois partent. À la lucarne elle veut les toits, entre les caisses elle fouille, à l'escalier elle s'assoit. Deuxième ruse : le grain glisse vers une fente, sous la poussière, vers le trou. Il refuse de foncer. Petite valise, plancher, cordelette ; passage, poignées, poussière ; rampe, palier, petite valise. Le grain du début revient. L'objet porte une trace. La descente a failli.
+
 ## Vécu
-Grenier de la maison du village, rai de soleil, poussière, malle qui grince, bois chaud. Amir veut descendre la petite valise à pois pour le pique-nique, pas la grande trop lourde. T1 = valise à pois / valise en carton / cordelette (les trois viennent). T2 = lucarne trop basse / caisses trop étroites / marche trop haute. T3 = neuf résolutions (petite valise, plancher, cordelette ; passage, poignées, poussière ; rampe, palier, petite valise). La leçon se vit : il compare les deux tailles pour un geste. Fin : la petite descend, on sent le pain dans la cuisine.
+
+Amir propose de descendre maintenant. Nina prend son temps ou pose sa limite. Deux rythmes, sans voix caricaturale. Le silence compte. Le sourire disparaît ; envie et inquiétude se bousculent. Papa ou maman s'accroupit à la même hauteur. Personne ne donne la réponse. Amir observe la valise, écoute le grenier, retrouve le grain de toile. La leçon se voit : la petite passe où la grande bute ; deux poignées, deux mains ; un palier à deux hauteurs.
 
 ## Vu et corrigé
-N2 ≤ 15. Slogan « Plus petit ou plus grand — au bord de la mer », Adam, Tom/Léa/Sami, bac/toboggan/balançoires, mer, « bon travail » jetés. Récit autre que DIF-009 (train), DIF-012 (pomme), DIF-013/041/052 (mer), DIF-030/041 (pain comme objet), DIF-034 (soleil papier), DIF-042 (cacao). Pain seulement en odeur de cuisine, à la fin. Amir seul + papa/maman. Merci de papa (trappe tenue). chunk_id inchangés. check() OK. xlsx live : stories/arbres/TREE-DIF-066.xlsx. Audio non cuit.
+
+- Titre noyau conservé. Troupe D16 : Amir, Nina, papa, maman. N2 ≤ 15.
+- 86 nœuds, graphe et libellés d'options conservés.
+- 27 fins textuellement distinctes, 27 résolutions distinctes, 27 dernières images.
+- Première tentative échoue (tirer trop vite, puis lieu choisi). Chaque choix change l'obstacle, le climax, la dernière image.
+- Indice unique : grain de toile (pas ancre, étoile brune, fil pâle, croissant, virgule, bouton nacre, nœud raphia, pois ivoire, grain savon, marque fine, ombre-flèche, tache).
+- Monde grenier / lucarne / caisses / escalier / malle, distinct de TREE-DIF-015 (salon drap) et TREE-DIF-072 (vestiaire).
+- TTS par fonction (ouverture, choix, indice, action, obstacle, résolution, retour).
+- `slow` réservé aux choix, à l'indice et aux fins.
+- Tics « tout doux / encore / déjà / tout calme » interdits. Gabarit « toute chaude / toute fine » jeté.
+- Chemins : 583–605 mots (moyenne 595). `check()` OK. Pas d'apply.
+
+## Direction vocale
+
+`notes` : arc, intention, émotion, intensité 1–3, destinataire, sous-texte, tempo, sourire, respiration. Adulte conversationnel, pas maître. Obstacle en `low-pitch` ; fins `soft` / `slow` / `low-pitch`. Deux rythmes : il propose, elle pose sa limite.
 
 ## Non vérifié
-Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur. Pas d'apply.
