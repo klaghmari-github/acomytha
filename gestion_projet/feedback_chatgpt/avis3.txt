@@ -1,0 +1,749 @@
+Audit complet d’AcoMytha — branche main
+
+Audit réalisé sur le commit 3d0793c0, daté du 5 septembre 2026.
+
+J’ai confronté :
+
+l’intégralité des 837 histoires actuellement actives ;
+leurs 16 499 blocs narratifs ;
+les métadonnées éditoriales et vocales des Excel ;
+les documentations produit et éditoriales ;
+l’application FastAPI ;
+la vitrine ;
+l’espace parent ;
+le mode enfant ;
+le paiement, les comptes et les actifs audio disponibles.
+Verdict général
+
+AcoMytha possède une idée de produit forte et différenciante : faire vivre aux enfants de 3 à 6 ans des aventures audio interactives qui développent des compétences utiles dans la vie réelle.
+
+Cependant, la version actuelle est encore un excellent atelier de production/prototype, pas un produit commercialisable.
+
+Dimension	Note	Verdict
+Concept produit	8/10	Pertinent, identifiable et défendable
+Architecture narrative	6/10	Solide sur les meilleurs arbres
+Qualité éditoriale moyenne	4/10	Trop inégale et encore trop reconnaissable comme texte généré
+Métadonnées vocales	6/10 dans les Excel	Travail important, mais non consommé par l’application
+Catalogue audio disponible	1/10	Seulement deux histoires audio témoins dans GitHub
+Vitrine	5/10	Belle direction artistique, proposition commerciale trop abstraite
+Espace parent	4/10	Fonctionnel, mais organisé comme un outil d’administration
+Mode enfant	4/10	Sûr et simple, mais émotionnellement pauvre
+Paiement/commerce	3/10	Démonstrateur, plusieurs fonctions ne doivent pas encore être vendues
+Déploiement/sécurité opérationnelle	3/10	Bases correctes, préparation production insuffisante
+Commercialisation globale	3/10	Ne pas ouvrir les ventes dans cet état
+
+La priorité n’est pas d’ajouter davantage de fonctionnalités. Elle est de produire un petit catalogue irréprochable, complètement audio, puis de construire autour de lui une expérience qui donne envie aux parents de payer et aux enfants de revenir.
+
+1. État exact du catalogue actif
+
+L’application importe actuellement tous les fichiers présents dans stories/arbres.
+
+Résultat exhaustif :
+
+Élément	Nombre exact
+Histoires actives	837
+Histoires atomiques	685
+Histoires ramifiées	152
+Leçons distinctes	85
+Blocs narratifs	16 499
+Débuts	837
+Passages	7 756
+Questions d’écoute	1 141
+Transitions de choix	1 976
+Fins	4 789
+
+Répartition par âge :
+
+Niveau	Nombre
+N1 — 3–4 ans	224
+N2 — 4–5 ans	338
+N3 — 5–6 ans	275
+
+Les documents ne reflètent plus exactement cet état :
+
+le README annonce encore 764 histoires actives, dont 79 arbres ;
+la branche actuelle en contient 837, dont 152 arbres ;
+stories/INDEX.md est encore plus ancien ;
+stories/CHIFFRES.md conserve correctement le total historique de 1 449 histoires, mais son partage live/archive n’est plus à jour ;
+ETAT_REPRISE.md référence également un ancien commit de gel.
+
+Cela doit être corrigé : un investisseur, partenaire éditorial ou futur développeur ne doit jamais hésiter entre plusieurs chiffres officiels.
+
+2. Qualité réelle des histoires
+Ce qui s’est nettement amélioré
+
+Les meilleurs arbres respectent désormais les principes définis dans le backlog narratif :
+
+ouverture d’un monde concret ;
+présence d’un désir enfantin ;
+événement perturbateur ;
+petites péripéties ;
+intervention parlée des adultes ;
+choix qui modifient le déroulement ;
+dénouement ;
+formulation positive des apprentissages.
+
+TREE-AUT-001 reste le meilleur étalon structurel. Amir veut faire naviguer un bateau en papier, la pluie crée une occasion d’aventure, les parents parlent, le choix influence l’itinéraire et les gestes d’autonomie sont intégrés dans l’action.
+
+C’est la bonne direction : l’enfant vient d’abord pour savoir ce qui va arriver au bateau, pas pour écouter une leçon d’autonomie.
+
+Les 73 arbres TREE-DIF récemment réintégrés sont généralement plus construits que la majorité des histoires atomiques. On y trouve davantage de décor, de mouvement et de causalité.
+
+Le défaut central demeure
+
+Une grande partie du catalogue respecte les règles de manière mécanique plutôt que littéraire.
+
+On reconnaît souvent la chaîne suivante :
+
+description sensorielle ;
+petite action ;
+question de l’adulte ;
+verbalisation du geste ou de l’émotion ;
+validation ;
+nouveau micro-geste ;
+félicitation ;
+fin.
+
+Il s’agit d’une amélioration par rapport aux anciennes leçons collées les unes aux autres, mais ce n’est pas encore une véritable expérience narrative.
+
+Le problème n’est plus principalement l’absence de début. Le problème est que le début, les péripéties et la fin servent parfois seulement de supports techniques à un protocole éducatif.
+
+Exemple problématique récent
+
+La dernière histoire du commit audité, « Le citron de Victorina », illustre bien le problème.
+
+Elle contient du décor et des perceptions, mais l’échange devient une succession de vérifications :
+
+Victorina voit quelque chose ;
+papa lui demande si elle le voit ;
+maman lui demande si elle le sent ;
+l’enfant nomme les sensations ;
+chaque observation confirme l’apprentissage attendu.
+
+Certaines formulations ne paraissent pas naturelles :
+
+« Elle sent le vert » ;
+« Le citron sent le vert » ;
+« Et le plastique, maman. Oui, dans l’air. »
+
+La fin autour d’un « éclat de barquette » ne délivre ni surprise satisfaisante, ni victoire émotionnelle, ni image finale que l’enfant aura envie de raconter le lendemain.
+
+Cette histoire paraît méthodiquement produite, mais pas véritablement écrite.
+
+Marques de fabrication répétées
+
+Sur les 837 histoires, j’ai relevé notamment :
+
+Expression	Occurrences
+« en ce moment »	818
+« bravo »	1 575
+« tout doux »	500
+« sans se presser »	300
+« personne ne parle »	93
+« refuse de foncer »	836
+
+L’ancienne répétition de « Bravo » reste particulièrement visible dans les histoires atomiques : 1 559 occurrences.
+
+Dans les nouveaux arbres ramifiés, un nouveau tic est apparu : « refuse de foncer », utilisé 569 fois. Il a probablement été introduit pour faire agir les personnages prudemment, mais il est devenu une signature générative.
+
+Un enfant peut apprécier la répétition ritualisée. Mais ici, elle n’est pas construite comme un refrain volontaire : elle traverse des histoires différentes sans devenir un élément de marque amusant.
+
+Doublons de titres
+
+Huit titres sont actuellement utilisés par deux histoires différentes, notamment :
+
+« La nappe à carreaux » ;
+« Le pain chaud de Nino » ;
+« Nino demande une pause » ;
+« Les boutons d’Aniss » ;
+« Aniss passe le ballon » ;
+« Le seau jaune de Sarah » ;
+« Le coquillage de Nina ».
+
+Ce n’est pas bloquant techniquement, puisque les identifiants sont distincts, mais cela dégrade l’impression de catalogue éditorial maîtrisé.
+
+Verdict éditorial
+
+Le catalogue contient aujourd’hui :
+
+environ 10 à 20 % de matière pouvant devenir excellente avec une bonne passe humaine ;
+un ensemble intermédiaire structurellement valable mais encore artificiel ;
+un volume important qui demande une réécriture plus profonde qu’un simple polissage stylistique.
+
+Ce pourcentage est une appréciation éditoriale, contrairement aux statistiques précédentes qui sont des comptages exacts.
+
+Je déconseille fortement de commercialiser les « 1 400 histoires » comme argument principal. Cela inviterait immédiatement le client à juger la moyenne du catalogue, alors que votre force actuelle réside dans quelques arbres prometteurs.
+
+3. Métadonnées de voix : présentes, mais déconnectées du produit
+
+Dans les Excel actifs :
+
+text_ssml est rempli à 100 % ;
+text_xai_tags est rempli à 100 % ;
+script est rempli à 100 % ;
+notes est présent sur 90,2 % des blocs ;
+sons est présent sur 69,3 % des blocs.
+
+La progression sur les arbres ramifiés est importante : presque tous leurs passages narratifs possèdent des indications d’interprétation et des sons.
+
+Mais l’application n’importe pas ces champs.
+
+L’importeur catalog.py ne charge actuellement que :
+
+le texte brut ;
+les réponses ;
+les destinations des choix ;
+le temps d’attente ;
+la politique nocturne.
+
+Il ignore notamment :
+
+text_ssml ;
+text_xai_tags ;
+les personnages et voix par réplique ;
+le débit ;
+la hauteur ;
+le volume ;
+les emphases ;
+les pauses détaillées ;
+les notes d’interprétation ;
+le script vocal ;
+les sons d’ambiance.
+
+Ainsi, les métadonnées constituent actuellement un actif de production hors ligne, pas une fonctionnalité concrète de la plateforme.
+
+Autre anomalie : dans TREE-AUT-001, le texte narratif corrigé et text_xai_tags ne racontent plus exactement la même version. Certaines métadonnées correspondent à une rédaction antérieure. Une couverture à 100 % ne garantit donc pas leur synchronisation.
+
+Il faut ajouter une règle automatique : lorsque text change, les dérivés vocaux doivent être invalidés et régénérés ou revalidés.
+
+4. L’écart entre la promesse audio et l’implémentation
+
+La documentation présente AcoMytha comme une « forêt narrative audio seulement », sans génération pendant la lecture. C’est un positionnement clair dans le README principal.
+
+Dans GitHub, je constate cependant :
+
+837 histoires actives ;
+2 histoires possédant des répertoires audio témoins ;
+182 fichiers audio au total ;
+aucune chaîne de production déclarée comme dépendance reproductible ;
+la majorité des cartes ne peut donc pas proposer d’écoute.
+
+Les deux histoires témoins sont :
+
+ATOM-SAN.ALI.001-01 ;
+TREE-SEC-001.
+
+La vitrine promet plus de 1 400 histoires, mais la version distribuable du dépôt ne peut en faire écouter que deux. Le décalage est majeur.
+
+Par ailleurs, le moteur applicatif ne génère effectivement rien pendant la lecture — ce qui respecte la documentation — mais cela signifie que le catalogue n’existe commercialement qu’après production et contrôle de tous les audios retenus.
+
+5. Comparaison documentation / fonctionnalités réelles
+Promesse ou fonctionnalité	État concret
+Catalogue relationnel	Développé
+Import des Excel	Développé, mais incomplet pour les métadonnées vocales
+Questions et ramifications	Développées
+Mode jour/nuit	Développé
+Nuit sans interruption	La logique existe
+Sélection parentale	Développée
+Mode enfant sans catalogue général	Développé
+Retour protégé par code	Développé
+Limitation à un appareil	Développée
+Aperçu visiteur de 30 secondes	Développé, seulement utilisable quand l’audio existe
+Achat d’une histoire	Développé en démonstration
+Stripe	Code présent, pas configuration de production démontrée
+Commande d’histoire personnalisée	Débit et enregistrement de commande seulement
+Enregistrement d’une voix	Trompeur côté interface : aucun son n’est réellement enregistré
+Application d’une voix aux histoires	État comptable seulement ; pas de production audio associée
+Immersion sonore généralisée	Métadonnées partielles ; audio non produit
+Produit installable/reproductible	Non
+Produit légalement prêt pour les familles	Non démontré
+
+Le cas de l’enregistrement vocal est particulièrement problématique. Le backend accepte éventuellement un fichier dans shop.py, mais l’interface parent n’envoie aucun fichier : elle envoie seulement le rôle choisi. Elle débite pourtant 5 acm puis affiche « Voix enregistrée pour les prochaines histoires ».
+
+Cette fonction ne doit absolument pas être proposée à un acheteur avant d’être réelle.
+
+6. Audit de la vitrine
+
+La vitrine est implémentée dans HomeApp.js.
+
+Ce qui fonctionne bien
+
+La direction graphique nuit, crème, violet et or est élégante et cohérente. L’association Fraunces/Outfit donne une personnalité plus éditoriale que scolaire.
+
+Les éléments suivants sont réussis :
+
+ambiance de chambre d’écoute ;
+hiérarchie visuelle forte ;
+logo animé sans surcharge ;
+cohérence entre la vitrine et les espaces privés ;
+adaptation mobile présente ;
+respect de prefers-reduced-motion ;
+absence de prix sur la vitrine ;
+chargement progressif du catalogue ;
+aperçu de 30 secondes ;
+univers visuel distinct de l’edtech colorée générique.
+Ce qui empêche la conversion
+L’accroche est trop abstraite
+
+« Apprendre par l’histoire. »
+
+C’est élégant, mais cela ne dit pas :
+
+pour quel âge ;
+ce qui est différent ;
+ce que l’enfant fait ;
+ce que le parent obtient ;
+pourquoi il faudrait essayer maintenant.
+Le texte explique un mécanisme au lieu de vendre un bénéfice
+
+« Les histoires sont ludiques et contiennent des leçons qui peuvent varier… »
+
+Le mot « leçons » donne l’impression que les histoires servent d’emballage à une morale — exactement le défaut éditorial que vous combattez.
+
+Les exemples sont également à revoir :
+
+« respect du feu rouge » est abstrait pour un enfant ;
+« manger les légumes » sonne comme une injonction parentale ;
+« partage des jouets » réduit la nuance des situations sociales.
+
+Préférer :
+
+« s’arrêter et regarder avant de traverser avec un adulte » ;
+« oser goûter un aliment nouveau » ;
+« trouver une solution quand deux enfants veulent le même jouet ».
+L’argument du volume arrive trop tôt
+
+> 1400 histoires impressionne quantitativement, mais ne rassure ni sur la qualité, ni sur la sécurité, ni sur l’adaptation à l’enfant.
+
+Le parent n’achète pas 1 400 histoires. Il achète :
+
+une soirée plus sereine ;
+un enfant captivé sans écran ;
+une manière positive d’aborder un sujet difficile ;
+une histoire adaptée à ce que son enfant vit cette semaine.
+Il manque une démonstration immédiate
+
+La première action importante devrait être « Écouter un extrait », directement dans le hero. Aujourd’hui, l’utilisateur doit comprendre le concept puis descendre dans un catalogue massif.
+
+Il manque les éléments de confiance
+
+La vitrine ne montre pas suffisamment :
+
+comment les histoires sont écrites et contrôlées ;
+comment les apprentissages sont formulés positivement ;
+pourquoi le contenu convient aux 3–6 ans ;
+comment le parent garde le contrôle ;
+ce qui est enregistré au sujet de l’enfant ;
+qui est derrière AcoMytha ;
+ce que coûte réellement le service ;
+les réponses aux objections courantes.
+7. Proposition de message commercial
+Nouveau hero recommandé
+
+Sur-titre
+
+Histoires audio interactives pour les 3–6 ans
+
+Titre
+
+Des aventures qu’il adore.
+Des gestes qui l’aident à grandir.
+
+Sous-titre
+
+Votre enfant écoute, choisit et vit l’histoire. Sans écran, à son rythme. Chaque aventure l’aide à mieux comprendre une situation de la vie quotidienne.
+
+Bouton principal
+
+Écouter une aventure
+
+Bouton secondaire
+
+Voir ce que mon enfant peut apprendre
+
+Preuve courte
+
+Histoires choisies par les parents · Deux modes d’écoute · Contenus adaptés à chaque âge
+
+Une variante plus émotionnelle :
+
+Ce soir, une aventure. Demain, un petit geste en plus.
+
+C’est probablement la meilleure signature commerciale actuelle pour AcoMytha. Elle relie naturellement le plaisir immédiat de l’enfant au bénéfice futur recherché par le parent.
+
+Réécriture du bloc explicatif
+
+Au lieu de :
+
+« L’enfant apprend par l’histoire… Les histoires contiennent des leçons… »
+
+Utiliser :
+
+Amir veut sauver son bateau de papier. Nina cherche comment rejoindre ses amis. Sarah prépare une surprise. Pendant l’aventure, votre enfant découvre naturellement comment demander de l’aide, attendre son tour ou retrouver son calme.
+
+Puis :
+
+Ce n’est pas un cours raconté. C’est une aventure dans laquelle le bon geste devient utile au héros.
+
+Modes jour et nuit
+
+Mode jour :
+
+Jour — l’enfant choisit la suite
+L’histoire l’interroge, lui propose plusieurs chemins et transforme ses réponses en aventures différentes.
+
+Mode nuit :
+
+Nuit — l’histoire ralentit
+Les choix s’effacent, la narration devient plus calme et accompagne doucement le moment du coucher.
+
+Éviter « l’objectif est d’écouter jusqu’à dormir ». Vous ne pouvez pas promettre l’endormissement et certains parents ne souhaitent pas que l’enfant dépende d’un contenu pour dormir.
+
+Fin d’aperçu
+
+Au lieu de :
+
+« La suite est derrière la porte. »
+
+Utiliser :
+
+L’aventure ne fait que commencer.
+Créez votre espace parent pour choisir les histoires que votre enfant pourra écouter jusqu’au bout.
+
+Bouton :
+
+Continuer l’aventure
+
+8. Organisation recommandée de la vitrine
+Hero avec écoute immédiate
+promesse ;
+âge ;
+sans écran ;
+extrait de 30 secondes ;
+un CTA principal.
+Une histoire mise en scène
+héros ;
+désir ;
+problème ;
+choix possible ;
+apprentissage naturel.
+Comment cela fonctionne
+le parent choisit ;
+l’enfant écoute ;
+l’enfant choisit ;
+l’histoire l’accompagne.
+Collections par besoin parental
+« Retrouver son calme » ;
+« Devenir plus autonome » ;
+« Vivre avec les autres » ;
+« Faire attention à soi » ;
+« Comprendre ses émotions ».
+Sélection éditoriale
+six aventures phares, pas un catalogue de centaines de cartes ;
+couverture ou identité visuelle propre ;
+extrait ;
+âge ;
+situation travaillée ;
+durée.
+Contrôle parental
+ce que l’enfant peut écouter ;
+mode jour/nuit ;
+code parent ;
+absence de publicité ;
+absence de navigation ouverte.
+Qualité et sécurité éditoriales
+formulations positives ;
+gestes concrets ;
+histoires relues ;
+apprentissage intégré à l’action.
+Offre et prix
+prix compréhensible en euros ;
+ce qui est inclus ;
+aucune monnaie interne sur le premier écran de décision.
+FAQ
+faut-il regarder l’écran ?
+l’enfant doit-il savoir lire ?
+comment fonctionnent les choix ?
+quelles données sont conservées ?
+que se passe-t-il au coucher ?
+puis-je choisir un sujet particulier ?
+CTA final
+« Écouter la première aventure ».
+
+Le catalogue complet doit devenir secondaire. Une vitrine commerciale est un parcours de conviction, pas un explorateur de base de données.
+
+9. Refonte de l’espace parent
+
+L’espace actuel, dans ParentApp.js, regroupe catalogue, portefeuille, recharge, commande, voix et code dans une barre latérale.
+
+Cela ressemble davantage à un panneau d’administration qu’à un espace familial.
+
+Nouvelle organisation
+Accueil parent
+
+Afficher en premier :
+
+« Pour ce soir » ;
+les histoires récemment sélectionnées ;
+« Continuer l’aventure » ;
+une recommandation liée à l’âge ;
+un raccourci « Choisir les histoires de mon enfant ».
+Onglet « Mon enfant »
+prénom ou surnom ;
+âge/niveau ;
+sujets actuellement utiles ;
+mode d’écoute autorisé ;
+file d’histoires ;
+code parent.
+Onglet « Histoires »
+
+Filtres orientés besoins :
+
+émotions ;
+autonomie ;
+sécurité ;
+relations ;
+langage ;
+sommeil ;
+nouveauté ;
+favorites.
+
+Chaque carte devrait expliquer la promesse :
+
+« Une aventure pour apprendre à demander de l’aide quand quelque chose semble trop difficile. »
+
+Le parent n’a pas besoin de voir un identifiant technique ou un sous-domaine de référentiel.
+
+Onglet « Mes histoires »
+achetées ;
+sélectionnées pour l’enfant ;
+commencées ;
+terminées ;
+favorites ;
+nouvelles fins à explorer.
+Onglet « Compte et offre »
+abonnement ou achats ;
+factures ;
+appareils ;
+confidentialité ;
+assistance ;
+déconnexion.
+À retirer de la barre principale
+formulaire de commande personnalisée ;
+enregistrement de voix ;
+recharge ;
+réglage du PIN ;
+paramètres techniques Stripe.
+
+Ces fonctions doivent vivre dans des pages séparées et n’apparaître que lorsqu’elles sont réellement terminées.
+
+10. Refonte du mode enfant
+
+Le mode enfant, dans ChildApp.js, respecte une bonne décision : l’enfant n’accède pas au catalogue complet.
+
+Mais l’expérience est trop textuelle pour un enfant de maternelle.
+
+Problèmes actuels
+liste de boutons portant seulement le titre et la durée ;
+pas de couverture ni de repère visuel ;
+pas de personnage reconnaissable ;
+pas de bouton « continuer » ;
+pas d’indication de l’aventure récemment écoutée ;
+passage jour/nuit accessible directement à l’enfant ;
+message final très sec : « C’est fini. » ;
+choix présentés comme des boutons standards ;
+expérience principalement conçue comme un lecteur audio technique.
+Expérience recommandée
+Écran d’accueil
+
+Trois à cinq grandes cartes maximum :
+
+portrait ou symbole du héros ;
+couleur propre à l’univers ;
+titre très court ;
+bouton audio lisant le titre à haute voix ;
+repère « nouveau » ou « continuer ».
+
+L’enfant ne sachant pas lire doit pouvoir choisir.
+
+Pendant l’écoute
+écran très calme ;
+une illustration fixe ou doucement animée ;
+bouton d’arrêt évident ;
+progression symbolique : trois petites étapes ou un chemin ;
+aucune information adulte ;
+choix annoncés oralement puis représentés par de gros pictogrammes.
+À la fin
+
+Au lieu de « C’est fini » :
+
+« Amir a ramené son bateau à la maison. Et toi, quelle partie de l’aventure as-tu préférée ? »
+
+Puis :
+
+« Écouter encore » ;
+« Une autre aventure » ;
+« Retour à mes histoires ».
+
+La conclusion doit maintenir l’émotion produite par l’histoire.
+
+Mode nuit
+
+Le mode nuit devrait idéalement être configuré par le parent avant de confier l’appareil. Un enfant peut sinon passer du mode nuit au mode jour et relancer les interactions.
+
+11. Commerce et modèle économique
+
+La monnaie acm est originale graphiquement, mais ajoute une friction importante :
+
+le parent paie en euros ;
+reçoit un nombre variable de pièces ;
+doit comprendre un taux de conversion ;
+découvre ensuite des prix différents selon le produit et les ramifications.
+
+Ce modèle rend difficile la réponse à la question la plus simple : « Combien coûte AcoMytha ? »
+
+Recommandation de lancement
+
+Lancer une offre simple :
+
+Option principale
+
+AcoMytha Famille — 7,99 € par mois
+Accès à toutes les aventures publiées, modes jour et nuit, sélection parentale et nouveaux récits chaque mois.
+
+Option sans abonnement
+
+Pack Découverte — 9,90 €
+Dix aventures complètes à choisir.
+
+La monnaie interne peut subsister pour les personnalisations futures, mais elle ne devrait pas être le modèle principal de découverte et d’achat.
+
+Ne pas vendre immédiatement
+une histoire personnalisée sans délai de livraison, validation ni suivi ;
+une voix personnalisée sans enregistrement effectif ;
+« plus de 1 400 histoires » tant qu’elles ne sont pas toutes relues et produites ;
+une ramification facturée comme une unité abstraite ;
+un paiement de démonstration présenté dans l’espace client.
+
+Le texte actuel :
+
+« Paiement prêt. La carte Stripe se branche avec les clés admin. »
+
+doit être totalement absent de toute version publique.
+
+12. Comptes, sécurité et préparation production
+
+Les bases techniques sont plutôt saines :
+
+mots de passe hachés avec scrypt ;
+sessions aléatoires ;
+cookie HttpOnly ;
+vérification des signatures Stripe lorsqu’un secret webhook est configuré ;
+séparation parent/enfant ;
+limitation par appareil.
+
+Mais plusieurs éléments interdisent encore une mise en production sérieuse :
+
+identifiants parent de démonstration préremplis dans le formulaire de connexion ;
+mots de passe admin et parent par défaut dans la configuration ;
+PIN enfant par défaut 2468 ;
+cookie sécurisé désactivé par défaut ;
+aucune récupération de mot de passe ;
+aucun mécanisme apparent de vérification d’e-mail ;
+aucun rate limiting de connexion ou de PIN ;
+pas de CGU, politique de confidentialité, mentions légales ou gestion du consentement ;
+pas de page d’assistance réelle ;
+pas de profil ou suppression de compte ;
+pas de pipeline CI visible ;
+branche main non protégée ;
+pas de manifeste d’installation Python ;
+pas de Dockerfile ;
+pas de fichier de dépendances verrouillées.
+
+Le README de l’application donne une commande de démarrage, mais ne fournit pas la liste complète des dépendances à installer. Dans un environnement propre, FastAPI, SQLAlchemy, Uvicorn et pytest n’étaient pas présents et les tests ne pouvaient donc pas être exécutés.
+
+Je ne conclus pas que les tests échouent : je conclus que le dépôt actuel ne permet pas de les reproduire proprement.
+
+13. Plan recommandé jusqu’à la commercialisation
+Phase 1 — Constituer une collection fondatrice
+
+Sélectionner seulement 24 histoires :
+
+8 pour les 3–4 ans ;
+8 pour les 4–5 ans ;
+8 pour les 5–6 ans ;
+réparties sur 6 besoins parentaux ;
+moitié atomiques, moitié ramifiées.
+
+Chaque histoire doit passer :
+
+audit narratif humain ;
+réécriture ;
+lecture à voix haute ;
+contrôle du vocabulaire ;
+contrôle psychopédagogique ;
+synchronisation des métadonnées ;
+production audio ;
+écoute avec enfants ;
+écoute avec parents ;
+validation finale.
+Phase 2 — Construire trois séries reconnaissables
+
+Le catalogue manque de continuité affective. Créer par exemple :
+
+Amir et les petits défis — autonomie et sécurité ;
+Nina trouve une idée — émotions et relations ;
+Les journées de Victorina — découverte, langage et vie quotidienne.
+
+Les enfants achètent affectivement un personnage avant d’acheter un thème. Les parents, eux, choisissent la compétence. AcoMytha doit servir les deux simultanément.
+
+Phase 3 — Rendre la chaîne éditoriale fiable
+source canonique unique ;
+statut DRAFT → REVIEWED → VOICE_READY → AUDIO_READY → PUBLISHED ;
+empreinte du texte ;
+invalidation automatique des dérivés après modification ;
+contrôle des expressions répétées ;
+détection des titres dupliqués ;
+validation de chaque chemin d’un arbre ;
+test de durée sur chaque chemin ;
+vérification que la fin accomplit la promesse du début.
+Phase 4 — Refaire l’expérience commerciale
+nouvelle vitrine ;
+démonstration audio dans le hero ;
+espace parent réorganisé ;
+mode enfant illustré ;
+offre en euros ;
+pages légales ;
+support ;
+mesure du parcours : visite → extrait → inscription → sélection → première écoute → retour à J+7.
+Phase 5 — Industrialiser
+dépendances verrouillées ;
+environnement reproductible ;
+CI ;
+tests backend, frontend et end-to-end ;
+tests mobiles ;
+accessibilité ;
+sauvegardes ;
+observabilité ;
+protection de main ;
+environnement de préproduction ;
+Stripe réel ;
+procédures de remboursement et de suppression des données.
+Phase 6 — Étendre le catalogue
+
+Seulement après validation des 24 premières histoires :
+
+passer à 60 ;
+puis 120 ;
+puis ouvrir progressivement le reste du corpus.
+Conclusion
+
+Le meilleur actif d’AcoMytha n’est pas aujourd’hui son volume. C’est l’idée d’un lien direct entre une aventure enfantine et un geste utile pour la vraie vie.
+
+Le produit deviendra commercialement fort lorsque cette promesse sera perceptible dès les trente premières secondes :
+
+L’enfant vient pour l’aventure.
+Le parent choisit ce qu’elle peut lui apporter.
+L’apprentissage se produit sans interrompre l’histoire.
+
+La bonne stratégie n’est donc pas de « finir 1 449 histoires ». C’est de créer d’abord une petite collection que vous seriez sincèrement fier d’acheter pour votre propre enfant, avec un son impeccable, des personnages attachants et une vitrine capable de faire ressentir cette qualité avant même l’inscription.
