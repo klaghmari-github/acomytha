@@ -1,690 +1,1225 @@
 #!/usr/bin/env python3
-"""TREE-DIF-044 — Les groseilles de Raphaël au treillis (N2, DIF.COR.003)."""
+"""TREE-DIF-044 — Les groseilles de Raphaël au treillis (F-NAR-019, N2)."""
 from __future__ import annotations
 
 import json
+import re
 import sys
+from copy import deepcopy
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import LIMITS, ROOT, check, make_chunk, relecture, words  # noqa: E402
+from _lib import FORBIDDEN, LIMITS, ROOT, check, from_script, words  # noqa: E402
 
 SID = "TREE-DIF-044"
 N2 = LIMITS["N2"]
 TITLE = "Les groseilles de Raphaël au treillis"
-FIL = (
-    "Raphaël veut remplir un bol de groseilles rouges pour le goûter. "
-    "Sarah arrive, lunettes encore floues, cheveux mouillés, ciré jaune "
-    "trop long. Ils emportent le bol blanc, le panier d'osier et la nappe "
-    "à carreaux. À la serre la buée cache les grains, sous le tilleul "
-    "les mèches gouttent, au treillis les manches attrapent. Ils cueillent "
-    "ensemble. Le bol rentre, tout rouge."
+TICS = re.compile(
+    r"\b(tout doux|tout calme|tout lent|tout bas|encore|déjà|deja)\b",
+    re.I,
 )
-CHARS = "Raphaël, Sarah, papa, maman"
-SETTING = "jardin après la pluie : serre, tilleul, treillis"
+EXTRA_BAD = (
+    "aujourd'hui",
+    "miel",
+    "grand-père",
+    "grand-pere",
+    "maîtresse",
+    "maitresse",
+    "jardinier",
+    "bibliothécaire",
+    "bibliothecaire",
+    "gardienne",
+    "j'ai compris",
+    "mission accomplie",
+    "on dirait que notre mission",
+    "marque fine",
+    "ombre-flèche",
+    "ombre en forme de flèche",
+    "ancre minuscule",
+    "étoile brune",
+    "fil pâle",
+    "croissant d'eau",
+    "croissant pâle",
+    "virgule de farine",
+    "bouton de nacre",
+    "nœud de raphia",
+    "pois ivoire",
+    "grain de savon",
+    "grain vanille",
+    "pastille de colle",
+    "virgule de buée",
+    "capuchon penche",
+    "grain doré",
+    "brin safran",
+    "anneau de liège",
+    "clou à tête ronde",
+    "grain d'ambre",
+    "goutte de cire",
+    "anneau de zinc",
+    "larme de bronze",
+    "point de cire",
+    "bracelet d'écorce",
+    "boucle d'étain",
+    "anneau de pollen",
+    "dent de laitue",
+    "gouttes pendent",
+    "trois notes",
+    "arrosoir",
+    "statue",
+    "bronze",
+)
+
+PROFILES = {
+    "opening": dict(
+        rate="medium", wpm=142, speed=0.98, piper=1.12, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=500,
+        sentence=260, energy="warm", contour="storytelling", noise=0.36,
+        emphasis="grain de grenat",
+        note=(
+            "arc=installation; intention=émerveiller; emotion=impatience; "
+            "intensite=2; destinataire=enfant; sous_texte=sarah_reste_sur_la_marche; "
+            "tempo=naturel; sourire=léger; respiration=ample"
+        ),
+    ),
+    "choice": dict(
+        rate="slow", wpm=116, speed=0.84, piper=1.30, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=900,
+        sentence=330, energy="focused", contour="rising", noise=0.33,
+        emphasis=None,
+        note=(
+            "arc=choix; intention=inviter; emotion=curiosité; intensite=1; "
+            "destinataire=enfant; sous_texte=ton_choix_change_la_manière; "
+            "tempo=suspendu; sourire=léger; respiration=pause_avant_choix"
+        ),
+    ),
+    "clue": dict(
+        rate="slow", wpm=120, speed=0.86, piper=1.27, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="soft", db=-2, pause=700,
+        sentence=320, energy="focused", contour="rising", noise=0.32,
+        emphasis="bol",
+        note=(
+            "arc=indice; intention=faire_deviner; emotion=attention; intensite=1; "
+            "destinataire=enfant; sous_texte=regarde_ce_qu_il_porte; "
+            "tempo=suspendu; sourire=aucun; respiration=courte_avant_question"
+        ),
+    ),
+    "confirm": dict(
+        rate="medium", wpm=132, speed=0.92, piper=1.20, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=450,
+        sentence=280, energy="bright", contour="falling", noise=0.34,
+        emphasis="Sarah",
+        note=(
+            "arc=confirmation; intention=relancer; emotion=espoir_discret; intensite=1; "
+            "destinataire=enfant; sous_texte=les_trois_partent_avec_eux; "
+            "tempo=naturel; sourire=léger; respiration=fluide"
+        ),
+    ),
+    "action": dict(
+        rate="medium", wpm=146, speed=1.0, piper=1.10, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=420,
+        sentence=250, energy="lively", contour="dynamic", noise=0.37,
+        emphasis=None,
+        note=(
+            "arc=action; intention=entraîner; emotion=impatience; intensite=2; "
+            "destinataire=enfant; sous_texte=il_part_trop_vite_sans_elle; "
+            "tempo=vif; sourire=léger; respiration=courte"
+        ),
+    ),
+    "obstacle": dict(
+        rate="medium", wpm=134, speed=0.93, piper=1.18, pitch="low",
+        pitchSsml="-2st", pitchTag="low-pitch", volume="medium", db=0, pause=520,
+        sentence=300, energy="tense", contour="dynamic", noise=0.34,
+        emphasis=None,
+        note=(
+            "arc=obstacle; intention=alerter_sans_effrayer; emotion=découragement_léger; "
+            "intensite=2; destinataire=enfant; sous_texte=sarah_pose_sa_limite; "
+            "tempo=resserré; sourire=aucun; respiration=retenue"
+        ),
+    ),
+    "resolution": dict(
+        rate="medium", wpm=140, speed=0.97, piper=1.14, pitch="medium",
+        pitchSsml="medium", pitchTag=None, volume="medium", db=0, pause=560,
+        sentence=270, energy="bright", contour="falling", noise=0.35,
+        emphasis="grain de grenat",
+        note=(
+            "arc=résolution; intention=faire_vivre_la_réussite; emotion=fierté_calme; "
+            "intensite=2; destinataire=enfant; sous_texte=il_refuse_de_foncer; "
+            "tempo=naturel; sourire=franc; respiration=relâchée"
+        ),
+    ),
+    "ending": dict(
+        rate="slow", wpm=118, speed=0.85, piper=1.28, pitch="low",
+        pitchSsml="-2st", pitchTag="low-pitch", volume="soft", db=-3, pause=900,
+        sentence=340, energy="calm", contour="falling", noise=0.31,
+        emphasis="grain de grenat",
+        note=(
+            "arc=retour; intention=refermer; emotion=tendresse_et_fierté_calme; intensite=1; "
+            "destinataire=enfant; sous_texte=le_grain_de_grenat_paie_le_début; "
+            "tempo=posé; sourire=léger; respiration=ample"
+        ),
+    ),
+}
+
+CONT = {
+    1: dict(lab="le bol blanc", le="le bol", un="un bol", short="bol", ou="dans les mains", sons="bol,ceramique"),
+    2: dict(lab="le panier d'osier", le="le panier", un="un panier", short="panier", ou="au bras", sons="panier,osier"),
+    3: dict(lab="la nappe à carreaux", le="la nappe", un="une nappe", short="nappe", ou="sous le bras", sons="nappe,tissu"),
+}
+LIEU = {
+    1: dict(lab="la serre", ou="dans la serre", short="serre", sons="serre,verre"),
+    2: dict(lab="le tilleul", ou="sous le tilleul", short="tilleul", sons="tilleul,feuille"),
+    3: dict(lab="le treillis", ou="au treillis", short="treillis", sons="treillis,fer"),
+}
+GESTE = {
+    1: {
+        1: dict(lab="le torchon de maman", short="torchon", sons="torchon,tissu"),
+        2: dict(lab="les mains de Sarah", short="mains", sons="mains,grains"),
+        3: dict(lab="un pas hors de la serre", short="pas", sons="pas,porte"),
+    },
+    2: {
+        1: dict(lab="l'élastique de maman", short="élastique", sons="elastique,cheveux"),
+        2: dict(lab="la serviette", short="serviette", sons="serviette,tissu"),
+        3: dict(lab="Sarah tient le bol", short="tient", sons="bol,mains"),
+    },
+    3: {
+        1: dict(lab="les manches retroussées", short="manches", sons="manches,ciré"),
+        2: dict(lab="Raphaël tient le panier", short="tient_panier", sons="panier,osier"),
+        3: dict(lab="maman noue les poignets", short="noeud", sons="noeud,ciré"),
+    },
+}
+
+Q_FIELDS = {
+    1: {
+        "expected_answer": "mains",
+        "accepted_examples": "mains | les mains | dans les mains | ses mains",
+        "retry_prompt": "Le bol est dans les mains.",
+    },
+    2: {
+        "expected_answer": "bras",
+        "accepted_examples": "bras | le bras | au bras | son bras",
+        "retry_prompt": "Le panier est au bras.",
+    },
+    3: {
+        "expected_answer": "bras",
+        "accepted_examples": "bras | le bras | sous le bras | son bras",
+        "retry_prompt": "La nappe est sous le bras.",
+    },
+}
 
 
-def L(*rows: str) -> list[str]:
+def vet(lines: list[str]) -> list[str]:
     out: list[str] = []
-    for raw in rows:
+    starts: list[str] = []
+    for raw in lines:
         role, ph = raw.split("|", 1)
+        ph = ph.strip()
         n = words(ph)
         if n > N2:
             raise SystemExit(f"{n}>{N2}: {ph}")
+        if n == 0:
+            raise SystemExit(f"vide: {raw}")
         marks = ph.count(".") + ph.count("?") + ph.count("!")
         if marks != 1:
             raise SystemExit(f"ponctuation {marks}: {ph}")
+        if not ph.endswith((".", "?", "!")):
+            raise SystemExit(f"fin: {ph}")
+        if TICS.search(ph):
+            raise SystemExit(f"tic: {ph}")
+        low = ph.lower()
+        for bad in FORBIDDEN:
+            if bad in low:
+                raise SystemExit(f"interdit {bad}: {ph}")
+        for bad in EXTRA_BAD:
+            if bad in low:
+                raise SystemExit(f"extra {bad}: {ph}")
+        tok = ph.split()[0].lower() if role == "narrateur" else ""
+        starts.append(tok)
         out.append(f"{role}|{ph}")
+    run = 1
+    for i in range(1, len(starts)):
+        if starts[i] and starts[i] == starts[i - 1]:
+            run += 1
+            if run >= 4:
+                raise SystemExit(f"puces {starts[i]}")
+        else:
+            run = 1
     return out
 
 
-def t3lab(a: str, b: str, c: str) -> dict:
-    return {"option_1_label": a, "option_2_label": b, "option_3_label": c}
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def qf(ans: str, acc: str, retry: str) -> dict:
-    return {"expected_answer": ans, "accepted_examples": acc, "retry_prompt": retry}
+def ssml(text: str, m: dict) -> str:
+    body = esc(text)
+    emp = m.get("emphasis")
+    if emp:
+        e = esc(emp)
+        if e in body:
+            body = body.replace(e, f'<emphasis level="moderate">{e}</emphasis>', 1)
+    return (
+        f'<speak><prosody rate="{m["rate"]}" pitch="{m["pitchSsml"]}">'
+        f'{body}</prosody><break time="{m["pause"]}ms"/></speak>'
+    )
 
 
-def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dict[str, str]) -> None:
-    src = json.loads((ROOT / SID / "source.json").read_text(encoding="utf-8"))
-    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in scripts]
-    extra_ids = set(scripts) - {c["chunk_id"] for c in src["chunks"]}
-    if missing or extra_ids:
-        raise SystemExit(f"{SID} missing={missing[:8]} extra={sorted(extra_ids)[:8]}")
-    by = {}
-    for c in src["chunks"]:
-        cid = c["chunk_id"]
-        kind = c.get("kind") or ""
-        if kind in ("passage_question", "transition_question"):
-            scale, rate = 1.28, "slow"
-        else:
-            scale, rate = 1.22, "medium"
-        nc = make_chunk(c, scripts[cid], sons.get(cid, c.get("sons") or ""), scale, rate)
-        if cid in extras:
-            nc.update(extras[cid])
-        by[cid] = nc
-    out = dict(src)
-    out["fil_rouge"] = FIL
-    out["title"] = TITLE
-    out["characters"] = CHARS
-    out["setting"] = SETTING
-    out["chunks"] = [by[c["chunk_id"]] for c in src["chunks"]]
-    check(SID, out["age_band"], out["chunks"])
-    blob = "\n".join(c["script"] for c in out["chunks"]).lower()
-    labels = " ".join(
-        f"{c.get('option_1_label') or ''} {c.get('option_2_label') or ''} {c.get('option_3_label') or ''}"
-        for c in out["chunks"]
-    ).lower()
-    whole = blob + "\n" + labels
-    for bad in (
-        "on va apprendre",
-        "voici le geste",
-        "l'histoire est finie",
-        "la première",
-        "la deuxième",
-        "la troisième",
-        "bravo tu as",
-        "bon travail",
-        "pas rire",
-        "jules",
-        "sami",
-        "léa",
-        "tom ",
-        "bac à sable",
-        "toboggan",
-        "balançoire",
-        "capitaine",
-        "plic",
-        "volet jaune",
-        "tarte",
-        "théâtre",
-        "theatre",
-        "marionnette",
-        "poisson",
-        "lavoir",
-        "potager",
-        "tomate",
-        "biscuits",
-        "lunettes, cheveux",
-    ):
-        if bad in whole:
-            raise SystemExit(f"{SID} slogan/calque: {bad}")
-    if "raphaël" not in blob and "raphael" not in blob:
-        raise SystemExit(f"{SID}: Raphaël absent")
-    if "sarah" not in blob:
-        raise SystemExit(f"{SID}: Sarah absente")
-    if "groseille" not in blob:
-        raise SystemExit(f"{SID}: groseilles absentes")
-    for c in out["chunks"]:
-        if c.get("kind") != "passage_fin":
+def xai(text: str, m: dict) -> str:
+    body = text
+    emp = m.get("emphasis")
+    if emp and emp in body:
+        body = body.replace(emp, f"<emphasis>{emp}</emphasis>", 1)
+    if m["rate"] == "slow":
+        body = f"<slow>{body}</slow>"
+    if m["volume"] == "soft":
+        body = f"<soft>{body}</soft>"
+    tag = m.get("pitchTag")
+    if tag:
+        body = f"<{tag}>{body}</{tag}>"
+    pause = m["pause"]
+    suffix = " [long-pause]" if pause >= 800 else (" [pause]" if pause >= 400 else "")
+    return (body + suffix).strip()
+
+
+def voice(src: dict, lines: list[str], profile: str, sons: str, extra: dict | None = None) -> dict:
+    extra = extra or {}
+    lines = vet(lines)
+    m = dict(PROFILES[profile])
+    if "emphasis" in extra:
+        m["emphasis"] = extra["emphasis"]
+    if extra.get("note"):
+        m["note"] = extra["note"]
+    text, script = from_script(lines)
+    if m.get("emphasis") and m["emphasis"] not in text:
+        m["emphasis"] = None
+    out = deepcopy(src)
+    out["text"] = text
+    out["script"] = script
+    out["sons"] = sons if sons is not None else (src.get("sons") or "")
+    if out["sons"] is None:
+        out["sons"] = ""
+    out["text_ssml"] = ssml(text, m)
+    out["text_xai_tags"] = xai(text, m)
+    out["rate_wpm"] = m["wpm"]
+    out["rate_label"] = m["rate"]
+    out["speed_xai"] = m["speed"]
+    out["length_scale_piper"] = m["piper"]
+    out["pitch_label"] = m["pitch"]
+    out["pitch_ssml"] = m["pitchSsml"]
+    out["pitch_xai_tag"] = m["pitchTag"]
+    out["volume_label"] = m["volume"]
+    out["volume_db"] = m["db"]
+    out["emphasis_words"] = m.get("emphasis") or ""
+    out["pause_before_ms"] = extra.get("pause_before_ms", 0)
+    out["pause_after_ms"] = m["pause"]
+    out["pause_sentence_ms"] = m["sentence"]
+    out["style_energy"] = m["energy"]
+    out["style_contour"] = m["contour"]
+    out["noise_scale_piper"] = m["noise"]
+    out["kokoro_speed"] = m["speed"]
+    out["melo_speed"] = m["speed"]
+    out["espeak_amp"] = 82 if m["volume"] == "soft" else 100
+    out["espeak_pitch"] = 42 if m["pitch"] == "low" else 50
+    out["espeak_word_gap"] = 12 if m["rate"] == "slow" else 8
+    out["notes"] = m["note"]
+    out["night_policy"] = extra.get("night_policy", "play")
+    out["locale"] = "fr-FR"
+    out["voice_id"] = "fr_FR-siwis-medium"
+    out.update(extra.get("fields") or {})
+    for k, v in extra.items():
+        if k in ("emphasis", "note", "pause_before_ms", "night_policy", "fields"):
             continue
-        last_n = [x for x in c["script"].splitlines() if x.startswith("narrateur|")]
-        last = last_n[-1].split("|", 1)[1].lower()
-        if "histoire" in last or "bravo" in last or "bon travail" in last:
-            raise SystemExit(f"{SID} {c['chunk_id']} fin mécanique: {last}")
+        out[k] = v
+    return out
+
+
+def path_ids(a: int, b: int, c: int) -> list[str]:
+    return [
+        "CHK_T0000_P0000",
+        "CHK_T0001_P0000",
+        f"CHK_T0001_P000{a}",
+        f"CHK_T0001_P000{a}_Q0001",
+        f"CHK_T0001_P000{a}_C0001",
+        f"CHK_T0001_P000{a}_T0002_P0000",
+        f"CHK_T0001_P000{a}_T0002_P000{b}",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P0000",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}_F0001",
+    ]
+
+
+# Ouverture : un grain tombe dans un bol vide. Indice = grain de grenat.
+OPENING = [
+    "narrateur|Un grain rouge tombe, dans le bol blanc.",
+    "narrateur|Le bol est vide, près de la marche.",
+    "narrateur|Personne ne l'a lancé.",
+    "narrateur|Le treillis de fer fait tic, en séchant.",
+    "narrateur|Un grain de grenat y reste collé.",
+    "narrateur|Papa range les tasses, dans la cuisine.",
+    "narrateur|Maman coupe le pain, pour le goûter.",
+    "enfant-m|Ce grain-là, je le veux !",
+    "narrateur|En ce moment, Raphaël tend la main.",
+    "narrateur|La porte reste ouverte, sans Sarah.",
+    "copine|J'arrive.",
+    "narrateur|Sarah reste sur la marche, ciré trop long.",
+    "narrateur|Ses lunettes gardent un rond de buée.",
+    "narrateur|Raphaël avance, d'un pas.",
+    "narrateur|Sarah ne bouge pas.",
+    "narrateur|Le silence répond, à sa place.",
+    "narrateur|Le sourire de Raphaël disparaît.",
+    "narrateur|Dans sa poitrine, l'envie et l'inquiétude se bousculent.",
+    "narrateur|Papa s'accroupit, à sa hauteur.",
+    "papa|On cueille avec elle, avant le goûter ?",
+    "enfant-m|Vite, les grains vont sécher !",
+]
+
+T1_CHOICE = [
+    "narrateur|Près de la marche, trois choses attendent.",
+    "narrateur|Le bol blanc, le panier d'osier, la nappe.",
+    "maman|Tu prends quoi d'abord, Raphaël ?",
+    "papa|Les trois partent, avec vous.",
+]
+
+T1 = {
+    1: [
+        "narrateur|Raphaël saisit le bol blanc, trop vite.",
+        "narrateur|Le bord est froid, un peu glissant.",
+        "enfant-m|Je le porte, moi !",
+        "narrateur|Il part vers le jardin, sans se retourner.",
+        "narrateur|Sarah reste sur la marche, les pieds collés.",
+        "copine|Attends.",
+        "narrateur|Raphaël s'arrête, le bol contre le ventre.",
+        "narrateur|Le sourire de Raphaël disparaît.",
+        "narrateur|Papa s'accroupit, près de la marche.",
+        "papa|Le panier, ensuite, et la nappe.",
+        "narrateur|Raphaël revient, le bol dans les mains.",
+        "narrateur|Sarah prend la nappe, quand elle veut.",
+        "narrateur|Le panier glisse au bras de papa.",
+        "enfant-m|Le bol est à moi, dans les mains.",
+        "maman|Les trois viennent, avec vous.",
+        "narrateur|Sur le treillis, le grain de grenat tient.",
+    ],
+    2: [
+        "narrateur|Raphaël saisit le panier d'osier, trop vite.",
+        "narrateur|L'osier gratte, un peu mouillé.",
+        "enfant-m|Je le porte, moi !",
+        "narrateur|Il glisse le panier au bras, et part.",
+        "narrateur|Sarah reste sur la marche, ciré trop long.",
+        "copine|Attends.",
+        "narrateur|Raphaël s'arrête, le panier qui penche.",
+        "narrateur|Ses épaules baissent, près de la haie.",
+        "narrateur|Maman s'accroupit, à sa hauteur.",
+        "maman|Le bol, ensuite, et la nappe.",
+        "narrateur|Raphaël revient, le panier au bras.",
+        "narrateur|Sarah prend la nappe, sans se presser.",
+        "narrateur|Le bol blanc passe dans les mains de papa.",
+        "enfant-m|Le panier est à moi, au bras.",
+        "papa|Les trois viennent, avec vous.",
+        "narrateur|Sur le treillis, le grain de grenat tient.",
+    ],
+    3: [
+        "narrateur|Raphaël saisit la nappe à carreaux, trop vite.",
+        "narrateur|Le tissu claque, et se déplie.",
+        "enfant-m|Je la porte, moi !",
+        "narrateur|Sarah recule d'un pas, les lunettes floues.",
+        "copine|Attends.",
+        "narrateur|La nappe retombe, trop large, trop vite.",
+        "narrateur|Le sourire de Raphaël disparaît.",
+        "narrateur|L'envie et l'inquiétude se bousculent.",
+        "narrateur|Papa s'accroupit, près du tissu.",
+        "papa|Le bol, ensuite, et le panier.",
+        "narrateur|Raphaël plie la nappe, sous le bras.",
+        "narrateur|Sarah s'approche, à son pas.",
+        "narrateur|Le bol et le panier partent avec eux.",
+        "enfant-m|La nappe est à moi, sous le bras.",
+        "maman|Les trois viennent, avec vous.",
+        "narrateur|Sur le treillis, le grain de grenat tient.",
+    ],
+}
+
+T1_Q = {
+    1: [
+        "narrateur|Le bol blanc a quitté la marche.",
+        "maman|Le bol est où ?",
+    ],
+    2: [
+        "narrateur|Le panier d'osier a quitté la marche.",
+        "papa|Le panier est où ?",
+    ],
+    3: [
+        "narrateur|La nappe à carreaux a quitté la marche.",
+        "maman|La nappe est où ?",
+    ],
+}
+
+T1_C = {
+    1: [
+        "narrateur|Le bol n'est plus sur la pierre.",
+        "enfant-m|Il est dans les mains.",
+        "papa|Merci, Raphaël, tu as attendu Sarah.",
+        "maman|Où cueille-t-on, alors ?",
+        "enfant-m|Là où le grain de grenat brille.",
+        "narrateur|Sarah marche, un peu derrière.",
+        "narrateur|Le panier et la nappe suivent.",
+    ],
+    2: [
+        "narrateur|Le panier n'est plus sur la pierre.",
+        "enfant-m|Il est au bras.",
+        "maman|Merci, Raphaël, tu as attendu Sarah.",
+        "papa|Où cueille-t-on, alors ?",
+        "enfant-m|Là où le grain de grenat brille.",
+        "narrateur|Sarah marche, un peu derrière.",
+        "narrateur|Le bol et la nappe suivent.",
+    ],
+    3: [
+        "narrateur|La nappe n'est plus sur la pierre.",
+        "enfant-m|Elle est sous le bras.",
+        "papa|Merci, Raphaël, tu as attendu Sarah.",
+        "maman|Où cueille-t-on, alors ?",
+        "enfant-m|Là où le grain de grenat brille.",
+        "narrateur|Sarah marche, un peu derrière.",
+        "narrateur|Le bol et le panier suivent.",
+    ],
+}
+
+T2_CHOICE = {
+    1: [
+        "narrateur|Le jardin offre trois coins, pour cueillir.",
+        "papa|La serre, le tilleul, ou le treillis ?",
+        "maman|Le bol blanc vient avec toi.",
+    ],
+    2: [
+        "narrateur|Le jardin offre trois coins, pour cueillir.",
+        "maman|La serre, le tilleul, ou le treillis ?",
+        "papa|Le panier d'osier vient avec toi.",
+    ],
+    3: [
+        "narrateur|Le jardin offre trois coins, pour cueillir.",
+        "papa|La serre, le tilleul, ou le treillis ?",
+        "maman|La nappe à carreaux vient avec toi.",
+    ],
+}
+
+
+def t2_lines(a: int, b: int) -> list[str]:
+    table = {
+        (1, 1): [
+            "narrateur|Raphaël porte le bol vers la serre.",
+            "narrateur|Le verre est chaud, un peu trouble.",
+            "enfant-m|Les grains, là, tout de suite !",
+            "narrateur|Il tire la manche du ciré de Sarah.",
+            "narrateur|Sarah plante les pieds, au seuil.",
+            "copine|Non.",
+            "narrateur|Raphaël entre seul, le bol en avant.",
+            "narrateur|La buée cache les tiges, et les grains.",
+            "narrateur|Sa main cueille à l'aveugle, trop vite.",
+            "narrateur|Deux grains ratent le bol, et s'écrasent.",
+            "enfant-m|Ils sont partis !",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Dans sa poitrine, ça serre, fort.",
+            "narrateur|Maman s'accroupit, au seuil de la serre.",
+            "maman|Elle n'est pas entrée.",
+            "papa|Personne ne dit où courir.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Derrière le verre, le grain de grenat brille.",
+        ],
+        (1, 2): [
+            "narrateur|Raphaël porte le bol vers le tilleul.",
+            "narrateur|Les feuilles lourdes touchent le ciré.",
+            "enfant-m|Les grains par terre, vite !",
+            "narrateur|Il court sous les branches, sans Sarah.",
+            "narrateur|Sarah reste au soleil, lunettes floues.",
+            "copine|Là, c'est trop mouillé.",
+            "narrateur|Raphaël ramasse, trop vite, trop bas.",
+            "narrateur|Le bol penche, un grain glisse dehors.",
+            "enfant-m|Il tombe !",
+            "narrateur|Ce n'était pas un grain, c'était une feuille.",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Ses épaules baissent, sous le tilleul.",
+            "narrateur|Papa s'accroupit, près de l'herbe.",
+            "papa|Elle n'a pas bougé.",
+            "maman|Personne ne donne la réponse.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Au fond, le grain de grenat tient au fil.",
+        ],
+        (1, 3): [
+            "narrateur|Raphaël porte le bol vers le treillis.",
+            "narrateur|Le fer fait tic, tout près du grain.",
+            "enfant-m|Le grain de grenat, c'est le mien !",
+            "narrateur|Il tend le bol, et tire Sarah.",
+            "narrateur|La manche trop longue s'accroche au fil.",
+            "copine|Attends.",
+            "narrateur|Raphaël tire, une seconde de trop.",
+            "narrateur|La branche plie, le bol cogne le fer.",
+            "enfant-m|Il va tomber !",
+            "narrateur|Sarah ne dit plus rien.",
+            "narrateur|Le silence pèse, entre les fils.",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Papa s'accroupit, à leur hauteur.",
+            "papa|Le fil a parlé, à sa place.",
+            "maman|Personne ne dit de tirer.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Le grain de grenat attend, collé.",
+        ],
+        (2, 1): [
+            "narrateur|Raphaël porte le panier vers la serre.",
+            "narrateur|L'osier racle le seuil de bois.",
+            "enfant-m|On entre, les grains sont là !",
+            "narrateur|Il pousse le panier, et la manche de Sarah.",
+            "narrateur|Sarah s'arrête, les lunettes blanches de buée.",
+            "copine|Je vois un nuage.",
+            "narrateur|Raphaël entre seul, le panier trop large.",
+            "narrateur|Une tige accroche l'osier, dans la vapeur.",
+            "narrateur|Le panier se coince, et penche.",
+            "enfant-m|Il est pris !",
+            "narrateur|Ses épaules baissent, dans la chaleur.",
+            "narrateur|Maman s'accroupit, au seuil.",
+            "maman|Elle est restée dehors.",
+            "papa|Personne ne dit où forcer.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|À travers le verre, le grain de grenat veille.",
+        ],
+        (2, 2): [
+            "narrateur|Raphaël porte le panier vers le tilleul.",
+            "narrateur|L'herbe mouille le bas du ciré.",
+            "enfant-m|Les grains, sous les feuilles !",
+            "narrateur|Il avance trop vite, le panier ouvert.",
+            "narrateur|Sarah reste en bordure, les cheveux lourds.",
+            "copine|Mes cheveux collent.",
+            "narrateur|Une feuille mouillée tombe dans l'osier.",
+            "narrateur|Raphaël cueille sans elle, à deux mains.",
+            "narrateur|Le panier penche, la feuille cache le fond.",
+            "enfant-m|Je ne vois plus !",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Papa s'accroupit, sous les branches.",
+            "papa|Elle n'est pas venue.",
+            "maman|Personne ne donne la réponse.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Au fond du jardin, le grain de grenat tient.",
+        ],
+        (2, 3): [
+            "narrateur|Raphaël porte le panier vers le treillis.",
+            "narrateur|L'osier frotte le fil, tout près.",
+            "enfant-m|Le grain de grenat, dans le panier !",
+            "narrateur|Il lève le panier, trop haut, trop vite.",
+            "narrateur|Sarah lève une main, puis la baisse.",
+            "copine|Pas si haut.",
+            "narrateur|Le panier cogne le fer, et sonne.",
+            "narrateur|La manche de Sarah s'enroule au fil.",
+            "enfant-m|Tu es prise !",
+            "narrateur|Sarah ne tire pas, elle attend.",
+            "narrateur|Le silence compte, plus que les mots.",
+            "narrateur|L'envie et l'inquiétude se bousculent.",
+            "narrateur|Maman s'accroupit, près des fils.",
+            "maman|Le panier a parlé trop fort.",
+            "papa|Personne ne dit de tirer.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Le grain de grenat reste collé, patient.",
+        ],
+        (3, 1): [
+            "narrateur|Raphaël porte la nappe vers la serre.",
+            "narrateur|Le tissu sent la vapeur, tout de suite.",
+            "enfant-m|On étend, et on cueille !",
+            "narrateur|Il tire Sarah vers le verre chaud.",
+            "narrateur|Sarah secoue la tête, un seul geste.",
+            "copine|Dedans, je vois mal.",
+            "narrateur|Raphaël entre, la nappe trop large.",
+            "narrateur|La buée alourdit les carreaux du tissu.",
+            "narrateur|La nappe glisse, et traîne au sol mouillé.",
+            "enfant-m|Elle est trop lourde !",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Papa s'accroupit, au seuil.",
+            "papa|Elle n'a pas suivi.",
+            "maman|Personne ne dit où courir.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Derrière le verre, le grain de grenat brille.",
+        ],
+        (3, 2): [
+            "narrateur|Raphaël porte la nappe vers le tilleul.",
+            "narrateur|Les carreaux claquent, sous les branches.",
+            "enfant-m|On s'assoit, et on cueille !",
+            "narrateur|Il étend trop vite, sans regarder Sarah.",
+            "narrateur|Sarah reste debout, les cheveux lourds.",
+            "copine|Mes lunettes, d'abord.",
+            "narrateur|Une feuille colle à la nappe, sombre.",
+            "narrateur|Raphaël pose le bol, trop près du tronc.",
+            "narrateur|Le tissu glisse sur l'herbe mouillée.",
+            "enfant-m|Elle part !",
+            "narrateur|Ses épaules baissent, sous le tilleul.",
+            "narrateur|Maman s'accroupit, près du tissu.",
+            "maman|Elle n'est pas assise.",
+            "papa|Personne ne donne la réponse.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Au fond, le grain de grenat tient au fil.",
+        ],
+        (3, 3): [
+            "narrateur|Raphaël porte la nappe vers le treillis.",
+            "narrateur|Le tissu veut s'accrocher, aux fils.",
+            "enfant-m|Le grain de grenat, sur la nappe !",
+            "narrateur|Il lève la nappe, comme un drapeau.",
+            "narrateur|Sarah recule, pour ne pas être prise.",
+            "copine|Le fil, il pique.",
+            "narrateur|Un coin de nappe s'enroule au fer.",
+            "narrateur|Raphaël tire, trop fort, trop vite.",
+            "narrateur|Le grain de grenat tremble, presque lâché.",
+            "enfant-m|Il va tomber dans l'herbe !",
+            "narrateur|Sarah ne dit plus rien.",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Papa s'accroupit, près du fil.",
+            "papa|La nappe a trop parlé.",
+            "maman|Personne ne dit de tirer.",
+            "enfant-m|Je ne fonce pas.",
+            "narrateur|Le grain de grenat tient, juste.",
+        ],
+    }
+    return table[(a, b)]
+
+
+T3_CHOICE = {
+    1: [
+        "narrateur|La serre attend, avec Sarah au seuil.",
+        "papa|Le torchon de maman, les mains de Sarah ?",
+        "maman|Ou un pas hors de la serre ?",
+        "narrateur|On suit le grain de grenat.",
+    ],
+    2: [
+        "narrateur|Le tilleul attend, avec Sarah au bord.",
+        "maman|L'élastique de maman, ou la serviette ?",
+        "papa|Ou Sarah tient le bol ?",
+        "narrateur|On suit le grain de grenat.",
+    ],
+    3: [
+        "narrateur|Le treillis attend, le fil un peu tendu.",
+        "papa|Les manches retroussées, ou tu tiens le panier ?",
+        "maman|Ou je noue les poignets ?",
+        "narrateur|On suit le grain de grenat.",
+    ],
+}
+
+
+def t3_lines(a: int, b: int, c: int) -> list[str]:
+    arrive = {
+        (1, 1): [
+            "narrateur|Maman tend le torchon, près du verre.",
+            "enfant-m|J'essuie, vite, pour voir !",
+            "narrateur|Il frotte trop fort, trop tôt.",
+        ],
+        (1, 2): [
+            "narrateur|Sarah ouvre les paumes, près des tiges.",
+            "enfant-m|Tes mains, les grains, tout de suite !",
+            "narrateur|Il veut y poser un grain, trop vite.",
+        ],
+        (1, 3): [
+            "narrateur|Le seuil de la serre reste mouillé.",
+            "enfant-m|Un pas dehors, et on cueille !",
+            "narrateur|Il tire vers la porte, trop tôt.",
+        ],
+        (2, 1): [
+            "narrateur|Maman tend l'élastique, sous le tilleul.",
+            "enfant-m|Tes cheveux, je les prends !",
+            "narrateur|Il lève une mèche, trop vite.",
+        ],
+        (2, 2): [
+            "narrateur|La serviette attend, pliée, un peu rêche.",
+            "enfant-m|J'essuie tes lunettes, moi !",
+            "narrateur|Il approche le tissu, trop près.",
+        ],
+        (2, 3): [
+            "narrateur|Le bol blanc cherche une paire de mains.",
+            "enfant-m|Tiens, c'est à toi, maintenant !",
+            "narrateur|Il pousse le bol, trop vite.",
+        ],
+        (3, 1): [
+            "narrateur|Les manches du ciré pendent, trop longues.",
+            "enfant-m|On retrousse, et on prend le grain !",
+            "narrateur|Il saisit la manche de Sarah, trop vite.",
+        ],
+        (3, 2): [
+            "narrateur|Le panier d'osier attend, entre les fils.",
+            "enfant-m|Je le tiens, toi tu cueilles !",
+            "narrateur|Il tient et cueille, les deux à la fois.",
+        ],
+        (3, 3): [
+            "narrateur|Maman tient un lien, près des poignets.",
+            "enfant-m|Noue, comme ça on va plus vite !",
+            "narrateur|Sarah cache les mains, dans les manches.",
+        ],
+    }[(b, c)]
+    ruse = {
+        1: [
+            "narrateur|Sur le verre, un second bol apparaît.",
+            "enfant-m|Il y en a deux !",
+            "narrateur|Le faux bol tremble, c'est le reflet.",
+        ],
+        2: [
+            "narrateur|Une feuille sombre imite un grain, au sol.",
+            "enfant-m|Un grain, là !",
+            "narrateur|Ce n'est pas un grain, c'est une feuille.",
+        ],
+        3: [
+            "narrateur|Une ombre de fil imite une tige, rouge.",
+            "enfant-m|Le grain, je le tiens !",
+            "narrateur|Sa main ferme le vide, pas le grain.",
+        ],
+    }[b]
+    body = {
+        1: [
+            "narrateur|Sarah ne dit rien, les mains fermées.",
+            "narrateur|Le sourire de Raphaël disparaît.",
+            "narrateur|Dans sa poitrine, ça serre, fort.",
+            "narrateur|Papa s'accroupit, à sa hauteur.",
+            "papa|Tu tires, ou tu regardes ?",
+            "enfant-m|Je cherche, sans foncer.",
+        ],
+        2: [
+            "narrateur|Sarah recule d'un souffle, sans parler.",
+            "narrateur|Ses épaules baissent, un peu.",
+            "narrateur|Maman s'accroupit, à sa hauteur.",
+            "maman|Tu forces, ou tu regardes ?",
+            "enfant-m|J'attends, je regarde.",
+        ],
+        3: [
+            "narrateur|Sarah pose sa limite, sans un mot.",
+            "narrateur|L'envie de prendre lui pique les doigts.",
+            "narrateur|Papa s'accroupit, près du fil.",
+            "papa|Tu vois le grain, où ?",
+            "enfant-m|Je cherche, sans foncer.",
+        ],
+    }[c]
+    listen = {
+        1: "narrateur|Il écoute le verre, puis le silence de Sarah.",
+        2: "narrateur|Il écoute les feuilles, puis le silence de Sarah.",
+        3: "narrateur|Il écoute le fer, puis le silence de Sarah.",
+    }[b]
+    pay = "narrateur|Le grain de grenat reparaît, collé."
+    gesture = {
+        (1, 1): "narrateur|Il tend le torchon, et laisse Sarah frotter.",
+        (1, 2): "narrateur|Il tient le bol, les mains de Sarah cueillent.",
+        (1, 3): "narrateur|Ils font un pas hors de la serre, ensemble.",
+        (2, 1): "narrateur|Sarah hoche, puis maman noue l'élastique.",
+        (2, 2): "narrateur|Sarah dit quand la serviette peut venir.",
+        (2, 3): "narrateur|Sarah prend le bol, quand elle veut.",
+        (3, 1): "narrateur|Ils retroussent les manches, les siennes d'abord.",
+        (3, 2): "narrateur|Raphaël tient le panier, Sarah cueille.",
+        (3, 3): "narrateur|Sarah offre les poignets, maman noue.",
+    }[(b, c)]
+    together = {
+        1: "narrateur|Un grain rouge roule dans le bol, enfin.",
+        2: "narrateur|Un grain rouge tombe dans le panier, enfin.",
+        3: "narrateur|Un grain rouge pose sa tache, sur la nappe.",
+    }[a]
+    adult = {
+        1: "maman|Vous l'avez, sans la tirer.",
+        2: "papa|Elle a cueilli, à son pas.",
+        3: "maman|Le fil n'a plus parlé trop fort.",
+    }[c]
+    traces = {
+        (1, 1): "narrateur|Le torchon garde un rond de buée, minuscule.",
+        (1, 2): "narrateur|Une paume de Sarah a teinté le bord du bol.",
+        (1, 3): "narrateur|Un pas hors de la serre a séché la pierre.",
+        (2, 1): "narrateur|L'élastique garde une mèche, un peu froide.",
+        (2, 2): "narrateur|La serviette a un carré plus sombre, unique.",
+        (2, 3): "narrateur|Le bol a deux petites mains, en buée.",
+        (3, 1): "narrateur|Une manche garde un fil de fer, minuscule.",
+        (3, 2): "narrateur|L'osier a une écorchure, près de l'anse.",
+        (3, 3): "narrateur|Le nœud des poignets laisse une marque tiède.",
+    }[(b, c)]
+    almost = {
+        (1, 1, 1): "narrateur|Le reflet du bol mentait, presque jusqu'au bout.",
+        (1, 1, 2): "narrateur|Les poings fermés de Sarah ont failli rester.",
+        (1, 1, 3): "narrateur|La serre a voulu les garder, une seconde.",
+        (1, 2, 1): "narrateur|La mèche mouillée a failli cacher l'élastique.",
+        (1, 2, 2): "narrateur|La feuille sombre a failli entrer dans le bol.",
+        (1, 2, 3): "narrateur|Le bol a failli rester dans ses seules mains.",
+        (1, 3, 1): "narrateur|La manche accrochée a failli tout arrêter.",
+        (1, 3, 2): "narrateur|Le panier trop haut a failli sonner trop fort.",
+        (1, 3, 3): "narrateur|Les mains cachées ont failli ne jamais sortir.",
+        (2, 1, 1): "narrateur|Le torchon trop vite a failli rayer le verre.",
+        (2, 1, 2): "narrateur|Le grain dans sa main a failli tomber seul.",
+        (2, 1, 3): "narrateur|Le panier coincé a failli rester dans la vapeur.",
+        (2, 2, 1): "narrateur|La mèche a failli rester collée, trop lourde.",
+        (2, 2, 2): "narrateur|La feuille dans l'osier a failli cacher le fond.",
+        (2, 2, 3): "narrateur|Sarah a failli ne pas prendre le bol.",
+        (2, 3, 1): "narrateur|Le fil a failli garder la manche, trop serré.",
+        (2, 3, 2): "narrateur|Les deux gestes à la fois ont failli tout verser.",
+        (2, 3, 3): "narrateur|Le lien a failli attendre des mains absentes.",
+        (3, 1, 1): "narrateur|La nappe trop lourde a failli rester au sol.",
+        (3, 1, 2): "narrateur|Les carreaux mouillés ont failli tout cacher.",
+        (3, 1, 3): "narrateur|Le pas dehors a failli se faire sans elle.",
+        (3, 2, 1): "narrateur|La mèche sous le tilleul a failli tout coller.",
+        (3, 2, 2): "narrateur|La nappe glissante a failli partir seule.",
+        (3, 2, 3): "narrateur|Le bol poussé a failli tomber dans l'herbe.",
+        (3, 3, 1): "narrateur|Le coin de nappe a failli arracher le grain.",
+        (3, 3, 2): "narrateur|Le drapeau de tissu a failli tout emmêler.",
+        (3, 3, 3): "narrateur|Le grain de grenat a failli tomber dans l'herbe.",
+    }[(a, b, c)]
+    return (
+        arrive
+        + ruse
+        + body
+        + [listen, pay, gesture, together, adult, traces, almost]
+    )
+
+
+def ending_lines(a: int, b: int, c: int) -> list[str]:
+    firsts = {
+        (1, 1, 1): "Le torchon sèche, près de la fenêtre.",
+        (1, 1, 2): "Deux paumes rouges se posent sur la table.",
+        (1, 1, 3): "La pierre du seuil redevient claire.",
+        (1, 2, 1): "Une mèche libre bouge, près du pain.",
+        (1, 2, 2): "La serviette garde un carré sombre, posée.",
+        (1, 2, 3): "Le bol blanc a deux traces de doigts.",
+        (1, 3, 1): "Une manche retroussée reste ainsi, à table.",
+        (1, 3, 2): "L'anse du panier penche, un peu, au bois.",
+        (1, 3, 3): "Le nœud des poignets dort, près du pain.",
+        (2, 1, 1): "Le verre de la serre se tait, au loin.",
+        (2, 1, 2): "Une tige a laissé sa sève, sur l'osier.",
+        (2, 1, 3): "Le seuil de bois a un pas plus clair.",
+        (2, 2, 1): "L'élastique repose, près de la tasse.",
+        (2, 2, 2): "Une feuille sèche, unique, sur la serviette.",
+        (2, 2, 3): "Sarah garde le bol, jusqu'à la table.",
+        (2, 3, 1): "Un fil de fer dort, dans une manche.",
+        (2, 3, 2): "Le panier sonne moins, posé au bois.",
+        (2, 3, 3): "Les poignets libres posent les grains, un à un.",
+        (3, 1, 1): "La nappe à carreaux a un coin plus lourd.",
+        (3, 1, 2): "Un carreau de tissu a senti la vapeur.",
+        (3, 1, 3): "Un pas dehors a suivi jusqu'à la marche.",
+        (3, 2, 1): "Une mèche sent le tilleul, près du pain.",
+        (3, 2, 2): "La nappe a un carré d'herbe, minuscule.",
+        (3, 2, 3): "Le bol a voyagé, dans les mains de Sarah.",
+        (3, 3, 1): "Le fer du treillis fait tic, plus loin.",
+        (3, 3, 2): "Un carreau de nappe a frôlé le fil.",
+        (3, 3, 3): "Le lien de maman reste près des assiettes.",
+    }
+    lasts = {
+        (1, 1, 1): "Sur le torchon, un grain de grenat sèche.",
+        (1, 1, 2): "Dans une paume, le grain de grenat tient.",
+        (1, 1, 3): "Hors de la serre, le grain de grenat brille.",
+        (1, 2, 1): "Près de l'élastique, le grain de grenat veille.",
+        (1, 2, 2): "Sur la serviette, le grain de grenat repose.",
+        (1, 2, 3): "Au fond du bol, le grain de grenat tient.",
+        (1, 3, 1): "Dans une manche, le grain de grenat a voyagé.",
+        (1, 3, 2): "Au fond du panier, le grain de grenat roule.",
+        (1, 3, 3): "Près du nœud, le grain de grenat s'endort.",
+        (2, 1, 1): "Loin du verre, le grain de grenat se tait.",
+        (2, 1, 2): "Contre l'osier, le grain de grenat s'est calé.",
+        (2, 1, 3): "Sur la pierre sèche, le grain de grenat pose.",
+        (2, 2, 1): "Sous une mèche, le grain de grenat a passé.",
+        (2, 2, 2): "Près de la feuille, le grain de grenat reste.",
+        (2, 2, 3): "Entre deux mains, le grain de grenat voyage.",
+        (2, 3, 1): "Au pli d'une manche, le grain de grenat dort.",
+        (2, 3, 2): "Sous l'anse, le grain de grenat ne sonne plus.",
+        (2, 3, 3): "Sur un poignet libre, le grain de grenat a glissé.",
+        (3, 1, 1): "Dans un carreau lourd, le grain de grenat tient.",
+        (3, 1, 2): "Sous un carreau tiède, le grain de grenat brille.",
+        (3, 1, 3): "Près de la marche, le grain de grenat rentre.",
+        (3, 2, 1): "À côté du pain, le grain de grenat sent l'arbre.",
+        (3, 2, 2): "Sur un carré d'herbe, le grain de grenat sèche.",
+        (3, 2, 3): "Dans le bol de Sarah, le grain de grenat reste.",
+        (3, 3, 1): "Loin du tic, le grain de grenat s'est posé.",
+        (3, 3, 2): "Au bord du tissu, le grain de grenat s'est arrêté.",
+        (3, 3, 3): "Près des assiettes, le grain de grenat a une place.",
+    }
+    qs = {
+        1: "papa|Quel moment tu gardes, dans la serre ?",
+        2: "maman|Quel moment tu gardes, sous le tilleul ?",
+        3: "papa|Quel moment tu gardes, au treillis ?",
+    }[b]
+    ans = {
+        (1, 1, 1): "enfant-m|Quand le torchon a cessé de frotter trop fort.",
+        (1, 1, 2): "enfant-m|Quand ses mains ont cueilli, pas les miennes.",
+        (1, 1, 3): "enfant-m|Quand on a fait le pas, hors de la buée.",
+        (1, 2, 1): "enfant-m|Quand l'élastique a attendu son hochement.",
+        (1, 2, 2): "enfant-m|Quand la serviette a attendu son oui.",
+        (1, 2, 3): "enfant-m|Quand elle a pris le bol, sans que je pousse.",
+        (1, 3, 1): "enfant-m|Quand on a retroussé, les siennes d'abord.",
+        (1, 3, 2): "enfant-m|Quand j'ai tenu le panier, sans cueillir.",
+        (1, 3, 3): "enfant-m|Quand elle a offert les poignets, toute seule.",
+        (2, 1, 1): "enfant-m|Quand le reflet a menti, et que j'ai vu.",
+        (2, 1, 2): "enfant-m|Quand ses poings fermés m'ont dit d'attendre.",
+        (2, 1, 3): "enfant-m|Quand le panier a cessé de se coincer.",
+        (2, 2, 1): "enfant-m|Quand la mèche a cessé d'être trop lourde.",
+        (2, 2, 2): "enfant-m|Quand la feuille a cessé de faire le grain.",
+        (2, 2, 3): "enfant-m|Quand elle a dit non, sous les branches.",
+        (2, 3, 1): "enfant-m|Quand le fil a parlé, à sa place.",
+        (2, 3, 2): "enfant-m|Quand le panier a sonné, et que je me suis arrêté.",
+        (2, 3, 3): "enfant-m|Quand ses mains sont sorties, sans qu'on tire.",
+        (3, 1, 1): "enfant-m|Quand la nappe trop lourde a cessé de glisser.",
+        (3, 1, 2): "enfant-m|Quand elle a dit : je vois mal.",
+        (3, 1, 3): "enfant-m|Quand le pas dehors s'est fait avec elle.",
+        (3, 2, 1): "enfant-m|Quand ses lunettes ont parlé, d'abord.",
+        (3, 2, 2): "enfant-m|Quand la nappe a cessé de partir seule.",
+        (3, 2, 3): "enfant-m|Quand je n'ai plus poussé le bol.",
+        (3, 3, 1): "enfant-m|Quand le grain a tremblé, et que j'ai lâché.",
+        (3, 3, 2): "enfant-m|Quand le tissu a cessé d'être un drapeau.",
+        (3, 3, 3): "enfant-m|Quand le grain de grenat a failli tomber.",
+    }[(a, b, c)]
+    mid = {
+        1: f"narrateur|Voilà {CONT[a]['le']}, sur la nappe du goûter.",
+        2: f"narrateur|Voilà {CONT[a]['le']}, près du pain coupé.",
+        3: f"narrateur|Voilà {CONT[a]['le']}, au milieu de la table.",
+    }[c]
+    return [
+        f"narrateur|{firsts[(a, b, c)]}",
+        f"narrateur|Ils ont cueilli {LIEU[b]['ou']}.",
+        mid,
+        "narrateur|Le grain de grenat a quitté le fil.",
+        "enfant-m|Il est rentré, avec sa trace.",
+        "copine|On l'a pris, tous les deux.",
+        qs,
+        ans,
+        "enfant-m|Je raconte le moment difficile, surtout.",
+        "maman|Le goûter peut commencer, maintenant.",
+        f"narrateur|{lasts[(a, b, c)]}",
+    ]
+
+
+def ending_note(a: int, b: int, c: int) -> str:
+    return (
+        f"arc=retour; intention=refermer; emotion=tendresse_et_fierté_calme; intensite=1; "
+        f"destinataire=enfant; sous_texte=trace_{CONT[a]['short']}_{LIEU[b]['short']}_{GESTE[b][c]['short']}; "
+        f"tempo=posé; sourire=léger; respiration=ample"
+    )
+
+
+def build() -> None:
+    src = json.loads((ROOT / SID / "source.json").read_text(encoding="utf-8"))
+    by_src = {c["chunk_id"]: c for c in src["chunks"]}
+    out_chunks: dict[str, dict] = {}
+
+    def put(cid: str, lines: list[str], profile: str, sons: str, extra: dict | None = None) -> None:
+        out_chunks[cid] = voice(by_src[cid], lines, profile, sons, extra)
+
+    put("CHK_T0000_P0000", OPENING, "opening", "bol,treillis,fer")
+    put(
+        "CHK_T0001_P0000",
+        T1_CHOICE,
+        "choice",
+        "",
+        {"fields": {
+            "option_1_label": "le bol blanc",
+            "option_2_label": "le panier d'osier",
+            "option_3_label": "la nappe à carreaux",
+        }},
+    )
+
+    t3_labs = {
+        1: ("le torchon de maman", "les mains de Sarah", "un pas hors de la serre"),
+        2: ("l'élastique de maman", "la serviette", "Sarah tient le bol"),
+        3: ("les manches retroussées", "Raphaël tient le panier", "maman noue les poignets"),
+    }
+
+    for a in (1, 2, 3):
+        put(
+            f"CHK_T0001_P000{a}",
+            T1[a],
+            "action",
+            CONT[a]["sons"],
+            {"emphasis": CONT[a]["short"]},
+        )
+        put(
+            f"CHK_T0001_P000{a}_Q0001",
+            T1_Q[a],
+            "clue",
+            "",
+            {"emphasis": CONT[a]["short"], "fields": Q_FIELDS[a]},
+        )
+        put(
+            f"CHK_T0001_P000{a}_C0001",
+            T1_C[a],
+            "confirm",
+            CONT[a]["sons"],
+            {"emphasis": "grain de grenat"},
+        )
+        put(
+            f"CHK_T0001_P000{a}_T0002_P0000",
+            T2_CHOICE[a],
+            "choice",
+            "",
+            {"fields": {
+                "option_1_label": "la serre",
+                "option_2_label": "le tilleul",
+                "option_3_label": "le treillis",
+            }},
+        )
+        for b in (1, 2, 3):
+            put(
+                f"CHK_T0001_P000{a}_T0002_P000{b}",
+                t2_lines(a, b),
+                "obstacle",
+                LIEU[b]["sons"],
+                {"emphasis": LIEU[b]["short"]},
+            )
+            labs = t3_labs[b]
+            put(
+                f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P0000",
+                T3_CHOICE[b],
+                "choice",
+                "",
+                {"fields": {
+                    "option_1_label": labs[0],
+                    "option_2_label": labs[1],
+                    "option_3_label": labs[2],
+                }},
+            )
+            for c in (1, 2, 3):
+                base = f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}"
+                put(
+                    base,
+                    t3_lines(a, b, c),
+                    "resolution",
+                    GESTE[b][c]["sons"],
+                    {"emphasis": "grain de grenat"},
+                )
+                put(
+                    f"{base}_F0001",
+                    ending_lines(a, b, c),
+                    "ending",
+                    "table,gouter,grains",
+                    {"emphasis": "grain de grenat", "note": ending_note(a, b, c)},
+                )
+
+    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in out_chunks]
+    extra = sorted(set(out_chunks) - {c["chunk_id"] for c in src["chunks"]})
+    if missing or extra:
+        raise SystemExit(f"missing={missing[:12]} extra={extra[:12]}")
+
+    ends = [out_chunks[c["chunk_id"]]["text"] for c in src["chunks"] if c["kind"] == "passage_fin"]
+    if len(ends) != 27 or len(set(ends)) != 27:
+        raise SystemExit(f"fins distinctes: {len(set(ends))}/{len(ends)}")
+
+    lasts = []
+    for c in src["chunks"]:
+        if c["kind"] != "passage_fin":
+            continue
+        last_n = [ln for ln in out_chunks[c["chunk_id"]]["script"].splitlines() if ln.startswith("narrateur|")]
+        lasts.append(last_n[-1])
+        low = last_n[-1].split("|", 1)[1].lower()
+        if "histoire" in low or "bravo" in low or "bon travail" in low:
+            raise SystemExit(f"fin mécanique: {last_n[-1]}")
+    if len(set(lasts)) != 27:
+        raise SystemExit(f"dernières images {len(set(lasts))}/27")
+
+    t3_only = [
+        out_chunks[c["chunk_id"]]["text"]
+        for c in src["chunks"]
+        if c["kind"] == "passage" and "T0003_P000" in c["chunk_id"] and "_F0001" not in c["chunk_id"]
+        and not c["chunk_id"].endswith("T0003_P0000")
+    ]
+    if len(t3_only) != 27 or len(set(t3_only)) != 27:
+        raise SystemExit(f"T3 distincts: {len(set(t3_only))}/{len(t3_only)}")
+
+    t2_only = [
+        out_chunks[c["chunk_id"]]["text"]
+        for c in src["chunks"]
+        if c["kind"] == "passage" and "_T0002_P000" in c["chunk_id"] and "T0003" not in c["chunk_id"]
+    ]
+    if len(t2_only) != 9 or len(set(t2_only)) != 9:
+        raise SystemExit(f"T2 distincts: {len(set(t2_only))}/{len(t2_only)}")
+
+    blob = "\n".join(c["script"] for c in out_chunks.values()).lower()
+    if blob.count("en ce moment") != 1:
+        raise SystemExit(f"en ce moment x{blob.count('en ce moment')}")
+    if "grain de grenat" not in out_chunks["CHK_T0000_P0000"]["text"].lower():
+        raise SystemExit("indice absent de l'ouverture")
+    for c in src["chunks"]:
+        if c["kind"] == "passage" and "T0003_P000" in c["chunk_id"] and "_F0001" not in c["chunk_id"] and not c["chunk_id"].endswith("T0003_P0000"):
+            if "grain de grenat" not in out_chunks[c["chunk_id"]]["text"].lower():
+                raise SystemExit(f"indice non payé: {c['chunk_id']}")
+
+    adult_join = " ".join(
+        ln.split("|", 1)[1]
+        for ch in out_chunks.values()
+        for ln in ch["script"].splitlines()
+        if ln.startswith("papa|") or ln.startswith("maman|")
+    ).lower()
+    if adult_join.count("merci") + adult_join.count("bravo") > 6:
+        raise SystemExit("merci/bravo trop répété")
+
+    merged = dict(src)
+    merged["fil_rouge"] = (
+        "Un grain rouge tombe dans le bol blanc, vide, près de la marche. "
+        "Le treillis de fer fait tic en séchant : un grain de grenat y reste "
+        "collé. Raphaël veut le cueillir pour le goûter, tout de suite. Sarah "
+        "reste sur la marche, ciré trop long, lunettes floues. Le silence "
+        "répond. Papa s'accroupit. Bol, panier ou nappe : les trois partent. "
+        "Serre, tilleul ou treillis : il tire, elle pose sa limite. Il refuse "
+        "de foncer. Torchon, mains, pas ; élastique, serviette, bol ; manches, "
+        "panier, nœud. Le grain de grenat paie le début. Vingt-sept traces."
+    )
+    merged["title"] = TITLE
+    merged["characters"] = "Raphaël, Sarah, papa, maman"
+    merged["setting"] = "jardin après la pluie : serre, tilleul, treillis"
+    merged["chunks"] = [out_chunks[c["chunk_id"]] for c in src["chunks"]]
+    check(SID, merged["age_band"], merged["chunks"])
+    counts = [
+        sum(words(out_chunks[i]["text"]) for i in path_ids(a, b, c))
+        for a in (1, 2, 3) for b in (1, 2, 3) for c in (1, 2, 3)
+    ]
+    if min(counts) < 550 or max(counts) > 700:
+        raise SystemExit(f"chemin hors barre 550-700: min {min(counts)} max {max(counts)}")
+    tts_ok = all(c.get("text_xai_tags") and c.get("notes") and c.get("style_energy") for c in merged["chunks"])
+    if not tts_ok:
+        raise SystemExit("TTS incomplet")
     (ROOT / SID / "merged.json").write_text(
-        json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-
-
-OBJ = {
-    1: {
-        "lab": "le bol blanc",
-        "cap": "Le bol blanc",
-        "t1q": "dans les mains",
-        "t1line": "Le bol blanc est dans les mains.",
-        "t1acc": "mains | les mains | dans les mains | ses mains",
-        "t1retry": "Le bol est dans les mains.",
-        "coda": "narrateur|Le bol blanc rentre, tout rouge.",
-    },
-    2: {
-        "lab": "le panier d'osier",
-        "cap": "Le panier d'osier",
-        "t1q": "au bras",
-        "t1line": "Le panier d'osier est au bras.",
-        "t1acc": "bras | le bras | au bras | son bras",
-        "t1retry": "Le panier est au bras.",
-        "coda": "narrateur|Le panier d'osier sèche près de la marche.",
-    },
-    3: {
-        "lab": "la nappe à carreaux",
-        "cap": "La nappe à carreaux",
-        "t1q": "sous le bras",
-        "t1line": "La nappe à carreaux est sous le bras.",
-        "t1acc": "bras | le bras | sous le bras | son bras",
-        "t1retry": "La nappe est sous le bras.",
-        "coda": "narrateur|La nappe à carreaux retrouve la table.",
-    },
-}
-
-T3_LABS = {
-    1: ("le torchon de maman", "les mains de Sarah", "un pas hors de la serre"),
-    2: ("l'élastique de maman", "la serviette", "Sarah tient le bol"),
-    3: ("les manches retroussées", "Raphaël tient le panier", "maman noue les poignets"),
-}
-
-
-def t1_passage(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Raphaël glisse d'abord le bol dans ses mains.",
-            "enfant-m|Il est encore un peu froid.",
-            "maman|Garde-le droit, tout près de toi.",
-            "narrateur|Le blanc du bol brille, tout net.",
-            "papa|Le panier, ensuite, au bras.",
-            "narrateur|Sarah prend la nappe, sous le bras.",
-            "narrateur|Tout part avec eux, vers le jardin.",
-            "enfant-m|Sarah, tu viens ?",
-            "copine|J'arrive, même un peu floue.",
-            "papa|Le bol d'abord, vous l'avez.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Raphaël enroule d'abord le panier au bras.",
-            "enfant-m|L'osier gratte un peu, contre le coude.",
-            "papa|Garde-le au bras, tout doux.",
-            "narrateur|Les tiges font un petit froissement.",
-            "maman|Le bol, ensuite, dans les mains.",
-            "narrateur|Sarah prend la nappe, sous le bras.",
-            "narrateur|Ils avancent, les affaires avec eux.",
-            "enfant-m|Sarah, tu portes la nappe ?",
-            "copine|Je la tiens, mes lunettes glissent.",
-            "maman|Le panier d'abord, il est prêt.",
-        )
-    return L(
-        "narrateur|Raphaël plie d'abord la nappe, sous le bras.",
-        "enfant-m|Les carreaux sentent encore le tiroir.",
-        "maman|Serre-la sous le bras, tout droit.",
-        "narrateur|Le tissu fait un petit froissement.",
-        "papa|Le bol et le panier, avec vous.",
-        "narrateur|Il les pose près de la marche.",
-        "narrateur|Les groseilles les attendent, plus loin.",
-        "enfant-m|Sarah, vite !",
-        "narrateur|Le ciré jaune traîne sur l'herbe.",
-        "copine|J'arrive près du treillis.",
-        "enfant-m|Je te garde un coin de nappe.",
-        "papa|La nappe d'abord, elle est prête.",
+    (ROOT / SID / "RELECTURE.md").write_text(
+        f"# {SID} — {TITLE}\n\n"
+        "Réécriture éditoriale F-NAR-019, example4 v2. Graphe, `chunk_id`, types "
+        "de blocs et destinations techniques inchangés.\n\n"
+        "## Promesse narrative\n\n"
+        "Un grain rouge tombe dans le bol blanc, vide, près de la marche. "
+        "Le treillis de fer fait tic en séchant : un grain de grenat y reste "
+        "collé. Raphaël veut remplir le bol pour le goûter, tout de suite. "
+        "Sarah reste sur la marche, ciré trop long. Le silence répond. Le "
+        "sourire disparaît. Papa s'accroupit. Bol, panier ou nappe : il part "
+        "trop vite, elle dit attends, les trois partent. Serre, tilleul ou "
+        "treillis : il tire, elle pose sa limite, la première cueillette "
+        "rate. Il refuse de foncer. Torchon, mains, pas hors de la serre ; "
+        "élastique, serviette, Sarah tient le bol ; manches, panier, nœud. "
+        "Le grain de grenat paie le début. Le bol rentre avec une trace.\n\n"
+        "## Arc dramatique\n\n"
+        "- Monde : jardin après la pluie, serre, tilleul, treillis de fer.\n"
+        "- Désir : remplir le bol de groseilles pour le goûter, avec Sarah.\n"
+        "- Objet : bol blanc / panier d'osier / nappe à carreaux (les trois partent).\n"
+        "- Indice unique : le grain de grenat collé au treillis, vu dès l'ouverture, payé au climax.\n"
+        "- Urgence douce : les grains vont sécher, le pain attend.\n"
+        "- Imprévu 1 : Raphaël part trop vite ; Sarah reste ; la cueillette rate.\n"
+        "- Cue : papa s'accroupit. Un merci vécu (tu as attendu Sarah).\n"
+        "- Imprévu 2 (plus rusé) : reflet / feuille-grain / ombre de fil ; le silence de Sarah.\n"
+        "- Revers : corps (sourire disparu, poitrine), refus de foncer, indice retrouvé.\n"
+        "- Résolution : cueillir avec elle, à son pas, selon le geste choisi.\n"
+        "- Retour : grain de grenat, 27 traces distinctes.\n\n"
+        "## Corrections éditoriales\n\n"
+        "- Ouverture inventée (un grain tombe dans un bol vide), pas le gabarit v2, pas « Un merle saute ».\n"
+        "- Le premier choix n'enlève pas le contenant : bol, panier et nappe partent.\n"
+        "- Labels T1/T2/T3 conservés. Leçon DIF.COR.003 vécue (rythmes, limite, silence), jamais dite.\n"
+        "- Neuf T2 distincts, vingt-sept T3, vingt-sept fins.\n"
+        "- Monde ≠ TREE-DIF-065 (Chouchou, arrosoirs), ≠ TREE-DIF-056 (statue de bronze), ≠ TREE-DIF-052 (grain d'ambre, mer).\n"
+        "- Pas de refrain example3, pas de miel, pas de gouttes-refrain, pas de grand-père/maîtresse.\n"
+        "- Tics « encore / déjà / tout doux / tout calme » retirés.\n"
+        "- Troupe D16 : Raphaël, Sarah, papa, maman.\n"
+        "- Voix : notes + ssml + xai + piper par chunk, profils raw.js.\n\n"
+        "## Direction vocale\n\n"
+        "Impatience de Raphaël au départ, petit découragement quand Sarah "
+        "s'arrête, fierté calme quand il cueille sans la tirer. Le silence "
+        "de Sarah compte. `slow` réservé aux choix, à la question, au retour.\n\n"
+        "## Contrôles\n\n"
+        f"- 86 chunks\n"
+        f"- 27 chemins, 27 fins textuellement distinctes\n"
+        f"- 27 T3 distincts, 9 T2 distincts\n"
+        f"- {min(counts)} à {max(counts)} mots par chemin, moyenne {sum(counts)//27}\n"
+        "- `text` et `script` synchronisés\n"
+        "- `text_ssml` et `text_xai_tags` enrichis\n"
+        "- `notes` présentes sur les 86 chunks\n"
+        "- N2 ≤ 15 mots/phrase\n"
+        "- check() OK. Pas d'apply. Pas d'audio. Pas de git.\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.\n",
+        encoding="utf-8",
     )
-
-
-def t1_confirm(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Les mains portent le bol, tout contre le tissu.",
-            "copine|Je vois le blanc, un peu flou.",
-            "enfant-m|C'est pour les groseilles.",
-            "narrateur|Les lunettes de Sarah gardent un rond de buée.",
-            "maman|Les grains vous attendent, plus loin.",
-            "papa|On avance avec le bol ?",
-            "enfant-m|Oui, papa.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Le bras porte le panier, tout contre la manche.",
-            "copine|Ça gratte quand je marche.",
-            "enfant-m|Ne le perds pas.",
-            "narrateur|Une goutte tombe d'une mèche de Sarah.",
-            "papa|Ça sent encore le savon, sur tes cheveux.",
-            "maman|Vos mains, au-dessus du panier ?",
-            "copine|Oui, maman.",
-        )
-    return L(
-        "narrateur|Le bras porte la nappe, toute légère.",
-        "copine|Elle a un pli, déjà.",
-        "enfant-m|On va l'ouvrir.",
-        "narrateur|Le ciré de Sarah cache encore ses poignets.",
-        "maman|Le treillis est calme, devant.",
-        "papa|On y va, tous les quatre ?",
-        "enfant-m|Oui.",
-    )
-
-
-def t2_question() -> list[str]:
-    return L(
-        "narrateur|La serre fume un peu, tout bas.",
-        "narrateur|Sous le tilleul, l'herbe goutte.",
-        "narrateur|Le treillis attend, tout rouge.",
-        "papa|Vous allez où, pour les groseilles ?",
-    )
-
-
-def t2_scene(t1: int, t2: int) -> list[str]:
-    o = OBJ[t1]
-    if t2 == 1:
-        lead = {
-            1: "narrateur|Raphaël pose le bol au bord de la serre.",
-            2: "narrateur|Raphaël pose le panier au bord de la serre.",
-            3: "narrateur|Raphaël déplie la nappe au bord de la serre.",
-        }[t1]
-        mishap = {
-            1: "narrateur|Le bol glisse, Sarah ne le voit plus.",
-            2: "narrateur|Le panier vise à côté : Sarah visait trop bas.",
-            3: "narrateur|La nappe se plie, Sarah cherche le bord trop bas.",
-        }[t1]
-        return L(
-            lead,
-            "narrateur|La vitre est chaude, encore un peu voilée.",
-            "copine|Je vois un nuage sur mes lunettes !",
-            "narrateur|Un rond de buée cache les grains.",
-            mishap,
-            f"enfant-m|{o['cap']} n'attendait pas ça.",
-            "maman|La goutte a voilé ses verres, c'est tout.",
-            "papa|Toi tu vois net, elle un peu flou.",
-            "copine|On fait comment, alors ?",
-            "papa|Les grains sont flous, vous faites quoi ?",
-        )
-    if t2 == 2:
-        lead = {
-            1: "narrateur|Raphaël pose le bol sous le tilleul.",
-            2: "narrateur|Raphaël pose le panier sous le tilleul.",
-            3: "narrateur|Raphaël déplie la nappe sous le tilleul.",
-        }[t1]
-        mishap = {
-            1: "narrateur|Une mèche mouillée couvre le bol.",
-            2: "narrateur|Le panier accroche une mèche, pas un grain.",
-            3: "narrateur|Une goutte de cheveu tombe sur la nappe.",
-        }[t1]
-        return L(
-            lead,
-            "enfant-m|Ici, les feuilles gouttent, Sarah.",
-            "copine|Mes cheveux sont encore lourds.",
-            mishap,
-            "narrateur|Une goutte tape l'herbe, toc.",
-            "maman|Ils sèchent, tout doux, ce n'est rien.",
-            "papa|Toi tes cheveux tiennent, les siens gouttent.",
-            "enfant-m|On peut cueillir avec elle ?",
-            "papa|Les mèches tombent, vous faites quoi ?",
-        )
-    lead = {
-        1: "narrateur|Raphaël tend le bol vers le treillis.",
-        2: "narrateur|Raphaël glisse le panier entre les tiges.",
-        3: "narrateur|Raphaël pose la nappe sous le treillis.",
-    }[t1]
-    mishap = {
-        1: "narrateur|Une manche trop longue emporte le bol.",
-        2: "narrateur|Une manche trop longue balaie le panier.",
-        3: "narrateur|Une manche trop longue froisse la nappe.",
-    }[t1]
-    return L(
-        lead,
-        "enfant-m|Les grains sont notre goûter, Sarah.",
-        "copine|Mon ciré me suit jusqu'aux genoux !",
-        mishap,
-        f"narrateur|{o['cap']} disparaît un instant, sous le tissu.",
-        "maman|Le ciré est un peu grand, c'est tout.",
-        "papa|Toi tes manches s'arrêtent, les siennes voyagent.",
-        "copine|On fait comment, alors ?",
-        "papa|Le ciré et les grains, vous faites comment ?",
-    )
-
-
-def t3_question(t2: int) -> list[str]:
-    if t2 == 1:
-        return L(
-            "narrateur|La buée reste sur les verres, tout douce.",
-            "papa|Le torchon, les mains, ou un pas hors de la serre ?",
-        )
-    if t2 == 2:
-        return L(
-            "narrateur|Une mèche mouillée touche encore un grain.",
-            "maman|L'élastique, la serviette, ou tenir le bol ?",
-        )
-    return L(
-        "narrateur|Les manches cachent encore les grains rouges.",
-        "papa|Les manches, le panier, ou nouer les poignets ?",
-    )
-
-
-def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
-    if t2 == 1 and t3 == 1:
-        wipe = {
-            1: "narrateur|Sarah essuie, puis reprend le bord du bol.",
-            2: "narrateur|Sarah essuie, puis reprend l'anse du panier.",
-            3: "narrateur|Sarah essuie, puis reprend le pli de la nappe.",
-        }[t1]
-        return L(
-            "enfant-m|Maman, le torchon, s'il te plaît.",
-            "maman|Tiens, tout doux, sur les verres.",
-            "narrateur|Sarah frotte un rond, puis un autre.",
-            wipe,
-            "copine|Je vois les grains !",
-            "enfant-m|Le rouge est à toi, maintenant.",
-            "narrateur|Les lunettes rendent le treillis tout net.",
-            "papa|Vous cueillez, chacun avec ce qu'il a.",
-            "maman|Le torchon a rendu la serre.",
-        )
-    if t2 == 1 and t3 == 2:
-        touch = {
-            1: "narrateur|Sarah palpe le bol, Raphaël parle.",
-            2: "narrateur|Sarah palpe le panier, Raphaël parle.",
-            3: "narrateur|Sarah palpe la nappe, Raphaël parle.",
-        }[t1]
-        return L(
-            "enfant-m|Tu cueilles avec tes mains, Sarah.",
-            "copine|Je touche, toi tu dis où.",
-            touch,
-            "narrateur|Sous la vitre, deux silhouettes avancent.",
-            "enfant-m|Le grain est à gauche, tout froid.",
-            "copine|Je le tiens !",
-            f"narrateur|{o['cap']} guide encore le geste.",
-            "papa|Les mains ont vu à la place des verres.",
-            "maman|La serre vous a gardés.",
-        )
-    if t2 == 1 and t3 == 3:
-        air = {
-            1: "narrateur|Le bol attend au bord, puis se pose.",
-            2: "narrateur|Le panier craque un peu, puis s'apaise.",
-            3: "narrateur|La nappe glisse, puis le tissu se tait.",
-        }[t1]
-        return L(
-            "enfant-m|On recule un peu, papa ?",
-            "papa|Un pas, hors de la buée, pas plus.",
-            "narrateur|L'air sec chasse la buée, tout lent.",
-            air,
-            "copine|Ça redevient clair !",
-            "enfant-m|Les groseilles peuvent tomber.",
-            "narrateur|Sarah ajuste ses lunettes, tout net.",
-            "maman|La goutte est partie, le jeu reste.",
-            "papa|Vous avez attendu le verre clair.",
-        )
-    if t2 == 2 and t3 == 1:
-        high = {
-            1: "narrateur|Raphaël pose le bol, hors des mèches.",
-            2: "narrateur|Raphaël tend le panier, hors des mèches.",
-            3: "narrateur|Raphaël ouvre la nappe, hors des mèches.",
-        }[t1]
-        return L(
-            "enfant-m|On met l'élastique, plus haut.",
-            "copine|Mes cheveux restent en arrière, alors.",
-            high,
-            "narrateur|Maman noue l'élastique, tout doux.",
-            "narrateur|Les mèches de Sarah tiennent, libres.",
-            "enfant-m|Tu peux te pencher, maintenant.",
-            "copine|La feuille ne m'attrape plus.",
-            "papa|Chacun a sa hauteur, sous le tilleul.",
-            "maman|Les cheveux ont eu leur place.",
-        )
-    if t2 == 2 and t3 == 2:
-        dry = {
-            1: "narrateur|Le bol attend, le temps d'un frottement.",
-            2: "narrateur|Le panier attend, le temps d'un frottement.",
-            3: "narrateur|La nappe attend, le temps d'un frottement.",
-        }[t1]
-        pose = {
-            1: "enfant-m|On pose le bol, maintenant.",
-            2: "enfant-m|On tend le panier, maintenant.",
-            3: "enfant-m|On ouvre la nappe, maintenant.",
-        }[t1]
-        return L(
-            "enfant-m|La serviette, maman ?",
-            "maman|Frotte, tout doux, pas trop fort.",
-            "narrateur|Sarah essuie une mèche, puis une autre.",
-            dry,
-            "copine|Elles sont plus légères !",
-            pose,
-            "narrateur|La feuille goutte, sans emporter de cheveu.",
-            "papa|Vous avez laissé l'eau des cheveux.",
-            "maman|Le tilleul sent encore le savon.",
-        )
-    if t2 == 2 and t3 == 3:
-        hold = {
-            1: "narrateur|Sarah tient le bol, Raphaël cueille.",
-            2: "narrateur|Sarah tient le panier à deux mains, sans se pencher.",
-            3: "narrateur|Sarah tient le bol, Raphaël ouvre la nappe.",
-        }[t1]
-        return L(
-            "enfant-m|Tu tiens le bol, moi je cueille.",
-            "copine|Mes mains font le bord, alors.",
-            hold,
-            "narrateur|Les grains tombent quand Sarah recule.",
-            "narrateur|Ils s'arrêtent quand elle avance.",
-            "enfant-m|C'est toi le bol vivant, Sarah !",
-            "copine|Et toi les grains.",
-            "papa|Vous cueillez avec ce que vous avez.",
-            "maman|Les cheveux n'ont plus besoin d'être dans les feuilles.",
-        )
-    if t2 == 3 and t3 == 1:
-        roll = {
-            1: "narrateur|Les manches remontent, le bol redevient libre.",
-            2: "narrateur|Les manches remontent, le panier redevient visible.",
-            3: "narrateur|Les manches remontent, la nappe redevient visible.",
-        }[t1]
-        return L(
-            "enfant-m|On retrousse, Sarah.",
-            "copine|Jusqu'au coude, comme papa.",
-            "narrateur|Deux rouleaux de tissu tiennent, un peu épais.",
-            roll,
-            "enfant-m|Je te vois les mains, maintenant.",
-            "copine|Le grain n'est plus dans le ciré.",
-            f"narrateur|{o['cap']} reprend sa place, au milieu.",
-            "papa|Les manches ont laissé les grains passer.",
-            "maman|Le ciré reste, plus court aux poignets.",
-        )
-    if t2 == 3 and t3 == 2:
-        split = {
-            1: "narrateur|Raphaël tient le panier, Sarah pose le bol.",
-            2: "narrateur|Raphaël tient le panier, Sarah y glisse un grain.",
-            3: "narrateur|Raphaël tient le panier, Sarah ouvre la nappe.",
-        }[t1]
-        return L(
-            "enfant-m|Moi je tiens le panier.",
-            "copine|Moi je guide, près des tiges.",
-            split,
-            "narrateur|Les manches trop longues bougent le tissu, seulement.",
-            "narrateur|Les grains restent hors du ciré.",
-            "copine|Le treillis s'ouvre !",
-            "enfant-m|Le rouge sort, tout vif.",
-            "papa|Chacun a pris sa part, à sa taille.",
-            "maman|Les tiges ont tenu les grains.",
-        )
-    bind = {
-        1: "narrateur|L'élastique tient une manche, le bol l'autre main.",
-        2: "narrateur|L'élastique tient une manche, le panier l'autre main.",
-        3: "narrateur|L'élastique tient une manche, la nappe reste droite.",
-    }[t1]
-    return L(
-        "enfant-m|Maman, ton élastique, s'il te plaît.",
-        "maman|Un pour chaque manche, tout doux.",
-        "narrateur|Sarah tend les poignets, maman noue.",
-        bind,
-        "copine|Mes mains sont nues, maintenant.",
-        "enfant-m|Les groseilles peuvent tomber.",
-        "narrateur|Le rouge avance entre les tiges.",
-        "papa|Vous avez demandé, et ça tient.",
-        "maman|Mes élastiques ont gardé le ciré.",
-    )
-
-
-def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
-    coda = o["coda"]
-    if t2 == 1 and t3 == 1:
-        return L(
-            "narrateur|La serre sent encore le torchon tiède.",
-            "copine|J'ai vu le grain, tout net.",
-            "enfant-m|Tes lunettes ont trouvé le rouge.",
-            "papa|Vous avez cueilli, chacun avec sa vue.",
-            "maman|Les vitres sèchent déjà, tout doux.",
-            coda,
-            "narrateur|Une goutte reste sur un grain, ronde.",
-            "enfant-m|On rentre, Sarah.",
-            "narrateur|La serre redevient calme.",
-        )
-    if t2 == 1 and t3 == 2:
-        return L(
-            "narrateur|Sous la vitre, l'air est encore un peu chaud.",
-            "enfant-m|Tu as touché, moi j'ai dit où.",
-            "copine|Mes mains ont vu le rouge.",
-            "papa|Les verres flous n'ont pas arrêté les grains.",
-            "maman|La serre se tait, enfin.",
-            coda,
-            "narrateur|Une ombre de grain reste au fond.",
-            "enfant-m|À demain, les groseilles.",
-            "narrateur|Le rebord redevient tiède, déjà.",
-        )
-    if t2 == 1 and t3 == 3:
-        return L(
-            "narrateur|Un filet d'air sec reste près de la serre.",
-            "copine|La buée est partie, tout seule.",
-            "enfant-m|On a attendu le verre clair.",
-            "maman|Le pas en arrière a rendu les grains.",
-            "papa|Vous avez laissé le temps aux lunettes.",
-            coda,
-            "narrateur|Raphaël souffle sur un grain, tout léger.",
-            "copine|Il brille encore.",
-            "narrateur|La vitre reprend, plus loin.",
-        )
-    if t2 == 2 and t3 == 1:
-        return L(
-            "narrateur|Le tilleul garde encore un peu d'ombre.",
-            "enfant-m|L'élastique était trop bas, d'abord.",
-            "copine|Mes cheveux sont restés libres.",
-            "papa|Chacun a eu sa hauteur, sous les feuilles.",
-            "maman|L'herbe sèche déjà.",
-            coda,
-            "narrateur|Une mèche sèche contre le col, tout calme.",
-            "enfant-m|On rentre, le tilleul reste.",
-            "narrateur|Une feuille reprend sa place, tout bas.",
-        )
-    if t2 == 2 and t3 == 2:
-        return L(
-            "narrateur|La serviette sent encore le savon.",
-            "copine|Tu as frotté, tout doux.",
-            "enfant-m|Puis on a cueilli, sans emporter de cheveu.",
-            "maman|L'eau des cheveux s'en est allée.",
-            "papa|Le tilleul vous rend le silence.",
-            coda,
-            "narrateur|Raphaël souffle dessus, tout léger.",
-            "copine|Elle part.",
-            "narrateur|Le savon s'efface déjà de l'herbe.",
-        )
-    if t2 == 2 and t3 == 3:
-        return L(
-            "narrateur|Les mains de Sarah gardent encore le pli du bol.",
-            "enfant-m|Tu étais le bol vivant.",
-            "copine|Toi les grains, moi le bord.",
-            "papa|Vous avez cueilli avec ce que vous aviez.",
-            "maman|Les cheveux n'avaient plus besoin d'être pris.",
-            coda,
-            "narrateur|Un rebord vide attend, tout bas.",
-            "enfant-m|On se dit au revoir, tilleul.",
-            "narrateur|Les chaussons glissent vers la maison.",
-        )
-    if t2 == 3 and t3 == 1:
-        return L(
-            "narrateur|Deux rouleaux de manches tiennent encore.",
-            "enfant-m|Tes mains sont sorties du ciré.",
-            "copine|Le grain n'était plus avalé.",
-            "papa|Les manches ont laissé les grains passer.",
-            "maman|Les tiges redeviennent des tiges, tout simples.",
-            coda,
-            "narrateur|Un grain rouge reste sur le bois.",
-            "enfant-m|On rentre, Sarah.",
-            "narrateur|Le treillis reprend sa forme, tout lent.",
-        )
-    if t2 == 3 and t3 == 2:
-        return L(
-            "narrateur|Une goutte tombe encore d'une feuille.",
-            "copine|Tu tenais le panier, moi le bord.",
-            "enfant-m|Tes manches bougeaient seulement le tissu.",
-            "maman|Chacun a pris sa part, à sa taille.",
-            "papa|Les tiges ont tenu jusqu'au bout.",
-            coda,
-            "narrateur|Raphaël lisse un grain, tout doux.",
-            "copine|Il a bien roulé.",
-            "narrateur|Le mur reprend son calme, déjà.",
-        )
-    return L(
-        "narrateur|Deux élastiques veillent encore aux poignets.",
-        "enfant-m|On a demandé, et ça tenait.",
-        "copine|Mes mains étaient nues, pour les grains.",
-        "papa|Vous avez demandé, rien de plus.",
-        "maman|Mes élastiques rentrent dans la poche.",
-        coda,
-        "narrateur|Un peu de terre reste au rebord.",
-        "enfant-m|Les groseilles sont à nous.",
-        "narrateur|Le jardin sent encore la pluie d'hier.",
-    )
-
-
-def main() -> None:
-    s: dict[str, list[str]] = {}
-    extras: dict[str, dict] = {}
-    sons: dict[str, str] = {"CHK_T0000_P0000": ""}
-
-    s["CHK_T0000_P0000"] = L(
-        "narrateur|Un merle saute dans l'herbe encore mouillée.",
-        "narrateur|Des gouttes pendent aux feuilles du tilleul.",
-        "narrateur|Ça sent la terre et la feuille froissée.",
-        "narrateur|Le treillis du fond porte des groseilles.",
-        "papa|Tu as vu les grains, Raphaël ?",
-        "enfant-m|Ils brillent, tout petits.",
-        "maman|Le bol blanc attend, près de la marche.",
-        "narrateur|En ce moment, Raphaël le prend, tout doux.",
-        "enfant-m|Je veux le remplir, pour le goûter.",
-        "narrateur|La porte de la maison claque, tout bas.",
-        "copine|J'arrive, Raphaël !",
-        "narrateur|Les lunettes de Sarah gardent un rond de buée.",
-        "narrateur|Ses cheveux gouttent sur le ciré trop long.",
-        "papa|Merci, tu tiens déjà le bol.",
-        "maman|On l'emmène aux grains, alors ?",
-    )
-    s["CHK_T0001_P0000"] = L(
-        "narrateur|Près de la marche, le bol blanc attend.",
-        "narrateur|Le panier d'osier dort, vide.",
-        "narrateur|La nappe à carreaux est pliée.",
-        "maman|Tu prends quoi d'abord, Raphaël ?",
-    )
-    extras["CHK_T0001_P0000"] = t3lab("le bol blanc", "le panier d'osier", "la nappe à carreaux")
-
-    for t1 in (1, 2, 3):
-        p = f"CHK_T0001_P000{t1}"
-        o = OBJ[t1]
-        s[p] = t1_passage(t1)
-        t1_ask = {
-            1: "maman|Le bol est où ?",
-            2: "maman|Le panier est où ?",
-            3: "maman|La nappe est où ?",
-        }[t1]
-        s[f"{p}_Q0001"] = L(
-            f"narrateur|{o['t1line']}",
-            t1_ask,
-        )
-        extras[f"{p}_Q0001"] = qf(o["t1q"].split()[-1], o["t1acc"], o["t1retry"])
-        s[f"{p}_C0001"] = t1_confirm(t1)
-        s[f"{p}_T0002_P0000"] = t2_question()
-        extras[f"{p}_T0002_P0000"] = t3lab("la serre", "le tilleul", "le treillis")
-
-        for t2 in (1, 2, 3):
-            sp = f"{p}_T0002_P000{t2}"
-            s[sp] = t2_scene(t1, t2)
-            s[f"{sp}_T0003_P0000"] = t3_question(t2)
-            extras[f"{sp}_T0003_P0000"] = t3lab(*T3_LABS[t2])
-            for t3 in (1, 2, 3):
-                s[f"{sp}_T0003_P000{t3}"] = t3_scene(t1, t2, t3)
-                s[f"{sp}_T0003_P000{t3}_F0001"] = fin_scene(t1, t2, t3)
-
-    write_tree(s, extras, sons)
-    relecture(
-        SID,
-        TITLE,
-        "Raphaël veut remplir un bol de groseilles rouges pour le goûter. "
-        "Sarah arrive, lunettes encore floues, cheveux mouillés, ciré jaune "
-        "trop long. T1 = bol blanc / panier d'osier / nappe à carreaux (les trois "
-        "partent). T2 = serre (buée sur les verres) / tilleul (mèches dans les "
-        "feuilles) / treillis (manches trop longues). T3 = neuf résolutions "
-        "(torchon, mains, pas hors de la serre ; élastique, serviette, tenir le "
-        "bol ; manches, Raphaël tient, nouer les poignets). On cueille ensemble, "
-        "sans slogan. Fin : le bol rentre, tout rouge.",
-        "N2 ≤ 15. Jules / Tom / Léa / Sami et bac/toboggan/balançoires jetés. "
-        "Titre slogan remplacé (objet + désir). Autre récit que DIF-016 "
-        "(pas la tarte), DIF-026 (pas le théâtre) et DIF-036 (pas le poisson, "
-        "pas le lavoir). Jardin : serre, tilleul, treillis. Un merci de papa "
-        "lié au geste (tenir le bol). Audio non cuit.",
-    )
+    print(f"wrote {SID} {len(merged['chunks'])} chunks  chemins {min(counts)}-{max(counts)}")
 
 
 if __name__ == "__main__":
-    main()
+    build()
