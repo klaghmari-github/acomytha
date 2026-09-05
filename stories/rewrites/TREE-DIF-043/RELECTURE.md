@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Parc, tilleuls, mare plate, feuilles sèches. Nino veut un vrai goûter pour le canard au ventre rond et le canard au cou mince. T1 = pain / nappe / seau (les trois partent). T2 = mare trop haute / banc trop fendu / kiosque trop loin. T3 = neuf résolutions (bord, deux tas, pont ; herbe, pied, nappe ; marches, plus près, ombre). La leçon se vit : les formes ne sont pas une blague, on donne aux deux. Fin : les deux canards goûtent.
+Parc du village, seau qui tape, pain tiède, grain doré. Nino veut porter le pain aux deux canards (nappe + seau) avant qu'ils partent. T1 = pain / nappe / seau : les trois partent. T2 = mare (l'eau avale) / banc (fentes) / kiosque (trop haut). Première idée échoue ; sourire parti ; poitrine serrée ; adulte accroupi. T3 = bord, deux tas, pont ; herbe, pied, nappe ; marches, plus près, ombre. Nino refuse de relancer. Le grain doré du début paie le climax. 27 fins : le grain reste, l'objet porte une trace, ça a failli rater. Leçon vécue (DIF.COR.002) : deux places, pas un commentaire.
 
 ## Vu et corrigé
-N1 ≤ 10. Hugo hors troupe → Nino, papa/maman. Slogan « Plus rond ou plus mince », « bon travail », calque AUT-001 jetés. Autre récit que DIF-015/025/035 (tente, défilé, bain). Un merci de papa (les deux vus). chunk_id inchangés. check() OK (3926 mots). xlsx live : `stories/arbres/TREE-DIF-043.xlsx`. Audio non cuit.
+F-NAR-019 / example4 v2. N1 ≤ 10. Un seul enfant (Nino). Tics « encore / déjà / tout doux / tout calme » jetés. Indice unique : grain doré. TTS par chunk (profiles example2). Un merci de maman (avoir vu les deux). Pas apply. Audio non cuit.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
