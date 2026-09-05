@@ -3,10 +3,10 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Dans la cuisine, après la pluie. Nina veut un chocolat chaud, pour deux. Victorino est plus grand. T1 = bidon de cacao / fouet / deux tasses (les trois partent). T2 = étagère (trop haute pour Nina) / frigo (poignée trop loin) / sous la table (trop bas pour Victorino). T3 = neuf résolutions (bras de Victorino, tabouret de Nina, torchon ; poignée haute, bac du bas, tabouret à deux ; passage de Nina, écarter la chaise, un dessous un dessus). La leçon (tailles, jouer) se vit dans les gestes, sans slogan. Fin : le cacao fume pour eux.
+Cuisine après la pluie. La casserole fait tic. Nina veut deux tasses de cacao, avant la peau du lait. Indice unique : le capuchon qui penche, trop haut, payé à chaque climax et chaque fin. Victorino plus grand, rythme lent ; Nina propose. T1 = bidon / fouet / deux tasses (les trois partent). T2 = étagère (hauteur, deux envies) / frigo (lait manquant) / sous la table (grotte vs plan). Première idée rate (saut, porte qui claque, épaules coincées). T3 = neuf façons ; Nina refuse de foncer, revoit le capuchon. Leçon DIF.COR.001 vécue (deux hauteurs), jamais dite. 27 fins distinctes.
 
 ## Vu et corrigé
-N3 ≤ 16. Tom / Léa / Sami hors troupe → Nina + Victorino (D16). Bac/toboggan/balançoires et ballon/seau/doudou jetés. Titre slogan remplacé (objet + désir). Autre récit que DIF-014 (pomme), DIF-022 (marelle), DIF-032 (cabane), DIF-034 (soleil). Un merci de papa lié au geste (poser le pichet). Pas de « bon travail ». Audio non cuit.
+F-NAR-019 example4 v2. N3 ≤ 16. Tics encore/déjà/tout doux/tout calme jetés. Sami/Léa/Tom, merle, miel, Mission accomplie, J'ai compris jetés. Monde ≠ TREE-AUT-019 (cacao, étagère, deux tasses). TTS notes+ssml+xai+piper par chunk (profiles example2). Un merci de papa (baisser le feu). Pas apply. Audio non cuit.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
