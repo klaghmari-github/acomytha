@@ -380,7 +380,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "copain|Un, deux, trois, quatre.",
             f"narrateur|{count}",
             "narrateur|La roue s'essouffle, puis s'arrête.",
-            f"narrateur|{o['wait'] if False else o['use']}",
+            f"narrateur|{o['use']}",
             "papa|Tu as compté jusqu'au silence.",
             "copain|Elle ne tourne plus, Mila.",
             "maman|Les tours ont pris son élan.",
