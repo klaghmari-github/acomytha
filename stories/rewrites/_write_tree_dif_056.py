@@ -411,6 +411,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est grise, trop.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le bâton, sans souffler.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (1, 2): {
@@ -430,6 +432,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est sèche, trop pâle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le bâton, sans souffler.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (1, 3): {
@@ -450,6 +454,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze reste nette, elle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le bâton, sans souffler.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (2, 1): {
@@ -469,6 +475,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est grise, trop.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le flacon, sans ouvrir.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (2, 2): {
@@ -488,6 +496,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est sèche, trop pâle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le flacon, sans ouvrir.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (2, 3): {
@@ -508,6 +518,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze reste nette, elle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre le flacon, sans ouvrir.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (3, 1): {
@@ -527,6 +539,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est grise, trop.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre la coupelle, sans verser.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (3, 2): {
@@ -546,6 +560,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze est sèche, trop pâle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre la coupelle, sans verser.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
     (3, 3): {
@@ -566,6 +582,8 @@ T2 = {
             "enfant-f|Pas maintenant.",
             "narrateur|La larme de bronze reste nette, elle.",
             "maman|Tu vois comment, Nina ?",
+            "narrateur|Nina serre la coupelle, sans verser.",
+            "enfant-f|Alors on fait quoi ?",
         ],
     },
 }
@@ -576,6 +594,7 @@ T2_Q = {
         "narrateur|Le socle, lui, brûle au soleil.",
         "narrateur|Sous le tilleul, les feuilles claquent.",
         "papa|Nina, tu vas où ?",
+        "maman|La larme attend, sur le nez.",
     ],
 }
 
@@ -628,6 +647,8 @@ T3 = {
         "narrateur|Pendant ce temps, le bâton reste droit.",
         "papa|Les pas se sont tus, là.",
         "narrateur|La bulle part, ronde, vers la larme.",
+        "narrateur|Elle compte les pas, un, deux, trois.",
+        "enfant-f|Je ne fonce pas.",
         "maman|Tu as laissé le gravier se taire.",
     ],
     (1, 1, 2): [
@@ -639,6 +660,8 @@ T3 = {
         "enfant-f|Ici, tu ne crèves plus.",
         "papa|Tu as vu l'herbe, avant.",
         "narrateur|Un fil de savon cherche l'air, bas.",
+        "narrateur|Elle pose le cercle près de l'herbe.",
+        "enfant-f|Je souffle d'en bas, vers la larme.",
         "maman|Près du sol, ça tenait mieux.",
     ],
     (1, 1, 3): [
@@ -650,6 +673,8 @@ T3 = {
         "papa|Le bord n'a pas soulevé.",
         "enfant-f|Tu es à l'abri.",
         "narrateur|Le rond monte, lent, jusqu'au nez.",
+        "narrateur|Elle plante les pieds dans l'herbe.",
+        "enfant-f|Le bord tient, pas l'allée.",
         "maman|Tu as dit ça tout bas.",
     ],
     (1, 2, 1): [
@@ -661,6 +686,8 @@ T3 = {
         "maman|Le nez est redevenu doux.",
         "enfant-f|Maintenant, tu me vois.",
         "narrateur|Pendant ce temps, le bâton reste droit.",
+        "narrateur|Elle suit l'ombre, sans bouger le bois.",
+        "enfant-f|Quand la larme est froide, je souffle.",
         "papa|Tu as laissé l'ombre arriver.",
     ],
     (1, 2, 2): [
@@ -672,6 +699,8 @@ T3 = {
         "papa|Tu n'as pas soufflé trop fort.",
         "enfant-f|C'est pour toi.",
         "narrateur|La larme de bronze reçoit le rond, entier.",
+        "narrateur|Elle trempe le cercle sur le bec.",
+        "enfant-f|L'oiseau d'abord, la larme après.",
         "maman|L'oiseau était plus frais, tu as vu.",
     ],
     (1, 2, 3): [
@@ -683,6 +712,8 @@ T3 = {
         "papa|Tu t'es mise tout près, contre le nez.",
         "enfant-f|Le nez est là.",
         "narrateur|Pendant ce temps, le bâton reste droit.",
+        "narrateur|Elle avance le cercle, tout contre le nez.",
+        "enfant-f|Un tout petit souffle, ici.",
         "maman|Tu t'es mise tout contre.",
     ],
     (1, 3, 1): [
@@ -694,6 +725,8 @@ T3 = {
         "papa|Le tilleul n'a plus claqué.",
         "enfant-f|Maintenant, tu peux rester.",
         "narrateur|Pendant ce temps, le bâton reste droit.",
+        "narrateur|Elle ferme les yeux, et compte les claquements.",
+        "enfant-f|Quand ça se tait, je souffle.",
         "maman|Tu as laissé les feuilles finir.",
     ],
     (1, 3, 2): [
@@ -705,6 +738,8 @@ T3 = {
         "papa|Tu n'as pas couru.",
         "enfant-f|Tu es ronde, maintenant.",
         "narrateur|Un fil de savon cherche l'air, abrité.",
+        "narrateur|Elle s'appuie au tronc, le bois à l'abri.",
+        "enfant-f|Derrière, le vent ne me prend pas.",
         "maman|Derrière, l'air était plus doux.",
     ],
     (1, 3, 3): [
@@ -716,6 +751,8 @@ T3 = {
         "papa|Le petit rond n'a pas volé.",
         "enfant-f|Tu restes, bulle.",
         "narrateur|Un fil de savon cherche l'air, minuscule.",
+        "narrateur|Elle pince le cercle, pour un tout petit trou.",
+        "enfant-f|Une petite, pour la larme.",
         "maman|Le petit rond a suffi.",
     ],
     (2, 1, 1): [
@@ -727,6 +764,8 @@ T3 = {
         "narrateur|Fermé, le savon attend contre son pouce.",
         "papa|Les pas se sont tus, là.",
         "narrateur|La goutte file, ronde, vers la larme.",
+        "narrateur|Elle compte jusqu'à trois, bouchon fermé.",
+        "enfant-f|Le flacon, je l'ouvre après.",
         "maman|Tu as laissé le gravier se taire.",
     ],
     (2, 1, 2): [
@@ -738,6 +777,8 @@ T3 = {
         "enfant-f|Ici, tu ne crèves plus.",
         "papa|Tu as vu l'herbe, avant.",
         "narrateur|Une goutte de savon brille, prête à filer.",
+        "narrateur|Elle pose le flacon dans l'herbe, droit.",
+        "enfant-f|Une goutte, pas plus.",
         "maman|Près du sol, ça tenait mieux.",
     ],
     (2, 1, 3): [
@@ -749,6 +790,8 @@ T3 = {
         "papa|Le bord n'a pas soulevé.",
         "enfant-f|Tu es à l'abri.",
         "narrateur|Le rond monte, lent, jusqu'au nez.",
+        "narrateur|Elle mouille le cercle au bord, pas au milieu.",
+        "enfant-f|Ici, la poussière ne vient pas.",
         "maman|Tu as dit ça tout bas.",
     ],
     (2, 2, 1): [
@@ -760,6 +803,8 @@ T3 = {
         "maman|Le nez est redevenu doux.",
         "enfant-f|Maintenant, tu me vois.",
         "narrateur|Fermé, le savon attend contre son pouce.",
+        "narrateur|Elle cache le flacon sous l'ombre, d'abord.",
+        "enfant-f|Le savon ne sèche plus, là.",
         "papa|Tu as laissé l'ombre arriver.",
     ],
     (2, 2, 2): [
@@ -771,6 +816,8 @@ T3 = {
         "papa|Tu n'as pas soufflé trop fort.",
         "enfant-f|C'est pour toi.",
         "narrateur|La larme de bronze reçoit le rond, entier.",
+        "narrateur|Elle pose une goutte sur le bec, d'abord.",
+        "enfant-f|Le bec est frais, pas le nez.",
         "maman|L'oiseau était plus frais, tu as vu.",
     ],
     (2, 2, 3): [
@@ -782,6 +829,8 @@ T3 = {
         "papa|Tu t'es mise tout près, contre le nez.",
         "enfant-f|Le nez est là.",
         "narrateur|Fermé, le savon attend contre son pouce.",
+        "narrateur|Elle met une goutte au pouce, tout près.",
+        "enfant-f|Le pouce, puis la larme.",
         "maman|Tu t'es mise tout contre.",
     ],
     (2, 3, 1): [
@@ -793,6 +842,8 @@ T3 = {
         "papa|Le tilleul n'a plus claqué.",
         "enfant-f|Maintenant, tu peux rester.",
         "narrateur|Fermé, le savon attend contre son pouce.",
+        "narrateur|Elle recapsule entre deux souffles.",
+        "enfant-f|J'ouvre quand ça se tait.",
         "maman|Tu as laissé les feuilles finir.",
     ],
     (2, 3, 2): [
@@ -804,6 +855,8 @@ T3 = {
         "papa|Tu n'as pas couru.",
         "enfant-f|Tu es ronde, maintenant.",
         "narrateur|Une goutte de savon brille, abritée.",
+        "narrateur|Elle savonne le cercle derrière le tronc.",
+        "enfant-f|Ici, ça ne s'envole pas.",
         "maman|Derrière, l'air était plus doux.",
     ],
     (2, 3, 3): [
@@ -815,6 +868,8 @@ T3 = {
         "papa|Le petit rond n'a pas volé.",
         "enfant-f|Tu restes, bulle.",
         "narrateur|Une goutte de savon brille, minuscule.",
+        "narrateur|Elle prend une seule goutte, pas deux.",
+        "enfant-f|Une toute petite, pour la larme.",
         "maman|Le petit rond a suffi.",
     ],
     (3, 1, 1): [
@@ -826,6 +881,8 @@ T3 = {
         "narrateur|Plate, la coupelle attend, sans verser.",
         "papa|Les pas se sont tus, là.",
         "narrateur|Le miroir file, rond, vers la larme.",
+        "narrateur|Elle garde le bol plat, sans le pencher.",
+        "enfant-f|Le miroir, je le tiens droit.",
         "maman|Tu as laissé le gravier se taire.",
     ],
     (3, 1, 2): [
@@ -837,6 +894,8 @@ T3 = {
         "enfant-f|Ici, tu ne crèves plus.",
         "papa|Tu as vu l'herbe, avant.",
         "narrateur|Le rond de savon attend, plat, bas.",
+        "narrateur|Elle pose le bol sur l'herbe, à plat.",
+        "enfant-f|Le sol tient le miroir.",
         "maman|Près du sol, ça tenait mieux.",
     ],
     (3, 1, 3): [
@@ -848,6 +907,8 @@ T3 = {
         "papa|Le bord n'a pas soulevé.",
         "enfant-f|Tu es à l'abri.",
         "narrateur|Le rond monte, lent, jusqu'au nez.",
+        "narrateur|Elle glisse le bol sur l'herbe, hors du gris.",
+        "enfant-f|L'herbe, pas le gravier.",
         "maman|Tu as dit ça tout bas.",
     ],
     (3, 2, 1): [
@@ -859,6 +920,8 @@ T3 = {
         "maman|Le nez est redevenu doux.",
         "enfant-f|Maintenant, tu me vois.",
         "narrateur|Plate, la coupelle attend, sans verser.",
+        "narrateur|Elle attend que le bol ne fume plus.",
+        "enfant-f|Le miroir est froid, maintenant.",
         "papa|Tu as laissé l'ombre arriver.",
     ],
     (3, 2, 2): [
@@ -870,6 +933,8 @@ T3 = {
         "papa|Tu n'as pas soufflé trop fort.",
         "enfant-f|C'est pour toi.",
         "narrateur|La larme de bronze reçoit le rond, entier.",
+        "narrateur|Elle penche le bol vers le bec, d'abord.",
+        "enfant-f|Le bec, puis la larme.",
         "maman|L'oiseau était plus frais, tu as vu.",
     ],
     (3, 2, 3): [
@@ -881,6 +946,8 @@ T3 = {
         "papa|Tu t'es mise tout près, contre le nez.",
         "enfant-f|Le nez est là.",
         "narrateur|Plate, la coupelle attend, sans verser.",
+        "narrateur|Elle lève le bol jusqu'au nez, tout près.",
+        "enfant-f|Le miroir touche presque.",
         "maman|Tu t'es mise tout contre.",
     ],
     (3, 3, 1): [
@@ -892,6 +959,8 @@ T3 = {
         "papa|Le tilleul n'a plus claqué.",
         "enfant-f|Maintenant, tu peux rester.",
         "narrateur|Plate, la coupelle attend, sans verser.",
+        "narrateur|Elle couvre le bol avec sa paume.",
+        "enfant-f|Ma main garde le miroir.",
         "maman|Tu as laissé les feuilles finir.",
     ],
     (3, 3, 2): [
@@ -903,6 +972,8 @@ T3 = {
         "papa|Tu n'as pas couru.",
         "enfant-f|Tu es ronde, maintenant.",
         "narrateur|Le rond de savon attend, abrité.",
+        "narrateur|Elle pose le bol au pied du tronc.",
+        "enfant-f|Le tronc garde le miroir.",
         "maman|Derrière, l'air était plus doux.",
     ],
     (3, 3, 3): [
@@ -914,6 +985,8 @@ T3 = {
         "papa|Le petit rond n'a pas volé.",
         "enfant-f|Tu restes, bulle.",
         "narrateur|Le rond de savon attend, minuscule.",
+        "narrateur|Elle prend un tout petit cercle, au bord.",
+        "enfant-f|Un petit miroir, pour la larme.",
         "maman|Le petit rond a suffi.",
     ],
 }
@@ -927,6 +1000,8 @@ ENDINGS = {
         "papa|Le gravier s'est tu, pour toi.",
         "maman|La cloche n'a pas sonné.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Ça a failli ne pas tenir.",
+        "enfant-f|Surtout le moment des pas.",
         "narrateur|Un fil de savon sèche sur le bois, près du bronze.",
     ],
     (1, 1, 2): [
@@ -935,6 +1010,8 @@ ENDINGS = {
         "papa|Tu as vu l'herbe avant de souffler.",
         "maman|Essuie tes genoux, on rentre.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Un genou a tremblé, puis plus.",
+        "enfant-f|Surtout le moment plus bas.",
         "narrateur|Un rond d'herbe reste collé au bas du socle.",
     ],
     (1, 1, 3): [
@@ -943,6 +1020,8 @@ ENDINGS = {
         "papa|Le bord n'a pas soulevé.",
         "maman|L'herbe est retombée, plus loin.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Le bord a failli trop bouger.",
+        "enfant-f|Surtout le moment du bord.",
         "narrateur|L'allée garde un cercle de savon, loin de la larme.",
     ],
     (1, 2, 1): [
@@ -951,6 +1030,8 @@ ENDINGS = {
         "papa|L'ombre vous a aidées.",
         "maman|Le bronze sent le soleil, moins fort.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|L'ombre a failli trop tarder.",
+        "enfant-f|Surtout le moment de l'ombre.",
         "narrateur|L'ombre du tilleul glisse, et la larme tient.",
     ],
     (1, 2, 2): [
@@ -959,6 +1040,8 @@ ENDINGS = {
         "papa|Tu n'as pas soufflé trop fort.",
         "maman|L'oiseau était plus frais, d'abord.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Le rond a failli rester sur l'oiseau.",
+        "enfant-f|Surtout le glissement.",
         "narrateur|L'oiseau de bronze garde un halo, sous la bulle.",
     ],
     (1, 2, 3): [
@@ -967,6 +1050,8 @@ ENDINGS = {
         "papa|Tu t'es glissée, comme l'ombre.",
         "maman|Vos mains sentent le savon.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Le bronze a failli trop brûler.",
+        "enfant-f|Surtout le moment tout près.",
         "narrateur|Ses genoux gardent la chaleur du socle, un moment.",
     ],
     (1, 3, 1): [
@@ -975,6 +1060,8 @@ ENDINGS = {
         "papa|Le tilleul n'a plus claqué.",
         "maman|Vos manches sentent le tilleul.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Une feuille a failli trop claquer.",
+        "enfant-f|Surtout le silence des feuilles.",
         "narrateur|Une feuille jaune s'arrête au pied du bronze.",
     ],
     (1, 3, 2): [
@@ -983,6 +1070,8 @@ ENDINGS = {
         "papa|Tu n'as pas couru.",
         "maman|Tes doigts sentent le savon.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Le vent a failli trop tourner.",
+        "enfant-f|Surtout derrière le tronc.",
         "narrateur|L'écorce du tilleul sent le savon, tout bas.",
     ],
     (1, 3, 3): [
@@ -991,6 +1080,8 @@ ENDINGS = {
         "papa|Le petit rond n'a pas volé.",
         "maman|Le savon est sec, on rentre.",
         "narrateur|Le bâton sèche près du savon, un fil collant.",
+        "narrateur|Le petit rond a failli trop voler.",
+        "enfant-f|Surtout le tout petit souffle.",
         "narrateur|Le petit rond pâlit, sans quitter la larme.",
     ],
     (2, 1, 1): [
