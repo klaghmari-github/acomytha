@@ -306,7 +306,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
     lead = {
         1: "narrateur|Les pales du moulin s'arrêtent sous le porche.",
         2: "narrateur|Le fil pend, trop lourd, sous le porche.",
-        3: "narrateur|Le caillou reste sourd, sous le porche.",
+        3: "narrateur|Le caillou reste lourd, sous le porche.",
     }[t1]
     return L(
         lead,
