@@ -388,7 +388,7 @@ T1_Q = {
 
 T1_C = {
     1: [
-        "narrateur|Amir se baisse vers le coussin.",
+        "narrateur|Amir se baisse vers le coussin rayé.",
         "narrateur|Il le reprend, grain par grain.",
         "enfant-m|Je le reprends, il est à moi.",
         "papa|Merci, Amir.",
@@ -400,7 +400,7 @@ T1_C = {
         "narrateur|Le bac garde un creux, vide.",
     ],
     2: [
-        "narrateur|Amir ramasse le coussin, au bas.",
+        "narrateur|Amir ramasse le coussin rayé, au bas.",
         "narrateur|Il le reprend, contre lui.",
         "enfant-m|Je le reprends, il est froid.",
         "maman|Bravo, Amir.",
@@ -412,7 +412,7 @@ T1_C = {
         "narrateur|Le métal se tait, un instant.",
     ],
     3: [
-        "narrateur|Amir reprend le coussin, sur le bois.",
+        "narrateur|Amir reprend le coussin rayé, sur le bois.",
         "narrateur|Il le secoue, sans pousser le siège.",
         "enfant-m|Je le reprends, il est à moi.",
         "papa|Oui, tes mains sont prêtes.",
@@ -861,7 +861,7 @@ def ending_lines(a: int, b: int, c: int) -> list[str]:
         END_TOY[b],
         END_GO[c],
         "enfant-m|Le chat aussi, sur le rebord.",
-        "narrateur|Amir pose une main, loin des pattes.",
+        "narrateur|Amir pose une main, loin de l'anneau de pollen.",
         "narrateur|Sa poitrine se desserre, fière, calme.",
         f"narrateur|{END_LAST[(a, b, c)]}",
     ]
