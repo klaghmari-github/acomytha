@@ -1,17 +1,12 @@
-# F-NAR-015 — ATOM-COL.ECO.002-09
+# ATOM-COL.ECO.002-09 — Le poisson orange de Mila
 
-Relu : P0000, Q0001, C0001, END, END_F0001, script, retry_prompt, prénom.
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Vécu
+Mila veut dire le poisson orange. Éclat de poisson sur l'écaille. Elle coupe papa : les mots se perdent. À l'école, une voix trop près, elle coupe trop vite. Elle lève la main, attend, raconte. À table elle attend le silence. Merci vécu. Elle frotte la vitre trop vite : l'éclat part. Elle refuse de foncer, souffle, redessine. L'éclat de poisson tient l'orange.
 
 ## Vu et corrigé
-
-- Fil : **le poisson orange derrière la plante**. Mila veut le revoir et le raconter.
-- Ouverture : arrosoir, goutte, fil de miel. Pas la vitre embuée d’abord.
-- P0000 s’arrête : le mot est là, la maîtresse verse encore des graines.
-- Q0001 au moment du besoin. retry_prompt : Mila (plus Anaïs).
-- C0001 : elle lève la main, elle attend, elle parle du poisson. Plus tard, les poissons en papier.
-- Fin : elle dessine le poisson et sa queue. « L’histoire est finie. »
-- Papa et maman parlent. Troupe D16.
+Ouverture par la vitre embuée et la maison au doigt, pas le salon. Monde du dump : vitre cuisine embuée, maison dessinée, goutte, puis classe au bocal. Pas éclat de buée (BAN 001-02). Pas éclat de vitre. Indice unique éclat de poisson, nommé puis payé. ≠ COL.ECO.002-01 carotte. ≠ 002-02 seau. ≠ 002-03 carton. ≠ 002-04 mousse. ≠ 002-05 pompon. ≠ 002-06 manteau. ≠ xlsx plante/arrosoir/miel. Anaïs retiré (dump xai). Leçon attendre avant de parler vécue, pas dite. Maîtresse label (Bonjour, Mila ?), ne récite pas. Papa ajouté. Tics encore/déjà/tout doux/tout calme/tout lent absents. TTS notes+ssml+xai+piper par chunk. Pas apply, pas git, pas audio.
 
 ## Non vérifié
-
-- Audio. Durée ≥ 3 min (texte allongé, pas mesuré). Playtest moteur.
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
