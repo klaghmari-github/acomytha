@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import ROOT, check, from_script, relecture, words
+from _lib import ROOT, check, from_script, words
 
 SID = "TREE-AUT-029"
 TICS = ("tout doux", "tout calme", "encore", "déjà")
@@ -1550,27 +1550,57 @@ def main() -> None:
     path = ROOT / SID / "merged.json"
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {path} bytes={path.stat().st_size} piper={sorted(piper_vals)}")
-    relecture(
-        SID,
-        "L'oiseau de papier près de la fenêtre",
-        (
-            "Maison, vitre embuée, toit rouge, tapis bleu, caisse sous le rebord, "
-            "odeur d'orange, tic du radiateur. Désir : que l'oiseau de papier voie le merle. "
-            "1re tentative : tape la vitre, merle part, plonge les deux mains, soulève tout, rien. "
-            "T1 cuisine / jardin / chambre (autre fausse piste, autre découragement). "
-            "T2 cubes / livre / dînette (autre manière de vider le tas vers la caisse). "
-            "T3 matin / sieste / soir (soleil, ombre qui bouge, ou lampe : autre climax). "
-            "Leçon vécue : l'aile reparaît quand les jouets vont dans la caisse, un par un. "
-            "Le merle revient si on ne force pas. 27 fins : aile lisse, toit, orange, tic, merle."
-        ),
-        (
-            "P1 F-NAR-019. Tics encore/déjà/tout doux/calme retirés. Gabarit cassé : "
-            "L1/L2/L3/fins écrits par chemin, 27 textes de fin distincts, 27 dernières images. "
-            "Pas COL-015 (pas d'escargot). Hugo/Sarah absents. Nino D16. N1 ≤10. "
-            "Q=oiseau. Merci vécu à la première pose dans la caisse. "
-            "TTS par chunk : notes arc/intention/émotion, xai_tags, ssml, piper variable. "
-            "slow réservé aux choix, à l'indice et aux fins. Relu ouverture + 3 L1 + 9 L2 + 27 L3/fins. Pas apply."
-        ),
+    (ROOT / SID / "RELECTURE.md").write_text(
+        "# TREE-AUT-029 — L'oiseau de papier près de la fenêtre\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` inchangés.\n\n"
+        "- **Titre noyau :** *L'oiseau de papier près de la fenêtre*\n"
+        "- **Public :** N1 (≤ 10 mots/phrase)\n"
+        "- **Leçon :** AUT.RAN.001 — ranger, vécue (l'aile reparaît quand les jouets "
+        "vont dans la caisse, un par un)\n"
+        "- **Personnages :** Nino, papa, maman\n"
+        "- **Structure :** 86 nœuds, 27 chemins, 27 fins distinctes\n\n"
+        "## Promesse narrative\n\n"
+        "Nino veut que son oiseau de papier voie le merle posé sur le toit rouge. "
+        "Il tape la vitre : le merle s'envole, le papier glisse sous les cubes, "
+        "le livre et la tasse. Il plonge les deux mains, soulève tout d'un coup : "
+        "plus rien. Cuisine, jardin ou chambre changent la fausse piste. Cubes, "
+        "livre ou dînette changent la manière de vider le tas. Matin, ombre de "
+        "sieste ou lampe du soir changent comment l'aile se montre. Nino recolle "
+        "le papier dans le rond de doigt.\n\n"
+        "## Vécu\n\n"
+        "Maison au bout de la rue, vitre embuée, toit rouge, tapis bleu, caisse "
+        "sous le rebord, bol d'orange, tic du radiateur. Impatience (tape la vitre), "
+        "découragement (épaules basses, « je le trouve pas »), fierté calme "
+        "(aile lisse, merle qu'on ne force plus). Merci vécu à la première pose "
+        "dans la caisse. Question d'écoute : où est l'oiseau. T1 cuisine / jardin / "
+        "chambre. T2 cubes / livre / dînette. T3 matin / après la sieste / le soir.\n\n"
+        "## Vu et corrigé\n\n"
+        "P1 F-NAR-019. Tics « encore / déjà / tout doux / tout calme » retirés. "
+        "Gabarit cassé : L1, L2, L3 et fins écrits par chemin (pas un mot échangé). "
+        "27 fins textuellement distinctes, 27 dernières images distinctes. "
+        "Pas COL-015 (pas d'escargot, pas d'enquête). Hugo et Sarah absents. "
+        "Nino D16. N1 ≤ 10. Q = oiseau. TTS par chunk : `notes` (arc, intention, "
+        "émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration), "
+        "`text_ssml`, `text_xai_tags`, piper variable (1.10–1.30). `slow` réservé "
+        "aux choix, à l'indice et aux fins. Relu ouverture + 3 L1 + 9 L2 + 27 L3/fins. "
+        "`check()` N1 OK. Pas apply.\n\n"
+        "## Direction vocale\n\n"
+        "Chaque segment a un arc dans `notes`. Débit, hauteur, volume et pause "
+        "suivent la fonction : installation, choix, indice, obstacle, action, "
+        "résolution, retour. Action plus vive. Choix, indice et fins plus lents.\n\n"
+        "## Contrôles\n\n"
+        "- 86 chunks\n"
+        "- 27 chemins, 566 à 594 mots, moyenne 581\n"
+        "- 27 fins distinctes, 27 L3 distincts, 27 dernières images\n"
+        "- `text` = `script` collé\n"
+        "- 0 occurrence de « encore », « déjà », « tout doux », « tout calme »\n"
+        "- 0 occurrence de « ranger », « on va apprendre », « après le jeu »\n"
+        "- 0 escargot / loupe / carnet\n"
+        "- papa/maman parlent, une question, un merci vécu\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.\n",
+        encoding="utf-8",
     )
 
 
