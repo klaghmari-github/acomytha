@@ -3,30 +3,15 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés. Graphe `option_*_next` conservé.
 
 ## Vécu
-
-Maison près de la mer : volet salé, mouette, linge chaud. Aniss veut montrer sa coquille rose à Sarah, au bord de l'eau. Urgence douce : Sarah arrive, le sac n'est pas prêt.
-
-T1 = **quel objet il prépare d'abord** ; seau, filet et linge partent **tous**. L'objet choisi colore le voyage (anse, mailles, tissu tiède) jusqu'à la coda.
-
-T2 = trois lieux vraiment différents, chacun un obstacle propre :
-- **rochers** : trop haut pour leurs mains, traces grandes et petites au pied du roc ;
-- **laisse** : la coquille roule trop loin, traces croisées dans l'écume ;
-- **mare** : trop profonde pour les chevilles, les traces de papa vont plus loin.
-
-T3 = neuf résolutions (pas 27 copies) : main de Sarah / bras de papa / nid plus bas ; petites traces / geste de loin / petite vague ; chevilles / eau qui recule / tendre ensemble. Chaque fin tient la promesse : Sarah a vu ou tenu le rose, on rentre.
-
-Leçon implicite (DIF.COR.001) : différentes tailles, on joue ensemble. Pas de slogan.
+Maison près de la mer, sable mouillé. Le cri d'une mouette entre dans la cuisine. Sur la coquille rose, un point d'écume tient, blanc. Mission : le montrer à Sarah, au bord, maintenant. Sarah arrive et s'arrête, sans un mot. Aniss propose de courir ; son silence compte. Papa remercie Aniss d'avoir vu ce silence. T1 = seau / filet / linge (les trois partent ; trop vite : toc, maille ouverte, tissu trop serré). T2 = rochers (trop haut) / laisse (trop loin) / mare (trop profonde). La mouette pique le point d'écume au lieu de prendre la coquille. Aniss veut chasser ; Sarah pose sa limite. Sourire parti, poitrine serrée, adulte accroupi. T3 : ils refusent de foncer, retrouvent le point du début, font avec. 27 fins : le rose est vu, l'objet porte une trace, ça a failli ne pas arriver. Leçon DIF.COR.001 vécue (faire avec l'autre, pas sans elle), jamais dite. Monde ≠ TREE-AUT-021 (nacre), ≠ TREE-DIF-052 (phare, ambre).
 
 ## Vu et corrigé
-
-`python3 stories/rewrites/_write_tree_dif_001.py` → `OK TREE-DIF-001 4008 mots`. N1 ≤ 10. `_lib.check` vert.
-
-- Brouillon « Bravo tu as invité / les tailles sont différentes / L'histoire est finie » + Tom/Léa/Sami : jeté.
-- T1 n'est plus cuisine / jardin / chambre. T2 n'est plus ballon / seau / doudou en inventaire d'objets de salon. T3 n'est plus des prénoms hors troupe.
-- « en ce moment » une fois, dans l'ouverture.
-- Un merci de papa, lié au geste vu (tenir la coquille). Pas de refrain bravo.
-- Personnages : Aniss, Sarah, papa, maman.
+`python3 stories/rewrites/_write_tree_dif_001.py` → `OK TREE-DIF-001 5266 mots`. N1 ≤ 10. `_lib.check` vert.
+- Ouverture inventée (cri de mouette, pas « encore »).
+- Indice unique : point d'écume, payé au climax et en coda.
+- Voix : notes + ssml + xai + piper par chunk, profils raw.js. `slow` = choix, question, retour.
+- Tics encore / déjà / tout doux / tout calme jetés. Merle, miel, Mission accomplie, J'ai compris jetés.
+- Un merci vécu (voir le silence de Sarah). Pas apply. Audio non cuit.
 
 ## Non vérifié
-
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.
