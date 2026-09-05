@@ -9,7 +9,7 @@ from copy import deepcopy
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import FORBIDDEN, LIMITS, ROOT, check, from_script, relecture, words  # noqa: E402
+from _lib import FORBIDDEN, LIMITS, ROOT, check, from_script, words  # noqa: E402
 
 SID = "TREE-DIF-064"
 N3 = LIMITS["N3"]
@@ -202,6 +202,7 @@ OPENING = vet(
         "narrateur|Ça sent la résine chaude, et la mer.",
         "narrateur|Amir vit là, avec papa et maman.",
         "narrateur|La queue rouge tape la marche, impatiente.",
+        "narrateur|Une mouette crie, trop haute pour le rouge.",
         "papa|Tu as vu la queue, Amir ?",
         "enfant-m|Elle veut partir !",
         "maman|C'est le cerf-volant, tout rouge.",
@@ -209,6 +210,7 @@ OPENING = vet(
         "enfant-m|Je veux qu'il voie la mer.",
         "narrateur|Il lance trop vite, depuis la marche.",
         "narrateur|Le nez rouge se plie contre le bois.",
+        "narrateur|Amir souffle, les joues chaudes de dépit.",
         "enfant-m|Il ne vole pas !",
         "papa|Le vent va se coucher, tout à l'heure.",
         "maman|On prend les affaires, alors ?",
@@ -242,6 +244,7 @@ T1 = {
                 "papa|Ta queue me chatouille !",
                 "enfant-m|Elle est trop contente.",
                 "narrateur|Amir serre les lèvres, puis il ralentit.",
+                "narrateur|Le tissu sent le soleil, contre ses paumes.",
                 "narrateur|Maman glisse la ficelle contre son poignet.",
                 "narrateur|Le piquet roule contre son genou, lourd.",
                 "enfant-m|Nez en avant, queue derrière.",
@@ -285,6 +288,7 @@ T1 = {
                 "narrateur|Il serre trop, et ça marque la peau.",
                 "papa|Pas trop serré, laisse un peu d'air.",
                 "narrateur|Un tour glisse, puis tient.",
+                "narrateur|La ficelle sent le sel, un peu collante.",
                 "maman|Tu m'as fait un anneau.",
                 "enfant-m|C'est pour tenir.",
                 "narrateur|Papa pose le tissu plié contre le seau.",
@@ -330,6 +334,7 @@ T1 = {
                 "narrateur|Il plante trop fort, et le bois penche.",
                 "maman|Pointe vers le bas, sans forcer.",
                 "narrateur|Le bois tape le sable, un toc.",
+                "narrateur|Amir essuie le sable sur sa paume.",
                 "papa|Il a tracé une ligne, comme un serpent.",
                 "enfant-m|C'est le chemin.",
                 "narrateur|Maman glisse le tissu sous son autre bras.",
@@ -427,7 +432,7 @@ T2 = {
         mid1="Une vague revient, trop blanche.",
         mid2="Le rouge n'a plus de vent, trop lourd.",
         papa="Ici, ça mouille trop.",
-        maman="Il lui faut du sec, et du temps.",
+        maman="Le rouge est trop lourd, trop mouillé.",
         hip_key=4,
     ),
 }
@@ -472,6 +477,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             f"enfant-m|{d['cry']}",
             f"narrateur|{d['mid1']}",
             f"narrateur|{d['mid2']}",
+            "narrateur|Amir souffle, les épaules basses.",
             f"papa|{d['papa']}",
             f"maman|{d['maman']}",
             "enfant-m|Alors on fait quoi ?",
@@ -489,7 +495,7 @@ RES = {
             "narrateur|L'air est plus petit, contre la dune.",
             "narrateur|Il compte un, deux, sans lancer.",
             "narrateur|Un coin du tissu cherche l'air.",
-            "papa|Tu as regardé le vent.",
+            "papa|Ici, le vent est plus petit.",
             "enfant-m|Ici, tu ne te déchires plus.",
             "maman|Plus bas, ça tenait mieux.",
         ]
@@ -500,10 +506,10 @@ RES = {
             "narrateur|Il tient le tissu contre lui, sans le lancer.",
             "narrateur|Le souffle passe, une fois, puis plus.",
             "enfant-m|Tu peux partir, maintenant.",
-            "narrateur|Le tissu reste plié, sage contre lui.",
+            "narrateur|Le tissu reste plié, contre lui.",
             "papa|Le vent s'est tu.",
             "narrateur|Le rouge se lève, sans se tordre.",
-            "maman|Le rouge a eu son silence.",
+            "maman|Le rouge se tient, sans claquer.",
         ]
     ),
     (1, 1, 3): vet(
@@ -527,7 +533,7 @@ RES = {
             "narrateur|Le tissu reste plié un instant, puis s'ouvre.",
             "maman|Le fil n'a plus accroché.",
             "enfant-m|Maintenant, tu me vois.",
-            "papa|Tu as commencé tout près.",
+            "papa|Le rouge est parti, tout près.",
         ]
     ),
     (1, 2, 2): vet(
@@ -537,7 +543,7 @@ RES = {
             "narrateur|Un nœud lâche, puis un autre.",
             "narrateur|L'herbe se tait, plus loin, toute seule.",
             "narrateur|Un coin du tissu cherche l'air.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "enfant-m|C'est pour toi.",
             "maman|Le nœud a lâché tout seul.",
         ]
@@ -573,9 +579,9 @@ RES = {
             "narrateur|L'eau va, revient, puis se tait.",
             "narrateur|Le sable redevient ferme, tout net.",
             "narrateur|Un coin du tissu cherche l'air.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "enfant-m|Tu es sec, maintenant.",
-            "maman|Tu as laissé la vague finir.",
+            "maman|La vague a fini toute seule.",
         ]
     ),
     (1, 3, 3): vet(
@@ -598,7 +604,7 @@ RES = {
             "narrateur|L'air est plus petit, contre la pente.",
             "narrateur|Il compte un, deux, le fil sans siffler.",
             "narrateur|Un bout de ficelle brille, prêt à tenir.",
-            "papa|Tu as regardé le vent.",
+            "papa|Ici, le vent est plus petit.",
             "enfant-m|Ici, tu ne te déchires plus.",
             "maman|Plus bas, le fil tenait mieux.",
         ]
@@ -612,7 +618,7 @@ RES = {
             "narrateur|Enroulée, la ficelle attend contre sa manche.",
             "papa|Le vent s'est tu.",
             "narrateur|Le rouge se lève, le fil sans crier.",
-            "maman|Le fil a eu son silence.",
+            "maman|Le fil se tient, sans siffler.",
         ]
     ),
     (2, 1, 3): vet(
@@ -636,7 +642,7 @@ RES = {
             "narrateur|Enroulée, la ficelle reste sage un instant.",
             "maman|Le fil n'a plus accroché.",
             "enfant-m|Maintenant, tu me vois.",
-            "papa|Tu as commencé tout près.",
+            "papa|Le rouge est parti, tout près.",
         ]
     ),
     (2, 2, 2): vet(
@@ -646,7 +652,7 @@ RES = {
             "narrateur|Un nœud lâche, puis un autre.",
             "narrateur|L'herbe se tait, plus loin, toute seule.",
             "narrateur|Un bout de ficelle brille, prêt à tenir.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "enfant-m|C'est pour toi.",
             "maman|Le nœud a lâché tout seul.",
         ]
@@ -682,9 +688,9 @@ RES = {
             "narrateur|L'eau va, revient, puis se tait.",
             "narrateur|Le sable redevient ferme, tout net.",
             "narrateur|Un bout de ficelle brille, prêt à tenir.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "enfant-m|Tu es sec, maintenant.",
-            "maman|Tu as laissé la vague finir.",
+            "maman|La vague a fini toute seule.",
         ]
     ),
     (2, 3, 3): vet(
@@ -707,7 +713,7 @@ RES = {
             "narrateur|L'air est plus petit, contre la pente.",
             "narrateur|Il compte un, deux, le bois sans trembler.",
             "narrateur|La pointe du piquet attend le sable.",
-            "papa|Tu as regardé le vent.",
+            "papa|Ici, le vent est plus petit.",
             "enfant-m|Ici, tu ne te déchires plus.",
             "maman|Plus bas, le bois tenait mieux.",
         ]
@@ -720,8 +726,8 @@ RES = {
             "enfant-m|Tu peux partir, maintenant.",
             "narrateur|Planté, le piquet reste droit, sans bouger.",
             "papa|Le vent s'est tu.",
-            "narrateur|Le rouge se lève, le bois sans penche.",
-            "maman|Le bois a eu son silence.",
+            "narrateur|Le rouge se lève, le bois sans pencher.",
+            "maman|Le bois se tient, sans trembler.",
         ]
     ),
     (3, 1, 3): vet(
@@ -745,7 +751,7 @@ RES = {
             "narrateur|Planté, le piquet reste un instant, puis tient.",
             "maman|Le fil n'a plus accroché.",
             "enfant-m|Maintenant, tu me vois.",
-            "papa|Tu as commencé tout près.",
+            "papa|Le rouge est parti, tout près.",
         ]
     ),
     (3, 2, 2): vet(
@@ -755,7 +761,7 @@ RES = {
             "narrateur|Un nœud lâche, puis un autre.",
             "narrateur|L'herbe se tait, plus loin, toute seule.",
             "narrateur|La pointe du piquet attend le sable.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "enfant-m|C'est pour toi.",
             "maman|Le nœud a lâché tout seul.",
         ]
@@ -791,9 +797,9 @@ RES = {
             "narrateur|L'eau va, revient, puis se tait.",
             "narrateur|Le sable redevient ferme, tout net.",
             "narrateur|La pointe du piquet attend le sable.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "enfant-m|Tu es sec, maintenant.",
-            "maman|Tu as laissé la vague finir.",
+            "maman|La vague a fini toute seule.",
         ]
     ),
     (3, 3, 3): vet(
@@ -825,7 +831,7 @@ FIN = {
         [
             "narrateur|Quand le vent s'est tu, le rouge a vu la mer.",
             "enfant-m|On a compté le souffle.",
-            "papa|Le silence a laissé partir le nez.",
+            "papa|Le nez est parti, sans claquer.",
             "maman|Rentrez, le pin sent le chaud.",
             "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
             "narrateur|Une poussière de sable tourne, puis s'arrête.",
@@ -845,7 +851,7 @@ FIN = {
         [
             "narrateur|Tout près, le rouge a repris l'air.",
             "enfant-m|On a commencé tout court.",
-            "papa|Le silence vous a aidés.",
+            "papa|Les tiges n'ont plus accroché.",
             "maman|L'herbe sent le sel, moins fort.",
             "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
             "narrateur|Un brin d'herbe se recouche, lent.",
@@ -855,7 +861,7 @@ FIN = {
         [
             "narrateur|Quand le nœud s'est tu, le rouge a volé.",
             "enfant-m|On a dénoué, à genoux.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "maman|Le fil a parlé tout seul.",
             "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
             "narrateur|Un nœud vide reste dans sa paume.",
@@ -885,7 +891,7 @@ FIN = {
         [
             "narrateur|Après la vague, le rouge a vu la mer.",
             "enfant-m|On a laissé l'eau se taire.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "maman|Tes doigts sentent le sel.",
             "narrateur|Le tissu rouge sèche près du seau, un pli salé.",
             "narrateur|La vague reste à sa place, plus loin.",
@@ -915,7 +921,7 @@ FIN = {
         [
             "narrateur|Quand le vent s'est tu, le fil a laissé le rouge.",
             "enfant-m|On a compté, le fil sans siffler.",
-            "papa|Le silence a laissé partir le nez.",
+            "papa|Le nez est parti, sans claquer.",
             "maman|Rentrez, le pin sent le chaud.",
             "narrateur|La ficelle reste enroulée, un bout collant de sel.",
             "narrateur|Le fil ne siffle plus, et le rouge tient.",
@@ -935,7 +941,7 @@ FIN = {
         [
             "narrateur|Tout près, le fil court, net, au-dessus des tiges.",
             "enfant-m|On a commencé tout court.",
-            "papa|Le silence vous a aidés.",
+            "papa|Les tiges n'ont plus accroché.",
             "maman|L'herbe sent le sel, moins fort.",
             "narrateur|La ficelle reste enroulée, un bout collant de sel.",
             "narrateur|Le fil court, net, au-dessus des tiges.",
@@ -945,7 +951,7 @@ FIN = {
         [
             "narrateur|Quand le nœud s'est tu, le fil a parlé.",
             "enfant-m|On a dénoué, à genoux.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "maman|Le fil a parlé tout seul.",
             "narrateur|La ficelle reste enroulée, un bout collant de sel.",
             "narrateur|Un tour de ficelle s'endort contre sa manche.",
@@ -975,7 +981,7 @@ FIN = {
         [
             "narrateur|Après la vague, le fil a vu la mer, sec.",
             "enfant-m|On a laissé l'eau se taire.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "maman|Tes doigts sentent le sel.",
             "narrateur|La ficelle reste enroulée, un bout collant de sel.",
             "narrateur|Un bout collant de sel sèche au poignet.",
@@ -1004,8 +1010,8 @@ FIN = {
     (3, 1, 2): vet(
         [
             "narrateur|Quand le vent s'est tu, le bois est resté droit.",
-            "enfant-m|On a compté, le bois sans penche.",
-            "papa|Le silence a laissé partir le nez.",
+            "enfant-m|On a compté, le bois sans pencher.",
+            "papa|Le nez est parti, sans claquer.",
             "maman|Rentrez, le pin sent le chaud.",
             "narrateur|Le piquet garde un peu de sable, près du fil.",
             "narrateur|Le bois reste droit, sans trembler.",
@@ -1025,7 +1031,7 @@ FIN = {
         [
             "narrateur|Tout près, la pointe du piquet, dans le sable nu.",
             "enfant-m|On a commencé tout court.",
-            "papa|Le silence vous a aidés.",
+            "papa|Les tiges n'ont plus accroché.",
             "maman|L'herbe sent le sel, moins fort.",
             "narrateur|Le piquet garde un peu de sable, près du fil.",
             "narrateur|La pointe du piquet, près, dans le sable nu.",
@@ -1035,7 +1041,7 @@ FIN = {
         [
             "narrateur|Quand le nœud s'est tu, un toc de bois, puis plus.",
             "enfant-m|On a dénoué, à genoux.",
-            "papa|Tu n'as pas tiré trop fort.",
+            "papa|Le nœud a lâché sans crier.",
             "maman|Le fil a parlé tout seul.",
             "narrateur|Le piquet garde un peu de sable, près du fil.",
             "narrateur|Un toc de bois, puis plus rien.",
@@ -1065,7 +1071,7 @@ FIN = {
         [
             "narrateur|Après la vague, un trait de piquet, sec.",
             "enfant-m|On a laissé l'eau se taire.",
-            "papa|Tu n'as pas couru dans l'eau.",
+            "papa|Tes pieds sont restés sur le sable.",
             "maman|Tes doigts sentent le sel.",
             "narrateur|Le piquet garde un peu de sable, près du fil.",
             "narrateur|Un trait de piquet, sec, après la vague.",
@@ -1288,27 +1294,42 @@ def main() -> None:
     (folder / "merged.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    relecture(
-        SID,
-        TITLE,
-        "Cabanes de bois, grain de sel, fil du linge, pin chaud. Amir veut que son "
-        "cerf-volant rouge voie la mer, avant que le vent se couche. Il lance trop "
-        "vite depuis la marche : le nez se plie. T1 = cerf-volant / ficelle / piquet "
-        "(les trois viennent). T2 = crête trop venteuse / herbe trop accrochante / "
-        "écume trop mouillée : le premier lancer rate. T3 = neuf résolutions (plus "
-        "bas, attendre, de côté ; plus court, à genoux, sable ; plus haut, après la "
-        "vague, loin de l'eau). La leçon se vit : il compte, il tient sans lancer, "
-        "il laisse le nœud ou la vague finir. Fin : le rouge voit la mer.",
-        "P0 F-NAR-019. N3 ≤ 16. Slogan « Plus de temps ou de calme », Hugo, "
-        "Tom/Léa/Sami, bac/toboggan/balançoires, « bon travail », calque AUT-001 "
-        "jetés. Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), "
-        "DIF-040 (veau/ferme), DIF-048 (étoile/fenêtre), DIF-056 (bulle/bronze). "
-        "Merci de papa (ficelle dénouée), une fois. 27 fins et 27 résolutions "
-        "textuellement distinctes. TTS par fonction (opening/choice/clue/action/"
-        "obstacle/resolution/ending). slow réservé aux choix, à l'indice et aux "
-        f"fins. Chemins : {min(ws)}–{max(ws)} mots (moyenne {sum(ws)//len(ws)}). "
-        "Tics « tout doux / encore / déjà / tout calme » interdits. chunk_id "
-        "inchangés. check() OK. Pas d'apply. Audio non cuit.",
+    (folder / "RELECTURE.md").write_text(
+        f"""# {SID} — {TITLE}
+
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+
+## Promesse narrative
+
+Au bord de la mer, un grain de sel brille sur le bois de la cabane. Amir veut que son cerf-volant rouge voie la mer avant que le vent se couche. Il lance trop vite depuis la marche : le nez se plie. Il prend d'abord le cerf-volant, la ficelle ou le piquet ; les trois viennent. La crête souffle trop, l'herbe accroche trop, l'écume mouille trop. Neuf façons de laisser du temps. Le rouge vole.
+
+## Vécu
+
+Amir veut que le rouge voie la mer. Il lance trop tôt : le tissu claque le bois. Sur la crête, dans l'herbe ou près de l'écume, le premier lancer rate. Il compte, il tient sans lancer, il laisse le nœud ou la vague finir. La leçon se voit : trop de vent, trop d'accroche, trop d'eau — puis un air plus petit, et le rouge part. Un merci de papa, lié à la ficelle dénouée, pas un refrain scolaire.
+
+## Vu et corrigé
+
+- Titre noyau conservé. Troupe D16 : Amir, papa, maman. N3 ≤ 16.
+- 86 nœuds, graphe et libellés d'options conservés.
+- 27 fins textuellement distinctes, 27 résolutions distinctes, 27 dernières images.
+- Première tentative échoue (marche, puis lieu choisi). Chaque choix change l'obstacle, le climax, la dernière image.
+- Retour du tissu rouge, de la mer, du pin, des cabanes.
+- TTS par fonction (ouverture, choix, indice, action, obstacle, résolution, retour).
+- `slow` réservé aux choix, à l'indice et aux fins.
+- Slogan « Plus de temps ou de calme », Hugo, Tom/Léa/Sami, bac/toboggan/balançoires, « bon travail » jetés.
+- Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), DIF-040 (veau/ferme), DIF-048 (étoile/fenêtre), DIF-056 (bulle/bronze).
+- Tics « tout doux / encore / déjà / tout calme » interdits. Morales collées remplacées par des faits vus.
+- Chemins : {min(ws)}–{max(ws)} mots (moyenne {sum(ws)//len(ws)}). `check()` OK. Pas d'apply.
+
+## Direction vocale
+
+`notes` : arc, intention, émotion, intensité 1–3, destinataire, sous-texte, tempo, sourire, respiration. Adulte conversationnel, pas maître. Obstacle en `low-pitch` ; fins `soft` / `slow` / `low-pitch`.
+
+## Non vérifié
+
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur. Pas d'apply.
+""",
+        encoding="utf-8",
     )
 
 
