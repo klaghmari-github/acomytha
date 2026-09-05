@@ -272,7 +272,7 @@ T1 = {
             ("narrateur", "Aniss tourne trop vite, et un pois s'accroche."),
             ("narrateur", "L'écharpe tire, Sarah recule d'un pas."),
             ("enfant-f", "Aïe, attends !"),
-            ("papa", "Autour du cou, sans danser."),
+            ("papa", "Autour du cou, le pois contre le pull."),
             ("narrateur", "Sarah noue le tissu, un pois contre le pull."),
             ("maman", "Le ticket et la clochette voyagent avec vous."),
             ("narrateur", "Aniss prend la clochette, genoux plus vifs."),
@@ -288,7 +288,7 @@ T1 = {
             ("enfant-m", "Elle a trop de pois !"),
             ("enfant-f", "C'est pour le vent du tour."),
             ("narrateur", "Les pieds d'Aniss tapent le sol peint."),
-            ("maman", "Merci, tu as noué le pois sans danser."),
+            ("maman", "Merci, le pois tient contre le pull."),
             ("papa", "On reste près des chevaux ?"),
             ("enfant-f", "Oui, papa."),
         ),
@@ -399,7 +399,7 @@ def t2_step(a: int) -> list[tuple[str, str]]:
         ("narrateur", mishap),
         ("narrateur", "Un peu de poussière lève, puis retombe."),
         ("narrateur", "Sarah se cogne à son épaule, surprise."),
-        ("maman", "Il a de l'élan, comme un petit vent."),
+        ("maman", "Ses pieds veulent le haut, avant toi."),
         ("papa", "Toi tu as les jambes plus longues."),
         ("enfant-f", "On peut jouer avec lui ?"),
         ("papa", "Vous trouvez, tous les deux ?"),
@@ -423,11 +423,11 @@ def t2_horse(a: int) -> list[tuple[str, str]]:
         ("enfant-f", "Ici, ça brille, Aniss."),
         ("enfant-f", "Tu t'assois, et on tourne."),
         ("enfant-m", "Je galope, trop fort !"),
-        ("narrateur", "Le cheval doré penche, un tout petit peu."),
+        ("narrateur", "Le cheval doré penche, un petit peu."),
         ("narrateur", mishap),
         ("narrateur", f"{name} attend au bord, un peu seule."),
         ("narrateur", "Sarah serre la selle, les dents serrées."),
-        ("maman", "Son élan remplit tout le tour."),
+        ("maman", "Ses genoux tapent la selle, trop fort."),
         ("papa", "Toi tu vas plus loin, lui plus vite."),
         ("enfant-m", "On tourne comment, alors ?"),
         ("papa", "Vous trouvez, tous les deux ?"),
@@ -492,7 +492,7 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("enfant-f", "On attend un peu, Aniss."),
             ("enfant-m", "J'attends, je souffle."),
             ("narrateur", wait),
-            ("narrateur", "La file repose, toute ronde, toute sage."),
+            ("narrateur", "La file repose, ronde comme le kiosque."),
             ("narrateur", "Sarah replace le pas, sans tirer."),
             ("papa", "Tes pieds ont su s'asseoir."),
             ("maman", "Le tour a eu la place."),
@@ -513,7 +513,7 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("narrateur", "Les mains d'Aniss sont libres, maintenant."),
             ("narrateur", "Sarah avance d'un pas, pile au milieu."),
             ("enfant-m", "Je t'aide, sans le ticket."),
-            ("maman", "Vous avez demandé, et ça tient."),
+            ("maman", "Papa a le papier, vos mains sont libres."),
             ("narrateur", f"{o['cap']} reste près d'eux."),
             ("enfant-f", "La file est prête."),
         )
@@ -532,7 +532,7 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("narrateur", "Aniss va plus vite, Sarah plus loin."),
             ("enfant-f", "On arrive en haut, tous les deux."),
             ("enfant-m", "J'ai attendu ta jambe, un peu."),
-            ("papa", "Vous avez joué avec l'élan."),
+            ("papa", "Vos ombres ont monté ensemble."),
             ("maman", "Le marchepied vous a laissés passer."),
         )
     # step + wait
@@ -551,7 +551,7 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("enfant-m", "C'est à toi, Sarah."),
             ("enfant-f", "Merci, j'y vais."),
             ("papa", "Chacun son tour, sur la marche."),
-            ("maman", "L'élan a attendu le bois."),
+            ("maman", "Ses genoux ont reposé sur le bois."),
         )
     # step + ask
     if b == 2 and c == 3:
@@ -568,7 +568,7 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("narrateur", "Sarah la reçoit, monte plus loin."),
             ("enfant-m", "On demande, et ça va !"),
             ("enfant-f", "Le haut est à nous."),
-            ("papa", "Vous avez demandé, sans tirer."),
+            ("papa", "Ma main tenait, vous montiez."),
             ("maman", "Ma main a juste attendu."),
         )
     # horse + play
@@ -600,12 +600,12 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("enfant-f", "On attend l'arrêt."),
             ("enfant-m", "Quand il s'arrête, on galope un peu."),
             ("narrateur", hush),
-            ("narrateur", "Le cheval doré ralentit, tout seul."),
+            ("narrateur", "Le cheval doré ralentit, sans nous."),
             ("narrateur", "Aniss souffle, puis il ouvre les mains."),
             ("enfant-m", "C'est à nous, maintenant."),
             ("enfant-f", "Un tour, sans galoper."),
             ("papa", "Vous avez attendu la musique."),
-            ("maman", "L'élan a écouté le bois."),
+            ("maman", "Ses mains ont attendu le bois."),
         )
     # horse + ask
     bar = {
@@ -615,13 +615,13 @@ def t3_scene(a: int, b: int, c: int) -> list[tuple[str, str]]:
     }[a]
     return L(
         ("enfant-f", "Papa, tu tiens la barre ?"),
-        ("papa", "Je la tiens, tout ferme."),
+        ("papa", "Je la tiens, bien ferme."),
         ("narrateur", bar),
-        ("narrateur", "Aniss pose les deux mains, tout près."),
+        ("narrateur", "Aniss pose les deux mains, contre la barre."),
         ("narrateur", "Sarah pose les siennes, plus loin."),
         ("enfant-m", "On demande, et ça tient !"),
         ("enfant-f", "La crinière est à nous."),
-        ("maman", "Vous avez demandé, sans galoper."),
+        ("maman", "La barre tient, le cheval aussi."),
         ("papa", "Ma barre a juste attendu."),
     )
 
@@ -657,9 +657,9 @@ def ending(a: int, b: int, c: int) -> list[tuple[str, str]]:
             3: "Un tintement mince s'endort près du kiosque.",
         }[a]
         return L(
-            ("narrateur", "Au bord de la file, deux têtes se calment."),
+            ("narrateur", "Au bord de la file, deux têtes se posent."),
             ("enfant-f", "Aniss, tu as su t'asseoir."),
-            ("enfant-m", "Oui, tout près de tes mains."),
+            ("enfant-m", "Oui, contre tes mains."),
             ("papa", "Toi debout, lui assis, ça tenait."),
             ("maman", "Vos voix sont devenues toutes petites."),
             ("narrateur", f"{o['cap']} reste dans la paume de Sarah."),
@@ -753,7 +753,7 @@ def ending(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("enfant-f", "Maman a tendu l'écharpe."),
             ("enfant-m", "On s'est parlé à travers."),
             ("papa", "Le marchepied vous a laissé la place."),
-            ("maman", "Le secret tient, tout chaud."),
+            ("maman", "Le secret tient, chaud dans les mains."),
             ("narrateur", keep),
             ("enfant-f", "Regarde-le, Aniss, il brille."),
             ("enfant-m", "Je le vois, d'ici."),
@@ -774,7 +774,7 @@ def ending(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("narrateur", "Les talons d'Aniss sont chauds, sur le bois."),
             ("enfant-f", "Tu as chanté pour moi."),
             ("enfant-m", "Tu tenais mon épaule."),
-            ("maman", "La crinière sent le vernis, tout près."),
+            ("maman", "La crinière sent le vernis, sous le nez."),
             ("papa", "Le tour est à vous, maintenant."),
             ("narrateur", keep),
             ("narrateur", "Sarah la pose contre le bois peint."),
@@ -867,7 +867,7 @@ def build() -> None:
                 "accepted_examples": t1["accepted"],
                 "retry_prompt": t1["retry"],
                 "engine_ok_text": t1["ok"],
-                "engine_near_text": "Tu es tout près. Reprenons l'indice.",
+                "engine_near_text": "Tu es très proche. Reprenons l'indice.",
             }},
         )
         cid = f"{base}_C0001"
@@ -955,6 +955,8 @@ def build() -> None:
         raise SystemExit(f"{SID}: Sarah absente")
     if "aniss" not in low:
         raise SystemExit(f"{SID}: Aniss absent")
+    if re.search(r"\bélan\b", low):
+        raise SystemExit(f"{SID}: élan nommé en slogan")
     for c in out["chunks"]:
         if c.get("kind") != "passage_fin":
             continue
