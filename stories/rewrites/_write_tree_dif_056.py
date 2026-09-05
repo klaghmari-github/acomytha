@@ -138,7 +138,7 @@ OBJ = {
         "retry": "Nina prend le bâton d'abord.",
         "coda": "Le bâton sèche près du savon, un fil encore collant.",
         "hip": "Entre ses doigts, le bois du bâton est tiède.",
-        "wait": "Pendant ce temps, le bâton reste droit, sage.",
+        "wait": "Pendant ce temps, le bâton reste droit, sans bouger.",
         "use": "Un fil de savon cherche encore l'air.",
     },
     2: {
@@ -173,41 +173,41 @@ T3_LABS = {
 def t1_passage(t1: int) -> list[str]:
     if t1 == 1:
         return L(
-            "narrateur|Nina prend d'abord le bâton, encore un peu humide.",
-            "enfant-f|Il va porter la bulle.",
-            "maman|Tiens-le droit, tout doux.",
-            "narrateur|Un fil de savon tremble au bout, puis tient.",
-            "papa|Le savon aussi, près de toi.",
-            "narrateur|Maman glisse la coupelle contre son coude.",
-            "narrateur|Bâton, savon et coupelle avancent avec elle.",
-            "enfant-f|J'arrive, petit nez.",
-            "narrateur|Le bois sent le savon, un peu sucré.",
-            "papa|Le bâton d'abord, vous l'avez.",
+            "narrateur|Nina attrape d'abord le bâton, encore mouillé.",
+            "enfant-f|La bulle va s'y accrocher.",
+            "maman|Garde le cercle en l'air.",
+            "narrateur|Un film tremble au bout, puis tient.",
+            "papa|Prends le savon, il est à tes pieds.",
+            "narrateur|La coupelle glisse sous son autre bras.",
+            "narrateur|Les trois partent, collés à Nina.",
+            "enfant-f|Nez, j'arrive.",
+            "narrateur|Le bois sent le sucre, un peu.",
+            "papa|Le bâton est à toi, maintenant.",
         )
     if t1 == 2:
         return L(
-            "narrateur|Nina prend d'abord le savon, encore un peu collant.",
-            "enfant-f|Il va faire la bulle.",
-            "papa|Ouvre tout doux, pas trop vite.",
-            "narrateur|Une goutte reste au pouce, puis glisse.",
-            "maman|Le bâton, ensuite, près de toi.",
-            "narrateur|Papa pose la coupelle contre le gravier.",
-            "narrateur|Elle emporte les trois, contre elle.",
-            "enfant-f|Tu vas m'aider, savon.",
-            "narrateur|Le flacon frotte sa manche, un peu.",
-            "maman|Le savon d'abord, il est prêt.",
+            "narrateur|Nina dévisse d'abord le savon, tout lentement.",
+            "enfant-f|Il va donner la bulle.",
+            "papa|Une goutte, pas tout le flacon.",
+            "narrateur|La goutte reste au pouce, puis tombe.",
+            "maman|Le bâton t'attend, près du lacet.",
+            "narrateur|Papa pose la coupelle contre le gravier chaud.",
+            "narrateur|Nina serre les trois contre son ventre.",
+            "enfant-f|Savon, tu restes avec moi.",
+            "narrateur|Le flacon colle un peu sa manche.",
+            "maman|Le savon est ouvert, tu peux y aller.",
         )
     return L(
-        "narrateur|Nina prend d'abord la coupelle, encore un peu tiède.",
-        "enfant-f|Elle va garder le savon.",
-        "maman|Tiens-la plate, tout doux.",
-        "narrateur|Le rond d'eau tremble, puis se tait.",
-        "papa|Le bâton et le savon, avec vous.",
-        "narrateur|Il les pose près de son genou.",
-        "narrateur|Rien ne reste près du banc.",
-        "enfant-f|Je te porte, coupelle.",
+        "narrateur|Nina lève d'abord la coupelle, bien à plat.",
+        "enfant-f|Le savon va dormir dedans.",
+        "maman|Pas trop d'eau, juste un miroir.",
+        "narrateur|Le rond tremble, puis s'arrête.",
+        "papa|Voici le bâton, et le savon.",
+        "narrateur|Il les glisse contre son genou.",
+        "narrateur|Le gravier reste vide, derrière eux.",
+        "enfant-f|Coupelle, je te porte.",
         "narrateur|Un cercle de savon brille au fond.",
-        "papa|La coupelle d'abord, elle est prête.",
+        "papa|La coupelle est prête, on avance.",
     )
 
 
@@ -215,27 +215,27 @@ def t1_confirm(t1: int) -> list[str]:
     o = OBJ[t1]
     if t1 == 1:
         return L(
-            "narrateur|Le bâton tient contre sa poitrine, encore humide.",
-            "enfant-f|Il va jusqu'au bronze.",
-            "maman|La cloche n'attendra pas longtemps.",
-            "papa|On y va, Nina ?",
+            "narrateur|Le bâton reste contre elle, encore mouillé.",
+            "enfant-f|On va jusqu'au bronze.",
+            "maman|La cloche n'est pas loin.",
+            "papa|Tu tiens bien, Nina ?",
             "enfant-f|Oui, papa.",
             f"narrateur|{o['use']}",
         )
     if t1 == 2:
         return L(
-            "narrateur|Le savon fait un rond lâche, au poignet.",
+            "narrateur|Le savon pend au poignet, un peu lâche.",
             "enfant-f|Il va filer la bulle.",
-            "papa|Le flacon sent encore le sucre.",
-            "maman|Vos mains sont prêtes ?",
+            "papa|Ça sent encore le sucre, toi.",
+            "maman|Tes mains sont prêtes ?",
             "enfant-f|Oui, maman.",
             "narrateur|Une goutte se tait, puis plus rien.",
         )
     return L(
         "narrateur|La coupelle reste plate, contre son ventre.",
-        "enfant-f|Elle va porter le savon.",
+        "enfant-f|Le savon ne verse pas.",
         "maman|Le rond sent encore le miel.",
-        "papa|On y va, tous les trois ?",
+        "papa|On avance, tous les trois ?",
         "enfant-f|Oui.",
         f"narrateur|{o['use']}",
     )
@@ -243,16 +243,16 @@ def t1_confirm(t1: int) -> list[str]:
 
 def t2_question(t1: int) -> list[str]:
     head = {
-        1: "Le bâton tape sa paume, tout bas.",
-        2: "Le savon frotte sa manche, un peu collant.",
-        3: "La coupelle tape le ventre, tout doux.",
+        1: "Le bâton penche vers le bronze, déjà.",
+        2: "Le savon colle encore à sa manche.",
+        3: "La coupelle appuie contre son ventre.",
     }[t1]
     return L(
         f"narrateur|{head}",
-        "narrateur|L'allée soulève déjà trop de poussière.",
-        "narrateur|Plus loin, le socle brûle encore.",
+        "narrateur|Devant, l'allée soulève trop de poussière.",
+        "narrateur|Le socle, lui, brûle encore au soleil.",
         "narrateur|Sous le tilleul, les feuilles claquent.",
-        "papa|Nina, vous partez où ?",
+        "papa|Nina, tu vas où ?",
     )
 
 
@@ -266,33 +266,33 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         }[t1]
         return L(
             f"narrateur|{o['hip']}",
-            "narrateur|L'allée sent le gravier chaud, trop vif.",
+            "narrateur|Le gravier de l'allée saute sous les pas.",
             f"narrateur|{extra}",
-            "enfant-f|Ma bulle a sauté !",
-            "narrateur|Un pas soulève la poussière, encore.",
-            "narrateur|La bulle n'a plus le temps d'arriver.",
-            "papa|Ça bouge trop, ici.",
-            "maman|Elle a besoin de calme.",
-            "enfant-f|On fait comment, alors ?",
-            "papa|Tu trouves, Nina ?",
+            "enfant-f|Ma bulle a crevé !",
+            "narrateur|Encore un pas, encore de la poussière.",
+            "narrateur|Le nez reste trop loin, trop gris.",
+            "papa|Ici, ça n'arrête pas.",
+            "maman|La bulle a besoin de calme.",
+            "enfant-f|Alors on fait quoi ?",
+            "papa|Tu vois comment, Nina ?",
         )
     if t2 == 2:
         extra = {
             1: "Le fil fond, trop chaud, trop mince.",
             2: "La goutte sèche, trop vite, trop chaude.",
-            3: "Le rond fume un peu, trop chaud.",
+            3: "Le rond tremble, trop chaud, trop mince.",
         }[t1]
         return L(
             f"narrateur|{o['hip']}",
-            "narrateur|Le bronze sent le soleil, encore trop fort.",
+            "narrateur|Le bronze tient encore tout le soleil.",
             f"narrateur|{extra}",
-            "enfant-f|Le nez est trop chaud !",
-            "narrateur|Une bulle touche, puis crève, trop vite.",
-            "narrateur|Le nez n'a plus de rond, trop nu.",
-            "papa|Ça brûle trop, ici.",
-            "maman|Elle n'avance plus.",
-            "enfant-f|On fait comment, alors ?",
-            "maman|Tu trouves, Nina ?",
+            "enfant-f|Le nez brûle trop !",
+            "narrateur|La bulle touche, puis crève tout de suite.",
+            "narrateur|Il ne reste rien sur le bronze.",
+            "papa|Ici, c'est trop chaud.",
+            "maman|La bulle n'arrive pas.",
+            "enfant-f|Alors on fait quoi ?",
+            "maman|Tu vois comment, Nina ?",
         )
     extra = {
         1: "Le fil claque, trop léger dans l'air.",
@@ -301,31 +301,31 @@ def t2_scene(t1: int, t2: int) -> list[str]:
     }[t1]
     return L(
         f"narrateur|{o['hip']}",
-        "narrateur|Le tilleul sent le miel, trop vif.",
+        "narrateur|Le tilleul agite ses feuilles, trop vite.",
         f"narrateur|{extra}",
         "enfant-f|Le vent prend tout !",
         "narrateur|Une feuille claque, puis une autre.",
         "narrateur|La bulle part de travers, trop loin.",
-        "papa|Ça souffle trop, ici.",
-        "maman|Elle a besoin de temps.",
-        "enfant-f|On fait comment, alors ?",
-        "papa|Tu trouves, Nina ?",
+        "papa|Ici, ça souffle trop.",
+        "maman|Il lui faut du temps.",
+        "enfant-f|Alors on fait quoi ?",
+        "papa|Tu vois comment, Nina ?",
     )
 
 
 def t3_question(t2: int) -> list[str]:
     if t2 == 1:
         return L(
-            "narrateur|L'allée soulève encore trop de poussière.",
+            "narrateur|L'allée n'a pas fini de soulever.",
             "papa|Attendre les pas, plus bas, ou le bord ?",
         )
     if t2 == 2:
         return L(
-            "narrateur|Le bronze brûle encore, trop fort.",
+            "narrateur|Le bronze n'a pas fini de brûler.",
             "maman|Attendre l'ombre, l'oiseau, ou tout près ?",
         )
     return L(
-        "narrateur|Les feuilles claquent encore, trop fort.",
+        "narrateur|Les feuilles n'ont pas fini de claquer.",
         "papa|Attendre les feuilles, derrière, ou tout petit ?",
     )
 
@@ -346,7 +346,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['wait']}",
             "papa|Les pas se sont tus, maintenant.",
             "narrateur|La bulle part, ronde, tout calme.",
-            "maman|Tu lui as laissé le temps.",
+            "maman|Tu as attendu, et elle est partie.",
         )
     if t2 == 1 and t3 == 2:
         low = {
@@ -360,9 +360,9 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Nina s'accroupit, les genoux au gravier.",
             "narrateur|L'air est plus doux, près de l'herbe.",
             f"narrateur|{o['use']}",
-            "papa|Tu as regardé d'abord.",
-            "enfant-f|Ici, tu ne sautes plus.",
-            "maman|Le bas était plus calme.",
+            "papa|Tu as vu l'herbe, avant.",
+            "enfant-f|Ici, tu ne crèves plus.",
+            "maman|Près du sol, ça tenait mieux.",
         )
     if t2 == 1 and t3 == 3:
         edge = {
@@ -378,7 +378,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['wait']}",
             "papa|Le bord n'a pas soulevé.",
             "enfant-f|Tu es à l'abri.",
-            "maman|Tu as parlé lentement.",
+            "maman|Tu as dit ça tout bas.",
         )
     if t2 == 2 and t3 == 1:
         shade = {
@@ -394,7 +394,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['wait']}",
             "maman|Le nez est redevenu doux.",
             "enfant-f|Maintenant, tu me vois.",
-            "papa|Tu as attendu le silence.",
+            "papa|Tu as laissé l'ombre arriver.",
         )
     if t2 == 2 and t3 == 2:
         bird = {
@@ -410,7 +410,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['use']}",
             "papa|Tu n'as pas soufflé trop fort.",
             "enfant-f|C'est pour toi.",
-            "maman|Tu as laissé le bronze parler.",
+            "maman|L'oiseau était plus frais, tu as vu.",
         )
     if t2 == 2 and t3 == 3:
         close = {
@@ -426,7 +426,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['wait']}",
             "papa|Tu t'es mise tout près, contre le nez.",
             "enfant-f|Le nez est là.",
-            "maman|Tu as observé d'abord.",
+            "maman|Tu t'es mise tout contre.",
         )
     if t2 == 3 and t3 == 1:
         leaves = {
@@ -442,7 +442,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['wait']}",
             "papa|Le tilleul n'a plus claqué.",
             "enfant-f|Maintenant, tu peux rester.",
-            "maman|Tu as attendu le calme.",
+            "maman|Tu as laissé les feuilles finir.",
         )
     if t2 == 3 and t3 == 2:
         behind = {
@@ -458,7 +458,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             f"narrateur|{o['use']}",
             "papa|Tu n'as pas couru.",
             "enfant-f|Tu es ronde, maintenant.",
-            "maman|Tu as préparé le chemin.",
+            "maman|Derrière, l'air était plus doux.",
         )
     tiny = {
         1: "Une toute petite bulle quitte le bâton.",
@@ -470,10 +470,10 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         f"narrateur|{tiny}",
         "narrateur|Nina souffle à peine, sans prendre le vent.",
         "narrateur|Le tilleul se tait, plus loin, tout seul.",
-        f"narrateur|{o['wait']}",
+        f"narrateur|{o['use']}",
         "papa|Le petit rond n'a pas volé.",
         "enfant-f|Tu restes, bulle.",
-        "maman|Le petit tenait assez.",
+        "maman|Le petit rond a suffi.",
     )
 
 
@@ -484,16 +484,16 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|La bulle se pose, ronde, sur le nez de bronze.",
             "enfant-f|On a attendu les pas.",
             "papa|Merci d'avoir laissé le gravier se taire.",
-            "maman|Rentrez, la cloche n'a pas encore sonné.",
+            "maman|La cloche n'a pas encore sonné.",
             f"narrateur|{coda}",
-            "narrateur|Une poussière tourne encore, puis s'arrête.",
+            "narrateur|Un grain de poussière retombe, puis plus rien.",
         )
     if t2 == 1 and t3 == 2:
         return L(
             "narrateur|Plus bas, la bulle monte jusqu'au nez.",
             "enfant-f|On s'est baissées, d'abord.",
-            "papa|Tu as regardé avant de souffler.",
-            "maman|Essuie tes genoux, sur le paillasson.",
+            "papa|Tu as vu l'herbe avant de souffler.",
+            "maman|Essuie tes genoux, on rentre.",
             f"narrateur|{coda}",
             "narrateur|Un rond d'ombre reste au bas du bronze.",
         )
@@ -510,17 +510,17 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         return L(
             "narrateur|Quand l'ombre a touché, la bulle a tenu.",
             "enfant-f|On a attendu le tilleul.",
-            "papa|Le silence vous a aidées.",
+            "papa|L'ombre vous a aidées.",
             "maman|Le bronze sent encore le soleil, moins fort.",
             f"narrateur|{coda}",
-            "narrateur|Un pli d'ombre se recouche, tout lent.",
+            "narrateur|L'ombre reste un moment, puis glisse.",
         )
     if t2 == 2 and t3 == 2:
         return L(
             "narrateur|De l'oiseau au nez, la bulle a glissé.",
             "enfant-f|On a commencé par l'oiseau.",
             "papa|Tu n'as pas soufflé trop fort.",
-            "maman|Le bronze a parlé tout seul.",
+            "maman|L'oiseau était plus frais, d'abord.",
             f"narrateur|{coda}",
             "narrateur|Un rond net reste sur le nez, puis pâlit.",
         )
@@ -529,7 +529,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Tout près, la bulle touche le nez, déjà.",
             "enfant-f|Je me suis mise tout près.",
             "papa|Tu t'es glissée, comme l'ombre.",
-            "maman|Vous rentrez, les mains pleines de savon.",
+            "maman|Vos mains sentent encore le savon.",
             f"narrateur|{coda}",
             "narrateur|Le socle reste derrière, sans brûler.",
         )
@@ -555,7 +555,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         "narrateur|Tout petit, le rond tient sur le nez, tout calme.",
         "enfant-f|On a soufflé à peine.",
         "papa|Le petit rond n'a pas volé.",
-        "maman|Rentrez, le savon est déjà sec.",
+        "maman|Le savon est déjà sec, on rentre.",
         f"narrateur|{coda}",
         "narrateur|Le tilleul se tait, plus loin, tout seul.",
     )
@@ -567,22 +567,22 @@ def main() -> None:
     sons: dict[str, str] = {"CHK_T0000_P0000": "enfants_parc"}
 
     s["CHK_T0000_P0000"] = L(
-        "narrateur|Le gravier du parc est encore chaud.",
-        "narrateur|Un pétale de tilleul colle à la chaussure de Nina.",
-        "narrateur|Ça sent le miel, et la poussière.",
-        "papa|Tu as vu le bronze, Nina ?",
-        "enfant-f|Le petit garçon, avec l'oiseau.",
-        "maman|Son nez brille encore, tout rond.",
-        "narrateur|En ce moment, Nina ouvre le savon, tout doux.",
-        "enfant-f|Je veux une bulle, sur son nez.",
-        "papa|La cloche du parc va sonner bientôt.",
-        "maman|On prend les affaires, alors ?",
+        "narrateur|Sous les tilleuls, le parc retient encore la chaleur.",
+        "narrateur|Un pétale jaune se colle au lacet de Nina.",
+        "narrateur|Ça sent le miel chaud, et le gravier.",
+        "papa|Tu as vu le petit bronze, Nina ?",
+        "enfant-f|Il tient un oiseau, tout près du nez.",
+        "maman|Le nez est lisse, encore chaud.",
+        "narrateur|En ce moment, Nina souffle dans ses mains, vides.",
+        "enfant-f|Je veux une bulle, collée là.",
+        "papa|La cloche va fermer le parc.",
+        "maman|On emporte le savon, alors ?",
         "papa|Merci, tu as essuyé le bâton.",
     )
     s["CHK_T0001_P0000"] = L(
-        "narrateur|Trois affaires attendent près du gravier.",
-        "narrateur|Le bâton, le savon, et la coupelle.",
-        "maman|Tu prends quoi d'abord, Nina ?",
+        "narrateur|Près du lacet, trois affaires attendent.",
+        "narrateur|Un bâton, un savon, une coupelle.",
+        "maman|Par quoi tu commences, Nina ?",
     )
     extras["CHK_T0001_P0000"] = t3lab("le bâton", "le savon", "la coupelle")
 
@@ -622,8 +622,9 @@ def main() -> None:
         "N2 ≤ 15. Slogan « Plus de temps ou de calme », Zoé, Tom/Léa/Sami, "
         "bac/toboggan/balançoires, « bon travail », calque AUT-001 jetés. "
         "Récit autre que DIF-020 (escargot/balcon), DIF-030 (pain/four), "
-        "DIF-040 (veau/ferme), DIF-048 (étoile/fenêtre). Merci de papa "
-        "(bâton essuyé). chunk_id inchangés. check() OK. "
+        "DIF-040 (veau/ferme), DIF-048 (étoile/fenêtre). "
+        "Répliques 048 (avancer avec elle, tape sa paume, tu trouves) réécrites. "
+        "Merci de papa (bâton essuyé). chunk_id inchangés. check() OK. "
         "xlsx live : stories/arbres/TREE-DIF-056.xlsx. Audio non cuit.",
     )
 
