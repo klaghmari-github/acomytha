@@ -343,9 +343,9 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     o = OBJ[t1]
     if t2 == 1 and t3 == 1:
         wipe = {
-            1: "narrateur|Sarah essuie, puis reprend le bord de la cloche.",
-            2: "narrateur|Sarah essuie, puis reprend l'anse du seau.",
-            3: "narrateur|Sarah essuie, puis reprend le manche de la pelle.",
+            1: "narrateur|Puis elle reprend le bord de la cloche.",
+            2: "narrateur|Puis elle reprend l'anse du seau.",
+            3: "narrateur|Puis elle reprend le manche de la pelle.",
         }[t1]
         return L(
             "enfant-f|Maman, le torchon, s'il te plaît.",
@@ -396,7 +396,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         high = {
             1: "narrateur|Mila pose la cloche, hors des mèches.",
             2: "narrateur|Mila tend le seau, hors des mèches.",
-            3: "narrateur|Mila ouvre la pelle, hors des mèches.",
+            3: "narrateur|Mila pose la pelle, hors des mèches.",
         }[t1]
         return L(
             "enfant-f|On met le bandeau, plus haut.",
@@ -418,7 +418,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         pose = {
             1: "enfant-f|On pose la cloche, maintenant.",
             2: "enfant-f|On tend le seau, maintenant.",
-            3: "enfant-f|On ouvre la pelle, maintenant.",
+            3: "enfant-f|On pose la pelle, maintenant.",
         }[t1]
         return L(
             "enfant-f|La serviette, maman ?",
@@ -435,7 +435,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         hold = {
             1: "narrateur|Sarah tient le seau, Mila pose la cloche.",
             2: "narrateur|Sarah tient le seau à deux mains, sans se pencher.",
-            3: "narrateur|Sarah tient le seau, Mila ouvre la pelle.",
+            3: "narrateur|Sarah tient le seau, Mila pose la pelle.",
         }[t1]
         return L(
             "enfant-f|Tu tiens le seau, moi je pose.",
@@ -511,7 +511,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Vous avez bâti, chacune avec sa vue.",
             "maman|Le bois sèche déjà, tout doux.",
             coda,
-            "narrateur|Une goutte reste sur un coquillage, ronde.",
+            "narrateur|Le phare tient sur la jetée.",
             "enfant-f|On rentre, Sarah.",
             "narrateur|La jetée redevient calme.",
         )
@@ -523,7 +523,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Les verres flous n'ont pas arrêté le phare.",
             "maman|La jetée se tait, enfin.",
             coda,
-            "narrateur|Une ombre de coquillage reste au fond.",
+            "narrateur|Le phare tient, encore un peu flou.",
             "enfant-f|À demain, le rocher.",
             "narrateur|Le rebord redevient tiède, déjà.",
         )
@@ -535,7 +535,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|Le pas en arrière a rendu les coquillages.",
             "papa|Vous avez laissé le temps aux lunettes.",
             coda,
-            "narrateur|Mila souffle sur un coquillage, tout léger.",
+            "narrateur|Mila souffle sur le phare, tout léger.",
             "copine|Il brille encore.",
             "narrateur|Le bois reprend, plus loin.",
         )
@@ -547,7 +547,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Chacune a eu sa hauteur, sous le vent.",
             "maman|Le sable sèche déjà.",
             coda,
-            "narrateur|Une mèche sèche contre le col, tout calme.",
+            "narrateur|Le phare tient sur la dune.",
             "enfant-f|On rentre, la dune reste.",
             "narrateur|Un brin d'herbe reprend sa place, tout bas.",
         )
@@ -559,8 +559,8 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|L'eau des cheveux s'en est allée.",
             "papa|La dune vous rend le silence.",
             coda,
-            "narrateur|Mila souffle dessus, tout léger.",
-            "copine|Elle part.",
+            "narrateur|Le phare tient, encore salé.",
+            "copine|Il reste.",
             "narrateur|Le sel s'efface déjà du sable.",
         )
     if t2 == 2 and t3 == 3:
@@ -571,7 +571,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Vous avez bâti avec ce que vous aviez.",
             "maman|Les cheveux n'avaient plus besoin d'être pris.",
             coda,
-            "narrateur|Un rebord vide attend, tout bas.",
+            "narrateur|Le phare reste, tout petit.",
             "enfant-f|On se dit au revoir, dune.",
             "narrateur|Les chaussons glissent vers la maison.",
         )
@@ -583,7 +583,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "papa|Les manches ont laissé les coquillages passer.",
             "maman|L'écume redevient de l'eau, tout simple.",
             coda,
-            "narrateur|Un coquillage rose reste sur le bois.",
+            "narrateur|Le phare tient dans l'écume.",
             "enfant-f|On rentre, Sarah.",
             "narrateur|L'écume reprend sa forme, tout lente.",
         )
@@ -595,8 +595,8 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|Chacune a pris sa part, à sa taille.",
             "papa|L'eau a tenu jusqu'au bout.",
             coda,
-            "narrateur|Mila lisse un coquillage, tout doux.",
-            "copine|Il a bien roulé.",
+            "narrateur|Mila lisse le phare, tout doux.",
+            "copine|Il a bien tenu.",
             "narrateur|La vague reprend son calme, déjà.",
         )
     return L(
@@ -606,7 +606,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         "papa|Vous avez demandé, rien de plus.",
         "maman|Mes élastiques rentrent dans la poche.",
         coda,
-        "narrateur|Un peu de sable reste au rebord.",
+        "narrateur|Le phare veille, encore salé.",
         "enfant-f|Les coquillages sont à nous.",
         "narrateur|La mer sent encore le vent d'hier.",
     )
@@ -635,9 +635,8 @@ def main() -> None:
         "maman|On l'emmène au rocher, alors ?",
     )
     s["CHK_T0001_P0000"] = L(
-        "narrateur|Près du sac, la clochette attend.",
-        "narrateur|Le seau bleu dort, vide.",
-        "narrateur|La pelle jaune est posée.",
+        "narrateur|Avant de sortir, trois affaires attendent.",
+        "narrateur|La clochette, le seau bleu, la pelle jaune.",
         "maman|Tu prends quoi d'abord, Mila ?",
     )
     extras["CHK_T0001_P0000"] = t3lab("la clochette", "le seau bleu", "la pelle jaune")
