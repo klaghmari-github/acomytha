@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import ROOT, check, from_script, relecture, words  # noqa: E402
+from _lib import ROOT, check, from_script, words  # noqa: E402
 
 SID = "TREE-AUT-034"
 N2 = 15
@@ -549,7 +549,7 @@ T3 = {
         "narrateur|Une dent d'acier ne touche plus le tissu.",
     ],
     (1, 2, 2): [
-        "narrateur|Amir tend la corde le long du sillon du râteau.",
+        "narrateur|Amir tend la corde le long de la trace du râteau.",
         "narrateur|Le torchon s'y couche, en pente douce.",
         "narrateur|Le manche, au mur, ne vole plus le fil.",
         "enfant-m|Un chemin d'ombre !",
@@ -620,7 +620,7 @@ T3 = {
     ],
     (2, 1, 3): [
         "narrateur|Amir glisse le seau dans l'ouverture de la caisse.",
-        "narrateur|Le bleu fait un sas avant le bois.",
+        "narrateur|Le bleu fait une entrée avant le bois.",
         "enfant-m|Deux maisons, l'une dans l'autre !",
         "narrateur|L'escargot choisit d'abord le seau, plus frais.",
         "papa|Le seau était vide, il servait à rien.",
@@ -631,19 +631,19 @@ T3 = {
     (2, 2, 1): [
         "narrateur|Amir plante les pinces de chaque côté de l'entrée.",
         "narrateur|La caisse ouvre une bouche vers l'herbe.",
-        "narrateur|Le sillon du râteau passe à côté, vide.",
+        "narrateur|La trace du râteau passe à côté, vide.",
         "enfant-m|Pas de fer dans la porte.",
         "narrateur|L'escargot s'engage, sans un bruit.",
         "maman|Les pinces tiennent le rideau d'herbe.",
         "papa|Le râteau, au mur, se tait.",
-        "narrateur|Un rai de soleil meurt sur le bois.",
+        "narrateur|Un rayon de soleil s'arrête sur le bois.",
     ],
     (2, 2, 2): [
         "narrateur|Amir attache la corde au rebord de la caisse.",
-        "narrateur|Il l'ancre dans le sillon du râteau.",
+        "narrateur|Il la fixe dans la trace du râteau.",
         "narrateur|La grotte ne peut plus basculer.",
-        "enfant-m|Elle est amarrée !",
-        "narrateur|L'escargot entre, rassuré par l'immobilité.",
+        "enfant-m|Elle est attachée !",
+        "narrateur|L'escargot entre, rassuré : plus rien ne bouge.",
         "papa|La corde a gagné contre le manche.",
         "maman|Le fer dort au mur.",
         "narrateur|Le bois ne tremble plus.",
@@ -666,7 +666,7 @@ T3 = {
         "papa|Les pinces tiennent le parfum dehors.",
         "maman|Le panier, sur le banc, garde le reste.",
         "narrateur|Une tache violette sèche au soleil du banc.",
-        "narrateur|Dans la caisse, l'air reste neutre.",
+        "narrateur|Dans la caisse, l'air n'a plus de fruit.",
     ],
     (2, 3, 2): [
         "narrateur|Amir noue la corde à l'anse vide, trop loin.",
@@ -679,7 +679,7 @@ T3 = {
         "narrateur|Sur le banc, les prunes font un tas rond.",
     ],
     (2, 3, 3): [
-        "narrateur|Amir pose le seau en sentinelle devant la caisse.",
+        "narrateur|Amir pose le seau en garde devant la caisse.",
         "narrateur|Le bleu sépare le bois du banc aux prunes.",
         "enfant-m|Personne ne roule dessus.",
         "narrateur|L'escargot entre par le côté, loin du fruit.",
@@ -690,17 +690,17 @@ T3 = {
     ],
     (3, 1, 1): [
         "narrateur|Amir plante les pinces autour du creux mouillé.",
-        "narrateur|Elles tiennent un lambeau de torchon, juste assez.",
+        "narrateur|Elles tiennent un bout de torchon, juste assez.",
         "enfant-m|Un puits avec un chapeau !",
         "narrateur|L'escargot redescend vers l'eau, à l'ombre.",
         "papa|Les pinces n'ont pas mouillé, elles.",
-        "maman|Tes bottes non plus, à présent.",
+        "maman|Tes bottes non plus, maintenant.",
         "narrateur|Le creux brille, petit miroir.",
         "narrateur|Une corne y boit, ou presque.",
     ],
     (3, 1, 2): [
         "narrateur|Amir tend la corde au-dessus du filet d'eau.",
-        "narrateur|Un coin de tissu y pend, comme un auvent.",
+        "narrateur|Un coin de tissu y pend, comme un petit toit.",
         "enfant-m|L'eau reste à lui.",
         "narrateur|L'escargot longe le frais, sous le tissu.",
         "maman|La corde fait le pont, sans bottes dessous.",
@@ -719,27 +719,27 @@ T3 = {
         "narrateur|Le paillasson, au loin, reste clair.",
     ],
     (3, 2, 1): [
-        "narrateur|Amir pince un toit au-dessus du creux, hors du sillon.",
+        "narrateur|Amir pince un toit au-dessus du creux, hors de la trace.",
         "narrateur|L'eau ne suit plus le fer.",
         "enfant-m|Elle reste en rond.",
         "narrateur|L'escargot s'installe au bord, à l'ombre des pinces.",
         "maman|Les pinces font un cercle, pas un fleuve.",
-        "papa|Le râteau, au mur, n'oriente plus l'eau.",
+        "papa|Le râteau, au mur, ne pousse plus l'eau.",
         "narrateur|Une dent sèche capte la lumière, loin.",
         "narrateur|Près de la feuille, tout est mat.",
     ],
     (3, 2, 2): [
-        "narrateur|Amir barre le sillon avec la corde, à plat.",
+        "narrateur|Amir barre la trace avec la corde, à plat.",
         "narrateur|L'eau s'arrête et forme une mare.",
         "enfant-m|J'ai fermé la rivière !",
-        "narrateur|L'escargot contourne la mare, sous un lambeau tendu.",
+        "narrateur|L'escargot contourne la mare, sous un bout tendu.",
         "papa|La corde a battu le manche.",
         "maman|Le mur garde le fer.",
         "narrateur|La mare tremble, puis se calme.",
         "narrateur|Deux cornes s'y reflètent, un instant.",
     ],
     (3, 2, 3): [
-        "narrateur|Amir pose le seau en travers du sillon mort.",
+        "narrateur|Amir pose le seau en travers de la trace vide.",
         "narrateur|L'eau s'y rassemble, fraîche.",
         "enfant-m|Un réservoir pour lui.",
         "narrateur|L'escargot gravit le bord humide, puis s'abrite.",
@@ -750,7 +750,7 @@ T3 = {
     ],
     (3, 3, 1): [
         "narrateur|Amir plante les pinces entre le creux et le banc.",
-        "narrateur|Un lambeau arrête les éclaboussures vers les prunes.",
+        "narrateur|Un bout de tissu arrête les gouttes vers les prunes.",
         "enfant-m|L'eau d'un côté, le sucre de l'autre.",
         "narrateur|L'escargot choisit le côté mouillé.",
         "papa|Les pinces font la frontière.",
@@ -760,7 +760,7 @@ T3 = {
     ],
     (3, 3, 2): [
         "narrateur|Amir tend la corde du creux jusqu'au tronc.",
-        "narrateur|Le lambeau fait un couloir, loin du banc.",
+        "narrateur|Le bout de tissu fait un couloir, loin du banc.",
         "enfant-m|Son chemin à lui.",
         "narrateur|L'escargot s'y engage, dos aux prunes.",
         "maman|La corde l'éloigne du sucre.",
@@ -776,7 +776,7 @@ T3 = {
         "papa|Le seau a choisi son camp.",
         "maman|Les prunes aussi, sur leur banc.",
         "narrateur|Une goutte chante dans le bleu.",
-        "narrateur|Sur le banc, une prune fendille, sans bruit.",
+        "narrateur|Sur le banc, une prune se fend, sans bruit.",
     ],
 }
 
@@ -819,12 +819,12 @@ ENDINGS = {
         "narrateur|Le torchon, lui, reste mat au-dessus de la feuille.",
     ],
     (1, 2, 2): [
-        "narrateur|Amir suit du doigt le sillon vide.",
+        "narrateur|Amir suit du doigt la trace vide.",
         "papa|C'était le chemin du fer.",
         "enfant-m|Maintenant, c'est le chemin de la corde.",
         "maman|L'herbe va se relever.",
         "narrateur|Le manche au mur ne bouge plus.",
-        "narrateur|Sous le tissu, une virgule d'humidité brille.",
+        "narrateur|Sous le tissu, une petite trace mouillée brille.",
     ],
     (1, 2, 3): [
         "narrateur|Amir tape deux doigts sur le seau.",
@@ -863,7 +863,7 @@ ENDINGS = {
         "papa|On frappe, avant d'entrer ?",
         "enfant-m|On n'entre pas, c'est chez lui.",
         "maman|Tes bottes, elles, frappent le paillasson.",
-        "narrateur|Deux pinces font des sentinelles têtues.",
+        "narrateur|Deux pinces font des gardes bien droites.",
         "narrateur|Au fond du bois, rien ne bouge, et c'est bien.",
     ],
     (2, 1, 2): [
@@ -876,10 +876,10 @@ ENDINGS = {
     ],
     (2, 1, 3): [
         "narrateur|Amir aligne l'arrosoir, le seau, et la caisse du regard.",
-        "papa|Une famille de contenants ?",
+        "papa|L'arrosoir, le seau, et la caisse ?",
         "enfant-m|Le seau pour entrer, la caisse pour dormir.",
         "maman|Les bottes pour tes pieds, à la porte.",
-        "narrateur|Le bleu du sas capte un rond de ciel.",
+        "narrateur|Le bleu de l'entrée capte un rond de ciel.",
         "narrateur|Derrière, le bois reste nuit.",
     ],
     (2, 2, 1): [
@@ -887,15 +887,15 @@ ENDINGS = {
         "papa|Les pinces tiennent ça ?",
         "enfant-m|Oui, pas de fer dans la porte.",
         "maman|Le râteau a son mur, c'est mieux.",
-        "narrateur|Un rai meurt sur le seuil.",
+        "narrateur|Un rayon s'arrête sur le seuil.",
         "narrateur|Dedans, la caisse sent l'humide et le calme.",
     ],
     (2, 2, 2): [
         "narrateur|Amir appuie sur la caisse : rien ne bascule.",
-        "papa|Amarrée pour de bon ?",
+        "papa|Attachée pour de bon ?",
         "enfant-m|La corde a gagné contre le manche.",
         "maman|Le fer dort, le bois veille.",
-        "narrateur|Le sillon du râteau sert d'ancre, à présent.",
+        "narrateur|La trace du râteau sert à tenir, maintenant.",
         "narrateur|L'escargot n'entend plus le clac du fer.",
     ],
     (2, 2, 3): [
@@ -907,7 +907,7 @@ ENDINGS = {
         "narrateur|Dans la double ombre, la coquille disparaît.",
     ],
     (2, 3, 1): [
-        "narrateur|Amir lève le rideau de chiffon, un millimètre.",
+        "narrateur|Amir lève le rideau de chiffon, très peu.",
         "papa|On dérange ?",
         "enfant-m|Non, je vérifie le parfum.",
         "maman|Le sucre est resté sur le banc.",
@@ -923,7 +923,7 @@ ENDINGS = {
         "narrateur|La grotte, nouée, ne doit rien au fruit.",
     ],
     (2, 3, 3): [
-        "narrateur|Amir salue le seau-sentinelle d'un petit tapotement.",
+        "narrateur|Amir salue le seau qui garde, d'un petit coup.",
         "papa|Il laisse passer qui ?",
         "enfant-m|Lui, pas les prunes.",
         "maman|La confiture attendra le soir.",
@@ -943,7 +943,7 @@ ENDINGS = {
         "papa|Plus de fuite vers la porte ?",
         "enfant-m|La corde a fermé le chemin des bottes.",
         "maman|Le cuir peut sécher.",
-        "narrateur|Un auvent de tissu tremble, très peu.",
+        "narrateur|Un petit toit de tissu tremble, très peu.",
         "narrateur|Autour de la feuille, le filet fait un collier.",
     ],
     (3, 1, 3): [
@@ -955,7 +955,7 @@ ENDINGS = {
         "narrateur|Sous le bleu, une flaque ronde s'endort.",
     ],
     (3, 2, 1): [
-        "narrateur|Amir compare le cercle des pinces et le sillon vide.",
+        "narrateur|Amir compare le cercle des pinces et la trace vide.",
         "papa|Rond contre ligne ?",
         "enfant-m|Le rond est pour lui, la ligne est finie.",
         "maman|Le râteau n'écrit plus sur l'eau.",
@@ -965,10 +965,10 @@ ENDINGS = {
     (3, 2, 2): [
         "narrateur|Amir se voit, un instant, dans la mare.",
         "papa|Deux cornes aussi ?",
-        "enfant-m|Oui, il est là, sous le lambeau.",
+        "enfant-m|Oui, il est là, sous le tissu.",
         "maman|La corde a battu le fleuve du manche.",
         "narrateur|La mare se calme, sans ride.",
-        "narrateur|Au mur, le fer n'oriente plus rien.",
+        "narrateur|Au mur, le fer ne pousse plus l'eau.",
     ],
     (3, 2, 3): [
         "narrateur|Amir pose l'oreille contre le seau-réservoir.",
@@ -998,7 +998,7 @@ ENDINGS = {
         "narrateur|Amir pose une main sur le seau, une autre vers le banc.",
         "papa|Deux mondes, tu disais.",
         "enfant-m|Oui, il a choisi l'eau.",
-        "maman|Les prunes fendillent, sans lui.",
+        "maman|Les prunes se fendent, sans lui.",
         "narrateur|Une goutte chante dans le bleu, une dernière fois.",
         "narrateur|Sous le prunier, l'abri tient, et le soleil perd.",
     ],
@@ -1160,19 +1160,35 @@ def main() -> None:
     path.write_text(json.dumps(story, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {path} bytes={path.stat().st_size}")
 
-    relecture(
-        SID,
-        "L'escargot sous le prunier",
-        "Jardin, prunier, fil, pinces, caisse, arrosoir. Désir : un abri pour l'escargot "
-        "avant le soleil. Première idée : le tas de la caisse. Ça s'écroule. Enquête : "
-        "matériau (torchon / caisse / arrosoir), bazar à remettre (bottes / râteau / panier), "
-        "forme de l'abri (pinces / corde / seau). Leçon RAN vécue : l'ombre ne tient "
-        "qu'une fois les affaires à leur place. 27 toits, 27 dernières images. "
-        "≠ TREE-COL-015 (pas de trace d'argent, pas de loupe, pas de dîner).",
-        "Kenzo absent. T1/T2/T3 changés (plus cuisine-cubes-matin). Tics encore/déjà/"
-        "tout doux retirés. TTS : ssml, xai, notes, energy, pauses. Q = torchon / caisse / eau. "
-        "Merci vécu au moment où l'objet reprend sa place. Relu ouverture + 3 L1 + 9 L2 + 27 L3/fins. "
-        "check() N2≤15. Pas apply.",
+    (ROOT / SID / "RELECTURE.md").write_text(
+        "# TREE-AUT-034 — L'escargot sous le prunier\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` / graphe `option_*_next` inchangés.\n\n"
+        "- **Public :** N2 (3–6 ans), audio familial\n"
+        "- **Leçon :** AUT.RAN.001 — ranger, vécue (l'ombre ne tient qu'une fois les affaires à leur place)\n"
+        "- **Personnages :** Amir, papa, maman\n"
+        "- **Structure :** 86 nœuds, 27 chemins, 27 fins textuellement distinctes\n\n"
+        "## Vécu\n\n"
+        "Jardin, prunier, fil à linge, pinces, caisse, arrosoir. Désir : un abri pour "
+        "l'escargot avant que le soleil mange l'ombre. Première idée : le tas de la caisse. "
+        "Ça s'écroule, un cube roule, l'escargot rentre. Enquête **autre** que TREE-COL-015 :\n\n"
+        "- T1 matériau : le torchon / la caisse / l'arrosoir\n"
+        "- T2 bazar à remettre : les bottes / le râteau / le panier\n"
+        "- T3 forme de l'abri : les pinces / la corde / le seau\n\n"
+        "Pas de trace d'argent, pas de loupe, pas de carnet, pas de dîner. "
+        "Q = torchon / caisse / eau. Merci vécu au moment où l'objet reprend sa place.\n\n"
+        "## Vu et corrigé\n\n"
+        "- Kenzo absent (D16 : Amir). T1/T2/T3 changés (plus cuisine / cubes / matin).\n"
+        "- Tics « encore / déjà / tout doux / tout calme » retirés.\n"
+        "- Vocabulaire 3–6 (sas, sentinelle, auvent, etc. simplifiés).\n"
+        "- TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, "
+        "intensité, destinataire, sous-texte, tempo, sourire, respiration), `style_energy`, "
+        "pauses, pitch, volume. `slow` = choix, indice, fin.\n"
+        "- 27 toits, 27 dernières images. Ouverture + 3 L1 + 9 L2 + 27 L3/fins relus.\n"
+        "- `check()` N2≤15, ~502–540 mots/chemin. Pas apply.\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.\n",
+        encoding="utf-8",
     )
 
 
