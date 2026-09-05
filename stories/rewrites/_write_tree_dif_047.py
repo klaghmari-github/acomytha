@@ -494,23 +494,23 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
     coda = o["coda"]
     if t2 == 1 and t3 == 1:
         return L(
-            "narrateur|Le dernier rond du rideau est à eux.",
-            "enfant-m|On a joué, chacun son tour.",
-            "papa|Toi tu bougais, moi je suivais.",
-            "maman|Vous avez laissé l'élan dessiner.",
+            "narrateur|Nino s'allonge, le sac sous le rideau.",
+            "enfant-m|Les lucioles sont couchées, papa.",
+            "papa|Toi tu clignais, moi je comptais.",
+            "maman|Le camp a sa lumière, ce soir.",
             "narrateur|La chambre sent encore le savon.",
             coda,
-            "narrateur|Un trait clair dort sur le bois.",
-            "enfant-m|On s'allonge, papa.",
+            "narrateur|Un point d'or dort sur le tissu.",
+            "enfant-m|Bonne nuit, fenêtre.",
             "narrateur|Les chaussettes retrouvent le tapis tiède.",
         )
     if t2 == 1 and t3 == 2:
         return L(
-            "narrateur|Le rebord de la fenêtre garde encore la chaleur.",
-            "enfant-m|Je me suis arrêté, d'abord.",
+            "narrateur|Nino s'allonge, le rideau tout calme.",
+            "enfant-m|J'ai attendu le volet, d'abord.",
             "papa|Puis le faisceau est resté droit.",
-            "maman|L'élan s'est assis, puis il a campé.",
-            "narrateur|Le rideau redevient calme.",
+            "maman|Tes pieds se sont assis, eux aussi.",
+            "narrateur|Le tissu ne danse plus.",
             coda,
             "narrateur|Une poussière reste coincée, tout près.",
             "enfant-m|À demain, les ronds.",
@@ -518,46 +518,46 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 1 and t3 == 3:
         return L(
-            "narrateur|La main de maman reste dans l'air, tout légère.",
-            "enfant-m|J'ai attendu le pas.",
-            "papa|On a demandé, et ça allait.",
-            "maman|Sa main a tenu vos pieds.",
-            "narrateur|La chambre vous rend le silence.",
-            f"narrateur|{o['cap']} pose un grain de lumière sur le bois.",
+            "narrateur|Nino s'allonge, la main de maman tout près.",
+            "enfant-m|Tu tenais le piquet.",
+            "papa|Vous avez demandé, et ça tenait.",
+            "maman|Ma main a fait la tente.",
+            "narrateur|La chambre rend le silence, tout doux.",
+            f"narrateur|{o['cap']} pose un grain de lumière.",
             "narrateur|Nino touche le rideau, du bout.",
             "enfant-m|Il est à nous.",
             "narrateur|Un rai de rue barre encore le tissu.",
         )
     if t2 == 2 and t3 == 1:
         return L(
-            "narrateur|Deux paires de chaussettes marquent le bout du tapis.",
+            "narrateur|Nino s'allonge au bout du sentier.",
             "enfant-m|Toi devant, moi derrière.",
-            "papa|Tes jambes allaient plus loin.",
-            "maman|Vous avez sauté avec l'élan, pas contre.",
+            "papa|Tes sauts ont fait le chemin.",
+            "maman|La clairière est devenue un camp.",
             "narrateur|Le tapis redevient chaud, et calme.",
             coda,
-            "narrateur|Un peu de laine sèche déjà sur le tissu.",
-            "enfant-m|On s'allonge, le sentier reste.",
+            "narrateur|Un peu de laine sèche déjà.",
+            "enfant-m|Le sentier reste, maman.",
             "narrateur|Le lit fait une ombre longue.",
         )
     if t2 == 2 and t3 == 2:
         return L(
-            "narrateur|Le bout du tapis attend encore, tout lisse.",
+            "narrateur|Nino s'allonge dans le sac ouvert.",
             "papa|J'ai ouvert, puis c'était toi.",
-            "enfant-m|J'ai attendu ta place.",
-            "maman|Chacun son tour, sur le tissu.",
-            "narrateur|L'élan a laissé la place.",
+            "enfant-m|J'ai attendu le zip.",
+            "maman|Chacun son tour, sur le tapis.",
+            "narrateur|La tente verte tient, enfin.",
             f"narrateur|{o['cap']} garde un grain de poussière.",
             "narrateur|Nino souffle dessus, tout doux.",
-            "enfant-m|On se dit au revoir, tapis.",
+            "enfant-m|Bonne nuit, tapis.",
             "narrateur|Un fil oublié sèche contre le pied.",
         )
     if t2 == 2 and t3 == 3:
         return L(
-            "narrateur|Le sac de papa repose sur le tapis.",
+            "narrateur|Nino s'allonge, le sac ouvert par papa.",
             "enfant-m|Tu l'ouvrais, tout grand.",
-            "papa|On a demandé, et ça allait juste.",
-            "maman|L'ouverture a fait le tour, rien de plus.",
+            "papa|Le sac s'est ouvert, juste assez.",
+            "maman|L'entrée du camp est à vous.",
             "narrateur|Le tapis a rendu le calme.",
             coda,
             "narrateur|Un rond de chaleur reste sur le tissu.",
@@ -566,30 +566,30 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 3 and t3 == 1:
         return L(
-            "narrateur|Les vagues s'arrêtent contre le pied du lit.",
-            "enfant-m|On est arrivés, tous les deux.",
+            "narrateur|Nino s'allonge au pied du lit.",
+            "enfant-m|Les vagues sont finies, papa.",
             "papa|Tu rebondissais, puis tu t'arrêtais.",
-            "maman|Le bois est redevenu un lit, simplement.",
-            "narrateur|L'élan s'est couché.",
+            "maman|La grotte a son camp, ce soir.",
+            "narrateur|Le bois est redevenu un lit.",
             coda,
             "narrateur|Une poussière tourne encore, puis tombe.",
-            "enfant-m|On s'allonge, les vagues se taisent.",
-            "narrateur|Dans la chambre, le camp redevient calme.",
+            "enfant-m|Les vagues se taisent.",
+            "narrateur|Dans la chambre, le camp tient.",
         )
     if t2 == 3 and t3 == 2:
         return L(
-            "narrateur|Le matelas s'est tu, enfin, tout à fait.",
+            "narrateur|Nino s'allonge, le matelas tout calme.",
             "enfant-m|On a attendu le bois.",
-            "papa|Quand il était calme, on s'allongeait.",
-            "maman|Le pied vous a laissé le sac.",
-            "narrateur|L'élan a écouté le bois.",
+            "papa|Quand il s'est tu, tu es entré.",
+            "maman|Le pied du lit a fait un toit.",
+            "narrateur|Tes genoux se sont assis.",
             f"narrateur|{o['cap']} ne fait plus aucun bruit.",
             "narrateur|Nino pose la paume sur le bois tiède.",
             "enfant-m|Il est tiède.",
             "narrateur|Un grillon passe derrière le volet, sans crier.",
         )
     return L(
-        "narrateur|Les mains de maman s'éteignent, un à un.",
+        "narrateur|Nino s'allonge, le sac bordé par maman.",
         "enfant-m|J'écoutais tes mains.",
         "papa|Moi aussi, je bordais avec toi.",
         "maman|Vous avez demandé le bord.",
@@ -609,8 +609,8 @@ def main() -> None:
     s["CHK_T0000_P0000"] = L(
         "narrateur|Un grillon chante, tout bas, derrière le volet.",
         "narrateur|Ça sent encore le savon, dans le couloir.",
-        "narrateur|La chambre de Nino garde une lampe ronde.",
-        "narrateur|Elle fait un cercle pâle, au plafond.",
+        "narrateur|L'abat-jour de Nino fait un cercle pâle.",
+        "narrateur|Le plafond garde une lune ronde, toute douce.",
         "papa|Tes chaussettes sont trop chaudes, Nino ?",
         "enfant-m|Un peu, papa.",
         "narrateur|Maman pose l'oreiller rayé sur le tapis.",

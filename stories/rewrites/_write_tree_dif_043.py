@@ -265,6 +265,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         return L(
             f"narrateur|{hip}",
             "narrateur|Ils s'approchent de la mare, trop haute.",
+            "enfant-m|L'eau est grande.",
             f"narrateur|{extra}",
             "narrateur|L'eau fait un pli, trop vif.",
             "enfant-m|Vous venez.",
@@ -283,9 +284,10 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         return L(
             f"narrateur|{hip}",
             "narrateur|Sur le banc, les planches ont des fentes.",
-            f"narrateur|{extra}",
             "enfant-m|Le goûter, ici.",
+            f"narrateur|{extra}",
             "narrateur|Nino s'assoit, trop haut pour eux.",
+            "papa|Tu es trop haut, pour eux.",
             "narrateur|Le canard rond bute, trop large.",
             "narrateur|Le mince glisse entre les planches.",
             "enfant-m|Ce n'est pas juste.",
@@ -300,9 +302,10 @@ def t2_scene(t1: int, t2: int) -> list[str]:
     return L(
         f"narrateur|{hip}",
         "narrateur|Au kiosque, les marches sont trop hautes.",
-        f"narrateur|{extra}",
         "enfant-m|Le goûter, là-haut.",
+        f"narrateur|{extra}",
         "narrateur|Un vent passe, tout froid.",
+        "maman|Trop haut, trop loin.",
         "narrateur|Le canard rond ne monte pas.",
         "narrateur|Le mince commence, puis recule.",
         "enfant-m|Ils ne viennent pas.",
@@ -383,6 +386,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "enfant-m|L'herbe, comme une table.",
             f"narrateur|{down}",
             "narrateur|Nino s'assoit, les pieds dans l'herbe.",
+            "papa|Tout doux, dans l'herbe.",
             "narrateur|Le canard rond s'assoit, trop rond.",
             "narrateur|Le mince s'allonge contre lui, trop mince.",
             "enfant-m|Vous avez le sol, tous les deux.",
@@ -576,15 +580,19 @@ def main() -> None:
 
     s["CHK_T0000_P0000"] = L(
         "narrateur|Sous les tilleuls, le parc sent l'herbe.",
+        "papa|Tu sens l'herbe, Nino ?",
+        "enfant-m|Oui, elle est chaude.",
         "narrateur|Une mare brille, toute plate.",
+        "maman|Elle est calme, là.",
         "narrateur|Des feuilles sèches font un bruit, tout sec.",
+        "enfant-m|Toc toc, les feuilles.",
         "narrateur|Papa pose le sac, près du banc.",
-        "narrateur|Maman tient le seau, encore vide.",
+        "maman|Le seau est encore vide.",
         "narrateur|Deux canards avancent, l'un derrière l'autre.",
-        "narrateur|Le premier a le ventre tout rond.",
-        "narrateur|Le second a le cou tout mince.",
         "papa|Tu les as vus, Nino ?",
         "enfant-m|Oui, les deux.",
+        "narrateur|Le premier a le ventre tout rond.",
+        "narrateur|Le second a le cou tout mince.",
         "enfant-m|Je veux leur donner à manger.",
         "papa|Les deux, Nino ?",
         "enfant-m|Les deux.",
@@ -640,7 +648,8 @@ def main() -> None:
         "N1 ≤ 10. Hugo hors troupe → Nino, papa/maman. Slogan « Plus rond ou "
         "plus mince », « bon travail », calque AUT-001 jetés. Autre récit que "
         "DIF-015/025/035 (tente, défilé, bain). Un merci de papa (les deux vus). "
-        "chunk_id inchangés. check() N1. Audio non cuit.",
+        "chunk_id inchangés. check() OK (3926 mots). "
+        "xlsx live : `stories/arbres/TREE-DIF-043.xlsx`. Audio non cuit.",
     )
 
 

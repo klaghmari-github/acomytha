@@ -224,7 +224,7 @@ def t1_confirm(t1: int) -> list[str]:
             "papa|Oui.",
             "narrateur|Le sac à pois tient une ombre ronde.",
             "copain|Je vois les pois !",
-            "enfant-m|Ne le lance pas encore.",
+            "enfant-m|On le garde pour le portail.",
             "narrateur|Aniss a les cheveux tout courts.",
             "narrateur|Une mèche saute quand il respire.",
             "maman|Ça sent déjà le trottoir chaud.",
@@ -305,13 +305,13 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         )
     lead = {
         1: "narrateur|La balle rouge pose son ombre sur le muret.",
-        2: "narrateur|Le sac à pois fait un rond sur le muret.",
-        3: "narrateur|La gourde bleue pose un pied près du muret.",
+        2: "narrateur|Le sac à pois s'appuie contre le muret.",
+        3: "narrateur|La gourde bleue s'arrête près du muret.",
     }[t1]
     mishap = {
         1: "narrateur|Les sauts d'Aniss chassent la balle, trop loin.",
         2: "narrateur|Aniss court après le sac, plus loin.",
-        3: "narrateur|Aniss chasse la gourde, le muret le suit.",
+        3: "narrateur|Aniss court, la gourde reste contre la pierre.",
     }[t1]
     return L(
         lead,

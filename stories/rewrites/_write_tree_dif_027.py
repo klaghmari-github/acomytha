@@ -195,7 +195,7 @@ def t1_passage(t1: int) -> list[str]:
         "narrateur|Le fil se fait, sans un mot.",
         "maman|La cuillère et la clochette viennent aussi.",
         "narrateur|Papa les glisse près du sac.",
-        "narrateur|Les trois affaires restent ensemble.",
+        "narrateur|Le panier les garde, toutes les trois.",
         "enfant-f|Aniss, c'est bon ?",
         "narrateur|Aniss appuie sur le fil, tout calme.",
         "papa|La ficelle d'abord, elle tient.",
@@ -318,7 +318,6 @@ def t3_question(t2: int) -> list[str]:
 
 
 def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
     if t2 == 1 and t3 == 1:
         wait = {
             1: "narrateur|La cuillère attend près du nœud.",
@@ -337,11 +336,6 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|Vous avez laissé le temps au linge.",
         )
     if t2 == 1 and t3 == 2:
-        hold = {
-            1: "narrateur|Aniss lève le torchon avec la cuillère.",
-            2: "narrateur|Aniss lève le torchon avec la clochette.",
-            3: "narrateur|Aniss lève le torchon avec la ficelle.",
-        }[t1]
         wait = {
             1: "narrateur|La cuillère attend près du bois, déjà.",
             2: "narrateur|La clochette attend près du bois, déjà.",

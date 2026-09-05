@@ -520,36 +520,36 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 2 and t3 == 1:
         return L(
-            "narrateur|Une goutte glisse, puis s'arrête.",
+            "narrateur|Le bleu rejoint le bac, encore mouillé.",
             "copine|On a attendu l'eau.",
             "papa|Le savon n'a plus pris vos bras.",
             "maman|Rentrez le torchon, après le bac.",
             coda,
             "enfant-m|Toc.",
             "narrateur|Une bulle se tait, puis l'autre.",
-            "narrateur|L'évier redevient calme, autour du bac.",
+            "narrateur|L'évier reste calme, derrière eux.",
         )
     if t2 == 2 and t3 == 2:
         return L(
-            "narrateur|Le filet tient le galet, tout net.",
+            "narrateur|Le filet pose le galet au fond du bac.",
             "copine|On tenait, tous les deux.",
             "papa|Je remporte l'épuisette, tout à l'heure.",
             "maman|Le poisson vous attend.",
             coda,
             "narrateur|Aniss essuie une main sur son pantalon.",
             "narrateur|Un grain de craie reste sur le filet.",
-            "narrateur|L'eau sent encore le savon tiède.",
+            "narrateur|Le verre sent encore l'eau tiède.",
         )
     if t2 == 2 and t3 == 3:
         return L(
-            "narrateur|Les mains d'Aniss laissent le bleu descendre.",
+            "narrateur|Les mains d'Aniss laissent le bleu au fond du bac.",
             "copine|C'était plus facile, là.",
             "papa|Tes bras ont guidé le galet.",
             "maman|Le fond gardera son ombre.",
             coda,
-            "narrateur|Aniss pose un doigt sur le robinet.",
-            "narrateur|Il bouge, tout petit.",
-            "narrateur|Un rai de soleil barre encore l'évier.",
+            "narrateur|Aniss pose un doigt sur le verre.",
+            "narrateur|Une bulle bouge, toute petite.",
+            "narrateur|Un rai de soleil barre encore le bac.",
         )
     if t2 == 3 and t3 == 1:
         return L(
@@ -653,6 +653,8 @@ def main() -> None:
         "et DIF-037 (panier, petite roue). "
         "Héros Aniss (peu de mots, vécu). Copine Sarah. Noé hors troupe. "
         "École, pas cloche ni soleil en papier (DIF-034). "
+        "Calques 037 retirés (galet ouvert, poisson qui fume). "
+        "Fins évier et sable ramènent au bac. "
         "Désir ≠ leçon. N3 ≤ 16. chunk_id inchangés. Audio non cuit.",
     )
 

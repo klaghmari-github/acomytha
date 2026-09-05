@@ -651,7 +651,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         "enfant-f|Tu l'avais attaché, pile.",
         "copain|Il n'est pas parti.",
         "papa|Vous avez demandé, et ça a tenu.",
-        "maman|Le vert de la feuille sent encore.",
+        "maman|La pêche sent encore le soleil.",
         "narrateur|Trois bouches, un même sucré.",
         f"narrateur|{outil} reprend le sac, tout doux.",
         bruit,

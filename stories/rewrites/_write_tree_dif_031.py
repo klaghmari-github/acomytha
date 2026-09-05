@@ -266,7 +266,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         )
     lead = {
         1: f"narrateur|{o['cap']} pose son ombre sur le bac.",
-        2: f"narrateur|{o['cap']} pose une paille d'ombre sur le bac.",
+        2: f"narrateur|{o['cap']} fait un rond sur le bac.",
         3: f"narrateur|{o['cap']} pose un pied près du bac.",
     }[t1]
     return L(
@@ -291,7 +291,7 @@ def t3_question(t2: int) -> list[str]:
     if t2 == 2:
         return L(
             "narrateur|Nina reste collée à l'ombre du figuier.",
-            "maman|L'eau, l'ombre des plants, ou plus tard ?",
+            "maman|L'eau, l'ombre des plants, ou garder une tomate ?",
         )
     return L(
         "narrateur|Le gâteau de sable penche encore.",
@@ -471,10 +471,15 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Un grillon reprend, plus loin.",
         )
     if t2 == 1 and t3 == 2:
+        vu = {
+            1: "copine|Il a tout vu, du panier.",
+            2: "copine|Il a tout vu, du chapeau.",
+            3: "copine|Il a tout vu, du tabouret.",
+        }[t1]
         return L(
             "narrateur|Le caillou blanc veille entre les tomates.",
             "enfant-m|Tu as dit oui, avec lui.",
-            "copine|Il a tout vu, du panier.",
+            vu,
             "papa|Vous avez cueilli sans tirer.",
             "maman|Goûtez un peu, tout doux.",
             coda,

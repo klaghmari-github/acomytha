@@ -223,7 +223,7 @@ def t1_confirm(t1: int) -> list[str]:
     return L(
         "narrateur|Le plateau cache encore les deux tasses.",
         "copain|La grande est à moi ?",
-        "enfant-f|Oui. La petite est à moi.",
+        "enfant-f|Oui, la petite est à moi.",
         "narrateur|Le pull de Victorino laisse ses poignets nus.",
         "narrateur|Nina, plus courte, tient le plateau des deux mains.",
         "maman|La cuisine est tiède, autour.",
@@ -264,7 +264,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             lead,
             "narrateur|Le grand bol attend, trop loin pour Nina.",
             "enfant-f|Je ne vois plus le fond.",
-            "copain|Moi si. Il est tout brun.",
+            "copain|Moi si, il est tout brun.",
             "narrateur|Victorino se hausse, le menton au rebord.",
             mishap,
             f"narrateur|{o['cap']} reste au-dessus d'elle, trop loin.",
@@ -345,7 +345,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             3: "narrateur|Nina pousse le plateau, tout près.",
         }[t1]
         return L(
-            "enfant-f|Tu mélanges, toi. Tu vois le fond.",
+            "enfant-f|Tu mélanges, toi, tu vois le fond.",
             "narrateur|Victorino tourne dans le bol, assez haut.",
             "copain|Ça devient brun, tout doux.",
             use,
@@ -418,7 +418,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "copain|Oui, tout doux.",
             up,
             "narrateur|Papa tient la porte, tout ferme.",
-            "narrateur|Nina tire le bac. Victorino veille.",
+            "narrateur|Nina tire le bac, Victorino veille.",
             "enfant-f|Le lait est là !",
             "copain|Il est tout froid.",
             "maman|Vous avez regardé ensemble.",
@@ -485,10 +485,10 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         "enfant-f|Papa, écarte un peu ?",
         "papa|Je fais un chemin, tout doux.",
         "narrateur|Une chaise s'ouvre, comme une aile.",
-        "narrateur|Nina rentre. Victorino reste dehors.",
+        "narrateur|Nina rentre, Victorino reste dehors.",
         nest,
         "copain|On trinque à travers ?",
-        "enfant-f|Oui. Petite tasse, grande tasse.",
+        "enfant-f|Oui, petite tasse, grande tasse.",
         "maman|Vous y arrivez, tous les deux.",
         "narrateur|Deux voix tiennent le même secret.",
     )
@@ -522,7 +522,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         return L(
             "narrateur|Sur le tabouret, deux têtes se calment.",
             "enfant-f|J'ai vu le fond, moi aussi.",
-            "copain|Oui. Tu étais assez haute.",
+            "copain|Oui, tu étais assez haute.",
             "papa|Toi en bas, lui au-dessus, ça tenait.",
             "maman|Vos voix sont devenues toutes petites.",
             keep,
@@ -623,7 +623,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         }[t1]
         return L(
             "narrateur|Le bord de table redescend, tout doux.",
-            "copain|J'ai rentrée de côté.",
+            "copain|Je suis rentré de côté.",
             "enfant-f|On a écarté, tous les deux.",
             "maman|Il n'était plus trop coincé.",
             "papa|La poudre danse encore, dans l'air.",

@@ -124,6 +124,7 @@ OBJ = {
         "lab": "le drap à carreaux",
         "cap": "Le drap à carreaux",
         "t1q": "dans le panier",
+        "t1line": "Le drap à carreaux est dans le panier.",
         "t1acc": "panier | le panier | dans le panier | au panier",
         "t1retry": "Le drap est dans le panier.",
         "coda": "narrateur|Le drap à carreaux retombe sur le coffre.",
@@ -132,6 +133,7 @@ OBJ = {
         "lab": "les pinces",
         "cap": "Les pinces",
         "t1q": "dans la poche",
+        "t1line": "Les pinces sont dans la poche.",
         "t1acc": "poche | la poche | dans la poche | sa poche",
         "t1retry": "Les pinces sont dans la poche.",
         "coda": "narrateur|Les pinces rentrent dans la poche.",
@@ -140,6 +142,7 @@ OBJ = {
         "lab": "la marionnette rouge",
         "cap": "La marionnette rouge",
         "t1q": "au poignet",
+        "t1line": "La marionnette rouge est au poignet.",
         "t1acc": "poignet | au poignet | le poignet | son poignet",
         "t1retry": "La marionnette est au poignet.",
         "coda": "narrateur|La marionnette rouge veille au bord du lit.",
@@ -162,7 +165,7 @@ def t1_passage(t1: int) -> list[str]:
             "narrateur|Le tissu fait un petit froissement.",
             "papa|Les pinces, ensuite, dans ta poche.",
             "narrateur|Maman noue la marionnette rouge au poignet.",
-            "narrateur|Les trois affaires partent ensemble.",
+            "narrateur|Tout le théâtre se met en route.",
             "enfant-f|Nino, tu portes le panier ?",
             "copain|Je le tiens, même un peu flou.",
             "papa|Le drap d'abord, vous l'avez.",
@@ -175,8 +178,8 @@ def t1_passage(t1: int) -> list[str]:
             "narrateur|Le métal fait un petit toc contre le tissu.",
             "maman|Le drap, ensuite, dans le panier.",
             "narrateur|Elle glisse la marionnette rouge au poignet.",
-            "narrateur|Les trois affaires partent ensemble.",
-            "enfant-f|Nino, tu clips le bord ?",
+            "narrateur|Ils avancent, les affaires avec eux.",
+            "enfant-f|Nino, tu accroches le bord ?",
             "copain|J'essaie, mes lunettes glissent un peu.",
             "maman|Les pinces d'abord, elles sont prêtes.",
         )
@@ -187,7 +190,7 @@ def t1_passage(t1: int) -> list[str]:
         "narrateur|La laine rouge chatouille la peau.",
         "papa|Le drap et les pinces, avec vous.",
         "narrateur|Il les pose près du panier.",
-        "narrateur|Les trois affaires partent ensemble.",
+        "narrateur|Le spectacle quitte le coffre, enfin.",
         "enfant-f|Nino, elle te salue !",
         "copain|Bonjour, petite laine.",
         "papa|La marionnette d'abord, elle est prête.",
@@ -228,9 +231,9 @@ def t1_confirm(t1: int) -> list[str]:
 
 def t2_question() -> list[str]:
     return L(
-        "narrateur|Le salon a le radiateur tout chaud.",
-        "narrateur|Des crochets attendent dans le couloir.",
-        "narrateur|La chambre a le lit, comme une scène.",
+        "narrateur|Le radiateur du salon fait un air tout chaud.",
+        "narrateur|Dans le couloir, les crochets attendent, tout hauts.",
+        "narrateur|Le lit de la chambre ressemble déjà à une scène.",
         "papa|Vous jouez où, pour le spectacle ?",
     )
 
@@ -240,7 +243,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
     if t2 == 1:
         lead = {
             1: "narrateur|Mila déplie le drap entre les deux chaises.",
-            2: "narrateur|Mila clipse le drap, pince après pince.",
+            2: "narrateur|Mila attache le drap, pince après pince.",
             3: "narrateur|La marionnette grimpe le dossier d'une chaise.",
         }[t1]
         mishap = {
@@ -258,7 +261,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             "maman|La chaleur a voilé ses verres, c'est tout.",
             "papa|Toi tu vois net, lui un peu flou.",
             "copain|On joue comment, alors ?",
-            "papa|Vous trouvez, tous les deux ?",
+            "papa|La scène est floue, vous faites quoi ?",
         )
     if t2 == 2:
         lead = {
@@ -277,14 +280,14 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             "copain|Mes cheveux sont encore lourds du bain.",
             mishap,
             "narrateur|Une goutte tombe sur le carrelage, toc.",
-            "maman|Ils séchent, tout doux, ce n'est rien.",
-            "papa|Toi tes nattes tiennent, les siennes gouttent.",
+            "maman|Ils sèchent, tout doux, ce n'est rien.",
+            "papa|Toi tes cheveux tiennent, les siens gouttent.",
             "enfant-f|On peut jouer avec lui ?",
-            "papa|Vous trouvez, tous les deux ?",
+            "papa|Le rideau accroche, vous faites quoi ?",
         )
     lead = {
         1: "narrateur|Mila tend le drap au pied du lit.",
-        2: "narrateur|Mila clipse le drap au bois du lit.",
+        2: "narrateur|Mila attache le drap au bois du lit.",
         3: "narrateur|La marionnette se cache sous l'oreiller.",
     }[t1]
     mishap = {
@@ -301,7 +304,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         "maman|Le pull est un peu grand, c'est tout.",
         "papa|Toi tes manches s'arrêtent, les siennes voyagent.",
         "copain|On joue comment, alors ?",
-        "papa|Vous trouvez, tous les deux ?",
+        "papa|Le pull et le roi, vous faites comment ?",
     )
 
 
@@ -361,7 +364,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     if t2 == 1 and t3 == 3:
         air = {
             1: "narrateur|Le drap claque un peu, puis s'apaise.",
-            2: "narrateur|Les pinces tintent, puis s'apaise le métal.",
+            2: "narrateur|Les pinces tintent, puis le métal se tait.",
             3: "narrateur|La marionnette se penche vers l'air frais.",
         }[t1]
         return L(
@@ -377,7 +380,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 2 and t3 == 1:
         high = {
-            1: "narrateur|Mila clipse le drap plus haut, hors des mèches.",
+            1: "narrateur|Mila attache le drap plus haut, hors des mèches.",
             2: "narrateur|Mila pose la pince plus haut, hors des mèches.",
             3: "narrateur|La marionnette pousse le drap plus haut.",
         }[t1]
@@ -416,7 +419,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             3: "narrateur|Nino tient le drap, la marionnette salue.",
         }[t1]
         return L(
-            "enfant-f|Tu tiens le drap, moi je clips à côté.",
+            "enfant-f|Tu tiens le drap, moi j'attache à côté.",
             "copain|Mes mains font le crochet, alors.",
             hold,
             "narrateur|Le rideau s'ouvre quand Nino recule.",
@@ -446,7 +449,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     if t2 == 3 and t3 == 2:
         split = {
             1: "narrateur|Mila garde la marionnette, Nino lève le drap.",
-            2: "narrateur|Mila clipse, Nino lève le drap comme un rideau.",
+            2: "narrateur|Mila attache, Nino lève le drap comme un rideau.",
             3: "narrateur|Mila parle avec la laine, Nino lève le drap.",
         }[t1]
         return L(
@@ -613,8 +616,8 @@ def main() -> None:
         "maman|On prépare le théâtre, alors ?",
     )
     s["CHK_T0001_P0000"] = L(
-        "narrateur|Trois affaires attendent près du coffre.",
-        "narrateur|Le drap, les pinces, et la marionnette.",
+        "narrateur|Près du coffre, le drap sent encore le soleil.",
+        "narrateur|Les pinces cliquettent, la marionnette attend.",
         "maman|Tu prends quoi d'abord, Mila ?",
     )
     extras["CHK_T0001_P0000"] = t3lab("le drap à carreaux", "les pinces", "la marionnette rouge")
@@ -623,9 +626,14 @@ def main() -> None:
         p = f"CHK_T0001_P000{t1}"
         o = OBJ[t1]
         s[p] = t1_passage(t1)
+        t1_ask = {
+            1: "maman|Le drap est où ?",
+            2: "maman|Les pinces sont où ?",
+            3: "maman|La marionnette est où ?",
+        }[t1]
         s[f"{p}_Q0001"] = L(
-            f"narrateur|Mila a glissé {o['lab']} {o['t1q']}.",
-            "maman|C'est où, maintenant ?",
+            f"narrateur|{o['t1line']}",
+            t1_ask,
         )
         extras[f"{p}_Q0001"] = qf(o["t1q"].split()[-1], o["t1acc"], o["t1retry"])
         s[f"{p}_C0001"] = t1_confirm(t1)

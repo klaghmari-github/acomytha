@@ -205,45 +205,45 @@ def t1_passage(t1: int) -> list[str]:
 def t1_confirm(t1: int) -> list[str]:
     if t1 == 1:
         return L(
-            "narrateur|Le sac porte le filet, tout contre le tissu.",
-            "copain|Il est trop vert !",
-            "enfant-m|C'est pour faire de l'ombre.",
-            "narrateur|Aniss a les genoux plus bas que Victorino.",
-            "narrateur|Ses pieds n'arrêtent pas de bouger.",
-            "maman|Il a beaucoup d'élan, ce n'est rien.",
-            "papa|On reste près des champs ?",
+            "narrateur|Le sac tient le filet, tout près de la hanche.",
+            "copain|On dirait une fenêtre verte !",
+            "enfant-m|Le jaune aime l'ombre, un peu.",
+            "narrateur|Aniss avance, recule, avance encore.",
+            "narrateur|Ses lacets n'ont pas le temps de pendre.",
+            "maman|Il a envie de courir, on le voit.",
+            "papa|Le pré est juste derrière le portail ?",
             "enfant-m|Oui, papa.",
         )
     if t1 == 2:
         return L(
-            "narrateur|Le chapeau veille déjà sur les sourcils.",
-            "copain|Je vois l'ombre !",
-            "enfant-m|Ne cours pas encore.",
-            "narrateur|Aniss a les cheveux tout courts.",
-            "narrateur|Une mèche saute quand il respire.",
-            "papa|Ça sent déjà le foin, derrière le portail.",
-            "maman|Vos mains, au-dessus du sac ?",
+            "narrateur|Le bord du chapeau coupe le soleil.",
+            "copain|Je suis tout petit, dessous !",
+            "enfant-m|Reste près de moi, d'abord.",
+            "narrateur|Aniss cligne, trop vite.",
+            "narrateur|Une mèche lui saute sur l'œil.",
+            "papa|Le foin sent déjà, dehors.",
+            "maman|Le sac est fermé ?",
             "copain|Oui, maman.",
         )
     return L(
-        "narrateur|La poche cache encore le papier plié.",
-        "copain|Ça sent la colle.",
-        "enfant-m|La fleur attend le jaune.",
-        "narrateur|Le manteau d'Aniss s'arrête trop haut.",
-        "narrateur|Les manches laissent ses poignets libres.",
-        "maman|Le pré est tiède, devant.",
-        "papa|On y va, tous les quatre ?",
+        "narrateur|La poche garde le papier, tout plat.",
+        "copain|Ça sent encore la colle.",
+        "enfant-m|Le jaune va croire que c'est vrai.",
+        "narrateur|Les poignets d'Aniss dépassent des manches.",
+        "narrateur|Il frappe deux fois le portail, pour rien.",
+        "maman|Le pré vous attend, tout tiède.",
+        "papa|On ouvre, tous les quatre ?",
         "enfant-m|Oui.",
     )
 
 
 def t2_question() -> list[str]:
     return L(
-        "narrateur|Aniss tapote déjà le sol, tout léger.",
-        "narrateur|Le pré a l'herbe haute, encore tiède.",
-        "narrateur|Les lavandes sentent fort, tout bas.",
-        "narrateur|Le muret garde une pierre chaude.",
-        "papa|On commence où, pour le papillon ?",
+        "narrateur|Aniss tape déjà deux cailloux, l'un contre l'autre.",
+        "narrateur|Le pré ondule, plus loin que le puits.",
+        "narrateur|Les lavandes font un mur violet, tout bas.",
+        "narrateur|Le muret tient encore la chaleur du chat.",
+        "papa|On guette où, d'abord ?",
     )
 
 
@@ -262,16 +262,16 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         }[t1]
         return L(
             lead,
-            "narrateur|L'herbe du pré sent le foin chaud.",
-            "copain|Moi je cours, Victorino !",
-            "narrateur|Aniss fend l'herbe, trop vite.",
-            "narrateur|Un nuage de graines s'envole, tout haut.",
+            "narrateur|Les tiges se touchent, puis se séparent.",
+            "copain|Je le rattrape !",
+            "narrateur|Aniss part dans l'herbe, trop loin.",
+            "narrateur|Le jaune s'envole, plus haut que leurs têtes.",
             mishap,
-            f"enfant-m|{o['cap']} n'attendait pas ça.",
-            "maman|Il a envie de bouger, c'est tout.",
-            "papa|Ses jambes sont plus courtes, plus vives.",
-            "copain|On guette comment, alors ?",
-            "papa|Vous faites comment, tous les deux ?",
+            f"enfant-m|{o['cap']} n'a pas suffi.",
+            "maman|Il a envie de courir, c'est tout.",
+            "papa|Tes pieds vont trop vite, Aniss.",
+            "copain|Je fais comment, alors ?",
+            "papa|Vous trouvez, tous les deux ?",
         )
     if t2 == 2:
         lead = {
@@ -286,14 +286,14 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         }[t1]
         return L(
             lead,
-            "enfant-m|Les lavandes sentent partout, Aniss.",
-            "copain|Je vais jusqu'au bout, trop vite !",
-            "narrateur|Ses pieds tapent les tiges, puis reviennent.",
+            "enfant-m|Ça sent le savon et le miel, Aniss.",
+            "copain|Je pousse les tiges, trop fort !",
+            "narrateur|Un nuage de parfum saute, puis retombe.",
             mishap,
-            "narrateur|Un parfum lève, puis retombe.",
-            "maman|Il a de l'élan, comme un petit vent.",
-            "papa|Toi tu vas plus loin, lui plus vite.",
-            "enfant-m|On peut guetter avec lui ?",
+            "narrateur|Le jaune quitte le violet, d'un coup.",
+            "maman|Tes pieds ont réveillé les fleurs.",
+            "papa|On s'approche sans les bousculer.",
+            "enfant-m|Il peut revenir ?",
             "papa|Vous trouvez, tous les deux ?",
         )
     lead = {
@@ -308,14 +308,14 @@ def t2_scene(t1: int, t2: int) -> list[str]:
     }[t1]
     return L(
         lead,
-        "enfant-m|Ici, la pierre est chaude, Aniss.",
+        "enfant-m|La pierre est tiède, Aniss.",
         "copain|J'entends mes pieds deux fois !",
-        "narrateur|Le muret renvoie chaque pas, tout fort.",
+        "narrateur|Chaque clic revient, plus fort.",
         mishap,
-        f"narrateur|{o['cap']} attend au bord, un peu seule.",
-        "maman|Son élan remplit toute la pierre.",
-        "papa|Toi tu vas plus loin, lui plus vite.",
-        "copain|On guette comment, alors ?",
+        f"narrateur|{o['cap']} n'ose plus bouger.",
+        "maman|Le jaune n'aime pas le bruit.",
+        "papa|La pierre répète tes pas.",
+        "copain|On fait moins de clic ?",
         "papa|Vous trouvez, tous les deux ?",
     )
 
@@ -323,72 +323,71 @@ def t2_scene(t1: int, t2: int) -> list[str]:
 def t3_question(t2: int) -> list[str]:
     if t2 == 1:
         return L(
-            "narrateur|Aniss fend encore l'herbe, tout léger.",
-            "papa|Marcher comme lui, s'asseoir, ou maman ?",
+            "narrateur|L'herbe se referme derrière Aniss.",
+            "papa|Marcher comme lui, s'asseoir, ou le silence ?",
         )
     if t2 == 2:
         return L(
-            "narrateur|Les lavandes bougent encore, un peu.",
+            "narrateur|Le parfum tient encore, tout bas.",
             "maman|Souffler, attendre, ou la fleur de papa ?",
         )
     return L(
-        "narrateur|Les clics remplissent encore le muret.",
+        "narrateur|Un dernier clic roule le long du muret.",
         "papa|Le rythme, en bas, ou la main de maman ?",
     )
 
 
 def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    o = OBJ[t1]
     if t2 == 1 and t3 == 1:
         hold = {
-            1: "narrateur|Aniss tient le sac, Victorino lève le filet.",
-            2: "narrateur|Aniss tient le sac, Victorino baisse le chapeau.",
-            3: "narrateur|Aniss tient le sac, Victorino lève la fleur.",
+            1: "narrateur|Le filet suit leurs bras, tout lent.",
+            2: "narrateur|Le chapeau fait une ombre, tout lente.",
+            3: "narrateur|La fleur se lève, se pose, se lève.",
         }[t1]
         return L(
             "enfant-m|On marche comme lui.",
             "copain|Moi je bats des bras, tout lent.",
             hold,
             "narrateur|Deux ombres avancent dans l'herbe, sans courir.",
-            "narrateur|Aniss lève un pied, puis s'arrête.",
-            "enfant-m|Maintenant c'est moi.",
-            "copain|Puis c'est moi encore.",
+            "narrateur|Aniss lève un pied, puis le repose.",
+            "enfant-m|Le jaune a des ailes comme ça.",
+            "copain|Les miennes aussi, maintenant.",
             "papa|Vous jouez à son pas.",
-            "maman|L'élan a trouvé sa place.",
+            "maman|Le pré vous a laissés entrer.",
         )
     if t2 == 1 and t3 == 2:
         wait = {
-            1: "narrateur|Le filet vert attend près des genoux.",
-            2: "narrateur|Le chapeau bleu attend près des genoux.",
-            3: "narrateur|La fleur de papier attend près des genoux.",
+            1: "narrateur|Le filet vert dort sur les genoux.",
+            2: "narrateur|Le chapeau bleu fait un toit, assis.",
+            3: "narrateur|La fleur de papier tient entre deux paumes.",
         }[t1]
         return L(
             "enfant-m|On s'assoit un peu.",
             "copain|Je m'assois, alors.",
             "narrateur|Aniss pose les genoux dans l'herbe.",
             wait,
-            "narrateur|Sa respiration redevient calme, tout doux.",
+            "narrateur|Une tige se redresse, tout contre sa chaussure.",
             "enfant-m|Tu es prêt ?",
             "copain|Je ne cours plus.",
-            "papa|Vous avez laissé l'élan s'asseoir.",
-            "maman|Le pré vous a gardés.",
+            "papa|Vous avez attendu l'herbe.",
+            "maman|Le jaune peut redescendre, maintenant.",
         )
     if t2 == 1 and t3 == 3:
-        count = {
-            1: "narrateur|Victorino lève le filet à chaque chiffre.",
-            2: "narrateur|Victorino touche le chapeau à chaque chiffre.",
-            3: "narrateur|Victorino lève la fleur à chaque chiffre.",
+        still = {
+            1: "narrateur|Victorino tient le filet, sans le secouer.",
+            2: "narrateur|Victorino tient le chapeau, sans le secouer.",
+            3: "narrateur|Victorino tient la fleur, sans la secouer.",
         }[t1]
         return L(
             "enfant-m|Maman, tu restes avec nous ?",
-            "maman|Un, deux, trois, on ne bouge plus.",
-            "narrateur|Aniss s'arrête seulement quand elle dit trois.",
-            count,
-            "copain|Je peux attendre le trois !",
-            "enfant-m|Moi aussi, j'attends.",
-            "narrateur|L'herbe redevient droite, autour.",
-            "papa|Vous avez demandé, et ça marche.",
-            "maman|Mes chiffres ont tenu l'élan.",
+            "maman|Chut, on écoute l'herbe.",
+            "narrateur|Aniss ouvre la bouche, puis la referme.",
+            still,
+            "copain|Je peux être silencieux !",
+            "enfant-m|Moi aussi, j'écoute.",
+            "narrateur|Un criquet reprend, tout près.",
+            "papa|Vous avez demandé, et ça tient.",
+            "maman|Mon chut a tenu vos pieds.",
         )
     if t2 == 2 and t3 == 1:
         pair = {
@@ -398,14 +397,14 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         }[t1]
         return L(
             "enfant-m|On souffle tout doux.",
-            "copain|Toi derrière, moi devant !",
+            "copain|Comme le petit vent !",
             pair,
             "narrateur|Deux souffles passent sur la même tige.",
-            "narrateur|Aniss va plus vite, Victorino plus loin.",
-            "enfant-m|On arrive au violet, tous les deux.",
-            "copain|J'ai attendu ton souffle, un peu.",
-            "papa|Vous avez joué avec l'élan.",
-            "maman|Les lavandes vous ont laissés passer.",
+            "narrateur|Le violet penche, puis se redresse.",
+            "enfant-m|On n'a rien cassé.",
+            "copain|J'ai soufflé plus bas, cette fois.",
+            "papa|Vous avez joué avec l'air.",
+            "maman|Les fleurs sont restées debout.",
         )
     if t2 == 2 and t3 == 2:
         line = {
@@ -415,14 +414,14 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         }[t1]
         return L(
             "enfant-m|J'attends le parfum.",
-            "copain|Moi je finis, puis c'est toi.",
+            "copain|Quand il retombe, on avance.",
             line,
-            "narrateur|Aniss tapote une tige, tout seul d'abord.",
-            "narrateur|Il souffle, puis il recule.",
+            "narrateur|Aniss compte les tiges, tout bas.",
+            "narrateur|Le nuage violet s'assoit, enfin.",
             "copain|C'est à toi, Victorino.",
             "enfant-m|Merci, j'y vais.",
-            "papa|Chacun son tour, entre les tiges.",
-            "maman|L'élan a attendu le parfum.",
+            "papa|Le parfum vous a fait de la place.",
+            "maman|Vous l'avez laissé se poser.",
         )
     if t2 == 2 and t3 == 3:
         hand = {
@@ -434,46 +433,46 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "enfant-m|Papa, tu gardes la fleur ?",
             "papa|Je la tends, un pas chacun.",
             hand,
-            "narrateur|Aniss s'approche, tout petit pas.",
-            "narrateur|Victorino s'approche, encore plus lent.",
-            "copain|On demande, et ça va !",
-            "enfant-m|Le violet est à nous.",
+            "narrateur|Aniss pose un pied, puis l'autre.",
+            "narrateur|Victorino pose le même pas, plus tard.",
+            "copain|On a demandé, et ça va !",
+            "enfant-m|Le violet est tout près.",
             "maman|Vous avez demandé, tout calme.",
-            "papa|Ma main a juste attendu.",
+            "papa|Ma main n'a pas bougé.",
         )
     if t2 == 3 and t3 == 1:
-        train = {
-            1: "narrateur|Le filet vert voyage contre la pierre, entre deux taps.",
-            2: "narrateur|Le chapeau bleu voyage sur les cheveux, entre deux taps.",
-            3: "narrateur|La fleur de papier voyage sur la pierre, entre deux taps.",
+        beat = {
+            1: "narrateur|Le filet vert se pose après le dernier toc.",
+            2: "narrateur|Le chapeau bleu s'arrête après le dernier toc.",
+            3: "narrateur|La fleur de papier s'arrête après le dernier toc.",
         }[t1]
         return L(
-            "enfant-m|On fait un rythme sur la pierre.",
-            "copain|Toc toc, j'avance !",
+            "enfant-m|On tape une fois, puis plus.",
+            "copain|Toc, et j'attends.",
             "narrateur|Victorino pose une main sur l'épaule d'Aniss.",
-            train,
-            "narrateur|Ils tapent la même pierre, l'un après l'autre.",
-            "enfant-m|Doucement, le rythme tient.",
-            "copain|Le clic suit le rythme, puis se tait.",
-            "papa|Vous jouez avec le bruit, ensemble.",
-            "maman|Le muret est devenu un tambour.",
+            beat,
+            "narrateur|La pierre répond, puis se tait.",
+            "enfant-m|Le jaune aime le silence, après.",
+            "copain|Moi aussi, après le toc.",
+            "papa|Vous avez joué avec le bruit.",
+            "maman|Un toc, puis la pierre dort.",
         )
     if t2 == 3 and t3 == 2:
         hush = {
-            1: "narrateur|Le filet vert reste muet, au creux.",
-            2: "narrateur|Le chapeau bleu reste muet, au creux.",
-            3: "narrateur|La fleur de papier reste muette, au creux.",
+            1: "narrateur|Le filet vert reste dans l'herbe, en bas.",
+            2: "narrateur|Le chapeau bleu reste dans l'ombre, en bas.",
+            3: "narrateur|La fleur de papier reste dans l'herbe, en bas.",
         }[t1]
         return L(
             "enfant-m|On attend en bas.",
-            "copain|Quand la pierre se tait, je m'approche.",
-            "narrateur|Un pas dans l'herbe, puis plus rien.",
+            "copain|La pierre se tait, d'abord.",
+            "narrateur|Leurs chaussures restent dans l'herbe fraîche.",
             hush,
-            "narrateur|Le muret se tait, enfin.",
-            "copain|Maintenant !",
+            "narrateur|Le muret ne clique plus.",
+            "copain|Maintenant, on peut regarder.",
             "enfant-m|À toi, puis à moi.",
-            "papa|Vous avez laissé le bruit s'asseoir.",
-            "maman|L'élan a attendu le silence.",
+            "papa|Vous avez laissé le bruit s'en aller.",
+            "maman|En bas, vos pieds sont plus doux.",
         )
     clap = {
         1: "narrateur|Victorino lève le filet quand maman ouvre la paume.",
@@ -483,13 +482,13 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     return L(
         "enfant-m|Maman, tu tends la main ?",
         "maman|Je reste, et vous venez tout doux.",
-        "narrateur|Aniss écoute la paume, plus que ses pieds.",
+        "narrateur|Aniss regarde la paume, plus que ses pieds.",
         clap,
-        "copain|Je m'arrête sur ta main !",
+        "copain|Je m'arrête devant ta main !",
         "enfant-m|Moi aussi, j'écoute.",
-        "narrateur|Le clic se range derrière le silence.",
+        "narrateur|Un grain de foin dort dans ses plis.",
         "papa|Vous avez demandé la main.",
-        "maman|Ma paume a tenu l'élan.",
+        "maman|Ma paume est devenue une tige.",
     )
 
 
@@ -499,13 +498,13 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
     if t2 == 1 and t3 == 1:
         return L(
             "narrateur|Le papillon jaune se pose, au bout d'une tige.",
-            "copain|On a marché, chacun son tour.",
-            "enfant-m|Tu battais des bras, moi j'avançais.",
-            "papa|Vous avez laissé l'élan dessiner.",
+            "copain|Mes bras ont fait des ailes.",
+            "enfant-m|Les miennes aussi, tout lent.",
+            "papa|Vous avez marché à son pas.",
             "maman|Le pré sent encore le foin.",
             coda,
             "narrateur|Une poudre jaune dort sur l'herbe.",
-            "enfant-m|On rentre, Aniss.",
+            "enfant-m|Il est venu, Aniss.",
             "narrateur|Le portail de bois cliquette, tout seul.",
         )
     if t2 == 1 and t3 == 2:
@@ -513,8 +512,8 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|L'herbe garde encore la chaleur des genoux.",
             "enfant-m|Tu t'es assis, d'abord.",
             "copain|Puis le jaune est venu, tout droit.",
-            "papa|L'élan s'est assis, puis il a guetté.",
-            "maman|Le pré redevient calme.",
+            "papa|Vous avez attendu, assis.",
+            "maman|Une tige vous a chatouillés, sans rien dire.",
             coda,
             "narrateur|Une graine reste coincée au tissu.",
             "enfant-m|À demain, les tiges.",
@@ -522,11 +521,11 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 1 and t3 == 3:
         return L(
-            "narrateur|Le trois de maman reste dans l'air, tout léger.",
-            "copain|J'ai attendu le chiffre.",
-            "enfant-m|On a demandé, et ça allait.",
-            "maman|Mes mots ont tenu vos pieds.",
-            "papa|Le pré vous rend le silence.",
+            "narrateur|Le chut de maman reste dans l'air, tout léger.",
+            "copain|J'ai fermé la bouche.",
+            "enfant-m|On a demandé, et ça tenait.",
+            "maman|Mon silence a tenu vos pieds.",
+            "papa|Le criquet a repris, pour vous.",
             f"narrateur|{o['cap']} pose un grain de jaune sur le bois.",
             "narrateur|Victorino touche la tige, du bout.",
             "copain|Il s'est posé.",
@@ -535,25 +534,25 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
     if t2 == 2 and t3 == 1:
         return L(
             "narrateur|Deux souffles marquent la même tige violette.",
-            "enfant-m|Toi devant, moi derrière.",
-            "copain|Tes pas allaient plus loin.",
-            "papa|Vous avez soufflé avec l'élan, pas contre.",
-            "maman|Les lavandes redeviennent tièdes, et calmes.",
+            "enfant-m|On n'a rien cassé.",
+            "copain|J'ai soufflé plus bas.",
+            "papa|Vous avez joué avec l'air.",
+            "maman|Les lavandes sont encore debout.",
             coda,
             "narrateur|Un brin violet sèche déjà sur le tissu.",
-            "enfant-m|On rentre, le parfum reste.",
+            "enfant-m|Le parfum rentre avec nous.",
             "narrateur|Le puits fait une ombre ronde.",
         )
     if t2 == 2 and t3 == 2:
         return L(
-            "narrateur|Le parfum attend encore, tout bas.",
-            "copain|J'ai fini, puis c'était toi.",
+            "narrateur|Le parfum s'est assis, tout bas.",
+            "copain|Quand il est retombé, on a avancé.",
             "enfant-m|J'ai attendu ta tige.",
-            "maman|Chacun son tour, entre les tiges.",
-            "papa|L'élan a laissé la place.",
+            "maman|Le nuage vous a laissés passer.",
+            "papa|Vous l'avez laissé se poser.",
             f"narrateur|{o['cap']} garde un grain de parfum.",
             "narrateur|Victorino souffle dessus, tout doux.",
-            "copain|On se dit au revoir, lavandes.",
+            "copain|Au revoir, les tiges.",
             "narrateur|Une abeille passe, sans se presser.",
         )
     if t2 == 2 and t3 == 3:
@@ -561,7 +560,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|La fleur de papa repose près du violet.",
             "enfant-m|Tu la tendais, un pas chacun.",
             "copain|On a demandé, et ça venait juste.",
-            "papa|Ma main a fait le tour, rien de plus.",
+            "papa|Ma main n'a pas bougé.",
             "maman|Les lavandes ont rendu le jaune.",
             coda,
             "narrateur|Un rond clair reste sur une feuille.",
@@ -570,23 +569,23 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         )
     if t2 == 3 and t3 == 1:
         return L(
-            "narrateur|Le rythme s'arrête, et le jaune se pose.",
-            "copain|Toc toc, on est arrivés.",
+            "narrateur|Après le toc, le jaune se pose.",
+            "copain|J'ai tapé une fois, puis plus.",
             "enfant-m|J'avais la main sur ton épaule.",
-            "papa|Le muret est redevenu une pierre, simplement.",
-            "maman|Le clic s'est couché.",
+            "papa|La pierre a fini par dormir.",
+            "maman|Un toc, puis le silence.",
             coda,
             "narrateur|Une poussière tourne encore, puis tombe.",
-            "enfant-m|On rentre, le tambour se tait.",
+            "enfant-m|Le muret s'est tu.",
             "narrateur|Dehors, le pré redevient calme.",
         )
     if t2 == 3 and t3 == 2:
         return L(
             "narrateur|La pierre s'est tue, enfin, tout à fait.",
             "enfant-m|On a attendu en bas.",
-            "copain|Quand elle était partie, on s'approchait.",
+            "copain|Nos chaussures sont restées dans l'herbe.",
             "papa|Le silence vous a laissé le jaune.",
-            "maman|L'élan a écouté la pierre.",
+            "maman|En bas, vos pieds étaient plus doux.",
             f"narrateur|{o['cap']} ne fait plus aucun bruit.",
             "narrateur|Victorino pose la paume sur la pierre chaude.",
             "copain|Elle est tiède.",
@@ -597,7 +596,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         "enfant-m|J'écoutais ta main.",
         "copain|Moi aussi, je m'arrêtais dessus.",
         "maman|Vous avez demandé le calme.",
-        "papa|Le muret a rendu vos pas.",
+        "papa|Un grain de foin reste dans ses plis.",
         coda,
         "narrateur|Victorino touche la pierre, du bout des doigts.",
         "enfant-m|Il s'est posé, Aniss.",
@@ -654,7 +653,7 @@ def main() -> None:
             s[sp] = t2_scene(t1, t2)
             s[f"{sp}_T0003_P0000"] = t3_question(t2)
             extras[f"{sp}_T0003_P0000"] = t3lab(*T3_LABS[t2])
-            sons[sp] = "oiseaux" if t2 in (1, 2) else ""
+            sons[sp] = ""
             for t3 in (1, 2, 3):
                 s[f"{sp}_T0003_P000{t3}"] = t3_scene(t1, t2, t3)
                 s[f"{sp}_T0003_P000{t3}_F0001"] = fin_scene(t1, t2, t3)

@@ -553,10 +553,12 @@ def main() -> None:
         "narrateur|Après la pluie, la maison sent le savon.",
         "narrateur|Dans la salle de bain, le carrelage brille.",
         "narrateur|Une goutte tombe encore du robinet.",
+        "maman|Tu l'entends, Chouchou ?",
+        "enfant-f|Oui, le robinet.",
         "narrateur|Deux poupées attendent sur le rebord tiède.",
         "narrateur|La poupée de coton a le ventre tout rond.",
         "narrateur|La poupée de bois a les jambes toutes minces.",
-        "maman|Tu les as sorties du panier ?",
+        "papa|Tu les as sorties du panier ?",
         "enfant-f|Oui.",
         "enfant-f|Je veux leur donner un bain.",
         "papa|Les deux, Chouchou ?",
@@ -566,7 +568,7 @@ def main() -> None:
         "enfant-f|Elles ne se ressemblent pas.",
         "papa|On les emmène toutes les deux.",
         "maman|Le savon, le gobelet, et la serviette.",
-        "papa|Merci, tu as ouvert le robinet.",
+        "papa|Merci, tu as sorti les deux.",
         "enfant-f|On prépare, d'abord.",
     )
     s["CHK_T0001_P0000"] = L(
@@ -613,7 +615,7 @@ def main() -> None:
         "Fin : les deux poupées se baignent ensemble.",
         "N1 ≤ 10. Sami hors troupe → Chouchou, papa/maman. Slogan marché "
         "« Plus rond ou plus mince », « bon travail », calque AUT-001 jetés. "
-        "Un merci de papa (robinet ouvert). chunk_id inchangés. check() N1. "
+        "Un merci de papa (les deux poupées sorties). chunk_id inchangés. check() N1. "
         "Audio non cuit.",
     )
 
