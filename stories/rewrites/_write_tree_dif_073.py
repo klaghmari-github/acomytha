@@ -661,7 +661,7 @@ def main() -> None:
         "DIF-041 (pas de pain/mer), DIF-065 (pas de serre), DIF-049 "
         "(pas de salon, pas de poissons). Merci de maman (mains essuyées). "
         "chunk_id inchangés. check() OK. "
-        "xlsx : stories/archive/arbres/TREE-DIF-073.xlsx. Audio non cuit.",
+        "xlsx live : stories/arbres/TREE-DIF-073.xlsx. Audio non cuit.",
     )
 
 
