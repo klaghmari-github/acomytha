@@ -755,7 +755,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[tuple[str, str]]:
     if t2 == 1 and t3 == 2:
         mid = {
             1: L(
-                ("narrateur", "Le poisson collé écoute un peu, encore."),
+                ("narrateur", "Le poisson collé au canapé écoute, sans bouger."),
                 ("enfant-f", "Il t'a attendu, tout bas."),
                 ("copain", "J'ai dit oui, près de toi."),
                 ("papa", "Ta voix n'a pas cassé la note."),
@@ -1136,7 +1136,7 @@ def build() -> None:
         "## Vu et corrigé\n"
         "- Titre noyau conservé. N1 ≤ 10. Troupe D16 : Sarah, Nino, papa, maman.\n"
         "- Première idée échoue (cri trop fort). Un choix change l'action.\n"
-        "- Tics « tout doux / tout calme / encore / déjà » chassés (sauf 0–2).\n"
+        "- Tics « tout doux / tout calme / encore / déjà » chassés.\n"
         "- 27 fins textuellement distinctes. Un merci vécu (poisson ramassé).\n"
         "- TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/resolution/ending).\n"
         "- `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.\n\n"

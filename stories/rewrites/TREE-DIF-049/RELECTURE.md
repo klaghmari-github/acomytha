@@ -8,7 +8,7 @@ Vent sur la mare, maison au savon chaud, tapis presque sec. Sarah veut une pêch
 ## Vu et corrigé
 - Titre noyau conservé. N1 ≤ 10. Troupe D16 : Sarah, Nino, papa, maman.
 - Première idée échoue (cri trop fort). Un choix change l'action.
-- Tics « tout doux / tout calme / encore / déjà » chassés (sauf 0–2).
+- Tics « tout doux / tout calme / encore / déjà » chassés.
 - 27 fins textuellement distinctes. Un merci vécu (poisson ramassé).
 - TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/resolution/ending).
 - `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
