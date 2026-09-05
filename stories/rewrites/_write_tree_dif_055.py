@@ -171,7 +171,7 @@ def t1_passage(t1: int) -> list[str]:
             "narrateur|La peau sent déjà le soleil.",
             "papa|Le sucrier aussi, près de toi.",
             "narrateur|Maman glisse le pichet, tout près.",
-            "narrateur|Les trois affaires avancent avec elle.",
+            "narrateur|Citron, sucrier, pichet, tout contre elle.",
             "enfant-f|La citronnade va venir.",
             "narrateur|Ses pieds tapent déjà le carreau, trop vite.",
             "papa|Le citron d'abord, vous l'avez.",
@@ -184,7 +184,7 @@ def t1_passage(t1: int) -> list[str]:
             "narrateur|Un grain tombe, tout petit.",
             "maman|Le citron, ensuite, près de toi.",
             "narrateur|Elle glisse le pichet d'une main.",
-            "narrateur|Les trois affaires avancent avec elle.",
+            "narrateur|Le blanc, le jaune, et le bleu.",
             "enfant-f|Je veux le jus, tout jaune.",
             "narrateur|Un genou rebondit, puis l'autre.",
             "maman|Le sucrier d'abord, il est prêt.",
@@ -196,7 +196,7 @@ def t1_passage(t1: int) -> list[str]:
         "narrateur|L'eau chante un peu, déjà.",
         "papa|Le citron et le sucrier, avec toi.",
         "narrateur|Elle les pose près des carreaux.",
-        "narrateur|Les trois affaires avancent avec elle.",
+        "narrateur|Le pichet avance, tout bleu, tout lent.",
         "enfant-f|Le pichet veut son jaune.",
         "narrateur|Ses talons frappent le carreau, trop vite.",
         "papa|Le pichet d'abord, il est pris.",
@@ -277,7 +277,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             mishap,
             f"enfant-f|{o['cap']} part trop vite.",
             "maman|Tes pieds dansent, déjà.",
-            "papa|La table n'a pas encore de jus.",
+            "papa|Le jus n'est pas encore là.",
             "enfant-f|On presse comment, alors ?",
             "papa|Tu fais comment, avec nous ?",
         )
@@ -298,8 +298,8 @@ def t2_scene(t1: int, t2: int) -> list[str]:
             "narrateur|Ses genoux font un petit trampoline.",
             mishap,
             "narrateur|Une goutte rebondit, puis s'en va.",
-            "maman|Ton corps veut encore courir.",
-            "papa|L'évier n'a pas encore de pichet.",
+            "maman|Tes genoux rebondissent encore.",
+            "papa|Le pichet n'a pas encore de jus.",
             "enfant-f|On peut jouer avec, quand même ?",
             "papa|Vous trouvez, tous les trois ?",
         )
@@ -320,7 +320,7 @@ def t2_scene(t1: int, t2: int) -> list[str]:
         mishap,
         f"narrateur|{o['cap']} n'est plus à sa place.",
         "maman|Tes genoux font trop de vagues.",
-        "papa|Le tabouret n'a pas encore de table.",
+        "papa|Le jus n'est pas encore versé.",
         "enfant-f|On verse comment, alors ?",
         "papa|Vous trouvez, tous les trois ?",
     )
@@ -359,7 +359,8 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Sarah roule encore, puis s'arrête.",
             "enfant-f|La balle est fatiguée.",
             "maman|On peut presser, maintenant.",
-            "papa|Vous avez joué, puis posé.",
+            "narrateur|Le jus tombe dans le pichet, tout jaune.",
+            "papa|Tu as roulé, moi j'ai rattrapé.",
             "narrateur|La toile redevient une table, tout douce.",
         )
     if t2 == 1 and t3 == 2:
@@ -377,6 +378,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|La toile est calme, oui.",
             "papa|Tes pieds se sont assis, eux aussi.",
             "narrateur|Sarah presse, tout droit, tout petit.",
+            "narrateur|Le jus tombe, une goutte, puis deux.",
             "enfant-f|La citronnade peut venir.",
         )
     if t2 == 1 and t3 == 3:
@@ -392,8 +394,8 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Sarah verse un grain, puis un autre.",
             "narrateur|Le jaune reste sage, dans sa main.",
             "enfant-f|Toi tu tiens, moi je verse.",
-            "papa|Vous avez demandé, et ça tient.",
-            "maman|Ma main fait le bol, ici.",
+            "narrateur|Le jus rejoint le sucre, tout jaune.",
+            "maman|Ma main tient, la tienne verse.",
             "narrateur|La table garde un grain, tout mince.",
         )
     if t2 == 2 and t3 == 1:
@@ -408,9 +410,9 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             pair,
             "narrateur|Des perles tombent, une après l'autre.",
             "enfant-f|La dernière est au bout.",
-            "maman|Vous avez joué, puis posé le fruit.",
+            "narrateur|Le pichet se teinte, tout doucement.",
             "papa|L'évier est devenu un ruisseau.",
-            f"narrateur|{o['cap']} a trouvé son coin.",
+            f"narrateur|{o['cap']} reste près de l'eau.",
             "enfant-f|Le jus est là, tout bas.",
         )
     if t2 == 2 and t3 == 2:
@@ -421,13 +423,13 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
         }[t1]
         return L(
             "enfant-f|J'attends le filet.",
-            "papa|Moi je l'ouvre, puis c'est toi.",
+            "papa|Moi j'ouvre un peu, puis c'est toi.",
             line,
             "narrateur|L'eau avance, goutte après goutte.",
             "narrateur|Sarah souffle, les épaules baissent.",
             "papa|C'est à toi, Sarah.",
-            "enfant-f|J'y glisse le citron.",
-            "maman|Chacun son tour, sur l'évier.",
+            "enfant-f|J'y verse le jaune.",
+            "maman|D'abord l'eau, ensuite le citron.",
             "narrateur|Le filet se tait, enfin.",
         )
     if t2 == 2 and t3 == 3:
@@ -443,9 +445,9 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Sarah glisse un grain, les mains calmes.",
             "narrateur|L'autre main suit, le pichet au calme.",
             "enfant-f|Toi tu presses, moi je verse.",
-            "maman|Vous avez demandé, et ça marche.",
+            "narrateur|Le jaune tombe, le pichet se remplit.",
             "papa|Le jus tient tout seul, maintenant.",
-            "narrateur|Un carré de carreau reste tiède, autour.",
+            "narrateur|Un carré de carreau reste froid, autour.",
         )
     if t2 == 3 and t3 == 1:
         train = {
@@ -459,9 +461,9 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             train,
             "narrateur|Le bois penche, puis se tient droit.",
             "enfant-f|Doucement, les sauts tiennent.",
-            "maman|Vous avez joué, puis versé.",
+            "narrateur|Sarah verse, le pichet se teinte.",
             "papa|Le tabouret est une table, maintenant.",
-            f"narrateur|{o['cap']} a trouvé son coin.",
+            f"narrateur|{o['cap']} reste tout près, en haut.",
             "enfant-f|La citronnade est là, tout haut.",
         )
     if t2 == 3 and t3 == 2:
@@ -477,7 +479,7 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
             hush,
             "narrateur|Le compte se tait, enfin.",
             "enfant-f|Maintenant !",
-            "maman|Le tabouret a fini ses vagues.",
+            "narrateur|Sarah verse, une goutte, puis l'eau.",
             "papa|Tes genoux se sont assis, eux aussi.",
             "narrateur|Un pli du torchon retombe, tout lent.",
         )
@@ -488,14 +490,14 @@ def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
     }[t1]
     return L(
         "enfant-f|Papa, tu portes le pichet ?",
-        "papa|Je le porte, tout chaud.",
+        "papa|Je le porte, tout droit.",
         tuck,
         "narrateur|Sarah écoute les mains, plus que ses pieds.",
         "maman|Tu verses, et ça tient.",
         "enfant-f|Moi aussi, j'écoute.",
-        "narrateur|Le tabouret devient une table, tout haut.",
-        "papa|Vous avez demandé le bord.",
-        "maman|Ses mains ont tenu le jaune.",
+        "narrateur|Le jaune tombe, vu d'en haut.",
+        "papa|Tu as demandé, je porte.",
+        "maman|Tes mains ont tenu le bord.",
     )
 
 
@@ -510,7 +512,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "maman|Le pichet a son jaune, maintenant.",
             "narrateur|La toile cirée garde un grain sucré.",
             coda,
-            "narrateur|Un grain sucré dort sur la toile.",
+            "narrateur|Sarah lèche une goutte sur le bord.",
             "enfant-f|Encore une gorgée, papa.",
             "narrateur|La vitre tient encore le soleil.",
         )
@@ -530,7 +532,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         return L(
             "narrateur|Sarah boit, la main de maman tout près.",
             "enfant-f|Tu tenais le fruit.",
-            "papa|Vous avez demandé, et ça tenait.",
+            "papa|Tu demandais, maman tenait.",
             "maman|Ma main a fait le bol.",
             "narrateur|La cuisine rend le silence, tout doux.",
             f"narrateur|{o['cap']} pose un grain de lumière.",
@@ -555,7 +557,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Sarah boit, le filet tout calme.",
             "papa|J'ai ouvert, puis c'était toi.",
             "enfant-f|J'ai attendu l'eau.",
-            "maman|Chacun son tour, sur l'évier.",
+            "maman|D'abord l'eau, ensuite le jaune.",
             "narrateur|Le pichet bleu tient, enfin.",
             f"narrateur|{o['cap']} garde un grain de lumière.",
             "narrateur|Sarah souffle dessus, tout doux.",
@@ -567,10 +569,10 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
             "narrateur|Sarah boit, le citron pressé par papa.",
             "enfant-f|Tu pressais, tout doux.",
             "papa|Le jus est tombé, juste assez.",
-            "maman|L'entrée du pichet est à vous.",
+            "maman|Le pichet a son jaune, à vous.",
             "narrateur|L'évier a rendu le calme.",
             coda,
-            "narrateur|Un rond de chaleur reste sur le carreau.",
+            "narrateur|Un rond d'eau reste sur le carreau.",
             "enfant-f|Regarde, papa, il brille.",
             "narrateur|Une odeur de citron reste, au frais.",
         )
@@ -602,7 +604,7 @@ def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
         "narrateur|Sarah boit, le pichet porté par papa.",
         "enfant-f|J'écoutais tes mains.",
         "papa|Moi aussi, je portais avec toi.",
-        "maman|Vous avez demandé le bord.",
+        "maman|Tu as demandé, il a porté.",
         "narrateur|Le tabouret a rendu vos pas.",
         coda,
         "narrateur|Sarah touche le verre, du bout des doigts.",
@@ -619,9 +621,11 @@ def main() -> None:
     s["CHK_T0000_P0000"] = L(
         "narrateur|La casserole a laissé un nuage sur la vitre.",
         "narrateur|Les carreaux sont encore un peu froids.",
+        "papa|Tu as froid aux pieds, Sarah ?",
+        "enfant-f|Un peu, papa.",
         "narrateur|Ça sent le toast d'avant, tout tiède.",
         "narrateur|Une goutte glisse, lente, sur le carreau.",
-        "papa|Le citron est là, Sarah, tu le vois ?",
+        "papa|Le citron est là, tu le vois ?",
         "enfant-f|Il est tout jaune, papa.",
         "narrateur|Maman pose le pichet bleu près de l'eau.",
         "maman|On fait une citronnade, tu veux ?",
