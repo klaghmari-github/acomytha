@@ -1,79 +1,1035 @@
 #!/usr/bin/env python3
-"""TREE-DIF-061 — Le moulin de papier d'Aniss et la grille de l'école (N3, DIF.PAR.001)."""
+"""TREE-DIF-061 — Le moulin de papier d'Aniss et la grille de l'école (F-NAR-019, N3, example4 v2)."""
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import ROOT, check, make_chunk, relecture, words  # noqa: E402
+from _lib import ROOT, check, from_script, words  # noqa: E402
 
 SID = "TREE-DIF-061"
 N3 = 16
 TITLE = "Le moulin de papier d'Aniss et la grille de l'école"
 FIL = (
-    "Aniss veut planter son moulin de papier dans la grille de l'école, "
-    "pour le voir tourner pendant la classe. Mila arrive ; elle voudrait "
-    "l'entendre crier tourne, mais Aniss répond avec les mains. "
-    "T1 = moulin / fil / caillou, les trois partent. "
-    "T2 = grille (barreaux trop serrés) / caniveau (eau trop vite) / "
-    "porche (air trop calme). T3 = neuf façons. Mila attend, tend. "
-    "Le moulin tourne, on entre."
+    "Sur le chemin de l'école, Aniss veut planter son moulin de papier "
+    "à la grille, avant que le vent du matin ne se couche sous le porche. "
+    "Une goutte de cire rouge tient une pale. Mila veut qu'il crie tourne ; "
+    "Aniss répond avec les mains. Moulin, fil, caillou : les trois partent. "
+    "Grille trop serrée, caniveau trop vite, porche trop sage. "
+    "Neuf façons. La goutte de cire rouge prend le vent, enfin."
 )
+CHARS = "Aniss, Mila, papa, maman"
+SETTING = "chemin de l'école : grille, caniveau, porche"
+TIC_PHRASES = ("tout doux", "tout calme", "tout lent")
+TIC_WORDS = re.compile(r"\b(encore|déjà|deja)\b", re.I)
+
+PROFILES = {
+    "opening": {
+        "rate": "medium", "wpm": 142, "speed": 0.98, "piper": 1.12,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "medium", "db": 0, "pause": 500, "sentence": 260,
+        "energy": "warm", "contour": "storytelling", "noise": 0.36,
+        "emphasis": "goutte de cire rouge",
+        "note": "arc=installation; intention=émerveiller; emotion=impatience_joyeuse; intensite=1; destinataire=enfant; sous_texte=le_moulin_veut_tourner_à_la_grille; tempo=naturel; sourire=léger; respiration=ample",
+    },
+    "choice": {
+        "rate": "slow", "wpm": 116, "speed": 0.84, "piper": 1.30,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "medium", "db": 0, "pause": 900, "sentence": 330,
+        "energy": "focused", "contour": "rising", "noise": 0.33,
+        "emphasis": None,
+        "note": "arc=choix; intention=inviter; emotion=curiosité; intensite=1; destinataire=enfant; sous_texte=ton_choix_change_le_geste; tempo=suspendu; sourire=léger; respiration=pause_avant_choix",
+    },
+    "clue": {
+        "rate": "slow", "wpm": 120, "speed": 0.86, "piper": 1.27,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "soft", "db": -2, "pause": 700, "sentence": 320,
+        "energy": "focused", "contour": "rising", "noise": 0.32,
+        "emphasis": None,
+        "note": "arc=indice; intention=faire_deviner; emotion=attention; intensite=1; destinataire=enfant; sous_texte=regarde_ce_qu_il_tend; tempo=suspendu; sourire=aucun; respiration=courte_avant_question",
+    },
+    "confirm": {
+        "rate": "medium", "wpm": 132, "speed": 0.92, "piper": 1.20,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "medium", "db": 0, "pause": 450, "sentence": 280,
+        "energy": "bright", "contour": "falling", "noise": 0.34,
+        "emphasis": "goutte de cire rouge",
+        "note": "arc=confirmation; intention=relancer; emotion=joie_discrète; intensite=1; destinataire=enfant; sous_texte=les_trois_partent_ensemble; tempo=naturel; sourire=léger; respiration=fluide",
+    },
+    "action": {
+        "rate": "medium", "wpm": 146, "speed": 1.0, "piper": 1.10,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "medium", "db": 0, "pause": 420, "sentence": 250,
+        "energy": "lively", "contour": "dynamic", "noise": 0.37,
+        "emphasis": None,
+        "note": "arc=action; intention=entraîner; emotion=élan_puis_décrochage; intensite=2; destinataire=enfant; sous_texte=Mila_veut_des_mots_Aniss_tend; tempo=vif; sourire=léger; respiration=courte",
+    },
+    "obstacle": {
+        "rate": "medium", "wpm": 134, "speed": 0.93, "piper": 1.18,
+        "pitch": "low", "pitchSsml": "-2st", "pitchTag": "low-pitch",
+        "volume": "medium", "db": 0, "pause": 520, "sentence": 300,
+        "energy": "tense", "contour": "dynamic", "noise": 0.34,
+        "emphasis": "goutte de cire rouge",
+        "note": "arc=obstacle; intention=alerter_sans_effrayer; emotion=impatience_et_découragement; intensite=2; destinataire=enfant; sous_texte=ils_ne_veulent_pas_la_même_chose; tempo=resserré; sourire=aucun; respiration=retenue",
+    },
+    "resolution": {
+        "rate": "medium", "wpm": 140, "speed": 0.97, "piper": 1.14,
+        "pitch": "medium", "pitchSsml": "medium", "pitchTag": None,
+        "volume": "medium", "db": 0, "pause": 560, "sentence": 270,
+        "energy": "bright", "contour": "falling", "noise": 0.35,
+        "emphasis": "goutte de cire rouge",
+        "note": "arc=résolution; intention=faire_vivre_la_réussite; emotion=soulagement_et_fierté_calme; intensite=2; destinataire=enfant; sous_texte=Aniss_tend_Mila_attend_le_moulin_tourne; tempo=naturel; sourire=franc; respiration=relâchée",
+    },
+    "ending": {
+        "rate": "slow", "wpm": 118, "speed": 0.85, "piper": 1.28,
+        "pitch": "low", "pitchSsml": "-2st", "pitchTag": "low-pitch",
+        "volume": "soft", "db": -3, "pause": 900, "sentence": 340,
+        "energy": "calm", "contour": "falling", "noise": 0.31,
+        "emphasis": "goutte de cire rouge",
+        "note": "arc=retour; intention=refermer; emotion=tendresse_et_fierté_calme; intensite=1; destinataire=enfant; sous_texte=la_goutte_de_cire_rouge_prend_le_vent; tempo=posé; sourire=léger; respiration=ample",
+    },
+}
 
 
-def L(*rows: str) -> list[str]:
-    out: list[str] = []
-    for raw in rows:
+def esc(s: str) -> str:
+    return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def ssml(text: str, m: dict, emphasis: str | None) -> str:
+    body = esc(text)
+    if emphasis:
+        e = esc(emphasis)
+        body = body.replace(e, f'<emphasis level="moderate">{e}</emphasis>', 1)
+    return (
+        f'<speak><prosody rate="{m["rate"]}" pitch="{m["pitchSsml"]}">'
+        f'{body}</prosody><break time="{m["pause"]}ms"/></speak>'
+    )
+
+
+def xai(text: str, m: dict, emphasis: str | None) -> str:
+    body = text
+    if emphasis:
+        body = body.replace(emphasis, f"<emphasis>{emphasis}</emphasis>", 1)
+    if m["rate"] == "slow":
+        body = f"<slow>{body}</slow>"
+    if m["volume"] == "soft":
+        body = f"<soft>{body}</soft>"
+    if m["pitchTag"]:
+        body = f"<{m['pitchTag']}>{body}</{m['pitchTag']}>"
+    tail = "[long-pause]" if m["pause"] >= 800 else ("[pause]" if m["pause"] >= 400 else "")
+    return f"{body} {tail}".strip()
+
+
+def vet(lines: list[str]) -> list[str]:
+    out = []
+    prev = ""
+    run = 1
+    for raw in lines:
         role, ph = raw.split("|", 1)
         n = words(ph)
         if n > N3:
             raise SystemExit(f"{n}>{N3}: {ph}")
+        if n == 0:
+            raise SystemExit(f"vide: {raw}")
         marks = ph.count(".") + ph.count("?") + ph.count("!")
         if marks != 1:
             raise SystemExit(f"ponctuation {marks}: {ph}")
+        if not ph.endswith((".", "?", "!")):
+            raise SystemExit(f"fin: {ph}")
+        low = ph.lower()
+        for tic in TIC_PHRASES:
+            if tic in low:
+                raise SystemExit(f"tic {tic!r}: {ph}")
+        m = TIC_WORDS.search(low)
+        if m:
+            raise SystemExit(f"tic {m.group(0)!r}: {ph}")
+        if role == "narrateur":
+            tok = ph.split()[0].lower()
+            if tok == prev:
+                run += 1
+                if run >= 4:
+                    raise SystemExit(f"puces « {tok} »: {ph}")
+            else:
+                run = 1
+                prev = tok
+        else:
+            run = 1
+            prev = ""
         out.append(f"{role}|{ph}")
     return out
+
+
+def voice(src: dict, lines: list[str], profile: str, sons: str, extra: dict | None = None) -> dict:
+    lines = vet(lines)
+    m = dict(PROFILES[profile])
+    extra = extra or {}
+    emphasis = extra.get("emphasis", m["emphasis"])
+    text, script = from_script(lines)
+    nc = dict(src)
+    nc["text"] = text
+    nc["script"] = script
+    nc["sons"] = sons if sons is not None else ""
+    nc["text_ssml"] = ssml(text, m, emphasis)
+    nc["text_xai_tags"] = xai(text, m, emphasis)
+    nc["length_scale_piper"] = m["piper"]
+    nc["rate_label"] = m["rate"]
+    nc["rate_wpm"] = m["wpm"]
+    nc["speed_xai"] = m["speed"]
+    nc["pitch_label"] = m["pitch"]
+    nc["pitch_ssml"] = m["pitchSsml"]
+    nc["pitch_xai_tag"] = m["pitchTag"]
+    nc["volume_label"] = m["volume"]
+    nc["volume_db"] = m["db"]
+    nc["emphasis_words"] = emphasis or ""
+    nc["pause_before_ms"] = extra.get("pause_before", 0)
+    nc["pause_after_ms"] = m["pause"]
+    nc["pause_sentence_ms"] = m["sentence"]
+    nc["style_energy"] = m["energy"]
+    nc["style_contour"] = m["contour"]
+    nc["noise_scale_piper"] = m["noise"]
+    nc["kokoro_speed"] = m["speed"]
+    nc["melo_speed"] = m["speed"]
+    nc["espeak_amp"] = 82 if m["volume"] == "soft" else 100
+    nc["espeak_pitch"] = 42 if m["pitch"] == "low" else 50
+    nc["espeak_word_gap"] = 12 if m["rate"] == "slow" else 8
+    nc["notes"] = extra.get("notes", m["note"])
+    nc["night_policy"] = "play"
+    nc["locale"] = "fr-FR"
+    nc["voice_id"] = "fr_FR-siwis-medium"
+    for k, v in extra.get("fields", {}).items():
+        nc[k] = v
+    return nc
+
+
+def path_words(by: dict, a: int, b: int, c: int) -> int:
+    ids = [
+        "CHK_T0000_P0000",
+        "CHK_T0001_P0000",
+        f"CHK_T0001_P000{a}",
+        f"CHK_T0001_P000{a}_Q0001",
+        f"CHK_T0001_P000{a}_C0001",
+        f"CHK_T0001_P000{a}_T0002_P0000",
+        f"CHK_T0001_P000{a}_T0002_P000{b}",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P0000",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}",
+        f"CHK_T0001_P000{a}_T0002_P000{b}_T0003_P000{c}_F0001",
+    ]
+    return sum(words(by[i]["text"]) for i in ids)
 
 
 def t3lab(a: str, b: str, c: str) -> dict:
     return {"option_1_label": a, "option_2_label": b, "option_3_label": c}
 
 
-def qf(ans: str, acc: str, retry: str) -> dict:
-    return {"expected_answer": ans, "accepted_examples": acc, "retry_prompt": retry}
+OPENING = [
+    "narrateur|Un bus passe, trop large, le long du muret.",
+    "narrateur|Dans le sac d'Aniss, le papier répond, tout sec.",
+    "narrateur|Le bitume fume, un peu mouillé, sous les bottes.",
+    "narrateur|Une odeur de pain chaud remonte le muret.",
+    "papa|Le boulanger a ouvert, Aniss.",
+    "narrateur|La grille de l'école brille, un peu froide.",
+    "narrateur|Le porche garde son ombre, plus loin.",
+    "maman|Ton moulin dépasse du sac.",
+    "narrateur|Aniss sort le bâton, et la goutte de cire rouge.",
+    "papa|Cette goutte, tu l'as mise hier soir.",
+    "enfant-m|Elle tient la pale, contre le vent.",
+    "narrateur|En ce moment, Aniss serre le bâton contre sa veste.",
+    "enfant-m|Je le plante à la grille, avant le porche.",
+    "narrateur|Mila arrive, les bottes trop pressées.",
+    "papa|Mila arrive, tu lui montres ?",
+    "narrateur|Aniss hoche la tête, tout petit.",
+    "narrateur|Les bottes de Mila tapent le bitume, derrière.",
+    "copine|Dis tourne, Aniss !",
+    "narrateur|Aniss lève le moulin trop vite, vers la grille.",
+    "narrateur|Le bâton bute contre deux barreaux, trop serrés.",
+    "enfant-m|Il ne passe pas.",
+    "narrateur|Le sourire d'Aniss disparaît, un instant.",
+    "narrateur|Dans sa poitrine, l'envie et l'inquiétude se bousculent.",
+    "papa|On prépare, puis on pose.",
+    "narrateur|Papa s'accroupit, à la hauteur d'Aniss.",
+    "papa|Merci, tu as tendu le papier, sans crier.",
+    "maman|Le fil et le caillou voyagent aussi.",
+]
+
+T1_CHOICE = [
+    "narrateur|Trois affaires attendent près des pieds.",
+    "narrateur|Le moulin, le fil, le caillou.",
+    "papa|Tu prends quoi d'abord, Aniss ?",
+]
+
+T1 = {
+    1: {
+        "lab": "le moulin",
+        "sons": "papier,vent",
+        "emphasis": "moulin",
+        "passage": [
+            "narrateur|Aniss sort d'abord le moulin du sac.",
+            "enfant-m|Il est froid, contre mes doigts.",
+            "papa|La goutte de cire rouge tient une pale.",
+            "narrateur|Il le tend vers Mila, tout près.",
+            "copine|Dis tourne !",
+            "narrateur|Aniss ouvre la bouche, puis la referme.",
+            "narrateur|Il pose deux doigts sur le papier.",
+            "enfant-m|Pas trop vite.",
+            "maman|Le fil et le caillou voyagent aussi.",
+            "narrateur|Papa glisse le tout contre le sac.",
+            "copine|Aniss, on court ?",
+            "narrateur|Aniss hoche la tête, tout petit.",
+            "papa|Le moulin d'abord, vous l'avez.",
+        ],
+        "question": [
+            "narrateur|Aniss a tendu le moulin, tout près.",
+            "maman|Il tend quoi, à Mila ?",
+        ],
+        "qfields": {
+            "expected_answer": "moulin",
+            "accepted_examples": "moulin | le moulin | le papier | tendre",
+            "retry_prompt": "Il tend le moulin. Il tend quoi ?",
+        },
+        "confirm": [
+            "narrateur|Aniss garde le moulin contre lui.",
+            "copine|Il est à toi, un moment.",
+            "narrateur|Mila attend, les mains ouvertes.",
+            "narrateur|Une pale tremble, toute petite, au vent.",
+            "maman|La goutte de cire rouge est tiède, maintenant.",
+            "papa|On pose le moulin où ?",
+            "copine|Vers la grille, peut-être.",
+            "narrateur|Le fil et le caillou tapent le sac, à chaque pas.",
+        ],
+    },
+    2: {
+        "lab": "le fil",
+        "sons": "fil,bobine",
+        "emphasis": "fil",
+        "passage": [
+            "narrateur|Aniss sort d'abord le fil beige.",
+            "enfant-m|Il gratte un peu, contre le pouce.",
+            "maman|La bobine sent le tiroir, un peu.",
+            "narrateur|Il tend le fil vers Mila.",
+            "copine|Dis nœud !",
+            "narrateur|Aniss enroule un tour, sans un mot.",
+            "narrateur|Le fil se tait autour du bâton.",
+            "papa|Le moulin et le caillou voyagent aussi.",
+            "narrateur|Maman les pose contre le papier.",
+            "copine|Aniss, tu viens ?",
+            "narrateur|Aniss lève le fil, tout bas.",
+            "enfant-m|Pas trop vite.",
+            "maman|Le fil d'abord, vous l'avez.",
+        ],
+        "question": [
+            "narrateur|Aniss a tendu le fil, tout près.",
+            "papa|Il tend quoi, à Mila ?",
+        ],
+        "qfields": {
+            "expected_answer": "fil",
+            "accepted_examples": "fil | le fil | la bobine | tendre",
+            "retry_prompt": "Il tend le fil. Il tend quoi ?",
+        },
+        "confirm": [
+            "narrateur|Aniss garde le fil contre sa jambe.",
+            "copine|Il est à toi, un moment.",
+            "narrateur|Mila attend, sans répéter.",
+            "narrateur|La bobine sent le tiroir, un peu.",
+            "maman|La goutte de cire rouge écoute le fil.",
+            "papa|On pose le moulin où ?",
+            "copine|Vers le caniveau, peut-être.",
+            "narrateur|Le moulin et le caillou tapent le sac, à chaque pas.",
+        ],
+    },
+    3: {
+        "lab": "le caillou",
+        "sons": "caillou,pierre",
+        "emphasis": "caillou",
+        "passage": [
+            "narrateur|Aniss sort d'abord le caillou rond.",
+            "enfant-m|Il est tiède, contre la paume.",
+            "papa|La pierre a séché près du muret.",
+            "narrateur|Il tend le caillou vers Mila.",
+            "copine|Dis pierre !",
+            "narrateur|Aniss le cale contre le bâton, sans presser.",
+            "narrateur|Le papier se tient, sans un mot.",
+            "maman|Le moulin et le fil voyagent aussi.",
+            "narrateur|Papa les glisse près des bottes.",
+            "copine|Aniss, c'est bon ?",
+            "narrateur|Aniss appuie sur la pierre, tout petit.",
+            "enfant-m|Pas trop vite.",
+            "papa|Le caillou d'abord, il tient.",
+        ],
+        "question": [
+            "narrateur|Aniss a tendu le caillou, tout près.",
+            "maman|Il tend quoi, à Mila ?",
+        ],
+        "qfields": {
+            "expected_answer": "caillou",
+            "accepted_examples": "caillou | le caillou | la pierre | tendre",
+            "retry_prompt": "Il tend le caillou. Il tend quoi ?",
+        },
+        "confirm": [
+            "narrateur|Aniss tient le caillou, tout près.",
+            "copine|Il est à toi, un moment.",
+            "narrateur|Mila attend, les lèvres fermées.",
+            "narrateur|Un peu de poussière tombe, puis s'arrête.",
+            "papa|La goutte de cire rouge écoute la pierre.",
+            "maman|On pose le moulin où ?",
+            "copine|Vers le porche, tout bas.",
+            "narrateur|Le moulin et le fil tapent le sac, à chaque pas.",
+        ],
+    },
+}
+
+T2_CHOICE = {
+    1: [
+        "narrateur|Le moulin tape un peu le sac, à chaque pas.",
+        "narrateur|La grille serre trop les barreaux.",
+        "narrateur|Le caniveau emporte trop d'eau, plus bas.",
+        "narrateur|Sous le porche, l'air ne pousse plus.",
+        "papa|On commence où, pour le moulin ?",
+    ],
+    2: [
+        "narrateur|Le fil tape un peu la jambe, à chaque pas.",
+        "narrateur|La grille serre trop les barreaux.",
+        "narrateur|Le caniveau emporte trop d'eau, plus bas.",
+        "narrateur|Sous le porche, l'air ne pousse plus.",
+        "papa|On commence où, pour le moulin ?",
+    ],
+    3: [
+        "narrateur|Le caillou tape un peu la botte, à chaque pas.",
+        "narrateur|La grille serre trop les barreaux.",
+        "narrateur|Le caniveau emporte trop d'eau, plus bas.",
+        "narrateur|Sous le porche, l'air ne pousse plus.",
+        "papa|On commence où, pour le moulin ?",
+    ],
+}
+
+T2 = {
+    (1, 1): {
+        "sons": "fer,barreaux",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le bâton du moulin bute contre deux barreaux.",
+            "narrateur|La grille serre trop, juste à hauteur d'Aniss.",
+            "copine|Pousse-le, Aniss !",
+            "narrateur|Aniss montre un écart plus bas, du doigt.",
+            "narrateur|Le fer reste froid, trop près des pales.",
+            "copine|Dis-moi où !",
+            "narrateur|Aniss secoue la tête, tout petit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, et son silence compte.",
+            "maman|Il montre, avec le doigt.",
+            "papa|Le crochet du loquet brille un peu.",
+            "narrateur|La goutte de cire rouge s'est cachée derrière un barreau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (2, 1): {
+        "sons": "fil,fer",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le fil se coince entre deux barreaux froids.",
+            "narrateur|La grille serre trop, juste à hauteur d'Aniss.",
+            "copine|Tire-le, Aniss !",
+            "narrateur|Aniss montre un écart plus bas, du doigt.",
+            "narrateur|Le beige racle le fer, trop près.",
+            "copine|Dis-moi où !",
+            "narrateur|Aniss secoue la tête, tout petit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, et son silence compte.",
+            "maman|Il montre, avec le doigt.",
+            "papa|Le crochet du loquet brille un peu.",
+            "narrateur|La goutte de cire rouge s'est cachée derrière un barreau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (3, 1): {
+        "sons": "caillou,fer",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le caillou reste coincé, trop large pour le fer.",
+            "narrateur|La grille serre trop, juste à hauteur d'Aniss.",
+            "copine|Force, Aniss !",
+            "narrateur|Aniss montre un écart plus bas, du doigt.",
+            "narrateur|La pierre cogne, puis recule.",
+            "copine|Dis-moi où !",
+            "narrateur|Aniss secoue la tête, tout petit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, et son silence compte.",
+            "maman|Il montre, avec le doigt.",
+            "papa|Le crochet du loquet brille un peu.",
+            "narrateur|La goutte de cire rouge s'est cachée derrière un barreau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (1, 2): {
+        "sons": "eau,papier",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Une pale du moulin touche l'eau, trop vite.",
+            "copine|L'eau est trop grande.",
+            "narrateur|Une feuille jaune part, plus bas.",
+            "copine|Attrape, Aniss !",
+            "narrateur|Aniss recule le papier, sans presser.",
+            "narrateur|L'eau frappe la dalle, puis rebondit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila referme la bouche.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|La dalle tient le courant.",
+            "papa|On reste près du caniveau, tous les deux.",
+            "narrateur|La goutte de cire rouge s'est ternie, trop près de l'eau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (2, 2): {
+        "sons": "eau,fil",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le fil traîne dans l'eau, trop vite.",
+            "copine|L'eau est trop grande.",
+            "narrateur|Une feuille jaune part, plus bas.",
+            "copine|Tire, Aniss !",
+            "narrateur|Aniss ramène le beige, sans presser.",
+            "narrateur|L'eau frappe la dalle, puis rebondit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila referme la bouche.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|La dalle tient le courant.",
+            "papa|On reste près du caniveau, tous les deux.",
+            "narrateur|La goutte de cire rouge s'est ternie, trop près de l'eau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (3, 2): {
+        "sons": "eau,pierre",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le caillou glisse vers l'eau, trop vite.",
+            "copine|L'eau est trop grande.",
+            "narrateur|Une feuille jaune part, plus bas.",
+            "copine|Attrape la pierre !",
+            "narrateur|Aniss recule le caillou, sans presser.",
+            "narrateur|L'eau frappe la dalle, puis rebondit.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila referme la bouche.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|La dalle tient le courant.",
+            "papa|On reste près du caniveau, tous les deux.",
+            "narrateur|La goutte de cire rouge s'est ternie, trop près de l'eau.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (1, 3): {
+        "sons": "porche,air",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Les pales du moulin s'arrêtent sous le porche.",
+            "copine|Ça ne tourne plus, Aniss !",
+            "narrateur|Mila souffle trop vite, trop fort.",
+            "copine|Dis vent !",
+            "narrateur|Aniss pointe la porte, du doigt.",
+            "narrateur|Le porche garde l'air, trop fermé.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, les joues gonflées.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|Tes yeux vont plus loin, Aniss.",
+            "papa|La marche du seuil est sèche.",
+            "narrateur|La goutte de cire rouge s'est éteinte, dans l'ombre.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (2, 3): {
+        "sons": "fil,porche",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le fil pend, trop lourd, sous le porche.",
+            "copine|Ça ne tourne plus, Aniss !",
+            "narrateur|Mila souffle trop vite, trop fort.",
+            "copine|Dis vent !",
+            "narrateur|Aniss pointe la porte, du doigt.",
+            "narrateur|Le porche garde l'air, trop fermé.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, les joues gonflées.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|Tes yeux vont plus loin, Aniss.",
+            "papa|La marche du seuil est sèche.",
+            "narrateur|La goutte de cire rouge s'est éteinte, dans l'ombre.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+    (3, 3): {
+        "sons": "pierre,porche",
+        "emphasis": "goutte de cire rouge",
+        "passage": [
+            "narrateur|Le caillou reste lourd, sous le porche.",
+            "copine|Ça ne tourne plus, Aniss !",
+            "narrateur|Mila souffle trop vite, trop fort.",
+            "copine|Dis vent !",
+            "narrateur|Aniss pointe la porte, du doigt.",
+            "narrateur|Le porche garde l'air, trop fermé.",
+            "enfant-m|On ne fonce pas.",
+            "narrateur|Mila se tait, les joues gonflées.",
+            "narrateur|Son silence compte, comme une réponse.",
+            "maman|Tes yeux vont plus loin, Aniss.",
+            "papa|La marche du seuil est sèche.",
+            "narrateur|La goutte de cire rouge s'est éteinte, dans l'ombre.",
+            "papa|Vous faites comment, tous les deux ?",
+        ],
+    },
+}
+
+T3_LABS = {
+    1: ("le bas", "les mains de Mila", "le crochet"),
+    2: ("la dalle", "le fil", "le bord"),
+    3: ("le vent", "la marche", "le nœud"),
+}
+
+T3_CHOICE = {
+    1: [
+        "narrateur|Les barreaux restent trop serrés.",
+        "narrateur|La goutte de cire rouge s'est perdue dans le fer.",
+        "papa|Le bas, les mains, ou le crochet ?",
+    ],
+    2: [
+        "narrateur|L'eau tient la feuille jaune.",
+        "narrateur|La goutte de cire rouge s'est ternie près de l'eau.",
+        "maman|La dalle, le fil, ou le bord ?",
+    ],
+    3: [
+        "narrateur|L'air reste trop sage, sous le porche.",
+        "narrateur|La goutte de cire rouge s'est cachée dans l'ombre.",
+        "papa|Le vent, la marche, ou le nœud ?",
+    ],
+}
+
+T3_SONS = {
+    (1, 1): "fer,bas",
+    (1, 2): "mains,papier",
+    (1, 3): "crochet,loquet",
+    (2, 1): "dalle,eau",
+    (2, 2): "fil,eau",
+    (2, 3): "bord,pas",
+    (3, 1): "porte,vent",
+    (3, 2): "marche,seuil",
+    (3, 3): "noeud,porche",
+}
+
+T3_EMPH = {
+    1: {1: "bas", 2: "mains", 3: "crochet"},
+    2: {1: "dalle", 2: "fil", 3: "bord"},
+    3: {1: "vent", 2: "marche", 3: "nœud"},
+}
+
+OBJ_LINE = {
+    1: "Le moulin attend, collé aux doigts.",
+    2: "Le fil attend, autour du bâton.",
+    3: "Le caillou attend, contre le papier.",
+}
 
 
-def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dict[str, str]) -> None:
+def t3_pass(a: int, b: int, c: int) -> list[str]:
+    obj = OBJ_LINE[a]
+    if b == 1 and c == 1:
+        wait = {
+            1: "Le moulin reste bas, près du bitume.",
+            2: "Le fil reste bas, près du bitume.",
+            3: "Le caillou reste bas, près du bitume.",
+        }[a]
+        return [
+            "copine|On attend.",
+            "narrateur|Aniss cherche l'écart du bas, sans presser.",
+            "narrateur|Mila suit le doigt, enfin, un peu.",
+            f"narrateur|{wait}",
+            "narrateur|Aniss glisse le bâton, sans un mot.",
+            "narrateur|Le fer fait toc, plus large.",
+            "copine|Toc.",
+            "narrateur|La goutte de cire rouge revoit le vent, ronde.",
+            f"narrateur|{obj}",
+            "papa|Le bas laisse un vrai passage.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 1 and c == 2:
+        hold = {
+            1: "Le moulin glisse vers les mains de Mila.",
+            2: "Le fil guide le papier vers Mila.",
+            3: "Le caillou suit le papier vers Mila.",
+        }[a]
+        return [
+            "copine|Pour toi.",
+            "narrateur|Mila ouvre les deux mains, tout près.",
+            "narrateur|Aniss pose le jaune contre ses paumes.",
+            f"narrateur|{hold}",
+            "narrateur|Mila vise l'écart, Aniss pousse le bâton.",
+            "copine|Il passe !",
+            "narrateur|La goutte de cire rouge échappe au fer, ronde.",
+            f"narrateur|{obj}",
+            "maman|Tes mains ont trouvé le fer.",
+            "papa|Il l'a tendu, d'abord.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 1 and c == 3:
+        hook = {
+            1: "Le moulin pend au crochet du loquet.",
+            2: "Le fil s'enroule au crochet du loquet.",
+            3: "Le caillou cale le crochet du loquet.",
+        }[a]
+        return [
+            "copine|Le crochet, Aniss.",
+            "narrateur|Aniss lève le jaune, sans un mot.",
+            "narrateur|Mila attend, puis suit sa main.",
+            f"narrateur|{hook}",
+            "narrateur|Une pale racle le fer, puis se libère.",
+            "copine|Il tient.",
+            "narrateur|La goutte de cire rouge reprend le rai, petite.",
+            f"narrateur|{obj}",
+            "papa|Le loquet a gardé le papier.",
+            "maman|Les barreaux peuvent dormir, plus loin.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 2 and c == 1:
+        stone = {
+            1: "Le moulin sèche contre la dalle.",
+            2: "Le fil sèche contre la dalle.",
+            3: "Le caillou sèche contre la dalle.",
+        }[a]
+        return [
+            "copine|On attend l'eau.",
+            "narrateur|Aniss s'assoit près du caniveau, sans presser.",
+            "narrateur|Mila s'assoit aussi, les genoux contre lui.",
+            f"narrateur|{stone}",
+            "narrateur|L'eau frappe, puis la feuille s'arrête.",
+            "copine|Maintenant.",
+            "narrateur|La goutte de cire rouge sèche, ronde, sur la dalle.",
+            f"narrateur|{obj}",
+            "papa|La dalle a cassé le courant.",
+            "maman|Vous avez laissé l'eau finir.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 2 and c == 2:
+        rope = {
+            1: "Le moulin traverse au bout du fil.",
+            2: "Le fil part au bout des mains de Mila.",
+            3: "Le caillou guide le fil, tout droit.",
+        }[a]
+        return [
+            "copine|Tes mains, Aniss.",
+            "narrateur|Aniss tend le fil, tout près.",
+            "narrateur|Mila tire avec lui, sans presser.",
+            f"narrateur|{rope}",
+            "narrateur|Le papier passe au-dessus de l'eau.",
+            "copine|On tient ensemble.",
+            "narrateur|La goutte de cire rouge tremble au bout du fil.",
+            f"narrateur|{obj}",
+            "maman|Vos mains suffisent, toutes les deux.",
+            "papa|L'eau restera après.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 2 and c == 3:
+        edge = {
+            1: "Le moulin suit le bord sec.",
+            2: "Le fil suit le bord sec.",
+            3: "Le caillou suit le bord sec.",
+        }[a]
+        return [
+            "copine|Le bord, d'abord.",
+            "narrateur|Mila tend la pierre sèche vers Aniss.",
+            "narrateur|Aniss marche, sans un mot.",
+            f"narrateur|{edge}",
+            "narrateur|Une goutte rejoint le fond, puis se tait.",
+            "copine|C'est doux.",
+            "narrateur|La goutte de cire rouge reste au sec, sur le bord.",
+            f"narrateur|{obj}",
+            "maman|L'eau garde son souffle, plus loin.",
+            "papa|Le bord a laissé le papier.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 3 and c == 1:
+        draft = {
+            1: "Le moulin prend le vent de la porte.",
+            2: "Le fil prend le vent de la porte.",
+            3: "Le caillou prend le vent de la porte.",
+        }[a]
+        return [
+            "copine|Le vent, d'abord.",
+            "papa|J'ouvre un peu, à votre hauteur.",
+            "narrateur|Aniss attend, Mila tient le jaune.",
+            f"narrateur|{draft}",
+            "narrateur|Une pale part, sans un mot.",
+            "copine|Ça tient !",
+            "narrateur|La goutte de cire rouge file dans le courant, ronde.",
+            f"narrateur|{obj}",
+            "papa|La porte a donné le courant.",
+            "maman|Aniss a poussé, sans crier.",
+            "enfant-m|Il tourne.",
+        ]
+    if b == 3 and c == 2:
+        step = {
+            1: "Le moulin pose ses pales sur la marche.",
+            2: "Le fil pose le papier sur la marche.",
+            3: "Le caillou cale le papier sur la marche.",
+        }[a]
+        return [
+            "enfant-m|Mila.",
+            "narrateur|Aniss pointe la marche, du doigt.",
+            "narrateur|Mila attend, puis ouvre les mains.",
+            f"narrateur|{step}",
+            "narrateur|Le courant du seuil pousse, tout net.",
+            "copine|Je le tiens.",
+            "narrateur|La goutte de cire rouge prend l'air, sur la marche.",
+            f"narrateur|{obj}",
+            "maman|Le porche garde son ombre, plus loin.",
+            "papa|Tes mains ont guidé le moulin.",
+            "enfant-m|Il tourne.",
+        ]
+    knot = {
+        1: "Le moulin suit le nœud, tour après tour.",
+        2: "Le fil serre le nœud, tout droit.",
+        3: "Le caillou tient derrière le nœud, tout droit.",
+    }[a]
+    return [
+        "copine|Le nœud, Aniss.",
+        "narrateur|Aniss pointe le crochet du porche, du doigt.",
+        "narrateur|Mila attend, puis suit le doigt.",
+        f"narrateur|{knot}",
+        "narrateur|Le jaune se tient, hors du mur.",
+        "copine|Il évite le mur.",
+        "narrateur|La goutte de cire rouge veille derrière le nœud.",
+        f"narrateur|{obj}",
+        "papa|Le nœud a montré la route.",
+        "maman|Vos pieds restent au sec, aussi.",
+        "enfant-m|Il tourne.",
+    ]
+
+
+LAST = {
+    (1, 1, 1): "La goutte de cire rouge s'endort entre deux barreaux.",
+    (1, 1, 2): "Dans les paumes, la goutte de cire rouge clignote.",
+    (1, 1, 3): "Au crochet, la goutte de cire rouge tourne, petite.",
+    (1, 2, 1): "Sur la dalle, la goutte de cire rouge sèche, ronde.",
+    (1, 2, 2): "Au bout du fil, la goutte de cire rouge tremble.",
+    (1, 2, 3): "Au bord sec, la goutte de cire rouge se tait.",
+    (1, 3, 1): "Dans le courant de la porte, la goutte de cire rouge file.",
+    (1, 3, 2): "Sur la marche, la goutte de cire rouge prend l'air.",
+    (1, 3, 3): "Derrière le nœud, la goutte de cire rouge veille.",
+    (2, 1, 1): "Le fil laisse la goutte de cire rouge au fer.",
+    (2, 1, 2): "Les mains de Mila chauffent la goutte de cire rouge.",
+    (2, 1, 3): "Le loquet garde la goutte de cire rouge, minuscule.",
+    (2, 2, 1): "L'eau n'a pas pris la goutte de cire rouge.",
+    (2, 2, 2): "Le fil tendu montre la goutte de cire rouge au soleil.",
+    (2, 2, 3): "Le bord a sauvé la goutte de cire rouge, tiède.",
+    (2, 3, 1): "Le vent de la porte lèche la goutte de cire rouge.",
+    (2, 3, 2): "La marche tient la goutte de cire rouge, droite.",
+    (2, 3, 3): "Le nœud serre près de la goutte de cire rouge.",
+    (3, 1, 1): "Le caillou cale la goutte de cire rouge au bas.",
+    (3, 1, 2): "La pierre suit la goutte de cire rouge vers Mila.",
+    (3, 1, 3): "Le crochet pince la goutte de cire rouge, sans la casser.",
+    (3, 2, 1): "La dalle a séché la goutte de cire rouge.",
+    (3, 2, 2): "Le caillou guide la goutte de cire rouge au-dessus de l'eau.",
+    (3, 2, 3): "Le bord laisse la goutte de cire rouge au sec.",
+    (3, 3, 1): "Le vent pousse la goutte de cire rouge, hors du mur.",
+    (3, 3, 2): "Deux pieds s'arrêtent, la goutte de cire rouge au milieu.",
+    (3, 3, 3): "Le papier tremble, la goutte de cire rouge se tait.",
+}
+
+HARD = {
+    1: "Les barreaux ont failli garder le papier.",
+    2: "L'eau a failli emporter la pale.",
+    3: "Le porche a failli manger le vent.",
+}
+
+CODA = {
+    1: "Le moulin garde une pale un peu froissée.",
+    2: "Le fil pend, un peu humide, contre le fer.",
+    3: "Le caillou reste tiède, contre le barreau.",
+}
+
+TRACE = {
+    1: "Un rai rouge s'allonge sur le bitume, puis s'arrête.",
+    2: "Au muret, ça sent la cire, tiède.",
+    3: "Au loin, le bus se tait.",
+}
+
+
+def ending(a: int, b: int, c: int) -> list[str]:
+    last = LAST[(a, b, c)]
+    hard = HARD[b]
+    coda = CODA[a]
+    trace = TRACE[c]
+    if b == 1 and c == 1:
+        return [
+            "narrateur|Le moulin pose une pale sur le fer.",
+            "enfant-m|Tourne.",
+            "copine|Il est arrivé.",
+            f"narrateur|{hard}",
+            "papa|Le bas a laissé le passage.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 1 and c == 2:
+        return [
+            "narrateur|Le jaune s'est glissé jusqu'au barreau.",
+            "copine|Aniss l'a tendu, tout seul.",
+            "papa|Tu as tendu, d'abord.",
+            f"narrateur|{hard}",
+            "maman|Venez, le moulin est près de la grille.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 1 and c == 3:
+        return [
+            "narrateur|Le jaune pend au crochet, tout droit.",
+            "copine|On a posé le moulin.",
+            "papa|Le crochet a tenu, tout droit.",
+            f"narrateur|{hard}",
+            "maman|Essuyez vos mains, tout près.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 2 and c == 1:
+        return [
+            "narrateur|Le jaune rejoint la grille, un peu mouillé.",
+            "copine|On a attendu l'eau.",
+            "papa|Le caniveau n'a plus pris vos bras.",
+            f"narrateur|{hard}",
+            "maman|Rentrez le fil, après la grille.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 2 and c == 2:
+        return [
+            "narrateur|Le fil pose le moulin contre le fer.",
+            "copine|On tenait, tous les deux.",
+            "papa|Je remporte le fil, tout à l'heure.",
+            f"narrateur|{hard}",
+            "maman|La grille vous attend.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 2 and c == 3:
+        return [
+            "narrateur|Les mains d'Aniss laissent le jaune contre le fer.",
+            "copine|C'était plus facile, là.",
+            "papa|Tes bras ont guidé le moulin.",
+            f"narrateur|{hard}",
+            "maman|Le barreau gardera son ombre.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 3 and c == 1:
+        return [
+            "narrateur|Le jaune rejoint la grille, tout sec.",
+            "copine|On a trouvé, Aniss.",
+            "papa|Le vent n'a pas glissé.",
+            f"narrateur|{hard}",
+            "maman|Entrez, le seuil est sec.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    if b == 3 and c == 2:
+        return [
+            "narrateur|Les mains de Mila laissent le jaune au fer.",
+            "copine|On l'a tenu, tous les deux.",
+            "papa|Le porche est resté à sa place.",
+            f"narrateur|{hard}",
+            "maman|Essuie tes chaussures, Aniss.",
+            f"narrateur|{coda}",
+            f"narrateur|{trace}",
+            f"narrateur|{last}",
+        ]
+    return [
+        "narrateur|Le jaune suit le nœud, jusqu'à la grille.",
+        "copine|L'ombre était douce.",
+        "papa|Le nœud a tenu, tout droit.",
+        f"narrateur|{hard}",
+        "maman|Le porche n'a plus rien à dire.",
+        f"narrateur|{coda}",
+        f"narrateur|{trace}",
+        f"narrateur|{last}",
+    ]
+
+
+END_SONS = {1: "vent,fer", 2: "fil,eau", 3: "pierre,porche"}
+
+
+def main() -> None:
     src = json.loads((ROOT / SID / "source.json").read_text(encoding="utf-8"))
-    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in scripts]
-    extra_ids = set(scripts) - {c["chunk_id"] for c in src["chunks"]}
-    if missing or extra_ids:
-        raise SystemExit(f"{SID} missing={missing[:8]} extra={sorted(extra_ids)[:8]}")
-    by = {}
-    for c in src["chunks"]:
-        cid = c["chunk_id"]
-        kind = c.get("kind") or ""
-        if kind in ("passage_question", "transition_question"):
-            scale, rate = 1.28, "slow"
-        else:
-            scale, rate = 1.22, "medium"
-        nc = make_chunk(c, scripts[cid], sons.get(cid, c.get("sons") or ""), scale, rate)
-        if cid in extras:
-            nc.update(extras[cid])
-        by[cid] = nc
-    out = dict(src)
-    out["fil_rouge"] = FIL
-    out["title"] = TITLE
-    out["characters"] = "Aniss, Mila, papa, maman"
-    out["setting"] = "chemin de l'école : grille, caniveau, porche"
-    out["chunks"] = [by[c["chunk_id"]] for c in src["chunks"]]
-    check(SID, out["age_band"], out["chunks"])
-    blob = "\n".join(c["script"] for c in out["chunks"]).lower()
+    by_src = {c["chunk_id"]: c for c in src["chunks"]}
+    out_chunks: dict[str, dict] = {}
+
+    out_chunks["CHK_T0000_P0000"] = voice(
+        by_src["CHK_T0000_P0000"], OPENING, "opening", "bus,papier,vent",
+        {"emphasis": "goutte de cire rouge"},
+    )
+    out_chunks["CHK_T0001_P0000"] = voice(
+        by_src["CHK_T0001_P0000"], T1_CHOICE, "choice", "",
+        {"fields": t3lab("le moulin", "le fil", "le caillou"), "pause_before": 200},
+    )
+
+    for a in (1, 2, 3):
+        base = f"CHK_T0001_P000{a}"
+        out_chunks[base] = voice(
+            by_src[base], T1[a]["passage"], "action", T1[a]["sons"],
+            {"emphasis": T1[a]["emphasis"]},
+        )
+        out_chunks[f"{base}_Q0001"] = voice(
+            by_src[f"{base}_Q0001"], T1[a]["question"], "clue", "",
+            {"fields": T1[a]["qfields"], "emphasis": T1[a]["emphasis"]},
+        )
+        out_chunks[f"{base}_C0001"] = voice(
+            by_src[f"{base}_C0001"], T1[a]["confirm"], "confirm", T1[a]["sons"],
+            {"emphasis": "goutte de cire rouge"},
+        )
+        out_chunks[f"{base}_T0002_P0000"] = voice(
+            by_src[f"{base}_T0002_P0000"], T2_CHOICE[a], "choice", "",
+            {"fields": t3lab("la grille", "le caniveau", "le porche"), "pause_before": 200},
+        )
+        for b in (1, 2, 3):
+            bse = f"{base}_T0002_P000{b}"
+            out_chunks[bse] = voice(
+                by_src[bse], T2[(a, b)]["passage"], "obstacle", T2[(a, b)]["sons"],
+                {"emphasis": T2[(a, b)]["emphasis"]},
+            )
+            out_chunks[f"{bse}_T0003_P0000"] = voice(
+                by_src[f"{bse}_T0003_P0000"], T3_CHOICE[b], "choice", "",
+                {"fields": t3lab(*T3_LABS[b]), "pause_before": 200},
+            )
+            for c in (1, 2, 3):
+                leaf = f"{bse}_T0003_P000{c}"
+                out_chunks[leaf] = voice(
+                    by_src[leaf], t3_pass(a, b, c), "resolution", T3_SONS[(b, c)],
+                    {"emphasis": T3_EMPH[b][c]},
+                )
+                fin = f"{leaf}_F0001"
+                out_chunks[fin] = voice(
+                    by_src[fin], ending(a, b, c), "ending", END_SONS[a],
+                    {"emphasis": "goutte de cire rouge"},
+                )
+
+    missing = [c["chunk_id"] for c in src["chunks"] if c["chunk_id"] not in out_chunks]
+    extra = set(out_chunks) - {c["chunk_id"] for c in src["chunks"]}
+    if missing or extra:
+        raise SystemExit(f"missing={missing[:6]} extra={sorted(extra)[:6]}")
+
+    story = dict(src)
+    story["fil_rouge"] = FIL
+    story["title"] = TITLE
+    story["characters"] = CHARS
+    story["setting"] = SETTING
+    story["chunks"] = [out_chunks[c["chunk_id"]] for c in src["chunks"]]
+
+    check(SID, story["age_band"], story["chunks"])
+
+    blob = "\n".join(c["script"] for c in story["chunks"]).lower()
     labels = " ".join(
         f"{c.get('option_1_label') or ''} {c.get('option_2_label') or ''} {c.get('option_3_label') or ''}"
-        for c in out["chunks"]
+        for c in story["chunks"]
     ).lower()
     whole = blob + "\n" + labels
     for bad in (
@@ -85,580 +1041,156 @@ def write_tree(scripts: dict[str, list[str]], extras: dict[str, dict], sons: dic
         "la troisième",
         "bravo tu as",
         "bon travail",
-        "lila",
-        " parlé peu",
-        "parle peu",
-        "camarade",
-        "timide",
-        "forcer la parole",
-        "il faut attendre",
-        "un camarade",
-        "la cuisine",
-        "le jardin",
-        "la chambre",
-        "dînette",
-        "dinette",
-        "après la sieste",
-        "capitaine",
-        "locomotive",
-        "gare en carton",
-        "cuillère",
-        "véranda",
-        "petite roue",
-        "galet",
-        "épuisette",
-        "nichoir",
+        "zoé",
+        "zoe",
+        "sami",
+        "tom ",
+        "léa",
+        "tout doux",
+        "tout calme",
+        "tout lent",
+        "aujourd'hui",
         "merle",
-        "pommier",
-        "cerf-volant",
-        "cerf volant",
+        "couleur de miel",
+        "j'ai une idée",
+        "j'ai compris",
+        "mission accomplie",
+        "on dirait que notre mission",
+        "il faut attendre",
+        "ancre minuscule",
+        "étoile brune",
+        "fil pâle",
+        "virgule d'or",
+        "croissant de buée",
+        "fil blanc",
+        "perle de verre",
+        "cran en croissant",
+        "œillet de cuivre",
+        "oeillet de cuivre",
+        "virgule de farine",
+        "marque fine",
+        "ombre en forme de flèche",
+        "minuscule symbole",
+        "pastille de colle",
         "soleil en papier",
+        "vestiaire",
+        "maîtresse",
+        "jardinier",
+        "grand-père",
+        "camarade",
+        "parle peu",
         "cloche",
+        "lila",
+        "cuisine",
+        "la chambre",
+        "le jardin",
     ):
         if bad in whole:
-            raise SystemExit(f"{SID} slogan: {bad}")
+            raise SystemExit(f"{SID} slogan/calque: {bad}")
+    if blob.count("en ce moment") != 1:
+        raise SystemExit(f"{SID}: en ce moment ×{blob.count('en ce moment')}")
     if "aniss" not in blob:
         raise SystemExit(f"{SID}: Aniss absent")
     if "mila" not in blob:
         raise SystemExit(f"{SID}: Mila absente")
-    for c in out["chunks"]:
-        if c.get("kind") != "passage_fin":
+    if "goutte de cire rouge" not in blob:
+        raise SystemExit(f"{SID}: indice goutte de cire rouge absent")
+    if "enfant-m|" not in blob:
+        raise SystemExit(f"{SID}: enfant-m absent")
+    if "copine|" not in blob:
+        raise SystemExit(f"{SID}: copine absente")
+    if blob.count("merci") > 3:
+        raise SystemExit(f"{SID}: merci refrain ×{blob.count('merci')}")
+
+    fins = [c["text"] for c in story["chunks"] if c["kind"] == "passage_fin"]
+    if len(fins) != 27 or len(set(fins)) != 27:
+        raise SystemExit(f"fins distinctes {len(set(fins))}/27")
+    lasts = []
+    for c in story["chunks"]:
+        if c["kind"] != "passage_fin":
             continue
-        last_n = [x for x in c["script"].splitlines() if x.startswith("narrateur|")]
-        last = last_n[-1].split("|", 1)[1].lower()
-        if "histoire" in last or "bravo" in last or "bon travail" in last:
-            raise SystemExit(f"{SID} {c['chunk_id']} fin mécanique: {last}")
-    (ROOT / SID / "merged.json").write_text(
-        json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+        last_n = [ln for ln in c["script"].splitlines() if ln.startswith("narrateur|")]
+        lasts.append(last_n[-1])
+        low = last_n[-1].split("|", 1)[1].lower()
+        if "histoire" in low or "bravo" in low or "bon travail" in low:
+            raise SystemExit(f"fin mécanique: {last_n[-1]}")
+        if "cire" not in low:
+            raise SystemExit(f"fin sans cire: {last_n[-1]}")
+    if len(set(lasts)) != 27:
+        raise SystemExit(f"dernières images {len(set(lasts))}/27")
 
+    t3s = [c["text"] for c in story["chunks"] if re.search(r"T0003_P000[123]$", c["chunk_id"])]
+    if len(t3s) != 27 or len(set(t3s)) != 27:
+        raise SystemExit(f"T3 distincts {len(set(t3s))}/27")
 
-OBJ = {
-    1: {
-        "lab": "le moulin",
-        "cap": "Le moulin",
-        "t1q": "le moulin",
-        "t1ans": "moulin",
-        "t1acc": "moulin | le moulin | le papier | tendre",
-        "t1retry": "Il tend le moulin. Il tend quoi ?",
-        "coda": "Une pale de papier tremble encore, toute jaune.",
-        "voy": "Le moulin voyage déjà contre le sac.",
-    },
-    2: {
-        "lab": "le fil",
-        "cap": "Le fil",
-        "t1q": "le fil",
-        "t1ans": "fil",
-        "t1acc": "fil | le fil | la bobine | tendre",
-        "t1retry": "Il tend le fil. Il tend quoi ?",
-        "coda": "Un bout de fil pend, tout calme, contre le fer.",
-        "voy": "Le fil voyage déjà autour du bâton.",
-    },
-    3: {
-        "lab": "le caillou",
-        "cap": "Le caillou",
-        "t1q": "le caillou",
-        "t1ans": "caillou",
-        "t1acc": "caillou | le caillou | la pierre | tendre",
-        "t1retry": "Il tend le caillou. Il tend quoi ?",
-        "coda": "Le caillou reste tiède, contre le barreau.",
-        "voy": "Le caillou voyage déjà contre le papier.",
-    },
-}
+    t2s = [c["text"] for c in story["chunks"] if re.search(r"T0002_P000[123]$", c["chunk_id"])]
+    if len(t2s) != 9 or len(set(t2s)) != 9:
+        raise SystemExit(f"T2 distincts {len(set(t2s))}/9")
 
-T3_LABS = {
-    1: ("le bas", "les mains de Mila", "le crochet"),
-    2: ("la dalle", "le fil", "le bord"),
-    3: ("le vent", "la marche", "le nœud"),
-}
+    counts = [path_words(out_chunks, a, b, c) for a in (1, 2, 3) for b in (1, 2, 3) for c in (1, 2, 3)]
+    print(f"chemins mots min={min(counts)} max={max(counts)} moy={sum(counts)//len(counts)}")
+    if min(counts) < 500:
+        raise SystemExit(f"chemins trop courts: {min(counts)}")
+    if max(counts) > 780:
+        raise SystemExit(f"chemins trop longs: {max(counts)}")
 
+    tts_ok = all(c.get("text_xai_tags") and c.get("notes") and c.get("style_energy") for c in story["chunks"])
+    if not tts_ok:
+        raise SystemExit("TTS incomplet")
 
-def t1_passage(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Aniss sort d'abord le moulin du sac.",
-            "enfant-m|Il est froid.",
-            "papa|Une pale a encore un peu de colle.",
-            "narrateur|Il le tend vers Mila, tout près.",
-            "copine|Dis tourne !",
-            "narrateur|Aniss pose deux doigts sur le papier.",
-            "narrateur|Le vent manque, puis revient, tout petit.",
-            "maman|Le fil et le caillou viennent aussi.",
-            "narrateur|Papa glisse le tout contre le sac.",
-            "narrateur|Le bitume ne garde plus rien.",
-            "copine|Aniss, on part ?",
-            "narrateur|Aniss hoche la tête, tout petit.",
-            "papa|Le moulin d'abord, vous l'avez.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Aniss sort d'abord le fil beige.",
-            "enfant-m|Il gratte un peu.",
-            "maman|La bobine sent encore le tiroir.",
-            "narrateur|Il tend le fil vers Mila.",
-            "copine|Dis nœud !",
-            "narrateur|Aniss enroule un tour, sans un mot.",
-            "narrateur|Le fil se tait, tout calme, autour du bâton.",
-            "papa|Le moulin et le caillou viennent aussi.",
-            "narrateur|Maman les pose contre le papier.",
-            "narrateur|Tout part ensemble, déjà.",
-            "copine|Aniss, tu viens ?",
-            "narrateur|Aniss lève le fil, tout bas.",
-            "maman|Le fil d'abord, vous l'avez.",
-        )
-    return L(
-        "narrateur|Aniss sort d'abord le caillou rond.",
-        "enfant-m|Il est tiède.",
-        "papa|La pierre a séché près du muret.",
-        "narrateur|Il tend le caillou vers Mila.",
-        "copine|Dis pierre !",
-        "narrateur|Aniss le cale contre le bâton, tout lent.",
-        "narrateur|Le papier se tient, sans un mot.",
-        "maman|Le moulin et le fil viennent aussi.",
-        "narrateur|Papa les glisse près des bottes.",
-        "narrateur|Le caillou les garde, tous les trois.",
-        "copine|Aniss, c'est bon ?",
-        "narrateur|Aniss appuie sur la pierre, tout calme.",
-        "papa|Le caillou d'abord, il tient.",
-    )
+    path = ROOT / SID / "merged.json"
+    path.write_text(json.dumps(story, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote {path} bytes={path.stat().st_size}")
 
-
-def t1_confirm(t1: int) -> list[str]:
-    if t1 == 1:
-        return L(
-            "narrateur|Aniss garde le moulin contre lui.",
-            "copine|Il est à toi, un moment.",
-            "narrateur|Mila attend, les mains ouvertes.",
-            "narrateur|Une pale tremble, toute petite, au vent.",
-            "maman|Le papier est tiède, maintenant.",
-            "papa|On pose le moulin où ?",
-            "copine|Vers la grille, peut-être.",
-        )
-    if t1 == 2:
-        return L(
-            "narrateur|Aniss garde le fil contre sa jambe.",
-            "copine|Il est à toi, un moment.",
-            "narrateur|Mila attend, sans répéter.",
-            "narrateur|La bobine sent encore le tiroir.",
-            "maman|Le moulin peut tourner, après.",
-            "papa|On pose le moulin où ?",
-            "copine|Vers le caniveau, peut-être.",
-        )
-    return L(
-        "narrateur|Aniss tient encore le caillou, tout près.",
-        "copine|Il est à toi, un moment.",
-        "narrateur|Mila attend, les lèvres fermées.",
-        "narrateur|Un grain de poussière tombe, puis s'arrête.",
-        "papa|Le porche de l'école attend, plus loin.",
-        "maman|On pose le moulin où ?",
-        "copine|Vers le porche, tout doux.",
-    )
-
-
-def t2_question(t1: int) -> list[str]:
-    return L(
-        f"narrateur|{OBJ[t1]['voy']}",
-        "narrateur|Le chemin monte un peu, encore mouillé.",
-        "narrateur|La grille serre trop les barreaux, déjà.",
-        "maman|Le caniveau emporte trop d'eau, plus bas.",
-        "narrateur|Sous le porche, l'air ne pousse plus.",
-        "papa|On commence où, pour le moulin ?",
-    )
-
-
-def t2_scene(t1: int, t2: int) -> list[str]:
-    if t2 == 1:
-        lead = {
-            1: "narrateur|Le bâton du moulin bute contre deux barreaux.",
-            2: "narrateur|Le fil se coince entre deux barreaux froids.",
-            3: "narrateur|Le caillou reste coincé, trop large pour le fer.",
-        }[t1]
-        return L(
-            lead,
-            "narrateur|La grille serre trop, juste à hauteur d'Aniss.",
-            "copine|Pousse-le, Aniss !",
-            "narrateur|Aniss montre un écart plus bas, du doigt.",
-            "narrateur|Le fer reste froid, trop près des pales.",
-            "copine|Dis-moi où !",
-            "maman|Il montre déjà, avec le doigt.",
-            "papa|Le crochet du loquet brille un peu.",
-            "narrateur|Aniss ouvre un peu les mains.",
-            "papa|Vous faites comment, tous les deux ?",
-        )
-    if t2 == 2:
-        lead = {
-            1: "narrateur|Une pale du moulin touche l'eau trop vite.",
-            2: "narrateur|Le fil traîne dans l'eau trop vite.",
-            3: "narrateur|Le caillou glisse vers l'eau trop vite.",
-        }[t1]
-        return L(
-            lead,
-            "copine|L'eau est trop grande.",
-            "narrateur|Une feuille jaune part déjà, plus bas.",
-            "copine|Attrape, Aniss !",
-            "narrateur|Aniss recule le papier, tout calme.",
-            "narrateur|L'eau frappe la dalle, puis rebondit.",
-            "maman|La dalle tient encore le courant.",
-            "papa|On reste près du caniveau, tous les deux.",
-            "narrateur|Une goutte brille aussi, plus bas.",
-            "papa|Vous faites comment, tous les deux ?",
-        )
-    lead = {
-        1: "narrateur|Les pales du moulin s'arrêtent sous le porche.",
-        2: "narrateur|Le fil pend, trop lourd, sous le porche.",
-        3: "narrateur|Le caillou reste lourd, sous le porche.",
-    }[t1]
-    return L(
-        lead,
-        "copine|Ça ne tourne plus, Aniss !",
-        "narrateur|Mila souffle trop vite, trop fort.",
-        "copine|Dis vent !",
-        "narrateur|Aniss pointe la porte, du doigt.",
-        "narrateur|Le porche garde l'air, trop fermé.",
-        "maman|Tes yeux vont plus loin, Aniss.",
-        "papa|La marche du seuil est encore sèche.",
-        "narrateur|Un rai de soleil reste trop mince.",
-        "papa|Vous faites comment, tous les deux ?",
-    )
-
-
-def t3_question(t2: int) -> list[str]:
-    if t2 == 1:
-        return L(
-            "narrateur|Les barreaux restent trop serrés, encore.",
-            "papa|Le bas, les mains, ou le crochet ?",
-        )
-    if t2 == 2:
-        return L(
-            "narrateur|L'eau tient encore la feuille jaune.",
-            "maman|La dalle, le fil, ou le bord ?",
-        )
-    return L(
-        "narrateur|L'air reste trop calme, encore.",
-        "papa|Le vent, la marche, ou le nœud ?",
-    )
-
-
-def t3_scene(t1: int, t2: int, t3: int) -> list[str]:
-    if t2 == 1 and t3 == 1:
-        wait = {
-            1: "narrateur|Le moulin reste bas, près du bitume.",
-            2: "narrateur|Le fil reste bas, près du bitume.",
-            3: "narrateur|Le caillou reste bas, près du bitume.",
-        }[t1]
-        return L(
-            "copine|On attend.",
-            "narrateur|Aniss cherche l'écart du bas, tout lent.",
-            "narrateur|Mila suit le doigt, enfin, un peu.",
-            wait,
-            "narrateur|Aniss glisse le bâton, sans un mot.",
-            "narrateur|Le fer fait toc, tout net, plus large.",
-            "copine|Toc.",
-            "papa|Le bas laisse un vrai passage.",
-            "maman|Vous avez laissé le temps au fer.",
-        )
-    if t2 == 1 and t3 == 2:
-        hold = {
-            1: "narrateur|Le moulin glisse vers les mains de Mila.",
-            2: "narrateur|Le fil guide le papier vers Mila.",
-            3: "narrateur|Le caillou suit le papier vers Mila.",
-        }[t1]
-        return L(
-            "copine|Pour toi.",
-            "narrateur|Mila ouvre les deux mains, tout près.",
-            "narrateur|Aniss pose le jaune contre ses paumes.",
-            hold,
-            "narrateur|Mila vise l'écart, Aniss pousse le bâton.",
-            "copine|Il passe !",
-            "maman|Le papier a pris le barreau, tout seul.",
-            "papa|Tes mains ont trouvé le fer.",
-        )
-    if t2 == 1 and t3 == 3:
-        hook = {
-            1: "narrateur|Le moulin pend déjà au crochet du loquet.",
-            2: "narrateur|Le fil s'enroule déjà au crochet du loquet.",
-            3: "narrateur|Le caillou cale déjà le crochet du loquet.",
-        }[t1]
-        return L(
-            "copine|Le crochet, Aniss.",
-            "narrateur|Aniss lève le jaune, sans un mot.",
-            "narrateur|Mila attend, puis suit sa main.",
-            hook,
-            "narrateur|Une pale racle le fer, puis se libère.",
-            "copine|Merci.",
-            "papa|Le loquet a gardé le calme.",
-            "maman|Les barreaux peuvent dormir, plus loin.",
-        )
-    if t2 == 2 and t3 == 1:
-        stone = {
-            1: "narrateur|Le moulin sèche contre la dalle.",
-            2: "narrateur|Le fil sèche contre la dalle.",
-            3: "narrateur|Le caillou sèche contre la dalle.",
-        }[t1]
-        return L(
-            "copine|On attend l'eau.",
-            "narrateur|Aniss s'assoit près du caniveau, tout calme.",
-            "narrateur|Mila s'assoit aussi, les genoux contre lui.",
-            stone,
-            "narrateur|L'eau frappe, puis la feuille s'arrête.",
-            "copine|Maintenant.",
-            "papa|La dalle a cassé le courant.",
-            "maman|Vous avez laissé l'eau finir.",
-        )
-    if t2 == 2 and t3 == 2:
-        rope = {
-            1: "narrateur|Le moulin traverse au bout du fil.",
-            2: "narrateur|Le fil part au bout des mains de Mila.",
-            3: "narrateur|Le caillou guide le fil, tout droit.",
-        }[t1]
-        return L(
-            "copine|Tes mains, Aniss.",
-            "narrateur|Aniss tend le fil, tout près.",
-            "narrateur|Mila tire avec lui, tout lent.",
-            rope,
-            "narrateur|Le papier passe au-dessus de l'eau.",
-            "copine|On tient ensemble.",
-            "maman|Vos mains suffisent, toutes les deux.",
-            "papa|L'eau restera après.",
-        )
-    if t2 == 2 and t3 == 3:
-        edge = {
-            1: "narrateur|Le moulin suit le bord sec, déjà.",
-            2: "narrateur|Le fil suit le bord sec, déjà.",
-            3: "narrateur|Le caillou suit le bord sec, déjà.",
-        }[t1]
-        return L(
-            "copine|Le bord, d'abord.",
-            "narrateur|Mila tend la pierre sèche vers Aniss.",
-            "narrateur|Aniss marche, tout doux, sans un mot.",
-            edge,
-            "narrateur|Une goutte rejoint le fond, tout calme.",
-            "copine|C'est doux.",
-            "maman|L'eau garde son souffle, plus loin.",
-            "papa|Le bord a laissé le papier.",
-        )
-    if t2 == 3 and t3 == 1:
-        draft = {
-            1: "narrateur|Le moulin prend le vent de la porte.",
-            2: "narrateur|Le fil prend le vent de la porte.",
-            3: "narrateur|Le caillou prend le vent de la porte.",
-        }[t1]
-        return L(
-            "copine|Le vent, d'abord.",
-            "papa|J'ouvre un peu, à votre hauteur.",
-            "narrateur|Aniss attend, Mila tient le jaune.",
-            draft,
-            "narrateur|Une pale part, tout doux, sans un mot.",
-            "copine|Ça tient !",
-            "papa|La porte a donné le courant.",
-            "maman|Aniss a poussé tout doux.",
-        )
-    if t2 == 3 and t3 == 2:
-        step = {
-            1: "narrateur|Le moulin pose ses pales sur la marche.",
-            2: "narrateur|Le fil pose le papier sur la marche.",
-            3: "narrateur|Le caillou cale le papier sur la marche.",
-        }[t1]
-        return L(
-            "enfant-m|Mila.",
-            "narrateur|Aniss pointe la marche, du doigt.",
-            "narrateur|Mila attend, puis ouvre les mains.",
-            step,
-            "narrateur|Le courant du seuil pousse, tout net.",
-            "copine|Je le tiens.",
-            "maman|Le porche garde son ombre, plus loin.",
-            "papa|Tes mains ont guidé le moulin.",
-        )
-    knot = {
-        1: "narrateur|Le moulin suit le nœud, tour après tour.",
-        2: "narrateur|Le fil serre le nœud, tout calme.",
-        3: "narrateur|Le caillou tient derrière le nœud, tout droit.",
-    }[t1]
-    return L(
-        "copine|Le nœud, Aniss.",
-        "narrateur|Aniss pointe le crochet du porche, du doigt.",
-        "narrateur|Mila attend, puis suit le doigt.",
-        knot,
-        "narrateur|Le jaune se tient, hors du mur.",
-        "copine|Il évite le mur.",
-        "papa|Le nœud a montré la route.",
-        "maman|Vos pieds restent au sec, aussi.",
-    )
-
-
-def fin_scene(t1: int, t2: int, t3: int) -> list[str]:
-    coda = f"narrateur|{OBJ[t1]['coda']}"
-    if t2 == 1 and t3 == 1:
-        return L(
-            "narrateur|Le moulin pose une pale sur le fer.",
-            "enfant-m|Tourne.",
-            "copine|Il est arrivé.",
-            "papa|Le bas a laissé le passage.",
-            "maman|La grille est prête, tout près.",
-            "narrateur|Aniss pose encore une main sur le barreau.",
-            coda,
-            "narrateur|Une feuille jaune tourne autour du papier.",
-        )
-    if t2 == 1 and t3 == 2:
-        return L(
-            "narrateur|Le jaune s'est glissé jusqu'au barreau.",
-            "copine|Aniss l'a tendu, tout seul.",
-            "papa|Tu as tendu, d'abord.",
-            "maman|Venez, le moulin est encore calme.",
-            coda,
-            "narrateur|Aniss s'assoit près de la grille.",
-            "enfant-m|Tiens.",
-            "narrateur|La botte de Mila reste sous le fer.",
-        )
-    if t2 == 1 and t3 == 3:
-        return L(
-            "narrateur|Le jaune pend au crochet, déjà droit.",
-            "copine|On a posé le moulin.",
-            "papa|Le crochet a tenu, tout droit.",
-            "maman|Essuyez vos mains, tout doux.",
-            coda,
-            "narrateur|Aniss recule, un pied après l'autre.",
-            "narrateur|Le loquet de fer reste un peu froid.",
-            "narrateur|Une pale pousse l'air, tout près.",
-        )
-    if t2 == 2 and t3 == 1:
-        return L(
-            "narrateur|Le jaune rejoint la grille, encore mouillé.",
-            "copine|On a attendu l'eau.",
-            "papa|Le caniveau n'a plus pris vos bras.",
-            "maman|Rentrez le fil, après la grille.",
-            coda,
-            "enfant-m|Toc.",
-            "narrateur|Une goutte se tait, puis l'autre.",
-            "narrateur|Le caniveau reste calme, derrière eux.",
-        )
-    if t2 == 2 and t3 == 2:
-        return L(
-            "narrateur|Le fil pose le moulin contre le fer.",
-            "copine|On tenait, tous les deux.",
-            "papa|Je remporte le fil, tout à l'heure.",
-            "maman|La grille vous attend.",
-            coda,
-            "narrateur|Aniss essuie une main sur son pantalon.",
-            "narrateur|Un grain de colle reste sur le fil.",
-            "narrateur|Le fer sent encore l'eau tiède.",
-        )
-    if t2 == 2 and t3 == 3:
-        return L(
-            "narrateur|Les mains d'Aniss laissent le jaune contre le fer.",
-            "copine|C'était plus facile, là.",
-            "papa|Tes bras ont guidé le moulin.",
-            "maman|Le barreau gardera son ombre.",
-            coda,
-            "narrateur|Aniss pose un doigt sur le fer.",
-            "narrateur|Une pale bouge, toute petite.",
-            "narrateur|Un rai de soleil barre encore la grille.",
-        )
-    if t2 == 3 and t3 == 1:
-        return L(
-            "narrateur|Le jaune rejoint la grille, tout sec.",
-            "copine|On a trouvé, Aniss.",
-            "papa|Le vent n'a pas glissé.",
-            "maman|Entrez, le seuil est sec.",
-            coda,
-            "narrateur|Aniss pose un grain de poussière sur la marche.",
-            "narrateur|Le grain ne bouge plus.",
-            "narrateur|Une goutte sèche déjà sur le fer.",
-        )
-    if t2 == 3 and t3 == 2:
-        return L(
-            "narrateur|Les mains de Mila laissent le jaune au fer.",
-            "copine|On l'a tenu, tous les deux.",
-            "papa|Le porche est resté à sa place.",
-            "maman|Essuie tes chaussures, Aniss.",
-            coda,
-            "narrateur|Aniss souffle un peu sur le papier.",
-            "narrateur|Un grain blanchit, puis s'arrête.",
-            "narrateur|Un peu de colle reste derrière la porte.",
-        )
-    return L(
-        "narrateur|Le jaune suit le nœud, jusqu'à la grille.",
-        "copine|L'ombre était douce.",
-        "papa|Le nœud a tenu, tout droit.",
-        "maman|Le porche n'a plus rien à dire.",
-        coda,
-        "narrateur|Aniss touche le fer, un instant.",
-        "narrateur|Une pale revient contre le jaune.",
-        "narrateur|Un oiseau passe, puis le chemin se tait.",
-    )
-
-
-def main() -> None:
-    s: dict[str, list[str]] = {}
-    extras: dict[str, dict] = {}
-    sons: dict[str, str] = {"CHK_T0000_P0000": "vent"}
-
-    s["CHK_T0000_P0000"] = L(
-        "narrateur|Une odeur de pain monte le long du muret.",
-        "narrateur|Le bitume fume un peu, encore mouillé.",
-        "narrateur|La grille de l'école brille, un peu froide.",
-        "papa|Le boulanger a déjà ouvert, Aniss.",
-        "maman|Ton moulin de papier dépasse du sac.",
-        "narrateur|En ce moment, Aniss tient le bâton du moulin.",
-        "enfant-m|Il tourne.",
-        "papa|Mila arrive, tu lui montres ?",
-        "narrateur|Aniss hoche la tête, tout petit.",
-        "narrateur|Les bottes de Mila tapent le bitume, derrière.",
-        "copine|Dis tourne !",
-        "narrateur|Aniss tend le moulin, sans un mot.",
-        "maman|Tu peux lui tendre le papier.",
-        "papa|Merci, tu as tenu le moulin droit.",
-    )
-    s["CHK_T0001_P0000"] = L(
-        "narrateur|Le moulin reste froid, près des pieds.",
-        "narrateur|Un fil beige brille, encore roulé.",
-        "narrateur|Un caillou, puis le papier, à côté.",
-        "papa|Tu prends quoi d'abord, Aniss ?",
-    )
-    extras["CHK_T0001_P0000"] = t3lab("le moulin", "le fil", "le caillou")
-
-    for t1 in (1, 2, 3):
-        p = f"CHK_T0001_P000{t1}"
-        o = OBJ[t1]
-        s[p] = t1_passage(t1)
-        s[f"{p}_Q0001"] = L(
-            f"narrateur|Aniss a tendu {o['t1q']}, tout près.",
-            "maman|Il tend quoi, à Mila ?",
-        )
-        extras[f"{p}_Q0001"] = qf(o["t1ans"], o["t1acc"], o["t1retry"])
-        s[f"{p}_C0001"] = t1_confirm(t1)
-        s[f"{p}_T0002_P0000"] = t2_question(t1)
-        extras[f"{p}_T0002_P0000"] = t3lab("la grille", "le caniveau", "le porche")
-
-        for t2 in (1, 2, 3):
-            sp = f"{p}_T0002_P000{t2}"
-            s[sp] = t2_scene(t1, t2)
-            s[f"{sp}_T0003_P0000"] = t3_question(t2)
-            extras[f"{sp}_T0003_P0000"] = t3lab(*T3_LABS[t2])
-            for t3 in (1, 2, 3):
-                s[f"{sp}_T0003_P000{t3}"] = t3_scene(t1, t2, t3)
-                s[f"{sp}_T0003_P000{t3}_F0001"] = fin_scene(t1, t2, t3)
-
-    write_tree(s, extras, sons)
-    relecture(
-        SID,
-        TITLE,
-        "Aniss veut planter son moulin de papier dans la grille de l'école. "
-        "T1 = moulin / fil / caillou (les trois partent). "
-        "T2 = grille (barreaux trop serrés) / caniveau (eau trop vite) / "
-        "porche (air trop calme). "
-        "T3 = neuf résolutions (bas, tendre le moulin, crochet ; "
-        "dalle, fil, bord ; vent, mains de Mila, nœud). "
-        "Aniss répond avec les mains, sans étiquette. Mila attend, tend. "
-        "Fin : le moulin tourne, on entre.",
-        "Gabarit Lila / cuisine-jardin-chambre / slogan PAR jeté. "
-        "Autre récit que DIF-017 (locomotive), DIF-027 (cuillères, véranda), "
-        "DIF-037 (panier, petite roue), DIF-045 (galet, poisson) et "
-        "DIF-053 (nichoir, merle). "
-        "Chemin d'école, pas cloche ni soleil en papier (DIF-034). "
-        "Héros Aniss (peu de mots, vécu). Copine Mila. Lila hors troupe. "
-        "Fins caniveau et porche ramènent à la grille. "
-        "Désir ≠ leçon. N3 ≤ 16. chunk_id inchangés. Audio non cuit.",
+    (ROOT / SID / "RELECTURE.md").write_text(
+        "# TREE-DIF-061 — Le moulin de papier d'Aniss et la grille de l'école\n\n"
+        "- **Public :** N3 (5–6 ans), audio familial\n"
+        "- **Leçon :** DIF.PAR.001 — camarade qui parle peu / tendre, attendre "
+        "(vécue, jamais dite)\n"
+        "- **Personnages :** Aniss, Mila, papa, maman\n"
+        "- **Lieu :** chemin de l'école : grille, caniveau, porche\n"
+        "- **Structure conservée :** 86 nœuds, 27 chemins, 27 fins textuellement distinctes\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` / graphe `option_*_next` inchangés.\n\n"
+        "## Promesse narrative\n\n"
+        "Un bus passe ; le papier répond depuis le sac. Aniss sort le moulin : "
+        "une goutte de cire rouge tient une pale. Il veut le planter à la grille "
+        "avant que le vent ne se couche sous le porche. Mila veut qu'il crie "
+        "tourne. Aniss lève trop vite : le bâton bute. Sourire parti. "
+        "Moulin, fil, caillou : les trois partent. Grille (barreaux trop serrés), "
+        "caniveau (eau trop vite), porche (air trop sage). Bas, mains de Mila, "
+        "crochet ; dalle, fil, bord ; vent, marche, nœud. "
+        "La goutte de cire rouge prend le vent, avec une trace.\n\n"
+        "## Vécu\n\n"
+        "Aniss veut le moulin **à la grille, maintenant**. Mila ne veut pas "
+        "la même chose : elle veut des mots. Première idée : lever trop vite. "
+        "Ça rate. Chaque choix change l'obstacle et le climax (fer, eau, ombre). "
+        "La leçon se voit : Aniss tend, Mila attend, le silence compte. "
+        "On ne force pas la parole, on change le geste. "
+        "Fin : goutte de cire rouge + image unique du chemin.\n\n"
+        "## Vu et corrigé\n\n"
+        "- Zoé / Tom / Léa / Sami / Lila / cuisine-jardin-chambre / « on va apprendre » jetés.\n"
+        "- Tics « encore / déjà / tout doux / tout calme / tout lent » retirés.\n"
+        "- Héros Aniss (`enfant-m`), Mila (`copine`), rythmes distincts, silence = réponse.\n"
+        "- T1 ne retire pas l'équipement. T1/T2/T3 changent l'action. 9 T2, 27 T3, 27 fins.\n"
+        "- Indice unique : goutte de cire rouge (ouverture + climax). "
+        "Pas d'ancre / étoile / fil pâle / marque fine / pastille de colle.\n"
+        "- Ouverture inventée : le bus, le papier qui répond dans le sac.\n"
+        "- Corps : sourire parti ; envie et inquiétude ; papa s'accroupit.\n"
+        "- Merci vécu (ouverture). Question d'adulte. Un « en ce moment ».\n"
+        "- Monde ≠ TREE-DIF-034 (pas de soleil en papier, vestiaire, pastille).\n"
+        "- Adultes = papa/maman. Pas de maîtresse.\n"
+        "- TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, "
+        "intensité, destinataire, sous-texte, tempo, sourire, respiration). "
+        "`slow` = choix, indice, fin. Action plus vive.\n"
+        "- N3 ≤ 16. `check()` OK. Pas apply.\n\n"
+        "## Contrôles\n\n"
+        "- 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images\n"
+        f"- {min(counts)} à {max(counts)} mots par chemin (moyenne {sum(counts)//len(counts)})\n"
+        "- `text` = `script` collé ; graphe inchangé\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.\n",
+        encoding="utf-8",
     )
 
 
