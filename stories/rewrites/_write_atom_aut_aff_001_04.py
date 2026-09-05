@@ -123,7 +123,7 @@ SCRIPTS = {
             "narrateur|Sur le rebord, un éclat de corde brille.",
             "narrateur|Il est pâle, raide, et il sent le sel.",
             "narrateur|Le vent du port l'a posé là.",
-            "narrateur|Mila ne sait pas à quoi il servira.",
+            "narrateur|Mila le touche du doigt, puis le laisse.",
             "narrateur|Son dessin du bateau sèche sur la table.",
             "narrateur|La peinture jaune luit, un peu collante.",
             "narrateur|En bas, le vrai bateau bleu frappe le quai.",
