@@ -3,8 +3,12 @@
 Texte seulement. Pas d’audio. Pas de git. Pas de `pkill`. Décider, ne pas demander.
 
 Lis aussi : `AGENT_PROMPT.md`, `AGENT_BRIEF.md`, `_lib.py`,
+`CREATIVITY_BRIEF_EXAMPLE3.md` (**obligatoire** — inventivité example3, pas le gabarit),
+`gestion_projet/feedback_chatgpt/examples/example1/RELECTURE.md`,
 `gestion_projet/feedback_chatgpt/examples/example2/raw.js` (étalon **vocal**, pas le récit à coller),
-`gestion_projet/feedback_chatgpt/examples/example2/RELECTURE (1).md`.
+`gestion_projet/feedback_chatgpt/examples/example2/RELECTURE (1).md`,
+et **trois** fichiers `example3/acomytha_histoires_*.txt` (ceux de ta mission).
+La ligne de **ton** arbre dans `example2/AUDIT_EDITORIAL_VOCAL_CATALOGUE (1).md`.
 
 ## Barre
 
