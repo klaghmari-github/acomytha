@@ -1,6 +1,6 @@
 {
   "story_id": "TREE-AUT-005",
-  "fil_rouge": "Après la pluie, à la ferme, le volet bleu tape toc. Le coq a chanté une fois derrière la grange, puis s'est tu. Raphaël veut le rejoindre tout de suite, ballon, seau de grain ou doudou à la main. Pieds nus, la pierre mouillée le pique : il met la botte gauche, puis la droite. Sur le chemin, chat, chien ou poule font autre chose que prévu. La première idée rate. L'animal montre trois coins : le secret du cabanon, le fournil, les tomates. Raphaël comprend sans forcer le coq. Le toc du loquet paie le volet. Les bottes gardent boue et paille.",
+  "fil_rouge": "Après la pluie, à la ferme, le volet bleu tape toc. Le coq a chanté une fois derrière la grange, puis s'est tu. Raphaël veut le rejoindre vite, ballon, seau de grain ou doudou à la main. Pieds nus, la pierre mouillée le pique : il met la botte gauche, puis la droite. Sur le chemin, chat, chien ou poule font autre chose que prévu. La première idée rate. L'animal montre trois coins : le secret du cabanon, le fournil, les tomates. Raphaël comprend sans forcer le coq. Le toc du loquet paie le volet. Les bottes gardent boue et paille.",
   "title": "Le coq et les bottes de Raphaël",
   "lesson_id": "AUT.ROU.001",
   "age_band": "N1",
@@ -94,12 +94,7 @@
       "default_next_chunk": "CHK_T0001_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le ballon rouge",
-        "option_2_label": "le seau bleu",
-        "option_3_label": "le doudou"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0001",
@@ -158,7 +153,7 @@
       "option_2_label": null,
       "option_3_label": null,
       "expected_answer": "les bottes",
-      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes",
+      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
       "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
       "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"medium\">Le ballon est sur le chemin. Raphaël met quoi ?</prosody><break time=\"700ms\"/></speak>",
       "text_xai_tags": "<soft><slow>Le ballon est sur le chemin. Raphaël met quoi ?</slow></soft> [pause]",
@@ -188,13 +183,8 @@
       "night_policy": "skip",
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "expected_answer": "les bottes",
-        "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
-        "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
-        "engine_ok_text": "Oui, les bottes.",
-        "engine_near_text": "Tu es tout près. Écoute l'indice."
-      }
+      "engine_ok_text": "Oui, les bottes.",
+      "engine_near_text": "Tu es tout près. Écoute l'indice."
     },
     {
       "chunk_id": "CHK_T0001_P0001_C0001",
@@ -282,12 +272,7 @@
       "default_next_chunk": "CHK_T0001_P0001_T0002_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le chat",
-        "option_2_label": "le chien",
-        "option_3_label": "la poule"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001",
@@ -342,9 +327,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -375,12 +360,7 @@
       "default_next_chunk": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0001",
@@ -473,8 +453,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0001_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil sent le pain, tout chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le ballon rouge sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil sent le pain, bien chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le ballon rouge sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -485,8 +465,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -699,9 +679,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -732,12 +712,7 @@
       "default_next_chunk": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0001",
@@ -1056,9 +1031,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -1089,12 +1064,7 @@
       "default_next_chunk": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0001",
@@ -1187,8 +1157,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0003_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, tout petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le ballon rouge sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, très petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le ballon rouge sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -1199,8 +1169,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le ballon rouge sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -1417,7 +1387,7 @@
       "option_2_label": null,
       "option_3_label": null,
       "expected_answer": "les bottes",
-      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes",
+      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
       "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
       "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"medium\">Le seau penche, dehors, sur l'eau. Raphaël met quoi ?</prosody><break time=\"700ms\"/></speak>",
       "text_xai_tags": "<soft><slow>Le seau penche, dehors, sur l'eau. Raphaël met quoi ?</slow></soft> [pause]",
@@ -1447,13 +1417,8 @@
       "night_policy": "skip",
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "expected_answer": "les bottes",
-        "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
-        "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
-        "engine_ok_text": "Oui, les bottes.",
-        "engine_near_text": "Tu es tout près. Écoute l'indice."
-      }
+      "engine_ok_text": "Oui, les bottes.",
+      "engine_near_text": "Tu es tout près. Écoute l'indice."
     },
     {
       "chunk_id": "CHK_T0001_P0002_C0001",
@@ -1541,12 +1506,7 @@
       "default_next_chunk": "CHK_T0001_P0002_T0002_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le chat",
-        "option_2_label": "le chien",
-        "option_3_label": "la poule"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001",
@@ -1601,9 +1561,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -1634,12 +1594,7 @@
       "default_next_chunk": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0001",
@@ -1732,8 +1687,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0001_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil sent le pain, tout chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le seau bleu sur la pierre tiède.\nnarrateur|Le dernier grain sonne, tout petit.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil sent le pain, bien chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le seau bleu sur la pierre tiède.\nnarrateur|Le dernier grain sonne, tout petit.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -1744,8 +1699,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -1958,9 +1913,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -1991,12 +1946,7 @@
       "default_next_chunk": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0001",
@@ -2315,9 +2265,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -2348,12 +2298,7 @@
       "default_next_chunk": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0001",
@@ -2446,8 +2391,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0003_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, tout petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le seau bleu sur la pierre tiède.\nnarrateur|Le dernier grain sonne, tout petit.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, très petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le seau bleu sur la pierre tiède.\nnarrateur|Le dernier grain sonne, tout petit.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -2458,8 +2403,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le seau bleu sur la pierre tiède. Le dernier grain sonne, tout petit. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -2676,7 +2621,7 @@
       "option_2_label": null,
       "option_3_label": null,
       "expected_answer": "les bottes",
-      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes",
+      "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
       "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
       "text_ssml": "<speak><prosody rate=\"slow\" pitch=\"medium\">La pierre est froide, sous l'orteil. Raphaël met quoi ?</prosody><break time=\"700ms\"/></speak>",
       "text_xai_tags": "<soft><slow>La pierre est froide, sous l'orteil. Raphaël met quoi ?</slow></soft> [pause]",
@@ -2706,13 +2651,8 @@
       "night_policy": "skip",
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "expected_answer": "les bottes",
-        "accepted_examples": "les bottes | bottes | ses bottes | les bottes d'abord | mettre les bottes | les bottes de Raphaël",
-        "retry_prompt": "Il met les bottes. Raphaël met quoi ?",
-        "engine_ok_text": "Oui, les bottes.",
-        "engine_near_text": "Tu es tout près. Écoute l'indice."
-      }
+      "engine_ok_text": "Oui, les bottes.",
+      "engine_near_text": "Tu es tout près. Écoute l'indice."
     },
     {
       "chunk_id": "CHK_T0001_P0003_C0001",
@@ -2800,12 +2740,7 @@
       "default_next_chunk": "CHK_T0001_P0003_T0002_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le chat",
-        "option_2_label": "le chien",
-        "option_3_label": "la poule"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001",
@@ -2860,9 +2795,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -2893,12 +2828,7 @@
       "default_next_chunk": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0001",
@@ -2991,8 +2921,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0001_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil sent le pain, tout chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le doudou sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le coq est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil sent le pain, bien chaud.\nnarrateur|De la farine flotte, blanche, légère.\nnarrateur|Le chat éternue, et saute d'un sac.\nenfant-m|Le coq est sur la planche !\nnarrateur|Raphaël tape des mains, pour l'appeler.\nnarrateur|Un nuage blanc cache tout, un moment.\nenfant-m|Je ne le vois plus.\nmaman|Plus de bruit, laisse la farine tomber.\nnarrateur|Le coq est là, plumes blanches.\nnarrateur|Raphaël pose le doudou sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -3003,8 +2933,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil sent le pain, tout chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis level=\"moderate\">coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil sent le pain, bien chaud. De la farine flotte, blanche, légère. Le chat éternue, et saute d'un sac. Le <emphasis>coq</emphasis> est sur la planche ! Raphaël tape des mains, pour l'appeler. Un nuage blanc cache tout, un moment. Je ne le vois plus. Plus de bruit, laisse la farine tomber. Le coq est là, plumes blanches. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -3217,9 +3147,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -3250,12 +3180,7 @@
       "default_next_chunk": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0002_T0003_P0001",
@@ -3574,9 +3499,9 @@
       "length_scale_piper": 1.3,
       "rate_label": "slow",
       "pause_after_ms": 900,
-      "option_1_label": "le matin",
-      "option_2_label": "après la sieste",
-      "option_3_label": "le soir",
+      "option_1_label": "le secret du cabanon",
+      "option_2_label": "le fournil",
+      "option_3_label": "les tomates",
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
@@ -3607,12 +3532,7 @@
       "default_next_chunk": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
       "night_policy": "play",
       "locale": "fr-FR",
-      "voice_id": "fr_FR-siwis-medium",
-      "fields": {
-        "option_1_label": "le secret du cabanon",
-        "option_2_label": "le fournil",
-        "option_3_label": "les tomates"
-      }
+      "voice_id": "fr_FR-siwis-medium"
     },
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0001",
@@ -3705,8 +3625,8 @@
     {
       "chunk_id": "CHK_T0001_P0003_T0002_P0003_T0003_P0002",
       "kind": "passage",
-      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
-      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, tout petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le doudou sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
+      "text": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le coq cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.",
+      "script": "narrateur|Le fournil a une pierre tiède, au bord.\nnarrateur|La poule picore la farine, chh.\nenfant-m|Coq, viens, c'est bon ici !\nnarrateur|Raphaël tape des mains, trop fort.\nnarrateur|La farine saute, et le coq cligne.\nenfant-m|Il se ferme, très petit.\nmaman|Plus de mains, la pierre suffit.\nnarrateur|La poule picore, sans bruit, maintenant.\nnarrateur|Le coq baisse une aile, moins dur.\nnarrateur|Raphaël pose le doudou sur la pierre.\nnarrateur|Un peu de grain, s'il en reste.\nenfant-m|Je ne te prends pas.\nnarrateur|Le coq descend, une patte, puis l'autre.\nnarrateur|La vapeur ressemble au lait du bol.\nenfant-m|Il est venu, tout seul.",
       "sons": "four,farine",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -3717,8 +3637,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, tout petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis level=\"moderate\">coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Le fournil a une pierre tiède, au bord. La poule picore la farine, chh. Coq, viens, c'est bon ici ! Raphaël tape des mains, trop fort. La farine saute, et le <emphasis>coq</emphasis> cligne. Il se ferme, très petit. Plus de mains, la pierre suffit. La poule picore, sans bruit, maintenant. Le coq baisse une aile, moins dur. Raphaël pose le doudou sur la pierre. Un peu de grain, s'il en reste. Je ne te prends pas. Le coq descend, une patte, puis l'autre. La vapeur ressemble au lait du bol. Il est venu, tout seul. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",

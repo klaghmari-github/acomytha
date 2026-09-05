@@ -221,8 +221,9 @@ def voice(src: dict, lines: list[str], profile: str, sons: str, extra: dict | No
     out["night_policy"] = extra.get("night_policy", "play")
     out["locale"] = "fr-FR"
     out["voice_id"] = "fr_FR-siwis-medium"
+    out.update(extra.get("fields") or {})
     for k, v in extra.items():
-        if k in ("emphasis", "note", "pause_before_ms", "night_policy"):
+        if k in ("emphasis", "note", "pause_before_ms", "night_policy", "fields"):
             continue
         out[k] = v
     return out
@@ -595,7 +596,7 @@ def t3_lines(a: int, b: int, c: int) -> list[str]:
             "narrateur|Une fente reste, assez pour voir.",
         ],
         (1, 2): [
-            "narrateur|Le fournil sent le pain, tout chaud.",
+            "narrateur|Le fournil sent le pain, bien chaud.",
             "narrateur|De la farine flotte, blanche, légère.",
             "narrateur|Le chat éternue, et saute d'un sac.",
             f"{CHILD}|Le coq est sur la planche !",
@@ -666,7 +667,7 @@ def t3_lines(a: int, b: int, c: int) -> list[str]:
             f"{CHILD}|Coq, viens, c'est bon ici !",
             "narrateur|Raphaël tape des mains, trop fort.",
             "narrateur|La farine saute, et le coq cligne.",
-            f"{CHILD}|Il se ferme, tout petit.",
+            f"{CHILD}|Il se ferme, très petit.",
             "maman|Plus de mains, la pierre suffit.",
             "narrateur|La poule picore, sans bruit, maintenant.",
             "narrateur|Le coq baisse une aile, moins dur.",
@@ -728,7 +729,6 @@ def t3_lines(a: int, b: int, c: int) -> list[str]:
 def ending_lines(a: int, b: int, c: int) -> list[str]:
     obj = OBJ[a]["name"]
     ani = ANI[b]["name"]
-    lieu = LIEU[c]["name"]
     traces = {
         (1, 1, 1): [
             f"narrateur|{obj.capitalize()} garde une paille collée.",
@@ -1113,7 +1113,7 @@ def build() -> None:
     merged["fil_rouge"] = (
         "Après la pluie, à la ferme, le volet bleu tape toc. Le coq a chanté "
         "une fois derrière la grange, puis s'est tu. Raphaël veut le rejoindre "
-        "tout de suite, ballon, seau de grain ou doudou à la main. Pieds nus, "
+        "vite, ballon, seau de grain ou doudou à la main. Pieds nus, "
         "la pierre mouillée le pique : il met la botte gauche, puis la droite. "
         "Sur le chemin, chat, chien ou poule font autre chose que prévu. "
         "La première idée rate. L'animal montre trois coins : le secret du "
