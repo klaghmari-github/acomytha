@@ -3,10 +3,15 @@
 Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
 
 ## Vécu
-Sarah veut un carillon au prunier, pour Nino, avant le vent du soir. T1 = bocal (table, verre qui tinte) / grelot (marche, son qui court) / ruban bleu (branche basse, boucle vide) : le voyage change. T2 = soleil de craie (trait à finir) / coccinelle (pas encore volée) / sandale (un pied nu). T3 = neuf résolutions : attendre le soleil, proposer tout bas, s'asseoir ; attendre l'envol, un grelot tout près, garder le carillon (accepter le non) ; aider la sandale, un tout petit regard, plus tard. La leçon se vit : elle propose, elle accepte oui, non, ou une autre idée. Fin : toc du verre, nœud bleu, prunier.
+Fin d'après-midi au jardin : prunier mûr, fil à linge, terre sucrée. Sarah veut un carillon au prunier, pour que Nino entende le jardin chanter avec elle, avant le vent du soir. Elle crie trop tôt : Nino ne se tourne pas, le bocal glisse, papa remercie qu'elle l'ait rattrapé. T1 change le premier geste (verre trop fort à la table / grelot trop fort sur la marche / boucle vide à la branche). T2 : Nino a autre chose (soleil de craie, coccinelle, sandale). T3 change l'invitation : attendre, parler près, s'asseoir ; attendre l'envol, un son minuscule, garder le carillon (le non compte) ; aider, un petit regard, plus tard. La leçon se vit : elle propose, elle accepte oui, non, ou une autre heure. Chaque fin paie le toc, le nœud, le prunier. Autre récit que TREE-COL-015 (pas d'escargot, pas de piste d'argent).
 
 ## Vu et corrigé
-N3 ≤ 16. Sara et le slogan « Inviter sans forcer » jetés. Autre récit que DIF-021 (pas de fort, pas de coussins), DIF-031 (pas de potager, pas de tomates), DIF-041 (pas de wagon, pas de mer) et DIF-049 (pas de poissons de papier, pas de tapis). Un merci de papa lié au geste (tenir le bocal). Audio non cuit.
+- Titre noyau conservé. N3 ≤ 16. Troupe D16 : Sarah, Nino, papa, maman.
+- Sara et le slogan « Inviter sans forcer » jetés. Première idée échoue (cri, toc plat).
+- 27 fins textuellement distinctes. Un merci vécu (rattraper le bocal), pas un refrain Bravo.
+- TTS par chunk (profils opening/choice/clue/confirm/action/obstacle/resolution/ending).
+- `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
+- Tics « tout doux / tout calme / encore / déjà » écartés. Silence de Nino = réponse.
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
