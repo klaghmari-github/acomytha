@@ -72,3 +72,16 @@ Passe `examples/example1/` (5 sept., SSD puis worktree) — **intégré** dans `
 - **Modifié à l’intégration (N1).** Titre catalogue inchangé. « en ce moment » ajouté. « aujourd’hui, » / possède / expédition / proue / immobilise / scintille adoucis. Papa : « Merci, on t’attendra. »
 - **Pas copié tel quel.** « Capitaine / navire / volet jaune » restent **dans cette histoire** (c’est l’étalon bateau). Toujours interdit de les recoller ailleurs (avis2).
 - **Passe orale.** Les puces « première / deuxième / troisième » et les faits empilés ont été reliés avant le bake audio.
+
+Passe `examples/example3/` (5 sept., SSD puis worktree) — **F-NAR-019**, 100 txt / 1500 gabarits :
+
+- **Voler.** Objet nommé (couleur, poids, bruit, mission précise) + coin d’aventure **dans** le monde du xlsx + 2e imprévu plus rusé.
+- **Ne pas coller.** Refrains industriels : « Aujourd’hui, je mène la mission », merle 3 notes, lumière couleur de miel, « Mission accomplie », « J’ai compris ».
+- Brief : `stories/rewrites/CREATIVITY_BRIEF_EXAMPLE3.md`.
+
+Passe `examples/example4/` (5 sept. 09:45, SSD = worktree, 100 txt identiques) — **édition finale v2**, même 1500 histoires, prose plus incarnée :
+
+- **Voler (récit).** Cinq manières de commencer (idée déjà dans l’air ; lieu connu + détail nouveau ; sensoriel d’abord ; journée douce → expédition). Indice unique dès l’ouverture, **payé** au climax (inventer le sien, pas recycler marque fine / ombre-flèche / tache). Corps : sourire parti, poitrine bousculée, adulte accroupi. 2e ruse ; l’enfant refuse de foncer. Dénouement qui a failli ne pas arriver.
+- **Voler (méta récit).** Par chunk : `notes` (arc, intention, émotion, intensité 1–3, destinataire, sous-texte, tempo, sourire, respiration), `text_xai_tags`, `text_ssml`, pitch/volume/pauses, `length_scale_piper`. `slow` = choix, danger doux, émotion — pas l’action.
+- **Focus.** Récit + métadonnées du récit. Pas d’audio TREE. Brief : `stories/rewrites/CREATIVITY_BRIEF_EXAMPLE4.md`.
+- **Scan.** `watch_feedback_chatgpt.py` ne voit que la racine (`.txt/.md/.html/.pdf`) : les vagues `examples/` se consultent à la main. Rien de plus récent qu’example4 au 5 sept. 10:45.
