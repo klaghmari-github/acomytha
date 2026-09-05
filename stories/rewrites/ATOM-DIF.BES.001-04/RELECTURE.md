@@ -41,12 +41,12 @@ Nino veut la tour **maintenant**. Impatience (tous les cubes, main trop vite sou
 - Leçon non dite : on la voit quand il pose un cube, puis un autre, quand il s'arrête sous le canapé. Pas « on peut répéter », pas « observer d'abord », pas « c'est répéter ».
 - Un « en ce moment ». Un merci vécu. Adulte + question. Papa ajouté. Dump Bérénice / Clément / Victorina absents.
 - TTS complet (5) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration). `slow` = question et fin. Obstacle un peu plus tendu sous le canapé.
-- 596 mots. N1 ≤ 10. `check()` OK. Pas apply.
+- 706 mots. N1 ≤ 10. `check()` OK. Pas apply.
 
 ## Contrôles
 
 - 5 chunks, graphe inchangé
-- 596 mots
+- 706 mots
 - `text` = `script` collé
 
 ## Non vérifié
