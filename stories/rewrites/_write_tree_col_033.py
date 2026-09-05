@@ -152,6 +152,8 @@ def voice(src: dict, lines: list[str], profile: str, sons: str = "", extra: dict
         if "note" in extra:
             m["note"] = extra["note"]
     text, script = from_script(lines)
+    if m.get("emphasis") and m["emphasis"] not in text:
+        m["emphasis"] = None
     out = deepcopy(src)
     out["text"] = text
     out["script"] = script
@@ -363,7 +365,7 @@ def t3_scenes() -> dict:
             (N, "Nino attend. Le ballon ne bouge plus contre le pied."),
             (E, "À l'école, près des crochets, une voix a parlé trop près."),
             (E, "Ça m'a serré le ventre. La maîtresse m'a donné le galet."),
-            (P, "Nous t'avons entendu jusqu'au bout. Merci d'avoir attendu."),
+            (P, "Nous t'avons entendu jusqu'au bout."),
             (N, "Le galet repose sur une latte, un grain de sable dessus."),
         ),
         S(
@@ -388,7 +390,7 @@ def t3_scenes() -> dict:
             (N, "Nino s'arrête. Le ballon reste coincé sous son coude."),
             (E, "Près des crochets, une voix a parlé trop près."),
             (E, "Mon ventre s'est serré. La maîtresse m'a mis le galet là."),
-            (M, "Merci d'avoir posé tes pieds. Nous avons tout."),
+            (M, "Tes pieds sont posés. Nous avons toute la phrase."),
             (N, "Un grain de sable reste dans la couture de la poche."),
         ),
         S(
@@ -440,7 +442,7 @@ def t3_scenes() -> dict:
             (N, "Nino pose l'anse. Il souffle par le nez."),
             (E, "Près des crochets, une voix a parlé trop près."),
             (E, "La maîtresse m'a donné le galet. Mon ventre s'est serré."),
-            (M, "Merci d'avoir posé l'anse. Nous t'écoutions."),
+            (M, "L'anse est posée. Nous t'écoutions."),
             (N, "Le galet reste dans le seau, au pied de la latte."),
         ),
         S(
@@ -490,7 +492,7 @@ def t3_scenes() -> dict:
             (N, "Nino hoche. Il attend le dernier grain."),
             (E, "Une voix trop près, aux crochets. Mon ventre s'est serré."),
             (E, "La maîtresse a dit de vous le donner, avec la pierre."),
-            (M, "Merci. Ma paume a le galet. Mes oreilles ont le mot."),
+            (M, "Ma paume a le galet. Mes oreilles ont le mot."),
             (N, "Un halo de poussière blonde reste sur sa peau."),
         ),
         S(
@@ -567,7 +569,7 @@ def t3_scenes() -> dict:
             (N, "Nino attendait ce bouclage, lèvres serrées."),
             (E, "Une voix trop près, aux crochets. Ça m'a serré."),
             (E, "Elle m'a donné le galet. Le doudou a entendu, lui aussi."),
-            (P, "Ma paume a la pierre. Merci d'avoir attendu la lanière."),
+            (P, "Ma paume a la pierre. La lanière est bouclée."),
             (N, "Le doudou penche vers la main, museau contre le pouce."),
         ),
         S(
@@ -594,7 +596,7 @@ def t3_scenes() -> dict:
             (N, "Nino attend que le bois se taise."),
             (E, "En haut, j'ai eu le ventre serré, comme aux crochets."),
             (E, "Une voix trop près. La maîtresse m'a donné le galet."),
-            (M, "Merci d'avoir attendu le banc. Nous avons tout."),
+            (M, "Le banc s'est tu. Nous avons toute la phrase."),
             (N, "Le ballon rouge cale un pied de banc, pour ne plus rouler."),
         ),
         S(
@@ -645,7 +647,7 @@ def t3_scenes() -> dict:
             (N, "Nino pose les deux pieds dans l'herbe avant de parler."),
             (E, "Une voix trop près, aux crochets. Mon ventre s'est serré."),
             (E, "La maîtresse a dit : tu le donnes, ce soir."),
-            (M, "Tu l'as donné. Merci d'avoir posé tes pieds."),
+            (M, "Tu l'as donné. Tes pieds sont dans l'herbe."),
         ),
         S(
             (N, "La paume de maman se referme. Le galet y fait un nid."),
@@ -671,7 +673,7 @@ def t3_scenes() -> dict:
             (N, "Il lâche. Le plastique fait un dernier clac."),
             (E, "En haut, le ventre, comme aux crochets. Une voix trop près."),
             (E, "Elle m'a donné le galet. Le seau l'a gardé."),
-            (P, "Merci d'avoir laissé le clac. La phrase est entière."),
+            (P, "Le clac est passé. La phrase est entière."),
             (N, "Le seau bleu s'adosse au banc, anse vers Nino."),
         ),
         S(
@@ -722,7 +724,7 @@ def t3_scenes() -> dict:
             (N, "Nino saute du dernier barreau. Deux pieds dans l'herbe."),
             (E, "Une voix trop près, aux crochets. Mon ventre s'est serré."),
             (E, "Elle a dit de le mettre dans une main de la maison."),
-            (M, "Ma main est celle-là. Merci d'avoir visé la paume."),
+            (M, "Ma main est celle-là. Tu as visé la paume."),
         ),
         S(
             (N, "Le seau vide sonne un peu, léger, contre la cuisse de papa."),
@@ -773,7 +775,7 @@ def t3_scenes() -> dict:
             (N, "La sonnette file. Nino reprend, main sur l'oreille."),
             (E, "Une voix trop près, aux crochets. Ça serrait en haut."),
             (E, "Elle m'a donné le galet. Il voyage avec le doudou."),
-            (M, "Merci d'avoir laissé la sonnette. On a tout."),
+            (M, "La sonnette est partie. On a toute la phrase."),
             (N, "L'échelle jette une ombre en barreaux sur ses chaussures."),
         ),
         S(
@@ -798,7 +800,7 @@ def t3_scenes() -> dict:
             (N, "Nino attendait ce pli. Il lâche le menton du doudou."),
             (E, "Aux crochets, une voix trop près. Mon ventre s'est serré."),
             (E, "La maîtresse a dit de le poser dans une main, ce soir."),
-            (M, "C'est fait. Merci d'avoir attendu le filet."),
+            (M, "C'est fait. Le filet est plié."),
             (N, "Le doudou penche vers la paume, comme pour vérifier."),
         ),
         S(
@@ -825,7 +827,7 @@ def t3_scenes() -> dict:
             (N, "Le siège ralentit, s'immobilise, un peu de travers."),
             (E, "Aux crochets, une voix trop près. Ça m'a serré le ventre."),
             (E, "La maîtresse m'a donné le galet. Je voulais une clochette."),
-            (P, "Le siège est sage. Merci d'avoir attendu."),
+            (P, "Le siège est sage. Ta phrase peut marcher."),
             (N, "Le ballon cale le pied du banc. Le galet tient sur une latte."),
         ),
         S(
@@ -875,7 +877,7 @@ def t3_scenes() -> dict:
             (N, "Nino pose une main sur la chaîne, sans la bouger."),
             (E, "Aux crochets, une voix trop près. Ça serrait."),
             (E, "La maîtresse m'a donné ça. Je voulais que ça clique, ici."),
-            (P, "Ça a cliqué dans ma main. Merci d'avoir posé, pas lancé."),
+            (P, "Ça a cliqué dans ma main. Tu as posé, pas lancé."),
             (N, "Un maillon laisse une marque tiède sur les doigts de Nino."),
         ),
         S(
@@ -902,7 +904,7 @@ def t3_scenes() -> dict:
             (N, "Nino recale. Le bleu s'immobilise entre eux."),
             (E, "Une voix trop près, aux crochets. Mon ventre s'est serré."),
             (E, "Elle m'a donné le galet. Le seau l'a rattrapé sous le siège."),
-            (M, "Merci d'avoir recalé. Nous t'écoutions."),
+            (M, "Le seau est recalé. Nous t'écoutions."),
             (N, "Une latte du banc a une tache ronde, l'ombre du seau."),
         ),
         S(
@@ -952,7 +954,7 @@ def t3_scenes() -> dict:
             (N, "Nino tient le maillon. Le souffle passe."),
             (E, "Une voix trop près, aux crochets. Mon ventre s'est serré."),
             (E, "Elle m'a donné ça. Je le mets dans une main, pas par terre."),
-            (P, "Ma main l'a. Merci d'avoir tenu la chaîne."),
+            (P, "Ma main l'a. Tu as tenu la chaîne."),
             (N, "Le seau vide reste entre ses genoux, léger comme un secret fini."),
         ),
         S(
@@ -979,7 +981,7 @@ def t3_scenes() -> dict:
             (N, "Nino cale le doudou entre eux. Il reprend."),
             (E, "Aux crochets, une voix trop près. Ça m'a serré."),
             (E, "La maîtresse m'a donné le galet. Je le disais au tissu, pas à vous."),
-            (M, "Maintenant c'est à nous. Merci d'avoir calé l'ami."),
+            (M, "Maintenant c'est à nous. L'ami est calé."),
             (N, "Une oreille du doudou touche le galet, comme une joue."),
         ),
         S(
@@ -1029,7 +1031,7 @@ def t3_scenes() -> dict:
             (N, "Nino pose les deux mains derrière le dos, pour ne plus couper."),
             (E, "Aux crochets, une voix trop près. Ça m'a serré le ventre."),
             (E, "La maîtresse m'a donné le galet. Je le mets dans ta main."),
-            (M, "Il y est. Merci d'avoir laissé tes mains derrière."),
+            (M, "Il y est. Tes mains sont restées derrière."),
             (N, "Le doudou, sur le siège, penche une oreille vers la paume."),
         ),
         S(
@@ -1222,7 +1224,7 @@ def build() -> None:
         L(
             (P, "Oui. Il attend que les visages se lèvent."),
             (N, "Maman plisse les yeux. Papa lâche la fermeture."),
-            (M, "Nous te voyons, minuscule, en haut du métal."),
+            (M, "Nous te voyons, là-haut, sur le métal."),
             (E, "Le mot n'a pas dévalé. Il est resté avec moi."),
             (P, "Merci d'avoir attendu nos visages."),
             (N, "Le palier vibre un peu, puis s'arrête."),

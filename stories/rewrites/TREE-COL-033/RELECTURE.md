@@ -27,7 +27,7 @@ Nino veut la clochette **maintenant**, et dire le mot tout de suite. Il coupe. P
 - Un merci vécu, lié au geste (attendre le filet, les visages, la chaîne).
 - 27 fins textuellement distinctes : chaîne + place unique du galet + mot entendu.
 - TTS par fonction (opening / choice / clue / confirm / action / obstacle / resolution / ending).
-- Mots par chemin : 719–772 (moyenne 745).
+- Mots par chemin : 719–768 (moyenne 744).
 
 ## Direction vocale
 
