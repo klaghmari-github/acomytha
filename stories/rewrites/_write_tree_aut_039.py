@@ -1014,7 +1014,7 @@ BODY = {
             "narrateur|Un cube tapote le parquet.",
             "narrateur|Au fond, l'oreille de bois.",
             "enfant-m|Le chemin l'a mené là.",
-            "maman|Le vrai chemin, c'était l'osier.",
+            "maman|Il était au fond, Nino.",
             "papa|Le cartable est contre la chaise.",
             "narrateur|Nino met le lièvre dans la poche.",
             "narrateur|Il porte la caisse vers la porte.",
@@ -1164,7 +1164,7 @@ FIN = {
             "narrateur|Ils ont cherché dans la cuisine.",
             "narrateur|La casserole tic, derrière eux.",
             "narrateur|La rosée sèche sur le banc de mousse.",
-            "narrateur|Le chemin reprend, bas et clair.",
+            "narrateur|Nino avance, la caisse contre la hanche.",
         ]
     ),
     (1, 1, 2): vet(
@@ -1190,7 +1190,7 @@ FIN = {
             "narrateur|L'ombre des cubes danse sous la lampe.",
             "narrateur|La grille de cave est noire.",
             "narrateur|Dehors, les lumières des maisons s'allument.",
-            "narrateur|L'osier ne cache plus rien.",
+            "narrateur|La corde reste dans sa paume, sûre.",
         ]
     ),
     (1, 2, 1): vet(
@@ -1255,7 +1255,7 @@ FIN = {
             "narrateur|Une cuillère minuscule brille moins.",
             "narrateur|Les joues de Nino sont chaudes.",
             "narrateur|L'osier sent l'orange, un peu.",
-            "narrateur|Le banc garde leur poids.",
+            "narrateur|La tasse miniature s'est tue, au fond.",
         ]
     ),
     (1, 3, 3): vet(
@@ -1320,7 +1320,7 @@ FIN = {
             "narrateur|Le livre a une page un peu fraîche.",
             "narrateur|La rosée sèche sur le banc de mousse.",
             "narrateur|Le moineau s'est envolé.",
-            "narrateur|Les pas reprennent, clairs.",
+            "narrateur|Le livre frais tape le fond, au rythme des pas.",
         ]
     ),
     (2, 2, 2): vet(
@@ -1372,7 +1372,7 @@ FIN = {
             "narrateur|L'osier sent le jardin tiède.",
             "narrateur|Les joues de Nino restent chaudes.",
             "narrateur|Une feuille reste dans l'assiette.",
-            "narrateur|Le banc garde leur poids.",
+            "narrateur|L'herbe lâche leurs chaussures, enfin.",
         ]
     ),
     (2, 3, 3): vet(
@@ -1380,7 +1380,7 @@ FIN = {
             "narrateur|Nino souffle sur l'oreille du lièvre.",
             "narrateur|L'assiette garde un rond de lampe.",
             "enfant-m|C'est son soleil.",
-            "papa|La rue en a un, trop.",
+            "papa|La rue a le sien, jaune.",
             "maman|Passe, je ferme le pas.",
             "narrateur|La petite assiette reflète le réverbère.",
             "narrateur|La grille de cave est noire.",
@@ -1393,12 +1393,12 @@ FIN = {
             "narrateur|Le cartable attend, sage, à côté.",
             "narrateur|Nino porte la caisse, les cubes au fond.",
             "enfant-m|Le chemin de cubes est fini.",
-            "papa|Le vrai chemin est dehors.",
+            "papa|Dehors, le banc t'attend.",
             "maman|Le bonnet est sur ta tête.",
             "narrateur|Un cube tapote le fond, très bas.",
             "narrateur|La rosée sèche sur le banc de mousse.",
             "narrateur|Le rideau jaune reste derrière.",
-            "narrateur|Les pas reprennent, clairs.",
+            "narrateur|Un cube tapote au rythme des pas.",
         ]
     ),
     (3, 1, 2): vet(
@@ -1424,7 +1424,7 @@ FIN = {
             "narrateur|L'ombre des cubes danse sur le mur.",
             "narrateur|Les maisons, dehors, s'allument.",
             "narrateur|La chambre garde un carré de veilleuse.",
-            "narrateur|L'osier ne cache plus rien.",
+            "narrateur|Le couloir sent le foin, un instant.",
         ]
     ),
     (3, 2, 1): vet(
@@ -1437,7 +1437,7 @@ FIN = {
             "narrateur|Une bande jaune colore la page.",
             "narrateur|La rosée sèche sur le banc de pierre.",
             "narrateur|Le cartable fait zzz.",
-            "narrateur|Le chemin reprend, bas et clair.",
+            "narrateur|La bande jaune voyage avec la page.",
         ]
     ),
     (3, 2, 2): vet(
@@ -1475,8 +1475,8 @@ FIN = {
             "papa|Le cartable fait zzz.",
             "narrateur|Une tasse miniature est au fond.",
             "narrateur|La rosée sèche sur le banc de mousse.",
-            "narrateur|La fermeture du cartable se tait.",
-            "narrateur|Les pas reprennent, clairs.",
+            "narrateur|Zzz, le cartable se tait.",
+            "narrateur|Sans ting, la tasse voyage au fond.",
         ]
     ),
     (3, 3, 2): vet(
@@ -1591,6 +1591,14 @@ def write_039() -> None:
         raise SystemExit(f"fins {len(fins)} != 27")
     if len(set(fins)) != 27:
         raise SystemExit("fins non distinctes")
+    lasts = []
+    for c in out["chunks"]:
+        if c.get("kind") != "passage_fin":
+            continue
+        ns = [ln.split("|", 1)[1] for ln in c["script"].splitlines() if ln.startswith("narrateur|")]
+        lasts.append(ns[-1])
+    if len(set(lasts)) != 27:
+        raise SystemExit(f"dernières lignes non uniques: {len(set(lasts))}")
     bodies = [c["text"] for c in out["chunks"] if c["chunk_id"].endswith(("T0003_P0001", "T0003_P0002", "T0003_P0003"))]
     if len(set(bodies)) != 27:
         raise SystemExit("T3 non distincts")
