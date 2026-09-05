@@ -332,6 +332,8 @@ def t1_confirm(t1: int) -> list[str]:
             "papa|On reste dans la cuisine ?",
             "enfant-f|Oui, papa.",
             "narrateur|Le capuchon penche, contre la robe.",
+            "narrateur|Un peu de poudre reste au creux de sa paume.",
+            "maman|Vous emportez aussi le fouet, et les tasses.",
         )
     if t1 == 2:
         return L(
@@ -344,6 +346,8 @@ def t1_confirm(t1: int) -> list[str]:
             "maman|Vos mains, au-dessus du plateau ?",
             "copain|Oui, maman.",
             "narrateur|Le capuchon penche, près du fouet.",
+            "narrateur|Le clic dans la poche rythme ses pas.",
+            "papa|Le bidon et les tasses voyagent avec vous.",
         )
     return L(
         "enfant-f|Sur le plateau.",
@@ -355,6 +359,8 @@ def t1_confirm(t1: int) -> list[str]:
         "papa|On y va, tous les quatre ?",
         "enfant-f|Oui.",
         "narrateur|Le capuchon penche, au-dessus des tasses.",
+        "narrateur|La petite tasse tremble, puis se tient.",
+        "maman|Le bidon et le fouet partent avec le plateau.",
     )
 
 
@@ -365,17 +371,20 @@ def t2_question(t1: int) -> list[str]:
             "narrateur|L'étagère reste trop haute.",
             "narrateur|Le frigo garde son lait, trop loin.",
             "narrateur|Sous la table, l'ombre est basse.",
+            "narrateur|Le capuchon penche, à chaque pas.",
             "papa|Nina, vous mélangez où ?",
         )
     if t1 == 2:
         return L(
             "narrateur|Le fouet frotte la poche, un peu rêche.",
             "narrateur|L'étagère, le frigo, ou sous la table.",
+            "narrateur|Le capuchon penche, à chaque pas.",
             "maman|Vous mélangez où, Nina ?",
         )
     return L(
         "narrateur|Les tasses s'entrechoquent, sur le plateau.",
         "narrateur|L'étagère, le frigo, ou sous la table.",
+        "narrateur|Le capuchon penche, à chaque pas.",
         "papa|Vous mélangez où, Nina ?",
     )
 
@@ -523,15 +532,18 @@ def t3_question(t2: int) -> list[str]:
     if t2 == 1:
         return L(
             "narrateur|L'étagère attend, trop haute.",
+            "narrateur|Nina pose une main sur le bois, sans sauter.",
             "papa|Les bras, le tabouret, ou le torchon ensemble ?",
         )
     if t2 == 2:
         return L(
             "narrateur|La poignée attend, trop loin.",
+            "narrateur|Nina pose une main sur le joint, sans tirer.",
             "maman|La poignée, le bac, ou le tabouret ?",
         )
     return L(
         "narrateur|L'ombre sous la table attend.",
+        "narrateur|Nina pose une main sur le pied, sans forcer.",
         "papa|Le passage, écarter, ou un dessous un dessus ?",
     )
 
@@ -1236,6 +1248,8 @@ def write_tree() -> None:
         "narrateur|Là, le placard reste muet.",
         "narrateur|La casserole, elle, fait tic, sur le feu.",
         "narrateur|Les manteaux mouillés sentent la laine, près de la porte.",
+        "narrateur|Une goutte tombe de la manche, sur le carreau.",
+        "enfant-f|Ça sent la laine mouillée.",
         "narrateur|Nina connaît cette cuisine, presque par cœur.",
         "narrateur|Un détail, là-haut, paraît neuf.",
         "narrateur|Le bidon de cacao penche son capuchon, trop haut.",
@@ -1246,9 +1260,11 @@ def write_tree() -> None:
         "narrateur|En ce moment, Nina veut deux tasses, avant la peau du lait.",
         "enfant-f|Victorino, on fait du cacao, pour deux ?",
         "narrateur|Victorino arrive, plus grand, sans se presser.",
+        "narrateur|Ses épaules passent au-dessus du plan.",
         "copain|J'arrive.",
         "papa|Le lait va se couvrir, si on attend.",
         "papa|Merci, tu as baissé le feu.",
+        "maman|Le fouet et les tasses sont prêts, près de l'eau.",
     )
     sons["CHK_T0000_P0000"] = "casserole,pluie"
     profiles["CHK_T0000_P0000"] = "opening"
@@ -1256,6 +1272,8 @@ def write_tree() -> None:
 
     scripts["CHK_T0001_P0000"] = L(
         "narrateur|Le bidon, le fouet, et les deux tasses attendent.",
+        "narrateur|Le métal luit, trop loin pour les doigts de Nina.",
+        "narrateur|Un clic de tiroir, puis le silence des tasses.",
         "maman|Tu prends quoi d'abord, Nina ?",
     )
     profiles["CHK_T0001_P0000"] = "choice"
