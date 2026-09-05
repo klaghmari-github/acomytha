@@ -407,7 +407,7 @@ def t2_chanson(a: int) -> list[tuple[str, str]]:
         ("narrateur", "Elle attend le point, et elle pose sa note."),
         ("narrateur", "L'oiseau avance, et glisse un cri dans le trou."),
         ("maman", "Il chante avec vous, chacun son trou."),
-        ("enfant-f", "On ne lui marche plus sur le bec."),
+        ("enfant-f", "Cette fois, on lui laisse son cri."),
     )
 
 
@@ -499,7 +499,7 @@ T3 = {
         ("narrateur", "Victorina ouvre la bouche, puis la referme."),
         ("papa", "Regarde, il a trouvé l'angle sec tout seul."),
         ("narrateur", "L'oiseau se secoue au-dessus du tapis, derrière le verre."),
-        ("maman", "Votre silence lui a laissé de la place."),
+        ("maman", "Ce silence lui a laissé de la place."),
     ),
     (1, 1, 3): L(
         ("narrateur", "Papa part vers la cuisine, le livre resté ouvert."),
@@ -665,7 +665,7 @@ T3 = {
         ("enfant-f", "On ne parle plus, on le laisse choisir."),
         ("narrateur", "L'oiseau quitte le filet d'eau, pas à pas."),
         ("narrateur", "Il se secoue si près que la vitre s'embue."),
-        ("papa", "On n'a rien forcé, et il a trouvé."),
+        ("papa", "On a attendu, et il a trouvé son angle."),
         ("narrateur", "L'ours garde une petite buée sur le nez."),
     ),
     (3, 1, 3): L(
