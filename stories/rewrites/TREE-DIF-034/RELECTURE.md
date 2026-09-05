@@ -1,12 +1,41 @@
 # TREE-DIF-034 — Le soleil en papier d'Amir, à l'école
 
-Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` inchangés.
+- **Public :** N3 (5–6 ans), audio familial
+- **Leçon :** DIF.COR.001 — tailles différentes / jouer ensemble (vécue, jamais dite)
+- **Personnages :** Amir, Nino, papa, maman
+- **Lieu :** école : vestiaire, classe, tables
+- **Structure conservée :** 86 nœuds, 27 chemins, 27 fins textuellement distinctes
+
+Relu : monde, désir, imprévu, question, résolution, fin heureuse. `chunk_id` / `kind` / graphe `option_*_next` inchangés.
+
+## Promesse narrative
+
+Amir connaît le vestiaire. Un détail paraît neuf : une pastille de colle, ronde et froide, au milieu du soleil en papier. Il veut l'accrocher haut avant que le rai du matin quitte le linoléum. Nino, plus grand, veut toucher les crochets d'abord. Amir lève trop court : le papier retombe. Ruban, pince, tabouret : les trois partent. Patères (manteau, fermeture), fenêtre (buée, poignée), grotte des tables (épaules trop larges). Bras de Nino, tabouret d'Amir, pince ensemble ; poignée, tabouret du radiateur, rebord ; passage, soulever, un dessous un dessus. La pastille prend la lumière, avec une trace.
 
 ## Vécu
-À l'école, le matin de la fête. Amir veut accrocher son soleil en papier, haut. Nino est plus grand. T1 = ruban jaune / pince à linge / petit tabouret (les trois partent). T2 = patères (trop hautes pour Amir) / fenêtre (poignée trop loin) / sous les tables (trop bas pour Nino). T3 = neuf résolutions (bras de Nino, tabouret d'Amir, pince ensemble ; poignée de Nino, tabouret du radiateur, rebord ; passage d'Amir, soulever la table, un dessous un dessus). La leçon (tailles, jouer) se vit dans les gestes, sans slogan. Fin : le soleil brille pour eux.
+
+Amir veut le soleil **haut, maintenant**. Nino ne veut pas la même chose. Première idée : le lancer vers un casier. Ça rate. Chaque choix change l'obstacle et le climax (laine, buée, ombre). La leçon se voit : on ne change pas Nino, on change le geste. Petit et grand trouvent ensemble. Fin : pastille de colle + image unique du chemin.
 
 ## Vu et corrigé
-N3 ≤ 16. Tom / Léa / Sami hors troupe → Amir + Nino (D16). Bac/toboggan/balançoires et ballon/seau/doudou jetés. Titre slogan remplacé (objet + désir). Autre récit que DIF-032 (école, pas chambre) et DIF-024 (pas pommier). Un merci de papa lié au geste (tenir le papier). Pas de « bon travail ». Calques chambre retirés (seuil, brin de laine → casier, craie). Audio non cuit.
+
+- Zoé / Tom / Léa / Sami / bac-toboggan / « on va apprendre » jetés.
+- Tics « encore / déjà / tout doux / tout calme / tout lent » retirés.
+- Héros Amir (`enfant-m`), Nino (`copain`), rythmes distincts, silence = réponse.
+- T1 ne retire pas l'équipement. T1/T2/T3 changent l'action. 9 T2, 27 T3, 27 fins.
+- Indice unique : pastille de colle (ouverture + climax). Pas d'ancre / étoile / fil pâle / marque fine.
+- Ouverture inventée : l'enfant connaît le vestiaire ; un détail paraît neuf.
+- Corps : sourire parti ; envie et inquiétude ; papa s'accroupit.
+- Merci vécu (ouverture). Question d'adulte. Un « en ce moment ».
+- Monde ≠ TREE-DIF-032 (pas de cabane, drap à pois, chambre sous la pluie).
+- TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration). `slow` = choix, indice, fin. Action plus vive.
+- N3 ≤ 16. `check()` OK. Pas apply.
+
+## Contrôles
+
+- 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
+- 561 à 591 mots par chemin (moyenne 573)
+- `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié
-Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
+
+Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.
