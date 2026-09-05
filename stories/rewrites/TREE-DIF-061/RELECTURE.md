@@ -34,7 +34,7 @@ Aniss veut le moulin **à la grille, maintenant**. Mila ne veut pas la même cho
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 629 à 644 mots par chemin (moyenne 636)
+- 626 à 644 mots par chemin (moyenne 636)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié
