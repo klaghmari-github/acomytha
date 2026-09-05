@@ -622,21 +622,21 @@ TRACE_AB = {
 }
 
 GAME_BC = {
-    (1, 1): "Elle pose un cube, près de la caisse froide.",
-    (1, 2): "Elle pose un cube, près de la chaise tiède.",
-    (1, 3): "Elle pose un cube, près de la caisse des lampes.",
-    (2, 1): "Elle ouvre le livre, près des oranges froides.",
-    (2, 2): "Elle ouvre le livre, près des oranges tièdes.",
-    (2, 3): "Elle ouvre le livre, sous les lampes du stand.",
-    (3, 1): "Elle pose une tasse, près de la caisse froide.",
-    (3, 2): "Elle pose une tasse, près de la chaise tiède.",
-    (3, 3): "Elle pose une tasse, sous les lampes du stand.",
+    (1, 1): "Je pose un cube, près de la caisse froide.",
+    (1, 2): "Je pose un cube, près de la chaise tiède.",
+    (1, 3): "Je pose un cube, près de la caisse des lampes.",
+    (2, 1): "J'ouvre le livre, près des oranges froides.",
+    (2, 2): "J'ouvre le livre, près des oranges tièdes.",
+    (2, 3): "J'ouvre le livre, sous les lampes du stand.",
+    (3, 1): "Je pose une tasse, près de la caisse froide.",
+    (3, 2): "Je pose une tasse, près de la chaise tiède.",
+    (3, 3): "Je pose une tasse, sous les lampes du stand.",
 }
 
 PLACE_AC = {
-    (1, 1): "Les carreaux de la cuisine restent dans ses pieds.",
+    (1, 1): "Un froid de carreaux reste sous ses chaussons.",
     (1, 2): "L'odeur de menthe de l'évier la suit.",
-    (1, 3): "Le col ouvert de la cuisine tient chaud.",
+    (1, 3): "Le col ouvert lui tient chaud, dehors.",
     (2, 1): "Les bottes font ploc, sur les pavés froids.",
     (2, 2): "La menthe de la poche sent fort, tout vert.",
     (2, 3): "Une goutte du jardin glisse du manteau bleu.",
@@ -695,7 +695,7 @@ def t3_lines(a: int, b: int, c: int) -> list[str]:
         ],
     }[c]
     return cores + [
-        f"narrateur|{GAME_BC[(b, c)]}",
+        f"enfant-f|{GAME_BC[(b, c)]}",
         f"narrateur|{PLACE_AC[(a, c)]}",
         f"narrateur|{TRACE_AB[(a, b)]}",
     ]
