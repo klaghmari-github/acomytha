@@ -12,7 +12,7 @@ Nina veut son gant rouge tout de suite. Elle le tire sans demander : il glisse, 
 - Première idée ratée dès l'ouverture, puis un échec propre à chaque T1/T2/T3.
 - 27 fins textuellement distinctes. TTS par fonction (profiles example2).
 - Tics encore/déjà/tout doux/calme et leçon maîtresse retirés.
-- Mots par chemin : 475–511 (moy 493).
+- Mots par chemin : 477–511 (moy 493).
 
 ## Non vérifié
 Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.
