@@ -299,3 +299,13 @@ Texte source : `gestion_projet/feedback_chatgpt/f_04.txt`. Exemple développé :
 > Changer uniquement le lieu ou le goûter ne suffit pas à créer une aventure différente.
 
 > Une auto-évaluation enthousiaste ne vaut pas validation.
+
+---
+
+## 8. avis3 (5 sept. 2026)
+
+Fichier : `gestion_projet/feedback_chatgpt/avis3.txt`. Audit commit `3d0793c0`.
+
+Le fondateur demande de **préparer les features**, pas de développer. IDs : F-NAR-020…023, F-DAT-002, F-AUD-008, F-APP-009, F-PAR-006, F-ENF-002, F-PLY-006, F-PAY-004, F-SEC-004, F-ADM-005. Détail : `backlog/Features.md` v4.6.
+
+Décision retenue : **D38** (écrire tout le corpus) et **ne pas vendre 1 449 titres**. La vitrine s’appuie sur 24 histoires audio irréprochables.

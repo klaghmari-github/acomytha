@@ -85,3 +85,15 @@ Passe `examples/example4/` (5 sept. 09:45, SSD = worktree, 100 txt identiques) �
 - **Voler (méta récit).** Par chunk : `notes` (arc, intention, émotion, intensité 1–3, destinataire, sous-texte, tempo, sourire, respiration), `text_xai_tags`, `text_ssml`, pitch/volume/pauses, `length_scale_piper`. `slow` = choix, danger doux, émotion — pas l’action.
 - **Focus.** Récit + métadonnées du récit. Pas d’audio TREE. Brief : `stories/rewrites/CREATIVITY_BRIEF_EXAMPLE4.md`.
 - **Scan.** `watch_feedback_chatgpt.py` ne voit que la racine (`.txt/.md/.html/.pdf`) : les vagues `examples/` se consultent à la main. Rien de plus récent qu’example4 au 5 sept. 10:45.
+
+Passe `avis3.txt` (5 sept. 17:08, SSD puis worktree, audit `3d0793c0`) — **features posées, pas de dev** :
+
+- **Déjà couvert.** Fil rouge, monde d’abord, désir ≠ leçon, vraie fin, chemins, métadonnées TTS dans les xlsx (F-NAR-008…019). Socle app, PIN, 1 appareil, 30 s vitrine, Stripe démo.
+- **Nouveau — ne pas vendre le volume.** 837 actives / 16 499 blocs. Argument « 1 400 histoires » = juger la moyenne. Vente = **24** irréprochables (F-NAR-020) puis 60 / 120.
+- **Nouveau — tics.** `en ce moment` 818, `bravo` 1 575, `tout doux` 500, `refuse de foncer` 836. Titres doublons. F-NAR-021.
+- **Nouveau — voix hors app.** `catalog.py` ignore SSML / xai / notes / sons. F-DAT-002. Text changé → invalider dérivés (F-NAR-022). Audio Git = 2 témoins (F-AUD-008).
+- **Nouveau — conversion.** Hero + extrait, 6 phares, besoins parent, pas « leçons » (F-APP-009). Parent familial (F-PAR-006). Enfant illustré (F-ENF-002). Nuit parent (F-PLY-006).
+- **Nouveau — euros.** 7,99 €/mois + pack 9,90 € (F-PAY-004). Retirer voix factice, commande perso, « Stripe prêt ».
+- **Nouveau — prod.** Démo logins, PIN 2468, pas de recovery, pas de CGU, dépôt non reproductible (F-SEC-004, F-ADM-005).
+- **D38.** On n’arrête pas d’écrire le corpus. On n’ouvre pas les ventes sur le corpus.
+- **Pas maintenant comme code.** Aucune de ces features n’est implémentée dans cette passe.

@@ -1,6 +1,7 @@
 # AcoMytha — backlog features
 
-**Version :** 4.5 — 5 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.6 — 5 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant. **Pas de dev dans cette passe** — IDs posés seulement.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -21,7 +22,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-AUD-002 | **développé** | Loudness : narrateur aligné (plus audible). |
 | F-ACC-002 | **reporté** | Contredit F-SEC-003 (une clé = un appareil). |
 | F-APP-001 | **développé** | Socle FastAPI + PWA, POO HTML/CSS/JS. |
-| F-DAT-001 | **développé** | SQLite live **764** histoires / **10221** chunks (685 ATOM + 79 TREE). Corpus xlsx 1449. |
+| F-DAT-001 | **développé** | SQLite. Live xlsx **837** (685 ATOM + 152 TREE). Import **incomplet** pour la voix → F-DAT-002. Corpus 1449. |
 | F-ACC-001 | **développé** | Login parent/admin, PIN enfant. |
 | F-SEC-003 | **développé** | 1 appareil / clé, alerte admin, reset. |
 | F-SEC-002 | **développé** | Mode enfant sans catalogue. |
@@ -41,10 +42,23 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-013 | **en cours** | Chaîne question corrigée sur les histoires reprises. |
 | F-NAR-014 | **en cours** | AUT-001 / COL-001 : choix à conséquences. COL-007–035 et archive : pas encore. |
 | F-NAR-015 | **en cours** | `RELECTURE.md` sur les arbres repris. Pas une validation globale. |
-| F-NAR-016 | **en cours** | Pilote ramifié fait. **D38 : tout le catalogue** (685 ATOM + 764 TREE). Chiffres : `stories/CHIFFRES.md`. |
+| F-NAR-016 | **en cours** | Pilote ramifié fait. **D38** = on continue d’écrire tout le corpus. **Vente** = F-NAR-020 (24 d’abord). |
 | F-NAR-017 | **développé** | Veille `feedback_chatgpt/` : nouveau fichier → consignes → histoires gardées (texte). |
 | F-NAR-018 | **en cours** | Étalon structurel (avis2) : oral fluide, pas de morale dite, ramification = 9 aventures, ATOM sans récap. |
 | F-NAR-019 | **en cours** | Audit vocal example2 : récit humain, 27 chemins vraiment distincts, métadonnées TTS (arc/émotion/tempo). |
+| F-NAR-020 | **à faire** | Collection fondatrice **24** (8 N1 + 8 N2 + 8 N3), audio + relecture humaine. Pas vendre 1449. |
+| F-NAR-021 | **à faire** | Contrôle tics corpus + titres uniques (avis3). |
+| F-NAR-022 | **à faire** | `text` change → invalider SSML / xai / notes / audio. |
+| F-NAR-023 | **à faire** | Trois séries personnages (Amir / Nina / Victorina). |
+| F-DAT-002 | **à faire** | Importer métadonnées vocales dans SQLite et le lecteur. |
+| F-AUD-008 | **à faire** | Produire l’audio des 24 (puis étendre). Témoins Git = 2 histoires. |
+| F-APP-009 | **à faire** | Vitrine conversion : hero + extrait, 6 phares, besoins parent, pas « 1400 leçons ». |
+| F-PAR-006 | **à faire** | Espace parent familial (ce soir / enfant / histoires). Retirer voix et commande non finies. |
+| F-ENF-002 | **à faire** | Mode enfant illustré : cartes, continuer, pictos, fin vécue. |
+| F-PLY-006 | **à faire** | Mode nuit choisi par le parent, pas par l’enfant. |
+| F-PAY-004 | **à faire** | Offre euros simple (abo + pack). acm hors premier écran. |
+| F-SEC-004 | **à faire** | Durcir la prod : plus de démo en public, recovery, rate limit. |
+| F-ADM-005 | **à faire** | Pages légales + dépôt reproductible (deps, CI, Docker). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -134,6 +148,19 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-017 | Production | Veille dossier ChatGPT → consignes → TREE-AUT-001 / TREE-COL-001 | P0 | 1 | stories/PRIORITE.md | F-NAR-016 |
 | F-NAR-018 | Moteur | Étalon AUT-001 : logique reprise, pas les phrases ; oral fluide ; morale vécue | P0 | 1 | stories/REWRITE.md | F-NAR-014 |
 | F-NAR-019 | Moteur | Récit humain + métadonnées TTS ; 27 chemins distincts (audit example2) | P0 | 1 | stories/REWRITE.md | F-NAR-018 |
+| F-NAR-020 | Production | Collection fondatrice 24 (8×N1/N2/N3, 6 besoins, 12 ATOM + 12 TREE) | P0 | 1 | avis3 §13 | F-NAR-019 |
+| F-NAR-021 | Production | Anti-tics + titres uniques | P0 | 1 | avis3 §2 | F-VAL-001 |
+| F-NAR-022 | Production | Invalidation vocale si `text` change | P0 | 1 | avis3 §3 | F-AUD-006 |
+| F-NAR-023 | Éditorial | Séries Amir / Nina / Victorina | P1 | 1 | avis3 §13 ph.2 | F-NAR-020 |
+| F-DAT-002 | Référentiel | Import SSML, xai, notes, sons, voix dans SQLite | P0 | 2 | avis3 §3 | F-DAT-001 |
+| F-AUD-008 | Audio | Bake + contrôle des 24, puis extension | P0 | 1 | avis3 §4 | F-AUD-005, F-NAR-020 |
+| F-APP-009 | App | Vitrine : hero, extrait, 6 phares, collections besoins | P0 | 2 | avis3 §6–8 | F-APP-006 |
+| F-PAR-006 | Parent | Accueil familial ; masquer boutique inachevée | P0 | 2 | avis3 §9 | F-PAR-001 |
+| F-ENF-002 | Enfant | Cartes illustrées, continuer, pictos, fin émotionnelle | P0 | 2 | avis3 §10 | F-ENF-001 |
+| F-PLY-006 | Lecture | Nuit réglée par le parent | P0 | 2 | avis3 §10 | F-PLY-003 |
+| F-PAY-004 | Boutique | 7,99 €/mois + pack 9,90 € ; acm en second | P0 | 2 | avis3 §11 | F-PAY-001 |
+| F-SEC-004 | Sécurité | Plus de comptes démo publics ; recovery ; rate limit | P0 | 2 | avis3 §12 | F-SEC-003 |
+| F-ADM-005 | Admin | CGU, confidentialité, deps verrouillées, CI, Docker | P0 | 2 | avis3 §12 | F-APP-001 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
 | F-INT-005 | Interactions | `passage_question` : attente, similarité future, phrases moteur « oui / presque » | P0 | 2 | STRAT-004 | F-INT-001, F-PLY-005 |
 
@@ -295,6 +322,89 @@ Source : `gestion_projet/feedback_chatgpt/examples/example2/` (audit vocal 5 sep
 
 Étalon vocal : `examples/example2/raw.js` (profils opening/choice/clue/obstacle/resolution/ending). Ne **pas** recopier l’escargot ailleurs. Piper : `slow` seulement choix, danger doux, émotion sensible.
 
+---
+
+## Après avis3 — préparer la vente (pas de code dans cette passe)
+
+Source : `gestion_projet/feedback_chatgpt/avis3.txt` (5 sept. 17:08, audit `3d0793c0`). Verdict : atelier fort, **pas un produit vendable**. Priorité = petite collection irréprochable + audio + expérience, **pas** plus de fonctions boutique.
+
+**D38 inchangé pour l’écriture** du corpus. **La vitrine et Stripe** ne s’appuient plus sur « 1 449 histoires ».
+
+### F-NAR-020 — Collection fondatrice (24)
+
+8 N1 + 8 N2 + 8 N3. Moitié ATOM, moitié ramifiées. 6 besoins parentaux : calme, autonomie, vivre avec les autres, faire attention à soi, émotions, langage/quotidien.
+
+Chaque titre : relecture humaine, vocabulaire, psychopédagogie, méta vocale synchrone, audio, écoute enfant + parent. TREE-AUT-001 reste l’étalon structurel. Ne pas commercialiser *Le citron de Victorina* tel quel (protocole éducatif, « sent le vert »).
+
+Ensuite seulement : 60, puis 120, puis le reste.
+
+### F-NAR-021 — Tics et titres
+
+Comptages avis3 (837 actives) : « en ce moment » 818, « bravo » 1 575 (surtout ATOM), « tout doux » 500, « sans se presser » 300, « refuse de foncer » 836 (surtout TREE). Contrôle automatique + passe humaine. Huit titres en double (nappe à carreaux, pain chaud de Nino, etc.) : un titre unique par `story_id`.
+
+### F-NAR-022 — Invalidation vocale
+
+Si `text` change : SSML, `text_xai_tags`, `notes`, audio **périmés** jusqu’à régénération. TREE-AUT-001 a déjà du texte et des tags désynchronisés.
+
+### F-NAR-023 — Séries
+
+Continuité affective, après les 24 :
+
+- *Amir et les petits défis* — autonomie, sécurité  
+- *Nina trouve une idée* — émotions, relations  
+- *Les journées de Victorina* — découverte, langage, quotidien  
+
+L’enfant s’attache au personnage ; le parent choisit la compétence.
+
+### F-DAT-002 — Métadonnées vocales dans l’app
+
+`catalog.py` n’importe aujourd’hui que texte, réponses, graphe, attente, nuit. À charger aussi : `text_ssml`, `text_xai_tags`, `notes`, `script`, pitch/volume/pauses, `sons`, voix par réplique. Sans ça, F-NAR-019 reste un actif hors ligne.
+
+### F-AUD-008 — Audio des 24
+
+Git : 2 témoins (`ATOM-SAN.ALI.001-01`, `TREE-SEC-001`). Pas de vente tant que les 24 n’ont pas d’audio contrôlé. Puis étendre. F-AUD-007 (bruits) sur cette collection d’abord.
+
+### F-APP-009 — Vitrine qui convertit
+
+Remplace le hero actuel (F-APP-004) pour la vente :
+
+- Sur-titre : histoires audio interactives 3–6 ans  
+- Titre : *Des aventures qu’il adore. Des gestes qui l’aident à grandir.*  
+- CTA : **Écouter une aventure** (extrait 30 s dans le hero)  
+- Signature : *Ce soir, une aventure. Demain, un petit geste en plus.*  
+- Six phares, pas un catalogue de centaines de cartes  
+- Collections par besoin, pas par ID technique  
+- Jour/nuit expliqués sans promettre l’endormissement  
+- FAQ, confiance, prix en euros  
+- Interdit : « leçons », « > 1400 histoires » en argument principal, « respect du feu rouge » comme exemple sec  
+
+### F-PAR-006 — Parent familial
+
+Accueil : « Pour ce soir », continuer, reco âge. Onglets : Mon enfant, Histoires (besoins), Mes histoires, Compte. **Hors barre** tant que ce n’est pas vrai : commande personnalisée, enregistrement de voix (l’UI débite 5 acm sans fichier), recharge acm, Stripe « prêt ». F-PAR-004 (signalement) reste une autre feature.
+
+### F-ENF-002 — Enfant illustré
+
+3–5 grandes cartes : héros, couleur, titre lu à voix haute, nouveau/continuer. Choix = gros pictogrammes. Fin ≠ « C’est fini » : souvenir + « Écouter encore ».
+
+### F-PLY-006 — Nuit parentale
+
+Le parent règle jour/nuit **avant** de passer l’appareil. L’enfant ne bascule plus tout seul (F-PLY-003 existe, le réglage enfant reste ouvert).
+
+### F-PAY-004 — Offre euros
+
+- AcoMytha Famille **7,99 € / mois** : aventures publiées, jour/nuit, sélection, nouveautés  
+- Pack Découverte **9,90 €** : 10 aventures  
+
+acm seulement pour des extras plus tard. Pas de démo paiement dans l’espace client public.
+
+### F-SEC-004 — Durcir avant prod
+
+Retirer identifiants démo préremplis, mots de passe / PIN par défaut en public, cookie insecure. Ajouter recovery mot de passe, vérif e-mail, rate limit login/PIN. F-ACC-004 garde le PIN 4 chiffres.
+
+### F-ADM-005 — Légal et dépôt
+
+CGU, confidentialité, mentions, consentement, assistance, suppression de compte. `requirements` verrouillé, Dockerfile, CI, `main` protégée, preprod, Stripe réel, sauvegardes.
+
 ### F-AUD-007 — Immersion sonore (toutes les histoires)
 
 **Portée : générale.** Ce n’est pas une feature « parc / ambulance / chien ». Ces scènes ne sont que des **exemples**. Dès qu’un événement du monde est raconté, l’enfant qui écoute **l’entend**, dans **chaque** histoire, **chaque** chunk.
@@ -419,16 +529,21 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 
 ---
 
-## Ordre technique recommandé (après validation humaine des textes)
+## Ordre technique recommandé (après avis3)
 
-1. `F-NAR-007` + `F-DAT-001` — IDs et SQLite, sans audio.  
-2. `F-AUD-005` pilote Piper (1 ramifié + 12 atomiques) → MP3.  
-3. `F-AUD-004` chiffrement + lecteur RAM.  
-4. `F-PLY-005` + `F-NAR-002` jour/nuit.  
-5. `F-LOC-002` paquets.  
-6. Compte / profil / forêt parentale (`F-ACC`, `F-PRF`, `F-TAX-003`, `F-FOR-001`).
+**Avant toute vente** (pas commencé dans cette passe) :
 
-Graphe git : uniquement `main`. Le message de commit porte l’ID de feature. `F-ACC-002` reporté au profit de `F-SEC-003`.
+1. `F-NAR-020` — choisir et relire 24 histoires.  
+2. `F-NAR-021` + `F-NAR-022` — tics, titres, sync vocale.  
+3. `F-AUD-008` — audio des 24.  
+4. `F-DAT-002` — l’app consomme SSML / notes / sons.  
+5. `F-APP-009` + `F-PAR-006` + `F-ENF-002` + `F-PLY-006` — vitrine, parent, enfant.  
+6. `F-PAY-004` + `F-SEC-004` + `F-ADM-005` — euros, durcissement, légal.  
+7. `F-NAR-023` — séries personnages, puis étendre le catalogue.
+
+Socle déjà sur `main` (ne pas refaire) : `F-NAR-007`, `F-DAT-001`, `F-AUD-004`, `F-PLY-001`.
+
+Ancien ordre (historique) : IDs/SQLite → Piper pilote → chiffrement → jour/nuit → paquets → compte. Graphe git : uniquement `main`. `F-ACC-002` reporté au profit de `F-SEC-003`.
 
 ---
 
