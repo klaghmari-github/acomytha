@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _lib import LIMITS, ROOT, check, make_chunk, relecture, words  # noqa: E402
+from _lib import LIMITS, ROOT, check, make_chunk, words  # noqa: E402
 
 SID = "TREE-COL-005"
 N2 = LIMITS["N2"]
@@ -1120,7 +1120,7 @@ FINS = {
         "narrateur|Le pain de la phrase entière chauffe le tissu.",
         "narrateur|L'auvent n'a pas touché la croûte.",
         "enfant-m|Elle a eu toute la phrase.",
-        "maitresse|Oui.",
+        "maman|Toute la phrase, oui.",
         "papa|Merci, le col était ouvert.",
         "narrateur|Le manteau s'ouvre, une bouffée d'air de soupe.",
         "narrateur|Le livre sous le bras est resté à l'école.",
@@ -1198,7 +1198,7 @@ QMETA = {
     ),
     2: qf(
         "s'il te plaît",
-        "s'il te plaît | s'il te plait | sil te plait | please",
+        "s'il te plaît | s'il te plait | sil te plait",
         "L'anse a glissé. Aniss a demandé comment ?",
         "Oui, s'il te plaît.",
     ),
@@ -1339,22 +1339,43 @@ def main() -> None:
     s, n, e = build()
     write_tree(s, n, e)
     lo, hi, avg = path_words(s)
-    relecture(
-        SID,
-        TITLE,
-        "Aniss veut un pain au stand de zinc avant qu'on range l'étal. "
-        "Il crie trop tôt : la gouttière couvre sa voix, on n'entend que « stand ». "
-        "Cuisine (vapeur, panier), jardin (anse glissante, seau) ou chambre "
-        "(manche à l'envers) changent l'obstacle. Voisin, maîtresse ou boulangère "
-        "changent l'écoute. Pain, pomme ou livre changent ce qu'il demande. "
-        "Bonjour / s'il te plaît / merci au moment du besoin, jamais récités. "
-        f"27 fins : la gouttière, le zinc, la vitre. Chemins {lo}–{hi} mots "
-        f"(moyenne {avg:.0f}).",
-        "P1 F-NAR-019. N2≤15. COL.POL.001 vécu. Aniss, papa, maman. "
-        "Monde ≠ TREE-COL-001 (pommes), ≠ TREE-COL-025 (gouttière Nina, main), "
-        "≠ TREE-COL-012 (bâche). TTS par fonction (raw.js) : "
-        "opening/choice/clue/confirm/action/obstacle/resolution/ending. "
-        "86 chunks, 27 fins distinctes, 27 T3 distincts. Pas apply. Pas audio.",
+    (ROOT / SID / "RELECTURE.md").write_text(
+        f"# {SID} — {TITLE}\n\n"
+        "Relu : monde, désir, imprévu, question, résolution, fin heureuse. "
+        "`chunk_id` / `kind` inchangés.\n\n"
+        "## Promesse narrative\n\n"
+        "Sous la pluie, la gouttière fait tic contre le zinc. Aniss veut un pain "
+        "au stand avant qu'on range l'étal. Il crie trop tôt : on entend « stand », "
+        "pas « pain ». Il serre les poings, puis les ouvre. Cuisine, jardin ou "
+        "chambre changent l'obstacle ; voisin, maîtresse ou boulangère changent "
+        "l'écoute ; pain, pomme ou livre changent ce qu'il demande. La gouttière, "
+        "le zinc et la vitre paient la fin.\n\n"
+        "## Vécu\n\n"
+        "Aniss veut un pain au stand de zinc avant qu'on range l'étal. Il crie trop "
+        "tôt : la gouttière couvre sa voix, on n'entend que « stand ». Cuisine "
+        "(vapeur, panier), jardin (anse glissante, seau) ou chambre (manche à "
+        "l'envers) changent l'obstacle. Voisin, maîtresse ou boulangère changent "
+        "l'écoute. Pain, pomme ou livre changent ce qu'il demande. Bonjour / s'il "
+        "te plaît / merci au moment du besoin, jamais récités. 27 fins : la "
+        f"gouttière, le zinc, la vitre. Chemins {lo}–{hi} mots (moyenne {avg:.0f}).\n\n"
+        "## Vu et corrigé\n\n"
+        "- Titre noyau conservé. Troupe D16 : Aniss, papa, maman.\n"
+        "- 86 nœuds, graphe et libellés d'options conservés.\n"
+        "- 27 fins textuellement distinctes, 27 résolutions distinctes, 9 T2 distincts.\n"
+        "- Première tentative échoue. Chaque choix change l'obstacle, le climax, la dernière image.\n"
+        "- Retour de la gouttière, du zinc, de la rivière sur la vitre, de l'oiseau gris, de la chaussette rouge.\n"
+        "- TTS par fonction (ouverture, choix, indice, confirmation, action, obstacle, résolution, retour).\n"
+        "- `slow` réservé aux choix, à l'indice et aux fins.\n"
+        "- N2 ≤ 15 mots/phrase. Pas de leçon dite. Pas de tics « tout doux / encore / déjà / tout calme ». Pas de « les trois mots » dans le récit.\n"
+        "- Monde ≠ TREE-COL-001 (pommes), ≠ TREE-COL-025 (gouttière Nina, main), ≠ TREE-COL-012 (bâche).\n"
+        "- P1 F-NAR-019. Pas apply. Pas audio.\n\n"
+        "## Direction vocale\n\n"
+        "`notes` : arc, intention, émotion, intensité 1–3, destinataire, sous-texte, "
+        "tempo, sourire, respiration. Adulte conversationnel, pas maîtresse. Tours "
+        "de parole : envie de couper, retenue, écoute réelle, plaisir d'être entendu.\n\n"
+        "## Non vérifié\n\n"
+        "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur.\n",
+        encoding="utf-8",
     )
 
 
