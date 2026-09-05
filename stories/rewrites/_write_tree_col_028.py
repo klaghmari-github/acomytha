@@ -368,7 +368,7 @@ T2 = {
         "enfant-f|Le goûter, s'il te plaît.",
         "maman|Le voilà, il a refroidi.",
         "enfant-f|Merci.",
-        "papa|Tu as demandé au bon moment.",
+        "papa|Je t'ai entendue, là.",
         "narrateur|La boîte glisse dans le cartable, toc.",
         "narrateur|Une odeur de cacao reste sur le couvercle.",
     ),
@@ -841,7 +841,7 @@ FINS = {
         "narrateur|Nina marche sur le chemin, le cartable au dos.",
         "narrateur|La boîte fait un petit toc, à chaque pas.",
         "enfant-f|Il est à moi.",
-        "papa|Tu l'as demandé.",
+        "papa|Il tient bien, au dos.",
         "maman|Bravo, Nina.",
         "narrateur|Derrière elle, la vitre de la cuisine est nette.",
         "narrateur|Une miette dorée brille sur la boucle.",
@@ -852,7 +852,7 @@ FINS = {
         "narrateur|La boîte est tiède, au fond.",
         "enfant-f|On partira plus tard.",
         "maman|Oui.",
-        "papa|Merci d'avoir attendu.",
+        "papa|Merci, on n'est pas pressés.",
         "narrateur|Un carré de soleil a fini de sécher le verre.",
         "narrateur|Plus de voix dans le cacao.",
         "narrateur|Ce jaune-là est devenu mat, paisible.",
@@ -872,7 +872,7 @@ FINS = {
         "narrateur|Le dessin est là, droit.",
         "enfant-f|La maison jaune vient avec moi.",
         "maman|Je l'ai vue.",
-        "papa|Merci de l'avoir glissée sans la froisser.",
+        "papa|Merci, le papier n'a pas de pli.",
         "narrateur|Le toit de la classe grandit.",
         "narrateur|La vitre, derrière, garde un ovale clair.",
         "narrateur|Plus de papier collé au verre.",
@@ -882,7 +882,7 @@ FINS = {
         "narrateur|Le coin du dessin n'est plus mouillé.",
         "enfant-f|Elle est droite, ma maison.",
         "papa|Oui.",
-        "maman|Merci d'avoir lissé sans casser.",
+        "maman|Ta maison est droite, merci.",
         "narrateur|La vitre n'a plus de larmes.",
         "narrateur|Un rond clair reste, comme une fenêtre dans la fenêtre.",
         "narrateur|Le chemin attend, sans se presser.",
@@ -902,7 +902,7 @@ FINS = {
         "narrateur|Le torchon reste sur la chaise, taché d'un peu de jaune.",
         "enfant-f|Je vois le chemin.",
         "papa|Nous aussi.",
-        "maman|Merci d'avoir guidé le geste.",
+        "maman|Merci, on a vu le chemin ensemble.",
         "narrateur|L'ovale encadre la haie, puis se perd.",
         "narrateur|Le toit de la classe est net.",
         "narrateur|Le cacao n'embue plus rien.",
@@ -912,7 +912,7 @@ FINS = {
         "narrateur|Le chemin était là, sans elle.",
         "enfant-f|Le torchon se repose.",
         "maman|Oui.",
-        "papa|Merci d'avoir regardé d'abord.",
+        "papa|Merci, tes yeux ont suffi.",
         "narrateur|Le torchon sent le four, sur la chaise.",
         "narrateur|La vitre est un miroir, sans travail.",
         "narrateur|Le cartable attend près du bol, prêt.",
@@ -922,7 +922,7 @@ FINS = {
         "narrateur|Le cartable dort contre le verre.",
         "enfant-f|Le jaune fait une lune.",
         "papa|Je la vois.",
-        "maman|Merci d'avoir posé le tissu ailleurs.",
+        "maman|Merci, la lampe reste libre.",
         "narrateur|La buée tient autour de l'ovale, sans le manger.",
         "narrateur|Le chemin de l'école est une ligne noire.",
         "narrateur|La casserole est vide, tiède.",
@@ -932,7 +932,7 @@ FINS = {
         "narrateur|La feuille reste au crochet, comme un ticket oublié.",
         "enfant-f|Mon cartable ne glisse plus.",
         "papa|La courroie est sèche.",
-        "maman|Merci d'avoir fermé avant de courir.",
+        "maman|Merci, la fermeture tient.",
         "narrateur|Les dalles ne sont plus des cuillères.",
         "narrateur|Le chemin brille, puis devient poussière claire.",
         "narrateur|Le jardin reste derrière, mouillé et calme.",
@@ -942,7 +942,7 @@ FINS = {
         "narrateur|Nina tient le cartable à l'ombre du mur.",
         "enfant-f|Le goûter est tiède.",
         "maman|Oui.",
-        "papa|Merci d'avoir attendu l'abeille.",
+        "papa|Merci, l'abeille est partie.",
         "narrateur|La table du jardin est sèche, presque blanche.",
         "narrateur|Le couvercle sent l'herbe et le soleil.",
         "narrateur|Le chemin, plus loin, ne dit rien.",
@@ -952,7 +952,7 @@ FINS = {
         "narrateur|Le crochet de la porte est vide.",
         "enfant-f|Une étoile dans la goutte.",
         "papa|Je la vois.",
-        "maman|Merci d'avoir demandé le décrochage.",
+        "maman|Merci, Nina.",
         "narrateur|Le carré jaune a quitté la porte.",
         "narrateur|Il est dans la cuisine, près des clés.",
         "narrateur|Le jardin respire, sans le sac.",
@@ -962,7 +962,7 @@ FINS = {
         "narrateur|L'oiseau a quitté la haie.",
         "enfant-f|Je lui ai dit bonjour.",
         "maman|Il a dû entendre.",
-        "papa|Merci d'avoir gardé le papier.",
+        "papa|Merci, le papier est au chaud.",
         "narrateur|Une goutte reste au milieu du chemin, puis sèche.",
         "narrateur|Le thym colle aux doigts.",
         "narrateur|Le jaune avance, sans voler.",
@@ -972,7 +972,7 @@ FINS = {
         "narrateur|Nina s'assoit sur le seuil.",
         "enfant-f|C'est son voyage.",
         "papa|Oui.",
-        "maman|Merci de l'avoir laissée.",
+        "maman|Merci, l'herbe garde son voyage.",
         "narrateur|La vitre de la porte montre le banc, net.",
         "narrateur|Le cartable est chaud, contre la jambe.",
         "narrateur|Le chemin attend, large et pâle.",
@@ -982,7 +982,7 @@ FINS = {
         "narrateur|Contre le carton, le dessin dort.",
         "enfant-f|Bonjour, haie.",
         "maman|Elle ne répond pas, c'est normal.",
-        "papa|Merci d'avoir parlé sans ouvrir.",
+        "papa|Merci, le papillon a eu sa phrase.",
         "narrateur|Le cartable est dans la maison, sentant le thym.",
         "narrateur|La porte du jardin est noire, un peu froide.",
         "narrateur|Une aile a laissé une poussière d'or, minuscule.",
@@ -992,7 +992,7 @@ FINS = {
         "narrateur|Le torchon flotte un peu, sur la corde.",
         "enfant-f|Ça ne glisse plus.",
         "papa|La courroie est sèche.",
-        "maman|Merci d'avoir demandé l'aide.",
+        "maman|Merci, tes épaules sont prêtes.",
         "narrateur|Les dalles sont claires, vides.",
         "narrateur|Le chemin prend le jaune et l'emmène.",
         "narrateur|Le crochet ne pend plus rien.",
@@ -1002,7 +1002,7 @@ FINS = {
         "narrateur|Le cartable dort contre le mur, à l'ombre.",
         "enfant-f|Le lézard est parti.",
         "maman|Oui.",
-        "papa|Merci d'avoir choisi la marche.",
+        "papa|Merci, la marche le garde.",
         "narrateur|Les dalles tiennent les pieds, sans glisser.",
         "narrateur|Une feuille sèche tremble, puis s'arrête.",
         "narrateur|Le jaune du mur est plus pâle que le sac.",
@@ -1012,7 +1012,7 @@ FINS = {
         "narrateur|Un rond de lampe reste sur la porte.",
         "enfant-f|Le crochet est vide.",
         "papa|Oui.",
-        "maman|Merci d'avoir tenu le sac.",
+        "maman|Merci, le sac est rentré.",
         "narrateur|Nina a les doigts un peu rèches, de la toile.",
         "narrateur|La nuit a pris le chemin.",
         "narrateur|Le jaune est à l'intérieur, enfin.",
@@ -1022,7 +1022,7 @@ FINS = {
         "narrateur|Le pull garde son creux, sur le lit.",
         "enfant-f|Les chaussettes sont chaudes.",
         "maman|Oui.",
-        "papa|Merci d'avoir attendu.",
+        "papa|Merci, on peut partir.",
         "narrateur|La vitre montre le chemin, sans buée.",
         "narrateur|La chaise est vide, un peu chaude.",
         "narrateur|La boîte tape le dos, toc, vers l'école.",
@@ -1032,7 +1032,7 @@ FINS = {
         "narrateur|La boîte est là, pour plus tard.",
         "enfant-f|Je l'ai entendue.",
         "papa|Moi aussi.",
-        "maman|Merci d'avoir demandé avant de sortir.",
+        "maman|Merci, on l'entend bien.",
         "narrateur|L'oreiller reprend sa forme, lentement.",
         "narrateur|Un grain de soleil tient sur la fermeture.",
         "narrateur|La chaise garde le jaune, comme un ami.",
@@ -1042,7 +1042,7 @@ FINS = {
         "narrateur|La boîte est refermée.",
         "enfant-f|Demain.",
         "maman|Demain.",
-        "papa|Merci d'avoir refermé.",
+        "papa|Merci, la boîte est close.",
         "narrateur|La veilleuse tient le cartable d'or.",
         "narrateur|Le verre de la chambre est une nuit calme.",
         "narrateur|Le pull, sur le lit, n'a plus de secret.",
@@ -1051,8 +1051,8 @@ FINS = {
         "narrateur|La cloche lointaine a fini.",
         "narrateur|La maison jaune voyage dans la poche.",
         "enfant-f|Elle n'est plus sous le lit.",
-        "papa|Non.",
-        "maman|Merci d'avoir demandé la poche.",
+        "papa|C'est vrai.",
+        "maman|Merci, la poche la garde.",
         "narrateur|La chaussette reste seule, sous le bois.",
         "narrateur|La chaise est vide.",
         "narrateur|Le chemin entre dans les yeux de Nina, clair.",
@@ -1062,7 +1062,7 @@ FINS = {
         "narrateur|Le dessin est dans la poche, tiède.",
         "enfant-f|Pas à la vitre, dans le sac.",
         "maman|Oui.",
-        "papa|Merci d'avoir choisi.",
+        "papa|Merci, la poche a gagné.",
         "narrateur|Le cartable, sur la chaise, a l'air prêt.",
         "narrateur|Un dernier grain brille, puis plus rien.",
         "narrateur|Le chemin, dehors, attend sans frapper au verre.",
@@ -1082,7 +1082,7 @@ FINS = {
         "narrateur|Nina ne frotte plus.",
         "enfant-f|Si je frotte, il part.",
         "maman|Oui.",
-        "papa|Merci de t'être arrêtée.",
+        "papa|Merci, l'ovale reste.",
         "narrateur|Le torchon reste sur le radiateur, inutile.",
         "narrateur|Le cartable quitte la chaise, jaune et net.",
         "narrateur|Le tic du radiateur s'est tu.",
@@ -1092,7 +1092,7 @@ FINS = {
         "narrateur|Le radiateur fait un dernier tic.",
         "enfant-f|Il était prêt.",
         "papa|Oui.",
-        "maman|Merci d'avoir demandé qu'on le tende.",
+        "maman|Merci, il est à toi.",
         "narrateur|Le torchon n'a plus de travail.",
         "narrateur|Un rayon a quitté la boucle.",
         "narrateur|La vitre sèche garde le chemin, sans ovale.",
@@ -1236,17 +1236,20 @@ def main() -> None:
     relecture(
         SID,
         TITLE,
-        "Nina veut le cartable jaune près de la vitre embuée, pour y glisser "
-        "son dessin et rejoindre le chemin de l'école. Elle tire sans attendre : "
-        "le cartable glisse, la bouilloire, la feuille ou le lit empêchent. "
-        "Elle retient sa voix, dit bonjour, s'il te plaît, merci, au moment du besoin. "
-        "Cuisine / jardin / chambre, puis goûter / dessin / torchon, "
-        "puis matin / sieste / soir. 27 fins : le jaune traverse la buée autrement.",
-        "P0 F-NAR-019. N2≤15. COL.POL.001 vécu, pas récité. "
-        "Troupe Nina, papa, maman. Monde ≠ TREE-COL-001, ≠ TREE-COL-005, "
-        "≠ TREE-COL-024 (rond sur vitre). TTS par fonction (raw.js). "
-        "Pas apply. Pas audio. Relu : ouverture, échec, choix qui change l'action, "
-        "27 fins textuellement distinctes.",
+        "Nina veut glisser son dessin dans le cartable jaune, près de la vitre "
+        "embuée, puis rejoindre le chemin de l'école. Première tentative : elle "
+        "tire la courroie pendant que papa parle du cacao — le cartable glisse, "
+        "personne ne se tourne, le rond de manche se recouvre. Cuisine "
+        "(bouilloire), jardin (feuille mouillée) ou chambre (fermeture, dessin "
+        "sous le lit) changent l'obstacle. Goûter, dessin ou torchon changent "
+        "ce qu'elle demande. Matin, sieste ou soir transforment la buée. "
+        "Bonjour / s'il te plaît / merci au moment du besoin, jamais récités. "
+        "27 fins : le jaune traverse la vitre autrement.",
+        "P0 F-NAR-019. N2≤15. COL.POL.001 vécu. Nina, papa, maman. "
+        "Monde ≠ TREE-COL-001 (pommes), ≠ TREE-COL-005 (gouttière Aniss), "
+        "≠ TREE-COL-024 (rond sur vitre Nina). TTS par fonction (raw.js) : "
+        "opening/choice/clue/confirm/action/obstacle/resolution/ending. "
+        "86 chunks, 27 fins distinctes, ~550 mots/chemin. Pas apply. Pas audio.",
     )
 
 
