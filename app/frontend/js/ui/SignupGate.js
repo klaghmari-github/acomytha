@@ -11,11 +11,15 @@ export class SignupGate extends Component {
         <form class="c-paper" id="signup">
           <div class="c-mark">
             ${acmLogo({ size: "md" })}
-            <span class="c-mark__sub">Pour entendre les histoires jusqu’au bout.</span>
+            <span class="c-mark__sub">Accédez gratuitement à une multitude d’histoires.</span>
           </div>
           <div class="c-field">
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="username" required />
+          </div>
+          <div class="c-data-promise" aria-label="Protection de vos données">
+            <strong>Votre famille reste votre histoire.</strong>
+            <p>Nous ne demandons ni nom, ni prénom — seulement un e-mail et un mot de passe. Votre adresse sera validée avant l’activation du compte.</p>
           </div>
           <div class="c-field">
             <label for="password">Mot de passe</label>

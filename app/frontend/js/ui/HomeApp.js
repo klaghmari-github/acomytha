@@ -3,6 +3,9 @@ import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
 import { acmIcon, acmLogo } from "./acm.js";
 
+const GUEST_CATALOG_KEY = "acomytha.guest.catalog.v1";
+const GUEST_CATALOG_LIMIT = 2;
+
 export class HomeApp extends Component {
   #stories = [];
   #total = 0;
@@ -17,6 +20,7 @@ export class HomeApp extends Component {
   #gen = 0;
   #observer = null;
   #me = null;
+  #guestCatalog = new Set();
 
   get stories() {
     return this.#stories;
@@ -100,18 +104,29 @@ export class HomeApp extends Component {
   }
 
   async connectedCallback() {
+    this.#guestCatalog = this.#readGuestCatalog();
     this.innerHTML = `
       <div class="s-home">
         <div class="c-stage">
           <header class="c-top">
             ${acmLogo({ size: "sm" })}
             <nav class="c-nav">
+              <a class="c-nav__quiet" href="#catalogue">Explorer</a>
               <a class="c-nav__ghost" href="#/entrer">Connexion</a>
-              <a class="c-nav__gold" href="#/inscription">Créer un compte</a>
+              <a class="c-nav__gold" href="#/inscription">Créer mon compte</a>
             </nav>
           </header>
           <section class="c-hero">
-            <p class="c-kicker">AcoMytha : univers d’histoires ludiques et captivantes.</p>
+            <div class="c-hero__copy">
+              <p class="c-kicker">Histoires audio interactives · 3–6 ans</p>
+              <h1>Ce soir, une aventure.<br><em>Demain, un petit geste en plus.</em></h1>
+              <p class="c-hero__lead">Des récits captivants que votre enfant écoute, choisit et fait avancer avec sa voix.</p>
+              <div class="c-hero__actions">
+                <a class="c-nav__gold c-hero__cta" href="#catalogue">Écouter une aventure</a>
+                <button class="c-nav__ghost c-hero__cta" type="button" id="guest-child-mode">Essayer le mode enfant</button>
+              </div>
+              <p class="c-trust"><span aria-hidden="true">✓</span> Aucun nom ni prénom demandé. Seulement votre e-mail et un mot de passe.</p>
+            </div>
             <div class="c-field" aria-hidden="true">
               <span class="c-ring"></span>
               <span class="c-ring"></span>
@@ -119,12 +134,12 @@ export class HomeApp extends Component {
               <span class="c-filament"></span>
               <div class="c-hero-logo">${acmIcon("acm--lg")}</div>
             </div>
-            <h1>Apprendre<br>par l’<em>histoire.</em></h1>
           </section>
           <section class="c-score" aria-label="AcoMytha">
             <article class="c-move">
-              <h2>AcoMytha, c’est quoi ?</h2>
-              <p>L’enfant apprend par l’histoire, de façon interactive, uniquement par la voix, sans écran, sans bouton. Les histoires sont ludiques et contiennent des leçons qui peuvent varier : respect du feu rouge, partage des jouets, manger les légumes, etc.</p>
+              <p class="c-eyebrow">Grandir en écoutant</p>
+              <h2>Une histoire d’abord.<br>Une leçon qui se vit.</h2>
+              <p>Pas de cours déguisé : une vraie aventure, des personnages attachants et des choix qui aident l’enfant à comprendre les petits gestes du quotidien.</p>
             </article>
             <article class="c-move c-move--modes">
               <h2>AcoMytha, deux modes</h2>
@@ -153,11 +168,18 @@ export class HomeApp extends Component {
                 <div><b>&gt; 80</b><span>leçons</span></div>
               </div>
             </article>
-            <p class="c-offer">Offrez à votre enfant l’opportunité d’apprendre par l’histoire.</p>
+            <div class="c-free-callout">
+              <div>
+                <p class="c-eyebrow">Une porte ouverte sur AcoMytha</p>
+                <h2>Créez un compte et accédez gratuitement à une multitude d’histoires.</h2>
+              </div>
+              <a class="c-nav__gold" href="#/inscription">Créer mon compte parent</a>
+            </div>
           </section>
-        <section class="c-catalog">
+        <section class="c-catalog" id="catalogue">
           <header class="c-catalog__head">
             <div>
+              <p class="c-eyebrow">Trouvez l’aventure de ce soir</p>
               <h2>Le catalogue</h2>
             </div>
             <p class="c-hint" id="count"></p>
@@ -177,6 +199,10 @@ export class HomeApp extends Component {
               <option value="ramifiee">Avec ramifications vers d’autres histoires</option>
             </select>
           </div>
+          <div class="c-catalog-tools">
+            <p><strong id="guest-count">${this.#guestCatalog.size}</strong> / ${GUEST_CATALOG_LIMIT} histoires dans votre sélection enfant</p>
+            <button type="button" class="c-text-action" id="open-selection">Voir la sélection</button>
+          </div>
           <p class="c-error" id="msg"></p>
           <div class="o-grid" id="grid"></div>
           <p class="c-more" id="more" hidden>Chargement…</p>
@@ -191,10 +217,12 @@ export class HomeApp extends Component {
         </div>
         <div class="c-modal c-gate" id="gate" hidden>
           <div class="c-gate__box" role="dialog" aria-labelledby="gate-title">
-            <h2 id="gate-title">La suite est derrière la porte.</h2>
-            <p>Vous venez d’écouter un aperçu. Connectez-vous ou créez un compte pour entendre l’histoire jusqu’au bout.</p>
+            <p class="c-eyebrow">Votre aperçu de 30 secondes est terminé</p>
+            <h2 id="gate-title">L’aventure ne fait que commencer.</h2>
+            <p>Connectez-vous ou créez votre compte parent pour retrouver votre sélection et accéder gratuitement à une multitude d’histoires.</p>
+            <p class="c-privacy-note">Aucun nom ni prénom demandé · validation de l’e-mail · données minimales</p>
             <div class="c-gate__actions">
-              <a class="c-nav__gold" href="#/inscription">Créer un compte</a>
+              <a class="c-nav__gold" href="#/inscription">Créer mon compte parent</a>
               <a class="c-nav__ghost" href="#/entrer">Connexion</a>
             </div>
             <button class="c-gate__close" type="button" data-close-gate="1">Plus tard</button>
@@ -214,6 +242,8 @@ export class HomeApp extends Component {
     this.on(this.querySelector("#age"), "change", () => this.fetchPage({ reset: true }));
     this.on(this.querySelector("#kind"), "change", () => this.fetchPage({ reset: true }));
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
+    this.on(this.querySelector("#guest-child-mode"), "click", () => this.openGuestChildMode());
+    this.on(this.querySelector("#open-selection"), "click", () => this.openSelection());
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#modal"), "click", (e) => this.onModalClick(e));
     this.on(this.querySelector("#gate"), "click", (e) => {
@@ -375,7 +405,12 @@ export class HomeApp extends Component {
       <h3>${escapeHtml(s.title)}</h3>
       <p class="c-sheet__meta">${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
       ${links}
-      <button class="c-listen" type="button" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter"}</button>`;
+      <div class="c-sheet__actions">
+        <button class="c-listen" type="button" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : "Écouter 30 s"}</button>
+        <button class="c-add ${this.#guestCatalog.has(s.story_id) ? "is-added" : ""}" type="button" data-add="${s.story_id}" aria-pressed="${this.#guestCatalog.has(s.story_id)}">
+          ${this.#guestCatalog.has(s.story_id) ? "Ajoutée à l’enfant" : "Ajouter à un enfant"}
+        </button>
+      </div>`;
     return el;
   }
 
@@ -384,6 +419,11 @@ export class HomeApp extends Component {
     if (open) {
       e.preventDefault();
       this.openModal(open.dataset.open);
+      return;
+    }
+    const add = e.target.closest("[data-add]");
+    if (add) {
+      this.toggleGuestStory(add.dataset.add);
       return;
     }
     const play = e.target.closest("[data-play]");
@@ -405,6 +445,15 @@ export class HomeApp extends Component {
     if (open) {
       e.preventDefault();
       this.openModal(open.dataset.open);
+      return;
+    }
+    const add = e.target.closest("[data-add]");
+    if (add) {
+      this.toggleGuestStory(add.dataset.add);
+      return;
+    }
+    if (e.target.closest("[data-child-demo]")) {
+      this.openGuestChildMode();
       return;
     }
     const play = e.target.closest("[data-play]");
@@ -450,6 +499,72 @@ export class HomeApp extends Component {
   closeGate() {
     const gate = this.querySelector("#gate");
     if (gate) gate.hidden = true;
+  }
+
+  toggleGuestStory(storyId) {
+    if (this.#guestCatalog.has(storyId)) {
+      this.#guestCatalog.delete(storyId);
+      this.#saveGuestCatalog();
+      this.refreshGuestUi();
+      return;
+    }
+    if (this.#guestCatalog.size >= GUEST_CATALOG_LIMIT) {
+      this.openGate();
+      return;
+    }
+    this.#guestCatalog.add(storyId);
+    this.#saveGuestCatalog();
+    this.refreshGuestUi();
+  }
+
+  refreshGuestUi() {
+    const count = this.querySelector("#guest-count");
+    if (count) count.textContent = String(this.#guestCatalog.size);
+    this.querySelectorAll("[data-add]").forEach((button) => {
+      const added = this.#guestCatalog.has(button.dataset.add);
+      button.classList.toggle("is-added", added);
+      button.setAttribute("aria-pressed", String(added));
+      button.textContent = added ? "Ajoutée à l’enfant" : "Ajouter à un enfant";
+    });
+  }
+
+  openSelection() {
+    if (!this.#guestCatalog.size) {
+      const box = this.querySelector("#modalbox");
+      box.innerHTML = `<button class="c-modal__close" type="button" data-close="1">Fermer</button><div class="c-empty-selection"><p class="c-eyebrow">Sélection enfant</p><h2>Choisissez jusqu’à deux aventures.</h2><p>Ajoutez-les depuis le catalogue, puis essayez le mode enfant pendant 30 secondes.</p></div>`;
+      this.querySelector("#modal").hidden = false;
+      return;
+    }
+    const selected = this.stories.filter((story) => this.#guestCatalog.has(story.story_id));
+    const box = this.querySelector("#modalbox");
+    box.innerHTML = `<button class="c-modal__close" type="button" data-close="1">Fermer</button><div class="c-selection"><p class="c-eyebrow">Sélection enfant</p><h2>${selected.length} aventure${selected.length > 1 ? "s" : ""} prête${selected.length > 1 ? "s" : ""} à écouter</h2><div class="c-selection__list">${selected.map((story) => `<div><strong>${escapeHtml(story.title)}</strong><button type="button" data-play="${story.story_id}">Écouter 30 s</button></div>`).join("")}</div><button class="c-nav__gold" type="button" data-child-demo="1">Lancer le mode enfant</button></div>`;
+    this.querySelector("#modal").hidden = false;
+  }
+
+  openGuestChildMode() {
+    if (!this.#guestCatalog.size) {
+      this.openSelection();
+      return;
+    }
+    this.openSelection();
+    const box = this.querySelector("#modalbox");
+    const note = document.createElement("p");
+    note.className = "c-voice-preview";
+    note.textContent = "La démonstration vocale utilisera uniquement ces histoires. La recherche orale complète arrive dans la prochaine étape.";
+    box.querySelector(".c-selection")?.append(note);
+  }
+
+  #readGuestCatalog() {
+    try {
+      const value = JSON.parse(localStorage.getItem(GUEST_CATALOG_KEY) || "[]");
+      return new Set(Array.isArray(value) ? value.slice(0, GUEST_CATALOG_LIMIT) : []);
+    } catch {
+      return new Set();
+    }
+  }
+
+  #saveGuestCatalog() {
+    localStorage.setItem(GUEST_CATALOG_KEY, JSON.stringify([...this.#guestCatalog]));
   }
 
   showBar(id, title) {
