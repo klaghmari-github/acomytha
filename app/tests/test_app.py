@@ -229,6 +229,42 @@ def test_parent_profiles_have_isolated_catalogs(client):
     assert client.delete(f"/api/parent/profiles/{first_id}").status_code == 409
 
 
+def test_parent_assigns_one_story_to_several_child_profiles(client):
+    client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-assignments-1"},
+    )
+    first_id = client.get("/api/parent/profiles").json()["items"][0]["id"]
+    second = client.post(
+        "/api/parent/profiles",
+        json={"display_name": "Petit Renard", "age_band": "N2", "color": "or"},
+    ).json()
+    story_id = "ATOM-SAN.ALI.001-01"
+
+    assigned = client.put(
+        f"/api/parent/stories/{story_id}/profiles",
+        json={"profile_ids": [first_id, second["id"], first_id]},
+    )
+    assert assigned.status_code == 200
+    assert assigned.json()["profile_ids"] == [first_id, second["id"]]
+    profiles = client.get(f"/api/parent/stories/{story_id}/profiles").json()["profiles"]
+    assert {row["id"] for row in profiles if row["selected"]} == {first_id, second["id"]}
+
+    replaced = client.put(
+        f"/api/parent/stories/{story_id}/profiles",
+        json={"profile_ids": [second["id"]]},
+    )
+    assert replaced.status_code == 200
+    assert client.get(f"/api/parent/profiles/{first_id}/catalog").json()["story_ids"] == []
+    assert client.get(f"/api/parent/profiles/{second['id']}/catalog").json()["story_ids"] == [story_id]
+
+    forbidden = client.put(
+        f"/api/parent/stories/{story_id}/profiles",
+        json={"profile_ids": [999999]},
+    )
+    assert forbidden.status_code == 403
+
+
 def test_child_listening_history_is_recorded_for_profile(client):
     client.post(
         "/api/auth/login",

@@ -16,6 +16,7 @@ export class ParentApp extends Component {
   #profiles = [];
   #activeProfileId = null;
   #editingProfileId = null;
+  #assignmentStoryId = null;
 
   get me() {
     return this.#me;
@@ -121,6 +122,7 @@ export class ParentApp extends Component {
           </div>
           <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow" id="profile-kicker">Nouveau profil</p><h2 id="profile-title">Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><button class="c-btn c-btn--wide" id="profile-submit" type="submit">Créer le profil</button><button class="c-btn c-btn--ghost c-btn--wide" id="delete-profile" type="button" hidden>Supprimer ce profil</button><p class="c-error" id="profile-error"></p></form></div>
           <div class="c-modal" id="child-modal" hidden><form class="c-modal__box c-parent-dialog" id="child-form"><button class="c-modal__close" type="button" data-close-child="1">Fermer</button><p class="c-eyebrow">Mode enfant</p><h2>Verrouiller l’écran pour <span id="child-name"></span></h2><p>Choisissez un code de 4 chiffres. Gardez-le en mémoire : il permettra de quitter le mode enfant.</p><input class="c-pin" name="pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" autocomplete="off" required aria-label="Code de sortie à 4 chiffres" /><button class="c-btn c-btn--wide" type="submit">Mémoriser et lancer</button><p class="c-hint">En cas d’oubli, fermez l’application puis reconnectez-vous avec votre e-mail et votre mot de passe.</p><p class="c-error" id="child-error"></p></form></div>
+          <div class="c-modal" id="assignment-modal" hidden><form class="c-modal__box c-parent-dialog" id="assignment-form"><button class="c-modal__close" type="button" data-close-assignment="1">Fermer</button><p class="c-eyebrow">Catalogues enfants</p><h2 id="assignment-title">À qui proposer cette histoire ?</h2><p>Choisissez un ou plusieurs enfants. Vous pourrez modifier ce choix à tout moment.</p><label class="o-row"><input type="checkbox" id="assignment-all" /> <strong>Tous les enfants</strong></label><div class="o-stack" id="assignment-profiles"></div><button class="c-btn c-btn--wide" type="submit">Enregistrer dans les catalogues</button><p class="c-error" id="assignment-error"></p></form></div>
         </main>
       </div>`;
     this.on(this.querySelector("#out"), "click", () => this.logout());
@@ -142,6 +144,10 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#child-mode"), "click", () => this.openChildModal());
     this.on(this.querySelector("#child-form"), "submit", (e) => this.enterChildMode(e));
     this.on(this.querySelector("#child-modal"), "click", (e) => { if (e.target.id === "child-modal" || e.target.closest("[data-close-child]")) this.querySelector("#child-modal").hidden = true; });
+    this.on(this.querySelector("#assignment-modal"), "click", (e) => { if (e.target.id === "assignment-modal" || e.target.closest("[data-close-assignment]")) this.querySelector("#assignment-modal").hidden = true; });
+    this.on(this.querySelector("#assignment-all"), "change", (e) => this.toggleAllAssignments(e.target.checked));
+    this.on(this.querySelector("#assignment-profiles"), "change", () => this.syncAllAssignments());
+    this.on(this.querySelector("#assignment-form"), "submit", (e) => this.saveAssignments(e));
     await this.boot();
   }
 
@@ -344,7 +350,7 @@ export class ParentApp extends Component {
       </div>
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
-      ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Dans le catalogue de l’enfant sélectionné</label>` : ""}
+      ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Dans le catalogue de l’enfant sélectionné</label><button class="c-text-action" type="button" data-assign="${s.story_id}">Choisir les enfants</button>` : ""}
       <div class="o-row">
         ${s.has_audio ? `<button class="c-btn ${this.playingId === s.story_id ? "c-btn--stop" : "c-btn--ghost"}" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : owned ? "Écouter" : "Écouter"}</button>` : ""}
         ${owned ? "" : `<button class="c-btn" data-buy="${s.story_id}">Débloquer ${acmAmount(price ?? 1)}</button>`}
@@ -432,6 +438,11 @@ export class ParentApp extends Component {
   }
 
   onGridClick(e) {
+    const assign = e.target.closest("[data-assign]");
+    if (assign) {
+      this.openAssignments(assign.dataset.assign);
+      return;
+    }
     const buy = e.target.closest("[data-buy]");
     if (buy) {
       this.buy(buy.dataset.buy);
@@ -450,12 +461,70 @@ export class ParentApp extends Component {
     const msg = this.querySelector("#msg");
     try {
       this.wallet = await this.api.post("/shop/buy", { story_id: storyId });
-      this.selected.add(storyId);
       this.drawWallet();
       this.render();
       msg.textContent = "Histoire débloquée.";
+      await this.openAssignments(storyId);
     } catch (e) {
       msg.textContent = e.status === 402 ? "Solde insuffisant." : e.message;
+    }
+  }
+
+  async openAssignments(storyId) {
+    const modal = this.querySelector("#assignment-modal");
+    const error = this.querySelector("#assignment-error");
+    const list = this.querySelector("#assignment-profiles");
+    const story = this.allStories.find((item) => item.story_id === storyId);
+    this.#assignmentStoryId = storyId;
+    error.textContent = "";
+    list.innerHTML = "<p class=\"c-hint\">Chargement des profils…</p>";
+    this.querySelector("#assignment-title").textContent = story ? `À qui proposer « ${story.title} » ?` : "À qui proposer cette histoire ?";
+    modal.hidden = false;
+    try {
+      const data = await this.api.get(`/parent/stories/${encodeURIComponent(storyId)}/profiles`);
+      list.replaceChildren();
+      for (const profile of data.profiles || []) {
+        const label = document.createElement("label");
+        label.className = "o-row";
+        label.innerHTML = `<input type="checkbox" name="profile_id" value="${profile.id}" ${profile.selected ? "checked" : ""}/> <span><strong>${escapeHtml(profile.display_name)}</strong><small>${ageLabel(profile.age_band)}</small></span>`;
+        list.append(label);
+      }
+      if (!list.children.length) list.innerHTML = "<p class=\"c-hint\">Ajoutez d’abord un profil enfant.</p>";
+      this.syncAllAssignments();
+    } catch (err) {
+      error.textContent = err.message || "Impossible de charger les profils.";
+    }
+  }
+
+  toggleAllAssignments(checked) {
+    this.querySelectorAll('#assignment-profiles input[name="profile_id"]').forEach((input) => { input.checked = checked; });
+  }
+
+  syncAllAssignments() {
+    const boxes = [...this.querySelectorAll('#assignment-profiles input[name="profile_id"]')];
+    const all = this.querySelector("#assignment-all");
+    all.checked = boxes.length > 0 && boxes.every((box) => box.checked);
+    all.indeterminate = boxes.some((box) => box.checked) && !all.checked;
+  }
+
+  async saveAssignments(e) {
+    e.preventDefault();
+    if (!this.#assignmentStoryId) return;
+    const error = this.querySelector("#assignment-error");
+    const profileIds = [...this.querySelectorAll('#assignment-profiles input[name="profile_id"]:checked')].map((input) => Number(input.value));
+    try {
+      await this.api.put(`/parent/stories/${encodeURIComponent(this.#assignmentStoryId)}/profiles`, { profile_ids: profileIds });
+      if (profileIds.includes(this.#activeProfileId)) this.selected.add(this.#assignmentStoryId);
+      else this.selected.delete(this.#assignmentStoryId);
+      this.#profiles = (await this.api.get("/parent/profiles")).items || this.#profiles;
+      this.querySelector("#assignment-modal").hidden = true;
+      this.drawProfiles();
+      this.render();
+      this.querySelector("#msg").textContent = profileIds.length
+        ? `Histoire ajoutée à ${profileIds.length} catalogue${profileIds.length > 1 ? "s" : ""} enfant.`
+        : "Histoire retirée des catalogues enfants.";
+    } catch (err) {
+      error.textContent = err.message || "Impossible d’enregistrer ce choix.";
     }
   }
 
@@ -595,6 +664,10 @@ function escapeHtml(s) {
 function fmtDur(sec) {
   const m = Math.max(1, Math.round(Number(sec) / 60));
   return `${m} min`;
+}
+
+function ageLabel(ageBand) {
+  return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[ageBand] || "";
 }
 
 function formLabel(s) {

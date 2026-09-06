@@ -22,6 +22,10 @@ class ForestBody(BaseModel):
     story_ids: list[str]
 
 
+class StoryProfilesBody(BaseModel):
+    profile_ids: list[int]
+
+
 class ChildProfileBody(BaseModel):
     display_name: str = Field(min_length=1, max_length=80)
     age_band: str = Field(default="N1", pattern=r"^N[123]$")
@@ -125,6 +129,52 @@ def put_profile_catalog(profile_id: int, body: ForestBody, auth: AuthContext = D
         db.add(ChildCatalogEntry(profile_id=profile.id, story_id=story_id))
     db.commit()
     return {"ok": True, "count": len(story_ids)}
+
+
+@router.get("/parent/stories/{story_id}/profiles")
+def story_profiles(story_id: str, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    if db.get(Story, story_id) is None:
+        raise HTTPException(404, "histoire inconnue")
+    _owned_story_ids(db, auth.parent_id, [story_id])
+    profiles = db.query(ChildProfile).filter(ChildProfile.parent_id == auth.parent_id).order_by(ChildProfile.created_at).all()
+    profile_ids = [profile.id for profile in profiles]
+    selected_ids = set(db.scalars(
+        select(ChildCatalogEntry.profile_id).where(
+            ChildCatalogEntry.story_id == story_id,
+            ChildCatalogEntry.profile_id.in_(profile_ids),
+        )
+    )) if profile_ids else set()
+    return {
+        "story_id": story_id,
+        "profiles": [
+            {**_profile_payload(profile, db), "selected": profile.id in selected_ids}
+            for profile in profiles
+        ],
+    }
+
+
+@router.put("/parent/stories/{story_id}/profiles")
+def put_story_profiles(story_id: str, body: StoryProfilesBody, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    if db.get(Story, story_id) is None:
+        raise HTTPException(404, "histoire inconnue")
+    _owned_story_ids(db, auth.parent_id, [story_id])
+    requested_ids = list(dict.fromkeys(body.profile_ids))
+    owned_profiles = db.query(ChildProfile).filter(
+        ChildProfile.parent_id == auth.parent_id,
+        ChildProfile.id.in_(requested_ids),
+    ).all() if requested_ids else []
+    if len(owned_profiles) != len(requested_ids):
+        raise HTTPException(403, "profil enfant non autorisé")
+    all_profile_ids = list(db.scalars(select(ChildProfile.id).where(ChildProfile.parent_id == auth.parent_id)))
+    if all_profile_ids:
+        db.query(ChildCatalogEntry).filter(
+            ChildCatalogEntry.story_id == story_id,
+            ChildCatalogEntry.profile_id.in_(all_profile_ids),
+        ).delete(synchronize_session=False)
+    for profile_id in requested_ids:
+        db.add(ChildCatalogEntry(profile_id=profile_id, story_id=story_id))
+    db.commit()
+    return {"ok": True, "story_id": story_id, "profile_ids": requested_ids, "count": len(requested_ids)}
 
 
 @router.get("/lessons")
