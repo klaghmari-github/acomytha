@@ -67,6 +67,10 @@ export class ApiClient {
     return this.request(path, { method: "PUT", body });
   }
 
+  delete(path) {
+    return this.request(path, { method: "DELETE" });
+  }
+
   blob(path) {
     return this.request(path, { raw: true });
   }

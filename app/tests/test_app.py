@@ -218,6 +218,15 @@ def test_parent_profiles_have_isolated_catalogs(client):
     )
     assert client.get(f"/api/parent/profiles/{first_id}/catalog").json()["story_ids"] == []
     assert client.get(f"/api/parent/profiles/{second_id}/catalog").json()["story_ids"] == ["ATOM-SAN.ALI.001-01"]
+    updated = client.put(
+        f"/api/parent/profiles/{second_id}",
+        json={"display_name": "Lina", "age_band": "N3", "color": "violet"},
+    )
+    assert updated.status_code == 200
+    assert updated.json()["display_name"] == "Lina"
+    assert updated.json()["age_band"] == "N3"
+    assert client.delete(f"/api/parent/profiles/{second_id}").status_code == 200
+    assert client.delete(f"/api/parent/profiles/{first_id}").status_code == 409
 
 
 def test_child_listening_history_is_recorded_for_profile(client):
