@@ -69,6 +69,10 @@ class Database:
         if "child_profile_id" not in session_cols:
             with self.engine.begin() as conn:
                 conn.execute(text("ALTER TABLE sessions ADD COLUMN child_profile_id INTEGER"))
+        profile_cols = {c["name"] for c in insp.get_columns("child_profiles")} if "child_profiles" in insp.get_table_names() else set()
+        if "playback_mode" not in profile_cols:
+            with self.engine.begin() as conn:
+                conn.execute(text("ALTER TABLE child_profiles ADD COLUMN playback_mode VARCHAR(16) DEFAULT 'day'"))
         listening_cols = {c["name"] for c in insp.get_columns("listening_sessions")} if "listening_sessions" in insp.get_table_names() else set()
         listening_migrations = {
             "total_duration_s": "FLOAT DEFAULT 0",

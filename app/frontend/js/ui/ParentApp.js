@@ -124,8 +124,8 @@ export class ParentApp extends Component {
             <span id="nowtitle"></span>
             <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
           </div>
-          <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow" id="profile-kicker">Nouveau profil</p><h2 id="profile-title">Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><button class="c-btn c-btn--wide" id="profile-submit" type="submit">Créer le profil</button><button class="c-btn c-btn--ghost c-btn--wide" id="delete-profile" type="button" hidden>Supprimer ce profil</button><p class="c-error" id="profile-error"></p></form></div>
-          <div class="c-modal" id="child-modal" hidden><form class="c-modal__box c-parent-dialog" id="child-form"><button class="c-modal__close" type="button" data-close-child="1">Fermer</button><p class="c-eyebrow">Mode enfant</p><h2>Verrouiller l’écran pour <span id="child-name"></span></h2><p>Choisissez un code de 4 chiffres. Gardez-le en mémoire : il permettra de quitter le mode enfant.</p><input class="c-pin" name="pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" autocomplete="off" required aria-label="Code de sortie à 4 chiffres" /><button class="c-btn c-btn--wide" type="submit">Mémoriser et lancer</button><p class="c-hint">En cas d’oubli, fermez l’application puis reconnectez-vous avec votre e-mail et votre mot de passe.</p><p class="c-error" id="child-error"></p></form></div>
+          <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow" id="profile-kicker">Nouveau profil</p><h2 id="profile-title">Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><label class="c-field">Expérience d’écoute<select name="playback_mode"><option value="day">Mode jour · histoires interactives</option><option value="night">Mode nuit · écoute calme</option></select></label><p class="c-hint">Ce choix est verrouillé en mode enfant. Vous pourrez le modifier ici à tout moment.</p><button class="c-btn c-btn--wide" id="profile-submit" type="submit">Créer le profil</button><button class="c-btn c-btn--ghost c-btn--wide" id="delete-profile" type="button" hidden>Supprimer ce profil</button><p class="c-error" id="profile-error"></p></form></div>
+          <div class="c-modal" id="child-modal" hidden><form class="c-modal__box c-parent-dialog" id="child-form"><button class="c-modal__close" type="button" data-close-child="1">Fermer</button><p class="c-eyebrow">Mode enfant</p><h2>Verrouiller l’écran pour <span id="child-name"></span></h2><label class="c-field">Pour cette écoute<select name="playback_mode"><option value="day">Mode jour · questions et choix</option><option value="night">Mode nuit · narration plus calme</option></select></label><p>Choisissez un code de 4 chiffres. Gardez-le en mémoire : il permettra de quitter le mode enfant.</p><input class="c-pin" name="pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" autocomplete="off" required aria-label="Code de sortie à 4 chiffres" /><button class="c-btn c-btn--wide" type="submit">Mémoriser et lancer</button><p class="c-hint">En cas d’oubli, fermez l’application puis reconnectez-vous avec votre e-mail et votre mot de passe.</p><p class="c-error" id="child-error"></p></form></div>
           <div class="c-modal" id="assignment-modal" hidden><form class="c-modal__box c-parent-dialog" id="assignment-form"><button class="c-modal__close" type="button" data-close-assignment="1">Fermer</button><p class="c-eyebrow">Catalogues enfants</p><h2 id="assignment-title">À qui proposer cette histoire ?</h2><p>Choisissez un ou plusieurs enfants. Vous pourrez modifier ce choix à tout moment.</p><label class="o-row"><input type="checkbox" id="assignment-all" /> <strong>Tous les enfants</strong></label><div class="o-stack" id="assignment-profiles"></div><button class="c-btn c-btn--wide" type="submit">Enregistrer dans les catalogues</button><p class="c-error" id="assignment-error"></p></form></div>
         </main>
       </div>`;
@@ -209,7 +209,8 @@ export class ParentApp extends Component {
     for (const profile of this.#profiles) {
       const card = document.createElement("div");
       card.className = `c-profile ${profile.id === this.#activeProfileId ? "is-active" : ""}`;
-      card.innerHTML = `<button type="button" class="c-profile__select" data-profile="${profile.id}"><span class="c-profile__avatar">${escapeHtml(profile.display_name.slice(0, 1).toUpperCase())}</span><span><strong>${escapeHtml(profile.display_name)}</strong><small>${profile.story_count} histoire${profile.story_count > 1 ? "s" : ""}</small></span></button><button type="button" class="c-text-action" data-edit-profile="${profile.id}" aria-label="Modifier le profil de ${escapeHtml(profile.display_name)}">Modifier</button>`;
+      const mode = profile.playback_mode === "night" ? "Mode nuit" : "Mode jour";
+      card.innerHTML = `<button type="button" class="c-profile__select" data-profile="${profile.id}"><span class="c-profile__avatar">${escapeHtml(profile.display_name.slice(0, 1).toUpperCase())}</span><span><strong>${escapeHtml(profile.display_name)}</strong><small>${profile.story_count} histoire${profile.story_count > 1 ? "s" : ""} · ${mode}</small></span></button><button type="button" class="c-text-action" data-edit-profile="${profile.id}" aria-label="Modifier le profil de ${escapeHtml(profile.display_name)}">Modifier</button>`;
       list.append(card);
     }
     const add = this.querySelector("#add-profile");
@@ -240,6 +241,7 @@ export class ParentApp extends Component {
     form.reset();
     form.elements.display_name.value = profile?.display_name || "";
     form.elements.age_band.value = profile?.age_band || "N1";
+    form.elements.playback_mode.value = profile?.playback_mode || "day";
     this.querySelector("#profile-kicker").textContent = profile ? "Profil enfant" : "Nouveau profil";
     this.querySelector("#profile-title").textContent = profile ? `Modifier ${profile.display_name}` : "Ajouter un enfant";
     this.querySelector("#profile-submit").textContent = profile ? "Enregistrer les modifications" : "Créer le profil";
@@ -254,7 +256,7 @@ export class ParentApp extends Component {
     const err = this.querySelector("#profile-error");
     err.textContent = "";
     try {
-      const body = { display_name: fd.get("display_name"), age_band: fd.get("age_band"), color: "violet" };
+      const body = { display_name: fd.get("display_name"), age_band: fd.get("age_band"), color: "violet", playback_mode: fd.get("playback_mode") };
       const profile = this.#editingProfileId
         ? await this.api.put(`/parent/profiles/${this.#editingProfileId}`, body)
         : await this.api.post("/parent/profiles", body);
@@ -317,17 +319,30 @@ export class ParentApp extends Component {
     const profile = this.#profiles.find((p) => p.id === this.#activeProfileId);
     if (!profile) { this.openProfileModal(); return; }
     this.querySelector("#child-name").textContent = profile.display_name;
+    this.querySelector('#child-form select[name="playback_mode"]').value = profile.playback_mode || "day";
     this.querySelector("#child-modal").hidden = false;
     this.querySelector("#child-form input")?.focus();
   }
 
   async enterChildMode(e) {
     e.preventDefault();
-    const pin = String(new FormData(e.target).get("pin") || "");
+    const data = new FormData(e.target);
+    const pin = String(data.get("pin") || "");
     const err = this.querySelector("#child-error");
     if (!/^\d{4}$/.test(pin)) { err.textContent = "Saisissez exactement 4 chiffres."; return; }
     try {
       await this.save();
+      const profile = this.#profiles.find((item) => item.id === this.#activeProfileId);
+      const playbackMode = data.get("playback_mode") === "night" ? "night" : "day";
+      if (profile && profile.playback_mode !== playbackMode) {
+        const updated = await this.api.put(`/parent/profiles/${profile.id}`, {
+          display_name: profile.display_name,
+          age_band: profile.age_band,
+          color: profile.color || "violet",
+          playback_mode: playbackMode,
+        });
+        Object.assign(profile, updated);
+      }
       await this.api.post("/auth/enfant", { profile_id: this.#activeProfileId, pin, device_id: DeviceIdentity.get() });
       this.router.go("#/enfant");
     } catch (error) { err.textContent = error.message || "Le mode enfant n’a pas pu démarrer."; }

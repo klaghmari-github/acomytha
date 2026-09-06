@@ -58,7 +58,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-APP-009 | **à faire** | Vitrine conversion : hero + extrait, 6 phares, besoins parent, pas « 1400 leçons ». |
 | F-PAR-006 | **à faire** | Espace parent familial (ce soir / enfant / histoires). Retirer voix et commande non finies. |
 | F-ENF-002 | **à faire** | Mode enfant illustré : cartes, continuer, pictos, fin vécue. |
-| F-PLY-006 | **à faire** | Mode nuit choisi par le parent, pas par l’enfant. |
+| F-PLY-006 | **développé** | Mode jour/nuit enregistré par profil, choisi par le parent et verrouillé côté enfant. |
 | F-PAY-004 | **à faire** | Offre euros simple (abo + pack). acm hors premier écran. |
 | F-PAY-005 | **plus tard** | Parrainage : acm au parrain = 1er chargement ; le parrain du parrain reçoit 2× sa 1re charge. |
 | F-SEC-004 | **développé** | Démo désactivée par défaut, cookies sécurisés en HTTPS, rate limit et récupération par lien à usage unique. |

@@ -271,6 +271,33 @@ def test_parent_profiles_have_isolated_catalogs(client):
     assert client.delete(f"/api/parent/profiles/{first_id}").status_code == 409
 
 
+def test_parent_controls_playback_mode_for_each_child_profile(client):
+    client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-night-mode-1"},
+    )
+    created = client.post(
+        "/api/parent/profiles",
+        json={"display_name": "Petit hibou", "age_band": "N1", "color": "violet", "playback_mode": "night"},
+    )
+    assert created.status_code == 200
+    assert created.json()["playback_mode"] == "night"
+    profile_id = created.json()["id"]
+    entered = client.post(
+        "/api/auth/enfant",
+        json={"profile_id": profile_id, "pin": TEST_PIN, "device_id": "device-night-mode-1"},
+    )
+    assert entered.status_code == 200
+    assert entered.json()["child_profile"]["playback_mode"] == "night"
+    assert client.get("/api/auth/me").json()["child_profile"]["playback_mode"] == "night"
+    assert client.post("/api/auth/parent", json={"pin": TEST_PIN}).status_code == 200
+    invalid = client.put(
+        f"/api/parent/profiles/{profile_id}",
+        json={"display_name": "Petit hibou", "age_band": "N1", "color": "violet", "playback_mode": "sleep"},
+    )
+    assert invalid.status_code == 422
+
+
 def test_parent_assigns_one_story_to_several_child_profiles(client):
     client.post(
         "/api/auth/login",

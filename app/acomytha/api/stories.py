@@ -31,6 +31,7 @@ class ChildProfileBody(BaseModel):
     display_name: str = Field(min_length=1, max_length=80)
     age_band: str = Field(default="N1", pattern=r"^N[123]$")
     color: str = Field(default="violet", max_length=16)
+    playback_mode: str = Field(default="day", pattern=r"^(day|night)$")
 
 
 class ListeningEndBody(BaseModel):
@@ -47,6 +48,7 @@ def _profile_payload(profile: ChildProfile, db: Session) -> dict:
         "display_name": profile.display_name,
         "age_band": profile.age_band,
         "color": profile.color,
+        "playback_mode": profile.playback_mode,
         "story_count": count,
     }
 
@@ -80,6 +82,7 @@ def create_child_profile(body: ChildProfileBody, auth: AuthContext = Depends(req
         display_name=body.display_name.strip(),
         age_band=body.age_band,
         color=body.color,
+        playback_mode=body.playback_mode,
     )
     db.add(profile)
     db.commit()
@@ -95,6 +98,7 @@ def update_child_profile(profile_id: int, body: ChildProfileBody, auth: AuthCont
     profile.display_name = body.display_name.strip()
     profile.age_band = body.age_band
     profile.color = body.color
+    profile.playback_mode = body.playback_mode
     db.commit()
     return _profile_payload(profile, db)
 

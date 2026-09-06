@@ -153,6 +153,7 @@ class ChildProfile(Base):
     display_name: Mapped[str] = mapped_column(String(80), default="Mon enfant")
     age_band: Mapped[str] = mapped_column(String(8), default="N1")
     color: Mapped[str] = mapped_column(String(16), default="violet")
+    playback_mode: Mapped[str] = mapped_column(String(16), default="day")
     unlock_pin_hash: Mapped[str | None] = mapped_column(String(255), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
