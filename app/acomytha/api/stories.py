@@ -13,7 +13,7 @@ from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.catalog import list_stories, story_to_dict
 from acomytha.commerce import num, owned_ids
 from acomytha.graph import StoryGraph
-from acomytha.models import ChildCatalogEntry, ChildProfile, Chunk, ForestEntry, Lesson, ListeningSession, Story
+from acomytha.models import ChildCatalogEntry, ChildProfile, Chunk, ForestEntry, Lesson, ListeningSession, SessionToken, Story
 
 router = APIRouter(prefix="/api", tags=["stories"])
 
@@ -77,6 +77,32 @@ def create_child_profile(body: ChildProfileBody, auth: AuthContext = Depends(req
     db.commit()
     db.refresh(profile)
     return _profile_payload(profile, db)
+
+
+@router.put("/parent/profiles/{profile_id}")
+def update_child_profile(profile_id: int, body: ChildProfileBody, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    profile = db.query(ChildProfile).filter(ChildProfile.id == profile_id, ChildProfile.parent_id == auth.parent_id).one_or_none()
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    profile.display_name = body.display_name.strip()
+    profile.age_band = body.age_band
+    profile.color = body.color
+    db.commit()
+    return _profile_payload(profile, db)
+
+
+@router.delete("/parent/profiles/{profile_id}")
+def delete_child_profile(profile_id: int, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    profiles = db.query(ChildProfile).filter(ChildProfile.parent_id == auth.parent_id).all()
+    profile = next((item for item in profiles if item.id == profile_id), None)
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    if len(profiles) <= 1:
+        raise HTTPException(409, "un foyer doit conserver au moins un profil enfant")
+    db.query(SessionToken).filter(SessionToken.child_profile_id == profile.id).delete()
+    db.delete(profile)
+    db.commit()
+    return {"ok": True}
 
 
 @router.get("/parent/profiles/{profile_id}/catalog")

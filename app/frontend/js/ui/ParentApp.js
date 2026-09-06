@@ -15,6 +15,7 @@ export class ParentApp extends Component {
   #filterTimer = 0;
   #profiles = [];
   #activeProfileId = null;
+  #editingProfileId = null;
 
   get me() {
     return this.#me;
@@ -118,7 +119,7 @@ export class ParentApp extends Component {
             <span id="nowtitle"></span>
             <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
           </div>
-          <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow">Nouveau profil</p><h2>Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><button class="c-btn c-btn--wide" type="submit">Créer le profil</button><p class="c-error" id="profile-error"></p></form></div>
+          <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow" id="profile-kicker">Nouveau profil</p><h2 id="profile-title">Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><button class="c-btn c-btn--wide" id="profile-submit" type="submit">Créer le profil</button><button class="c-btn c-btn--ghost c-btn--wide" id="delete-profile" type="button" hidden>Supprimer ce profil</button><p class="c-error" id="profile-error"></p></form></div>
           <div class="c-modal" id="child-modal" hidden><form class="c-modal__box c-parent-dialog" id="child-form"><button class="c-modal__close" type="button" data-close-child="1">Fermer</button><p class="c-eyebrow">Mode enfant</p><h2>Verrouiller l’écran pour <span id="child-name"></span></h2><p>Choisissez un code de 4 chiffres. Gardez-le en mémoire : il permettra de quitter le mode enfant.</p><input class="c-pin" name="pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" autocomplete="off" required aria-label="Code de sortie à 4 chiffres" /><button class="c-btn c-btn--wide" type="submit">Mémoriser et lancer</button><p class="c-hint">En cas d’oubli, fermez l’application puis reconnectez-vous avec votre e-mail et votre mot de passe.</p><p class="c-error" id="child-error"></p></form></div>
         </main>
       </div>`;
@@ -136,6 +137,7 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#profile-list"), "click", (e) => this.onProfileClick(e));
     this.on(this.querySelector("#add-profile"), "click", () => this.openProfileModal());
     this.on(this.querySelector("#profile-form"), "submit", (e) => this.createProfile(e));
+    this.on(this.querySelector("#delete-profile"), "click", () => this.deleteProfile());
     this.on(this.querySelector("#profile-modal"), "click", (e) => { if (e.target.id === "profile-modal" || e.target.closest("[data-close-profile]")) this.querySelector("#profile-modal").hidden = true; });
     this.on(this.querySelector("#child-mode"), "click", () => this.openChildModal());
     this.on(this.querySelector("#child-form"), "submit", (e) => this.enterChildMode(e));
@@ -194,12 +196,10 @@ export class ParentApp extends Component {
     const list = this.querySelector("#profile-list");
     list.replaceChildren();
     for (const profile of this.#profiles) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = `c-profile ${profile.id === this.#activeProfileId ? "is-active" : ""}`;
-      button.dataset.profile = profile.id;
-      button.innerHTML = `<span class="c-profile__avatar">${escapeHtml(profile.display_name.slice(0, 1).toUpperCase())}</span><span><strong>${escapeHtml(profile.display_name)}</strong><small>${profile.story_count} histoire${profile.story_count > 1 ? "s" : ""}</small></span>`;
-      list.append(button);
+      const card = document.createElement("div");
+      card.className = `c-profile ${profile.id === this.#activeProfileId ? "is-active" : ""}`;
+      card.innerHTML = `<button type="button" class="c-profile__select" data-profile="${profile.id}"><span class="c-profile__avatar">${escapeHtml(profile.display_name.slice(0, 1).toUpperCase())}</span><span><strong>${escapeHtml(profile.display_name)}</strong><small>${profile.story_count} histoire${profile.story_count > 1 ? "s" : ""}</small></span></button><button type="button" class="c-text-action" data-edit-profile="${profile.id}" aria-label="Modifier le profil de ${escapeHtml(profile.display_name)}">Modifier</button>`;
+      list.append(card);
     }
     const add = this.querySelector("#add-profile");
     add.disabled = this.#profiles.length >= limit;
@@ -209,6 +209,11 @@ export class ParentApp extends Component {
   }
 
   async onProfileClick(e) {
+    const edit = e.target.closest("[data-edit-profile]");
+    if (edit) {
+      this.openProfileModal(this.#profiles.find((profile) => profile.id === Number(edit.dataset.editProfile)));
+      return;
+    }
     const button = e.target.closest("[data-profile]");
     if (!button) return;
     this.#activeProfileId = Number(button.dataset.profile);
@@ -217,7 +222,16 @@ export class ParentApp extends Component {
     this.render();
   }
 
-  openProfileModal() {
+  openProfileModal(profile = null) {
+    this.#editingProfileId = profile?.id || null;
+    const form = this.querySelector("#profile-form");
+    form.reset();
+    form.elements.display_name.value = profile?.display_name || "";
+    form.elements.age_band.value = profile?.age_band || "N1";
+    this.querySelector("#profile-kicker").textContent = profile ? "Profil enfant" : "Nouveau profil";
+    this.querySelector("#profile-title").textContent = profile ? `Modifier ${profile.display_name}` : "Ajouter un enfant";
+    this.querySelector("#profile-submit").textContent = profile ? "Enregistrer les modifications" : "Créer le profil";
+    this.querySelector("#delete-profile").hidden = !profile;
     this.querySelector("#profile-modal").hidden = false;
     this.querySelector("#profile-form input")?.focus();
   }
@@ -228,8 +242,13 @@ export class ParentApp extends Component {
     const err = this.querySelector("#profile-error");
     err.textContent = "";
     try {
-      const profile = await this.api.post("/parent/profiles", { display_name: fd.get("display_name"), age_band: fd.get("age_band"), color: "violet" });
-      this.#profiles.push(profile);
+      const body = { display_name: fd.get("display_name"), age_band: fd.get("age_band"), color: "violet" };
+      const profile = this.#editingProfileId
+        ? await this.api.put(`/parent/profiles/${this.#editingProfileId}`, body)
+        : await this.api.post("/parent/profiles", body);
+      const index = this.#profiles.findIndex((item) => item.id === profile.id);
+      if (index >= 0) this.#profiles[index] = profile;
+      else this.#profiles.push(profile);
       this.#activeProfileId = profile.id;
       this.selected = new Set();
       e.target.reset();
@@ -237,6 +256,24 @@ export class ParentApp extends Component {
       this.drawProfiles();
       this.render();
     } catch (error) { err.textContent = error.message || "Impossible de créer le profil."; }
+  }
+
+  async deleteProfile() {
+    if (!this.#editingProfileId) return;
+    const profile = this.#profiles.find((item) => item.id === this.#editingProfileId);
+    if (!profile || !window.confirm(`Supprimer le profil de ${profile.display_name} et son historique d'écoute ?`)) return;
+    const err = this.querySelector("#profile-error");
+    try {
+      await this.api.delete(`/parent/profiles/${profile.id}`);
+      this.#profiles = this.#profiles.filter((item) => item.id !== profile.id);
+      this.#activeProfileId = this.#profiles[0]?.id || null;
+      await this.loadProfileCatalog();
+      this.querySelector("#profile-modal").hidden = true;
+      this.drawProfiles();
+      this.render();
+    } catch (error) {
+      err.textContent = error.message || "Ce profil ne peut pas être supprimé.";
+    }
   }
 
   openChildModal() {
