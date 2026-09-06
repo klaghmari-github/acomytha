@@ -286,7 +286,7 @@ def enter_child(body: ChildBody, request: Request, response: Response, auth: Aut
     token = request.app.state.sessions.issue(db, auth.user, body.device_id, "child", profile.id)
     _set_cookie(response, request, token)
     payload = _user_payload(auth.user, "child", db)
-    payload["child_profile"] = {"id": profile.id, "display_name": profile.display_name}
+    payload["child_profile"] = {"id": profile.id, "display_name": profile.display_name, "playback_mode": profile.playback_mode}
     return payload
 
 
@@ -333,4 +333,7 @@ def me(auth: AuthContext = Depends(get_auth), db: Session = Depends(get_db)):
     payload = _user_payload(auth.user, auth.role, db)
     if auth.role == "child" and auth.session.child_profile_id:
         payload["child_profile_id"] = auth.session.child_profile_id
+        profile = _profile_of(db, auth.user.id, auth.session.child_profile_id)
+        if profile is not None:
+            payload["child_profile"] = {"id": profile.id, "display_name": profile.display_name, "playback_mode": profile.playback_mode}
     return payload

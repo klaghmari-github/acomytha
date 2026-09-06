@@ -9,6 +9,7 @@ export class ChildApp extends Component {
   #pressTimer = 0;
   #recognition = null;
   #listeningId = null;
+  #playbackMode = "day";
 
   async connectedCallback() {
     this.innerHTML = `
@@ -49,6 +50,7 @@ export class ChildApp extends Component {
       return;
     }
     this.#stories = await this.api.get("/enfant/file");
+    this.#playbackMode = me.child_profile?.playback_mode === "night" ? "night" : "day";
     if (!this.#stories.length) {
       await this.#speak("Papa ou maman n'a pas encore choisi d'histoire pour toi.");
       return;
@@ -86,6 +88,7 @@ export class ChildApp extends Component {
         await this.#chooseStory();
       },
     });
+    engine.night = this.#playbackMode === "night";
     this.#engine = engine;
     try {
       await engine.run(story.story_id);
