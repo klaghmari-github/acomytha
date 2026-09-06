@@ -118,6 +118,9 @@ class CatalogImporter:
         story.framing = meta.get("framing") or "standard"
         story.setting = meta.get("setting") or ""
         story.characters = meta.get("characters") or ""
+        story.main_character = meta.get("main_character") or _first_character(story.characters)
+        story.places = meta.get("places") or _canonical_places(story.setting)
+        story.universe = (meta.get("universe") or "").lower()
         story.wait_default_ms = int(meta.get("wait_default_ms") or 3000)
         story.has_audio = (audio_dir / "CHK_T0000_P0000.mp3").exists()
         story.status = "APPROVED_AUDIO" if story.has_audio else "APPROVED_TEXT"
@@ -173,6 +176,9 @@ def story_to_dict(story: Story) -> dict:
         "framing": story.framing,
         "setting": story.setting,
         "characters": story.characters,
+        "main_character": story.main_character,
+        "places": [value.strip() for value in (story.places or "").split("|") if value.strip()],
+        "universe": story.universe,
         "chunk_count": story.chunk_count,
         "duration_s": story.duration_s or 0,
         "has_interaction": bool(story.has_interaction),
@@ -241,12 +247,16 @@ def page_stories(
     domain: str = "",
     age_band: str = "",
     kind: str = "",
+    characters: str = "",
+    lessons: str = "",
+    places: str = "",
+    universes: str = "",
     limit: int = 6,
     offset: int = 0,
 ) -> tuple[list[Story], int]:
     limit = max(1, min(int(limit), 48))
     offset = max(0, int(offset))
-    filtered = _story_filter(q=q, domain=domain, age_band=age_band, kind=kind)
+    filtered = _story_filter(q=q, domain=domain, age_band=age_band, kind=kind, characters=characters, lessons=lessons, places=places, universes=universes)
     total = int(db.scalar(select(func.count()).select_from(filtered.subquery())) or 0)
     stmt = filtered.order_by(Story.domain, Story.age_band, Story.title).offset(offset).limit(limit)
     return list(db.scalars(stmt)), total
@@ -263,7 +273,7 @@ def related_for(db: Session, stories: list[Story]) -> dict[str, list[dict]]:
     return by
 
 
-def _story_filter(q: str = "", domain: str = "", age_band: str = "", kind: str = ""):
+def _story_filter(q: str = "", domain: str = "", age_band: str = "", kind: str = "", characters: str = "", lessons: str = "", places: str = "", universes: str = ""):
     stmt = select(Story)
     if q:
         like = f"%{q.strip()}%"
@@ -286,7 +296,36 @@ def _story_filter(q: str = "", domain: str = "", age_band: str = "", kind: str =
         stmt = stmt.where(Story.kind == "ramifiee")
     elif kind:
         stmt = stmt.where(Story.kind == kind)
+    for raw, column in ((characters, Story.characters), (places, Story.places)):
+        values = [value.strip() for value in raw.split(",") if value.strip()]
+        if values:
+            stmt = stmt.where(or_(*(column.ilike(f"%{value}%") for value in values)))
+    lesson_values = [value.strip() for value in lessons.split(",") if value.strip()]
+    if lesson_values:
+        stmt = stmt.where(Story.lesson_id.in_(lesson_values))
+    universe_values = [value.strip().lower() for value in universes.split(",") if value.strip()]
+    if universe_values:
+        stmt = stmt.where(Story.universe.in_(universe_values))
     return stmt
+
+
+def _first_character(value: str) -> str:
+    return value.replace("|", ",").split(",", 1)[0].strip()
+
+
+def _canonical_places(setting: str) -> str:
+    folded = setting.casefold()
+    aliases = {
+        "maison": ("maison", "salon", "cuisine", "chambre", "salle de bain"),
+        "école": ("école", "classe", "cour de récréation", "cantine"),
+        "parc": ("parc", "square", "aire de jeux"),
+        "jardin": ("jardin", "potager"),
+        "bibliothèque": ("bibliothèque", "médiathèque"),
+        "plage": ("plage", "bord de mer"),
+        "commerces": ("marché", "magasin", "boulangerie", "supermarché"),
+        "transports": ("gare", "train", "bus", "métro", "tramway"),
+    }
+    return " | ".join(label for label, words in aliases.items() if any(word in folded for word in words))
 
 
 def _meta_map(ws) -> dict[str, str]:

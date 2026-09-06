@@ -70,7 +70,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAR-007 | **développé** | Catalogues distincts ; affectation d’une histoire à un, plusieurs ou tous les profils. |
 | F-ENF-003 | **développé** | Choix du profil, code 4 chiffres, sortie protégée et récupération par reconnexion. |
 | F-ENF-004 | **développé** | Écran enfant verrouillé, sélection et ramifications conduites oralement. |
-| F-APP-010 | **à faire** | Catalogue public par histoire, personnage, leçon, lieu et univers bleu/rose ; filtres cumulatifs et réversibles. |
+| F-APP-010 | **partiel** | Filtres publics cumulables par personnage, leçon et lieu, actifs visibles et URL restaurable ; univers bleu/rose attend les tags éditoriaux. |
 | F-HIS-003 | **développé** | Sessions détaillées : dates, durées, progression, fin, mode, version et chemin de chunks. |
 | F-NAR-025 | **développé** | Inédites d’abord, reprises ensuite, histoires terminées diversifiées par ancienneté. |
 | F-ACC-006 | **développé** | Inscription minimale et activation obligatoire par lien e-mail à usage unique. |
@@ -78,7 +78,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAR-008 | **développé** | Sélection invitée locale limitée à deux histoires. |
 | F-ENF-005 | **partiel** | Sélection invitée et aperçus 30 s prêts ; conduite vocale invitée encore à finaliser. |
 | F-INT-006 | **partiel** | Appel AcoMytha, 3 choix et défaut à 3 s ; affinage multi-facettes à compléter. |
-| F-TAX-005 | **partiel** | Personnages et lieux importés en texte ; index structuré des facettes à compléter. |
+| F-TAX-005 | **partiel** | Personnage principal, lieux canoniques et univers importables/indexés ; attribution éditoriale des univers à compléter. |
 | F-ADM-007 | **partiel** | Aperçus, pagination et quotas profils configurables ; ordre des facettes et choix vocaux à ajouter. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
