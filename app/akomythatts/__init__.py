@@ -12,8 +12,8 @@ VoiceStudio          générer / enregistrer une empreinte
 ReplicaBook          une WAV par réplique, réassemblage
 ConversionQueue      JSON → WAV (travaux asynchrones)
 CatalogueConverter   Excel atelier → JSON schema 2.0
-TtsApp               façade pour l'éditeur AcoMytha (sans Flask)
-WebApp               adaptateur HTTP du studio local
+TtsApp               façade unique (éditeur AcoMytha, même processus FastAPI)
+WebApp               ancien adaptateur Flask du studio autonome (ne plus lancer)
 """
 
 from .app import TtsApp

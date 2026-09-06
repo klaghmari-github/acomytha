@@ -3,8 +3,8 @@
 **Version :** 4.10 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
 **Stripe (F-PAY-001, `3e4335b8`).** Checkout hébergé + webhook signé. Plus de paiement démo. Clés uniquement dans l’environnement. Recharge 10–50 € → acm. Abonnement 7,99 € = F-PAY-004 (pas encore).  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
-**Chaîne (F-NAR-024).** Source = **Excel** (texte + prosodie) → moteur → JSON → AkoMythaTTS → audio → catalogue app. Trois dossiers plats : `arbres/`, `json/`, `audio/`. Noms de fichiers = IDs. **Maintenant : qualité des histoires Excel.** Détail : `stories/FORMAT_JSON_TTS.md`.  
-**Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
+**Chaîne (F-NAR-024).** Source = **Excel** → JSON → TTS **dans AcoMytha** (`TtsApp`, `#/admin/editeur`) → audio. Trois dossiers plats : `arbres/`, `json/`, `audio/` (+ `voices/` pour les empreintes). Branche `AkoMythaTTS`. Détail : `stories/FORMAT_JSON_TTS.md`.  
+**Branche :** `main` en routine. **Exception fusion TTS :** `AkoMythaTTS`. Message `feat(F-XXX):` / `docs:`.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
 **Web :** `STRAT-005`. Statut : **développé** = sur `main`.
@@ -52,7 +52,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-021 | **à faire** | Contrôle tics corpus + titres uniques (avis3). |
 | F-NAR-022 | **à faire** | `text` change → invalider SSML / xai / notes / audio. |
 | F-NAR-023 | **à faire** | Trois séries personnages (Amir / Nina / Victorina). |
-| F-NAR-024 | **noté** | Chaîne Excel → JSON → audio. Source = xlsx. Trois dossiers plats. Profil ≠ prosodie. Qualité des histoires d’abord. |
+| F-NAR-024 | **en cours** (branche `AkoMythaTTS`) | Chaîne Excel → JSON → audio **dans** l’app. Éditeur admin. Profil ≠ prosodie. |
 | F-DAT-002 | **à faire** | Importer métadonnées vocales dans SQLite et le lecteur. |
 | F-AUD-008 | **à faire** | Produire l’audio des 24 (puis étendre). Témoins Git = 2 histoires. |
 | F-APP-009 | **à faire** | Vitrine conversion : hero + extrait, 6 phares, besoins parent, pas « 1400 leçons ». |
@@ -365,7 +365,7 @@ L’enfant s’attache au personnage ; le parent choisit la compétence.
 
 ### F-NAR-024 — Chaîne Excel → JSON → audio
 
-Deux projets. **AcoMytha** écrit les histoires. **AkoMythaTTS** les dit. Contrat : `stories/FORMAT_JSON_TTS.md`.
+Un produit, un serveur. **AcoMytha** écrit les histoires (Excel) **et** les dit (`TtsApp` dans le même FastAPI). L’ancien dépôt AkoMythaTTS est fusionné sur la branche `AkoMythaTTS`. Contrat : `stories/FORMAT_JSON_TTS.md`. Éditeur : `#/admin/editeur`.
 
 **Source = Excel.** Chaque xlsx porte le texte des passages **et** les paramètres de prosodie. Un moteur convertit l’Excel en JSON (schema 2.0). Le TTS prend le JSON et produit l’audio. L’app affiche le catalogue **branché sur ces audio**.
 
@@ -388,7 +388,7 @@ Le moteur de conversion **le fait déjà** (`story_id` = stem xlsx, `chunk_id` =
 
 Ne pas fusionner les deux. Amir reste Amir ; il ne parle pas pareil selon la scène.
 
-**Maintenant :** qualité des histoires Excel. Ne pas lancer conversion / TTS / aplatissement tant que le fondateur n’a pas dit la suite.
+**Atelier :** conversion, empreintes et JSON→audio sont dans l’éditeur. Aplatir tout le corpus en `stories/audio/<story_id>_<chunk_id>.wav` et brancher le catalogue enfant dessus : suite. Qualité Excel inchangée.
 
 ### F-DAT-002 — Métadonnées vocales dans l’app
 
@@ -480,7 +480,7 @@ Le narrateur décrit la scène. Maman, papa, maîtresse, grands-parents, héros 
 
 Heavy = `narration_plan` seulement. Fichiers **déjà bakés** = Piper local + ffmpeg MP3. Pas de `POST /v1/tts`. **STRAT-002** §2.
 
-**Nouveau pipeline (F-NAR-024) :** Excel → JSON → AkoMythaTTS (Kokoro, puis OpenVoice si WAV autorisé) → `stories/audio/` plat. Piper = bake existant seulement, jusqu’à bascule.
+**Nouveau pipeline (F-NAR-024) :** Excel → JSON → `TtsApp` (Kokoro, puis OpenVoice si WAV autorisé) dans AcoMytha → `stories/audio/` plat. Piper = bake existant seulement, jusqu’à bascule. Éditeur : `#/admin/editeur`.
 
 ### F-INT-005 — Question d’écoute (ne branche pas)
 
@@ -578,10 +578,10 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 
 **Avant toute vente** (pas commencé dans cette passe) :
 
-0. Qualité des histoires **Excel** (F-NAR-008…019). F-NAR-024 est le contrat de chaîne, pas un chantier à ouvrir tout de suite.  
+0. Qualité des histoires **Excel** (F-NAR-008…019). F-NAR-024 : contrat + éditeur déjà dans l’app (branche `AkoMythaTTS`).  
 1. `F-NAR-020` — choisir et relire 24 histoires **dans les xlsx**.  
 2. `F-NAR-021` + `F-NAR-022` — tics, titres, sync vocale.  
-3. `F-AUD-008` — audio des 24 **via Excel → JSON → AkoMythaTTS**.  
+3. `F-AUD-008` — audio des 24 **via Excel → JSON → TtsApp** (éditeur AcoMytha).  
 4. `F-DAT-002` — l’app consomme SSML / notes / sons.  
 5. `F-APP-009` + `F-PAR-006` + `F-ENF-002` + `F-PLY-006` — vitrine, parent, enfant.  
 6. `F-PAY-004` + `F-SEC-004` + `F-ADM-005` — euros, durcissement, légal.  

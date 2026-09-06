@@ -1,21 +1,22 @@
-# Chaîne Excel → JSON → audio (AcoMytha ↔ AkoMythaTTS)
+# Chaîne Excel → JSON → audio
 
 **Feature :** F-NAR-024.  
-**Schema JSON :** `2.0` (renderer AkoMythaTTS).  
-**Priorité du moment :** qualité des **histoires Excel**. Conversion / TTS / aplatissement audio : quand le fondateur le dit.
+**Schema JSON :** `2.0`.  
+**Runtime :** un seul serveur AcoMytha (branche `AkoMythaTTS`). L’éditeur vocal (`#/admin/editeur`) appelle `akomythatts.TtsApp` dans le même processus FastAPI que le parent et l’enfant. Plus de serveur Flask séparé.
 
 ## Pipeline
 
 ```
-Excel (source)  →  moteur  →  JSON  →  AkoMythaTTS  →  audio  →  catalogue de l’app
+Excel (source)  →  CatalogueConverter  →  JSON  →  TtsApp (Kokoro / OpenVoice)  →  audio  →  catalogue de l’app
 ```
 
 | Étape | Qui | Quoi |
 | --- | --- | --- |
-| 1. Source | AcoMytha, fichier Excel | Texte des passages **et** paramètres de prosodie. On écrit ici. |
-| 2. Conversion | Moteur (`catalogue_converter.py` côté AkoMythaTTS ; IDs déjà dans l’xlsx) | Un JSON par histoire, nommé d’après `story_id`. |
-| 3. Parole | AkoMythaTTS | JSON → WAV. Un fichier par chunk, nommé d’après `story_id` + `chunk_id`. |
-| 4. App | AcoMytha | Le catalogue affiche les histoires **branché sur les audio générés**. |
+| 1. Source | Excel `stories/arbres/` | Texte des passages **et** paramètres de prosodie. On écrit ici. |
+| 2. Conversion | `CatalogueConverter` + bouton *Excel → JSON* | Un JSON plat `stories/json/<story_id>.json`. |
+| 3. Empreintes | `VoiceStudio` dans l’éditeur | Générer (genre / âge / tempérament) ou enregistrer au micro → `stories/voices/` + `voice_registry.json`. |
+| 4. Parole | `ConversionQueue` + `ReplicaBook` | JSON → WAV, répliques éditables (régénérer / réenregistrer). |
+| 5. App | parent / enfant | Le catalogue affiche les histoires **branchées sur les audio générés**. |
 
 Le JSON n’est **pas** le manuscrit. L’Excel l’est. Le JSON n’est **pas** la voix. Le TTS l’est.
 
@@ -26,8 +27,9 @@ Un seul dossier par nature. **Pas** de sous-dossier par histoire. Les **noms de 
 | Dossier | Contenu | Nom de fichier |
 | --- | --- | --- |
 | `stories/arbres/` | Tous les Excel | `<story_id>.xlsx` — ex. `TREE-AUT-001.xlsx` |
-| `stories/json/` | Tous les JSON générés + le registre vocal | `<story_id>.json` — ex. `TREE-AUT-001.json` |
-| `stories/audio/` | Tous les audio générés | `<story_id>_<chunk_id>.wav` — ex. `TREE-AUT-001_CHK_T0000_P0000.wav` |
+| `stories/json/` | JSON générés + registre vocal | `<story_id>.json`, `voice_registry.json` |
+| `stories/voices/` | Empreintes (référence OpenVoice) | `characters/character_amir.wav`, `defaults/narrator.wav` |
+| `stories/audio/` | Audio des histoires | cible `<story_id>_<chunk_id>.wav` ; jobs d’atelier dans `app/data/tts_jobs/` |
 
 Le `chunk_id` (`CHK_T0001_P0002_Q0001`…) identifie déjà transition et passage : inutile de recréer cette arborescence en dossiers.
 
@@ -86,12 +88,12 @@ Racine : `schema_version`, `story_id`, `title`, `language`, `catalogue`, `source
 
 Chunk : `kind`, `lesson_id`, `segments[]`, `interaction`, `options`, `night_policy`, `sound_cues`, `editorial_notes`, `next_chunk`, `default_next_chunk`.
 
-Renderer TTS :
+Renderer TTS : l’éditeur (`POST /api/editor/convert`) ou, hors HTTP :
 
-```bash
-python catalogue_renderer.py stories/json/TREE-AUT-001.json \
-  --registry stories/json/voice_registry.json \
-  [--only-chunk CHK_T0000_P0000] [--without-cloning] --output stories/audio
+```python
+from akomythatts import TtsApp
+tts = TtsApp.assemble()
+tts.convert(story_id="ATOM-AUT.AFF.001-01", assignments={})
 ```
 
 ## Conversion mécanique déjà faite : pas l’écriture
@@ -100,6 +102,10 @@ Le bundle `AkoMythaTTS-catalogue-tts.bundle` **ne se clone pas** (historique inc
 
 Les 1 449 JSON convertis recopient l’xlsx avec une **prosodie générique**. Ce n’est pas la qualité visée. On n’importe pas les 168 Mo. Échantillons locaux : `voice_registry.json` + `TREE-AUT-001.json`.
 
+## Éditeur (déjà dans l’app)
+
+Branche `AkoMythaTTS`, page `#/admin/editeur`, API `/api/editor/`. Détail lancement : `app/README.md`.
+
 ## Ce qu’on fait maintenant
 
-Améliorer la **qualité des histoires dans les Excel** (`stories/arbres/`, dumps `stories/rewrites/`). Pas relancer la conversion, pas aplatir l’audio, pas brancher l’app, tant que le fondateur n’a pas dit quoi faire ensuite.
+Améliorer la **qualité des histoires dans les Excel**. L’atelier vocal est branché dans l’app ; on n’aplatit pas encore tout le corpus en `stories/audio/<story_id>_<chunk_id>.wav` (Piper historique encore en sous-dossiers).

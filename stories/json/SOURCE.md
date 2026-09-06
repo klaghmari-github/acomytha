@@ -2,8 +2,10 @@
 
 - **Contrat :** `../FORMAT_JSON_TTS.md` (F-NAR-024).
 - **Source des histoires :** `../arbres/<story_id>.xlsx` (texte + prosodie).
-- **Ici :** sortie du moteur, un fichier plat par histoire `<story_id>.json`, plus `voice_registry.json`.
-- **Audio :** `../audio/<story_id>_<chunk_id>.wav` (cible plate ; bake actuel encore en sous-dossiers).
-- **Échantillon schema :** `TREE-AUT-001.json` importé depuis AkoMythaTTS `feat/catalogue-tts-pipeline` @ `244ba22`.
-- **Pas utilisé :** le bundle `AkoMythaTTS-catalogue-tts.bundle` (historique git incomplet).
+- **Ici :** sortie du moteur, un fichier plat `<story_id>.json`, plus `voice_registry.json`.
+- **Empreintes :** `../voices/` (chemins dans le registre).
+- **Audio histoires :** `../audio/` (cible plate ; jobs d’atelier : `app/data/tts_jobs/`).
+- **Éditeur :** `#/admin/editeur` liste ces JSON, convertit Excel → JSON, génère / enregistre les voix.
+- **Échantillons ATOM** (schema 2.0) : `ATOM-AUT.AFF.*` et `ATOM-AUT.RAN.*`, plus `TREE-AUT-001.json`.
+- **Pas utilisé :** le bundle `AkoMythaTTS-catalogue-tts.bundle`.
 - On n’écrit pas les histoires ici. Qualité = Excel d’abord.

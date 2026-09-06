@@ -2,7 +2,8 @@
 
 **Lire ce fichier en premier** dans une session neuve. Ne pas « reprendre la dernière conversation ». Le contexte utile est ici et dans les docs qu’il pointe.
 
-Date de gel : **5 septembre 2026**. HEAD : **`4fa95621`**. Worktree, SSD, GitLab `origin` et GitHub `github` = ce commit.
+Date de gel `main` : **5 septembre 2026**.  
+**Branche TTS (6 septembre 2026) :** `AkoMythaTTS` — fusion du moteur vocal dans AcoMytha. Un serveur 8787 = parent + enfant + admin + éditeur (`#/admin/editeur`). Doc : `app/README.md`, `stories/FORMAT_JSON_TTS.md`, STRAT-005. GitHub : `github/AkoMythaTTS`.
 
 Produit : **AcoMytha** (jamais Sentier). Forêt narrative **audio seulement**, enfants 3–6 ans (N1 / N2 / N3), famille papa-maman. POS-001. Pas religion / politique / guerre / crime / discours de genre.
 

@@ -2,7 +2,7 @@
 
 **Référencé par :** `F-AUD-001` à `F-AUD-008`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`, `F-NAR-024`.  
 **Graphe / IDs :** `STRAT-003`. **Lecture :** `STRAT-004`.  
-**Chaîne F-NAR-024 :** Excel (texte + prosodie) → JSON → AkoMythaTTS → audio plat `stories/audio/<story_id>_<chunk_id>.wav`. L’app lit ces audio. Contrat : `stories/FORMAT_JSON_TTS.md`. Piper (ci-dessous) = bake existant, encore en sous-dossiers `audio/<story_id>/`.
+**Chaîne F-NAR-024 :** Excel (texte + prosodie) → JSON → **TtsApp** (Kokoro / OpenVoice, même processus FastAPI, éditeur `#/admin/editeur`) → audio. Contrat : `stories/FORMAT_JSON_TTS.md`. Piper (ci-dessous) = bake existant, encore en sous-dossiers `audio/<story_id>/`. Branche `AkoMythaTTS` : plus de serveur TTS séparé.
 
 ## 1. Décision format
 

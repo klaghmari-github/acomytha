@@ -4,11 +4,23 @@ Forêt narrative **audio seulement** pour enfants de 3 à 6 ans. Le parent chois
 
 ## Application web
 
+**Un seul serveur** (FastAPI, port **8787**) : accueil, parent, enfant, admin, **éditeur vocal**. Pas de second processus TTS.
+
 ```bash
 PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787
 ```
 
-Comptes locaux : voir [`app/README.md`](app/README.md). Architecture : [`gestion_projet/strategies/STRAT-005-application-web.md`](gestion_projet/strategies/STRAT-005-application-web.md).
+| Mode | Hash | Qui |
+| --- | --- | --- |
+| Accueil | `#/` | public |
+| Parent | `#/parent` | parent / admin |
+| Enfant | `#/enfant` | enfant (PIN) |
+| Admin | `#/admin` | admin |
+| Éditeur | `#/admin/editeur` | admin — JSON, empreintes, Excel→JSON→audio |
+
+Comptes locaux et lancement Kokoro : [`app/README.md`](app/README.md). Architecture : [`STRAT-005`](gestion_projet/strategies/STRAT-005-application-web.md). Chaîne vocale : [`stories/FORMAT_JSON_TTS.md`](stories/FORMAT_JSON_TTS.md).
+
+Branche de fusion TTS : **`AkoMythaTTS`**.
 
 ## Corpus
 

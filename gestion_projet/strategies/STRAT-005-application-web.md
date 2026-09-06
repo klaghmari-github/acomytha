@@ -1,7 +1,8 @@
 # STRAT-005 — Application web AcoMytha
 
-**Référencé par :** `F-APP-001`, `F-ACC-001`, `F-SEC-002`, `F-SEC-003`, `F-ADM-004`, `F-PAR-001`, `F-ENF-001`, `F-AUD-004`, `F-PLY-001`, `F-PAY-001`.  
-**Décisions datées :** 3 septembre 2026 (fondateur absent — prises et notées, pas de questionnaire).
+**Référencé par :** `F-APP-001`, `F-ACC-001`, `F-SEC-002`, `F-SEC-003`, `F-ADM-004`, `F-PAR-001`, `F-ENF-001`, `F-AUD-004`, `F-PLY-001`, `F-PAY-001`, `F-NAR-024`.  
+**Décisions datées :** 3 septembre 2026 (fondateur absent — prises et notées, pas de questionnaire).  
+**Branche `AkoMythaTTS` :** un seul uvicorn (8787) = parent + enfant + admin + éditeur vocal (`TtsApp`). Pas de Flask 8765.
 
 ## 1. Rôle du web
 
@@ -14,8 +15,8 @@ L’application web est le **premier client livrable** : catalogue, comptes, for
 | --- | --- | --- |
 | HTML | *Custom Elements* (`HTMLElement`) | Chaque écran / carte / lecteur est une classe. Réutilisable dans une WebView native. |
 | CSS | Jetons (`:root`) + objets BEM (`.o-*`, `.c-*`, `.s-*`) | Pas de framework CSS. Thèmes parent / admin / enfant = objets de jetons. |
-| JS | ES modules + classes (`ApiClient`, `Router`, `StoryEngine`, `CryptoPlayer`, `DeviceIdentity`) | Zéro React/Vue : moins de dette pour l’APK. |
-| Python | FastAPI + services / dépôts / modèles SQLAlchemy 2 | Un objet métier par concept (Compte, Appareil, Forêt, Graphe, CoffreAudio). |
+| JS | ES modules + classes (`ApiClient`, `Router`, `StoryEngine`, `CryptoPlayer`, `DeviceIdentity`, `EditorApp`) | Zéro React/Vue : moins de dette pour l’APK. |
+| Python | FastAPI + services / dépôts / modèles SQLAlchemy 2 | Un objet métier par concept (Compte, Appareil, Forêt, Graphe, CoffreAudio, **TtsApp**). |
 
 ## 3. Décisions produit
 
@@ -50,6 +51,9 @@ Ce n’est pas une DRM studio. C’est le filet demandé (une clé, un appareil)
 | `#/parent` | parent | Forêt, catalogue, filtres, préécoute |
 | `#/enfant` | enfant | File d’histoires choisies, lecteur |
 | `#/admin` | admin | Comptes, alertes appareil, corpus |
+| `#/admin/editeur` | admin | Atelier vocal : troupe, JSON, empreintes, conversion, répliques |
+
+`GET /api/health` : `{ modes, tts }`. API éditeur : `/api/editor/…` (admin). Détail : `app/README.md`, `stories/FORMAT_JSON_TTS.md`.
 
 ## 6. Fichiers
 

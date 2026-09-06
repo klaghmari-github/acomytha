@@ -7,10 +7,10 @@ Un produit, peu de documents. Chaque fichier a un rôle unique. Les features **p
 | [`specification/AcoMytha_Specification.md`](specification/AcoMytha_Specification.md) | **Spec unique** : produit, public, règles, leçons, runtime. Fusionne les anciens docx/xlsx de cadrage. |
 | [`backlog/Features.md`](backlog/Features.md) | Backlog développable (`F-…`). Une ligne = une branche Git. |
 | [`strategies/STRAT-001-validation.md`](strategies/STRAT-001-validation.md) | Comment un texte / un audio est accepté ou refusé. |
-| [`strategies/STRAT-002-audio.md`](strategies/STRAT-002-audio.md) | MP3, rythme, Piper (0 € hors Heavy), chiffrement, lecture RAM. |
+| [`strategies/STRAT-002-audio.md`](strategies/STRAT-002-audio.md) | MP3, rythme, Piper (bake) + Kokoro/OpenVoice (`TtsApp` dans l’app), chiffrement, lecture RAM. |
 | [`strategies/STRAT-003-modele-donnees.md`](strategies/STRAT-003-modele-donnees.md) | Tables relationnelles histoire ↔ leçon ↔ chunk, identifiants. |
 | [`strategies/STRAT-004-moteur-lecture.md`](strategies/STRAT-004-moteur-lecture.md) | Jour / nuit, enchaînement des chunks, préchargement. |
-| [`strategies/STRAT-005-application-web.md`](strategies/STRAT-005-application-web.md) | App web : POO, rôles, 1 appareil, chiffrement RAM. |
+| [`strategies/STRAT-005-application-web.md`](strategies/STRAT-005-application-web.md) | App web : POO, rôles, 1 appareil, chiffrement RAM, **un serveur** parent/enfant/éditeur. |
 | [`decisions/DECISIONS_APP.md`](decisions/DECISIONS_APP.md) | Décisions prises sans questionnaire (D1…). |
 | [`decisions/ECHANGES.md`](decisions/ECHANGES.md) | Traçabilité : demandes fondateur + **exemples** (citations). |
 | [`consignes.txt`](consignes.txt) | Git : uniquement `main`, message `feat(F-XXX):`. |

@@ -6,8 +6,10 @@ Un **Excel par arbre** (`arbres/<tree_id>.xlsx`). Une histoire = un chemin racin
 
 | Chemin | Contenu |
 | --- | --- |
-| `arbres/` | 1445 xlsx (source actuelle) |
-| `audio/` | WAV de test Piper (`<tree_id>/<chunk_id>.wav`) |
+| `arbres/` | xlsx source (live) |
+| `json/` | JSON TTS schema 2.0 + `voice_registry.json` (éditeur) |
+| `voices/` | Empreintes vocales (personnages / défauts) |
+| `audio/` | WAV de test Piper (`<tree_id>/<chunk_id>.wav`) ; cible F-NAR-024 = plat |
 | `referentiel/lecons.xlsx` | Catalogue des 85 leçons (domaines, attributs) |
 | `referentiel/lecon_histoires.xlsx` | Leçon → histoires → chunks pédagogiques |
 | `outils/xlsx_to_audio.py` | Bake WAV |

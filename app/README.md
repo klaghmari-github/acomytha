@@ -1,6 +1,6 @@
 # Application web AcoMytha
 
-Forêt narrative audio : parent, enfant, admin. STRAT-005.
+Forêt narrative audio : parent, enfant, admin, **éditeur vocal**. STRAT-005. Un processus, un port.
 
 ## Lancer
 
@@ -30,9 +30,19 @@ PYTHONPATH=app $TTS_PY -m uvicorn acomytha.main:create_app --factory --host 127.
 
 ## Éditeur vocal (branche `AkoMythaTTS`)
 
-Connecté en admin → **Éditeur** (`#/admin/editeur`) : troupe (vues personnages / histoires), choix d’un JSON, empreintes (générer / enregistrer), conversion Excel → JSON puis JSON → audio, édition des répliques.
+Même processus que le parent et l’enfant. Admin → **Éditeur** (`#/admin/editeur`).
 
-Le moteur est `akomythatts.TtsApp`, câblé dans la même usine FastAPI que le parent et l’enfant.
+| Action | Où |
+| --- | --- |
+| Vues personnages / histoires | troupe, API `GET /api/editor/roster` |
+| Choisir un JSON | `stories/json/`, `GET /api/editor/stories`, `POST /api/editor/parse` |
+| Excel → JSON | bouton *Excel → JSON*, `POST /api/editor/excel` (`stories/arbres/` → `stories/json/`) |
+| Empreinte générer / enregistrer | modal Kokoro ou micro, `POST /api/editor/voices/generate` ou `…/record` |
+| JSON → audio + répliques | *Convertir en audio*, `POST /api/editor/convert`, édition `GET /api/editor/jobs/{id}/edit` |
+
+Façade Python (sans Flask) : `from akomythatts import TtsApp`. Registre : `stories/json/voice_registry.json`. WAV d’empreinte : `stories/voices/`. Jobs : `app/data/tts_jobs/` (gitignoré).
+
+Objets TTS : `TtsApp`, `Utils`, `CharacterCatalogue`, `StoryParser`, `CharacterDetector`, `Roster`, `VoiceStudio`, `ReplicaBook`, `ConversionQueue`, `CatalogueConverter`. JS : `EditorApp`, `EditorApi`, `TroupeBoard`, `DropZone`, `CastBoard`, `VoicePanel`, `ConvertPanel`, `ReplicaStudio`, `MicRecorder`.
 
 Premier démarrage : import des xlsx `stories/arbres/` vers SQLite (`app/data/`, gitignoré).
 
@@ -89,8 +99,8 @@ PYTHONPATH=app pytest -q app/tests
 
 ## Objets
 
-- Python : `Settings`, `Database`, `CatalogImporter`, `StoryGraph`, `AudioVault`, `DeviceGuard`, `Bootstrap`
-- JS : `Component`, `ApiClient`, `DeviceIdentity`, `CryptoPlayer`, `StoryEngine`, shells custom elements
-- CSS : jetons + objets `.o-*` / `.c-*` / `.s-*`
+- Python : `Settings`, `Database`, `CatalogImporter`, `StoryGraph`, `AudioVault`, `DeviceGuard`, `Bootstrap`, `TtsApp`
+- JS : `Component`, `ApiClient`, `DeviceIdentity`, `CryptoPlayer`, `StoryEngine`, `EditorApp`, shells custom elements
+- CSS : jetons + objets `.o-*` / `.c-*` / `.s-*` (+ `editor.css` pour l’atelier vocal)
 
 Une clé d’accès ne peut lier **qu’un** `device_id`. Un deuxième appareil → alerte admin.
