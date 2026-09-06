@@ -45,19 +45,52 @@ def lessons(db: Session = Depends(get_db)):
     ]
 
 
+@router.get("/facets")
+def facets(db: Session = Depends(get_db)):
+    stories = list(db.scalars(select(Story)))
+    character_counts: dict[str, int] = {}
+    place_counts: dict[str, int] = {}
+    universe_counts: dict[str, int] = {}
+    for story in stories:
+        for name in {part.strip() for part in story.characters.replace("|", ",").split(",") if part.strip()}:
+            character_counts[name] = character_counts.get(name, 0) + 1
+        for place in {part.strip() for part in story.places.split("|") if part.strip()}:
+            place_counts[place] = place_counts.get(place, 0) + 1
+        if story.universe:
+            universe_counts[story.universe] = universe_counts.get(story.universe, 0) + 1
+    lesson_rows = list(db.scalars(select(Lesson).order_by(Lesson.title)))
+    return {
+        "characters": _facet_values(character_counts),
+        "places": _facet_values(place_counts),
+        "universes": _facet_values(universe_counts),
+        "lessons": [{"value": row.lesson_id, "label": row.title} for row in lesson_rows],
+    }
+
+
+def _facet_values(counts: dict[str, int]) -> list[dict]:
+    return [
+        {"value": value, "label": value, "count": count}
+        for value, count in sorted(counts.items(), key=lambda item: (-item[1], item[0].casefold()))
+    ]
+
+
 @router.get("/stories")
 def stories(
     q: str = "",
     domain: str = "",
     age_band: str = "",
     kind: str = "",
+    characters: str = "",
+    lessons: str = "",
+    places: str = "",
+    universes: str = "",
     limit: int | None = None,
     offset: int = 0,
     db: Session = Depends(get_db),
 ):
     page = int(num(db, "home_catalog_page_size") or 6) if limit is None else limit
     rows, total = page_stories(
-        db, q=q, domain=domain, age_band=age_band, kind=kind, limit=page, offset=offset
+        db, q=q, domain=domain, age_band=age_band, kind=kind, characters=characters, lessons=lessons, places=places, universes=universes, limit=page, offset=offset
     )
     related = related_for(db, rows)
     items = []

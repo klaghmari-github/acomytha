@@ -21,6 +21,7 @@ export class HomeApp extends Component {
   #observer = null;
   #me = null;
   #guestCatalog = new Set();
+  #activeFacets = { characters: new Set(), lessons: new Set(), places: new Set(), universes: new Set() };
 
   get stories() {
     return this.#stories;
@@ -198,7 +199,12 @@ export class HomeApp extends Component {
               <option value="interaction">Avec interaction</option>
               <option value="ramifiee">Avec ramifications vers d’autres histoires</option>
             </select>
+            <select id="character"><option value="">Personnage</option></select>
+            <select id="lesson"><option value="">Leçon</option></select>
+            <select id="place"><option value="">Lieu</option></select>
+            <select id="universe" hidden><option value="">Univers</option></select>
           </div>
+          <div class="c-catalog-tools" id="facet-tools" hidden><div class="o-row" id="active-facets" aria-live="polite"></div><button type="button" class="c-text-action" id="clear-facets">Tout effacer</button></div>
           <div class="c-catalog-tools">
             <p><strong id="guest-count">${this.#guestCatalog.size}</strong> / ${GUEST_CATALOG_LIMIT} histoires dans votre sélection enfant</p>
             <button type="button" class="c-text-action" id="open-selection">Voir la sélection</button>
@@ -238,9 +244,17 @@ export class HomeApp extends Component {
       field.style.setProperty("--my", ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
     });
     this.on(this.querySelector("#q"), "input", () => this.scheduleFetch());
-    this.on(this.querySelector("#domain"), "change", () => this.fetchPage({ reset: true }));
-    this.on(this.querySelector("#age"), "change", () => this.fetchPage({ reset: true }));
-    this.on(this.querySelector("#kind"), "change", () => this.fetchPage({ reset: true }));
+    for (const name of ["domain", "age", "kind"]) {
+      this.on(this.querySelector(`#${name}`), "change", () => {
+        this.syncFiltersToUrl();
+        this.fetchPage({ reset: true });
+      });
+    }
+    for (const name of ["character", "lesson", "place", "universe"]) {
+      this.on(this.querySelector(`#${name}`), "change", (event) => this.addFacet(name, event.target.value));
+    }
+    this.on(this.querySelector("#active-facets"), "click", (event) => this.removeFacet(event));
+    this.on(this.querySelector("#clear-facets"), "click", () => this.clearFacets());
     this.on(this.querySelector("#grid"), "click", (e) => this.onGridClick(e));
     this.on(this.querySelector("#guest-child-mode"), "click", () => this.openGuestChildMode());
     this.on(this.querySelector("#open-selection"), "click", () => this.openSelection());
@@ -267,9 +281,10 @@ export class HomeApp extends Component {
 
   async boot() {
     try {
-      const [stats, lessons] = await Promise.all([
+      const [stats, lessons, facets] = await Promise.all([
         this.api.get("/public/stats"),
         this.api.get("/public/lessons"),
+        this.api.get("/public/facets"),
       ]);
       this.previewSeconds = stats.preview_seconds || 30;
       this.pageSize = Math.max(1, Math.min(Number(stats.home_catalog_page_size) || 6, 48));
@@ -285,6 +300,12 @@ export class HomeApp extends Component {
         o.textContent = name;
         sel.append(o);
       }
+      this.fillFacetSelect("#character", facets.characters || []);
+      this.fillFacetSelect("#lesson", facets.lessons || []);
+      this.fillFacetSelect("#place", facets.places || []);
+      this.fillFacetSelect("#universe", facets.universes || []);
+      this.querySelector("#universe").hidden = !(facets.universes || []).length;
+      this.restoreFiltersFromUrl();
       try {
         this.me = await this.api.get("/auth/me");
         const nav = this.querySelector(".c-top nav");
@@ -313,7 +334,10 @@ export class HomeApp extends Component {
 
   scheduleFetch() {
     clearTimeout(this._filterTimer);
-    this._filterTimer = setTimeout(() => this.fetchPage({ reset: true }), 160);
+    this._filterTimer = setTimeout(() => {
+      this.syncFiltersToUrl();
+      this.fetchPage({ reset: true });
+    }, 160);
   }
 
   filters() {
@@ -322,7 +346,91 @@ export class HomeApp extends Component {
       domain: this.querySelector("#domain")?.value || "",
       age_band: this.querySelector("#age")?.value || "",
       kind: this.querySelector("#kind")?.value || "",
+      characters: [...this.#activeFacets.characters],
+      lessons: [...this.#activeFacets.lessons],
+      places: [...this.#activeFacets.places],
+      universes: [...this.#activeFacets.universes],
     };
+  }
+
+  fillFacetSelect(selector, values) {
+    const select = this.querySelector(selector);
+    for (const item of values) {
+      const option = document.createElement("option");
+      option.value = item.value;
+      option.textContent = item.count ? `${item.label} (${item.count})` : item.label;
+      select.append(option);
+    }
+  }
+
+  addFacet(name, value) {
+    const group = { character: "characters", lesson: "lessons", place: "places", universe: "universes" }[name];
+    if (!group || !value) return;
+    this.#activeFacets[group].add(value);
+    this.querySelector(`#${name}`).value = "";
+    this.renderActiveFacets();
+    this.syncFiltersToUrl();
+    this.fetchPage({ reset: true });
+  }
+
+  removeFacet(event) {
+    const button = event.target.closest("[data-facet-group]");
+    if (!button) return;
+    this.#activeFacets[button.dataset.facetGroup]?.delete(button.dataset.facetValue);
+    this.renderActiveFacets();
+    this.syncFiltersToUrl();
+    this.fetchPage({ reset: true });
+  }
+
+  clearFacets() {
+    for (const values of Object.values(this.#activeFacets)) values.clear();
+    this.renderActiveFacets();
+    this.syncFiltersToUrl();
+    this.fetchPage({ reset: true });
+  }
+
+  renderActiveFacets() {
+    const target = this.querySelector("#active-facets");
+    target.replaceChildren();
+    const labels = { characters: "Personnage", lessons: "Leçon", places: "Lieu", universes: "Univers" };
+    for (const [group, values] of Object.entries(this.#activeFacets)) {
+      for (const value of values) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "c-pill";
+        button.dataset.facetGroup = group;
+        button.dataset.facetValue = value;
+        button.textContent = `${labels[group]} : ${value} ×`;
+        button.setAttribute("aria-label", `Retirer le filtre ${labels[group]} ${value}`);
+        target.append(button);
+      }
+    }
+    this.querySelector("#facet-tools").hidden = !target.children.length;
+  }
+
+  restoreFiltersFromUrl() {
+    const params = new URLSearchParams(location.hash.split("?")[1] || "");
+    for (const group of Object.keys(this.#activeFacets)) {
+      for (const value of (params.get(group) || "").split(",").filter(Boolean)) this.#activeFacets[group].add(value);
+    }
+    for (const name of ["q", "domain", "age", "kind"]) {
+      const value = params.get(name);
+      if (value && this.querySelector(`#${name}`)) this.querySelector(`#${name}`).value = value;
+    }
+    this.renderActiveFacets();
+  }
+
+  syncFiltersToUrl() {
+    const params = new URLSearchParams();
+    const filters = this.filters();
+    for (const name of ["q", "domain", "age_band", "kind"]) {
+      const key = name === "age_band" ? "age" : name;
+      if (filters[name]) params.set(key, filters[name]);
+    }
+    for (const group of Object.keys(this.#activeFacets)) {
+      if (filters[group].length) params.set(group, filters[group].join(","));
+    }
+    history.replaceState(null, "", `${location.pathname}${location.search}#/${params.size ? `?${params}` : ""}`);
   }
 
   async fetchPage({ reset = false } = {}) {
@@ -339,6 +447,9 @@ export class HomeApp extends Component {
       if (f.domain) params.set("domain", f.domain);
       if (f.age_band) params.set("age_band", f.age_band);
       if (f.kind) params.set("kind", f.kind);
+      for (const group of ["characters", "lessons", "places", "universes"]) {
+        if (f[group].length) params.set(group, f[group].join(","));
+      }
       params.set("limit", String(this.pageSize));
       params.set("offset", String(reset ? 0 : this.stories.length));
       const data = await this.api.get(`/public/stories?${params}`);

@@ -24,7 +24,7 @@ class AcoMythaApp {
     this.#session = new Session(this.#api);
     this.#router = new Router(root);
     this.#router
-      .on(/^#\/?$/, () => this.#show("acomytha-home"))
+      .on(/^#\/?(?:\?.*)?$/, () => this.#show("acomytha-home"))
       .on(/^#\/entrer\/?$/, () => this.#show("acomytha-login"))
       .on(/^#\/inscription\/?$/, () => this.#show("acomytha-signup"))
       .on(/^#\/verification-envoyee\/?$/, () => this.#show("acomytha-verification"))

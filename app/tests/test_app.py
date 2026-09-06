@@ -35,6 +35,24 @@ def test_health(client):
     assert r.json()["ok"] is True
 
 
+def test_public_catalog_exposes_and_combines_structured_facets(client):
+    page = client.get("/api/public/stories", params={"limit": 10}).json()
+    story = page["items"][0]
+    assert story["main_character"]
+    assert isinstance(story["places"], list)
+    facets = client.get("/api/public/facets")
+    assert facets.status_code == 200
+    values = facets.json()
+    assert any(item["value"] == story["main_character"] for item in values["characters"])
+    filtered = client.get(
+        "/api/public/stories",
+        params={"characters": story["main_character"], "lessons": story["lesson_id"], "limit": 10},
+    ).json()
+    assert filtered["total"] >= 1
+    assert all(story["main_character"].casefold() in item["characters"].casefold() for item in filtered["items"])
+    assert all(item["lesson_id"] == story["lesson_id"] for item in filtered["items"])
+
+
 def test_index(client):
     r = client.get("/")
     assert r.status_code == 200

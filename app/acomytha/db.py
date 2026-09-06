@@ -56,6 +56,15 @@ class Database:
         if "has_interaction" not in cols:
             with self.engine.begin() as conn:
                 conn.execute(text("ALTER TABLE stories ADD COLUMN has_interaction BOOLEAN DEFAULT 0"))
+        story_facets = {
+            "main_character": "VARCHAR(80) DEFAULT ''",
+            "places": "VARCHAR(240) DEFAULT ''",
+            "universe": "VARCHAR(16) DEFAULT ''",
+        }
+        with self.engine.begin() as conn:
+            for column, definition in story_facets.items():
+                if column not in cols:
+                    conn.execute(text(f"ALTER TABLE stories ADD COLUMN {column} {definition}"))
         session_cols = {c["name"] for c in insp.get_columns("sessions")} if "sessions" in insp.get_table_names() else set()
         if "child_profile_id" not in session_cols:
             with self.engine.begin() as conn:
