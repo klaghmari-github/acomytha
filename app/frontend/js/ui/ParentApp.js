@@ -13,7 +13,6 @@ export class ParentApp extends Component {
   #domainNames = new Map();
   #wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 30, parent_preview_seconds: 30 };
   #filterTimer = 0;
-  #payRef = "";
 
   get me() {
     return this.#me;
@@ -63,13 +62,6 @@ export class ParentApp extends Component {
   set _filterTimer(value) {
     this.#filterTimer = value;
   }
-  get _payRef() {
-    return this.#payRef;
-  }
-  set _payRef(value) {
-    this.#payRef = String(value || "");
-  }
-
   async connectedCallback() {
     this.innerHTML = `
       <div class="s-shell">
@@ -128,7 +120,6 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#shop"), "click", (e) => this.onShopClick(e));
     this.on(this.querySelector("#shop"), "submit", (e) => this.onShopSubmit(e));
-    this._payRef = "";
     await this.boot();
   }
 
@@ -162,6 +153,9 @@ export class ParentApp extends Component {
       this.drawWallet();
       this.drawShop();
       this.render();
+      const checkout = new URLSearchParams(location.hash.split("?")[1] || "").get("checkout");
+      if (checkout === "success") msg.textContent = "Paiement reçu. Votre solde est actualisé après confirmation de Stripe.";
+      if (checkout === "cancelled") msg.textContent = "Paiement annulé : aucun montant n’a été débité.";
     } catch (e) {
       msg.textContent = e.message || "Impossible de charger le catalogue.";
     }
@@ -233,6 +227,16 @@ export class ParentApp extends Component {
     const el = this.querySelector("#shop");
     if (!el) return;
     const p = this.wallet.prices || {};
+    const paymentReady = ["test", "live"].includes(this.wallet.stripe);
+    const paymentHint = this.wallet.stripe === "test"
+      ? "Mode test Stripe : aucune somme réelle ne sera débitée."
+      : this.wallet.stripe === "live"
+        ? "Paiement sécurisé par Stripe."
+        : this.wallet.stripe === "webhook_missing"
+          ? "Paiement désactivé : le webhook Stripe doit être configuré."
+          : this.wallet.stripe === "invalid"
+            ? "Paiement désactivé : configuration Stripe invalide ou URL HTTPS manquante."
+            : "Paiement Stripe pas encore configuré sur ce serveur.";
     el.innerHTML = `
       <details class="c-panel">
         <summary>Commander une histoire · ${acmAmount(p.order ?? 1.5)} + ${acmAmount(p.ramification ?? 0.5)} / choix</summary>
@@ -272,7 +276,7 @@ export class ParentApp extends Component {
           ${[10, 20, 30, 40, 50]
             .map((e) => {
               const a = aFor(e, this.wallet.fx);
-              return `<button class="c-pack" type="button" data-eur="${e}" aria-label="${e} euros donnent ${formatAcm(a)} acm">
+              return `<button class="c-pack" type="button" data-eur="${e}" ${paymentReady ? "" : "disabled"} aria-label="${e} euros donnent ${formatAcm(a)} acm">
                 <b>${e} €</b>
                 <span class="c-pack__fx" aria-hidden="true">→</span>
                 ${acmAmount(a)}
@@ -280,21 +284,9 @@ export class ParentApp extends Component {
             })
             .join("")}
         </div>
-        <p class="c-hint" id="recharge-msg">${this.wallet.stripe === "ready" ? "Paiement par carte, Stripe." : "Paiement prêt. La carte Stripe se branche avec les clés admin."}</p>
+        <p class="c-hint" id="recharge-msg">${paymentHint}</p>
       </details>
-      <div class="c-modal" id="paymodal" hidden>
-        <div class="c-modal__box c-pay">
-          <button class="c-modal__close" type="button" data-close-pay="1">Fermer</button>
-          <h3>Payer</h3>
-          <p id="payline"></p>
-          <div class="c-card-fake">
-            <span>Carte</span>
-            <strong>···· ···· ···· 4242</strong>
-          </div>
-          <button class="c-btn c-btn--lg" type="button" id="paygo">Payer</button>
-          <p class="c-hint" id="payhint"></p>
-        </div>
-      </div>`;
+      `;
   }
 
   onGridChange(e) {
@@ -333,15 +325,6 @@ export class ParentApp extends Component {
   }
 
   async onShopClick(e) {
-    if (e.target.closest("[data-close-pay]")) {
-      const modal = this.querySelector("#paymodal");
-      if (modal) modal.hidden = true;
-      return;
-    }
-    if (e.target.id === "paygo") {
-      await this.confirmPay();
-      return;
-    }
     const eur = e.target.closest("[data-eur]");
     if (!eur) return;
     const msg = this.querySelector("#recharge-msg");
@@ -351,31 +334,9 @@ export class ParentApp extends Component {
         window.location.href = r.checkout_url;
         return;
       }
-      this._payRef = r.ref;
-      const modal = this.querySelector("#paymodal");
-      const line = this.querySelector("#payline");
-      const hint = this.querySelector("#payhint");
-      if (line) line.innerHTML = `${r.eur} € → ${acmAmount(r.would_credit_a)}`;
-      if (hint) hint.textContent = r.message || "";
-      if (modal) modal.hidden = false;
-      msg.textContent = "";
+      throw new Error("Stripe n’a pas fourni de page de paiement.");
     } catch (err) {
       msg.textContent = err.message;
-    }
-  }
-
-  async confirmPay() {
-    const msg = this.querySelector("#recharge-msg");
-    try {
-      this.wallet = await this.api.post("/shop/recharge/confirm", { ref: this._payRef });
-      const modal = this.querySelector("#paymodal");
-      if (modal) modal.hidden = true;
-      this.drawWallet();
-      this.drawShop();
-      msg.textContent = "Recharge enregistrée.";
-    } catch (err) {
-      const hint = this.querySelector("#payhint");
-      if (hint) hint.textContent = err.message;
     }
   }
 

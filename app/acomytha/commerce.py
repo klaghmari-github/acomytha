@@ -26,10 +26,9 @@ PARAM_SPECS: list[tuple[str, str, str]] = [
     ("pack_trees_count", "10", "Nouvelles séries dans le pack"),
     ("pack_trees_eur", "10", "Prix du pack (€)"),
     ("default_child_pin", "2468", "PIN enfant à l’inscription"),
-    ("stripe_secret", "", "Clé secrète Stripe (sk_…)"),
-    ("stripe_publishable", "", "Clé publique Stripe (pk_…)"),
-    ("stripe_webhook_secret", "", "Secret webhook Stripe"),
 ]
+
+LEGACY_SECRET_KEYS = ("stripe_secret", "stripe_publishable", "stripe_webhook_secret")
 
 
 class ShopParams:
@@ -40,6 +39,9 @@ class ShopParams:
         self._values: dict[str, str] | None = None
 
     def seed(self) -> None:
+        # Les anciennes versions stockaient les secrets Stripe en base et les exposaient
+        # dans l'admin. Ils vivent désormais exclusivement dans l'environnement du serveur.
+        self._db.query(AppSetting).filter(AppSetting.key.in_(LEGACY_SECRET_KEYS)).delete(synchronize_session=False)
         existing = {r.key: r for r in self._db.query(AppSetting).all()}
         for key, value, label in PARAM_SPECS:
             row = existing.get(key)
@@ -169,7 +171,6 @@ class WalletBook:
                 "every": float(values["fx_rate_every_eur"]),
                 "max": float(values["fx_rate_max"]),
             },
-            "stripe": "ready" if (values.get("stripe_secret") or "").strip() else "demo",
         }
 
 

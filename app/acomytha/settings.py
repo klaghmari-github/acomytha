@@ -32,13 +32,8 @@ class Settings:
         self._cookie_name = "acomytha_session"
         self._cookie_secure = os.environ.get("ACOMYTHA_COOKIE_SECURE", "0") == "1"
         self._public_url = os.environ.get("ACOMYTHA_PUBLIC_URL", "http://127.0.0.1:8787")
-        self._stripe_secret = os.environ.get("STRIPE_SECRET_KEY") or os.environ.get("ACOMYTHA_STRIPE_SECRET", "")
-        self._stripe_publishable = os.environ.get("STRIPE_PUBLISHABLE_KEY") or os.environ.get(
-            "ACOMYTHA_STRIPE_PUBLISHABLE", ""
-        )
-        self._stripe_webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET") or os.environ.get(
-            "ACOMYTHA_STRIPE_WEBHOOK_SECRET", ""
-        )
+        self._stripe_secret = os.environ.get("STRIPE_SECRET_KEY", "").strip()
+        self._stripe_webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET", "").strip()
 
     def _as_path(self, value: Path | str) -> Path:
         return value if isinstance(value, Path) else Path(value)
@@ -155,13 +150,17 @@ class Settings:
     def stripe_secret(self) -> str:
         return self._stripe_secret
 
-    @property
-    def stripe_publishable(self) -> str:
-        return self._stripe_publishable
+    @stripe_secret.setter
+    def stripe_secret(self, value: str) -> None:
+        self._stripe_secret = str(value).strip()
 
     @property
     def stripe_webhook_secret(self) -> str:
         return self._stripe_webhook_secret
+
+    @stripe_webhook_secret.setter
+    def stripe_webhook_secret(self, value: str) -> None:
+        self._stripe_webhook_secret = str(value).strip()
 
     @property
     def database_url(self) -> str:

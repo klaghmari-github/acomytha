@@ -303,12 +303,41 @@ def test_fx_and_admin_settings(client):
     keys = {r["key"] for r in rows}
     assert "price_story_a" in keys
     assert "welcome_credit_eur" in keys
+    assert "stripe_secret" not in keys
+    assert "stripe_webhook_secret" not in keys
     put = client.put("/api/admin/settings", json={"values": {"preview_seconds": "8"}})
     assert put.status_code == 200
     assert any(r["key"] == "preview_seconds" and r["value"] == "8" for r in put.json())
 
 
-def test_demo_recharge_credits_wallet(client):
+def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, monkeypatch):
+    import sys
+    from types import SimpleNamespace
+
+    created = {}
+
+    def create_session(**kwargs):
+        created.update(kwargs)
+        return SimpleNamespace(id="cs_test_acomytha", url="https://checkout.stripe.test/session")
+
+    class Webhook:
+        event = None
+
+        @classmethod
+        def construct_event(cls, payload, signature, secret):
+            assert payload == b"{}"
+            assert signature == "signed-test-event"
+            assert secret == "whsec_test"
+            return cls.event
+
+    fake_stripe = SimpleNamespace(
+        checkout=SimpleNamespace(Session=SimpleNamespace(create=create_session)),
+        Webhook=Webhook,
+    )
+    monkeypatch.setitem(sys.modules, "stripe", fake_stripe)
+    settings.stripe_secret = "sk_test_example"
+    settings.stripe_webhook_secret = "whsec_test"
+
     client.post(
         "/api/auth/signup",
         json={
@@ -319,15 +348,61 @@ def test_demo_recharge_credits_wallet(client):
         },
     )
     before = client.get("/api/shop/wallet").json()
-    start = before["recharge"] if False else before["balance_a"]
+    start = before["balance_a"]
+    assert before["stripe"] == "test"
     r = client.post("/api/shop/recharge", json={"eur": 10})
     assert r.status_code == 200
     body = r.json()
-    assert body["mode"] in {"demo", "stripe"}
+    assert body["checkout_url"] == "https://checkout.stripe.test/session"
     assert body["would_credit_a"] == 10
-    if body["mode"] == "demo":
-        done = client.post("/api/shop/recharge/confirm", json={"ref": body["ref"]})
-        assert done.status_code == 200
-        assert done.json()["balance_a"] == start + 10
+    assert created["api_key"] == "sk_test_example"
+    assert created["line_items"][0]["price_data"]["unit_amount"] == 1000
+    assert client.get("/api/shop/wallet").json()["balance_a"] == start
+
+    Webhook.event = {
+        "type": "checkout.session.completed",
+        "data": {
+            "object": {
+                "id": "cs_test_acomytha",
+                "mode": "payment",
+                "currency": "eur",
+                "amount_total": 1000,
+                "payment_status": "paid",
+                "metadata": created["metadata"],
+            }
+        },
+    }
+    headers = {"stripe-signature": "signed-test-event"}
+    Webhook.event["data"]["object"]["amount_total"] = 900
+    tampered = client.post("/api/shop/stripe/webhook", content=b"{}", headers=headers)
+    assert tampered.status_code == 400
+    assert client.get("/api/shop/wallet").json()["balance_a"] == start
+
+    Webhook.event["data"]["object"]["amount_total"] = 1000
+    paid = client.post("/api/shop/stripe/webhook", content=b"{}", headers=headers)
+    assert paid.status_code == 200
+    assert client.get("/api/shop/wallet").json()["balance_a"] == start + 10
+
+    repeated = client.post("/api/shop/stripe/webhook", content=b"{}", headers=headers)
+    assert repeated.status_code == 200
+    assert client.get("/api/shop/wallet").json()["balance_a"] == start + 10
     bad = client.post("/api/shop/recharge", json={"eur": 7})
     assert bad.status_code == 400
+
+
+def test_recharge_is_disabled_without_stripe_configuration(client, settings):
+    settings.stripe_secret = ""
+    settings.stripe_webhook_secret = ""
+    client.post(
+        "/api/auth/signup",
+        json={
+            "email": "sans-stripe@acomytha.local",
+            "password": "motdepasse",
+            "display_name": "Sam",
+            "device_id": "device-no-stripe01",
+        },
+    )
+    assert client.get("/api/shop/wallet").json()["stripe"] == "unconfigured"
+    response = client.post("/api/shop/recharge", json={"eur": 10})
+    assert response.status_code == 503
+    assert client.post("/api/shop/recharge/confirm", json={"ref": "forbidden"}).status_code == 404

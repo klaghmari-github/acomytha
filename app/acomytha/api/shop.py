@@ -18,11 +18,17 @@ from acomytha.commerce import (
     get_wallet,
     num,
     owned_ids,
-    params,
     price_for,
 )
 from acomytha.models import ForestEntry, Purchase, Story, StoryOrder, VoiceProfile
-from acomytha.payments import confirm_demo, create_recharge, fulfill_provider
+from acomytha.payments import (
+    StripeCheckoutError,
+    StripeNotConfigured,
+    StripeVerificationError,
+    create_recharge,
+    process_checkout_event,
+    stripe_status,
+)
 
 router = APIRouter(prefix="/api/shop", tags=["shop"])
 
@@ -40,10 +46,6 @@ class RechargeBody(BaseModel):
     eur: float = Field(gt=0, le=500)
 
 
-class ConfirmBody(BaseModel):
-    ref: str = Field(min_length=6, max_length=80)
-
-
 def _parent(auth: AuthContext) -> int:
     return auth.parent_id
 
@@ -53,10 +55,16 @@ def _wallet_payload(db: Session, parent_id: int) -> dict:
 
 
 @router.get("/wallet")
-def wallet(auth: AuthContext = Depends(require_roles("parent", "admin")), db: Session = Depends(get_db)):
+def wallet(
+    request: Request,
+    auth: AuthContext = Depends(require_roles("parent", "admin")),
+    db: Session = Depends(get_db),
+):
     if auth.role == "admin":
         return {"balance_a": 0, "owned": [], "free": sorted(free_ids(db)), "prices": {}, "stripe": "planned"}
-    return _wallet_payload(db, _parent(auth))
+    out = _wallet_payload(db, _parent(auth))
+    out["stripe"] = stripe_status(request.app.state.settings)
+    return out
 
 
 @router.post("/buy")
@@ -109,37 +117,29 @@ def recharge(
         return create_recharge(db, request.app.state.settings, _parent(auth), body.eur)
     except ValueError:
         raise HTTPException(400, "Choisissez 10, 20, 30, 40 ou 50 €.") from None
-
-
-@router.post("/recharge/confirm")
-def recharge_confirm(
-    body: ConfirmBody,
-    auth: AuthContext = Depends(require_roles("parent")),
-    db: Session = Depends(get_db),
-):
-    try:
-        confirm_demo(db, _parent(auth), body.ref)
-    except LookupError:
-        raise HTTPException(404, "paiement inconnu") from None
-    return _wallet_payload(db, _parent(auth))
+    except StripeNotConfigured as exc:
+        raise HTTPException(503, str(exc)) from exc
+    except StripeCheckoutError as exc:
+        raise HTTPException(502, str(exc)) from exc
 
 
 @router.post("/stripe/webhook")
 async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
     payload = await request.body()
     sig = request.headers.get("stripe-signature", "")
-    secret = (params(db).get("stripe_webhook_secret") or request.app.state.settings.stripe_webhook_secret or "").strip()
+    secret = request.app.state.settings.stripe_webhook_secret
     if not secret:
-        return {"ok": True, "ignored": True}
+        raise HTTPException(503, "Webhook Stripe non configuré")
     try:
         import stripe
 
         event = stripe.Webhook.construct_event(payload, sig, secret)
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(400, "signature") from exc
-    if event["type"] == "checkout.session.completed":
-        obj = event["data"]["object"]
-        fulfill_provider(db, obj.get("id") or "", (obj.get("metadata") or {}).get("ref") or "")
+    try:
+        process_checkout_event(db, event)
+    except StripeVerificationError as exc:
+        raise HTTPException(400, "événement Stripe incohérent") from exc
     return {"ok": True}
 
 
