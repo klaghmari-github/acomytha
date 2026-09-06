@@ -1,179 +1,19 @@
 {
   "schema_version": "2.0",
   "profiles": {
-    "narrator": {
-      "display_name": "Narratrice AcoMytha",
-      "gender": "female",
-      "age_group": "adult",
-      "role": "narrator",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 0.94,
-        "pitch_semitones": 0.0,
-        "gain_db": 0.0
-      },
-      "direction": "chaleureuse, joueuse, complice; jamais professorale ni monotone"
-    },
-    "father": {
-      "display_name": "Papa",
-      "gender": "male",
-      "age_group": "adult",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 0.96,
-        "pitch_semitones": -2.2,
-        "gain_db": 0.3
-      },
-      "direction": "rassurante, vivante, naturelle"
-    },
-    "mother": {
-      "display_name": "Maman",
-      "gender": "female",
-      "age_group": "adult",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 0.97,
-        "pitch_semitones": -0.3,
-        "gain_db": 0.1
-      },
-      "direction": "tendre, claire, expressive"
-    },
-    "friend_boy": {
-      "display_name": "Copain",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 1.04,
-        "pitch_semitones": 1.5,
-        "gain_db": 0.0
-      },
-      "direction": "spontanée, enfantine, distincte du héros"
-    },
-    "friend_girl": {
-      "display_name": "Copine",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 1.03,
-        "pitch_semitones": 1.1,
-        "gain_db": 0.0
-      },
-      "direction": "spontanée, enfantine, distincte du héros"
-    },
-    "teacher": {
-      "display_name": "Maîtresse",
-      "gender": "female",
-      "age_group": "adult",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "voice_fingerprint": {
-        "speed": 0.95,
-        "pitch_semitones": -0.6,
-        "gain_db": 0.2
-      },
-      "direction": "posée, souriante, précise"
-    },
     "character.amir": {
       "display_name": "Amir",
       "gender": "male",
       "age_group": "child",
       "role": "character",
       "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/amir.wav",
+      "reference_audio": "stories/voices/characters/character_amir.wav",
       "voice_fingerprint": {
-        "speed": 0.979,
-        "pitch_semitones": 0.34,
-        "gain_db": 0.22
+        "speed": 1.02,
+        "pitch_semitones": 0.45,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.sarah": {
-      "display_name": "Sarah",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/sarah.wav",
-      "voice_fingerprint": {
-        "speed": 0.962,
-        "pitch_semitones": 1.5,
-        "gain_db": -0.23
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.nino": {
-      "display_name": "Nino",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/nino.wav",
-      "voice_fingerprint": {
-        "speed": 0.989,
-        "pitch_semitones": 0.16,
-        "gain_db": 0.3
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.mila": {
-      "display_name": "Mila",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/mila.wav",
-      "voice_fingerprint": {
-        "speed": 0.974,
-        "pitch_semitones": 0.63,
-        "gain_db": -0.23
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.raphael": {
-      "display_name": "Raphaël",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/raphael.wav",
-      "voice_fingerprint": {
-        "speed": 0.984,
-        "pitch_semitones": 0.67,
-        "gain_db": -0.21
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.nina": {
-      "display_name": "Nina",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/nina.wav",
-      "voice_fingerprint": {
-        "speed": 1.019,
-        "pitch_semitones": 0.92,
-        "gain_db": 0.19
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "empreinte générée (male, child, naturel)"
     },
     "character.aniss": {
       "display_name": "Aniss",
@@ -182,43 +22,12 @@
       "role": "character",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/aniss.wav",
       "voice_fingerprint": {
-        "speed": 0.949,
-        "pitch_semitones": 0.52,
-        "gain_db": -0.17
+        "speed": 1.02,
+        "pitch_semitones": 0.4,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.victorina": {
-      "display_name": "Victorina",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/victorina.wav",
-      "voice_fingerprint": {
-        "speed": 1.005,
-        "pitch_semitones": 1.55,
-        "gain_db": -0.25
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.victorino": {
-      "display_name": "Victorino",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/victorino.wav",
-      "voice_fingerprint": {
-        "speed": 0.954,
-        "pitch_semitones": 0.09,
-        "gain_db": 0.03
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "identité stable entre toutes les histoires"
     },
     "character.chouchou": {
       "display_name": "Chouchou",
@@ -227,523 +36,180 @@
       "role": "character",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/chouchou.wav",
-      "voice_fingerprint": {
-        "speed": 0.975,
-        "pitch_semitones": 1.41,
-        "gain_db": 0.1
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.maya": {
-      "display_name": "Maya",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/maya.wav",
-      "voice_fingerprint": {
-        "speed": 1.015,
-        "pitch_semitones": 0.87,
-        "gain_db": -0.08
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.ines": {
-      "display_name": "Inès",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/ines.wav",
-      "voice_fingerprint": {
-        "speed": 0.971,
-        "pitch_semitones": 1.48,
-        "gain_db": -0.16
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.lea": {
-      "display_name": "Léa",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/lea.wav",
-      "voice_fingerprint": {
-        "speed": 1.01,
-        "pitch_semitones": 1.02,
-        "gain_db": 0.05
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.zoe": {
-      "display_name": "Zoé",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/zoe.wav",
-      "voice_fingerprint": {
-        "speed": 1.014,
-        "pitch_semitones": 1.11,
-        "gain_db": -0.19
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.sara": {
-      "display_name": "Sara",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/sara.wav",
-      "voice_fingerprint": {
-        "speed": 0.973,
-        "pitch_semitones": 0.98,
-        "gain_db": -0.12
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.lila": {
-      "display_name": "Lila",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/lila.wav",
-      "voice_fingerprint": {
-        "speed": 1.012,
-        "pitch_semitones": 0.64,
-        "gain_db": 0.14
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.tom": {
-      "display_name": "Tom",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/tom.wav",
-      "voice_fingerprint": {
-        "speed": 1.007,
-        "pitch_semitones": -0.19,
-        "gain_db": 0.13
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.sami": {
-      "display_name": "Sami",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/sami.wav",
-      "voice_fingerprint": {
-        "speed": 0.982,
-        "pitch_semitones": 0.29,
-        "gain_db": -0.12
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.hugo": {
-      "display_name": "Hugo",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/hugo.wav",
-      "voice_fingerprint": {
-        "speed": 1.006,
-        "pitch_semitones": -0.09,
-        "gain_db": -0.15
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.jules": {
-      "display_name": "Jules",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/jules.wav",
-      "voice_fingerprint": {
-        "speed": 0.94,
-        "pitch_semitones": 0.36,
-        "gain_db": -0.19
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.noe": {
-      "display_name": "Noé",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/noe.wav",
-      "voice_fingerprint": {
-        "speed": 0.957,
-        "pitch_semitones": 0.64,
-        "gain_db": -0.15
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.adam": {
-      "display_name": "Adam",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/adam.wav",
-      "voice_fingerprint": {
-        "speed": 0.997,
-        "pitch_semitones": -0.23,
-        "gain_db": -0.3
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.kenzo": {
-      "display_name": "Kenzo",
-      "gender": "male",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/kenzo.wav",
-      "voice_fingerprint": {
-        "speed": 1.004,
-        "pitch_semitones": -0.24,
-        "gain_db": -0.19
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.lina": {
-      "display_name": "Lina",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/lina.wav",
-      "voice_fingerprint": {
-        "speed": 0.995,
-        "pitch_semitones": 0.9,
-        "gain_db": 0.22
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.nora": {
-      "display_name": "Nora",
-      "gender": "female",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/nora.wav",
-      "voice_fingerprint": {
-        "speed": 1.001,
-        "pitch_semitones": 0.59,
-        "gain_db": 0.21
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.elia": {
-      "display_name": "Élia",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/elia.wav",
-      "voice_fingerprint": {
-        "speed": 1.011,
-        "pitch_semitones": 0.49,
-        "gain_db": -0.13
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.faustine": {
-      "display_name": "Faustine",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/faustine.wav",
       "voice_fingerprint": {
         "speed": 1.02,
-        "pitch_semitones": 0.45,
-        "gain_db": -0.14
+        "pitch_semitones": 1.1,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "identité stable entre toutes les histoires"
     },
-    "character.hortense": {
-      "display_name": "Hortense",
-      "gender": "unspecified",
+    "character.mila": {
+      "display_name": "Mila",
+      "gender": "female",
+      "age_group": "child",
+      "role": "character",
+      "kokoro_voice": "ff_siwis",
+      "reference_audio": "stories/voices/characters/character_mila.wav",
+      "voice_fingerprint": {
+        "speed": 1.03,
+        "pitch_semitones": 1.2,
+        "gain_db": 0.0
+      },
+      "direction": "empreinte générée (female, child, naturel)"
+    },
+    "character.nina": {
+      "display_name": "Nina",
+      "gender": "female",
+      "age_group": "child",
+      "role": "character",
+      "kokoro_voice": "ff_siwis",
+      "reference_audio": "stories/voices/characters/character_nina.wav",
+      "voice_fingerprint": {
+        "speed": 1.03,
+        "pitch_semitones": 1.2,
+        "gain_db": 0.0
+      },
+      "direction": "empreinte générée (female, child, naturel)"
+    },
+    "character.nino": {
+      "display_name": "Nino",
+      "gender": "male",
+      "age_group": "child",
+      "role": "character",
+      "kokoro_voice": "ff_siwis",
+      "reference_audio": "stories/voices/characters/character_nino.wav",
+      "voice_fingerprint": {
+        "speed": 1.1016000000000001,
+        "pitch_semitones": 0.8,
+        "gain_db": 0.2
+      },
+      "direction": "empreinte enregistrée (male, child)"
+    },
+    "character.raphael": {
+      "display_name": "Raphaël",
+      "gender": "male",
       "age_group": "child",
       "role": "character",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/hortense.wav",
       "voice_fingerprint": {
-        "speed": 1.018,
-        "pitch_semitones": 0.79,
-        "gain_db": -0.29
+        "speed": 1.02,
+        "pitch_semitones": 0.4,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "identité stable entre toutes les histoires"
     },
-    "character.felix": {
-      "display_name": "Félix",
-      "gender": "unspecified",
+    "character.sarah": {
+      "display_name": "Sarah",
+      "gender": "female",
+      "age_group": "child",
+      "role": "character",
+      "kokoro_voice": "ff_siwis",
+      "reference_audio": "stories/voices/characters/character_sarah.wav",
+      "voice_fingerprint": {
+        "speed": 1.03,
+        "pitch_semitones": 1.2,
+        "gain_db": 0.0
+      },
+      "direction": "empreinte générée (female, child, naturel)"
+    },
+    "character.victorina": {
+      "display_name": "Victorina",
+      "gender": "female",
       "age_group": "child",
       "role": "character",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/felix.wav",
       "voice_fingerprint": {
-        "speed": 0.987,
-        "pitch_semitones": 1.04,
-        "gain_db": 0.25
+        "speed": 1.02,
+        "pitch_semitones": 1.1,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "identité stable entre toutes les histoires"
     },
-    "character.titouan": {
-      "display_name": "Titouan",
-      "gender": "unspecified",
+    "character.victorino": {
+      "display_name": "Victorino",
+      "gender": "male",
       "age_group": "child",
       "role": "character",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/titouan.wav",
       "voice_fingerprint": {
-        "speed": 0.998,
-        "pitch_semitones": 0.82,
-        "gain_db": -0.17
+        "speed": 1.02,
+        "pitch_semitones": 0.4,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "identité stable entre toutes les histoires"
     },
-    "character.clotilde": {
-      "display_name": "Clotilde",
-      "gender": "unspecified",
+    "child_boy": {
+      "display_name": "Enfant garçon",
+      "gender": "male",
       "age_group": "child",
-      "role": "character",
+      "role": "child",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/clotilde.wav",
       "voice_fingerprint": {
-        "speed": 0.95,
-        "pitch_semitones": 0.25,
-        "gain_db": -0.02
+        "speed": 1.04,
+        "pitch_semitones": 0.5,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "enfantine, spontanée"
     },
-    "character.erwan": {
-      "display_name": "Erwan",
-      "gender": "unspecified",
+    "child_girl": {
+      "display_name": "Enfant fille",
+      "gender": "female",
       "age_group": "child",
-      "role": "character",
+      "role": "child",
       "kokoro_voice": "ff_siwis",
       "reference_audio": null,
-      "reference_audio_expected": "voices/characters/erwan.wav",
       "voice_fingerprint": {
-        "speed": 0.974,
-        "pitch_semitones": 0.93,
-        "gain_db": 0.03
+        "speed": 1.03,
+        "pitch_semitones": 1.2,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "enfantine, spontanée"
     },
-    "character.ava": {
-      "display_name": "Ava",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
+    "father": {
+      "display_name": "Papa",
+      "gender": "male",
+      "age_group": "adult",
+      "role": "father",
       "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/ava.wav",
+      "reference_audio": "stories/voices/defaults/father.wav",
       "voice_fingerprint": {
-        "speed": 0.965,
-        "pitch_semitones": 0.1,
-        "gain_db": -0.23
+        "speed": 0.96,
+        "pitch_semitones": -2.2,
+        "gain_db": 0.3
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "empreinte enregistrée (male, adult)"
     },
-    "character.basile": {
-      "display_name": "Basile",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
+    "mother": {
+      "display_name": "Maman",
+      "gender": "female",
+      "age_group": "adult",
+      "role": "mother",
       "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/basile.wav",
+      "reference_audio": "stories/voices/defaults/mother.wav",
       "voice_fingerprint": {
-        "speed": 0.979,
-        "pitch_semitones": 0.37,
-        "gain_db": -0.2
+        "speed": 0.96,
+        "pitch_semitones": 0.0,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "empreinte enregistrée (female, adult)"
     },
-    "character.pia": {
-      "display_name": "Pia",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
+    "narrator": {
+      "display_name": "Narratrice",
+      "gender": "female",
+      "age_group": "adult",
+      "role": "narrator",
       "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/pia.wav",
+      "reference_audio": "stories/voices/defaults/narrator.wav",
       "voice_fingerprint": {
-        "speed": 0.997,
-        "pitch_semitones": 1.08,
-        "gain_db": 0.22
+        "speed": 0.96,
+        "pitch_semitones": 0.0,
+        "gain_db": 0.0
       },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.nine": {
-      "display_name": "Nine",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/nine.wav",
-      "voice_fingerprint": {
-        "speed": 0.984,
-        "pitch_semitones": 0.97,
-        "gain_db": 0.06
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.solal": {
-      "display_name": "Solal",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/solal.wav",
-      "voice_fingerprint": {
-        "speed": 1.016,
-        "pitch_semitones": 0.65,
-        "gain_db": 0.22
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.agathe": {
-      "display_name": "Agathe",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/agathe.wav",
-      "voice_fingerprint": {
-        "speed": 0.99,
-        "pitch_semitones": 0.17,
-        "gain_db": -0.24
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.anais": {
-      "display_name": "Anaïs",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/anais.wav",
-      "voice_fingerprint": {
-        "speed": 0.961,
-        "pitch_semitones": 0.2,
-        "gain_db": -0.06
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.loic": {
-      "display_name": "Loïc",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/loic.wav",
-      "voice_fingerprint": {
-        "speed": 0.947,
-        "pitch_semitones": 0.49,
-        "gain_db": -0.15
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.aurore": {
-      "display_name": "Aurore",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/aurore.wav",
-      "voice_fingerprint": {
-        "speed": 0.973,
-        "pitch_semitones": 0.79,
-        "gain_db": 0.26
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.ugo": {
-      "display_name": "Ugo",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/ugo.wav",
-      "voice_fingerprint": {
-        "speed": 1.017,
-        "pitch_semitones": 0.37,
-        "gain_db": -0.2
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.firmin": {
-      "display_name": "Firmin",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/firmin.wav",
-      "voice_fingerprint": {
-        "speed": 1.01,
-        "pitch_semitones": 1.19,
-        "gain_db": -0.23
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
-    },
-    "character.klara": {
-      "display_name": "Klara",
-      "gender": "unspecified",
-      "age_group": "child",
-      "role": "character",
-      "kokoro_voice": "ff_siwis",
-      "reference_audio": null,
-      "reference_audio_expected": "voices/characters/klara.wav",
-      "voice_fingerprint": {
-        "speed": 1.007,
-        "pitch_semitones": 0.33,
-        "gain_db": -0.05
-      },
-      "direction": "voix enfantine naturelle; identité stable entre toutes les histoires"
+      "direction": "empreinte générée (female, adult, naturel)"
     }
   }
 }

@@ -27,6 +27,10 @@ export class Component extends HTMLElement {
     this.#offs.push(() => el.removeEventListener(ev, fn, opts));
   }
 
+  emit(name, detail) {
+    this.dispatchEvent(new CustomEvent(name, { detail, bubbles: true }));
+  }
+
   disconnectedCallback() {
     for (const off of this.#offs) off();
     this.#offs = [];

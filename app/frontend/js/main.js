@@ -6,6 +6,7 @@ import "./ui/LoginGate.js";
 import "./ui/SignupGate.js";
 import "./ui/ParentApp.js";
 import "./ui/AdminApp.js";
+import "./ui/EditorApp.js";
 import "./ui/ChildApp.js";
 
 class AcoMythaApp {
@@ -26,6 +27,7 @@ class AcoMythaApp {
       .on(/^#\/inscription\/?$/, () => this.#show("acomytha-signup"))
       .on(/^#\/parent\/?$/, () => this.#guard(["parent", "admin"], "acomytha-parent"))
       .on(/^#\/admin\/?$/, () => this.#guard(["admin"], "acomytha-admin"))
+      .on(/^#\/admin\/editeur\/?$/, () => this.#guard(["admin"], "acomytha-editor"))
       .on(/^#\/enfant\/?$/, () => this.#guard(["parent", "child"], "acomytha-child"));
     this.#router.resolve();
   }

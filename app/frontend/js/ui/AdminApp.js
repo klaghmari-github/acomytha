@@ -10,6 +10,7 @@ export class AdminApp extends Component {
           <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">La salle de veille.</span></div>
           <nav>
             <a href="#/admin" class="is-on">Veille</a>
+            <a href="#/admin/editeur">Éditeur</a>
             <a href="#/parent">Vue parent</a>
           </nav>
           <button class="c-btn c-btn--ghost" id="out">Quitter</button>

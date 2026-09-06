@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from acomytha.api import admin, auth, play, public, shop, stories
+from acomytha.api import admin, auth, editor, play, public, shop, stories
 from acomytha.crypto_audio import AudioVault
 from acomytha.db import Database
 from acomytha.devices import DeviceGuard
@@ -37,6 +38,14 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
     app.include_router(stories.router)
     app.include_router(play.router)
     app.include_router(admin.router)
+    app.include_router(editor.router)
+    try:
+        from akomythatts.app import TtsApp
+
+        app.state.tts = TtsApp.assemble()
+    except Exception:
+        logging.getLogger("acomytha").exception("Moteur TTS non chargé")
+        app.state.tts = None
 
     @app.get("/api/health")
     def health():

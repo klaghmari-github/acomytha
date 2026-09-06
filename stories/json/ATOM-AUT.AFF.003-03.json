@@ -1,0 +1,936 @@
+{
+  "schema_version": "2.0",
+  "story_id": "ATOM-AUT.AFF.003-03",
+  "title": "Victorina et le capitaine des herbes",
+  "language": "fr",
+  "catalogue": {
+    "kind": "atomic",
+    "age_band": "N3",
+    "age_range": "5-6",
+    "lesson_id": "AUT.AFF.003",
+    "secondary_lessons": [
+      "AUT.RAN.001"
+    ],
+    "domain": "AUT",
+    "subdomain": "AUT.AFF",
+    "setting": "parc, jardin et maison",
+    "characters": [
+      "Victorina | papa | Nino"
+    ]
+  },
+  "source": {
+    "xlsx": "stories/arbres/ATOM-AUT.AFF.003-03.xlsx",
+    "sha256": "b1e871ea15c68de9948a5beb2e99e6700ab332fe2594512e5f932c15a91e9320"
+  },
+  "editorial_status": "chatgpt_corrected_ready_for_tts",
+  "entry_chunk": "CHK_T0000_P0000",
+  "speaker_profiles": [
+    "character.victorina",
+    "father",
+    "narrator"
+  ],
+  "chunks": {
+    "CHK_T0000_P0000": {
+      "kind": "passage_debut",
+      "lesson_id": "AUT.AFF.003",
+      "segments": [
+        {
+          "speaker": "narrator",
+          "text": "Au parc, les herbes ondulaient comme une mer.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina lançait un bateau dans une rigole.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Son capitaine était un ours minuscule en bois.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "En ce moment, papa fermait la boîte du pique-nique.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Capitaine, prochaine escale : le grand jardin !",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "excited",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Une pomme de pin tomba soudain devant le bateau.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "La rigole déborda et changea son chemin.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Ton capitaine file vers les hautes herbes !",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "excited",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Nino montra la voile disparaissant sous les tiges.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "storytelling",
+            "intonation": "storytelling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Nous partons bientôt, réunissons d’abord nos affaires.",
+          "prosody": {
+            "speed": 0.96,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        }
+      ],
+      "interaction": {
+        "expected_answer": "",
+        "accepted_examples": [],
+        "correct_response": "Oui, c'est la bonne réponse.",
+        "near_response": "Tu étais presque.",
+        "retry_prompt": "",
+        "retry_once": false,
+        "wait_ms": 0
+      },
+      "options": [],
+      "night_policy": "play",
+      "sound_cues": [
+        "herbes",
+        "eau de rigole",
+        "pomme de pin"
+      ],
+      "editorial_notes": "Ouverture chaleureuse; sourire audible; émerveillement sans précipitation.",
+      "next_chunk": "CHK_T0000_P0000_Q0001",
+      "default_next_chunk": "CHK_T0000_P0000_Q0001"
+    },
+    "CHK_T0000_P0000_Q0001": {
+      "kind": "passage_question",
+      "lesson_id": "AUT.AFF.003",
+      "segments": [
+        {
+          "speaker": "narrator",
+          "text": "Seau, manteau et doudou entouraient la rigole.",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Que fais-tu avant de quitter cet endroit ?",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Je rassemble tout mon équipage.",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Tu peux aider Victorina.",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Chaque affaire doit rentrer avec elle.",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Alors, que fait-elle ?",
+          "prosody": {
+            "speed": 0.88,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 250,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        }
+      ],
+      "interaction": {
+        "expected_answer": "reprendre ses affaires",
+        "accepted_examples": [
+          "reprendre ses affaires",
+          "chercher ses affaires",
+          "prendre le seau, le manteau et le doudou"
+        ],
+        "correct_response": "Oui, c'est la bonne réponse.",
+        "near_response": "Tu étais presque.",
+        "retry_prompt": "Avant de partir, que fait-on avec les objets apportés ?",
+        "retry_once": true,
+        "wait_ms": 3000
+      },
+      "options": [],
+      "night_policy": "skip",
+      "sound_cues": [
+        "eau légère",
+        "question aventureuse"
+      ],
+      "editorial_notes": "Question très claire; longue attente pour la réponse enfant.",
+      "next_chunk": "CHK_T0000_P0000_C0001",
+      "default_next_chunk": "CHK_T0000_P0000_C0001"
+    },
+    "CHK_T0000_P0000_C0001": {
+      "kind": "passage",
+      "lesson_id": "AUT.AFF.003",
+      "segments": [
+        {
+          "speaker": "character.victorina",
+          "text": "Je reprends toutes mes affaires !",
+          "prosody": {
+            "speed": 1.01,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "excited",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Bravo, inspectons chaque escale du parc.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": [
+              "bravo"
+            ]
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina vida l’eau du seau dans l’herbe.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Elle récupéra son manteau sur le banc.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Doudou attendait près de la boîte fermée.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Seau, manteau, doudou : tous à bord.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Merci.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Et notre capitaine ?",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 340,
+            "emotion": "neutral",
+            "intonation": "rising",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le bateau restait invisible sous les longues tiges.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina suivit la rigole avec ses yeux.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Une minuscule voile tremblait près du grillage.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Je vois un passage entre les herbes.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Les enfants appelèrent papa avant d’avancer.",
+          "prosody": {
+            "speed": 0.97,
+            "gain_db": 0.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 180,
+            "pause_after_ms": 280,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        }
+      ],
+      "interaction": {
+        "expected_answer": "",
+        "accepted_examples": [],
+        "correct_response": "Oui, c'est la bonne réponse.",
+        "near_response": "Tu étais presque.",
+        "retry_prompt": "",
+        "retry_once": false,
+        "wait_ms": 0
+      },
+      "options": [],
+      "night_policy": "play",
+      "sound_cues": [
+        "seau vidé",
+        "tissu",
+        "eau qui serpente"
+      ],
+      "editorial_notes": "Relance vive; personnages nettement différenciés; encouragement sincère.",
+      "next_chunk": "CHK_T0000_P0000_END",
+      "default_next_chunk": "CHK_T0000_P0000_END"
+    },
+    "CHK_T0000_P0000_END": {
+      "kind": "passage",
+      "lesson_id": "AUT.AFF.003",
+      "segments": [
+        {
+          "speaker": "narrator",
+          "text": "Papa écarta doucement les herbes piquantes.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le bateau reposait contre une pierre ronde.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Mais le capitaine en bois avait disparu.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Il est tombé pendant la tempête !",
+          "prosody": {
+            "speed": 1.04,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "excited",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Une fourmi transportait quelque chose de brun.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "C’était seulement une miette du goûter.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina regarda sous la voile repliée.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Attention, soulève-la lentement.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": [
+              "Attention"
+            ]
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "L’ours capitaine apparut, coincé dans le pli.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina le remit fièrement à sa place.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Il protégeait le bateau pendant le naufrage.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Tous repartirent avant la prochaine goutte.",
+          "prosody": {
+            "speed": 1.0,
+            "gain_db": 1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 200,
+            "pause_after_ms": 260,
+            "emotion": "neutral",
+            "intonation": "neutral",
+            "emphasis_words": []
+          }
+        }
+      ],
+      "interaction": {
+        "expected_answer": "",
+        "accepted_examples": [],
+        "correct_response": "Oui, c'est la bonne réponse.",
+        "near_response": "Tu étais presque.",
+        "retry_prompt": "",
+        "retry_once": false,
+        "wait_ms": 0
+      },
+      "options": [],
+      "night_policy": "play",
+      "sound_cues": [
+        "herbes écartées",
+        "fourmis",
+        "révélation musicale"
+      ],
+      "editorial_notes": "Suspense progressif; accélération légère; ralentir précisément au choix prudent.",
+      "next_chunk": "CHK_T0000_P0000_END_F0001",
+      "default_next_chunk": "CHK_T0000_P0000_END_F0001"
+    },
+    "CHK_T0000_P0000_END_F0001": {
+      "kind": "passage_fin",
+      "lesson_id": "AUT.AFF.003",
+      "segments": [
+        {
+          "speaker": "narrator",
+          "text": "Au jardin, Victorina installa le pique-nique.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le bateau séchait au soleil sur la table.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Seau, manteau et doudou formaient son petit port.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "As-tu ramené tout ton équipage ?",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "character.victorina",
+          "text": "Oui, capitaine compris !",
+          "prosody": {
+            "speed": 0.94,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Nino versa de l’eau dans une assiette creuse.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le bateau accomplit une dernière traversée paisible.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Cette fois, aucune herbe ne cachait sa route.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "father",
+          "text": "Bravo, le retour devient une nouvelle aventure.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le capitaine regardait déjà vers la maison.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Dans ses yeux peints brillait toute une mer.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Le goûter avait le parfum des fraises et du pain.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Une coccinelle traversa le pont de papier sans invitation.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        },
+        {
+          "speaker": "narrator",
+          "text": "Victorina lui accorda aussitôt le titre de matelot.",
+          "prosody": {
+            "speed": 0.9,
+            "gain_db": -1.0,
+            "pitch_semitones": 0.0,
+            "pause_before_ms": 260,
+            "pause_after_ms": 500,
+            "emotion": "warm",
+            "intonation": "falling",
+            "emphasis_words": []
+          }
+        }
+      ],
+      "interaction": {
+        "expected_answer": "",
+        "accepted_examples": [],
+        "correct_response": "Oui, c'est la bonne réponse.",
+        "near_response": "Tu étais presque.",
+        "retry_prompt": "",
+        "retry_once": false,
+        "wait_ms": 0
+      },
+      "options": [],
+      "night_policy": "play",
+      "sound_cues": [
+        "pique-nique",
+        "eau dans assiette",
+        "fin marine"
+      ],
+      "editorial_notes": "Dénouement tendre; laisser respirer les images; fin enveloppante.",
+      "next_chunk": null,
+      "default_next_chunk": null
+    }
+  }
+}

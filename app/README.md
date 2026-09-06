@@ -12,6 +12,12 @@ PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0
 
 Ouvrir http://127.0.0.1:8787
 
+## Éditeur vocal (branche `AkoMythaTTS`)
+
+Connecté en admin → **Éditeur** (`#/admin/editeur`) : troupe (vues personnages / histoires), choix d’un JSON, empreintes (générer / enregistrer), conversion Excel → JSON puis JSON → audio, édition des répliques.
+
+Le moteur est `akomythatts.TtsApp` (sans Flask). Kokoro / OpenVoice restent optionnels : le catalogue et le parse JSON fonctionnent sans ; la synthèse audio les exige (même venv que AkoMythaTTS, ou `PYTHONPATH=app` + `.venv` TTS).
+
 | Rôle | Adresse | Clé |
 | --- | --- | --- |
 | Parent | `parent@acomytha.local` | `acomytha-parent` |
