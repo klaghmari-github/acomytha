@@ -12,17 +12,27 @@ PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0
 
 Ouvrir http://127.0.0.1:8787
 
+**Un seul serveur** sert tous les modes : accueil, parent, enfant, admin, éditeur vocal (TTS). Plus de processus Flask séparé sur le port 8765.
+
+| Rôle | Adresse | Clé | Espace |
+| --- | --- | --- | --- |
+| Parent | `parent@acomytha.local` | `acomytha-parent` | `#/parent` → `#/enfant` |
+| Admin | `admin@acomytha.local` | `acomytha-admin` | `#/admin` → `#/admin/editeur` |
+| Enfant | depuis l’espace parent → Mode enfant | PIN `2468` | `#/enfant` |
+
+Pour la synthèse (Kokoro / OpenVoice), lancer avec le venv AkoMythaTTS :
+
+```bash
+TTS_PY=/media/laghmari/ssd-data/dev/AkoMythaTTS/.venv/bin/python
+$TTS_PY -m pip install -r app/requirements.txt
+PYTHONPATH=app $TTS_PY -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787
+```
+
 ## Éditeur vocal (branche `AkoMythaTTS`)
 
 Connecté en admin → **Éditeur** (`#/admin/editeur`) : troupe (vues personnages / histoires), choix d’un JSON, empreintes (générer / enregistrer), conversion Excel → JSON puis JSON → audio, édition des répliques.
 
-Le moteur est `akomythatts.TtsApp` (sans Flask). Kokoro / OpenVoice restent optionnels : le catalogue et le parse JSON fonctionnent sans ; la synthèse audio les exige (même venv que AkoMythaTTS, ou `PYTHONPATH=app` + `.venv` TTS).
-
-| Rôle | Adresse | Clé |
-| --- | --- | --- |
-| Parent | `parent@acomytha.local` | `acomytha-parent` |
-| Admin | `admin@acomytha.local` | `acomytha-admin` |
-| Enfant | depuis l’espace parent → Mode enfant | PIN `2468` |
+Le moteur est `akomythatts.TtsApp`, câblé dans la même usine FastAPI que le parent et l’enfant.
 
 Premier démarrage : import des xlsx `stories/arbres/` vers SQLite (`app/data/`, gitignoré).
 

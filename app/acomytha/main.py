@@ -49,7 +49,12 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
 
     @app.get("/api/health")
     def health():
-        return {"ok": True, "name": "acomytha"}
+        return {
+            "ok": True,
+            "name": "acomytha",
+            "modes": ["accueil", "parent", "enfant", "admin", "editeur"],
+            "tts": getattr(app.state, "tts", None) is not None,
+        }
 
     frontend = settings.frontend_dir
     if frontend.exists():
