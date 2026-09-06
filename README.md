@@ -7,8 +7,10 @@ Forêt narrative **audio seulement** pour enfants de 3 à 6 ans. Le parent chois
 **Un seul serveur** (FastAPI, port **8787**) : accueil, parent, enfant, admin, **éditeur vocal**. Pas de second processus TTS.
 
 ```bash
-PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787
+./start.sh
 ```
+
+Ouvre http://127.0.0.1:8787. Le script utilise `.venv/` s’il existe, charge `.env` s’il est là. Port : `ACOMYTHA_PORT` (défaut 8787).
 
 | Mode | Hash | Qui |
 | --- | --- | --- |
