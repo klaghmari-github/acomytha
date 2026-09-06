@@ -33,6 +33,18 @@ class User(Base):
     devices: Mapped[list[DeviceBinding]] = relationship(back_populates="user")
 
 
+class AccountRole(Base):
+    """Rôle cumulable d'un compte adulte. Le rôle parent reste toujours implicite."""
+
+    __tablename__ = "account_roles"
+    __table_args__ = (UniqueConstraint("user_id", "role", name="uq_account_role"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    role: Mapped[str] = mapped_column(String(16), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
 class DeviceBinding(Base):
     __tablename__ = "device_bindings"
     __table_args__ = (UniqueConstraint("user_id", name="uq_one_device_per_user"),)

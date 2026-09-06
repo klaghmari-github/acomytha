@@ -5,9 +5,22 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from fastapi import Depends, HTTPException, Request
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from acomytha.models import SessionToken, User
+from acomytha.models import AccountRole, SessionToken, User
+
+ADULT_ROLES = frozenset({"parent", "editor", "admin"})
+
+
+def roles_for(db: Session, user: User) -> frozenset[str]:
+    if user.role == "child":
+        return frozenset({"child"})
+    granted = set(db.scalars(select(AccountRole.role).where(AccountRole.user_id == user.id)))
+    granted.add("parent")
+    if user.role in ADULT_ROLES:
+        granted.add(user.role)
+    return frozenset(granted)
 
 
 @dataclass
@@ -15,6 +28,7 @@ class AuthContext:
     user: User
     session: SessionToken
     role: str
+    roles: frozenset[str]
 
     @property
     def parent_id(self) -> int:
@@ -44,12 +58,14 @@ def get_auth(request: Request, db: Session = Depends(get_db)) -> AuthContext:
     user = db.get(User, row.user_id)
     if user is None or not user.is_active:
         raise HTTPException(401, "compte inactif")
-    return AuthContext(user=user, session=row, role=row.acting_role)
+    return AuthContext(user=user, session=row, role=row.acting_role, roles=roles_for(db, user))
 
 
 def require_roles(*roles: str):
     def _inner(auth: AuthContext = Depends(get_auth)) -> AuthContext:
-        if auth.role not in roles:
+        if auth.role == "child" and "child" not in roles:
+            raise HTTPException(403, "rôle insuffisant")
+        if auth.role != "child" and not auth.roles.intersection(roles):
             raise HTTPException(403, "rôle insuffisant")
         return auth
 
