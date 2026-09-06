@@ -17,6 +17,7 @@ from acomytha.mail import MailService
 from acomytha.security import SessionService
 from acomytha.seed import Bootstrap
 from acomytha.settings import Settings, get_settings
+from acomytha.rate_limit import RateLimiter
 
 
 def create_app(settings: Settings | None = None, import_limit: int | None = None) -> FastAPI:
@@ -32,6 +33,7 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
     app.state.sessions = SessionService(hours=settings.session_hours)
     app.state.devices = DeviceGuard()
     app.state.mailer = MailService(settings)
+    app.state.rate_limiter = RateLimiter(settings.rate_limit_enabled)
     app.state.vault = AudioVault(settings)
 
     app.include_router(auth.router)

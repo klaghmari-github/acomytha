@@ -15,15 +15,15 @@ export class LoginGate extends Component {
           </div>
           <div class="c-field">
             <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" autocomplete="username" required value="parent@acomytha.local" />
+            <input id="email" name="email" type="email" autocomplete="username" required />
           </div>
           <div class="c-field">
             <label for="password">Mot de passe</label>
-            <input id="password" name="password" type="password" autocomplete="current-password" required value="acomytha-parent" />
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
           </div>
           <p class="c-error" id="err"></p>
           <button class="c-btn c-btn--wide" type="submit">Connexion</button>
-          <p class="c-hint"><a href="#/inscription">Créer un compte</a> · <a href="#/">Accueil</a></p>
+          <p class="c-hint"><a href="#/mot-de-passe-oublie">Mot de passe oublié ?</a> · <a href="#/inscription">Créer un compte</a> · <a href="#/">Accueil</a></p>
         </form>
       </section>`;
     this.on(this.querySelector("#login"), "submit", (ev) => this.submit(ev));

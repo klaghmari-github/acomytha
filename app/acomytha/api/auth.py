@@ -13,14 +13,14 @@ from sqlalchemy.orm import Session
 from acomytha.api.deps import AuthContext, get_auth, get_db, roles_for
 from acomytha.devices import DeviceConflict, DeviceGuard
 from acomytha.commerce import grant_welcome, num
-from acomytha.models import ChildProfile, EmailVerification, User
+from acomytha.models import ChildProfile, EmailVerification, PasswordReset, SessionToken, User
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
 
 class LoginBody(BaseModel):
-    email: str
-    password: str
+    email: str = Field(min_length=3, max_length=180)
+    password: str = Field(min_length=1, max_length=256)
     device_id: str = Field(min_length=8, max_length=64)
     device_label: str = ""
 
@@ -32,8 +32,8 @@ class ChildBody(BaseModel):
 
 
 class SignupBody(BaseModel):
-    email: str
-    password: str = Field(min_length=8)
+    email: str = Field(min_length=3, max_length=180)
+    password: str = Field(min_length=8, max_length=256)
     display_name: str = ""
     device_id: str = Field(min_length=8, max_length=64)
     device_label: str = ""
@@ -46,7 +46,16 @@ class VerifyEmailBody(BaseModel):
 
 
 class ResendVerificationBody(BaseModel):
-    email: str
+    email: str = Field(min_length=3, max_length=180)
+
+
+class PasswordResetRequestBody(BaseModel):
+    email: str = Field(min_length=3, max_length=180)
+
+
+class PasswordResetBody(BaseModel):
+    token: str = Field(min_length=32, max_length=256)
+    password: str = Field(min_length=8, max_length=256)
 
 
 class PinChangeBody(BaseModel):
@@ -86,6 +95,24 @@ def _verification_hash(token: str) -> str:
     return hashlib.sha256(token.encode("utf-8")).hexdigest()
 
 
+def _rate_key(request: Request, action: str, subject: str = "") -> str:
+    host = request.client.host if request.client else "unknown"
+    digest = hashlib.sha256(subject.strip().lower().encode("utf-8")).hexdigest()[:20] if subject else "all"
+    return f"{action}:{host}:{digest}"
+
+
+def _rate_limit(request: Request, action: str, subject: str, limit: int, window_seconds: int) -> str:
+    key = _rate_key(request, action, subject)
+    result = request.app.state.rate_limiter.check(key, limit, window_seconds)
+    if not result.allowed:
+        raise HTTPException(
+            429,
+            "trop de tentatives, réessayez plus tard",
+            headers={"Retry-After": str(result.retry_after)},
+        )
+    return key
+
+
 def _send_verification(db: Session, request: Request, user: User) -> None:
     now = datetime.now(timezone.utc)
     db.query(EmailVerification).filter(
@@ -119,6 +146,8 @@ def _user_payload(user: User, role: str, db: Session) -> dict:
 @router.post("/signup")
 def signup(body: SignupBody, request: Request, response: Response, db: Session = Depends(get_db)):
     email = body.email.strip().lower()
+    _rate_limit(request, "signup-ip", "", 5, 3600)
+    _rate_limit(request, "signup-email", email, 3, 3600)
     if db.query(User).filter(User.email == email).one_or_none():
         raise HTTPException(409, "cette adresse a déjà un compte")
     hasher = request.app.state.sessions.hasher
@@ -133,6 +162,7 @@ def signup(body: SignupBody, request: Request, response: Response, db: Session =
 
 @router.post("/verify-email")
 def verify_email(body: VerifyEmailBody, request: Request, response: Response, db: Session = Depends(get_db)):
+    _rate_limit(request, "verify", "", 10, 900)
     row = db.query(EmailVerification).filter(
         EmailVerification.token_hash == _verification_hash(body.token),
         EmailVerification.used_at.is_(None),
@@ -162,15 +192,60 @@ def verify_email(body: VerifyEmailBody, request: Request, response: Response, db
 
 @router.post("/resend-verification")
 def resend_verification(body: ResendVerificationBody, request: Request, db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.email == body.email.strip().lower()).one_or_none()
+    email = body.email.strip().lower()
+    _rate_limit(request, "resend-ip", "", 10, 3600)
+    _rate_limit(request, "resend-email", email, 3, 900)
+    user = db.query(User).filter(User.email == email).one_or_none()
     if user is not None and not user.is_active:
         _send_verification(db, request, user)
     return {"ok": True}
 
 
+@router.post("/request-password-reset")
+def request_password_reset(body: PasswordResetRequestBody, request: Request, db: Session = Depends(get_db)):
+    email = body.email.strip().lower()
+    _rate_limit(request, "reset-ip", "", 10, 3600)
+    _rate_limit(request, "reset-email", email, 3, 900)
+    user = db.query(User).filter(User.email == email, User.is_active.is_(True)).one_or_none()
+    if user is not None:
+        now = datetime.now(timezone.utc)
+        db.query(PasswordReset).filter(PasswordReset.user_id == user.id, PasswordReset.used_at.is_(None)).delete()
+        token = secrets.token_urlsafe(32)
+        db.add(PasswordReset(user_id=user.id, token_hash=_verification_hash(token), expires_at=now + timedelta(hours=1)))
+        db.commit()
+        url = f"{request.app.state.settings.public_url.rstrip('/')}/#/nouveau-mot-de-passe?token={token}"
+        request.app.state.mailer.send_password_reset(user.email, url)
+    return {"ok": True}
+
+
+@router.post("/reset-password")
+def reset_password(body: PasswordResetBody, request: Request, db: Session = Depends(get_db)):
+    _rate_limit(request, "reset-token", body.token, 5, 900)
+    row = db.query(PasswordReset).filter(
+        PasswordReset.token_hash == _verification_hash(body.token),
+        PasswordReset.used_at.is_(None),
+    ).one_or_none()
+    now = datetime.now(timezone.utc)
+    if row is None:
+        raise HTTPException(400, "lien de réinitialisation inconnu ou déjà utilisé")
+    expires = row.expires_at if row.expires_at.tzinfo else row.expires_at.replace(tzinfo=timezone.utc)
+    if expires < now:
+        raise HTTPException(410, "ce lien de réinitialisation a expiré")
+    user = db.get(User, row.user_id)
+    if user is None or not user.is_active:
+        raise HTTPException(400, "compte indisponible")
+    user.password_hash = request.app.state.sessions.hasher.hash(body.password)
+    row.used_at = now
+    db.query(SessionToken).filter(SessionToken.user_id == user.id).delete()
+    db.commit()
+    return {"ok": True}
+
+
 @router.post("/login")
 def login(body: LoginBody, request: Request, response: Response, db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.email == body.email.strip().lower()).one_or_none()
+    email = body.email.strip().lower()
+    rate_key = _rate_limit(request, "login", email, 8, 300)
+    user = db.query(User).filter(User.email == email).one_or_none()
     hasher = request.app.state.sessions.hasher
     if user is None or user.role == "child" or not hasher.verify(body.password, user.password_hash):
         raise HTTPException(401, "identifiants inconnus")
@@ -189,6 +264,7 @@ def login(body: LoginBody, request: Request, response: Response, db: Session = D
             },
         ) from exc
     token = request.app.state.sessions.issue(db, user, body.device_id, user.role)
+    request.app.state.rate_limiter.reset(rate_key)
     _set_cookie(response, request, token)
     return _user_payload(user, user.role, db)
 
@@ -224,6 +300,7 @@ def back_to_parent(
 ):
     if auth.role != "child":
         raise HTTPException(403, "pas en mode enfant")
+    rate_key = _rate_limit(request, "parent-pin", str(auth.child_profile_id or 0), 5, 300)
     profile = _profile_of(db, auth.user.id, auth.child_profile_id)
     if profile is None or not _valid_pin(body.pin) or not request.app.state.sessions.hasher.verify(body.pin, profile.unlock_pin_hash):
         raise HTTPException(401, "ce n'est pas le bon code")
@@ -231,6 +308,7 @@ def back_to_parent(
     profile.unlock_pin_hash = None
     db.commit()
     token = request.app.state.sessions.issue(db, auth.user, auth.session.device_id, "parent")
+    request.app.state.rate_limiter.reset(rate_key)
     _set_cookie(response, request, token)
     return _user_payload(auth.user, "parent", db)
 

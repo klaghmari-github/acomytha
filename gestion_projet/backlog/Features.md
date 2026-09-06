@@ -61,7 +61,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PLY-006 | **à faire** | Mode nuit choisi par le parent, pas par l’enfant. |
 | F-PAY-004 | **à faire** | Offre euros simple (abo + pack). acm hors premier écran. |
 | F-PAY-005 | **plus tard** | Parrainage : acm au parrain = 1er chargement ; le parrain du parrain reçoit 2× sa 1re charge. |
-| F-SEC-004 | **à faire** | Durcir la prod : plus de démo en public, recovery, rate limit. |
+| F-SEC-004 | **développé** | Démo désactivée par défaut, cookies sécurisés en HTTPS, rate limit et récupération par lien à usage unique. |
 | F-ADM-005 | **à faire** | Pages légales + dépôt reproductible (deps, CI, Docker). |
 | F-UX-001 | **partiel** | Vitrine, parent, enfant audio et éditeur alignés ; dernière passe d’accessibilité et états UX à poursuivre. |
 | F-ACC-005 | **développé** | Rôles parent, éditeur et admin cumulables ; menus et API suivent les permissions. |
