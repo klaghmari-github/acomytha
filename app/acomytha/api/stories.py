@@ -4,9 +4,10 @@ from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException
 from datetime import datetime, timezone
+import json
 
 from pydantic import BaseModel, Field
-from sqlalchemy import func, select
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
@@ -34,6 +35,9 @@ class ChildProfileBody(BaseModel):
 
 class ListeningEndBody(BaseModel):
     listened_seconds: float = Field(default=0, ge=0, le=86400)
+    chunk_ids: list[str] = Field(default_factory=list, max_length=500)
+    playback_mode: str = Field(default="day", pattern=r"^(day|night)$")
+    reached_end: bool = False
 
 
 def _profile_payload(profile: ChildProfile, db: Session) -> dict:
@@ -247,14 +251,36 @@ def child_queue(auth: AuthContext = Depends(require_roles("child")), db: Session
     ids = [i for i in ids if i in allowed]
     if not ids:
         return []
-    counts = dict(db.execute(
-        select(ListeningSession.story_id, func.count(ListeningSession.id))
-        .where(ListeningSession.profile_id == auth.child_profile_id)
-        .group_by(ListeningSession.story_id)
-    ).all())
+    sessions = db.query(ListeningSession).filter(ListeningSession.profile_id == auth.child_profile_id).all()
+    history: dict[str, dict] = {}
+    for session in sessions:
+        item = history.setdefault(session.story_id, {"best": 0.0, "last": None, "count": 0, "completed": False})
+        item["best"] = max(item["best"], float(session.completion_percent or 0))
+        item["count"] += 1
+        item["completed"] = item["completed"] or bool(session.completed)
+        if item["last"] is None or session.started_at > item["last"]:
+            item["last"] = session.started_at
     rows = list(db.scalars(select(Story).where(Story.story_id.in_(ids))))
-    rows.sort(key=lambda story: (counts.get(story.story_id, 0), story.title.casefold()))
-    return [story_to_dict(s) for s in rows]
+    def rank(story: Story):
+        item = history.get(story.story_id)
+        if item is None:
+            return (0, 0, story.title.casefold())
+        stamp = item["last"].timestamp() if item["last"] else 0
+        if not item["completed"]:
+            return (1, -stamp, story.title.casefold())
+        return (2, stamp, story.title.casefold())
+    rows.sort(key=rank)
+    result = []
+    for story in rows:
+        payload = story_to_dict(story)
+        item = history.get(story.story_id)
+        payload["listening"] = {
+            "status": "new" if item is None else "completed" if item["completed"] else "resume",
+            "best_percent": item["best"] if item else 0,
+            "play_count": item["count"] if item else 0,
+        }
+        result.append(payload)
+    return result
 
 
 @router.post("/enfant/ecoutes/{story_id}")
@@ -265,7 +291,13 @@ def start_listening(story_id: str, auth: AuthContext = Depends(require_roles("ch
     ).one_or_none()
     if allowed is None:
         raise HTTPException(403, "histoire absente du catalogue enfant")
-    row = ListeningSession(profile_id=auth.child_profile_id, story_id=story_id)
+    story = db.get(Story, story_id)
+    row = ListeningSession(
+        profile_id=auth.child_profile_id,
+        story_id=story_id,
+        total_duration_s=float(story.duration_s if story else 0),
+        story_version=story.status if story else "",
+    )
     db.add(row)
     db.commit()
     db.refresh(row)
@@ -281,15 +313,18 @@ def finish_listening(listening_id: int, body: ListeningEndBody, auth: AuthContex
     if row is None:
         raise HTTPException(404, "écoute inconnue")
     story = db.get(Story, row.story_id)
-    duration = max(0, int(story.duration_s if story else 0))
+    duration = max(0, int(row.total_duration_s or (story.duration_s if story else 0)))
     heard = max(0.0, float(body.listened_seconds))
     percent = min(100.0, heard / duration * 100) if duration else 0.0
     row.ended_at = datetime.now(timezone.utc)
     row.listened_seconds = heard
     row.completion_percent = round(percent, 2)
-    row.completed = percent >= 95
+    row.reached_end = body.reached_end
+    row.completed = body.reached_end or percent >= 95
+    row.playback_mode = body.playback_mode
+    row.path_json = json.dumps(body.chunk_ids, ensure_ascii=False)
     db.commit()
-    return {"ok": True, "completion_percent": row.completion_percent, "completed": row.completed}
+    return {"ok": True, "completion_percent": row.completion_percent, "completed": row.completed, "reached_end": row.reached_end}
 
 
 @router.get("/parent/profiles/{profile_id}/ecoutes")
@@ -298,4 +333,4 @@ def listening_history(profile_id: int, auth: AuthContext = Depends(require_roles
     if profile is None:
         raise HTTPException(404, "profil enfant introuvable")
     rows = db.query(ListeningSession).filter(ListeningSession.profile_id == profile_id).order_by(ListeningSession.started_at.desc()).limit(500).all()
-    return [{"id": row.id, "story_id": row.story_id, "started_at": row.started_at.isoformat(), "ended_at": row.ended_at.isoformat() if row.ended_at else None, "listened_seconds": row.listened_seconds, "completion_percent": row.completion_percent, "completed": row.completed} for row in rows]
+    return [{"id": row.id, "story_id": row.story_id, "started_at": row.started_at.isoformat(), "ended_at": row.ended_at.isoformat() if row.ended_at else None, "listened_seconds": row.listened_seconds, "total_duration_s": row.total_duration_s, "completion_percent": row.completion_percent, "completed": row.completed, "reached_end": row.reached_end, "playback_mode": row.playback_mode, "story_version": row.story_version, "chunk_ids": json.loads(row.path_json or "[]")} for row in rows]

@@ -280,17 +280,31 @@ def test_child_listening_history_is_recorded_for_profile(client):
         json={"profile_id": profile_id, "pin": TEST_PIN, "device_id": "device-history-1"},
     )
     assert entered.status_code == 200
+    assert client.get("/api/enfant/file").json()[0]["listening"]["status"] == "new"
     started = client.post("/api/enfant/ecoutes/ATOM-SAN.ALI.001-01", json={})
     assert started.status_code == 200
     listening_id = started.json()["listening_id"]
-    finished = client.put(f"/api/enfant/ecoutes/{listening_id}", json={"listened_seconds": 12.5})
+    finished = client.put(
+        f"/api/enfant/ecoutes/{listening_id}",
+        json={
+            "listened_seconds": 12.5,
+            "chunk_ids": ["CHK_T0000_P0000", "CHK_T0000_P0000_Q0001"],
+            "playback_mode": "night",
+            "reached_end": False,
+        },
+    )
     assert finished.status_code == 200
     assert 0 <= finished.json()["completion_percent"] <= 100
+    assert client.get("/api/enfant/file").json()[0]["listening"]["status"] == "resume"
     assert client.post("/api/auth/parent", json={"pin": TEST_PIN}).status_code == 200
     history = client.get(f"/api/parent/profiles/{profile_id}/ecoutes").json()
     assert len(history) == 1
     assert history[0]["story_id"] == "ATOM-SAN.ALI.001-01"
     assert history[0]["listened_seconds"] == 12.5
+    assert history[0]["total_duration_s"] >= 0
+    assert history[0]["playback_mode"] == "night"
+    assert history[0]["reached_end"] is False
+    assert history[0]["chunk_ids"] == ["CHK_T0000_P0000", "CHK_T0000_P0000_Q0001"]
 
 
 def test_crypto_roundtrip(settings):

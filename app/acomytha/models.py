@@ -162,8 +162,13 @@ class ListeningSession(Base):
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
     ended_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     listened_seconds: Mapped[float] = mapped_column(Float, default=0.0)
+    total_duration_s: Mapped[float] = mapped_column(Float, default=0.0)
     completion_percent: Mapped[float] = mapped_column(Float, default=0.0)
     completed: Mapped[bool] = mapped_column(Boolean, default=False)
+    reached_end: Mapped[bool] = mapped_column(Boolean, default=False)
+    playback_mode: Mapped[str] = mapped_column(String(16), default="day")
+    story_version: Mapped[str] = mapped_column(String(64), default="")
+    path_json: Mapped[str] = mapped_column(Text, default="[]")
 
 
 class Chunk(Base):

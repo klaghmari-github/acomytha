@@ -90,6 +90,10 @@ export class ParentApp extends Component {
             <div class="c-section-head"><div><p class="c-eyebrow">Profils enfants</p><h2>Pour qui choisissez-vous ?</h2></div><button class="c-btn c-btn--ghost" id="add-profile" type="button">Ajouter un enfant</button></div>
             <div class="c-profile-list" id="profile-list"></div>
           </section>
+          <section class="c-panel c-listening-history" aria-labelledby="history-title">
+            <div class="c-section-head"><div><p class="c-eyebrow">Activité récente</p><h2 id="history-title">Les écoutes de votre enfant</h2></div></div>
+            <div class="o-stack" id="listening-history"><p class="c-hint">Choisissez un profil enfant pour voir ses écoutes.</p></div>
+          </section>
           <div class="c-title">
             <div>
               <h2 id="catalog">Toutes les histoires</h2>
@@ -184,6 +188,7 @@ export class ParentApp extends Component {
       this.drawShop();
       this.drawProfiles(profiles.limit);
       this.render();
+      await this.loadListeningHistory();
       const checkout = new URLSearchParams(location.hash.split("?")[1] || "").get("checkout");
       if (checkout === "success") msg.textContent = "Paiement reçu. Votre solde est actualisé après confirmation de Stripe.";
       if (checkout === "cancelled") msg.textContent = "Paiement annulé : aucun montant n’a été débité.";
@@ -226,6 +231,7 @@ export class ParentApp extends Component {
     await this.loadProfileCatalog();
     this.drawProfiles();
     this.render();
+    await this.loadListeningHistory();
   }
 
   openProfileModal(profile = null) {
@@ -277,8 +283,33 @@ export class ParentApp extends Component {
       this.querySelector("#profile-modal").hidden = true;
       this.drawProfiles();
       this.render();
+      await this.loadListeningHistory();
     } catch (error) {
       err.textContent = error.message || "Ce profil ne peut pas être supprimé.";
+    }
+  }
+
+  async loadListeningHistory() {
+    const target = this.querySelector("#listening-history");
+    if (!target || !this.#activeProfileId) return;
+    target.innerHTML = "<p class=\"c-hint\">Chargement des écoutes…</p>";
+    try {
+      const rows = await this.api.get(`/parent/profiles/${this.#activeProfileId}/ecoutes`);
+      if (!rows.length) {
+        target.innerHTML = "<p class=\"c-hint\">Aucune écoute pour le moment. Les nouvelles aventures seront proposées en premier.</p>";
+        return;
+      }
+      target.replaceChildren();
+      for (const row of rows.slice(0, 8)) {
+        const story = this.allStories.find((item) => item.story_id === row.story_id);
+        const item = document.createElement("div");
+        item.className = "o-row c-history-row";
+        const status = row.completed ? "Terminée" : `Écoutée à ${Math.round(row.completion_percent || 0)} %`;
+        item.innerHTML = `<span><strong>${escapeHtml(story?.title || row.story_id)}</strong><small>${status} · ${formatListeningDate(row.started_at)}</small></span><span class="c-pill">${Math.round(row.listened_seconds || 0)} s</span>`;
+        target.append(item);
+      }
+    } catch (error) {
+      target.innerHTML = `<p class="c-error">${escapeHtml(error.message || "Impossible de charger l’historique.")}</p>`;
     }
   }
 
@@ -668,6 +699,12 @@ function fmtDur(sec) {
 
 function ageLabel(ageBand) {
   return { N1: "3–4 ans", N2: "4–5 ans", N3: "5–6 ans" }[ageBand] || "";
+}
+
+function formatListeningDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "date inconnue";
+  return new Intl.DateTimeFormat("fr-FR", { dateStyle: "short", timeStyle: "short" }).format(date);
 }
 
 function formLabel(s) {
