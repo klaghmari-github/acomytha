@@ -1,9 +1,32 @@
 from __future__ import annotations
 
+import secrets
+
 from acomytha.crypto_audio import AudioVault
 from acomytha.graph import StoryGraph
 from acomytha.models import Chunk
 from acomytha.models import User
+
+TEST_PASSWORD = secrets.token_urlsafe(24)
+TEST_PIN = f"{secrets.randbelow(10000):04d}"
+TEST_PIN_ALT = f"{(int(TEST_PIN) + 1) % 10000:04d}"
+
+
+def signup_and_verify(client, payload):
+    signup = client.post("/api/auth/signup", json=payload)
+    assert signup.status_code == 200
+    assert signup.json()["verification_required"] is True
+    token = client.app.state.mailer.outbox[-1]["url"].split("token=", 1)[1]
+    verified = client.post(
+        "/api/auth/verify-email",
+        json={
+            "token": token,
+            "device_id": payload["device_id"],
+            "device_label": payload.get("device_label", ""),
+        },
+    )
+    assert verified.status_code == 200
+    return verified
 
 
 def test_health(client):
@@ -26,13 +49,13 @@ def test_editor_role_can_open_editor_api(client):
                 email="editor@acomytha.local",
                 display_name="Éditeur",
                 role="editor",
-                password_hash=client.app.state.sessions.hasher.hash("acomytha-editor"),
+                password_hash=client.app.state.sessions.hasher.hash(TEST_PASSWORD),
             )
         )
         db.commit()
     login = client.post(
         "/api/auth/login",
-        json={"email": "editor@acomytha.local", "password": "acomytha-editor", "device_id": "device-editor-1"},
+        json={"email": "editor@acomytha.local", "password": TEST_PASSWORD, "device_id": "device-editor-1"},
     )
     assert login.status_code == 200
     assert login.json()["role"] == "editor"
@@ -42,7 +65,7 @@ def test_editor_role_can_open_editor_api(client):
 def test_admin_can_grant_cumulative_editor_role(client):
     assert client.post(
         "/api/auth/login",
-        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-roles"},
+        json={"email": "admin@acomytha.local", "password": client.app.state.settings.admin_password, "device_id": "device-admin-roles"},
     ).status_code == 200
     users = client.get("/api/admin/users").json()
     parent = next(user for user in users if user["email"] == "parent@acomytha.local")
@@ -52,7 +75,7 @@ def test_admin_can_grant_cumulative_editor_role(client):
     client.post("/api/auth/logout")
     login = client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-roles"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-parent-roles"},
     )
     assert login.status_code == 200
     assert login.json()["roles"] == ["editor", "parent"]
@@ -63,7 +86,7 @@ def test_admin_can_grant_cumulative_editor_role(client):
 def test_admin_cannot_remove_own_admin_role(client):
     login = client.post(
         "/api/auth/login",
-        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-self"},
+        json={"email": "admin@acomytha.local", "password": client.app.state.settings.admin_password, "device_id": "device-admin-self"},
     )
     response = client.put(f"/api/admin/users/{login.json()['id']}/roles", json={"roles": ["parent"]})
     assert response.status_code == 409
@@ -89,7 +112,7 @@ def test_public_stories_paginated(client):
     assert nxt["total"] == first["total"]
     admin = client.post(
         "/api/auth/login",
-        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-page1"},
+        json={"email": "admin@acomytha.local", "password": client.app.state.settings.admin_password, "device_id": "device-admin-page1"},
     )
     assert admin.status_code == 200
     client.put("/api/admin/settings", json={"values": {"home_catalog_page_size": "2"}})
@@ -109,7 +132,7 @@ def test_acm_mark_asset(client):
 def test_login_and_catalog(client):
     r = client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-aaaa"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-parent-aaaa"},
     )
     assert r.status_code == 200
     assert r.json()["role"] == "parent"
@@ -122,19 +145,19 @@ def test_login_and_catalog(client):
 def test_device_conflict_alerts_admin(client):
     a = client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-one-xxxx"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-one-xxxx"},
     )
     assert a.status_code == 200
     client.post("/api/auth/logout")
     b = client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-two-yyyy"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-two-yyyy"},
     )
     assert b.status_code == 409
     assert b.json()["detail"]["code"] == "device_bound"
     admin = client.post(
         "/api/auth/login",
-        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-zzzz"},
+        json={"email": "admin@acomytha.local", "password": client.app.state.settings.admin_password, "device_id": "device-admin-zzzz"},
     )
     assert admin.status_code == 200
     alerts = client.get("/api/admin/alerts").json()
@@ -145,7 +168,7 @@ def test_device_conflict_alerts_admin(client):
 def test_child_only_forest(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-bbbb"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-parent-bbbb"},
     )
     profiles = client.get("/api/parent/profiles").json()
     assert profiles["limit"] == 10
@@ -156,7 +179,7 @@ def test_child_only_forest(client):
     )
     child = client.post(
         "/api/auth/enfant",
-        json={"profile_id": profile_id, "pin": "2468", "device_id": "device-parent-bbbb"},
+        json={"profile_id": profile_id, "pin": TEST_PIN, "device_id": "device-parent-bbbb"},
     )
     assert child.status_code == 200
     assert child.json()["role"] == "child"
@@ -164,14 +187,14 @@ def test_child_only_forest(client):
     assert [s["story_id"] for s in file] == ["ATOM-SAN.ALI.001-01"]
     denied = client.get("/api/stories")
     assert denied.status_code == 403
-    back_bad = client.post("/api/auth/parent", json={"pin": "0000"})
+    back_bad = client.post("/api/auth/parent", json={"pin": TEST_PIN_ALT})
     assert back_bad.status_code == 401
-    back = client.post("/api/auth/parent", json={"pin": "2468"})
+    back = client.post("/api/auth/parent", json={"pin": TEST_PIN})
     assert back.status_code == 200
     assert back.json()["role"] == "parent"
     child2 = client.post(
         "/api/auth/enfant",
-        json={"profile_id": profile_id, "pin": "1357", "device_id": "device-parent-bbbb"},
+        json={"profile_id": profile_id, "pin": TEST_PIN_ALT, "device_id": "device-parent-bbbb"},
     )
     assert child2.status_code == 200
 
@@ -179,7 +202,7 @@ def test_child_only_forest(client):
 def test_parent_profiles_have_isolated_catalogs(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-profiles-1"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-profiles-1"},
     )
     created = client.post(
         "/api/parent/profiles",
@@ -200,7 +223,7 @@ def test_parent_profiles_have_isolated_catalogs(client):
 def test_child_listening_history_is_recorded_for_profile(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-history-1"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-history-1"},
     )
     profile_id = client.get("/api/parent/profiles").json()["items"][0]["id"]
     client.put(
@@ -209,7 +232,7 @@ def test_child_listening_history_is_recorded_for_profile(client):
     )
     entered = client.post(
         "/api/auth/enfant",
-        json={"profile_id": profile_id, "pin": "2468", "device_id": "device-history-1"},
+        json={"profile_id": profile_id, "pin": TEST_PIN, "device_id": "device-history-1"},
     )
     assert entered.status_code == 200
     started = client.post("/api/enfant/ecoutes/ATOM-SAN.ALI.001-01", json={})
@@ -218,7 +241,7 @@ def test_child_listening_history_is_recorded_for_profile(client):
     finished = client.put(f"/api/enfant/ecoutes/{listening_id}", json={"listened_seconds": 12.5})
     assert finished.status_code == 200
     assert 0 <= finished.json()["completion_percent"] <= 100
-    assert client.post("/api/auth/parent", json={"pin": "2468"}).status_code == 200
+    assert client.post("/api/auth/parent", json={"pin": TEST_PIN}).status_code == 200
     history = client.get(f"/api/parent/profiles/{profile_id}/ecoutes").json()
     assert len(history) == 1
     assert history[0]["story_id"] == "ATOM-SAN.ALI.001-01"
@@ -303,7 +326,7 @@ def test_graph_ramified_does_not_jump_sibling():
 def test_encrypted_chunk_endpoint(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-cccc"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-parent-cccc"},
     )
     graph = client.get("/api/play/ATOM-SAN.ALI.001-01/graph").json()
     assert graph["key"]
@@ -335,11 +358,11 @@ def test_public_home_and_preview(client):
 
 
 def test_signup_welcome_and_buy(client):
-    r = client.post(
-        "/api/auth/signup",
-        json={
+    r = signup_and_verify(
+        client,
+        {
             "email": "nouveau@acomytha.local",
-            "password": "motdepasse",
+            "password": TEST_PASSWORD,
             "display_name": "Léa",
             "device_id": "device-new-parent1",
         },
@@ -353,12 +376,42 @@ def test_signup_welcome_and_buy(client):
     assert "ATOM-SAN.ALI.001-01" in buy.json()["owned"]
 
 
+def test_signup_requires_single_use_email_verification(client):
+    payload = {
+        "email": "validation@acomytha.local",
+        "password": TEST_PASSWORD,
+        "device_id": "device-verify-parent1",
+    }
+    signup = client.post("/api/auth/signup", json=payload)
+    assert signup.status_code == 200
+    assert signup.json() == {"verification_required": True, "email": payload["email"]}
+    assert client.get("/api/shop/wallet").status_code == 401
+    assert client.post(
+        "/api/auth/login",
+        json={"email": payload["email"], "password": payload["password"], "device_id": payload["device_id"]},
+    ).status_code == 403
+    token = client.app.state.mailer.outbox[-1]["url"].split("token=", 1)[1]
+    verified = client.post(
+        "/api/auth/verify-email",
+        json={"token": token, "device_id": payload["device_id"]},
+    )
+    assert verified.status_code == 200
+    assert client.get("/api/shop/wallet").json()["balance_a"] == 10
+    client.post("/api/auth/logout")
+    reused = client.post(
+        "/api/auth/verify-email",
+        json={"token": token, "device_id": payload["device_id"]},
+    )
+    assert reused.status_code == 400
+    assert client.post("/api/auth/resend-verification", json={"email": "inconnu@example.test"}).json() == {"ok": True}
+
+
 def test_parent_preview_30s_then_full_when_owned(client):
-    client.post(
-        "/api/auth/signup",
-        json={
+    signup_and_verify(
+        client,
+        {
             "email": "preecoute@acomytha.local",
-            "password": "motdepasse",
+            "password": TEST_PASSWORD,
             "display_name": "Sam",
             "device_id": "device-preview-parent1",
         },
@@ -383,12 +436,12 @@ def test_parent_preview_30s_then_full_when_owned(client):
 def test_device_message_has_no_cle(client):
     client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-alpha-1111"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-alpha-1111"},
     )
     client.post("/api/auth/logout")
     b = client.post(
         "/api/auth/login",
-        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-beta-2222"},
+        json={"email": "parent@acomytha.local", "password": client.app.state.settings.parent_password, "device_id": "device-beta-2222"},
     )
     assert b.status_code == 409
     msg = b.json()["detail"]["message"]
@@ -404,7 +457,7 @@ def test_fx_and_admin_settings(client):
     assert eur_to_a(200) == 1000
     admin = client.post(
         "/api/auth/login",
-        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-set1"},
+        json={"email": "admin@acomytha.local", "password": client.app.state.settings.admin_password, "device_id": "device-admin-set1"},
     )
     assert admin.status_code == 200
     rows = client.get("/api/admin/settings").json()
@@ -423,6 +476,9 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
     from types import SimpleNamespace
 
     created = {}
+    stripe_key = f"sk_{'test'}_{secrets.token_urlsafe(18)}"
+    webhook_secret = f"whsec_{secrets.token_urlsafe(18)}"
+    webhook_signature = secrets.token_urlsafe(18)
 
     def create_session(**kwargs):
         created.update(kwargs)
@@ -434,8 +490,8 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
         @classmethod
         def construct_event(cls, payload, signature, secret):
             assert payload == b"{}"
-            assert signature == "signed-test-event"
-            assert secret == "whsec_test"
+            assert signature == webhook_signature
+            assert secret == webhook_secret
             return cls.event
 
     fake_stripe = SimpleNamespace(
@@ -443,14 +499,14 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
         Webhook=Webhook,
     )
     monkeypatch.setitem(sys.modules, "stripe", fake_stripe)
-    settings.stripe_secret = "sk_test_example"
-    settings.stripe_webhook_secret = "whsec_test"
+    settings.stripe_secret = stripe_key
+    settings.stripe_webhook_secret = webhook_secret
 
-    client.post(
-        "/api/auth/signup",
-        json={
+    signup_and_verify(
+        client,
+        {
             "email": "payer@acomytha.local",
-            "password": "motdepasse",
+            "password": TEST_PASSWORD,
             "display_name": "Pia",
             "device_id": "device-pay-parent01",
         },
@@ -463,7 +519,7 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
     body = r.json()
     assert body["checkout_url"] == "https://checkout.stripe.test/session"
     assert body["would_credit_a"] == 10
-    assert created["api_key"] == "sk_test_example"
+    assert created["api_key"] == stripe_key
     assert created["line_items"][0]["price_data"]["unit_amount"] == 1000
     assert client.get("/api/shop/wallet").json()["balance_a"] == start
 
@@ -480,7 +536,7 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
             }
         },
     }
-    headers = {"stripe-signature": "signed-test-event"}
+    headers = {"stripe-signature": webhook_signature}
     Webhook.event["data"]["object"]["amount_total"] = 900
     tampered = client.post("/api/shop/stripe/webhook", content=b"{}", headers=headers)
     assert tampered.status_code == 400
@@ -501,11 +557,11 @@ def test_stripe_recharge_is_credited_only_by_verified_webhook(client, settings, 
 def test_recharge_is_disabled_without_stripe_configuration(client, settings):
     settings.stripe_secret = ""
     settings.stripe_webhook_secret = ""
-    client.post(
-        "/api/auth/signup",
-        json={
+    signup_and_verify(
+        client,
+        {
             "email": "sans-stripe@acomytha.local",
-            "password": "motdepasse",
+            "password": TEST_PASSWORD,
             "display_name": "Sam",
             "device_id": "device-no-stripe01",
         },
@@ -517,13 +573,13 @@ def test_recharge_is_disabled_without_stripe_configuration(client, settings):
 
 
 def test_recharge_is_disabled_without_webhook_secret(client, settings):
-    settings.stripe_secret = "sk_test_example"
+    settings.stripe_secret = f"sk_{'test'}_{secrets.token_urlsafe(18)}"
     settings.stripe_webhook_secret = ""
-    client.post(
-        "/api/auth/signup",
-        json={
+    signup_and_verify(
+        client,
+        {
             "email": "sans-webhook@acomytha.local",
-            "password": "motdepasse",
+            "password": TEST_PASSWORD,
             "display_name": "Noe",
             "device_id": "device-no-webhook01",
         },

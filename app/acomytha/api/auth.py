@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import hashlib
+import secrets
+from datetime import datetime, timedelta, timezone
+
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
@@ -9,7 +13,7 @@ from sqlalchemy.orm import Session
 from acomytha.api.deps import AuthContext, get_auth, get_db, roles_for
 from acomytha.devices import DeviceConflict, DeviceGuard
 from acomytha.commerce import grant_welcome, num
-from acomytha.models import ChildProfile, User
+from acomytha.models import ChildProfile, EmailVerification, User
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
@@ -33,6 +37,16 @@ class SignupBody(BaseModel):
     display_name: str = ""
     device_id: str = Field(min_length=8, max_length=64)
     device_label: str = ""
+
+
+class VerifyEmailBody(BaseModel):
+    token: str = Field(min_length=32, max_length=256)
+    device_id: str = Field(min_length=8, max_length=64)
+    device_label: str = ""
+
+
+class ResendVerificationBody(BaseModel):
+    email: str
 
 
 class PinChangeBody(BaseModel):
@@ -68,6 +82,29 @@ def _set_cookie(response: Response, request: Request, token: str) -> None:
     )
 
 
+def _verification_hash(token: str) -> str:
+    return hashlib.sha256(token.encode("utf-8")).hexdigest()
+
+
+def _send_verification(db: Session, request: Request, user: User) -> None:
+    now = datetime.now(timezone.utc)
+    db.query(EmailVerification).filter(
+        EmailVerification.user_id == user.id,
+        EmailVerification.used_at.is_(None),
+    ).delete()
+    token = secrets.token_urlsafe(32)
+    db.add(
+        EmailVerification(
+            user_id=user.id,
+            token_hash=_verification_hash(token),
+            expires_at=now + timedelta(hours=request.app.state.settings.email_verification_hours),
+        )
+    )
+    db.commit()
+    url = f"{request.app.state.settings.public_url.rstrip('/')}/#/verification?token={token}"
+    request.app.state.mailer.send_verification(user.email, url)
+
+
 def _user_payload(user: User, role: str, db: Session) -> dict:
     return {
         "id": user.id,
@@ -86,17 +123,49 @@ def signup(body: SignupBody, request: Request, response: Response, db: Session =
         raise HTTPException(409, "cette adresse a déjà un compte")
     hasher = request.app.state.sessions.hasher
     name = (body.display_name or "").strip() or email.split("@")[0]
-    parent = User(email=email, display_name=name, role="parent", password_hash=hasher.hash(body.password))
+    parent = User(email=email, display_name=name, role="parent", password_hash=hasher.hash(body.password), is_active=False)
     db.add(parent)
     db.flush()
-    db.add(ChildProfile(parent_id=parent.id, display_name="Mon enfant", age_band="N1"))
-    grant_welcome(db, parent.id)
+    db.commit()
+    _send_verification(db, request, parent)
+    return {"verification_required": True, "email": parent.email}
+
+
+@router.post("/verify-email")
+def verify_email(body: VerifyEmailBody, request: Request, response: Response, db: Session = Depends(get_db)):
+    row = db.query(EmailVerification).filter(
+        EmailVerification.token_hash == _verification_hash(body.token),
+        EmailVerification.used_at.is_(None),
+    ).one_or_none()
+    now = datetime.now(timezone.utc)
+    if row is None:
+        raise HTTPException(400, "lien de validation inconnu ou déjà utilisé")
+    expires = row.expires_at if row.expires_at.tzinfo else row.expires_at.replace(tzinfo=timezone.utc)
+    if expires < now:
+        raise HTTPException(410, "ce lien de validation a expiré")
+    user = db.get(User, row.user_id)
+    if user is None:
+        raise HTTPException(400, "compte inconnu")
+    first_activation = not user.is_active
+    user.is_active = True
+    row.used_at = now
+    if first_activation:
+        db.add(ChildProfile(parent_id=user.id, display_name="Mon enfant", age_band="N1"))
+        grant_welcome(db, user.id)
     db.commit()
     ua = request.headers.get("user-agent", "")
-    request.app.state.devices.assert_or_bind(db, parent, body.device_id, ua, body.device_label)
-    token = request.app.state.sessions.issue(db, parent, body.device_id, "parent")
-    _set_cookie(response, request, token)
-    return _user_payload(parent, "parent", db)
+    request.app.state.devices.assert_or_bind(db, user, body.device_id, ua, body.device_label)
+    session_token = request.app.state.sessions.issue(db, user, body.device_id, "parent")
+    _set_cookie(response, request, session_token)
+    return _user_payload(user, "parent", db)
+
+
+@router.post("/resend-verification")
+def resend_verification(body: ResendVerificationBody, request: Request, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.email == body.email.strip().lower()).one_or_none()
+    if user is not None and not user.is_active:
+        _send_verification(db, request, user)
+    return {"ok": True}
 
 
 @router.post("/login")

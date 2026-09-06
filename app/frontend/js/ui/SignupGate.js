@@ -38,13 +38,16 @@ export class SignupGate extends Component {
     const err = this.querySelector("#err");
     err.textContent = "";
     try {
-      await this.api.post("/auth/signup", {
+      const result = await this.api.post("/auth/signup", {
         email: this.querySelector("#email").value.trim().toLowerCase(),
         password: this.querySelector("#password").value,
         device_id: DeviceIdentity.get(),
         device_label: DeviceIdentity.label(),
       });
-      this.router.go("#/parent");
+      if (result.verification_required) {
+        sessionStorage.setItem("acomytha.pending.email", result.email);
+        this.router.go("#/verification-envoyee");
+      }
     } catch (e) {
       err.textContent = e instanceof ApiError ? e.message : "Inscription impossible.";
     }

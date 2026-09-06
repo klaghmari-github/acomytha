@@ -4,6 +4,7 @@ import { Session } from "./core/Session.js";
 import "./ui/HomeApp.js";
 import "./ui/LoginGate.js";
 import "./ui/SignupGate.js";
+import "./ui/VerificationGate.js";
 import "./ui/ParentApp.js";
 import "./ui/AdminApp.js";
 import "./ui/EditorApp.js";
@@ -25,6 +26,8 @@ class AcoMythaApp {
       .on(/^#\/?$/, () => this.#show("acomytha-home"))
       .on(/^#\/entrer\/?$/, () => this.#show("acomytha-login"))
       .on(/^#\/inscription\/?$/, () => this.#show("acomytha-signup"))
+      .on(/^#\/verification-envoyee\/?$/, () => this.#show("acomytha-verification"))
+      .on(/^#\/verification\?token=.+$/, () => this.#show("acomytha-verification"))
       .on(/^#\/parent\/?$/, () => this.#guard(["parent", "admin"], "acomytha-parent"))
       .on(/^#\/admin\/?$/, () => this.#guard(["admin"], "acomytha-admin"))
       .on(/^#\/admin\/editeur\/?$/, () => this.#guard(["admin", "editor"], "acomytha-editor"))
