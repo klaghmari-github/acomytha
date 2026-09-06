@@ -70,7 +70,9 @@ class CatalogueConverter:
             except Exception as exc:
                 report["errors"].append(f"{path.name}: {exc}")
         self.catalogue.save()
-        (output / "conversion_report.json").write_text(
+        trash = self.settings.poubelle_dir
+        trash.mkdir(parents=True, exist_ok=True)
+        (trash / "conversion_report.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         return report

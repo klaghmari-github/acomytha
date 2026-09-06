@@ -28,6 +28,7 @@ Un seul dossier par nature. **Pas** de sous-dossier par histoire. Les **noms de 
 | --- | --- | --- |
 | `stories/arbres/` | Tous les Excel | `<story_id>.xlsx` — ex. `TREE-AUT-001.xlsx` |
 | `stories/json/` | JSON générés + registre vocal | `<story_id>.json`, `voice_registry.json` |
+| `poubelle/` | Rapports, pas du travail | `conversion_report.json` (gitignoré) |
 | `stories/voices/` | Empreintes (référence OpenVoice) | `characters/character_amir.wav`, `defaults/narrator.wav` |
 | `stories/audio/` | Audio des histoires | cible `<story_id>_<chunk_id>.wav` ; jobs d’atelier dans `app/data/tts_jobs/` |
 

@@ -33,6 +33,7 @@ class Settings:
             classic = self.root / "catalogue" / "voice_registry.json"
             self.catalogue_path = json_dir / "voice_registry.json" if (json_dir / "voice_registry.json").exists() or not classic.parent.exists() else classic
             self.voices_dir = self.root / "voices"
+        self.poubelle_dir = self.root / "poubelle"
         self.characters_dir = self.voices_dir / "characters"
         self.defaults_dir = self.voices_dir / "defaults"
         local_ckpt = self.root / "vendor" / "OpenVoice" / "checkpoints_v2"
@@ -51,6 +52,7 @@ class Settings:
             self.defaults_dir,
             self.catalogue_path.parent,
             self.stories_json_dir,
+            self.poubelle_dir,
         ):
             path.mkdir(parents=True, exist_ok=True)
 
