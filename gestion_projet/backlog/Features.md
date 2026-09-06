@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.11 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.12 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
 **Stripe (F-PAY-001, `3e4335b8`).** Checkout hébergé + webhook signé. Plus de paiement démo. Clés uniquement dans l’environnement. Recharge 10–50 € → acm. Abonnement 7,99 € = F-PAY-004 (pas encore).  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
 **Chaîne (F-NAR-024).** Source = **Excel** → JSON → TTS **dans AcoMytha** (`TtsApp`, `#/admin/editeur`) → audio. Trois dossiers plats : `arbres/`, `json/`, `audio/` (+ `voices/` pour les empreintes). Branche `AkoMythaTTS`. Détail : `stories/FORMAT_JSON_TTS.md`.  
@@ -73,6 +73,13 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-APP-010 | **à faire** | Catalogue public par histoire, personnage, leçon, lieu et univers bleu/rose ; filtres cumulatifs et réversibles. |
 | F-HIS-003 | **à faire** | Journal exhaustif par profil : chaque session, dates/heures, durée, progression, complétion et réécoutes. |
 | F-NAR-025 | **à faire** | Recommandation enfant : histoires jamais écoutées d’abord, puis reprise et diversité selon l’historique du profil. |
+| F-ACC-006 | **à faire** | Inscription parent minimale (e-mail + mot de passe), consentement explicite et activation obligatoire par lien e-mail. |
+| F-APP-011 | **à faire** | Vitrine sans prix ni monnaie : accès gratuit annoncé, aperçu 30 s et invitation connexion/inscription. |
+| F-PAR-008 | **à faire** | Invité : sélection locale de 2 histoires maximum pour un catalogue enfant ; authentification à la troisième. |
+| F-ENF-005 | **à faire** | Mode enfant invité opérationnel sur la sélection locale, avec chaque écoute limitée à 30 secondes. |
+| F-INT-006 | **à faire** | Assistant vocal « AcoMytha » : affinage oral progressif, 3 choix maximum, timeout 3 s avec choix annoncé. |
+| F-TAX-005 | **à faire** | Métadonnées indexées par histoire : personnages principaux/secondaires, lieux et facettes nécessaires à la recherche vocale. |
+| F-ADM-007 | **à faire** | Paramétrage admin des quotas invité, aperçu, timeout, nombre de choix, ordre des facettes et valeurs proposées. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -132,6 +139,13 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-010 | App | Vues catalogue et filtres multi-facettes combinables | P0 | 2 | STRAT-005 | F-APP-002, F-DAT-001 |
 | F-HIS-003 | Suivi | Sessions d’écoute détaillées par profil enfant | P0 | 2 | STRAT-003/004 | F-PRF-003, F-NAR-004 |
 | F-NAR-025 | Moteur | Priorisation des histoires inédites et reprises pertinentes | P1 | 2 | STRAT-004 | F-HIS-003 |
+| F-ACC-006 | Compte | Activation parent par validation d’e-mail et collecte minimale | P0 | 2 | STRAT-005 | F-ACC-003, F-SEC-004 |
+| F-APP-011 | App | Vitrine sans prix, promesse gratuite et conversion après aperçu | P0 | 2 | STRAT-005 | F-APP-006 |
+| F-PAR-008 | Parent | Pré-catalogue enfant invité limité à deux histoires | P0 | 2 | STRAT-005 | F-APP-011 |
+| F-ENF-005 | Enfant | Mode enfant invité, oral et limité aux aperçus de 30 secondes | P0 | 2 | STRAT-004/005 | F-PAR-008, F-ENF-004 |
+| F-INT-006 | Interactions | Recherche vocale progressive avec trois choix et défaut temporisé | P0 | 3 | STRAT-004 | F-INT-002, F-TAX-005 |
+| F-TAX-005 | Référentiel | Index personnages et lieux pour filtres et sélection vocale | P0 | 1 | STRAT-003 | F-DAT-001 |
+| F-ADM-007 | Admin | Paramètres de découverte, aperçu et dialogue vocal | P1 | 2 | STRAT-005 | F-ADM-006 |
 
 ### F-APP-001 — Socle
 
@@ -244,6 +258,73 @@ Ordre oral par défaut :
 4. pas de répétition fondée uniquement sur une étiquette bleu/rose.
 
 Le parent dispose d’une synthèse claire par enfant, sans transformer l’écoute en surveillance intrusive.
+
+#### F-ACC-006 — Inscription minimale et activation par e-mail
+
+La vitrine permet uniquement de créer un **compte parent** ou de s’y connecter. L’inscription demande un e-mail et un mot de passe : ni prénom, ni nom, ni identité de l’enfant. Le texte de confiance indique clairement cette minimisation.
+
+Après inscription, le compte reste en état pending_email. Un message contenant un lien signé, à usage unique et limité dans le temps est envoyé. Le clic valide l’adresse et active le compte parent. Avant activation : pas d’achat, pas d’accès parent complet et renvoi possible du message avec limitation de fréquence. Le lien ne contient aucun mot de passe. Les erreurs et expirations proposent un renvoi sûr sans révéler si une adresse appartient déjà à un compte.
+
+#### F-APP-011 — Vitrine gratuite, sans prix ni monnaie
+
+En contexte public/invité :
+
+- aucun solde, prix, symbole monétaire, recharge ou message « payant » ;
+- promesse visible : **Créer un compte et accéder gratuitement à une multitude d’histoires** ;
+- catalogue filtrable et aperçus de toutes les histoires ;
+- une écoute s’arrête automatiquement à preview_seconds, défaut **30 secondes** ;
+- après la coupure, une fenêtre propose **Se connecter** ou **Créer un compte parent** ;
+- l’arrêt manuel avant 30 secondes n’ouvre pas la fenêtre ;
+- les fonctions payantes et la monnaie acm apparaissent seulement dans l’espace parent authentifié.
+
+L’accès gratuit annoncé correspond à un véritable ensemble d’histoires complètes accessibles après activation, distinct des aperçus publics.
+
+#### F-PAR-008 — Deux sélections invitées
+
+La carte et la fiche d’une histoire affichent **Ajouter au catalogue d’un enfant**, y compris sans connexion.
+
+- L’invité peut sélectionner localement jusqu’à guest_child_catalog_limit histoires distinctes, défaut **2**.
+- À la troisième histoire distincte, aucune sélection n’est perdue : la fenêtre connexion/inscription s’ouvre.
+- Après authentification et activation, l’application propose de rattacher ces sélections à un profil enfant.
+- Retirer puis remettre la même histoire ne contourne pas le quota.
+- La sélection invitée ne constitue ni un achat ni un droit d’accès complet ; elle ne contient aucune donnée personnelle et expire selon un paramètre admin.
+- L’état sélectionné est visible et accessible au clavier.
+
+#### F-ENF-005 / F-INT-006 — Démonstration enfant vocale
+
+Le mode enfant est accessible à l’invité sur les histoires de sa sélection locale. Chaque histoire reste limitée à preview_seconds. À la coupure, une invitation orale et visuelle minimale demande au parent de se connecter ou de créer un compte.
+
+L’enfant réveille l’assistant en disant **« AcoMytha »**. Le moteur recherche uniquement dans le catalogue du profil connecté ou la sélection locale invitée, en priorisant les histoires jamais écoutées.
+
+Le dialogue affine progressivement la recherche : lieu, personnage principal, personnage présent, leçon, univers ou autre facette administrable. À chaque étape, il énonce au maximum voice_choice_count options, défaut **3**.
+
+Après voice_choice_timeout_ms, défaut **3000 ms**, sans réponse reconnue, le moteur choisit une option sûre annoncée, prononce son choix puis pose la question suivante. Les options sont calculées depuis les résultats restants pour éviter les impasses. S’il ne reste qu’une histoire, le moteur confirme son titre et commence. En absence de résultat, il élargit la dernière facette. Même avec plus de dix valeurs, jamais plus de trois choix ne sont prononcés simultanément.
+
+#### F-TAX-005 — Personnages, lieux et index de découverte
+
+Chaque histoire possède des métadonnées structurées et validées :
+
+- personnage principal : identifiant stable, nom d’affichage et rôle ;
+- personnages présents, avec identifiants stables ;
+- lieux principaux et secondaires, issus d’un référentiel administrable ;
+- leçons, thèmes, univers éditoriaux et autres facettes ;
+- version des métadonnées et source éditoriale.
+
+Ces champs existent dans la source canonique puis sont importés et indexés. Ils servent aux vues publiques, aux filtres combinés et au dialogue vocal. Le texte libre seul ne décide pas les filtres à la volée. Les valeurs sans histoire disponible ne sont pas proposées.
+
+#### F-ADM-007 — Paramètres de découverte
+
+| Paramètre | Défaut | Effet |
+| --- | ---: | --- |
+| guest_child_catalog_limit | 2 | histoires distinctes sélectionnables sans compte |
+| preview_seconds | 30 | durée maximale d’une écoute invitée |
+| voice_choice_count | 3 | options orales par question |
+| voice_choice_timeout_ms | 3000 | attente avant choix automatique |
+| guest_selection_ttl_days | 30 | durée de conservation locale |
+| email_verification_ttl_minutes | 60 | validité d’un lien d’activation |
+| max_verification_resends_per_hour | 3 | limitation des renvois |
+
+L’admin gère aussi l’ordre des facettes vocales, les lieux autorisés, les personnages actifs et les histoires gratuites après création du compte. Toute modification est auditée ; des bornes serveur empêchent une configuration inutilisable.
 
 ---
 
