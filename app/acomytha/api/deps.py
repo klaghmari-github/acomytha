@@ -18,11 +18,17 @@ class AuthContext:
 
     @property
     def parent_id(self) -> int:
-        if self.user.role == "parent":
+        if self.user.role == "parent" or self.role == "child":
             return self.user.id
         if self.user.role == "child" and self.user.parent_id:
             return self.user.parent_id
         raise HTTPException(403, "pas un foyer")
+
+    @property
+    def child_profile_id(self) -> int:
+        if self.role != "child" or not self.session.child_profile_id:
+            raise HTTPException(403, "profil enfant requis")
+        return self.session.child_profile_id
 
 
 def get_db(request: Request):

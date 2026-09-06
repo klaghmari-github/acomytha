@@ -96,8 +96,17 @@ def test_child_only_forest(client):
         "/api/auth/login",
         json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-bbbb"},
     )
-    client.put("/api/parent/forest", json={"story_ids": ["ATOM-SAN.ALI.001-01"]})
-    child = client.post("/api/auth/enfant", json={"pin": "2468", "device_id": "device-parent-bbbb"})
+    profiles = client.get("/api/parent/profiles").json()
+    assert profiles["limit"] == 10
+    profile_id = profiles["items"][0]["id"]
+    client.put(
+        f"/api/parent/profiles/{profile_id}/catalog",
+        json={"story_ids": ["ATOM-SAN.ALI.001-01"]},
+    )
+    child = client.post(
+        "/api/auth/enfant",
+        json={"profile_id": profile_id, "pin": "2468", "device_id": "device-parent-bbbb"},
+    )
     assert child.status_code == 200
     assert child.json()["role"] == "child"
     file = client.get("/api/enfant/file").json()
@@ -109,12 +118,32 @@ def test_child_only_forest(client):
     back = client.post("/api/auth/parent", json={"pin": "2468"})
     assert back.status_code == 200
     assert back.json()["role"] == "parent"
-    pin = client.put("/api/auth/pin", json={"current_pin": "2468", "new_pin": "1357"})
-    assert pin.status_code == 200
-    child2 = client.post("/api/auth/enfant", json={"pin": "2468", "device_id": "device-parent-bbbb"})
-    assert child2.status_code == 401
-    child3 = client.post("/api/auth/enfant", json={"pin": "1357", "device_id": "device-parent-bbbb"})
-    assert child3.status_code == 200
+    child2 = client.post(
+        "/api/auth/enfant",
+        json={"profile_id": profile_id, "pin": "1357", "device_id": "device-parent-bbbb"},
+    )
+    assert child2.status_code == 200
+
+
+def test_parent_profiles_have_isolated_catalogs(client):
+    client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-profiles-1"},
+    )
+    created = client.post(
+        "/api/parent/profiles",
+        json={"display_name": "Deuxième enfant", "age_band": "N2", "color": "or"},
+    )
+    assert created.status_code == 200
+    second_id = created.json()["id"]
+    first_id = client.get("/api/parent/profiles").json()["items"][0]["id"]
+    client.put(f"/api/parent/profiles/{first_id}/catalog", json={"story_ids": []})
+    client.put(
+        f"/api/parent/profiles/{second_id}/catalog",
+        json={"story_ids": ["ATOM-SAN.ALI.001-01"]},
+    )
+    assert client.get(f"/api/parent/profiles/{first_id}/catalog").json()["story_ids"] == []
+    assert client.get(f"/api/parent/profiles/{second_id}/catalog").json()["story_ids"] == ["ATOM-SAN.ALI.001-01"]
 
 
 def test_crypto_roundtrip(settings):

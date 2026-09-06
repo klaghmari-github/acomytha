@@ -49,7 +49,14 @@ class SessionService:
     def hasher(self) -> PasswordHasher:
         return self._hasher
 
-    def issue(self, db: Session, user: User, device_id: str, acting_role: str) -> str:
+    def issue(
+        self,
+        db: Session,
+        user: User,
+        device_id: str,
+        acting_role: str,
+        child_profile_id: int | None = None,
+    ) -> str:
         token = secrets.token_hex(32)
         db.add(
             SessionToken(
@@ -57,6 +64,7 @@ class SessionService:
                 user_id=user.id,
                 device_id=device_id,
                 acting_role=acting_role,
+                child_profile_id=child_profile_id,
                 expires_at=datetime.now(timezone.utc) + timedelta(hours=self.hours),
             )
         )

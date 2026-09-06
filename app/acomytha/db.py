@@ -56,6 +56,10 @@ class Database:
         if "has_interaction" not in cols:
             with self.engine.begin() as conn:
                 conn.execute(text("ALTER TABLE stories ADD COLUMN has_interaction BOOLEAN DEFAULT 0"))
+        session_cols = {c["name"] for c in insp.get_columns("sessions")} if "sessions" in insp.get_table_names() else set()
+        if "child_profile_id" not in session_cols:
+            with self.engine.begin() as conn:
+                conn.execute(text("ALTER TABLE sessions ADD COLUMN child_profile_id INTEGER"))
 
     def session(self) -> Generator[Session, None, None]:
         db = self._session_factory()

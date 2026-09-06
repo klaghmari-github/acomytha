@@ -3,21 +3,96 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.catalog import list_stories, story_to_dict
-from acomytha.commerce import owned_ids
+from acomytha.commerce import num, owned_ids
 from acomytha.graph import StoryGraph
-from acomytha.models import Chunk, ForestEntry, Lesson, Story
+from acomytha.models import ChildCatalogEntry, ChildProfile, Chunk, ForestEntry, Lesson, Story
 
 router = APIRouter(prefix="/api", tags=["stories"])
 
 
 class ForestBody(BaseModel):
     story_ids: list[str]
+
+
+class ChildProfileBody(BaseModel):
+    display_name: str = Field(min_length=1, max_length=80)
+    age_band: str = Field(default="N1", pattern=r"^N[123]$")
+    color: str = Field(default="violet", max_length=16)
+
+
+def _profile_payload(profile: ChildProfile, db: Session) -> dict:
+    count = db.query(ChildCatalogEntry).filter(ChildCatalogEntry.profile_id == profile.id).count()
+    return {
+        "id": profile.id,
+        "display_name": profile.display_name,
+        "age_band": profile.age_band,
+        "color": profile.color,
+        "story_count": count,
+    }
+
+
+def _owned_story_ids(db: Session, parent_id: int, story_ids: list[str]) -> list[str]:
+    owned = owned_ids(db, parent_id)
+    unique = list(dict.fromkeys(story_ids))
+    missing = [story_id for story_id in unique if story_id not in owned]
+    if missing:
+        raise HTTPException(403, f"histoire non acquise: {missing[0]}")
+    return unique
+
+
+@router.get("/parent/profiles")
+def child_profiles(auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    rows = db.query(ChildProfile).filter(ChildProfile.parent_id == auth.parent_id).order_by(ChildProfile.created_at).all()
+    return {
+        "items": [_profile_payload(profile, db) for profile in rows],
+        "limit": max(1, min(int(num(db, "max_child_profiles") or 10), 20)),
+    }
+
+
+@router.post("/parent/profiles")
+def create_child_profile(body: ChildProfileBody, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    limit = max(1, min(int(num(db, "max_child_profiles") or 10), 20))
+    count = db.query(ChildProfile).filter(ChildProfile.parent_id == auth.parent_id).count()
+    if count >= limit:
+        raise HTTPException(409, f"limite de {limit} profils atteinte")
+    profile = ChildProfile(
+        parent_id=auth.parent_id,
+        display_name=body.display_name.strip(),
+        age_band=body.age_band,
+        color=body.color,
+    )
+    db.add(profile)
+    db.commit()
+    db.refresh(profile)
+    return _profile_payload(profile, db)
+
+
+@router.get("/parent/profiles/{profile_id}/catalog")
+def profile_catalog(profile_id: int, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    profile = db.query(ChildProfile).filter(ChildProfile.id == profile_id, ChildProfile.parent_id == auth.parent_id).one_or_none()
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    ids = list(db.scalars(select(ChildCatalogEntry.story_id).where(ChildCatalogEntry.profile_id == profile.id)))
+    return {"profile": _profile_payload(profile, db), "story_ids": ids}
+
+
+@router.put("/parent/profiles/{profile_id}/catalog")
+def put_profile_catalog(profile_id: int, body: ForestBody, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    profile = db.query(ChildProfile).filter(ChildProfile.id == profile_id, ChildProfile.parent_id == auth.parent_id).one_or_none()
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    story_ids = _owned_story_ids(db, auth.parent_id, body.story_ids)
+    db.query(ChildCatalogEntry).filter(ChildCatalogEntry.profile_id == profile.id).delete()
+    for story_id in story_ids:
+        db.add(ChildCatalogEntry(profile_id=profile.id, story_id=story_id))
+    db.commit()
+    return {"ok": True, "count": len(story_ids)}
 
 
 @router.get("/lessons")
@@ -85,7 +160,7 @@ def put_forest(body: ForestBody, auth: AuthContext = Depends(require_roles("pare
 
 @router.get("/enfant/file")
 def child_queue(auth: AuthContext = Depends(require_roles("child")), db: Session = Depends(get_db)):
-    ids = list(db.scalars(select(ForestEntry.story_id).where(ForestEntry.parent_id == auth.parent_id)))
+    ids = list(db.scalars(select(ChildCatalogEntry.story_id).where(ChildCatalogEntry.profile_id == auth.child_profile_id)))
     allowed = owned_ids(db, auth.parent_id)
     ids = [i for i in ids if i in allowed]
     if not ids:

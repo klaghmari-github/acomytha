@@ -25,7 +25,7 @@ PARAM_SPECS: list[tuple[str, str, str]] = [
     ("free_story_ids", "TREE-SEC-001", "Histoires offertes (ids, virgules)"),
     ("pack_trees_count", "10", "Nouvelles séries dans le pack"),
     ("pack_trees_eur", "10", "Prix du pack (€)"),
-    ("default_child_pin", "2468", "PIN enfant à l’inscription"),
+    ("max_child_profiles", "10", "Profils enfants maximum par foyer"),
 ]
 
 LEGACY_SECRET_KEYS = ("stripe_secret", "stripe_publishable", "stripe_webhook_secret")

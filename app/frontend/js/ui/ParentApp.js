@@ -13,6 +13,8 @@ export class ParentApp extends Component {
   #domainNames = new Map();
   #wallet = { balance_a: 0, owned: [], prices: {}, preview_seconds: 30, parent_preview_seconds: 30 };
   #filterTimer = 0;
+  #profiles = [];
+  #activeProfileId = null;
 
   get me() {
     return this.#me;
@@ -66,10 +68,11 @@ export class ParentApp extends Component {
     this.innerHTML = `
       <div class="s-shell">
         <aside class="s-rail">
-          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">L’écoute, à la maison.</span></div>
+          <div class="c-mark">${acmLogo({ size: "sm" })}<span class="c-mark__sub">Votre espace famille</span></div>
           <nav>
-            <a href="#/parent" class="is-on">Histoires</a>
-            <a href="#/enfant">Mode enfant</a>
+            <a href="#/parent" class="is-on">Pour ce soir</a>
+            <a href="#profiles">Mes enfants</a>
+            <a href="#catalog">Toutes les histoires</a>
             <a href="#/">Accueil</a>
           </nav>
           <div class="c-wallet" id="wallet"></div>
@@ -77,12 +80,20 @@ export class ParentApp extends Component {
           <button class="c-btn c-btn--ghost" id="out">Quitter</button>
         </aside>
         <main class="s-main">
+          <section class="c-parent-welcome">
+            <div><p class="c-eyebrow">Un moment rien qu’à vous</p><h1>Que va-t-on écouter ce soir ?</h1><p>Choisissez un enfant, préparez sa sélection, puis confiez-lui l’aventure.</p></div>
+            <button class="c-btn c-btn--gold c-btn--lg" id="child-mode" type="button">Activer le mode enfant</button>
+          </section>
+          <section class="c-children" id="profiles">
+            <div class="c-section-head"><div><p class="c-eyebrow">Profils enfants</p><h2>Pour qui choisissez-vous ?</h2></div><button class="c-btn c-btn--ghost" id="add-profile" type="button">Ajouter un enfant</button></div>
+            <div class="c-profile-list" id="profile-list"></div>
+          </section>
           <div class="c-title">
             <div>
-              <h1>Histoires</h1>
-              <p>Cochez celles que votre enfant pourra écouter, puis enregistrez.</p>
+              <h2 id="catalog">Toutes les histoires</h2>
+              <p id="catalog-help">Ajoutez les histoires au catalogue de l’enfant sélectionné.</p>
             </div>
-            <button class="c-btn" id="save">Enregistrer</button>
+            <button class="c-btn" id="save">Enregistrer la sélection</button>
           </div>
           <div class="c-filters">
             <input id="q" placeholder="Rechercher une histoire…" />
@@ -107,6 +118,8 @@ export class ParentApp extends Component {
             <span id="nowtitle"></span>
             <button class="c-btn c-btn--stop" type="button" id="stop">Arrêt</button>
           </div>
+          <div class="c-modal" id="profile-modal" hidden><form class="c-modal__box c-parent-dialog" id="profile-form"><button class="c-modal__close" type="button" data-close-profile="1">Fermer</button><p class="c-eyebrow">Nouveau profil</p><h2>Ajouter un enfant</h2><label class="c-field">Prénom ou surnom<input name="display_name" maxlength="80" required placeholder="Ex. Amir" /></label><label class="c-field">Âge<select name="age_band"><option value="N1">3–4 ans</option><option value="N2">4–5 ans</option><option value="N3">5–6 ans</option></select></label><button class="c-btn c-btn--wide" type="submit">Créer le profil</button><p class="c-error" id="profile-error"></p></form></div>
+          <div class="c-modal" id="child-modal" hidden><form class="c-modal__box c-parent-dialog" id="child-form"><button class="c-modal__close" type="button" data-close-child="1">Fermer</button><p class="c-eyebrow">Mode enfant</p><h2>Verrouiller l’écran pour <span id="child-name"></span></h2><p>Choisissez un code de 4 chiffres. Gardez-le en mémoire : il permettra de quitter le mode enfant.</p><input class="c-pin" name="pin" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" autocomplete="off" required aria-label="Code de sortie à 4 chiffres" /><button class="c-btn c-btn--wide" type="submit">Mémoriser et lancer</button><p class="c-hint">En cas d’oubli, fermez l’application puis reconnectez-vous avec votre e-mail et votre mot de passe.</p><p class="c-error" id="child-error"></p></form></div>
         </main>
       </div>`;
     this.on(this.querySelector("#out"), "click", () => this.logout());
@@ -120,6 +133,13 @@ export class ParentApp extends Component {
     this.on(this.querySelector("#stop"), "click", () => this.stopPlay());
     this.on(this.querySelector("#shop"), "click", (e) => this.onShopClick(e));
     this.on(this.querySelector("#shop"), "submit", (e) => this.onShopSubmit(e));
+    this.on(this.querySelector("#profile-list"), "click", (e) => this.onProfileClick(e));
+    this.on(this.querySelector("#add-profile"), "click", () => this.openProfileModal());
+    this.on(this.querySelector("#profile-form"), "submit", (e) => this.createProfile(e));
+    this.on(this.querySelector("#profile-modal"), "click", (e) => { if (e.target.id === "profile-modal" || e.target.closest("[data-close-profile]")) this.querySelector("#profile-modal").hidden = true; });
+    this.on(this.querySelector("#child-mode"), "click", () => this.openChildModal());
+    this.on(this.querySelector("#child-form"), "submit", (e) => this.enterChildMode(e));
+    this.on(this.querySelector("#child-modal"), "click", (e) => { if (e.target.id === "child-modal" || e.target.closest("[data-close-child]")) this.querySelector("#child-modal").hidden = true; });
     await this.boot();
   }
 
@@ -132,13 +152,15 @@ export class ParentApp extends Component {
   async boot() {
     const msg = this.querySelector("#msg");
     try {
-      const [lessons, picked, stories, wallet] = await Promise.all([
+      const [lessons, profiles, stories, wallet] = await Promise.all([
         this.api.get("/lessons"),
-        this.api.get("/parent/forest"),
+        this.api.get("/parent/profiles"),
         this.api.get("/stories"),
         this.api.get("/shop/wallet").catch(() => this.wallet),
       ]);
-      this.selected = new Set(picked.map((s) => s.story_id));
+      this.#profiles = profiles.items || [];
+      this.#activeProfileId = this.#profiles[0]?.id || null;
+      await this.loadProfileCatalog();
       this.allStories = stories;
       this.wallet = wallet;
       this.domainNames = new Map(lessons.map((l) => [l.domain_id, l.domain]));
@@ -152,6 +174,7 @@ export class ParentApp extends Component {
       }
       this.drawWallet();
       this.drawShop();
+      this.drawProfiles(profiles.limit);
       this.render();
       const checkout = new URLSearchParams(location.hash.split("?")[1] || "").get("checkout");
       if (checkout === "success") msg.textContent = "Paiement reçu. Votre solde est actualisé après confirmation de Stripe.";
@@ -159,6 +182,81 @@ export class ParentApp extends Component {
     } catch (e) {
       msg.textContent = e.message || "Impossible de charger le catalogue.";
     }
+  }
+
+  async loadProfileCatalog() {
+    if (!this.#activeProfileId) { this.selected = new Set(); return; }
+    const data = await this.api.get(`/parent/profiles/${this.#activeProfileId}/catalog`);
+    this.selected = new Set(data.story_ids || []);
+  }
+
+  drawProfiles(limit = 10) {
+    const list = this.querySelector("#profile-list");
+    list.replaceChildren();
+    for (const profile of this.#profiles) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `c-profile ${profile.id === this.#activeProfileId ? "is-active" : ""}`;
+      button.dataset.profile = profile.id;
+      button.innerHTML = `<span class="c-profile__avatar">${escapeHtml(profile.display_name.slice(0, 1).toUpperCase())}</span><span><strong>${escapeHtml(profile.display_name)}</strong><small>${profile.story_count} histoire${profile.story_count > 1 ? "s" : ""}</small></span>`;
+      list.append(button);
+    }
+    const add = this.querySelector("#add-profile");
+    add.disabled = this.#profiles.length >= limit;
+    add.textContent = add.disabled ? `Limite de ${limit} profils atteinte` : "Ajouter un enfant";
+    const current = this.#profiles.find((p) => p.id === this.#activeProfileId);
+    this.querySelector("#catalog-help").textContent = current ? `Ajoutez les histoires au catalogue de ${current.display_name}.` : "Ajoutez d’abord un profil enfant.";
+  }
+
+  async onProfileClick(e) {
+    const button = e.target.closest("[data-profile]");
+    if (!button) return;
+    this.#activeProfileId = Number(button.dataset.profile);
+    await this.loadProfileCatalog();
+    this.drawProfiles();
+    this.render();
+  }
+
+  openProfileModal() {
+    this.querySelector("#profile-modal").hidden = false;
+    this.querySelector("#profile-form input")?.focus();
+  }
+
+  async createProfile(e) {
+    e.preventDefault();
+    const fd = new FormData(e.target);
+    const err = this.querySelector("#profile-error");
+    err.textContent = "";
+    try {
+      const profile = await this.api.post("/parent/profiles", { display_name: fd.get("display_name"), age_band: fd.get("age_band"), color: "violet" });
+      this.#profiles.push(profile);
+      this.#activeProfileId = profile.id;
+      this.selected = new Set();
+      e.target.reset();
+      this.querySelector("#profile-modal").hidden = true;
+      this.drawProfiles();
+      this.render();
+    } catch (error) { err.textContent = error.message || "Impossible de créer le profil."; }
+  }
+
+  openChildModal() {
+    const profile = this.#profiles.find((p) => p.id === this.#activeProfileId);
+    if (!profile) { this.openProfileModal(); return; }
+    this.querySelector("#child-name").textContent = profile.display_name;
+    this.querySelector("#child-modal").hidden = false;
+    this.querySelector("#child-form input")?.focus();
+  }
+
+  async enterChildMode(e) {
+    e.preventDefault();
+    const pin = String(new FormData(e.target).get("pin") || "");
+    const err = this.querySelector("#child-error");
+    if (!/^\d{4}$/.test(pin)) { err.textContent = "Saisissez exactement 4 chiffres."; return; }
+    try {
+      await this.save();
+      await this.api.post("/auth/enfant", { profile_id: this.#activeProfileId, pin, device_id: DeviceIdentity.get() });
+      this.router.go("#/enfant");
+    } catch (error) { err.textContent = error.message || "Le mode enfant n’a pas pu démarrer."; }
   }
 
   scheduleRender() {
@@ -209,7 +307,7 @@ export class ParentApp extends Component {
       </div>
       <h3>${escapeHtml(s.title)}</h3>
       <p>${escapeHtml(where)}${s.duration_s ? ` · ${fmtDur(s.duration_s)}` : ""}</p>
-      ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Pour l’enfant</label>` : ""}
+      ${owned ? `<label class="o-row"><input type="checkbox" data-id="${s.story_id}" ${checked}/> Dans le catalogue de l’enfant sélectionné</label>` : ""}
       <div class="o-row">
         ${s.has_audio ? `<button class="c-btn ${this.playingId === s.story_id ? "c-btn--stop" : "c-btn--ghost"}" data-play="${s.story_id}">${this.playingId === s.story_id ? "Arrêt" : owned ? "Écouter" : "Écouter"}</button>` : ""}
         ${owned ? "" : `<button class="c-btn" data-buy="${s.story_id}">Débloquer ${acmAmount(price ?? 1)}</button>`}
@@ -382,8 +480,12 @@ export class ParentApp extends Component {
 
   async save() {
     const msg = this.querySelector("#msg");
-    await this.api.put("/parent/forest", { story_ids: [...this.selected] });
-    msg.textContent = "Sélection enregistrée.";
+    if (!this.#activeProfileId) { msg.textContent = "Ajoutez d’abord un profil enfant."; return; }
+    await this.api.put(`/parent/profiles/${this.#activeProfileId}/catalog`, { story_ids: [...this.selected] });
+    const profile = this.#profiles.find((p) => p.id === this.#activeProfileId);
+    if (profile) profile.story_count = this.selected.size;
+    this.drawProfiles();
+    msg.textContent = `Sélection enregistrée${profile ? ` pour ${profile.display_name}` : ""}.`;
   }
 
   showBar(id, title) {

@@ -1,5 +1,4 @@
 import { Component } from "../core/Component.js";
-import { DeviceIdentity } from "../core/DeviceIdentity.js";
 import { CryptoPlayer } from "../core/CryptoPlayer.js";
 import { StoryEngine } from "../core/StoryEngine.js";
 import { acmLogo } from "./acm.js";
@@ -54,7 +53,7 @@ export class ChildApp extends Component {
   async ensureChild() {
     const me = await this.api.get("/auth/me");
     if (me.role === "parent") {
-      this.showPin();
+      this.router.go("#/parent");
       return;
     }
     if (me.role !== "child") {
@@ -62,30 +61,6 @@ export class ChildApp extends Component {
       return;
     }
     await this.loadFile();
-  }
-
-  showPin() {
-    const gate = this.querySelector("#gate");
-    gate.innerHTML = `
-      <p>Code pour écouter.</p>
-      <form class="o-stack" id="pinform">
-        <input id="pin" class="c-pin" inputmode="numeric" autocomplete="one-time-code" maxlength="4" pattern="[0-9]{4}" required />
-        <button class="c-btn c-btn--gold" type="submit">C’est parti</button>
-        <p class="c-error" id="perr"></p>
-      </form>`;
-    this.on(gate.querySelector("#pinform"), "submit", async (ev) => {
-      ev.preventDefault();
-      try {
-        await this.api.post("/auth/enfant", {
-          pin: gate.querySelector("#pin").value,
-          device_id: DeviceIdentity.get(),
-        });
-        gate.replaceChildren();
-        await this.loadFile();
-      } catch (e) {
-        gate.querySelector("#perr").textContent = "Ce n’est pas le bon code.";
-      }
-    });
   }
 
   async loadFile() {

@@ -67,6 +67,7 @@ class SessionToken(Base):
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
     device_id: Mapped[str] = mapped_column(String(64), nullable=False)
     acting_role: Mapped[str] = mapped_column(String(16), nullable=False)
+    child_profile_id: Mapped[int | None] = mapped_column(ForeignKey("child_profiles.id"), nullable=True)
     expires_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
 
 
@@ -105,6 +106,28 @@ class Story(Base):
     has_interaction: Mapped[bool] = mapped_column(Boolean, default=False)
     has_audio: Mapped[bool] = mapped_column(Boolean, default=False)
     status: Mapped[str] = mapped_column(String(32), default="APPROVED_TEXT")
+
+
+class ChildProfile(Base):
+    __tablename__ = "child_profiles"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    parent_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False, index=True)
+    display_name: Mapped[str] = mapped_column(String(80), default="Mon enfant")
+    age_band: Mapped[str] = mapped_column(String(8), default="N1")
+    color: Mapped[str] = mapped_column(String(16), default="violet")
+    unlock_pin_hash: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class ChildCatalogEntry(Base):
+    __tablename__ = "child_catalog"
+    __table_args__ = (UniqueConstraint("profile_id", "story_id", name="uq_child_catalog"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    profile_id: Mapped[int] = mapped_column(ForeignKey("child_profiles.id", ondelete="CASCADE"), nullable=False)
+    story_id: Mapped[str] = mapped_column(ForeignKey("stories.story_id"), nullable=False)
+    added_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
 class Chunk(Base):

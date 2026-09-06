@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 from acomytha.api.deps import AuthContext, get_auth, get_db
 from acomytha.devices import DeviceConflict, DeviceGuard
 from acomytha.commerce import grant_welcome, num
-from acomytha.models import User
+from acomytha.models import ChildProfile, User
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
@@ -22,7 +22,8 @@ class LoginBody(BaseModel):
 
 
 class ChildBody(BaseModel):
-    pin: str
+    profile_id: int
+    pin: str = Field(min_length=4, max_length=4, pattern=r"^\d{4}$")
     device_id: str = Field(min_length=8, max_length=64)
 
 
@@ -43,8 +44,11 @@ class ParentBackBody(BaseModel):
     pin: str = Field(min_length=4, max_length=4, pattern=r"^\d{4}$")
 
 
-def _child_of(db: Session, parent_id: int) -> User | None:
-    return db.query(User).filter(User.parent_id == parent_id, User.role == "child").one_or_none()
+def _profile_of(db: Session, parent_id: int, profile_id: int) -> ChildProfile | None:
+    return db.query(ChildProfile).filter(
+        ChildProfile.id == profile_id,
+        ChildProfile.parent_id == parent_id,
+    ).one_or_none()
 
 
 def _valid_pin(pin: str) -> bool:
@@ -84,8 +88,7 @@ def signup(body: SignupBody, request: Request, response: Response, db: Session =
     parent = User(email=email, display_name=name, role="parent", password_hash=hasher.hash(body.password))
     db.add(parent)
     db.flush()
-    pin = str(int(num(db, "default_child_pin") or 2468))
-    db.add(User(email=None, display_name="Enfant", role="child", parent_id=parent.id, pin_hash=hasher.hash(pin)))
+    db.add(ChildProfile(parent_id=parent.id, display_name="Mon enfant", age_band="N1"))
     grant_welcome(db, parent.id)
     db.commit()
     ua = request.headers.get("user-agent", "")
@@ -128,13 +131,17 @@ def enter_child(body: ChildBody, request: Request, response: Response, auth: Aut
         raise HTTPException(409, "appareil différent de la session")
     if not _valid_pin(body.pin):
         raise HTTPException(400, "le code a 4 chiffres")
-    child = _child_of(db, auth.user.id)
-    if child is None or not request.app.state.sessions.hasher.verify(body.pin, child.pin_hash):
-        raise HTTPException(401, "ce n'est pas le bon code")
+    profile = _profile_of(db, auth.user.id, body.profile_id)
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    profile.unlock_pin_hash = request.app.state.sessions.hasher.hash(body.pin)
+    db.commit()
     request.app.state.sessions.revoke(db, auth.session.token)
-    token = request.app.state.sessions.issue(db, child, body.device_id, "child")
+    token = request.app.state.sessions.issue(db, auth.user, body.device_id, "child", profile.id)
     _set_cookie(response, request, token)
-    return _user_payload(child, "child")
+    payload = _user_payload(auth.user, "child")
+    payload["child_profile"] = {"id": profile.id, "display_name": profile.display_name}
+    return payload
 
 
 @router.post("/parent")
@@ -145,34 +152,24 @@ def back_to_parent(
     auth: AuthContext = Depends(get_auth),
     db: Session = Depends(get_db),
 ):
-    if auth.user.role != "child" or not auth.user.parent_id:
+    if auth.role != "child":
         raise HTTPException(403, "pas en mode enfant")
-    if not _valid_pin(body.pin) or not request.app.state.sessions.hasher.verify(body.pin, auth.user.pin_hash):
+    profile = _profile_of(db, auth.user.id, auth.child_profile_id)
+    if profile is None or not _valid_pin(body.pin) or not request.app.state.sessions.hasher.verify(body.pin, profile.unlock_pin_hash):
         raise HTTPException(401, "ce n'est pas le bon code")
-    parent = db.get(User, auth.user.parent_id)
-    if parent is None:
-        raise HTTPException(404, "parent introuvable")
     request.app.state.sessions.revoke(db, auth.session.token)
-    token = request.app.state.sessions.issue(db, parent, auth.session.device_id, "parent")
+    profile.unlock_pin_hash = None
+    db.commit()
+    token = request.app.state.sessions.issue(db, auth.user, auth.session.device_id, "parent")
     _set_cookie(response, request, token)
-    return _user_payload(parent, "parent")
+    return _user_payload(auth.user, "parent")
 
 
 @router.put("/pin")
 def change_pin(body: PinChangeBody, request: Request, auth: AuthContext = Depends(get_auth), db: Session = Depends(get_db)):
     if auth.role != "parent":
         raise HTTPException(403, "seul le parent change le code")
-    child = _child_of(db, auth.user.id)
-    if child is None:
-        raise HTTPException(404, "profil enfant introuvable")
-    hasher = request.app.state.sessions.hasher
-    if not hasher.verify(body.current_pin, child.pin_hash):
-        raise HTTPException(401, "ce n'est pas le bon code actuel")
-    if body.new_pin == body.current_pin:
-        return {"ok": True}
-    child.pin_hash = hasher.hash(body.new_pin)
-    db.commit()
-    return {"ok": True}
+    raise HTTPException(410, "le code est désormais créé à chaque activation du mode enfant")
 
 
 @router.post("/logout")
@@ -185,4 +182,7 @@ def logout(request: Request, response: Response, db: Session = Depends(get_db)):
 
 @router.get("/me")
 def me(auth: AuthContext = Depends(get_auth)):
-    return _user_payload(auth.user, auth.role)
+    payload = _user_payload(auth.user, auth.role)
+    if auth.role == "child" and auth.session.child_profile_id:
+        payload["child_profile_id"] = auth.session.child_profile_id
+    return payload

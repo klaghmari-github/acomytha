@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from acomytha.catalog import CatalogImporter, fill_durations, fill_interaction
 from acomytha.commerce import grant_welcome, seed_params
-from acomytha.models import ForestEntry, Purchase, Story, User
+from acomytha.models import ChildCatalogEntry, ChildProfile, ForestEntry, Purchase, Story, User
 from acomytha.security import PasswordHasher
 from acomytha.settings import Settings
 
@@ -37,6 +37,7 @@ class Bootstrap:
         if n == 0:
             self.importer.import_all(db, limit=import_limit)
         self.ensure_demo_forest(db)
+        self.ensure_child_profiles(db)
         self.ensure_demo_wallet(db)
         fill_durations(db, self.settings)
         fill_interaction(db)
@@ -74,17 +75,6 @@ class Bootstrap:
             )
             db.add(parent)
             db.flush()
-        child = db.query(User).filter(User.parent_id == parent.id, User.role == "child").one_or_none()
-        if child is None:
-            db.add(
-                User(
-                    email=None,
-                    display_name="Enfant",
-                    role="child",
-                    parent_id=parent.id,
-                    pin_hash=self.hasher.hash(self.settings.child_pin),
-                )
-            )
         db.commit()
 
     def ensure_demo_wallet(self, db: Session) -> None:
@@ -102,4 +92,19 @@ class Bootstrap:
             )
             if exists is None:
                 db.add(Purchase(parent_id=parent.id, item_type="story", item_id=sid, price_a=0))
+        db.commit()
+
+    def ensure_child_profiles(self, db: Session) -> None:
+        parents = db.query(User).filter(User.role == "parent").all()
+        for parent in parents:
+            profile = db.query(ChildProfile).filter(ChildProfile.parent_id == parent.id).first()
+            if profile is None:
+                profile = ChildProfile(parent_id=parent.id, display_name="Mon enfant", age_band="N1")
+                db.add(profile)
+                db.flush()
+            legacy_ids = [row.story_id for row in db.query(ForestEntry).filter(ForestEntry.parent_id == parent.id)]
+            existing = {row.story_id for row in db.query(ChildCatalogEntry).filter(ChildCatalogEntry.profile_id == profile.id)}
+            for story_id in legacy_ids:
+                if story_id not in existing:
+                    db.add(ChildCatalogEntry(profile_id=profile.id, story_id=story_id))
         db.commit()
