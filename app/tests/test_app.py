@@ -142,6 +142,30 @@ def test_login_and_catalog(client):
     assert filtered
 
 
+def test_login_rate_limit_blocks_repeated_password_attempts(client):
+    payload = {
+        "email": "parent@acomytha.local",
+        "password": "mot-de-passe-incorrect",
+        "device_id": "device-rate-limit-1",
+    }
+    for _ in range(8):
+        assert client.post("/api/auth/login", json=payload).status_code == 401
+    blocked = client.post("/api/auth/login", json=payload)
+    assert blocked.status_code == 429
+    assert int(blocked.headers["Retry-After"]) > 0
+
+
+def test_verification_resend_is_rate_limited_without_account_enumeration(client):
+    payload = {"email": "adresse-inconnue@example.test"}
+    for _ in range(3):
+        response = client.post("/api/auth/resend-verification", json=payload)
+        assert response.status_code == 200
+        assert response.json() == {"ok": True}
+    blocked = client.post("/api/auth/resend-verification", json=payload)
+    assert blocked.status_code == 429
+    assert blocked.json()["detail"] == "trop de tentatives, réessayez plus tard"
+
+
 def test_device_conflict_alerts_admin(client):
     a = client.post(
         "/api/auth/login",
@@ -463,6 +487,34 @@ def test_signup_requires_single_use_email_verification(client):
     )
     assert reused.status_code == 400
     assert client.post("/api/auth/resend-verification", json={"email": "inconnu@example.test"}).json() == {"ok": True}
+
+
+def test_password_reset_is_single_use_and_revokes_existing_sessions(client):
+    email = "parent@acomytha.local"
+    old_password = client.app.state.settings.parent_password
+    new_password = secrets.token_urlsafe(24)
+    device_id = "device-password-reset-1"
+    assert client.post(
+        "/api/auth/login",
+        json={"email": email, "password": old_password, "device_id": device_id},
+    ).status_code == 200
+    requested = client.post("/api/auth/request-password-reset", json={"email": email})
+    assert requested.status_code == 200
+    assert requested.json() == {"ok": True}
+    token = client.app.state.mailer.outbox[-1]["url"].split("token=", 1)[1]
+
+    reset = client.post("/api/auth/reset-password", json={"token": token, "password": new_password})
+    assert reset.status_code == 200
+    assert client.get("/api/auth/me").status_code == 401
+    assert client.post("/api/auth/reset-password", json={"token": token, "password": new_password}).status_code == 400
+    assert client.post(
+        "/api/auth/login",
+        json={"email": email, "password": old_password, "device_id": device_id},
+    ).status_code == 401
+    assert client.post(
+        "/api/auth/login",
+        json={"email": email, "password": new_password, "device_id": device_id},
+    ).status_code == 200
 
 
 def test_parent_preview_30s_then_full_when_owned(client):

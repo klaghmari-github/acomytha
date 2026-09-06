@@ -40,6 +40,7 @@ class Settings:
         self._smtp_password = os.environ.get("ACOMYTHA_SMTP_PASSWORD", "")
         self._smtp_from = os.environ.get("ACOMYTHA_SMTP_FROM", "AcoMytha <noreply@acomytha.local>")
         self._email_verification_hours = int(os.environ.get("ACOMYTHA_EMAIL_VERIFICATION_HOURS", "24"))
+        self._rate_limit_enabled = os.environ.get("ACOMYTHA_RATE_LIMIT_ENABLED", "1") != "0"
 
     def _as_path(self, value: Path | str) -> Path:
         return value if isinstance(value, Path) else Path(value)
@@ -146,7 +147,7 @@ class Settings:
 
     @property
     def cookie_secure(self) -> bool:
-        return self._cookie_secure
+        return self._cookie_secure or self.public_url.lower().startswith("https://")
 
     @property
     def public_url(self) -> str:
@@ -191,6 +192,10 @@ class Settings:
     @property
     def email_verification_hours(self) -> int:
         return max(1, self._email_verification_hours)
+
+    @property
+    def rate_limit_enabled(self) -> bool:
+        return self._rate_limit_enabled
 
     @property
     def database_url(self) -> str:

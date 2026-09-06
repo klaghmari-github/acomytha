@@ -5,6 +5,7 @@ import "./ui/HomeApp.js";
 import "./ui/LoginGate.js";
 import "./ui/SignupGate.js";
 import "./ui/VerificationGate.js";
+import "./ui/PasswordResetGate.js";
 import "./ui/ParentApp.js";
 import "./ui/AdminApp.js";
 import "./ui/EditorApp.js";
@@ -28,6 +29,8 @@ class AcoMythaApp {
       .on(/^#\/inscription\/?$/, () => this.#show("acomytha-signup"))
       .on(/^#\/verification-envoyee\/?$/, () => this.#show("acomytha-verification"))
       .on(/^#\/verification\?token=.+$/, () => this.#show("acomytha-verification"))
+      .on(/^#\/mot-de-passe-oublie\/?$/, () => this.#show("acomytha-password-reset"))
+      .on(/^#\/nouveau-mot-de-passe\?token=.+$/, () => this.#show("acomytha-password-reset"))
       .on(/^#\/parent\/?$/, () => this.#guard(["parent", "admin"], "acomytha-parent"))
       .on(/^#\/admin\/?$/, () => this.#guard(["admin"], "acomytha-admin"))
       .on(/^#\/admin\/editeur\/?$/, () => this.#guard(["admin", "editor"], "acomytha-editor"))
