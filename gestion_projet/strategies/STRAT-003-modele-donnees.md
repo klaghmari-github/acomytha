@@ -10,6 +10,8 @@ Les parents cochent des **leçons**. Une leçon vit dans **plusieurs** histoires
 
 Le graphe 3 × 3 × 3 tient dans l’**identifiant** du chunk : pas besoin d’une forêt de dossiers, et souvent pas d’une table d’arêtes. Une table d’arêtes existe **seulement** quand la convention ne suffit pas (question d’écoute, feedback).
 
+**F-NAR-024 — fichiers plats.** Trois dossiers seulement : `stories/arbres/` (xlsx source), `stories/json/` (JSON généré), `stories/audio/` (WAV généré). Les noms `<story_id>.xlsx` / `<story_id>.json` / `<story_id>_<chunk_id>.wav` portent histoire, transition (`T`) et passage (`P`). Pas de sous-dossier par titre.
+
 ## 2. Identifiants
 
 | Entité | Forme | Exemple |

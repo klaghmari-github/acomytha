@@ -312,7 +312,7 @@ Décision retenue : **D38** (écrire tout le corpus) et **ne pas vendre 1 449 ti
 
 ---
 
-## 12. Deux projets, manuscrit JSON (6 sept. 2026)
+## 12. Deux projets, JSON pour le TTS (6 sept. 2026)
 
 > il y a maintenant 2 projets Akomytha et AkomythaTTS. dans le projet Akomytha on s'occupe de produire les histoires de la plus haute qualité au format texte, et dans AkomythaTTS on s'occupe de transformer les histoire texte en speech. il faut donc que le format des histoires texte soit compatible avec les outils akomythaTSS. a priori il faut un json. il faut séparer le profil du parlant : narateur, maman, papa, enfant amir, maitresse bernadette etc. et il faut séparer la prosodie: comment le parlant va parler. et il faut préciser la prosodie des différents passage dans l'histoire.
 
@@ -321,3 +321,11 @@ Feature **F-NAR-024**. Contrat : `stories/FORMAT_JSON_TTS.md`.
 - Profil = `voice_registry.json` (identité permanente).
 - Prosodie = chaque `segments[].prosody` (interprétation de la réplique).
 - Base récupérée depuis AkoMythaTTS `feat/catalogue-tts-pipeline` @ `244ba22`, pas le bundle (historique cassé).
+
+---
+
+## 13. Source Excel, JSON et audio générés (6 sept. 2026)
+
+> la source des histoire sera les excels. avec texte des passages et paramètres prosodique, ensuite un moteur va convertir l'excel en json, ensuite le TTS prend le json et le convertie en audio. l'application affiche le catalogue des histoires qui est branché sur les audio généré. il faut un dossier pour regrouper tous les excels, un dossier pour regrouper tous les json, un dossier pour regrouper tous les audios. les identifiants dans les excels est ce qui permet de créer les dossiers et les noms de fichiers json et audio.pour eviter d'avoir plusieurs dossiers et sous dossier c'est les noms de fichiers qui identifient l'histoire et la transition et le passage. le moteur de conversion doit pouvoir le faire déjà. … pour le moment la priorité c'est l'amélioration de la qualité des histoires. je te dis quoi faire après
+
+Chaîne : **xlsx → JSON → audio → app**. Trois dossiers plats : `stories/arbres/`, `stories/json/`, `stories/audio/`. Noms = `story_id` et `chunk_id` (T/P). Pas d’écriture dans le JSON. Priorité = qualité Excel.

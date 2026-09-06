@@ -6,7 +6,7 @@
 **Détail opératoire :** stratégies `STRAT-001` à `STRAT-005`.  
 **Demandes et exemples fondateur :** `decisions/ECHANGES.md`.  
 **Catalogue leçons :** `stories/referentiel/lecons.xlsx`. Liaisons leçon↔histoires↔chunks : `stories/referentiel/lecon_histoires.xlsx`.  
-**Corpus texte :** `main` — 1445 xlsx `stories/arbres/` (ex-JSON `APPROVED_TEXT`).
+**Corpus texte :** `main` — xlsx `stories/arbres/` (source ; texte + prosodie). JSON et audio sont **générés** (F-NAR-024, `stories/FORMAT_JSON_TTS.md`).
 
 ---
 

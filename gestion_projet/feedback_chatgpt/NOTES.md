@@ -101,6 +101,7 @@ Passe `avis3.txt` (5 sept. 17:08, SSD puis worktree, audit `3d0793c0`) — **fea
 Passe **deux projets** (6 sept. 2026) — **F-NAR-024**, pas un audit ChatGPT :
 
 - **AcoMytha** = histoires texte de plus haute qualité. **AkoMythaTTS** = texte → parole.
-- Format manuscrit = JSON schema 2.0. **Profil** (`voice_registry.json` : narrateur, papa, maman, Amir, maîtresse…) **séparé** de la **prosodie** (`segments[].prosody` : émotion, intonation, rythme, pauses **de ce passage**).
-- Bundle `AkoMythaTTS-catalogue-tts.bundle` : **incomplet** (parent `2524e042` / `396e4a9c` manquant). Base réelle : TTS `feat/catalogue-tts-pipeline` @ `244ba22`.
-- Les 1 449 JSON convertis = copie xlsx + prosodie générique. **Pas** l’écriture. Import : registre + `TREE-AUT-001.json`. Doc : `stories/FORMAT_JSON_TTS.md`.
+- **Source = Excel** (texte + prosodie). Moteur → JSON. TTS → audio. App = catalogue branché sur les audio. Trois dossiers plats : `arbres/`, `json/`, `audio/`. Noms de fichiers = IDs (`story_id`, `chunk_id` = transition + passage).
+- **Profil** (`voice_registry.json`) **séparé** de la **prosodie** (colonnes Excel → `segments[].prosody`).
+- Bundle `AkoMythaTTS-catalogue-tts.bundle` : **incomplet**. Schema : TTS `feat/catalogue-tts-pipeline` @ `244ba22`.
+- Les 1 449 JSON convertis = copie xlsx + prosodie générique. **Pas** l’écriture. **Maintenant : qualité des histoires Excel.** Doc : `stories/FORMAT_JSON_TTS.md`.

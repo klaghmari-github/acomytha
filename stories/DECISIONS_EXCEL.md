@@ -21,7 +21,8 @@ Date : 3 septembre 2026. Pas d’approbation demandée (consigne fondateur).
 
 ## Audio test
 
-- Dossier `stories/audio/<tree_id>/<chunk_id>.wav` **et** `.mp3`
+- Bake actuel : `stories/audio/<tree_id>/<chunk_id>.wav` **et** `.mp3` (un sous-dossier par histoire).
+- **Cible F-NAR-024 (pas encore) :** un seul dossier `stories/audio/`, fichiers `<story_id>_<chunk_id>.wav` — le nom porte histoire + transition + passage, sans sous-dossiers.
 - **Bug muet (2026-09-03) :** Piper écrit du PCM 16-bit **22050 Hz mono**. Les échantillons n’étaient **pas** à zéro (crête 32767, RMS ~5000). `aplay` lisait le fichier. En revanche 22050 Hz mono WAV est souvent **inaudible / refusé** par lecteurs Windows, iPhone, Android, aperçu navigateur. Cause = format de livraison, pas un TTS vide.
 - **Correctif 1 (insuffisant seul) :** 44100 Hz. Les fichiers avaient déjà un vrai signal (98 % bande 200–4000 Hz, crête 0,85).
 - **Correctif 2 (le muet « partout ») :** Piper/livraison en **mono**. iPhone, Windows, Bluetooth, HDMI : la barre avance, **aucun haut-parleur**. Désormais **stéréo** (même signal L+R), WAV 44100 + **MP3 128 kbit/s**.

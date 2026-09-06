@@ -1,43 +1,60 @@
-# Format manuscrit JSON — AcoMytha ↔ AkoMythaTTS
+# Chaîne Excel → JSON → audio (AcoMytha ↔ AkoMythaTTS)
 
 **Feature :** F-NAR-024.  
-**Schema :** `2.0` (celui du renderer AkoMythaTTS).  
-**Base importée :** dépôt AkoMythaTTS, branche `feat/catalogue-tts-pipeline`, commit `244ba22`.
+**Schema JSON :** `2.0` (renderer AkoMythaTTS).  
+**Priorité du moment :** qualité des **histoires Excel**. Conversion / TTS / aplatissement audio : quand le fondateur le dit.
 
-Deux projets, un contrat :
+## Pipeline
 
-| Projet | Rôle |
-| --- | --- |
-| **AcoMytha** | Écrire les histoires de la plus haute qualité **en texte**. Le manuscrit est un JSON. |
-| **AkoMythaTTS** | Transformer ce JSON en parole (Kokoro, puis OpenVoice si échantillon autorisé). |
+```
+Excel (source)  →  moteur  →  JSON  →  AkoMythaTTS  →  audio  →  catalogue de l’app
+```
 
-L’app AcoMytha continue de lire les `.xlsx` tant que F-DAT-002 n’importe pas ce JSON. **On n’écrit plus les histoires définitives dans Excel.** On écrit ici : `stories/json/`.
+| Étape | Qui | Quoi |
+| --- | --- | --- |
+| 1. Source | AcoMytha, fichier Excel | Texte des passages **et** paramètres de prosodie. On écrit ici. |
+| 2. Conversion | Moteur (`catalogue_converter.py` côté AkoMythaTTS ; IDs déjà dans l’xlsx) | Un JSON par histoire, nommé d’après `story_id`. |
+| 3. Parole | AkoMythaTTS | JSON → WAV. Un fichier par chunk, nommé d’après `story_id` + `chunk_id`. |
+| 4. App | AcoMytha | Le catalogue affiche les histoires **branché sur les audio générés**. |
 
-## Ne pas confondre profil et prosodie
+Le JSON n’est **pas** le manuscrit. L’Excel l’est. Le JSON n’est **pas** la voix. Le TTS l’est.
 
-Ce sont **deux objets distincts**. Le JSON n’est pas la voix.
+## Trois dossiers, pas une forêt
 
-### 1. Profil du parlant (permanent)
+Un seul dossier par nature. **Pas** de sous-dossier par histoire. Les **noms de fichiers** portent l’histoire, la transition et le passage (IDs Excel, STRAT-003 : `T` = transition, `P` = passage).
 
-Fichier : `stories/json/voice_registry.json`.
+| Dossier | Contenu | Nom de fichier |
+| --- | --- | --- |
+| `stories/arbres/` | Tous les Excel | `<story_id>.xlsx` — ex. `TREE-AUT-001.xlsx` |
+| `stories/json/` | Tous les JSON générés + le registre vocal | `<story_id>.json` — ex. `TREE-AUT-001.json` |
+| `stories/audio/` | Tous les audio générés | `<story_id>_<chunk_id>.wav` — ex. `TREE-AUT-001_CHK_T0000_P0000.wav` |
 
-Identité **stable** d’un personnage, **la même dans toutes les histoires** :
+Le `chunk_id` (`CHK_T0001_P0002_Q0001`…) identifie déjà transition et passage : inutile de recréer cette arborescence en dossiers.
 
-- `narrator` — narratrice
-- `father` / `mother` — papa / maman
-- `teacher` — maîtresse (Bernadette si le récit la nomme ; le **profil** reste `teacher`)
+**Aujourd’hui (à corriger plus tard, pas maintenant) :** le bake Piper pose encore `stories/audio/<story_id>/<chunk_id>.wav`. Cible = plat, préfixe `story_id_`. `stories/archive/arbres/` est un second tas Excel (ramifiés non live) : à fusionner dans `arbres/` quand on y touchera.
+
+Le moteur de conversion **sait déjà** dériver ces noms : `story_id` = stem de l’xlsx, `chunk_id` = colonne Excel, JSON = `catalogue/stories/<story_id>.json` (à poser ici à plat dans `stories/json/`).
+
+## Profil du parlant ≠ prosodie du passage
+
+Toujours deux objets. La **source** des deux, pour une histoire, est l’Excel (texte + params). Le JSON les recopie pour le TTS.
+
+### 1. Profil (permanent)
+
+`stories/json/voice_registry.json` — identité **stable** d’un personnage, toutes histoires :
+
+- `narrator`, `father`, `mother`, `teacher`
 - `friend_boy` / `friend_girl`
-- `character.amir`, `character.nina`, `character.victorina`, … (troupe D16)
+- `character.amir`, `character.nina`, … (troupe D16)
 
-Champs : `display_name`, `gender`, `age_group` (sélection, pas le son), `role`, `kokoro_voice`, `reference_audio` (WAV OpenVoice ; `null` = Kokoro stock), `voice_fingerprint` `{speed, pitch_semitones, gain_db}`, `direction`.
+Champs : `display_name`, `gender`, `age_group`, `role`, `kokoro_voice`, `reference_audio`, `voice_fingerprint`, `direction`.
 
-On **ne change pas** le profil d’Amir d’une histoire à l’autre. Le clonage commercial exige une **autorisation vocale explicite**. Papa : vrai échantillon masculin, pas un gros down-pitch de `ff_siwis`.
+On ne change pas le profil d’Amir d’une histoire à l’autre. Clonage commercial = autorisation vocale explicite.
 
-Aujourd’hui tous les profils pointent `ff_siwis` : différenciation provisoire par l’empreinte. Le timbre réel = AkoMythaTTS.
+### 2. Prosodie (cette réplique, dans l’Excel puis le JSON)
 
-### 2. Prosodie du passage (par réplique)
-
-Dans `stories/json/<story_id>.json`, chaque `chunks[id].segments[]` a :
+Dans l’xlsx : colonnes vocales du chunk (`script` / rôle, `notes`, pitch, volume, pauses, émotion, tempo…).  
+Dans le JSON généré : `chunks[chunk_id].segments[]` :
 
 ```json
 {
@@ -56,48 +73,33 @@ Dans `stories/json/<story_id>.json`, chaque `chunks[id].segments[]` a :
 }
 ```
 
-`speaker` = id du registre. `prosody` = **comment** ce parlant dit **cette** phrase.
-
 Émotions : `neutral`, `calm`, `warm`, `joy`, `excited`, `focused`, `suspense`, `storytelling`, `sadness`, `anger`, `surprise`, `fear`, `whisper`.  
 Intonations : `neutral`, `rising`, `falling`, `dramatic`, `storytelling`.  
-Vitesse : 0.5–1.6. `emphasis_words` : mots **présents** dans `text` (stockés ; pas encore acoustiques côté TTS).
+`emphasis_words` : mots **présents** dans `text`.  
+`pause_after_ms` ≠ `wait_ms` des questions (moteur de lecture).
 
-Rendu TTS : vitesse finale ≈ profil × réplique × preset d’émotion ; pitch additif.  
-`pause_after_ms` ≠ `interaction.wait_ms` (questions : 3000–7000 ms, moteur de lecture, pas le WAV).
+`text` change → JSON et audio périmés (F-NAR-022).
 
-## Histoire JSON
+## JSON (produit du moteur, pas un manuscrit)
 
-Racine : `schema_version`, `story_id`, `title`, `language`, `catalogue`, `source`, `editorial_status`, `entry_chunk`, `speaker_profiles` (liste d’ids du registre), `chunks` (**objet** indexé par `chunk_id`, pas une liste).
+Racine : `schema_version`, `story_id`, `title`, `language`, `catalogue`, `source`, `editorial_status`, `entry_chunk`, `speaker_profiles`, `chunks` (**objet** indexé par `chunk_id`).
 
 Chunk : `kind`, `lesson_id`, `segments[]`, `interaction`, `options`, `night_policy`, `sound_cues`, `editorial_notes`, `next_chunk`, `default_next_chunk`.
 
-Renderer (dans AkoMythaTTS, pas ici) :
+Renderer TTS :
 
 ```bash
-python catalogue_renderer.py catalogue/stories/TREE-AUT-001.json \
-  --registry catalogue/voice_registry.json \
-  [--only-chunk CHK_T0000_P0000] [--without-cloning] --output output
+python catalogue_renderer.py stories/json/TREE-AUT-001.json \
+  --registry stories/json/voice_registry.json \
+  [--only-chunk CHK_T0000_P0000] [--without-cloning] --output stories/audio
 ```
 
-## Conversion ChatGPT : base, pas l’écriture
+## Conversion mécanique déjà faite : pas l’écriture
 
-Le bundle `AkoMythaTTS-catalogue-tts.bundle` **ne se clone pas** (historique incomplet : objet `2524e042` manquant, parent de `396e4a9c`). Ne pas l’utiliser.
+Le bundle `AkoMythaTTS-catalogue-tts.bundle` **ne se clone pas** (historique incomplet). Base du schema : AkoMythaTTS `feat/catalogue-tts-pipeline` @ `244ba22`.
 
-Les 1 449 JSON sur `feat/catalogue-tts-pipeline` sont une **conversion XLSX → JSON** (`catalogue_converter.py`) : textes et graphes copiés, **prosodie générique** (ex. `emphasis_words: ["sac"]` sur chaque phrase d’ouverture, y compris celles sans « sac »). Statut d’origine : `source_preserved_requires_human_commercial_review`.
+Les 1 449 JSON convertis recopient l’xlsx avec une **prosodie générique**. Ce n’est pas la qualité visée. On n’importe pas les 168 Mo. Échantillons locaux : `voice_registry.json` + `TREE-AUT-001.json`.
 
-Ce n’est **pas** l’écriture définitive. On n’importe pas les 168 Mo dans Git AcoMytha.
+## Ce qu’on fait maintenant
 
-Importé ici :
-
-- `stories/json/voice_registry.json` — 50 profils
-- `stories/json/TREE-AUT-001.json` — étalon ; `CHK_T0000_P0000` en première passe humaine (`editorial_status: in_human_rewrite`)
-
-Le reste du corpus se réécrit **titre par titre** dans ce format, à partir du texte déjà relu (xlsx / dumps) + prosodie réelle.
-
-## Processus d’écriture
-
-1. Manuscrit = `stories/json/<story_id>.json`.
-2. Chaque réplique : un `speaker` du registre + une `prosody` de la scène.
-3. `text` change → `prosody` et audio périmés (F-NAR-022).
-4. Audio = AkoMythaTTS, pas Piper, pour les histoires nouvelles (Piper reste le bake existant, F-AUD-005).
-5. Excel : source **transitoire** du runtime. Plus le lieu de l’écriture définitive.
+Améliorer la **qualité des histoires dans les Excel** (`stories/arbres/`, dumps `stories/rewrites/`). Pas relancer la conversion, pas aplatir l’audio, pas brancher l’app, tant que le fondateur n’a pas dit quoi faire ensuite.

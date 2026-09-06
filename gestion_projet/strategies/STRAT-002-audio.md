@@ -2,7 +2,7 @@
 
 **Référencé par :** `F-AUD-001` à `F-AUD-008`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`, `F-NAR-024`.  
 **Graphe / IDs :** `STRAT-003`. **Lecture :** `STRAT-004`.  
-**Manuscrit JSON (profil ≠ prosodie) :** `stories/FORMAT_JSON_TTS.md`. AcoMytha écrit le JSON ; AkoMythaTTS le dit. Piper (ci-dessous) = bake existant, plus le moteur des histoires définitives.
+**Chaîne F-NAR-024 :** Excel (texte + prosodie) → JSON → AkoMythaTTS → audio plat `stories/audio/<story_id>_<chunk_id>.wav`. L’app lit ces audio. Contrat : `stories/FORMAT_JSON_TTS.md`. Piper (ci-dessous) = bake existant, encore en sous-dossiers `audio/<story_id>/`.
 
 ## 1. Décision format
 

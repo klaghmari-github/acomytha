@@ -2,13 +2,12 @@
 
 Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
-**Manuscrit définitif (F-NAR-024, 6 sept. 2026) : JSON schema 2.0**, compatible AkoMythaTTS.  
-`stories/json/<story_id>.json` + `stories/json/voice_registry.json`. Contrat : `stories/FORMAT_JSON_TTS.md`. Profil du parlant ≠ prosodie du passage.
+**Source (F-NAR-024) : Excel**, un fichier par histoire, texte **et** prosodie.  
+Chaîne : `arbres/*.xlsx` → moteur → `json/<story_id>.json` → TTS → `audio/<story_id>_<chunk_id>.wav` → catalogue de l’app. Trois dossiers, **pas** de sous-dossiers : les IDs font les noms. Contrat : `stories/FORMAT_JSON_TTS.md`.
 
-**Runtime actuel de l’app : Excel**, un fichier par arbre.  
-`stories/arbres/<tree_id>.xlsx` — atomiques + ramifiés live. Archive : `stories/archive/arbres/`. Voir `PRIORITE.md`. Tant que F-DAT-002 n’importe pas le JSON, le lecteur lit encore l’xlsx.
+Live : `stories/arbres/<story_id>.xlsx`. Archive encore à part : `stories/archive/arbres/`. Voir `PRIORITE.md`. Audio actuel encore en sous-dossiers `audio/<story_id>/` (bake Piper) — cible = plat.
 
-Les anciens JSON `atomiques/` et `ramifiees/` avaient été convertis puis **supprimés** (`DECISIONS_EXCEL.md`). Ce n’est **pas** le schema 2.0 TTS.
+Les anciens JSON `atomiques/` et `ramifiees/` avaient été convertis puis **supprimés** (`DECISIONS_EXCEL.md`). Ce n’est **pas** le schema 2.0 TTS (produit du moteur, pas un manuscrit).
 
 | Kind | Actif (`arbres/`) | Archive | Graphe |
 | --- | --- | --- | --- |
