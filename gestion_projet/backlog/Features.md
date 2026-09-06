@@ -1,6 +1,7 @@
 # AcoMytha — backlog features
 
-**Version :** 4.9 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.10 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Stripe (F-PAY-001, `3e4335b8`).** Checkout hébergé + webhook signé. Plus de paiement démo. Clés uniquement dans l’environnement. Recharge 10–50 € → acm. Abonnement 7,99 € = F-PAY-004 (pas encore).  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
 **Chaîne (F-NAR-024).** Source = **Excel** (texte + prosodie) → moteur → JSON → AkoMythaTTS → audio → catalogue app. Trois dossiers plats : `arbres/`, `json/`, `audio/`. Noms de fichiers = IDs. **Maintenant : qualité des histoires Excel.** Détail : `stories/FORMAT_JSON_TTS.md`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
@@ -66,7 +67,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
 | F-APP-002 | **développé** | Vitrine publique, catalogue, pop-ups ramifications. Écoute invité : F-APP-006. |
-| F-PAY-001 | **développé** | Stripe Checkout + webhook. Sans clé : paiement démo. |
+| F-PAY-001 | **développé** | Stripe Checkout + webhook signé. Sans clés : recharge désactivée. Plus de démo. |
 | F-PAR-003 | **développé** | Parent non acheté 30 s, acheté / enfant = entier. Visiteur vitrine : F-APP-006. |
 | F-PAY-002 | **développé** | Monnaie interne, solde, achats, commandes, voix. Paramètres admin. |
 | F-PAY-003 | **développé** | Symbole **acm** (même dessin que le logo), montants partout où l’on obtient un produit ou un service. |
@@ -106,7 +107,8 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-APP-008 | App | Encapsulation POO (privé, propriétés, responsabilités) | P0 | 2 | STRAT-005 | F-APP-001 |
 | F-ACC-003 | Compte | Inscription e-mail + mot de passe | P0 | 2 | STRAT-005 | F-ACC-001 |
 | F-ACC-004 | Compte | PIN 4 chiffres, parent ↔ enfant | P0 | 2 | STRAT-005 | F-SEC-002 |
-| F-PAY-002 | Boutique | Monnaie interne, solde, achats (Stripe plus tard) | P1 | 2 | STRAT-005 | F-ACC-003 |
+| F-PAY-001 | Boutique | Stripe Checkout : recharge 10–50 € → acm, webhook signé, pas de démo | P0 | 2 | STRAT-005 §7 | F-PAY-002 |
+| F-PAY-002 | Boutique | Monnaie interne, solde, achats | P1 | 2 | STRAT-005 | F-ACC-003 |
 | F-PAY-003 | Marque | Symbole acm + logo (un seul dessin) | P1 | 2 | STRAT-005 | F-PAY-002 |
 | F-PLY-002 | Lecture | Arrêt visible + durée sur les cartes | P0 | 2 | STRAT-004 | F-PLY-001 |
 | F-PAR-002 | Parent | Libellés interaction / ramifications | P0 | 2 | STRAT-005 | F-PAR-001 |
@@ -412,7 +414,7 @@ Remplace le hero actuel (F-APP-004) pour la vente :
 
 ### F-PAR-006 — Parent familial
 
-Accueil : « Pour ce soir », continuer, reco âge. Onglets : Mon enfant, Histoires (besoins), Mes histoires, Compte. **Hors barre** tant que ce n’est pas vrai : commande personnalisée, enregistrement de voix (l’UI débite 5 acm sans fichier), recharge acm, Stripe « prêt ». F-PAR-004 (signalement) reste une autre feature.
+Accueil : « Pour ce soir », continuer, reco âge. Onglets : Mon enfant, Histoires (besoins), Mes histoires, Compte. **Hors barre** tant que ce n’est pas vrai : commande personnalisée, enregistrement de voix (l’UI débite 5 acm sans fichier). La recharge Stripe (F-PAY-001) est réelle quand les clés env sont là : ne plus afficher un badge « Stripe prêt » fictif. F-PAR-004 (signalement) reste une autre feature.
 
 ### F-ENF-002 — Enfant illustré
 
@@ -427,7 +429,7 @@ Le parent règle jour/nuit **avant** de passer l’appareil. L’enfant ne bascu
 - AcoMytha Famille **7,99 € / mois** : aventures publiées, jour/nuit, sélection, nouveautés  
 - Pack Découverte **9,90 €** : 10 aventures  
 
-acm seulement pour des extras plus tard. Pas de démo paiement dans l’espace client public.
+**Pas encore dans Stripe.** F-PAY-001 ne fait que la recharge portefeuille 10–50 € → acm. L’abo et le pack Découverte restent à brancher (Checkout ou Billing). acm seulement pour des extras plus tard. Pas de démo paiement dans l’espace client public.
 
 ### F-PAY-005 — Parrainage (plus tard, ne pas coder)
 
@@ -691,9 +693,28 @@ Le watchdog **signale** un fichier nouveau (`ACTION_REQUIRED`). Il **n’appliqu
 
 Pendant l’écoute : barre collée **Arrêt** (et bouton carte). Stop coupe l’audio. Chaque carte affiche la **durée** (minutes). L’âge n’est pas affiché sur la carte.
 
-### F-PAY-001 — Stripe
+### F-PAY-001 — Stripe Checkout (recharge acm)
 
-Onglet parent **Obtenir des pièces AcoMytha**. Boutons **10, 20, 30, 40, 50 € → acm** (symbole de change). Checkout Stripe si `stripe_secret` (admin ou env). Webhook `POST /api/shop/stripe/webhook`. Sans clé : écran de paiement démo qui crédite le solde.
+Branche `stripe` mergée dans `main` (`3e4335b8`). Code : `app/acomytha/payments.py`, `api/shop.py`, `ParentApp.js`. Procédure : `app/README.md`.
+
+**Ce que c’est.** Le parent verse **10, 20, 30, 40 ou 50 €**. Stripe Checkout **hébergé** encaisse. Aucune carte ne transite par AcoMytha. Le solde acm n’est crédité **que** par un webhook **signé** (`POST /api/shop/stripe/webhook`). Idempotent (un paiement = un crédit, même si Stripe renvoie l’événement deux fois). Change €→acm : F-PAY-002.
+
+**Ce que ce n’est pas.** Pas d’abonnement 7,99 € ni pack 9,90 € (F-PAY-004). Pas de paiement démo, plus de `confirm_demo`, plus de bouton « valider la carte 4242 » dans l’app. La carte `4242…` n’existe que **sur le Checkout Stripe en mode test**.
+
+**Secrets.** Uniquement l’environnement du serveur : `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, `ACOMYTHA_PUBLIC_URL`. Jamais Git, jamais l’admin SQLite (les anciennes clés `stripe_secret` / `stripe_publishable` / `stripe_webhook_secret` sont **effacées** au seed). `.env` gitignoré ; modèle `.env.example`. `Settings` lit `os.environ` : `source .env` avant uvicorn.
+
+**États** (`GET /api/shop/wallet` → `stripe`) :
+
+| Valeur | Sens | Boutons recharge |
+| --- | --- | --- |
+| `unconfigured` | pas de `sk_…` | désactivés, 503 si POST |
+| `webhook_missing` | clé présente, pas de `whsec_…` | désactivés, 503 si POST |
+| `invalid` | `sk_live_` sans URL `https://` | désactivés, 503 si POST |
+| `test` | `sk_test_…` + webhook | Checkout test |
+| `live` | `sk_live_…` + webhook + HTTPS | Checkout réel |
+| `planned` | wallet **admin** (pas de recharge) | — |
+
+**Prod.** Endpoint webhook `https://<domaine>/api/shop/stripe/webhook`, `sk_live_…`, nouveau `whsec_…`, `ACOMYTHA_PUBLIC_URL` en HTTPS. F-SEC-004 / F-ADM-005 avant d’ouvrir au public.
 
 ### F-PAY-002 — Monnaie et boutique
 

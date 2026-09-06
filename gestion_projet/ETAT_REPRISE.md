@@ -232,7 +232,7 @@ On ne recopie pas tout ici. Une session neuve lit **ces fichiers** :
 
 **À faire** : F-AUD-007 (SFX partout). F-AUD-005 partiel (bake ATOM arrêté à ~27/686). F-ACC-002 reporté (contredit 1 appareil).
 
-**Pas maintenant** (NOTES) : Stripe réel en prod, ASR, hors-ligne, vente sans audio validé.
+**Pas maintenant** (NOTES) : clés Stripe **live** + HTTPS public (le Checkout **test** est dans `main`, F-PAY-001 / D40), ASR, hors-ligne, vente sans audio validé.
 
 ## 12. Hors git (volontaire)
 

@@ -136,7 +136,7 @@ Pitch *AcoMytha, c’est quoi ?* (remplace « Votre enfant ne fait pas qu’éco
 
 ### Boutique
 
-Monnaie interne **acm** (affichage), code interne `A` / `balance_a`. Un **même dessin** pour le logo et le symbole de monnaie (F-PAY-003, D26). Prix = paramètres admin. Stripe Checkout ou démo carte 4242 (D24). Recharge 10–50 €.
+Monnaie interne **acm** (affichage), code interne `A` / `balance_a`. Un **même dessin** pour le logo et le symbole de monnaie (F-PAY-003, D26). Prix = paramètres admin. Recharge 10–50 € → acm par **Stripe Checkout + webhook** (D40, F-PAY-001). Plus de paiement démo. Abonnement 7,99 € = F-PAY-004, pas encore.
 
 ---
 
@@ -274,6 +274,7 @@ Les features **pointent** les stratégies ; elles ne les recopient pas — sauf 
 | Watchdog signale, l’agent principal traite | F-NAR-017, D35 |
 | Identité chambre d’écoute hors vitrine | F-APP-007, D36 |
 | Restructuration POO (privé, propriétés) | F-APP-008, D37 |
+| Stripe Checkout recharge acm | F-PAY-001, D40 |
 | Consignes récit sur tout le catalogue | F-NAR-008…016, D38 |
 
 ---
@@ -337,3 +338,14 @@ Chaîne : **xlsx → JSON → audio → app**. Trois dossiers plats : `stories/a
 > j'ai trouvé une feature intéressante note la pour plus tard. le parainage quand vous parainer quelqu'un vous recevez des akomythas monnaie egales à ceux du premier chargement/conversion de votre parrain. votre parain reçoit la double somme de sa première charge.
 
 Feature **F-PAY-005**. Pas de code. Détail : `backlog/Features.md`.
+
+---
+
+## 15. Stripe Checkout (6 sept. 2026)
+
+Branche remote `stripe` mergée dans `main` (`3e4335b8`). **D40** remplace D24.
+
+- Checkout hébergé, webhook signé, crédit idempotent.
+- Secrets env seulement. Sans clés : boutons désactivés, `POST /recharge` → 503.
+- `confirm_demo` retiré. Carte 4242 = **test Stripe**, pas un écran interne.
+- Périmètre actuel : packs 10–50 € → acm. Pas l’abo F-PAY-004.

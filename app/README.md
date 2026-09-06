@@ -26,7 +26,7 @@ Installer les dépendances :
 python -m pip install -r app/requirements.txt
 ```
 
-## Paiement Stripe en mode test
+## Paiement Stripe en mode test (F-PAY-001, D40)
 
 La recharge du portefeuille utilise **Stripe Checkout hébergé**. Aucune donnée de carte ne
 transite par AcoMytha et le portefeuille n'est crédité que par un webhook Stripe signé.
@@ -41,7 +41,7 @@ stripe listen --forward-to http://127.0.0.1:8787/api/shop/stripe/webhook
 ```
 
 4. Copier le secret `whsec_...` affiché par Stripe CLI dans `STRIPE_WEBHOOK_SECRET`.
-5. Exporter les variables puis lancer l'application :
+5. Exporter les variables puis lancer l'application (`Settings` lit `os.environ`, pas le fichier `.env` tout seul) :
 
 ```bash
 set -a

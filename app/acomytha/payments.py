@@ -70,9 +70,12 @@ def _eur_cents(eur: float) -> int:
 def create_recharge(db: Session, settings: Settings, parent_id: int, eur: float) -> dict[str, Any]:
     """Crée une Checkout Session ; aucun crédit n'est accordé ici."""
     cents = _eur_cents(eur)
-    if not settings.stripe_secret:
+    status = stripe_status(settings)
+    if status == "unconfigured":
         raise StripeNotConfigured("Stripe n'est pas encore configuré sur ce serveur.")
-    if stripe_status(settings) == "invalid":
+    if status == "webhook_missing":
+        raise StripeNotConfigured("Webhook Stripe non configuré")
+    if status not in {"test", "live"}:
         raise StripeNotConfigured("Configuration Stripe invalide, ou clé live utilisée sans URL HTTPS.")
 
     stripe = _stripe_module()

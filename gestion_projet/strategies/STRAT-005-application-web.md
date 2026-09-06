@@ -1,6 +1,6 @@
 # STRAT-005 — Application web AcoMytha
 
-**Référencé par :** `F-APP-001`, `F-ACC-001`, `F-SEC-002`, `F-SEC-003`, `F-ADM-004`, `F-PAR-001`, `F-ENF-001`, `F-AUD-004`, `F-PLY-001`.  
+**Référencé par :** `F-APP-001`, `F-ACC-001`, `F-SEC-002`, `F-SEC-003`, `F-ADM-004`, `F-PAR-001`, `F-ENF-001`, `F-AUD-004`, `F-PLY-001`, `F-PAY-001`.  
 **Décisions datées :** 3 septembre 2026 (fondateur absent — prises et notées, pas de questionnaire).
 
 ## 1. Rôle du web
@@ -54,3 +54,18 @@ Ce n’est pas une DRM studio. C’est le filet demandé (une clé, un appareil)
 ## 6. Fichiers
 
 Code : `app/`. Données runtime gitignorées : `app/data/`. Stratégies audio / graphe inchangées (STRAT-002 à 004).
+
+## 7. Paiement (F-PAY-001, D40)
+
+Le parent n’achète pas en euros pièce par pièce : il **recharge des acm**, puis dépense le solde (F-PAY-002).
+
+```
+parent clique 10–50 €
+  → POST /api/shop/recharge
+  → Stripe Checkout Session (carte hors AcoMytha)
+  → retour /#/parent?checkout=success|cancelled
+  → Stripe POST /api/shop/stripe/webhook (signature)
+  → crédit acm une fois (stripe_sessions.status = paid)
+```
+
+Sans `STRIPE_SECRET_KEY` **et** `STRIPE_WEBHOOK_SECRET` : pas de Checkout, pas de crédit. Live interdit si `ACOMYTHA_PUBLIC_URL` n’est pas `https://`. Les secrets ne sont plus des paramètres admin. Détail Features F-PAY-001 ; lancement : `app/README.md`.

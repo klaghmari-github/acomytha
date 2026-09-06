@@ -27,7 +27,7 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D21 | Ordre des passages | Le moteur enchaîne **tous** les fichiers audio d’une histoire, quel que soit leur nombre. Atomique = ordre des IDs. Ramifiée = défaut / option, sans sauter vers une branche sœur. |
 | D22 | Narrateur | Voix Tom trop basse dans le mix. RMS aligné par réplique, volume et présence relevés, cuisson relancée. |
 | D23 | Aperçus | Parent non acheté : 30 s. Parent acheté / enfant : histoire entière. Visiteur vitrine : **D34**. Clip serveur. |
-| D24 | Stripe | Recharge 10–50 € via Checkout si clés admin. Sans clé : paiement démo (carte 4242) qui crédite le solde, pour valider l’UI. |
+| D24 | Stripe | **Remplacé par D40.** Ancien : Checkout si clés admin, sinon démo 4242 qui crédite. |
 | D25 | Ouverture | Pas d’entrée brutale (« constentin joue au salon »). Monde d’abord, puis « en ce moment ». Deux **exemples** fondateur (conte / présentation, Constantin) : `ECHANGES.md` §7 — **pas un moule**, inventer. Audio plus tard. |
 | D26 | acm | Monnaie affichée **acm** (glyphe organique = logo). Code interne inchangé (`A`, `balance_a`). Plus de A barré. |
 | D27 | Accueil lots | Vitrine : lots de `home_catalog_page_size` (défaut 6), chargement au scroll. Pas les 1445 d’un coup. |
@@ -43,3 +43,4 @@ Fondateur pas devant le PC : décisions prises, pas de questionnaire.
 | D37 | POO | Encapsulation réelle : champs privés, propriétés pour les invariants. Pas un getter/setter vide par variable. Une classe = un rôle. Routeurs FastAPI inchangés. F-APP-008. |
 | D38 | Catalogue entier | Les consignes récit (monde, désir, imprévu, résolution, fin heureuse, leçon greffée) s’appliquent à **toutes** les histoires (685 ATOM + ramifiés). Plus seulement AUT-001 / COL-001. Texte d’abord, audio ensuite. Voix : lent, non robot, non monotone. |
 | D39 | Vitrine chiffres | Accueil : **> 1400** histoires, **> 10** thèmes, **> 80** leçons. Totaux exacts dans `stories/CHIFFRES.md` seulement. |
+| D40 | Stripe | Recharge 10–50 € → acm uniquement via **Checkout hébergé** + **webhook signé**. Clés `STRIPE_SECRET_KEY` / `STRIPE_WEBHOOK_SECRET` / `ACOMYTHA_PUBLIC_URL` dans l’env, jamais l’admin ni Git. Sans les deux secrets : recharge **désactivée** (pas de crédit démo). Live : `sk_live_` + URL HTTPS. F-PAY-001. |

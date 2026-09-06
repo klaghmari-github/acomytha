@@ -406,3 +406,19 @@ def test_recharge_is_disabled_without_stripe_configuration(client, settings):
     response = client.post("/api/shop/recharge", json={"eur": 10})
     assert response.status_code == 503
     assert client.post("/api/shop/recharge/confirm", json={"ref": "forbidden"}).status_code == 404
+
+
+def test_recharge_is_disabled_without_webhook_secret(client, settings):
+    settings.stripe_secret = "sk_test_example"
+    settings.stripe_webhook_secret = ""
+    client.post(
+        "/api/auth/signup",
+        json={
+            "email": "sans-webhook@acomytha.local",
+            "password": "motdepasse",
+            "display_name": "Noe",
+            "device_id": "device-no-webhook01",
+        },
+    )
+    assert client.get("/api/shop/wallet").json()["stripe"] == "webhook_missing"
+    assert client.post("/api/shop/recharge", json={"eur": 10}).status_code == 503

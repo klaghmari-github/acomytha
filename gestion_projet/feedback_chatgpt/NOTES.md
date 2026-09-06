@@ -50,7 +50,7 @@ Passe `avis2.txt` (4 sept. 23:58, SSD, commit GitHub `ae4eb67` alors) :
 
 ## Pas maintenant (chantier, pas une feature de plus ce tour)
 
-Commerce démo vs Stripe, vente sans audio, voix facturée sans enregistrement, commandes sans livraison, ASR, hors-ligne, FX WAV manquants, durées < 3 min sur les 2 audios témoins, `validate.py` encore collé aux JSON disparus, collection pilote 12+3 avant vente.
+Clés Stripe **live** / HTTPS (Checkout test = F-PAY-001 fait), vente sans audio, voix facturée sans enregistrement, commandes sans livraison, ASR, hors-ligne, FX WAV manquants, durées < 3 min sur les 2 audios témoins, `validate.py` encore collé aux JSON disparus, collection pilote 12+3 avant vente.
 
 La vitrine peut rester chaleureuse ; ne pas compter comme « produit disponible » un fichier sans audio validé.
 
@@ -107,3 +107,5 @@ Passe **deux projets** (6 sept. 2026) — **F-NAR-024**, pas un audit ChatGPT :
 - Les 1 449 JSON convertis = copie xlsx + prosodie générique. **Pas** l’écriture. **Maintenant : qualité des histoires Excel.** Doc : `stories/FORMAT_JSON_TTS.md`.
 
 Passe **parrainage** (6 sept. 2026) — **F-PAY-005**, plus tard, pas de code : parrainer → acm = 1er chargement ; le parrain reçoit 2× sa 1re charge.
+
+Passe **Stripe** (6 sept. 2026, `3e4335b8`) — **F-PAY-001 / D40** : Checkout + webhook, plus de démo. Secrets env. Recharge 10–50 € seulement ; abo F-PAY-004 pas branché.
