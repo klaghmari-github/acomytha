@@ -54,7 +54,8 @@ class AcoMythaApp {
   async #guard(roles, tag) {
     try {
       const me = await this.#session.refresh();
-      if (!roles.includes(me.role)) {
+      const granted = Array.isArray(me.roles) ? me.roles : [me.role];
+      if (!roles.some((role) => granted.includes(role))) {
         this.#router.go(me.role === "admin" ? "#/admin" : me.role === "child" ? "#/enfant" : "#/parent");
         return;
       }

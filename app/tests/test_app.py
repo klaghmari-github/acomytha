@@ -39,6 +39,36 @@ def test_editor_role_can_open_editor_api(client):
     assert client.get("/api/editor/stories").status_code != 403
 
 
+def test_admin_can_grant_cumulative_editor_role(client):
+    assert client.post(
+        "/api/auth/login",
+        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-roles"},
+    ).status_code == 200
+    users = client.get("/api/admin/users").json()
+    parent = next(user for user in users if user["email"] == "parent@acomytha.local")
+    changed = client.put(f"/api/admin/users/{parent['id']}/roles", json={"roles": ["parent", "editor"]})
+    assert changed.status_code == 200
+    assert changed.json()["roles"] == ["editor", "parent"]
+    client.post("/api/auth/logout")
+    login = client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-parent-roles"},
+    )
+    assert login.status_code == 200
+    assert login.json()["roles"] == ["editor", "parent"]
+    assert client.get("/api/parent/profiles").status_code == 200
+    assert client.get("/api/editor/stories").status_code == 200
+
+
+def test_admin_cannot_remove_own_admin_role(client):
+    login = client.post(
+        "/api/auth/login",
+        json={"email": "admin@acomytha.local", "password": "acomytha-admin", "device_id": "device-admin-self"},
+    )
+    response = client.put(f"/api/admin/users/{login.json()['id']}/roles", json={"roles": ["parent"]})
+    assert response.status_code == 409
+
+
 def test_public_stats_include_acm_prices(client):
     r = client.get("/api/public/stats")
     assert r.status_code == 200

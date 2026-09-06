@@ -100,10 +100,15 @@ export class AdminApp extends Component {
       }
     }
     const table = this.querySelector("#users");
-    table.innerHTML = `<tr><th>Nom</th><th>Rôle</th><th>Email</th><th>Appareil</th><th></th></tr>`;
+    table.innerHTML = `<tr><th>Nom</th><th>Accès</th><th>Email</th><th>Appareil</th><th>Actions</th></tr>`;
     for (const u of users) {
       const tr = document.createElement("tr");
-      tr.innerHTML = `<td>${escapeHtml(u.display_name)}</td><td>${u.role}</td>
+      const roles = Array.isArray(u.roles) ? u.roles : [u.role];
+      tr.innerHTML = `<td>${escapeHtml(u.display_name)}</td><td><div class="o-row">
+        <label><input type="checkbox" checked disabled /> Parent</label>
+        <label><input type="checkbox" data-role-user="${u.id}" data-role="editor" ${roles.includes("editor") ? "checked" : ""} /> Éditeur</label>
+        <label><input type="checkbox" data-role-user="${u.id}" data-role="admin" ${roles.includes("admin") ? "checked" : ""} /> Admin</label>
+        </div></td>
         <td>${escapeHtml(u.email || "—")}</td>
         <td>${u.device_id ? u.device_id.slice(0, 8) + "…" : "libre"}</td>
         <td>${u.role !== "child" ? `<button class="c-btn c-btn--ghost" data-reset="${u.id}">Reset appareil</button>` : ""}</td>`;
@@ -120,6 +125,20 @@ export class AdminApp extends Component {
       this.on(b, "click", async () => {
         await this.api.post(`/admin/users/${b.dataset.reset}/reset-device`, {});
         await this.refresh();
+      });
+    }
+    for (const box of table.querySelectorAll("[data-role-user]")) {
+      this.on(box, "change", async () => {
+        const userId = box.dataset.roleUser;
+        const selected = [...table.querySelectorAll(`[data-role-user="${userId}"]:checked`)].map((item) => item.dataset.role);
+        try {
+          await this.api.put(`/admin/users/${userId}/roles`, { roles: ["parent", ...selected] });
+          this.querySelector("#setok").textContent = "Accès du compte mis à jour.";
+          await this.refresh();
+        } catch (error) {
+          this.querySelector("#setok").textContent = error.message || "Impossible de modifier les accès.";
+          await this.refresh();
+        }
       });
     }
   }

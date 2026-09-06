@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Request, Response
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from acomytha.api.deps import AuthContext, get_auth, get_db
+from acomytha.api.deps import AuthContext, get_auth, get_db, roles_for
 from acomytha.devices import DeviceConflict, DeviceGuard
 from acomytha.commerce import grant_welcome, num
 from acomytha.models import ChildProfile, User
@@ -68,13 +68,14 @@ def _set_cookie(response: Response, request: Request, token: str) -> None:
     )
 
 
-def _user_payload(user: User, role: str) -> dict:
+def _user_payload(user: User, role: str, db: Session) -> dict:
     return {
         "id": user.id,
         "email": user.email,
         "display_name": user.display_name,
         "role": role,
         "home_role": user.role,
+        "roles": sorted(roles_for(db, user)),
     }
 
 
@@ -95,7 +96,7 @@ def signup(body: SignupBody, request: Request, response: Response, db: Session =
     request.app.state.devices.assert_or_bind(db, parent, body.device_id, ua, body.device_label)
     token = request.app.state.sessions.issue(db, parent, body.device_id, "parent")
     _set_cookie(response, request, token)
-    return _user_payload(parent, "parent")
+    return _user_payload(parent, "parent", db)
 
 
 @router.post("/login")
@@ -120,7 +121,7 @@ def login(body: LoginBody, request: Request, response: Response, db: Session = D
         ) from exc
     token = request.app.state.sessions.issue(db, user, body.device_id, user.role)
     _set_cookie(response, request, token)
-    return _user_payload(user, user.role)
+    return _user_payload(user, user.role, db)
 
 
 @router.post("/enfant")
@@ -139,7 +140,7 @@ def enter_child(body: ChildBody, request: Request, response: Response, auth: Aut
     request.app.state.sessions.revoke(db, auth.session.token)
     token = request.app.state.sessions.issue(db, auth.user, body.device_id, "child", profile.id)
     _set_cookie(response, request, token)
-    payload = _user_payload(auth.user, "child")
+    payload = _user_payload(auth.user, "child", db)
     payload["child_profile"] = {"id": profile.id, "display_name": profile.display_name}
     return payload
 
@@ -162,7 +163,7 @@ def back_to_parent(
     db.commit()
     token = request.app.state.sessions.issue(db, auth.user, auth.session.device_id, "parent")
     _set_cookie(response, request, token)
-    return _user_payload(auth.user, "parent")
+    return _user_payload(auth.user, "parent", db)
 
 
 @router.put("/pin")
@@ -181,8 +182,8 @@ def logout(request: Request, response: Response, db: Session = Depends(get_db)):
 
 
 @router.get("/me")
-def me(auth: AuthContext = Depends(get_auth)):
-    payload = _user_payload(auth.user, auth.role)
+def me(auth: AuthContext = Depends(get_auth), db: Session = Depends(get_db)):
+    payload = _user_payload(auth.user, auth.role, db)
     if auth.role == "child" and auth.session.child_profile_id:
         payload["child_profile_id"] = auth.session.child_profile_id
     return payload

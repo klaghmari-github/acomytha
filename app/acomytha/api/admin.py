@@ -7,9 +7,9 @@ from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from acomytha.api.deps import AuthContext, get_db, require_roles
+from acomytha.api.deps import ADULT_ROLES, AuthContext, get_db, require_roles, roles_for
 from acomytha.commerce import PARAM_SPECS, params, seed_params
-from acomytha.models import AppSetting, DeviceAlert, DeviceBinding, StoryOrder, User
+from acomytha.models import AccountRole, AppSetting, DeviceAlert, DeviceBinding, StoryOrder, User
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 
@@ -23,6 +23,10 @@ class NewParent(BaseModel):
 
 class SettingsBody(BaseModel):
     values: dict[str, str]
+
+
+class RolesBody(BaseModel):
+    roles: list[str]
 
 
 @router.get("/alerts")
@@ -65,6 +69,7 @@ def users(_auth: AuthContext = Depends(require_roles("admin")), db: Session = De
             "email": u.email,
             "display_name": u.display_name,
             "role": u.role,
+            "roles": sorted(roles_for(db, u)),
             "parent_id": u.parent_id,
             "is_active": u.is_active,
             "device_id": bindings[u.id].device_id if u.id in bindings else None,
@@ -72,6 +77,29 @@ def users(_auth: AuthContext = Depends(require_roles("admin")), db: Session = De
         }
         for u in rows
     ]
+
+
+@router.put("/users/{user_id}/roles")
+def update_roles(
+    user_id: int,
+    body: RolesBody,
+    auth: AuthContext = Depends(require_roles("admin")),
+    db: Session = Depends(get_db),
+):
+    user = db.get(User, user_id)
+    if user is None or user.role == "child":
+        raise HTTPException(404, "compte adulte inconnu")
+    requested = set(body.roles)
+    if not requested.issubset(ADULT_ROLES):
+        raise HTTPException(400, "rôle inconnu")
+    requested.add("parent")
+    if user.id == auth.user.id and "admin" not in requested:
+        raise HTTPException(409, "vous ne pouvez pas retirer votre propre rôle administrateur")
+    db.query(AccountRole).filter(AccountRole.user_id == user.id).delete()
+    for role in sorted(requested):
+        db.add(AccountRole(user_id=user.id, role=role))
+    db.commit()
+    return {"id": user.id, "roles": sorted(roles_for(db, user))}
 
 
 @router.post("/users")
