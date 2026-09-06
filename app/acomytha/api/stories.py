@@ -3,15 +3,17 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Depends, HTTPException
+from datetime import datetime, timezone
+
 from pydantic import BaseModel, Field
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from acomytha.api.deps import AuthContext, get_db, require_roles
 from acomytha.catalog import list_stories, story_to_dict
 from acomytha.commerce import num, owned_ids
 from acomytha.graph import StoryGraph
-from acomytha.models import ChildCatalogEntry, ChildProfile, Chunk, ForestEntry, Lesson, Story
+from acomytha.models import ChildCatalogEntry, ChildProfile, Chunk, ForestEntry, Lesson, ListeningSession, Story
 
 router = APIRouter(prefix="/api", tags=["stories"])
 
@@ -24,6 +26,10 @@ class ChildProfileBody(BaseModel):
     display_name: str = Field(min_length=1, max_length=80)
     age_band: str = Field(default="N1", pattern=r"^N[123]$")
     color: str = Field(default="violet", max_length=16)
+
+
+class ListeningEndBody(BaseModel):
+    listened_seconds: float = Field(default=0, ge=0, le=86400)
 
 
 def _profile_payload(profile: ChildProfile, db: Session) -> dict:
@@ -165,5 +171,55 @@ def child_queue(auth: AuthContext = Depends(require_roles("child")), db: Session
     ids = [i for i in ids if i in allowed]
     if not ids:
         return []
+    counts = dict(db.execute(
+        select(ListeningSession.story_id, func.count(ListeningSession.id))
+        .where(ListeningSession.profile_id == auth.child_profile_id)
+        .group_by(ListeningSession.story_id)
+    ).all())
     rows = list(db.scalars(select(Story).where(Story.story_id.in_(ids))))
+    rows.sort(key=lambda story: (counts.get(story.story_id, 0), story.title.casefold()))
     return [story_to_dict(s) for s in rows]
+
+
+@router.post("/enfant/ecoutes/{story_id}")
+def start_listening(story_id: str, auth: AuthContext = Depends(require_roles("child")), db: Session = Depends(get_db)):
+    allowed = db.query(ChildCatalogEntry).filter(
+        ChildCatalogEntry.profile_id == auth.child_profile_id,
+        ChildCatalogEntry.story_id == story_id,
+    ).one_or_none()
+    if allowed is None:
+        raise HTTPException(403, "histoire absente du catalogue enfant")
+    row = ListeningSession(profile_id=auth.child_profile_id, story_id=story_id)
+    db.add(row)
+    db.commit()
+    db.refresh(row)
+    return {"listening_id": row.id, "started_at": row.started_at.isoformat()}
+
+
+@router.put("/enfant/ecoutes/{listening_id}")
+def finish_listening(listening_id: int, body: ListeningEndBody, auth: AuthContext = Depends(require_roles("child")), db: Session = Depends(get_db)):
+    row = db.query(ListeningSession).filter(
+        ListeningSession.id == listening_id,
+        ListeningSession.profile_id == auth.child_profile_id,
+    ).one_or_none()
+    if row is None:
+        raise HTTPException(404, "écoute inconnue")
+    story = db.get(Story, row.story_id)
+    duration = max(0, int(story.duration_s if story else 0))
+    heard = max(0.0, float(body.listened_seconds))
+    percent = min(100.0, heard / duration * 100) if duration else 0.0
+    row.ended_at = datetime.now(timezone.utc)
+    row.listened_seconds = heard
+    row.completion_percent = round(percent, 2)
+    row.completed = percent >= 95
+    db.commit()
+    return {"ok": True, "completion_percent": row.completion_percent, "completed": row.completed}
+
+
+@router.get("/parent/profiles/{profile_id}/ecoutes")
+def listening_history(profile_id: int, auth: AuthContext = Depends(require_roles("parent")), db: Session = Depends(get_db)):
+    profile = db.query(ChildProfile).filter(ChildProfile.id == profile_id, ChildProfile.parent_id == auth.parent_id).one_or_none()
+    if profile is None:
+        raise HTTPException(404, "profil enfant introuvable")
+    rows = db.query(ListeningSession).filter(ListeningSession.profile_id == profile_id).order_by(ListeningSession.started_at.desc()).limit(500).all()
+    return [{"id": row.id, "story_id": row.story_id, "started_at": row.started_at.isoformat(), "ended_at": row.ended_at.isoformat() if row.ended_at else None, "listened_seconds": row.listened_seconds, "completion_percent": row.completion_percent, "completed": row.completed} for row in rows]

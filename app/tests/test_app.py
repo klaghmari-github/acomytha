@@ -197,6 +197,34 @@ def test_parent_profiles_have_isolated_catalogs(client):
     assert client.get(f"/api/parent/profiles/{second_id}/catalog").json()["story_ids"] == ["ATOM-SAN.ALI.001-01"]
 
 
+def test_child_listening_history_is_recorded_for_profile(client):
+    client.post(
+        "/api/auth/login",
+        json={"email": "parent@acomytha.local", "password": "acomytha-parent", "device_id": "device-history-1"},
+    )
+    profile_id = client.get("/api/parent/profiles").json()["items"][0]["id"]
+    client.put(
+        f"/api/parent/profiles/{profile_id}/catalog",
+        json={"story_ids": ["ATOM-SAN.ALI.001-01"]},
+    )
+    entered = client.post(
+        "/api/auth/enfant",
+        json={"profile_id": profile_id, "pin": "2468", "device_id": "device-history-1"},
+    )
+    assert entered.status_code == 200
+    started = client.post("/api/enfant/ecoutes/ATOM-SAN.ALI.001-01", json={})
+    assert started.status_code == 200
+    listening_id = started.json()["listening_id"]
+    finished = client.put(f"/api/enfant/ecoutes/{listening_id}", json={"listened_seconds": 12.5})
+    assert finished.status_code == 200
+    assert 0 <= finished.json()["completion_percent"] <= 100
+    assert client.post("/api/auth/parent", json={"pin": "2468"}).status_code == 200
+    history = client.get(f"/api/parent/profiles/{profile_id}/ecoutes").json()
+    assert len(history) == 1
+    assert history[0]["story_id"] == "ATOM-SAN.ALI.001-01"
+    assert history[0]["listened_seconds"] == 12.5
+
+
 def test_crypto_roundtrip(settings):
     vault = AudioVault(settings)
     mp3 = b"ID3fake-mp3-bytes-for-test"
