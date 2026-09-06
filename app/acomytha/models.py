@@ -142,6 +142,19 @@ class ChildCatalogEntry(Base):
     added_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 
 
+class ListeningSession(Base):
+    __tablename__ = "listening_sessions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    profile_id: Mapped[int] = mapped_column(ForeignKey("child_profiles.id", ondelete="CASCADE"), nullable=False, index=True)
+    story_id: Mapped[str] = mapped_column(ForeignKey("stories.story_id"), nullable=False, index=True)
+    started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    ended_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    listened_seconds: Mapped[float] = mapped_column(Float, default=0.0)
+    completion_percent: Mapped[float] = mapped_column(Float, default=0.0)
+    completed: Mapped[bool] = mapped_column(Boolean, default=False)
+
+
 class Chunk(Base):
     __tablename__ = "chunks"
 
