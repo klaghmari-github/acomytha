@@ -28,7 +28,7 @@ Raphaël propose, Mila prend son temps ou pose sa limite. Le silence compte. Cha
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 550 à 606 mots par chemin (moyenne 571)
+- 574 à 631 mots par chemin (moyenne 596)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

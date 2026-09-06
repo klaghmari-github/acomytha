@@ -270,7 +270,7 @@ T1 = {
             ("papa", "Le banc, la vitre, ou les chaussures ?"),
         ),
         sons="manteau,crayon",
-        emp="crayon",
+        emp="poche",
         lift="le pan du manteau",
     ),
     2: dict(
@@ -315,7 +315,7 @@ T1 = {
             ("maman", "Le banc, la vitre, ou les chaussures ?"),
         ),
         sons="fermeture,papier",
-        emp="cartable",
+        emp="dessus",
         lift="le rabat du cartable",
     ),
     3: dict(
@@ -360,7 +360,7 @@ T1 = {
             ("papa", "Le banc, la vitre, ou les chaussures ?"),
         ),
         sons="boite,couvercle",
-        emp="boîte",
+        emp="serviette",
         lift="le couvercle de la boîte",
     ),
 }
@@ -409,7 +409,7 @@ def t2(a: int, b: int) -> list[tuple[str, str]]:
             ("narrateur", "Nino tire la lacette, trop fort."),
             ("narrateur", "La lentille skie vers le pied d'Aniss."),
             ("enfant-m", "Oh !"),
-            ("narrateur", "Aniss ne bouge pas, le pied resté."),
+            ("narrateur", "Aniss garde le pied, sans bouger."),
             ("papa", "Il laisse le verre, à sa place."),
             ("narrateur", "Une semelle sent le caoutchouc, très bas."),
             ("enfant-m", "Le bord jaune, sous le lacet."),
@@ -490,7 +490,7 @@ def t2(a: int, b: int) -> list[tuple[str, str]]:
             ("narrateur", "Aniss cligne, puis tourne un peu la tête."),
             ("enfant-m", "Elle reste collée."),
             ("maman", "Tu la vois, malgré la tache ?"),
-            ("enfant-m", "Oui, le soleil est là."),
+            ("enfant-m", "Oui, le bord jaune est là."),
             ("narrateur", "Un fil de lumière traverse la tache, mince."),
             ("narrateur", "La boîte reste ouverte, au casier."),
             ("papa", "Aniss regarde la lumière, pas le clac."),
@@ -607,7 +607,7 @@ def t3(a: int, b: int, c: int) -> list[tuple[str, str]]:
             ("enfant-m", "Merci, papa."),
             ("papa", "Merci d'avoir vu l'ombre, d'abord."),
             ("narrateur", "Aniss cligne, puis regarde le rond, content."),
-            ("narrateur", "Le crochet a fait clic, très doux."),
+            ("narrateur", "Le crochet a fait clic, très bas."),
             ("maman", "La porte a cessé de souffler."),
         ),
         (1, 3, 1): L(
@@ -1310,7 +1310,7 @@ def build() -> None:
                 leaf = f"{p2}_T0003_P000{c}"
                 by[leaf] = voice(
                     by_old[leaf], t3(a, b, c), "resolution",
-                    extra={"sons": T3_SONS[c], "emphasis": "lentille"},
+                    extra={"sons": T3_SONS[c], "emphasis": "lentille" if c != 2 else "souffle"},
                 )
                 fin = f"{leaf}_F0001"
                 by[fin] = voice(

@@ -1144,7 +1144,7 @@ def build() -> None:
         "- Leçon DIF.PAR.001 vécue, pas récitée. Pas « camarade qui parle peu ».\n"
         "- Première idée : « Dis camion » échoue. Les choix changent l'action.\n"
         "- 27 fins textuellement distinctes. Un merci vécu (rampe), pas un refrain Bravo.\n"
-        "- Tics « tout doux / tout calme / encore / déjà » retirés (encore ≤ 2).\n"
+        "- Tics « tout doux / tout calme / encore / déjà » retirés (0 occurrence).\n"
         "- TTS par chunk (opening/choice/clue/confirm/action/obstacle/resolution/ending).\n"
         "- `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.\n\n"
         "## Non vérifié\n"

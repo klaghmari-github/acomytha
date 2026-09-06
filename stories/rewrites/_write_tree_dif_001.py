@@ -219,10 +219,12 @@ def L(*rows: tuple[str, str]) -> list[tuple[str, str]]:
 OPENING = L(
     ("narrateur", "Le cri d'une mouette entre dans la cuisine."),
     ("narrateur", "Le sable mouillé suce le bas de la porte."),
+    ("narrateur", "Une ombre d'aile passe sur la table."),
     ("narrateur", "La maison sent le linge, et le sel."),
     ("narrateur", "Papa pose les sandales, près du palier."),
     ("maman", "Sarah va arriver, Aniss."),
     ("narrateur", "Aniss ouvre la paume, vers le rebord."),
+    ("narrateur", "C'est le rebord du volet, face à l'eau."),
     ("narrateur", "Sa coquille rose y tient, légère."),
     ("narrateur", "Un point d'écume y reste, blanc."),
     ("enfant-m", "Il ne sèche pas."),
@@ -234,6 +236,8 @@ OPENING = L(
     ("narrateur", "Sarah s'arrête, sans un mot."),
     ("enfant-m", "Viens, on court !"),
     ("narrateur", "Sarah ne bouge pas."),
+    ("narrateur", "Aniss sent ça, dans sa poitrine."),
+    ("enfant-m", "On va au bord, ensemble."),
     ("papa", "Merci, tu as vu son silence."),
     ("maman", "On prépare le sac, alors ?"),
 )
@@ -626,7 +630,6 @@ def t3(a: int, b: int, c: int) -> list[tuple[str, str]]:
 
 
 def fin(a: int, b: int, c: int) -> list[tuple[str, str]]:
-    o = OBJ[a]
     cap = CAP[a]
     last = {
         (1, 1, 1): "Le seau sèche, un rond blanc au fond.",
@@ -791,6 +794,7 @@ def main() -> None:
         L(
             ("narrateur", "Le sac attend, près des sandales."),
             ("narrateur", "Le seau, le filet, et le linge."),
+            ("narrateur", "Aniss serre la coquille, puis la pose."),
             ("maman", "Tu prends quoi d'abord, Aniss ?"),
         ),
         "choice",
@@ -947,6 +951,27 @@ def main() -> None:
             raise SystemExit(f"{c['chunk_id']}: text_xai_tags = text")
 
     nwords = sum(words(c["text"]) for c in out["chunks"])
+    byw = {c["chunk_id"]: c for c in out["chunks"]}
+
+    def _walk(t1: int, t2: int, t3: int) -> int:
+        ids = [
+            "CHK_T0000_P0000",
+            "CHK_T0001_P0000",
+            f"CHK_T0001_P000{t1}",
+            f"CHK_T0001_P000{t1}_Q0001",
+            f"CHK_T0001_P000{t1}_C0001",
+            f"CHK_T0001_P000{t1}_T0002_P0000",
+            f"CHK_T0001_P000{t1}_T0002_P000{t2}",
+            f"CHK_T0001_P000{t1}_T0002_P000{t2}_T0003_P0000",
+            f"CHK_T0001_P000{t1}_T0002_P000{t2}_T0003_P000{t3}",
+            f"CHK_T0001_P000{t1}_T0002_P000{t2}_T0003_P000{t3}_F0001",
+        ]
+        return sum(words(byw[i]["text"]) for i in ids)
+
+    plens = [_walk(a, b, c) for a in (1, 2, 3) for b in (1, 2, 3) for c in (1, 2, 3)]
+    pmin, pmax = min(plens), max(plens)
+    pavg = round(sum(plens) / len(plens))
+
     (folder / "merged.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
@@ -956,22 +981,24 @@ def main() -> None:
         "`chunk_id` / `kind` inchangés. Graphe `option_*_next` conservé.\n\n"
         "## Vécu\n"
         "Maison près de la mer, sable mouillé. Le cri d'une mouette entre "
-        "dans la cuisine. Sur la coquille rose, un point d'écume tient, blanc. "
-        "Mission : le montrer à Sarah, au bord, maintenant. Sarah arrive et "
-        "s'arrête, sans un mot. Aniss propose de courir ; son silence compte. "
-        "Papa remercie Aniss d'avoir vu ce silence. T1 = seau / filet / linge "
-        "(les trois partent ; trop vite : toc, maille ouverte, tissu trop serré). "
-        "T2 = rochers (trop haut) / laisse (trop loin) / mare (trop profonde). "
-        "La mouette pique le point d'écume au lieu de prendre la coquille. "
-        "Aniss veut chasser ; Sarah pose sa limite. Sourire parti, poitrine "
-        "serrée, adulte accroupi. T3 : ils refusent de foncer, retrouvent le "
-        "point du début, font avec. 27 fins : le rose est vu, l'objet porte "
-        "une trace, ça a failli ne pas arriver. Leçon DIF.COR.001 vécue "
-        "(faire avec l'autre, pas sans elle), jamais dite. "
+        "dans la cuisine. Coin nommé : le rebord du volet. Sur la coquille rose, "
+        "un point d'écume tient, blanc. Mission : le montrer à Sarah, au bord, "
+        "maintenant. Sarah arrive et s'arrête, sans un mot. Aniss propose de "
+        "courir ; son silence compte. Papa remercie Aniss d'avoir vu ce silence. "
+        "T1 = seau / filet / linge (les trois partent ; trop vite : toc, maille "
+        "ouverte, tissu trop serré). T2 = rochers (trop haut) / laisse (trop loin) "
+        "/ mare (trop profonde). La mouette pique le point d'écume au lieu de "
+        "prendre la coquille. Aniss veut chasser ; Sarah pose sa limite. Sourire "
+        "parti, poitrine serrée, adulte accroupi. T3 : ils refusent de foncer, "
+        "retrouvent le point du début, font avec. 27 fins : le rose est vu, "
+        "l'objet porte une trace, ça a failli ne pas arriver. Leçon DIF.COR.001 "
+        "vécue (faire avec l'autre, pas sans elle), jamais dite. "
         "Monde ≠ TREE-AUT-021 (nacre), ≠ TREE-DIF-052 (phare, ambre).\n\n"
         "## Vu et corrigé\n"
         f"`python3 stories/rewrites/_write_tree_dif_001.py` → `OK {SID} {nwords} mots`. "
         "N1 ≤ 10. `_lib.check` vert.\n"
+        f"- 86 chunks, 27 chemins, 27 fins distinctes, {pmin} à {pmax} mots "
+        f"(moyenne {pavg}).\n"
         "- Ouverture inventée (cri de mouette, pas « encore »).\n"
         "- Indice unique : point d'écume, payé au climax et en coda.\n"
         "- Voix : notes + ssml + xai + piper par chunk, profils raw.js. "

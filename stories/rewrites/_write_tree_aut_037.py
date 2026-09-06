@@ -306,9 +306,13 @@ OPENING = [
     L("narrateur", "Dehors, le zinc a la même rivière."),
     L("narrateur", "La gouttière répond, glou."),
     L("narrateur", "Chouchou colle son nez au verre."),
+    L("narrateur", "Le verre est froid, un peu rêche."),
     L("enfant-f", "Le zinc est sec, un peu."),
     L("papa", "Tu as vu le manteau, Chouchou ?"),
+    L("narrateur", "Papa essuie une goutte, torchon bleu."),
+    L("narrateur", "Maman plie une serviette de lin."),
     L("narrateur", "Le manteau jaune attend au crochet."),
+    L("narrateur", "Le crochet est froid, à sa hauteur."),
     L("narrateur", "Une boucle d'étain y cligne, une fois."),
     L("enfant-f", "Elle brille comme le zinc !"),
     L("maman", "La croûte, tu la portes où ?"),
@@ -337,6 +341,7 @@ L1 = {
     1: [
         L("narrateur", "Chouchou reste près de la table."),
         L("narrateur", "Le carrelage pique ses pieds, froid."),
+        L("narrateur", "Une miette brille, sèche, sur le bois."),
         L("narrateur", "Ça sent la croûte, tout près."),
         L("enfant-f", "Je le mets ici, papa."),
         L("papa", "Le manteau, sur la chaise ?"),
@@ -355,6 +360,7 @@ L1 = {
     2: [
         L("narrateur", "Chouchou pousse la porte du jardin."),
         L("narrateur", "L'air touche son cou, frais."),
+        L("narrateur", "Une feuille collée tremble, sur le pas."),
         L("narrateur", "Le zinc brille, tout près."),
         L("enfant-f", "Je le mets dehors, maman."),
         L("maman", "Le manteau, sur le pas ?"),
@@ -374,6 +380,7 @@ L1 = {
     3: [
         L("narrateur", "Chouchou emporte le manteau dans la chambre."),
         L("narrateur", "Le tapis est tiède sous les pieds."),
+        L("narrateur", "Un rayon passe sur le bois du lit."),
         L("narrateur", "L'armoire sent le linge."),
         L("enfant-f", "Devant la glace, papa."),
         L("papa", "Tu le mets toute seule ?"),
@@ -1256,8 +1263,8 @@ FIN = {
         L("narrateur", "Le gond n'a plus de boucle d'étain."),
     ],
     (2, 1, 2): [
-        L("narrateur", "Chouchou pose le cube bleu au crochet, non."),
-        L("enfant-f", "Lui, dans la caisse."),
+        L("narrateur", "Chouchou pose le cube bleu dans la caisse."),
+        L("enfant-f", "Lui, ici."),
         L("papa", "Le manteau, au crochet."),
         L("narrateur", "Elle le pose, net."),
         L("enfant-f", "Le tonneau a failli."),

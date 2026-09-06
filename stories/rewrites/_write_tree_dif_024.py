@@ -979,8 +979,8 @@ def main() -> None:
             t2 = f"{t1}_T0002_P000{b}"
             seq2 = seq1 + [t2, f"{t2}_T0003_P0000"]
             for c in (1, 2, 3):
-                t3 = f"{t2}_T0003_P000{c}"
-                seq = seq2 + [t3, f"{t3}_F0001"]
+                leaf = f"{t2}_T0003_P000{c}"
+                seq = seq2 + [leaf, f"{leaf}_F0001"]
                 path_lens.append(sum(words(by[i]["text"]) for i in seq))
     pmin, pmax = min(path_lens), max(path_lens)
     pavg = round(sum(path_lens) / len(path_lens))

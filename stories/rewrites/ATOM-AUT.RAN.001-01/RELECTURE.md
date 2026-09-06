@@ -30,7 +30,7 @@ Raphaël veut la tour **maintenant**. Impatience, puis épaules qui tombent quan
 ## Contrôles
 
 - 5 chunks, graphe inchangé
-- 725 mots
+- 723 mots
 - `text` = `script` collé
 
 ## Non vérifié

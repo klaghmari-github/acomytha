@@ -10,7 +10,7 @@ Cave sous la maison, odeur de pommes, ampoule jaune, carton qui racle. Raphaël 
 - Leçon DIF.PAR.001 vécue, pas récitée. Pas « camarade qui parle peu ».
 - Première idée : « Dis camion » échoue. Les choix changent l'action.
 - 27 fins textuellement distinctes. Un merci vécu (rampe), pas un refrain Bravo.
-- Tics « tout doux / tout calme / encore / déjà » retirés (encore ≤ 2).
+- Tics « tout doux / tout calme / encore / déjà » retirés (0 occurrence).
 - TTS par chunk (opening/choice/clue/confirm/action/obstacle/resolution/ending).
 - `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
 

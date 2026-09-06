@@ -30,7 +30,7 @@ Raphaël propose. Nina prend son temps, ou pose sa limite. Deux rythmes, sans vo
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 511 à 557 mots par chemin (moyenne 530)
+- 559 à 605 mots par chemin (moyenne 578)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

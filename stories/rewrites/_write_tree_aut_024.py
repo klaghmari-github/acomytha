@@ -298,7 +298,7 @@ T1 = {
             "enfant-f|Il est au fond, je le sais.",
             "narrateur|Elle creuse.",
             "narrateur|Le tas devient plus haut, plus large.",
-            "narrateur|Un cube tape le bol, tout près.",
+            "narrateur|Un cube tape le bol, près du bord.",
             "papa|Attention à l'eau, Sarah.",
             "enfant-f|Je n'arrive pas.",
             "narrateur|Ses mains s'arrêtent, collées de farine.",
@@ -518,7 +518,7 @@ T2 = {
             "narrateur|Elle le glisse à plat, loin du bol.",
             "maman|Merci, les pages restent sèches.",
             "narrateur|Sans le livre, le pied du bol est libre.",
-            "enfant-f|Je vois le carrelage, tout autour.",
+            "enfant-f|Je vois le carrelage, autour du bol.",
         ],
     },
     (3, 3): {
@@ -568,7 +568,7 @@ T3 = {
         "narrateur|Elle le soulève, collé de farine.",
         "papa|Il attendait le dernier cube.",
         "maman|Mila, ta tour a laissé le passage.",
-        "narrateur|Sarah le pose dans l'eau, tout droit.",
+        "narrateur|Sarah le pose dans l'eau, bien droit.",
         "narrateur|Le canard fait une ride ronde.",
     ],
     (1, 1, 2): [
@@ -655,9 +655,9 @@ T3 = {
         "enfant-f|Son assiette à lui !",
         "copine|Je lui en prête une, alors.",
         "maman|Il a mieux : le bol.",
-        "narrateur|Sarah le pose dans l'eau, fier.",
-        "narrateur|Le coin brille, avec l'assiette jouet.",
-        "narrateur|Au coin, une petite assiette jouet brille.",
+        "narrateur|Sarah le pose dans l'eau, fière.",
+        "narrateur|Mila pose l'assiette jouet dans l'angle, sans un mot.",
+        "narrateur|Au coin, l'assiette capte un carré de nappe.",
     ],
     (2, 1, 1): [
         "narrateur|Sarah finit la colline, cube après cube.",
@@ -743,7 +743,7 @@ T3 = {
         "enfant-f|Il faisait le soucoupe !",
         "copine|Le plus petit plat, c'était lui.",
         "papa|Le plateau a tout révélé.",
-        "narrateur|Elle le pose dans l'eau, tout heureuse.",
+        "narrateur|Elle le pose dans l'eau, heureuse.",
         "narrateur|Les tasses descendent, sans un roulement.",
         "narrateur|Le couvercle garde un cercle d'eau, minuscule.",
     ],
@@ -881,7 +881,7 @@ ENDINGS = {
         "papa|Il s'était collé où ?",
         "enfant-f|Sous le bois, comme un aimant.",
         "maman|Les cubes, eux, ont glissé d'un coup.",
-        "narrateur|La tarte sent chaud, tout près.",
+        "narrateur|La tarte sent chaud, près du four.",
         "narrateur|Le zinc fait tic, et le canard répond d'un ploc.",
     ],
     (1, 1, 3): [
@@ -1272,7 +1272,7 @@ def main() -> None:
         "émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration), "
         "`style_energy`, pauses, pitch, volume. `slow` = choix, indice, fin.\n"
         "- 27 bains, 27 dernières images. Ouverture + 3 L1 + 9 L2 + 27 L3/fins relus.\n"
-        "- `check()` N2≤15. Pas apply.\n\n"
+        "- `check()` N2≤15, ~528–579 mots/chemin. Pas apply.\n\n"
         "## Non vérifié\n\n"
         "Audio (pas cuit). Durée réelle à l'écoute. Playtest moteur des 27 chemins.\n",
         encoding="utf-8",

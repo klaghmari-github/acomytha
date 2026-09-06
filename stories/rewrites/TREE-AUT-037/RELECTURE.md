@@ -18,7 +18,7 @@ Cuisine, pain grillé, vitre, zinc, gouttière, crochet, boucle d'étain, perron
 
 ## Vu et corrigé
 
-P2 F-NAR-019 example4 v2. Ouverture inventée (clic du grille-pain, rivière de buée), pas les cinq manières listées. Indice unique : boucle d'étain, payée au climax (cligne à l'ombre, toc, mauve). Corps : sourire disparaît, envie et inquiétude, adulte à la même hauteur. 2e ruse (cube, page, assiette) ; elle refuse de foncer. Fin qui a failli (goutte, giclée, pétale, une seconde). Monde ≠ TREE-AUT-032 manteau vert casserole ≠ TREE-AUT-033 gouttière kiosque. Pas gabarit example3. Tics « encore / déjà / tout doux / tout calme » retirés. Troupe D16 Chouchou. 27 fins, 27 L3, 27 dernières images. TTS par chunk : `notes`, `text_ssml`, `text_xai_tags`, piper 1.10–1.30. `slow` = choix, indice, fins. `check()` N2 OK. Chemins 519–546 mots, moyenne 533. Pas apply.
+P2 F-NAR-019 example4 v2. Ouverture inventée (clic du grille-pain, rivière de buée), pas les cinq manières listées. Indice unique : boucle d'étain, payée au climax (cligne à l'ombre, toc, mauve). Corps : sourire disparaît, envie et inquiétude, adulte à la même hauteur. 2e ruse (cube, page, assiette) ; elle refuse de foncer. Fin qui a failli (goutte, giclée, pétale, une seconde). Monde ≠ TREE-AUT-032 manteau vert casserole ≠ TREE-AUT-033 gouttière kiosque. Pas gabarit example3. Tics « encore / déjà / tout doux / tout calme » retirés. Troupe D16 Chouchou. 27 fins, 27 L3, 27 dernières images. TTS par chunk : `notes`, `text_ssml`, `text_xai_tags`, piper 1.10–1.30. `slow` = choix, indice, fins. `check()` N2 OK. Chemins 552–580 mots, moyenne 566. Pas apply.
 
 ## Direction vocale
 
@@ -27,7 +27,7 @@ Chaque segment a un arc dans `notes`. Débit, hauteur, volume et pause suivent l
 ## Contrôles
 
 - 86 chunks
-- 27 chemins, 519 à 546 mots, moyenne 533
+- 27 chemins, 552 à 580 mots, moyenne 566
 - 27 fins distinctes, 27 L3 distincts, 27 dernières images
 - `text` = `script` collé
 - 0 occurrence de « encore », « déjà », « tout doux », « tout calme »

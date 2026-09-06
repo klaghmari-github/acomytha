@@ -14,7 +14,8 @@ Jardin après le vent, herbe aux pommes fendues. Le volet claque, puis se tait. 
 - Un merci vécu (voir le silence d'Aniss). Pas apply. Audio non cuit.
 
 ## Contrôles
-- 86 chunks, 27 chemins, 27 fins distinctes
+- 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
+- 573 à 589 mots par chemin (moyenne 582)
 - `text` = `script` collé ; graphe inchangé
 - TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes`
 

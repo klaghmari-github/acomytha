@@ -612,9 +612,9 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Sur le sac du milieu, un grain noir brille.",
             "enfant-f|Comme dans la rainure.",
             "narrateur|Chouchou ne tend pas le bras.",
-            "narrateur|Elle laisse le mot se poser, entier.",
+            "narrateur|Le mot se pose, entier, sur le sac.",
             f"narrateur|{obj}",
-            "papa|Tu as regardé, sans courir.",
+            "papa|Le sac du milieu est le bon.",
         ]
     if b == 1 and c == 2:
         return [
@@ -627,7 +627,7 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Un grain de vanille colle au papier du sac.",
             "enfant-f|Le même grain.",
             "narrateur|Chouchou reste sur le bois, sans sauter.",
-            "narrateur|Elle a laissé la phrase arriver.",
+            "narrateur|Le sucre reste derrière, et le sac aussi.",
             f"narrateur|{obj}",
             "maman|Le tabouret a aidé mes mots.",
         ]
@@ -644,7 +644,7 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Contre la chemise, Chouchou ne parle pas.",
             "narrateur|Elle a laissé le sel, et le mot.",
             f"narrateur|{obj}",
-            "papa|Tu n'as pas deviné trop tôt.",
+            "papa|Le sac près du sel est le bon.",
         ]
     if b == 2 and c == 1:
         return [
@@ -657,9 +657,9 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Elles soulèvent le papier, ensemble.",
             "narrateur|Un grain de vanille colle au coin jaune.",
             "narrateur|Le carrelage refroidit leurs genoux.",
-            "narrateur|Personne n'a tiré le papier trop tôt.",
+            "narrateur|Le papier jaune reste plié, puis s'ouvre.",
             f"narrateur|{obj}",
-            "papa|Vous l'avez laissée finir.",
+            "papa|Le papier jaune est là, entier.",
         ]
     if b == 2 and c == 2:
         return [
@@ -687,7 +687,7 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Un grain de vanille dort sur le jaune.",
             "enfant-f|Comme dans le saladier.",
             "narrateur|Le linge retombe, lent, sans bruit.",
-            "narrateur|Chouchou n'a pas parlé trop tôt.",
+            "narrateur|Le jaune est resté entier, sous le linge.",
             f"narrateur|{obj}",
             "maman|Le linge a gardé le secret.",
         ]
@@ -704,7 +704,7 @@ def t3(a: int, b: int, c: int) -> list[str]:
             "narrateur|Chouchou n'a pas choisi trop tôt.",
             f"narrateur|{obj}",
             "papa|Les bocaux se sont tus, le mot aussi.",
-            "maman|Vous m'avez entendue jusqu'au bout.",
+            "maman|Les fraises sont là, enfin.",
         ]
     if b == 3 and c == 2:
         return [
@@ -732,7 +732,7 @@ def t3(a: int, b: int, c: int) -> list[str]:
         "narrateur|Le vrai rouge était plus proche.",
         "narrateur|Chouchou a failli dire le panier.",
         f"narrateur|{obj}",
-        "maman|Tu as laissé la vraie fin.",
+        "maman|Le bol rouge était le bon.",
         "papa|Le panier peut attendre.",
     ]
 
@@ -837,7 +837,7 @@ ENDINGS = {
     (1, 3, 3): [
         "narrateur|Dans le bol rouge, pas dans le panier.",
         "enfant-f|J'ai failli dire le panier.",
-        "maman|Tu as attendu ma fin.",
+        "maman|Le bol, pas le panier.",
         "papa|Une fraise casse, nette, entre les dents.",
         "narrateur|Le saladier reçoit les belles, une à une.",
         "narrateur|Le grain de vanille brille au fond du bol, oublié.",
@@ -945,7 +945,7 @@ ENDINGS = {
     (2, 3, 3): [
         "narrateur|Dans le bol rouge, pas dans le panier.",
         "enfant-f|J'ai failli dire le panier.",
-        "maman|Tu as attendu ma fin.",
+        "maman|Le bol, pas le panier.",
         "papa|Une fraise casse, nette, entre les dents.",
         "narrateur|La cuillère prend les belles, une à une.",
         "narrateur|Le grain de vanille brille au fond du bol, oublié.",
@@ -1053,7 +1053,7 @@ ENDINGS = {
     (3, 3, 3): [
         "narrateur|Dans le bol rouge, pas dans le panier.",
         "enfant-f|J'ai failli dire le panier.",
-        "maman|Tu as attendu ma fin.",
+        "maman|Le bol, pas le panier.",
         "papa|Une fraise casse, nette, entre les dents.",
         "narrateur|Le tablier reçoit une goutte rose, petite.",
         "narrateur|Le grain de vanille brille au fond du bol, oublié.",

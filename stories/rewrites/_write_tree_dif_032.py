@@ -1141,7 +1141,7 @@ ENDINGS = {
         "maman|Vous vous parlez, d'ici.",
         "copain|Je reste au seuil.",
         "narrateur|La lampe de poche fait un nid, contre le bois.",
-        "narrateur|Une latte de bois cadre le pois ivoire.",
+        "narrateur|Un fil de laine borde le pois ivoire.",
     ],
     (2, 3, 1): [
         "narrateur|Près de la fenêtre, un rond touche la pluie.",
@@ -1171,7 +1171,7 @@ ENDINGS = {
         "maman|Le rideau a basculé, sans tomber.",
         "enfant-f|On reste un peu.",
         "narrateur|La lampe de poche sent la pluie, au bord.",
-        "narrateur|Une chaise penche vers le pois ivoire.",
+        "narrateur|Le rideau mouillé frôle le pois ivoire.",
     ],
     (3, 1, 1): [
         "narrateur|Sous le sommier, le pouf sent le bois.",
@@ -1181,7 +1181,7 @@ ENDINGS = {
         "maman|Le coussin a failli rester coincé.",
         "enfant-f|On reste un peu, Raphaël.",
         "narrateur|Le coussin rond tient leurs coudes.",
-        "narrateur|L'aile de l'armoire cache le pois ivoire.",
+        "narrateur|Un toc de pouf dort sous le pois ivoire.",
     ],
     (3, 1, 2): [
         "narrateur|Au bord du lit, deux têtes se calment.",
@@ -1191,7 +1191,7 @@ ENDINGS = {
         "maman|Vos voix sont devenues toutes petites.",
         "copain|Je reste un peu.",
         "narrateur|Le coussin rond reste dans la paume de Victorina.",
-        "narrateur|Le rideau frôle le pois ivoire.",
+        "narrateur|La poussière du sommier tient le pois ivoire.",
     ],
     (3, 1, 3): [
         "narrateur|Le sommier redescend, sans bruit.",
@@ -1201,7 +1201,7 @@ ENDINGS = {
         "papa|Le tissu froisse, dans l'air.",
         "enfant-f|On souffle dessus.",
         "narrateur|Le coussin rond retombe, léger.",
-        "narrateur|Une goutte glisse vers le pois ivoire.",
+        "narrateur|Un coin de matelas réchauffe le pois ivoire.",
     ],
     (3, 2, 1): [
         "narrateur|Entre l'armoire, le pouf sent la laine.",
@@ -1211,7 +1211,7 @@ ENDINGS = {
         "maman|La laine a failli garder le pois.",
         "enfant-f|On reste un peu.",
         "narrateur|Le coussin rond garde un brin de laine.",
-        "narrateur|Le matelas garde un creux sous le pois ivoire.",
+        "narrateur|Un gond de l'armoire veille près du pois ivoire.",
     ],
     (3, 2, 2): [
         "narrateur|Deux chaises tiennent un toit moelleux.",
@@ -1251,7 +1251,7 @@ ENDINGS = {
         "maman|Le bois n'a pas bougé.",
         "enfant-f|On reste un peu.",
         "narrateur|Le coussin rond atteint la tringle.",
-        "narrateur|La poignée de l'armoire reflète le pois ivoire.",
+        "narrateur|La tringle tient une ombre sur le pois ivoire.",
     ],
     (3, 3, 3): [
         "narrateur|Le rebord tient deux enfants, côte à côte.",

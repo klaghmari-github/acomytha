@@ -18,7 +18,7 @@ Marché du village, toiles rayées comme des voiles, panier d'osier à l'anse r�
 - 27 fins textuellement distinctes (dernière image narrateur unique).
 - TTS par chunk (opening / choice / clue / confirm / action / obstacle / resolution / ending).
 - `text` / `script` / `text_ssml` / `text_xai_tags` synchronisés. Pas apply.
-- Chemins : 723–757 mots (moy 735).
+- Chemins : 722–757 mots (moy 735).
 
 ## Non vérifié
 

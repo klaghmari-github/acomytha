@@ -214,7 +214,9 @@ OPENING = [
     "narrateur|La goutte grossit au bord de la toile.",
     "narrateur|Elle tremble, puis choisit le bois de l'étal.",
     "narrateur|Un grain de cannelle s'y colle, brun et minuscule.",
+    "narrateur|Il pique un peu, collé au bois mouillé.",
     "narrateur|Le marché assemble ses caisses, sans crier.",
+    "narrateur|Des voix s'installent, plus loin, pas ici.",
     "narrateur|Ça sent l'écorce mouillée, et le fruit coupé.",
     "papa|Tu as vu ce grain, Raphaël ?",
     "enfant-m|Il est coincé dans l'eau.",
@@ -266,6 +268,7 @@ T1 = {
             "narrateur|Elle tombe près du grain de cannelle.",
             "enfant-m|Le grain est mouillé.",
             "papa|Tu le vois, sur le bois ?",
+            "narrateur|Un client passe, sans s'arrêter.",
         ],
         "question": [
             "narrateur|La goutte a teinté le citron, sous la toile.",
@@ -308,6 +311,7 @@ T1 = {
             "narrateur|Elle mouille le grain de cannelle, au bord.",
             "enfant-m|Il pique un peu, le grain.",
             "maman|Tu le sens, sur le bois ?",
+            "narrateur|Une femme passe, le nez ailleurs.",
         ],
         "question": [
             "narrateur|La lumière a coloré les fraises, sous la toile.",
@@ -350,6 +354,7 @@ T1 = {
             "narrateur|Elle tombe près du grain de cannelle.",
             "enfant-m|Le grain a un point d'eau.",
             "papa|Tu le vois, collé au bois ?",
+            "narrateur|Un homme passe, sans regarder l'étal.",
         ],
         "question": [
             "narrateur|Une goutte a touché la poire, sous la toile.",
@@ -715,7 +720,7 @@ T3 = {
         "enfant-m|D'accord.",
         "enfant-m|Je te la garde.",
         "narrateur|Raphaël garde la fraise sur le métal.",
-        "narrateur|Mila recule vers une odeur de pain, plus loin.",
+        "narrateur|Mila recule vers une autre odeur, plus loin.",
         "maman|La fraise garde sa place.",
         "narrateur|Le grain de cannelle attend, à côté du fruit.",
         "papa|Le plateau reste froid, pour elle.",
@@ -892,7 +897,7 @@ ENDINGS = {
         "enfant-f|Oui.",
         "papa|L'aiguille ne danse plus.",
         "maman|Le citron a gardé sa place.",
-        "narrateur|La goutte jaune a séché en croissant mince.",
+        "narrateur|La goutte jaune a séché en trait d'or.",
         "narrateur|Le grain de cannelle tient sur le plateau froid.",
     ],
     (1, 1, 2): [
@@ -903,7 +908,7 @@ ENDINGS = {
         "narrateur|Elle s'approche de la balance.",
         "papa|Vous avez pris le temps.",
         "narrateur|La goutte jaune n'est plus qu'un trait.",
-        "narrateur|Le citron attend, et le grain brille à côté.",
+        "narrateur|Le citron attend, et le grain de cannelle brille à côté.",
     ],
     (1, 1, 3): [
         "narrateur|Le citron a failli rouler, tout à l'heure.",
@@ -913,7 +918,7 @@ ENDINGS = {
         "maman|Le métal a deux traces de doigts.",
         "narrateur|La goutte jaune a quitté le zeste.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Deux doigts ont coincé le grain entre le métal et le zeste.",
+        "narrateur|Deux doigts ont coincé le grain de cannelle entre métal et zeste.",
     ],
     (1, 2, 1): [
         "narrateur|Le sac a failli se fermer trop tôt.",
@@ -923,7 +928,7 @@ ENDINGS = {
         "papa|Le papier est resté ouvert.",
         "maman|Le zeste habite le brun.",
         "narrateur|La goutte jaune a séché sur le pli.",
-        "narrateur|Le sac brun garde une ombre de citron, et le grain.",
+        "narrateur|Le sac brun garde une ombre de citron, et le grain de cannelle.",
     ],
     (1, 2, 2): [
         "narrateur|Mila revient, un sac d'un autre étal à la main.",
@@ -933,7 +938,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|Le sac l'attendait.",
         "narrateur|La goutte jaune a quitté le col.",
-        "narrateur|Le papier reste ouvert, le grain au bord.",
+        "narrateur|Le papier reste ouvert, le grain de cannelle au bord.",
     ],
     (1, 2, 3): [
         "narrateur|Le papier a failli se fendre jusqu'au bout.",
@@ -943,7 +948,7 @@ ENDINGS = {
         "maman|Le sac penche entre deux petites mains.",
         "narrateur|La goutte jaune a séché dans le fond.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Le sac penche entre deux petites mains, grain au fond.",
+        "narrateur|Le sac penche entre deux petites mains, grain de cannelle au fond.",
     ],
     (1, 3, 1): [
         "narrateur|La tour a failli tout emporter.",
@@ -953,7 +958,7 @@ ENDINGS = {
         "papa|Les citrons du haut brillent, trop loin.",
         "maman|Le bois d'en bas est à sa hauteur.",
         "narrateur|La goutte jaune a séché sur la planche.",
-        "narrateur|Les citrons du haut brillent, grain sur le bord.",
+        "narrateur|Les citrons du haut brillent, grain de cannelle sur le bord.",
     ],
     (1, 3, 2): [
         "narrateur|Mila revient, les poches un peu moins profondes.",
@@ -963,7 +968,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|La place vide l'attendait.",
         "narrateur|La goutte jaune a quitté le bord.",
-        "narrateur|Une place vide reste, le grain posé dessus.",
+        "narrateur|Une place vide reste, le grain de cannelle posé dessus.",
     ],
     (1, 3, 3): [
         "narrateur|Le citron a failli tomber de la tour.",
@@ -973,7 +978,7 @@ ENDINGS = {
         "maman|La tour tient, plus basse.",
         "narrateur|La goutte jaune a séché sur le zeste.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Le citron mouillé a rejoint la tour, grain collé.",
+        "narrateur|Le citron mouillé a rejoint la tour, grain de cannelle collé.",
     ],
     (2, 1, 1): [
         "narrateur|Le jus a failli emporter le grain.",
@@ -983,17 +988,17 @@ ENDINGS = {
         "papa|L'aiguille s'est tue.",
         "maman|La fraise a gardé sa place.",
         "narrateur|La goutte rose a séché en rond mince.",
-        "narrateur|Un rond rose sèche, le grain au centre.",
+        "narrateur|Un rond rose sèche, le grain de cannelle au centre.",
     ],
     (2, 1, 2): [
-        "narrateur|Mila revient, une miette de pain au coin des lèvres.",
+        "narrateur|Mila revient, une miette sucrée au coin des lèvres.",
         "enfant-f|Maintenant ?",
         "enfant-m|Oui.",
         "narrateur|Elle s'approche de la balance.",
         "papa|Vous avez pris le temps.",
         "maman|La fraise l'attendait.",
         "narrateur|La goutte rose n'est plus qu'un halo.",
-        "narrateur|La fraise garde sa place, grain à côté.",
+        "narrateur|La fraise garde sa place, grain de cannelle à côté.",
     ],
     (2, 1, 3): [
         "narrateur|La fraise a failli glisser dans le jus.",
@@ -1003,7 +1008,7 @@ ENDINGS = {
         "maman|Deux doigts ont gardé le grain.",
         "narrateur|La goutte rose a quitté le métal.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|L'aiguille s'est tue, grain sous deux doigts.",
+        "narrateur|L'aiguille s'est tue, grain de cannelle sous deux doigts.",
     ],
     (2, 2, 1): [
         "narrateur|Le sac a failli avaler le grain.",
@@ -1013,7 +1018,7 @@ ENDINGS = {
         "papa|Le papier est resté ouvert.",
         "maman|Le sucre habite le brun.",
         "narrateur|La goutte rose a séché dans le pli.",
-        "narrateur|Le sac sent le sucre, grain coincé dans le pli.",
+        "narrateur|Le sac sent le sucre, grain de cannelle coincé dans le pli.",
     ],
     (2, 2, 2): [
         "narrateur|Mila revient, les doigts un peu collants.",
@@ -1023,7 +1028,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|La barquette l'attendait.",
         "narrateur|La goutte rose a quitté le col.",
-        "narrateur|La barquette attend, grain sur le papier.",
+        "narrateur|La barquette attend, grain de cannelle sur le papier.",
     ],
     (2, 2, 3): [
         "narrateur|Les fraises ont failli s'écraser au fond.",
@@ -1033,7 +1038,7 @@ ENDINGS = {
         "maman|Le sac froisse, porté à deux.",
         "narrateur|La goutte rose a séché au fond.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Le sac froisse, porté à deux, grain dedans.",
+        "narrateur|Le sac froisse, porté à deux, grain de cannelle dedans.",
     ],
     (2, 3, 1): [
         "narrateur|La rangée a failli tout emporter.",
@@ -1043,7 +1048,7 @@ ENDINGS = {
         "papa|Les fraises sont alignées, sous le rouge.",
         "maman|Le bois a gardé un creux.",
         "narrateur|La goutte rose a séché sur la planche.",
-        "narrateur|Les fraises sont alignées, grain sur le bois rouge.",
+        "narrateur|Les fraises sont alignées, grain de cannelle sur le bois rouge.",
     ],
     (2, 3, 2): [
         "narrateur|Mila revient, une main hors de la poche.",
@@ -1053,7 +1058,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|La place rose l'attendait.",
         "narrateur|La goutte rose a quitté le bord.",
-        "narrateur|Une place rose reste, grain au creux.",
+        "narrateur|Une place rose reste, grain de cannelle au creux.",
     ],
     (2, 3, 3): [
         "narrateur|La fraise a failli rouler hors de la caisse.",
@@ -1063,7 +1068,7 @@ ENDINGS = {
         "maman|La rangée tient, fermée.",
         "narrateur|La goutte rose a séché sur le fruit.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|La fraise rattrapée ne roule plus, grain dessus.",
+        "narrateur|La fraise rattrapée ne roule plus, grain de cannelle dessus.",
     ],
     (3, 1, 1): [
         "narrateur|Le plateau a failli tout verser.",
@@ -1072,8 +1077,8 @@ ENDINGS = {
         "enfant-f|Oui.",
         "papa|Le chiffre noir reste grand.",
         "maman|La poire a gardé sa place.",
-        "narrateur|La goutte verte a séché en virgule mince.",
-        "narrateur|Le chiffre noir reste grand, grain contre le plateau.",
+        "narrateur|La goutte verte a séché en trait d'eau.",
+        "narrateur|Le chiffre noir reste grand, grain de cannelle contre le plateau.",
     ],
     (3, 1, 2): [
         "narrateur|Mila revient, une feuille collée à la chaussure.",
@@ -1083,7 +1088,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|La poire l'attendait.",
         "narrateur|La goutte verte n'est plus qu'un point.",
-        "narrateur|La poire pèse, grain à l'abri sous le fruit.",
+        "narrateur|La poire pèse, grain de cannelle à l'abri sous le fruit.",
     ],
     (3, 1, 3): [
         "narrateur|La poire a failli faire pencher tout le plateau.",
@@ -1093,7 +1098,7 @@ ENDINGS = {
         "maman|Le plateau s'est calmé, entre eux.",
         "narrateur|La goutte verte a quitté la peau.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Le plateau s'est calmé, grain entre eux.",
+        "narrateur|Le plateau s'est calmé, grain de cannelle entre eux.",
     ],
     (3, 2, 1): [
         "narrateur|Le sac a failli se déchirer jusqu'au fond.",
@@ -1103,7 +1108,7 @@ ENDINGS = {
         "papa|Le sac a pris la forme de la poire.",
         "maman|Le sucré habite le brun.",
         "narrateur|La goutte verte a séché au col.",
-        "narrateur|Le sac a pris la forme de la poire, grain au col.",
+        "narrateur|Le sac a pris la forme de la poire, grain de cannelle au col.",
     ],
     (3, 2, 2): [
         "narrateur|Mila revient, les mains hors des poches.",
@@ -1113,7 +1118,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|Le papier l'attendait, lourd.",
         "narrateur|La goutte verte a quitté le brun.",
-        "narrateur|Le papier attend, grain brun sur le brun.",
+        "narrateur|Le papier attend, grain de cannelle brun sur le brun.",
     ],
     (3, 2, 3): [
         "narrateur|La poire a failli fendre le sac.",
@@ -1123,7 +1128,7 @@ ENDINGS = {
         "maman|Le sac penche, puis tient.",
         "narrateur|La goutte verte a séché au fond.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|Le sac penche, puis tient, grain au fond.",
+        "narrateur|Le sac penche, puis tient, grain de cannelle au fond.",
     ],
     (3, 3, 1): [
         "narrateur|La tour a failli cacher toutes les poires.",
@@ -1133,7 +1138,7 @@ ENDINGS = {
         "papa|Les poires d'en bas restent à hauteur.",
         "maman|La petite a gardé sa joue.",
         "narrateur|La goutte verte a séché sur la planche.",
-        "narrateur|Les poires d'en bas restent à hauteur, grain sur la plus petite.",
+        "narrateur|Les poires d'en bas restent à hauteur, grain de cannelle sur la plus petite.",
     ],
     (3, 3, 2): [
         "narrateur|Mila revient, une main sur le bord de l'étal.",
@@ -1143,7 +1148,7 @@ ENDINGS = {
         "papa|Vous avez pris le temps.",
         "maman|La petite l'attendait.",
         "narrateur|La goutte verte a quitté le bord.",
-        "narrateur|Une poire du bas attend, grain sur sa joue.",
+        "narrateur|Une poire du bas attend, grain de cannelle sur sa joue.",
     ],
     (3, 3, 3): [
         "narrateur|La poire d'en haut a failli tout cacher.",
@@ -1153,7 +1158,7 @@ ENDINGS = {
         "maman|La poire d'en bas a trouvé sa place.",
         "narrateur|La goutte verte a séché sur sa joue.",
         "narrateur|Le bois de l'étal redevient sec.",
-        "narrateur|La poire d'en bas a trouvé sa place, grain voyageur.",
+        "narrateur|La poire d'en bas a trouvé sa place, grain de cannelle voyageur.",
     ],
 }
 

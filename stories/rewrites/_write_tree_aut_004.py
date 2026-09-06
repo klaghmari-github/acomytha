@@ -207,7 +207,7 @@ Q_FIELDS = {
     ),
     "retry_prompt": "Il est sous les jouets. Nina le cherche où ?",
     "engine_ok_text": "Oui, il est sous les jouets.",
-    "engine_near_text": "Tu es tout près. Écoute encore l'indice.",
+    "engine_near_text": "Tu es tout près. Écoute l'indice une autre fois.",
 }
 
 
@@ -894,7 +894,7 @@ def t3_scenes() -> dict[tuple[str, str, str], tuple]:
             (N, "Nina glisse le livre. Sous la couverture, un bout de pale."),
             (E, "Je t'ai trouvé, sous la lune."),
             (N, "Elle pose le livre au fond, puis pousse le couvercle."),
-            (N, "Nina met le moulin sur le bois. Une pale frotte le livre, en dessous, non."),
+            (N, "Nina met le moulin sur le bois fermé. Une pale frotte le couvercle."),
             (N, "Le couvercle est fermé. Le livre est à l'abri."),
             (P, "Lui, dessus. Les pages, dessous. Chacun sa place."),
             (N, "Le vent prend les pales, au-dessus du cuir."),
@@ -1147,7 +1147,7 @@ def t3_scenes() -> dict[tuple[str, str, str], tuple]:
     )
     data[("tobo", "livre", "chemin")] = (
         S(
-            (N, "Nina glisse le livre. Les pales, un peu pliée, quittent l'ombre."),
+            (N, "Nina glisse le livre. Les pales, un peu pliées, quittent l'ombre."),
             (E, "Je le tiens, et on va à l'école !"),
             (N, "Elle aplatit une pale, comme elle a aplati la page."),
             (N, "Nina marche. Le clac des chaussures imite trop les marches."),

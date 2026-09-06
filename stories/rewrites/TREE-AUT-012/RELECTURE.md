@@ -24,7 +24,7 @@ Q = tas / couverture / visage. Merci vécu au moment où l'objet rentre et le gr
 - Pas « on va ranger » / « après le jeu » / leçon dite. Ranger se voit.
 - T1/T2/T3 changent l'obstacle et le climax, pas seulement la lumière.
 - TTS complet (86) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration), `style_energy`, pauses, pitch, volume. `slow` = choix, indice, fin.
-- 27 fins, 27 dernières images. Chemins 562–597 mots (moy. 579). `check()` N2≤15. Pas apply.
+- 27 fins, 27 dernières images. Chemins 562–598 mots (moy. 579). `check()` N2≤15. Pas apply.
 - Relu : ouverture + 3 L1 + 9 L2 + 27 L3/fins.
 
 ## Non vérifié

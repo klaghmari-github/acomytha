@@ -30,7 +30,7 @@ Victorina propose la cabane. Raphaël propose le saut, le tir, le grimpe. Deux r
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 604 à 637 mots par chemin (moyenne 623)
+- 605 à 637 mots par chemin (moyenne 623)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

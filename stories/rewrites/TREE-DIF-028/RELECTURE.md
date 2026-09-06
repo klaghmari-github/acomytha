@@ -28,7 +28,7 @@ Chouchou propose trop vite. Maman prend son temps, cherche le mot. Le silence co
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 578 à 609 mots par chemin (moyenne 591)
+- 580 à 609 mots par chemin (moyenne 592)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

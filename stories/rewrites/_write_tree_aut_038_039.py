@@ -1237,33 +1237,7 @@ def main() -> None:
         "≠ 023 rampe, ≠ 048 flaque. 86 ids. Relu ouverture + 3 L1 + 3 L2 + 27 L3/fins.",
     )
 
-    s39, n39, e39 = build_039()
-    write_tree(
-        "TREE-AUT-039",
-        "Nino veut son petit lièvre de bois dans la poche, pour le chemin. "
-        "Il penche la caisse d'osier. Cubes, livre et tasse tombent. "
-        "Le lièvre n'est plus dessus. Il ne le retrouve qu'en glissant "
-        "les jouets dans l'osier, au fond.",
-        "La caisse d'osier de Nino",
-        "Nino, papa, maman",
-        "chemin, réverbère, banc de mousse, caisse d'osier, grille de cave",
-        s39,
-        n39,
-        e39,
-    )
-    relecture(
-        "TREE-AUT-039",
-        "La caisse d'osier de Nino",
-        "Réverbère, banc de mousse, osier, foin. Désir: lièvre dans la poche. "
-        "Imprévu: caisse penchée, tas, lièvre perdu au fond. "
-        "T1 cuisine / jardin / chambre. T2 cubes / livre / dînette. "
-        "T3 matin / sieste / soir. Résolution: jouet dans l'osier, lièvre au fond. "
-        "Fin: lièvre dans la poche, chemin.",
-        "Tom→Nino (D16). N3. AUT.RAN.001 implicite. "
-        "Pas « on va ranger » / « après le jeu » / « ranger, c'est ». "
-        "Q=lièvre. Monde ≠ 012 train, ≠ 018 étoile, ≠ 004 moulin, ≠ 029 oiseau. "
-        "86 ids. Relu ouverture + 3 L1 + 3 L2 + 27 L3/fins (images uniques).",
-    )
+    # TREE-AUT-039 : F-NAR-019 dans _write_tree_aut_039.py (ne pas écraser).
 
 
 if __name__ == "__main__":

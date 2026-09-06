@@ -262,7 +262,7 @@ T1 = {
                 "narrateur|Ils marchent vers le wagon du lac.",
                 "narrateur|Le grain de suie tient, tout noir.",
                 "papa|Le ticket est à toi.",
-                "maman|On n'oublie rien, on emporte tout.",
+                "maman|Le sac et la pomme viennent aussi.",
             ]
         ),
         question=vet(
@@ -308,7 +308,7 @@ T1 = {
                 "narrateur|Ils marchent vers le wagon du lac.",
                 "narrateur|Le ticket reste au bord, le grain visible.",
                 "maman|Le sac est prêt.",
-                "papa|On n'oublie rien, on emporte tout.",
+                "papa|Le ticket et la pomme viennent aussi.",
             ]
         ),
         question=vet(
@@ -354,7 +354,7 @@ T1 = {
                 "narrateur|Ils marchent vers le wagon du lac.",
                 "narrateur|Le ticket reste visible, le grain de suie dessus.",
                 "papa|La pomme est prise.",
-                "maman|On n'oublie rien, on emporte tout.",
+                "maman|Le ticket et le sac viennent aussi.",
             ]
         ),
         question=vet(
@@ -428,7 +428,7 @@ T2 = {
                 "papa|Ici, ce n'est pas le lac.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je ne fonce pas.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute les roues, puis le grain.",
                 "narrateur|Il regarde le grain de suie, immobile.",
                 "papa|Tu vois comment, Victorino ?",
@@ -451,7 +451,7 @@ T2 = {
                 "maman|Ce n'est pas le lac, trop tôt.",
                 "narrateur|Maman s'accroupit, à sa hauteur.",
                 "enfant-m|J'attends le grain.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute la vitre, puis le grain.",
                 "narrateur|Le grain de suie reste, seul, sur le rouge.",
             ]
@@ -473,7 +473,7 @@ T2 = {
                 "papa|Trop de choses, trop vite.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je reste.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute le bois, puis le grain.",
                 "narrateur|Il observe le grain de suie, au bord.",
             ]
@@ -494,7 +494,7 @@ T2 = {
                 "papa|L'allée n'est pas un chemin de course.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je ne fonce pas.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute les roues, puis le grain.",
                 "narrateur|Il cherche le grain de suie, sur le ticket.",
                 "maman|Le grain est là, contre le bleu.",
@@ -517,7 +517,7 @@ T2 = {
                 "maman|Ce n'est pas le lac, trop tôt.",
                 "narrateur|Maman s'accroupit, à sa hauteur.",
                 "enfant-m|J'attends le grain.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute la vitre, puis le grain.",
                 "narrateur|Le grain de suie tient, collé au ticket.",
             ]
@@ -539,7 +539,7 @@ T2 = {
                 "papa|Trop de choses, trop vite.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je reste.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute le bois, puis le grain.",
                 "narrateur|Il observe le grain de suie, au bord du rouge.",
             ]
@@ -560,7 +560,7 @@ T2 = {
                 "papa|Ici, ce n'est pas le lac.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je ne fonce pas.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute les roues, puis le grain.",
                 "narrateur|Il regarde le grain de suie, sur le ticket.",
                 "maman|Le grain reste, lui.",
@@ -583,7 +583,7 @@ T2 = {
                 "maman|Ce n'est pas le lac, trop tôt.",
                 "narrateur|Maman s'accroupit, à sa hauteur.",
                 "enfant-m|J'attends le grain.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute la vitre, puis le grain.",
                 "narrateur|Le grain de suie reste, seul, sur le rouge.",
             ]
@@ -605,7 +605,7 @@ T2 = {
                 "papa|Trop de choses, trop vite.",
                 "narrateur|Papa s'accroupit, à sa hauteur.",
                 "enfant-m|Je reste.",
-                "narrateur|Personne ne dit le geste.",
+                "narrateur|Personne ne donne la réponse.",
                 "narrateur|Il écoute le bois, puis le grain.",
                 "narrateur|Il observe le grain de suie, au bord du ticket.",
             ]

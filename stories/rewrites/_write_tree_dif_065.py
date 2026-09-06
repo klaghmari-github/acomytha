@@ -230,6 +230,8 @@ OPENING = vet(
         "papa|Tu as vu cet anneau, Chouchou ?",
         "enfant-f|Il brille, comme une petite lune.",
         "maman|La terre sent le basilic mouillé.",
+        "narrateur|Une goutte tombe du toit, lente.",
+        "narrateur|Raphaël est près des planches, trop loin.",
         "narrateur|En ce moment, Chouchou tient l'arrosoir.",
         "enfant-f|Je veux arroser, avec Raphaël.",
         "papa|Avant que le soleil sèche tout ?",
@@ -237,9 +239,11 @@ OPENING = vet(
         "narrateur|Elle appelle trop vite, vers l'allée.",
         "narrateur|Raphaël ne bouge pas.",
         "narrateur|Le sourire de Chouchou disparaît.",
+        "narrateur|Dans sa poitrine, ça se serre.",
         "enfant-f|Il ne vient pas !",
         "maman|L'arrosoir, la graine, le tablier attendent.",
         "papa|Merci, tu as tenu la porte.",
+        "enfant-f|On prend les affaires, alors.",
         "narrateur|Une goutte glisse sur l'anneau de zinc.",
     ]
 )
@@ -267,12 +271,15 @@ T1 = {
                 "narrateur|Elle penche trop vite, une goutte tombe.",
                 "maman|Tiens le bec, pas trop vite.",
                 "narrateur|L'anneau de zinc se mouille, froid.",
+                "enfant-f|Il est froid !",
                 "papa|La graine et le tablier viennent.",
                 "narrateur|Elle glisse le tablier sous son bras.",
                 "narrateur|La graine reste au fond d'une poche.",
+                "narrateur|Le bec rouge cogne son genou, un toc.",
                 "enfant-f|Raphaël arrose avec moi.",
                 "papa|Tu lui proposes, sans le tirer ?",
                 "enfant-f|Oui, papa.",
+                "narrateur|Elle tient le bec, plus lentement.",
                 "maman|Les trois affaires partent ensemble.",
             ]
         ),
@@ -290,6 +297,9 @@ T1 = {
                 "enfant-f|On va jusqu'à Raphaël.",
                 "papa|La serre est embuée, tiède.",
                 "enfant-f|Oui, papa, j'y vais.",
+                "narrateur|Le tablier frotte son bras, humide.",
+                "papa|On y va, sans le tirer ?",
+                "enfant-f|Sans le tirer.",
                 "narrateur|L'anneau de zinc reste froid.",
                 "maman|Les planches sentent la terre mouillée.",
             ]
@@ -309,12 +319,15 @@ T1 = {
                 "narrateur|Elle serre trop, la graine pique.",
                 "papa|Ouvre la paume, laisse-la reposer.",
                 "narrateur|La graine sent le basilic, tiède.",
+                "enfant-f|Elle pique !",
                 "maman|L'arrosoir t'attend, près du seau.",
                 "narrateur|Elle enfile le tablier, un peu trop vite.",
                 "narrateur|Le bec rouge tape contre son genou.",
+                "narrateur|Le tablier sent la pluie, un peu.",
                 "enfant-f|On plante, avec Raphaël.",
                 "maman|Tu lui proposes, sans le presser ?",
                 "enfant-f|Oui, maman.",
+                "narrateur|Elle ferme la poche, plus lentement.",
                 "papa|La poche garde bien la graine.",
             ]
         ),
@@ -332,6 +345,9 @@ T1 = {
                 "enfant-f|On va la montrer à Raphaël.",
                 "maman|Ça sent le basilic, ici.",
                 "enfant-f|Oui, maman.",
+                "narrateur|Le tablier frotte son bras, humide.",
+                "papa|On y va, sans la presser ?",
+                "enfant-f|Sans la presser.",
                 "narrateur|L'anneau de zinc brille, au bec.",
                 "papa|La poche reste bien fermée.",
             ]
@@ -350,12 +366,15 @@ T1 = {
                 "enfant-f|Les pois sont ronds, tout blancs.",
                 "maman|Noue-le lentement, pas trop fort.",
                 "narrateur|Elle noue trop vite, le nœud glisse.",
+                "enfant-f|Il glisse !",
                 "papa|Voici l'arrosoir, accroche-le.",
                 "narrateur|Le bec rouge tape contre son genou.",
                 "narrateur|Elle glisse la graine dans une poche.",
+                "narrateur|La graine roule au fond, trop sèche.",
                 "enfant-f|Raphaël va aimer les pois.",
                 "papa|Tu lui proposes, sans le tirer ?",
                 "enfant-f|Oui.",
+                "narrateur|Elle noue à nouveau, plus lentement.",
                 "maman|Le tablier tient, bien noué.",
                 "narrateur|L'anneau de zinc frôle un pois.",
             ]
@@ -374,6 +393,9 @@ T1 = {
                 "enfant-f|Raphaël va voir les pois.",
                 "papa|On avance, tous les trois ?",
                 "enfant-f|Oui.",
+                "narrateur|La graine chauffe au fond de la poche.",
+                "maman|On y va, sans le tirer ?",
+                "enfant-f|Sans le tirer.",
                 "narrateur|L'anneau de zinc cogne un pois.",
                 "maman|Les poches sentent l'eau de pluie.",
             ]
@@ -428,6 +450,8 @@ T2_SCENE = {
             "narrateur|Papa s'accroupit, à sa hauteur.",
             "papa|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on saute, l'anneau s'efface.",
+            "narrateur|Elle regarde l'anneau, sans foncer.",
         ]
     ),
     (1, 2): vet(
@@ -446,6 +470,8 @@ T2_SCENE = {
             "narrateur|Maman s'accroupit, à sa hauteur.",
             "maman|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on verse, l'anneau s'efface.",
+            "narrateur|Elle recule le bec, sans verser.",
         ]
     ),
     (1, 3): vet(
@@ -464,6 +490,8 @@ T2_SCENE = {
             "narrateur|Papa s'accroupit, à sa hauteur.",
             "papa|Les feuilles restent trop basses.",
             "enfant-f|J'écoute.",
+            "narrateur|Si on court, l'anneau se cache.",
+            "narrateur|Elle recule le bec, sans foncer.",
         ]
     ),
     (2, 1): vet(
@@ -482,6 +510,8 @@ T2_SCENE = {
             "narrateur|Papa s'accroupit, à sa hauteur.",
             "papa|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on saute, la graine tombe.",
+            "narrateur|Elle referme la poche, sans foncer.",
         ]
     ),
     (2, 2): vet(
@@ -500,6 +530,8 @@ T2_SCENE = {
             "narrateur|Maman s'accroupit, à sa hauteur.",
             "maman|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on verse, la graine se noie.",
+            "narrateur|Elle recule la paume, sans jeter.",
         ]
     ),
     (2, 3): vet(
@@ -518,6 +550,8 @@ T2_SCENE = {
             "narrateur|Papa s'accroupit, à sa hauteur.",
             "papa|Les feuilles restent trop basses.",
             "enfant-f|J'écoute.",
+            "narrateur|Si on court, la graine se perd.",
+            "narrateur|Elle referme la poche, sans foncer.",
         ]
     ),
     (3, 1): vet(
@@ -536,6 +570,8 @@ T2_SCENE = {
             "narrateur|Maman s'accroupit, à sa hauteur.",
             "maman|Il ne bouge pas.",
             "enfant-f|J'écoute.",
+            "narrateur|Si on saute, les pois se mouillent.",
+            "narrateur|Elle recule le tablier, sans foncer.",
         ]
     ),
     (3, 2): vet(
@@ -554,6 +590,8 @@ T2_SCENE = {
             "narrateur|Papa s'accroupit, à sa hauteur.",
             "papa|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on verse, les pois se salissent.",
+            "narrateur|Elle recule le tablier, sans nouer.",
         ]
     ),
     (3, 3): vet(
@@ -572,6 +610,8 @@ T2_SCENE = {
             "narrateur|Maman s'accroupit, à sa hauteur.",
             "maman|Tu fais quoi, alors ?",
             "enfant-f|J'écoute.",
+            "narrateur|Si on court, le tablier s'accroche.",
+            "narrateur|Elle recule d'un pas, sans foncer.",
         ]
     ),
 }
@@ -586,18 +626,24 @@ T3_Q = {
     1: vet(
         [
             "narrateur|La flaque tient Raphaël, sans un mot.",
+            "narrateur|Chouchou refuse de foncer, cette fois.",
+            "maman|Tu vois l'anneau, toi ?",
             "papa|Le bord, la feuille, ou les bottes ?",
         ]
     ),
     2: vet(
         [
             "narrateur|La terre colle à ses doigts, trop brune.",
+            "narrateur|Chouchou refuse de verser, cette fois.",
+            "papa|Tu vois l'anneau, toi ?",
             "maman|Le godet, la terre, ou le robinet ?",
         ]
     ),
     3: vet(
         [
             "narrateur|Les feuilles restent trop mouillées.",
+            "narrateur|Chouchou refuse de courir, cette fois.",
+            "maman|Tu vois l'anneau, toi ?",
             "papa|Le pas, le basilic, ou le torchon ?",
         ]
     ),
@@ -1373,6 +1419,46 @@ FIN = {
 
 T2_SONS = {1: "flaque,pas", 2: "terre,godet", 3: "feuilles"}
 FIN_SONS = {1: "goutte,porte", 2: "terre,porte", 3: "tissu,porte"}
+
+_FIN_HOLD = {
+    (1, 1, 1): "L'anneau a tenu une goutte.",
+    (1, 1, 2): "L'anneau a tenu la feuille.",
+    (1, 1, 3): "L'anneau a tenu près des bottes.",
+    (1, 2, 1): "L'anneau a tenu hors du godet.",
+    (1, 2, 2): "L'anneau a tenu près du nid.",
+    (1, 2, 3): "L'anneau a tenu sous le robinet.",
+    (1, 3, 1): "L'anneau a tenu hors du bac.",
+    (1, 3, 2): "L'anneau a tenu l'odeur verte.",
+    (1, 3, 3): "L'anneau a tenu le torchon.",
+    (2, 1, 1): "La graine a tenu hors de l'eau.",
+    (2, 1, 2): "La graine a tenu sur la feuille.",
+    (2, 1, 3): "La graine a tenu dans la poche.",
+    (2, 2, 1): "La graine a tenu hors du godet.",
+    (2, 2, 2): "La graine a tenu dans le nid.",
+    (2, 2, 3): "La graine a tenu loin du robinet.",
+    (2, 3, 1): "La graine a tenu hors des feuilles.",
+    (2, 3, 2): "La graine a tenu près du basilic.",
+    (2, 3, 3): "La graine a tenu contre le torchon.",
+    (3, 1, 1): "Un pois a tenu hors de l'eau.",
+    (3, 1, 2): "Un pois a tenu la feuille.",
+    (3, 1, 3): "Un pois a tenu près des bottes.",
+    (3, 2, 1): "Un pois a tenu hors du godet.",
+    (3, 2, 2): "Un pois a tenu près du nid.",
+    (3, 2, 3): "Un pois a tenu sous le robinet.",
+    (3, 3, 1): "Un pois a tenu hors du bac.",
+    (3, 3, 2): "Un pois a tenu l'odeur verte.",
+    (3, 3, 3): "Un pois a tenu le torchon.",
+}
+
+for _k, _held in _FIN_HOLD.items():
+    FIN[_k] = vet(
+        FIN[_k][:-1]
+        + [
+            "narrateur|Derrière eux, la serre fume, tiède.",
+            f"enfant-f|{_held}",
+        ]
+        + FIN[_k][-1:]
+    )
 
 
 def main() -> None:

@@ -45,12 +45,12 @@ Victorino veut le train **maintenant**. Impatience, puis lit vide, sourire parti
 - Question moteur : « Victorino a les yeux chauds. Que dit-il ? ». expected triste. 5 chunks, kinds inchangés. expected/accepted dump conservés. retry Étienne → Victorino. Hors Q : null.
 - example4 065 / 097 / 029 (manière volée, gabarit non collé). Voix : `_write_atom_emo_ges_002_01.py`, profiles N3.
 - TTS complet (5) : `text_ssml`, `text_xai_tags`, `notes` (arc, intention, émotion, intensité, destinataire, sous-texte, tempo, sourire, respiration). `slow` = question et fin. Action un peu plus vive vers Amir qui part.
-- 833 mots. N3 ≤ 16. `check()` OK. Pas apply.
+- 832 mots. N3 ≤ 16. `check()` OK. Pas apply.
 
 ## Contrôles
 
 - 5 chunks, graphe inchangé
-- 833 mots
+- 832 mots
 - `text` = `script` collé
 
 ## Non vérifié

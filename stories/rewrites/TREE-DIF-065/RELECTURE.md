@@ -21,7 +21,7 @@ Chouchou propose, Raphaël prend son temps ou pose sa limite. Le silence compte.
 - TTS par fonction (ouverture, choix, indice, action, obstacle, résolution, retour).
 - `slow` réservé aux choix, à l'indice et aux fins.
 - Tics « tout doux / encore / déjà / tout calme » interdits. Slogan « Inviter sans forcer » jeté.
-- Chemins : 496–520 mots (moyenne 505). `check()` OK. Pas d'apply.
+- Chemins : 592–616 mots (moyenne 600). `check()` OK. Pas d'apply.
 
 ## Direction vocale
 

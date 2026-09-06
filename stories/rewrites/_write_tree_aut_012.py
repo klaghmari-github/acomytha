@@ -530,7 +530,7 @@ T2 = {
             "narrateur|Les jouets y dessinent des bêtes noires.",
             "maman|On dirait une forêt, sur tes genoux.",
             "enfant-m|Le doudou a peur des ombres ?",
-            "papa|Ou il est dessous, tout simple.",
+            "papa|Ou il est dessous, c'est tout.",
             "narrateur|Amir lève la couverture comme un rideau.",
             "narrateur|Le ballon et le seau glissent sous le siège.",
             "enfant-m|Ils tombent dans le noir !",
@@ -659,7 +659,7 @@ T3 = {
     ],
     (1, 3, 3): [
         "narrateur|Amir ouvre le pli chaud du nid, avec soin.",
-        "narrateur|Au fond, le doudou était gris, tout petit.",
+        "narrateur|Au fond, le doudou était gris, ramassé.",
         "enfant-m|Tu étais dans ma chambre.",
         "maman|Merci, tu as regardé le fond du nid.",
         "papa|Les autres peuvent rentrer, maintenant.",
@@ -703,7 +703,7 @@ T3 = {
         "narrateur|Amir met ballon et seau dans la caisse.",
         "enfant-m|On goûte à la fenêtre, nous.",
         "narrateur|Le doudou regarde les champs, la marque au chaud.",
-        "narrateur|Une miette reste sur l'oreille, toute petite.",
+        "narrateur|Une miette reste sur l'oreille, minuscule.",
     ],
     (2, 2, 1): [
         "narrateur|Amir décroche le ballon de la vitre tiède.",
@@ -732,7 +732,7 @@ T3 = {
     (2, 2, 3): [
         "narrateur|Amir ouvre un trou contre la vitre tiède.",
         "narrateur|Ses doigts trouvent le gris, un peu humide.",
-        "enfant-m|Tu regardais l'arbre tout seul.",
+        "enfant-m|Tu regardais l'arbre, sans moi.",
         "maman|Merci, tu l'as pris sans frotter trop fort.",
         "papa|Le tas peut quitter le verre.",
         "narrateur|Amir pose ballon et seau dans la caisse.",
@@ -750,7 +750,7 @@ T3 = {
         "enfant-m|Il a dormi en rond !",
         "papa|Merci, le nid a dit son secret.",
         "maman|Il peut se réveiller à la vitre.",
-        "narrateur|Amir déplie le gris, tout doucement.",
+        "narrateur|Amir déplie le gris, sans brusquer.",
         "narrateur|Le ballon s'endort au fond du bois, lui.",
     ],
     (2, 3, 2): [
@@ -984,7 +984,7 @@ ENDINGS = {
         "papa|C'est ta joue, sur lui ?",
         "enfant-m|On a dormi collés.",
         "maman|Le trou près du sac n'est plus un trou.",
-        "narrateur|Les gobelets se touchent, toc, tout seuls.",
+        "narrateur|Les gobelets se touchent, toc, sans main.",
         "narrateur|Une marque de joue reste sur le tissu gris.",
     ],
     (2, 2, 1): [
@@ -1056,7 +1056,7 @@ ENDINGS = {
         "papa|Le ventre orange, c'est le village ?",
         "enfant-m|C'est le soir, sur lui.",
         "maman|Les ombres de la table n'ont plus de secret.",
-        "narrateur|Une maison s'allume, toute petite.",
+        "narrateur|Une maison s'allume, minuscule.",
         "narrateur|Un reflet orange s'allonge sur le ventre du doudou.",
     ],
     (3, 2, 1): [

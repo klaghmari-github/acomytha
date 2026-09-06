@@ -29,7 +29,7 @@ Sarah veut le ding **maintenant**. Aniss touche, recule, ou couvre le métal. Le
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 524 à 550 mots par chemin (moyenne 536)
+- 568 à 596 mots par chemin (moyenne 581)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié

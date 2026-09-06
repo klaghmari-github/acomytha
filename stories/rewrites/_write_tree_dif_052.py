@@ -1229,6 +1229,7 @@ def main() -> None:
         L(
             ("narrateur", "Avant de sortir, trois affaires attendent."),
             ("narrateur", "La clochette, le seau bleu, la pelle jaune."),
+            ("narrateur", "Le sac sent le sel, un peu."),
             ("narrateur", "Le coquillage d'ambre attend, près du sac."),
             ("maman", "Tu prends quoi d'abord, Mila ?"),
         ),

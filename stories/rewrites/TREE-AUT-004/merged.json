@@ -184,7 +184,7 @@
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
       "engine_ok_text": "Oui, il est sous les jouets.",
-      "engine_near_text": "Tu es tout près. Écoute encore l'indice."
+      "engine_near_text": "Tu es tout près. Écoute l'indice une autre fois."
     },
     {
       "chunk_id": "CHK_T0001_P0001_C0001",
@@ -805,8 +805,8 @@
     {
       "chunk_id": "CHK_T0001_P0001_T0002_P0002_T0003_P0002",
       "kind": "passage",
-      "text": "Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois. Une pale frotte le livre, en dessous, non. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les pages, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier.",
-      "script": "narrateur|Nina glisse le livre.\nnarrateur|Sous la couverture, un bout de pale.\nenfant-f|Je t'ai trouvé, sous la lune.\nnarrateur|Elle pose le livre au fond, puis pousse le couvercle.\nnarrateur|Nina met le moulin sur le bois.\nnarrateur|Une pale frotte le livre, en dessous, non.\nnarrateur|Le couvercle est fermé.\nnarrateur|Le livre est à l'abri.\npapa|Lui, dessus.\npapa|Les pages, dessous.\npapa|Chacun sa place.\nnarrateur|Le vent prend les pales, au-dessus du cuir.\nenfant-f|Il n'écrase plus le livre.\nmaman|Le sable reste au bac.\nmaman|Le vent, sur la caisse.\nnarrateur|Les pales tournent, sans toucher le papier.",
+      "text": "Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois fermé. Une pale frotte le couvercle. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les pages, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier.",
+      "script": "narrateur|Nina glisse le livre.\nnarrateur|Sous la couverture, un bout de pale.\nenfant-f|Je t'ai trouvé, sous la lune.\nnarrateur|Elle pose le livre au fond, puis pousse le couvercle.\nnarrateur|Nina met le moulin sur le bois fermé.\nnarrateur|Une pale frotte le couvercle.\nnarrateur|Le couvercle est fermé.\nnarrateur|Le livre est à l'abri.\npapa|Lui, dessus.\npapa|Les pages, dessous.\npapa|Chacun sa place.\nnarrateur|Le vent prend les pales, au-dessus du cuir.\nenfant-f|Il n'écrase plus le livre.\nmaman|Le sable reste au bac.\nmaman|Le vent, sur la caisse.\nnarrateur|Les pales tournent, sans toucher le papier.",
       "sons": "livre,couvercle",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -817,8 +817,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois. Une pale frotte le livre, en dessous, non. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les <emphasis level=\"moderate\">pages</emphasis>, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois. Une pale frotte le livre, en dessous, non. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les <emphasis>pages</emphasis>, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois fermé. Une pale frotte le couvercle. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les <emphasis level=\"moderate\">pages</emphasis>, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Nina glisse le livre. Sous la couverture, un bout de pale. Je t'ai trouvé, sous la lune. Elle pose le livre au fond, puis pousse le couvercle. Nina met le moulin sur le bois fermé. Une pale frotte le couvercle. Le couvercle est fermé. Le livre est à l'abri. Lui, dessus. Les <emphasis>pages</emphasis>, dessous. Chacun sa place. Le vent prend les pales, au-dessus du cuir. Il n'écrase plus le livre. Le sable reste au bac. Le vent, sur la caisse. Les pales tournent, sans toucher le papier. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -1418,7 +1418,7 @@
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
       "engine_ok_text": "Oui, il est sous les jouets.",
-      "engine_near_text": "Tu es tout près. Écoute encore l'indice."
+      "engine_near_text": "Tu es tout près. Écoute l'indice une autre fois."
     },
     {
       "chunk_id": "CHK_T0001_P0002_C0001",
@@ -2127,8 +2127,8 @@
     {
       "chunk_id": "CHK_T0001_P0002_T0002_P0002_T0003_P0003",
       "kind": "passage",
-      "text": "Nina glisse le livre. Les pales, un peu pliée, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque.",
-      "script": "narrateur|Nina glisse le livre.\nnarrateur|Les pales, un peu pliée, quittent l'ombre.\nenfant-f|Je le tiens, et on va à l'école !\nnarrateur|Elle aplatit une pale, comme elle a aplati la page.\nnarrateur|Nina marche.\nnarrateur|Le clac des chaussures imite trop les marches.\nnarrateur|Les pales s'emballent.\nnarrateur|Elle pose un pied, puis l'autre, plus lent.\npapa|Le chemin est long, pas creux.\npapa|Il a le temps.\nnarrateur|Le vent de la rue entre, plus large que le square.\nenfant-f|Il tourne, sans taper de marche.\nmaman|Le livre est plat, au fond.\nmaman|Tes pas, aussi, se sont aplatis.\nnarrateur|Les pales coupent l'air du trottoir, plaque après plaque.",
+      "text": "Nina glisse le livre. Les pales, un peu pliées, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque.",
+      "script": "narrateur|Nina glisse le livre.\nnarrateur|Les pales, un peu pliées, quittent l'ombre.\nenfant-f|Je le tiens, et on va à l'école !\nnarrateur|Elle aplatit une pale, comme elle a aplati la page.\nnarrateur|Nina marche.\nnarrateur|Le clac des chaussures imite trop les marches.\nnarrateur|Les pales s'emballent.\nnarrateur|Elle pose un pied, puis l'autre, plus lent.\npapa|Le chemin est long, pas creux.\npapa|Il a le temps.\nnarrateur|Le vent de la rue entre, plus large que le square.\nenfant-f|Il tourne, sans taper de marche.\nmaman|Le livre est plat, au fond.\nmaman|Tes pas, aussi, se sont aplatis.\nnarrateur|Les pales coupent l'air du trottoir, plaque après plaque.",
       "sons": "pas,livre",
       "length_scale_piper": 1.14,
       "rate_label": "medium",
@@ -2139,8 +2139,8 @@
       "expected_answer": null,
       "accepted_examples": null,
       "retry_prompt": null,
-      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Nina glisse le livre. Les pales, un peu pliée, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque.</prosody><break time=\"560ms\"/></speak>",
-      "text_xai_tags": "Nina glisse le livre. Les pales, un peu pliée, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque. [pause]",
+      "text_ssml": "<speak><prosody rate=\"medium\" pitch=\"medium\">Nina glisse le livre. Les pales, un peu pliées, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque.</prosody><break time=\"560ms\"/></speak>",
+      "text_xai_tags": "Nina glisse le livre. Les pales, un peu pliées, quittent l'ombre. Je le tiens, et on va à l'école ! Elle aplatit une pale, comme elle a aplati la page. Nina marche. Le clac des chaussures imite trop les marches. Les pales s'emballent. Elle pose un pied, puis l'autre, plus lent. Le chemin est long, pas creux. Il a le temps. Le vent de la rue entre, plus large que le square. Il tourne, sans taper de marche. Le livre est plat, au fond. Tes pas, aussi, se sont aplatis. Les pales coupent l'air du trottoir, plaque après plaque. [pause]",
       "rate_wpm": 140,
       "speed_xai": 0.97,
       "pitch_label": "medium",
@@ -2652,7 +2652,7 @@
       "locale": "fr-FR",
       "voice_id": "fr_FR-siwis-medium",
       "engine_ok_text": "Oui, il est sous les jouets.",
-      "engine_near_text": "Tu es tout près. Écoute encore l'indice."
+      "engine_near_text": "Tu es tout près. Écoute l'indice une autre fois."
     },
     {
       "chunk_id": "CHK_T0001_P0003_C0001",

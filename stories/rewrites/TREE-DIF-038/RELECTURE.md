@@ -28,7 +28,7 @@ Nino veut le galop **maintenant**. Il parle à la place de papa. Silence, mot pe
 ## Contrôles
 
 - 86 chunks, 27 chemins, 27 fins distinctes, 27 dernières images
-- 389 à 410 mots par chemin (moyenne 398)
+- 416 à 436 mots par chemin (moyenne 426)
 - `text` = `script` collé ; graphe inchangé
 
 ## Non vérifié
