@@ -105,3 +105,5 @@ Passe **deux projets** (6 sept. 2026) — **F-NAR-024**, pas un audit ChatGPT :
 - **Profil** (`voice_registry.json`) **séparé** de la **prosodie** (colonnes Excel → `segments[].prosody`).
 - Bundle `AkoMythaTTS-catalogue-tts.bundle` : **incomplet**. Schema : TTS `feat/catalogue-tts-pipeline` @ `244ba22`.
 - Les 1 449 JSON convertis = copie xlsx + prosodie générique. **Pas** l’écriture. **Maintenant : qualité des histoires Excel.** Doc : `stories/FORMAT_JSON_TTS.md`.
+
+Passe **parrainage** (6 sept. 2026) — **F-PAY-005**, plus tard, pas de code : parrainer → acm = 1er chargement ; le parrain reçoit 2× sa 1re charge.

@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.8 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.9 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
 **Chaîne (F-NAR-024).** Source = **Excel** (texte + prosodie) → moteur → JSON → AkoMythaTTS → audio → catalogue app. Trois dossiers plats : `arbres/`, `json/`, `audio/`. Noms de fichiers = IDs. **Maintenant : qualité des histoires Excel.** Détail : `stories/FORMAT_JSON_TTS.md`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
@@ -59,6 +59,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-ENF-002 | **à faire** | Mode enfant illustré : cartes, continuer, pictos, fin vécue. |
 | F-PLY-006 | **à faire** | Mode nuit choisi par le parent, pas par l’enfant. |
 | F-PAY-004 | **à faire** | Offre euros simple (abo + pack). acm hors premier écran. |
+| F-PAY-005 | **plus tard** | Parrainage : acm au parrain = 1er chargement ; le parrain du parrain reçoit 2× sa 1re charge. |
 | F-SEC-004 | **à faire** | Durcir la prod : plus de démo en public, recovery, rate limit. |
 | F-ADM-005 | **à faire** | Pages légales + dépôt reproductible (deps, CI, Docker). |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
@@ -162,6 +163,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-ENF-002 | Enfant | Cartes illustrées, continuer, pictos, fin émotionnelle | P0 | 2 | avis3 §10 | F-ENF-001 |
 | F-PLY-006 | Lecture | Nuit réglée par le parent | P0 | 2 | avis3 §10 | F-PLY-003 |
 | F-PAY-004 | Boutique | 7,99 €/mois + pack 9,90 € ; acm en second | P0 | 2 | avis3 §11 | F-PAY-001 |
+| F-PAY-005 | Boutique | Parrainage acm (1er chargement / double 1re charge) | P2 | 2 | ECHANGES §14 | F-PAY-002 |
 | F-SEC-004 | Sécurité | Plus de comptes démo publics ; recovery ; rate limit | P0 | 2 | avis3 §12 | F-SEC-003 |
 | F-ADM-005 | Admin | CGU, confidentialité, deps verrouillées, CI, Docker | P0 | 2 | avis3 §12 | F-APP-001 |
 | F-PLY-005 | Lecture | Délai 3 s, une relance, choix auto ; nuit saute questions et branchements | P0 | 2 | STRAT-004 | F-PLY-002, F-PLY-003 |
@@ -427,6 +429,15 @@ Le parent règle jour/nuit **avant** de passer l’appareil. L’enfant ne bascu
 
 acm seulement pour des extras plus tard. Pas de démo paiement dans l’espace client public.
 
+### F-PAY-005 — Parrainage (plus tard, ne pas coder)
+
+Quand quelqu’un **parraine** un nouveau compte :
+
+- Celui qui parraine reçoit des **acm** égaux au **premier chargement / conversion** (€ → acm, F-PAY-001) — lecture : égal au premier chargement **du filleul** (la phrase « de votre parrain » est à confirmer à l’implémentation).
+- **Le parrain** reçoit **le double** de **sa** première charge.
+
+Monnaie = acm (F-PAY-003), pas d’euros bonus. Un seul premier chargement compte. À caler après F-PAY-004. **Pas maintenant.**
+
 ### F-SEC-004 — Durcir avant prod
 
 Retirer identifiants démo préremplis, mots de passe / PIN par défaut en public, cookie insecure. Ajouter recovery mot de passe, vérif e-mail, rate limit login/PIN. F-ACC-004 garde le PIN 4 chiffres.
@@ -573,6 +584,8 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 5. `F-APP-009` + `F-PAR-006` + `F-ENF-002` + `F-PLY-006` — vitrine, parent, enfant.  
 6. `F-PAY-004` + `F-SEC-004` + `F-ADM-005` — euros, durcissement, légal.  
 7. `F-NAR-023` — séries personnages, puis étendre le catalogue.
+
+Plus tard (pas avant vente) : `F-PAY-005` parrainage acm.
 
 Socle déjà sur `main` (ne pas refaire) : `F-NAR-007`, `F-DAT-001`, `F-AUD-004`, `F-PLY-001`.
 

@@ -329,3 +329,11 @@ Feature **F-NAR-024**. Contrat : `stories/FORMAT_JSON_TTS.md`.
 > la source des histoire sera les excels. avec texte des passages et paramètres prosodique, ensuite un moteur va convertir l'excel en json, ensuite le TTS prend le json et le convertie en audio. l'application affiche le catalogue des histoires qui est branché sur les audio généré. il faut un dossier pour regrouper tous les excels, un dossier pour regrouper tous les json, un dossier pour regrouper tous les audios. les identifiants dans les excels est ce qui permet de créer les dossiers et les noms de fichiers json et audio.pour eviter d'avoir plusieurs dossiers et sous dossier c'est les noms de fichiers qui identifient l'histoire et la transition et le passage. le moteur de conversion doit pouvoir le faire déjà. … pour le moment la priorité c'est l'amélioration de la qualité des histoires. je te dis quoi faire après
 
 Chaîne : **xlsx → JSON → audio → app**. Trois dossiers plats : `stories/arbres/`, `stories/json/`, `stories/audio/`. Noms = `story_id` et `chunk_id` (T/P). Pas d’écriture dans le JSON. Priorité = qualité Excel.
+
+---
+
+## 14. Parrainage acm (6 sept. 2026) — plus tard
+
+> j'ai trouvé une feature intéressante note la pour plus tard. le parainage quand vous parainer quelqu'un vous recevez des akomythas monnaie egales à ceux du premier chargement/conversion de votre parrain. votre parain reçoit la double somme de sa première charge.
+
+Feature **F-PAY-005**. Pas de code. Détail : `backlog/Features.md`.
