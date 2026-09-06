@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.12 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.13 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.
 **Stripe (F-PAY-001, `3e4335b8`).** Checkout hébergé + webhook signé. Plus de paiement démo. Clés uniquement dans l’environnement. Recharge 10–50 € → acm. Abonnement 7,99 € = F-PAY-004 (pas encore).  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
 **Chaîne (F-NAR-024).** Source = **Excel** → JSON → TTS **dans AcoMytha** (`TtsApp`, `#/admin/editeur`) → audio. Trois dossiers plats : `arbres/`, `json/`, `audio/` (+ `voices/` pour les empreintes). Branche `AkoMythaTTS`. Détail : `stories/FORMAT_JSON_TTS.md`.  
@@ -63,23 +63,23 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAY-005 | **plus tard** | Parrainage : acm au parrain = 1er chargement ; le parrain du parrain reçoit 2× sa 1re charge. |
 | F-SEC-004 | **à faire** | Durcir la prod : plus de démo en public, recovery, rate limit. |
 | F-ADM-005 | **à faire** | Pages légales + dépôt reproductible (deps, CI, Docker). |
-| F-UX-001 | **à faire** | Raffinement visuel et UX cohérent des espaces vitrine, parent, enfant audio et éditeur, sans rupture avec l’identité actuelle. |
-| F-ACC-005 | **à faire** | Un compte peut cumuler les rôles parent, éditeur et admin ; menus et API suivent les permissions effectives. |
-| F-ADM-006 | **à faire** | L’admin affecte ou retire le rôle éditeur aux comptes parents et configure les limites produit. |
-| F-PRF-003 | **à faire** | Jusqu’à 10 profils enfants isolés par foyer, plafond configurable par l’admin. Aucun compte enfant. |
-| F-PAR-007 | **à faire** | Catalogues distincts par enfant ; affectation d’une histoire à un, plusieurs ou tous les profils. |
-| F-ENF-003 | **à faire** | Activation après choix du profil et création d’un code 4 chiffres ; sortie protégée, reconnexion parent comme récupération. |
-| F-ENF-004 | **à faire** | Mode enfant sans interface ni boutons : écran verrouillé, conduite entièrement orale, écoute et réponses vocales. |
+| F-UX-001 | **partiel** | Vitrine, parent, enfant audio et éditeur alignés ; dernière passe d’accessibilité et états UX à poursuivre. |
+| F-ACC-005 | **développé** | Rôles parent, éditeur et admin cumulables ; menus et API suivent les permissions. |
+| F-ADM-006 | **développé** | Attribution/retrait des rôles et limites produit configurables dans l’admin. |
+| F-PRF-003 | **développé** | Jusqu’à 10 profils enfants isolés, plafond configurable, modification et suppression sécurisée. |
+| F-PAR-007 | **développé** | Catalogues distincts ; affectation d’une histoire à un, plusieurs ou tous les profils. |
+| F-ENF-003 | **développé** | Choix du profil, code 4 chiffres, sortie protégée et récupération par reconnexion. |
+| F-ENF-004 | **développé** | Écran enfant verrouillé, sélection et ramifications conduites oralement. |
 | F-APP-010 | **à faire** | Catalogue public par histoire, personnage, leçon, lieu et univers bleu/rose ; filtres cumulatifs et réversibles. |
-| F-HIS-003 | **à faire** | Journal exhaustif par profil : chaque session, dates/heures, durée, progression, complétion et réécoutes. |
-| F-NAR-025 | **à faire** | Recommandation enfant : histoires jamais écoutées d’abord, puis reprise et diversité selon l’historique du profil. |
-| F-ACC-006 | **à faire** | Inscription parent minimale (e-mail + mot de passe), consentement explicite et activation obligatoire par lien e-mail. |
-| F-APP-011 | **à faire** | Vitrine sans prix ni monnaie : accès gratuit annoncé, aperçu 30 s et invitation connexion/inscription. |
-| F-PAR-008 | **à faire** | Invité : sélection locale de 2 histoires maximum pour un catalogue enfant ; authentification à la troisième. |
-| F-ENF-005 | **à faire** | Mode enfant invité opérationnel sur la sélection locale, avec chaque écoute limitée à 30 secondes. |
-| F-INT-006 | **à faire** | Assistant vocal « AcoMytha » : affinage oral progressif, 3 choix maximum, timeout 3 s avec choix annoncé. |
-| F-TAX-005 | **à faire** | Métadonnées indexées par histoire : personnages principaux/secondaires, lieux et facettes nécessaires à la recherche vocale. |
-| F-ADM-007 | **à faire** | Paramétrage admin des quotas invité, aperçu, timeout, nombre de choix, ordre des facettes et valeurs proposées. |
+| F-HIS-003 | **développé** | Sessions détaillées : dates, durées, progression, fin, mode, version et chemin de chunks. |
+| F-NAR-025 | **développé** | Inédites d’abord, reprises ensuite, histoires terminées diversifiées par ancienneté. |
+| F-ACC-006 | **développé** | Inscription minimale et activation obligatoire par lien e-mail à usage unique. |
+| F-APP-011 | **développé** | Vitrine sans prix ni monnaie, promesse gratuite, aperçu 30 s et conversion. |
+| F-PAR-008 | **développé** | Sélection invitée locale limitée à deux histoires. |
+| F-ENF-005 | **partiel** | Sélection invitée et aperçus 30 s prêts ; conduite vocale invitée encore à finaliser. |
+| F-INT-006 | **partiel** | Appel AcoMytha, 3 choix et défaut à 3 s ; affinage multi-facettes à compléter. |
+| F-TAX-005 | **partiel** | Personnages et lieux importés en texte ; index structuré des facettes à compléter. |
+| F-ADM-007 | **partiel** | Aperçus, pagination et quotas profils configurables ; ordre des facettes et choix vocaux à ajouter. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |

@@ -17,6 +17,7 @@ export class StoryEngine {
   #heard = 0;
   #graph = null;
   #key = "";
+  #path = [];
 
   constructor({ api, player, onChoice, onStatus, onDone, maxSeconds = 0, preview = false }) {
     this.#api = api;
@@ -71,6 +72,7 @@ export class StoryEngine {
     this.#replaced = false;
     this.#heard = 0;
     this.#prefetch.clear();
+    this.#path = [];
     this.#remain = this.#maxSeconds > 0 ? this.#maxSeconds : 0;
     const graph = await this.#api.get(this.#graphPath(storyId));
     this.#graph = graph;
@@ -79,6 +81,7 @@ export class StoryEngine {
     while (id && !this.#abort) {
       const node = graph.chunks[id];
       if (!node) break;
+      this.#path.push(id);
       this.#onStatus?.(node);
       const policy = node.night_policy || "play";
       if (this.#night && policy === "skip") {
@@ -115,7 +118,9 @@ export class StoryEngine {
     }
     this.#onChoice?.([]);
     if (this.#replaced) return;
-    this.#onDone?.({ userStop: !!this.#userStop, heard: this.#heard || 0 });
+    const lastId = this.#path.at(-1);
+    const reachedEnd = Boolean(lastId && (graph.chunks[lastId]?.kind === "passage_fin" || !graph.chunks[lastId]?.default_next) && !this.#userStop);
+    this.#onDone?.({ userStop: !!this.#userStop, heard: this.#heard || 0, chunkIds: [...this.#path], reachedEnd, playbackMode: this.#night ? "night" : "day" });
   }
 
   async #play(storyId, chunkId) {

@@ -60,6 +60,18 @@ class Database:
         if "child_profile_id" not in session_cols:
             with self.engine.begin() as conn:
                 conn.execute(text("ALTER TABLE sessions ADD COLUMN child_profile_id INTEGER"))
+        listening_cols = {c["name"] for c in insp.get_columns("listening_sessions")} if "listening_sessions" in insp.get_table_names() else set()
+        listening_migrations = {
+            "total_duration_s": "FLOAT DEFAULT 0",
+            "reached_end": "BOOLEAN DEFAULT 0",
+            "playback_mode": "VARCHAR(16) DEFAULT 'day'",
+            "story_version": "VARCHAR(64) DEFAULT ''",
+            "path_json": "TEXT DEFAULT '[]'",
+        }
+        with self.engine.begin() as conn:
+            for column, definition in listening_migrations.items():
+                if column not in listening_cols:
+                    conn.execute(text(f"ALTER TABLE listening_sessions ADD COLUMN {column} {definition}"))
 
     def session(self) -> Generator[Session, None, None]:
         db = self._session_factory()

@@ -77,9 +77,9 @@ export class ChildApp extends Component {
       player: new CryptoPlayer(),
       onStatus: () => this.#status(`Lecture de ${story.title}`),
       onChoice: (options) => { if (options.length) this.#answerBranch(options); },
-      onDone: async ({ heard = 0 } = {}) => {
+      onDone: async ({ heard = 0, chunkIds = [], reachedEnd = false, playbackMode = "day" } = {}) => {
         if (this.#engine !== engine) return;
-        if (this.#listeningId) await this.api.put(`/enfant/ecoutes/${this.#listeningId}`, { listened_seconds: heard }).catch(() => null);
+        if (this.#listeningId) await this.api.put(`/enfant/ecoutes/${this.#listeningId}`, { listened_seconds: heard, chunk_ids: chunkIds, reached_end: reachedEnd, playback_mode: playbackMode }).catch(() => null);
         this.#engine = null;
         this.#stories = await this.api.get("/enfant/file").catch(() => this.#stories);
         await this.#speak("L'histoire est terminée.");
