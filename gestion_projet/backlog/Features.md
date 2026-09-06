@@ -1,6 +1,6 @@
 # AcoMytha — backlog features
 
-**Version :** 4.10 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Version :** 4.11 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
 **Stripe (F-PAY-001, `3e4335b8`).** Checkout hébergé + webhook signé. Plus de paiement démo. Clés uniquement dans l’environnement. Recharge 10–50 € → acm. Abonnement 7,99 € = F-PAY-004 (pas encore).  
 **Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
 **Chaîne (F-NAR-024).** Source = **Excel** → JSON → TTS **dans AcoMytha** (`TtsApp`, `#/admin/editeur`) → audio. Trois dossiers plats : `arbres/`, `json/`, `audio/` (+ `voices/` pour les empreintes). Branche `AkoMythaTTS`. Détail : `stories/FORMAT_JSON_TTS.md`.  
@@ -63,6 +63,16 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-PAY-005 | **plus tard** | Parrainage : acm au parrain = 1er chargement ; le parrain du parrain reçoit 2× sa 1re charge. |
 | F-SEC-004 | **à faire** | Durcir la prod : plus de démo en public, recovery, rate limit. |
 | F-ADM-005 | **à faire** | Pages légales + dépôt reproductible (deps, CI, Docker). |
+| F-UX-001 | **à faire** | Raffinement visuel et UX cohérent des espaces vitrine, parent, enfant audio et éditeur, sans rupture avec l’identité actuelle. |
+| F-ACC-005 | **à faire** | Un compte peut cumuler les rôles parent, éditeur et admin ; menus et API suivent les permissions effectives. |
+| F-ADM-006 | **à faire** | L’admin affecte ou retire le rôle éditeur aux comptes parents et configure les limites produit. |
+| F-PRF-003 | **à faire** | Jusqu’à 10 profils enfants isolés par foyer, plafond configurable par l’admin. Aucun compte enfant. |
+| F-PAR-007 | **à faire** | Catalogues distincts par enfant ; affectation d’une histoire à un, plusieurs ou tous les profils. |
+| F-ENF-003 | **à faire** | Activation après choix du profil et création d’un code 4 chiffres ; sortie protégée, reconnexion parent comme récupération. |
+| F-ENF-004 | **à faire** | Mode enfant sans interface ni boutons : écran verrouillé, conduite entièrement orale, écoute et réponses vocales. |
+| F-APP-010 | **à faire** | Catalogue public par histoire, personnage, leçon, lieu et univers bleu/rose ; filtres cumulatifs et réversibles. |
+| F-HIS-003 | **à faire** | Journal exhaustif par profil : chaque session, dates/heures, durée, progression, complétion et réécoutes. |
+| F-NAR-025 | **à faire** | Recommandation enfant : histoires jamais écoutées d’abord, puis reprise et diversité selon l’historique du profil. |
 | F-NAR-002 | **développé** | Enchaînement de tous les passages (atomique et ramifié). |
 | F-ACC-003 | **développé** | Inscription e-mail + mot de passe (pas de prénom). Libellé « E-mail ». |
 | F-ACC-004 | **développé** | Parent change le PIN 4 chiffres. Même code parent ↔ enfant. |
@@ -112,6 +122,16 @@ Feature complexe `F-APP-001` : stories (commits) sur `main`. Détail : **STRAT-0
 | F-PAY-003 | Marque | Symbole acm + logo (un seul dessin) | P1 | 2 | STRAT-005 | F-PAY-002 |
 | F-PLY-002 | Lecture | Arrêt visible + durée sur les cartes | P0 | 2 | STRAT-004 | F-PLY-001 |
 | F-PAR-002 | Parent | Libellés interaction / ramifications | P0 | 2 | STRAT-005 | F-PAR-001 |
+| F-UX-001 | UX | Élever le design actuel des quatre expériences sans refonte de marque | P0 | 2 | STRAT-005 | F-APP-007 |
+| F-ACC-005 | Compte | Rôles cumulables parent / éditeur / admin et autorisations dédiées | P0 | 2 | STRAT-005 | F-ACC-001 |
+| F-ADM-006 | Admin | Gestion des rôles et paramètres de limites fonctionnelles | P0 | 2 | STRAT-005 | F-ACC-005 |
+| F-PRF-003 | Profils | Profils enfants multiples, isolés, sans compte enfant | P0 | 2 | STRAT-003/005 | F-ACC-001 |
+| F-PAR-007 | Parent | Catalogue acheté et sélection propre à chaque profil enfant | P0 | 2 | STRAT-005 | F-PRF-003, F-PAR-001 |
+| F-ENF-003 | Enfant | Choix du profil, code de verrouillage 4 chiffres et récupération parent | P0 | 2 | STRAT-005 | F-PRF-003, F-SEC-002 |
+| F-ENF-004 | Enfant | Expérience écran verrouillé et interaction exclusivement orale | P0 | 2 | STRAT-004/005 | F-ENF-003, F-INT-002 |
+| F-APP-010 | App | Vues catalogue et filtres multi-facettes combinables | P0 | 2 | STRAT-005 | F-APP-002, F-DAT-001 |
+| F-HIS-003 | Suivi | Sessions d’écoute détaillées par profil enfant | P0 | 2 | STRAT-003/004 | F-PRF-003, F-NAR-004 |
+| F-NAR-025 | Moteur | Priorisation des histoires inédites et reprises pertinentes | P1 | 2 | STRAT-004 | F-HIS-003 |
 
 ### F-APP-001 — Socle
 
@@ -128,6 +148,102 @@ Une classe = un rôle. État **privé**. Accès public par **propriétés** (inv
 ### F-ENF-001 — Enfant
 
 Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le parent. Grandes cibles, mode jour/nuit.
+
+### Vision UX et comptes — décision fondateur du 6 septembre 2026
+
+Ces fonctionnalités font évoluer l’expérience existante sans remplacer son identité visuelle. Le design améliore la hiérarchie, la fluidité, la lisibilité, les états de chargement et de confirmation, l’accessibilité et la cohérence entre les espaces.
+
+#### F-UX-001 — Quatre expériences cohérentes
+
+- **Vitrine publique** : découvrir le produit et le catalogue, écouter un aperçu, créer un compte parent ou se connecter.
+- **Espace parent** : acheter et sélectionner des histoires, gérer les profils enfants, consulter leur activité et activer le mode enfant.
+- **Mode enfant** : expérience d’écoute audio, sans compte autonome et sans interface graphique exploitable.
+- **Éditeur** : atelier de création et d’édition des histoires, textes, voix, prosodie et audio, visible uniquement avec le rôle éditeur.
+
+Le style « chambre d’écoute » actuel reste la base. Chaque espace possède une hiérarchie et des commandes adaptées tout en partageant les composants et jetons de marque.
+
+#### F-ACC-005 / F-ADM-006 — Rôles cumulables
+
+Le compte de base est un **compte parent**. Un même compte peut cumuler :
+
+| Rôle | Accès |
+| --- | --- |
+| parent | achats, portefeuille, profils enfants, catalogues, historique et mode enfant |
+| editor | accès supplémentaire à l’éditeur graphique et aux API éditoriales |
+| admin | gestion des comptes, attribution/retrait du rôle éditeur et paramètres globaux |
+
+Il n’existe **aucun compte enfant**. Un profil enfant est une donnée interne au foyer parent. L’interface et les API appliquent les permissions côté serveur ; masquer un bouton ne suffit pas. Un admin peut attribuer ou retirer le rôle éditeur à un compte parent.
+
+#### F-PRF-003 / F-PAR-007 — Profils et catalogues enfants
+
+- Un parent crée plusieurs profils enfants, jusqu’au paramètre max_child_profiles (défaut **10**, configurable dans l’admin).
+- Chaque profil possède son identité d’usage, ses préférences, son catalogue sélectionné et son historique, sans identifiants de connexion.
+- Une histoire achetée appartient au foyer. Depuis toute carte ou fiche, **Ajouter à un catalogue enfant** permet de choisir un profil, plusieurs profils ou tous.
+- Retirer une histoire d’un catalogue enfant ne supprime ni l’achat familial ni l’historique.
+- Avant le mode enfant, le parent choisit le profil. L’enfant n’écoute que les histoires que le parent lui a affectées.
+- Les recommandations ne présument pas des goûts selon le sexe du profil : le parent conserve le contrôle.
+
+#### F-ENF-003 — Verrouillage parental du mode enfant
+
+1. Le parent choisit le profil enfant.
+2. Il active le mode enfant.
+3. L’application demande de créer/saisir un code de **4 chiffres** et rappelle qu’il sera nécessaire pour quitter le mode.
+4. L’application ouvre une session enfant cloisonnée.
+
+La sortie volontaire demande le code. Après des échecs répétés, un délai progressif limite les essais. En cas d’oubli, le parent ferme la session puis se reconnecte avec ses propres identifiants ; cette reconnexion réinitialise la session enfant. Le code ne remplace jamais le mot de passe et doit être stocké sous forme dérivée sécurisée, jamais en clair.
+
+#### F-ENF-004 — Audio uniquement
+
+En mode enfant, l’écran ne propose ni catalogue visuel, ni carte, ni bouton de navigation, ni réglage, ni information du compte. Il affiche seulement un état visuel neutre et verrouillé indispensable au système et à l’accessibilité.
+
+Toute l’expérience utile passe par la voix :
+
+- l’application annonce les histoires disponibles et propose d’abord les inédites ;
+- l’enfant choisit oralement une histoire ;
+- le moteur raconte, pose les questions et énonce les options de branchement ;
+- la reconnaissance vocale interprète une réponse dans un vocabulaire fermé, confirme oralement et poursuit ;
+- en cas de silence ou d’incompréhension, le moteur répète une fois puis applique le choix par défaut sûr ;
+- aucune génération ne se produit pendant la lecture.
+
+Le verrouillage applicatif ne peut pas empêcher seul les gestes système du téléphone. La sécurité visée est le cloisonnement : si l’enfant ferme l’application, il ne possède pas les identifiants pour revenir dans l’espace parent.
+
+#### F-APP-010 — Catalogue multi-vues et filtres combinables
+
+La vitrine permet d’explorer le même catalogue par histoires, personnages, leçons, lieux (maison, école, parc…) et deux univers éditoriaux :
+
+- **bleu** : héros garçon et thèmes associés (train, ascenseur, football, etc.) ;
+- **rose** : héroïne fille et thèmes associés (poupée, princesse, robe, chaussures, cheveux, boucles d’oreilles, etc.).
+
+Ces univers sont des vues de découverte, jamais des restrictions de profil. Ils utilisent des métadonnées explicites et révisables, pas une déduction automatique depuis le prénom.
+
+- Un clic active une facette ; un second clic la désactive.
+- Les groupes se cumulent par intersection, par exemple bleu + maison.
+- Les filtres actifs sont visibles, supprimables séparément et réinitialisables en une action.
+- Le total et le chargement progressif reflètent immédiatement la combinaison.
+- L’URL conserve les filtres afin de restaurer ou partager la vue.
+- Clavier, lecteur d’écran et mobile donnent le même résultat fonctionnel.
+
+#### F-HIS-003 / F-NAR-025 — Historique et ordre de proposition
+
+Chaque tentative crée une session immuable liée au profil et à l’histoire :
+
+- date/heure de début et de fin ;
+- durée réellement écoutée et durée totale de la version ;
+- progression en pourcentage ;
+- chunks et chemin suivis pour une histoire ramifiée ;
+- fin atteinte ou interruption ;
+- mode jour/nuit et version de l’histoire.
+
+Les agrégats calculent démarrages, écoutes complètes, réécoutes, dernière écoute et meilleure progression. Une progression de 80 % reste partielle ; la complétion exige la fin ou un seuil configurable.
+
+Ordre oral par défaut :
+
+1. histoires affectées jamais commencées ;
+2. histoires commencées à reprendre ;
+3. histoires terminées, diversifiées selon ancienneté et préférences ;
+4. pas de répétition fondée uniquement sur une étiquette bleu/rose.
+
+Le parent dispose d’une synthèse claire par enfant, sans transformer l’écoute en surveillance intrusive.
 
 ---
 
