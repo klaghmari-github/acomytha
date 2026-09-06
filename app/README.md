@@ -7,8 +7,10 @@ Forêt narrative audio : parent, enfant, admin, **éditeur vocal**. STRAT-005. U
 Depuis la racine du dépôt :
 
 ```bash
-PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787
+./start.sh
 ```
+
+Équivalent : `PYTHONPATH=app python -m uvicorn acomytha.main:create_app --factory --host 127.0.0.1 --port 8787`
 
 Ouvrir http://127.0.0.1:8787
 
