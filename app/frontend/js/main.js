@@ -27,7 +27,7 @@ class AcoMythaApp {
       .on(/^#\/inscription\/?$/, () => this.#show("acomytha-signup"))
       .on(/^#\/parent\/?$/, () => this.#guard(["parent", "admin"], "acomytha-parent"))
       .on(/^#\/admin\/?$/, () => this.#guard(["admin"], "acomytha-admin"))
-      .on(/^#\/admin\/editeur\/?$/, () => this.#guard(["admin"], "acomytha-editor"))
+      .on(/^#\/admin\/editeur\/?$/, () => this.#guard(["admin", "editor"], "acomytha-editor"))
       .on(/^#\/enfant\/?$/, () => this.#guard(["parent", "child"], "acomytha-child"));
     this.#router.resolve();
   }

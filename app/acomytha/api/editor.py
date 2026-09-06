@@ -34,17 +34,17 @@ def _http(exc: Exception, not_found: int = 404):
 
 
 @router.get("/roster")
-def roster(_auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def roster(_auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     return tts.roster_public()
 
 
 @router.get("/stories")
-def stories(_auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def stories(_auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     return tts.list_stories()
 
 
 @router.get("/stories/{story_id}")
-def story(story_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def story(story_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     try:
         return tts.preview(story_id=story_id)
     except Exception as exc:
@@ -54,7 +54,7 @@ def story(story_id: str, _auth: AuthContext = Depends(require_roles("admin")), t
 @router.post("/parse")
 async def parse_story(
     request: Request,
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     story_id = ""
@@ -80,19 +80,19 @@ async def parse_story(
 
 
 @router.get("/voices")
-def voices(_auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def voices(_auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     return tts.voices_public()
 
 
 @router.get("/voices/presets")
-def presets(_auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def presets(_auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     return tts.presets()
 
 
 @router.post("/voices/generate")
 async def generate_voice(
     request: Request,
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     data = await request.json()
@@ -111,7 +111,7 @@ async def generate_voice(
 
 
 @router.get("/voices/jobs/{job_id}")
-def voice_job(job_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def voice_job(job_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     payload = tts.voice_job(job_id)
     if payload is None:
         raise HTTPException(404, "Travail vocal introuvable.")
@@ -127,7 +127,7 @@ async def record_voice(
     age_group: str = Form("adult"),
     role: str = Form("character"),
     temperament: str = Form("naturel"),
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     class _Upload:
@@ -155,7 +155,7 @@ async def record_voice(
 @router.post("/convert")
 async def convert_story(
     request: Request,
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     ctype = request.headers.get("content-type") or ""
@@ -185,7 +185,7 @@ async def convert_story(
 
 
 @router.post("/excel")
-def convert_excel(_auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def convert_excel(_auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     try:
         return tts.convert_excel()
     except Exception as exc:
@@ -193,7 +193,7 @@ def convert_excel(_auth: AuthContext = Depends(require_roles("admin")), tts=Depe
 
 
 @router.get("/jobs/{job_id}")
-def job_status(job_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def job_status(job_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     job = tts.job(job_id)
     if job is None:
         raise HTTPException(404, "Travail introuvable.")
@@ -201,7 +201,7 @@ def job_status(job_id: str, _auth: AuthContext = Depends(require_roles("admin"))
 
 
 @router.get("/jobs/{job_id}/audio")
-def job_audio(job_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def job_audio(job_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     job = tts.job(job_id)
     if job is None:
         raise HTTPException(404, "Travail introuvable.")
@@ -211,7 +211,7 @@ def job_audio(job_id: str, _auth: AuthContext = Depends(require_roles("admin")),
 
 
 @router.get("/jobs/{job_id}/edit")
-def job_edit(job_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def job_edit(job_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     try:
         return tts.edit_public(job_id)
     except Exception as exc:
@@ -222,7 +222,7 @@ def job_edit(job_id: str, _auth: AuthContext = Depends(require_roles("admin")), 
 def replica_audio(
     job_id: str,
     index: int,
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     try:
@@ -239,7 +239,7 @@ def replica_audio(
 async def regenerate_replicas(
     job_id: str,
     request: Request,
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     data = await request.json()
@@ -255,7 +255,7 @@ async def record_replica(
     job_id: str,
     index: int,
     file: UploadFile = File(...),
-    _auth: AuthContext = Depends(require_roles("admin")),
+    _auth: AuthContext = Depends(require_roles("admin", "editor")),
     tts=Depends(get_tts),
 ):
     class _Upload:
@@ -273,7 +273,7 @@ async def record_replica(
 
 
 @router.get("/edits/{edit_id}")
-def edit_status(edit_id: str, _auth: AuthContext = Depends(require_roles("admin")), tts=Depends(get_tts)):
+def edit_status(edit_id: str, _auth: AuthContext = Depends(require_roles("admin", "editor")), tts=Depends(get_tts)):
     payload = tts.edit_work(edit_id)
     if payload is None:
         raise HTTPException(404, "Édition introuvable.")

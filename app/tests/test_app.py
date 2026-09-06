@@ -3,6 +3,7 @@ from __future__ import annotations
 from acomytha.crypto_audio import AudioVault
 from acomytha.graph import StoryGraph
 from acomytha.models import Chunk
+from acomytha.models import User
 
 
 def test_health(client):
@@ -16,6 +17,26 @@ def test_index(client):
     assert r.status_code == 200
     assert "AcoMytha" in r.text
     assert 'id="acm-mark"' in r.text
+
+
+def test_editor_role_can_open_editor_api(client):
+    with client.app.state.database.SessionLocal() as db:
+        db.add(
+            User(
+                email="editor@acomytha.local",
+                display_name="Éditeur",
+                role="editor",
+                password_hash=client.app.state.sessions.hasher.hash("acomytha-editor"),
+            )
+        )
+        db.commit()
+    login = client.post(
+        "/api/auth/login",
+        json={"email": "editor@acomytha.local", "password": "acomytha-editor", "device_id": "device-editor-1"},
+    )
+    assert login.status_code == 200
+    assert login.json()["role"] == "editor"
+    assert client.get("/api/editor/stories").status_code != 403
 
 
 def test_public_stats_include_acm_prices(client):
