@@ -1,7 +1,8 @@
 # AcoMytha — backlog features
 
-**Version :** 4.6 — 5 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
-**Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant. **Pas de dev dans cette passe** — IDs posés seulement.  
+**Version :** 4.7 — 6 septembre 2026. Remplace `AcoMytha_Backlog_Features_v2.0.xlsx`. Gel : `gestion_projet/ETAT_REPRISE.md`.  
+**Avis3** (`gestion_projet/feedback_chatgpt/avis3.txt`, commit audité `3d0793c0`) : ne pas vendre le volume. D’abord 24 histoires irréprochables + audio + vitrine/parent/enfant.  
+**Deux projets (F-NAR-024).** AcoMytha = manuscrit **JSON** (texte + profil parlant + prosodie par passage). AkoMythaTTS = parole. Format : `stories/FORMAT_JSON_TTS.md`.  
 **Branche :** `main` seulement. Message `feat(F-XXX): …` / `fix(F-XXX): …` (voir `consignes.txt`). L’ID ne change plus.  
 **Demandes + exemples fondateur :** `decisions/ECHANGES.md` (traçabilité).  
 **Spec :** `specification/AcoMytha_Specification.md`. Les colonnes *Strat* pointent le document d’architecture, pas une copie.  
@@ -11,7 +12,7 @@ Priorités : **P0** première écoute réelle · **P1** MVP familles · **P2** j
 
 Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction fermée · 4 renouvellement · 5 leçons parentales · 6–7 hors MVP.
 
-### Statut (5 sept. 2026)
+### Statut (6 sept. 2026)
 
 | ID | Statut | Note |
 | --- | --- | --- |
@@ -50,6 +51,7 @@ Phases : 0 cadrage · 1 contenu · 2 MVP web (puis native) · 3 interaction ferm
 | F-NAR-021 | **à faire** | Contrôle tics corpus + titres uniques (avis3). |
 | F-NAR-022 | **à faire** | `text` change → invalider SSML / xai / notes / audio. |
 | F-NAR-023 | **à faire** | Trois séries personnages (Amir / Nina / Victorina). |
+| F-NAR-024 | **en cours** | Manuscrit JSON schema 2.0, compatible AkoMythaTTS. Profil ≠ prosodie. Étalon `stories/json/TREE-AUT-001.json`. |
 | F-DAT-002 | **à faire** | Importer métadonnées vocales dans SQLite et le lecteur. |
 | F-AUD-008 | **à faire** | Produire l’audio des 24 (puis étendre). Témoins Git = 2 histoires. |
 | F-APP-009 | **à faire** | Vitrine conversion : hero + extrait, 6 phares, besoins parent, pas « 1400 leçons ». |
@@ -152,6 +154,7 @@ Pas de filtres, pas de compte, pas d’admin. File = histoires cochées par le p
 | F-NAR-021 | Production | Anti-tics + titres uniques | P0 | 1 | avis3 §2 | F-VAL-001 |
 | F-NAR-022 | Production | Invalidation vocale si `text` change | P0 | 1 | avis3 §3 | F-AUD-006 |
 | F-NAR-023 | Éditorial | Séries Amir / Nina / Victorina | P1 | 1 | avis3 §13 ph.2 | F-NAR-020 |
+| F-NAR-024 | Production | Manuscrit JSON AkoMythaTTS : profil parlant ≠ prosodie du passage | P0 | 1 | stories/FORMAT_JSON_TTS.md | F-NAR-019 |
 | F-DAT-002 | Référentiel | Import SSML, xai, notes, sons, voix dans SQLite | P0 | 2 | avis3 §3 | F-DAT-001 |
 | F-AUD-008 | Audio | Bake + contrôle des 24, puis extension | P0 | 1 | avis3 §4 | F-AUD-005, F-NAR-020 |
 | F-APP-009 | App | Vitrine : hero, extrait, 6 phares, collections besoins | P0 | 2 | avis3 §6–8 | F-APP-006 |
@@ -317,10 +320,10 @@ Source : `gestion_projet/feedback_chatgpt/examples/example2/` (audit vocal 5 sep
 | Style oral d’humain : rythme variable, vocabulaire simple et **divers** | Gabarit IA, tics « tout doux / encore / déjà », mêmes phrases d’un titre à l’autre |
 | Arc **sur chaque chemin** : monde, désir, imprévu, 1re tentative ratée, péripéties, climax, dénouement | Décor + consigne + validation ; même aventure avec 3 goûters |
 | T1/T2/T3 changent **l’enquête et la fin** (27 fins textuellement distinctes) | 27 copies avec un mot différent |
-| TTS : `notes` (arc, intention, émotion, tempo), `text_xai_tags`, pitch/volume/pause **selon la scène** | `text_xai_tags` = copie de `text` ; un seul `length_scale` partout |
+| TTS : `notes` (arc, intention, émotion, tempo), puis JSON F-NAR-024 (`speaker` + `prosody` par réplique) | `text_xai_tags` = copie de `text` ; un seul `length_scale` partout ; `emphasis_words: ["sac"]` sur chaque phrase |
 | Un merci/bravo **vécu une fois**, lié au geste | Refrain « Bravo, bon travail » ; zéro reconnaissance |
 
-Étalon vocal : `examples/example2/raw.js` (profils opening/choice/clue/obstacle/resolution/ending). Ne **pas** recopier l’escargot ailleurs. Piper : `slow` seulement choix, danger doux, émotion sensible.
+Étalon vocal : `examples/example2/raw.js` (profils opening/choice/clue/obstacle/resolution/ending). Ne **pas** recopier l’escargot ailleurs. Piper : `slow` seulement choix, danger doux, émotion sensible. **Suite :** F-NAR-024 — le manuscrit définitif n’est plus l’xlsx, c’est le JSON AkoMythaTTS.
 
 ---
 
@@ -356,9 +359,26 @@ Continuité affective, après les 24 :
 
 L’enfant s’attache au personnage ; le parent choisit la compétence.
 
+### F-NAR-024 — Manuscrit JSON (AcoMytha) compatible AkoMythaTTS
+
+Deux projets. **AcoMytha** produit le texte. **AkoMythaTTS** produit la parole. Le format d’échange est le JSON schema **2.0** du renderer TTS (`stories/FORMAT_JSON_TTS.md`).
+
+**Séparer :**
+
+| Couche | Où | Quoi |
+| --- | --- | --- |
+| Profil du parlant | `stories/json/voice_registry.json` | Identité permanente : narrateur, papa, maman, enfant Amir, maîtresse, troupe D16. Timbre, empreinte, `direction`. Pas la scène. |
+| Prosodie du passage | `chunks[].segments[].prosody` | Comment **cette** réplique est dite : `speed`, `gain_db`, `pitch_semitones`, pauses, `emotion`, `intonation`, `emphasis_words`. |
+
+Ne pas fusionner les deux. Amir reste Amir ; il ne parle pas pareil quand il est curieux, inquiet ou soulagé.
+
+**Base.** Branche TTS `feat/catalogue-tts-pipeline` @ `244ba22` (pas le bundle `AkoMythaTTS-catalogue-tts.bundle`, historique incomplet). Conversion des 1 449 xlsx = **copie mécanique**, pas l’écriture. Import AcoMytha : registre + étalon `TREE-AUT-001.json`. Premier chunk `CHK_T0000_P0000` en passe humaine.
+
+**Excel** reste le runtime actuel. L’écriture définitive se fait dans `stories/json/`. Audio nouveau = AkoMythaTTS (Kokoro + OpenVoice), pas Piper (F-AUD-005 = bake existant seulement).
+
 ### F-DAT-002 — Métadonnées vocales dans l’app
 
-`catalog.py` n’importe aujourd’hui que texte, réponses, graphe, attente, nuit. À charger aussi : `text_ssml`, `text_xai_tags`, `notes`, `script`, pitch/volume/pauses, `sons`, voix par réplique. Sans ça, F-NAR-019 reste un actif hors ligne.
+`catalog.py` n’importe aujourd’hui que texte, réponses, graphe, attente, nuit. Cible : le JSON F-NAR-024 (`speaker`, `prosody`, graphe, `sound_cues`) plutôt que les seules colonnes xlsx (`text_ssml`, `text_xai_tags`, `notes`, `script`). Sans ça, F-NAR-019 / F-NAR-024 restent hors ligne.
 
 ### F-AUD-008 — Audio des 24
 
@@ -435,7 +455,9 @@ Le narrateur décrit la scène. Maman, papa, maîtresse, grands-parents, héros 
 
 ### F-AUD-005 — Synthèse sans API payante
 
-Heavy = `narration_plan` seulement. Fichiers = Piper local + ffmpeg MP3. Pas de `POST /v1/tts`. **STRAT-002** §2.
+Heavy = `narration_plan` seulement. Fichiers **déjà bakés** = Piper local + ffmpeg MP3. Pas de `POST /v1/tts`. **STRAT-002** §2.
+
+**Nouveau pipeline (F-NAR-024) :** AkoMythaTTS (Kokoro, puis OpenVoice si WAV autorisé). Piper n’est plus le moteur des histoires définitives.
 
 ### F-INT-005 — Question d’écoute (ne branche pas)
 
@@ -533,9 +555,10 @@ Les descriptions longues restent celles du v2.0 ; ci-dessous l’index + le lien
 
 **Avant toute vente** (pas commencé dans cette passe) :
 
-1. `F-NAR-020` — choisir et relire 24 histoires.  
+0. `F-NAR-024` — écrire en JSON (profil ≠ prosodie), compatible AkoMythaTTS.  
+1. `F-NAR-020` — choisir et relire 24 histoires **dans ce JSON**.  
 2. `F-NAR-021` + `F-NAR-022` — tics, titres, sync vocale.  
-3. `F-AUD-008` — audio des 24.  
+3. `F-AUD-008` — audio des 24 **via AkoMythaTTS**.  
 4. `F-DAT-002` — l’app consomme SSML / notes / sons.  
 5. `F-APP-009` + `F-PAR-006` + `F-ENF-002` + `F-PLY-006` — vitrine, parent, enfant.  
 6. `F-PAY-004` + `F-SEC-004` + `F-ADM-005` — euros, durcissement, légal.  

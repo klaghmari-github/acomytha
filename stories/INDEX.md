@@ -2,10 +2,13 @@
 
 Vague du 3 septembre 2026. Branche `feat/F-GEN-001-corpus-histoires`.
 
-**Source actuelle : Excel, un fichier par arbre.**  
-`stories/arbres/<tree_id>.xlsx` — atomiques + **un** ramifié actif (`TREE-AUT-001`). Les autres ramifiés : `stories/archive/arbres/`. Voir `PRIORITE.md`.
+**Manuscrit définitif (F-NAR-024, 6 sept. 2026) : JSON schema 2.0**, compatible AkoMythaTTS.  
+`stories/json/<story_id>.json` + `stories/json/voice_registry.json`. Contrat : `stories/FORMAT_JSON_TTS.md`. Profil du parlant ≠ prosodie du passage.
 
-Les JSON `atomiques/` et `ramifiees/` ont été convertis puis **supprimés**. Voir `DECISIONS_EXCEL.md`.
+**Runtime actuel de l’app : Excel**, un fichier par arbre.  
+`stories/arbres/<tree_id>.xlsx` — atomiques + ramifiés live. Archive : `stories/archive/arbres/`. Voir `PRIORITE.md`. Tant que F-DAT-002 n’importe pas le JSON, le lecteur lit encore l’xlsx.
+
+Les anciens JSON `atomiques/` et `ramifiees/` avaient été convertis puis **supprimés** (`DECISIONS_EXCEL.md`). Ce n’est **pas** le schema 2.0 TTS.
 
 | Kind | Actif (`arbres/`) | Archive | Graphe |
 | --- | --- | --- | --- |

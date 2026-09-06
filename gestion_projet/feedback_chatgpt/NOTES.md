@@ -97,3 +97,10 @@ Passe `avis3.txt` (5 sept. 17:08, SSD puis worktree, audit `3d0793c0`) — **fea
 - **Nouveau — prod.** Démo logins, PIN 2468, pas de recovery, pas de CGU, dépôt non reproductible (F-SEC-004, F-ADM-005).
 - **D38.** On n’arrête pas d’écrire le corpus. On n’ouvre pas les ventes sur le corpus.
 - **Pas maintenant comme code.** Aucune de ces features n’est implémentée dans cette passe.
+
+Passe **deux projets** (6 sept. 2026) — **F-NAR-024**, pas un audit ChatGPT :
+
+- **AcoMytha** = histoires texte de plus haute qualité. **AkoMythaTTS** = texte → parole.
+- Format manuscrit = JSON schema 2.0. **Profil** (`voice_registry.json` : narrateur, papa, maman, Amir, maîtresse…) **séparé** de la **prosodie** (`segments[].prosody` : émotion, intonation, rythme, pauses **de ce passage**).
+- Bundle `AkoMythaTTS-catalogue-tts.bundle` : **incomplet** (parent `2524e042` / `396e4a9c` manquant). Base réelle : TTS `feat/catalogue-tts-pipeline` @ `244ba22`.
+- Les 1 449 JSON convertis = copie xlsx + prosodie générique. **Pas** l’écriture. Import : registre + `TREE-AUT-001.json`. Doc : `stories/FORMAT_JSON_TTS.md`.

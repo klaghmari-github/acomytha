@@ -1,7 +1,8 @@
 # STRAT-002 — Audio : format, rythme, synthèse, chiffrement
 
-**Référencé par :** `F-AUD-001` à `F-AUD-007`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`.  
-**Graphe / IDs :** `STRAT-003`. **Lecture :** `STRAT-004`.
+**Référencé par :** `F-AUD-001` à `F-AUD-008`, `F-GEN-001`, `F-LOC-002`, `F-PLY-001`, `F-NAR-024`.  
+**Graphe / IDs :** `STRAT-003`. **Lecture :** `STRAT-004`.  
+**Manuscrit JSON (profil ≠ prosodie) :** `stories/FORMAT_JSON_TTS.md`. AcoMytha écrit le JSON ; AkoMythaTTS le dit. Piper (ci-dessous) = bake existant, plus le moteur des histoires définitives.
 
 ## 1. Décision format
 

@@ -22,6 +22,8 @@ Un **fil rouge** (aventure, envie, petit fait) **dirige** le récit. Les leçons
 
 Une histoire à la fois **par agent**. Plusieurs histoires en parallèle (dossiers `rewrites/<id>/` distincts). **D38 : tout le catalogue**, pas seulement deux ramifiés. Texte d’abord ; audio ensuite.
 
+**Depuis F-NAR-024 (6 sept. 2026).** L’écriture définitive est le JSON `stories/json/<story_id>.json` (schema 2.0 AkoMythaTTS), pas l’xlsx. Chaque réplique : `speaker` (profil du registre) **et** `prosody` (cette scène). Contrat : `stories/FORMAT_JSON_TTS.md`. L’xlsx reste le runtime de l’app jusqu’à F-DAT-002.
+
 **Interdit.** Liste de gestes : « Alice range le triangle. Alice range le rectangle. » Ce n’est pas une histoire. Personne n’achète ça.
 
 **Obligatoire.** Monde (village, maison, jardin, saison) → désir du héros → petit imprévu → résolution → fin heureuse. La leçon se greffe. Papa/maman parlent. Troupe D16. POS-001. Ouverture inventée (D25).

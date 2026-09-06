@@ -309,3 +309,15 @@ Fichier : `gestion_projet/feedback_chatgpt/avis3.txt`. Audit commit `3d0793c0`.
 Le fondateur demande de **préparer les features**, pas de développer. IDs : F-NAR-020…023, F-DAT-002, F-AUD-008, F-APP-009, F-PAR-006, F-ENF-002, F-PLY-006, F-PAY-004, F-SEC-004, F-ADM-005. Détail : `backlog/Features.md` v4.6.
 
 Décision retenue : **D38** (écrire tout le corpus) et **ne pas vendre 1 449 titres**. La vitrine s’appuie sur 24 histoires audio irréprochables.
+
+---
+
+## 12. Deux projets, manuscrit JSON (6 sept. 2026)
+
+> il y a maintenant 2 projets Akomytha et AkomythaTTS. dans le projet Akomytha on s'occupe de produire les histoires de la plus haute qualité au format texte, et dans AkomythaTTS on s'occupe de transformer les histoire texte en speech. il faut donc que le format des histoires texte soit compatible avec les outils akomythaTSS. a priori il faut un json. il faut séparer le profil du parlant : narateur, maman, papa, enfant amir, maitresse bernadette etc. et il faut séparer la prosodie: comment le parlant va parler. et il faut préciser la prosodie des différents passage dans l'histoire.
+
+Feature **F-NAR-024**. Contrat : `stories/FORMAT_JSON_TTS.md`.
+
+- Profil = `voice_registry.json` (identité permanente).
+- Prosodie = chaque `segments[].prosody` (interprétation de la réplique).
+- Base récupérée depuis AkoMythaTTS `feat/catalogue-tts-pipeline` @ `244ba22`, pas le bundle (historique cassé).
