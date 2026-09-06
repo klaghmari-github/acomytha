@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import shutil
+import secrets
 from pathlib import Path
 
 import pytest
@@ -25,6 +26,11 @@ def settings(tmp_path: Path) -> Settings:
             if src.suffix in {".mp3", ".wav"}:
                 shutil.copy(src, audio / src.name)
     s = Settings()
+    s._admin_email = "admin@acomytha.local"
+    s._admin_password = secrets.token_urlsafe(24)
+    s._parent_email = "parent@acomytha.local"
+    s._parent_password = secrets.token_urlsafe(24)
+    s._child_pin = ""
     s.data_dir = tmp_path / "data"
     s.data_dir.mkdir()
     s.chk_dir = s.data_dir / "chk"

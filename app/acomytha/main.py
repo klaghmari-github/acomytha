@@ -13,6 +13,7 @@ from acomytha.api import admin, auth, editor, play, public, shop, stories
 from acomytha.crypto_audio import AudioVault
 from acomytha.db import Database
 from acomytha.devices import DeviceGuard
+from acomytha.mail import MailService
 from acomytha.security import SessionService
 from acomytha.seed import Bootstrap
 from acomytha.settings import Settings, get_settings
@@ -30,6 +31,7 @@ def create_app(settings: Settings | None = None, import_limit: int | None = None
     app.state.database = database
     app.state.sessions = SessionService(hours=settings.session_hours)
     app.state.devices = DeviceGuard()
+    app.state.mailer = MailService(settings)
     app.state.vault = AudioVault(settings)
 
     app.include_router(auth.router)

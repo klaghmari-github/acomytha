@@ -24,16 +24,22 @@ class Settings:
         self._db_path = self._data_dir / "acomytha.sqlite"
         self._master_key_path = self._data_dir / "master.key"
         self._session_hours = int(os.environ.get("ACOMYTHA_SESSION_HOURS", "72"))
-        self._admin_email = os.environ.get("ACOMYTHA_ADMIN_EMAIL", "admin@acomytha.local")
-        self._admin_password = os.environ.get("ACOMYTHA_ADMIN_PASSWORD", "acomytha-admin")
-        self._parent_email = os.environ.get("ACOMYTHA_PARENT_EMAIL", "parent@acomytha.local")
-        self._parent_password = os.environ.get("ACOMYTHA_PARENT_PASSWORD", "acomytha-parent")
-        self._child_pin = os.environ.get("ACOMYTHA_CHILD_PIN", "2468")
+        self._admin_email = os.environ.get("ACOMYTHA_ADMIN_EMAIL", "").strip()
+        self._admin_password = os.environ.get("ACOMYTHA_ADMIN_PASSWORD", "")
+        self._parent_email = os.environ.get("ACOMYTHA_PARENT_EMAIL", "").strip()
+        self._parent_password = os.environ.get("ACOMYTHA_PARENT_PASSWORD", "")
+        self._child_pin = os.environ.get("ACOMYTHA_CHILD_PIN", "")
         self._cookie_name = "acomytha_session"
         self._cookie_secure = os.environ.get("ACOMYTHA_COOKIE_SECURE", "0") == "1"
         self._public_url = os.environ.get("ACOMYTHA_PUBLIC_URL", "http://127.0.0.1:8787")
         self._stripe_secret = os.environ.get("STRIPE_SECRET_KEY", "").strip()
         self._stripe_webhook_secret = os.environ.get("STRIPE_WEBHOOK_SECRET", "").strip()
+        self._smtp_host = os.environ.get("ACOMYTHA_SMTP_HOST", "").strip()
+        self._smtp_port = int(os.environ.get("ACOMYTHA_SMTP_PORT", "587"))
+        self._smtp_user = os.environ.get("ACOMYTHA_SMTP_USER", "").strip()
+        self._smtp_password = os.environ.get("ACOMYTHA_SMTP_PASSWORD", "")
+        self._smtp_from = os.environ.get("ACOMYTHA_SMTP_FROM", "AcoMytha <noreply@acomytha.local>")
+        self._email_verification_hours = int(os.environ.get("ACOMYTHA_EMAIL_VERIFICATION_HOURS", "24"))
 
     def _as_path(self, value: Path | str) -> Path:
         return value if isinstance(value, Path) else Path(value)
@@ -161,6 +167,30 @@ class Settings:
     @stripe_webhook_secret.setter
     def stripe_webhook_secret(self, value: str) -> None:
         self._stripe_webhook_secret = str(value).strip()
+
+    @property
+    def smtp_host(self) -> str:
+        return self._smtp_host
+
+    @property
+    def smtp_port(self) -> int:
+        return self._smtp_port
+
+    @property
+    def smtp_user(self) -> str:
+        return self._smtp_user
+
+    @property
+    def smtp_password(self) -> str:
+        return self._smtp_password
+
+    @property
+    def smtp_from(self) -> str:
+        return self._smtp_from
+
+    @property
+    def email_verification_hours(self) -> int:
+        return max(1, self._email_verification_hours)
 
     @property
     def database_url(self) -> str:

@@ -55,6 +55,8 @@ class Bootstrap:
         db.commit()
 
     def ensure_users(self, db: Session) -> None:
+        if not (self.settings.admin_email and self.settings.admin_password):
+            return
         admin = db.query(User).filter(User.email == self.settings.admin_email).one_or_none()
         if admin is None:
             admin = User(
@@ -65,8 +67,8 @@ class Bootstrap:
             )
             db.add(admin)
             db.flush()
-        parent = db.query(User).filter(User.email == self.settings.parent_email).one_or_none()
-        if parent is None:
+        parent = db.query(User).filter(User.email == self.settings.parent_email).one_or_none() if self.settings.parent_email else None
+        if parent is None and self.settings.parent_email and self.settings.parent_password:
             parent = User(
                 email=self.settings.parent_email,
                 display_name="Parent démo",
